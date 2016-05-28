@@ -1,4 +1,5 @@
 ## Documentation that shouldn't be here
+NOTE: This is all highly incomplete.
 
 **Card effect triggers**
 Assign these to card effects by setting their .Effect.Type to one of these strings.
@@ -23,6 +24,8 @@ Fires when a turn begins.
 - OnAttack
 Fires when the card attacks.
 
+- ...
+
 
 **Effect target types**
 - Archetype
@@ -31,6 +34,7 @@ Fires when the card attacks.
 - Opponent
 - Single
 - Self
+- ...
 
 
 **Card effect types**
@@ -88,3 +92,5 @@ Swaps the target's Power and Health stats.
 
 - ColorName (ie. "Blue")
 Adds Increase or [2] icons of the color to the Target player.
+
+- ...
