@@ -9542,7 +9542,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Single",
 			Increase = 300
 		},
-		["Bio"] = "Will he share his popcorn or eat it all himself? Find out next week--",
+		["Bio"] = "Will he share his popcorn or eat it all by himself? Find out next week--",
 	},		
 	
 	["tbradm"] = {
