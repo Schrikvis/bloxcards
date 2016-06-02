@@ -11,3 +11,8 @@ as any icons).
 Everyone agreed it'd be a good idea to let the community handle the stats and effects of
 the game's cards.
 
+## Submission guidelines
+Every change to every card should be its own commit. Do not cluster changes to multiple
+cards into one big commit. Before you commit, copy-paste the contents of cardlib.lua
+into a script and run said script in studio; fix all syntax errors. Do not commit
+broken cardlibraries.
