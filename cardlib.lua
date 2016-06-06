@@ -2497,7 +2497,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Nerve Wrecker",
 			Description = "Lower the Attack of all fighter by 100. Draw a card.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Weaken",100,}{"Draw",1,"Ally"}},
+			["Power"] = {{"Weaken",100,},{"Draw",1,"Ally"}},
 			Target = "All",
 		},
 		["Bio"] = "It's watching you.",
@@ -7626,7 +7626,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 5,["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Plushie Amp",
-			Description = [[When this card attacks and destroys a fighter, its Attack and Power are reverted to their original.]],
+			Description = [[When this card attacks and destroys a fighter, set its health to 1000 and its power to 500.)]],
 			["Type"] = "OnDestroy",
 			["Power"] = {{"Weaken",9999},{"Strengthen",1000},{"Swap",030},{"Weaken",9999},{"Strengthen",500}},
 			Target = "Self",
@@ -8039,7 +8039,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 0,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Null",
-		["Color"] = "Neutral",
+		["Color"] = "Green",
 		["Cost"] = {["Green"] = 3,},
 		["Effect"] = {
 			Name = "Infinite Wishes",
@@ -8058,7 +8058,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 0,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Null",
-		["Color"] = "Neutral",
+		["Color"] = "Blue",
 		["Cost"] = {["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Infinite Frost",
@@ -8077,7 +8077,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 0,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Null",
-		["Color"] = "Neutral",
+		["Color"] = "Red",
 		["Cost"] = {["Red"] = 3,},
 		["Effect"] = {
 			Name = "Infinite Flames",
@@ -8096,7 +8096,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 0,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Null",
-		["Color"] = "Neutral",
+		["Color"] = "Yellow",
 		["Cost"] = {["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Infinite Frost",
@@ -11163,15 +11163,22 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 		
 	["Imaginz00"] = {
-		["Id"] = 415734333,
+		["Id"] = 427435196,
 		["Name"] = "Imaginz00",
-		["Health"] = 1000,
-		["Power"] = 400,
+		["Health"] = 200,
+		["Power"] = 200,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Neutral",
-		["Cost"] = {["Neutral"] = 8,},
-		["Bio"] = "Imagine.",
+		["Cost"] = {["Neutral"] = 10,},
+		["Effect"] = {
+			Name = "Zappow!",
+			Description = "Add three monsters to your hand.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Add","Monstrum Minotauris"},{"Add","Monstrum Zombie King"},{"Add","Monstrum Freezer"}},
+			Target = "All",
+		},
+		["Bio"] = "The creator of Monstrum is like a scornful egotist, except with bite.",
 	},
 	
 	["RukatuKDH"] = {
@@ -11297,15 +11304,73 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Field"] = 423589728,
 		["Color"] = "Neutral",
 		["Archetype"] = "Terrain"
-		["Cost"] = {["Neutral"] = 0,},
+		["Cost"] = {["Green"] = 1,["Blue"] = 1,["Yellow"] = 1,["Red"] = 1,},
 		["Effect"] = {
 			Name = "Stud",
 			Description = "Both players add a Targeting Blip to their hand at the start of their turn.",
 			["Type"] = "Field",
-			["Power"] = {{"Add","Targeting Blip"}}
+			["Power"] = {{"Add","Targeting Blip"}},
 			Target = "Angst",	
 		},
 		["Bio"] = "If I time travel, I might step on a butterfly. That would be sad.",
+	},
+	
+	["Monstrum Freezer"] = {
+		["Id"] = 423592798,
+		["Name"] = "Monstrum Freezer",
+		["Health"] = 800,
+		["Power"] = 800,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Neutral",
+		["Cost"] = {["Red"] = 4,["Green"] = 4},
+		["Effect"] = {
+			Name = "Stud",
+			Description = "Deal 200 damage to all enemy fighters and lock them for two turns.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Lock",2},{"Damage",200}},
+			Target = "Opponent",
+		},
+		["Bio"] = "How exactly does a monster refrigerate other monsters?",
+	},
+	
+	["Monstrum Minotauris"] = {
+		["Id"] = 427571826,
+		["Name"] = "Monstrum Minotauris",
+		["Health"] = 1200,
+		["Power"] = 1200,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Red",
+		["Cost"] = {["Red"] = 8,},
+		["Effect"] = {
+			Name = "Stud",
+			Description = "When this card attacks, deal 300 damage to the opponent.",
+			["Type"] = "OnAttack",
+			["Power"] = {{"Inflict",600}},
+			Target = "Angst",	
+		},
+		["Bio"] = "Minotauris sad.",
+	},
+	
+	["Monstrum Zombie King"] = {
+		["Id"] = 427571863,
+		["Name"] = "Monstrum Zombie King",
+		["Health"] = 2000,
+		["Power"] = 0,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Green",
+		["Archetype"] = "Zombie"
+		["Cost"] = {["Green"] = 8,},
+		["Effect"] = {
+			Name = "Stud",
+			Description = "At the end of your turn, spawn a zombie, then increase the health and power of all zombies by 50.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Summon","Zombie"},{"Heal",50},{"Strengthen",50}},
+			Target = "Archetype",	
+		},
+		["Bio"] = "You know how it'd be awkward if there were two zombie kings out? Yeah...",
 	},
 }
 
