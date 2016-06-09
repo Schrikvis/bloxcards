@@ -11439,7 +11439,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Green",
 		["Archetype"] = "Lunar",
-		["Cost"] = {["Green"] = 8,},
+		["Cost"] = {["Blue"] = 4,},
 		["Effect"] = {
 			Name = "Stud",
 			Description = "Lock a fighter for six turns.",
@@ -11452,14 +11452,14 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	
 	["Forbidden Power"] = {
 		["Id"] = 427571863,
-		["Name"] = "LUNAR CARD",
+		["Name"] = "Forbidden Power",
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Green",
 		["Archetype"] = "Lunar",
-		["Cost"] = {["Green"] = 8,},
+		["Cost"] = {["Blue"] = 3,["Red"] = 3,},
 		["Effect"] = {
 			Name = "Stud",
 			Description = "Destroy all allied fighters. Generate 4 blue icons, 4 red icons, draw two cards, gain 500 life, and put a nightmare into the opponent's hand.",
