@@ -6707,6 +6707,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Opponent",
 			Increase = 1,
 		["Bio"] = "A fan of Toontown and Dodgeball, Alexnewtron can literally script any fun game out of thin air.",
+		}
 	},
 		
 	["Theawesomist19"] = {
@@ -10683,11 +10684,11 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Minigame Start!",
 			Description = "This card can attack the turn its summoned, but can't generate icons.",
 			["Type"] = "OnSummon",
-			["Power"] = {"Charge",0^0}},
+			["Power"] = {"Charge",0^0},
 			Target = "Ally",
 		},
 		["Bio"] = "Pick a card, any card.",
-	},	
+	},
 	
 	["HatHelper"] = {
 		["Id"] = 413918381,
@@ -11310,4 +11311,10 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 }
 
+local pairs = pairs
+local cardcount = 0
+for _,_ in pairs(module) do
+	cardcount = cardcount + 1
+end
+print(cardcount)
 return module
