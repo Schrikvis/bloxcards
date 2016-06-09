@@ -6,7 +6,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 200,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "SlashDiagonal",
-		["Token"] = true
+		["Token"] = true,
 		["Archetype"] = "Ninja",
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 2,},
@@ -195,7 +195,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 500,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Punch1",
-		["Token"] = true
+		["Token"] = true,
 		["Archetype"] = "Meeboid",
 		["Color"] = "Green",
 		["Requirement"] = {"Archetype",8},
@@ -262,7 +262,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 500,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Punch1",
-		["Token"] = true
+		["Token"] = true,
 		["Archetype"] = "Meeboid",
 		["Color"] = "Green",
 		["Requirement"] = {"Archetype",8},
@@ -1946,7 +1946,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Neutral",
 		["Cost"] = {["Neutral"] = 2,},
-		["Token"] = true
+		["Token"] = true,
 		["Bio"] = "The lesser known apprentice of Drager, don't read his code or your eyes might melt in horror.",
 		["Effect"] = {
 			Name = "Bonanza!",
@@ -3286,7 +3286,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Stud",
 			Description = "When this card attacks, deal 200 damage to the opponent.",
 			["Type"] = "OnAttack",
-			["Power"]{{"Inflict",200}},
+			["Power"] = {{"Inflict",200}},
 			Target = "Enemy",
 			Increase = 0,
 		},
@@ -3951,7 +3951,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 100,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Punch1",
-		["Archetype"] = "Shedletsky"
+		["Archetype"] = "Shedletsky",
 		["Shedletsky"] = true,
 		["Color"] = "Yellow",
 		["Cost"] = {["Neutral"] = 1,},
@@ -3974,7 +3974,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 100,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Punch1",
-		["Archetype"] = "Shedletsky"
+		["Archetype"] = "Shedletsky",
 		["Shedletsky"] = true,
 		["Color"] = "Yellow",
 		["Token"] = true,
@@ -3997,7 +3997,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 100,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Punch1",
-		["Archetype"] = "Shedletsky"
+		["Archetype"] = "Shedletsky",
 		["Shedletsky"] = true,
 		["Color"] = "Yellow",
 		["Token"] = true,
@@ -4020,7 +4020,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 100,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Punch1",
-		["Archetype"] = "Shedletsky"
+		["Archetype"] = "Shedletsky",
 		["Shedletsky"] = true,
 		["Color"] = "Yellow",
 		["Token"] = true,
@@ -4346,7 +4346,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Punch1",
 		["Field"] = 293402597,
-		["Archetype"] = "Terrain"
+		["Archetype"] = "Terrain",
 		["Color"] = "Neutral",
 		["Cost"] = {["Neutral"] = 2,["Blue"] = 2,},
 		["Effect"] = {
@@ -4369,7 +4369,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Punch1",
 		["Field"] = 293402627,
 		["Color"] = "Neutral",
-		["Archetype"] = "Terrain"
+		["Archetype"] = "Terrain",
 		["Cost"] = {["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Stud",
@@ -4390,7 +4390,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Punch1",
 		["Archetype"] = "Ninja",
-		["Archetype"] = "Terrain"
+		["Archetype"] = "Terrain",
 		["Field"] = 295562634,
 		["Color"] = "Neutral",
 		["Cost"] = {["Neutral"] = 2},
@@ -4414,7 +4414,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Punch1",
 		["Field"] = 293402621,
 		["Color"] = "Neutral",
-		["Archetype"] = "Terrain"
+		["Archetype"] = "Terrain",
 		["Cost"] = {["Neutral"] = 2,["Green"] = 1,["Blue"] = 1,["Yellow"] = 1,["Red"] = 1,},
 		["Effect"] = {
 			Name = "Stud",
@@ -4435,7 +4435,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Punch1",
 		["Field"] = 293402616,
-		["Archetype"] = "Terrain"
+		["Archetype"] = "Terrain",
 		["Color"] = "Neutral",
 		["Cost"] = {["Yellow"] = 2,["Red"] = 2,},
 		["Effect"] = {
@@ -4562,7 +4562,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Null",
 		["Color"] = "Blue",
-		["Archetype"] - "Lunar",
+		["Archetype"] = "Lunar",
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Psychotic",
@@ -5203,7 +5203,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Punch1",
 		["Field"] = 296846074,
 		["Color"] = "Neutral",
-		["Archetype"] = "Terrain"
+		["Archetype"] = "Terrain",
 		["Cost"] = {["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Stud",
@@ -6662,7 +6662,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Punch1",
 		["Field"] = 323275951,
 		["Color"] = "Neutral",
-		["Archetype"] = "Terrain"
+		["Archetype"] = "Terrain",
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Stud",
@@ -6900,7 +6900,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Bonanza!",
 			Description = [[When you target this card, add an icon of every colour to your hand.]],
 			["Type"] = "OnTarget",
-			["Power"] = {{"Blue",1},{"Green",1},{"White",1},{"Yellow,"1},{"Red",1}}
+			["Power"] = {{"Blue",1},{"Green",1},{"White",1},{"Yellow",1},{"Red",1}},
 			Target = "Ally",
 		},
 		["Bio"] = "Mighty gods bow before him.",
@@ -7772,7 +7772,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Revival",
 			Description = "Whenever you target this fighter, draw 3 cards and destroy it.",
 			["Type"] = "OnTarget",
-			["Power"] = {{"Draw",1},{"Damage",9999}}
+			["Power"] = {{"Draw",3},{"Damage",9999}},
 			Target = "Self",
 		},
 		["Bio"] = "The most efficient in efficient-co technologies.",
@@ -8085,7 +8085,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Null",
 		["Color"] = "Red",
-		["Archetype"] = "Lunar"
+		["Archetype"] = "Lunar",
 		["Cost"] = {["Red"] = 3,},
 		["Effect"] = {
 			Name = "Infinite Flames",
@@ -8580,7 +8580,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 100,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Lightning",
-		["Archetype"] = "Shedletsky"
+		["Archetype"] = "Shedletsky",
 		["Color"] = "Yellow",
 		["Cost"] = {["Neutral"] = 3,["Yellow"] = 3,},
 		["Effect"] = {
@@ -9129,7 +9129,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 500,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Lightning",
-		["Archetype"] = "Bee"
+		["Archetype"] = "Bee",
 		["Token"] = true,
 		["Color"] = "Green",
 		["Cost"] = {["Neutral"] = 2,["Green"] = 6,},
@@ -9985,7 +9985,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Yellow",
 		["Effect"] = {
-			Name = "Dancing Jail"
+			Name = "Dancing Jail",
 			Description = "Give a fighter 400 health, but lock it for 2 turns. Add a targeting blip to your hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Lock",3},{"Heal",400},{"Add","Targeting Blip"}},
@@ -10107,7 +10107,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "GO!",
 			Description = "Summon 2 noobs. Increase the power of all allied fighters by 200.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Summon","Noob"},{"Summon","Noob"},,{"Strengthen",200}},
+			["Power"] = {{"Summon","Noob"},{"Summon","Noob"},{"Strengthen",200}},
 			Target = "Ally",
 		},
 		["Bio"] = "'Vortex Security respects her, please do not insult her. Yes, IcyTea learned it the hard way.'",
@@ -10495,9 +10495,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Health"] = 400,
 		["Power"] = 800,
 		["Rarity"] = "Rare",
-		["DiscardBlock"] = true
+		["DiscardBlock"] = true,
 		["AttackEffect"] = "Lightning",
-		["Token"] = true
+		["Token"] = true,
 		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 2,["Red"] = 2,},
 		["Effect"] = {
@@ -10685,7 +10685,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Yellow",
-		["Token"] = true
+		["Token"] = true,
 		["Cost"] = {["Neutral"] = 2,["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Minigame Start!",
@@ -10710,7 +10710,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "SCRIPTING PARTY",
 			Description = "Harm all fighters based on their colour.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",200,"ColorYellow"},{"Weaken",200,"ColorRed"},{"Lock",2"ColorBlue"},{"Swap",030,"ColorGreen"}},
+			["Power"] = {{"Damage",200,"ColorYellow"},{"Weaken",200,"ColorRed"},{"Lock",2,"ColorBlue"},{"Swap",030,"ColorGreen"}},
 			Target = "All",
 			Increase = 1,
 		},
@@ -10918,7 +10918,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 150,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Lightning",
-		["Token"] = true
+		["Token"] = true,
 		["Color"] = "Blue",
 		["Cost"] = {["Blue"] = 3,},
 		["Effect"] = {
@@ -10971,7 +10971,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 400,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Lightning",
-		["Archetype"] = "Skeleton"
+		["Archetype"] = "Skeleton",
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 1,},
 		["Effect"] = {
@@ -11069,7 +11069,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Stud",
 			Description = [[Add 3 targeting blips to your hand.]],
 			["Type"] = "OnSummon",
-			["Power"] = {{"Add","Targeting Blip"},{"Add","Targeting Blip"},{"Add","Targeting Blip"}}
+			["Power"] = {{"Add","Targeting Blip"},{"Add","Targeting Blip"},{"Add","Targeting Blip"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Try to get past this guy.",
@@ -11095,7 +11095,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Blue",
-		["AttackBlock"] = true
+		["AttackBlock"] = true,
 		["Cost"] = {["Blue"] = 6,},
 		["Effect"] = {
 			Name = "Totem Magic",
@@ -11133,16 +11133,16 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Health"] = 400,
 		["Power"] = 300,
 		["Rarity"] = "Uncommon",
-		["Archetype"] = "Ninja"
+		["Archetype"] = "Ninja",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 2,["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Sudden Death",
-			Description = [[Gain 1 Red icon at the end of each of your turns.]],
+			Description = [[Lock all non-ninjas for one turn.]],
 			["Type"] = "OnEnd",
-			["Power"] = {{"Red",1}},
-			Target = "Self",
+			["Power"] = {{"Lock",1}},
+			Target = "NotArchetype",
 		},
 		["Bio"] = "Just a ninja who is a fan of cows.",
 	},
@@ -11210,8 +11210,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Spanish Roulette",
 			Description = "When played, destroy a random fighter. You lose 450 life.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",9999,}}
-			Target = "Random"
+			["Power"] = {{"Damage",9999,}},
+			Target = "Random",
 		["Bio"] = "Just don't tell Arceusdon she has his effect. .3.",
 	},	
 	
@@ -11319,7 +11319,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Punch1",
 		["Field"] = 429397562,
 		["Color"] = "Neutral",
-		["Archetype"] = "Terrain"
+		["Archetype"] = "Terrain",
 		["Cost"] = {["Green"] = 1,["Blue"] = 1,["Yellow"] = 1,["Red"] = 1,},
 		["Effect"] = {
 			Name = "Stud",
@@ -11398,12 +11398,12 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Red",
 		["Archetype"] = "Lunar",
-		["Cost"] = {["Red"] = 4,["Neutral"] = 2,]},
+		["Cost"] = {["Red"] = 4,["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Stud",
 			Description = "Add 2 Blue or Red actions to your hand.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"RandomAdd","Lunar"}{"RandomAdd","Lunar"}},
+			["Power"] = {{"RandomAdd","Lunar"},{"RandomAdd","Lunar"}},
 			Target = "Self",	
 		},
 		["Bio"] = "Some people have said there is no skill in lunar invocation. And you know what? Those people are dead.",
@@ -11464,7 +11464,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Stud",
 			Description = "Destroy all allied fighters. Generate 4 blue icons, 4 red icons, draw two cards, gain 500 life, and put a nightmare into the opponent's hand.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Damage",9999},{"Blue",4},{"Red",4},{"Draw",2}{"Cost",-500},{"Add","Nightmare","Opponent"}},
+			["Power"] = {{"Damage",9999},{"Blue",4},{"Red",4},{"Draw",2},{"Cost",-500},{"Add","Nightmare","Opponent"}},
 			Target = "Ally",	
 		},
 		["Bio"] = "The moon is the only flesh I need.",
