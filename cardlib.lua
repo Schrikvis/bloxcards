@@ -1731,6 +1731,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Null",
 		["Color"] = "Blue",
+		["Archetype"] = "Lunar",
 		["Cost"] = {["Blue"] = 2,},
 		["Bio"] = "Sometimes you just pass out by eating too much food, especially pizza.",
 		["Effect"] = {
@@ -2485,13 +2486,14 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Eye Spy"] = {
-		["Id"] = 283993357,
+		["Id"] = 429398024,
 		["Name"] = "Eye Spy",
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Null",
 		["Color"] = "Blue",
+		["Archetype"] = "Lunar",
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 1,},
 		["Effect"] = {
 			Name = "Nerve Wrecker",
@@ -2500,7 +2502,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Weaken",100,},{"Draw",1,"Ally"}},
 			Target = "All",
 		},
-		["Bio"] = "It's watching you.",
+		["Bio"] = "I spy with my giant floating eye, something about to die.",
 	},
 	
 	["FuryBlocks"] = {
@@ -2776,6 +2778,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Null",
 		["Color"] = "Red",
+		["Archetype"] = "Lunar",
 		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Sorry!",
@@ -4559,6 +4562,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Null",
 		["Color"] = "Blue",
+		["Archetype"] - "Lunar",
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Psychotic",
@@ -5470,6 +5474,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Thunder",
 		["Color"] = "Red",
+		["Archetype"] = "Lunar",
 		["Cost"] = {["Neutral"] = 2,["Red"] = 4,},
 		["Effect"] = {
 			Name = "Fallen Guardian",
@@ -6987,6 +6992,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Null",
 		["Color"] = "Red",
+		["Archetype"] = "Lunar",
 		["Cost"] = {["Red"] = 5},
 		["Bio"] = "Of course you should fight fire with fire. You should fight everything with fire.",
 		["Effect"] = {
@@ -7658,12 +7664,12 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 335687418,
 		["Name"] = "JJ5x5",
 		["Health"] = 700,
-		["Power"] = 275,
+		["Power"] = 300,
 		["Rarity"] = "Rare",
 		["Archetype"] = "Plushie",
 		["AttackEffect"] = "Thunder",
 		["Color"] = "Green",
-		["Cost"] = {["Green"] = 4,},
+		["Cost"] = {["Green"] = 4,["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Plushie Amp",
 			Description = [[When this attacks and destroys a fighter, it gains 300 Health and Attack.]],
@@ -8059,6 +8065,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Null",
 		["Color"] = "Blue",
+		["Archetype"] = "Lunar",
 		["Cost"] = {["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Infinite Frost",
@@ -8078,6 +8085,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Null",
 		["Color"] = "Red",
+		["Archetype"] = "Lunar"
 		["Cost"] = {["Red"] = 3,},
 		["Effect"] = {
 			Name = "Infinite Flames",
@@ -8390,7 +8398,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Power = {{"Add","Nightmare"},{"Heal",300,"Archetype"}},
 			Target = "Opponent",
 		},
-		["Bio"] = [[The king.]],
+		["Bio"] = [[Once I was human. Now, I am much more.]],
 	},
 	
 	["Vermin's Caress"] = {
@@ -10060,7 +10068,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "All is fair in love and duels.",
 			Description = "Set the amount of colored icons both players have to 1, and white icons to 5. Deal 500 damage to both players.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"SetYellow",1},{"SetGreen",1},{"SetBlue",1},{"SetRed",1},{"SetNeutral",5},{"Inflict",500},{"Cost",500}},
+			["Power"] = {{"Yellow",-2},{"Blue",-2},{"Red",-2},{"Green",-2},{"SetWhite",5}},
 			Target = "All",
 		},
 		["Bio"] = "A weird, odd, and eccentric girl who has an odd obsession with squids and lovecraftian horror. She is also a huge supporter towards Developers of Roblox.",
@@ -10742,12 +10750,12 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 7,["Red"] = 1,},
-			["Effect"] = {
+		["Effect"] = {
 			Name = "SCRIPTING PARTY",
 			Description = "When played, add Ultoris NOOBrae to your hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Add","Ultoris NOOBrae"}},
-			Target = "Opponent",
+			Target = "Ally",
 			Increase = 1,
 		},
 		["Bio"] = "His army of fanboys will destroy you.",
@@ -10786,6 +10794,14 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Neutral",
 		["Cost"] = {["Neutral"] = 6,},
+		["Effect"] = {
+			Name = "SCRIPTING PARTY",
+			Description = "Add 3 random Blue or Red actions to your hand.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"RandomAdd","Lunar"},{"RandomAdd","Lunar"},{"RandomAdd","Lunar"}},
+			Target = "Ally",
+			Increase = 1,
+		},
 		["Bio"] = "He certainly is.",
 	},	
 	
@@ -11301,7 +11317,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 0,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Punch1",
-		["Field"] = 423589728,
+		["Field"] = 429397562,
 		["Color"] = "Neutral",
 		["Archetype"] = "Terrain"
 		["Cost"] = {["Green"] = 1,["Blue"] = 1,["Yellow"] = 1,["Red"] = 1,},
@@ -11361,7 +11377,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Green",
-		["Archetype"] = "Zombie"
+		["Archetype"] = "Zombie",
 		["Cost"] = {["Green"] = 8,},
 		["Effect"] = {
 			Name = "Stud",
@@ -11371,6 +11387,87 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Archetype",	
 		},
 		["Bio"] = "You know how it'd be awkward if there were two zombie kings out? Yeah...",
+	},
+	
+	["Fractal"] = {
+		["Id"] = 429397956,
+		["Name"] = "Fractal",
+		["Health"] = 0,
+		["Power"] = 0,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Red",
+		["Archetype"] = "Lunar",
+		["Cost"] = {["Red"] = 4,["Neutral"] = 2,]},
+		["Effect"] = {
+			Name = "Stud",
+			Description = "Add 2 Blue or Red actions to your hand.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"RandomAdd","Lunar"}{"RandomAdd","Lunar"}},
+			Target = "Self",	
+		},
+		["Bio"] = "Some people have said there is no skill in lunar invocation. And you know what? Those people are dead.",
+	},
+	
+	["Moon Rabbit's Rage"] = {
+		["Id"] = 429396327,
+		["Name"] = "Moon Rabbit's Rage",
+		["Health"] = 0,
+		["Power"] = 0,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Green",
+		["Archetype"] = "Lunar",
+		["Cost"] = {["Red"] = 2,},
+		["Effect"] = {
+			Name = "Stud",
+			Description = "Target fighter gains 300 power.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Strengthen",300}},
+			Target = "Single",	
+		},
+		["Bio"] = "Barbarian! You burned my favorite chair! There will be NO FORGIVENESS!",
+	},
+	
+	
+	["Crystal Snare"] = {
+		["Id"] = 429396724,
+		["Name"] = "Crystal Snare",
+		["Health"] = 0,
+		["Power"] = 0,
+		["Rarity"] = "RARITY",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Green",
+		["Archetype"] = "Lunar",
+		["Cost"] = {["Green"] = 8,},
+		["Effect"] = {
+			Name = "Stud",
+			Description = "Lock a fighter for six turns.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Lock",6}},
+			Target = "Single",	
+		},
+		["Bio"] = "It's cute when it's trapped, isn't it? I mean, as cute as infected, rotting corpses can be.",
+	},
+	
+	["Forbidden Power"] = {
+		["Id"] = 427571863,
+		["Name"] = "LUNAR CARD",
+		["Health"] = 0,
+		["Power"] = 0,
+		["Rarity"] = "Rare",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Green",
+		["Archetype"] = "Lunar",
+		["Cost"] = {["Green"] = 8,},
+		["Effect"] = {
+			Name = "Stud",
+			Description = "Destroy all allied fighters. Generate 4 blue icons, 4 red icons, draw two cards, gain 500 life, and put a nightmare into the opponent's hand.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Damage",9999},{"Blue",4},{"Red",4},{"Draw",2}{"Cost",-500},{"Add","Nightmare","Opponent"}},
+			Target = "Ally",	
+		},
+		["Bio"] = "The moon is the only flesh I need.",
 	},
 }
 
