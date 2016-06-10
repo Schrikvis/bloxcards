@@ -11532,12 +11532,33 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Clockwork",
 		["Health"] = 800,
 		["Power"] = 800,
-		["Rarity"] = "Common",
+		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Red",
-		["Cost"] = {["Red"] = 2, ["White"] = 2, ["Green"] = 2, ["Blue"] = 2, ["Yellow"] = 2},
+		["Cost"] = {["Red"] = 2, ["Neutral"] = 2, ["Green"] = 2, ["Blue"] = 2, ["Yellow"] = 2},
 		["Bio"] = "Thought, Dominion, Revel, Vitality, Null. With these icon types combined, I AM CAPTAIN EARL GREY!!!!",
 	},
+	
+	["Calamity Box"] = {
+		["Id"] = 430947886,
+		["Name"] = "Calamity Box",
+		["Health"] = 1200,
+		["Power"] = 0,
+		["Rarity"] = "Rare",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Red",
+		["Token"] = true,
+		["Cost"] = {["Neutral"] = 5,]},
+		["Effect"] = {
+			Name = "Stud",
+			Description = "At the end of your turn, add a random rare to your hand. This card can't generate icons.",
+			["Type"] = "OnEnd",
+			["Power"] = {"RandomAdd","Rare"},
+			Target = "Self",	
+		},
+		["Bio"] = "Imagine the stalker dying to an army of NICCOs spawned from this. 50k bloxbux to the first person who manages to do it.",
+	},
 }
+
 
 return module
