@@ -11507,6 +11507,25 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "This isn't the 1940s. Silly Ripull!",
 	},
+	
+	["SomaticMizuSan"] = {
+		["Id"] = 430947886,
+		["Name"] = "SomaticMizuSan",
+		["Health"] = 500,
+		["Power"] = 500,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Red",
+		["Cost"] = {["Red"] = 3, ["White"] = 2},
+		["Effect"] = {
+			Name = "Stud",
+			Description = "Deal 350 damage to the opponent.",
+			["Type"] = "OnSummon",
+			["Power"] = {"Inflict",350},
+			Target = "Self",	
+		},
+		["Bio"] = "The sword, minus the smoke, actually makes good sense, and the double crossguard, whilst not as affective as two rings, are logical and safe. Minus points for the two sword-scabbards on the back, though. 7/10 - Sword Critic",
+	},
 }
 
 return module
