@@ -10152,7 +10152,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},			
 
 	["EfanPlayz"] = {
-		["Id"] = 411808556,
+		["Id"] = 430935929,
 		["Name"] = "EfanPlayz",
 		["Health"] = 800,
 		["Power"] = 0,
@@ -11468,6 +11468,25 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Ally",	
 		},
 		["Bio"] = "The moon is the only flesh I need.",
+	},
+	
+	["Sibs-ArtV"] = {
+		["Id"] = 427571863,
+		["Name"] = "Sibs",
+		["Health"] = 1400,
+		["Power"] = 1400,
+		["Rarity"] = "Legendary",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Red",
+		["Cost"] = {["Neutral"] = 3,["Red"] = 5,},
+		["Effect"] = {
+			Name = "Stud",
+			Description = "When this card attacks, your opponent gains 800 life.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Inflict",-500}},
+			Target = "Ally",	
+		},
+		["Bio"] = "Snitches get Stitches.",
 	},
 }
 
