@@ -11516,7 +11516,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Red",
-		["Cost"] = {["Red"] = 3, ["White"] = 2},
+		["Cost"] = {["Red"] = 3, ["Neutral"] = 2},
 		["Effect"] = {
 			Name = "Stud",
 			Description = "Deal 350 damage to the opponent.",
@@ -11525,6 +11525,18 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Self",	
 		},
 		["Bio"] = "The sword, minus the smoke, actually makes good sense, and the double crossguard, whilst not as affective as two rings, are logical and safe. Minus points for the two sword-scabbards on the back, though. 7/10 - Sword Critic",
+	},
+	
+	["Clockwork"] = {
+		["Id"] = 430947886,
+		["Name"] = "Clockwork",
+		["Health"] = 800,
+		["Power"] = 800,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Red",
+		["Cost"] = {["Red"] = 2, ["White"] = 2, ["Green"] = 2, ["Blue"] = 2, ["Yellow"] = 2},
+		["Bio"] = "Thought, Dominion, Revel, Vitality, Null. With these icon types combined, I AM CAPTAIN EARL GREY!!!!",
 	},
 }
 
