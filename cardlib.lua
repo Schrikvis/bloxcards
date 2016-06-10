@@ -11548,7 +11548,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Red",
 		["Token"] = true,
-		["Cost"] = {["Neutral"] = 5,]},
+		["Cost"] = {["Neutral"] = 5,},
 		["Effect"] = {
 			Name = "Stud",
 			Description = "At the end of your turn, add a random rare to your hand. This card can't generate icons.",
@@ -11558,7 +11558,27 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "Imagine the stalker dying to an army of NICCOs spawned from this. 50k bloxbux to the first person who manages to do it.",
 	},
+	
+	["Ultra Doregriffon"] = {
+		["Id"] = 430949000,
+		["Name"] = "Ultra Doregriffon",
+		["Health"] = 1000,
+		["Power"] = 0,
+		["Rarity"] = "Legendary",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Yellow",
+		["Cost"] = {["Yellow"] = 4, ["Neutral"] = 4,},
+		["Effect"] = {
+			Name = "Stud",
+			Description = "Each time this card attacks, it becomes a 1000/600.",
+			["Type"] = "OnAttack",
+			["Power"] = {"Weaken",9999},{"Strengthen",6000},{"Damage",9999},{"Heal",600},
+			Target = "Self",	
+		},
+		["Bio"] = "Doregriffons don't understand humans. If they didn't want to be eaten, why are they made out of meat and treasure?",
+	},
 }
+
 
 
 return module
