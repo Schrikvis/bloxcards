@@ -11577,6 +11577,25 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "Doregriffons don't understand humans. If they didn't want to be eaten, why are they made out of meat and treasure?",
 	},
+	
+	["Unwanted Trend"] = {
+		["Id"] = 430949734,
+		["Name"] = "Unwanted Trend",
+		["Health"] = 0,
+		["Power"] = 0,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Red",
+		["Cost"] = {["Red"] = 1, ["Neutral"] = 2,},
+		["Effect"] = {
+			Name = "Stud",
+			Description = "Deal 10,000 damage to yourself.",
+			["Type"] = "OnSummon",
+			["Power"] = {"Cost",-10000},
+			Target = "Ally",	
+		},
+		["Bio"] = "Hey, at least the name is true to itself.",
+	},
 }
 
 
