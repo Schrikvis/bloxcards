@@ -11596,6 +11596,25 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "Hey, at least the name is true to itself.",
 	},
+	
+	["Brycen27"] = {
+		["Id"] = 430951311,
+		["Name"] = "Brycen27",
+		["Health"] = 500,
+		["Power"] = 500,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Green",
+		["Cost"] = {["Green"] = 3,},
+		["Effect"] = {
+			Name = "Render",
+			Description = "Target a fighter. Gain a white icon.",
+			["Type"] = "OnSummon",
+			["Power"] = {"White", 1},
+			Target = "Single",
+		},
+		["Bio"] = "Sponsored by the archnemesis of blender, Brice7 (TM)",
+	},
 }
 
 
