@@ -11482,11 +11482,30 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Stud",
 			Description = "When this card attacks, your opponent gains 800 life.",
-			["Type"] = "OnEnd",
-			["Power"] = {{"Inflict",-500}},
+			["Type"] = "OnAttack",
+			["Power"] = {{"Inflict",-800}},
 			Target = "Ally",	
 		},
 		["Bio"] = "Snitches get Stitches.",
+	},
+	
+	["RipullV2"] = {
+		["Id"] = 427571863,
+		["Name"] = "Ripull",
+		["Health"] = 500,
+		["Power"] = 500,
+		["Rarity"] = "Legendary",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Green",
+		["Cost"] = {["Green"] = 4,},
+		["Effect"] = {
+			Name = "Stud",
+			Description = "Gain 500 life and 3 white icons. This card can attack when summoned.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Cost",-500},{"Charge",030},{"Neutral",3}},
+			Target = "Ally",	
+		},
+		["Bio"] = "This isn't the 1940s. Silly Ripull!",
 	},
 }
 
