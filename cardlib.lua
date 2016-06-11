@@ -11654,6 +11654,25 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "Skarra only slays the unworthy dragons. Her breed of scale is superior and more durable.",
 	},
+	
+	["Miked"] = {
+		["Id"] = 430954478,
+		["Name"] = "Miked",
+		["Health"] = 800,
+		["Power"] = 350,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Yellow",
+		["Cost"] = {["Yellow"] = 1, ["Neutral"] = 3,},
+		["Effect"] = {
+			Name = "Render",
+			Description = "Deal 200 damage to target fighter if it's blue.",
+			["Type"] = "OnSummon",
+			["Power"] = {"Damage",200,"ColorBlue"},
+			Target = "Single",
+		},
+		["Bio"] = "Made seven years ago, Miked's paintball still Puts Loleris to shame... What's that? Loleris isn't blue? Miked puts so much shame on Loleris that he makes him blue.",
+	},
 }
 
 
