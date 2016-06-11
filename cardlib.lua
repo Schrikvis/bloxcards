@@ -10409,7 +10409,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Lock",1},{"Add","Targeting Blip"}},
 			Target = "Target",
 		},
-		["Bio"] = "Peel.",
+		["Bio"] = "Step 1: Capture Myrmiredon. Step 2: Force him into a basement. Step 3: Force him to make Clashblox great again. Step 4: Rub it in PirateX12'a face.",
 	},			
 
 	["Card Hoarder"] = {
@@ -11749,6 +11749,64 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Ally",
 		},
 		["Bio"] = "Shiny glowing neon green crystals never hurt anyone.",
+	},
+	
+	["Samksoon321"] = {
+		["Id"] = 430957052,
+		["Name"] = "Samksoon321",
+		["Health"] = 250,
+		["Power"] = 450,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Green",
+		["Cost"] = {["Green"] = 3,},
+		["Effect"] = {
+			Name = "Render",
+			Description = "Increase the health of all allied fighters by 200.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Heal",200}},
+			Target = "Ally",
+		},
+		["Bio"] = "Shiny glowing neon green crystals never hurt anyone.",
+	},
+	
+	["ST Leader Keeler1"] = {
+		["Id"] = 430959096,
+		["Name"] = "ST Leader Keeler1",
+		["Health"] = 750,
+		["Power"] = 350,
+		["Rarity"] = "Legendary",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Green",
+		["Token"] = true,
+		["Cost"] = {["Green"] = 5,},
+		["Effect"] = {
+			Name = "Render",
+			Description = "Put two ST Grunts into play. Keeler can't generate icons, but the grunts can.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Add","ST Grunt"},{"Add","ST Grunt"}},
+			Target = "Ally",
+		},
+		["Bio"] = "Clashblox is dead, its clans falling. Welp. Onto the Nexx CCG, I suppose.",
+	},
+	
+	["ST Grunt"] = {
+		["Id"] = 430959595,
+		["Name"] = "ST Grunt",
+		["Health"] = 300,
+		["Power"] = 300,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Green",
+		["Cost"] = {["Neutral"] = 2,},
+		["Effect"] = {
+			Name = "Render",
+			Description = "At the end of your turn, gain 200 life.",
+			["Type"] = "OnEnd",
+			["Power"] = {"Heal",200},
+			Target = "Ally",
+		},
+		["Bio"] = "What? I can't cast 59 ceramic potions in a single huge chain? Worst game 2016 Nexx master race",
 	},
 }
 
