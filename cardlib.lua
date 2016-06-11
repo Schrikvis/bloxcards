@@ -11615,6 +11615,25 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "Sponsored by the archnemesis of blender, Brice7 (TM)",
 	},
+	
+	["Doneyes"] = {
+		["Id"] = 430954478,
+		["Name"] = "Doneyes",
+		["Health"] = 600,
+		["Power"] = 600,
+		["Rarity"] = "Epic",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Red",
+		["Cost"] = {["Red"] = 6, ["Neutral"] = 1,},
+		["Effect"] = {
+			Name = "Render",
+			Description = "At the end of your turn, deal 200 damage to all other allied fighters and the opponent, then draw a card.",
+			["Type"] = "OnEnd",
+			["Power"] = {"Damage",200,},{"Heal",200,"Self"},{"Inflict",200},{"Draw",1},
+			Target = "Ally",
+		},
+		["Bio"] = "Creator of bloodfest. Many eyes will be worn.",
+	},
 }
 
 
