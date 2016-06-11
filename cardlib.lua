@@ -11803,10 +11803,29 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Render",
 			Description = "At the end of your turn, gain 200 life.",
 			["Type"] = "OnEnd",
-			["Power"] = {"Heal",200},
+			["Power"] = {{"Heal",200}},
 			Target = "Ally",
 		},
 		["Bio"] = "What? I can't cast 59 ceramic potions in a single huge chain? Worst game 2016 Nexx master race",
+	},
+	
+	["NearMiss TFW"] = {
+		["Id"] = 430959595,
+		["Name"] = "NearMiss TFW",
+		["Health"] = 1000,
+		["Power"] = 0,
+		["Rarity"] = "Legendary",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Yellow",
+		["Cost"] = {["Neutral"] = 5, ["Blue"] = 1, ["Yellow"] =1,},
+		["Effect"] = {
+			Name = "Render",
+			Description = "When this card attacks and destroys a fighter, draw two cards.",
+			["Type"] = "OnDestroy",
+			["Power"] = {{"Draw",2}},
+			Target = "Ally",
+		},
+		["Bio"] = "Creator of Battle of the ele- WRONG GAME WRONG BOTE DON'T KILL ME AAA - Sword Critic",
 	},
 }
 
