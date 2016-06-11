@@ -11810,7 +11810,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["NearMiss TFW"] = {
-		["Id"] = 430959595,
+		["Id"] = 430960671,
 		["Name"] = "NearMiss TFW",
 		["Health"] = 1000,
 		["Power"] = 0,
@@ -11829,7 +11829,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Paraselene Sage"] = {
-		["Id"] = 430959595,
+		["Id"] = 430961863,
 		["Name"] = "Paraselene Sage",
 		["Health"] = 700,
 		["Power"] = 0,
@@ -11845,6 +11845,46 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Ally",
 		},
 		["Bio"] = "Telamon? Gates? 2x2, the alpha brick itself? Imbeciles compared to the moob.",
+	},
+	
+	
+	["Luckymaxer"] = {
+		["Id"] = 430969246,
+		["Name"] = "Luckymaxer",
+		["Health"] = 800,
+		["Power"] = 800,
+		["Rarity"] = "Epic",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Blue",
+		["Cost"] = {["Blue"] = 3, ["Yellow"] - 3,},
+		["Effect"] = {
+			Name = "Render",
+			Description = "Add four Mechanical Spiders to your hand.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Add","Mechanical Spider"},{"Add","Mechanical Spider"},{"Add","Mechanical Spider"},{"Add","Mechanical Spider"}},
+			Target = "Ally",
+		},
+		["Bio"] = "He makes gear. He is why plungers are more powerful than elegant, elvish swords.",
+	},
+	
+	["Mechanical Spider"] = {
+		["Id"] = 430969246,
+		["Name"] = "Mechanical Spider",
+		["Health"] = 200,
+		["Power"] = 200,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Blue",
+		["Token"] = true,
+		["Cost"] = {["Blue" = 0,},
+		["Effect"] = {
+			Name = "Render",
+			Description = "This card can't generate icons.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Heal",0}},
+			Target = "Ally",
+		},
+		["Bio"] = "Thematic snake.",
 	},
 }
 
