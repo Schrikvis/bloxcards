@@ -11673,8 +11673,25 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "Made seven years ago, Miked's paintball still Puts Loleris to shame... What's that? Loleris isn't blue? Miked puts so much shame on Loleris that he makes him blue.",
 	},
+	
+	["KurosakiDXenos"] = {
+		["Id"] = 431102054,
+		["Name"] = "KurosakiDXenos",
+		["Health"] = 700,
+		["Power"] = 700,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Red",
+		["Cost"] = {["Red"] = 5,},
+		["Effect"] = {
+			Name = "Render",
+			Description = "When this card destroys another, unlock it.",
+			["Type"] = "OnDestroy",
+			["Power"] = {"Unlock",9999},
+			Target = "Self",
+		},
+		["Bio"] = "Excellent katana, excellent sword stance, this is how it's done. 10/10 - Sword Critic",
+	},
 }
-
-
 
 return module
