@@ -11473,7 +11473,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Sibs-ArtV"] = {
 		["Id"] = 427571863,
 		["Name"] = "Sibs",
-		["Health"] = 1400,
+		["Health"] = 1200,
 		["Power"] = 1400,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Punch1",
@@ -11921,7 +11921,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Mzh3000"] = {
 		["Id"] = 430969574,
 		["Name"] = "Mzh3000",
-		["Health"] = 750,
+		["Health"] = 250,
 		["Power"] = 1500,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Punch1",
@@ -11936,6 +11936,26 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Opponent",
 		},
 		["Bio"] = "Creator of the original ultimate power. Here to destroy all copiers and token spammers. ",
+	},
+	
+	["APlayerOfGames"] = {
+		["Id"] = 430969574,
+		["Name"] = "APlayerOfGames",
+		["Health"] = 750,
+		["Power"] = 750,
+		["Rarity"] = "Rare",
+		["AttackEffect"] = "Punch1",
+		["Requirement"] = {true,3,false}
+		["Color"] = "Yellow",
+		["Cost"] = {["Yellow"] = 3, ["Neutral"] = 2,},
+		["Effect"] = {
+			Name = "Conflux",
+			Description = "Can only be cast if your opponent has 3 or fewer fighters in play.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Damage",0}},
+			Target = "Opponent",
+		},
+		["Bio"] = "We are all this card.",
 	},
 }
 
