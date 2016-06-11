@@ -11851,8 +11851,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Luckymaxer"] = {
 		["Id"] = 430969246,
 		["Name"] = "Luckymaxer",
-		["Health"] = 800,
-		["Power"] = 800,
+		["Health"] = 200,
+		["Power"] = 200,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Blue",
@@ -11897,6 +11897,45 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "White",
 		["Cost"] = {["Neutral" = 5},
 		["Bio"] = "Flying ships. Please, wingman, it's in your NAME! I will pay you to make flying airship galleons. Yes.",
+	},
+	
+	["SaxoAttack"] = {
+		["Id"] = 430969574,
+		["Name"] = "SaxoAttack",
+		["Health"] = 800,
+		["Power"] = 800,
+		["Rarity"] = "Epic",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "White",
+		["Cost"] = {["Neutral" = 8},
+		["Effect"] = {
+			Name = "Conflux",
+			Description = "Shuffle a red card, a blue card, a green card, a yellow card, and a white card into your deck, then draw two cards.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"DeckAdd","AntiSammeh"},{"DeckAdd","Dun_Goof"},{"DeckAdd","Leitris"}{"DeckAdd","Glaciem Mage"},{"DeckAdd","SonozakiRaito"}},
+			Target = "Ally",
+		},
+		["Bio"] = "I would criticise the spear, but then he'd come out to get me. ;-;/10 - Sword Critic",
+	},
+	
+	["Mzh3000"] = {
+		["Id"] = 430969574,
+		["Name"] = "Mzh3000",
+		["Health"] = 750,
+		["Power"] = 1500,
+		["Rarity"] = "Legendary",
+		["AttackEffect"] = "Punch1",
+		["Requirement"] = {false,7,true}
+		["Color"] = "Yellow",
+		["Cost"] = {["Blue"] = 1,["Yellow"] = 2,["Red"] = 1,["Neutral"] = 5,},
+		["Effect"] = {
+			Name = "Conflux",
+			Description = "Can only be cast if your opponent has 7 or more fighters in play. Destroy all enemy fighters. Mzh3000 can attack when summoned.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Damage",9999},{"Charge",030}},
+			Target = "Opponent",
+		},
+		["Bio"] = "Creator of the original ultimate power. Here to destroy all copiers and token spammers. ",
 	},
 }
 
