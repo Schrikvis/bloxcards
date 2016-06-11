@@ -11958,8 +11958,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Punch1",
 		["Requirement"] = {true,3,false},
-		["Color"] = "Yellow",
-		["Cost"] = {["Yellow"] = 3, ["Neutral"] = 2,},
+		["Color"] = "Green",
+		["Cost"] = {["Green"] = 3, ["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Conflux",
 			Description = "Can only be cast if your opponent has 3 or fewer fighters in play.",
