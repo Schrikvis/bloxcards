@@ -11724,12 +11724,31 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 7, ["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Render",
-			Description = "At the end of your turn, fill your board with ClanAtlas, then set the attack and health of all allied fighters to 200. This card can't generate icons.",
+			Description = "At the end of your turn, fill your board with ClanAtlas, then set the attack and health of all allied fighters to 150. This card can't generate icons.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Damage",9999},{"Heal",200},{"Weaken"},9999},{"Strengthen",200}},
+			["Power"] = {{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Damage",9999},{"Heal",150},{"Weaken"},9999},{"Strengthen",150}},
 			Target = "Ally",
 		},
 		["Bio"] = "Good decks play AoE.",
+	},
+	
+	["Samksoon321"] = {
+		["Id"] = 430957052,
+		["Name"] = "Samksoon321",
+		["Health"] = 250,
+		["Power"] = 450,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Green",
+		["Cost"] = {["Green"] = 3,},
+		["Effect"] = {
+			Name = "Render",
+			Description = "Increase the health of all allied fighters by 200.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Heal",200}},
+			Target = "Ally",
+		},
+		["Bio"] = "Shiny glowing neon green crystals never hurt anyone.",
 	},
 }
 
