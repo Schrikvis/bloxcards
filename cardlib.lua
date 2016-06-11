@@ -11886,6 +11886,18 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "Thematic snake.",
 	},
+	
+	["Wingman8"] = {
+		["Id"] = 430969574,
+		["Name"] = "Wingman8",
+		["Health"] = 850,
+		["Power"] = 850,
+		["Rarity"] = "Rare",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "White",
+		["Cost"] = {["Neutral" = 5},
+		["Bio"] = "Flying ships. Please, wingman, it's in your NAME! I will pay you to make flying airship galleons. Yes.",
+	},
 }
 
 return module
