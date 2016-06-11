@@ -11665,7 +11665,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Yellow",
 		["Cost"] = {["Yellow"] = 1, ["Neutral"] = 3,},
 		["Effect"] = {
-			Name = "Render",
+			Name = "Splat",
 			Description = "Deal 200 damage to target fighter if it's blue.",
 			["Type"] = "OnSummon",
 			["Power"] = {"Damage",200,"ColorBlue"},
@@ -11691,6 +11691,25 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Self",
 		},
 		["Bio"] = "Excellent katana, excellent sword stance, this is how it's done. 10/10 - Sword Critic",
+	},
+	
+	["Brymmy"] = {
+		["Id"] = 430957052,
+		["Name"] = "Brymmy",
+		["Health"] = 800,
+		["Power"] = 0,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Green",
+		["Cost"] = {["Green"] = 4, ["Neutral"] = 1,},
+		["Effect"] = {
+			Name = "Render",
+			Description = "Whenever this card is targeted, set your green icons to 3.",
+			["Type"] = "OnTarget",
+			["Power"] = {"SetGreen",3},
+			Target = "Ally",
+		},
+		["Bio"] = "Brymm2Blaze, the mighty warrior who must escape poor naming by relentless anime fangirls!",
 	},
 }
 
