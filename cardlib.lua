@@ -11603,7 +11603,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Stud",
 			Description = "Deal 10,000 damage to yourself.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Cost",-10000}},
+			["Power"] = {{"Cost",10000}},
 			Target = "Ally",	
 		},
 		["Bio"] = "Hey, at least the name is true to itself.",
@@ -11742,25 +11742,6 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Ally",
 		},
 		["Bio"] = "Good decks play AoE.",
-	},
-	
-	["Samksoon321"] = {
-		["Id"] = 430957052,
-		["Name"] = "Samksoon321",
-		["Health"] = 250,
-		["Power"] = 450,
-		["Rarity"] = "Uncommon",
-		["AttackEffect"] = "Punch1",
-		["Color"] = "Green",
-		["Cost"] = {["Green"] = 3,},
-		["Effect"] = {
-			Name = "Render",
-			Description = "Increase the health of all allied fighters by 200.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Heal",200}},
-			Target = "Ally",
-		},
-		["Bio"] = "Shiny glowing neon green crystals never hurt anyone.",
 	},
 	
 	["Samksoon321"] = {
