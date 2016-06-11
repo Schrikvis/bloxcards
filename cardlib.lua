@@ -11817,7 +11817,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Yellow",
-		["Cost"] = {["Neutral"] = 5, ["Blue"] = 1, ["Yellow"] =1,},
+		["Cost"] = {["Neutral"] = 5, ["Blue"] = 1, ["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "Render",
 			Description = "When this card attacks and destroys a fighter, draw two cards.",
@@ -11826,6 +11826,25 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Ally",
 		},
 		["Bio"] = "Creator of Battle of the ele- WRONG GAME WRONG BOTE DON'T KILL ME AAA - Sword Critic",
+	},
+	
+	["Paraselene Sage"] = {
+		["Id"] = 430959595,
+		["Name"] = "Paraselene Sage",
+		["Health"] = 700,
+		["Power"] = 0,
+		["Rarity"] = "Legendary",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Red",
+		["Cost"] = {["Blue"] = 3,},
+		["Effect"] = {
+			Name = "Render",
+			Description = "At the end of your turn, add a random Lunar Action to your hand.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"RandomAdd","Lunar"}},
+			Target = "Ally",
+		},
+		["Bio"] = "Telamon? Gates? 2x2, the alpha brick itself? Imbeciles compared to the moob.",
 	},
 }
 
