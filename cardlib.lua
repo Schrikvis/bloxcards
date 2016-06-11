@@ -11634,6 +11634,26 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "Creator of bloodfest. Many eyes will be worn.",
 	},
+	
+	["Skarra the DragonSlayer"] = {
+		["Id"] = 430954478,
+		["Name"] = "Skarra the DragonSlayer",
+		["Health"] = 700,
+		["Power"] = 700,
+		["Rarity"] = "Legendary",
+		["Archetype"] = "Dragon",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Red",
+		["Cost"] = {["Red"] = 6, ["Neutral"] = 1,},
+		["Effect"] = {
+			Name = "Render",
+			Description = "Destroy all Dragons, then add a random acolyte, a random epic dragon, and a dragon's charm to your hand.",
+			["Type"] = "OnEnd",
+			["Power"] = {"Damage",9999},{"Heal",700,"Self"},{"RandomAdd","UncommonDragon"},{"RandomAdd","EpicDragon"},{"Add","Dragon's Charm"},
+			Target = "Archetype",
+		},
+		["Bio"] = "Skarra only slays the unworthy dragons. Her breed of scale is superior and more durable.",
+	},
 }
 
 
