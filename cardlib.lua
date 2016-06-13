@@ -11493,6 +11493,25 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "The moon is the only flesh I need.",
 	},
 	
+	["Sibs"] = {
+		["Id"] = 430934563,
+		["Name"] = "Sibs",
+		["Health"] = 1200,
+		["Power"] = 1400,
+		["Rarity"] = "Legendary",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Red",
+		["Cost"] = {["Neutral"] = 3,["Red"] = 5,},
+		["Effect"] = {
+			Name = "Stud",
+			Description = "When this card attacks, your opponent gains 800 life.",
+			["Type"] = "OnAttack",
+			["Power"] = {{"Inflict",-800}},
+			Target = "Ally",	
+		},
+		["Bio"] = "Snitches get Stitches.",
+	},
+	
 	["Sibs-ArtV"] = {
 		["Id"] = 427571863,
 		["Name"] = "Sibs",
@@ -12058,6 +12077,25 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Single",
 		},
 		["Bio"] = "The President of ROGO magazine. I didn't know robotic pogo sticks was such an interesting topic.",
+	},
+	
+	["Western Bandit"] = {
+		["Id"] = 430971138,
+		["Name"] = "Western Bandit",
+		["Health"] = 250,
+		["Power"] = 250,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Yellow",
+		["Cost"] = {["Yellow"] = 1,},
+		["Effect"] = {
+			Name = "Capture",
+			Description = "Add a random Yellow Common to your hand.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"RandomAdd","RandomYellow"}},
+			Target = "Single",
+		},
+		["Bio"] = "",
 	},
 }
 
