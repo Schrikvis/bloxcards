@@ -9739,13 +9739,12 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 5,},
 		["Effect"] = {
 			Name = "Quick Shot",
-			Description = "Reduce the attack of one fighter by 200.",
+			Description = "Draw 4 cards, then shuffle 6 Nightmares into your deck.",
 			["Type"] = "OnSummon",
-			["Power"] = "Weaken",
+			["Power"] = {{"Draw",4},{"DeckAdd","Nightmare"},{"DeckAdd","Nightmare"},{"DeckAdd","Nightmare"},{"DeckAdd","Nightmare"},{"DeckAdd","Nightmare"},{"DeckAdd","Nightmare"}}
 			Target = "Single",
-			Increase = 200
 		},
-		["Bio"] = "I just like games.",
+		["Bio"] = "Creator of Arcane Adventures. Hates the blood element.",
 	},			
 	
 	["CALL OF DOGE!?!"] = {
