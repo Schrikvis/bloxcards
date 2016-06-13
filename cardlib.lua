@@ -10717,7 +10717,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {"Charge",0^0}},
 			Target = "Ally",
 		},
-		["Bio"] = "Pick a card, any card.",
+		["Bio"] = "This card used to also draw two cards. Isn't having someone who can actually balance the game do the cards fun? :D",
 	},	
 	
 	["HatHelper"] = {
@@ -11843,7 +11843,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Render",
-			Description = "At the end of your turn, add a random Lunar Action to your hand.",
+			Description = "At the end of your turn, add a random Blue or Red Action to your hand.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"RandomAdd","Lunar"}},
 			Target = "Ally",
@@ -12000,7 +12000,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			
 			Target = "Archetype",
 		},
-		["Bio"] = "There are four cards this works on, but noobs are summoned by two others. Only three of the six affected cards are good. Have fun~",
+		["Bio"] = "There are four cards this works on, but noobs are summoned by an additional two others. Only three of the six affected cards are good. Have fun~",
 	},
 	
 	["NerfModder"] = {
@@ -12020,6 +12020,44 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Archetype",
 		},
 		["Bio"] = "Even the charistmatic and unbreakable can fall to depression.",
+	},
+	
+	["Beam Sword"] = {
+		["Id"] = 430971445,
+		["Name"] = "Beam Sword",
+		["Health"] = 0,
+		["Power"] = 0,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Red",
+		["Cost"] = {["Red"] = 2, ["Neutral"] = 2,},
+		["Effect"] = {
+			Name = "Double Life",
+			Description = "Deal 200 damage to target fighter. It gains 200 power.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Strenghten",200},{{"Damage",200}},
+			Target = "Single",
+		},
+		["Bio"] = "Now with 100% less crossguard.",
+	},
+	
+	["TigerCode"] = {
+		["Id"] = 430971138,
+		["Name"] = "TigerCode",
+		["Health"] = 600,
+		["Power"] = 450,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Green",
+		["Cost"] = {["Green"] = 4, ["Neutral"] = 1,},
+		["Effect"] = {
+			Name = "Double Life",
+			Description = "If target fighter is red, it gains 500 power. If it's not red, it loses 500 power.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Strenghten",500,"ColorRed"},{{"Weaken",500,"NotColorRed"}},
+			Target = "Single",
+		},
+		["Bio"] = "The President of ROGO magazine. I didn't know robotic pogo sticks was such an interesting topic.",
 	},
 }
 
