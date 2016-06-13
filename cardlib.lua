@@ -49,6 +49,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Freeze",
 		["Color"] = "Blue",
+		["Archetype"] = "Noob",
 		["Cost"] = {["Neutral"] = 2,["Blue"] = 5,},
 		["Effect"] = {
 			Name = "King's Freeze",
@@ -1049,6 +1050,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Common",
 		["AttackEffect"] = "PunchKick",
 		["Color"] = "Yellow",
+		["Archetype"] = "Noob",
 		["Token"] = true,
 		["Cost"] = {["Neutral"] = 2,},
 		["Effect"] = {
@@ -9122,6 +9124,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 400,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Lightning",
+		["Archetype"] = "Noob",
 		["Token"] = true,
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 7,["Blue"] = 3,},
@@ -9857,11 +9860,19 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 384012650,
 		["Name"] = "Bling Noob",
 		["Health"] = 800,
-		["Power"] = 50,
+		["Power"] = 400,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Lightning",
+		["Archetype"] = "Noob",
 		["Color"] = "Yellow",
 		["Cost"] = {["Neutral"] = 1,["Yellow"] = 3,},
+		["Effect"] = {
+			Name = "Sudden Death",
+			Description = [[Lose 500 bloxbux.]],
+			["Type"] = "OnEnd",
+			["Power"] = {{"Red",0}},
+			Target = "Ally",
+		},
 		["Bio"] = "Too bad TIX are be gone, he'll literally have nothing of value by then.",
 	},			
 
@@ -10014,6 +10025,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 500,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Freeze",
+		["Archetype"] = "Noob",
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 2,["Blue"] = 5,},
 		["Effect"] = {
@@ -11224,7 +11236,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",9999}, {"Cost",450}},
 			Target = "Random",
-		["Bio"] = "Just don't tell Arceusdon she has his effect. .3.",
+		["Bio"] = "Just don't tell Arceusdon she stole this affect. .3.",
 	},	
 	
 	["wi_sh"] = {
@@ -11949,6 +11961,45 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Opponent",
 		},
 		["Bio"] = "We are all this card.",
+	},
+	
+	["Febrezer"] = {
+		["Id"] = 432713811,
+		["Name"] = "Febrezer",
+		["Health"] = 600,
+		["Power"] = 600,
+		["Rarity"] = "Rare",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Neutral",
+		["Cost"] = {["Blue"] = 3, ["Neutral"] = 2,},
+		["Effect"] = {
+			Name = "Foecal Incontinence",
+			Description = "Add Noob Repellent to your hand.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Add","Febreze: Anti Noob Spray"}},
+			Target = "Opponent",
+		},
+		["Bio"] = "A living golem made out of pure copyrighted scent. The freshness will cause the weak to cough up their lungs.",
+	},
+	
+	["Febreze: Anti Noob Spray"] = {
+		["Id"] = 432713926,
+		["Name"] = "Febreze: Anti Noob Spray",
+		["Health"] = 0,
+		["Power"] = 0,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Neutral",
+		["Archetype"] = "Noob",
+		["Cost"] = {["Yellow"] = 2,},
+		["Effect"] = {
+			Name = "Foecal Incontinence",
+			Description = "Destroy all Noobs.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Damage",9999}},
+			Target = "Archetype",
+		},
+		["Bio"] = "There are four cards this works on, but noobs are summoned by two others. Only three of the six affected cards are good. Have fun~",
 	},
 }
 
