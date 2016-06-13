@@ -9739,7 +9739,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Quick Shot",
 			Description = "Draw 4 cards, then shuffle 6 Nightmares into your deck.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Draw",4},{"DeckAdd","Nightmare"},{"DeckAdd","Nightmare"},{"DeckAdd","Nightmare"},{"DeckAdd","Nightmare"},{"DeckAdd","Nightmare"},{"DeckAdd","Nightmare"}}
+			["Power"] = {{"Draw",4},{"DeckAdd","Nightmare"},{"DeckAdd","Nightmare"},{"DeckAdd","Nightmare"},{"DeckAdd","Nightmare"},{"DeckAdd","Nightmare"},{"DeckAdd","Nightmare"}},
 			Target = "Single",
 		},
 		["Bio"] = "Creator of Arcane Adventures. Hates the blood element.",
@@ -10241,9 +10241,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Yellow"] = 7,},
 		["Effect"] = {
 			Name = "Disaster",
-			Description = "Deal 9999 damage to the any fighter with your signature ONE PUNCH!",
+			Description = "Destroy target fighter if it's blue.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",9999}},
+			["Power"] = {{"Damage",9999,"ColorBlue"}},
 			Target = "Single",
 			Increase = 1,
 		},
@@ -10962,6 +10962,14 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 7,},
+		["Effect"] = {
+			Name = "Disaster",
+			Description = "Destroy target fighter if it's Yellow.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Damage",9999,"ColorYellow"}},
+			Target = "Single",
+			Increase = 1,
+		},
 		["Bio"] = "Just likes the show so much he's named it too.",
 	},		
 	
@@ -12104,7 +12112,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 700,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Punch1",
-		["Archetype"] = "Meeboid"
+		["Archetype"] = "Meeboid",
 		["Color"] = "Green",
 		["WeakenImmune"] = true,
 		["Cost"] = {["Red"] = 3,},
@@ -12125,7 +12133,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 0,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Punch1",
-		["Archetype"] = "Noob"
+		["Archetype"] = "Noob",
 		["Color"] = "Yellow",
 		["Cost"] = {["Neutral"] = 2,},
 		["Effect"] = {
@@ -12158,8 +12166,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Erik.Cassel"] = {
-		["Id"] = 432872162,
-		["Name"] = "Coordinated Attack",
+		["Id"] = 433134106,
+		["Name"] = "Erik.Cassel",
 		["Health"] = 850,
 		["Power"] = 200,
 		["Rarity"] = "Legendary",
@@ -12174,6 +12182,25 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Ally",
 		},
 		["Bio"] = "One of the founders of Roblox. Died in 2013 after a battle with cancer.",
+	},
+	
+	["Kill Script"] = {
+		["Id"] = 430942217,
+		["Name"] = "Kill Script",
+		["Health"] = 0,
+		["Power"] = 0,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Green",
+		["Cost"] = {["Neutral"] = 2,},
+		["Effect"] = {
+			Name = "Capture",
+			Description = "Deal 200 damage to target fighter.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Damage",200}},
+			Target = "Self",
+		},
+		["Bio"] = "Script is a kind and gentle person. Please do not kill Script.",
 	},
 }
 
