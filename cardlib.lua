@@ -6079,9 +6079,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 1,["Blue"] = 1,["Yellow"] = 1,["Red"] = 1,["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Build Up",
-			Description = "Destroy all your fighters. Summon Smaug, Glaurung and Aer Draco.",
+			Description = "Summon Smaug, Glaurung and Aer Draco, then lock all allied cards for two turns.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",9999},{"Summon","Glaurung"},{"Summon","Smaug"},{"Summon","Aer Draco"}},
+			["Power"] = {{"Summon","Glaurung"},{"Summon","Smaug"},{"Summon","Aer Draco"},{"Lock",2}},
 			Target = "Ally",
 		},
 		["Bio"] = "The dragons of the Horde are the same ones that conquered the earth thousands of years ago.",
@@ -12130,7 +12130,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Capture",
-			Description = "At the end of your turn, set this card's health to 500."
+			Description = "At the end of your turn, set this card's health to 500.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Damage",9999},{"Heal",500}},
 			Target = "Ally",
@@ -12149,12 +12149,31 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Capture",
-			Description = "Summon 3 Sparks."
+			Description = "Summon 3 Sparks.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Damage",9999},{"Heal",500}},
+			["Power"] = {{"Summon","Spark"},{"Summon","Spark"},{"Summon","Spark"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Dear Dun_Goof: THINK THROUGH YOUR CARDS BEFORE YOU MAKE THEM. Signed: The rest of the dev team",
+	},
+	
+	["Erik.Cassel"] = {
+		["Id"] = 432872162,
+		["Name"] = "Coordinated Attack",
+		["Health"] = 850,
+		["Power"] = 200,
+		["Rarity"] = "Legendary",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Blue",
+		["Cost"] = {["Neutral"] = 1, ["Blue"] = 3, ["Green"] = 1,},
+		["Effect"] = {
+			Name = "Capture",
+			Description = "When you target this fighter, add a Kill Script to your hand.",
+			["Type"] = "OnTarget",
+			["Power"] = {{"Add","Kill Script"}},
+			Target = "Ally",
+		},
+		["Bio"] = "One of the founders of Roblox. Died in 2013 after a battle with cancer.",
 	},
 }
 
