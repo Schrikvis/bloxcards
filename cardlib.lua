@@ -9544,22 +9544,20 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["puffytenter12"] = {
 		["Id"] = 384008546,
 		["Name"] = "puffytenter12",
-		["Health"] = 700,
-		["Power"] = 700,
+		["Health"] = 400,
+		["Power"] = 750,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 2,["Blue"] = 3,},
-		["WeakenImmune"] = true,
 		["Effect"] = {
 			Name = "Stud",
-			Description = [[This card is immune to cards that reduce its Attack or Health. At the end of your turn, destroy and unlock all allied fighters.]],
+			Description = [[At the end of your turn, unlock Puffy.]],
 			["Type"] = "OnEnd",
-			["Power"] = {{"Unlock",999},{"Damage",9999}},
-			Target = "Ally",	
-			Increase = 0,
+			["Power"] = {{"Unlock",999}},
+			Target = "Self",	
 		},
-		["Bio"] = "SO PUFFY!!",
+		["Bio"] = "Used to make green decks cry. Now just makes everything cry.",
 	},		
 	
 	["ScriptMasTime"] = {
@@ -12019,7 +12017,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			
 			Target = "Archetype",
 		},
-		["Bio"] = "There are four cards this works on, but noobs are summoned by an additional two others. Only three of the six affected cards are good. Have fun~",
+		["Bio"] = "There are five cards this works on, but noobs are summoned by an additional two others. Only three of the seven affected cards are good. Have fun~",
 	},
 	
 	["NerfModder"] = {
@@ -12121,8 +12119,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Training Dummy"] = {
-		["Id"] = 430962612,
-		["Name"] = "Meeboid Champion",
+		["Id"] = 430936561,
+		["Name"] = "Training Dummy",
 		["Health"] = 500,
 		["Power"] = 0,
 		["Rarity"] = "Common",
@@ -12138,6 +12136,25 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Ally",
 		},
 		["Bio"] = "How does a dummy regenerate all its fluff anyway?",
+	},
+	
+	["Coordinated Attack"] = {
+		["Id"] = 432872162,
+		["Name"] = "Coordinated Attack",
+		["Health"] = 0,
+		["Power"] = 0,
+		["Rarity"] = "Rare",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Yellow",
+		["Cost"] = {["Neutral"] = 2,},
+		["Effect"] = {
+			Name = "Capture",
+			Description = "Summon 3 Sparks."
+			["Type"] = "OnEnd",
+			["Power"] = {{"Damage",9999},{"Heal",500}},
+			Target = "Ally",
+		},
+		["Bio"] = "Dear Dun_Goof: THINK THROUGH YOUR CARDS BEFORE YOU MAKE THEM. Signed: The rest of the dev team",
 	},
 }
 
