@@ -11593,9 +11593,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 4, ["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Each time this card attacks, it becomes a 1000/600.",
+			Description = "Each time this card attacks, it becomes a 600/600.",
 			["Type"] = "OnAttack",
-			["Power"] = {{"Weaken",9999},{"Strengthen",600},{"Damage",9999},{"Heal",1000}},
+			["Power"] = {{"Weaken",9999},{"Strengthen",600},{"Damage",9999},{"Heal",600}},
 			Target = "Self",	
 		},
 		["Bio"] = "Doregriffons don't understand humans. If they didn't want to be eaten, why are they made out of meat and treasure?",
@@ -11848,11 +11848,12 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"RandomAdd","Lunar"}},
 			Target = "Ally",
 		},
-		["Bio"] = "Telamon? Gates? 2x2, the alpha brick itself? Imbeciles compared to the moob.",
+		["Bio"] = "Telamon? Gates? 2x2, the alpha brick itself? Imbeciles compared to the moon.",
 	},
 	
 	
 	["Luckymaxer"] = {
+	
 		["Id"] = 430969246,
 		["Name"] = "Luckymaxer",
 		["Health"] = 200,
@@ -12013,9 +12014,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 5,},
 		["Effect"] = {
 			Name = "Double Life",
-			Description = "At the end of your turn, give all allied fighters 200 power and lose 900 life. This card is immune to cards that reduce its power or health.",
+			Description = "At the end of your turn, give all allied fighters 200 power and lose 1000 life. This card is immune to cards that reduce its power or health.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Strenghten",200},{"Cost",900}},
+			["Power"] = {{"Strenghten",200},{"Cost",1000}},
 			Target = "Archetype",
 		},
 		["Bio"] = "Even the charistmatic and unbreakable can fall to depression.",
