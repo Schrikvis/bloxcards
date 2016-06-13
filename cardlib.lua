@@ -7817,7 +7817,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 2, ["Red"] = 2},
 		["Effect"] = {
 			Name = "Render",
-			Description = "When you target this card, add a Lunar Action to your hand. It gains 100 health.",
+			Description = "When you target this card, add a Red or Blue Action to your hand and give it 100 health.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"RandomAdd","Lunar"},{"Heal",100}},
 			Target = "Self",
@@ -11934,12 +11934,12 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 1,["Yellow"] = 2,["Red"] = 1,["Neutral"] = 5,},
 		["Effect"] = {
 			Name = "Conflux",
-			Description = "Can only be cast if your opponent has 7 or more fighters in play. Destroy all enemy fighters. Mzh3000 can attack when summoned.",
+			Description = "Can only be cast if your opponent has 7 or 8 fighters in play. Destroy all enemy fighters. Mzh3000 can attack when summoned.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",9999},{"Charge",030}},
 			Target = "Opponent",
 		},
-		["Bio"] = "Creator of the original ultimate power. Here to destroy all copiers and token spammers. ",
+		["Bio"] = "Creator of the original ultimate power. Here to destroy all copiers and token spammers.",
 	},
 	
 	["APlayerOfGames"] = {
@@ -11996,9 +11996,29 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Description = "Destroy all Noobs.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",9999}},
+			
 			Target = "Archetype",
 		},
 		["Bio"] = "There are four cards this works on, but noobs are summoned by two others. Only three of the six affected cards are good. Have fun~",
+	},
+	
+	["NerfModder"] = {
+		["Id"] = 432804095,
+		["Name"] = "NerfModder",
+		["Health"] = 1000,
+		["Power"] = 0,
+		["Rarity"] = "Epic",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Red",
+		["Cost"] = {["Red"] = 5,},
+		["Effect"] = {
+			Name = "Double Life",
+			Description = "At the end of your turn, give all allied fighters 200 power and lose 900 life. This card is immune to cards that reduce its power or health.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Strenghten",200},{"Cost",900}},
+			Target = "Archetype",
+		},
+		["Bio"] = "Even the charistmatic and unbreakable can fall to depression.",
 	},
 }
 
