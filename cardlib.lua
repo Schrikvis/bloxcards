@@ -11531,9 +11531,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Red"] = 5,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "When this card attacks, your opponent gains 800 life.",
+			Description = "When this card attacks, your opponent gains 400 life.",
 			["Type"] = "OnAttack",
-			["Power"] = {{"Inflict",-800}},
+			["Power"] = {{"Inflict",-400}},
 			Target = "Ally",	
 		},
 		["Bio"] = "Snitches get Stitches.",
