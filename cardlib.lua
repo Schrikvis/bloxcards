@@ -2483,7 +2483,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Eye Spy"] = {
-		["Id"] = 429398024,
+		["Id"] = 429398023,
 		["Name"] = "Eye Spy",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -6386,7 +6386,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Arceusdon"] = {
-		["Id"] = 421947024,
+		["Id"] = 421947023,
 		["Name"] = "Arceusdon",
 		["Health"] = 700,
 		["Power"] = 700,
@@ -6718,7 +6718,6 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Type"] = "OnSummon",
 			["Power"] = {{"Lock",1},{"Strengthen",100},{"Swap",030}},
 			Target = "Opponent",
-			Increase = 1,
 		["Bio"] = "A fan of Toontown and Dodgeball, Alexnewtron can literally script any fun game out of thin air.",
 		}
 	},
@@ -8126,7 +8125,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Myrmiredon"] = {
-		["Id"] = 421944618,
+		["Id"] = 421944617,
 		["Name"] = "Myrmiredon",
 		["Health"] = 500,
 		["Power"] = 500,
@@ -10088,9 +10087,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 1,["Green"] = 3,},
 		["Effect"] = {
 			Name = "All is fair in love and duels.",
-			Description = "Set the amount of colored icons both players have to 1, and white icons to 5. Deal 500 damage to both players.",
+			Description = "All players lose 2 of each coloured icon. This effect can make people have negative icons.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Yellow",-2},{"Blue",-2},{"Red",-2},{"Green",-2},{"SetWhite",5}},
+			["Power"] = {{"Yellow",-2},{"Blue",-2},{"Red",-2},{"Green",-2}},
 			Target = "All",
 		},
 		["Bio"] = "A weird, odd, and eccentric girl who has an odd obsession with squids and lovecraftian horror. She is also a huge supporter towards Developers of Roblox.",
@@ -10127,9 +10126,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 5,},
 		["Effect"] = {
 			Name = "GO!",
-			Description = "Summon 2 noobs. Increase the power of all allied fighters by 200.",
+			Description = "Increase the power of all allied fighters by 200.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Summon","Noob"},{"Summon","Noob"},{"Strengthen",200}},
+			["Power"] = {{"Strengthen",200}},
 			Target = "Ally",
 		},
 		["Bio"] = "'Vortex Security respects her, please do not insult her. Yes, IcyTea learned it the hard way.'",
@@ -10174,7 +10173,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},			
 
 	["EfanPlayz"] = {
-		["Id"] = 430935929,
+		["Id"] = 411808556,
 		["Name"] = "EfanPlayz",
 		["Health"] = 800,
 		["Power"] = 0,
@@ -10648,6 +10647,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Blue",
+		["Archetype"] = "Police",
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 2,},
 		["Effect"] = {
 			Name = "ASSEMBLE.",
@@ -11238,10 +11238,10 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 4,},
 		["Effect"] = {
 			Name = "Spanish Roulette",
-			Description = "When played, destroy a random fighter. You lose 450 life.",
+			Description = "Gain 2 blue icons.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",9999}, {"Cost",450}},
-			Target = "Random",
+			["Power"] = {{"Blue",2}},
+			Target = "Self",
 		["Bio"] = "Just don't tell Arceusdon she stole this affect. .3.",
 		}
 	},	
@@ -11300,11 +11300,11 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Add","Targeting Blip"},{"Add","Targeting Blip"},{"Add","Targeting Blip"},{"Add","Targeting Blip"},{"Add","Targeting Blip"},{"Add","Targeting Blip"},{"Add","Targeting Blip"},{"Add","Targeting Blip"}},
 			Target = "Ally",
 		},
-		["Bio"] = "Even Pokémon can make good games.",
+		["Bio"] = "Even Pokemon can make good games.",
 	},	
 	
 	["Bad Bread"] = {
-		["Id"] = 421954166,
+		["Id"] = 421954165,
 		["Name"] = "Bad Bread",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -11322,11 +11322,11 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Targeting Blip"] = {
-		["Id"] = 421954166,
-		["Name"] = "Bad Bread",
+		["Id"] = 421954165,
+		["Name"] = "Targeting Blip",
 		["Health"] = 0,
 		["Power"] = 0,
-		["Rarity"] = "Rare",
+		["Rarity"] = "Token",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Neutral",
 		["Cost"] = {["Neutral"] = 2,},
@@ -11342,7 +11342,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Xor's Lab"] = {
-		["Id"] = 423592798,
+		["Id"] = 423592797,
 		["Name"] = "Xor's Lab",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -11363,7 +11363,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Monstrum Freezer"] = {
-		["Id"] = 423592798,
+		["Id"] = 423592797,
 		["Name"] = "Monstrum Freezer",
 		["Health"] = 800,
 		["Power"] = 800,
@@ -11382,7 +11382,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Monstrum Minotauris"] = {
-		["Id"] = 427571826,
+		["Id"] = 427571825,
 		["Name"] = "Monstrum Minotauris",
 		["Health"] = 1200,
 		["Power"] = 1200,
@@ -11401,7 +11401,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Monstrum Zombie King"] = {
-		["Id"] = 427571863,
+		["Id"] = 427571862,
 		["Name"] = "Monstrum Zombie King",
 		["Health"] = 2000,
 		["Power"] = 0,
@@ -11421,7 +11421,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Fractal"] = {
-		["Id"] = 429397956,
+		["Id"] = 429397955,
 		["Name"] = "Fractal",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -11441,13 +11441,13 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Moon Rabbit's Rage"] = {
-		["Id"] = 429396327,
+		["Id"] = 429396326,
 		["Name"] = "Moon Rabbit's Rage",
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Punch1",
-		["Color"] = "Green",
+		["Color"] = "Red",
 		["Archetype"] = "Lunar",
 		["Cost"] = {["Red"] = 2,},
 		["Effect"] = {
@@ -11462,13 +11462,13 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	
 	
 	["Crystal Snare"] = {
-		["Id"] = 429396724,
+		["Id"] = 429396723,
 		["Name"] = "Crystal Snare",
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "RARITY",
 		["AttackEffect"] = "Punch1",
-		["Color"] = "Green",
+		["Color"] = "Blue",
 		["Archetype"] = "Lunar",
 		["Cost"] = {["Blue"] = 4,},
 		["Effect"] = {
@@ -11482,13 +11482,13 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Forbidden Power"] = {
-		["Id"] = 427571863,
+		["Id"] = 429397682,
 		["Name"] = "Forbidden Power",
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Punch1",
-		["Color"] = "Green",
+		["Color"] = "Red",
 		["Archetype"] = "Lunar",
 		["Cost"] = {["Blue"] = 3,["Red"] = 3,},
 		["Effect"] = {
@@ -11500,9 +11500,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "The moon is the only flesh I need.",
 	},
-	
+
 	["Sibs"] = {
-		["Id"] = 430934563,
+		["Id"] = 431140178,
 		["Name"] = "Sibs",
 		["Health"] = 1200,
 		["Power"] = 1400,
@@ -11512,16 +11512,16 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Red"] = 5,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "When this card attacks, your opponent gains 800 life.",
+			Description = "When this card attacks, your opponent gains 400 life.",
 			["Type"] = "OnAttack",
-			["Power"] = {{"Inflict",-800}},
+			["Power"] = {{"Inflict",-400}},
 			Target = "Ally",	
 		},
 		["Bio"] = "Snitches get Stitches.",
 	},
 	
 	["Sibs-ArtV"] = {
-		["Id"] = 427571863,
+		["Id"] = 430934562,
 		["Name"] = "Sibs",
 		["Health"] = 1200,
 		["Power"] = 1400,
@@ -11531,16 +11531,16 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Red"] = 5,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "When this card attacks, your opponent gains 800 life.",
+			Description = "When this card attacks, your opponent gains 400 life.",
 			["Type"] = "OnAttack",
-			["Power"] = {{"Inflict",-800}},
+			["Power"] = {{"Inflict",-400}},
 			Target = "Ally",	
 		},
 		["Bio"] = "Snitches get Stitches.",
 	},
 	
 	["RipullV2"] = {
-		["Id"] = 427571863,
+		["Id"] = 430936062,
 		["Name"] = "Ripull",
 		["Health"] = 500,
 		["Power"] = 500,
@@ -11559,7 +11559,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["SomaticMizuSan"] = {
-		["Id"] = 430947886,
+		["Id"] = 430947885,
 		["Name"] = "SomaticMizuSan",
 		["Health"] = 500,
 		["Power"] = 500,
@@ -11578,25 +11578,25 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Clockwork"] = {
-		["Id"] = 430947886,
+		["Id"] = 430947885,
 		["Name"] = "Clockwork",
 		["Health"] = 800,
 		["Power"] = 800,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Punch1",
-		["Color"] = "Red",
+		["Color"] = "Neutral",
 		["Cost"] = {["Red"] = 2, ["Neutral"] = 2, ["Green"] = 2, ["Blue"] = 2, ["Yellow"] = 2},
 		["Bio"] = "Thought, Dominion, Revel, Vitality, Null. With these icon types combined, I AM CAPTAIN EARL GREY!!!!",
 	},
 	
 	["Calamity Box"] = {
-		["Id"] = 430947886,
+		["Id"] = 430947885,
 		["Name"] = "Calamity Box",
 		["Health"] = 1200,
 		["Power"] = 0,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Punch1",
-		["Color"] = "Red",
+		["Color"] = "Neutral",
 		["Token"] = true,
 		["Cost"] = {["Neutral"] = 5,},
 		["Effect"] = {
@@ -11610,7 +11610,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Ultra Doregriffon"] = {
-		["Id"] = 430949000,
+		["Id"] = 430948999,
 		["Name"] = "Ultra Doregriffon",
 		["Health"] = 1000,
 		["Power"] = 0,
@@ -11629,7 +11629,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Unwanted Trend"] = {
-		["Id"] = 430949734,
+		["Id"] = 430949733,
 		["Name"] = "Unwanted Trend",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -11648,7 +11648,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Brycen27"] = {
-		["Id"] = 430951311,
+		["Id"] = 430951310,
 		["Name"] = "Brycen27",
 		["Health"] = 500,
 		["Power"] = 500,
@@ -11667,7 +11667,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Doneyes"] = {
-		["Id"] = 430954478,
+		["Id"] = 430954477,
 		["Name"] = "Doneyes",
 		["Health"] = 600,
 		["Power"] = 600,
@@ -11686,7 +11686,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Skarra the DragonSlayer"] = {
-		["Id"] = 430954478,
+		["Id"] = 430954477,
 		["Name"] = "Skarra the DragonSlayer",
 		["Health"] = 700,
 		["Power"] = 700,
@@ -11706,7 +11706,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Miked"] = {
-		["Id"] = 430954478,
+		["Id"] = 430954477,
 		["Name"] = "Miked",
 		["Health"] = 800,
 		["Power"] = 350,
@@ -11725,7 +11725,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["KurosakiDXenos"] = {
-		["Id"] = 431102054,
+		["Id"] = 431102053,
 		["Name"] = "KurosakiDXenos",
 		["Health"] = 700,
 		["Power"] = 700,
@@ -11744,7 +11744,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Brymmy"] = {
-		["Id"] = 430957052,
+		["Id"] = 430957051,
 		["Name"] = "Brymmy",
 		["Health"] = 800,
 		["Power"] = 0,
@@ -11763,7 +11763,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["ClanAtlas"] = {
-		["Id"] = 430957986,
+		["Id"] = 430957985,
 		["Name"] = "ClanAtlas",
 		["Health"] = 150,
 		["Power"] = 150,
@@ -11783,7 +11783,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Samksoon321"] = {
-		["Id"] = 430957052,
+		["Id"] = 430957051,
 		["Name"] = "Samksoon321",
 		["Health"] = 250,
 		["Power"] = 450,
@@ -11802,7 +11802,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["ST Leader Keeler1"] = {
-		["Id"] = 430959096,
+		["Id"] = 430959095,
 		["Name"] = "ST Leader Keeler1",
 		["Health"] = 750,
 		["Power"] = 350,
@@ -11822,7 +11822,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["ST Grunt"] = {
-		["Id"] = 430959595,
+		["Id"] = 430959594,
 		["Name"] = "ST Grunt",
 		["Health"] = 300,
 		["Power"] = 300,
@@ -11841,7 +11841,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["NearMiss TFW"] = {
-		["Id"] = 430960671,
+		["Id"] = 430960670,
 		["Name"] = "NearMiss TFW",
 		["Health"] = 1000,
 		["Power"] = 0,
@@ -11860,7 +11860,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Paraselene Sage"] = {
-		["Id"] = 430961863,
+		["Id"] = 430961862,
 		["Name"] = "Paraselene Sage",
 		["Health"] = 700,
 		["Power"] = 0,
@@ -11880,7 +11880,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	
 	["Luckymaxer"] = {
 	
-		["Id"] = 430969246,
+		["Id"] = 430969245,
 		["Name"] = "Luckymaxer",
 		["Health"] = 200,
 		["Power"] = 200,
@@ -11899,7 +11899,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Mechanical Spider"] = {
-		["Id"] = 430969246,
+		["Id"] = 430969244,
 		["Name"] = "Mechanical Spider",
 		["Health"] = 200,
 		["Power"] = 200,
@@ -11919,7 +11919,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Wingman8"] = {
-		["Id"] = 430969574,
+		["Id"] = 430969573,
 		["Name"] = "Wingman8",
 		["Health"] = 850,
 		["Power"] = 850,
@@ -11931,7 +11931,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["SaxoAttack"] = {
-		["Id"] = 430969574,
+		["Id"] = 430969573,
 		["Name"] = "SaxoAttack",
 		["Health"] = 800,
 		["Power"] = 800,
@@ -11950,7 +11950,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Mzh3000"] = {
-		["Id"] = 430969574,
+		["Id"] = 430969573,
 		["Name"] = "Mzh3000",
 		["Health"] = 250,
 		["Power"] = 1500,
@@ -11970,7 +11970,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["APlayerOfGames"] = {
-		["Id"] = 430969574,
+		["Id"] = 430969573,
 		["Name"] = "APlayerOfGames",
 		["Health"] = 750,
 		["Power"] = 750,
@@ -11990,7 +11990,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Febrezer"] = {
-		["Id"] = 432713811,
+		["Id"] = 432713810,
 		["Name"] = "Febrezer",
 		["Health"] = 600,
 		["Power"] = 600,
@@ -12009,7 +12009,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Febreze: Anti Noob Spray"] = {
-		["Id"] = 432713926,
+		["Id"] = 432713925,
 		["Name"] = "Febreze: Anti Noob Spray",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -12030,7 +12030,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["NerfModder"] = {
-		["Id"] = 432804095,
+		["Id"] = 432804094,
 		["Name"] = "NerfModder",
 		["Health"] = 1000,
 		["Power"] = 0,
@@ -12050,7 +12050,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Beam Sword"] = {
-		["Id"] = 430971445,
+		["Id"] = 430971443,
 		["Name"] = "Beam Sword",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -12069,7 +12069,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["TigerCode"] = {
-		["Id"] = 430971138,
+		["Id"] = 430971137,
 		["Name"] = "TigerCode",
 		["Health"] = 600,
 		["Power"] = 450,
@@ -12088,7 +12088,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Western Bandit"] = {
-		["Id"] = 430971138,
+		["Id"] = 430971137,
 		["Name"] = "Western Bandit",
 		["Health"] = 250,
 		["Power"] = 250,
@@ -12107,7 +12107,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Meeboid Champion"] = {
-		["Id"] = 430962612,
+		["Id"] = 430962611,
 		["Name"] = "Meeboid Champion",
 		["Health"] = 700,
 		["Power"] = 700,
@@ -12128,7 +12128,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Training Dummy"] = {
-		["Id"] = 430936561,
+		["Id"] = 430936560,
 		["Name"] = "Training Dummy",
 		["Health"] = 500,
 		["Power"] = 0,
@@ -12148,13 +12148,13 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Coordinated Attack"] = {
-		["Id"] = 432872162,
+		["Id"] = 432872161,
 		["Name"] = "Coordinated Attack",
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Punch1",
-		["Color"] = "Yellow",
+		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Capture",
@@ -12167,7 +12167,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Erik.Cassel"] = {
-		["Id"] = 433134106,
+		["Id"] = 433134105,
 		["Name"] = "Erik.Cassel",
 		["Health"] = 850,
 		["Power"] = 200,
@@ -12186,7 +12186,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Kill Script"] = {
-		["Id"] = 430942217,
+		["Id"] = 430942216,
 		["Name"] = "Kill Script",
 		["Health"] = 0,
 		["Power"] = 0,
