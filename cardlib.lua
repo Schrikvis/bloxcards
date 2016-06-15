@@ -9593,7 +9593,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Description = [[Target fighter's stats become 500/500.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",9999},{"Strengthen",500},{"Swap",030},{"Weaken",9999},{"Strengthen",500}},
-			Target = "Target",	
+			Target = "Single",	
 		},
 		["Bio"] = "Hiding behind a wall with a paintball gun.",
 	},		
@@ -9601,13 +9601,20 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Duel Axe Monster"] = {
 		["Id"] = 384009300,
 		["Name"] = "Duel Axe Monster",
-		["Health"] = 300,
+		["Health"] = 800,
 		["Power"] = 800,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Red",
 		["Cost"] = {["Red"] = 3,["Green"] = 1,},
-		["Bio"] = "Watch out for this little monster!",
+		["Effect"] = {
+			Name = "Suversion",
+			Description = [[When this card attacks, your opponent gains 500 life.]],
+			["Type"] = "OnAttack",
+			["Power"] = {{"Inflict",-500}},
+			Target = "Self,	
+		},
+		["Bio"] = "He duels you with dual axes for dual dueling.",
 	},		
 	
 	["DrTrayBlox"] = {
@@ -10370,7 +10377,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Yellow"] = 1,["Red"] = 2,},
 		["Effect"] = {
 			Name = "ASSEMBLE.",
-			Description = [["Summon 4 police officers. You lose 1500 life."]],
+			Description = [[Summon 4 police officers. You lose 1500 life.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Cost",1500},{"Summon","Police Officer"},{"Summon","Police Officer"},{"Summon","Police Officer"},{"Summon","Police Officer"}},
 			Target = "Ally",
@@ -11504,20 +11511,20 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Sibs"] = {
 		["Id"] = 431140178,
 		["Name"] = "Sibs",
-		["Health"] = 1200,
-		["Power"] = 1400,
+		["Health"] = 700,
+		["Power"] = 900,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 3,["Red"] = 5,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "When this card attacks, your opponent gains 400 life.",
+			Description = "Set the health of target fighter to 1000.",
 			["Type"] = "OnAttack",
-			["Power"] = {{"Inflict",-400}},
+			["Power"] = {{"Damage",9999},{"Heal",1000}},
 			Target = "Ally",	
 		},
-		["Bio"] = "Snitches get Stitches.",
+		["Bio"] = "Over a year has passed since Jayson and Sibs have got together.",
 	},
 	
 	["Sibs-ArtV"] = {
@@ -11536,7 +11543,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Inflict",-400}},
 			Target = "Ally",	
 		},
-		["Bio"] = "Snitches get Stitches.",
+		["Bio"] = "Over a year has passed since Jayson and Sibs have got together.",
 	},
 	
 	["RipullV2"] = {
@@ -12202,6 +12209,25 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Self",
 		},
 		["Bio"] = "Script is a kind and gentle person. Please do not kill Script.",
+	},
+	
+	["MUTO2014"] = {
+		["Id"] = 430947715,
+		["Name"] = "Kill Script",
+		["Health"] = 500,
+		["Power"] = 500,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Red",
+		["Cost"] = {["Neutral"] = 1, ["Blue"] = 2, ["Red"] = 2,},
+		["Effect"] = {
+			Name = "Capture",
+			Description = "Shuffle 4 Blue or Red actions into your deck.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"DeckAdd","Eye Spy"},{"DeckAdd","Moon Rabbit's Rage"},{"DeckAdd","Crystal Snare"},{"DeckAdd","Forbidden Power"}},
+			Target = "Self",
+		},
+		["Bio"] = "HEY GUYS! Costume Quest 2's just come out!",
 	},
 }
 
