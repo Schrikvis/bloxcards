@@ -12223,7 +12223,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Kill Script",
 		["Health"] = 500,
 		["Power"] = 500,
-		["Rarity"] = "Token",
+		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 1, ["Blue"] = 2, ["Red"] = 2,},
