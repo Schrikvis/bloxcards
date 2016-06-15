@@ -10174,7 +10174,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},			
 
 	["EfanPlayz"] = {
-		["Id"] = 430935929,
+		["Id"] = 411808557,
 		["Name"] = "EfanPlayz",
 		["Health"] = 800,
 		["Power"] = 0,
@@ -11300,7 +11300,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Add","Targeting Blip"},{"Add","Targeting Blip"},{"Add","Targeting Blip"},{"Add","Targeting Blip"},{"Add","Targeting Blip"},{"Add","Targeting Blip"},{"Add","Targeting Blip"},{"Add","Targeting Blip"}},
 			Target = "Ally",
 		},
-		["Bio"] = "Even Pokémon can make good games.",
+		["Bio"] = "Even Pokemon can make good games.",
 	},	
 	
 	["Bad Bread"] = {
