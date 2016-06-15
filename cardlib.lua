@@ -2483,7 +2483,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Eye Spy"] = {
-		["Id"] = 429398024,
+		["Id"] = 429398023,
 		["Name"] = "Eye Spy",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -6386,7 +6386,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Arceusdon"] = {
-		["Id"] = 421947024,
+		["Id"] = 421947023,
 		["Name"] = "Arceusdon",
 		["Health"] = 700,
 		["Power"] = 700,
@@ -8125,7 +8125,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Myrmiredon"] = {
-		["Id"] = 421944618,
+		["Id"] = 421944617,
 		["Name"] = "Myrmiredon",
 		["Health"] = 500,
 		["Power"] = 500,
@@ -10173,7 +10173,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},			
 
 	["EfanPlayz"] = {
-		["Id"] = 411808557,
+		["Id"] = 411808556,
 		["Name"] = "EfanPlayz",
 		["Health"] = 800,
 		["Power"] = 0,
