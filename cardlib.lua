@@ -3517,7 +3517,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "Scripter of Pixel Art Creator and an amazing GFX artist.",
 	},		
 		
-	["http://i.4cdn.org/g/1455391731588.jpg"] = {
+	["tintinytdj"] = {
 		["Id"] = 293490333, --285155364,
 		["Name"] = "Visleaf",
 		["Health"] = 500,
@@ -11243,6 +11243,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Damage",9999}, {"Cost",450}},
 			Target = "Random",
 		["Bio"] = "Just don't tell Arceusdon she stole this affect. .3.",
+		}
 	},	
 	
 	["wi_sh"] = {
@@ -11775,7 +11776,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Render",
 			Description = "At the end of your turn, fill your board with ClanAtlas, then set the attack and health of all allied fighters to 150. This card can't generate icons.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Damage",9999},{"Heal",150},{"Weaken"},9999},{"Strengthen",150}},
+			["Power"] = {{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Damage",9999},{"Heal",150},{"Weaken",9999},{"Strengthen",150}},
 			Target = "Ally",
 		},
 		["Bio"] = "Good decks play AoE.",
