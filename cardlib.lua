@@ -2897,7 +2897,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 5,["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Disaster",
-			Description = "Lock a fighter for 1 turn. Add 2 targeting blips to your hand.",
+			Description = "Lock all enemy fighters for 1 turn. Add 2 targeting blips to your hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Lock",1},{"Add","Targeting BLip"},{"Add","Targeting BLip"}},
 			Target = "Opponent",
