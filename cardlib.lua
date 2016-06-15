@@ -10837,12 +10837,19 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["UristMcSparks"] = {
 		["Id"] = 413927726,
 		["Name"] = "UristMcSparks",
-		["Health"] = 500,
-		["Power"] = 200,
+		["Health"] = 1100,
+		["Power"] = 800,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Red",
 		["Cost"] = {["Red"] = 5,},
+		["Effect"] = {
+			Name = "SCRIPTING PARTY",
+			Description = "When this card attacks, your opponent gains 500 life.",
+			["Type"] = "OnAttack",
+			["Power"] = {{"Inflict",-500}},
+			Target = "Ally",
+		},
 		["Bio"] = "UristMcSparks is a human being, contrary to popular belief. Treat him as such.",
 	},	
 	
