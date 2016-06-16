@@ -11713,7 +11713,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Skarra the DragonSlayer"] = {
-		["Id"] = 430954477,
+		["Id"] = 431106220,
 		["Name"] = "Skarra the DragonSlayer",
 		["Health"] = 700,
 		["Power"] = 700,
@@ -11733,7 +11733,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Miked"] = {
-		["Id"] = 430954477,
+		["Id"] = 431007469,
 		["Name"] = "Miked",
 		["Health"] = 800,
 		["Power"] = 350,
@@ -12194,20 +12194,20 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Erik.Cassel"] = {
-		["Id"] = 433134105,
+		["Id"] = 433134104,
 		["Name"] = "Erik.Cassel",
 		["Health"] = 850,
 		["Power"] = 200,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Blue",
-		["Cost"] = {["Neutral"] = 1, ["Blue"] = 3, ["Green"] = 1,},
+		["Cost"] = {["Neutral"] = 1, ["Blue"] = 3, ["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "Capture",
 			Description = "When you target this fighter, add a Kill Script to your hand.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Add","Kill Script"}},
-			Target = "Ally",
+			Target = "Self",
 		},
 		["Bio"] = "One of the founders of Roblox. Died in 2013 after a battle with cancer.",
 	},
