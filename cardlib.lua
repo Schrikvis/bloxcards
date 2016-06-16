@@ -2483,7 +2483,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Eye Spy"] = {
-		["Id"] = 429398023,
+		["Id"] = 429398022,
 		["Name"] = "Eye Spy",
 		["Health"] = 0,
 		["Power"] = 0,
