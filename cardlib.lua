@@ -11529,7 +11529,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Sibs"] = {
-		["Id"] = 431140178,
+		["Id"] = 431140177,
 		["Name"] = "Sibs",
 		["Health"] = 700,
 		["Power"] = 900,
@@ -11550,17 +11550,17 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Sibs-ArtV"] = {
 		["Id"] = 430934562,
 		["Name"] = "Sibs",
-		["Health"] = 1200,
-		["Power"] = 1400,
+		["Health"] = 700,
+		["Power"] = 900,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 3,["Red"] = 5,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "When this card attacks, your opponent gains 400 life.",
+			Description = "Set the health of target fighter to 1000.",
 			["Type"] = "OnAttack",
-			["Power"] = {{"Inflict",-400}},
+			["Power"] = {{"Damage",9999},{"Heal",1000}},
 			Target = "Ally",	
 		},
 		["Bio"] = "Over a year has passed since Jayson and Sibs have got together.",
@@ -11958,7 +11958,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["SaxoAttack"] = {
-		["Id"] = 431225863,
+		["Id"] = 431225862,
 		["Name"] = "SaxoAttack",
 		["Health"] = 800,
 		["Power"] = 800,
@@ -11971,7 +11971,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Description = "Shuffle a red card, a blue card, a green card, a yellow card, and a white card into your deck, then draw two cards.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"DeckAdd","AntiSammeh"},{"DeckAdd","Dun_Goof"},{"DeckAdd","Leitris"},{"DeckAdd","Glaciem Mage"},{"DeckAdd","SonozakiRaito"},{"Draw",2}},
-			Target = "Ally",
+			Target = "Self",
 		},
 		["Bio"] = "I would criticise the spear, but then he'd come out to get me. ;-;/10 - Sword Critic",
 	},
