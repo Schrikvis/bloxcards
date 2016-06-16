@@ -6276,7 +6276,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 304573513,
 		["Name"] = "MegaSmiley",
 		["Health"] = 1000,
-		["Power"] = 750,
+		["Power"] = 550,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Slash",
 		["Color"] = "Neutral",
@@ -6336,7 +6336,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Chiefjustus"] = {
 		["Id"] = 315996632,
 		["Name"] = "Chiefjustus",
-		["Health"] = 800,
+		["Health"] = 600,
 		["Power"] = 1000,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Thunder",
@@ -6344,9 +6344,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Red"] = 4,},
 		["Effect"] = {
 			Name = "Master Blast",
-			Description = [[Both players Red icons are set to exactly 4.]],
+			Description = [[Both players Red icons are set to exactly 4. You lose all your white icons.]],
 			["Type"] = "OnSummon",
-			["Power"] = "SetRed",
+			["Power"] = {"SetRed",4}{"SetNeutral",0,"Self"},
 			Target = "All",
 			Increase = 4,
 		},
@@ -6906,7 +6906,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 2,["Blue"] = 1,["Green"] = 1,["Red"] = 1,["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Bonanza!",
-			Description = [[When you target this card, add an icon of every colour to your hand.]],
+			Description = [[When you target this card, Generate an icon of every colour.]],
 			["Type"] = "OnTarget",
 			["Power"] = {{"Blue",1},{"Green",1},{"White",1},{"Yellow",1},{"Red",1}},
 			Target = "Ally",
@@ -9994,8 +9994,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Hoshpup"] = {
 		["Id"] = 411802783,
 		["Name"] = "Hoshpup",
-		["Health"] = 1000,
-		["Power"] = 1000,
+		["Health"] = 1250,
+		["Power"] = 1250,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Red",
@@ -11343,7 +11343,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Neutral",
-		["Cost"] = {["Neutral"] = 2,},
+		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Poison",
 			Description = "Can't be Discarded. Is used to target fighters and trigger effects",
@@ -11754,7 +11754,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Unlock",9999}},
 			Target = "Self",
 		},
-		["Bio"] = "Excellent katana, excellent sword stance, this is how it's done. 10/10 - Sword Critic",
+		["Bio"] = "Coming in from Xenoverse, we have Xenos! A strong controller of the shadows! He's the first elemental to become a soul reaper! Also known as KurosakiDXenos2!",
 	},
 	
 	["Brymmy"] = {
