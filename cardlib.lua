@@ -11498,7 +11498,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	
 	
 	["Crystal Snare"] = {
-		["Id"] = 429396723,
+		["Id"] = 429396722,
 		["Name"] = "Crystal Snare",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -11510,7 +11510,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Stud",
 			Description = "Lock a fighter for six turns.",
-			["Type"] = "OnEnd",
+			["Type"] = "OnSummon",
 			["Power"] = {{"Lock",6}},
 			Target = "Single",	
 		},
@@ -11530,7 +11530,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Stud",
 			Description = "Destroy all allied fighters. Generate 4 blue icons, 4 red icons, draw two cards, gain 500 life, and put a nightmare into the opponent's hand.",
-			["Type"] = "OnEnd",
+			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",9999},{"Blue",4},{"Red",4},{"Draw",2},{"Cost",-500},{"Add","Nightmare","Opponent"}},
 			Target = "Ally",
 		},
