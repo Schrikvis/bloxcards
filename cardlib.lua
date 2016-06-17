@@ -5299,7 +5299,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Type"] = "OnSummon",
 			["Power"] = "Unlock",
 			Target = "Single",
-			Increase = 9999,
+			Increase = 9999,\
 		},
 		["Bio"] = "Best friends with 13Jayson, they even work well together!",
 	},
@@ -8767,11 +8767,12 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["ChickenduckbirdV2"] = {
 		["Id"] = 362315238,
 		["Name"] = "ChickenDuckBird",
-		["Health"] = 400,
-		["Power"] = 400,
+		["Health"] = 100,
+		["Power"] = 100,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Yellow",
+		["Archetype"] = "Shedletsky",
 		["Cost"] = {["Neutral"] = 3,["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Assimilate",
