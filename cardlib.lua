@@ -11831,8 +11831,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["ST Leader Keeler1"] = {
 		["Id"] = 430959095,
 		["Name"] = "ST Leader Keeler1",
-		["Health"] = 750,
-		["Power"] = 350,
+		["Health"] = 500,
+		["Power"] = 300,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Green",
@@ -11842,7 +11842,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Render",
 			Description = "Put two ST Grunts into play. Keeler can't generate icons, but the grunts can.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Add","ST Grunt"},{"Add","ST Grunt"}},
+			["Power"] = {{"Summon","ST Grunt"},{"Summon","ST Grunt"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Clashblox is dead, its clans falling. Welp. Onto the Nexx CCG, I suppose.",
@@ -11906,7 +11906,6 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Luckymaxer"] = {
-	
 		["Id"] = 430969245,
 		["Name"] = "Luckymaxer",
 		["Health"] = 200,
@@ -11926,7 +11925,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Mechanical Spider"] = {
-		["Id"] = 430969244,
+		["Id"] = 430969370,
 		["Name"] = "Mechanical Spider",
 		["Health"] = 200,
 		["Power"] = 200,
