@@ -12076,7 +12076,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Beam Sword"] = {
-		["Id"] = 430971443,
+		["Id"] = 430971444,
 		["Name"] = "Beam Sword",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -12086,9 +12086,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 2, ["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Double Life",
-			Description = "Deal 200 damage to target fighter. It gains 200 power.",
+			Description = "Deal 300 damage to target fighter. It gains 300 power.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Strenghten",200},{"Damage",200}},
+			["Power"] = {{"Strenghten",300},{"Damage",300}},
 			Target = "Single",
 		},
 		["Bio"] = "Now with 100% less crossguard.",
