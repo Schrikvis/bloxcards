@@ -1797,7 +1797,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Stud",
 			Description = "Enters play locked for two turns to deal with his existential crisis!",
 			["Type"] = "OnSummon",
-			["Power"] = {{{"Lock",2,}},
+			["Power"] = {{"Lock",2,}},
 			Target = "Self",
 		},
 		["Bio"] = "He shines bright in the 8-bit world with his laser gun! Pew!",
@@ -5285,7 +5285,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["AVote"] = {
-		["Id"] = 424683823,
+		["Id"] = 424683822,
 		["Name"] = "AVote",
 		["Health"] = 600,
 		["Power"] = 250,
@@ -8767,11 +8767,12 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["ChickenduckbirdV2"] = {
 		["Id"] = 362315238,
 		["Name"] = "ChickenDuckBird",
-		["Health"] = 400,
-		["Power"] = 400,
+		["Health"] = 100,
+		["Power"] = 100,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Yellow",
+		["Archetype"] = "Shedletsky",
 		["Cost"] = {["Neutral"] = 3,["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Assimilate",
@@ -11476,7 +11477,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Moon Rabbit's Rage"] = {
-		["Id"] = 429396326,
+		["Id"] = 429396325,
 		["Name"] = "Moon Rabbit's Rage",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -11567,9 +11568,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Stud",
 			Description = "Set the health of target fighter to 1000.",
-			["Type"] = "OnAttack",
+			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",9999},{"Heal",1000}},
-			Target = "Ally",	
+			Target = "Single",	
 		},
 		["Bio"] = "Over a year has passed since Jayson and Sibs have got together.",
 	},
@@ -11613,7 +11614,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Clockwork"] = {
-		["Id"] = 430947885,
+		["Id"] = 430946949,
 		["Name"] = "Clockwork",
 		["Health"] = 800,
 		["Power"] = 800,
@@ -11625,7 +11626,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Calamity Box"] = {
-		["Id"] = 430947885,
+		["Id"] = 430948410,
 		["Name"] = "Calamity Box",
 		["Health"] = 1200,
 		["Power"] = 0,
