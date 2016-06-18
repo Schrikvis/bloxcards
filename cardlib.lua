@@ -9817,6 +9817,25 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "R15 Update might be scary for some, but this guy doesn't think that's the case.",
 	},	
 
+	["Aife"] = {
+		["Id"] = 435895197,
+		["Name"] = "Aife",
+		["Health"] = 1250,
+		["Power"] = 700,
+		["Rarity"] = "Legendary",
+		["AttackEffect"] = "Lightning",
+		["Color"] = "Red",
+		["Cost"] = {["Neutral"] = 4,["Red"] = 7,},
+		["Effect"] = {
+			Name = "Power Up",
+			Description = [[Grant 1 fighter 350 health and 350 power. Then draw a card.]],
+			["Type"] = "OnSummon",
+			["Power"] = {{"Draw",1},{"Heal",350},{"Strengthen",350}},
+			Target = "Single",
+		},
+		["Bio"] = "Aife's secretly been assigned to target anyone for some dosh!",
+	},		
+	
 	["Aife-ArtV"] = {
 		["Id"] = 384011227,
 		["Name"] = "Aife",
