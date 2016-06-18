@@ -4696,21 +4696,20 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Youngtan"] = {
 		["Id"] = 294319357,
 		["Name"] = "Youngtan",
-		["Health"] = 600,
-		["Power"] = 0,
+		["Health"] = 300,
+		["Power"] = 400,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Yellow",
 		["Cost"] = {["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Overgrown",
-			Description = "At the end of your turn, summon another Combine Garrison.",
+			Description = "Youngtan can attack the turn it's summoned. When played, add Youngtan to your opponent's hand.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Summon","Combine Garrison"}},
-			Target = "Archetype",
-			Increase = "Combine Garrison"
+			["Power"] = {{"Add","Youngtan"},{"Charge",030}},
+			Target = "Opponent",
 		},
-		["Bio"] = "Two swords! Easy!",
+		["Bio"] = "One sword for trust. One sword for betrayal.",
 	},	
 	
 	["Blockerwiz"] = {
@@ -12091,9 +12090,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 5,},
 		["Effect"] = {
 			Name = "Double Life",
-			Description = "At the end of your turn, give all allied fighters 200 power and lose 1000 life. This card is immune to cards that reduce its power or health.",
+			Description = "At the end of your turn, give all allied fighters 200 power and lose 900 life. This card is immune to effects that reduce its power or health.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Strengthen",200},{"Cost",1000}},
+			["Power"] = {{"Strengthen",200},{"Cost",900}},
 			Target = "Ally",
 		},
 		["Bio"] = "Even the charistmatic and unbreakable can fall to depression.",
@@ -12169,7 +12168,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 3,},
 		["Effect"] = {
 			Name = "Capture",
-			Description = "This card is immune to its power or health being lowered. At the end of each of your turns, generate a red icon and destroy all allied fighters.",
+			Description = "This card is immune to effects that lower its power or health. At the end of each of your turns, generate a red icon and destroy all allied fighters.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Red","1"},{"Damage",9999}},
 			Target = "Ally",
