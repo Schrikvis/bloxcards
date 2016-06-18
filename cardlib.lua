@@ -1797,7 +1797,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Stud",
 			Description = "Enters play locked for two turns to deal with his existential crisis!",
 			["Type"] = "OnSummon",
-			["Power"] = {{{"Lock",2,}},
+			["Power"] = {{"Lock",2,}},
 			Target = "Self",
 		},
 		["Bio"] = "He shines bright in the 8-bit world with his laser gun! Pew!",
@@ -5299,7 +5299,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Type"] = "OnSummon",
 			["Power"] = "Unlock",
 			Target = "Single",
-			Increase = 9999,\
+			Increase = 9999,
 		},
 		["Bio"] = "Best friends with 13Jayson, they even work well together!",
 	},
