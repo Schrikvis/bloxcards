@@ -2494,10 +2494,10 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 1,},
 		["Effect"] = {
 			Name = "Nerve Wrecker",
-			Description = "Lower the Attack of all fighter by 100. Draw a card.",
+			Description = "Lower the power of all enemy fighters by 100. Draw a card.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",100,}, {"Draw",1,"Ally"}},
-			Target = "All",
+			Target = "Opponent",
 		},
 		["Bio"] = "I spy with my giant floating eye, something about to die.",
 	},
@@ -4702,6 +4702,14 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Yellow",
 		["Cost"] = {["Neutral"] = 2,},
+		["Effect"] = {
+			Name = "Overgrown",
+			Description = "At the end of your turn, summon another Combine Garrison.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Summon","Combine Garrison"}},
+			Target = "Archetype",
+			Increase = "Combine Garrison"
+		},
 		["Bio"] = "Two swords! Easy!",
 	},	
 	
@@ -11733,12 +11741,12 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 6, ["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Render",
-			Description = "Destroy all Dragons, then add a random acolyte, a random epic dragon, and a dragon's charm to your hand.",
+			Description = "At the end of your turn, deal 100 damage to all enemy fighters and the opponent.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Damage",9999},{"Heal",700,"Self"},{"RandomAdd","UncommonDragon"},{"RandomAdd","EpicDragon"},{"Add","Dragon's Charm"}},
-			Target = "Archetype",
+			["Power"] = {{"Damage",100},{"Inflict",100}},
+			Target = "Opponent",
 		},
-		["Bio"] = "Skarra only slays the unworthy dragons. Her breed of scale is superior and more durable.",
+		["Bio"] = "Skarra is actually the Dragon's Layer. He's a lair of eggs. Yes.",
 	},
 	
 	["Miked"] = {
@@ -12133,12 +12141,12 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "Capture",
-			Description = "Add a random Yellow Common to your hand.",
+			Description = "Lower the power of target fighter by 100.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"RandomAdd","CommonYellow"}},
+			["Power"] = {{"Weaken",100}},
 			Target = "Single",
 		},
-		["Bio"] = "RIP PEEPSTERS 6102-6102",
+		["Bio"] = "",
 	},
 	
 	["Meeboid Champion"] = {
@@ -12177,7 +12185,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Description = "At the end of your turn, set this card's health to 500.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Damage",9999},{"Heal",500}},
-			Target = "Ally",
+			Target = "Self",
 		},
 		["Bio"] = "How does a dummy regenerate all its fluff anyway?",
 	},
