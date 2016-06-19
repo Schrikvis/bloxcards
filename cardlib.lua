@@ -177,7 +177,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Green",
 		["Cost"] = {["Green"] = 3,},
 		["Effect"] = {
-			Name = "Build Up",
+			Name = "Bog Down",
 			Description = "Reduce the attack of one fighter by 600 and summon a Meebling.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",600},{"Summon","Meebling"}},
@@ -8529,7 +8529,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Sudden Death",
 			Description = [[At the end of your turns, swap the stats of all fighters.]],
-			["Type"] = "TurnEnd",
+			["Type"] = "OnEnd",
 			["Power"] = {{"Swap",10}},
 			Target = "All",
 		},
@@ -11278,9 +11278,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 		
 	["Imaginz00"] = {
-		["Id"] = 427435196,
+		["Id"] = 427435194,
 		["Name"] = "Imaginz00",
-		["Health"] = 200,
+		["Health"] = 1000,
 		["Power"] = 200,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Lightning",
@@ -11288,10 +11288,10 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 10,},
 		["Effect"] = {
 			Name = "Zappow!",
-			Description = "Add three monsters to your hand.",
+			Description = "Add three monstrum cards to your hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Add","Monstrum Minotauris"},{"Add","Monstrum Zombie King"},{"Add","Monstrum Freezer"}},
-			Target = "Self",
+			Target = "Ally",
 		},
 		["Bio"] = "The creator of Monstrum is like a scornful egotist, except with bite.",
 	},
@@ -11311,7 +11311,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Type"] = "OnSummon",
 			["Power"] = {{"Blue",2}},
 			Target = "Self",
-		["Bio"] = "Just don't tell Arceusdon she stole this affect. .3.",
+		["Bio"] = "Just don't tell Arceusdon she was about to steal this affect. .3.",
 		}
 	},	
 	
@@ -11401,8 +11401,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["DiscardBlock"] = true,
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
-			Name = "Poison",
-			Description = "Can't be Discarded. Is used to target fighters and trigger effects",
+			Name = "Targeting Blip",
+			Description = "Can't be Discarded. Is used to trigger Target Effects.",
 			["Type"] = "OnSummon",
 			["Power"] = "Damage",
 			Target = "Single",
@@ -11465,7 +11465,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Description = "When this card attacks, deal 300 damage to the opponent.",
 			["Type"] = "OnAttack",
 			["Power"] = {{"Inflict",600}},
-			Target = "Angst",	
+			Target = "Ally",
 		},
 		["Bio"] = "Minotauris sad.",
 	},
@@ -11521,7 +11521,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Lunar",
 		["Cost"] = {["Red"] = 2,},
 		["Effect"] = {
-			Name = "Stud",
+			Name = "Moon Rabbit's Rage",
 			Description = "Target fighter gains 300 power.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Strengthen",300}},
@@ -11542,7 +11542,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Lunar",
 		["Cost"] = {["Blue"] = 4,},
 		["Effect"] = {
-			Name = "Stud",
+			Name = "Crystal Snare",
 			Description = "Lock a fighter for six turns.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Lock",6}},
@@ -11581,7 +11581,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 3,["Red"] = 5,},
 		["Effect"] = {
-			Name = "Stud",
+			Name = "Motivate",
 			Description = "Set the health of target fighter to 1000.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",9999},{"Heal",1000}},
@@ -11600,7 +11600,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 3,["Red"] = 5,},
 		["Effect"] = {
-			Name = "Stud",
+			Name = "Motivate",
 			Description = "Set the health of target fighter to 1000.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",9999},{"Heal",1000}},
@@ -11767,7 +11767,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 6, ["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Render",
-			Description = "At the end of your turn, deal 100 damage to all enemy fighters and the opponent.",
+			Description = "At the end of your turn, Add a random legendary dragon to your hand.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Damage",100},{"Inflict",100}},
 			Target = "Opponent",
@@ -12127,7 +12127,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Red",
 		["Cost"] = {["Red"] = 2, ["Neutral"] = 2,},
 		["Effect"] = {
-			Name = "Double Life",
+			Name = "Beam Sword",
 			Description = "Deal 300 damage to target fighter. It gains 300 power.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Strenghten",300},{"Damage",300}},
@@ -12146,10 +12146,10 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Green",
 		["Cost"] = {["Green"] = 4, ["Neutral"] = 1,},
 		["Effect"] = {
-			Name = "Double Life",
-			Description = "If target fighter is red, it gains 400 power. If it's not red, it loses 400 power.",
+			Name = "Vampire Bite",
+			Description = "Deal 200 damage to target fighter. You gain 200 life.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Strenghten",400,"ColorRed"},{"Weaken",400,"NotColorRed"}},
+			["Power"] = {{"Damage",200},{"Cost",-200}},
 			Target = "Single",
 		},
 		["Bio"] = "The President of ROGO magazine. I didn't know robotic pogo sticks was such an interesting topic.",
@@ -12171,7 +12171,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Weaken",100}},
 			Target = "Single",
 		},
-		["Bio"] = "",
+		["Bio"] = "Bands with camels.",
 	},
 	
 	["Meeboid Champion"] = {
