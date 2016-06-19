@@ -10563,7 +10563,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 2,["Red"] = 2,},
 		["Effect"] = {
 			Name = "Knockdown",
-			Description = "Can't be discarded, or generate generate icons.",
+			Description = "Can't be discarded, or generate icons.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",0}},
 			Target = "Archetype",
@@ -10583,9 +10583,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Knockdown",
-			Description = "Deal 100 damage towards the police, then unlock them.",
+			Description = "Unlock all police.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Unlock",9999},{"Damage",100}},
+			["Power"] = {{"Unlock",9999}},
 			Target = "Archetype",
 		},
 		["Bio"] = "My three main policies: Make sure aether wins war, make sure roblox takes your cash, and fire all of my employees!",
@@ -10601,7 +10601,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Yellow",
 		["Cost"] = {["Neutral"] = 2,["Yellow"] = 4,},
 		["Effect"] = {
-			Name = "Suversion",
+			Name = "Subversion",
 			Description = [[Target fighter's stats become 500/500.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",9999},{"Strengthen",500},{"Swap",030},{"Weaken",9999},{"Strengthen",500}},
@@ -10626,14 +10626,14 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 411845604,
 		["Name"] = "John Doe & Jane Doe",
 		["Health"] = 300,
-		["Power"] = 500,
+		["Power"] = 400,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Yellow",
 		["Cost"] = {["Neutral"] = 1,["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Knockdown",
-			Description = [["Summon a copy of this card."]],
+			Description = [[Summon a copy of this card.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Summon","John and Jane"}},
 			Target = "Ally",
@@ -10671,7 +10671,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Bloated",
-			Description = "Give all cards 750 Health and lock them for 1 turn.",
+			Description = "Give all fighters 750 Health and lock them for 1 turn.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Lock",1},{"Heal",750}},
 			Target = "All",
@@ -10710,7 +10710,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 4,},
 		["Effect"] = {
-			Name = "Quick Shot",
+			Name = "Demoralising Chant",
 			Description = "Reduce the attack of one fighter by 500.",
 			["Type"] = "OnSummon",
 			["Power"] = "Weaken",
@@ -11006,7 +11006,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Blue",
 		["Cost"] = {["Blue"] = 3,},
 		["Effect"] = {
-			Name = "Confusion Strike",
+			Name = "Boing",
 			Description = "Swap a fighters stats and lock it for 1 turn. This fighter can't generate icons.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Lock",1},{"Swap",030}},
@@ -11027,11 +11027,10 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 7,},
 		["Effect"] = {
 			Name = "Disaster",
-			Description = "Destroy target fighter if it's Yellow.",
+			Description = "Lock all yellow fighters for 2 turns.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",9999,"ColorYellow"}},
-			Target = "Single",
-			Increase = 1,
+			["Power"] = {{"Lock",2,"ColorYellow"}},
+			Target = "All",
 		},
 		["Bio"] = "Just likes the show so much he's named it too.",
 	},		
@@ -11086,7 +11085,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Green",
 		["Cost"] = {["Neutral"] = 2,["Green"] = 8,},
 		["Effect"] = {
-			Name = "Disaster",
+			Name = "Assassinate",
 			Description = "Deal 9999 damage to any fighter.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",9999}},
@@ -12227,7 +12226,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Capture",
 			Description = "Summon 3 Sparks.",
-			["Type"] = "OnEnd",
+			["Type"] = "OnSummon",
 			["Power"] = {{"Summon","Spark"},{"Summon","Spark"},{"Summon","Spark"}},
 			Target = "Ally",
 		},
@@ -12254,7 +12253,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Kill Script"] = {
-		["Id"] = 430942216,
+		["Id"] = 430942215,
 		["Name"] = "Kill Script",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -12263,7 +12262,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Green",
 		["Cost"] = {["Neutral"] = 2,},
 		["Effect"] = {
-			Name = "Capture",
+			Name = "Kill Script",
 			Description = "Deal 200 damage to target fighter.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",200}},
