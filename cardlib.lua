@@ -11364,10 +11364,11 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Neutral",
+		["Token"] = true,
 		["DiscardBlock"] = true,
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
-			Name = "Poison",
+			Name = "Target",
 			Description = "Can't be Discarded. Is used to target fighters and trigger effects",
 			["Type"] = "OnSummon",
 			["Power"] = "Damage",
