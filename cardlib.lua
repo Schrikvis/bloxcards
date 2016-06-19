@@ -509,7 +509,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Revival",
-			Description = "Generate a Targeting Blip.",
+			Description = "Generate a Targeting Blip. Targeting Blips are used to trigger Target Effects.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Add","Targeting Blip"}},
 			Target = "Ally",
@@ -2906,9 +2906,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 5,["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Disaster",
-			Description = "Lock all enemy fighters for 1 turn. Add 2 targeting blips to your hand.",
+			Description = "Lock all enemy fighters for 1 turn. Add 2 targeting blips to your hand. Targeting blips are used to trigger Target Effects.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Lock",1},{"Add","Targeting BLip"},{"Add","Targeting BLip"}},
+			["Power"] = {{"Lock",1},{"Add","Targeting BLip","Self"},{"Add","Targeting BLip","Self"}},
 			Target = "Opponent",
 		},
 		["Bio"] = "Most likely accident prone worker at ROBLOX. He made it there from scripting, so can you!",
@@ -9866,7 +9866,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Green"] = 4,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = [[Deal 200 damage to a fighter. Add a Targeting Blip to your hand.]],
+			Description = [[Deal 200 damage to a fighter. Add a Targeting Blip to your hand. Targeting blips are used to trigger Target Effects.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Add","Targeting Blip"},{"Damage",200}},
 			Target = "Single",
@@ -10542,9 +10542,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Red"] = 5,},
 		["Effect"] = {
 			Name = "POWER",
-			Description = "Deal 500 to both players. Both players draw 2 cards. All fighters gain 100 heath.",
+			Description = "Deal 500 to both players, and add a bowl of greed into both player's hands. All fighters gain 100 heath.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Cost",500},{"Inflict",500},{"Draw",2},{"Heal",100}},
+			["Power"] = {{"Cost",500},{"Inflict",500},{"Add","Bowl of Greed"},{"Heal",100}},
 			Target = "All",
 		},
 		["Bio"] = "IT'S TIME TO RUMBLE.",
@@ -11326,7 +11326,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "Revival",
-			Description = "When this card is targeted, generate a targeting blip.",
+			Description = "When this card is targeted, generate a targeting blip. Targeting blips are used to trigger Target Effects.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Add","Targeting Blip"}},
 			Target = "Ally",
@@ -11364,7 +11364,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 12,},
 		["Effect"] = {
 			Name = "Revival",
-			Description = "Generate 8 Targeting Blips.",
+			Description = "Generate 8 Targeting Blips. Targeting Blips are used to trigger Target Effects.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Add","Targeting Blip"},{"Add","Targeting Blip"},{"Add","Targeting Blip"},{"Add","Targeting Blip"},{"Add","Targeting Blip"},{"Add","Targeting Blip"},{"Add","Targeting Blip"},{"Add","Targeting Blip"}},
 			Target = "Ally",
@@ -11424,7 +11424,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 1,["Blue"] = 1,["Yellow"] = 1,["Red"] = 1,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Both players add a Targeting Blip to their hand at the start of their turn.",
+			Description = "Both players add a Targeting Blip to their hand at the start of their turn. Targeting Blips trigger Target Effects.",
 			["Type"] = "Field",
 			["Power"] = {{"Add","Targeting Blip"}},
 			Target = "Angst",	
