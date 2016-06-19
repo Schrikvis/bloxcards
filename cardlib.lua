@@ -11786,10 +11786,10 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 1, ["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Splat",
-			Description = "Deal 200 damage to target fighter if it's blue.",
+			Description = "Deal 200 damage to to all blue fighters..",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",200,"ColorBlue"}},
-			Target = "Single",
+			Target = "All",
 		},
 		["Bio"] = "Made seven years ago, Miked's paintball still Puts Loleris to shame... What's that? Loleris isn't blue? Miked puts so much shame on Loleris that he makes him blue.",
 	},
