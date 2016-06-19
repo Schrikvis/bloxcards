@@ -177,7 +177,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Green",
 		["Cost"] = {["Green"] = 3,},
 		["Effect"] = {
-			Name = "Bog Down",
+			Name = "Meebling Infestation",
 			Description = "Reduce the attack of one fighter by 600 and summon a Meebling.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",600},{"Summon","Meebling"}},
@@ -1413,7 +1413,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Yellow",
 		["Cost"] = {["Neutral"] = 2,["Yellow"] = 4,},
 		["Effect"] = {
-			Name = "Turning Tides",
+			Name = "Corrosive Gems",
 			Description = "Gives a fighter 300 Attack at the cost of 300 Health.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Strengthen",300},{"Damage",300}},
@@ -1643,7 +1643,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 2,["Red"] = 6,},
 		["Effect"] = {
-			Name = "OBLIDERATION",
+			Name = "OBLITERATION",
 			Description = "Deal 700 damage to a fighter and 500 to the opponent.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",700},{"Inflict",500}},
@@ -1714,7 +1714,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Description = "Add Bad Bread to your hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Add","Bad Bread"}},
-			Target = "Single",
+			Target = "Ally",
 		},
 		["Bio"] = "He is indeed, very bad at bread making.",
 
@@ -1763,7 +1763,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Green",
 		["Cost"] = {["Neutral"] = 1,["Green"] = 3,},
 		["Effect"] = {
-			Name = "Tumblrweed",
+			Name = "Arkhaiomelisidonophunikheratos",
 			Description = "Give target fighter 50 attack, then swap their stats.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Strengthen",50},{"Swap",030}},
@@ -1787,7 +1787,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["DDude"] = {
 		["Id"] = 280562544,
 		["Name"] = "DDude",
-		["Health"] = 700,
+		["Health"] = 300,
 		["Power"] = 700,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Laser",
@@ -2040,10 +2040,10 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 2,["Blue"] = 1,},
 		["Effect"] = {
-			Name = "Regiment",
-			Description = "Increase the attack and health of one fighter by 100.",
+			Name = "Encourage",
+			Description = "Increase the attack and health of one fighter by 125.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Strengthen",100},{"Heal",100}},
+			["Power"] = {{"Strengthen",125},{"Heal",125}},
 			Target = "Single",
 		},
 		["Bio"] = "He sure loves the summer heat while playing some basketball. Don't ruin his day or you'll be asking for it.",
@@ -10138,7 +10138,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Neutral",
 		["Cost"] = {["Green"] = 1,["Blue"] = 1,["Yellow"] = 1,["Red"] = 1,["Neutral"] = 6,},
 		["Effect"] = {
-			Name = "Warriors Intimidation",
+			Name = "Warrior's Intimidation",
 			Description = "Decrease the attack of all enemies by 100, decrease their health by 200, and lock them for 1 turn.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",200},{"Weaken",100},{"Lock",1}},
