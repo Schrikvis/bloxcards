@@ -9000,19 +9000,12 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["BrightEyes"] = {
 		["Id"] = 363166042,
 		["Name"] = "BrightEyes",
-		["Health"] = 1000,
+		["Health"] = 1100,
 		["Power"] = 400,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Yellow",
 		["Cost"] = {["Neutral"] = 1,["Green"] = 1,["Red"] = 1,["Blue"] = 1,["Yellow"] = 3,},
-		["Effect"] = {
-			Name = "Twist",
-			Description = [[Whenever you target this fighter, add 2 random Uncommon cards to your hand.]],
-			["Type"] = "OnTarget",
-			["Power"] = {{"RandomAdd","Uncommon"},{"RandomAdd","Uncommon"}},
-			Target = "Ally",
-		},
 		["Bio"] = "Shedletsky would be proud.",
 	},		
 	
@@ -10196,19 +10189,12 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["BrightEyes-ArtV"] = {
 		["Id"] = 411806569,
 		["Name"] = "BrightEyes",
-		["Health"] = 1000,
+		["Health"] = 1100,
 		["Power"] = 400,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Yellow",
 		["Cost"] = {["Neutral"] = 1,["Green"] = 1,["Red"] = 1,["Blue"] = 1,["Yellow"] = 3,},
-		["Effect"] = {
-			Name = "Twist",
-			Description = [[Whenever you target this fighter, add 2 random Uncommon cards to your hand.]],
-			["Type"] = "OnTarget",
-			["Power"] = {{"RandomAdd","Uncommon"},{"RandomAdd","Uncommon"}},
-			Target = "Ally",
-		},
 		["Bio"] = "Shedletsky would be proud. Part of the 'Aife' Collection! Collect them all!",
 	},			
 
