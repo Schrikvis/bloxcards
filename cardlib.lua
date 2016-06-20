@@ -1215,13 +1215,13 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Yellow"] = 4,},
 		["Effect"] = {
 			Name = "Omega Charge",
-			Description = "Unlock all your fighters.",
+			Description = "Unlock all dragon fighters.",
 			["Type"] = "OnSummon",
 			["Power"] = "Unlock",
-			Target = "Ally",
+			Target = "Archetype",
 			Increase = 999,
 		},
-		["Bio"] = "One of the four dragons, this one is quick and agile.",
+		["Bio"] = "It took an aeon for the doges to repopulate from the Yellow Sandstorm.",
 	},
 	
 	["Y05H1M4N"] = {
@@ -7548,21 +7548,22 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Typheus the Whelp"] = {
 		["Id"] = 334839652,
 		["Name"] = "Typheus the Whelp",
-		["Health"] = 250,
-		["Power"] = 250,
+		["Health"] = 800,
+		["Power"] = 300,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Fire",
 		["Archetype"] = "Dragon",
 		["Color"] = "Yellow",
-		["Cost"] = {["Neutral"] = 4,["Yellow"] = 4,},
 		["Effect"] = {
-			Name = "Omega Division",
-			Description = [[When this card attacks, summon another "Typheus the Whelp".]],
-			["Type"] = "OnAttack",
-			["Power"] = "Summon",
+			Name = "Omega Charge",
+			Description = "Unlock all allied fighters.",
+			["Type"] = "OnSummon",
+			["Power"] = "Unlock",
 			Target = "Ally",
-			Increase = "Typheus the Whelp",
+			Increase = 999,
 		},
+		["Cost"] = {["Neutral"] = 4,["Yellow"] = 4,},
+
 		["Bio"] = "When one is struck by Typheus, the world is split. Then nevermore.",
 	},
 	
