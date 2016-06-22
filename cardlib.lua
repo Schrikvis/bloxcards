@@ -10440,6 +10440,13 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Yellow",
 		["Cost"] = {["Neutral"] = 4,["Yellow"] = 3,},
+		["Effect"] = {
+			Name = "Silence I keel you!",
+			Description = [[When this card destroys another, draw a card and add a Targeting Blip to your hand. Targeting Blips trigger Target Effects.]],
+			["Type"] = "OnDestroy",
+			["Power"] = {{"Draw",1},{"Add","Targeting Blip"}},
+			Target = "Ally",
+		},
 		["Bio"] = "Mining for more cards.",
 	},			
 
@@ -12280,7 +12287,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	
 	["Cyandude585"] = {
 		["Id"] = 438688401,
-		["Name"] = "MUTO2014",
+		["Name"] = "Cyandude585",
 		["Health"] = 500,
 		["Power"] = 400,
 		["Rarity"] = "Rare",
