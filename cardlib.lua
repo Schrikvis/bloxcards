@@ -8469,6 +8469,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Health"] = 1250,
 		["Power"] = 250,
 		["Rarity"] = "Common",
+		["AttackEffect"] = "Slash",
 		["Color"] = "Blue",
 		["Cost"] = {["Blue"] = 3},
 		["Effect"] = {
@@ -9758,6 +9759,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Description = "Draw 3 cards.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Draw",3},
+		},
 			Target = "Ally",
 		},
 		["Bio"] = "Creator of Arcane Adventures. Hates the blood element.",
@@ -11306,8 +11308,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Type"] = "OnSummon",
 			["Power"] = {{"Blue",2}},
 			Target = "Self",
-		["Bio"] = "Just don't tell Arceusdon she was about to steal this affect. .3.",
-		}
+		},
+		["Bio"] = "Just don't tell Arceusdon she stole this affect. .3.",
 	},	
 	
 	["wi_sh"] = {
@@ -11393,11 +11395,12 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Neutral",
+		["Token"] = true,
 		["DiscardBlock"] = true,
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
-			Name = "Targeting Blip",
-			Description = "Can't be Discarded. Is used to trigger Target Effects.",
+			Name = "Target",
+			Description = "Can't be Discarded. Is used to target fighters and trigger effects",
 			["Type"] = "OnSummon",
 			["Power"] = "Damage",
 			Target = "Single",
@@ -12308,8 +12311,17 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 
 local pairs = pairs
 local cardcount = 0
-for _,_ in pairs(module) do
+local assert = assert
+for id,card in pairs(module) do
 	cardcount = cardcount + 1
+	assert(card.Bio, id.." has no bio.")
+	assert(type(card.Id) == 'number', id.." id malformed.")
+	assert(card.Rarity, id.." has no rarity.")
+	assert(card.Power and card.Health and card.Color, id.." has no health or power or color.")
+	assert(card.AttackEffect or card.Archetype == "Terrain" or (card.Health == 0 and card.Power == 0), id.." has no attack effect animation.")
+	--if card.Effect then
+		--assert(card.Effect.Name and card.Effect.Description and card.Effect.Type and card.Effect.Power and card.Effect.Target, id.." has an incomplete card effect.")
+	--end
 end
 print(cardcount)
 return module
