@@ -8825,9 +8825,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 2,},
 		["Effect"] = {
 			Name = "Blaster Hardscope",
-			Description = [[When this card attacks, add a red or blue action to your hand.]],
+			Description = [[When this card attacks, add an Eye Spy to your hand.]],
 			["Type"] = "OnAttack",
-			["Power"] = {{"RandomAdd","Lunar"}},
+			["Power"] = {{"Add","Eye Spy"}},
 			Target = "Ally",
 		},
 		["Bio"] = "That aint falco! WER you at??",
@@ -11979,7 +11979,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Heal",0}},
 			Target = "Ally",
 		},
-		["Bio"] = "Thematic snake.",
+		["Bio"] = "Thematic Snake.",
 	},
 	
 	["Wingman8"] = {
