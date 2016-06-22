@@ -6725,8 +6725,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Type"] = "OnSummon",
 			["Power"] = {{"Lock",1},{"Strengthen",100},{"Swap",0}},
 			Target = "Opponent",
+		},
 		["Bio"] = "A fan of Toontown and Dodgeball, Alexnewtron can literally script any fun game out of thin air.",
-		}
 	},
 		
 	["Theawesomist19"] = {
@@ -8459,6 +8459,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Health"] = 1250,
 		["Power"] = 250,
 		["Rarity"] = "Common",
+		["AttackEffect"] = "Slash",
 		["Color"] = "Blue",
 		["Cost"] = {["Blue"] = 3},
 		["Effect"] = {
@@ -11277,8 +11278,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Type"] = "OnSummon",
 			["Power"] = {{"Blue",2}},
 			Target = "Self",
+		},
 		["Bio"] = "Just don't tell Arceusdon she stole this affect. .3.",
-		}
 	},	
 	
 	["wi_sh"] = {
@@ -12157,7 +12158,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Capture",
 			Description = "This card is immune to its power or health being lowered. At the end of each of your turns, generate a red icon and destroy all allied fighters.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Red","1"},{"Damage",9999}},
+			["Power"] = {{"Red",1},{"Damage",9999}},
 			Target = "Ally",
 		},
 		["Bio"] = "The redcliff took in meeboids as weapons of war. Their patience in training were well-awarded.",
@@ -12262,8 +12263,17 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 
 local pairs = pairs
 local cardcount = 0
-for _,_ in pairs(module) do
+local assert = assert
+for id,card in pairs(module) do
 	cardcount = cardcount + 1
+	assert(card.Bio, id.." has no bio.")
+	assert(type(card.Id) == 'number', id.." id malformed.")
+	assert(card.Rarity, id.." has no rarity.")
+	assert(card.Power and card.Health and card.Color, id.." has no health or power or color.")
+	assert(card.AttackEffect or card.Archetype == "Terrain" or (card.Health == 0 and card.Power == 0), id.." has no attack effect animation.")
+	--if card.Effect then
+		--assert(card.Effect.Name and card.Effect.Description and card.Effect.Type and card.Effect.Power and card.Effect.Target, id.." has an incomplete card effect.")
+	--end
 end
 print(cardcount)
 return module
