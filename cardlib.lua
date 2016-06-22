@@ -3384,7 +3384,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 200,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Lightning",
-		["Archetype"] = "Spark"
+		["Archetype"] = "Spark",
 		["Color"] = "Blue",
 		["Cost"] = {["Blue"] = 2,},
 		["Effect"] = {
@@ -6734,8 +6734,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Type"] = "OnSummon",
 			["Power"] = {{"Lock",1},{"Strengthen",100},{"Swap",0}},
 			Target = "Opponent",
-		["Bio"] = "A fan of Toontown and Dodgeball, Alexnewtron can literally script any fun game out of thin air.",
 		},
+		["Bio"] = "A fan of Toontown and Dodgeball, Alexnewtron can literally script any fun game out of thin air.",
 	},
 		
 	["Theawesomist19"] = {
@@ -9761,7 +9761,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Ally",
 		},
 		["Bio"] = "Creator of Arcane Adventures. Hates the blood element.",
-	},			
+	},
 	
 	["CALL OF DOGE!?!"] = {
 		["Id"] = 384010629,
