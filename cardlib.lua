@@ -12184,7 +12184,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Capture",
 			Description = "This card is immune to effects that lower its power or health. At the end of each of your turns, generate a red icon and destroy all allied fighters.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Red","1"},{"Damage",9999}},
+			["Power"] = {{"Red",1},{"Damage",9999}},
 			Target = "Ally",
 		},
 		["Bio"] = "The redcliff took in meeboids as weapons of war. Their patience in training were well-awarded.",
