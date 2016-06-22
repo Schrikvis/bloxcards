@@ -6734,7 +6734,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Lock",1},{"Strengthen",100},{"Swap",0}},
 			Target = "Opponent",
 		["Bio"] = "A fan of Toontown and Dodgeball, Alexnewtron can literally script any fun game out of thin air.",
-		}
+		},
 	},
 		
 	["Theawesomist19"] = {
@@ -7833,9 +7833,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 2, ["Red"] = 2},
 		["Effect"] = {
 			Name = "Render",
-			Description = "When you target this card, add a Red or Blue Action to your hand and give it 100 health.",
+			Description = "When you target this card, give it 100 health and add an Eye Spy to your hand.",
 			["Type"] = "OnTarget",
-			["Power"] = {{"RandomAdd","Lunar"},{"Heal",100,"Self"}},
+			["Power"] = {{"Add","Eye Spy"},{"Heal",100,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Sometimes, Leet's arcane energy gives him unimaginable power. Other times, it just electrocutes his cat.",
@@ -9657,9 +9657,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 2,},
 		["Effect"] = {
 			Name = "Overgrown",
-			Description = "Add a blue or red action to your hand.",
+			Description = "Add a Crystal Snare to your hand.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"RandomAdd","Lunar"}},
+			["Power"] = {{"Add","Crystal Snare"}},
 			Target = "Ally",
 		},
 		["Bio"] = "He caused destruction for the 5033rd time.",
@@ -11829,8 +11829,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["ClanAtlas"] = {
 		["Id"] = 430957985,
 		["Name"] = "ClanAtlas",
-		["Health"] = 150,
-		["Power"] = 150,
+		["Health"] = 50,
+		["Power"] = 50,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Punch1",
 		["Token"] = true,
@@ -11934,9 +11934,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Render",
-			Description = "At the end of your turn, add a random Blue or Red Action to your hand.",
-			["Type"] = "OnEnd",
-			["Power"] = {{"RandomAdd","Lunar"}},
+			Description = "Add a Moon Rabbit's Rage to your hand.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Add","Moon Rabbit's Rage"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Telamon? Gates? 2x2, the alpha brick itself? Imbeciles compared to the moon.",
@@ -12277,9 +12277,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1, ["Blue"] = 2, ["Red"] = 2,},
 		["Effect"] = {
 			Name = "Capture",
-			Description = "Shuffle 4 Blue or Red actions into your deck.",
+			Description = "Add a Forbidden Power to your hand.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"DeckAdd","Eye Spy"},{"DeckAdd","Moon Rabbit's Rage"},{"DeckAdd","Crystal Snare"},{"DeckAdd","Forbidden Power"}},
+			["Power"] = {{"Add","Forbidden Power"}},
 			Target = "Ally",
 		},
 		["Bio"] = "HEY GUYS! Costume Quest 2's just come out!",
