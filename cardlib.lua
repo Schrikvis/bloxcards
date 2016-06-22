@@ -6433,7 +6433,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Build Up",
 			Description = "You gain 750 life. Increase the power of all meeboids by 200.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Strengthen",200},{"Cost",750}},
+			["Power"] = {{"Strengthen",200},{"Cost",-750}},
 			Target = "Archetype",
 		},
 		["Bio"] = "Meeboid rebel, has his handy scythe for protection.",
@@ -9445,7 +9445,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 384007254,
 		["Name"] = "Mysterious UFO",
 		["Health"] = 250,
-		["Power"] = 450,
+		["Power"] = 600,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Yellow",
@@ -9458,7 +9458,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Single",
 		},
 		["Bio"] = "Must. Harvest. Beef.",
-	},	
+	},
 	
 	["ClanDrone"] = {
 		["Id"] = 384007490,
@@ -12276,6 +12276,25 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Ally",
 		},
 		["Bio"] = "HEY GUYS! Costume Quest 2's just come out!",
+	},
+	
+	["Cyandude585"] = {
+		["Id"] = 438688401,
+		["Name"] = "MUTO2014",
+		["Health"] = 500,
+		["Power"] = 400,
+		["Rarity"] = "Rare",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Blue",
+		["Cost"] = {["Neutral"] = 4, ["Blue"] = 2,},
+		["Effect"] = {
+			Name = "Transfusion",
+			Description = "Unlock target fighter, then reduce its power by 200.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Unlock",9999},{"Weaken",200}},
+			Target = "Single",
+		},
+		["Bio"] = "He's Cyan. He's a dude. I'm unsure why you think otherwise.",
 	},
 }
 
