@@ -3384,6 +3384,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 200,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Lightning",
+		["Archetype"] = "Spark"
 		["Color"] = "Blue",
 		["Cost"] = {["Blue"] = 2,},
 		["Effect"] = {
@@ -12222,8 +12223,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Capture",
 			Description = "Summon 3 Sparks.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Summon","Spark"},{"Summon","Spark"},{"Summon","Spark"}},
-			Target = "Ally",
+			["Power"] = {{"Summon","Spark"},{"Summon","Spark"},{"Summon","Spark"}},{"Unlock",9999},
+			Target = "Archetype",
 		},
 		["Bio"] = "Dear Dun_Goof: THINK THROUGH YOUR CARDS BEFORE YOU MAKE THEM. Signed: The rest of the dev team",
 	},
