@@ -222,7 +222,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Build Up",
-			Description = "Unlock all fighters and gain 250 life at the end of each of your turns.",
+			Description = "Unlock all fighters and gain 150 life at the end of each of your turns.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Unlock",9999},{"Cost",-250}},
 			Target = "All",
@@ -325,7 +325,6 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Token"] = true,
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 1,},
-		["Bio"] = "",
 		["Effect"] = {
 			Name = "Mental Preparation",
 			Description = "Locks himself for two turns to charge his blaster! This card cannot generate icons.",
@@ -334,6 +333,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Self",
 			Increase = 2,
 		},
+		["Bio"] = "Also if you don't scream for two turns, his kamehameha is countered.",
 	},
 	
 	["Daisy"] = {
@@ -6452,7 +6452,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Red"] = 1,["Blue"] = 5,},
 		["Effect"] = {
 			Name = "Endless Spooks",
-			Description = [[Add a "Skeleton Armada" to your hand and increase the Attack and Health of all Skeletons by 300]],
+			Description = [[Add a "Skeleton Armada" to your hand, then increase the Health and Power of all Skeletons by 300.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Add","Skeleton Armada"},{"Strengthen",300},{"Heal",300}},
 			Target = "Archetype",
@@ -8880,16 +8880,17 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 200,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Lightning",
+		["Archetype"] = "Skeleton",
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 4,["Blue"] = 1,},
 		["Effect"] = {
 			Name = "Endless Spooks",
-			Description = [[Add a "Skeleton Armada" to your hand and increase the Attack of all Skeletons by 300. You lose 300 life.]],
+			Description = [[Add a "Skullsten" to your hand and increase the Attack of all Skeletons by 300. You lose 400 life.]],
 			["Type"] = "OnSummon",
-			["Power"] = {{"Add","Skeleton Armada"},{"Strengthen",300},{"Cost",300}},
+			["Power"] = {{"Add","Skullsten"},{"Strengthen",300},{"Cost",400}},
 			Target = "Archetype",
 		},
-		["Bio"] = "Not many skulls have names, Sten is an exception.",
+		["Bio"] = "Not many skulls have names. Sten is an exception.",
 	},		
 	
 	["SolarCrane"] = {
@@ -8933,8 +8934,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Ostrich"] = {
 		["Id"] = 362315628,
 		["Name"] = "Ostrich",
-		["Health"] = 600,
-		["Power"] = 75,
+		["Health"] = 300,
+		["Power"] = 100,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Yellow",
@@ -9362,7 +9363,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["DairingPoopHead"] = {
 		["Id"] = 384006597,
 		["Name"] = "DairingPoopHead",
-		["Health"] = 100,
+		["Health"] = 500,
 		["Power"] = 600,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Lightning",
@@ -9376,7 +9377,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Self",
 			Increase = 1,
 		},
-		["Bio"] = "Just some dood who bought a commission because he's cool?",
+		["Bio"] = "You just dared him. He's going to give you brown dairy now.",
 	},	
 	
 	["bincent"] = {
@@ -11057,7 +11058,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 413948179,
 		["Name"] = "xXVitalityVoidXx",
 		["Health"] = 200,
-		["Power"] = 400,
+		["Power"] = 200,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Lightning",
 		["Archetype"] = "Skeleton",
@@ -11065,7 +11066,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 1,},
 		["Effect"] = {
 			Name = "Endless Spooks",
-			Description = [[Add a "xXVitalityVoidXx" to your hand and increase the Health of all Skeletons by 300. You lose 300 life.]],
+			Description = [[Add a "xXVitalityVoidXx" to your hand and increase the Health of all Skeletons by 300. You lose 400 life.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Add","xXVitalityVoidXx"},{"Heal",300},{"Cost",300}},
 			Target = "Archetype",
@@ -11988,8 +11989,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Wingman8"] = {
 		["Id"] = 430969572,
 		["Name"] = "Wingman8",
-		["Health"] = 850,
-		["Power"] = 850,
+		["Health"] = 750,
+		["Power"] = 750,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Neutral",
@@ -12008,10 +12009,10 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 8},
 		["Effect"] = {
 			Name = "Conflux",
-			Description = "Shuffle a red card, a blue card, a green card, a yellow card, and a white card into your deck, then draw two cards.",
+			Description = "Add 4 random rares to your hand.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"DeckAdd","AntiSammeh"},{"DeckAdd","Dun_Goof"},{"DeckAdd","Leitris"},{"DeckAdd","Glaciem Mage"},{"DeckAdd","SonozakiRaito"},{"Draw",2}},
-			Target = "Self",
+			["Power"] = {{"RandomAdd","Rare"},{"RandomAdd","Rare"},{"RandomAdd","Rare"},{"RandomAdd","Rare"}},
+			Target = "Ally",
 		},
 		["Bio"] = "I would criticise the spear, but then he'd come out to get me. ;-;/10 - Sword Critic",
 	},
@@ -12306,6 +12307,25 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Single",
 		},
 		["Bio"] = "He's Cyan. He's a dude. I'm unsure why you think otherwise.",
+	},
+	
+	["iAsuka"] = {
+		["Id"] = 440241003,
+		["Name"] = "iAsuka",
+		["Health"] = 600,
+		["Power"] = 200,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Blue",
+		["Cost"] = {["Neutral"] = 4, ["Blue"] = 2,},
+		["Effect"] = {
+			Name = "Ice and Tea",
+			Description = "Target fighter gains 400 health. You gain 400 life.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Heal",400},{"Cost",-400}},
+			Target = "Single",
+		},
+		["Bio"] = "Her strikes tsundere the heavens. ... Okay I'm out that pun was horrible",
 	},
 }
 
