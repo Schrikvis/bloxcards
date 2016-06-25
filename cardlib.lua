@@ -11700,7 +11700,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Stud",
 			Description = "Each time this card attacks, it becomes a 600/600.",
 			["Type"] = "OnAttack",
-			["Power"] = {{"Weaken",9999},{"Strengthen",600},{"Damage",9999},{"Heal",600}},
+			["Power"] = {{"Weaken",9999},{"Strengthen",600},{"Swap",030},{"Weaken",9999},{"Strengthen",600}},
 			Target = "Self",	
 		},
 		["Bio"] = "Doregriffons don't understand humans. If they didn't want to be eaten, why are they made out of meat and treasure?",
