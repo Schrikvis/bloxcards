@@ -1,10 +1,73 @@
-## Documentation that shouldn't be here
-NOTE: This is all highly incomplete.
+# The Blox Cards Documentation
 
-**Card effect triggers**
-Assign these to card effects by setting their .Effect.Type to one of these strings.
-[2] is generally a modifier for the main Increase of the effect.
-[3] is generally a modifier for the main Target of the effect.
+The General Card Effect Syntax
+General case (single effect):
+
+Effect = {
+	Name
+	Description
+	Type
+	Power
+	Target
+	Increase
+}
+
+The game executes the single effect as you would expect.
+
+Sub-Effect case (multiple effects):
+
+Effect = {
+	Name
+	Description
+	Type
+	Power = {
+		{Power2, Increase2, Target2}
+	}
+	Target1
+	Increase1
+}
+
+In the event of subeffects, game will first look for a secondary 
+target or increase. Should it not be able to find such secondary 
+values, it will fall back to the primary one. Should there be no 
+primary one but the effect does require it, the game crashes. 
+Make sure all effects get the info they need to function.
+
+For example, the following effect uses Target1 for its subeffect.
+Effect = {
+	Power = {
+		{Power2, Increase2}
+	}
+	Target1
+	Increase1
+}
+
+This one uses Target2 but Increase1 for its subeffect.
+Effect = {
+	Power = {
+		{Power2, nil, Target2}
+	}
+	Target1
+	Increase1
+}
+
+---------------------------------------------------------------
+Some terms, "glossary"
+
+- Fatique
+Whenever a player needs to draw a card but cannot because there are
+no cards left in his deck, the player receives damage.
+
+- Grinding
+Whenever a player needs to draw a card but cannot because his hand
+is full, the cards are removed from his deck but aren't added to his
+hand. 
+
+---------------------------------------------------------------
+
+Card effect Types (triggers)
+Assign these to card effects by setting their Type to one of 
+these strings.
 
 - OnTarget
 Fires when the card is attacked.
@@ -18,29 +81,55 @@ Fires when the card is killed.
 - OnEnd
 Fires when a turn ends.
 
-- Field
+- Field (Terrain only)
 Fires when a turn begins.
 
 - OnAttack
 Fires when the card attacks.
 
-- ...
+---------------------------------------------------------------
 
+Effect Targets
 
-**Effect target types**
 - Archetype
+Targets all cards with the card's archetype.
+
+- NotArchetype
+Targets all cards that don't have the card's archetype.
+
 - Ally
+Targets all cards allied to the card or the player playing the card.
+
 - All
+Targets all cards or all players.
+
 - Opponent
+Targets all opposing cards, or the opposing player.
+
 - Single
+- Target
+Targets a single card as chosen by the playing player.
+
 - Self
-- ...
+Targets the card itself.
 
+- The Color* target types:
+	- ColorNeutral
+	- ColorGreen
+	- ColorYellow
+	- ColorRed
+	- ColorBlue
+Targets cards that are of the specified color.
 
-**Card effect types**
+- NewTarget
+Ignore for now.
+
+---------------------------------------------------------------
+
+Card effect Powers
 
 - Add
-Adds the card with the name of Increase or [2] to a hand.
+Adds the card with the name of Increase to a hand.
 
 - The Set* effect types:
 	- SetNeutral
@@ -48,49 +137,76 @@ Adds the card with the name of Increase or [2] to a hand.
 	- SetYellow
 	- SetRed
 	- SetBlue
-Sets colored icons of Target (Ally or Opponent) to Increase or [2].
+Sets colored icons of Target (Ally or Opponent) to Increase.
 
 - Damage
-Damages the Target cards by Increase or [2].
+Damages the Target cards by Increase.
 
 - Draw
-Makes the Target player darw acard.
+Makes the Target player (All, Opponent or an implicit Ally) draw
+Increase amount of cards from his deck This triggers Fatique.
 
 - Heal
-Heals the Target cards by Increase or [2].
+Heals the Target cards by Increase.
 
 - Lock
-Locks the Target for Increase or [2] turns.
+Locks the Target for Increase turns.
 
 - Unlock
-Reduces the Target's remaining locked turns by Increase or [2] turns.
+Reduces the Target's remaining locked turns by Increase turns.
 
 - Charge
-Unlocks the card.
+Unlocks the card immedeately. Has an implicit Self target.
 
 - DeckAdd
-Adds the card of name Increase or [2] to the Target's deck.
+Adds the card of name Increase to the Target's deck.
 
 - RandomAdd
-Adds a random card of rarity [2] or Increase to the Target's hand.
-Append a color to the rarity to specify a color. Ie: LegendaryRed.
+Adds a random card of rarity Increase to the Target's hand.
+RandomAdd allows for 
 
 - Cost
-Reduces the Target player's life points by Increase or [2].
+Reduces the player's life by Increase. Has an implicit Ally target 
+that cannot be changed.
 
 - Inflict
-Inflicts Increase or [2] damage to the enemy player's lifepoints.
+Inflicts Increase damage to All players or the opponent. Inflict 
+cannot be used to only target the Ally player.
 
 - Strenghten
-Adds Increase or [2] to Target cards' power. [3] can be used as a further modifier.
-Ie: {"Strenghten", 200, "ColorBlue"}
+Adds Increase to Target cards' power.
 
 - Swap
 Swaps the target's Power and Health stats.
 
 - Shedletsky
+Does the Shedletsky effect.
 
 - ColorName (ie. "Blue")
-Adds Increase or [2] icons of the color to the Target player.
+Adds Increase icons of the color to the Target player.
 
-- ...
+- SetColorName (ie. "SetBlue")
+Set the amount of colored icons of the Target player to Increase.
+
+---------------------------------------------------------------
+
+Card Modifiers
+These aren't related to card effects. Instead, they modify card 
+behaviour in miscellanious ways.
+
+- DiscardBlock
+When set to true, the player cannot discard the card.
+
+- AttackBlock
+When set to true, the card cannot attack enemy cards nor the enemy
+player.
+
+- FaceBlock
+When set to true, the card cannot attack the enemy player.
+
+- Token
+When discarded, this card does not give icons.
+
+---------------------------------------------------------------
+
+~
