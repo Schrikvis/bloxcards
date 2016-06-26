@@ -3080,7 +3080,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Jackinate",
-			Description = "Lock this fighter and another fighter for 2 turns.",
+			Description = "Lock this fighter and another target fighter for 2 turns.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Lock",2},{"Lock",2,"Self"}},
 			Target = "Single",
@@ -3279,7 +3279,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Red"] = 2,},
 		["Effect"] = {
 			Name = "Adventurer's Cannon",
-			Description = "Deal 250 damage and draw 1 card.",
+			Description = "Deal 250 damage to a target fighter and draw 1 card.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",250},{"Draw",1}},
 			Target = "Single",
@@ -3338,7 +3338,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 5,["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Steal",
-			Description = "Deal 250 damage to a fighter and draw 1 card.",
+			Description = "Deal 250 damage to a target fighter and draw 1 card.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",250},{"Draw",1}},
 			Target = "Single",
@@ -3357,7 +3357,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 3,},
 		["Effect"] = {
 			Name = "Overhaul",
-			Description = "Deal 300 damage to a fighter and the opponent.",
+			Description = "Deal 300 damage to a target fighter and the opponent.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",300},{"Inflict",300}},
 			Target = "Single",
@@ -3506,7 +3506,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Shell Shock",
-			Description = "Deal 200 damage to a fighter and lock the fighter for 1 turn.",
+			Description = "Deal 200 damage to a target fighter and lock the fighter for 1 turn.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Lock",1},{"Damage",200}},
 			Target = "Single",
@@ -3610,9 +3610,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Birthday Surprise",
-			Description = "Heal a fighter and yourself by 500, then draw a card.",
+			Description = "Heal a target fighter and yourself by 600, then draw a card.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Heal",500},{"Cost",-500},{"Draw",1}},
+			["Power"] = {{"Heal",600},{"Cost",-600},{"Draw",1}},
 			Target = "Single",
 		},
 		["Bio"] = "SURPRISE!",
@@ -3648,7 +3648,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 4,},
 		["Effect"] = {
 			Name = "Arms up!",
-			Description = "Increase the power of one fighter by 300.",
+			Description = "Increase the power of a target fighter by 300.",
 			["Type"] = "OnSummon",
 			["Power"] = "Strengthen",
 			Target = "Single",
@@ -3908,9 +3908,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 5,},
 		["Effect"] = {
 			Name = "Soul Release",
-			Description = "Deal 4000 damage to a fighter and your opponent gains 1500 Life Points.",
+			Description = "Deal 4000 damage to a target fighter. Your opponent gains 1500 life.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",4000},{"Inflict",-1500}},
+			["Power"] = {{"Damage",4000},{"Inflict",-1500,"Opponent"}},
 			Target = "Single",	
 		},
 		["Bio"] = "BEGONE! FOUL SPIRIT!",
