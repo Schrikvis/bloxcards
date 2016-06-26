@@ -3301,7 +3301,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Description = "When this card attacks, deal 200 damage to the opponent.",
 			["Type"] = "OnAttack",
 			["Power"] = {{"Inflict",200}},
-			Target = "Enemy",
+			Target = "Opponent",
 			Increase = 0,
 		},
 		["Bio"] = "Not a fan of Sponge baths.",
