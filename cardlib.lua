@@ -12347,7 +12347,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["HuntarioRBLX"] = {
 		["Id"] = 441918826,
 		["Name"] = "HuntarioRBLX",
-		["Health"] = 600,
+		["Health"] = 800,
 		["Power"] = 0,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Punch1",
@@ -12362,6 +12362,26 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Self",
 		},
 		["Bio"] = "An eye for an eye. A feather for a... Wait, humans don't have feathers. Well that analogy just went nowhere...",
+	},
+	
+	["animallogic"] = {
+		["Id"] = 441918887,
+		["Name"] = "animallogic",
+		["Health"] = 400,
+		["Power"] = 400,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Yellow",
+		["Cost"] = {["Neutral"] = 1, ["Yellow"] = 3,},
+		["Charge"] = true,
+		["Effect"] = {
+			Name = "Sugar and Ice",
+			Description = "When this card attacks, all allied fighters gain 100 power. This card can attack the turn it's summoned.",
+			["Type"] = "OnAttack",
+			["Power"] = {{"Strengthen",100}},
+			Target = "Ally",
+		},
+		["Bio"] = "That sword is disgusting. Not only would it just shatter if it was ever swung, it has far too much mass at the base and a poorly made pommel. The armour is somewhat tolerable, however. 3/10 - Sword Critic",
 	},
 }
 
