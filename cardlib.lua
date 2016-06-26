@@ -863,7 +863,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Pow!",
-			Description = "Deal 50 damage to one fighter.",
+			Description = "Deal 50 damage to a target fighter.",
 			["Type"] = "OnSummon",
 			["Power"] = "Damage",
 			Target = "Single",
@@ -883,7 +883,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 4,},
 		["Effect"] = {
 			Name = "Royal Cure",
-			Description = "Give an ally 350 Health.",
+			Description = "Give a target fighter 350 health.",
 			["Type"] = "OnSummon",
 			["Power"] = "Heal",
 			Target = "Single",
@@ -955,7 +955,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "From a spark, he generates a power that can cause instant combustion to anyone.",
 		["Effect"] = {
 			Name = "Pyroblast",
-			Description = "Deal 250 damage to one fighter. This card cannot generate icons.",
+			Description = "Deal 250 damage to a target fighter. This card cannot generate icons.",
 			["Type"] = "OnSummon",
 			["Power"] = "Damage",
 			Target = "Single",
@@ -1087,7 +1087,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Red"] = 4,},
 		["Effect"] = {
 			Name = "Amp Up! Blaster!",
-			Description = "Increase the power of one fighter by 500.",
+			Description = "Increase the power of a target fighter by 500.",
 			["Type"] = "OnSummon",
 			["Power"] = "Strengthen",
 			Target = "Single",
@@ -1322,7 +1322,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "A can of beans that help you with the extra mile.",
 		["Effect"] = {
 			Name = "Tom's Beans",
-			Description = "Give a card 500 Health and 150 Attack.",
+			Description = "Give a target fighter 500 Health and 150 power.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",500},{"Strengthen",150}},
 			Target = "Single",
@@ -1341,10 +1341,10 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "Bombs? You want them? It's your my friend!",
 		["Effect"] = {
 			Name = "DO0M",
-			Description = "Deal 500 to both characters and draw 1 card.",
+			Description = "Deal 500 to both players, then draw 1 card.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Cost",500},{"Inflict",500},{"Draw",1}},
-			Target = "Random",
+			Target = "Ally",
 		},
 	},
 	
@@ -1414,7 +1414,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Yellow"] = 4,},
 		["Effect"] = {
 			Name = "Corrosive Gems",
-			Description = "Gives a fighter 300 Attack at the cost of 300 Health.",
+			Description = "Gives a target fighter 300 Power at the cost of 300 Health.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Strengthen",300},{"Damage",300}},
 			Target = "Single",
@@ -1743,7 +1743,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "Sometimes you just pass out by eating too much food, especially pizza.",
 		["Effect"] = {
 			Name = "Bloated",
-			Description = "Give a card 1000 Health and locks it for 2 turns.",
+			Description = "Give a target fighter 1000 Health and locks it for 2 turns.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Lock",2},{"Heal",1000}},
 			Target = "Single",
@@ -1773,7 +1773,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Green"] = 3,},
 		["Effect"] = {
 			Name = "Arkhaiomelisidonophunikheratos",
-			Description = "Give target fighter 50 attack, then swap their stats.",
+			Description = "Give a target fighter 50 attack, then swap their stats.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Strengthen",50},{"Swap",030}},
 			Target = "Single",
@@ -1896,7 +1896,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Green"] = 1,},
 		["Effect"] = {
 			Name = "Spark",
-			Description = "Increase the Attack of one fighter by 300 at the cost of 300 Health. This card cannot generate icons.",
+			Description = "Increase the Power of a target fighter by 300, then deal 300 damage to it.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Strengthen",300},{"Damage",300}},
 			Target = "Single",
