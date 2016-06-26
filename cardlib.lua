@@ -3359,7 +3359,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Overhaul",
 			Description = "Deal 300 damage to a target fighter and the opponent.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",300},{"Inflict",300}},
+			["Power"] = {{"Damage",300},{"Inflict",300,"Opponent"}},
 			Target = "Single",
 		},
 		["Bio"] = "Fills in at local saleless stores on Black Friday.",
