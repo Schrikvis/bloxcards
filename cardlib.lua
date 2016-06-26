@@ -9361,10 +9361,10 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "TIX UPDATE",
-			Description = "Both players gain 3 Yellow Icons, but both lose 750 Life.",
+			Description = "Gain 3 yellow icons and lose 1250 life.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Yellow",3},{"Cost",750},{"Inflict",750}},
-			Target = "All",
+			["Power"] = {{"Yellow",3},{"Cost",1250}},
+			Target = "Ally",
 		},
 		["Bio"] = "ROBLOX, with bold plans on helping its company grow even more since 2004.",
 	},	
