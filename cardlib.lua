@@ -2953,7 +2953,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Bonk",
-			Description = "Deal 400 damage to a fighter. Reduce the Health of all other Allies by 400.",
+			Description = "Deal 400 damage to a target fighter, then deal 400 damage to all allied fighters.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",400},{"Damage",400,"Ally"},{"Heal",400,"Self"}},
 			Target = "Single",
@@ -2972,7 +2972,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Suppressive Fire",
-			Description = "Lock a fighter for 2 turns, then draw a card.",
+			Description = "Lock a target fighter for 2 turns, then draw a card.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Lock",2},{"Draw",1}},
 			Target = "Single",
@@ -2991,9 +2991,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 3,["Neutral"] = 7},
 		["Effect"] = {
 			Name = "Overload",
-			Description = "Deal 750 damage to a fighter and both players.",
+			Description = "Deal 750 damage to a target fighter and both players.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",750},{"Cost",750},{"Inflict",750}},
+			["Power"] = {{"Damage",750},{"Inflict",750,"All"}},
 			Target = "Single",
 		},
 		["Bio"] = "GO NUTS!",
