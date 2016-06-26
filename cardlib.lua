@@ -2625,7 +2625,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Blue",
 		["Effect"] = {
 			Name = "Teamwork",
-			Description = "Increase the Power of any fighter by 250.",
+			Description = "Increase the Power of a target fighter by 250.",
 			["Type"] = "OnSummon",
 			["Power"] = "Strengthen",
 			Target = "Single",
@@ -2697,7 +2697,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Parental Guidance",
-			Description = "Increase the health of a fighter by 100.",
+			Description = "Increase the health of a target fighter by 100.",
 			["Type"] = "OnSummon",
 			["Power"] = "Heal",
 			Target = "Single",
@@ -2776,7 +2776,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Cola Sting",
-			Description = "Lock an enemy fighter for 3 turns.",
+			Description = "Lock a target fighter for 3 turns.",
 			["Type"] = "OnSummon",
 			["Power"] = "Lock",
 			Target = "Single",
@@ -2876,7 +2876,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Guard",
-			Description = "Give any fighter 750 health but lock them for 3 turns.",
+			Description = "Give a target fighter 750 health but lock them for 3 turns.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",750},{"Lock",3}},
 			Target = "Single",
@@ -2934,9 +2934,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Assist Trophy!",
-			Description = "Increase the health and power of one fighter by 300.",
+			Description = "Increase the health and power of a target fighter by 350.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Heal",300},{"Strengthen",300}},
+			["Power"] = {{"Heal",350},{"Strengthen",350}},
 			Target = "Single",
 		},
 		["Bio"] = "SSB Reference inbound.",
