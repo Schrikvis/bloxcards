@@ -9264,7 +9264,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Doctor's Bag",
 			Description = "Both players gain 2 Neutral Icons and 1000 Life.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Neutral",2},{"Cost",-1000},{"Inflict",-1000}},
+			["Power"] = {{"Neutral",2},{"Inflict",-1000}},
 			Target = "All",
 		},
 		["Bio"] = "Apparently Fave is the one that stole his last name.",
