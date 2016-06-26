@@ -12136,7 +12136,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 2, ["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Beam Sword",
-			Description = "Deal 300 damage to target fighter. It gains 300 power.",
+			Description = "Deal 300 damage to a target fighter. It gains 300 power.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Strenghten",300},{"Damage",300}},
 			Target = "Single",
@@ -12155,7 +12155,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 4, ["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Vampire Bite",
-			Description = "Deal 200 damage to target fighter. You gain 200 life.",
+			Description = "Deal 200 damage to a target fighter. You gain 200 life.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",200},{"Cost",-200}},
 			Target = "Single",
@@ -12174,7 +12174,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "Capture",
-			Description = "Lower the power of target fighter by 100.",
+			Description = "Lower the power of a target fighter by 100.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",100}},
 			Target = "Single",
