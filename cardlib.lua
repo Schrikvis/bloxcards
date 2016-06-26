@@ -11650,7 +11650,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Description = "Deal 350 damage to the opponent.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Inflict",350}},
-			Target = "Self",	
+			Target = "Opponent",
 		},
 		["Bio"] = "The sword, minus the smoke, actually makes good sense, and the double crossguard, whilst not as affective as two rings, are logical and safe. Minus points for the two sword-scabbards on the back, though. 7/10 - Sword Critic",
 	},
