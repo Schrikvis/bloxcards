@@ -11214,7 +11214,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Totem Magic",
 			Description = "At the end of each turn, Her0z loses 1000 health and all of its power. Her0z can't attack.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Heal",-1000},{"Strengthen",-9999}},
+			["Power"] = {{"Damage",1000},{"Strengthen",-9999}},
 			Target = "Self",
 		},
 		["Bio"] = "Mummy of Front Page Games in the past.",
