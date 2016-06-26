@@ -11854,7 +11854,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Render",
 			Description = "At the end of your turn, fill your board with ClanAtlas, then set the attack and health of all allied fighters to 150. This card can't generate icons.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"}{{"Weaken",9999},{"Strengthen",150},{"Swap",030},{"Weaken",9999},{"Strengthen",150}}},
+			["Power"] = {{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Weaken",9999},{"Strengthen",150},{"Swap",030},{"Weaken",9999},{"Strengthen",150}},
 			Target = "Ally",
 		},
 		["Bio"] = "Good decks play AoE.",
