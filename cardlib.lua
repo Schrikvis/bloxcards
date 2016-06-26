@@ -7768,7 +7768,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Snowman Amp",
 			Description = [[Target a fighter and gain 1 Yellow Icon. Increase the lifepoints of both players by 500.]],
 			["Type"] = "OnSummon",
-			["Power"] = {{"Yellow",1},{"Inflict",-500},{"Cost",-500}},
+			["Power"] = {{"Yellow",1},{"Inflict",-500,"All"}},
 			Target = "Single",
 		},
 		["Bio"] = "SNOW PLUSHIES! WAIT... THEY MELTED!",
