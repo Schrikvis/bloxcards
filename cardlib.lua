@@ -10551,9 +10551,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Red"] = 5,},
 		["Effect"] = {
 			Name = "POWER",
-			Description = "Deal 500 to both players, and add a bowl of greed into both player's hands. All fighters gain 100 heath.",
+			Description = "Deal 500 damage to both players. Both players draw two cards. All fighters gain 100 heath.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Cost",500},{"Inflict",500},{"Add","Bowl of Greed"},{"Heal",100}},
+			["Power"] = {{"Inflict",500},{"Draw",2},{"Heal",100}},
 			Target = "All",
 		},
 		["Bio"] = "IT'S TIME TO RUMBLE.",
