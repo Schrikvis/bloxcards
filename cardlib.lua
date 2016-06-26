@@ -2119,14 +2119,21 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Zolerus"] = {
-		["Id"] = 280563482,
+		["Id"] = 441918706,
 		["Name"] = "Zolerus",
-		["Health"] = 350,
-		["Power"] = 200,
+		["Health"] = 650,
+		["Power"] = 0,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Punch2",
 		["Color"] = "Green",
-		["Cost"] = {["Neutral"] = 1,["Green"] = 1,},
+		["Cost"] = {["Neutral"] = 4,["Green"] = 3,},
+		["Effect"] = {
+			Name = "Demon Eye",
+			Description = "Gain 5 Green icons and reduce the attack of all fighters by 200.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Green",5,"Ally"},{"Weaken",200}},
+			Target = "All",
+		},
 		["Bio"] = "Teapots with Adurite textures are the shyest.",
 	},
 	
