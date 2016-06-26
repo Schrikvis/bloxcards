@@ -7549,7 +7549,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "OBLITERATION",
 			Description = "Deal 700 damage to a target fighter and 500 to the opponent.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",700},{"Inflict",500}},
+			["Power"] = {{"Damage",700},{"Inflict",500,"Opponent"}},
 			Target = "Single",
 		},
 		["Bio"] = "When one sees the flames of Nymn, the world goes red. Then nevermore.",
