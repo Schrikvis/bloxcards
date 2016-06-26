@@ -1344,7 +1344,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Description = "Deal 500 to both players, then draw 1 card.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Inflict",500},{"Draw",1}},
-			Target = "Ally",
+			Target = "All",
 		},
 	},
 	
