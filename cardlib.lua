@@ -11470,10 +11470,10 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 8,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "When this card attacks, deal 300 damage to the opponent.",
+			Description = "When this card attacks, deal 600 damage to the opponent.",
 			["Type"] = "OnAttack",
 			["Power"] = {{"Inflict",600}},
-			Target = "Ally",
+			Target = "Opponent",
 		},
 		["Bio"] = "Minotauris sad.",
 	},
