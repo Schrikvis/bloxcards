@@ -1272,7 +1272,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Omega Division",
 			Description = [[At the end of each of your turns, you gain and your opponent loses 250 lifepoints.]],
 			["Type"] = "OnEnd",
-			["Power"] = {{"Inflict",250},{"Cost",-250}},
+			["Power"] = {{"Inflict",250,"Opponent"},{"Cost",-250}},
 			Target = "Ally",
 		},
 		["Bio"] = "It took an aeon for the Overseers to cut back the Green Flourishing.",
