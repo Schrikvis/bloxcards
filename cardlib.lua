@@ -12,7 +12,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Citrus Punch",
-			Description = "When directly cast, increase the power of one fighter by 200. This fighter can't generate icons.",
+			Description = "When directly cast, increase the power of a target fighter by 200. This fighter can't generate icons.",
 			["Type"] = "OnSummon",
 			["Power"] = "Strengthen",
 			Target = "Single",
@@ -178,7 +178,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 3,},
 		["Effect"] = {
 			Name = "Meebling Infestation",
-			Description = "Reduce the attack of one fighter by 600 and summon a Meebling.",
+			Description = "Reduce the attack of a target fighter by 600 and summon a Meebling.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",600},{"Summon","Meebling"}},
 			Target = "Single",
@@ -306,7 +306,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Blue"] = 1,},
 		["Effect"] = {
 			Name = "Freeze Snap",
-			Description = "Lock target fighter for 2 turns.",
+			Description = "Lock a target fighter for 2 turns.",
 			["Type"] = "OnSummon",
 			["Power"] = "Lock",
 			Target = "Single",
@@ -410,7 +410,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 6,["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Amp Up! Uzi!",
-			Description = "Increase the power of one fighter by 500.",
+			Description = "Increase the power of a target fighter by 500.",
 			["Type"] = "OnSummon",
 			["Power"] = "Strengthen",
 			Target = "Single",
@@ -723,7 +723,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Krazy Boost",
-			Description = "Increase the power of a single fighter by 100.",
+			Description = "Increase the power of a target fighter by 100.",
 			["Type"] = "OnSummon",
 			["Power"] = "Strengthen",
 			Target = "Single",
@@ -783,7 +783,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Red"] = 3,},
 		["Effect"] = {
 			Name = "Spill",
-			Description = "Deal 400 damage to a fighter. This card cannot generate icons.",
+			Description = "Deal 400 damage to a target fighter. This card cannot generate icons.",
 			["Type"] = "OnSummon",
 			["Power"] = "Damage",
 			Target = "Single",
@@ -823,7 +823,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 1,},
 		["Effect"] = {
 			Name = "Boiled!",
-			Description = "Deal 200 damage to one fighter. This card cannot generate icons.",
+			Description = "Deal 200 damage to a target fighter. This card cannot generate icons.",
 			["Type"] = "OnSummon",
 			["Power"] = "Damage",
 			Target = "Single",
@@ -10983,11 +10983,11 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Vitality Potion",
-			Description = "Give a card fighter 1500 Health.",
+			Description = "Give a card fighter 1025 Health.",
 			["Type"] = "OnSummon",
 			["Power"] = "Heal",
 			Target = "Single",
-			Increase = 1500,
+			Increase = 1025,
 		},
 		["Bio"] = "The most potent potion to keep fighters alive.",
 	},	
@@ -12258,7 +12258,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Add","Kill Script"}},
 			Target = "Self",
 		},
-		["Bio"] = "One of the founders of Roblox. Died in 2013 after a battle with cancer.",
+		["Bio"] = "One of the founders of Roblox. Ancient and wise.",
 	},
 	
 	["Kill Script"] = {
