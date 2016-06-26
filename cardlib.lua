@@ -3477,7 +3477,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Nature's Gift",
 			Description = "Gain 2 Yellow Icons and grant the opponent 1000 Life.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Yellow",2},{"Inflict",-1000}},
+			["Power"] = {{"Yellow",2},{"Inflict",-1000,"Opponent"}},
 			Target = "Ally",
 		},
 		["Bio"] = "He's not dead. Just un-living.",
