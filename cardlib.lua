@@ -7748,7 +7748,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Christmas Amp",
 			Description = [[Increase the Health of a target fighter by 300. Your opponent gains 300 life.]],
 			["Type"] = "OnSummon",
-			["Power"] = {{"Heal",300},{"Inflict",-300}},
+			["Power"] = {{"Heal",300},{"Inflict",-300,"Opponent"}},
 			Target = "Single",
 		},
 		["Bio"] = "ELF PLUSHIES!",
