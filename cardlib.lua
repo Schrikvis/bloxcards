@@ -4063,7 +4063,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Deceipt",
 			Description = "Deal 500 damage to your opponent and 500 to all enemy fighters.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",500},{"Inflict",500}},
+			["Power"] = {{"Damage",500},{"Inflict",500,"Opponent"}},
 			Target = "Opponent",	
 		},
 		["Bio"] = "Like the game to see what the like animation looks like!",
