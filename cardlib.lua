@@ -3061,9 +3061,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Red"] = 3,},
 		["Effect"] = {
 			Name = "Hyperbolate",
-			Description = "Deal 500 damage to EVERYONE. (Including characters)",
+			Description = "Deal 500 damage to all players and all fighters.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",500},{"Cost",500},{"Inflict",500}},
+			["Power"] = {{"Damage",500},{"Inflict",500}},
 			Target = "All",
 		},
 		["Bio"] = "Pew!",
