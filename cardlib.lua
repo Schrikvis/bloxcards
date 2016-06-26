@@ -7030,9 +7030,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "Of course you should fight fire with fire. You should fight everything with fire.",
 		["Effect"] = {
 			Name = "Board Clear!",
-			Description = "Deal 400 damage to ALL fighters and 800 damage to both players.",
+			Description = "Deal 400 damage to all fighters and 800 damage to both players.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",400},{"Cost",800},{"Inflict",800}},
+			["Power"] = {{"Damage",400},{"Inflict",800}},
 			Target = "All",
 		},
 	},
