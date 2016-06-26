@@ -3231,7 +3231,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Nature's Gift",
 			Description = "Both players gain 3 Green Icons and 750 Life.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Green",3},{"Cost",-750},{"Inflict",-750}},
+			["Power"] = {{"Green",3},{"Inflict",-750}},
 			Target = "All",
 		},
 		["Bio"] = "Sleeping voice of nature. Forumer too.",
