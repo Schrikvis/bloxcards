@@ -10225,10 +10225,10 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Green"] = 2,},
 		["Effect"] = {
 			Name = "Twist",
-			Description = [[Whenever you target this fighter, deal 250 damage to the opponent.]],
+			Description = [[Whenever you target this fighter, deal 300 damage to the opponent.]],
 			["Type"] = "OnTarget",
-			["Power"] = {{"Inflict",250}},
-			Target = "Ally",
+			["Power"] = {{"Inflict",300}},
+			Target = "Opponent",
 		},
 		["Bio"] = "What does he play, you ask? You.",
 	},			
