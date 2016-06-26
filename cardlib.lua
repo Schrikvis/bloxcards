@@ -6812,7 +6812,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Raging Rage",
 			Description = [[Deal 200 damage to all non-Dragon related cards and to the opponent.]],
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",200},{"Inflict",200}},
+			["Power"] = {{"Damage",200},{"Inflict",200,"Opponent"}},
 			Target = "NotArchetype",
 		},
 		["Bio"] = "Power comes within the fittest.",
