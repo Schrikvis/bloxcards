@@ -4137,7 +4137,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 2,},
 		["Effect"] = {
 			Name = "Jagged Arrow",
-			Description = "Reduce the attack of one fighter by 300.",
+			Description = "Reduce the attack of a target fighter by 300.",
 			["Type"] = "OnSummon",
 			["Power"] = "Weaken",
 			Target = "Single",
@@ -4158,7 +4158,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Instill",
-			Description = "Increase the Attack of one fighter by 250.",
+			Description = "Increase the Attack of a target fighter by 250.",
 			["Type"] = "OnSummon",
 			["Power"] = "Strengthen",
 			Target = "Single",
@@ -4483,7 +4483,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Green"] = 2,},
 		["Effect"] = {
 			Name = "No-Zone",
-			Description = "Lower the attack of one fighter by 300.",
+			Description = "Lower the attack of a target fighter by 300.",
 			["Type"] = "OnSummon",
 			["Power"] = "Weaken",
 			Target = "Single",
@@ -4523,7 +4523,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 5,},
 		["Effect"] = {
 			Name = "Investment",
-			Description = "Increase the attack of one fighter by 500.",
+			Description = "Increase the attack of a target fighter by 500.",
 			["Type"] = "OnSummon",
 			["Power"] = "Strengthen",
 			Target = "Single",
@@ -4543,7 +4543,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Red"] = 3,},
 		["Effect"] = {
 			Name = "Mafia Support",
-			Description = "Increase the attack of one fighter by 500.",
+			Description = "Increase the attack of a target fighter by 500.",
 			["Type"] = "OnSummon",
 			["Power"] = "Strengthen",
 			Target = "Single",
@@ -4576,7 +4576,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Psychotic",
-			Description = "Increase the attack of one fighter by 1000, then reduce their health by 750.",
+			Description = "Increase the attack of a target fighter by 1000, then reduce their health by 750.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Strengthen",1000},{"Damage",750}},
 			Target = "Single",
@@ -4657,7 +4657,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 1,},
 		["Effect"] = {
 			Name = "Message of Hope",
-			Description = "Increase the attack of one fighter by 100.",
+			Description = "Increase the attack of a fighter by 100.",
 			["Type"] = "OnSummon",
 			["Power"] = "Strengthen",
 			Target = "Single",
@@ -4689,7 +4689,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 5,},
 		["Effect"] = {
 			Name = "Overgrowth",
-			Description = "Increase the Health of one fighter by 500.",
+			Description = "Increase the Health of a target fighter by 500.",
 			["Type"] = "OnSummon",
 			["Power"] = "Heal",
 			Target = "Single",
@@ -4893,7 +4893,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 2,},
 		["Effect"] = {
 			Name = "Rum!",
-			Description = "Decrease the attack of one fighter by 250.",
+			Description = "Decrease the attack of a target fighter by 250.",
 			["Type"] = "OnSummon",
 			["Power"] = "Weaken",
 			Target = "Single",
@@ -5136,7 +5136,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 2,},
 		["Effect"] = {
 			Name = "Attack Modifier! Debuff!",
-			Description = "Reduce the attack of one fighter by 500.",
+			Description = "Reduce the attack of a target fighter by 500.",
 			["Type"] = "OnSummon",
 			["Power"] = "Weaken",
 			Target = "Single",
@@ -5156,7 +5156,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 2,},
 		["Effect"] = {
 			Name = "Attack Modifier! Buff!",
-			Description = "Increase the attack of one fighter by 500.",
+			Description = "Increase the attack of a target fighter by 500.",
 			["Type"] = "OnSummon",
 			["Power"] = "Strengthen",
 			Target = "Single",
@@ -5176,7 +5176,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 2,},
 		["Effect"] = {
 			Name = "Defense Modifier! Buff!",
-			Description = "Increase the Health of one fighter by 500.",
+			Description = "Increase the Health of a target fighter by 500.",
 			["Type"] = "OnSummon",
 			["Power"] = "Heal",
 			Target = "Single",
@@ -5217,7 +5217,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Set each players Neutral icons to 4 at the start of each turn.",
+			Description = "Set each players' Neutral icons to 4 at the start of each turn.",
 			["Type"] = "Field",
 			["Power"] = "SetNeutral",
 			Target = "Ally",	
@@ -5307,7 +5307,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 4,},
 		["Effect"] = {
 			Name = "Chain-Break!",
-			Description = "Unlock a fighter.",
+			Description = "Unlock a target fighter.",
 			["Type"] = "OnSummon",
 			["Power"] = "Unlock",
 			Target = "Single",
@@ -5424,7 +5424,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Tranquilize",
-			Description = "Lock target fighter for 1 turn. Generate a red icon.", 
+			Description = "Lock a target fighter for 1 turn. Generate a red icon.", 
 			["Type"] = "OnSummon",
 			["Power"] = {{"Red",1},{"Lock",1}},
 			Target = "Single",
@@ -5495,7 +5495,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Red"] = 4,},
 		["Effect"] = {
 			Name = "Fallen Guardian",
-			Description = "Reduce the attack of one fighter to 0 and heal it by 1500.",
+			Description = "Set the Power of a target fighter to 0 and heal it by 1500.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",9999},{"Heal",1500}},
 			Target = "Single",
@@ -5700,12 +5700,12 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 8,},
 		["Effect"] = {
 			Name = "Mimic",
-			Description = "Deal 1000 damage to one fighter and add another copy of Mimic to your hand.",
+			Description = "Deal 1000 damage to a target fighter and add another copy of Mimic to your hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",1000},{"Add","Mimic"}},
 			Target = "Single",
 		},
-		["Bio"] = "Fake-out! It was a trap, but at what cost?!",
+		["Bio"] = "What happens when a mimic mimics itself, or a kirby eats another? This.",
 	},
 	
 	["Eye of Overseer"] = {
@@ -5834,7 +5834,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Pepper Spray",
-			Description = "Locks one fighter for 1 turn. Gain 1 Blue icon. This card cannot generate icons.",
+			Description = "Lock a target fighter for 1 turn. Gain 1 Blue icon. This card cannot generate icons.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Lock",1},{"Blue",1}},
 			Target = "Single",
@@ -6415,7 +6415,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 4,},
 		["Effect"] = {
 			Name = "Master Blast",
-			Description = [[Set a fighter's attack to 700.]],
+			Description = [[Set a target fighter's attack to 700.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",9999},{"Strengthen",700}},
 			Target = "Single",
@@ -6848,7 +6848,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 2,},
 		["Effect"] = {
 			Name = "a dodgeball to a the face!",
-			Description = "Deal 200 damage to target fighter with a dodgeball to the face!",
+			Description = "Deal 200 damage to a target fighter with a dodgeball to the face!",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",200}},
 			Target = "Single",
@@ -7303,7 +7303,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Lion Amp",
-			Description = [[Reduce the attack of one fighter by 100. Gain 1 Yellow icon.]],
+			Description = [[Reduce the attack of a target fighter by 100. Gain 1 Yellow icon.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",100},{"Yellow",1}},
 			Target = "Single",
@@ -7343,7 +7343,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 1,["Neutral"]=3,},
 		["Effect"] = {
 			Name = "Panda Amp",
-			Description = [[Increase the Attack and Health of a fighter by 50.]],
+			Description = [[Increase the Attack and Health of a target fighter by 50.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Strengthen",50},{"Heal",50}},
 			Target = "Single",
@@ -7363,7 +7363,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 2,["Neutral"]=2,},
 		["Effect"] = {
 			Name = "Polar Amp",
-			Description = [[Increase the Attack of one fighter by 100. Add a random Plushie to your hand.]],
+			Description = [[Increase the Attack of a target fighter by 100. Add a random Plushie to your hand.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Strengthen",100},{"RandomAdd","Plushie"}},
 			Target = "Single",
@@ -7383,7 +7383,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 2,["Neutral"]=2,},
 		["Effect"] = {
 			Name = "Tiger Amp",
-			Description = [[Increase the Health of one fighter by 100. Add a random Plushie to your hand.]],
+			Description = [[Increase the Health of a target fighter by 100. Add a random Plushie to your hand.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",100},{"RandomAdd","Plushie"}},
 			Target = "Single",
@@ -7525,7 +7525,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Blue"] = 4,},
 		["Effect"] = {
 			Name = "Absolute Zero",
-			Description = "Lock a fighter for 999 turns.",
+			Description = "Lock a target fighter forever.",
 			["Type"] = "OnSummon",
 			["Power"] = "Lock",
 			Target = "Single",
@@ -7547,7 +7547,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Red"] = 4,},
 		["Effect"] = {
 			Name = "OBLITERATION",
-			Description = "Deal 700 damage to a fighter and 500 to the opponent.",
+			Description = "Deal 700 damage to a target fighter and 500 to the opponent.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",700},{"Inflict",500}},
 			Target = "Single",
@@ -7685,7 +7685,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 2,["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Syzygy's Sheen",
-			Description = [[Lock a fighter for 3 turns.]],
+			Description = [[Lock a target fighter for 3 turns.]],
 			["Type"] = "OnSummon",
 			["Power"] = "Lock",
 			Target = "Single",
@@ -7746,7 +7746,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Christmas Amp",
-			Description = [[Increase the Health of a fighter by 300. Your opponent gains 300 life.]],
+			Description = [[Increase the Health of a target fighter by 300. Your opponent gains 300 life.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",300},{"Inflict",-300}},
 			Target = "Single",
@@ -7766,7 +7766,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Snowman Amp",
-			Description = [[Target 1 fighter and gain 1 Yellow Icon. Increase the lifepoints of both players by 500.]],
+			Description = [[Target a fighter and gain 1 Yellow Icon. Increase the lifepoints of both players by 500.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Yellow",1},{"Inflict",-500},{"Cost",-500}},
 			Target = "Single",
@@ -7883,7 +7883,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 4,["Neutral"] = 4},
 		["Effect"] = {
 			Name = "Terrorise",
-			Description = "Reduce the attack of one fighter by 400, then swap its stats.",
+			Description = "Reduce the attack of a target fighter by 400, then swap its stats.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",400},{"Swap",030}},
 			Target = "Single",
@@ -8064,7 +8064,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Infinity Cannon",
-			Description = "Deal 200 damage to a fighter and return this card to your hand.",
+			Description = "Deal 200 damage to a target fighter and return this card to your hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",200},{"Add","Infinity Cannon"}},
 			Target = "Single",
@@ -8083,7 +8083,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 3,},
 		["Effect"] = {
 			Name = "Infinite Wishes",
-			Description = "Increase the health of one fighter by 200 and return this card to your hand.",
+			Description = "Increase the health of a target fighter by 200 and return this card to your hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",200},{"Add","Infinite Wishes"}},
 			Target = "Single",
@@ -8103,7 +8103,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Infinite Frost",
-			Description = "Lock one fighter for 1 turn and return this card to your hand.",
+			Description = "Lock a target fighter for 1 turn and return this card to your hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Lock",1},{"Add","Infinite Frost"}},
 			Target = "Single",
@@ -8142,7 +8142,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Infinite Frost",
-			Description = "Increase the Attack and Health of one fighter by 100 and return this card to your hand.",
+			Description = "Increase the Attack and Health of a target fighter by 100 and return this card to your hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Strengthen",100},{"Heal",100},{"Add","Infinite Chicken"}},
 			Target = "Single",
@@ -8815,7 +8815,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Green"] = 2,},
 		["Effect"] = {
 			Name = "Blaster Hardscope",
-			Description = [[Deal 200 damage to a fighter.]],
+			Description = [[Deal 200 damage to a target fighter.]],
 			["Type"] = "OnSummon",
 			["Power"] = "Damage",
 			Target = "Single",
@@ -8854,7 +8854,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 3,["Neutral"] = 3},
 		["Effect"] = {
 			Name = "Char",
-			Description = [[Deal 200 damage to a fighter, Then swap its Attack and Health.]],
+			Description = [[Deal 200 damage to a target fighter, Then swap its Attack and Health.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",200},{"Swap","k"}},
 			Target = "Single",
@@ -8873,7 +8873,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 4,},
 		["Effect"] = {
 			Name = "Fattening",
-			Description = [[Increase the Health of a fighter by 500.]],
+			Description = [[Increase the Health of a target fighter by 500.]],
 			["Type"] = "OnSummon",
 			["Power"] = "Heal",
 			Target = "Single",
@@ -9400,7 +9400,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Sneak Attack",
-			Description = "Decrease the attack of one fighter by 150.",
+			Description = "Decrease the attack of a target fighter by 150.",
 			["Type"] = "OnSummon",
 			["Power"] = "Weaken",
 			Target = "Single",
@@ -9444,7 +9444,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 5,},
 		["Effect"] = {
 			Name = "MOO!",
-			Description = "Deal 1 damage to target fighter.",
+			Description = "Deal 1 damage to a target fighter.",
 			["Type"] = "OnSummon",
 			["Power"] = "Damage",
 			Target = "Single",
@@ -9464,7 +9464,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 4,},
 		["Effect"] = {
 			Name = "Alien Beef Serum",
-			Description = "Unlock target fighter, then deal 250 damage to it.",
+			Description = "Unlock a target fighter, then deal 250 damage to it.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Unlock",9999},{"Damage",250}},
 			Target = "Single",
@@ -9688,7 +9688,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "Nutritious Popcorn",
-			Description = "Increase the Health of one fighter by 300.",
+			Description = "Increase the Health of a target fighter by 300.",
 			["Type"] = "OnSummon",
 			["Power"] = "Heal",
 			Target = "Single",
@@ -9727,7 +9727,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Green"] = 1,["Blue"] = 4,},
 		["Effect"] = {
 			Name = "Roar of Time",
-			Description = "Lock a fighter for 6 turns.",
+			Description = "Lock a target fighter for 6 turns.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Lock",6}},
 			Target = "Single",
@@ -9747,7 +9747,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Green"] = 1,["Blue"] = 1,},
 		["Effect"] = {
 			Name = "Snipe!",
-			Description = [[When played, lock a fighter for 3 turns, then deal 300 damage to it.]],
+			Description = [[When played, lock a target fighter for 3 turns, then deal 300 damage to it.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Lock",3},{"Damage",300}},
 			Target = "Single",
@@ -9837,7 +9837,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Red"] = 7,},
 		["Effect"] = {
 			Name = "Power Up",
-			Description = [[Grant 1 fighter 350 health and 350 power, then draw a card.]],
+			Description = [[Grant a target fighter 350 health and 350 power, then draw a card.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Draw",1},{"Heal",350},{"Strengthen",350}},
 			Target = "Single",
@@ -9856,7 +9856,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Red"] = 7,},
 		["Effect"] = {
 			Name = "Power Up",
-			Description = [[Grant 1 fighter 350 health and 350 power, then draw a card.]],
+			Description = [[Grant a target fighter 350 health and 350 power, then draw a card.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Draw",1},{"Heal",350},{"Strengthen",350}},
 			Target = "Single",
@@ -9875,7 +9875,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Green"] = 4,},
 		["Effect"] = {
 			Name = "Hyper Cannon",
-			Description = [[Deal 200 damage to a fighter. Add a Targeting Blip to your hand. Targeting blips are used to trigger Target Effects.]],
+			Description = [[Deal 200 damage to a target fighter. Add a Targeting Blip to your hand. Targeting blips are used to trigger Target Effects.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Add","Targeting Blip"},{"Damage",200}},
 			Target = "Single",
@@ -9914,7 +9914,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Sudden Death",
-			Description = [[Lose 500 bloxbux.]],
+			Description = [[If you have BC, lose 500 bloxbux.]],
 			["Type"] = "OnEnd",
 			["Power"] = {{"Red",0}},
 			Target = "Ally",
@@ -9985,7 +9985,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 5,},
 		["Effect"] = {
 			Name = "Pineapples",
-			Description = [["Increase the Health of one fighter by 300."]],
+			Description = [["Increase the Health of a target fighter by 300."]],
 			["Type"] = "OnSummon",
 			["Power"] = "Heal",
 			Target = "Single",
@@ -10055,7 +10055,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Yellow",
 		["Effect"] = {
 			Name = "Dancing Jail",
-			Description = "Give a fighter 400 health, but lock it for 2 turns. Add a targeting blip to your hand.",
+			Description = "Give a target fighter 400 health, but lock it for 2 turns. Add a targeting blip to your hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Lock",3},{"Heal",400},{"Add","Targeting Blip"}},
 			Target = "Single",
@@ -10303,9 +10303,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 5,["Red"] = 1,},
 		["Effect"] = {
 			Name = "Knife Throw",
-			Description = "Deal 300 damage to a fighter. This fighter can attack when it's summoned.",
+			Description = "Deal 350 damage to a target fighter. This fighter can attack when it's summoned.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",300},{"Charge",030}},
+			["Power"] = {{"Damage",350},{"Charge",030}},
 			Target = "Single",
 			Increase = 1,
 		},
