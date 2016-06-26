@@ -2279,7 +2279,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Purlot Trap.",
 			Description = "Draw 1 card and deal 500 damage to the opponent.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Draw",1},{"Inflict",500}},
+			["Power"] = {{"Draw",1,"Ally"},{"Inflict",500}},
 			Target = "Opponent",
 		},
 		["Bio"] = "Drager's right hand man, he fixes every one of his tpyoes without failure.",
