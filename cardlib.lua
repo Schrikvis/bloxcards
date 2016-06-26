@@ -805,7 +805,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Bribe!",
 			Description = "All your monsters gain 150 health and attack, but your opponent gains 750 life.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Strengthen",150},{"Heal",150},{"Inflict",-750}},
+			["Power"] = {{"Strengthen",150},{"Heal",150},{"Inflict",-750,"Opponent"}},
 			Target = "Ally",
 		},
 		["Bio"] = "A friendly foe, but don't underestimate his passive nature!",
