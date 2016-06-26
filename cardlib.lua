@@ -2799,7 +2799,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Sorry!",
 			Description = "Deal 400 damage to the opponent. Draw a card.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Inflict",400},{"Draw",1}},
+			["Power"] = {{"Inflict",400,"Opponent"},{"Draw",1}},
 			Target = "Self",
 			Increase = 400,
 		},
