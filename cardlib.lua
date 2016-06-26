@@ -10512,7 +10512,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 1,["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Growl",
-			Description = [[Decrease the attack of one fighter by 500.]],
+			Description = [[Decrease the attack of a target fighter by 500.]],
 			["Type"] = "OnSummon",
 			["Power"] = "Weaken",
 			Target = "Single",
@@ -10720,7 +10720,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 4,},
 		["Effect"] = {
 			Name = "Demoralising Chant",
-			Description = "Reduce the attack of one fighter by 500.",
+			Description = "Reduce the attack of a target fighter by 500.",
 			["Type"] = "OnSummon",
 			["Power"] = "Weaken",
 			Target = "Single",
@@ -10740,7 +10740,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 5,["Blue"] = 2,},
 		["Effect"] = {
 			Name = "Inflation",
-			Description = "Give a card 1000 Health and locks it for 2 turns.",
+			Description = "Give target fighter 1000 Health and locks it for 2 turns.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Lock",2},{"Heal",1000}},
 			Target = "Single",
@@ -10983,7 +10983,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Vitality Potion",
-			Description = "Give a card fighter 1025 Health.",
+			Description = "Give a target fighter 1025 Health.",
 			["Type"] = "OnSummon",
 			["Power"] = "Heal",
 			Target = "Single",
@@ -11015,7 +11015,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 3,},
 		["Effect"] = {
 			Name = "A dodgeball to the legs!",
-			Description = "Swap a fighter's stats and lock it for 1 turn.",
+			Description = "Swap a target fighter's stats and lock it for 1 turn.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Lock",1},{"Swap",030}},
 			Target = "Single",
@@ -11094,7 +11094,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Green"] = 8,},
 		["Effect"] = {
 			Name = "Assassinate",
-			Description = "Deal 9999 damage to any fighter.",
+			Description = "Deal 9999 damage to a target fighter.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",9999}},
 			Target = "Single",
@@ -11410,7 +11410,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Target",
-			Description = "Can't be Discarded. Is used to target fighters and trigger effects",
+			Description = "Can't be discarded. Is used to target fighters and trigger effects.",
 			["Type"] = "OnSummon",
 			["Power"] = "Damage",
 			Target = "Single",
@@ -11551,7 +11551,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 4,},
 		["Effect"] = {
 			Name = "Crystal Snare",
-			Description = "Lock a fighter for six turns.",
+			Description = "Lock a target fighter for six turns.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Lock",6}},
 			Target = "Single",	
@@ -11794,7 +11794,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 1, ["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Splat",
-			Description = "Deal 200 damage to to all blue fighters..",
+			Description = "Deal 200 damage to to all blue fighters.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",200,"ColorBlue"}},
 			Target = "All",
@@ -11843,8 +11843,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["ClanAtlas"] = {
 		["Id"] = 430957985,
 		["Name"] = "ClanAtlas",
-		["Health"] = 50,
-		["Power"] = 50,
+		["Health"] = 150,
+		["Power"] = 150,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Punch1",
 		["Token"] = true,
@@ -11854,7 +11854,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Render",
 			Description = "At the end of your turn, fill your board with ClanAtlas, then set the attack and health of all allied fighters to 150. This card can't generate icons.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"}},
+			["Power"] = {{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"}{{"Weaken",9999},{"Strengthen",150},{"Swap",030},{"Weaken",9999},{"Strengthen",150}}},
 			Target = "Ally",
 		},
 		["Bio"] = "Good decks play AoE.",
