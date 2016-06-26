@@ -9634,7 +9634,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Description = [[When this card attacks, your opponent gains 500 life.]],
 			["Type"] = "OnAttack",
 			["Power"] = {{"Inflict",-500}},
-			Target = "Self",	
+			Target = "Opponent",	
 		},
 		["Bio"] = "He duels you with dual axes for dual dueling.",
 	},		
