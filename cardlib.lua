@@ -12385,16 +12385,15 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Cat's Eye Winglet"] = {
-		["Id"] = 441918887,
+		["Id"] = 441937632,
 		["Name"] = "Cat's Eye Winglet",
 		["Health"] = 100,
 		["Power"] = 100,
-		["Rarity"] = "Token,
+		["Rarity"] = "Token",
 		["AttackEffect"] = "Punch1",
 		["Archetype"] = "CatEye",
 		["Color"] = "Yellow",
 		["Cost"] = {["Neutral"] = 1, ["Yellow"] = 1,},
-		["Charge"] = true,
 		["Effect"] = {
 			Name = "Sugar and Ice",
 			Description = "All Cat Eyes gain 150 health and power.",
@@ -12402,9 +12401,28 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Strengthen",150},{"Heal",150}},
 			Target = "Archetype",
 		},
-		["Bio"] = "FLYING KITTEN EYES AAAAAAAA",
+		["Bio"] = "Who would give a disembodied eye of a kitten wings anyway? Sickos.",
 	},
 	
+	["Cat's Eye Wing Flock"] = {
+		["Id"] = 441937712,
+		["Name"] = "Cat's Eye Winglet",
+		["Health"] = 200,
+		["Power"] = 200,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Punch1",
+		["Archetype"] = "CatEye",
+		["Color"] = "Green",
+		["Cost"] = {["Neutral"] = 2, ["Green"] = 2,},
+		["Effect"] = {
+			Name = "Harassing Talons",
+			Description = "Reduce the Power of a fighter by 200, then add a Winglet into your hand.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Weaken",150},{"Heal",150}},
+			Target = "Single",
+		},
+		["Bio"] = "FLYING KITTEN EYES AAAAAAAA",
+	},
 }
 
 local pairs = pairs
