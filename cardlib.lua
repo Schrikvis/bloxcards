@@ -12367,8 +12367,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["animallogic"] = {
 		["Id"] = 441918887,
 		["Name"] = "animallogic",
-		["Health"] = 400,
-		["Power"] = 400,
+		["Health"] = 300,
+		["Power"] = 300,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Yellow",
@@ -12383,6 +12383,28 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "That sword is disgusting. Not only would it just shatter if it was ever swung, it has far too much mass at the base and a poorly made pommel. The armour is somewhat tolerable, however. 3/10 - Sword Critic",
 	},
+	
+	["Cat's Eye Winglet"] = {
+		["Id"] = 441918887,
+		["Name"] = "Cat's Eye Winglet",
+		["Health"] = 100,
+		["Power"] = 100,
+		["Rarity"] = "Token,
+		["AttackEffect"] = "Punch1",
+		["Archetype"] = "CatEye",
+		["Color"] = "Yellow",
+		["Cost"] = {["Neutral"] = 1, ["Yellow"] = 1,},
+		["Charge"] = true,
+		["Effect"] = {
+			Name = "Sugar and Ice",
+			Description = "All Cat Eyes gain 150 health and power.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Strengthen",150},{"Heal",150}},
+			Target = "Archetype",
+		},
+		["Bio"] = "FLYING KITTEN EYES AAAAAAAA",
+	},
+	
 }
 
 local pairs = pairs
