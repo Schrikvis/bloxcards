@@ -207,6 +207,9 @@ When set to true, the card cannot attack the enemy player.
 - Token
 When discarded, this card does not give icons.
 
+- WeakenImmune
+The card is immune to effects that decrease its health or power.
+
 ---------------------------------------------------------------
 
 ~
