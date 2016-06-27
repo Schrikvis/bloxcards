@@ -180,7 +180,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Meebling Infestation",
 			Description = "Reduce the attack of a target fighter by 600 and summon a Meebling.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Weaken",600},{"Summon","Meebling"}},
+			["Power"] = {{"Weaken",600},{"Summon","Meebling","Ally"}},
 			Target = "Single",
 		},
 		["Bio"] = "Not even ShamWow can stop the mess Meeblings make.",
@@ -12504,6 +12504,24 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "Beauty is in the eye of the beholder.",
 	},
 	
+	["Lilmanofsalem"] = {
+		["Id"] = 442933301,
+		["Name"] = "Lilmanofsalem",
+		["Health"] = 400,
+		["Power"] = 800,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Yellow",
+		["Cost"] = {["Yellow"] = 3,},
+		["Effect"] = {
+			Name = "Harassing Talons",
+			Description = "Your opponent summons a Lilmanofsalem.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Summon","Lilmanofsalem"}},
+			Target = "Opponent",
+		},
+		["Bio"] = "Putting Death Millers in your game is bastard modding. No exceptions.",
+	},
 }
 
 local pairs = pairs
