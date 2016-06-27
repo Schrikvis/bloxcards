@@ -12461,7 +12461,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Inflict",400,"Opponent"},{"Inflict",-400},{"SetNeutral",0}{"Add","Cat's Eye Cultist"}},
 			Target = "Ally",
 		},
-		["Bio"] = "She consented to this in his will. Why she consented to this is another issue entirely.",
+		["Bio"] = "She consented to this in her will. Why she consented to this is another issue entirely.",
 	},
 	
 	["Cat's Eye Nexus"] = {
@@ -12473,17 +12473,37 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Punch1",
 		["Archetype"] = "CatEye",
 		["Color"] = "Yellow",
-		["Charge"] = true,
 		["Cost"] = {["Neutral"] = 5, ["Yellow"] = 5,},
 		["Effect"] = {
 			Name = "Harassing Talons",
-			Description = "Add a Cat's Eye Corpse Stealer to your hand.",
+			Description = "Add a Cat's Eye Corpse Stealer to your hand. Your opponent draws two cards.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Add","Cat's Eye Cultist"}},
+			["Power"] = {{"Add","Cat's Eye Corpse Stealer"},{"Draw",2,"Opponent"}},
 			Target = "Ally",
 		},
-		["Bio"] = "She consented to this in his will. Why she consented to this is another issue entirely.",
+		["Bio"] = "With your chakra, awaken your third eye! ... And your fourth. And the fifth... Sixth as well. Seventh if you're in the mood. Don't forget the eighth, either! Or the ninth...",
 	},
+	
+	["Cat's Eye, Master of Perception"] = {
+		["Id"] = 441986585,
+		["Name"] = "Cat's Eye, Master of Perception",
+		["Health"] = 1200,
+		["Power"] = 1200,
+		["Rarity"] = "Legendary",
+		["AttackEffect"] = "Punch1",
+		["Archetype"] = "CatEye",
+		["Color"] = "Green",
+		["Cost"] = {["Neutral"] = 6, ["Green"] = 6,},
+		["Effect"] = {
+			Name = "Harassing Talons",
+			Description = "Add a Cat's Eye Nexus to your hand. Your opponent gains four white icons.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Add","Cat's Eye Nexus"},{"White",4,"Opponent"}},
+			Target = "Ally",
+		},
+		["Bio"] = "Beauty is in the eye of the beholder.",
+	},
+	
 }
 
 local pairs = pairs
