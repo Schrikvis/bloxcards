@@ -12396,9 +12396,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1, ["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "Sugar and Ice",
-			Description = "All Cat Eyes gain 150 health and power.",
+			Description = "All Cat Eyes gain 100 Health.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Strengthen",150},{"Heal",150}},
+			["Power"] = {{"Heal",150}},
 			Target = "Archetype",
 		},
 		["Bio"] = "Who would give a disembodied eye of a kitten wings anyway? Sickos.",
@@ -12406,7 +12406,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	
 	["Cat's Eye Wing Flock"] = {
 		["Id"] = 441937712,
-		["Name"] = "Cat's Eye Winglet",
+		["Name"] = "Cat's Eye Wing Flock",
 		["Health"] = 200,
 		["Power"] = 200,
 		["Rarity"] = "Common",
@@ -12418,10 +12418,30 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Harassing Talons",
 			Description = "Reduce the Power of a fighter by 200, then add a Winglet into your hand.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Weaken",150},{"Heal",150}},
+			["Power"] = {{"Weaken",200},{"Add","Cat's Eye Winglet","Ally"}},
 			Target = "Single",
 		},
 		["Bio"] = "FLYING KITTEN EYES AAAAAAAA",
+	},
+	
+	["Cat's Eye Cultist"] = {
+		["Id"] = 441937772,
+		["Name"] = "Cat's Eye Cultist",
+		["Health"] = 300,
+		["Power"] = 300,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Punch1",
+		["Archetype"] = "CatEye",
+		["Color"] = "Green",
+		["Cost"] = {["Neutral"] = 3, ["Yellow"] = 3,},
+		["Effect"] = {
+			Name = "Harassing Talons",
+			Description = "All Cat Eyes gain 150 health and 150 power. Add a Wing Flock into to your hand.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Heal",300},{"Add","Cat's Eye Wing Flock","Ally"}},
+			Target = "Archetype",
+		},
+		["Bio"] = "Harassing talons indeed. ",
 	},
 }
 
