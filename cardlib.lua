@@ -6407,6 +6407,13 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Thunder",
 		["Color"] = "Neutral",
 		["Cost"] = {["Neutral"] = 4,},
+		["Effect"] = {
+			Name = "EzWinz",
+			Description = "When this card attacks, add a frozen fish to your hand.",
+			["Type"] = "OnAttack",
+			["Power"] = {{"Add","FrozenFish"}},
+			Target = "Ally",
+		},
 		["Bio"] = "You have to enjoy the frozen fish.",
 	},
 	
@@ -12075,8 +12082,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Febrezer"] = {
 		["Id"] = 432713810,
 		["Name"] = "Febrezer",
-		["Health"] = 600,
-		["Power"] = 600,
+		["Health"] = 500,
+		["Power"] = 500,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Neutral",
@@ -12524,7 +12531,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["DrPepperSlayer"] = {
-		["Id"] = 442933301,
+		["Id"] = 443304529,
 		["Name"] = "DrPepperSlayer",
 		["Health"] = 200,
 		["Power"] = 700,
@@ -12536,8 +12543,27 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Harassing Talons",
 			Description = "Generate a blue icon.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Blue","1"}},
+			["Power"] = {{"Blue",1}},
 			Target = "Ally",
+		},
+		["Bio"] = "Yeah, yeah, shameless advertising is shameless. I'll give you a hug if you shut up about it.",
+	},
+	
+	["Frozen Fish"] = {
+		["Id"] = 443305020,
+		["Name"] = "Frozen Fish",
+		["Health"] = 0,
+		["Power"] = 0,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Neutral",
+		["Cost"] = {["Neutral"] = 1, ["Blue"] = 1,},
+		["Effect"] = {
+			Name = "Trout Slap",
+			Description = "You and a target fighter gains 200 health.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Heal",200},{"Inflict",-200,"Ally"}},
+			Target = "Single",
 		},
 		["Bio"] = "Yeah, yeah, shameless advertising is shameless. I'll give you a hug if you shut up about it.",
 	},
