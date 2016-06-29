@@ -11834,7 +11834,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Brymmy"] = {
-		["Id"] = 430957051,
+		["Id"] = 444223893,
 		["Name"] = "Brymmy",
 		["Health"] = 800,
 		["Power"] = 0,
@@ -12565,6 +12565,44 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Single",
 		},
 		["Bio"] = "I'll enjoy it, but only at your expense.",
+	},
+	
+	["BrackioTops"] = {
+		["Id"] = 443305020,
+		["Name"] = "BrackioTops",
+		["Health"] = 600,
+		["Power"] = 200,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Yellow",
+		["Cost"] = {["Yellow"] = 3,},
+		["Effect"] = {
+			Name = "Trout Slap",
+			Description = "Set your life to 3000.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"SetLife",3000}},
+			Target = "Ally",
+		},
+		["Bio"] = "The damp mayday-er. Combos well with Valletta.",
+	},
+	
+	["BerskererPredator450"] = {
+		["Id"] = 443305020,
+		["Name"] = "BerskererPredator450",
+		["Health"] = 400,
+		["Power"] = 600,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Red",
+		["Cost"] = {["Neutral"] = 3, ["Red"] = 2, ["Yellow"] = 1,},
+		["Effect"] = {
+			Name = "Trout Slap",
+			Description = "Set your opponent's life to 4500.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"SetLife",4500}},
+			Target = "Opponent",
+		},
+		["Bio"] = "GET OVER HERE, MEEBOIDS!",
 	},
 }
 
