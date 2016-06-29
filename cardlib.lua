@@ -98,7 +98,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Build Up",
-			Description = "Increase the Health of all your Meeboids by 350. Gain 300 life.",
+			Description = "Increase the Health of all your Meeboids by 300. Gain 300 life.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",350},{"Cost",-300}},
 			Target = "Archetype",
@@ -118,9 +118,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Build Up",
-			Description = "Increase the Health of all Meeboids by 100, and gain 100 life at the end of each of your turns.",
+			Description = "Increase the Health of all Meeboids by 100, and gain 50 life at the end of each of your turns.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Heal",100},{"Cost",-100}},
+			["Power"] = {{"Heal",100},{"Cost",-50}},
 			Target = "Archetype",
 		},
 		["Bio"] = "Meep Moop.",
@@ -138,9 +138,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Build Up",
-			Description = "Increase the Health of all Meeboids and your life by 75 at the end of each of your turns.",
+			Description = "Increase the Health of all Meeboids by 75 and your life by 50 at the end of each of your turns.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Heal",75},{"Cost",-75}},
+			["Power"] = {{"Heal",75},{"Cost",-50}},
 			Target = "Archetype",
 		},
 		["Bio"] = "Meeblings are mischevious runts that steal and feed on humans and their treasures.",
@@ -158,9 +158,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 6,},
 		["Effect"] = {
 			Name = "Build Up",
-			Description = "At the end of your turns, all meeboids gain 150 health and you gain 200 life.",
+			Description = "At the end of your turns, all meeboids gain 150 health and you gain 100 life.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Heal",150},{"Cost",-200}},
+			["Power"] = {{"Heal",150},{"Cost",-100}},
 			Target = "Archetype",
 		},
 		["Bio"] = "The Meeblings first stole this exact crown from an old king. It's theirs now.",
@@ -224,7 +224,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Build Up",
 			Description = "Unlock all fighters and gain 150 life at the end of each of your turns.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Unlock",9999},{"Cost",-250}},
+			["Power"] = {{"Unlock",9999},{"Cost",-150}},
 			Target = "All",
 		},
 		["Bio"] = "And not one will know of the war, not one. Will care at last when it is done.",
@@ -5400,7 +5400,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Bereghost"] = {
-		["Id"] = 298792760,
+		["Id"] = 444025310,
 		["Name"] = "Bereghost",
 		["Health"] = 1200,
 		["Power"] = 400,
@@ -6439,7 +6439,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Jeptem"] = {
 		["Id"] = 315997055,
 		["Name"] = "Jeptem",
-		["Health"] = 1000,
+		["Health"] = 800,
 		["Power"] = 0,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Thunder",
