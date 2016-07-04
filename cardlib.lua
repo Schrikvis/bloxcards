@@ -11956,7 +11956,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["NearMiss TFW"] = {
 		["Id"] = 430960670,
 		["Name"] = "NearMiss TFW",
-		["Health"] = 1000,
+		["Health"] = 1350,
 		["Power"] = 0,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Punch1",
@@ -12692,7 +12692,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["stereoplexus"] = {
-		["Id"] = 444253750,
+		["Id"] = 446589987,
 		["Name"] = "stereoplexus",
 		["Health"] = 1100,
 		["Power"] = 200,
@@ -12709,6 +12709,44 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Opponent",
 		},
 		["Bio"] = "Plexus descending, winter unending. Plexus departing, summer is starting.",
+	},
+	
+	["Aurichalcum"] = {
+		["Id"] = 446724872,
+		["Name"] = "Aurichalcum",
+		["Health"] = 600,
+		["Power"] = 600,
+		["Rarity"] = "Legendary",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Green",
+		["Cost"] = {["Neutral"] = 1, ["Yellow"] = 6,},
+		["Effect"] = {
+			Name = "Trout Slap",
+			Description = "Destroy all other fighters. Your opponent gains 4550 life and draws two cards.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Heal",9999,"Self"},{"Damage",9999},{"Inflict",-4550,"Opponent"},{"Draw",2."Opponent"}},
+			Target = "All",
+		},
+		["Bio"] = "I'm sorry I caused the apocalypse. Have some gold.",
+	},
+	
+	["AurichalcumV2"] = {
+		["Id"] = 446724984,
+		["Name"] = "Aurichalcum",
+		["Health"] = 600,
+		["Power"] = 600,
+		["Rarity"] = "Legendary",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Green",
+		["Cost"] = {["Neutral"] = 1, ["Yellow"] = 6,},
+		["Effect"] = {
+			Name = "Trout Slap",
+			Description = "Destroy all other fighters. Your opponent gains 4550 life and draws two cards.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Heal",9999,"Self"},{"Damage",9999},{"Inflict",-4550,"Opponent"},{"Draw",2."Opponent"}},
+			Target = "All",
+		},
+		["Bio"] = "I'm sorry I caused the apocalypse. Have some useless currency.",
 	},
 }
 
