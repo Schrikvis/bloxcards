@@ -11615,7 +11615,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Sibs"] = {
-		["Id"] = 431140177,
+		["Id"] = 447442968,
 		["Name"] = "Sibs",
 		["Health"] = 500,
 		["Power"] = 900,
@@ -11725,7 +11725,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Ultra Doregriffon"] = {
 		["Id"] = 430948999,
 		["Name"] = "Ultra Doregriffon",
-		["Health"] = 1000,
+		["Health"] = 1500,
 		["Power"] = 0,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Punch1",
@@ -12747,6 +12747,25 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "All",
 		},
 		["Bio"] = "I'm sorry I caused the apocalypse. Have some useless currency.",
+	},
+	
+	["TheEnderCorp"] = {
+		["Id"] = 446792148,
+		["Name"] = "TheEnderCorp",
+		["Health"] = 600,
+		["Power"] = 300,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Green",
+		["Cost"] = {["Neutral"] = 1, ["Red"] = 1, ["Blue"] = 3,},
+		["Effect"] = {
+			Name = "I AM NOT YOUR SLAVE DAD",
+			Description = "Both players draw a card.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Draw",1}},
+			Target = "All",
+		},
+		["Bio"] = "[InsertWittyFlavourTextHere]",
 	},
 }
 
