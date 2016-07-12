@@ -8326,7 +8326,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Power = {{"Summon","Bee"},{"Summon","Bee"},{"Summon","Bee"},{"Strengthen",250,"Archetype"},{"Heal",250,"Archetype"}},
 			Target = "Ally",
 		},
-		["Bio"] = [[When we are dry. You think it is all over? No, it has only just begun.]],
+		["Bio"] = [[When we are dry. You think it is all over? No, it has only just beegun.]],
 	},
 	
 	["Nightmare"] = {
@@ -9407,11 +9407,11 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["DairingPoopHead"] = {
 		["Id"] = 384006597,
 		["Name"] = "DairingPoopHead",
-		["Health"] = 500,
-		["Power"] = 600,
+		["Health"] = 700,
+		["Power"] = 500,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Lightning",
-		["Color"] = "Red",
+		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Mental Preparation",
@@ -9421,7 +9421,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Self",
 			Increase = 1,
 		},
-		["Bio"] = "You just dared him. He's going to give you brown dairy now.",
+		["Bio"] = "You just dared him. Prepare for brown dairy.",
 	},	
 	
 	["bincent"] = {
@@ -12770,7 +12770,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["BLOXER787"] = {
 		["Id"] = 323660101,
 		["Name"] = "BLOXER787",
-		["Health"] = 950,
+		["Health"] = 1050,
 		["Power"] = 250,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Punch1",
@@ -12778,13 +12778,13 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 2,["Neutral"] = 5,},
 		["Effect"] = {
 			Name = "EzWinz",
-			Description = "When this card attacks, add a random Red Legendary to your hand.",
+			Description = "When this card attacks, add a random Yellow Legendary to your hand.",
 			["Type"] = "OnAttack",
 			["Power"] = "RandomAdd",
 			Target = "Ally",
-			Increase = "LegendaryRed",
+			Increase = "LegendaryYellow",
 		},
-		["Bio"] = "Fists or death!!",
+		["Bio"] = "You're way out of his league.",
 	},
 }
 
