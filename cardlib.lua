@@ -158,10 +158,10 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 6,},
 		["Effect"] = {
 			Name = "Build Up",
-			Description = "At the end of your turns, all meeboids gain 175 health and you gain 100 life.",
-			["Type"] = "OnEnd",
-			["Power"] = {{"Heal",175},{"Cost",-100}},
-			Target = "Archetype",
+			Description = "All non-meeboid fighters lose 200 power. All meeboids gain 200 power. You gain 200 life.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Weaken",200,"NotArchetype"},{"Strengthen",200,"Archetype"},{"Cost",-200}},
+			Target = "Ally",
 		},
 		["Bio"] = "The Meeblings first stole this exact crown from an old king. It's theirs now.",
 	},
@@ -6459,7 +6459,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Jeptem"] = {
-		["Id"] = 315997055,
+		["Id"] = 452976028,
 		["Name"] = "Jeptem",
 		["Health"] = 800,
 		["Power"] = 0,
