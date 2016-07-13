@@ -211,6 +211,10 @@ Adds Increase icons of the color to the Target player.
 - SetColorName (ie. "SetBlue")
 Set the amount of colored icons of the Target player to Increase.
 
+- RevealHand
+Flips the cards in the target's hand, revealing them to the other
+player.
+
 ---------------------------------------------------------------
 
 Card Modifiers
