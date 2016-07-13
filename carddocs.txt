@@ -87,6 +87,22 @@ Fires when a turn begins.
 - OnAttack
 Fires when the card attacks.
 
+- OnStrike
+Fires when the card attacks the enemy player.
+
+- OnAllySummon, OnEnemySummon
+Fires when the player or the enemy player summons a fighter.
+
+- OnCast, OnAllyCast, OnEnemyCast
+Fires when either player, the player or the enemy player casts an
+effect or terrain card.
+
+- OnHealthGain, OnHealthLoss, OnEnemyHealthGain, OnEnemyHealthLoss
+Fires when the player or the enemy player gains or loses health.
+
+- OnDeath
+Fires when the card dies.
+
 ---------------------------------------------------------------
 
 Effect Targets
@@ -104,7 +120,14 @@ Targets all cards allied to the card or the player playing the card.
 Targets all cards or all players.
 
 - Opponent
-Targets all opposing cards, or the opposing player.
+Targets all opposing cards, or the opposing card, or the opposing
+player.
+
+- Aggressor
+Targets the opposing card when applicable.
+
+- OpponentCards
+Targets all opposing cards.
 
 - Single
 - Target
@@ -200,6 +223,12 @@ When set to true, the player cannot discard the card.
 - AttackBlock
 When set to true, the card cannot attack enemy cards nor the enemy
 player.
+
+- CounterBlock
+When set to true, this card cannot counterattack enemy cards.
+
+- CounterAttackBlock
+When set to true, enemy cards cannot counterattack this card.
 
 - FaceBlock
 When set to true, the card cannot attack the enemy player.
