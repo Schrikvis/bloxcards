@@ -11460,7 +11460,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 0,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Punch1",
-		["Field"] = 429397562,
+		["Field"] = 429397560,
 		["Color"] = "Neutral",
 		["Archetype"] = "Terrain",
 		["Cost"] = {["Green"] = 1,["Blue"] = 1,["Yellow"] = 1,["Red"] = 1,},
@@ -12785,6 +12785,26 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Increase = "LegendaryYellow",
 		},
 		["Bio"] = "You're way out of his league.",
+	},
+	
+	["Nova"] = {
+		["Id"] = 323660101,
+		["Name"] = "Nova",
+		["Health"] = 0,
+		["Power"] = 0,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Punch1",
+		["Requirement"] = {"Archetype",2},
+		["Color"] = "Red",
+		["Cost"] = {["Neutral"] = 0,},
+		["Effect"] = {
+			Name = "EzWinz",
+			Description = "Cast only if you have 2 or more dragon-related cards in play. Generate an icon of every colour, then draw a card.",
+			["Type"] = "OnAttack",
+			["Power"] = {{"Yellow",1},{"Blue",1},{"Red",1},{"Green",1},{"Neutral",1},{"Draw",1}},
+			Target = "Ally",
+		},
+		["Bio"] = "Today, everything just seems to fall apart. But the light will still take 2.4197 x10^21242 years to reach our planet, so we'll never know...",
 	},
 }
 
