@@ -10278,12 +10278,12 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 5,["Blue"] = 2,},
 		["Effect"] = {
 			Name = "Steals Memes",
-			Description = "When this card Attacks, it gains 200 heath and you gain 200 life.",
+			Description = "When this card Attacks, it gains 200 health and you gain 200 life.",
 			["Type"] = "OnAttack",
 			["Power"] = {{"Cost",-200},{"Heal",200}},
 			Target = "Self",
 		},
-		["Bio"] = "I wonder who is behind the mask. All we know is that he has a carton of IcyTea and a bag of stolen memes.",
+		["Bio"] = "Due to the societal and economic collapse of World War 3, memes have become such a valuable commdity that smugglers will go to any length to obtain them.",
 	},			
 
 	["Flufflefunz"] = {
@@ -12833,19 +12833,39 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "HeyItsColin",
 		["Health"] = 600,
 		["Power"] = 1200,
-		["Rarity"] = "Uncommon",
+		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Punch1",
 		["Archetype"] = "Redcliff",
 		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 5, ["Red"] = 4,},
 		["Effect"] = {
-			Name = "EzWinz",
+			Name = "Double Bleeding",
 			Description = "Whenever you lose life, draw a card and deal 200 damage to the opponent.",
 			["Type"] = "OnHealthLoss",
 			["Power"] = {{"Draw",1},{"Inflict",200,"Opponent"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Or is it?",
+	},
+	
+	["Korblox Shadowmage"] = {
+		["Id"] = 433133401,
+		["Name"] = "Korblox Shadowmage",
+		["Health"] = 900,
+		["Power"] = 100,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Punch1",
+		["Archetype"] = "Korblox",
+		["Color"] = "Blue",
+		["Cost"] = {["Green"] = 3,},
+		["Effect"] = {
+			Name = "Vampire",
+			Description = "Whenever you gain life, deal 100 damage to the opponent, then Korblox Shadowmage gains 100 health.",
+			["Type"] = "OnHealthGain",
+			["Power"] = {{"Inflict",100},{"Heal",10,"Self"}},
+			Target = "Opponent",
+		},
+		["Bio"] = "The Shadowmages are a long-lost sect of the korblox army, ousted and fled for practicing forbidden nature magic.",
 	},
 }
 
