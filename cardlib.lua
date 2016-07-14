@@ -9405,7 +9405,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["DairingPoopHead"] = {
-		["Id"] = 384006597,
+		["Id"] = 454691965,
 		["Name"] = "DairingPoopHead",
 		["Health"] = 700,
 		["Power"] = 500,
@@ -12723,7 +12723,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Trout Slap",
 			Description = "Destroy all other fighters. Your opponent gains 4550 life and draws two cards.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Heal",9999,"Self"},{"Damage",9999},{"Inflict",-4550,"Opponent"},{"Draw",2."Opponent"}},
+			["Power"] = {{"Heal",9999,"Self"},{"Damage",9999},{"Inflict",-4550,"Opponent"},{"Draw",2,"Opponent"}},
 			Target = "All",
 		},
 		["Bio"] = "I'm sorry I caused the apocalypse. Have some gold.",
@@ -12742,7 +12742,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Trout Slap",
 			Description = "Destroy all other fighters. Your opponent gains 4550 life and draws two cards.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Heal",9999,"Self"},{"Damage",9999},{"Inflict",-4550,"Opponent"},{"Draw",2."Opponent"}},
+			["Power"] = {{"Heal",9999,"Self"},{"Damage",9999},{"Inflict",-4550,"Opponent"},{"Draw",2,"Opponent"}},
 			Target = "All",
 		},
 		["Bio"] = "I'm sorry I caused the apocalypse. Have some useless currency.",
@@ -12788,14 +12788,15 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Nova"] = {
-		["Id"] = 323660101,
+		["Id"] = 454695731,
 		["Name"] = "Nova",
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Punch1",
 		["Requirement"] = {"Archetype",2},
-		["Color"] = "Red",
+		["Archetype"] = "Dragon",
+		["Color"] = "Neutral",
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "EzWinz",
@@ -12805,6 +12806,26 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Ally",
 		},
 		["Bio"] = "Today, everything just seems to fall apart. But the light will still take 2.4197 x10^21242 years to reach our planet, so we'll never know...",
+	},
+	
+	["Redcliff Heretic"] = {
+		["Id"] = 454695731,
+		["Name"] = "Redcliff Heretic",
+		["Health"] = 600,
+		["Power"] = 200,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Punch1",
+		["Archetype"] = "Redcliff",
+		["Color"] = "Red",
+		["Cost"] = {["Green"] = 3,},
+		["Effect"] = {
+			Name = "EzWinz",
+			Description = "Summon two zombies. Your opponent summons a Redcliff Mauler.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Summon","Zombie"},{"Summon","Zombie"},{"Summon","Redcliff Mauler"}},
+			Target = "Ally",
+		},
+		["Bio"] = "If they had no issues dying for us once, they'll have no issues dying for us twice. Why is that so hard to understand?",
 	},
 }
 
