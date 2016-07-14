@@ -11310,9 +11310,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 6,},
 		["Effect"] = {
 			Name = "Zappow!",
-			Description = "Set the attack of all fighters to 400.",
+			Description = "Return all fighters to their owner's hand.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Weaken",9999},{"Strengthen",400}},
+			["Power"] = {{"Return",090}},
 			Target = "All",
 		},
 		["Bio"] = "Stops even light from escaping.",
@@ -12809,7 +12809,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Redcliff Heretic"] = {
-		["Id"] = 454695731,
+		["Id"] = 454712804,
 		["Name"] = "Redcliff Heretic",
 		["Health"] = 600,
 		["Power"] = 200,
@@ -12826,6 +12826,26 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Ally",
 		},
 		["Bio"] = "If they had no issues dying for us once, they'll have no issues dying for us twice. Why is that so hard to understand?",
+	},
+	
+	["HeyItsColin"] = {
+		["Id"] = 454712804,
+		["Name"] = "HeyItsColin",
+		["Health"] = 600,
+		["Power"] = 1200,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Punch1",
+		["Archetype"] = "Redcliff",
+		["Color"] = "Red",
+		["Cost"] = {["Neutral"] = 5, ["Red"] = 4,},
+		["Effect"] = {
+			Name = "EzWinz",
+			Description = "Whenever you lose life, draw a card and deal 200 damage to the opponent.",
+			["Type"] = "OnHealthLoss",
+			["Power"] = {{"Draw",1},{"Inflict",200,"Opponent"}},
+			Target = "Ally",
+		},
+		["Bio"] = "Or is it?",
 	},
 }
 
