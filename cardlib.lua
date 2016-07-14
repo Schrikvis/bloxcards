@@ -1306,6 +1306,13 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Punch2",
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 2,},
+		["Effect"] = {
+			Name = "Tom's Beans",
+			Description = "When this card dies, gain 200 life.",
+			["Type"] = "OnDeath",
+			["Power"] = {{"Inflict",-200}},
+			Target = "Ally",
+		},
 		["Bio"] = "Just a friendly new player of ROBLOX.",
 	},
 	
@@ -1320,7 +1327,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 4,},
 		["Bio"] = "A can of beans that help you with the extra mile.",
 		["Effect"] = {
-			Name = "Tom's Beans",
+			Name = "nutrition",
 			Description = "Give a target fighter 500 Health and 150 power.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",500},{"Strengthen",150}},
@@ -4139,7 +4146,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Booster",
 			Description = "JadeFlames gets 75 health at the end of each turn. Reveal your opponent's hand at the end of each turn.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Reveal",999,"Opponent"},{"Heal",75}},
+			["Power"] = {{"RevealHand",999,"Opponent"},{"Heal",75}},
 			Target = "Self",
 		},
 		["Bio"] = "Want some eggs? Oh wait, of course you do.",
@@ -12925,7 +12932,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Blue",
 		["Cost"] = {["Blue"] = 3, ["Neutral"] = 1,},
 		["Effect"] = {
-			Name = "Zerg rush kekekekeke",
+			Name = "Mana Siphon",
 			Description = "Whenever your opponent casts an action or terrain card, draw a card and add a random blue or red action to your hand.",
 			["Type"] = "OnEnemyCast",
 			["Power"] = {{"Draw",1},{"RandomAdd", "Lunar"}},
