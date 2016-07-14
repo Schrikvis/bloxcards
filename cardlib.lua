@@ -90,6 +90,13 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Punch2",
 		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 3,},
+		["Effect"] = {
+			Name = "Conflux",
+			Description = "This fighter can attack the turn it's summoned.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Charge",030}},
+			Target = "Self",
+		},
 		["Bio"] = "From making animations and machinimas, PixelFlame is a free spirited ROBLOXian, but don't think he won't punch you into oblivion for stealing faces. He will...",
 	},
 	
@@ -5162,9 +5169,10 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Thunder",
 		["Color"] = "Red",
 		["Cost"] = {["Red"] = 10,},
+		["CounterBlock"] = true,
 		["Effect"] = {
 			Name = "Combine Swipe",
-			Description = "At the end of your turn, deal 300 damage to all enemy fighters.",
+			Description = "At the end of your turn, deal 300 damage to all enemy fighters. The stalker can't counterattack.",
 			["Type"] = "OnEnd",
 			["Power"] = "Damage",
 			Target = "Opponent",
@@ -10019,13 +10027,22 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Crazynoggin"] = {
 		["Id"] = 384050153,
 		["Name"] = "Crazynoggin",
-		["Health"] = 500,
+		["Health"] = 400,
 		["Power"] = 500,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Red",
+		["CounterAttackBlock"] = true,
 		["Cost"] = {["Neutral"] = 2,["Red"] = 2,},
-		["Bio"] = "Nog?",
+		["Effect"] = {
+			Name = "Stud",
+			Description = [[This card can't be counterattacked.]],
+			["Type"] = "OnTarget",
+			["Power"] = "None",
+			Target = "Self",	
+			Increase = 0,
+		},
+		["Bio"] = "Nog? NogNog! Nog Noggggg? Neg Nog Cod.",
 	},			
 
 	["BroRubik"] = {
@@ -12944,6 +12961,25 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Self",
 		},
 		["Bio"] = "Bombs, Bombers, Guns, Waves, Gases, Cancers, Bacteria, Etcetera.",
+	},
+	
+	["Kmansong2"] = {
+		["Id"] = 455952405,
+		["Name"] = "Kmansong2",
+		["Health"] = 700,
+		["Power"] = 700,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Neutral",
+		["Cost"] = {["Neutral"] = 8,},
+		["Effect"] = {
+			Name = "Mana Siphon",
+			Description = "All non-white fighters lose 200 health and power.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Weaken",200,"ColorBlue"},{"Damage",200,"ColorBlue"},{"Weaken",200,"ColorGreen"},{"Damage",200,"ColorGreen"},{"Weaken",200,"ColorYellow"},{"Damage",200,"ColorYellow"},{"Weaken",200,"ColorRed"},{"Damage",200,"ColorRed"},},
+			Target = "all",
+		},
+		["Bio"] = "This symphony is a ray of hope! Or some cheesy speech like that.",
 	},
 }
 
