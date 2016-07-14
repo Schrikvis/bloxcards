@@ -12914,6 +12914,25 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "They're known as the tempest for a reason.",
 	},
+	
+	["LordFlanz"] = {
+		["Id"] = 455834551,
+		["Name"] = "LordFlanz",
+		["Health"] = 400,
+		["Power"] = 400,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Blue",
+		["Cost"] = {["Blue"] = 3, ["Neutral"] = 1,},
+		["Effect"] = {
+			Name = "Zerg rush kekekekeke",
+			Description = "Whenever your opponent casts an action or terrain card, draw a card and add a random blue or red action to your hand.",
+			["Type"] = "OnEnemyCast",
+			["Power"] = {{"Draw",1},{"RandomAdd", "Lunar"}},
+			Target = "Self",
+		},
+		["Bio"] = "Bombs, Bombers, Guns, Waves, Gases, Cancers, Bacteria, Etcetera.",
+	},
 }
 
 local pairs = pairs
