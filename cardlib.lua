@@ -4127,15 +4127,22 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["JadeFlames"] = {
-		["Id"] = 292778159,
+		["Id"] = 455829003,
 		["Name"] = "JadeFlames",
-		["Health"] = 700,
-		["Power"] = 250,
+		["Health"] = 525,
+		["Power"] = 100,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Blue",
-		["Cost"] = {["Neutral"] = 3,["Blue"] = 1,},
-		["Bio"] = "Want some eggs?",
+		["Cost"] = {["Blue"] = 2,},
+		["Effect"] = {
+			Name = "Booster",
+			Description = "JadeFlames gets 75 health at the end of each turn. Reveal your opponent's hand at the end of each turn.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Reveal",999,"Opponent"},{"Heal",75}},
+			Target = "Self",
+		},
+		["Bio"] = "Want some eggs? Oh wait, of course you do.",
 	},	
 	
 	["Korblox Archer"] = {
@@ -7276,11 +7283,10 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 5,["Red"] = 5, ["Green"] = 5, ["Yellow"] = 5, ["Blue"] = 5,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = [[Can only be summoned if you control 4 other Titans. At the end of each turn, deal 4000 damage to all Non-Titans.]],
+			Description = [[Can only be summoned if you control 4 other Titans. At the end of each turn, deal 4000 damage to all Non-Titans, then unlock all titans.]],
 			["Type"] = "OnEnd",
-			["Power"] = "Damage",
+			["Power"] = {{"Damage",4000,"NotArchetype",},{"Unlock",999,"Archetype"}},
 			Target = "NotArchetype",
-			Increase = 4000
 		},
 		["Bio"] = "WE HID HIM FOR A REASON, F O O L.",
 	},
@@ -12903,7 +12909,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Zerg rush kekekekeke",
 			Description = "When this fighter attacks the opponent, unlock all other ninjas and give them 100 power. This fighter can attack the turn it's summoned, but is locked for an additional turn when it does.",
 			["Type"] = "OnStrike",
-			["Power"] = {{"Unlock",999},{"Strengthen",100},{"Lock",2,"Self"},{"Weaken",100,"Self"},
+			["Power"] = {{"Unlock",999},{"Strengthen",100},{"Lock",2,"Self"},{"Weaken",100,"Self"}},
 			Target = "Archetype",
 		},
 		["Bio"] = "They're known as the tempest for a reason.",
