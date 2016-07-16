@@ -12983,10 +12983,30 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Gravity Inspector"] = {
-		["Id"] = 411845041,
+		["Id"] = 455993039,
 		["Name"] = "Gravity Inspector",
 		["Health"] = 100,
-		["Power"] = 1`00,
+		["Power"] = 100,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Lightning",
+		["Archetype"] = "Police",
+		["Color"] = "Yellow",
+		["Cost"] = {["Blue"] = 3,},
+		["Effect"] = {
+			Name = "Knockdown",
+			Description = "Whenever your opponent summons a fighter, lock all enemy fighters for 1 turn.",
+			["Type"] = "OnEnemySummon",
+			["Power"] = {{"Lock",1}},
+			Target = "Opponent",
+		},
+		["Bio"] = "To inspect gravity. To cause the fall.",
+	},
+
+	["Gravity InspectorV2"] = {
+		["Id"] = 433133596,
+		["Name"] = "Gravity Inspector",
+		["Health"] = 100,
+		["Power"] = 100,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Lightning",
 		["Archetype"] = "Police",
