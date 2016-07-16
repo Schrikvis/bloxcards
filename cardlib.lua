@@ -10651,7 +10651,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},			
 
 	["President Duck"] = {
-		["Id"] = 411845041,
+		["Id"] = 456063667,
 		["Name"] = "President Duck",
 		["Health"] = 225,
 		["Power"] = 200,
@@ -10659,12 +10659,12 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Lightning",
 		["Archetype"] = "Police",
 		["Color"] = "Blue",
-		["Cost"] = {["Blue"] = 3,},
+		["Cost"] = {["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Knockdown",
-			Description = "Unlock all police.",
+			Description = "Unlock all police. Give them 100 power and health.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Unlock",9999}},
+			["Power"] = {{"Unlock",9999},{"Strengthen",100},{"Heal",100}},
 			Target = "Archetype",
 		},
 		["Bio"] = "My three main policies: Make sure aether wins war, make sure roblox takes your cash, and fire all of my employees!",
@@ -11468,7 +11468,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Targeting Blip"] = {
-		["Id"] = 421954165,
+		["Id"] = 422056226,
 		["Name"] = "Targeting Blip",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -11511,7 +11511,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Monstrum Freezer"] = {
-		["Id"] = 423592797,
+		["Id"] = 427571788,
 		["Name"] = "Monstrum Freezer",
 		["Health"] = 800,
 		["Power"] = 800,
@@ -11569,7 +11569,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Fractal"] = {
-		["Id"] = 429397955,
+		["Id"] = 429397954,
 		["Name"] = "Fractal",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -11931,7 +11931,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Samksoon321"] = {
-		["Id"] = 430957051,
+		["Id"] = 430958817,
 		["Name"] = "Samksoon321",
 		["Health"] = 250,
 		["Power"] = 450,
@@ -12117,7 +12117,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["APlayerOfGames"] = {
-		["Id"] = 430969573,
+		["Id"] = 430970608,
 		["Name"] = "APlayerOfGames",
 		["Health"] = 750,
 		["Power"] = 750,
@@ -12208,14 +12208,14 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Beam Sword",
 			Description = "Deal 300 damage to a target fighter. It gains 300 power.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Strenghten",300},{"Damage",300}},
+			["Power"] = {{"Strengthen",300},{"Damage",300}},
 			Target = "Single",
 		},
 		["Bio"] = "Now with 100% less crossguard.",
 	},
 	
 	["TigerCode"] = {
-		["Id"] = 430971137,
+		["Id"] = 430971136,
 		["Name"] = "TigerCode",
 		["Health"] = 600,
 		["Power"] = 350,
@@ -12234,7 +12234,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Western Bandit"] = {
-		["Id"] = 430971137,
+		["Id"] = 430960897,
 		["Name"] = "Western Bandit",
 		["Health"] = 250,
 		["Power"] = 250,
@@ -12253,7 +12253,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Meeboid Champion"] = {
-		["Id"] = 430962611,
+		["Id"] = 430962609,
 		["Name"] = "Meeboid Champion",
 		["Health"] = 700,
 		["Power"] = 500,
@@ -12460,7 +12460,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1, ["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "Sugar and Ice",
-			Description = "At the end of your turn, all Cat Eyes gain 100 health.",
+			Description = "At the end of your turn, all Cat Eyes gain 50 health.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Heal",100}},
 			Target = "Archetype",
@@ -12482,8 +12482,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Harassing Talons",
 			Description = "Add a Winglet into your hand. The Flock enters play locked for one turn.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Weaken",200},{"Add","Cat's Eye Winglet","Ally"},{"Lock",1,"Self"}},
-			Target = "Single",
+			["Power"] = {{"Add","Cat's Eye Winglet","Ally"}},
+			Target = "Self",
 		},
 		["Bio"] = "FLYING KITTEN EYES AAAAAAAA",
 	},
@@ -12529,7 +12529,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Cat's Eye Nexus"] = {
-		["Id"] = 441937886,
+		["Id"] = 442809160,
 		["Name"] = "Cat's Eye Nexus",
 		["Health"] = 1000,
 		["Power"] = 1000,
@@ -12626,7 +12626,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["BrackioTops"] = {
-		["Id"] = 443305020,
+		["Id"] = 444079164,
 		["Name"] = "BrackioTops",
 		["Health"] = 600,
 		["Power"] = 200,
@@ -12645,7 +12645,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["BerskererPredator450"] = {
-		["Id"] = 443305020,
+		["Id"] = 444117155,
 		["Name"] = "BerskererPredator450",
 		["Health"] = 400,
 		["Power"] = 600,
@@ -12664,7 +12664,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["ShockingRobux"] = {
-		["Id"] = 443305020,
+		["Id"] = 444253214,
 		["Name"] = "ShockingRobux",
 		["Health"] = 600,
 		["Power"] = 200,
@@ -12684,7 +12684,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["FabulousMettaton123"] = {
-		["Id"] = 443305020,
+		["Id"] = 443304594,
 		["Name"] = "FabulousMettaton123",
 		["Health"] = 800,
 		["Power"] = 1200,
@@ -12968,7 +12968,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Kmansong2",
 		["Health"] = 700,
 		["Power"] = 700,
-		["Rarity"] = "Common",
+		["Rarity"] = "Epic",
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Neutral",
 		["Cost"] = {["Neutral"] = 8,},
@@ -12976,11 +12976,31 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Mana Siphon",
 			Description = "All non-white fighters lose 200 health and power.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Weaken",200,"ColorBlue"},{"Damage",200,"ColorBlue"},{"Weaken",200,"ColorGreen"},{"Damage",200,"ColorGreen"},{"Weaken",200,"ColorYellow"},{"Damage",200,"ColorYellow"},{"Weaken",200,"ColorRed"},{"Damage",200,"ColorRed"},},
+			["Power"] = {{"Weaken",200,"ColorBlue"},{"Damage",200,"ColorBlue"},{"Weaken",200,"ColorGreen"},{"Damage",200,"ColorGreen"},{"Weaken",200,"ColorYellow"},{"Damage",200,"ColorYellow"},{"Weaken",200,"ColorRed"},{"Damage",200,"ColorRed"}},
 			Target = "all",
 		},
 		["Bio"] = "This symphony is a ray of hope! Or some cheesy speech like that.",
 	},
+	
+	["Gravity Inspector"] = {
+		["Id"] = 411845041,
+		["Name"] = "Gravity Inspector",
+		["Health"] = 100,
+		["Power"] = 1`00,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Lightning",
+		["Archetype"] = "Police",
+		["Color"] = "Yellow",
+		["Cost"] = {["Blue"] = 3,},
+		["Effect"] = {
+			Name = "Knockdown",
+			Description = "Whenever your opponent summons a fighter, lock all enemy fighters for 1 turn.",
+			["Type"] = "OnEnemySummon",
+			["Power"] = {{"Lock",1}},
+			Target = "Opponent",
+		},
+		["Bio"] = "To inspect gravity. To cause the fall.",
+	},	
 }
 
 local pairs = pairs
