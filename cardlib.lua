@@ -6530,7 +6530,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Endless Spooks",
 			Description = [[Generate a red icon.]],
 			["Type"] = "OnSummon",
-			["Power"] = {{"Red","1"}},
+			["Power"] = {{"Red",1}},
 			Target = "Ally",
 		},
 		["Bio"] = "He didn't mean to scare you, he was trying to help cut the cake.",
