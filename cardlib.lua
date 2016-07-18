@@ -12290,7 +12290,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Blue",
-		["Cost"] = {["Neutral"] = 2,},
+		["Cost"] = {["Neutral"] = 2, ["Blue"] = 5,},
 		["Archetype"] = "Spark",
 		["Effect"] = {
 			Name = "Capture",
@@ -13080,7 +13080,47 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Self",
 		},
 		["Bio"] = "But has no means to pay for him.",
+	},
+	
+	["Cotton Cavalier"] = {
+		["Id"] = 433132903,
+		["Name"] = "Cotton Cavalier",
+		["Health"] = 300,
+		["Power"] = 600,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Lightning",
+		["Color"] = "Yellow",
+		["Cost"] = {["Red"] = 3,},
+		["Effect"] = {
+			Name = "Knockdown",
+			Description = "Whenever you summon a fighter, Cotton Cavalier gets 150 health.",
+			["Type"] = "OnAllySummon",
+			["Power"] = {{"Heal",100}},
+			Target = "Self",
+		},
+		["Bio"] = "Death to all that oppose us! Those tyrants of flesh can go stuff themselves!",
 	},	
+	
+["The Stalker"] = {
+		["Id"] = 459231428,
+		["Name"] = "The Stalker",
+		["Health"] = 3000,
+		["Power"] = 300,
+		["Rarity"] = "Legendary",
+		["AttackEffect"] = "Thunder",
+		["Color"] = "Red",
+		["Cost"] = {["Red"] = 10,},
+		["CounterBlock"] = true,
+		["Effect"] = {
+			Name = "Combine Swipe",
+			Description = "At the end of your turn, deal 300 damage to all enemy fighters. The stalker can't counterattack.",
+			["Type"] = "OnEnd",
+			["Power"] = "Damage",
+			Target = "Opponent",
+			Increase = 300
+		},
+		["Bio"] = "Even Sonic fears it.",
+	},
 }
 
 local pairs = pairs
