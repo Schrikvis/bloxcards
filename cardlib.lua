@@ -13041,6 +13041,46 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "To inspect gravity. To cause the fall.",
 	},	
+	
+	["HasTheHero"] = {
+		["Id"] = 459068320,
+		["Name"] = "HasTheHero",
+		["Health"] = 800,
+		["Power"] = 600,
+		["Rarity"] = "Epic",
+		["AttackEffect"] = "Lightning",
+		["Color"] = "Green",
+		["Cost"] = {["Green"] = 4, ["Neutral"] = 4,},
+		["Charge"] = true,
+		["Effect"] = {
+			Name = "Knockdown",
+			Description = "When this card is targeted, return it to its owner's hand. This card can attack the turn it's summoned.",
+			["Type"] = "OnTarget",
+			["Power"] = {{"Return",030}},
+			Target = "Self",
+		},
+		["Bio"] = "But has no means to pay for him.",
+	},	
+	
+	["HasTheHero-ArtV"] = {
+		["Id"] = 458640455,
+		["Name"] = "HasTheHero",
+		["Health"] = 800,
+		["Power"] = 600,
+		["Rarity"] = "Epic",
+		["AttackEffect"] = "Lightning",
+		["Color"] = "Green",
+		["Cost"] = {["Green"] = 4, ["Neutral"] = 4,},
+		["Charge"] = true,
+		["Effect"] = {
+			Name = "Knockdown",
+			Description = "When this card is targeted, return it to its owner's hand. This card can attack the turn it's summoned.",
+			["Type"] = "OnTarget",
+			["Power"] = {{"Return",030}},
+			Target = "Self",
+		},
+		["Bio"] = "But has no means to pay for him.",
+	},	
 }
 
 local pairs = pairs
