@@ -2942,9 +2942,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 5,["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Disaster",
-			Description = "Lock all enemy fighters for 1 turn. Add 2 targeting blips to your hand. Targeting blips are used to trigger Target Effects.",
+			Description = "Lock all enemy fighters for 1 turn. Add 2 Targeting Blips to your hand. Targeting Blips are used to trigger Target Effects.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Lock",1},{"Add","Targeting BLip","Ally"},{"Add","Targeting BLip","Ally"}},
+			["Power"] = {{"Lock",1},{"Add","Targeting Blip","Ally"},{"Add","Targeting Blip","Ally"}},
 			Target = "Opponent",
 		},
 		["Bio"] = "Most likely accident prone worker at ROBLOX. He made it there from scripting, so can you!",
@@ -9928,7 +9928,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Green"] = 4,},
 		["Effect"] = {
 			Name = "Hyper Cannon",
-			Description = [[Deal 200 damage to a target fighter. Add a Targeting Blip to your hand. Targeting blips are used to trigger Target Effects.]],
+			Description = [[Deal 200 damage to a target fighter. Add a Targeting Blip to your hand. Targeting Blips are used to trigger Target Effects.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Add","Targeting Blip","Ally"},{"Damage",200}},
 			Target = "Single",
@@ -10116,7 +10116,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Yellow",
 		["Effect"] = {
 			Name = "Dancing Jail",
-			Description = "Give a target fighter 400 health, but lock it for 2 turns. Add a targeting blip to your hand.",
+			Description = "Give a target fighter 400 health, but lock it for 2 turns. Add a Targeting Blip to your hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Lock",3},{"Heal",400},{"Add","Targeting Blip","Ally"}},
 			Target = "Single",
@@ -11232,7 +11232,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = [[Add 3 targeting blips to your hand.]],
+			Description = [[Add 3 Targeting Blips to your hand.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Add","Targeting Blip"},{"Add","Targeting Blip"},{"Add","Targeting Blip"}},
 			Target = "Ally",
@@ -11392,7 +11392,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "Revival",
-			Description = "When this card is targeted, generate a targeting blip. Targeting blips are used to trigger Target Effects.",
+			Description = "When this card is targeted, generate a Targeting Blip. Targeting Blips are used to trigger Target Effects.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Add","Targeting Blip"}},
 			Target = "Ally",
