@@ -704,14 +704,14 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Tarfful"] = {
-		["Id"] = 266755680,
+		["Id"] = 460452009,
 		["Name"] = "Tarfful",
 		["Health"] = 900,
 		["Power"] = 350,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Yellow",
-		["Cost"] = {["Neutral"] = 2,["Yellow"] = 4,},
+		["Cost"] = {["Yellow"] = 4,},
 		["Effect"] = {
 			Name = "Revival",
 			Description = "Set your yellow icons to 4. Lose all other icons.",
@@ -1915,7 +1915,6 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Green",
-		["Token"] = true,
 		["Cost"] = {["Neutral"] = 2,["Green"] = 1,},
 		["Effect"] = {
 			Name = "Spark",
@@ -4886,7 +4885,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["KennedyLeDog"] = {
-		["Id"] = 294871469,
+		["Id"] = 460452207,
 		["Name"] = "KennedyLeDog",
 		["Health"] = 500,
 		["Power"] = 200,
@@ -12886,7 +12885,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["HeyItsColin"] = {
-		["Id"] = 454712804,
+		["Id"] = 454705527,
 		["Name"] = "HeyItsColin",
 		["Health"] = 600,
 		["Power"] = 1200,
