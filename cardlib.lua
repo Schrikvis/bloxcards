@@ -10921,7 +10921,6 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Type"] = "OnSummon",
 			["Power"] = {{"Add","Ultoris NOOBrae"}},
 			Target = "Ally",
-			Increase = 1,
 		},
 		["Bio"] = "His army of fanboys will destroy you.",
 	},	
@@ -10948,7 +10947,14 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 3,["Yellow"] = 2,["Red"] = 2,},
-		["Bio"] = "First off, that is a pipette, not a sword. Second off, you're holding the 'sword' wrong. The crossguard is supposed to be at a vertical angle so it can protect you from binds sliding down and cutting your arm. Third off, improper sword stance. Overall review: 3/10 End him rightly - Sword Critic",
+		["Effect"] = {
+			Name = "SCRIPTING PARTY",
+			Description = "Whenever you lose life, gain a yellow icon.",
+			["Type"] = "OnHealthLoss",
+			["Power"] = {{"Yellow",1}},
+			Target = "Ally",
+		},
+		["Bio"] = "THAT'S A PIPETTE, NOT A SWORD! 0/10 - Sword Critic",
 	},	
 	
 	["Scripter"] = {
