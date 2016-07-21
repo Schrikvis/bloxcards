@@ -1136,10 +1136,10 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Knockdown",
 			Description = "Whenever your opponent summons a fighter, you gain 200 life.",
 			["Type"] = "OnEnemySummon",
-			["Power"] = {{"Cost"-500}},
+			["Power"] = {{"Cost"-200}},
 			Target = "Ally",
 		},
-		["Bio"] = "He is known for stealing rubber duckies, they go for over 2000 ROBUX you know?",
+		["Bio"] = "He steals common household objects. Duckies, TVs, souls, kitchen knives, government secrets... You know. Normal stuff.",
 	},
 	
 	["SoftCollision"] = {
@@ -1814,12 +1814,19 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Cherie"] = {
 		["Id"] = 280562480,
 		["Name"] = "Cherie",
-		["Health"] = 375,
-		["Power"] = 375,
+		["Health"] = 200,
+		["Power"] = 450,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "PunchKick",
 		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 1,["Red"] = 2},
+		["Effect"] = {
+			Name = "Double Bleeding",
+			Description = "Whenever you lose life, Cherie gains 100 health and power.",
+			["Type"] = "OnHealthLoss",
+			["Power"] = {{"Strengthen",100},{"Heal",100}},
+			Target = "Self",
+		},
 		["Bio"] = "Cherie2002. She's cute, until you realise all of those animals have been trained to tear your limbs off and eat you alive.",
 	},
 	
@@ -6972,7 +6979,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Weaken",125}},
 			Target = "Opponent",
 		},
-		["Bio"] = "Mummies too are poor.",
+		["Bio"] = "Poor you.",
 	},
 	
 	["Tweety The Twitter Bird"] = {
