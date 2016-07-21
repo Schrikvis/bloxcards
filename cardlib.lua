@@ -4920,12 +4920,19 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Metal Bloxxer"] = {
 		["Id"] = 294871500,
 		["Name"] = "Metal Bloxxer",
-		["Health"] = 800,
-		["Power"] = 150,
+		["Health"] = 200,
+		["Power"] = 0,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 3,},
+		["Effect"] = {
+			Name = "Even Out",
+			Description = "Set the power of all figthers to 400.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Weaken",9999},{"Strengthen",400}},
+			Target = "All",
+		},
 		["Bio"] = "Target acquired!",
 	},	
 	
@@ -5316,7 +5323,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Green"] = 3,},
 		["Effect"] = {
 			Name = "Even Out",
-			Description = "Set the attack of all figthers to 250.",
+			Description = "Set the power of all figthers to 250.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",9999},{"Strengthen",250}},
 			Target = "All",
@@ -10941,8 +10948,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["zKevin"] = {
 		["Id"] = 413921305,
 		["Name"] = "zKevin",
-		["Health"] = 500,
-		["Power"] = 200,
+		["Health"] = 300,
+		["Power"] = 700,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Red",
