@@ -6950,14 +6950,14 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Mummy Peasant"] = {
-		["Id"] = 323659834,
+		["Id"] = 461432099,
 		["Name"] = "Mummy Peasant",
 		["Health"] = 1275,
 		["Power"] = 25,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Green",
-		["Cost"] = {["Green"] = 2,["Neutral"] = 1,},
+		["Cost"] = {["Green"] = 6,},
 		["Effect"] = {
 			Name = "SorryBurn",
 			Description = "When this card attacks, reduce the power of all enemy fighters by 125.",
