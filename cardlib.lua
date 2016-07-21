@@ -2586,13 +2586,20 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Icepielover23"] = {
 		["Id"] = 283994272,
 		["Name"] = "Icepielover23",
-		["Health"] = 300,
+		["Health"] = 200,
 		["Power"] = 200,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Punch2",
 		["Color"] = "Green",
 		["Cost"] = {["Neutral"] = 1,["Green"] = 1,},
-		["Bio"] = "He sure hopes nothing happens to his pie.",
+		["Effect"] = {
+			Name = "Amp",
+			Description = "Whenever this fighter is targeted, gain 2 Green icons.",
+			["Type"] = "OnTarget",
+			["Power"] = {{"Green",2}},
+			Target = "Ally",
+		},
+		["Bio"] = "Give them pie, they'll give you energy.",
 	},
 	
 	["IlIll"] = {
@@ -5858,12 +5865,19 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["PassTheToiletPaper"] = {
 		["Id"] = 298793596,
 		["Name"] = "PassTheToiletPaper",
-		["Health"] = 600,
-		["Power"] = 275,
+		["Health"] = 400,
+		["Power"] = 400,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Thunder",
 		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 2,["Red"] = 2,},
+		["Effect"] = {
+			Name = "Demon Eye",
+			Description = "Whenever you cast an action or terrain card, deal 200 damage to the opponent.",
+			["Type"] = "OnCast",
+			["Power"] = {{"Inflict",200}},
+			Target = "Opponent",
+		},
 		["Bio"] = "Seriously, bring him toilet paper!",
 	},
 	
@@ -10449,9 +10463,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Routine Maitenance",
-			Description = "At the end of your turn, all enemy fighters lose 50 power and sirsorin gains 150 power.",
+			Description = "At the end of your turn, all fighters lose 25 power and sirsorin gains 150 power.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Weaken",50,"All"},{"Strengthen",150}},
+			["Power"] = {{"Weaken",25,"All"},{"Strengthen",150}},
 			Target = "Self",
 		},
 		["Bio"] = "Eldrazi? Spirit Dragons? Lithomancy? All illusions!",
@@ -12224,6 +12238,26 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "Even the charistmatic and unbreakable can fall to depression.",
 	},
 	
+	["NerfModderV2"] = {
+		["Id"] = 432804094,
+		["Name"] = "NerfModder",
+		["Health"] = 1000,
+		["Power"] = 0,
+		["Rarity"] = "Epic",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Red",
+		["WeakenImmune"] = true,
+		["Cost"] = {["Red"] = 5,},
+		["Effect"] = {
+			Name = "Double Life",
+			Description = "At the end of your turn, give all allied fighters 200 power and lose 900 life. This card is immune to effects that reduce its power or health.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Strengthen",200},{"Cost",900}},
+			Target = "Ally",
+		},
+		["Bio"] = "Even the charistmatic and unbreakable can fall to depression.",
+	},
+	
 	["Beam Sword"] = {
 		["Id"] = 430971444,
 		["Name"] = "Beam Sword",
@@ -12996,9 +13030,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Charge"] = true,
 		["Effect"] = {
 			Name = "Zerg rush kekekekeke",
-			Description = "When this fighter attacks the opponent, unlock all other ninjas and give them 100 power. This fighter can attack the turn it's summoned, but is locked for an additional turn when it does.",
+			Description = "When this fighter attacks the opponent, ready all other ninjas and give them 100 power. This fighter can attack the turn it's summoned, but is locked for an additional turn when it does.",
 			["Type"] = "OnStrike",
-			["Power"] = {{"Unlock",999},{"Strengthen",100},{"Lock",2,"Self"},{"Weaken",100,"Self"}},
+			["Power"] = {{"Unlock",1},{"Strengthen",100},{"Lock",2,"Self"},{"Weaken",100,"Self"}},
 			Target = "Archetype",
 		},
 		["Bio"] = "They're known as the tempest for a reason.",
