@@ -5698,7 +5698,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Damage for Top Deck",
 			Description = "Activate only if your opponent controls 4 or more fighters. Deal 4000 damage to all fighters and gain 2 Neutral icons.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Neutral",2,"Self"},{"Damage",4000}},
+			["Power"] = {{"Neutral",2,"Ally"},{"Damage",4000}},
 			Target = "All",
 		},
 		["Bio"] = "Sometimes, you just have to trust in lobsters.",
@@ -10246,8 +10246,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["MuPower"] = {
 		["Id"] = 411806474,
 		["Name"] = "MuPower",
-		["Health"] = 350,
-		["Power"] = 350,
+		["Health"] = 400,
+		["Power"] = 400,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Neutral",
@@ -10413,13 +10413,20 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["SirSorin"] = {
 		["Id"] = 411841916,
 		["Name"] = "SirSorin",
-		["Health"] = 300,
-		["Power"] = 350,
+		["Health"] = 600,
+		["Power"] = 0,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Yellow",
 		["Cost"] = {["Neutral"] = 2,["Yellow"] = 2,},
-		["Bio"] = "Withcraft? Necromancy? Lithomancy? All illusions!",
+		["Effect"] = {
+			Name = "Routine Maitenance",
+			Description = "At the end of your turn, all enemy fighters lose 50 power and sirsorin gains 150 power.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Weaken",50,"All"},{"Strengthen",150}},
+			Target = "Self",
+		},
+		["Bio"] = "Eldrazi? Spirit Dragons? Lithomancy? All illusions!",
 	},			
 
 	["Alkalola"] = {
