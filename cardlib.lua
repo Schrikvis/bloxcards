@@ -1136,7 +1136,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Knockdown",
 			Description = "Whenever your opponent summons a fighter, you gain 200 life.",
 			["Type"] = "OnEnemySummon",
-			["Power"] = {{"Cost"-200}},
+			["Power"] = {{"Cost",-200}},
 			Target = "Ally",
 		},
 		["Bio"] = "He steals common household objects. Duckies, TVs, souls, kitchen knives, government secrets... You know. Normal stuff.",
