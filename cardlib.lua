@@ -11505,7 +11505,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Poison",
 			Description = "Gain 2500 life, but add six Nightmares into your hand.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Cost",-2500},{"Add","Nightmare"},{"Add","Nightmare"},{"Add","Nightmare"},{"Add","Nightmare"},{"Add","Nightmare"},{"Add","Nightmare"},}
+			["Power"] = {{"Cost",-2500},{"Add","Nightmare"},{"Add","Nightmare"},{"Add","Nightmare"},{"Add","Nightmare"},{"Add","Nightmare"},{"Add","Nightmare"}},
+			Target = "Ally"
 		},
 		["Bio"] = "You would rather have swords jabbed into your eyeballs than eat this bread.",
 	},
