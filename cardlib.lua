@@ -13180,6 +13180,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 local pairs = pairs
 local cardcount = 0
 local assert = assert
+local c3n = Color3.new
+local clr = {Blue = c3n(0.25,0.25,1), Red = c3n(1,0.25,0.25), Green = c3n(0.25,1,0.25), Yellow = c3n(1,1,0.25), Neutral = c3n(1,1,1)}
 for id,card in pairs(module) do
 	cardcount = cardcount + 1
 	assert(card.Bio, id.." has no bio.")
@@ -13187,6 +13189,13 @@ for id,card in pairs(module) do
 	assert(card.Rarity, id.." has no rarity.")
 	assert(card.Power and card.Health and card.Color, id.." has no health or power or color.")
 	assert(card.AttackEffect or card.Archetype == "Terrain" or (card.Health == 0 and card.Power == 0), id.." has no attack effect animation.")
+	assert(card.Color, id.." has no color.")
+	assert(clr[card.Color], id.." has no real color.")
+	assert(card.Cost, id.." has no cost.")
+	for color,amount in pairs(card.Cost) do
+		assert(clr[color], id.." has an unreal color cost.")
+		assert(type(amount) == 'number', id.." has a non-number cost.")
+	end
 	--if card.Effect then
 		--assert(card.Effect.Name and card.Effect.Description and card.Effect.Type and card.Effect.Power and card.Effect.Target, id.." has an incomplete card effect.")
 	--end
