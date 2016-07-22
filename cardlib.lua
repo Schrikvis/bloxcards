@@ -6439,7 +6439,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 1000,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Thunder",
-		["Color"] = "Read",
+		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 3,["Red"] = 4,},
 		["Effect"] = {
 			Name = "Master Blast",
