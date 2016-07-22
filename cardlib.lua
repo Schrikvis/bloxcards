@@ -3093,7 +3093,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Slice",
 		["Color"] = "Blue",
-		["Cost"] = {},
+		["Cost"] = {["Neutral"] = 3,["Blue"] = 1,},
 		["Bio"] = "Pah! Look at these newbs with their 1-drop FreezerFlames! Back in the olden days, only I could survive the wrath of Ignis Mage!",
 	},	
 	
