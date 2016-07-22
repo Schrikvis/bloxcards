@@ -2663,23 +2663,22 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 				
 	["Lebron"] = {
-		["Id"] = 283994568,
+		["Id"] = 461509752,
 		["Name"] = "Lebron",
-		["Health"] = 500,
-		["Power"] = 500,
-		["Rarity"] = "Uncommon",
+		["Health"] = 600,
+		["Power"] = 0,
+		["Rarity"] = "Common",
 		["AttackEffect"] = "Punch2",
 		["Color"] = "Blue",
+		["Cost"] = {["Neutral"] = 2,},
 		["Effect"] = {
-			Name = "Teamwork",
-			Description = "Increase the Power of a target fighter by 250.",
-			["Type"] = "OnSummon",
-			["Power"] = "Strengthen",
-			Target = "Single",
-			Increase = 250,
+			Name = "Charge",
+			Description = "Whenever you cast an action or terrain card, generate a blue icon.",
+			["Type"] = "OnAllyCast",
+			["Power"] = {{"Blue",1}},
+			Target = "Ally",
 		},
-		["Cost"] = {["Neutral"] = 5,},
-		["Bio"] = "Just a guy.",
+		["Bio"] = "Freeze in the name of this ice spell I'm about to cast! ... No, I'm not lawful.",
 	},	
 							
 	["MahBucket"] = {
@@ -8929,9 +8928,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 2,},
 		["Effect"] = {
 			Name = "Blaster Hardscope",
-			Description = [[When this card attacks, add an Eye Spy to your hand.]],
+			Description = [[When this card attacks, add a random Blue or Red to your hand.]],
 			["Type"] = "OnAttack",
-			["Power"] = {{"Add","Eye Spy"}},
+			["Power"] = {{"RandomAdd","Lunar"}},
 			Target = "Ally",
 		},
 		["Bio"] = "That aint falco! WER you at??",
@@ -9763,9 +9762,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 2,},
 		["Effect"] = {
 			Name = "Overgrown",
-			Description = "Add a Crystal Snare to your hand.",
+			Description = "Add a random blue or red action to your hand.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Add","Crystal Snare"}},
+			["Power"] = {{"RandomAdd","Lunar"}},
 			Target = "Ally",
 		},
 		["Bio"] = "He caused destruction for the 5033rd time.",
@@ -11622,12 +11621,12 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 4,["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Add 4 Blue or Red actions to your hand.",
+			Description = "Add 4 Blue or Red actions to your hand, then generate 4 red icons.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"RandomAdd","Lunar"},{"RandomAdd","Lunar"},{"RandomAdd","Lunar"},{"RandomAdd","Lunar"}},
+			["Power"] = {{"RandomAdd","Lunar"},{"RandomAdd","Lunar"},{"RandomAdd","Lunar"},{"RandomAdd","Lunar"},{"Red",4}},
 			Target = "Ally",	
 		},
-		["Bio"] = "Some people have said there is no skill in lunar invocation. And you know what? Those people are dead.",
+		["Bio"] = "The Paraselene Sage thought he found the most forbidden of powers. He was wrong.",
 	},
 	
 	["Moon Rabbit's Rage"] = {
@@ -12060,12 +12059,12 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Render",
-			Description = "Add a Moon Rabbit's Rage to your hand.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Add","Moon Rabbit's Rage"}},
+			Description = "At the end of each of your turns, add a random Blue or Red action to your hand.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"RandomAdd","Lunar"}},
 			Target = "Ally",
 		},
-		["Bio"] = "Telamon? Gates? 2x2, the alpha brick itself? Imbeciles compared to the moon.",
+		["Bio"] = "Telamon? Merely? 2x2, the alpha brick itself? Imbeciles compared to the moon.",
 	},
 	
 	["Luckymaxer"] = {
@@ -13035,25 +13034,6 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Archetype",
 		},
 		["Bio"] = "They're known as the tempest for a reason.",
-	},
-	
-	["LordFlanz"] = {
-		["Id"] = 455834551,
-		["Name"] = "LordFlanz",
-		["Health"] = 400,
-		["Power"] = 400,
-		["Rarity"] = "Common",
-		["AttackEffect"] = "Punch1",
-		["Color"] = "Blue",
-		["Cost"] = {["Blue"] = 3, ["Neutral"] = 1,},
-		["Effect"] = {
-			Name = "Mana Siphon",
-			Description = "Whenever your opponent casts an action or terrain card, draw a card and add a random blue or red action to your hand.",
-			["Type"] = "OnEnemyCast",
-			["Power"] = {{"Draw",1},{"RandomAdd", "Lunar"}},
-			Target = "Self",
-		},
-		["Bio"] = "Bombs, Bombers, Guns, Waves, Gases, Cancers, Bacteria, Etcetera.",
 	},
 	
 	["Kmansong2"] = {
