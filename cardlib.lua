@@ -11505,7 +11505,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Poison",
 			Description = "Gain 2500 life, but add six Nightmares into your hand.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Cost",-2500},{"Add","Nightmare"},{"Add","Nightmare"},{"Add","Nightmare"},{"Add","Nightmare"},{"Add","Nightmare"},{"Add","Nightmare"},}
+			["Power"] = {{"Cost",-2500},{"Add","Nightmare"},{"Add","Nightmare"},{"Add","Nightmare"},{"Add","Nightmare"},{"Add","Nightmare"},{"Add","Nightmare"},},
+			Target = "Ally",
 		},
 		["Bio"] = "You would rather have swords jabbed into your eyeballs than eat this bread.",
 	},
@@ -13196,9 +13197,9 @@ for id,card in pairs(module) do
 		assert(clr[color], id.." has an unreal color cost.")
 		assert(type(amount) == 'number', id.." has a non-number cost.")
 	end
-	--if card.Effect then
-		--assert(card.Effect.Name and card.Effect.Description and card.Effect.Type and card.Effect.Power and card.Effect.Target, id.." has an incomplete card effect.")
-	--end
+	if card.Effect then
+		assert(card.Effect.Name and card.Effect.Description and card.Effect.Type and card.Effect.Power and card.Effect.Target, id.." has an incomplete card effect.")
+	end
 end
 print(cardcount)
 return module
