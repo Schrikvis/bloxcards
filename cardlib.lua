@@ -13238,9 +13238,9 @@ for id,card in pairs(module) do
 		assert(clr[color], id.." has an unreal color cost.")
 		assert(type(amount) == 'number', id.." has a non-number cost.")
 	end
-	--if card.Effect then
-		--assert(card.Effect.Name and card.Effect.Description and card.Effect.Type and card.Effect.Power and card.Effect.Target, id.." has an incomplete card effect.")
-	--end
+	if card.Effect then
+		assert(card.Effect.Name and card.Effect.Description and card.Effect.Type and card.Effect.Power and card.Effect.Target, id.." has an incomplete card effect.")
+	end
 end
 print(cardcount)
 return module
