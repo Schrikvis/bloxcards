@@ -5669,14 +5669,21 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["KingShadowCrow"] = {
-		["Id"] = 298793088,
+		["Id"] = 462725763,
 		["Name"] = "KingShadowCrow",
 		["Health"] = 900,
-		["Power"] = 200,
+		["Power"] = 400,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Thunder",
 		["Color"] = "Green",
-		["Cost"] = {["Green"] = 4,},
+		["Cost"] = {["Green"] = 6,},
+		["Effect"] = {
+			Name = "terrorism",
+			Description = "Return target fighter to its owner's hand.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Return",090}},
+			Target = "Single",
+		},
 		["Bio"] = "I just like to be fluffy.",
 	},
 	
@@ -12742,7 +12749,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 444253214,
 		["Name"] = "ShockingRobux",
 		["Health"] = 600,
-		["Power"] = 200,
+		["Power"] = 250,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Blue",
@@ -13109,9 +13116,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Charge"] = true,
 		["Effect"] = {
 			Name = "Knockdown",
-			Description = "When this card is targeted, return it to its owner's hand and give them 3 white icons. This card can attack the turn it's summoned.",
+			Description = "When this card is targeted, return it to its owner's hand and give them 3 green icons. This card can attack the turn it's summoned.",
 			["Type"] = "OnTarget",
-			["Power"] = {{"Return",030},{"Neutral",3}},
+			["Power"] = {{"Return",030},{"Green",3}},
 			Target = "Self",
 		},
 		["Bio"] = "But has no means to pay for him.",
@@ -13129,12 +13136,12 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Charge"] = true,
 		["Effect"] = {
 			Name = "Knockdown",
-			Description = "When this card is targeted, return it to its owner's hand. This card can attack the turn it's summoned.",
+			Description = "When this card is targeted, return it to its owner's hand and give them 3 green icons. This card can attack the turn it's summoned.",
 			["Type"] = "OnTarget",
-			["Power"] = {{"Return",030}},
+			["Power"] = {{"Return",030},{"Green",3}},
 			Target = "Self",
 		},
-		["Bio"] = "But has no means to pay for him.",
+		["Bio"] = "But has no desire to pay for him.",
 	},
 	
 	["Cotton Cavalier"] = {
