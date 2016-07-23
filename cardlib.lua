@@ -4520,6 +4520,13 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "GunShot",
 		["Color"] = "Yellow",
 		["Cost"] = {["Neutral"] = 3,["Yellow"] = 2,},
+		["Effect"] = {
+			Name = "Double Bleeding",
+			Description = "Whenever you summon a fighter, deal 250 damage to both players.",
+			["Type"] = "OnAllySummon",
+			["Power"] = {{"Inflict",250}},
+			Target = "All",
+		},
 		["Bio"] = "G3T R3KT N00B!",
 	},	
 
@@ -4952,6 +4959,13 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 1,["Red"] = 1,},
+		["Effect"] = {
+			Name = "Even Out",
+			Description = "At the end of your turns, you lose 50 life.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Cost",50}},
+			Target = "All",
+		},
 		["Bio"] = "BY THUNDER BE PURGED!",
 	},	
 	
@@ -5669,15 +5683,42 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["KingShadowCrow"] = {
-		["Id"] = 298793088,
+		["Id"] = 462725763,
 		["Name"] = "KingShadowCrow",
 		["Health"] = 900,
-		["Power"] = 200,
+		["Power"] = 400,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Thunder",
 		["Color"] = "Green",
-		["Cost"] = {["Green"] = 4,},
+		["Cost"] = {["Green"] = 6,},
+		["Effect"] = {
+			Name = "terror",
+			Description = "Return target fighter to its owner's hand.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Return",090}},
+			Target = "Single",
+		},
 		["Bio"] = "I just like to be fluffy.",
+	},
+	
+	["KingShadowCrowV2"] = {
+		["Id"] = 462725763,
+		["Name"] = "KingShadowCrow",
+		["Health"] = 900,
+		["Power"] = 400,
+		["Rarity"] = "Rare",
+		["AttackEffect"] = "Thunder",
+		["Color"] = "Green",
+		["Cost"] = {["Green"] = 6,},
+		["Effect"] = {
+			Name = "I MAY BE DEAD BUT WE ARE SO VERY MUCH ALIVE",
+			Description = "Return target fighter to the aether.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Return",090}},
+			Target = "Single",
+		},
+		["Bio"] = "wE arE HAVing TRouBLe OPPerATINg aSINgle pEN . ..",
+		
 	},
 	
 	["Lady RedNight"] = {
@@ -7769,7 +7810,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["ItssPaladin"] = {
-		["Id"] = 335687394,
+		["Id"] = 462725876,
 		["Name"] = "ItssPaladin",
 		["Health"] = 800,
 		["Power"] = 425,
@@ -11505,8 +11546,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Poison",
 			Description = "Gain 2500 life, but add six Nightmares into your hand.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Cost",-2500},{"Add","Nightmare"},{"Add","Nightmare"},{"Add","Nightmare"},{"Add","Nightmare"},{"Add","Nightmare"},{"Add","Nightmare"},},
-			Target = "Ally",
+			["Power"] = {{"Cost",-2500},{"Add","Nightmare"},{"Add","Nightmare"},{"Add","Nightmare"},{"Add","Nightmare"},{"Add","Nightmare"},{"Add","Nightmare"}},
+			Target = "Ally"
 		},
 		["Bio"] = "You would rather have swords jabbed into your eyeballs than eat this bread.",
 	},
@@ -12081,7 +12122,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Render",
 			Description = "Add four Mechanical Spiders to your hand.",
-			["Type"] = "OnEnd",
+			["Type"] = "OnSummon",
 			["Power"] = {{"Add","Mechanical Spider"},{"Add","Mechanical Spider"},{"Add","Mechanical Spider"},{"Add","Mechanical Spider"}},
 			Target = "Ally",
 		},
@@ -12495,7 +12536,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 441918887,
 		["Name"] = "animallogic",
 		["Health"] = 150,
-		["Power"] = 300,
+		["Power"] = 200,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Yellow",
@@ -12742,7 +12783,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 444253214,
 		["Name"] = "ShockingRobux",
 		["Health"] = 600,
-		["Power"] = 200,
+		["Power"] = 250,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Blue",
@@ -12898,13 +12939,13 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["BLOXER787"] = {
-		["Id"] = 323660101,
+		["Id"] = 448016275,
 		["Name"] = "BLOXER787",
 		["Health"] = 1050,
 		["Power"] = 250,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Punch1",
-		["Color"] = "Red",
+		["Color"] = "Yellow",
 		["Cost"] = {["Yellow"] = 2,["Neutral"] = 5,},
 		["Effect"] = {
 			Name = "EzWinz",
@@ -13109,9 +13150,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Charge"] = true,
 		["Effect"] = {
 			Name = "Knockdown",
-			Description = "When this card is targeted, return it to its owner's hand and give them 3 white icons. This card can attack the turn it's summoned.",
+			Description = "When this card is targeted, return it to its owner's hand and give them 3 green icons. This card can attack the turn it's summoned.",
 			["Type"] = "OnTarget",
-			["Power"] = {{"Return",030},{"Neutral",3}},
+			["Power"] = {{"Return",030},{"Green",3}},
 			Target = "Self",
 		},
 		["Bio"] = "But has no means to pay for him.",
@@ -13129,12 +13170,12 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Charge"] = true,
 		["Effect"] = {
 			Name = "Knockdown",
-			Description = "When this card is targeted, return it to its owner's hand. This card can attack the turn it's summoned.",
+			Description = "When this card is targeted, return it to its owner's hand and give them 3 green icons. This card can attack the turn it's summoned.",
 			["Type"] = "OnTarget",
-			["Power"] = {{"Return",030}},
+			["Power"] = {{"Return",030},{"Green",3}},
 			Target = "Self",
 		},
-		["Bio"] = "But has no means to pay for him.",
+		["Bio"] = "But has no desire to pay for him.",
 	},
 	
 	["Cotton Cavalier"] = {
