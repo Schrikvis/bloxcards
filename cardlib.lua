@@ -3210,15 +3210,23 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},		
 	
 	["MICHIKUSCHI"] = {
-		["Id"] = 285153080,
+		["Id"] = 464654133,
 		["Name"] = "MICHIKUSCHI",
-		["Health"] = 500,
-		["Power"] = 400,
+		["Health"] = 100,
+		["Power"] = 100,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "CatSlash",
 		["Color"] = "Blue",
-		["Cost"] = {["Neutral"] = 3,},
-		["Bio"] = "Your good old Chilliwind Catperson.",
+		["Cost"] = {["Neutral"] = 1,},
+		["CounterAttackBlock"] = true,
+		["Effect"] = {
+			Name = "Overgrown",
+			Description = "Add a random blue or red action to your hand. MICHIKUSCHI can't be counterattacked.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"RandomAdd","Lunar"}},
+			Target = "Ally",
+		},
+		["Bio"] = "Blame blswx card engine limitations, Jaik.",
 	},	
 	
 	["MiloCortez"] = {
@@ -3621,6 +3629,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "SlashWhip",
 		["Color"] = "Red",
+		["Archetype"] = "Ninja",
 		["Cost"] = {["Neutral"] = 1,["Red"] = 3,},
 		["Bio"] = "It's a JUXTAPOSITION, CAROL. DO YOU NOT GET IT?",
 	},		
@@ -4741,6 +4750,13 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Blue",
 		["Cost"] = {["Blue"] = 4,},
+		["Effect"] = {
+			Name = "Blow Dart",
+			Description = "When this card destroys another, you gain 300 life.",
+			["Type"] = "OnDestroy",
+			["Power"] = {{"Cost",-300}},
+			Target = "Ally",
+		},
 		["Bio"] = "Hovering skull doesn't scare you? Maybe my skill will.",
 	},	
 	
@@ -4850,12 +4866,19 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Connoisseur"] = {
 		["Id"] = 294871406,
 		["Name"] = "Connoisseur",
-		["Health"] = 300,
-		["Power"] = 650,
+		["Health"] = 50,
+		["Power"] = 800,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Red",
 		["Cost"] = {["Red"] = 3,},
+		["Effect"] = {
+			Name = "THIS COOKERY IS TERRIBLE",
+			Description = "Connoisseur can't counterattack or be counterattacked."
+			["Type"] = "OnSummon",
+			["Power"] = {{"Damage",0}},
+			Target = "Ally",
+		},
 		["Bio"] = "Are you SURE you want to log out?",
 	},	
 	
@@ -5702,7 +5725,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["KingShadowCrowV2"] = {
-		["Id"] = 462725763,
+		["Id"] = 462725820,
 		["Name"] = "KingShadowCrow",
 		["Health"] = 900,
 		["Power"] = 400,
@@ -5717,7 +5740,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Return",090}},
 			Target = "Single",
 		},
-		["Bio"] = "wE arE HAVing TRouBLe OPPerATINg aSINgle pEN . ..",
+		["Bio"] = "wE arE HAVing dIFfiCULTy OPPerATINg aSINgle pEN . ..",
 		
 	},
 	
@@ -6712,7 +6735,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Green"] = 4,},
 		["Effect"] = {
 			Name = "Endless Spooks",
-			Description = [[When this card attacks, increase its health by 500.]],
+			Description = [[When this card attacks, increase its health by 400.]],
 			["Type"] = "OnAttack",
 			["Power"] = {{"Heal",400}},
 			Target = "Self",
@@ -7460,7 +7483,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Target Master",
 			Description = [[Target 1 fighter. Gain 3 Yellow icons.]],
 			["Type"] = "OnSummon",
-			["Power"] = {{"Yellow",3}},
+			["Power"] = {{"Heal",0},{"Yellow",3,"Ally"}},
 			Target = "Single",
 		},
 		["Bio"] = "SPOOKY PLUSHIES!",
@@ -7760,12 +7783,13 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Thunder",
 		["Color"] = "Red",
+		["AttackBlock"] = true,
 		["Cost"] = {["Red"] = 3,["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Plushie Amp",
-			Description = [[When this card attacks, destroy this card.]],
+			Description = [[Fleskhjerta can't attack.]],
 			["Type"] = "OnAttack",
-			["Power"] = {{"Damage",9999}},
+			["Power"] = {{"Damage",0}},
 			Target = "Self",
 		},
 		["Bio"] = "I, THE GREAT FLESKHJERTA, used to make ROBLOX videos and bloopers....",
@@ -7931,7 +7955,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Robot"] = {
 		["Id"] = 335687601,
 		["Name"] = "Robot",
-		["Health"] = 100,
+		["Health"] = 300,
 		["Power"] = 100,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Thunder",
@@ -9506,7 +9530,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	
 	["DairingPoopHead"] = {
 		["Id"] = 454691965,
-		["Name"] = "DairingPoopHead",
+		["Name"] = "Dairingpoophead",
 		["Health"] = 700,
 		["Power"] = 500,
 		["Rarity"] = "Common",
@@ -10134,7 +10158,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Cost",-250}},
 			Target = "Ally",
 		},
-		["Bio"] = "LOVE THE FROOT!",
+		["Bio"] = "His journalism skills into the ordinary lives of superheroes is both highly detailed and disturbingly obsessive.",
 	},	
 
 	["Amber"] = {
@@ -11671,7 +11695,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "The Paraselene Sage thought he found the most forbidden of powers. He was wrong.",
 	},
-	
+
 	["Moon Rabbit's Rage"] = {
 		["Id"] = 429396325,
 		["Name"] = "Moon Rabbit's Rage",
@@ -12854,7 +12878,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3, ["Green"] = 3,},
 		["Effect"] = {
 			Name = "Trout Slap",
-			Description = "When this card attacks, Increase the power of all non-overseer cards by 100 and all overseer cards by 200.",
+			Description = "When this card attacks, Increase the power of all enemy cards by 100 and all overseer cards by 200.",
 			["Type"] = "OnAttack",
 			["Power"] = {{"Strengthen",200,"Archetype"},{"Strengthen",100}},
 			Target = "Opponent",
@@ -13197,7 +13221,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "Death to all that oppose us! Those tyrants of flesh can go stuff themselves!",
 	},	
 	
-["The StalkerV2"] = {
+	["The StalkerV2"] = {
 		["Id"] = 459231428,
 		["Name"] = "The Stalker",
 		["Health"] = 3000,
@@ -13216,6 +13240,26 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Increase = 300
 		},
 		["Bio"] = "Even Sonic fears it.",
+	},
+	
+	["JaikKaik"] = {
+		["Id"] = 464527485,
+		["Name"] = "JaikKaik",
+		["Health"] = 3500,
+		["Power"] = 0,
+		["Rarity"] = "Epic",
+		["AttackEffect"] = "Thunder",
+		["Color"] = "Blue",
+		["Cost"] = {["Blue"] = 7, ["Neutral"] = 3,},
+		["AttackBlock"] = true,
+		["Effect"] = {
+			Name = "Infinite lockdown",
+			Description = "Whenever you cast an action or terrain spell, shuffle a random red or blue action into your deck, then draw  a card. JaikKaik can't attack.",
+			["Type"] = "OnAllyCast",
+			["Power"] = {{"DeckAdd","MICHIKUSCHI"},{"Draw",1}}
+			Target = "Ally",
+		},
+		["Bio"] = "Keep your friends close and your competition closer. But what about frenemies?", 
 	},
 }
 
