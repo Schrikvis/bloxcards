@@ -2927,7 +2927,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Heal",750},{"Lock",3}},
 			Target = "Single",
 		},
-		["Bio"] = "His passion for building created the very map you're playing on right now!",
+		["Bio"] = "You did a really good job on the previous map, Child. Cheers! - Myr",
 	},	
 	
 	["Rukiryo"] = {
@@ -2980,9 +2980,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Assist Trophy!",
-			Description = "Increase the health and power of a target fighter by 350.",
+			Description = "Increase the power of a target fighter by 500.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Heal",350},{"Strengthen",350}},
+			["Power"] = {{"Strengthen",500}},
 			Target = "Single",
 		},
 		["Bio"] = "SSB Reference inbound.",
@@ -3969,8 +3969,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "BEGONE! FOUL SPIRIT!",
 	},
 	
-	["Shedletsky the Fried One"] = {
-		["Id"] = 291386585,
+	["Shedletsky the Fried One"] = {		["Id"] = 291386585,
 		["Name"] = "Shedletsky the Fried One",
 		["Health"] = 500,
 		["Power"] = 500,
@@ -3987,7 +3986,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Self",	
 			Increase = 0,
 		},
-		["Bio"] = "There is a reason why they Blame John.",
+		["Bio"] = "Four packs, four limbs. Combine them all to remember what sunk the forgotten one.",
 	},
 	
 	["Shedletsky, the Fried One"] = { -- for the love of god dont put this one in packs
@@ -4025,7 +4024,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Token"] = true,
 		["Effect"] = {
 			Name = "Stud",
-			Description = "This card cannot generate icons.",
+			Description = "This card cannot generate icons. Is used to summon the Fried One.",
 			["Type"] = "OnSummon",
 			["Power"] = "Damage",
 			Target = "Self",	
@@ -4048,7 +4047,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "This card cannot generate icons.",
+			Description = "This card cannot generate icons. Is used to summon the Fried One.",
 			["Type"] = "OnSummon",
 			["Power"] = "Damage",
 			Target = "Self",	
@@ -4071,7 +4070,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "This card cannot generate icons.",
+			Description = "This card cannot generate icons. Is used to summon the Fried One.",
 			["Type"] = "OnSummon",
 			["Power"] = "Damage",
 			Target = "Self",	
@@ -4094,7 +4093,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "This card cannot generate icons.",
+			Description = "This card cannot generate icons. Is used to summon the Fried One.",
 			["Type"] = "OnSummon",
 			["Power"] = "Damage",
 			Target = "Self",	
@@ -4293,7 +4292,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Korblox Archmage"] = {
 		["Id"] = 292778188,
 		["Name"] = "Korblox Archmage",
-		["Health"] = 500,
+		["Health"] = 650,
 		["Power"] = 500,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Punch1",
@@ -4738,7 +4737,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Single",
 			Increase = 100
 		},
-		["Bio"] = "Want some eggs?",
+		["Bio"] = [[They sent us a message. "If we enter your village, we will burn it down and kill all your children." Our reply? "If".]],
 	},	
 	
 	["ShyLightness"] = {
@@ -4874,7 +4873,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 3,},
 		["Effect"] = {
 			Name = "THIS COOKERY IS TERRIBLE",
-			Description = "Connoisseur can't counterattack or be counterattacked."
+			Description = "Connoisseur can't counterattack or be counterattacked.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",0}},
 			Target = "Ally",
@@ -5995,6 +5994,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Thunder",
 		["Color"] = "Blue",
+		["Archetype"] = "Korblox",
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 3,},
 		["Bio"] = "One slash with his claws and you're done for.",
 	},
@@ -6871,7 +6871,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "BobRoss the Canvas the Card the Effect",
-			Description = [[Add "Heavy Rain" to your hand.]],
+			Description = [[Add "Heavy Rain" to your hand. Heavy Rain makes it harder for both players to attack.]],
 			["Type"] = "OnSummon",
 			["Power"] = "Add",
 			Target = "Ally",
@@ -8285,7 +8285,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Description = "Deal 100 damage to all fighters and return this card to your hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",100},{"Add","Infinite Flames","Ally"}},
-			Target = "All",
+			Target = "Opponent",
 		},
 		["Bio"] = "BURN! BURN! BURN! BURN... BURRRRN!!!",
 	},	
@@ -8926,8 +8926,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Voidsealer"] = {
 		["Id"] = 362315202,
 		["Name"] = "Voidsealer",
-		["Health"] = 300,
-		["Power"] = 300,
+		["Health"] = 100,
+		["Power"] = 700,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Blue",
@@ -13256,7 +13256,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Infinite lockdown",
 			Description = "Whenever you cast an action or terrain spell, shuffle a random red or blue action into your deck, then draw  a card. JaikKaik can't attack.",
 			["Type"] = "OnAllyCast",
-			["Power"] = {{"DeckAdd","MICHIKUSCHI"},{"Draw",1}}
+			["Power"] = {{"DeckAdd","MICHIKUSCHI"},{"Draw",1}},
 			Target = "Ally",
 		},
 		["Bio"] = "Keep your friends close and your competition closer. But what about frenemies?", 
