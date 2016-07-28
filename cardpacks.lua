@@ -164,7 +164,8 @@ return {
 		},
 	}; 
 	{
-		Name = "Dominion", --RED!Cost = 30,
+		Name = "Dominion", --RED!
+		Cost = 30,
 		CardsInPack = 4,
 		CardPackId = 465492503,
 		Description = "Red is the colour of power, ambition, and control. Dominion packs contain cards that cost red!",
@@ -311,7 +312,8 @@ return {
 		},
 	}; 
 	{
-		Name = "Vitality", --GREEN!Cost = 30,
+		Name = "Vitality", --GREEN!
+		Cost = 30,
 		CardsInPack = 4,
 		CardPackId = 263658643,
 		Description = "Green is the colour of life, growth, and the primal forces. Vitality packs contain cards that cost green!",
@@ -450,7 +452,8 @@ return {
 		},
 	}; 
 	{
-		Name = "Thought", --BLUE!Cost = 30,
+		Name = "Thought", --BLUE!
+		Cost = 30,
 		CardsInPack = 4,
 		CardPackId = 465492637,
 		Description = "Blue is the colour of logic, order, and structure. Thought packs contain cards that cost blue!",
@@ -616,7 +619,8 @@ return {
 		},
 	}; 
 	{
-		Name = "Revel", --YELLOW!Cost = 30,
+		Name = "Revel", --YELLOW!
+		Cost = 30,
 		CardsInPack = 4,
 		CardPackId = 465492745,
 		Description = "Yellow is the colour of community, satisfaction, and society. Revel packs contain cards that cost yellow!",
