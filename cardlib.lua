@@ -37,7 +37,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Opponent",
 			Increase = 50,
 		},
-		["Bio"] = "Shockingly, this Samurai was struck by lightning in a ferocious storm during a Typhoon in Japan and gave him the power to struck anyone down with electricity.",
+		["Bio"] = "Shockingly, this Samurai was struck by lightning in a ferocious storm during a Typhoon in Japan and gave him the power to strike anyone down with electricity.",
 	},
 	
 	["IcyTea"] = {
@@ -77,7 +77,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Charge",030}},
 			Target = "Self",
 		},
-		["Bio"] = "From making animations and machinimas, PixelFlame is a free spirited ROBLOXian, but don't think he won't punch you into oblivion for stealing faces. He will...",
+		["Bio"] = "From making animations and machinimas, PixelFlame is a free spirited ROBLOXian, but don't think he won't punch you into oblivion for stealing faces.",
 	},
 	
 	["PixelFlameV2"] = {
@@ -96,7 +96,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Charge",030}},
 			Target = "Self",
 		},
-		["Bio"] = "From making animations and machinimas, PixelFlame is a free spirited ROBLOXian, but don't think he won't punch you into oblivion for stealing faces. He will...",
+		["Bio"] = "From making animations and machinimas, PixelFlame is a free spirited ROBLOXian, but don't think he won't punch you into oblivion for stealing faces.",
 	},
 	
 	["Meeboid"] = {
@@ -156,7 +156,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Heal",75},{"Cost",-50}},
 			Target = "Archetype",
 		},
-		["Bio"] = "Meeblings are mischevious runts that steal and feed on humans and their treasures.",
+		["Bio"] = "Meeblings are mischievious runts that steal and feed on humans and their treasures.",
 	},
 	
 	["Meeboid King"] = {
@@ -325,7 +325,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Single",
 			Increase = 2,
 		},
-		["Bio"] = "From the Icy Teaverns of Antartiblox, this friend of the toothy deer uses his adept ice control to master over the battlefield.",
+		["Bio"] = "From the Icy Teaverns of Antartiblox, this friend of the toothy deer uses his adept ice control to master the battlefield.",
 	},
 	
 	["Subata"] = {
@@ -428,7 +428,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Single",
 			Increase = 500,
 		},
-		["Bio"] = "Secretly hiding an AK-47 and a Pistol in the local Card Store, his wits and creativity in building makes him both a mighty and sneaky foe to be reckoned with.",
+		["Bio"] = "Secretly hiding an AK-47 and a Pistol in the local Card Store, his wits and creativity in building make him both a mighty and sneaky foe to be reckoned with.",
 	},
 
 	["Dayren"] = {

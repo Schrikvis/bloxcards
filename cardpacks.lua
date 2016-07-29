@@ -315,7 +315,7 @@ return {
 		Name = "Vitality", --GREEN!
 		Cost = 30,
 		CardsInPack = 4,
-		CardPackId = 263658643,
+		CardPackId = 465492570,
 		Description = "Green is the colour of life, growth, and the primal forces. Vitality packs contain cards that cost green!",
 		Cards = {
 			"HasTheHero",
