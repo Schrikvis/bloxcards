@@ -458,6 +458,7 @@ return {
 		CardPackId = 465492637,
 		Description = "Blue is the colour of logic, order, and structure. Thought packs contain cards that cost blue!",
 		Cards = {
+			"Fenrier",
 			"JaikKaik",
 			"Gravity Inspector",
 			"LordFlanz",
@@ -625,6 +626,7 @@ return {
 		CardPackId = 465492745,
 		Description = "Yellow is the colour of community, satisfaction, and society. Revel packs contain cards that cost yellow!",
 		Cards = {
+			"Pancake Break",
 			"BLOXER787",
 			"Aurichalcum",
 			"BrackioTops",
@@ -780,7 +782,7 @@ return {
 		},
 	}; 
 	{
-		Name = "Obvious", --NEW / WHITE!All cards before Wingman8 rotate out once a new card comes in .Related cards rotate out at the same time.
+		Name = "Obvious", --NEW / WHITE! All cards before Wingman8 rotate out once a new card comes in. Related cards rotate out at the same time.
 		Cost = 50,
 		CardsInPack = 4,
 		CardPackId = 434684079,
@@ -818,6 +820,7 @@ return {
 			"Sibs",
 			"SomaticMizuSan",
 			"Moon Rabbit's Rage",
+			"Pancake Break",
 			"BLOXER787",
 			"Aurichalcum",
 			"BrackioTops",
@@ -825,11 +828,11 @@ return {
 			"Cat's Eye Nexus",
 			"Lilmanofsalem",
 			"animallogic",
-			"Training Dummy",
 			"Western Bandit",
 			"Mzh3000",
 			"NearMiss TFW",
 			"Miked",
+			"Fenrier",
 			"JaikKaik",
 			"Gravity Inspector",
 			"LordFlanz",
@@ -841,7 +844,6 @@ return {
 			"Erik.Cassel",
 			"Febrezer",
 			"Paraselene Sage",
-			"Luckymaxer",
 			"Crystal Snare",
 			"KennedyLeDog",
 			"Hamstermon",
