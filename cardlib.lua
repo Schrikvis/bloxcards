@@ -5650,8 +5650,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Frozen Phoenix"] = {
 		["Id"] = 298793000,
 		["Name"] = "Frozen Phoenix",
-		["Health"] = 500,
-		["Power"] = 2000,
+		["Health"] = 1500,
+		["Power"] = 1200,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Thunder",
 		["Color"] = "Blue",
@@ -5664,7 +5664,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Self",
 			Increase = 2,
 		},
-		["Bio"] = "Renders wildfires meaningless!",
+		["Bio"] = "Renders wildfires meaningless.",
 	},
 	
 	["Guest"] = {
@@ -13324,6 +13324,25 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Ally",
 		},
 		["Bio"] = "You have two turns to beat me, Tea! Or else I'll get to a petrol station, fuel up on pancakes, and rush you down!", 
+	},
+	
+	["Fenrier"] = {
+		["Id"] = 464527485,
+		["Name"] = "Fenrier",
+		["Health"] = 800,
+		["Power"] = 400,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Thunder",
+		["Color"] = "Blue",
+		["Cost"] = {["Blue"] = 4,},
+		["Effect"] = {
+			Name = "4691 Irradiated Haggis",
+			Description = "Unlock all fighers at the end of each of your turns,",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Unlock",999}},
+			Target = "All",
+		},
+		["Bio"] = "Spark the eternal strife, and turn summer into the next year's snow.", 
 	},
 }
 
