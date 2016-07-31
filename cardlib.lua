@@ -8826,7 +8826,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},		
 	
 	["Eldevin"] = {
-		["Id"] = 362314798,
+		["Id"] = 384008392,
 		["Name"] = "Eldevin",
 		["Health"] = 600,
 		["Power"] = 300,
