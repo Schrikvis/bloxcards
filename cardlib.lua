@@ -1603,9 +1603,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Assimilate",
-			Description = "Generate a red icon.",
+			Description = "Generate a blue icon.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Red",1}},
+			["Power"] = {{"Blue",1}},
 			Target = "Ally",
 		},
 		["Bio"] = [[The titans are actually bloxikins too. Titan Ninja master race?]],
@@ -3453,6 +3453,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Spark",
 		["Color"] = "Blue",
 		["Cost"] = {["Blue"] = 2,},
+		["Charge"] = true,
 		["Effect"] = {
 			Name = "Conflux",
 			Description = "This fighter can attack the turn it's summoned.",
@@ -5020,12 +5021,19 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Unlimxted"] = {
 		["Id"] = 294871605,
 		["Name"] = "Unlimxted",
-		["Health"] = 350,
+		["Health"] = 800,
 		["Power"] = 900,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Yellow",
 		["Cost"] = {["Neutral"] = 1,["Yellow"] = 3,},
+		["Effect"] = {
+			Name = "Even Out",
+			Description = "When this card is targeted, destroy it.",
+			["Type"] = "OnTarget",
+			["Power"] = {{"Damage",9999}},
+			Target = "Self",
+		},
 		["Bio"] = "I have many limiteds...",
 	},	
 	
@@ -7103,7 +7111,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 2,["Blue"] = 1,["Green"] = 1,["Red"] = 1,["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Bonanza!",
-			Description = [[When you target this card, Generate an icon of every color.]],
+			Description = [[When this card is targeted, generate an icon of every color.]],
 			["Type"] = "OnTarget",
 			["Power"] = {{"Blue",1},{"Green",1},{"White",1},{"Yellow",1},{"Red",1}},
 			Target = "Ally",
@@ -8015,9 +8023,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 2, ["Red"] = 2},
 		["Effect"] = {
 			Name = "Render",
-			Description = "When you target this card, give it 100 health and add an Eye Spy to your hand.",
+			Description = "When this card is targeted, give it 100 health and add a random red or blue action to your hand.",
 			["Type"] = "OnTarget",
-			["Power"] = {{"Add","Eye Spy"},{"Heal",100,"Self"}},
+			["Power"] = {{"RandomAdd","Lunar"},{"Heal",100,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Sometimes, Leet's arcane energy gives him unimaginable power. Other times, it just electrocutes his cat.",
@@ -11546,7 +11554,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "Revival",
-			Description = "Whenever your opponent loses life, generate a targeting blip. Targeting blips are used to trigger Target Effects.",
+			Description = "Whenever your opponent loses life, generate four targeting blips and destroy Wi_Sh. Targeting blips are used to trigger Target Effects.",
 			["Type"] = "OnEnemyHealthLoss",
 			["Power"] = {{"Add","Targeting Blip"}},
 			Target = "Ally",
@@ -12488,9 +12496,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1, ["Blue"] = 3, ["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "Capture",
-			Description = "When you target this fighter, add a Kill Script to your hand.",
-			["Type"] = "OnTarget",
-			["Power"] = {{"Add","Kill Script"}},
+			Description = "Whenever you cast an action or terrain spell, add a random red or blue action toyour hand.",
+			["Type"] = "OnAllyCast",
+			["Power"] = {{"RandomAdd","Lunar"}},
 			Target = "Ally",
 		},
 		["Bio"] = "One of the founders of Roblox. Ancient and wise.",
