@@ -634,7 +634,7 @@ return {
 			"animallogic",
 			"Training Dummy",
 			"Western Bandit",
-			"mzh3000",
+			"Mzh3000",
 			"NearMiss TFW",
 			"Miked",
 			"wi_sh",
