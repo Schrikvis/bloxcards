@@ -311,7 +311,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Glaciem Mage"] = {
 		["Id"] = 263666530,
 		["Name"] = "Glaciem Mage",
-		["Health"] = 300,
+		["Health"] = 400,
 		["Power"] = 300,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Freeze",
@@ -3319,10 +3319,10 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "Booster",
-			Description = "This card can attack the turn its summoned.",
+			Description = "Both players generate a white icon. This card can attack the turn its summoned.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Charge",69}},
-			Target = "Opponent",
+			["Power"] = {{"Charge",69},{"Neutral",1}},
+			Target = "All.",
 		},
 		["Bio"] = "ZOOM ZAM ZOW, IT'S A PLANE!",
 	},	
@@ -9235,7 +9235,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Seranok"] = {
-		["Id"] = 363166314,
+		["Id"] = 469440365,
 		["Name"] = "Seranok",
 		["Health"] = 500,
 		["Power"] = 500,
@@ -10993,10 +10993,10 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Red"] = 5,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = [[At the end of your turn, unlock this card.]],
-			["Type"] = "OnEnd",
-			["Power"] = {{"Unlock",999}},
-			Target = "Self",	
+			Description = [[Whenever you cast an action or terrain spell, add a random red or blue action into your hand.]],
+			["Type"] = "OnAllyCast",
+			["Power"] = {{"RandomAdd","Lunar"}},
+			Target = "Ally",	
 		},
 		["Bio"] = "Thanks to guilt by association, this poor chap has to work for Delta Airlines. Eugh!",
 	},	
@@ -11310,7 +11310,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},				
 	
 	["Seranok-ArtV"] = {
-		["Id"] = 415728717,
+		["Id"] = 469439910,
 		["Name"] = "Seranok",
 		["Health"] = 500,
 		["Power"] = 500,
@@ -13296,6 +13296,26 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Ally",
 		},
 		["Bio"] = "Keep your friends close and your competition closer. But what about frenemies?", 
+	},
+	
+	["Pancake Break"] = {
+		["Id"] = 464527485,
+		["Name"] = "Pancake Break",
+		["Health"] = 0,
+		["Power"] = 0,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Thunder",
+		["Color"] = "Yellow",
+		["Cost"] = {["Yellow"] = 3,},
+		["AttackBlock"] = true,
+		["Effect"] = {
+			Name = "Collected Company Envy",
+			Description = "All allied fighters gain 200 health. Return them to your hand.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Heal",200},{"Return",030}},
+			Target = "Ally",
+		},
+		["Bio"] = "You have two turns to beat me, Tea! Or else I'll get to a petrol station, fuel up on pancakes, and rush you down!", 
 	},
 }
 
