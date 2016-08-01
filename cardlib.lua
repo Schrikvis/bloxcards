@@ -8847,7 +8847,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},		
 	
 	["Eldevin"] = {
-		["Id"] = 362314798,
+		["Id"] = 384008392,
 		["Name"] = "Eldevin",
 		["Health"] = 600,
 		["Power"] = 300,
@@ -13148,7 +13148,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Kmansong2"] = {
-		["Id"] = 455952405,
+		["Id"] = 470425942,
 		["Name"] = "Kmansong2",
 		["Health"] = 700,
 		["Power"] = 700,
