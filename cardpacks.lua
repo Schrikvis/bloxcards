@@ -318,6 +318,8 @@ return {
 		CardPackId = 465492570,
 		Description = "Green is the colour of life, growth, and the primal forces. Vitality packs contain cards that cost green!",
 		Cards = {
+			"Aceguy100",
+			"Mariochocolatemilk",
 			"HasTheHero",
 			"Korblox Shadowmage",
 			"Redcliff Heretic",
@@ -788,6 +790,9 @@ return {
 		CardPackId = 434684079,
 		Description = "Mister Obvious travels far and wide to give you exotic cards. Obvious Packs contain only white cards and new cards. For collection maniacs only.",
 		Cards = {
+			"Jimminus",
+			"Aceguy100",
+			"Mariochocolatemilk"
 			"HasTheHero",
 			"Korblox Shadowmage",
 			"Redcliff Heretic",
@@ -830,7 +835,6 @@ return {
 			"animallogic",
 			"Western Bandit",
 			"Mzh3000",
-			"NearMiss TFW",
 			"Miked",
 			"Fenrier",
 			"JaikKaik",
@@ -840,8 +844,6 @@ return {
 			"ShockingRobux",
 			"HuntarioRBLX",
 			"Cyandude585",
-			"Coordinated Attack",
-			"Erik.Cassel",
 			"Febrezer",
 			"Paraselene Sage",
 			"Crystal Snare",

@@ -632,7 +632,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Recognize",
 			Description = [[Target 1 fighter. Draw a card.]],
 			["Type"] = "OnSummon",
-			["Power"] = {{"Draw",1,"Ally"}},
+			["Power"] = {{"Damage",0},{"Draw",1,"Ally"}},
 			Target = "Single",
 		},
 		["Bio"] = "If you come first in this race, I will give you a holy sword. Come third and I'll give you a toaster, though.",
@@ -2258,9 +2258,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "Legend says this bowl grants you fortune and fame.",
 		["Effect"] = {
 			Name = "Bowl of Greed",
-			Description = [[Draw 2 Cards. Add "Lord of Greed" to your opponent's hand.]],
+			Description = [[Draw 2 Cards. Your opponent summons the Lord of Greed.]],
 			["Type"] = "OnSummon",
-			["Power"] = {{"Draw",2,"Ally"},{"Add","Lord of Greed"}},
+			["Power"] = {{"Draw",2,"Ally"},{"Summon","Lord of Greed"}},
 			Target = "Opponent",
 		},
 	},
@@ -3974,7 +3974,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "BEGONE! FOUL SPIRIT!",
 	},
 	
-	["Shedletsky the Fried One"] = {		["Id"] = 291386585,
+	["Shedletsky the Fried One"] = {		
+		["Id"] = 291386585,
 		["Name"] = "Shedletsky the Fried One",
 		["Health"] = 500,
 		["Power"] = 500,
@@ -4118,9 +4119,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 8,["Red"] = 1,},
 		["Effect"] = {
 			Name = "Deceipt",
-			Description = "Deal 500 damage to your opponent and 500 to all enemy fighters.",
+			Description = "Deal 500 damage to your opponent and 350 to all enemy fighters.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",500},{"Inflict",500,"Opponent"}},
+			["Power"] = {{"Damage",350},{"Inflict",500,"Opponent"}},
 			Target = "Opponent",	
 		},
 		["Bio"] = "Like the game to see what the like animation looks like!",
@@ -6786,20 +6787,20 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["HomingBeacon"] = {
 		["Id"] = 316000978,
 		["Name"] = "HomingBeacon",
-		["Health"] = 1500,
-		["Power"] = 100,
+		["Health"] = 1200,
+		["Power"] = 450,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Thunder",
 		["Color"] = "Yellow",
 		["Cost"] = {["Neutral"] = 1,["Yellow"] = 7,},
 		["Effect"] = {
 			Name = "Endless Spooks",
-			Description = [[When this card attacks, draw a card and gain 1 Yellow Icon.]],
-			["Type"] = "OnAttack",
-			["Power"] = {{"Draw",1},{"Yellow",1}},
-			Target = "Ally",
+			Description = [[At the end of your turns, set both player's yellow icons to 4.]],
+			["Type"] = "OnEnd",
+			["Power"] = {{"SetYellow",4}},
+			Target = "All",
 		},
-		["Bio"] = "He will never let you win, I mean he's made of studs for crying out loud.",
+		["Bio"] = "Target Acquired.",
 	},
 	
 	["Hopelesssly"] = {
@@ -8848,7 +8849,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	
 	["Eldevin"] = {
 		["Id"] = 384008392,
-		["Name"] = "Eldevin",
+		["Name"] = "Eidevin",
 		["Health"] = 600,
 		["Power"] = 300,
 		["Rarity"] = "Legendary",
@@ -9815,7 +9816,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Description = [[When this card attacks, your opponent gains 500 life.]],
 			["Type"] = "OnAttack",
 			["Power"] = {{"Inflict",-500}},
-			Target = "Opponent",	
+			Target = "Ally",	
 		},
 		["Bio"] = "He duels you with dual axes for dual dueling.",
 	},		
@@ -11105,7 +11106,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Description = "When this card attacks, your opponent gains 500 life.",
 			["Type"] = "OnAttack",
 			["Power"] = {{"Inflict",-500}},
-			Target = "Opponent",
+			Target = "Ally",
 		},
 		["Bio"] = "UristMcSparks is a human being, contrary to popular belief. Treat him as such.",
 	},	
@@ -11419,9 +11420,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 6,},
 		["Effect"] = {
 			Name = "Totem Magic",
-			Description = "At the end of each turn, Her0z loses 1000 health and all of its power. Her0z can't attack.",
+			Description = "At the end of each turn, Her0z loses 800 health and all of its power. Her0z can't attack.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Damage",1000},{"Weaken",9999}},
+			["Power"] = {{"Damage",800},{"Weaken",9999}},
 			Target = "Self",
 		},
 		["Bio"] = "Mummy of Front Page Games in the past.",
@@ -11714,7 +11715,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Stud",
 			Description = "At the end of your turn, spawn a zombie, then increase the health and power of all zombies by 150.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Summon","Zombie"},{"Heal",150},{"Strengthen",150}},
+			["Power"] = {{"Summon","Zombie"},{"Heal",150,"Archetype"},{"Strengthen",150,"Archetype"}},
 			Target = "Ally",	
 		},
 		["Bio"] = "You know how it'd be awkward if there were two zombie kings out? Yeah...",
@@ -12632,7 +12633,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1, ["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "Sugar and Ice",
-			Description = "At the end of your turn, all other Cat Eyes gain 50 health.",
+			Description = "At the end of your turn, all other Cat Eyes gain 100 health.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Heal",100}},
 			Target = "Archetype",
@@ -12820,9 +12821,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Trout Slap",
-			Description = "Set your life to 3000.",
+			Description = "Set your life to 2500.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"SetHealth",3000}},
+			["Power"] = {{"SetHealth",2500}},
 			Target = "Ally",
 		},
 		["Bio"] = "The damp mayday-er. Combos well with Valletta.",
@@ -13148,7 +13149,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Kmansong2"] = {
-		["Id"] = 470425942,
+		["Id"] = 455952405,
 		["Name"] = "Kmansong2",
 		["Health"] = 700,
 		["Power"] = 700,
@@ -13329,8 +13330,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Fenrier"] = {
 		["Id"] = 464527485,
 		["Name"] = "Fenrier",
-		["Health"] = 800,
-		["Power"] = 400,
+		["Health"] = 700,
+		["Power"] = 800,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Thunder",
 		["Color"] = "Blue",
@@ -13344,6 +13345,80 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "Spark the eternal strife, and turn summer into the next year's snow.", 
 	},
+	
+	["Crazyblox"] = {
+		["Id"] = 47001740,
+		["Health"] = 350,
+		["Power"] = 400,
+		["Rarity"] = "Rare",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Red", 
+		["Cost"] = {["Neutral"] = 1, ["Yellow"] = 1, ["Green"] = 1, ["Red"] = 4,},
+		["Effect"] = {
+			Name = "ROLLING AROUND AT THE SPEED OF SOUND",
+			Description = "Unlock a target fighter. It gains 200 power.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Unlock",999},{"Strengthen",200}},
+			Target = "Single",
+		},
+		["Bio"] = "Live in the cost, you die to floods. Live in the mountains, you die to rockslides. You can't win, you know.",
+	},
+	
+	["Mariochocolatemilk"] = {
+		["Id"] = 473309022,
+		["Health"] = 600,
+		["Power"] = 100,
+		["Rarity"] = "Legendary",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Green", 
+		["Cost"] = {["Neutral"] = 1, ["Green"] = 5,},
+		["Effect"] = {
+			Name = "Alien Probe",
+			Description = "At the end of each turn, set the stats of all allied fighters to 700/200 and reveal your opponent's hand.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Weaken",9999},{"Strengthen",600},{"Swap",030},{"Weaken",9999},{"Strengthen",200},{"RevealHand",999,"Opponent"}},
+			Target = "Ally",
+		},
+		["Bio"] = "Mario came from a distant place in The Milky Way. Earth, to be precise.",
+	},
+	
+	["Aceguy100"] = {
+		["Id"] = 473309022,
+		["Health"] = 700,
+		["Power"] = 300,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Green", 
+		["Cost"] = {["Green"] = 2, ["Neutral"] = 4,},
+		["Effect"] = {
+			Name = "Madden sucks",
+			Description = "Whenever AceGuy attacks the opponent, it gains 400 health and 200 power.",
+			["Type"] = "OnStrike",
+			["Power"] = {{"Heal",400},{"Strengthen",200}},
+			Target = "Self",
+		},
+		["Bio"] = "Touchdown to run him down.",
+	},
+	
+	["Jimminus"] = {
+		["Id"] = 473308924,
+		["Health"] = 350,
+		["Power"] = 350,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Blue", 
+		["Cost"] = {["Blue"] = 1, ["Neutral"] = 2,},
+		["Effect"] = {
+			Name = "Madden sucks",
+			Description = "Reduce the power of all enemy fighters cards by 100, then weaken all yellow cards by 100..",
+			["Type"] = "OnSummon",
+			["Power"] = {"Weaken",100,"Opponent"},{"Weaken",100,"ColorYellow"},
+			Target = "Opponent",
+		},
+		["Bio"] = "NO FUN ALLOWED. >:)",
+	},
+	
+
 }
 
 local pairs = pairs
