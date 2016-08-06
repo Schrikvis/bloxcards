@@ -13432,6 +13432,7 @@ local c3n = Color3.new
 local clr = {Blue = c3n(0.25,0.25,1), Red = c3n(1,0.25,0.25), Green = c3n(0.25,1,0.25), Yellow = c3n(1,1,0.25), Neutral = c3n(1,1,1)}
 for id,card in pairs(module) do
 	cardcount = cardcount + 1
+	assert(card.Name, id.." has no name.")
 	assert(card.Bio, id.." has no bio.")
 	assert(type(card.Id) == 'number', id.." id malformed.")
 	assert(card.Rarity, id.." has no rarity.")
