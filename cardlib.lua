@@ -792,9 +792,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Red"] = 3,},
 		["Effect"] = {
 			Name = "seventh jutsu of the final sun's rend",
-			Description = "Deal 400 damage to a target fighter. You lose 400 life.",
+			Description = "Deal 400 damage to a target fighter. You lose 600 life.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",600},{"Cost",600}},
+			["Power"] = {{"Damage",400},{"Cost",600}},
 			Target = "Single",
 		},
 		["Bio"] = "Your blood is worth just as much as his. If I waste his, you are to be wasted too.",
@@ -5679,9 +5679,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "At the end of your turn, you lose 100 life.",
-			["Type"] = "OnEnd",
-			["Power"] = {{"Cost",100}},
+			Description = "When this card dies, you lose 200 life.",
+			["Type"] = "OnDeath",
+			["Power"] = {{"Cost",200}},
 			Target = "Ally",
 		},
 		["Bio"] = "Wanna be Friends?",
@@ -10367,7 +10367,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "GO!",
 			Description = "Whenever you lose life, increase the health and power of all allied fighters by 75.",
 			["Type"] = "OnHealthLoss",
-			["Power"] = {{"Strengthen",100},{"Heal",100}},
+			["Power"] = {{"Strengthen",75},{"Heal",75}},
 			Target = "Ally",
 		},
 		["Bio"] = "'Vortex Security respects her, please do not insult her. Yes, IcyTea learned it the hard way.'",
@@ -11326,7 +11326,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Yellow",
-		["Cost"] = {["Neutral"] = 5,["Yellow"] = 3,},
+		["Cost"] = {["Yellow"] = 1,},
 		["Token"] = true,
 		["Effect"] = {
 			Name = "Wary",
@@ -11557,7 +11557,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Revival",
 			Description = "Whenever your opponent loses life, generate four targeting blips and destroy Wi_Sh. Targeting blips are used to trigger Target Effects.",
 			["Type"] = "OnEnemyHealthLoss",
-			["Power"] = {{"Add","Targeting Blip"}},
+			["Power"] = {{"Add","Targeting Blip"},{"Add","Targeting Blip"},{"Add","Targeting Blip"},{"Add","Targeting Blip"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = "No dodgeballs. No plushies. No fun allowed.",
@@ -13308,7 +13308,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Pancake Break"] = {
-		["Id"] = 464527485,
+		["Id"] = 469456311,
 		["Name"] = "Pancake Break",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -13328,7 +13328,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Fenrier"] = {
-		["Id"] = 464527485,
+		["Id"] = 469550868,
 		["Name"] = "Fenrier",
 		["Health"] = 700,
 		["Power"] = 800,
@@ -13348,6 +13348,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	
 	["Crazyblox"] = {
 		["Id"] = 47001740,
+		["Name"] = "Crazyblox",
 		["Health"] = 350,
 		["Power"] = 400,
 		["Rarity"] = "Rare",
@@ -13366,6 +13367,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	
 	["Mariochocolatemilk"] = {
 		["Id"] = 473309022,
+		["Name"] = "Mariochocolatemilk",
 		["Health"] = 600,
 		["Power"] = 100,
 		["Rarity"] = "Legendary",
@@ -13379,11 +13381,12 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Weaken",9999},{"Strengthen",600},{"Swap",030},{"Weaken",9999},{"Strengthen",200},{"RevealHand",999,"Opponent"}},
 			Target = "Ally",
 		},
-		["Bio"] = "Mario came from a distant place in The Milky Way. Earth, to be precise.",
+		["Bio"] = "Digital Style!",
 	},
 	
 	["Aceguy100"] = {
 		["Id"] = 473309022,
+		["Name"] = "Aceguy100",
 		["Health"] = 700,
 		["Power"] = 300,
 		["Rarity"] = "Uncommon",
@@ -13402,6 +13405,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	
 	["Jimminus"] = {
 		["Id"] = 473308924,
+		["Name"] = "Jimminus",
 		["Health"] = 350,
 		["Power"] = 350,
 		["Rarity"] = "Common",
@@ -13415,7 +13419,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {"Weaken",100,"Opponent"},{"Weaken",100,"ColorYellow"},
 			Target = "Opponent",
 		},
-		["Bio"] = "NO FUN ALLOWED. >:)",
+		["Bio"] = "NO FUN ALLOWED. >:(",
 	},
 	
 
