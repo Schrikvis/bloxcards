@@ -13348,6 +13348,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	
 	["Crazyblox"] = {
 		["Id"] = 47001740,
+		["Name"] = "Crazyblox",
 		["Health"] = 350,
 		["Power"] = 400,
 		["Rarity"] = "Rare",
@@ -13366,6 +13367,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	
 	["Mariochocolatemilk"] = {
 		["Id"] = 473309022,
+		["Name"] = "Mariochocolatemilk",
 		["Health"] = 600,
 		["Power"] = 100,
 		["Rarity"] = "Legendary",
@@ -13384,6 +13386,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	
 	["Aceguy100"] = {
 		["Id"] = 473309022,
+		["Name"] = "Aceguy100",
 		["Health"] = 700,
 		["Power"] = 300,
 		["Rarity"] = "Uncommon",
@@ -13402,6 +13405,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	
 	["Jimminus"] = {
 		["Id"] = 473308924,
+		["Name"] = "Jimminus",
 		["Health"] = 350,
 		["Power"] = 350,
 		["Rarity"] = "Common",
@@ -13428,6 +13432,7 @@ local c3n = Color3.new
 local clr = {Blue = c3n(0.25,0.25,1), Red = c3n(1,0.25,0.25), Green = c3n(0.25,1,0.25), Yellow = c3n(1,1,0.25), Neutral = c3n(1,1,1)}
 for id,card in pairs(module) do
 	cardcount = cardcount + 1
+	assert(card.Name, id.." has no name.")
 	assert(card.Bio, id.." has no bio.")
 	assert(type(card.Id) == 'number', id.." id malformed.")
 	assert(card.Rarity, id.." has no rarity.")
