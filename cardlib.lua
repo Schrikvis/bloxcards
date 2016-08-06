@@ -11124,7 +11124,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Double Bleeding",
 			Description = "Whenever you lose life, increase the health of all allied fighters by 200.",
 			["Type"] = "OnHealthLoss",
-			["Power"] = {{"Heal",200}},
+			["Power"] = {{"Heal",100}},
 			Target = "Ally",
 		},
 		["Bio"] = "It's never Lopous, Dr. House.",
