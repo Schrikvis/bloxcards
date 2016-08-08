@@ -90,7 +90,7 @@ Fires when the card attacks.
 - OnStrike
 Fires when the card attacks the enemy player.
 
-- OnAllySummon, OnEnemySummon
+- OnAllySummon, OnEnemySummon, OnAnySummon
 Fires when the player or the enemy player summons a fighter.
 
 - OnCast, OnAllyCast, OnEnemyCast
