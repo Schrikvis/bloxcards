@@ -3317,12 +3317,13 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "UziShot",
 		["Color"] = "Yellow",
 		["Cost"] = {["Yellow"] = 1,},
+		["Charge"] = true;
 		["Effect"] = {
 			Name = "Booster",
 			Description = "Both players generate a white icon. This card can attack the turn its summoned.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Charge",69},{"Neutral",1}},
-			Target = "All.",
+			["Power"] = {{"Neutral",1}},
+			Target = "All",
 		},
 		["Bio"] = "ZOOM ZAM ZOW, IT'S A PLANE!",
 	},	
@@ -13438,7 +13439,6 @@ for id,card in pairs(module) do
 	assert(card.Rarity, id.." has no rarity.")
 	assert(card.Power and card.Health and card.Color, id.." has no health or power or color.")
 	assert(card.AttackEffect or card.Archetype == "Terrain" or (card.Health == 0 and card.Power == 0), id.." has no attack effect animation.")
-	assert(card.Color, id.." has no color.")
 	assert(clr[card.Color], id.." has no real color.")
 	assert(card.Cost, id.." has no cost.")
 	for color,amount in pairs(card.Cost) do
