@@ -9455,8 +9455,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["StayBlue"] = {
 		["Id"] = 384005918, -- 363172190
 		["Name"] = "StayBlue",
-		["Health"] = 600,
-		["Power"] = 600,
+		["Health"] = 700,
+		["Power"] = 700,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Blue",
@@ -13423,6 +13423,28 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "NO FUN ALLOWED. >:(",
 	},
 	
+	["Undead Voodoo Doll"] = {
+		["Id"] = 473308924,
+		["Name"] = "Undead Voodoo Doll",
+		["Health"] = 600,
+		["Power"] = 200,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Dash",
+		["Archetype"] = "Zombie",
+		["Color"] = "Green", 
+		["Cost"] = {["Neutral"] = 0,},
+		["Token"] = true,
+		["DiscardBlock"] = true,
+		["CounterBlock"] = true,
+		["Effect"] = {
+			Name = "HURT ALL THE THINGS",
+			Description = "Can't be discarded, generate icons, or counterattack. At the end of your turns, you lose 200 life.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Cost",200}},
+			Target = "Ally",
+		},
+		["Bio"] = "Voodoo Dolls kill themselves over the most trivial of sins. Don't appropriate their culture, you cis scum.",
+	},
 
 }
 
