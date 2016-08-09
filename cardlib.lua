@@ -1386,14 +1386,21 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Burglar"] = {
-		["Id"] = 275340062,
+		["Id"] = 476249083,
 		["Name"] = "Burglar",
-		["Health"] = 600,
+		["Health"] = 900,
 		["Power"] = 150,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Green",
-		["Cost"] = {["Neutral"] = 2,},
+		["Cost"] = {["Neutral"] = 1, ["Green"] = 3,},
+		["Effect"] = {
+			Name = "Bloxy Victory",
+			Description = "At the end of your turns, your opponent loses 150 life and you gain 150 life.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Inflict",150},{"Cost",150}},
+			Target = "Opponent",
+		},
 		["Bio"] = "A love for nature and plants, he steals them anywhere he sees them.",
 	},
 	
@@ -2276,7 +2283,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2},
 		["Effect"] = {
 			Name = "Blow Dart",
-			Description = "When this card destroys a monster. Draw a card.",
+			Description = "When this card destroys another, Draw a card.",
 			["Type"] = "OnDestroy",
 			["Power"] = "Draw",
 			Target = "Ally",
@@ -3317,12 +3324,11 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "UziShot",
 		["Color"] = "Yellow",
 		["Cost"] = {["Yellow"] = 1,},
-		["Charge"] = true;
 		["Effect"] = {
 			Name = "Booster",
 			Description = "Both players generate a white icon. This card can attack the turn its summoned.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Neutral",1}},
+			["Power"] = {{"Charge",69},{"Neutral",1}},
 			Target = "All",
 		},
 		["Bio"] = "ZOOM ZAM ZOW, IT'S A PLANE!",
@@ -5540,7 +5546,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Bloo"] = {
-		["Id"] = 475333865,
+		["Id"] = 433134142,
 		["Name"] = "NinjaBluz",
 		["Health"] = 600,
 		["Power"] = 300,
@@ -5819,15 +5825,22 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["LuckyTux"] = {
-		["Id"] = 298793277,
+		["Id"] = 476235346,
 		["Name"] = "LuckyTux",
-		["Health"] = 500,
-		["Power"] = 100,
+		["Health"] = 650,
+		["Power"] = 400,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Thunder",
 		["Color"] = "Green",
-		["Cost"] = {["Neutral"] = 3,["Green"] = 1,},
-		["Bio"] = "The luck comes from his Tuxedo.",
+		["Cost"] = {["Neutral"] = 2,["Green"] = 3,},
+		["Effect"] = {
+			Name = "Damage for Top Deck",
+			Description = "At the end of your turns, your opponent loses a red icon. This effect can cause people to go into negative icons.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Red",-1}},
+			Target = "Opponent",
+		},
+		["Bio"] = "Meet the new rollercoaster ride from Mr Bones!",
 	},
 	
 	["Medic Kit"] = {
@@ -6551,7 +6564,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Red"] = 3,},
 		["Effect"] = {
 			Name = "EzWinz",
-			Description = "When this card attacks and destroys an enemy fighter, add a Red Legendary to your hand.",
+			Description = "When this card destroys another, add a Red Legendary to your hand.",
 			["Type"] = "OnDestroy",
 			["Power"] = "RandomAdd",
 			Target = "Ally",
@@ -7849,7 +7862,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Plushie Amp",
 			Description = [[When this card attacks and destroys a fighter, set its health to 1000 and its power to 500.)]],
-			["Type"] = "OnDestroy",
+			["Type"] = "OnAttackDestroy",
 			["Power"] = {{"Weaken",9999},{"Strengthen",1000},{"Swap",030},{"Weaken",9999},{"Strengthen",500}},
 			Target = "Self",
 		},
@@ -7888,7 +7901,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 4,["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Plushie Amp",
-			Description = [[When this attacks and destroys a fighter, it gains 300 Health and Attack.]],
+			Description = [[When this card destroys another, it gains 300 Health and Attack.]],
 			["Type"] = "OnDestroy",
 			["Power"] = {{"Heal",300},{"Strengthen",300}},
 			Target = "Self",
@@ -8127,7 +8140,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Wishing Amp",
 			Description = [[When this card attacks and destroys a fighter, Unlock this fighter and increase its Health by 150.]],
-			["Type"] = "OnDestroy",
+			["Type"] = "OnAttackDestroy",
 			["Power"] = {{"Heal",150},{"Unlock",999}},
 			Target = "Self",
 		},
@@ -8704,7 +8717,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Red"] = 1,["Green"] = 1,},
 		["Effect"] = {
 			Name = "Sudden Death",
-			Description = [[When this card attacks and destroys an enemy fighter. Destroy this fighter.]],
+			Description = [[When this card destroys another, Ddstroy this fighter.]],
 			["Type"] = "OnDestroy",
 			["Power"] = {{"Damage",9999}},
 			Target = "Self",
@@ -9456,8 +9469,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["StayBlue"] = {
 		["Id"] = 384005918, -- 363172190
 		["Name"] = "StayBlue",
-		["Health"] = 600,
-		["Power"] = 600,
+		["Health"] = 700,
+		["Power"] = 700,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Blue",
@@ -9817,7 +9830,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Description = [[When this card attacks, your opponent gains 500 life.]],
 			["Type"] = "OnAttack",
 			["Power"] = {{"Inflict",-500}},
-			Target = "Ally",	
+			Target = "Opponent",	
 		},
 		["Bio"] = "He duels you with dual axes for dual dueling.",
 	},		
@@ -11412,7 +11425,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Her0z"] = {
 		["Id"] = 415731509,
 		["Name"] = "Her0z",
-		["Health"] = 10000,
+		["Health"] = 15000,
 		["Power"] = 0,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Lightning",
@@ -11978,7 +11991,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 6, ["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Render",
-			Description = "When this card attacks and destroys a fighter, draw a card.",
+			Description = "When this card destroys another, draw a card.",
 			["Type"] = "OnDestroy",
 			["Power"] = {{"Draw",1}},
 			Target = "Ally",
@@ -12152,7 +12165,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 5, ["Blue"] = 1, ["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "Render",
-			Description = "When this card attacks and destroys a fighter, draw two cards.",
+			Description = "When this card destroys another, draw two cards.",
 			["Type"] = "OnDestroy",
 			["Power"] = {{"Draw",2}},
 			Target = "Ally",
@@ -12258,12 +12271,13 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Punch1",
 		["Requirement"] = {false,7,true},
 		["Color"] = "Yellow",
+		["Charge"] = true,
 		["Cost"] = {["Blue"] = 1,["Yellow"] = 2,["Red"] = 1,["Neutral"] = 5,},
 		["Effect"] = {
 			Name = "Conflux",
 			Description = "Can only be cast if your opponent has 7 or 8 fighters in play. Destroy all enemy fighters. Mzh3000 can attack when summoned.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",9999},{"Charge",030}},
+			["Power"] = {{"Damage",9999}},
 			Target = "Opponent",
 		},
 		["Bio"] = "Creator of the original ultimate power. Here to destroy all copiers and token spammers.",
@@ -12548,17 +12562,17 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 438688401,
 		["Name"] = "Cyandude858",
 		["Health"] = 500,
-		["Power"] = 400,
+		["Power"] = 500,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 4, ["Blue"] = 2,},
 		["Effect"] = {
 			Name = "Transfusion",
-			Description = "Unlock target fighter, then reduce its power by 200.",
+			Description = "Generate a white icon.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Unlock",9999},{"Weaken",200}},
-			Target = "Single",
+			["Power"] = {{"Neutral",1}},
+			Target = "Ally",
 		},
 		["Bio"] = "He's Cyan. He's a dude. I'm unsure why you think otherwise.",
 	},
@@ -13135,7 +13149,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 300,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Punch1",
-		["Archetype"] = "Ninjs",
+		["Archetype"] = "Ninja",
 		["Color"] = "Blue",
 		["Cost"] = {["Red"] = 3,},
 		["Charge"] = true,
@@ -13150,7 +13164,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Kmansong2"] = {
-		["Id"] = 470425942,
+		["Id"] = 455952405,
 		["Name"] = "Kmansong2",
 		["Health"] = 700,
 		["Power"] = 700,
@@ -13325,7 +13339,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Heal",200},{"Return",030}},
 			Target = "Ally",
 		},
-		["Bio"] = "You have two turns to beat me, Tea! Or else I'll get to a petrol station, fuel up on pancakes, and rush you down!", 
+		["Bio"] = "You have two turns to beat me, Tea! Or else I'll get to a petrol station, fuel up on pancakes, and rush you down with my Egg-Eyes Batter Dragon!", 
 	},
 	
 	["Fenrier"] = {
@@ -13414,15 +13428,57 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Blue", 
 		["Cost"] = {["Blue"] = 1, ["Neutral"] = 2,},
 		["Effect"] = {
-			Name = "Madden sucks",
-			Description = "Reduce the power of all enemy fighters cards by 100, then weaken all yellow cards by 100..",
+			Name = "I only cri half of the time",
+			Description = "Reduce the power of all enemy fighters by 100, then reduce the power of all yellow fighters by 100.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Weaken",100,"Opponent"},{"Weaken",100,"ColorYellow"}},
+			["Power"] = {"Weaken",100,"Opponent"},{"Weaken",100,"ColorYellow"},
 			Target = "Opponent",
 		},
 		["Bio"] = "NO FUN ALLOWED. >:(",
 	},
 	
+	["Undead Voodoo Doll"] = {
+		["Id"] = 473313075,
+		["Name"] = "Undead Voodoo Doll",
+		["Health"] = 600,
+		["Power"] = 200,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Dash",
+		["Archetype"] = "Zombie",
+		["Color"] = "Green", 
+		["Cost"] = {["Neutral"] = 0,},
+		["Token"] = true,
+		["DiscardBlock"] = true,
+		["CounterBlock"] = true,
+		["Effect"] = {
+			Name = "HURT ALL THE THINGS",
+			Description = "Can't be discarded, generate icons, or counterattack. At the end of your turns, you lose 200 life.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Cost",200}},
+			Target = "Ally",
+		},
+		["Bio"] = "Voodoo Dolls kill themselves over the most trivial of sins. Don't appropriate their culture, you cis scum.",
+	},
+	
+	["Cooldude4851"] = {
+		["Id"] = 476190625,
+		["Name"] = "Cooldude4651",
+		["Health"] = 300,
+		["Power"] = 100,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Dash",
+		["Archetype"] = "Zombie",
+		["Color"] = "Red", 
+		["Cost"] = {["Neutral"] = 1, ["Red"] = 2,},
+		["Effect"] = {
+			Name = "HURT ALL THE THINGS",
+			Description = "Whenever a fighter enters the battlefield under your control all allies gain 50 power.",
+			["Type"] = "OnAllySummon",
+			["Power"] = {{"Strengthen",50}},
+			Target = "Ally",
+		},
+		["Bio"] = "Memes are fruit.",
+	},
 
 }
 
@@ -13439,6 +13495,7 @@ for id,card in pairs(module) do
 	assert(card.Rarity, id.." has no rarity.")
 	assert(card.Power and card.Health and card.Color, id.." has no health or power or color.")
 	assert(card.AttackEffect or card.Archetype == "Terrain" or (card.Health == 0 and card.Power == 0), id.." has no attack effect animation.")
+	assert(card.Color, id.." has no color.")
 	assert(clr[card.Color], id.." has no real color.")
 	assert(card.Cost, id.." has no cost.")
 	for color,amount in pairs(card.Cost) do
