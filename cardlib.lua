@@ -1386,14 +1386,21 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Burglar"] = {
-		["Id"] = 275340062,
+		["Id"] = 476249083,
 		["Name"] = "Burglar",
-		["Health"] = 600,
+		["Health"] = 900,
 		["Power"] = 150,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Green",
-		["Cost"] = {["Neutral"] = 2,},
+		["Cost"] = {["Neutral"] = 1, ["Green"] = 3,},
+		["Effect"] = {
+			Name = "Bloxy Victory",
+			Description = "At the end of your turns, your opponent loses 150 life and you gain 150 life.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Inflict",150},{"Cost",150}},
+			Target = "Opponent",
+		},
 		["Bio"] = "A love for nature and plants, he steals them anywhere he sees them.",
 	},
 	
@@ -5818,15 +5825,22 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["LuckyTux"] = {
-		["Id"] = 298793277,
+		["Id"] = 476235346,
 		["Name"] = "LuckyTux",
-		["Health"] = 500,
-		["Power"] = 100,
+		["Health"] = 650,
+		["Power"] = 400,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Thunder",
 		["Color"] = "Green",
-		["Cost"] = {["Neutral"] = 3,["Green"] = 1,},
-		["Bio"] = "The luck comes from his Tuxedo.",
+		["Cost"] = {["Neutral"] = 2,["Green"] = 3,},
+		["Effect"] = {
+			Name = "Damage for Top Deck",
+			Description = "At the end of your turns, your opponent loses a red icon. This effect can cause people to go into negative icons.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Red",-1}},
+			Target = "Opponent",
+		},
+		["Bio"] = "Meet the new rollercoaster ride from Mr Bones!",
 	},
 	
 	["Medic Kit"] = {
@@ -13424,7 +13438,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Undead Voodoo Doll"] = {
-		["Id"] = 473308924,
+		["Id"] = 473313075,
 		["Name"] = "Undead Voodoo Doll",
 		["Health"] = 600,
 		["Power"] = 200,
