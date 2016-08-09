@@ -13417,7 +13417,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Madden sucks",
 			Description = "Reduce the power of all enemy fighters cards by 100, then weaken all yellow cards by 100..",
 			["Type"] = "OnSummon",
-			["Power"] = {"Weaken",100,"Opponent"},{"Weaken",100,"ColorYellow"},
+			["Power"] = {{"Weaken",100,"Opponent"},{"Weaken",100,"ColorYellow"}},
 			Target = "Opponent",
 		},
 		["Bio"] = "NO FUN ALLOWED. >:(",

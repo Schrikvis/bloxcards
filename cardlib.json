@@ -8680,9 +8680,16 @@
 			"Blue": 1
 		},
 		"AttackEffect": "Dash",
-		"Effect": [
-			["Weaken", 100, "ColorYellow"]
-		],
+		"Effect": {
+			"Target": "Opponent",
+			"Name": "Madden sucks",
+			"Description": "Reduce the power of all enemy fighters cards by 100, then weaken all yellow cards by 100..",
+			"Power": [
+				["Weaken", 100, "Opponent"],
+				["Weaken", 100, "ColorYellow"]
+			],
+			"Type": "OnSummon"
+		},
 		"Name": "Jimminus",
 		"Id": 473308924,
 		"Color": "Blue",
