@@ -170,6 +170,7 @@ return {
 		CardPackId = 465492503,
 		Description = "Red is the colour of power, ambition, and control. Dominion packs contain cards that cost red!",
 		Cards = {
+			"Cooldude4851",
 			"Cotton Cavalier",
 			"Arashi Pikemen",
 			"HeyItsColin",
@@ -790,6 +791,7 @@ return {
 		CardPackId = 434684079,
 		Description = "Mister Obvious travels far and wide to give you exotic cards. Obvious Packs contain only white cards and new cards. For collection maniacs only.",
 		Cards = {
+			"Cooldude4851",
 			"Jimminus",
 			"Aceguy100",
 			"Mariochocolatemilk"
@@ -823,7 +825,6 @@ return {
 			"Skarra the DragonSlayer",
 			"Forbidden Power",
 			"Sibs",
-			"SomaticMizuSan",
 			"Moon Rabbit's Rage",
 			"Pancake Break",
 			"BLOXER787",

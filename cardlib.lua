@@ -13459,6 +13459,26 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "Voodoo Dolls kill themselves over the most trivial of sins. Don't appropriate their culture, you cis scum.",
 	},
+	
+	["Cooldude4851"] = {
+		["Id"] = 476190625,
+		["Name"] = "Cooldude4651",
+		["Health"] = 300,
+		["Power"] = 100,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Dash",
+		["Archetype"] = "Zombie",
+		["Color"] = "Red", 
+		["Cost"] = {["Neutral"] = 1, ["Red"] = 2,},
+		["Effect"] = {
+			Name = "HURT ALL THE THINGS",
+			Description = "Whenever a fighter enters the battlefield under your control all allies gain 50 power.",
+			["Type"] = "OnAllySummon",
+			["Power"] = {{"Strengthen",50}},
+			Target = "Ally",
+		},
+		["Bio"] = "Memes are fruit.",
+	},
 
 }
 
