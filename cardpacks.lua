@@ -170,6 +170,7 @@ return {
 		CardPackId = 465492503,
 		Description = "Red is the colour of power, ambition, and control. Dominion packs contain cards that cost red!",
 		Cards = {
+			[["One Thousand Deaths"]],
 			"Burning_Soul_Blade",
 			"Cooldude4851",
 			"Cotton Cavalier",

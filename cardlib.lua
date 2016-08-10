@@ -13506,6 +13506,27 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "Hatred outlives the hateful.",
 	},
 
+	["One_Thousand_Deaths"] = {
+		["Id"] = 477089292,
+		["Name"] = [["One Thousand Deaths"]],
+		["Health"] = 400,
+		["Power"] = 100,
+		["Rarity"] = "Legendary",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Red", 
+		["Archetype"] = "Ninja",
+		["Charge"] = true,
+		["Cost"] = {["Red"] = 3, ["Blue"] = 1},
+		["Effect"] = {
+			Name = "HURT ALL THE THINGS",
+			Description = "When this card destroys another, give all ninjas 300 power and return this card to your hand. This card can attack the turn it's summoned.",
+			["Type"] = "OnDestroy",
+			["Power"] = {{"Strengthen",300},{"Return",999,"Self"}},
+			Target = "Archetype",
+		},
+		["Bio"] = "Only a thousand people have seen this ninja. Only one has saw it.",
+	},
+
 }
 
 local pairs = pairs
