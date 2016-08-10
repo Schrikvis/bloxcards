@@ -170,6 +170,7 @@ return {
 		CardPackId = 465492503,
 		Description = "Red is the colour of power, ambition, and control. Dominion packs contain cards that cost red!",
 		Cards = {
+			"Burning_Soul_Blade",
 			"Cooldude4851",
 			"Cotton Cavalier",
 			"Arashi Pikemen",
@@ -789,8 +790,9 @@ return {
 		Cost = 50,
 		CardsInPack = 4,
 		CardPackId = 434684079,
-		Description = "Mister Obvious travels far and wide to give you exotic cards. Obvious Packs contain only white cards and new cards. For collection maniacs only.",
+		Description = "Obvious Packs contain only white cards, joke cards and new cards. You must have 10 wins to open these packs.",
 		Cards = {
+			"Burning_Soul_Blade",
 			"Cooldude4851",
 			"Jimminus",
 			"Aceguy100",
@@ -821,7 +823,6 @@ return {
 			"Beam Sword",
 			"ClanAtlas",
 			"KurosakiDXenos",
-			"Doneyes",
 			"Skarra the DragonSlayer",
 			"Forbidden Power",
 			"Sibs",
