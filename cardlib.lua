@@ -13527,6 +13527,25 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "Only a thousand people have seen this ninja. Only one has saw it.",
 	},
 
+	["InceptionTime"] = {
+		["Id"] = 477089292,
+		["Name"] = [["InceptionTime"]],
+		["Health"] = 1300,
+		["Power"] = 300,
+		["Rarity"] = "Legendary",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Green", 
+		["Cost"] = {["Green"] = 4, ["Neutral"] = 5},
+		["Effect"] = {
+			Name = "Revival",
+			Description = "Set your green icons to 99 and draw two cards. For the rest of the game, you can't generate icons of other type.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"SetYellow",-99},{"SetGreen",99},{"SetBlue",-99},{"SetRed",-99},{"SetNeutral",-99},{"Draw",2}},
+			Target = "Ally",
+		},
+		["Bio"] = "It is not yet time.",
+	},
+
 }
 
 local pairs = pairs
