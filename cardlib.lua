@@ -191,7 +191,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 3,},
 		["Effect"] = {
 			Name = "Meebling Infestation",
-			Description = "Reduce the attack of a target fighter by 600 and summon a Meebling.",
+			Description = "lower the power of a target fighter by 600 and summon a Meebling.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",600},{"Summon","Meebling","Ally"}},
 			Target = "Single",
@@ -1499,6 +1499,13 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Yellow",
 		["Cost"] = {["Neutral"] = 2,["Yellow"] = 3,},
+			["Effect"] = {
+			Name = "Assimilate",
+			Description = "Whenever your opponent gains life, they lose 500 life.",
+			["Type"] = "OnOpponentHealthGain",
+			["Power"] = {{"Inflict",500}},
+			Target = "NotArchetype",
+		},
 		["Bio"] = "He never runs late for a tea party.",
 	},
 	
@@ -1621,7 +1628,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Snowskateer"] = {
 		["Id"] = 295647303,
 		["Name"] = "Snowskateer",
-		["Health"] = 175,
+		["Health"] = 300,
 		["Power"] = 300,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Slash",
@@ -2167,7 +2174,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Green"] = 3,},
 		["Effect"] = {
 			Name = "Demon Eye",
-			Description = "Gain 5 Green icons and reduce the attack of all fighters by 200.",
+			Description = "Gain 5 Green icons and lower the attack of all fighters by 200.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Green",5,"Ally"},{"Weaken",200}},
 			Target = "All",
@@ -2245,7 +2252,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Red"] = 1,["Yellow"] = 1,["Green"] = 1,["Blue"] = 1,},
 		["Effect"] = {
 			Name = "Horde-Caller",
-			Description = "Deal 100 damage to all enemies and reduce their attack by 100.",
+			Description = "Deal 100 damage to all enemies and lower their attack by 100.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",100},{"Damage",100}},
 			Target = "Opponent",
@@ -2366,7 +2373,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 283993033,
 		["Name"] = "Deadeye",
 		["Health"] = 650,
-		["Power"] = 350,
+		["Power"] = 650,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Green",
@@ -2374,7 +2381,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 3},
 		["Effect"] = {
 			Name = "Nature's Reconciliation",
-			Description = "This fighter is immune to effects that reduce its health or power. At the end of your turn, destroy all allied fighters.",
+			Description = "This fighter is immune to effects that lower its health or power. At the end of your turn, destroy all allied fighters.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Damage",9999}},
 			Target = "Ally",
@@ -2547,7 +2554,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 1,},
 		["Effect"] = {
 			Name = "Nerve Wrecker",
-			Description = "Lower the power of all enemy fighters by 100. Draw a card.",
+			Description = "lower the power of all enemy fighters by 100. Draw a card.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",100,}, {"Draw",1,"Ally"}},
 			Target = "Opponent",
@@ -2887,7 +2894,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Green"] = 3,},
 		["Effect"] = {
 			Name = "OUTRAGE!!",
-			Description = "Lower the power of all non-green fighters by 200. Increase the health of all green fighters by 200.",
+			Description = "lower the power of all non-green fighters by 200. Increase the health of all green fighters by 200.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",200,"NotColorGreen"},{"Heal",200,"ColorGreen"}},
 			Target = "All",
@@ -4014,7 +4021,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 1,["Blue"] = 1,["Yellow"] = 6,["Red"] = 1,["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = [[This card is immune to cards that reduce its Attack or Health. Unlock this fighter at the end of each of your turns.]],
+			Description = [[This card is immune to cards that lower its Attack or Health. Unlock this fighter at the end of each of your turns.]],
 			["Type"] = "OnEnd",
 			["Power"] = "Unlock",
 			Target = "Self",	
@@ -4209,7 +4216,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 2,},
 		["Effect"] = {
 			Name = "Jagged Arrow",
-			Description = "Reduce the attack of a target fighter by 400.",
+			Description = "lower the attack of a target fighter by 400.",
 			["Type"] = "OnSummon",
 			["Power"] = "Weaken",
 			Target = "Single",
@@ -4272,7 +4279,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 5,},
 		["Effect"] = {
 			Name = "Quick Shot",
-			Description = "Lower the attack of all non-Korblox fighters by 500.",
+			Description = "lower the attack of all non-Korblox fighters by 500.",
 			["Type"] = "OnSummon",
 			["Power"] = "Weaken",
 			Target = "NotArchetype",
@@ -4416,7 +4423,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Red"] = 1,},
 		["Effect"] = {
 			Name = "Knockdown",
-			Description = "Reduce the Health and Attack of all non-Recliff cards by 100.",
+			Description = "lower the Health and Attack of all non-Recliff cards by 100.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",100},{"Damage",100}},
 			Target = "NotArchetype",
@@ -4502,7 +4509,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Green"] = 1,["Blue"] = 1,["Yellow"] = 1,["Red"] = 1,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Reduce the attack of all fighters by 25 each turn.",
+			Description = "lower the attack of all fighters by 25 each turn.",
 			["Type"] = "Field",
 			["Power"] = "Weaken",
 			Target = "All",	
@@ -4562,7 +4569,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Green"] = 2,},
 		["Effect"] = {
 			Name = "No-Zone",
-			Description = "Lower the attack of a target fighter by 300.",
+			Description = "lower the attack of a target fighter by 300.",
 			["Type"] = "OnSummon",
 			["Power"] = "Weaken",
 			Target = "Single",
@@ -4582,7 +4589,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 5,},
 		["Effect"] = {
 			Name = "Quick Shot",
-			Description = "Lower the attack of all enemy fighters by 200.",
+			Description = "lower the attack of all enemy fighters by 200.",
 			["Type"] = "OnSummon",
 			["Power"] = "Weaken",
 			Target = "Opponent",
@@ -4663,7 +4670,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Psychotic",
-			Description = "Increase the attack of a target fighter by 1000, then reduce their health by 750.",
+			Description = "Increase the attack of a target fighter by 1000, then lower their health by 750.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Strengthen",1000},{"Damage",750}},
 			Target = "Single",
@@ -5268,7 +5275,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 2,},
 		["Effect"] = {
 			Name = "Attack Modifier! Debuff!",
-			Description = "Reduce the attack of a target fighter by 500.",
+			Description = "lower the attack of a target fighter by 500.",
 			["Type"] = "OnSummon",
 			["Power"] = "Weaken",
 			Target = "Single",
@@ -7095,7 +7102,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 6,},
 		["Effect"] = {
 			Name = "SorryBurn",
-			Description = "When this card attacks, reduce the power of all enemy fighters by 125.",
+			Description = "When this card attacks, lower the power of all enemy fighters by 125.",
 			["Type"] = "OnAttack",
 			["Power"] = {{"Weaken",125}},
 			Target = "Opponent",
@@ -7497,7 +7504,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Lion Amp",
-			Description = [[Reduce the attack of a target fighter by 100. Gain 1 Yellow icon.]],
+			Description = [[lower the attack of a target fighter by 100. Gain 1 Yellow icon.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",100},{"Yellow",1,"Ally"}},
 			Target = "Single",
@@ -8078,7 +8085,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 4,["Neutral"] = 4},
 		["Effect"] = {
 			Name = "Terrorise",
-			Description = "Reduce the attack of a target fighter by 400, then swap its stats.",
+			Description = "lower the attack of a target fighter by 400, then swap its stats.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",400},{"Swap",030}},
 			Target = "Single",
@@ -9288,7 +9295,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Red"] = 3,},
 		["Effect"] = {
 			Name = "Twist",
-			Description = [[Whenever you target this fighter, increase its Attack by 100 but reduce its Health by 100.]],
+			Description = [[Whenever you target this fighter, increase its Attack by 100 but lower its Health by 100.]],
 			["Type"] = "OnTarget",
 			["Power"] = {{"Damage",100},{"Strengthen",100}},
 			Target = "Self",
@@ -9538,7 +9545,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Red"] = 6,},
 		["Effect"] = {
 			Name = "Knockdown",
-			Description = "Reduce the Health and Attack of all non-Redcliff cards by 200.",
+			Description = "lower the Health and Attack of all non-Redcliff cards by 200.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",200},{"Damage",200}},
 			Target = "NotArchetype",
@@ -10149,7 +10156,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 10,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = [[This card is immune to cards that reduce its Attack or Health.]],
+			Description = [[This card is immune to cards that lower its Attack or Health.]],
 			["Type"] = "OnTarget",
 			["Power"] = "None",
 			Target = "Self",	
@@ -10557,7 +10564,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["SirSorin"] = {
 		["Id"] = 411841916,
 		["Name"] = "SirSorin",
-		["Health"] = 600,
+		["Health"] = 900,
 		["Power"] = 0,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Lightning",
@@ -10565,9 +10572,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Routine Maitenance",
-			Description = "At the end of your turn, all fighters lose 25 power and sirsorin gains 150 power.",
+			Description = "At the end of your turn, all other fighters lose 25 power and sirsorin gains 150 power.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Weaken",25,"All"},{"Strengthen",150}},
+			["Power"] = {{"Weaken",25,"All"},{"Strengthen",175}},
 			Target = "Self",
 		},
 		["Bio"] = "Eldrazi? Spirit Dragons? Lithomancy? All illusions!",
@@ -10938,7 +10945,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 4,},
 		["Effect"] = {
 			Name = "Demoralising Chant",
-			Description = "Reduce the attack of a target fighter by 500.",
+			Description = "lower the attack of a target fighter by 500.",
 			["Type"] = "OnSummon",
 			["Power"] = "Weaken",
 			Target = "Single",
@@ -12354,7 +12361,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 5,},
 		["Effect"] = {
 			Name = "Double Life",
-			Description = "At the end of your turn, give all allied fighters 200 power and lose 900 life. This card is immune to effects that reduce its power or health.",
+			Description = "At the end of your turn, give all allied fighters 200 power and lose 900 life. This card is immune to effects that lower its power or health.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Strengthen",200},{"Cost",900}},
 			Target = "Ally",
@@ -12374,7 +12381,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 5,},
 		["Effect"] = {
 			Name = "Double Life",
-			Description = "At the end of your turn, give all allied fighters 200 power and lose 900 life. This card is immune to effects that reduce its power or health.",
+			Description = "At the end of your turn, give all allied fighters 200 power and lose 900 life. This card is immune to effects that lower its power or health.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Strengthen",200},{"Cost",900}},
 			Target = "Ally",
@@ -12432,7 +12439,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "Capture",
-			Description = "Lower the power of a target fighter by 100.",
+			Description = "lower the power of a target fighter by 100.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",100}},
 			Target = "Single",
@@ -12444,7 +12451,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 430962609,
 		["Name"] = "Meeboid Champion",
 		["Health"] = 700,
-		["Power"] = 500,
+		["Power"] = 600,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Punch1",
 		["Archetype"] = "Meeboid",
@@ -12688,7 +12695,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3, ["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Harassing Talons",
-			Description = "Reduce the Power of a fighter by 200, then add a Cat's Eye Wing Flock into your hand.",
+			Description = "lower the Power of a fighter by 200, then add a Cat's Eye Wing Flock into your hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",200},{"Add","Cat's Eye Wing Flock","Ally"}},
 			Target = "Single",
@@ -12918,7 +12925,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2, ["Blue"] = 5,},
 		["Effect"] = {
 			Name = "Trout Slap",
-			Description = "Cast only if you have a Hamstermon in play. At the end of each of your turns, reduce the attack of all enemy fighters by 200. This card can attack the turn it's summoned.",
+			Description = "Cast only if you have a Hamstermon in play. At the end of each of your turns, lower the attack of all enemy fighters by 200. This card can attack the turn it's summoned.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Weaken",200}},
 			Target = "Opponent",
@@ -13049,13 +13056,13 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 0,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Punch1",
-		["Requirement"] = {"Archetype",1},
+		["Requirement"] = {"Archetype",2},
 		["Archetype"] = "Dragon",
 		["Color"] = "Neutral",
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "EzWinz",
-			Description = "Cast only if you have a dragon-related card in play. Generate an icon of every color, an extra red icon, and draw a card.",
+			Description = "Cast only if you have two dragon-related cards in play. Generate an icon of every color, an extra red icon, and draw a card.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Yellow",1},{"Blue",1},{"Red",1},{"Green",1},{"Neutral",1},{"Draw",1}},
 			Target = "Ally",
@@ -13429,7 +13436,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 1, ["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "I only cri half of the time",
-			Description = "Reduce the power of all enemy fighters by 100, then reduce the power of all yellow fighters by 100.",
+			Description = "lower the power of all enemy fighters by 100, then lower the power of all yellow fighters by 100.",
 			["Type"] = "OnSummon",
 			["Power"] = {"Weaken",100,"Opponent"},{"Weaken",100,"ColorYellow"},
 			Target = "Opponent",
@@ -13472,12 +13479,71 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1, ["Red"] = 2,},
 		["Effect"] = {
 			Name = "HURT ALL THE THINGS",
-			Description = "Whenever a fighter enters the battlefield under your control all allies gain 50 power.",
+			Description = "Whenever a you summon a fighter, all allied fighters gain 50 power.",
 			["Type"] = "OnAllySummon",
 			["Power"] = {{"Strengthen",50}},
 			Target = "Ally",
 		},
 		["Bio"] = "Memes are fruit.",
+	},
+	
+	["Burning_Soul_Blade"] = {
+		["Id"] = 476249138,
+		["Name"] = "Burning Soul Blade",
+		["Health"] = 0,
+		["Power"] = 0,
+		["Rarity"] = "Legendary",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Red", 
+		["Cost"] = {["Neutral"] = 4, ["Red"] = 4, ["Blue"] = 4},
+		["Effect"] = {
+			Name = "HURT ALL THE THINGS",
+			Description = "Reduce the attack of all enemy fighters by 300, then swap their stats.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Weaken",300},{"Swap",030}},
+			Target = "Opponent",
+		},
+		["Bio"] = "Hatred outlives the hateful.",
+	},
+
+	["One_Thousand_Deaths"] = {
+		["Id"] = 477089292,
+		["Name"] = [["One Thousand Deaths"]],
+		["Health"] = 400,
+		["Power"] = 100,
+		["Rarity"] = "Legendary",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Red", 
+		["Archetype"] = "Ninja",
+		["Charge"] = true,
+		["Cost"] = {["Red"] = 3, ["Blue"] = 1},
+		["Effect"] = {
+			Name = "HURT ALL THE THINGS",
+			Description = "When this card destroys another, give all ninjas 300 power and return this card to your hand. This card can attack the turn it's summoned.",
+			["Type"] = "OnDestroy",
+			["Power"] = {{"Strengthen",300},{"Return",999,"Self"}},
+			Target = "Archetype",
+		},
+		["Bio"] = "Only a thousand people have seen this ninja. Only one has saw it.",
+	},
+
+	["InceptionTime"] = {
+		["Id"] = 477089292,
+		["Name"] = [["InceptionTime"]],
+		["Health"] = 1300,
+		["Power"] = 300,
+		["Rarity"] = "Legendary",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Green", 
+		["Cost"] = {["Green"] = 4, ["Neutral"] = 5},
+		["Effect"] = {
+			Name = "Revival",
+			Description = "Set your green icons to 99 and draw two cards. For the rest of the game, you can't generate icons of other type.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"SetYellow",-99},{"SetGreen",99},{"SetBlue",-99},{"SetRed",-99},{"SetNeutral",-99},{"Draw",2}},
+			Target = "Ally",
+		},
+		["Bio"] = "It is not yet time.",
 	},
 
 }
