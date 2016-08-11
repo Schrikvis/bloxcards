@@ -13502,7 +13502,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Red", 
-		["Cost"] = {["Neutral"] = 4, ["Red"] = 4, ["Blue"] = 4},
+		["Cost"] = {["Neutral"] = 4, ["Red"] = 4, ["Blue"] = 4,},
 		["Effect"] = {
 			Name = "HURT ALL THE THINGS",
 			Description = "Reduce the attack of all enemy fighters by 300, then swap their stats.",
@@ -13523,7 +13523,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Red", 
 		["Archetype"] = "Ninja",
 		["Charge"] = true,
-		["Cost"] = {["Red"] = 3, ["Blue"] = 1},
+		["Cost"] = {["Red"] = 3, ["Blue"] = 1,},
 		["Effect"] = {
 			Name = "HURT ALL THE THINGS",
 			Description = "When this card destroys another, give all ninjas 300 power and return this card to your hand. This card can attack the turn it's summoned.",
@@ -13542,7 +13542,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Green", 
-		["Cost"] = {["Green"] = 4, ["Neutral"] = 5},
+		["Cost"] = {["Green"] = 4, ["Neutral"] = 5,},
 		["Effect"] = {
 			Name = "Revival",
 			Description = "Set your green icons to 99 and draw two cards. For the rest of the game, you can't generate icons of other type.",
@@ -13557,11 +13557,11 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 477826458,
 		["Name"] = "Blue Fanatic",
 		["Health"] = 1000,
-		["Power"] = 600,
+		["Power"] = 700,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Neutral", 
-		["Cost"] = {["Neutral"] = 10},
+		["Cost"] = {["Neutral"] = 10,},
 		["Effect"] = {
 			Name = "Fanaticism",
 			Description = "Generate 6 blue icons.",
@@ -13580,7 +13580,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Neutral", 
-		["Cost"] = {["Neutral"] = 10},
+		["Cost"] = {["Neutral"] = 10,},
 		["Effect"] = {
 			Name = "Fanaticism",
 			Description = "Generate 4 red icons.",
@@ -13594,13 +13594,13 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Noob Golem"] = {
 		["Id"] = 477841579,
 		["Name"] = "Noob Golem",
-		["Health"] = 600,
+		["Health"] = 700,
 		["Power"] = 1000,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Dash",
 		["Archetype"] = "Noob",
 		["Color"] = "Neutral", 
-		["Cost"] = {["Neutral"] = 10},
+		["Cost"] = {["Neutral"] = 10,},
 		["Effect"] = {
 			Name = "Fanaticism",
 			Description = "Generate 6 yellow icons.",
@@ -13609,6 +13609,44 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Ally",
 		},
 		["Bio"] = "Why feel anything when you can feel great?",
+	},
+
+	["Green Icon Tree"] = {
+		["Id"] = 477841579,
+		["Name"] = "Noob Golem",
+		["Health"] = 700,
+		["Power"] = 700,
+		["Rarity"] = "Rare",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Neutral", 
+		["Cost"] = {["Neutral"] = 10,},
+		["Effect"] = {
+			Name = "Fanaticism",
+			Description = "Generate 10 yellow icons.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Green",10}},
+			Target = "Ally",
+		},
+		["Bio"] = "Why grow anything when you can grow heaven?",
+	},
+
+	["One4utwo4me"] = {
+		["Id"] = 430971601,
+		["Name"] = "One4utwo4me",
+		["Health"] = 600,
+		["Power"] = 200,
+		["Rarity"] = "Rare",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Red", 
+		["Cost"] = {["Neutral"] = 3, ["Red"] = 1,},
+		["Effect"] = {
+			Name = "Bleeding",
+			Description = "Whenever you lose life, add a random red or blue action to your hand.",
+			["Type"] = "OnHealthLoss",
+			["Power"] = {{"RandomAdd","Lunar"}},
+			Target = "Ally",
+		},
+		["Bio"] = "Have fun figuring out if this is a lunar or lifeloss card. (It's not both.)",
 	},
 
 }
