@@ -2986,6 +2986,25 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "Most likely accident prone worker at ROBLOX. He made it there from scripting, so can you!",
 	},
+
+	["StickMasterLukeV2"] = {
+		["Id"] = 283996126,
+		["Name"] = "FlipMasterLuke",
+		["Health"] = 1000,
+		["Power"] = 350,
+		["Rarity"] = "Legendary",
+		["AttackEffect"] = "Slash",
+		["Color"] = "Green",
+		["Cost"] = {["Green"] = 5,["Neutral"] = 1,},
+		["Effect"] = {
+			Name = "Disaster",
+			Description = "Lock all enemy fighters for 1 turn. Add 2 targeting blips to your hand. Targeting blips are used to trigger Target Effects.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Lock",1},{"Add","Targeting Blip","Ally"},{"Add","Targeting Blip","Ally"}},
+			Target = "Opponent",
+		},
+		["Bio"] = "I USED TO BE GOOD! ;~;. Razuatix will not scout out the blade I stick into his throat until it is too late.",
+	},
 	
 	["Assist Trophy"] = {
 		["Id"] = 285152010,
@@ -7166,6 +7185,25 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "All",
 		},
 	},
+
+	["Divine FavorV2"] = {
+		["Id"] = 480274691,
+		["Name"] = "Divine Favor",
+		["Health"] = 0,
+		["Power"] = 0,
+		["Rarity"] = "Rare",
+		["AttackEffect"] = "Null",
+		["Color"] = "Neutral",
+		["Cost"] = {["Neutral"] = 3,},
+		["Bio"] = "Vis' anguish does not apply to Teaism alone.",
+		["Effect"] = {
+			Name = "Board Clear Preparation!",
+			Description = "Set the health and attack of all fighters to 300.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Weaken",9999},{"Strengthen",300},{"Swap",030},{"Weaken",9999},{"Strengthen",300}},
+			Target = "All",
+		},
+	},
 	
 	["Wrath of the Fried One"] = {
 		["Id"] = 326637271,
@@ -8376,6 +8414,25 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Ally",
 		},
 		["Bio"] = "A leader is the greatest servant. A master is the greatest tyrant. Myrmiredon is both.",
+	},
+
+	["MyrmiredonV2"] = {
+		["Id"] = 480297793,
+		["Name"] = "Myrmiredon",
+		["Health"] = 500,
+		["Power"] = 500,
+		["Rarity"] = "Legendary",
+		["AttackEffect"] = "Thunder",
+		["Color"] = "Green",
+		["Cost"] = {["Green"] = 5,},
+		["Effect"] = {
+			Name = "Dreadsteed",
+			Description = [[Shuffle a "Myrmiredon" into your deck.]],
+			["Type"] = "OnSummon",
+			["Power"] = {{"DeckAdd","Myrmiredon"}},
+			Target = "Ally",
+		},
+		["Bio"] = "Greetings, honourable invaders. Thank you for coming so far. However, as you can see, we are poor. Do you truly believe you'll find what you want here?",
 	},
 	
 	["Bee"] = {
@@ -13209,9 +13266,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Knockdown",
-			Description = "Whenever your opponent summons a fighter, lock all enemy fighters for 1 turn.",
+			Description = "Whenever your opponent summons a fighter, lock all enemy fighters for 1 turn, then give all police 100 power.",
 			["Type"] = "OnEnemySummon",
-			["Power"] = {{"Lock",1}},
+			["Power"] = {{"Lock",1},{"Stre",100,"Archetype"}},
 			Target = "Opponent",
 		},
 		["Bio"] = "To inspect gravity. To cause the fall.",
@@ -13667,6 +13724,25 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Ally",
 		},
 		["Bio"] = "Have fun figuring out if this is a lunar or lifeloss card. (It's not both.)",
+	},
+
+	["Mr.O the Traveling Merchant"] = {
+		["Id"] = 480274869,
+		["Name"] = "Mr.O the Traveling Merchant",
+		["Health"] = 800,
+		["Power"] = 800,
+		["Rarity"] = "Rare",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Yellow", 
+		["Cost"] = {["Neutral"] = 3, ["Yellow"] = 3,},
+		["Effect"] = {
+			Name = "Bleeding",
+			Description = "Whenever your opponent summons a fighter, they draw a card.",
+			["Type"] = "OnEnemySummon",
+			["Power"] = {{"Draw",1}},
+			Target = "Opponent",
+		},
+		["Bio"] = "Unwanted Trend not to your liking? How about a cow? Guaranteed to poop outside! ... No? How about this false god, then? Comes with free life insurance!",
 	},
 
 }
