@@ -651,7 +651,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Recognize",
 			Description = [[Your opponent summons an Undead Voodoo Doll.]],
 			["Type"] = "OnSummon",
-			["Power"] = {{"Summon", "Undead Vodoo Doll"}},
+			["Power"] = {{"Summon","Undead Voodoo Doll"}},
 			Target = "Opponent",
 		},
 		["Bio"] = "Unknown to you as it is to me.",
@@ -6804,9 +6804,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 5,},
 		["Effect"] = {
 			Name = "Endless Spooks",
-			Description = [[When this card attacks, deal 4000 damage to all fighters.]],
-			["Type"] = "OnAttack",
-			["Power"] = {{"Damage",4000}},
+			Description = [[Increase the health of a target fighter by 1000, then return it to its owner's hand.]],
+			["Type"] = "OnSummon",
+			["Power"] = {{"Heal",4000}},
 			Target = "All",
 		},
 		["Bio"] = "Don't hit his cake hat, or you'll be asking for it.",
@@ -13476,7 +13476,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	
 	["Cooldude4851"] = {
 		["Id"] = 476190625,
-		["Name"] = "Cooldude4651",
+		["Name"] = "Cooldude4851",
 		["Health"] = 300,
 		["Power"] = 100,
 		["Rarity"] = "Uncommon",
@@ -13531,11 +13531,11 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Strengthen",300},{"Return",999,"Self"}},
 			Target = "Archetype",
 		},
-		["Bio"] = "Only a thousand people have seen this ninja. Only one has saw it.",
+		["Bio"] = "Only a thousand people have found this ninja. Only one has saw it.",
 	},
 
 	["InceptionTime"] = {
-		["Id"] = 477089292,
+		["Id"] = 477101784,
 		["Name"] = "InceptionTime",
 		["Health"] = 1300,
 		["Power"] = 300,
@@ -13545,10 +13545,29 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 4, ["Neutral"] = 5,},
 		["Effect"] = {
 			Name = "Revival",
-			Description = "Set your green icons to 99 and draw two cards. For the rest of the game, you can't generate icons of other type.",
+			Description = "Deal 20,000 damage to yourself. If you survive, you win the game.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"SetYellow",-99},{"SetGreen",99},{"SetBlue",-99},{"SetRed",-99},{"SetNeutral",-99},{"Draw",2}},
+			["Power"] = {{"Cost",20000},{"Summon","InceptionTime Token"},{"Damage",9999,"Self"}},
 			Target = "Ally",
+		},
+		["Bio"] = "It is not yet time.",
+	},
+	
+	["InceptionTime Token"] = {
+		["Id"] = 477101784,
+		["Name"] = "InceptionTime",
+		["Health"] = 1300,
+		["Power"] = 300,
+		["Rarity"] = "Legendary",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Green", 
+		["Cost"] = {["Green"] = 4, ["Neutral"] = 5,},
+		["Effect"] = {
+			Name = "Revival",
+			Description = "Deal 20,000 damage to yourself. If you survive, you win the game.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Inflict",999999}},
+			Target = "Opponent",
 		},
 		["Bio"] = "It is not yet time.",
 	},
@@ -13612,8 +13631,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Green Icon Tree"] = {
-		["Id"] = 477841579,
-		["Name"] = "Noob Golem",
+		["Id"] = 477865824,
+		["Name"] = "Green Icon Tree",
 		["Health"] = 700,
 		["Power"] = 700,
 		["Rarity"] = "Rare",
@@ -13622,7 +13641,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 10,},
 		["Effect"] = {
 			Name = "Fanaticism",
-			Description = "Generate 10 yellow icons.",
+			Description = "Generate 10 green icons.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Green",10}},
 			Target = "Ally",
