@@ -5,7 +5,7 @@ return {
 		Cost = 25,
 		CardsInPack = 4,
 		CardPackId = 263658643,
-		Description = "Filled with basics and staples, Exine is the perfect pack for a new player.",
+		Description = "Filled with only good cards, Exine is a great place to get a good deck fast.",
 		Cards = {
 			"Training Dummy",
 			"Samksoon321",
