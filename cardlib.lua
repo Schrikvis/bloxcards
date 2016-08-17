@@ -11698,17 +11698,38 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Blue",
+		["Archetype"] = "Nightmare",
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 6,},
 		["Effect"] = {
 			Name = "Zappow!",
-			Description = "Return all fighters to their owner's hand.",
+			Description = "Return all non-nightmare fighters to their owner's hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Return",090}},
-			Target = "All",
+			Target = "Archetype",
 		},
 		["Bio"] = "Stops even light from escaping.",
 	},	
-		
+	
+	["Gravity CollapseV2"] = {
+		["Id"] = 481918784,
+		["Name"] = "Gravity Collapse",
+		["Health"] = 0,
+		["Power"] = 0,
+		["Rarity"] = "Epic",
+		["AttackEffect"] = "Lightning",
+		["Color"] = "Blue",
+		["Archetype"] = "Nightmare",
+		["Cost"] = {["Neutral"] = 1,["Blue"] = 6,},
+		["Effect"] = {
+			Name = "Zappow!",
+			Description = "Return all non-nightmare fighters to their owner's hand.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Return",090}},
+			Target = "Archetype",
+		},
+		["Bio"] = "Stops even hope from escaping.",
+	},	
+
 	["Imaginz00"] = {
 		["Id"] = 427435194,
 		["Name"] = "Imaginz00",
@@ -13893,7 +13914,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Level Up!",
 			Description = "Whenever this card attacks and destroys another, level it up and raise the power of all other allied fighters by 150.",
-			["Type"] = "OnSummon",
+			["Type"] = "OnEnd",
 			["Power"] = {{"Heal",150},{"Summon","Hedonist Chieftain"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
@@ -13931,7 +13952,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Level Up!",
 			Description = "Whenever this card attacks and destroys another, level it up and unlock all allied fighters.",
-			["Type"] = "OnAttackDestroy",
+			["Type"] = "OnEnd",
 			["Power"] = {{"Strengthen",150},{"Summon","Pleasure Maker"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
@@ -13949,31 +13970,12 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Level Up!",
-			Description = "Whenever this card attacks and destroys another, level it up and unlock all allied fighters.",
+			Description = "Whenever this card attacks and destroys another, level it up.",
 			["Type"] = "OnAttackDestroy",
-			["Power"] = {{"Summon","Commander of Chaos Token"},{"Damage",9999,"Self"}},
+			["Power"] = {{"Summon","Commander of Chaos"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = "I'll work to make the world a better, more entertaining place! HahaahahahahHAHAHAAHAHAHHHAAHAH!",
-	},
-
-	["Commander of Chaos Token"] = {
-		["Id"] = 481830696,
-		["Name"] = "Commander of Chaos",
-		["Health"] = 2000,
-		["Power"] = 300,
-		["Rarity"] = "Token",
-		["AttackEffect"] = "Dash",
-		["Color"] = "Yellow", 
-		["Cost"] = {["Yellow"] = 3,},
-		["Effect"] = {
-			Name = "Level Up!",
-			Description = "At the end of your turns, both players summon a noob, increase the power of all fighters by 200, then unlock all allied fighters.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Unlock",999},{"Summon","Commander of Chaos"},{"Damage",9999,"Self"}},
-			Target = "Ally",
-		},
-		["Bio"] = "I am the wild dog watching with sixteen omniscient eyes. Unblinking endless judgement, cast as the patterns rise.",
 	},
 
 	["Commander of Chaos"] = {
@@ -13994,7 +13996,64 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "His endless revels were to celebrate his fragile life. How do you celebrate an uncullable life?",
 	},
+	
 
+	["The Piece Breaker"] = {
+		["Id"] = 481906871,
+		["Name"] = "The Piece Breaker",
+		["Health"] = 200,
+		["Power"] = 0,
+		["Rarity"] = "Epic",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Yellow", 
+		["Cost"] = {["Yellow"] = 1, ["Neutral"] = 1,},
+		["Effect"] = {
+			Name = "Level Up!",
+			Description = "When this card enters play, All other yellow fighters gain 300 power. When it dies, deal 4000 damage to all allied fighters.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Strengthen",300},{"Summon","The Piece Breaker Token","Ally"},{"Damage",9999,"Self"}},			
+			Target = "ColorYellow",
+		},
+		["Bio"] = "It is time to break myself.",
+	},
+
+	["The Piece Breaker Token"] = {
+		["Id"] = 481906871,
+		["Name"] = "The Piece Breaker",
+		["Health"] = 200,
+		["Power"] = 0,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Yellow", 
+		["Cost"] = {["Yellow"] = 1, ["Neutral"] = 1,},
+		["Effect"] = {
+			Name = "Level Up!",
+			Description = "When this fighter is summoned, All other yellow fighters gain 300 power. When it dies, deal 4000 damage all allied fighters.",
+			["Type"] = "OnDeath",
+			["Power"] = {{"Damage",4000,"Ally"}},			
+			Target = "ColorYellow",
+		},
+		["Bio"] = "It is time to break myself.",
+	},
+
+	["WoodReviewer"] = {
+		["Id"] = 481828054,
+		["Name"] = "WoodReviewer",
+		["Health"] = 800,
+		["Power"] = 800,
+		["Rarity"] = "Epic",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Red", 
+		["Cost"] = {["Red"] = 4, ["Neutral"] = 4,},
+		["Effect"] = {
+			Name = "Level Up!",
+			Description = "EFFECT TO BE ADDED! If you have any suggestions, feel free even though I'll ignore them! - Sword Critic",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Damage",0,"Ally"}},			
+			Target = "ColorYellow",
+		},
+		["Bio"] = "You can complain about wood grain all you want, but the metal used to make that axe is truly poor. 4/10 - Sword Critic",
+	},
 }
 
 local pairs = pairs
