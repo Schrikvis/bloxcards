@@ -925,3 +925,4 @@ return {
 		},
 	};
 }
+-- V2s that need adding into Aife: MahBucket, Ninja, DIY Dominus, Quenty, Pixelflame, Divine Favor, Myrmiredon, Mass Destruction, Stickmasterluke, Stalker, BlazerC, Polyhex, KingShadowCrow, Lando64000, Ripull, Gravity Collapse, NerfModder, Gravity Inspector, Aurichalcum

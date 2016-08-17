@@ -1519,14 +1519,27 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Ninja"] = {
 		["Id"] = 275340372,
 		["Name"] = "Ninja",
-		["Health"] = 300,
-		["Power"] = 300,
+		["Health"] = 350,
+		["Power"] = 350,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Slash",
 		["Archetype"] = "Ninja",
 		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 2,["Red"] = 1,},
-		["Bio"] = "Ninjas actually wore a dark-blue, not pure black. This prevented moonlight from getting ",
+		["Bio"] = "Ninjas actually wore a dark-blue, not pure black. This prevented moonlight from exposing them. ",
+	},
+
+	["NinjaV2"] = {
+		["Id"] = 480385242,
+		["Name"] = "Ninja",
+		["Health"] = 350,
+		["Power"] = 350,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Slash",
+		["Archetype"] = "Ninja",
+		["Color"] = "Red",
+		["Cost"] = {["Neutral"] = 2,["Red"] = 1,},
+		["Bio"] = "Ninjas actually wore a dark-blue, not pure black. This prevented ",
 	},
 	
 	["Ninja Elite"] = {
@@ -2477,6 +2490,25 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "I want to be rich so I made a dominus in crayons!",
 	},
+
+	["DIY DominusV2"] = {
+		["Id"] = 480385545,
+		["Name"] = "DIY Dominus",
+		["Health"] = 500,
+		["Power"] = 450,
+		["Rarity"] = "Rare",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Green",
+		["Cost"] = {["Green"] = 4},
+		["Effect"] = {
+			Name = "Arkhaiomelisidonophunikheratos",
+			Description = "Give all green fighters 50 power, then swap their stats.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Strengthen",50},{"Swap",030}},
+			Target = "ColorGreen",
+		},
+		["Bio"] = "I want to not be rich so I made a dominus in crayons!",
+	},
 	
 	["DIY Headphones"] = {
 		["Id"] = 283993223,
@@ -2702,20 +2734,39 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["MahBucket"] = {
 		["Id"] = 283995151,
 		["Name"] = "MahBucket",
-		["Health"] = 300,
-		["Power"] = 300,
+		["Health"] = 250,
+		["Power"] = 450,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Slap",
 		["Color"] = "Yellow",
 		["Cost"] = {["Neutral"] = 2,["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Sugar Taste",
-			Description = "Deal 100 damage to all blue fighters.",
+			Description = "Deal 250 damage to a target fighter, then deal 100 damage to all blue fighters.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",100,"ColorBlue"}},
-			Target = "All",
+			["Power"] = {{"Damage","250"},{"Damage",100,"ColorBlue"}},
+			Target = "Single",
 		},
 		["Bio"] = "Candy is good for the eyes you know.",
+	},
+
+	["MahBucketV2"] = {
+		["Id"] = 481866741,
+		["Name"] = "MahBucket",
+		["Health"] = 250,
+		["Power"] = 450,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Slap",
+		["Color"] = "Yellow",
+		["Cost"] = {["Neutral"] = 2,["Yellow"] = 2,},
+		["Effect"] = {
+			Name = "Sugar Taste",
+			Description = "Deal 250 damage to a target fighter, then deal 100 damage to all blue fighters.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Damage","250"},{"Damage",100,"ColorBlue"}},
+			Target = "Single",
+		},
+		["Bio"] = "Candy is good for the brains you know.",
 	},
 	
 	["Master Josue"] = {
@@ -7263,6 +7314,26 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Increase = 1000,
 		},
 	},
+
+	["Mass Epidemic-ArtV"] = {
+		["Id"] = 326637284,
+		["Name"] = "Mass Destruction",
+		["Health"] = 0,
+		["Power"] = 0,
+		["Rarity"] = "Epic",
+		["AttackEffect"] = "Null",
+		["Color"] = "Green",
+		["Cost"] = {["Green"] = 6},
+		["Bio"] = "YOU WILL UPDATE BLOXCARDS, AND YOU WILL DO IT WHEN I SAY SO!",
+		["Effect"] = {
+			Name = "Board Clear!",
+			Description = "Deal 1000 damage to all fighters.",
+			["Type"] = "OnSummon",
+			["Power"] = "Damage",
+			Target = "All",
+			Increase = 1000,
+		},
+	},
 	
 	["Inferno!"] = {
 		["Id"] = 326637273,
@@ -10028,7 +10099,27 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Increase = 1,
 		},
 		["Bio"] = "He has a love for pokemon, so much that he wanted to make Pokemon Brick Bronze. ALRIGHT END OF STORY!",
-	},		
+	},
+
+	["lando64000V2"] = {
+		["Id"] = 480385631,
+		["Name"] = "lando64000",
+		["Health"] = 700,
+		["Power"] = 700,
+		["Rarity"] = "Legendary",
+		["AttackEffect"] = "Lightning",
+		["Color"] = "Blue",
+		["Cost"] = {["Neutral"] = 3,["Green"] = 1,["Blue"] = 4,},
+		["Effect"] = {
+			Name = "Roar of Time",
+			Description = "Lock a target fighter for 6 turns.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Lock",6}},
+			Target = "Single",
+			Increase = 1,
+		},
+		["Bio"] = "Make a pirate pokemon now. iMassant would love you if you did.",
+	},	
 	
 	["Owen0202"] = {
 		["Id"] = 384010198,
@@ -13901,7 +13992,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Summon","Noob",},{"Strengthen",200,"All"},{"Unlock",999}},			
 			Target = "Ally",
 		},
-		["Bio"] = "His endless revels were to celebrate his fragile life. How do you celebrate an uncullable existence?",
+		["Bio"] = "His endless revels were to celebrate his fragile life. How do you celebrate an uncullable life?",
 	},
 
 }
