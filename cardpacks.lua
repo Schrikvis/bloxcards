@@ -5,7 +5,7 @@ return {
 		Cost = 25,
 		CardsInPack = 4,
 		CardPackId = 263658643,
-		Description = "Filled with basics and staples, Exine is the perfect pack for a new player.",
+		Description = "Filled with only good cards, Exine is a great place to get a good deck fast.",
 		Cards = {
 			"Training Dummy",
 			"Samksoon321",
@@ -633,6 +633,8 @@ return {
 		CardPackId = 465492745,
 		Description = "Yellow is the colour of community, satisfaction, and society. Revel packs contain cards that cost yellow!",
 		Cards = {
+			"The Piece Breaker",
+			"Mr.O the Traveling Merchant",
 			"Pancake Break",
 			"BLOXER787",
 			"Aurichalcum",
@@ -795,6 +797,8 @@ return {
 		CardPackId = 434684079,
 		Description = "Obvious Packs contain only white cards, joke cards and new cards. You must have 10 wins to open these packs.",
 		Cards = {
+			"The Piece Breaker",
+			"Mr.O the Traveling Merchant",
 			"One4utwo4me",
 			"InceptionTime",
 			[["One_Thousand_Deaths"]],
@@ -848,7 +852,6 @@ return {
 			"Gravity Inspector",
 			"LordFlanz",
 			"TheEnderCorp",
-			"ShockingRobux",
 			"HuntarioRBLX",
 			"Cyandude585",
 			"Febrezer",
@@ -923,3 +926,4 @@ return {
 		},
 	};
 }
+-- V2s that need adding into Aife: MahBucket, Ninja, DIY Dominus, Quenty, Pixelflame, Divine Favor, Myrmiredon, Mass Destruction, Stickmasterluke, Stalker, BlazerC, Polyhex, KingShadowCrow, Lando64000, Ripull, Gravity Collapse, NerfModder, Gravity Inspector, Aurichalcum
