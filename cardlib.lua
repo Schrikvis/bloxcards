@@ -1405,7 +1405,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Bloxy Victory",
 			Description = "At the end of your turns, your opponent loses 150 life and you gain 150 life.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Inflict",150},{"Cost",150}},
+			["Power"] = {{"Inflict",150},{"Cost",-150}},
 			Target = "Opponent",
 		},
 		["Bio"] = "A love for nature and plants, he steals them anywhere he sees them.",
@@ -3238,7 +3238,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Booster",
 			Description = "Gain 1 Blue Icon. Increase the health of all Policemen by 250.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Blue",1},{"Heal",250}},
+			["Power"] = {{"Blue",1,"Ally"},{"Heal",250}},
 			Target = "Archetype",
 		},
 		["Bio"] = "His secret identity is Mariofan103.",
@@ -9160,7 +9160,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Single",
 			Increase = 200
 		},
-		["Bio"] = "You have a gun for a reason!",
+		["Bio"] = "Major League Gaming. Breaking the colour pie since this card was added.",
 	},		
 	
 	["wer8888"] = {
@@ -10765,7 +10765,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Alkalola"] = {
 		["Id"] = 411842041,
 		["Name"] = "Alkalola",
-		["Health"] = 700,
+		["Health"] = 900,
 		["Power"] = 150,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Lightning",
@@ -10773,10 +10773,10 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "Overgrown",
-			Description = "Increase the Health all your fighters by 100 at the end of your turns.",
+			Description = "Increase the Health all non-red fighters by 100 at the end of your turns.",
 			["Type"] = "OnEnd",
 			["Power"] = "Heal",
-			Target = "Ally",
+			Target = "NotColorRed",
 			Increase = 100
 		},
 		["Bio"] = "Bam!",
@@ -10810,6 +10810,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 4,["Yellow"] = 1,["Red"] = 2,},
+		["Archetype"] = "Police",
 		["Effect"] = {
 			Name = "ASSEMBLE.",
 			Description = [[Summon 4 police officers. You lose 1500 life.]],
@@ -14046,13 +14047,32 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Red", 
 		["Cost"] = {["Red"] = 4, ["Neutral"] = 4,},
 		["Effect"] = {
-			Name = "Level Up!",
-			Description = "EFFECT TO BE ADDED! If you have any suggestions, feel free even though I'll ignore them! - Sword Critic",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",0,"Ally"}},			
-			Target = "ColorYellow",
+			Name = "WoodReviewer",
+			Description = "At the end of your turns, WoodReviewer gains 300 health and deals 300 damage to you.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Cost",300},{"Heal",300}},			
+			Target = "Self",
 		},
 		["Bio"] = "You can complain about wood grain all you want, but the metal used to make that axe is truly poor. 4/10 - Sword Critic",
+	},
+
+	["Tankbomer"] = {
+		["Id"] = 484568634,
+		["Name"] = "Tankbomer",
+		["Health"] = 1400,
+		["Power"] = 200,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Green", 
+		["Cost"] = {["Green"] = 7,},
+		["Effect"] = {
+			Name = "WoodReviewer",
+			Description = "When this card attacks, add an MLGSPONGE to your hand.",
+			["Type"] = "OnAttack",
+			["Power"] = {{"Add","MLGSPONGE"}},			
+			Target = "Ally",
+		},
+		["Bio"] = "Blank_1.",
 	},
 }
 
