@@ -7317,7 +7317,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Mass Epidemic-ArtV"] = {
-		["Id"] = 326637284,
+		["Id"] = 480385063,
 		["Name"] = "Mass Destruction",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -11339,20 +11339,20 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["bengbeng14"] = {
 		["Id"] = 413931609,
 		["Name"] = "bengbeng14",
-		["Health"] = 1200,
-		["Power"] = 1200,
+		["Health"] = 400,
+		["Power"] = 900,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 4,},
 		["Effect"] = {
 			Name = "Shatter",
-			Description = [[When this card attacks, it loses 200 health and 200 power.]],
+			Description = [[When this card is targeted, set its stats to 650/650.]],
 			["Type"] = "OnAttack",
-			["Power"] = {{"Weaken",200},{"Damage",200}},
+			["Power"] = {{"Weaken",9999},{"Strengthen",650},{"Swap",030},{"Weaken",9999},{"Strengthen",650}},
 			Target = "Self",
 		},
-		["Bio"] = "CHAOS... SWISS ROLL!",
+		["Bio"] = "I'm a derpy derp and I'm here to blow your mind with MEMES!",
 	},	
 	
 	["Robloxian255"] = {
@@ -13547,9 +13547,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackBlock"] = true,
 		["Effect"] = {
 			Name = "Collected Company Envy",
-			Description = "All allied fighters gain 200 health. Return them to your hand.",
+			Description = "Unlock all allied fighters and give them 200 health. Return them to your hand and generate two white icons.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Heal",200},{"Return",030}},
+			["Power"] = {{"Unlock",999},{"Heal",200},{"Return",030},{"Neutral",2}},
 			Target = "Ally",
 		},
 		["Bio"] = "You have two turns to beat me, Tea! Or else I'll get to a petrol station, fuel up on pancakes, and rush you down with my Egg-Eyes Batter Dragon!", 
@@ -13576,7 +13576,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	
 	["Crazyblox"] = {
 		["Id"] = 47001740,
-		["Name"] = "Crazyblox",
+		["Name"] = "487594759",
 		["Health"] = 350,
 		["Power"] = 400,
 		["Rarity"] = "Rare",
@@ -14075,6 +14075,25 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Ally",
 		},
 		["Bio"] = "Blank_1.",
+	},
+
+	["Giftsplosion"] = {
+		["Id"] = 487131841,
+		["Name"] = "Giftsplosion",
+		["Health"] = 0,
+		["Power"] = 0,
+		["Rarity"] = "Rare",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Neutral", 
+		["Cost"] = {["Neutral"] = 2,["Red"] = 2, ["Green"] = 2, ["Yellow"] = 2, ["Blue"] = 2,},
+		["Effect"] = {
+			Name = "WoodReviewer",
+			Description = "Fill both player's hands with random rares.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"RandomAdd","Rare"},{"RandomAdd","Rare"},{"RandomAdd","Rare"},{"RandomAdd","Rare"},{"RandomAdd","Rare"},{"RandomAdd","Rare"},{"RandomAdd","Rare"},{"RandomAdd","Rare"},{"RandomAdd","Rare"},{"RandomAdd","Rare"}},			
+			Target = "All",
+		},
+		["Bio"] = "Christmas is for December despite advertisements starting in August; It's time to rebel against the system!",
 	},
 }
 

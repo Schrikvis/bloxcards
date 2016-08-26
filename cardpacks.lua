@@ -862,6 +862,7 @@ return {
 			"Hamstermon",
 			"President Duck",
 			"Wingman8",
+			"Giftsplosion",
 			"DrPepperSlayer",
 			"Blue Fanatic",
 			"Heatlands Vortex",
