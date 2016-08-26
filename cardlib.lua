@@ -5969,8 +5969,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Eye of Overseer"] = {
 		["Id"] = 298792913,
 		["Name"] = "Eye of Overseer",
-		["Health"] = 700,
-		["Power"] = 0,
+		["Health"] = 400,
+		["Power"] = 400,
 		["Rarity"] = "Common",
 		["Archetype"] = "Overseer",
 		["AttackEffect"] = "Thunder",
@@ -5978,12 +5978,12 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Demon Eye",
-			Description = "At the end of each of your turns, your opponent gains 200 life and all overseers gain 100 power.",
-			["Type"] = "OnEnd",
-			["Power"] = {{"Inflict",-200},{"Strengthen",100,"Archetype"}},
-			Target = "Opponent",
+			Description = "All fighters gain 150 health and power. All overseers gain an additional 150 health and power.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Heal",150},{"Strengthen",150},{"Heal",150,"Archetype"},{"Strengthen",150,"Archetype"}},
+			Target = "All",
 		},
-		["Bio"] = "Eye of Overseers patrol their fortresses constantly, until they have to blink.",
+		["Bio"] = "Eye of Overseers patrol their fortresses constantly until they have to blink.",
 	},
 	
 	["Overseer Beast"] = {
@@ -5998,9 +5998,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 6,["Green"] = 2,},
 		["Effect"] = {
 			Name = "Demon Eye",
-			Description = "Gain 3 Green icons and increase the attack and health of all Overseers by 400. You opponent gains 6 white icons and draws two cards.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Green",3,"Ally"},{"Neutral",6,"Opponent"},{"Draw",2,"Opponent"},{"Strengthen",400},{"Heal",400}},
+			Description = "At the end of your turn, all fighters gain 200 health and overseers gain an additional 200 health, your opponent gains 200 life and you gain 400 life, your opponent gains a white icon and you gain two white icons.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Heal",200,"All"},{"Heal",200},{"Inflict",-200,"All"},{"Inflict",-200,"Ally"},{"Neutral",1,"All"},{"Neutral",1,"Ally"}},
 			Target = "Archetype",
 		},
 		["Bio"] = "Never let the dogs out.",
@@ -6010,7 +6010,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 298793545,
 		["Name"] = "Overseer General",
 		["Health"] = 800,
-		["Power"] = 200,
+		["Power"] = 0,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Thunder",
 		["Archetype"] = "Overseer",
@@ -6018,9 +6018,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Green"] = 2,},
 		["Effect"] = {
 			Name = "Demon Eye",
-			Description = "Gain 2 Green icons and increase the Health of all Overseers by 400.",
+			Description = "Gain 2 Green icons and increase the Health of all Overseers by 400 and their power by 200.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Green",2,"Ally"},{"Heal",400}},
+			["Power"] = {{"Green",2,"Ally"},{"Heal",400},{"Strengthen",200}},
 			Target = "Archetype",
 		},
 		["Bio"] = "Generalising is his hobby, but knitting is his passion.",
@@ -6029,8 +6029,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Overseer Prophet"] = {
 		["Id"] = 298793579,
 		["Name"] = "Overseer Prophet",
-		["Health"] = 700,
-		["Power"] = 700,
+		["Health"] = 775,
+		["Power"] = 775,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Thunder",
 		["Archetype"] = "Overseer",
@@ -11057,7 +11057,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Summon","John and Jane"}},
 			Target = "Ally",
 		},
-		["Bio"] = "Hello. Friend.",
+		["Bio"] = "Stop.",
 	},			
 
 	["Mrbeanbean2"] = {
@@ -11337,7 +11337,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["bengbeng14"] = {
-		["Id"] = 413931609,
+		["Id"] = 487571369,
 		["Name"] = "bengbeng14",
 		["Health"] = 400,
 		["Power"] = 900,
@@ -13151,10 +13151,10 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3, ["Green"] = 3,},
 		["Effect"] = {
 			Name = "Trout Slap",
-			Description = "When this card attacks, increase the power of all enemy cards by 100 and all overseer cards by 200.",
+			Description = "When this card attacks, increase the power of all fighters by 100 and all overseers by an additional 100.",
 			["Type"] = "OnAttack",
-			["Power"] = {{"Strengthen",200,"Archetype"},{"Strengthen",100}},
-			Target = "Opponent",
+			["Power"] = {{"Strengthen",100,"Archetype"},{"Strengthen",100}},
+			Target = "All",
 		},
 		["Bio"] = "Plexus descending, winter unending. Plexus departing, summer is starting.",
 	},
@@ -14094,6 +14094,44 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "All",
 		},
 		["Bio"] = "Christmas is for December despite advertisements starting in August; It's time to rebel against the system!",
+	},
+
+	["Overseer Drake"] = {
+		["Id"] = 488695841,
+		["Name"] = "Overseer Drake",
+		["Health"] = 200,
+		["Power"] = 200,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Green", 
+		["Cost"] = {["Green"] = 2,},
+		["Effect"] = {
+			Name = "WoodReviewer",
+			Description = "When this card is summoned, add a random overseer card to your hand. When you gain life, return it to your hand and all enemy fighters lose 100 power.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"RandomAdd","Overseer"},{"Summon","Overseer Drake Token"},{"Damage",9999,"Self"}},			
+			Target = "Ally",
+		},
+		["Bio"] = "The scouts of the overseer army, Overseer Drakes deliver the word of their masters to overgrow any land they come across.",
+	},
+
+	["Overseer Drake Token"] = {
+		["Id"] = 488695841,
+		["Name"] = "Overseer Drake",
+		["Health"] = 200,
+		["Power"] = 200,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Green", 
+		["Cost"] = {["Green"] = 2,},
+		["Effect"] = {
+			Name = "WoodReviewer",
+			Description = "When this card is summoned, add a random overseer card to your hand. When you gain life, return it to your hand and all enemy fighters lose 100 power.",
+			["Type"] = "OnHealthGain",
+			["Power"] = {{"Weaken",100,"Opponent"},{"Add","Overseer Drake"},{"Damage",9999,"Self"}},			
+			Target = "Ally",
+		},
+		["Bio"] = "The scouts of the overseer army, Overseer Drakes deliver the word of their masters to overgrow any land they come across.",
 	},
 }
 

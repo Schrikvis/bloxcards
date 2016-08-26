@@ -323,6 +323,7 @@ return {
 		CardPackId = 465492570,
 		Description = "Green is the colour of life, growth, and the primal forces. Vitality packs contain cards that cost green!",
 		Cards = {
+			"Overseer Drake"
 			"Tankbomer",
 			"InceptionTime",
 			"Aceguy100",
@@ -799,6 +800,7 @@ return {
 		CardPackId = 434684079,
 		Description = "Obvious Packs contain only white cards, joke cards and new cards. You must have 10 wins to open these packs.",
 		Cards = {
+			"Overseer Drake"
 			"WoodReviewer",
 			"Tankbomer",
 			"The Piece Breaker",
