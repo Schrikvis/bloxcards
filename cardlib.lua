@@ -707,7 +707,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Archetype",
 			Increase = 400,
 		},
-		["Bio"] = "Demon Ninja.",
+		["Bio"] = "Demon Ninja. *Drops mic*",
 	},
 	
 	["Tarfful"] = {
@@ -1526,7 +1526,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Ninja",
 		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 2,["Red"] = 1,},
-		["Bio"] = "Ninjas actually wore a dark-blue, not pure black. This prevented moonlight from exposing them. ",
+		["Bio"] = "Ninjas actually wore a dark-blue, not pure black. This prevented moonlight from exposing them.",
 	},
 
 	["NinjaV2"] = {
@@ -1539,7 +1539,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Ninja",
 		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 2,["Red"] = 1,},
-		["Bio"] = "Ninjas actually wore a dark-blue, not pure black. This prevented ",
+		["Bio"] = "Ninjas were vegetarian, so that the breath caused from eating meat would not give away their cover. ",
 	},
 	
 	["Ninja Elite"] = {
@@ -1561,6 +1561,27 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Increase = 200,
 		},
 		["Bio"] = "Ninjas were only ever around 5 feet tall. Any higher would make it hard to be manevourable.",
+	},
+
+	["Ninja Elite-ArtV"] = {
+		["Id"] = 487571425,
+		["Name"] = "Ninja Elite",
+		["Health"] = 450,
+		["Power"] = 300,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Slash",
+		["Archetype"] = "Ninja",
+		["Color"] = "Red",
+		["Cost"] = {["Neutral"] = 1,["Red"] = 2,},
+		["Effect"] = {
+			Name = "Assimilate",
+			Description = "Deal 200 damage to all non-Ninjas.",
+			["Type"] = "OnSummon",
+			["Power"] = "Damage",
+			Target = "NotArchetype",
+			Increase = 200,
+		},
+		["Bio"] = "Ninjas were only ever around 5 feet tall. Any higher would make it hard to snipe opposing bastions.",
 	},
 	
 	["Ninja Trainee"] = {
@@ -7169,6 +7190,25 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Ally",
 		},
 		["Bio"] = "Papa got drakobloxxers on his side.",
+	},
+
+	["Papasmurf-ArtV"] = {
+		["Id"] = 487132041,
+		["Name"] = "Papasmurf",
+		["Health"] = 500,
+		["Power"] = 500,
+		["Rarity"] = "Legendary",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Red",
+		["Cost"] = {["Red"] = 8,},
+		["Effect"] = {
+			Name = "Stud",
+			Description = "Summon 2 Drakobloxxers.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Summon","Drakobloxxer"},{"Summon","Drakobloxxer"}},
+			Target = "Ally",
+		},
+		["Bio"] = "Papa got volcanoes on his side.",
 	},
 	
 	["Mummy Peasant"] = {
