@@ -707,7 +707,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Archetype",
 			Increase = 400,
 		},
-		["Bio"] = "Demon Ninja. *Drops mic*",
+		["Bio"] = "Demon Ninja.",
 	},
 	
 	["Tarfful"] = {
@@ -1526,7 +1526,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Ninja",
 		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 2,["Red"] = 1,},
-		["Bio"] = "Ninjas actually wore a dark-blue, not pure black. This prevented moonlight from exposing them.",
+		["Bio"] = "Ninjas actually wore a dark-blue, not pure black. This prevented moonlight from exposing them. ",
 	},
 
 	["NinjaV2"] = {
@@ -1539,7 +1539,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Ninja",
 		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 2,["Red"] = 1,},
-		["Bio"] = "Ninjas were vegetarian, so that the breath caused from eating meat would not give away their cover. ",
+		["Bio"] = "Ninjas actually wore a dark-blue, not pure black. This prevented ",
 	},
 	
 	["Ninja Elite"] = {
@@ -1581,7 +1581,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "NotArchetype",
 			Increase = 200,
 		},
-		["Bio"] = "Ninjas were only ever around 5 feet tall. Any higher would make it hard to snipe opposing bastions.",
+		["Bio"] = "Ninjas were only ever around 5 feet tall. Any higher would make it hard to be manevourable.",
 	},
 	
 	["Ninja Trainee"] = {
@@ -14182,6 +14182,25 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Ally",
 		},
 		["Bio"] = "The scouts of the overseer army, Overseer Drakes deliver the word of their masters to overgrow any land they come across.",
+	},
+
+	["666"] = {
+		["Id"] = 487132102,
+		["Name"] = "666",
+		["Health"] = 660,
+		["Power"] = 600,
+		["Rarity"] = "Epic",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Red", 
+		["Cost"] = {["Red"] = 6,},
+		["Effect"] = {
+			Name = "BurnForever!",
+			Description = "Whenever you lose life, shuffle a 666 into your deck, then draw a card.",
+			["Type"] = "OnHealthLoss",
+			["Power"] = {{"DeckAdd",666},{"Draw",1}},			
+			Target = "Ally",
+		},
+		["Bio"] = "Can you guess why wolves built heaven?",
 	},
 }
 
