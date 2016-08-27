@@ -324,6 +324,7 @@ return {
 		CardPackId = 465492570,
 		Description = "Green is the colour of life, growth, and the primal forces. Vitality packs contain cards that cost green!",
 		Cards = {
+			"pa00",
 			"Overseer Drake"
 			"Tankbomer",
 			"InceptionTime",
@@ -469,6 +470,7 @@ return {
 		CardPackId = 465492637,
 		Description = "Blue is the colour of logic, order, and structure. Thought packs contain cards that cost blue!",
 		Cards = {
+			"Razikai",
 			"Fenrier",
 			"JaikKaik",
 			"Gravity Inspector",
@@ -801,6 +803,8 @@ return {
 		CardPackId = 434684079,
 		Description = "Obvious Packs contain only white cards, joke cards and new cards. You must have 10 wins to open these packs.",
 		Cards = {
+			"Razikai",
+			"pa00",
 			"666",
 			"Overseer Drake",
 			"WoodReviewer",
@@ -845,8 +849,6 @@ return {
 			"BLOXER787",
 			"Aurichalcum",
 			"BrackioTops",
-			"Cat's Eye Cultist",
-			"Cat's Eye Nexus",
 			"Lilmanofsalem",
 			"animallogic",
 			"Western Bandit",

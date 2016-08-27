@@ -14202,6 +14202,63 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "Can you guess why wolves built heaven?",
 	},
+
+	["pa00"] = {
+		["Id"] = 490044333,
+		["Name"] = "pa00",
+		["Health"] = 300,
+		["Power"] = 300,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Green", 
+		["Cost"] = {["Green"] = 3, ["Neutral"] = 3,},
+		["Effect"] = {
+			Name = "CBT isn't that bad Vis",
+			Description = "2 Charges. When this card dies, spend a charge and restore it.",
+			["Type"] = "OnDeath",
+			["Power"] = {{"Summon","pa00 Token 1"}},			
+			Target = "Ally",
+		},
+		["Bio"] = "Come over here and get me.",
+	},
+
+	["pa00 Token 1"] = {
+		["Id"] = 490044333,
+		["Name"] = "pa00",
+		["Health"] = 300,
+		["Power"] = 300,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Green", 
+		["Cost"] = {["Green"] = 3, ["Neutral"] = 3,},
+		["Effect"] = {
+			Name = "I mean provided your partner doesn't go too far, it's just generic submission",
+			Description = "1 Charge. When this card dies, spend a charge and restore it.",
+			["Type"] = "OnDeath",
+			["Power"] = {{"Summon","pa00 Token 2"}},			
+			Target = "Ally",
+		},
+		["Bio"] = "That one was fake; I'm actually over here!",
+	},
+
+	["pa00 Token 2"] = {
+		["Id"] = 490044333,
+		["Name"] = "pa00",
+		["Health"] = 300,
+		["Power"] = 300,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Green", 
+		["Cost"] = {["Green"] = 3, ["Neutral"] = 3,},
+		["Effect"] = {
+			Name = "Also my safeword is Arkhaiomelisdonophunikeratos",
+			Description = "0 Charges. When this card dies, spend a charge and restore it.",
+			["Type"] = "OnDeath",
+			["Power"] = {{"Draw",0}},			
+			Target = "Ally",
+		},
+		["Bio"] = "DOUBLE FAKED!",
+	},
 }
 
 local pairs = pairs
