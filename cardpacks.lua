@@ -4,7 +4,7 @@ return {
 		Name = "Exine", --STAPLES!
 		Cost = 25,
 		CardsInPack = 4,
-		CardPackId = 263658643,
+		CardPackId = 490218339,
 		Description = "Filled with only good cards, Exine is a great place to get a good deck fast.",
 		Cards = {
 			"Training Dummy",
