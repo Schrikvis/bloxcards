@@ -4,7 +4,7 @@ return {
 		Name = "Exine", --STAPLES!
 		Cost = 25,
 		CardsInPack = 4,
-		CardPackId = 263658643,
+		CardPackId = 490218339,
 		Description = "Filled with only good cards, Exine is a great place to get a good deck fast.",
 		Cards = {
 			"Training Dummy",
@@ -170,6 +170,7 @@ return {
 		CardPackId = 465492503,
 		Description = "Red is the colour of power, ambition, and control. Dominion packs contain cards that cost red!",
 		Cards = {
+			"666",
 			"WoodReviewer",
 			"One4utwo4me",
 			[["One_Thousand_Deaths"]],
@@ -323,6 +324,9 @@ return {
 		CardPackId = 465492570,
 		Description = "Green is the colour of life, growth, and the primal forces. Vitality packs contain cards that cost green!",
 		Cards = {
+			"Uncreativename123",
+			"pa00",
+			"Overseer Drake"
 			"Tankbomer",
 			"InceptionTime",
 			"Aceguy100",
@@ -467,6 +471,7 @@ return {
 		CardPackId = 465492637,
 		Description = "Blue is the colour of logic, order, and structure. Thought packs contain cards that cost blue!",
 		Cards = {
+			"Razikai",
 			"Fenrier",
 			"JaikKaik",
 			"Gravity Inspector",
@@ -799,6 +804,11 @@ return {
 		CardPackId = 434684079,
 		Description = "Obvious Packs contain only white cards, joke cards and new cards. You must have 10 wins to open these packs.",
 		Cards = {
+			"Uncreativename123",
+			"Razikai",
+			"pa00",
+			"666",
+			"Overseer Drake",
 			"WoodReviewer",
 			"Tankbomer",
 			"The Piece Breaker",
@@ -819,7 +829,6 @@ return {
 			"Cat's Eye Corpse Stealer",
 			"Cat's Eye, Master of Perception",
 			"iAsuka",
-			"TigerCode",
 			"APlayerOfGames",
 			"Samksoon321",
 			"ST Leader Keeler1",
@@ -842,8 +851,6 @@ return {
 			"BLOXER787",
 			"Aurichalcum",
 			"BrackioTops",
-			"Cat's Eye Cultist",
-			"Cat's Eye Nexus",
 			"Lilmanofsalem",
 			"animallogic",
 			"Western Bandit",
@@ -862,6 +869,7 @@ return {
 			"Hamstermon",
 			"President Duck",
 			"Wingman8",
+			"Giftsplosion",
 			"DrPepperSlayer",
 			"Blue Fanatic",
 			"Heatlands Vortex",
