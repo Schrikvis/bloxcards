@@ -13188,6 +13188,28 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "More fabulous than an inelegant robot!",
 	},
+
+	["FabulousBench-ArtV"] = {
+		["Id"] = 490899115,
+		["Name"] = "FabulousBench",
+		["Health"] = 1200,
+		["Power"] = 800,
+		["Rarity"] = "Legendary",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Blue",
+		["Archetype"] = "FabulousBench",
+		["Requirement"] = {"Archetype",1},
+		["Charge"] = true,
+		["Cost"] = {["Neutral"] = 2, ["Blue"] = 5,},
+		["Effect"] = {
+			Name = "Trout Slap",
+			Description = "Cast only if you have a Hamstermon in play. At the end of each of your turns, lower the attack of all enemy fighters by 200. This card can attack the turn it's summoned.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Weaken",200}},
+			Target = "Opponent",
+		},
+		["Bio"] = "My elegance in combat is unparalleled!",
+	},
 	
 	["stereoplexus"] = {
 		["Id"] = 446589987,
@@ -13365,6 +13387,27 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "Or is it?",
 	},
+
+	["HeyItsColin-ArtV"] = {
+		["Id"] = 490899262,
+		["Name"] = "HeyItsColin",
+		["Health"] = 600,
+		["Power"] = 1200,
+		["Rarity"] = "Legendary",
+		["AttackEffect"] = "Punch1",
+		["Archetype"] = "Redcliff",
+		["Color"] = "Red",
+		["Cost"] = {["Neutral"] = 5, ["Red"] = 4,},
+		["Effect"] = {
+			Name = "Double Bleeding",
+			Description = "Whenever you lose life, draw a card and deal 200 damage to the opponent.",
+			["Type"] = "OnHealthLoss",
+			["Power"] = {{"Draw",1},{"Inflict",200,"Opponent"}},
+			Target = "Ally",
+		},
+		["Bio"] = "Or is it?",
+	},
+	
 	
 	["Korblox Shadowmage"] = {
 		["Id"] = 433133401,
