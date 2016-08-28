@@ -13457,9 +13457,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Knockdown",
-			Description = "Whenever your opponent summons a fighter, lock all enemy fighters for 1 turn, then give all police 100 power.",
+			Description = "Whenever your opponent summons a fighter, lock all enemy fighters for 1 turn, then give all other police 100 power.",
 			["Type"] = "OnEnemySummon",
-			["Power"] = {{"Lock",1},{"Stre",100,"Archetype"}},
+			["Power"] = {{"Lock",1},{"Strengthen",100,"Archetype"},{"Weaken",100,"Self"}},
 			Target = "Opponent",
 		},
 		["Bio"] = "To inspect gravity. To cause the fall.",
@@ -13475,11 +13475,11 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Police",
 		["Color"] = "Yellow",
 		["Cost"] = {["Blue"] = 3,},
-		["Effect"] = {
+			["Effect"] = {
 			Name = "Knockdown",
-			Description = "Whenever your opponent summons a fighter, lock all enemy fighters for 1 turn.",
+			Description = "Whenever your opponent summons a fighter, lock all enemy fighters for 1 turn, then give all other police 100 power.",
 			["Type"] = "OnEnemySummon",
-			["Power"] = {{"Lock",1}},
+			["Power"] = {{"Lock",1},{"Strengthen",100,"Archetype"},{"Weaken",100,"Self"}},
 			Target = "Opponent",
 		},
 		["Bio"] = "To inspect gravity. To cause the fall.",
