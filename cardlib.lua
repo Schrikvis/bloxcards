@@ -14361,6 +14361,25 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "Uncreativename123",
 	},
+
+	["B0BBA"] = {
+		["Id"] = 490219260,
+		["Name"] = "B0BBA",
+		["Health"] = 900,
+		["Power"] = 200,
+		["Rarity"] = "Epic",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Blue", 
+		["Cost"] = {["Blue"] = 3,},
+		["Effect"] = {
+			Name = "He can't fix it after all",
+			Description = "Whenever you summon a fighter, draw a card and deal 400 damage to B0BBA.",
+			["Type"] = "OnAllySummon",
+			["Power"] = {{"Draw",1},{"Damage",400,"Self"}},			
+			Target = "Ally",
+		},
+		["Bio"] = "The ultimate builder.",
+	},
 }
 
 local pairs = pairs
