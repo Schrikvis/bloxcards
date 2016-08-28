@@ -14304,6 +14304,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Health"] = 1000,
 		["Power"] = 800,
 		["Rarity"] = "Legendary",
+		["Archetype"] = "Nightmare",
 		["AttackEffect"] = "Dash",
 		["CounterBlock"] = true,
 		["Color"] = "Green", 
