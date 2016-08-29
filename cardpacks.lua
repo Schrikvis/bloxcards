@@ -170,6 +170,7 @@ return {
 		CardPackId = 465492503,
 		Description = "Red is the colour of power, ambition, and control. Dominion packs contain cards that cost red!",
 		Cards = {
+			"FabulousMettaton123",
 			"666",
 			"WoodReviewer",
 			"One4utwo4me",
@@ -474,6 +475,7 @@ return {
 		CardPackId = 465492637,
 		Description = "Blue is the colour of logic, order, and structure. Thought packs contain cards that cost blue!",
 		Cards = {
+			"FabulousBench",
 			"Stevenl15",
 			"B0BBA",
 			"Razikai",
@@ -645,6 +647,7 @@ return {
 		CardPackId = 465492745,
 		Description = "Yellow is the colour of community, satisfaction, and society. Revel packs contain cards that cost yellow!",
 		Cards = {
+			"Friend Request Spammer",
 			"Luck Warrior of Pure Gold",
 			"Zaquille",
 			"The Piece Breaker",
@@ -811,6 +814,7 @@ return {
 		CardPackId = 434684079,
 		Description = "Obvious Packs contain only white cards, joke cards and new cards. You must have 10 wins to open these packs.",
 		Cards = {
+			"Friend Request Spammer",
 			"Smart Planner",
 			"Stevenl15",
 			"Luck Warrior of Pure Gold",
@@ -875,10 +879,9 @@ return {
 			"Cyandude585",
 			"Febrezer",
 			"Paraselene Sage",
-			"KennedyLeDog",
-			"Hamstermon",
 			"President Duck",
 			"Wingman8",
+			"Body Guards",
 			"Giftsplosion",
 			"DrPepperSlayer",
 			"Blue Fanatic",

@@ -14503,6 +14503,44 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "Line up theory ftw.",
 	},
+
+	["Friend Request Spammer"] = {
+		["Id"] = 491581069,
+		["Name"] = "Friend Request Spammer",
+		["Health"] = 350,
+		["Power"] = 350,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Yellow", 
+		["Cost"] = {["Yellow"] = 3, ["Neutral"] = 2,},
+		["Effect"] = {
+			Name = "PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE",
+			Description = "Your opponent draws a card.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Draw",1}},
+			Target = "Opponent",
+		},
+		["Bio"] = "PLEASE PLEASE PLEASE PLEASE PLEASE BE MY FRIEND PLEASE PLEASE PLEASE I'LL DO ANYTHING PLEASE THIS ISN'T ANNOYING AT ALL IS IT PLEASE PLEASE PLEASE I BEG YOU PLEASE PLEASE WHY DON'T YOU LISTEN TO ME PLEASE PLEASE PLEASE",
+	},
+
+	["Body Guards"] = {
+		["Id"] = 491581638,
+		["Name"] = "Body Guards",
+		["Health"] = 275,
+		["Power"] = 275,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Neutral", 
+		["Cost"] = {["Neutral"] = 2,},
+		["Effect"] = {
+			Name = "Protection",
+			Description = "When this card dies, you gain 200 life.",
+			["Type"] = "OnDeath",
+			["Power"] = {{"Cost",-200}},
+			Target = "Ally",
+		},
+		["Bio"] = "Our destinies are to protect others so that their destiny may be achieved.",
+	},
 }
 
 local pairs = pairs
