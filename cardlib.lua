@@ -3990,7 +3990,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Ally",
 			Increase = 2,
 		},
-		["Bio"] = "Unattractive. Cri",
+		["Bio"] = "Studded for your enjoyment.",
 	},
 	
 	["Zombie"] = {
@@ -3998,12 +3998,20 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Zombie",
 		["Health"] = 150,
 		["Power"] = 100,
-		["Rarity"] = "Token",
+		["Rarity"] = "Common",
 		["AttackEffect"] = "Punch1",
 		["Archetype"] = "Zombie",
 		["Color"] = "Green",
 		["Token"] = true,
 		["Cost"] = {["Neutral"] = 0,},
+		["Effect"] = {
+			Name = "Teamwork",
+			Description = "This card can't generate icons.",
+			["Type"] = "OnSummon",
+			["Power"] = "Strengthen",
+			Target = "Ally",
+			Increase = 0,
+		},
 		["Bio"] = "A basic zombie. Don't let them overwhelm you!",
 	},
 	
@@ -5501,7 +5509,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Yellow",1},{"Blue",1},{"Red",1},{"Green",1}},
 			Target = "Ally",
 		},
-		["Bio"] = "Creator of Miner's Haven. Check it out!",
+		["Bio"] = "He mines havens.",
 	},
 	
 	["1x1x1x1"] = {
@@ -11223,7 +11231,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Lock",2},{"Heal",1000}},
 			Target = "Single",
 		},
-		["Bio"] = "Super.",
+		["Bio"] = "Is a killer always heartless?",
 	},	
 	
 	["Dun_Goof"] = {
@@ -14475,6 +14483,25 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Ally",
 		},
 		["Bio"] = "I pity the manaicism that took over this heart.",
+	},
+
+	["Smart Planner"] = {
+		["Id"] = 491538877,
+		["Name"] = "Smart Planner",
+		["Health"] = 500,
+		["Power"] = 500,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Green", 
+		["Cost"] = {["Green"] = 3, ["Neutral"] = 2,},
+		["Effect"] = {
+			Name = "Probably shouldn't.",
+			Description = "Reveal your opponent's hand.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"RevealHand",999}},
+			Target = "Opponent",
+		},
+		["Bio"] = "Line up theory ftw.",
 	},
 }
 
