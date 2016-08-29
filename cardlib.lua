@@ -3885,6 +3885,25 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "Senior advisor of Value Town.",
 	},
+
+	["KingCactaur-ArtV"] = {
+		["Id"] = 491538951,
+		["Name"] = "KingCactaur",
+		["Health"] = 400,
+		["Power"] = 400,
+		["Rarity"] = "Rare",
+		["AttackEffect"] = "Slice",
+		["Color"] = "Green",
+		["Cost"] = {["Neutral"] = 3,["Green"] = 2,},
+		["Effect"] = {
+			Name = "Kingcactaur Disapproves",
+			Description = "Draw 1 card. This card can attack the turn it is summoned.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Draw",1},{"Charge",030}},
+			Target = "Ally",
+		},
+		["Bio"] = "That'ssss some very nice value you have there; It'd be succch a shame if something happended to it...",
+	},
 	
 	["KrocoStar"] = {
 		["Id"] = 288040849,
