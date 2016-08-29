@@ -472,6 +472,7 @@ return {
 		CardPackId = 465492637,
 		Description = "Blue is the colour of logic, order, and structure. Thought packs contain cards that cost blue!",
 		Cards = {
+			"Stevenl15",
 			"B0BBA",
 			"Razikai",
 			"Fenrier",
@@ -642,6 +643,7 @@ return {
 		CardPackId = 465492745,
 		Description = "Yellow is the colour of community, satisfaction, and society. Revel packs contain cards that cost yellow!",
 		Cards = {
+			"Luck Warrior of Pure Gold",
 			"Zaquille",
 			"The Piece Breaker",
 			"Mr.O the Traveling Merchant",
@@ -807,6 +809,8 @@ return {
 		CardPackId = 434684079,
 		Description = "Obvious Packs contain only white cards, joke cards and new cards. You must have 10 wins to open these packs.",
 		Cards = {
+			"Stevenl15"
+			"Luck Warrior of Pure Gold",
 			"Zaquille",
 			"Brick_Man",
 			"B0BBA",
@@ -842,11 +846,9 @@ return {
 			"Bad Bread",
 			"Cotton Cavalier",
 			"Arashi Pikemen",
-			"HeyItsColin",
 			"BerskererPredator450",
 			"Meeboid Champion",
 			"NerfModder",
-			"Beam Sword",
 			"ClanAtlas",
 			"KurosakiDXenos",
 			"Skarra the DragonSlayer",
@@ -859,7 +861,6 @@ return {
 			"BrackioTops",
 			"Lilmanofsalem",
 			"animallogic",
-			"Western Bandit",
 			"Mzh3000",
 			"Miked",
 			"Fenrier",

@@ -14401,7 +14401,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Zaquille"] = {
-		["Id"] = 490219260,
+		["Id"] = 490218793,
 		["Name"] = "Zaquille",
 		["Health"] = 900,
 		["Power"] = 550,
@@ -14418,6 +14418,44 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Opponent",
 		},
 		["Bio"] = "Laws and bones are made to be broken.",
+	},
+
+	["Luck Warrior of Pure Gold"] = {
+		["Id"] = 491538837,
+		["Name"] = "Luck Warrior of Pure Gold",
+		["Health"] = 300,
+		["Power"] = 300,
+		["Rarity"] = "Rare",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Yellow", 
+		["Cost"] = {["Yellow"] = 4,},
+		["Effect"] = {
+			Name = "Too lucky 4 me",
+			Description = "Draw 15 cards. (You can't have more than 10 cards in your hand; excess cards get discarded.)",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Draw",15}},
+			Target = "Ally",
+		},
+		["Bio"] = "I have so much wealth that it could kill me.",
+	},
+
+	["Stevenl15"] = {
+		["Id"] = 491539513,
+		["Name"] = "Stevenl15",
+		["Health"] = 300,
+		["Power"] = 200,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Blue", 
+		["Cost"] = {["Blue"] = 2, ["Neutral"] = 2,},
+		["Effect"] = {
+			Name = "Probably shouldn't.",
+			Description = "All allied fighters gain 500 health. Lock them for 4 turns.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Heal",500},{"Lock",4}},
+			Target = "Ally",
+		},
+		["Bio"] = "I pity the manaicism that took over this heart.",
 	},
 }
 
