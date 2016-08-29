@@ -642,6 +642,7 @@ return {
 		CardPackId = 465492745,
 		Description = "Yellow is the colour of community, satisfaction, and society. Revel packs contain cards that cost yellow!",
 		Cards = {
+			"Zaquille",
 			"The Piece Breaker",
 			"Mr.O the Traveling Merchant",
 			"Pancake Break",
@@ -806,6 +807,7 @@ return {
 		CardPackId = 434684079,
 		Description = "Obvious Packs contain only white cards, joke cards and new cards. You must have 10 wins to open these packs.",
 		Cards = {
+			"Zaquille",
 			"Brick_Man",
 			"B0BBA",
 			"Uncreativename123",

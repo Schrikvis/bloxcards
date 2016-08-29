@@ -14399,6 +14399,26 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "Is it human nature to want something simply because it belongs to someone else?",
 	},
+
+	["Zaquille"] = {
+		["Id"] = 490219260,
+		["Name"] = "Zaquille",
+		["Health"] = 900,
+		["Power"] = 550,
+		["Rarity"] = "Epic",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Yellow", 
+		["Requirement"] = {false,2,true},
+		["Cost"] = {["Yellow"] = 3, ["Neutral"] = 5},
+		["Effect"] = {
+			Name = "He can't fix it after all",
+			Description = "Cast Zaquille only if your opponent has 2 or more fighters in play. Your opponent loses all of their white icons and draws two cards.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"SetNeutral",0,"Opponent"},{"Draw",2}},			
+			Target = "Opponent",
+		},
+		["Bio"] = "Laws and bones are made to be broken.",
+	},
 }
 
 local pairs = pairs
