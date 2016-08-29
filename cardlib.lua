@@ -14380,6 +14380,25 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "The ultimate builder.",
 	},
+
+	["Brick_Man"] = {
+		["Id"] = 490219260,
+		["Name"] = "Brick_Man",
+		["Health"] = 900,
+		["Power"] = 200,
+		["Rarity"] = "Epic",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Green", 
+		["Cost"] = {["Green"] = 3, ["Neutral"] = 4},
+		["Effect"] = {
+			Name = "He can't fix it after all",
+			Description = "At the end of your turns, drain a white icon from your opponent. This effect can cause negative icons.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Neutral",1},{"Neutral",-1,"Opponent"}},			
+			Target = "Ally",
+		},
+		["Bio"] = "Is it human nature to want something simply because it belongs to someone else?",
+	},
 }
 
 local pairs = pairs
