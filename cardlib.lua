@@ -4646,7 +4646,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Sword Fights on the Heights"] = {
-		["Id"] = 293402606,
+		["Id"] = 491606799,
 		["Name"] = "Sword Fights on the Heights",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -4655,7 +4655,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Field"] = 293402616,
 		["Archetype"] = "Terrain",
 		["Color"] = "Neutral",
-		["Cost"] = {["Yellow"] = 2,["Red"] = 2,},
+		["Cost"] = {["Yellow"] = 0,},
 		["Effect"] = {
 			Name = "Stud",
 			Description = "Opponent cards lose 100 Attack and Ally cards gain 100 Attack. This effect alternates between players at the start of each turn.",
@@ -11404,7 +11404,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Double Bleeding",
-			Description = "Whenever you lose life, increase the health of all allied fighters by 200.",
+			Description = "Whenever you lose life, increase the health of all allied fighters by 100.",
 			["Type"] = "OnHealthLoss",
 			["Power"] = {{"Heal",100}},
 			Target = "Ally",
