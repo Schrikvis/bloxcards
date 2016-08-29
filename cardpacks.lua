@@ -647,6 +647,7 @@ return {
 		CardPackId = 465492745,
 		Description = "Yellow is the colour of community, satisfaction, and society. Revel packs contain cards that cost yellow!",
 		Cards = {
+			"Monopoly Man",
 			"Friend Request Spammer",
 			"Luck Warrior of Pure Gold",
 			"Zaquille",
@@ -814,6 +815,7 @@ return {
 		CardPackId = 434684079,
 		Description = "Obvious Packs contain only white cards, joke cards and new cards. You must have 10 wins to open these packs.",
 		Cards = {
+			"Monopoly Man",
 			"Friend Request Spammer",
 			"Smart Planner",
 			"Stevenl15",
@@ -846,7 +848,6 @@ return {
 			"Cat's Eye Corpse Stealer",
 			"Cat's Eye, Master of Perception",
 			"iAsuka",
-			"APlayerOfGames",
 			"Samksoon321",
 			"ST Leader Keeler1",
 			"Brycen27",

@@ -14541,6 +14541,25 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "Our destinies are to protect others so that their destiny may be achieved.",
 	},
+
+	["Monopoly Man"] = {
+		["Id"] = 491581673,
+		["Name"] = "Monopoly Man",
+		["Health"] = 650,
+		["Power"] = 650,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Yellow", 
+		["Cost"] = {["Yellow"] = 3, ["Neutral"] = 2,},
+		["Effect"] = {
+			Name = "Protection",
+			Description = "Play with your hand revealed.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"RevealHand",999}},
+			Target = "Ally",
+		},
+		["Bio"] = "Look at my jewels! LOOK AT THEM!",
+	},
 }
 
 local pairs = pairs
