@@ -1511,7 +1511,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Description = "Whenever your opponent gains life, they lose 500 life.",
 			["Type"] = "OnOpponentHealthGain",
 			["Power"] = {{"Inflict",500}},
-			Target = "NotArchetype",
+			Target = "Opponent",
 		},
 		["Bio"] = "He never runs late for a tea party.",
 	},
@@ -14512,7 +14512,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Yellow", 
-		["Cost"] = {["Yellow"] = 3, ["Neutral"] = 2,},
+		["Cost"] = {["Yellow"] = 1, ["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE",
 			Description = "Your opponent draws a card.",
@@ -14559,6 +14559,26 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Ally",
 		},
 		["Bio"] = "Look at my jewels! LOOK AT THEM!",
+	},
+
+	["Sharksie"] = {
+		["Id"] = 491581729,
+		["Name"] = "Sharksie",
+		["Health"] = 3000,
+		["Power"] = 250,
+		["Rarity"] = "Legendary",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Blue", 
+		["Cost"] = {["Blue"] = 7, ["Red"] = 1,},
+		["CounterBlock"] = true,
+		["Effect"] = {
+			Name = "Protection",
+			Description = "(EXPERIMENTAL EFFECT) Whenever your opponent summons a fighter, lock it for two turns and deal 200 damage to it. Sharksie can't counterattack.",
+			["Type"] = "OnEnemySummon",
+			["Power"] = {{"Damage",200},{"Lock",2}},
+			Target = "Aggressor",
+		},
+		["Bio"] = "Love and pain and love and pain.",
 	},
 }
 
