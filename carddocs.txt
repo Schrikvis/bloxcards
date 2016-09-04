@@ -179,7 +179,7 @@ Locks the Target for Increase turns.
 Reduces the Target's remaining locked turns by Increase turns.
 
 - Charge
-Unlocks the card immedeately. Has an implicit Self target.
+Unlocks the card immedeately. Has an implicit Self target. Use the passive version if able.
 
 - DeckAdd
 Adds the card of name Increase to the Target's deck.
@@ -238,7 +238,10 @@ When set to true, enemy cards cannot counterattack this card.
 When set to true, the card cannot attack the enemy player.
 
 - Token
-When discarded, this card does not give icons.
+When set to true, the card can't generate icons.
+
+- Charge
+When set to true, the card can attack when summoned.
 
 - WeakenImmune
 The card is immune to effects that decrease its health or power.
