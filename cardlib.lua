@@ -81,10 +81,10 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["PixelFlameV2"] = {
-		["Id"] = 496078769,
+		["Id"] = 273688130,
 		["Name"] = "PixelFlame",
 		["Health"] = 400,
-		["Power"] = 400,
+		["Power"] = 350,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Punch2",
 		["Color"] = "Red",
@@ -470,6 +470,27 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Increase = 1,
 		},
 		["Bio"] = "Britney Spears left her alone.",
+	},
+
+	["Toxic-ArtV"] = {
+		["Id"] = 264620178,
+		["Name"] = "Toxic",
+		["Power"] = 300,
+		["Health"] = 450,
+		["Rarity"] = "Rare",
+		["AttackEffect"] = "SlashDiagonal",
+		["Token"] = true,
+		["Color"] = "Yellow",
+		["Cost"] = {["Yellow"] = 1,["Neutral"] = 2,},
+		["Effect"] = {
+			Name = "Yarrge",
+			Description = "Gain 1 Yellow Icon. This card cannot generate icons.",
+			["Type"] = "OnSummon",
+			["Power"] = "Yellow",
+			Target = "Ally",
+			Increase = 1,
+		},
+		["Bio"] = "DANGER! Cheetos found on the road may contain traces of slag!",
 	},
 
 	["Loogi"] = {
@@ -2792,6 +2813,18 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	
 	["Master Josue"] = {
 		["Id"] = 292778437,
+		["Name"] = "SnyFort",
+		["Health"] = 400,
+		["Power"] = 400,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "PunchKick",
+		["Color"] = "Blue",
+		["Cost"] = {["Neutral"] = 2,["Blue"] = 2,},
+		["Bio"] = "Drink up!",
+	},	
+
+	["SnyFort"] = {
+		["Id"] = 496184718,
 		["Name"] = "SnyFort",
 		["Health"] = 400,
 		["Power"] = 400,
@@ -8822,7 +8855,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Great Lord Egotist"] = {
 		["Id"] = 345761738,
 		["Name"] = "Great Lord Egotist",
-		["Health"] = 1000,
+		["Health"] = 1200,
 		["Power"] = 0,
 		["Rarity"] = "Legendary",
 		["Archetype"] = "Nightmare",
@@ -8836,7 +8869,27 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Power = {{"Add","Nightmare"},{"Heal",300,"Archetype"}},
 			Target = "Opponent",
 		},
-		["Bio"] = [[Once I was human. Now, I am much more.]],
+		["Bio"] = [[Once, I was human. Now, I am much more.]],
+	},
+
+	["Great Lord Egotist-ArtV"] = {
+		["Id"] = 496184301,
+		["Name"] = "Great Lord Egotist",
+		["Health"] = 1200,
+		["Power"] = 0,
+		["Rarity"] = "Legendary",
+		["Archetype"] = "Nightmare",
+		["AttackEffect"] = "Slash",
+		["Color"] = "Neutral",
+		["Cost"] = {["Neutral"] = 4,["Blue"] = 3,["Green"] = 2,},
+		["Effect"] = {
+			Name = "Night Creak",
+			Description = [[Add a Nightmare to the opponent's hand and increase the Health of all Nightmare related fighters by 300 at the end of each turn.]],
+			Type = "OnEnd",
+			Power = {{"Add","Nightmare"},{"Heal",300,"Archetype"}},
+			Target = "Opponent",
+		},
+		["Bio"] = [[I am the wild dog watching with sixteen omniscient eyes. Unblinking endless judgment, cast as the patterns rise.]],
 	},
 	
 	["Vermin's Caress"] = {
