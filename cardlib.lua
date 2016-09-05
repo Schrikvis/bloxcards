@@ -13756,7 +13756,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Fenrier"] = {
 		["Id"] = 469550868,
 		["Name"] = "Fenrier",
-		["Health"] = 2400,
+		["Health"] = 1225,
 		["Power"] = 0,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Thunder",
@@ -14694,6 +14694,25 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Single",
 		},
 		["Bio"] = "His goods will make your head dizzy.",
+	},
+
+	["Prisman"] = {
+		["Id"] = 497018429,
+		["Name"] = "Prisman",
+		["Health"] = 450,
+		["Power"] = 500,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Red", 
+		["Cost"] = {["Red"] = 3, ["Neutral"] = 1,},
+		["Effect"] = {
+			Name = "Many a burn",
+			Description = "All fighters enter play with 200 less health.",
+			["Type"] = "OnAnySummon",
+			["Power"] = {{"Damage",200}},
+			Target = "Aggressor",
+		},
+		["Bio"] = "A few stabs everywhere leads to a lot of bloodloss.",
 	},
 
 	

@@ -170,6 +170,7 @@ return {
 		CardPackId = 465492503,
 		Description = "Red is the colour of power, ambition, and control. Dominion packs contain cards that cost red!",
 		Cards = {
+			"Prisman",
 			"FabulousMettaton123",
 			"666",
 			"WoodReviewer",
@@ -817,6 +818,7 @@ return {
 		CardPackId = 434684079,
 		Description = "Obvious Packs contain only white cards, joke cards and new cards. You must have 10 wins to open these packs.",
 		Cards = {
+			"Prisman",
 			"Yoshius",
 			"JayTheCoder",
 			"Monopoly Man",
