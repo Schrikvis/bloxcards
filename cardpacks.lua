@@ -330,7 +330,7 @@ return {
 			"Brick_Man",
 			"Uncreativename123",
 			"pa00",
-			"Overseer Drake"
+			"Overseer Drake",
 			"Tankbomer",
 			"InceptionTime",
 			"Aceguy100",
@@ -838,12 +838,12 @@ return {
 			"Mr.O the Traveling Merchant",
 			"One4utwo4me",
 			"InceptionTime",
-			[["One_Thousand_Deaths"]],
+			[[One_Thousand_Deaths]],
 			"Burning_Soul_Blade",
 			"Cooldude4851",
 			"Jimminus",
 			"Aceguy100",
-			"Mariochocolatemilk"
+			"Mariochocolatemilk",
 			"HasTheHero",
 			"Korblox Shadowmage",
 			"Redcliff Heretic",
@@ -954,4 +954,10 @@ return {
 		},
 	};
 }
--- V2s that need adding into Aife: MahBucket, Ninja, DIY Dominus, Quenty, Pixelflame, Divine Favor, Myrmiredon, Mass Destruction, Stickmasterluke, Stalker, BlazerC, Polyhex, KingShadowCrow, Lando64000, Ripull, Gravity Collapse, NerfModder, Gravity Inspector, Aurichalcum
+-- V2s that need adding into Aife: 
+--MahBucket, Ninja, DIY Dominus, Quenty, 
+--Pixelflame, Divine Favor, Myrmiredon, 
+--Mass Destruction, Stickmasterluke, Stalker, 
+--BlazerC, Polyhex, KingShadowCrow, Lando64000, 
+--Ripull, Gravity Collapse, NerfModder, Gravity Inspector, 
+--Aurichalcum
