@@ -8608,7 +8608,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Dreadsteed",
 			Description = [[Shuffle a "Myrmiredon" into your deck.]],
 			["Type"] = "OnSummon",
-			["Power"] = {{"DeckAdd","Myrmiredon"}},
+			["Power"] = {{"DeckAdd","MyrmiredonV2"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Greetings, honourable invaders. Thank you for coming so far. However, as you can see, we are poor. Do you truly believe you'll find what you want here?",
@@ -14678,7 +14678,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Yoshius"] = {
-		["Id"] = 497018429,
+		["Id"] = 497019766,
 		["Name"] = "Yoshius",
 		["Health"] = 400,
 		["Power"] = 100,
@@ -14697,7 +14697,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Prisman"] = {
-		["Id"] = 497018429,
+		["Id"] = 497019927,
 		["Name"] = "Prisman",
 		["Health"] = 450,
 		["Power"] = 500,
@@ -14713,6 +14713,25 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Aggressor",
 		},
 		["Bio"] = "A few stabs everywhere leads to a lot of bloodloss.",
+	},
+
+	["Divine_Pengu"] = {
+		["Id"] = 496076255,
+		["Name"] = "Divine_Pengu",
+		["Health"] = 1450,
+		["Power"] = 300,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Yellow", 
+		["Cost"] = {["Yellow"] = 5, ["Neutral"] = 4, ["Blue"] = 1,},
+		["Effect"] = {
+			Name = "Sloth me",
+			Description = "All fighters enter play unlocked.",
+			["Type"] = "OnAnySummon",
+			["Power"] = {{"Unlock",999}},
+			Target = "Aggressor",
+		},
+		["Bio"] = "I do believe that Mister Ando is not human; no human would go PENG PENG.",
 	},
 
 	
