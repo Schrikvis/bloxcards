@@ -14642,22 +14642,42 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Sharksie"] = {
 		["Id"] = 491581729,
 		["Name"] = "Sharksie",
-		["Health"] = 3000,
+		["Health"] = 1500,
 		["Power"] = 300,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Blue", 
 		["Cost"] = {["Blue"] = 7, ["Red"] = 1,},
-		["CounterBlock"] = true,
 		["Effect"] = {
 			Name = "Protection",
-			Description = "(EXPERIMENTAL EFFECT) Whenever your opponent summons a fighter, lock it for two turns and deal 200 damage to it. Sharksie can't counterattack.",
+			Description = "Fighters your opponents control enter play locked for an additional two turns.",
 			["Type"] = "OnEnemySummon",
-			["Power"] = {{"Damage",200},{"Lock",2}},
+			["Power"] = {{"Lock",2}},
 			Target = "Aggressor",
 		},
 		["Bio"] = "A few tiny tanks won't hurt anyone, right?",
 	},
+
+	["JayTheCoder"] = {
+		["Id"] = 497018429,
+		["Name"] = "JayTheCoder",
+		["Health"] = 900,
+		["Power"] = 700,
+		["Rarity"] = "Legendary",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Yellow", 
+		["Cost"] = {["Yellow"] = 7, ["Neutral"] = 1,},
+		["Effect"] = {
+			Name = "Zerg Rush kekekeke",
+			Description = "Whenever you summon a fighter, deal 150 damage to all enemy fighters.",
+			["Type"] = "OnAllySummon",
+			["Power"] = {{"Damage",150}},
+			Target = "Opponent",
+		},
+		["Bio"] = "Coding is life.",
+	},
+
+	
 }
 
 local pairs = pairs
