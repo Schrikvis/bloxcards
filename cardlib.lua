@@ -1791,12 +1791,19 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["TZSara"] = {
 		["Id"] = 275340718,
 		["Name"] = "TZSara",
-		["Health"] = 650,
+		["Health"] = 725,
 		["Power"] = 350,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Green",
 		["Cost"] = {["Neutral"] = 3,},
+		["Effect"] = {
+			Name = "Arkhaiomelisidonophunikheratos",
+			Description = "At the end of your turns, all allied fighters gain 25 health and your opponent gains 25 life.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Heal",25},{"Inflict",-25,"Opponent"}},
+			Target = "Ally",
+		},
 		["Bio"] = "She's willing to fight with her frying pan. Don't question it.",
 	},
 	
@@ -9841,11 +9848,31 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Mental Preparation",
-			Description = "Locks himself for one turn to charge his strength!",
+			Description = "Locks himself for two turns to charge his strength!",
 			["Type"] = "OnSummon",
 			["Power"] = "Lock",
 			Target = "Self",
-			Increase = 1,
+			Increase = 2,
+		},
+		["Bio"] = "You just dared him. Prepare for brown dairy.",
+	},	
+
+	["DairingPoopHead-ArtV"] = {
+		["Id"] = 496185557,
+		["Name"] = "Dairingpoophead",
+		["Health"] = 700,
+		["Power"] = 500,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Lightning",
+		["Color"] = "Blue",
+		["Cost"] = {["Neutral"] = 3,},
+		["Effect"] = {
+			Name = "Mental Preparation",
+			Description = "Locks himself for two turns to charge his strength!",
+			["Type"] = "OnSummon",
+			["Power"] = "Lock",
+			Target = "Self",
+			Increase = 2,
 		},
 		["Bio"] = "You just dared him. Prepare for brown dairy.",
 	},	
@@ -14460,7 +14487,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Brick_Man"] = {
-		["Id"] = 490219260,
+		["Id"] = 490219386,
 		["Name"] = "Brick_Man",
 		["Health"] = 900,
 		["Power"] = 200,
