@@ -475,6 +475,7 @@ return {
 		CardPackId = 465492637,
 		Description = "Blue is the colour of logic, order, and structure. Thought packs contain cards that cost blue!",
 		Cards = {
+			"Yoshius",
 			"FabulousBench",
 			"Stevenl15",
 			"B0BBA",
@@ -816,6 +817,7 @@ return {
 		CardPackId = 434684079,
 		Description = "Obvious Packs contain only white cards, joke cards and new cards. You must have 10 wins to open these packs.",
 		Cards = {
+			"Yoshius",
 			"JayTheCoder",
 			"Monopoly Man",
 			"Friend Request Spammer",

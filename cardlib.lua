@@ -14677,6 +14677,25 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "Coding is life.",
 	},
 
+	["Yoshius"] = {
+		["Id"] = 497018429,
+		["Name"] = "Yoshius",
+		["Health"] = 400,
+		["Power"] = 100,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Blue", 
+		["Cost"] = {["Blue"] = 2,},
+		["Effect"] = {
+			Name = "Dum dum",
+			Description = "Swap a fighter's stats.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Swap",030}},
+			Target = "Single",
+		},
+		["Bio"] = "His goods will make your head dizzy.",
+	},
+
 	
 }
 
