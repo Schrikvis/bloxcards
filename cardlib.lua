@@ -5602,14 +5602,14 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["AVote"] = {
-		["Id"] = 424683822,
+		["Id"] = 497549464,
 		["Name"] = "AVote",
 		["Health"] = 400,
 		["Power"] = 400,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Thunder",
-		["Color"] = "Yellow",
-		["Cost"] = {["Yellow"] = 4,},
+		["Color"] = "Red",
+		["Cost"] = {["Red"] = 3, ["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Chain-Break!",
 			Description = "Unlock a target fighter.",
@@ -14649,7 +14649,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Blue", 
 		["Cost"] = {["Blue"] = 7, ["Red"] = 1,},
 		["Effect"] = {
-			Name = "Protection",
+			Name = "Always wear a burkini",
 			Description = "Fighters your opponents control enter play locked for an additional two turns.",
 			["Type"] = "OnEnemySummon",
 			["Power"] = {{"Lock",2}},
@@ -14678,7 +14678,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Yoshius"] = {
-		["Id"] = 497019766,
+		["Id"] = 497558395,
 		["Name"] = "Yoshius",
 		["Health"] = 400,
 		["Power"] = 100,
@@ -14744,13 +14744,32 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Red", 
 		["Cost"] = {["Red"] = 3,},
 		["Effect"] = {
-			Name = "Sloth me",
+			Name = "Don't sloth me",
 			Description = "Whenever your opponent summons a fighter, destroy it and Mohawk.",
 			["Type"] = "OnEnemySummon",
 			["Power"] = {{"Damage",9999},{"Damage",9999,"Self"}},
 			Target = "Aggressor",
 		},
 		["Bio"] = "I will flay the skin from your flesh and the flesh from your bones and scrape your bones dry. And even then, you would not have suffered enough. :^)",
+	},
+
+	["YotamTiti"] = {
+		["Id"] = 496076435,
+		["Name"] = "YotamTiti",
+		["Health"] = 400,
+		["Power"] = 400,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Yellow", 
+		["Cost"] = {["Red"] = 2, ["Yellow"] = 3,},
+		["Effect"] = {
+			Name = "You may sloth me, Planet Belligerance",
+			Description = "All allied fighters enter play with an additional 100 health.",
+			["Type"] = "OnAllySummon",
+			["Power"] = {{"Heal",100}},
+			Target = "Aggressor",
+		},
+		["Bio"] = "0HHH NOOO!",
 	},
 
 	
