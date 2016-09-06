@@ -4379,7 +4379,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 2,},
 		["Effect"] = {
 			Name = "Jagged Arrow",
-			Description = "lower the attack of a target fighter by 400.",
+			Description = "Lower the attack of a target fighter by 400.",
 			["Type"] = "OnSummon",
 			["Power"] = "Weaken",
 			Target = "Single",
@@ -8526,7 +8526,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Null",
 		["Color"] = "Blue",
 		["Archetype"] = "Lunar",
-		["Cost"] = {["Blue"] = 3,},
+		["Cost"] = {["Blue"] = 3, ["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Infinite Frost",
 			Description = "Lock a target fighter for 1 turn and return this card to your hand.",
@@ -8546,7 +8546,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Null",
 		["Color"] = "Red",
 		["Archetype"] = "Lunar",
-		["Cost"] = {["Red"] = 3,},
+		["Cost"] = {["Red"] = 3, ["Neutral"] =1,},
 		["Effect"] = {
 			Name = "Infinite Flames",
 			Description = "Deal 100 damage to all enemy fighters and the opponent. Return this card to your hand.",
@@ -9810,7 +9810,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Red"] = 6,},
 		["Effect"] = {
 			Name = "Knockdown",
-			Description = "lower the Health and Attack of all non-Redcliff cards by 200.",
+			Description = "Lower the Health and Attack of all non-Redcliff cards by 200.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",200},{"Damage",200}},
 			Target = "NotArchetype",
@@ -14707,7 +14707,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 3, ["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Many a burn",
-			Description = "All fighters enter play with 200 less health.",
+			Description = "All summoned fighters enter play with 200 less health.",
 			["Type"] = "OnAnySummon",
 			["Power"] = {{"Damage",200}},
 			Target = "Aggressor",
@@ -14720,18 +14720,37 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Divine_Pengu",
 		["Health"] = 1450,
 		["Power"] = 300,
-		["Rarity"] = "Uncommon",
+		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Yellow", 
 		["Cost"] = {["Yellow"] = 5, ["Neutral"] = 4, ["Blue"] = 1,},
 		["Effect"] = {
 			Name = "Sloth me",
-			Description = "All fighters enter play unlocked.",
+			Description = "All summoned fighters enter play unlocked.",
 			["Type"] = "OnAnySummon",
 			["Power"] = {{"Unlock",999}},
 			Target = "Aggressor",
 		},
 		["Bio"] = "I do believe that Mister Ando is not human; no human would go PENG PENG.",
+	},
+
+	["Mohawk2275"] = {
+		["Id"] = 497079680,
+		["Name"] = "Mohawk2275",
+		["Health"] = 550,
+		["Power"] = 550,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Red", 
+		["Cost"] = {["Red"] = 3,},
+		["Effect"] = {
+			Name = "Sloth me",
+			Description = "Whenever your opponent summons a fighter, destroy it and Mohawk.",
+			["Type"] = "OnEnemySummon",
+			["Power"] = {{"Damage",9999},{"Damage",9999,"Self"}},
+			Target = "Aggressor",
+		},
+		["Bio"] = "I will flay the skin from your flesh and the flesh from your bones and scrape your bones dry. And even then, you would not have suffered enough. :^)",
 	},
 
 	
