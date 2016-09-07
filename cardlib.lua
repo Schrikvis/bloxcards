@@ -5175,14 +5175,19 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 1,["Red"] = 1,},
-		["Effect"] = {
-			Name = "Even Out",
-			Description = "At the end of your turns, you lose 50 life.",
-			["Type"] = "OnEnd",
-			["Power"] = {{"Cost",50}},
-			Target = "All",
-		},
 		["Bio"] = "BY THUNDER BE PURGED!",
+	},	
+
+	["Odin-ArtV"] = {
+		["Id"] = 497625127,
+		["Name"] = "Odin",
+		["Health"] = 500,
+		["Power"] = 300,
+		["Rarity"] = "Rare",
+		["AttackEffect"] = "Lightning",
+		["Color"] = "Red",
+		["Cost"] = {["Neutral"] = 1,["Red"] = 1,},
+		["Bio"] = "Perhaps I like my son too much.",
 	},	
 	
 	["Pirate"] = {
@@ -7098,11 +7103,11 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Alexnewtron"] = {
-		["Id"] = 323661958,
+		["Id"] = 497624672,
 		["Name"] = "Alexnewtron",
 		["Health"] = 700,
 		["Power"] = 200,
-		["Rarity"] = "Epic",
+		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Blue",
 		["Cost"] = {["Blue"] = 3,["Neutral"] = 2,},
