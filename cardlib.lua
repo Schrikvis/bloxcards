@@ -693,11 +693,10 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "GunShot",
 		["Color"] = "Red",
-		["CounterAttackBlock"] = true,
 		["Cost"] = {["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Shartshooter",
-			Description = "When this card attacks, you lose 100 life. This card cannot be counter-attacked.",
+			Description = "When this card attacks, you lose 100 life.",
 			["Type"] = "OnAttack",
 			["Power"] = "Cost",
 			Target = "Single",
@@ -6124,8 +6123,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Demon Eye",
 			Description = "Whenever you cast an action or terrain card, deal 350 damage to the opponent.",
-			["Type"] = "OnCast",
-			["Power"] = {{"Inflict",200}},
+			["Type"] = "OnAllyCast",
+			["Power"] = {{"Inflict",350}},
 			Target = "Opponent",
 		},
 		["Bio"] = "Seriously, bring him toilet paper!",
