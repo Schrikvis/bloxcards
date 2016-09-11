@@ -7731,6 +7731,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	
 	["Plushie Lion"] = {
 		["Id"] = 332863655,
+		["Name"] = "Plushie Lion",
 		["Health"] = 200,
 		["Power"] = 200,
 		["Rarity"] = "Uncommon",
