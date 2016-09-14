@@ -632,19 +632,11 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 266032038,
 		["Name"] = "Ambamby",
 		["Power"] = 350,
-		["Health"] = 350,
+		["Health"] = 150,
 		["Rarity"] = "Common",
 		["AttackEffect"] = {"Lightning","Yellow"},
 		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 1,},
-		["Effect"] = {
-			Name = "Ayebamby",
-			Description = "When this card is summoned, you lose 500 life.",
-			["Type"] = "OnSummon",
-			["Power"] = "Cost",
-			Target = "Ally",
-			Increase = 500,
-		},
 		["Bio"] = "Amber and Ambamby are the same person, only Amber is older. Does this mean that she's her own mother?",
 	},
 
@@ -14791,6 +14783,27 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "0HHH NOOO!",
 	},
+
+	["MasterHand"] = {
+		["Id"] = 502503314,
+		["Name"] = "MasterHand",
+		["Health"] = 5000,
+		["Power"] = 1000,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Fire",
+		["WeakenImmune"] = true,
+		["Color"] = "Neutral",
+		["Cost"] = {["Neutral"] = 3,},
+		["Effect"] = {
+			Name = "BossMonster",
+			Description = [[This card is immune to cards that lower its Attack or Health. When this card dies. You lose 99999 Health.]],
+			["Type"] = "OnDied",
+			["Power"] = "Inflict",
+			Target = "Self",	
+			Increase = 99999,
+		},
+		["Bio"] = "Fox. Final Destination. No gimmicks... Apart from this one.",
+	},		
 
 	["JavierCollin88Poppin"] = {
 		["Id"] = 496076329,
