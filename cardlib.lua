@@ -62,7 +62,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["PixelFlame"] = {
-		["Id"] = 263659948,
+		["Id"] = 273688130,
 		["Name"] = "PixelFlame",
 		["Health"] = 400,
 		["Power"] = 400,
@@ -81,7 +81,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["PixelFlameV2"] = {
-		["Id"] = 273688130,
+		["Id"] = 496078769,
 		["Name"] = "PixelFlame",
 		["Health"] = 400,
 		["Power"] = 350,
@@ -4214,13 +4214,13 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Token"] = true,
 		["Effect"] = {
 			Name = "Stud",
-			Description = "This card cannot generate icons. Is used to summon the Fried One.",
+			Description = "This card cannot generate icons and is used to summon the Fried One.",
 			["Type"] = "OnSummon",
 			["Power"] = "Damage",
 			Target = "Self",	
 			Increase = 0,
 		},
-		["Bio"] = "Yum!",
+		["Bio"] = "A fiery chicken limb. Holding it fills your mind with thoughts of conquest.",
 	},
 	
 	["Left Leg of the Fried One"] = {
@@ -4237,13 +4237,13 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "This card cannot generate icons. Is used to summon the Fried One.",
+			Description = "This card cannot generate icons and is used to summon the Fried One.",
 			["Type"] = "OnSummon",
 			["Power"] = "Damage",
 			Target = "Self",	
 			Increase = 0,
 		},
-		["Bio"] = "Don't eat the leg, it's cannibalism.",
+		["Bio"] = "A succulent chicken limb. Unimaginable growth awaits those who know how to use it. ",
 	},
 	
 	["Right Arm of the Fried One"] = {
@@ -4260,13 +4260,13 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "This card cannot generate icons. Is used to summon the Fried One.",
+			Description = "This card cannot generate icons and is used to summon the Fried One.",
 			["Type"] = "OnSummon",
 			["Power"] = "Damage",
 			Target = "Self",	
 			Increase = 0,
 		},
-		["Bio"] = "Indeed a chicken leg, but indeed a Shedletsky arm.",
+		["Bio"] = "A curious chicken limb. Thinking about the possibilities provided makes your head spin.",
 	},
 	
 	["Left Arm of the Fried One"] = {
@@ -4283,13 +4283,13 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "This card cannot generate icons. Is used to summon the Fried One.",
+			Description = "This card cannot generate icons and is used to summon the Fried One.",
 			["Type"] = "OnSummon",
 			["Power"] = "Damage",
 			Target = "Self",	
 			Increase = 0,
 		},
-		["Bio"] = "The bite marks were from one of Shedletsky's fads.",
+		["Bio"] = "This limb is all alone. Maybe you'll find more in different areas.",
 	},
 	
 	["DrKig"] = {
@@ -6157,9 +6157,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Red"] = 2,},
 		["Effect"] = {
 			Name = "Demon Eye",
-			Description = "Whenever you cast an action or terrain card, deal 350 damage to the opponent.",
+			Description = "Whenever an action or terrain spell is cast, deal 300 damage to the opponent.",
 			["Type"] = "OnCast",
-			["Power"] = {{"Inflict",200}},
+			["Power"] = {{"Inflict",300}},
 			Target = "Opponent",
 		},
 		["Bio"] = "Seriously, bring him toilet paper!",
@@ -7731,6 +7731,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	
 	["Plushie Lion"] = {
 		["Id"] = 332863655,
+		["Name"] = "Plushie Lion",
 		["Health"] = 200,
 		["Power"] = 200,
 		["Rarity"] = "Uncommon",
@@ -13882,7 +13883,6 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 100,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Dash",
-		["Archetype"] = "Zombie",
 		["Color"] = "Red", 
 		["Cost"] = {["Neutral"] = 1, ["Red"] = 2,},
 		["Effect"] = {
@@ -14292,8 +14292,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "WoodReviewer",
 			Description = "Fill both player's hands with random rares.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"RandomAdd","Rare"},{"RandomAdd","Rare"},{"RandomAdd","Rare"},{"RandomAdd","Rare"},{"RandomAdd","Rare"},{"RandomAdd","Rare"},{"RandomAdd","Rare"},{"RandomAdd","Rare"},{"RandomAdd","Rare"},{"RandomAdd","Rare"}},			
-			Target = "All",
+			["Power"] = {{"RandomAdd","Rare"},{"RandomAdd","Rare"},{"RandomAdd","Rare"},{"RandomAdd","Rare"},{"RandomAdd","Rare"},{"RandomAdd","Rare"},{"RandomAdd","Rare"},{"RandomAdd","Rare"},{"RandomAdd","Rare"},{"RandomAdd","Rare"},{"RandomAdd","Rare"},{"RandomAdd","Rare"},{"RandomAdd","Rare"},{"RandomAdd","Rare"},{"RandomAdd","Rare"},{"RandomAdd","Rare"},{"RandomAdd","Rare"},{"RandomAdd","Rare"}},			
+			Target = "Ally",
 		},
 		["Bio"] = "Christmas is for December despite advertisements starting in August; It's time to rebel against the system!",
 	},
@@ -14328,8 +14328,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 2,},
 		["Effect"] = {
 			Name = "WoodReviewer",
-			Description = "When this card is summoned, add a random overseer card to your hand. When you gain life, return it to your hand and all enemy fighters lose 100 power.",
-			["Type"] = "OnHealthGain",
+			Description = "When this card is summoned, add a random overseer card to your hand. Whenever your opponent casts an action or terrain spell, return it to your hand and all enemy fighters lose 100 power.",
+			["Type"] = "OnEnemyCast",
 			["Power"] = {{"Weaken",100,"Opponent"},{"Add","Overseer Drake"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
@@ -14705,7 +14705,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Prisman",
 		["Health"] = 450,
 		["Power"] = 500,
-		["Rarity"] = "Uncommon",
+		["Rarity"] = "Epic",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Red", 
 		["Cost"] = {["Red"] = 3, ["Neutral"] = 1,},
@@ -14793,6 +14793,45 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Opponent",
 		},
 		["Bio"] = "He certainly is.",
+	},
+
+
+	["mrawesomecarter"] = {
+		["Id"] = 501629905,
+		["Name"] = "mrawesomecarter",
+		["Health"] = 400,
+		["Power"] = 400,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Red", 
+		["Cost"] = {["Red"] = 3, ["Blue"] = 1,},
+		["Effect"] = {
+			Name = "Demon Eye",
+			Description = "Whenever you cast an action or terrain spell, deal 300 damage to the opponent.",
+			["Type"] = "OnAllyCast",
+			["Power"] = {{"Inflict",300}},
+			Target = "Opponent",
+		},
+		["Bio"] = "He certainly is.",
+	},
+	
+	["__________"] = {
+		["Id"] = 498817417,
+		["Name"] = "__________",
+		["Health"] = 400,
+		["Power"] = 400,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Green", 
+		["Cost"] = {["Yellow"] = 3,},
+		["Effect"] = {
+			Name = "Racism is baaaaaaaaaaaaaaaaaaaaaaad",
+			Description = "Add a random Overseer, Zombie, Doge, and Toy card to your hand.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"RandomAdd","Overseer"},{"RandomAdd","Zombie"},{"RandomAdd","Overseer"},{"RandomAdd","Doge"},{"RandomAdd","Toy"}},
+			Target = "Ally",
+		},
+		["Bio"] = "I can be anything you want, babe.",
 	},
 
 	
