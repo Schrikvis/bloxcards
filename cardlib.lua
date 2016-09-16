@@ -14861,7 +14861,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Sentry Heart",
 			Description = "When this card attacks, destroy all other allied fighters and draw 2 cards. This card can attack the turn it is summoned.",
 			["Type"] = "OnAttack",
-			["Power"] = {{"Heal",9999,"Self"},{"Damage",9999},{"Draw",2},{"Charge"}},
+			["Power"] = {{"Heal",9999,"Self"},{"Damage",9999},{"Draw",2}},
 			Target = "Ally",
 		},
 		["Bio"] = "MAX STATION. OVERTIME.",
