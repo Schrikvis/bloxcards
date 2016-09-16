@@ -14614,14 +14614,14 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["CIA Man"] = { -- TEST EFFECT
-		["Id"] = 503535848,
+		["Id"] = 503584176,
 		["Name"] = "CIA Man",
-		["Health"] = 500,
+		["Health"] = 800,
 		["Power"] = 200,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "GunShot",
 		["Color"] = "Neutral", 
-		["Cost"] = {["Neutral"] = 4,["Blue"] = 1,},
+		["Cost"] = {["Neutral"] = 5,["Blue"] = 2,},
 		["Effect"] = {
 			Name = "Protection",
 			Description = "Whenever your opponent summons a fighter, summon a Body Guard.", -- Infinite loop, if they have CIA man as well?
