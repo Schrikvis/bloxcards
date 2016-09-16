@@ -11006,7 +11006,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Demon Eye",
 			Description = "Whenever you cast an action or terrain spell, LordVasco gains 200 health and power.",
-			["Type"] = "OnCast",
+			["Type"] = "OnAllyCast",
 			["Power"] = {{"Heal",200},{"Strengthen",200}},
 			Target = "Self",
 		},
