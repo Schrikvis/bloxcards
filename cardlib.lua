@@ -14785,25 +14785,27 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["MasterHand"] = {
-		["Id"] = 502503314,
+		["Id"] = 502550783,
 		["Name"] = "MasterHand",
 		["Health"] = 5000,
-		["Power"] = 1000,
+		["Power"] = 0,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Fire",
 		["WeakenImmune"] = true,
+		["SwapImmune"] = true,
+		["CounterAttackBlock"] = true,
 		["Color"] = "Neutral",
 		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "BossMonster",
-			Description = [[This card is immune to cards that lower its Attack or Health. When this card dies. You lose 99999 Health.]],
-			["Type"] = "OnDied",
+			Description = [[This card is immune to cards that lower its Attack or Health. This card cannot be counterattacked. When this card is destroyed. The controller loses.]],
+			["Type"] = "OnDeath",
 			["Power"] = "Inflict",
 			Target = "Self",	
 			Increase = 99999,
 		},
-		["Bio"] = "Fox. Final Destination. No gimmicks... Apart from this one.",
-	},		
+		["Bio"] = "No gimmicks... Apart from this one.",
+	},			
 
 	["JavierCollin88Poppin"] = {
 		["Id"] = 496076329,
