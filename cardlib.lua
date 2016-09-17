@@ -14871,25 +14871,6 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "Green is love. Green is life.",
 	},
 
-	["rhomlevko"] = {
-		["Id"] = 504390303,
-		["Name"] = "rhomlevko",
-		["Health"] = 500,
-		["Power"] = 200,
-		["Rarity"] = "Common",
-		["AttackEffect"] = "Dash",
-		["Color"] = "Green", 
-		["Cost"] = {["Green"] = 2, ["Neutral"] = 1,},
-		["Effect"] = {
-			Name = "IT'S BAAAAAAAAAAAAAAAAAAAAAAAAAAD!",
-			Description = "A target fighter gains 100 power.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Strengthen",100}},
-			Target = "Single",
-		},
-		["Bio"] = "Green is love. Green is life.",
-	},
-
 	["Winchester Rotomo"] = {
 		["Id"] = 504392332,
 		["Name"] = "Winchester Rotomo",
