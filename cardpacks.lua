@@ -973,6 +973,17 @@ return {
 			"Bloxikin Horde",
 		},
 	};
+	{
+		Name = "Ancient Stirrings", --HALLOWEEN 2016!
+		Cost = 0,
+		CardsInPack = 2,
+		CardPackId = 504767020,
+		Description = "A mythic and ancient horror stirs again. Priestess Zanzel threatens the very balance of the bloxiverse. Can you stop her this October 31st?",
+		Cards = {
+			"Unwanted Trend",
+			"Wolfbitten Noob",
+		},
+	};
 }
 -- V2s that need adding into Aife: 
 --MahBucket, Ninja, DIY Dominus, Quenty, 

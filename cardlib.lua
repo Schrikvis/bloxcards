@@ -14871,6 +14871,25 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "Green is love. Green is life.",
 	},
 
+	["rhomlevko"] = {
+		["Id"] = 504390303,
+		["Name"] = "rhomlevko",
+		["Health"] = 500,
+		["Power"] = 200,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Green", 
+		["Cost"] = {["Green"] = 2, ["Neutral"] = 1,},
+		["Effect"] = {
+			Name = "IT'S BAAAAAAAAAAAAAAAAAAAAAAAAAAD!",
+			Description = "A target fighter gains 100 power.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Strengthen",100}},
+			Target = "Single",
+		},
+		["Bio"] = "Green is love. Green is life.",
+	},
+
 	["Winchester Rotomo"] = {
 		["Id"] = 504392332,
 		["Name"] = "Winchester Rotomo",
@@ -14908,6 +14927,46 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Ally",
 		},
 		["Bio"] = "This turtle will grow, and grow, and grow, and grow!",
+	},
+
+	["Wolfbitten Noob"] = {
+		["Id"] = 504766884,
+		["Name"] = "Wolfbitten Noob",
+		["Health"] = 200,
+		["Power"] = 200,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Red", 
+		["Archetype"] = "Noob",
+		["Cost"] = {["Red"] = 1,},
+		["Effect"] = {
+			Name = "Halloween",
+			Description = "Whenever you cast an action or terrain spell, transform this card.",
+			["Type"] = "OnAllyCast",
+			["Power"] = {{"Summon","Werewolf Savage"},{"Damage",9999,"Self"}},
+			Target = "Ally",
+		},
+		["Bio"] = "Can he deliver his book to the library in time?",
+	},
+
+	["Werewolf Savage"] = {
+		["Id"] = 504766771,
+		["Name"] = "Werewolf Savage",
+		["Health"] = 400,
+		["Power"] = 400,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Red", 
+		["Archetype"] = "Lycanthrope",
+		["Cost"] = {["Red"] = 1,},
+		["Effect"] = {
+			Name = "Halloween",
+			Description = "Whenever your opponent casts an action or terrain spell, untransform this card.",
+			["Type"] = "OnEnemyCast",
+			["Power"] = {{"Summon","Wolfbitten Noob"},{"Damage",9999,"Self"}},
+			Target = "Ally",
+		},
+		["Bio"] = "Can you escape in time?",
 	},
 }
 
