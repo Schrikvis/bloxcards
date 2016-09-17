@@ -701,12 +701,20 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["FuuTuu"] = {
 		["Id"] = 266032241,
 		["Name"] = "FuuTuu",
-		["Power"] = 450,
+		["Power"] = 400,
 		["Health"] = 250,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "GunShot",
 		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 2,},
+		["Effect"] = {
+			Name = "Shartshooter",
+			Description = "When this card attacks, you lose 100 life.",
+			["Type"] = "OnAttack",
+			["Power"] = "Cost",
+			Target = "Single",
+			Increase = 100,
+		},
 		["Bio"] = "A very fashionable sheriff with a powerful revolver who often comes on and off on ROBLOX.",
 	},
 	
@@ -14622,7 +14630,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "PLEASE PLEASE PLEASE PLEASE PLEASE BE MY FRIEND PLEASE PLEASE PLEASE I'LL DO ANYTHING PLEASE THIS ISN'T ANNOYING AT ALL IS IT PLEASE PLEASE PLEASE I BEG YOU PLEASE PLEASE WHY DON'T YOU LISTEN TO ME PLEASE PLEASE PLEASE",
 	},
-		["CIA Man"] = { -- TEST EFFECT
+	
+	["CIA Man"] = { -- TEST EFFECT
 		["Id"] = 503584176,
 		["Name"] = "CIA Man",
 		["Health"] = 500,
@@ -15046,7 +15055,30 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "0HHH NOOO!",
 	},
-
+	
+	["MasterHand"] = {
+		["Id"] = 502550783,
+		["Name"] = "MasterHand",
+		["Health"] = 5000,
+		["Power"] = 0,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Fire",
+		["WeakenImmune"] = true,
+		["SwapImmune"] = true,
+		["CounterAttackBlock"] = true,
+		["Color"] = "Neutral",
+		["Cost"] = {["Neutral"] = 3,},
+		["Effect"] = {
+			Name = "BossMonster",
+			Description = [[This card is immune to cards that lower its Health or Power. This card cannot be counterattacked. When this card is destroyed, its controller loses the game.]],
+			["Type"] = "OnDeath",
+			["Power"] = "Inflict",
+			Target = "Self",	
+			Increase = 99999,
+		},
+		["Bio"] = "No gimmicks... Apart from this one.",
+	},		
+	
 	["JavierCollin88Poppin"] = {
 		["Id"] = 496076329,
 		["Name"] = "JavierCollin88Poppin",
