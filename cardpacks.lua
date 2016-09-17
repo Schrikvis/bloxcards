@@ -170,6 +170,8 @@ return {
 		CardPackId = 465492503,
 		Description = "Red is the colour of power, ambition, and control. Dominion packs contain cards that cost red!",
 		Cards = {
+			"Winchester Rotomo",
+			"mrawesomecarter",
 			"JavierCollin88Poppin",
 			"Mohawk2275",
 			"Prisman",
@@ -328,6 +330,8 @@ return {
 		CardPackId = 465492570,
 		Description = "Green is the colour of life, growth, and the primal forces. Vitality packs contain cards that cost green!",
 		Cards = {
+			"HyperBlue",
+			"rhomlevko",
 			"__________",
 			"Smart Planner",
 			"Zombie",
@@ -823,6 +827,10 @@ return {
 		CardPackId = 434684079,
 		Description = "Obvious Packs contain only white cards, joke cards and new cards. You must have 10 wins to open these packs.",
 		Cards = {
+			"HyperBlue",
+			"Winchester Rotomo",
+			"rhomlevko",
+			"mrawesomecarter",
 			"__________",
 			"JavierCollin88Poppin",
 			"YotamTiti",
