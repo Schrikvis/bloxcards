@@ -81,11 +81,17 @@ Fires when the card is killed.
 - OnEnd
 Fires when a turn ends.
 
-- Field (Terrain only)
-Fires when a turn begins.
+- OnTurnStart / Field (Terrain only)
+Fires when a turn begins. "Field" is never triggered naturally.
 
 - OnAttack
 Fires when the card attacks.
+
+- OnAttackEnd
+Fires after the card has finished attacking.
+
+- OnAttackDestroy
+Fires when the card attacks and kills an enemy card.
 
 - OnStrike
 Fires when the card attacks the enemy player.
@@ -98,7 +104,7 @@ Fires when either player, the player or the enemy player casts an
 effect or terrain card.
 
 - OnHealthGain, OnHealthLoss, OnEnemyHealthGain, OnEnemyHealthLoss
-Fires when the player or the enemy player gains or loses health.
+Fires when the player or the enemy player gains or loses life.
 
 - OnDeath
 Fires when the card dies.
@@ -167,7 +173,7 @@ Damages the Target cards by Increase.
 
 - Draw
 Makes the Target player (All, Opponent or an implicit Ally) draw
-Increase amount of cards from his deck This triggers Fatique.
+Increase amount of cards from his deck. This triggers Fatique.
 
 - Heal
 Heals the Target cards by Increase.
@@ -179,7 +185,8 @@ Locks the Target for Increase turns.
 Reduces the Target's remaining locked turns by Increase turns.
 
 - Charge
-Unlocks the card immedeately. Has an implicit Self target. Use the passive version if able.
+Unlocks the card immedeately. Has an implicit Self target. Use the
+passive version if able.
 
 - DeckAdd
 Adds the card of name Increase to the Target's deck.
@@ -188,19 +195,17 @@ Adds the card of name Increase to the Target's deck.
 Adds a random card of rarity Increase to the Target's hand.
 RandomAdd allows for 
 
-- Cost
-Reduces the player's life by Increase. Has an implicit Ally target 
-that cannot be changed.
-
-- Inflict
-Inflicts Increase damage to All players or the opponent. Inflict 
-cannot be used to only target the Ally player.
-
 - Strenghten
 Adds Increase to Target cards' power.
 
 - Swap
 Swaps the target's Power and Health stats.
+
+- SetHealth
+Sets the Target's health to Increase.
+
+- SetPower
+Sets the Target's power to Increase.
 
 - Shedletsky
 Does the Shedletsky effect.
@@ -214,6 +219,17 @@ Set the amount of colored icons of the Target player to Increase.
 - RevealHand
 Flips the cards in the target's hand, revealing them to the other
 player.
+
+- Cost
+Reduces the player's life by Increase. Has an implicit Ally target 
+that cannot be changed.
+
+- SetLife
+Sets the player's life to Increase.
+
+- Inflict
+Inflicts Increase damage to All players or the opponent. Inflict 
+cannot be used to only target the Ally player.
 
 ---------------------------------------------------------------
 
@@ -245,6 +261,9 @@ When set to true, the card can attack when summoned.
 
 - WeakenImmune
 The card is immune to effects that decrease its health or power.
+
+- SwapImmune
+The card is immune to effects that swap its health and power.
 
 ---------------------------------------------------------------
 
