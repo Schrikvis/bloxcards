@@ -93,6 +93,7 @@ return {
 			"Player",
 			"Oz",
 			"Oozlebachr",
+			"Guest",
 			"Mag",
 			"Maelstronomer",
 			"JackinatorMG",
@@ -170,6 +171,7 @@ return {
 		CardPackId = 465492503,
 		Description = "Red is the colour of power, ambition, and control. Dominion packs contain cards that cost red!",
 		Cards = {
+			"iiMasant",
 			"Dwarvern Sentry: MAX",
 			"Dwarvern Sentry: Delta",
 			"Dwarvern Sentry: Gamma",
@@ -494,8 +496,9 @@ return {
 		CardPackId = 465492637,
 		Description = "Blue is the colour of logic, order, and structure. Thought packs contain cards that cost blue!",
 		Cards = {
-			"CIA Man",
 			"Yoshius",
+			"Nopants99",
+			"CIA Man",
 			"FabulousBench",
 			"Stevenl15",
 			"B0BBA",
@@ -668,6 +671,7 @@ return {
 		CardPackId = 465492745,
 		Description = "Yellow is the colour of community, satisfaction, and society. Revel packs contain cards that cost yellow!",
 		Cards = {
+			"PencilWizard",
 			"YotamTiti",
 			"Divine_Pengu",
 			"JayTheCoder",
@@ -839,6 +843,10 @@ return {
 		CardPackId = 434684079,
 		Description = "Obvious Packs contain only white cards, joke cards and new cards. You must have 10 wins to open these packs.",
 		Cards = {
+			"Wolfbitten Noob",
+			"iiMasant",
+			"PencilWizard",
+			"Nopants99",
 			"Dwarvern Sentry: MAX",
 			"Dwarvern Sentry: Delta",
 			"Dwarvern Sentry: Gamma",
@@ -882,8 +890,6 @@ return {
 			"Mr.O the Traveling Merchant",
 			"One4utwo4me",
 			"InceptionTime",
-			[[One_Thousand_Deaths]],
-			"Burning_Soul_Blade",
 			"Cooldude4851",
 			"Jimminus",
 			"Aceguy100",
@@ -995,17 +1001,6 @@ return {
 			"Crystal Cultist",
 			"MisterObvious",
 			"Bloxikin Horde",
-		},
-	};
-	{
-		Name = "Ancient Stirrings", --HALLOWEEN 2016!
-		Cost = 0,
-		CardsInPack = 2,
-		CardPackId = 504767020,
-		Description = "A mythic and ancient horror stirs again. Priestess Zanzel threatens the very balance of the bloxiverse. Can you stop her this October 31st?",
-		Cards = {
-			"Unwanted Trend",
-			"Wolfbitten Noob",
 		},
 	};
 }
