@@ -44,6 +44,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["IcyTea"] = {
 		["Id"] = 264620043,
 		["Name"] = "IcyTea",
+		["AltCards"] = {
+			"IcyTea-ArtV",
+		},
 		["Health"] = 700,
 		["Power"] = 500,
 		["Rarity"] = "Legendary",
@@ -65,6 +68,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["PixelFlame"] = {
 		["Id"] = 273688130,
 		["Name"] = "PixelFlame",
+		["AltCards"] = {
+			"PixelFlameV2",
+		},
 		["Health"] = 500,
 		["Power"] = 500,
 		["Rarity"] = "Uncommon",
@@ -84,6 +90,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["PixelFlameV2"] = {
 		["Id"] = 496078769,
 		["Name"] = "PixelFlame",
+		["Original"] = "PixelFlameV2",
+		["AltArt"] = true,
 		["Health"] = 500,
 		["Power"] = 500,
 		["Rarity"] = "Uncommon",
@@ -469,6 +477,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "SlashDiagonal",
 		["Token"] = true,
 		["Color"] = "Yellow",
+		["AltCards"] = {
+			"Toxic-ArtV",
+		},
 		["Cost"] = {["Yellow"] = 1,["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Yarrge",
@@ -484,6 +495,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Toxic-ArtV"] = {
 		["Id"] = 264620178,
 		["Name"] = "Toxic",
+		["Original"] = "Toxic",
+		["AltArt"] = true,
 		["Power"] = 300,
 		["Health"] = 450,
 		["Rarity"] = "Rare",
@@ -1599,6 +1612,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Ninja Elite"] = {
 		["Id"] = 295634476,
 		["Name"] = "Ninja Elite",
+		["AltCards"] = {
+			"Ninja Elite-ArtV",
+		},
 		["Health"] = 450,
 		["Power"] = 300,
 		["Rarity"] = "Uncommon",
@@ -1620,6 +1636,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Ninja Elite-ArtV"] = {
 		["Id"] = 487571425,
 		["Name"] = "Ninja Elite",
+		["Original"] = "Ninja Elite-ArtV"
+		["AltArt"] = true,
 		["Health"] = 450,
 		["Power"] = 300,
 		["Rarity"] = "Uncommon",
@@ -2013,6 +2031,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Drager"] = {
 		["Id"] = 280562744,
 		["Name"] = "Drager",
+		["AltCards"] = {
+			"Drager-ArtV",
+		},
 		["Health"] = 600,
 		["Power"] = 850,
 		["Rarity"] = "Legendary",
@@ -2568,10 +2589,14 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "He just wants to have a Biggerhead hat!",
 	},
 	
+
 	["DIY Dominus"] = {
 		["Id"] = 283993187,
 		["Name"] = "DIY Dominus",
 		["Health"] = 500,
+		["AltCards"] = {
+			"DIY DominusV2",
+		},
 		["Power"] = 450,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Punch1",
@@ -2590,6 +2615,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["DIY DominusV2"] = {
 		["Id"] = 480385545,
 		["Name"] = "DIY Dominus",
+		["Original"] = "DIY Dominus",
+		["AltArt"] = true,
 		["Health"] = 500,
 		["Power"] = 450,
 		["Rarity"] = "Rare",
@@ -2833,6 +2860,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "MahBucket",
 		["Health"] = 250,
 		["Power"] = 450,
+		["AltCards"] = {
+			"MahBucketV2",
+		},
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Slap",
 		["Color"] = "Yellow",
@@ -2850,6 +2880,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["MahBucketV2"] = {
 		["Id"] = 481866741,
 		["Name"] = "MahBucket",
+		["Original"] = "MahBucket",
+		["AltArt"] = true,
 		["Health"] = 250,
 		["Power"] = 450,
 		["Rarity"] = "Uncommon",
@@ -2870,6 +2902,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Master Josue"] = {
 		["Id"] = 292778437,
 		["Name"] = "SnyFort",
+		["AltCards"] = {
+			"SnyFort",
+		},
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Common",
@@ -2901,6 +2936,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["SnyFort"] = {
 		["Id"] = 496184718,
 		["Name"] = "SnyFort",
+		["Original"] = "Master Josue",
+		["AltArt"] = true,
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Common",
@@ -2991,6 +3028,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Quenty"] = {
 		["Id"] = 283995771,
 		["Name"] = "Quenty",
+		["AltCards"] = {
+			"QuentyV2",
+		},
 		["Health"] = 400,
 		["Power"] = 400,
 		["Rarity"] = "Epic",
@@ -3010,6 +3050,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["QuentyV2"] = {
 		["Id"] = 496076569,
 		["Name"] = "Quenty",
+		["Original"] = "Quenty",
+		["AltArt"] = true,
 		["Health"] = 400,
 		["Power"] = 400,
 		["Rarity"] = "Epic",
@@ -3149,6 +3191,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Rukiryo"] = {
 		["Id"] = 283996025,
 		["Name"] = "Rukiryo",
+		["AltCards"] = {
+			"Rukiryo-ArtV",
+		},
 		["Health"] = 500,
 		["Power"] = 700,
 		["Rarity"] = "Legendary",
@@ -3169,6 +3214,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["StickMasterLuke"] = {
 		["Id"] = 283996126,
 		["Name"] = "StickMasterLuke",
+		["AltCards"] = {
+			"StickMasterLukeV2",
+		},
 		["Health"] = 1000,
 		["Power"] = 350,
 		["Rarity"] = "Legendary",
@@ -3188,6 +3236,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["StickMasterLukeV2"] = {
 		["Id"] = 480274303,
 		["Name"] = "FlipMasterLuke",
+		["Original"] = "FlipMasterLuke",
+		["AltArt"] = true,
 		["Health"] = 1000,
 		["Power"] = 350,
 		["Rarity"] = "Epic",
@@ -3197,9 +3247,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Masant",
 		["Effect"] = {
 			Name = "Disaster",
-			Description = "Lock all enemy fighters for 1 turn. Add 2 targeting blips to your hand. Targeting blips are used to trigger Target Effects.",
+			Description = "Lock all enemy fighters for 2 turns. Add 2 targeting blips to your hand. Targeting blips are used to trigger Target Effects.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Lock",1},{"Add","Targeting Blip","Ally"},{"Add","Targeting Blip","Ally"}},
+			["Power"] = {{"Lock",2},{"Add","Targeting Blip","Ally"},{"Add","Targeting Blip","Ally"}},
 			Target = "Opponent",
 		},
 		["Bio"] = "I USED TO BE GOOD! ;~;. Razuatix will not scout out the blade I stick into his throat until it is too late.",
@@ -3824,6 +3874,10 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Visleaf"] = {
 		["Id"] = 293490333,
 		["Name"] = "Visleaf",
+		["AltCards"] = {
+			"tinytinytdj",
+			"Visleaf-ArtV",
+		},
 		["Health"] = 500,
 		["Power"] = 550,
 		["Rarity"] = "Epic",
@@ -4005,6 +4059,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["KingCactaur"] = {
 		["Id"] = 288040760,
 		["Name"] = "KingCactaur",
+		["AltCards"] = {
+			"KingCactaur-ArtV",
+		},
 		["Health"] = 400,
 		["Power"] = 400,
 		["Rarity"] = "Rare",
@@ -4024,6 +4081,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["KingCactaur-ArtV"] = {
 		["Id"] = 491538951,
 		["Name"] = "KingCactaur",
+		["Original"] = "KingCactaur",
+		["AltArt"] = true,
 		["Health"] = 400,
 		["Power"] = 400,
 		["Rarity"] = "Rare",
@@ -5260,6 +5319,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Odin"] = {
 		["Id"] = 294871534,
 		["Name"] = "Odin",
+		["AltCards"] = {
+			"Odin-ArtV",
+		},
 		["Health"] = 500,
 		["Power"] = 300,
 		["Rarity"] = "Rare",
@@ -5272,6 +5334,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Odin-ArtV"] = {
 		["Id"] = 497625127,
 		["Name"] = "Odin",
+		["Original"] = "Odin",
+		["AltArt"] = true,
 		["Health"] = 500,
 		["Power"] = 300,
 		["Rarity"] = "Rare",
@@ -5455,6 +5519,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["NobleDragon"] = {
 		["Id"] = 296708322,
 		["Name"] = "NobleDragon",
+		["AltCards"] = {
+			"NobleDragon-ArtV",
+		},
 		["Archetype"] = "Dragon",
 		["Health"] = 700,
 		["Power"] = 700,
@@ -5476,6 +5543,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Ripull"] = {
 		["Id"] = 296708356,
 		["Name"] = "Ripull",
+		["AltCards"] = {
+			"Ripull-ArtV",
+		},
 		["Health"] = 500,
 		["Power"] = 500,
 		["Rarity"] = "Legendary",
@@ -5516,6 +5586,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["The Stalker"] = {
 		["Id"] = 297139828,
 		["Name"] = "The Stalker",
+		["AltCards"] = {
+			"The StalkerV2"
+		},
 		["Health"] = 3000,
 		["Power"] = 300,
 		["Rarity"] = "Legendary",
@@ -5767,6 +5840,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["PolyHexV2"] = {
 		["Id"] = 298297378,
 		["Name"] = "PolyHex",
+		["AltCards"] = {
+			"PolyHex",
+		},
 		["Health"] = 1000,
 		["Power"] = 1000,
 		["Rarity"] = "Legendary",
@@ -5787,6 +5863,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["PolyHex"] = {
 		["Id"] = 298297409,
 		["Name"] = "PolyHex",
+		["Original"] = "PolyHexV2",
+		["AltArt"] = true,
 		["Health"] = 1000,
 		["Power"] = 1000,
 		["Rarity"] = "Legendary",
@@ -6021,6 +6099,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["KingShadowCrow"] = {
 		["Id"] = 462725763,
 		["Name"] = "KingShadowCrow",
+		["AltCards"] = {
+			"KingShadowCrowV2",
+		},
 		["Health"] = 900,
 		["Power"] = 400,
 		["Rarity"] = "Rare",
@@ -6040,6 +6121,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["KingShadowCrowV2"] = {
 		["Id"] = 462725820,
 		["Name"] = "KingShadowCrow",
+		["Original"] = "KingShadowCrow",
+		["AltArt"] = true,
 		["Health"] = 900,
 		["Power"] = 400,
 		["Rarity"] = "Rare",
@@ -7362,6 +7445,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Papasmurf"] = {
 		["Id"] = 323659863,
 		["Name"] = "Papasmurf",
+		["AltArts"] = {
+			"Papasmurf-ArtV",
+		},
 		["Health"] = 500,
 		["Power"] = 500,
 		["Rarity"] = "Legendary",
@@ -7381,6 +7467,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Papasmurf-ArtV"] = {
 		["Id"] = 487132041,
 		["Name"] = "Papasmurf",
+		["Original"] = "Papasmurf",
+		["AltArt"] = true,
 		["Health"] = 500,
 		["Power"] = 500,
 		["Rarity"] = "Legendary",
@@ -7451,6 +7539,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Divine Favor"] = {
 		["Id"] = 326643079,
 		["Name"] = "Divine Favor",
+		["AltCards"] = {
+			"Divine FavorV2",
+		},
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Rare",
@@ -7470,6 +7561,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Divine FavorV2"] = {
 		["Id"] = 480274691,
 		["Name"] = "Divine Favor",
+		["Original"] = "Divine Favor",
+		["AltArt"] = true,
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Rare",
@@ -7529,6 +7622,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Mass Epidemic"] = {
 		["Id"] = 326637284,
 		["Name"] = "Mass Epidemic",
+		["AltCards"] = {
+			"Mass Epidemic-ArtV",
+		},
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Epic",
@@ -7549,6 +7645,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Mass Epidemic-ArtV"] = {
 		["Id"] = 480385063,
 		["Name"] = "Mass Destruction",
+		["Original"] = "Mass Epidemic",
+		["AltArt"] = true,
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Epic",
@@ -8695,6 +8793,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Myrmiredon"] = {
 		["Id"] = 421944617,
 		["Name"] = "Myrmiredon",
+		["AltCards"] = {
+			"MyrmiredonV2",
+		},
 		["Health"] = 500,
 		["Power"] = 500,
 		["Rarity"] = "Legendary",
@@ -8714,6 +8815,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["MyrmiredonV2"] = {
 		["Id"] = 480297793,
 		["Name"] = "Myrmiredon",
+		["Original"] = "Myrmiredon",
+		["AltArt"] = true,
 		["Health"] = 500,
 		["Power"] = 500,
 		["Rarity"] = "Legendary",
@@ -8979,6 +9082,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Great Lord Egotist"] = {
 		["Id"] = 345761738,
 		["Name"] = "Great Lord Egotist",
+		["AltCards"] = {
+			"Great Lord Egotist-ArtV",
+		},
 		["Health"] = 1200,
 		["Power"] = 0,
 		["Rarity"] = "Legendary",
@@ -8999,6 +9105,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Great Lord Egotist-ArtV"] = {
 		["Id"] = 496184301,
 		["Name"] = "Great Lord Egotist",
+		["Original"] = "Great Lord Egotist",
+		["AltArt"] = true,
 		["Health"] = 1200,
 		["Power"] = 0,
 		["Rarity"] = "Legendary",
@@ -9649,6 +9757,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Seranok"] = {
 		["Id"] = 469440365,
 		["Name"] = "Seranok",
+		["AltCards"] = {
+			"Seranok-ArtV",
+		},
 		["Health"] = 500,
 		["Power"] = 500,
 		["Rarity"] = "Legendary",
@@ -9966,6 +10077,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["DairingPoopHead"] = {
 		["Id"] = 454691965,
 		["Name"] = "Dairingpoophead",
+		["AltCards"] = {
+			"DairingPoopHead-ArtV",
+		},
 		["Health"] = 700,
 		["Power"] = 500,
 		["Rarity"] = "Common",
@@ -9986,6 +10100,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["DairingPoopHead-ArtV"] = {
 		["Id"] = 496185557,
 		["Name"] = "Dairingpoophead",
+		["Original"] = "DairingPoopHead",
+		["AltArt"] = true,
 		["Health"] = 700,
 		["Power"] = 500,
 		["Rarity"] = "Common",
@@ -10367,6 +10483,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["lando64000"] = {
 		["Id"] = 384010077,
 		["Name"] = "lando64000",
+		["AltCards"] = {
+			"lando64000V2",
+		}
 		["Health"] = 700,
 		["Power"] = 700,
 		["Rarity"] = "Legendary",
@@ -10387,6 +10506,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["lando64000V2"] = {
 		["Id"] = 480385631,
 		["Name"] = "lando64000",
+		["Original"] = "lando64000",
+		["AltArt"] = true,
 		["Health"] = 700,
 		["Power"] = 700,
 		["Rarity"] = "Legendary",
@@ -10498,6 +10619,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Aife"] = {
 		["Id"] = 435895197,
 		["Name"] = "Aife",
+		["AltCards"] = {
+			"Aife-ArtV",
+		},
 		["Health"] = 1250,
 		["Power"] = 700,
 		["Rarity"] = "Legendary",
@@ -10517,6 +10641,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Aife-ArtV"] = {
 		["Id"] = 384011227,
 		["Name"] = "Aife",
+		["Original"] = "Aife",
+		["AltArt"] = true,
 		["Health"] = 1250,
 		["Power"] = 700,
 		["Rarity"] = "Legendary",
@@ -10745,6 +10871,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["IcyTea-ArtV"] = {
 		["Id"] = 411802926,
 		["Name"] = "IcyTea",
+		["Original"] = "IcyTea",
+		["AltArt"] = true,
 		["Health"] = 700,
 		["Power"] = 500,
 		["Rarity"] = "Legendary",
@@ -10767,6 +10895,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Visleaf-ArtV"] = {
 		["Id"] = 411803152,
 		["Name"] = "Visleaf",
+		["Original"] = "Visleaf",
+		["AltArt"] = true,
 		["Health"] = 500,
 		["Power"] = 550,
 		["Rarity"] = "Epic",
@@ -10827,6 +10957,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Rukiryo-ArtV"] = {
 		["Id"] = 411804493,
 		["Name"] = "Rukiryo",
+		["Original"] = "Rukiryo",
+		["AltArt"] = true,
 		["Health"] = 500,
 		["Power"] = 700,
 		["Rarity"] = "Legendary",
@@ -10886,6 +11018,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["BrightEyes-ArtV"] = {
 		["Id"] = 411806569,
 		["Name"] = "BrightEyes",
+		["Original"] = "BrightEyes",
+		["AltArt"] = true,
 		["Health"] = 1100,
 		["Power"] = 400,
 		["Rarity"] = "Legendary",
@@ -11016,6 +11150,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Drager-ArtV"] = {
 		["Id"] = 411810760,
 		["Name"] = "Drager",
+		["Original"] = "Drager",
+		["AltArt"] = true,
 		["Health"] = 600,
 		["Power"] = 850,
 		["Rarity"] = "Legendary",
@@ -11822,6 +11958,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Seranok-ArtV"] = {
 		["Id"] = 469439910,
 		["Name"] = "Seranok",
+		["Original"] = "Seranok",
+		["AltArt"] = true,
 		["Health"] = 500,
 		["Power"] = 500,
 		["Archetype"] = "Masant",
@@ -11843,12 +11981,13 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["NobleDragon-ArtV"] = {
 		["Id"] = 415728794,
 		["Name"] = "NobleDragon",
+		["Original"] = "NobleDragon",
+		["AltArt"] = true,
 		["Archetype"] = "Dragon",
 		["Health"] = 700,
 		["Power"] = 700,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Punch2",
-		["Archetype"] = "Masant",
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 2,["Blue"] = 6,},
 		["Effect"] = {
@@ -11994,6 +12133,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Gravity Collapse"] = {
 		["Id"] = 415734168,
 		["Name"] = "Gravity Collapse",
+		["AltCards"] = {
+			"Gravity CollapseV2",
+		},
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Epic",
@@ -12014,6 +12156,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Gravity CollapseV2"] = {
 		["Id"] = 481918784,
 		["Name"] = "Gravity Collapse",
+		["Original"] = "Gravity Collapse",
+		["AltArt"] = true,
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Epic",
@@ -12329,6 +12473,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Sibs"] = {
 		["Id"] = 447442968,
 		["Name"] = "Sibs",
+		["AltCards"] = {
+			"Sibs-ArtV",
+		},
 		["Health"] = 500,
 		["Power"] = 900,
 		["Rarity"] = "Legendary",
@@ -12348,6 +12495,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Sibs-ArtV"] = {
 		["Id"] = 430934562,
 		["Name"] = "Sibs",
+		["Original"] = "Sibs",
+		["AltArt"] = true,
 		["Health"] = 500,
 		["Power"] = 900,
 		["Rarity"] = "Legendary",
@@ -12368,6 +12517,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["RipullV2"] = {
 		["Id"] = 430936062,
 		["Name"] = "Ripull",
+		["Original"] = "Ripull",
+		["AltArt"] = true,
 		["Health"] = 500,
 		["Power"] = 500,
 		["Rarity"] = "Epic",
@@ -12858,6 +13009,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["NerfModder"] = {
 		["Id"] = 435723208,
 		["Name"] = "NerfModder",
+		["AltCards"] = {
+			"NerfModderV2",
+		},
 		["Health"] = 1000,
 		["Power"] = 0,
 		["Rarity"] = "Epic",
@@ -12878,6 +13032,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["NerfModderV2"] = {
 		["Id"] = 432804094,
 		["Name"] = "NerfModder",
+		["Original"] = "NerfModder",
+		["AltArt"] = true,
 		["Health"] = 1000,
 		["Power"] = 0,
 		["Rarity"] = "Epic",
@@ -13421,6 +13577,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["FabulousBench"] = {
 		["Id"] = 444253750,
 		["Name"] = "FabulousBench",
+		["AltCards"] = {
+			"FabulousBench-ArtV",
+		},
 		["Health"] = 1200,
 		["Power"] = 800,
 		["Rarity"] = "Legendary",
@@ -13443,9 +13602,10 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["FabulousBench-ArtV"] = {
 		["Id"] = 490899115,
 		["Name"] = "FabulousBench",
+		["Original"] = "FabulousBench",
+		["AltArt"] = true,
 		["Health"] = 1200,
 		["Power"] = 800,
-		["Archetype"] = "Masant",
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Blue",
@@ -13486,6 +13646,10 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Aurichalcum"] = {
 		["Id"] = 446724872,
 		["Name"] = "Aurichalcum",
+		["AltCards"] = {
+			"AurichalumV2",
+			"Aurichalcum-ArtV",
+		},
 		["Health"] = 600,
 		["Power"] = 600,
 		["Rarity"] = "Legendary",
@@ -13505,11 +13669,13 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["AurichalcumV2"] = {
 		["Id"] = 446724984,
 		["Name"] = "Aurichalcum",
+		["Original"] = "Aurichalcum",
 		["Health"] = 600,
 		["Power"] = 600,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Yellow",
+		["Archetype"] = "Masant",
 		["Cost"] = {["Neutral"] = 1, ["Yellow"] = 6,},
 		["Effect"] = {
 			Name = "Trout Slap",
@@ -13524,13 +13690,14 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Aurichalcum-ArtV"] = {
 		["Id"] = 458640388,
 		["Name"] = "Aurichalcum",
+		["Original"] = "Aurichalcum",
+		["AltArt"] = true,
 		["Health"] = 600,
 		["Power"] = 600,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Yellow",
 		["Cost"] = {["Neutral"] = 1, ["Yellow"] = 6,},
-		["Archetype"] = "Masant",
 		["Effect"] = {
 			Name = "Trout Slap",
 			Description = "Destroy all other fighters. Your opponent draws 5 cards.",
@@ -13624,6 +13791,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["HeyItsColin"] = {
 		["Id"] = 454705527,
 		["Name"] = "HeyItsColin",
+		["AltCards"] = {
+			"HeyItsColin-ArtV",
+		},
 		["Health"] = 600,
 		["Power"] = 1200,
 		["Rarity"] = "Legendary",
@@ -13644,6 +13814,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["HeyItsColin-ArtV"] = {
 		["Id"] = 490899262,
 		["Name"] = "HeyItsColin",
+		["Original"] = "HeyItsColin",
+		["AltArt"] = true,
 		["Health"] = 600,
 		["Power"] = 1200,
 		["Rarity"] = "Legendary",
@@ -13744,6 +13916,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Gravity Inspector"] = {
 		["Id"] = 455993039,
 		["Name"] = "Gravity Inspector",
+		["AltCards"] = {
+			"Gravity InspectorV2",
+		},
 		["Health"] = 100,
 		["Power"] = 100,
 		["Rarity"] = "Uncommon",
@@ -13764,6 +13939,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Gravity InspectorV2"] = {
 		["Id"] = 433133596,
 		["Name"] = "Gravity Inspector",
+		["Original"] = "Gravity Inspector",
+		["AltArt"] = true,
 		["Health"] = 100,
 		["Power"] = 100,
 		["Rarity"] = "Uncommon",
@@ -13785,6 +13962,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["HasTheHero"] = {
 		["Id"] = 459068320,
 		["Name"] = "HasTheHero",
+		["AltCards"] = {
+			"HasTheHero-ArtV",
+		},
 		["Health"] = 800,
 		["Power"] = 600,
 		["Rarity"] = "Epic",
@@ -13805,6 +13985,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["HasTheHero-ArtV"] = {
 		["Id"] = 458640455,
 		["Name"] = "HasTheHero",
+		["Original"] = "HasTheHero",
+		["AltArt"] = true,
 		["Health"] = 800,
 		["Power"] = 600,
 		["Rarity"] = "Epic",
@@ -13845,6 +14027,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["The StalkerV2"] = {
 		["Id"] = 459231428,
 		["Name"] = "The Stalker",
+		["Original"] = "The Stalker",
+		["AltArt"] = true,
 		["Health"] = 3000,
 		["Power"] = 300,
 		["Rarity"] = "Epic",
