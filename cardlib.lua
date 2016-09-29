@@ -15441,6 +15441,14 @@ for id,card in pairs(module) do
 	if card.Effect then
 		assert(card.Effect.Name and card.Effect.Description and card.Effect.Type and card.Effect.Power and card.Effect.Target, id.." has an incomplete card effect.")
 	end
+	if card.Original then
+		assert(module[card.Original], id.." has a non-existant Original card.")
+	end
+	if card.AltCards then
+		for _,name in pairs(card.AltCards) do
+			assert(module[name], id.." has a non-existant Alt card "..name..".")
+		end
+	end
 end
 print(cardcount)
 return module
