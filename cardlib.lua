@@ -1636,7 +1636,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Ninja Elite-ArtV"] = {
 		["Id"] = 487571425,
 		["Name"] = "Ninja Elite",
-		["Original"] = "Ninja Elite-ArtV"
+		["Original"] = "Ninja Elite-ArtV",
 		["AltArt"] = true,
 		["Health"] = 450,
 		["Power"] = 300,
@@ -3236,7 +3236,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["StickMasterLukeV2"] = {
 		["Id"] = 480274303,
 		["Name"] = "FlipMasterLuke",
-		["Original"] = "FlipMasterLuke",
+		["Original"] = "StickMasterLuke",
 		["AltArt"] = true,
 		["Health"] = 1000,
 		["Power"] = 350,
@@ -3875,7 +3875,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 293490333,
 		["Name"] = "Visleaf",
 		["AltCards"] = {
-			"tinytinytdj",
+			"tintinytdj",
 			"Visleaf-ArtV",
 		},
 		["Health"] = 500,
@@ -5544,7 +5544,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 296708356,
 		["Name"] = "Ripull",
 		["AltCards"] = {
-			"Ripull-ArtV",
+			"RipullV2",
 		},
 		["Health"] = 500,
 		["Power"] = 500,
@@ -10485,7 +10485,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "lando64000",
 		["AltCards"] = {
 			"lando64000V2",
-		}
+		},
 		["Health"] = 700,
 		["Power"] = 700,
 		["Rarity"] = "Legendary",
@@ -13647,7 +13647,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 446724872,
 		["Name"] = "Aurichalcum",
 		["AltCards"] = {
-			"AurichalumV2",
+			"AurichalcumV2",
 			"Aurichalcum-ArtV",
 		},
 		["Health"] = 600,
