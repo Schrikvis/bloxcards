@@ -3892,7 +3892,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "All",
 			Increase = 200,
 		},
-		["Bio"] = "Scripter of Pixel Art Creator and an amazing GFX artist.",
+		["Bio"] = "Scripter of Blox Cards and an amazing GFX artist.",
 	},		
 		
 	["tintinytdj"] = {
@@ -10913,7 +10913,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "All",
 			Increase = 200,
 		},
-		["Bio"] = "Scripter of Pixel Art Creator and an amazing GFX artist. Watch out! Part of the 'Aife' Collection! Collect them all!",
+		["Bio"] = "Scripter of Blox Cards and an amazing GFX artist. Watch out! Part of the 'Aife' Collection! Collect them all!",
 	},		
 
 	["Materking"] = {
