@@ -14787,7 +14787,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 
 	["Uncreativename123"] = {
 		["Id"] = 490224057,
-		["Name"] = "When this card is targeted, put 2 nightmares into the opponent's hand and 2 nightmares into their deck. This card can't counterattack.",
+		["Name"] = "Uncreativename123",
 		["Health"] = 1000,
 		["Power"] = 800,
 		["Rarity"] = "Legendary",
@@ -14798,12 +14798,12 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 5, ["Red"] = 1,},
 		["Effect"] = {
 			Name = "Level Up!",
-			Description = "Is perfection truly so grotesque; can't all be one?",
+			Description = "When this card is targeted, put 2 nightmares into the opponent's hand and 2 nightmares into their deck. This card can't counterattack.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Add","Nightmare"},{"Add","Nightmare"},{"DeckAdd","Nightmare"},{"DeckAdd","Nightmare"}},			
 			Target = "Opponent",
 		},
-		["Bio"] = "Uncreativename123",
+		["Bio"] = "Is perfection truly so grotesque; can't all be one?",
 	},
 
 	["B0BBA"] = {
