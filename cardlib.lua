@@ -1847,7 +1847,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Vampire",
 			Description = "Whenever you summon a fighter, both players gain 50 life.",
 			["Type"] = "OnAllySummon",
-			["Power"] = {{"Cost",-50},{"Inflict",-100}},
+			["Power"] = {{"Cost",-50},{"Inflict",-50}},
 			Target = "Opponent",
 		},
 		["Bio"] = "Ordinary salesman trying to sell his wares.",
@@ -2100,7 +2100,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 2,},
 		["Effect"] = {
 			Name = "Parry",
-			Description = "Whenever you target this fighter, this fighter gains 100 Power and 100 Health..",
+			Description = "Whenever this fighter is targeted, this fighter gains 100 Power and 100 Health..",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Strengthen",100},{"Heal",100}},
 			Target = "Self",
@@ -2197,7 +2197,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 1,},
 		["Effect"] = {
 			Name = "Amp",
-			Description = "Whenever you target this fighter, add a random Common card to your hand.",
+			Description = "Whenever this fighter is targeted, add a random Common card to your hand.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"RandomAdd","Common"}},
 			Target = "Self",
@@ -2216,7 +2216,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Green"] = 1,},
 		["Effect"] = {
 			Name = "Amp",
-			Description = "Whenever you target this fighter, gain 2 Green icons.",
+			Description = "Whenever this fighter is targeted, gain 2 Green icons.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Green",2}},
 			Target = "Ally",
@@ -2254,7 +2254,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Red"] = 2,},
 		["Effect"] = {
 			Name = "Explosm",
-			Description = "Whenever you target this fighter, deal 100 damage to all enemy fighters.",
+			Description = "Whenever this fighter is targeted, deal 100 damage to all enemy fighters.",
 			["Type"] = "OnTarget",
 			["Power"] = "Damage",
 			Target = "Opponent",
@@ -3160,7 +3160,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Explosm",
-			Description = "Whenever you target this fighter, this fighter becomes unlocked.",
+			Description = "Whenever this fighter is targeted, this fighter becomes unlocked.",
 			["Type"] = "OnTarget",
 			["Power"] = "Unlock",
 			Target = "Self",
@@ -6453,7 +6453,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 2,},
 		["Effect"] = {
 			Name = "Frog-Legging",
-			Description = "Whenever you target this fighter, all enemy fighters lose 50 attack.",
+			Description = "Whenever this fighter is targeted, all enemy fighters lose 50 attack.",
 			["Type"] = "OnTarget",
 			["Power"] = "Weaken",
 			Target = "Opponent",
@@ -6854,7 +6854,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 2,["Red"] = 2,["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Phantom Power",
-			Description = "Whenever you target this fighter, gain 1 Yellow and Red icon.",
+			Description = "Whenever this fighter is targeted, gain 1 Yellow and Red icon.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Yellow",1},{"Red",1}},
 			Target = "Ally",
@@ -7336,7 +7336,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 1,["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Amp",
-			Description = "Whenever you target this fighter, summon a zombie.",
+			Description = "Whenever this fighter is targeted, summon a zombie.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Summon","Zombie"}},
 			Target = "Ally",
@@ -9788,7 +9788,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Red"] = 3,},
 		["Effect"] = {
 			Name = "Twist",
-			Description = [[Whenever you target this fighter, increase its Attack by 100 but lower its Health by 100.]],
+			Description = [[Whenever this fighter is targeted, increase its Attack by 100 but lower its Health by 100.]],
 			["Type"] = "OnTarget",
 			["Power"] = {{"Damage",100},{"Strengthen",100}},
 			Target = "Self",
@@ -10259,7 +10259,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Red"] = 1,["Yellow"] = 4,},
 		["Effect"] = {
 			Name = "Amp",
-			Description = "Whenever you target this fighter, gain 2 Yellow icons.",
+			Description = "Whenever this fighter is targeted, gain 2 Yellow icons.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Yellow",2}},
 			Target = "Ally",
@@ -10278,7 +10278,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = [[Whenever you target this fighter, increase its health by 400.]],
+			Description = [[Whenever this fighter is targeted, increase its health by 400.]],
 			["Type"] = "OnTarget",
 			["Power"] = "Heal",
 			Target = "Self",	
@@ -11041,7 +11041,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Green"] = 2,},
 		["Effect"] = {
 			Name = "Twist",
-			Description = [[Whenever you target this fighter, deal 300 damage to the opponent.]],
+			Description = [[Whenever this fighter is targeted, deal 300 damage to the opponent.]],
 			["Type"] = "OnTarget",
 			["Power"] = {{"Inflict",300}},
 			Target = "Opponent",
@@ -11139,7 +11139,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Green"] = 1,["Red"] = 5,},
 		["Effect"] = {
 			Name = "Twist",
-			Description = [[Whenever you target this fighter, add 2 random Rares to your hand.]],
+			Description = [[Whenever this fighter is targeted, add 2 random Rares to your hand.]],
 			["Type"] = "OnTarget",
 			["Power"] = {{"RandomAdd","Rare"},{"RandomAdd","Rare"}},
 			Target = "Ally",
@@ -12617,9 +12617,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 1, ["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Deal 10,000 damage to yourself.",
+			Description = "Deal 100,000 damage to yourself.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Cost",10000}},
+			["Power"] = {{"Cost",100000}},
 			Target = "Ally",	
 		},
 		["Bio"] = "Hey, at least the name is true to itself.",
