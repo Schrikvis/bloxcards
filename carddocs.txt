@@ -267,4 +267,46 @@ The card is immune to effects that swap its health and power.
 
 ---------------------------------------------------------------
 
+Card Properties
+Card properties do not affect gameplay but instead describe what a
+card is.
+
+- Original
+When a card is a cosmetic variation of another, this property
+should be the index of the original card it inherits its gameplay
+attributes from. Both cards should be complete and should function
+identically.
+
+- AltArt
+When set to true, the card will appear in the minigames and be
+disqualified from auctions. It will be treated as a special cosmetic
+card.
+
+- AltCards
+This is a table of indices of all the alternate cards of an Original
+card.
+
+For example, the following tables form a valid alt card system:
+["CardOne"] = {
+	AltCards = {
+		"CardOne-Artv";
+		"CardOne Halloween";
+	}
+};
+["CardOne-Artv"] = {
+	AltArt = true;
+	Original = "CardOne";
+};
+[CardOne Halloween"] = {
+	Original = "CardOne";
+}
+
+In this example, CardOne is the Original card.
+CardOne-Artv is an Alternate Art card and its Original is CardOne.
+CardOne Halloween is special in that it is not an Alternate Art
+card, but it does have an Original card. This allows it to share
+deck slots with CardOne but not appear in the minigames.
+
+---------------------------------------------------------------
+
 ~

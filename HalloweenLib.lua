@@ -1,0 +1,41 @@
+--Ignore for now. Is for storage purposes!
+
+["Wolfbitten Noob"] = {
+		["Id"] = 504766884,
+		["Name"] = "Wolfbitten Noob",
+		["Health"] = 200,
+		["Power"] = 200,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Red", 
+		["Archetype"] = "Noob",
+		["Cost"] = {["Red"] = 1,},
+		["Effect"] = {
+			Name = "Halloween",
+			Description = "Whenever you cast an action or terrain spell, transform this card.",
+			["Type"] = "OnAllyCast",
+			["Power"] = {{"Summon","Werewolf Savage"},{"Damage",9999,"Self"}},
+			Target = "Ally",
+		},
+		["Bio"] = "Can he deliver his book to the library in time?",
+	},
+
+	["Werewolf Savage"] = {
+		["Id"] = 504766771,
+		["Name"] = "Werewolf Savage",
+		["Health"] = 400,
+		["Power"] = 400,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Red", 
+		["Archetype"] = "Lycanthrope",
+		["Cost"] = {["Red"] = 1,},
+		["Effect"] = {
+			Name = "Halloween",
+			Description = "Whenever your opponent casts an action or terrain spell, untransform this card.",
+			["Type"] = "OnEnemyCast",
+			["Power"] = {{"Summon","Wolfbitten Noob"},{"Damage",9999,"Self"}},
+			Target = "Ally",
+		},
+		["Bio"] = "Can you escape in time?",
+	},
