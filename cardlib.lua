@@ -15600,6 +15600,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "The aife that outaifed aife herself.",
 	},
+	
 }
 
 local pairs = pairs
