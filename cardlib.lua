@@ -15600,8 +15600,30 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "The aife that outaifed aife herself.",
 	},
+	
+	["BoomAtack"] = {
+	
+		["Id"] = 513641417,
+		["Name"] = "BoomAtack",
+		["Health"] = 300,
+		["Power"] = 200,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "SlashDiagonal",
+		["Color"] = "Red",
+		["Cost"] = {["Neutral"] = 2, ["Red"] = 1,}, 
+		["Effect"] = {
+			Name = "Booming Red",
+			Description = "When this card dies, Gain 1 red, and 1 white icon.",
+			["Type"] = "OnDeath",
+			["Power"] = {{"Red",1},{"White",1}},
+			Target = "Ally",
+		},
+		["Bio"] = "It's A Tack, not attack.",
+	},
 }
 
+
+	
 local pairs = pairs
 local cardcount = 0
 local assert = assert
