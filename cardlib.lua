@@ -1,3 +1,4 @@
+
 local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO 
 	["Froot Ninja"] = {
 		["Id"] = 263342944,
@@ -11769,7 +11770,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["bengbeng14"] = {
-		["Id"] = 487571369,
+		["Id"] = 513645287,
 		["Name"] = "bengbeng14",
 		["Health"] = 400,
 		["Power"] = 900,
@@ -14820,7 +14821,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "He can't fix it after all",
 			Description = "Whenever you summon a fighter, draw a card and deal 400 damage to B0BBA.",
 			["Type"] = "OnAllySummon",
-			["Power"] = {{"Draw",1},{"Damage",400,"Self"}},			
+			["Power"] = {{"Draw",1},{"Damage",400,"Self"}},				
 			Target = "Ally",
 		},
 		["Bio"] = "The ultimate builder.",
@@ -15600,6 +15601,25 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Ally",
 		},
 		["Bio"] = "The aife that outaifed aife herself.",
+	},
+	
+	["Tricky Magician"] = {
+		["Id"] = 513689583,
+		["Name"] = "Tricky Magician",
+		["Health"] = 700,
+		["Power"] = 300,
+		["Rarity"] = "Rare",
+		["AttackEffect"] = "Fire",
+		["Color"] = "Red", 
+		["Cost"] = {["Red"] = 3,["Neutral"] = 1,},
+		["Effect"] = {
+			Name = "Magic Trick!",
+			Description = "When you summoned a fighter, summons a 350/350 fighter.",
+			["Type"] = "OnAllySummon",
+			["Power"] = {{"Summon","Hodif"}},
+			Target = "Ally",
+		},
+		["Bio"] = "I shall pull great things using my magic hat.",
 	},
 }
 
