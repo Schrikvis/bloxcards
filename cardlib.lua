@@ -13976,7 +13976,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Knockdown",
 			Description = "When this card is targeted, reset its stats, return it to its owner's hand, and give them 4 green icons. This card can attack the turn it's summoned.",
 			["Type"] = "OnTarget",
-			["Power"] = {{"Weaken",9999},{"Strengthen",800},{"Swap",030},{"Weaken",9999},{"Strengthen",600},{"Return",030},{"Green",4}},
+			["Power"] = {{"Unlock",9999},{"Weaken",9999},{"Strengthen",800},{"Swap",030},{"Weaken",9999},{"Strengthen",600},{"Return",030},{"Green",4}},
 			Target = "Self",
 		},
 		["Bio"] = "But has no means to pay for him.",
