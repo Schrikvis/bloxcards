@@ -15620,6 +15620,25 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "It's A Tack, not attack.",
 	},
+		["Helperbot"] = {
+	
+		["Id"] = 513641417,
+		["Name"] = "Helperbot",
+		["Health"] = 500,
+		["Power"] = 500,
+		["Rarity"] = "Rare",
+		["AttackEffect"] = "Lightning",
+		["Color"] = "Yellow",
+		["Cost"] = {["Yellow"] = 4, ["Neutral"] = 1,}, 
+		["Effect"] = {
+			Name = "Helping Out",
+			Description = "The opponent gains 500 life.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Inflict",-500,"Opponent"}},
+			Target = "Opponent",
+		},
+		["Bio"] = "Hello there robloxian, what do you need help with?",
+	},
 }
 
 

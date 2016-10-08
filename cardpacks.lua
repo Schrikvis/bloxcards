@@ -171,6 +171,7 @@ return {
 		CardPackId = 465492503,
 		Description = "Red is the colour of power, ambition, and control. Dominion packs contain cards that cost red!",
 		Cards = {
+			"BoomAtack"
 			"iiMasant",
 			"Dwarvern Sentry: MAX",
 			"Dwarvern Sentry: Delta",
@@ -671,6 +672,7 @@ return {
 		CardPackId = 465492745,
 		Description = "Yellow is the colour of community, satisfaction, and society. Revel packs contain cards that cost yellow!",
 		Cards = {
+			"Helperbot"
 			"PencilWizard",
 			"YotamTiti",
 			"Divine_Pengu",
@@ -904,7 +906,7 @@ return {
 			"iAsuka",
 			"Samksoon321",
 			"ST Leader Keeler1",
-			"Brycen27",
+			"BoomAtack",
 			"Bad Bread",
 			"Cotton Cavalier",
 			"Arashi Pikemen",
@@ -924,7 +926,7 @@ return {
 			"Lilmanofsalem",
 			"animallogic",
 			"Mzh3000",
-			"Miked",
+			"Helperbot",
 			"Fenrier",
 			"JaikKaik",
 			"Gravity Inspector",
