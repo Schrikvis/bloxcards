@@ -171,6 +171,7 @@ return {
 		CardPackId = 465492503,
 		Description = "Red is the colour of power, ambition, and control. Dominion packs contain cards that cost red!",
 		Cards = {
+			"Tricky Magician",
 			"iiMasant",
 			"Dwarvern Sentry: MAX",
 			"Dwarvern Sentry: Delta",
@@ -934,7 +935,7 @@ return {
 			"Cyandude585",
 			"Febrezer",
 			"Paraselene Sage",
-			"President Duck",
+			"Tricky Magician",
 			"Wingman8",
 			"Body Guards",
 			"Giftsplosion",
