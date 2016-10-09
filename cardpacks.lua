@@ -171,6 +171,8 @@ return {
 		CardPackId = 465492503,
 		Description = "Red is the colour of power, ambition, and control. Dominion packs contain cards that cost red!",
 		Cards = {
+			"Mafia Grunt"
+			"Tricky Magician",
 			"iiMasant",
 			"Dwarvern Sentry: MAX",
 			"Dwarvern Sentry: Delta",
@@ -343,6 +345,7 @@ return {
 		CardPackId = 465492570,
 		Description = "Green is the colour of life, growth, and the primal forces. Vitality packs contain cards that cost green!",
 		Cards = {
+			"Cat Ears Maid",
 			"HyperBlue",
 			"rhomlevko",
 			"__________",
@@ -843,6 +846,9 @@ return {
 		CardPackId = 434684079,
 		Description = "Obvious Packs contain only white cards, joke cards and new cards. You must have 10 wins to open these packs.",
 		Cards = {
+			"Mafia Grunt"
+			"Cat Ears Maid",
+			"Tricky Magician",
 			"Wolfbitten Noob",
 			"iiMasant",
 			"PencilWizard",
@@ -933,8 +939,6 @@ return {
 			"HuntarioRBLX",
 			"Cyandude585",
 			"Febrezer",
-			"Paraselene Sage",
-			"President Duck",
 			"Wingman8",
 			"Body Guards",
 			"Giftsplosion",

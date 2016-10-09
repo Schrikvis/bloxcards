@@ -15606,7 +15606,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Tricky Magician"] = {
 		["Id"] = 513689583,
 		["Name"] = "Tricky Magician",
-		["Health"] = 700,
+		["Health"] = 650,
 		["Power"] = 300,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Fire",
@@ -15614,12 +15614,50 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 3,["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Magic Trick!",
-			Description = "When you summoned a fighter, summons a 350/350 fighter.",
-			["Type"] = "OnAllySummon",
+			Description = "At the end of the turn, summons a 350/350 fighter.",
+			["Type"] = "OnEnd",
 			["Power"] = {{"Summon","Hodif"}},
 			Target = "Ally",
 		},
 		["Bio"] = "I shall pull great things using my magic hat.",
+	},
+	
+	["Cat Ears Maid"] = {
+		["Id"] = 518339412,
+		["Name"] = "Cat Ears Maid",
+		["Health"] = 1000,
+		["Power"] = 200,
+		["Rarity"] = "Rare",
+		["AttackEffect"] = "Slap",
+		["Color"] = "Red", 
+		["Cost"] = {["Green"] = 3,["Neutral"] = 1},
+		["Effect"] = {
+			Name = "Refreshing Treats",
+			Description = "When this card attacks, heal all allies except this card by 200.",
+			["Type"] = "OnAttack",
+			["Power"] = {{"Heal",200,"Ally"},{"Damage",200,"Self"}},
+			Target = "Ally",
+		},
+		["Bio"] = "One refreshing bloxy cola coming up!.",
+	},
+	
+	["Mafia Grunt"] = {
+		["Id"] = 518352766,
+		["Name"] = "Mafia Grunt",
+		["Health"] = 400,
+		["Power"] = 400,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "GunShot",
+		["Color"] = "Red", 
+		["Cost"] = {["Red"] = 2,["Neutral"] = 2},
+		["Effect"] = {
+			Name = "BANG BANG BANG!!!",
+			Description = "Deal 100 damage to Non-Red fighters at the end of each turn",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Inflict",100,"NotColorRed"}},
+			Target = "All",
+		},
+		["Bio"] = "GIMME YER CHIPS!.",
 	},
 }
 
