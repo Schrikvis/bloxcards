@@ -12526,7 +12526,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Green",
-		["Archeytpe"] = "Masant",
+		["Archetype"] = "Masant",
 		["Cost"] = {["Green"] = 4,},
 		["Effect"] = {
 			Name = "Stud",
