@@ -171,7 +171,7 @@ return {
 		CardPackId = 465492503,
 		Description = "Red is the colour of power, ambition, and control. Dominion packs contain cards that cost red!",
 		Cards = {
-			"Mafia Grunt"
+			"Mafia Grunt",
 			"Tricky Magician",
 			"iiMasant",
 			"Dwarvern Sentry: MAX",
@@ -846,7 +846,7 @@ return {
 		CardPackId = 434684079,
 		Description = "Obvious Packs contain only white cards, joke cards and new cards. You must have 10 wins to open these packs.",
 		Cards = {
-			"Mafia Grunt"
+			"Mafia Grunt",
 			"Cat Ears Maid",
 			"Tricky Magician",
 			"Wolfbitten Noob",
