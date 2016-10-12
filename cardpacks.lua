@@ -171,6 +171,7 @@ return {
 		CardPackId = 465492503,
 		Description = "Red is the colour of power, ambition, and control. Dominion packs contain cards that cost red!",
 		Cards = {
+			"BoomAtack",
 			"Mafia Grunt",
 			"Tricky Magician",
 			"iiMasant",
@@ -674,6 +675,7 @@ return {
 		CardPackId = 465492745,
 		Description = "Yellow is the colour of community, satisfaction, and society. Revel packs contain cards that cost yellow!",
 		Cards = {
+			"Helperbot",
 			"PencilWizard",
 			"YotamTiti",
 			"Divine_Pengu",
@@ -846,6 +848,8 @@ return {
 		CardPackId = 434684079,
 		Description = "Obvious Packs contain only white cards, joke cards and new cards. You must have 10 wins to open these packs.",
 		Cards = {
+			"Helperbot",
+			"BoomAtack",
 			"Mafia Grunt",
 			"Cat Ears Maid",
 			"Tricky Magician",
@@ -1008,10 +1012,3 @@ return {
 		},
 	};
 }
--- V2s that need adding into Aife: 
---MahBucket, Ninja, DIY Dominus, Quenty, 
---Pixelflame, Divine Favor, Myrmiredon, 
---Mass Destruction, Stickmasterluke, Stalker, 
---BlazerC, Polyhex, KingShadowCrow, Lando64000, 
---Ripull, Gravity Collapse, NerfModder, Gravity Inspector, 
---Aurichalcum
