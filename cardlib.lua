@@ -11831,8 +11831,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Robloxian255"] = {
-		["Id"] = 413931778,
-		["Name"] = "Robloxian255",
+		["Id"] = 524401529,
+		["Name"] = "Creptiqal",
 		["Health"] = 700,
 		["Power"] = 0,
 		["Rarity"] = "Uncommon",
