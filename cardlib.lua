@@ -304,7 +304,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Summon! Meeboid Titano!",
 		["Health"] = 0,
 		["Power"] = 0,
-		["Rarity"] = "Rare",
+		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Punch1",
 		["Archetype"] = "Meeboid",
 		["Color"] = "Green",
@@ -748,6 +748,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["BlazerC"] = {
 		["Id"] = 266616687,
 		["Name"] = "BlazerC",
+		["AltCards"] = {
+			"BlazerCV2",
+		},
 		["Health"] = 1250,
 		["Power"] = 100,
 		["Rarity"] = "Epic",
@@ -763,7 +766,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Archetype",
 			Increase = 400,
 		},
-		["Bio"] = "Demon Ninja.",
+		["Bio"] = "There really wasn't a huge market for chicken blazers as ovens and microwaves came into the market, so BlazerC became a ninja instead.",
 	},
 	
 	["Tarfful"] = {
@@ -5601,6 +5604,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["BlazerCV2"] = {
 		["Id"] = 296708433,
 		["Name"] = "BlazerC",
+		["Original"] = "BlazerC",
+		["AltArt"] = true,
 		["Health"] = 1250,
 		["Power"] = 100,
 		["Rarity"] = "Epic",
@@ -5616,7 +5621,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Archetype",
 			Increase = 400,
 		},
-		["Bio"] = "There really wasn't a huge market for chicken blazers as ovens and microwaves came into the market, so BlazerC became a ninja instead.",
+		["Bio"] = "Demon Ninja.",
 	},
 	
 	["The Stalker"] = {
@@ -13223,7 +13228,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1, ["Blue"] = 3, ["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "Capture",
-			Description = "Whenever you cast an action or terrain spell, add a random red or blue action toyour hand.",
+			Description = "Whenever you cast an action or terrain spell, add a random red or blue action to your hand.",
 			["Type"] = "OnAllyCast",
 			["Power"] = {{"RandomAdd","Lunar"}},
 			Target = "Ally",
@@ -14628,7 +14633,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "WoodReviewer",
 			Description = "At the end of your turns, WoodReviewer gains 200 health and deals 200 damage to you.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Cost",300},{"Heal",300}},			
+			["Power"] = {{"Cost",200},{"Heal",200}},			
 			Target = "Self",
 		},
 		["Bio"] = "You can complain about wood grain all you want, but the metal used to make that axe is truly poor. 4/10 - Sword Critic",
@@ -14689,7 +14694,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"RandomAdd","Overseer"},{"Summon","Overseer Drake Token"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
-		["Bio"] = "The scouts of the overseer army, Overseer Drakes deliver the word of their masters to overgrow any land they come across.",
+		["Bio"] = "The messengers of the overseer army, Overseer Drakes deliver the word of their masters to overgrow any land they come across.",
 	},
 
 	["Overseer Drake Token"] = {
@@ -14709,7 +14714,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Add","Overseer Drake"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
-		["Bio"] = "The scouts of the overseer army, Overseer Drakes deliver the word of their masters to overgrow any land they come across.",
+		["Bio"] = "The messengers of the overseer army, Overseer Drakes deliver the word of their masters to overgrow any land they come across.",
 	},
 
 	["666"] = {
@@ -15735,6 +15740,120 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
  			Target = "Opponent",
  		},
  		["Bio"] = "Hello there, Robloxian! What do you need help with?",
+	},
+
+	["CalmFoxz"] = {
+		["Id"] = 524210033,
+		["Name"] = "CalmFoxz",
+ 		["Health"] = 200,
+ 		["Power"] = 200,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Lightning",
+ 		["Color"] = "Blue",
+ 		["Cost"] = {["Blue"] = 3, ["Neutral"] = 2,}, 
+ 		["Effect"] = {
+ 			Name = "Helping Out",
+ 			Description = "Whenever you summon a fighter, lock that fighter and a target fighter for 1 turn, then deal 50 damage to CalmFoxz.",
+ 			["Type"] = "OnAllySummon",
+ 			["Power"] = {{"Lock",1,"Aggressor"},{"Lock",1}},
+ 			Target = "Single",
+ 		},
+ 		["Bio"] = "He really is the bee's knees.",
+	},
+
+	["CalmFoxz"] = {
+		["Id"] = 524210033,
+		["Name"] = "CalmFoxz",
+ 		["Health"] = 250,
+ 		["Power"] = 200,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Lightning",
+ 		["Color"] = "Blue",
+ 		["Cost"] = {["Blue"] = 3, ["Neutral"] = 2,}, 
+ 		["Effect"] = {
+ 			Name = "Helping Out",
+ 			Description = "Whenever you summon a fighter, lock that fighter and a target fighter for 1 turn, then deal 50 damage to CalmFoxz.",
+ 			["Type"] = "OnAllySummon",
+ 			["Power"] = {{"Lock",1,"Aggressor"},{"Lock",1},{"Damage",50,"Self"}},
+ 			Target = "Single",
+ 		},
+ 		["Bio"] = "He really is the bee's knees.",
+	},
+
+	["The Gentlemaniac"] = {
+		["Id"] = 524241010,
+		["Name"] = "The Gentlemaniac",
+ 		["Health"] = 600,
+ 		["Power"] = 0,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Lightning",
+ 		["Color"] = "Neutral",
+ 		["Cost"] = {["Blue"] = 1, ["Neutral"] = 4,}, 
+ 		["Effect"] = {
+ 			Name = "Helping Out",
+ 			Description = "(EXPERIMENTAL EFFECT) Destroy all other allied fighters and set all your icons to 3. End the turn.",
+ 			["Type"] = "OnSummon",
+ 			["Power"] = {{"Heal",9999,"Self"},{"Damage",9999},{"SetYellow",3},{"SetGreen",3},{"SetBlue",3},{"SetRed",3},{"SetNeutral",0},{"End",1}},
+ 			Target = "Ally",
+ 		},
+ 		["Bio"] = "He'll be gentle... For a while.",
+	},
+
+	["Supersky712"] = {
+		["Id"] = 524240692,
+		["Name"] = "Supersky712",
+ 		["Health"] = 1000,
+ 		["Power"] = 100,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Lightning",
+ 		["Color"] = "Red",
+ 		["Cost"] = {["Red"] = 1, ["Neutral"] = 2,}, 
+ 		["Effect"] = {
+ 			Name = "Helping Out",
+ 			Description = "When this card attacks and destroys another, it gains 200 power.",
+ 			["Type"] = "OnAttackDestroy",
+ 			["Power"] = {{"Strengthen",200,"Self"}},
+ 			Target = "Ally",
+ 		},
+ 		["Bio"] = "Step one: Find your cousin. Step two: Put your cousin in Supersky's way. Step three: Find another cousin.",
+	},
+
+	["ReeseMcBlox"] = {
+		["Id"] = 524379919,
+		["Name"] = "ReeseMcBlox",
+ 		["Health"] = 1000,
+ 		["Power"] = 100,
+		["Rarity"] = "Rare",
+		["AttackEffect"] = "Lightning",
+ 		["Color"] = "Blue",
+ 		["Cost"] = {["Blue"] = 3, ["Neutral"] = 2, ["Yellow"] = 1, ["Red"] = 1,}, 
+ 		["Effect"] = {
+ 			Name = "Helping Out",
+ 			Description = "Whenever you summon a fighter, return it to your hand.",
+ 			["Type"] = "OnSummon",
+ 			["Power"] = {{"Summon","ReeseMcBlox Token"},{"Damage",9999,"Self"}},
+ 			Target = "Ally",
+ 		},
+ 		["Bio"] = "Please wait on hold.",
+	},
+
+	["ReeseMcBlox Token"] = {
+		["Id"] = 524379919,
+		["Name"] = "ReeseMcBlox",
+ 		["Health"] = 1400,
+ 		["Power"] = 100,
+		["Rarity"] = "Rare",
+		["AttackEffect"] = "Lightning",
+ 		["Color"] = "Blue",
+ 		["Cost"] = {["Blue"] = 3, ["Neutral"] = 2, ["Yellow"] = 1, ["Red"] = 1,}, 
+ 		["Effect"] = {
+ 			Name = "Helping Out",
+ 			Description = "Whenever you summon a fighter, return it to your hand.",
+ 			["Type"] = "OnAllySummon",
+ 			["Power"] = {{"Return",030}},
+ 			Target = "Aggressor",
+ 		},
+ 		["Bio"] = "Please wait on hold.",
 	},
 }
 

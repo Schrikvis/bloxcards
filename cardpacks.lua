@@ -171,6 +171,7 @@ return {
 		CardPackId = 465492503,
 		Description = "Red is the colour of power, ambition, and control. Dominion packs contain cards that cost red!",
 		Cards = {
+			"Supersky712",
 			"BoomAtack",
 			"Mafia Grunt",
 			"Tricky Magician",
@@ -500,6 +501,9 @@ return {
 		CardPackId = 465492637,
 		Description = "Blue is the colour of logic, order, and structure. Thought packs contain cards that cost blue!",
 		Cards = {
+			"CalmFoxz",
+			"The Gentlemaniac",
+			"Reesemcblox",
 			"Yoshius",
 			"Nopants99",
 			"CIA Man",
@@ -848,6 +852,10 @@ return {
 		CardPackId = 434684079,
 		Description = "Obvious Packs contain only white cards, joke cards and new cards. You must have 10 wins to open these packs.",
 		Cards = {
+			"Calmfoxz",
+			"The Gentlemaniac",
+			"Reesemcblox",
+			"Supersky712",
 			"Helperbot",
 			"BoomAtack",
 			"Mafia Grunt",
