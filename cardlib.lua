@@ -11892,12 +11892,20 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Rainbowjewelninga785"] = {
 		["Id"] = 413939784,
 		["Name"] = "Rainbowjewelninga785",
-		["Health"] = 200,
-		["Power"] = 200,
+		["Health"] = 350,
+		["Power"] = 350,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Green",
 		["Cost"] = {["Neutral"] = 2,["Green"] = 1,},
+		["Effect"] = {
+			Name = "Vitality Potion",
+			Description = "Future updates to Blox Cards can't buff or nerf Rainbowjewelninga. Rainbowjewelninga can't be banned from tournaments.",
+			["Type"] = "OnSummon",
+			["Power"] = "Heal",
+			Target = "Self",
+			Increase = 0,
+		},
 		["Bio"] = "Rainbow? Jewel? Fine. But ninga? Is that a stealthy person or a racist statement?",
 	},	
 	
@@ -15243,6 +15251,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Body Guards"] = {
 		["Id"] = 491581638,
 		["Name"] = "Body Guards",
+		["Token"] = true,
 		["Health"] = 275,
 		["Power"] = 275,
 		["Rarity"] = "Common",
@@ -15251,7 +15260,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Protection",
-			Description = "When this card dies, you gain 200 life.",
+			Description = "When this card dies, you gain 200 life. This card can't generate icons.",
 			["Type"] = "OnDeath",
 			["Power"] = {{"Cost",-200}},
 			Target = "Ally",
