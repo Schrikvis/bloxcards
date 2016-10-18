@@ -3970,6 +3970,13 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Red",
 		["Archetype"] = "Ninja",
 		["Cost"] = {["Neutral"] = 1,["Red"] = 3,},
+		["Effect"] = {
+			Name = "Stud",
+			Description = [[At the end of your turn, unlock WhiteScarf.]],
+			["Type"] = "OnEnd",
+			["Power"] = {{"Unlock",999}},
+			Target = "Self",	
+		},
 		["Bio"] = "It's a JUXTAPOSITION, CAROL. DO YOU NOT GET IT?",
 	},		
 	
@@ -15802,7 +15809,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
  			Name = "Helping Out",
  			Description = "(EXPERIMENTAL EFFECT) Destroy all other allied fighters and set all your icons to 3. End the turn.",
  			["Type"] = "OnSummon",
- 			["Power"] = {{"Heal",9999,"Self"},{"Damage",9999},{"SetYellow",3},{"SetGreen",3},{"SetBlue",3},{"SetRed",3},{"SetNeutral",0},{"End",1}},
+ 			["Power"] = {{"Heal",9999,"Self"},{"Damage",9999},{"SetYellow",3},{"SetGreen",3},{"SetBlue",3},{"SetRed",3},{"SetNeutral",0},{"EndTurn",1}},
  			Target = "Ally",
  		},
  		["Bio"] = "He'll be gentle... For a while.",
