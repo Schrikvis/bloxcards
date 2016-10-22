@@ -497,6 +497,7 @@ return {
 		CardPackId = 465492637,
 		Description = "Blue is the colour of logic, order, and structure. Thought packs contain cards that cost blue!",
 		Cards = {
+			"Aesthetical"
 			"Yoshius",
 			"Nopants99",
 			"CIA Man",
@@ -672,6 +673,7 @@ return {
 		CardPackId = 465492745,
 		Description = "Yellow is the colour of community, satisfaction, and society. Revel packs contain cards that cost yellow!",
 		Cards = {
+			"AII_Duck"
 			"Helperbot"
 			"PencilWizard",
 			"YotamTiti",
@@ -876,7 +878,7 @@ return {
 			"Monopoly Man",
 			"Friend Request Spammer",
 			"Smart Planner",
-			"Stevenl15",
+			"wowwow2211",
 			"Luck Warrior of Pure Gold",
 			"Zaquille",
 			"Brick_Man",
@@ -908,7 +910,7 @@ return {
 			"ST Leader Keeler1",
 			"BoomAtack",
 			"Bad Bread",
-			"Cotton Cavalier",
+			"Aesthetical",
 			"Arashi Pikemen",
 			"BerskererPredator450",
 			"Meeboid Champion",
@@ -916,7 +918,7 @@ return {
 			"ClanAtlas",
 			"KurosakiDXenos",
 			"Skarra the DragonSlayer",
-			"Forbidden Power",
+			"AII_Duck",
 			"Sibs",
 			"Moon Rabbit's Rage",
 			"Pancake Break",

@@ -15620,9 +15620,10 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "It's A Tack, not attack.",
 	},
-		["Helperbot"] = {
 	
-		["Id"] = 513641417,
+	["Helperbot"] = {
+	
+		["Id"] = 528150435,
 		["Name"] = "Helperbot",
 		["Health"] = 500,
 		["Power"] = 500,
@@ -15639,6 +15640,93 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "Hello there robloxian, what do you need help with?",
 	},
+		
+	["AII_Duck"] = {
+	
+		["Id"] = 526036502,
+		["Name"] = "AII_DUCK",
+		["Health"] = 900,
+		["Power"] = 700,
+		["Rarity"] = "Epic",
+		["AttackEffect"] = "Lightning",
+		["Color"] = "Yellow",
+		["Cost"] = {["Yellow"] = 4, ["Neutral"] = 3, ["Green"] = 2,}, 
+		["Effect"] = {
+			Name = "Spotted",
+			Description = "Add a Camera to your hand.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Add","Camera"}},
+			Target = "Ally",
+			Increase = 1,
+		},
+		["Bio"] = "Hiding in plain sight has never been easier! Time to rob this vending machine.",
+	},
+	
+	["Camera"] = {
+	
+		["Id"] = 528151525,
+		["Name"] = "Camera",
+		["Health"] = 200,
+		["Power"] = 500,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Lightning",
+		["Token"] = true,
+		["Color"] = "Yellow",
+		["Cost"] = {["Neutral"] = 2,},
+		["Effect"] = {
+			Name = "Spotted",
+			Description = "Deal 200 damage to a fighter and lock it for 1 turn. This card can't generate icons.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Lock",1},{"Damage",200}},
+			Target = "Single",
+			Increase = 1,
+		},
+		["Bio"] = "Why wasn't this Brick_Man's effect?",
+	},
+	
+	["Aesthetical"] = {
+	
+		["Id"] = 526036381,
+		["Name"] = "Aesthetical",
+		["Health"] = 1000,
+		["Power"] = 350,
+		["Rarity"] = "Legendary",
+		["AttackEffect"] = "Punch2",
+		["Color"] = "Blue",
+		["Archetype"] = "Police",
+		["Cost"] = {["Blue"] = 5,}, 
+		["Effect"] = {
+			Name = "Police Brutality",
+			Description = "Lower the power of all non-blue fighters by 300.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Weaken",300},
+			Target = "NotColorBlue",
+		},
+		["Bio"] = "Y'know, being on the front page for 2 years is really special. Police brutality and all.",
+	},
+	
+		["wowwow2211"] = {
+	
+		["Id"] = 528149527,
+		["Name"] = "wowwow2211",
+		["Health"] = 550,
+		["Power"] = 0,
+		["Rarity"] = "Rare",
+		["AttackEffect"] = "Punch2",
+		["Color"] = "Neutral",
+		["CounterBlock"] = true,
+		["AttackBlock"] = true,
+		["Cost"] = {["Yellow"] = 1,["Blue"] = 1,["Green"] = 1,["Red"] = 1,["Neutral"] = 4,}, 
+		["Effect"] = {
+			Name = "Police Brutality",
+			Description = "When this card is targeted, gain one of every icon. This card cannot attack or counterattack",
+			["Type"] = "OnTarget",
+			["Power"] = {{"Blue",1},{"Green",1},{"White",1},{"Yellow",1},{"Red",1}},
+			Target = "Ally",
+		},
+		["Bio"] = "WOW!",
+	},
+	
 }
 
 
