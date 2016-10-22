@@ -109,6 +109,9 @@ Fires when the player or the enemy player gains or loses life.
 - OnDeath
 Fires when the card dies.
 
+- OnLock, OnUnlock
+Fires when a card is locked or unlocked.
+
 ---------------------------------------------------------------
 
 Effect Targets
