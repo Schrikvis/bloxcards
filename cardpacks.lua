@@ -502,7 +502,7 @@ return {
 		Cards = {
 			"CalmFoxz",
 			"The Gentlemaniac",
-			"Reesemcblox",
+			"ReeseMcBlox",
 			"Yoshius",
 			"Nopants99",
 			"CIA Man",
@@ -853,7 +853,7 @@ return {
 		Cards = {
 			"Calmfoxz",
 			"The Gentlemaniac",
-			"Reesemcblox",
+			"ReeseMcBlox",
 			"Supersky712",
 			"Helperbot",
 			"BoomAtack",
