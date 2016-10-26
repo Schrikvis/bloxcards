@@ -1401,6 +1401,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Punch2",
 		["Color"] = "Blue",
+		["Archetype"] = "Noob",
 		["Cost"] = {["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Tom's Beans",
@@ -1593,7 +1594,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Assimilate",
 			Description = "Whenever your opponent gains life, they lose 500 life.",
-			["Type"] = "OnEnemyLifeGain",
+			["Type"] = "OnEnemyHealthGain",
 			["Power"] = {{"Inflict",500}},
 			Target = "Opponent",
 		},
@@ -2769,7 +2770,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Charge",
 			Description = "A target fighter loses 100 power. This card can attack when summoned.",
 			["Type"] = "OnSummon",
-			["Power"] = {"Weaken",100},
+			["Power"] = {{"Weaken",100}},
 			Target = "Single",
 		},
 		["Bio"] = "I torch noobs like you for breakfast, lunch, and dinner.",
@@ -2927,6 +2928,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 0,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "PunchKick",
+		["Archetype"] = "Lunar",
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 2,["Blue"] = 2,},
 		["Effect"] = {
@@ -3804,7 +3806,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Reminder: Split Ego",
 		["Health"] = 4000,
 		["Power"] = 0,
-		["Rarity"] = "Rare",
+		["Rarity"] = "Token",
 		["AttackEffect"] = "Null",
 		["Token"] = true,
 		["AttackBlock"] = true,
@@ -4498,7 +4500,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Self",	
 			Increase = 0,
 		},
-		["Bio"] = "This limb is all alone. Maybe you'll find more in different areas.",
+		["Bio"] = "An alone chicken limb. How it wishes it could socialise.",
 	},
 	
 	["DrKig"] = {
@@ -5309,7 +5311,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 294871430,
 		["Name"] = "GamesBloxx",
 		["Health"] = 600,
-		["Power"] = 400,
+		["Power"] = 425,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Blue",
@@ -8325,6 +8327,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Thunder",
 		["Color"] = "Red",
 		["AttackBlock"] = true,
+		["Archetype"] = "Defender",
 		["Cost"] = {["Red"] = 3,["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Plushie Amp",
@@ -8600,6 +8603,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Thunder",
 		["Archetype"] = "Conjuration",
 		["AttackBlock"] = true,
+		["Archetype"] = "Defender",
 		["Token"] = true,
 		["Color"] = "Neutral",
 		["Cost"] = {["Neutral"] = 0},
@@ -9870,9 +9874,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Green"] = 3,},
 		["Effect"] = {
 			Name = "Prakn'd",
-			Description = [[Gain 1 green icon but lose 1 green icon. Draw a card.]],
+			Description = [[Draw negative three cards.]],
 			["Type"] = "OnSummon",
-			["Power"] = {"Draw",1},
+			["Power"] = {"Draw",-3},
 			Target = "Ally",
 		},
 		["Bio"] = "PRANKED!",
@@ -10046,6 +10050,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 2,["Blue"] = 2,},
 		["AttackBlock"] = true,
+		["Archetype"] = "Defender",
 		["Effect"] = {
 			Name = "Frostblast",
 			Description = "StayBlue can't attack.",
@@ -11526,7 +11531,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Yellow"] = 4,},
 		["Effect"] = {
 			Name = "Subversion",
-			Description = [[Target fighter's stats become 500/500.]],
+			Description = [[Set the stats of a target fighter to 500/500.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",9999},{"Strengthen",500},{"Swap",030},{"Weaken",9999},{"Strengthen",500}},
 			Target = "Single",	
@@ -11576,20 +11581,20 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Mrbeanbean2"] = {
 		["Id"] = 411846117,
 		["Name"] = "Mrbeanbean2",
-		["Health"] = 900,
+		["Health"] = 150,
 		["Power"] = 150,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Green",
-		["Cost"] = {["Neutral"] = 3,["Green"] = 1,},
+		["Cost"] = {["Neutral"] = 1,},
 			["Effect"] = {
 			Name = "Knockdown",
-			Description = "Set your white icons to 2.",
+			Description = "Put a random rare into your hand.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"SetNeutral",2}},
+			["Power"] = {{"RandomAdd","Rare"}},
 			Target = "Ally",
 		},
-		["Bio"] = "Can't stop and we won't stop, that's how it goes.",
+		["Bio"] = "Uh Oh! You silly moron. You just got BEANED!!! Add this card to your deck to totally BEAN! your opponents!",
 	},			
 
 	["Brick Bacon"] = {
@@ -12152,6 +12157,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Blue",
 		["AttackBlock"] = true,
+		["Archetype"] = "Defender",
 		["Cost"] = {["Blue"] = 6,},
 		["Effect"] = {
 			Name = "Totem Magic",
@@ -12513,9 +12519,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 2,},
 		["Effect"] = {
 			Name = "Moon Rabbit's Rage",
-			Description = "Target fighter gains 300 power.",
+			Description = "A target fighter gains 350 power.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Strengthen",300}},
+			["Power"] = {{"Strengthen",350}},
 			Target = "Single",	
 		},
 		["Bio"] = "Barbarian! You burned my favorite chair! There will be NO FORGIVENESS!",
@@ -14151,6 +14157,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Blue",
 		["Cost"] = {["Blue"] = 7, ["Neutral"] = 3,},
 		["AttackBlock"] = true,
+		["Archetype"] = "Defender",
 		["Effect"] = {
 			Name = "Infinite lockdown",
 			Description = "Whenever you cast an action or terrain spell, shuffle a random red or blue action into your deck, then draw  a card. JaikKaik can't attack.",
@@ -14170,7 +14177,6 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Thunder",
 		["Color"] = "Yellow",
 		["Cost"] = {["Yellow"] = 3,},
-		["AttackBlock"] = true,
 		["Effect"] = {
 			Name = "Collected Company Envy",
 			Description = "Unlock all allied fighters and give them 200 health. Return them to your hand and generate two white icons.",
@@ -14794,7 +14800,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 3, ["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "CBT isn't that bad Vis",
-			Description = "2 Charges. When this card dies, spend a charge and restore it.",
+			Description = "2 Charges. When this card dies, spend a charge and resurrect it.",
 			["Type"] = "OnDeath",
 			["Power"] = {{"Summon","pa00 Token 1"}},
 			Target = "Ally",
@@ -14813,7 +14819,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 3, ["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "I mean provided your partner doesn't go too far, it's just generic submission",
-			Description = "1 Charge. When this card dies, spend a charge and restore it.",
+			Description = "1 Charge. When this card dies, spend a charge and resurrect it.",
 			["Type"] = "OnDeath",
 			["Power"] = {{"Summon","pa00 Token 2"}},
 			Target = "Ally",
@@ -14832,7 +14838,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 3, ["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Also my safeword is Arkhaiomelisdonophunikeratos",
-			Description = "0 Charges. When this card dies, spend a charge and restore it.",
+			Description = "0 Charges. When this card dies, spend a charge and resurrect it.",
 			["Type"] = "OnDeath",
 			["Power"] = {{"Draw",0}},
 			Target = "Ally",
@@ -14851,7 +14857,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 3, ["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Asperger syndrome (AS), also known as Asperger's, is a developmental disorder characterized by significant difficulties in social interaction and nonverbal communication, along with restricted and repetitive patterns of behavior and interests.",
-			Description = "1 Charge. When this card dies, spend a charge and restore it.",
+			Description = "1 Charge. When this card dies, spend a charge and resurrect it.",
 			["Type"] = "OnDeath",
 			["Power"] = {{"Summon","Razikai Token 1"}},	
 			Target = "Ally",
@@ -14870,7 +14876,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 3, ["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "SEDUCE ME WITH A BUCKET OF FRIED CHICKEN!",
-			Description = "0 Charges. When this card dies, spend a charge and restore it.",
+			Description = "0 Charges. When this card dies, spend a charge and resurrect it.",
 			["Type"] = "OnDeath",
 			["Power"] = {{"Heal","0"}},	
 			Target = "Ally",
@@ -15098,17 +15104,17 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Dwarvern Engineer"] = {
 		["Id"] = 503535928,
 		["Name"] = "Dwarvern Engineer",
-		["Health"] = 450,
-		["Power"] = 450,
+		["Health"] = 375,
+		["Power"] = 375,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "SlashDiagonal",
 		["Archetype"] = "Dwarf",
 		["Color"] = "Red",
-		["AttackBlock"] = true,
+		["CounterBlock"] = true,
 		["Cost"] = {["Neutral"] = 2, ["Red"] = 2,},
 		["Effect"] = {
 			Name = "Dwarvern Heart",
-			Description = "Can't attack. When this card dies, give all friendly fighters 300 attack.",
+			Description = "Can't counterattack. When this card dies, give all friendly fighters 300 attack.",
 			["Type"] = "OnDeath",
 			["Power"] = "Strengthen",
 			Target = "Ally",
@@ -15126,11 +15132,11 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "SlashDiagonal",
 		["Archetype"] = "Dwarf",
 		["Color"] = "Red",
-		["AttackBlock"] = true,
+		["CounterBlock"] = true,
 		["Cost"] = {["Neutral"] = 3, ["Red"] = 1,},
 		["Effect"] = {
 			Name = "Dwarvern Heart",
-			Description = "Can't attack. When this card dies, add a random Dwarf card to your hand.",
+			Description = "Can't counterattack. When this card dies, add a random Dwarf card to your hand.",
 			["Type"] = "OnDeath",
 			["Power"] = "RandomAdd",
 			Target = "Ally",

@@ -676,7 +676,7 @@ return {
 		Cost = 30,
 		CardsInPack = 4,
 		CardPackId = 465492745,
-		Description = "Yellow is the colour of community, satisfaction, and society. Revel packs contain cards that cost yellow!",
+		Description = "Yellow is the colour of chaos, emotion, and society. Revel packs contain cards that cost yellow!",
 		Cards = {
 			"Helperbot",
 			"PencilWizard",
@@ -851,7 +851,7 @@ return {
 		CardPackId = 434684079,
 		Description = "Obvious Packs contain only white cards, joke cards and new cards. You must have 10 wins to open these packs.",
 		Cards = {
-			"Calmfoxz",
+			"CalmFoxz",
 			"The Gentlemaniac",
 			"ReeseMcBlox",
 			"Supersky712",
