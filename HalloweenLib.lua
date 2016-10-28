@@ -23,7 +23,7 @@
 	},
 	
 	["Vampire Hunter"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "Vampire Hunter",
 		["Health"] = 550,
 		["Power"] = 550,
@@ -42,7 +42,7 @@
 	},
 	
 	["Flaming Darkseed"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "Flaming Darkseed",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -62,7 +62,7 @@
 	},
 	
 	["Vampire Bite"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "Vampire Bite",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -93,7 +93,7 @@
 			Name = "Pyrotechnics",
 			Description = "When this card is targeted, reverse it back into the Final Tree,",
 			["Type"] = "OnTarget",
-			["Power"] = {{"Destrpy",9999,"Self"},{"Summon","Final Tree"}},
+			["Power"] = {{"Destroy",9999,"Self"},{"Summon","Final Tree"}},
 			Target = "Ally",
 		},
 		["Bio"] = "This tree is a reminder of what we've lost in these dark times.",
@@ -120,7 +120,7 @@
 	},
 	
 	["Blood Moon Shard"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "Blood Moon Shard",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -139,7 +139,7 @@
 	},
 	
 	["PW's Third Sinister"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "PW's Third Sinister",
 		["Health"] = 100,
 		["Power"] = 100,
@@ -158,7 +158,7 @@
 	},
 	
 	["Masked Extortionist"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "Masked Extortionist",
 		["Health"] = 375,
 		["Power"] = 375,
@@ -173,11 +173,11 @@
 			["Power"] = {{"Green",-1},{"Blue",-1},{"Yellow",-1},{"Red",-1}},
 			Target = "Opponent",
 		},
-		["Bio"] = "Hallow was forced to cough up the sum to cross the river.",
+		["Bio"] = "Eisenhower was forced to cough up the sum to cross the river. The werewolf couldn't wait.",
 	},
 	
 	["Disturbing Thoughts"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "Disturbing Thoughts",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -196,7 +196,7 @@
 	},
 	
 	["Corrupt Guest"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "Corrupt Guest",
 		["Health"] = 400,
 		["Power"] = 800,
@@ -215,7 +215,7 @@
 	},
 	
 	["Slenderman"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "Slenderman",
 		["Health"] = 900,
 		["Power"] = 1200,
@@ -234,7 +234,7 @@
 	},
 	
 	["Enrage"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "Enrage",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -253,7 +253,7 @@
 	},
 	
 	["Pyramid Head"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "Pyramid Head",
 		["Health"] = 400,
 		["Power"] = 400,
@@ -272,7 +272,7 @@
 	},
 	
 	["Patric Sinister"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "Patric Sinister",
 		["Health"] = 350,
 		["Power"] = 350,
@@ -292,7 +292,7 @@
 	},
 	
 	["Edgelord"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "Edgelord",
 		["Health"] = 550,
 		["Power"] = 550,
@@ -313,7 +313,7 @@
 	},
 	
 	["Horse Breeder"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "Horse Breeder",
 		["Health"] = 250,
 		["Power"] = 250,
@@ -333,7 +333,7 @@
 	},
 	
 	["Weretaur"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "Weretaur",
 		["Health"] = 500,
 		["Power"] = 500,
@@ -353,7 +353,7 @@
 	},
 
 	["Evil Prince"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "Evil Prince",
 		["Health"] = 300,
 		["Power"] = 175,
@@ -373,7 +373,7 @@
 	},
 	
 	["Werefrog"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "Werefrog",
 		["Health"] = 600,
 		["Power"] = 300,
@@ -393,7 +393,7 @@
 	},
 	
 	["Lumberjack"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "Lumberjack",
 		["Health"] = 100,
 		["Power"] = 400,
@@ -413,7 +413,7 @@
 	},
 	
 	["Werebear"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "Werebear",
 		["Health"] = 200,
 		["Power"] = 800,
@@ -433,7 +433,7 @@
 	},
 	
 	["Wolfbitten Noob"] = {
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "Wolfbitten Noob",
 		["Health"] = 200,
 		["Power"] = 200,
@@ -453,7 +453,7 @@
 	},
 
 	["Werewolf Savage"] = {
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "Werewolf Savage",
 		["Health"] = 400,
 		["Power"] = 400,
@@ -473,7 +473,7 @@
 	},
 	
 	["Paraselene Ascetic"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "Paraselene Ascetic",
 		["Health"] = 350,
 		["Power"] = 350,
@@ -493,7 +493,7 @@
 	},
 	
 	["Lunar Rager"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "Lunar Rager",
 		["Health"] = 700,
 		["Power"] = 700,
@@ -513,7 +513,7 @@
 	},
 	
 	["Blessed Acolyte"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "Blessed Acolyte",
 		["Health"] = 300,
 		["Power"] = 300,
@@ -533,7 +533,7 @@
 	},
 	
 	["Werewyrm"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "Werewyrm",
 		["Health"] = 700,
 		["Power"] = 700,
@@ -553,7 +553,7 @@
 	},
 	
 	["Homeless Man"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "Homeless Man",
 		["Health"] = 500,
 		["Power"] = 500,
@@ -574,7 +574,7 @@
 	},
 	
 	["DIY: Werewolf"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "DIY: Werewolf",
 		["Health"] = 1000,
 		["Power"] = 1000,
@@ -594,7 +594,7 @@
 	},
 	
 	["Wolven Blitz"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "DIY: Werewolf",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -614,7 +614,7 @@
 	},
 	
 	["Claudia Sinister"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "Claudia Sinister",
 		["Health"] = 300,
 		["Power"] = 300,
@@ -634,7 +634,7 @@
 	},
 	
 	["Grove of the Burnwillows"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "Grove of the Burnwillows",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -654,7 +654,7 @@
 	},
 	
 	["Priest of the Blood Rite"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "Priest of the Blood Rite",
 		["Health"] = 400,
 		["Power"] = 200,
@@ -673,7 +673,7 @@
 	},
 	
 	["Priest Token"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "Priest of the Blood Rite",
 		["Health"] = 400,
 		["Power"] = 200,
@@ -712,7 +712,7 @@
 	},
 	
 	["AxeoAttack"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "AxeoAttack",
 		["Health"] = 375,
 		["Power"] = 375,
@@ -731,7 +731,7 @@
 	},
 	
 	["Headless Horseman"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "Headless Horseman",
 		["Health"] = 500,
 		["Power"] = 500,
@@ -750,7 +750,7 @@
 	},
 	
 	["Haunted Redcliff Armor"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "Haunted Redcliff Armor",
 		["Health"] = 300,
 		["Power"] = 300,
@@ -770,7 +770,7 @@
 	},
 	
 	["Grim Reaper"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "Grim Reaper",
 		["Health"] = 700,
 		["Power"] = 450,
@@ -789,7 +789,7 @@
 	},
 	
 	["Ignis Knight"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "Ignis Knight",
 		["Health"] = 700,
 		["Power"] = 450,
@@ -812,7 +812,7 @@
 	},
 	
 	["Death-Defying Demon"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "Death-Defying Demon",
 		["Health"] = 200,
 		["Power"] = 200,
@@ -831,7 +831,7 @@
 	},
 	
 	["Death-Defying Demon"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "Death-Defying Demon",
 		["Health"] = 200,
 		["Power"] = 200,
@@ -850,7 +850,7 @@
 	},
 	
 	["Demon 1"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "Death-Defying Demon",
 		["Health"] = 200,
 		["Power"] = 200,
@@ -869,7 +869,7 @@
 	},
 	
 	["Demon 2"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "Death-Defying Demon",
 		["Health"] = 200,
 		["Power"] = 200,
@@ -888,7 +888,7 @@
 	},
 	
 	["Demon 3"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "Death-Defying Demon",
 		["Health"] = 200,
 		["Power"] = 200,
@@ -907,7 +907,7 @@
 	},
 	
 	["Demon 4"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "Death-Defying Demon",
 		["Health"] = 200,
 		["Power"] = 200,
@@ -926,7 +926,7 @@
 	},
 	
 	["Demon 5"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "Death-Defying Demon",
 		["Health"] = 200,
 		["Power"] = 200,
@@ -945,7 +945,7 @@
 	},
 	
 	["Demon 6"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "Death-Defying Demon",
 		["Health"] = 200,
 		["Power"] = 200,
@@ -964,7 +964,7 @@
 	},
 	
 	["Demon 7"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "Death-Defying Demon",
 		["Health"] = 200,
 		["Power"] = 200,
@@ -983,7 +983,7 @@
 	},
 	
 	["Demon 8"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "Death-Defying Demon",
 		["Health"] = 200,
 		["Power"] = 200,
@@ -1002,7 +1002,7 @@
 	},
 	
 	["Demon 9"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "Death-Defying Demon",
 		["Health"] = 200,
 		["Power"] = 200,
@@ -1021,7 +1021,7 @@
 	},
 	
 	["Demon 10"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "Death-Defying Demon",
 		["Health"] = 200,
 		["Power"] = 200,
@@ -1040,7 +1040,7 @@
 	},
 	
 	["Demon 11"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "Death-Defying Demon",
 		["Health"] = 200,
 		["Power"] = 200,
@@ -1059,7 +1059,7 @@
 	},
 	
 	["Demon 11"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "Death-Defying Demon",
 		["Health"] = 200,
 		["Power"] = 200,
@@ -1078,7 +1078,7 @@
 	},
 	
 	["Flesh Vortex"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "Flesh Vortex",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -1097,7 +1097,7 @@
 	},
 	
 	["Mitcrawl"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "Mitcrawl",
 		["Health"] = 250,
 		["Power"] = 600,
@@ -1116,7 +1116,7 @@
 	},
 	
 	["It that was Silenced"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "It that was Silenced",
 		["Health"] = 250,
 		["Power"] = 250,
@@ -1137,7 +1137,7 @@
 	},
 	
 	["It that is Whispering"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "It that is Whispering",
 		["Health"] = 500,
 		["Power"] = 500,
@@ -1157,7 +1157,7 @@
 	},
 	
 	["It that will Howl"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "It that is will Howl",
 		["Health"] = 1000,
 		["Power"] = 1000,
@@ -1177,7 +1177,7 @@
 	},
 	
 	["Eclipse, Werewolf Colossus"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "Eclipse, Werewolf Colossus",
 		["Health"] = 2000,
 		["Power"] = 2000,
@@ -1197,7 +1197,7 @@
 	},
 	
 	["Unspeakable Summoning"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "Unspeakable Summoning",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -1216,92 +1216,645 @@
 	},
 	
 	["Lezus 1"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "Lezus",
 		["Health"] = 500,
 		["Power"] = 500,
-		["Rarity"] = "Legendary",
+		["Rarity"] = "Token",
 		["AttackEffect"] = "Dash",
-		["Color"] = "Token", 
+		["Color"] = "Red",
 		["Cost"] = {["Red"] = 6,},
+		["Archetype"] = "U DUN GOOFED",
 		["Effect"] = {
 			Name = "Pyrotechnics",
 			Description = "I am Lezus.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Summon","Lezus 2","Ally"},{"Cost",1000,"Ally"},{"Damage",9999}},
+			["Power"] = {{"Summon","Lezus 2","Ally"},{"Cost",1000,"Ally"},{"Damage",9999},{"Unlock","Archetype"}},
 			Target = "Self",
 		},
 		["Bio"] = "Fool.",
 	},
 	
 	["Lezus 2"] =
-		["Id"] = PENDING,
+		["Id"] = "PENDING",
 		["Name"] = "Lezus",
 		["Health"] = 500,
 		["Power"] = 500,
-		["Rarity"] = "Legendary",
+		["Rarity"] = "Token",
 		["AttackEffect"] = "Dash",
-		["Color"] = "Token", 
+		["Color"] = "Red", 
 		["Cost"] = {["Red"] = 6,},
+		["Archetype"] = "U DUN GOOFED",
 		["Effect"] = {
 			Name = "Pyrotechnics",
 			Description = "I am Lezus.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Summon","Lezus 2","Ally"},{"SetNeutral",0,"Ally"},{"Damage",9999}},
+			["Power"] = {{"Summon","Lezus 3","Ally"},{"SetNeutral",0,"Ally"},{"Damage",9999},{"Unlock","Archetype"}},
+			Target = "Self",
+		},
+		["Bio"] = "Peon.",
+	},
+	
+	["Lezus 3"] = {
+		["Id"] = "PENDING",
+		["Name"] = "Lezus",
+		["Health"] = 500,
+		["Power"] = 500,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Red", 
+		["Cost"] = {["Red"] = 6,},
+		["Archetype"] = "U DUN GOOFED",
+		["Effect"] = {
+			Name = "Pyrotechnics",
+			Description = "I am Lezus.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Summon","Lezus 4","Ally"},{"Draw",2,"Opponent"},{"Damage",9999},{"Unlock","Archetype"}},
 			Target = "Self",
 		},
 		["Bio"] = "Imbecile.",
 	},
-
 	
-RED
-COMMONS
-1 - Jason Voorhees
-2 - Vampire Hunter
-3 - Flaming Darkseed
-4 - Vampire Bite (Same Effect as Moorph but summon a Bob the Cursed instead) (Done and done)
-5 - Dead Tree (High HP, No Attack)(Created)
-6 - Possessed Skull (Created)
-7 - Blood Moon Shard (Story Piece)
-8 - PW's Third Sinister
-9 - Masked Extortionist (Completed)
-10 - Disturbing Thoughts - Needs to include a cheese grater
-11 - Corrupt Guest (More powerful guest, but more dangerous effect) (Created) o3o
-12 - Slenderman (Created) o3o
-13 - Enrage
-14 - Pyramid Head
-15 - Patric Sinister (Created)
-16- Edgelord (Created by Big Yosh)
-17 - Horse Breeder -> Werecentaur (Lycanthrope) :thumbup:
-18 - Evil Prince -> Werefrog (Lycanthrope)
-19 - Lumberjack -> Werebear (Lycanthrope)
-20 - Wolfbitten Noob -> Werewolf Savage (Lycanthrope) (Created)
-UNCOMMONS
-1 - Paraselene Ascetic -> Lunar Rager (Lycanthrope) (Created)
-2 - Blessed Acolyte -> Werewyrm (Lycanthrope)
-3 - Homeless Man -> DIY:Werewolf (Lycanthrope)
-4 - Wolven Blitz (Lycanthrope Action)
-5 - Claudia Sinister (Created)
-6 - Grove of the Burnwillows (Gain 2 red icons, your opponent gets a carniverous death moth)
-7 - Priest of the Blood Rite
-9 - Spicy Lolipop(Trade HP For Attack) (Created)
-9 - Axeoattack
-RARES
-1 - Headless Horseman(Created) o3o
-2 - Haunted Redcliff Armor (Created)
-3 - Grim Reaper (Created)
-4 - Ignis Knight
-5 - Death-Defying Demon (10 charges) (Created)
-EPICS
-1 - Flesh Vortex
-2 - It that was Silenced -> It that is Whispering -> He that will Howl -> Eclipse, Werewolf Colossus (Lycanthrope) (Pen)
-3 - Mitcrawl (Created)
-LEGENDARIES
-1 - Unspeakable Summoning (Your opponent summons Lezus.) (Pen/iiMas)
+	["Lezus 4"] = {
+		["Id"] = "PENDING",
+		["Name"] = "Lezus",
+		["Health"] = 500,
+		["Power"] = 500,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Red", 
+		["Cost"] = {["Red"] = 6,},
+		["Archetype"] = "U DUN GOOFED",
+		["Effect"] = {
+			Name = "Pyrotechnics",
+			Description = "I am Lezus.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Summon","Lezus 5","Ally"},{"Heal",400,"Opponent"},{"Strengthen",400,"Opponent"},{"Damage",9999},{"Unlock","Archetype"}},
+			Target = "Self",
+		},
+		["Bio"] = "Cur.",
+	},
+	
+	["Lezus 5"] = {
+		["Id"] = "PENDING",
+		["Name"] = "Lezus",
+		["Health"] = 500,
+		["Power"] = 500,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Red", 
+		["Cost"] = {["Red"] = 6,},
+		["Archetype"] = "U DUN GOOFED",
+		["Effect"] = {
+			Name = "Pyrotechnics",
+			Description = "I am Lezus.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Summon","Lezus 1","Ally"},{"Summon","Lezus 1","Ally"},{"Damage",9999},{"Unlock","Archetype"}},
+			Target = "Self",
+		},
+		["Bio"] = "Recur.",
+	},
+	
+	--Blue
+	
+	["Mad Scientist"] = {
+		["Id"] = "PENDING",
+		["Name"] = "Mad Scientist",
+		["Health"] = 500,
+		["Power"] = 300,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Blue", 
+		["Cost"] = {["Blue"] = 2, ["Neutral"] = 1,},
+		["Effect"] = {
+			Name = "Pyrotechnics",
+			Description = "Put a random red or blue action and a Targeting Blip into your hand.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"RandomAdd","Lunar"},{"Add","Targeting Blip"}},
+			Target = "Ally",
+		},
+		["Bio"] = "Day 31: My time travel experiment worked! Eisenhower'll be so pleased! Day 30: Oh dear.",
+	},
+	
+	["Bedsheet Ghost"] = {
+		["Id"] = "PENDING",
+		["Name"] = "Bedsheet Ghost",
+		["Health"] = 200,
+		["Power"] = 200,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Blue", 
+		["Cost"] = {["Blue"] = 1,},
+		["Effect"] = {
+			Name = "BOO!",
+			Description = "Lock a target fighter for 1 turn.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Lock",1,"Single"}},
+			Target = "Ally",
+		},
+		["Bio"] = "BoOO OOO ooO 0 oO oOo o 0 oO 0 Oo o oOo Ooo oOoOoO",
+	},
+	
+	["Gooplast"] = {
+		["Id"] = "PENDING",
+		["Name"] = "Gooplast",
+		["Health"] = 0,
+		["Power"] = 0,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Blue", 
+		["Cost"] = {["Blue"] = 3,},
+		["Effect"] = {
+			Name = "Pyrotechnics",
+			Description = "Lower the power of a target fighter by 300, then lock it for 2 turns. Put a Morphic Goo into your hand.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Weaken",300},{"Lock",2},{"RandomAdd","Morphic"}},
+			Target = "Single",
+		},
+		["Bio"] = "Don't worry about it. It happens to every biologist sooner or later.",
+	},
+	
+	["Roblox U Student"] = {
+		["Id"] = "PENDING",
+		["Name"] = "Roblox U Student",
+		["Health"] = 1200,
+		["Power"] = 0,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Blue", 
+		["Cost"] = {["Blue"] = 3,},
+		["Effect"] = {
+			Name = "Pyrotechnics",
+			Description = "When this card is targeted, you gain 200 life.",
+			["Type"] = "OnTarget",
+			["Power"] = {{"Inflict",-200,"Ally"}},
+			Target = "Single",
+		},
+		["Bio"] = "It's not about creating a home. It's about creating an intellectual space.",
+	},
+	
+	["Hacker"] = {
+		["Id"] = "PENDING",
+		["Name"] = "Hacker",
+		["Health"] = 400,
+		["Power"] = 400,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Blue", 
+		["Cost"] = {["Blue"] = 3,},
+		["Effect"] = {
+			Name = "Pyrotechnics",
+			Description = "Whenever your opponent summons a fighter, deal 700 damage to Hacker and end the turn.",
+			["Type"] = "OnEnemySummon",
+			["Power"] = {{"Damage",700,"Self"},{"EndTurn",1}},
+			Target = "Ally",
+		},
+		["Bio"] = "Sorry, fam. Hallow payed me a premium!",
+	},
 
-TOKENS:
-Lezus
-
+	["Ye Old Arte"] = {
+		["Id"] = "PENDING",
+		["Name"] = "Ye Old Arte",
+		["Health"] = 500,
+		["Power"] = 300,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Blue", 
+		["Cost"] = {["Blue"] = 2, ["Neutral"] = 2,},
+		["Effect"] = {
+			Name = "Pyrotechnics",
+			Description = "Whenever your opponent casts an action or terrain spell, put a nightmare into their hand.",
+			["Type"] = "OnEnemyCast",
+			["Power"] = {{"Add","Nightmare"}},
+			Target = "Opponent",
+		},
+		["Bio"] = "Eisenhower mourns for his husband.",
+	},
+	
+	["Bitter Candy"] = {
+		["Id"] = "PENDING",
+		["Name"] = "Bitter Candy",
+		["Health"] = 0,
+		["Power"] = 0,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Blue", 
+		["Cost"] = {["Blue"] = 1,},
+		["Archetype"] = "Lunar",
+		["Effect"] = {
+			Name = "Haydoscale",
+			Description = "All fighters gain 50 health and lose 50 power.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Heal",50},{"Weaken",50}},
+			Target = "All",
+		},
+		["Bio"] = "This candy isn't for the fight. It's for when the fight goes wrong.",
+	},
+	
+	["Groucho Mask"] = {
+		["Id"] = "PENDING",
+		["Name"] = "Groucho Mask",
+		["Health"] = 0,
+		["Power"] = 0,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Blue", 
+		["Cost"] = {["Blue"] = 2, ["Neutral"] = 1,},
+		["Effect"] = {
+			Name = "Impersonate",
+			Description = "A target fighter gains 300 health. Put a Luchador into your hand.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Heal",300,"Single"},{"Add","Luchador"}},
+			Target = "Ally",
+		},
+		["Bio"] = "To be honest, this card only really exists to boost up the card pool.",
+	},
+	
+	["Skeleton"] = {
+		["Id"] = "PENDING",
+		["Name"] = "Skeleton",
+		["Health"] = 0,
+		["Power"] = 0,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Blue", 
+		["Cost"] = {["Blue"] = 0,},
+		["Archetype"] = "Skeleton",
+		["Bio"] = "Eisenhower learnt very little whilst in Zanzel's company, but what he did learn was fundamental.",
+	},
+	
+	["Script Robber"] = {
+		["Id"] = "PENDING",
+		["Name"] = "Script Robber",
+		["Health"] = 0,
+		["Power"] = 0,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Blue", 
+		["Cost"] = {["Neutral"] = 3,},
+		["Effect"] = {
+			Name = "Haydoscale",
+			Description = "When this card is summoned, put a random red or blue action into your hand. At the end of your turns, enemy fighters lose 25 power and Script Robber gains 125 power.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Summon","Robber Token"},{"RandomAdd","Lunar"},{"Damage",9999,"Self"}},
+			Target = "All",
+		},
+		["Bio"] = "It's not stealing, It's marketing. Meanwhile, I'm not a sore loser. I'm just expressive.",
+	},
+	
+	["Robber Token"] = {
+		["Id"] = "PENDING",
+		["Name"] = "Script Robber",
+		["Health"] = 0,
+		["Power"] = 0,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Blue", 
+		["Cost"] = {["Neutral"] = 3,},
+		["Effect"] = {
+			Name = "Haydoscale",
+			Description = "When this card is summoned, put a random red or blue action into your hand. At the end of your turns, enemy fighters lose 25 power and Script Robber gains 150 power.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Weaken",25},{"Strengthen",175}},
+			Target = "All",
+		},
+		["Bio"] = "It's not stealing, It's marketing. Meanwhile, I'm not a sore loser. I'm just expressive.",
+	},
+	
+	["Failed Expirement"] = {
+		["Id"] = "PENDING",
+		["Name"] = "Failed Expirement",
+		["Health"] = 600,
+		["Power"] = 600,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Blue", 
+		["Cost"] = {["Blue"] = 3, ["Neutral"] = 3,},
+		["Effect"] = {
+			Name = "Haydoscale",
+			Description = "When this card dies, lock all fighters for two turns.",
+			["Type"] = "OnDeath",
+			["Power"] = {{"Lock",2}},
+			Target = "All",
+		},
+		["Bio"] = "The milk will expire in 3... 2... 1... Dammit.",
+	},
+	
+	["Unplumbed Lead"] = {
+		["Id"] = "PENDING",
+		["Name"] = "Unplumbed Lead",
+		["Health"] = 400,
+		["Power"] = 400,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Blue", 
+		["Cost"] = {["Blue"] = 7,},
+		["Effect"] = {
+			Name = "Haydoscale",
+			Description = "When played, summon a copy of this card. When this card attacks and destroys another, draw a card.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Summon","Lead"},{"Summon","Lead"},{"Damage",9999,"Self"}},
+			Target = "Ally",
+		},
+		["Bio"] = "From fan to murderer.",
+	},
+	
+	["Lead"] = {
+		["Id"] = "PENDING",
+		["Name"] = "Unplumbed Lead",
+		["Health"] = 400,
+		["Power"] = 400,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Blue", 
+		["Cost"] = {["Blue"] = 7,},
+		["Effect"] = {
+			Name = "Haydoscale",
+			Description = "When played, summon a copy of this card. When this card attacks and destroys another, draw a card.",
+			["Type"] = "OnAttackDestroy",
+			["Power"] = {{"Draw",1}},
+			Target = "Ally",
+		},
+		["Bio"] = "From fan to murderer.",
+	},
+	
+	["Ghoost"] = {
+		["Id"] = "PENDING",
+		["Name"] = "Ghoost",
+		["Health"] = 100,
+		["Power"] = 200,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Blue", 
+		["CounterAttackBlock"] = true,
+		["Cost"] = {["Blue"] = 1, ["Neutral"] = 3,},
+		["Effect"] = {
+			Name = "Haydoscale",
+			Description = "Put three Morphic Goo into your hand. Ghoost can't be counterattacked.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"RandomAdd","Morphic"},{"RandomAdd","Morphic"},{"RandomAdd","Morphic"}},
+			Target = "Ally",
+		},
+		["Bio"] = "Ghoo to hell, fiend!",
+	},
+	
+	["Psychotic Freak"] = {
+		["Id"] = "PENDING",
+		["Name"] = "Ghoost",
+		["Health"] = 1750,
+		["Power"] = 0,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Blue", 
+		["Cost"] = {["Blue"] = 5, ["Neutral"] = 5,},
+		["AttackBlock"] = true,
+		["Effect"] = {
+			Name = "Haydoscale",
+			Description = "Can't Attack. All fighters that can't attack gain 500 power and lose 500 health.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"RandomAdd","Morphic"},{"RandomAdd","Morphic"},{"RandomAdd","Morphic"}},
+			Target = "Ally",
+		},
+		["Bio"] = "But the SCHALLOPS& I NEED the scallops.[ Scaloops< Scallops> Scall~ Scallops# Scallops@ Scaloppinelionia King Junior the Fourth on toast£",
+	},
+	
+	["Frankenstein"] = {
+		["Id"] = "PENDING",
+		["Name"] = "Frankenstein",
+		["Health"] = 700,
+		["Power"] = 700,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Blue", 
+		["AttackBlock"] = true,
+		["Archetype"] = "Defender",
+		["Cost"] = {["Blue"] = 2, ["Neutral"] = 4,},
+		["Effect"] = {
+			Name = "Haydoscale",
+			Description = "Can't Attack. When this card destroys another, put a random red or blue action into your hand.",
+			["Type"] = "OnDestroy",
+			["Power"] = {{"RandomAdd","Lunar"}},
+			Target = "Ally",
+		},
+		["Bio"] = "We all remember it as Frankentain, right?",
+	},
+	
+	["Kalman Sinister"] = {
+		["Id"] = "PENDING",
+		["Name"] = "Kalman Sinister",
+		["Health"] = 400,
+		["Power"] = 400,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Blue", 
+		["Archetype"] = "Sinister",
+		["Cost"] = {["Blue"] = 2, ["Neutral"] = 2,},
+		["Effect"] = {
+			Name = "Haydoscale",
+			Description = "Whenever your opponent summons a fighter, all allied fighters gain 50 health.",
+			["Type"] = "OnEnemySummon",
+			["Power"] = {{"Heal",50}},
+			Target = "Ally",
+		},
+		["Bio"] = "We are too big to fail, and you are too small to matter, child.",
+	},
+	
+	["Victor Sinister"] = {
+		["Id"] = "PENDING",
+		["Name"] = "Kalman Sinister",
+		["Health"] = 400,
+		["Power"] = 400,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Blue", 
+		["Archetype"] = "Sinister",
+		["Cost"] = {["Blue"] = 2, ["Neutral"] = 2,},
+		["Effect"] = {
+			Name = "Haydoscale",
+			Description = "Whenever your opponent casts an action or terrin spell, lock all enemy fighters for two turns.",
+			["Type"] = "OnEnemyCast",
+			["Power"] = {{"Lock",3}},
+			Target = "Opponent",
+		},
+		["Bio"] = "Ideas are more powerful than guns. We don't want them having guns, so why on earth would we allow them ideas?",
+	},
+	
+	["Sibling Jayvote"] = {
+		["Id"] = "PENDING",
+		["Name"] = "Sibling Jayvote",
+		["Health"] = 550,
+		["Power"] = 550,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Blue", 
+		["Cost"] = {["Blue"] = 4, ["Neutral"] = 1,},
+		["Effect"] = {
+			Name = "Amalgamate",
+			Description = "A target fighter gains 200 power, has its stats swapped, is unlocked, and then loses 200 power.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Strengthen",200},{"Swap",030},{"Unlock",9999},{"Weaken",200}},
+			Target = "Single",
+		},
+		["Bio"] = "Toogether foorever.",
+	},
+	
+	["Toxic Goo"] = {
+		["Id"] = "PENDING",
+		["Name"] = "Toxic Goo",
+		["Health"] = 400,
+		["Power"] =  400,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Blue",
+		["AttackBlock"] = true,
+		["Cost"] = {["Blue"] = 1, ["Neutral"] = 1,},
+		["Effect"] = {
+			Name = "Haydoscale",
+			Description = "Can't Attack. Put a morphic goo into your hand.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"RandomAdd","Morphic"}},
+			Target = "Opponent",
+		},
+		["Bio"] = "Waste product is still product.",
+	},
+	
+	["DoeDoe"] = {
+		["Id"] = "PENDING",
+		["Name"] = "DoeDoe",
+		["Health"] = 300,
+		["Power"] = 300,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Blue", 
+		["Token"] = true,
+		["Cost"] = {["Blue"] = 3, ["Neutral"] = 1,},
+		["Effect"] = {
+			Name = "Haydoscale",
+			Description = "Summon a copy of this card. This card can't generate icons.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Lock",3}},
+			Target = "Ally",
+		},
+		["Bio"] = "Eisenhower regretted how humans made the dodos extinct.",
+	},
+	
+	["Terry Sinister"] = {
+		["Id"] = "PENDING",
+		["Name"] = "Terry Sinister",
+		["Health"] = 300,
+		["Power"] = 300,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Blue", 
+		["Archetyppe"] = "Sinister",
+		["Cost"] = {["Blue"] = 2,},
+		["Effect"] = {
+			Name = "Haydoscale",
+			Description = "Whenever your opponent summons a fighter, put a nightmare into both players' hand.",
+			["Type"] = "OnEnemySummon",
+			["Power"] = {{"Add","Nightmare"}},
+			Target = "All",
+		},
+		["Bio"] = "Trade sand for furs, furs for gold, and gold for life. But in the end, you'll trade life for sand.",
+	},
+	
+	["DairingSpookHead"] = {
+		["Id"] = "PENDING",
+		["Name"] = "DairingSpookHead",
+		["Health"] = 800,
+		["Power"] = 800,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Blue", 
+		["Cost"] = {["Neutral"] = 3,},
+		["Effect"] = {
+			Name = "Haydoscale",
+			Description = "When this card dies, put it into your opponent's hand.",
+			["Type"] = "OnDeath",
+			["Power"] = {{"Add","DairingSpookHead"}},
+			Target = "Opponent",
+		},
+		["Bio"] = "Brown Dairy Achieved.",
+	},
+	
+	["Supercomputer's Skull"] = {
+		["Id"] = "PENDING",
+		["Name"] = "Supercomputer's Skull",
+		["Health"] = 300,
+		["Power"] = 300,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Blue", 
+		["Archetype"] = "Skull",
+		["Cost"] = {["Blue"] = 1, ["Neutral"] = 1,},
+		["Effect"] = {
+			Name = "Div/0",
+			Description = "A target fighter gains 100 health.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Lock",1}},
+			Target = "Single",
+		},
+		["Bio"] = "There's a supercomputer inside of you. Inside of all of us. Blame the illuminati.",
+	},
+	
+	["Unexpected Results"] = {
+		["Id"] = "PENDING",
+		["Name"] = "Unexpected Results",
+		["Health"] = 0,
+		["Power"] = 0,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Blue", 
+		["Archetype"] = "Bee",
+		["Cost"] = {["Blue"] = 0,},
+		["Effect"] = {
+			Name = "Haydoscale",
+			Description = "Set your blue icons to 4. End the turn.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"SetBlue",4},{"EndTurn",1}},
+			Target = "Ally",
+		},
+		["Bio"] = "When I said I wanted a superhuman mutant, this is not quite what I had in mind.",
+	},
+	
+	["Waspism"] = {
+		["Id"] = "PENDING",
+		["Name"] = "Waspism",
+		["Health"] = 725,
+		["Power"] = 375,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Blue", 
+		["Archetype"] = "Bee",
+		["Cost"] = {["Blue"] = 4, ["Neutral"] = 2,},
+		["Effect"] = {
+			Name = "Haydoscale",
+			Description = "Whenever you summon a fighter, give all bees 75 health and power.",
+			["Type"] = "OnAllySummon",
+			["Power"] = {{"SetBlue",4},{"EndTurn",1}},
+			Target = "Ally",
+		},
+		["Bio"] = "The wasp to the tea.",
+	},
+	
+	["Goo Golem"] = {
+		["Id"] = "PENDING",
+		["Name"] = "Goo Golem",
+		["Health"] = 725,
+		["Power"] = 375,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Blue", 
+		["Cost"] = {["Blue"] = 6,},
+		["Effect"] = {
+			Name = "Haydoscale",
+			Description = "PENDING",
+			["Type"] = "When this card attacks, put a Morphic Goo and a Targeting Blip into your hand."
+			["Power"] = {{"RandomAdd","Morphic"}},
+			Target = "Ally",
+		},
+		["Bio"] = "",
+	},
 BLUE
 COMMONS
 1 - Mad Scientist(Created) o3o
