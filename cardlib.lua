@@ -954,7 +954,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 271751150,
 		["Name"] = "Cowboy",
 		["AltCards"] = {
-			"MaCree",
+			"Mcree",
 		},
 		["Health"] = 250,
 		["Power"] = 250,
@@ -974,7 +974,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Mcree"] = {
-		["Id"] = 271751150,
+		["Id"] = 532358983,
 		["Name"] = "Cowboy",
 		["Original"] = "Cowboy",
 		["AltArt"] = true,
