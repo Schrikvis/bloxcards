@@ -1840,8 +1840,8 @@
 	["Goo Golem"] = {
 		["Id"] = "PENDING",
 		["Name"] = "Goo Golem",
-		["Health"] = 725,
-		["Power"] = 375,
+		["Health"] = 1200,
+		["Power"] = 500,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Blue", 
@@ -1853,8 +1853,50 @@
 			["Power"] = {{"RandomAdd","Morphic"}},
 			Target = "Ally",
 		},
-		["Bio"] = "",
+		["Bio"] = "I'm trying really hard not to make a melting joke he - Dammit!",
 	},
+	
+	["Korblox Skeleton"] = {
+		["Id"] = "PENDING",
+		["Name"] = "Korblox Skeleton",
+		["Health"] = 1200,
+		["Power"] = 500,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Blue", 
+		["Archetype"] = "Skeleton",
+		["Cost"] = {["Blue"] = 6,},
+		["Effect"] = {
+			Name = "Haydoscale",
+			Description = "PENDING",
+			["Type"] = "When this card is targeted, reverse time and turn it into Serhat12."
+			["Power"] = {{"Summon","Serhat12"}},
+			Target = "Ally",
+		},
+		["Bio"] = "Nobody expects the serhat12 inquisition.",
+	},
+	
+	["MS4_HappyFace_v8"] = {
+		["Id"] = "PENDING",
+		["Name"] = "MS4_HappyFace_v8",
+		["Health"] = 0,
+		["Power"] = 0,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Blue", 
+		["Archetype"] = "Skeleton",
+		["Cost"] = {["Blue"] = 6,},
+		["Effect"] = {
+			Name = "Haydoscale",
+			Description = "PENDING",
+			["Type"] = "When this card is targeted, reverse time and turn it into Serhat12."
+			["Power"] = {{"Summon","Serhat12"}},
+			Target = "Ally",
+		},
+		["Bio"] = "Nobody expects the serhat12 inquisition.",
+	},
+	
+	
 BLUE
 COMMONS
 1 - Mad Scientist(Created) o3o
