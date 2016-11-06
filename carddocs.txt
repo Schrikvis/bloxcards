@@ -109,6 +109,10 @@ Fires when the player or the enemy player gains or loses life.
 - OnDeath
 Fires when the card dies.
 
+- OnAnyDeath, OnEnemyDeath, OnAllyDeath
+Fires when a card dies on any field, the card's opposing field or the
+card's field.
+
 - OnLock, OnUnlock
 Fires when a card is locked or unlocked.
 
@@ -267,6 +271,10 @@ The card is immune to effects that decrease its health or power.
 
 - SwapImmune
 The card is immune to effects that swap its health and power.
+
+- Stealth
+The card is not detected by OnAllySummon, OnEnemySummon or OnAnySummon
+effects.
 
 ---------------------------------------------------------------
 
