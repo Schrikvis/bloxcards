@@ -273,8 +273,8 @@ The card is immune to effects that decrease its health or power.
 The card is immune to effects that swap its health and power.
 
 - Stealth
-The card is not detected by OnAllySummon, OnEnemySummon or OnAnySummon
-effects.
+When set to true, the card is not detected by OnAllySummon, 
+OnEnemySummon or OnAnySummon effects.
 
 ---------------------------------------------------------------
 
