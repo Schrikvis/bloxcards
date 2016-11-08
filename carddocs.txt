@@ -142,9 +142,10 @@ Targets the opposing card when applicable.
 - OpponentCards
 Targets all opposing cards.
 
-- Single
-- Target
-Targets a single card as chosen by the playing player.
+- Single, Target
+Targets a single card as chosen by the playing player. Target is
+preferred to Single to better communicate that the player Targets 
+a card, triggering OnTarget effects.
 
 - Self
 Targets the card itself.
@@ -166,14 +167,6 @@ Card effect Powers
 
 - Add
 Adds the card with the name of Increase to a hand.
-
-- The Set* effect types:
-	- SetNeutral
-	- SetGreen 
-	- SetYellow
-	- SetRed
-	- SetBlue
-Sets colored icons of Target (Ally or Opponent) to Increase.
 
 - Damage
 Damages the Target cards by Increase.
@@ -200,7 +193,26 @@ Adds the card of name Increase to the Target's deck.
 
 - RandomAdd
 Adds a random card of rarity Increase to the Target's hand.
-RandomAdd allows for 
+RandomAdd's Increase allows for 'complex' statements. 
+Stitch together a Color, Archetype and Rarity to specify from what 
+pool the card should be pulled. All of these specifiers are optional. 
+Consider the following examples:
+"RareYellowDoge"
+"BlueNinja"
+"CommonGreen"
+"Neutral"
+"Bee"
+
+- Summon
+Summons an Increase card to the Target's field. Does not trigger any
+OnSummon effect.
+
+- SummonWithEffect
+Functions identically to Summon but does trigger an OnSummon effect
+if applicable.
+
+- RandomSummon, RandomSummonWithEffect
+Interprets Increase like RandomAdd would but instead summons the card.
 
 - Strenghten
 Adds Increase to Target cards' power.
@@ -221,6 +233,11 @@ Does the Shedletsky effect.
 Adds Increase icons of the color to the Target player.
 
 - SetColorName (ie. "SetBlue")
+	- SetNeutral
+	- SetGreen 
+	- SetYellow
+	- SetRed
+	- SetBlue
 Set the amount of colored icons of the Target player to Increase.
 
 - RevealHand
