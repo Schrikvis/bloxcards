@@ -497,6 +497,7 @@ return {
 		CardPackId = 465492637,
 		Description = "Blue is the colour of logic, order, and structure. Thought packs contain cards that cost blue!",
 		Cards = {
+			"DJ Kangaroo"
 			"Aesthetical"
 			"Yoshius",
 			"Nopants99",
@@ -673,6 +674,7 @@ return {
 		CardPackId = 465492745,
 		Description = "Yellow is the colour of community, satisfaction, and society. Revel packs contain cards that cost yellow!",
 		Cards = {
+			"Egg-Eyes Batter Dragon"
 			"AII_Duck"
 			"Helperbot"
 			"PencilWizard",
@@ -878,7 +880,7 @@ return {
 			"Monopoly Man",
 			"Friend Request Spammer",
 			"Smart Planner",
-			"wowwow2211",
+			"DJ Kangaroo",
 			"Luck Warrior of Pure Gold",
 			"Zaquille",
 			"Brick_Man",
@@ -924,7 +926,7 @@ return {
 			"Pancake Break",
 			"BLOXER787",
 			"Aurichalcum",
-			"BrackioTops",
+			"Egg-Eyes Batter Dragon",
 			"Lilmanofsalem",
 			"animallogic",
 			"Mzh3000",
@@ -940,6 +942,7 @@ return {
 			"Paraselene Sage",
 			"President Duck",
 			"Wingman8",
+			"wowwow2211"
 			"Body Guards",
 			"Giftsplosion",
 			"DrPepperSlayer",
