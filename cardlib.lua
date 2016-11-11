@@ -16119,7 +16119,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Korblox Skeleton"] = {
-		["Id"] = "PENDING",
+		["Id"] = 3102,
 		["Name"] = "Korblox Skeleton",
 		["Health"] = 700,
 		["Power"] = 100,
@@ -16130,7 +16130,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 1,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "PENDING",
+			Description = "AAAAAAA",
 			["Type"] = "When this card is targeted, reverse time and turn it into Serhat12.",
 			["Power"] = {{"Summon","Serhat12"}},
 			Target = "Ally",
@@ -16139,7 +16139,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Wolfbitten Noob"] = {
-		["Id"] = "PENDING",
+		["Id"] = 3102,
 		["Name"] = "Wolfbitten Noob",
 		["Health"] = 200,
 		["Power"] = 200,
@@ -16159,7 +16159,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Werewolf Savage"] = {
-		["Id"] = "PENDING",
+		["Id"] = 3102,
 		["Name"] = "Werewolf Savage",
 		["Health"] = 400,
 		["Power"] = 400,
@@ -16237,7 +16237,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Glaciem Knight"] = {
-		["Id"] = "PENDING",
+		["Id"] = 3102,
 		["Name"] = "Glaciem Knight",
 		["Health"] = 700,
 		["Power"] = 450,
@@ -16393,7 +16393,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Pyrotechnics",
 			Description = "2 Charges. At the end of this turn, if you've cast 7 action or terrain spells after this one, you win the game.",
 			["Type"] = "OnAllyCast",
-			["Power"] = {{"Summon","Gambit 3"},{"Damage",9999,"Self"}},
+			["Power"] = {{"Summon","Gambit 4"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Grapeshots ruined, Tendrils of Agony depleted. All that is left is the rush.",		
@@ -16504,7 +16504,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Eisenhower, the Alchemist"] = {
-		["Id"] = "PENDING",
+		["Id"] = 3102,
 		["Name"] = "Eisenhower, the Alchemist",
 		["Health"] = 5700,
 		["Power"] = 0,
@@ -16522,7 +16522,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Haunted Overseer Armor"] = {
-		["Id"] = "PENDING",
+		["Id"] = 3102,
 		["Name"] = "Haunted Overseer Armor",
 		["Health"] = 300,
 		["Power"] = 300,
@@ -16542,7 +16542,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["DIY: Dark Dominus"] = {
-		["Id"] = "PENDING",
+		["Id"] = 3102,
 		["Name"] = "DIY: Dark Dominus",
 		["Health"] = 300,
 		["Power"] = 300,
@@ -16744,7 +16744,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Dredger980"] = {
-		["Id"] = "PENDING",
+		["Id"] = 3102,
 		["Name"] = "Dredger980",
 		["Health"] = 600,
 		["Power"] = 600,
@@ -16859,7 +16859,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Gentle Elder"] = {
-		["Id"] = "PENDING",
+		["Id"] = 3102,
 		["Name"] = "Gentle Elder",
 		["Health"] = 500,
 		["Power"] = 300,
@@ -16916,7 +16916,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Haunted Doge Head"] = {
-		["Id"] = "PENDING",
+		["Id"] = 3102,
 		["Name"] = "Haunted Overseer Armor",
 		["Health"] = 300,
 		["Power"] = 300,
@@ -16957,25 +16957,24 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Inexorable Goo Tide"] = {
 		["Id"] = 540076275,
 		["Name"] = "Inexorable Goo Tide",
-		["Health"] = 0,
-		["Power"] = 0,
+		["Health"] = 2700,
+		["Power"] = 150,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Dash",
-		["Color"] = "Blue", 
+		["Color"] = "Blue",
 		["Cost"] = {["Blue"] = 5,},
-		["Archetype"] = "Morphic",
 		["Effect"] = {
 			Name = "File",
-			Description = "Put a morphic goo into your hand, then destroy all morphic goos.",
-			["Type"] = "Field",
-			["Power"] = {{"Add","Morphic Goo"},{"Damage",9999,"Archetype"}},
+			Description = "At the end of your turns, put a morphic goo into your hand.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Add","Morphic Goo"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Waste. Want.",
 	},
 	
 	["Infected Mushrooms"] = {
-		["Id"] = "PENDING",
+		["Id"] = 3102,
 		["Name"] = "Blood Moon Shard",
 		["Health"] = 400,
 		["Power"] = 0,
@@ -16994,7 +16993,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["KillCactaur"] = {
-		["Id"] = "PENDING",
+		["Id"] = 3102,
 		["Name"] = "KillCactaur",
 		["Health"] = 800,
 		["Power"] = 300,
@@ -17025,7 +17024,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Carniverous Death Moth"] = {
-		["Id"] = "PENDING",
+		["Id"] = 3102,
 		["Name"] = "Carniverous Death Moth",
 		["Health"] = 400,
 		["Power"] = 400,
@@ -17266,7 +17265,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 1, ["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Div/0",
-			Description = "A target fighter gains 100 health.",
+			Description = "Lock a target fighter for 1 turn.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Lock",1}},
 			Target = "Single",
@@ -17356,7 +17355,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Headless Horseman"] = {
-		["Id"] = "PENDING",
+		["Id"] = 3102,
 		["Name"] = "Headless Horseman",
 		["Health"] = 500,
 		["Power"] = 500,
@@ -17375,7 +17374,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Haunted Redcliff Armor"] = {
-		["Id"] = "PENDING",
+		["Id"] = 3102,
 		["Name"] = "Haunted Redcliff Armor",
 		["Health"] = 300,
 		["Power"] = 300,
@@ -17414,7 +17413,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Ignis Knight"] = {
-		["Id"] = "PENDING",
+		["Id"] = 3102,
 		["Name"] = "Ignis Knight",
 		["Health"] = 700,
 		["Power"] = 450,
@@ -17702,7 +17701,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["It that was Silenced"] = {
-		["Id"] = "PENDING",
+		["Id"] = 3102,
 		["Name"] = "It that was Silenced",
 		["Health"] = 250,
 		["Power"] = 250,
@@ -17723,7 +17722,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["It that is Whispering"] = {
-		["Id"] = "PENDING",
+		["Id"] = 3102,
 		["Name"] = "It that is Whispering",
 		["Health"] = 500,
 		["Power"] = 500,
@@ -17743,7 +17742,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["It that will Howl"] = {
-		["Id"] = "PENDING",
+		["Id"] = 3102,
 		["Name"] = "It that is will Howl",
 		["Health"] = 1000,
 		["Power"] = 1000,
@@ -17763,7 +17762,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Eclipse, Werewolf Colossus"] = {
-		["Id"] = "PENDING",
+		["Id"] = 3102,
 		["Name"] = "Eclipse, Werewolf Colossus",
 		["Health"] = 2000,
 		["Power"] = 2000,
@@ -17783,7 +17782,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Unspeakable Summoning"] = {
-		["Id"] = "PENDING",
+		["Id"] = 3102,
 		["Name"] = "Unspeakable Summoning",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -17802,7 +17801,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Lezus 1"] = {
-		["Id"] = "PENDING",
+		["Id"] = 3102,
 		["Name"] = "Lezus",
 		["Health"] = 500,
 		["Power"] = 500,
@@ -17822,7 +17821,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Lezus 2"] = {
-		["Id"] = "PENDING",
+		["Id"] = 3102,
 		["Name"] = "Lezus",
 		["Health"] = 500,
 		["Power"] = 500,
@@ -17842,7 +17841,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Lezus 3"] = {
-		["Id"] = "PENDING",
+		["Id"] = 3102,
 		["Name"] = "Lezus",
 		["Health"] = 500,
 		["Power"] = 500,
@@ -17862,7 +17861,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Lezus 4"] = {
-		["Id"] = "PENDING",
+		["Id"] = 3102,
 		["Name"] = "Lezus",
 		["Health"] = 500,
 		["Power"] = 500,
@@ -17882,7 +17881,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Lezus 5"] = {
-		["Id"] = "PENDING",
+		["Id"] = 3102,
 		["Name"] = "Lezus",
 		["Health"] = 500,
 		["Power"] = 500,
@@ -17902,7 +17901,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Mad Scientist"] = {
-		["Id"] = "PENDING",
+		["Id"] = 3102,
 		["Name"] = "Mad Scientist",
 		["Health"] = 500,
 		["Power"] = 300,
@@ -17959,7 +17958,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Hacker"] = {
-		["Id"] = "PENDING",
+		["Id"] = 3102,
 		["Name"] = "Hacker",
 		["Health"] = 400,
 		["Power"] = 400,
@@ -17978,7 +17977,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Ye Old Arte"] = {
-		["Id"] = "PENDING",
+		["Id"] = 3102,
 		["Name"] = "Ye Old Arte",
 		["Health"] = 500,
 		["Power"] = 300,
@@ -18028,8 +18027,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Haydoscale",
 			Description = "When this card is summoned, put a random red or blue action into your hand. At the end of your turns, enemy fighters lose 25 power and Script Robber gains 125 power.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Summon","Robber Token"},{"RandomAdd","Lunar"},{"Damage",9999,"Self"}},
-			Target = "All",
+			["Power"] = {{"Summon","Robber Token",},{"RandomAdd","Lunar"},{"Damage",9999,"Self"}},
+			Target = "Ally",
 		},
 		["Bio"] = "It's not stealing, It's marketing. Meanwhile, I'm not a sore loser. I'm just expressive.",
 	},
@@ -18047,7 +18046,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Haydoscale",
 			Description = "When this card is summoned, put a random red or blue action into your hand. At the end of your turns, enemy fighters lose 25 power and Script Robber gains 150 power.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Weaken",25},{"Strengthen",175}},
+			["Power"] = {{"Weaken",25},{"Strengthen",175,"Self"}},
 			Target = "All",
 		},
 		["Bio"] = "It's not stealing, It's marketing. Meanwhile, I'm not a sore loser. I'm just expressive.",
@@ -18111,7 +18110,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Ghoost"] = {
-		["Id"] = "PENDING",
+		["Id"] = 3102,
 		["Name"] = "Ghoost",
 		["Health"] = 100,
 		["Power"] = 200,
@@ -18173,7 +18172,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Kalman Sinister"] = {
-		["Id"] = "PENDING",
+		["Id"] = 3102,
 		["Name"] = "Kalman Sinister",
 		["Health"] = 400,
 		["Power"] = 400,
@@ -18193,7 +18192,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Victor Sinister"] = {
-		["Id"] = "PENDING",
+		["Id"] = 3102,
 		["Name"] = "Victor Sinister",
 		["Health"] = 400,
 		["Power"] = 400,
@@ -18226,7 +18225,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Haydoscale",
 			Description = "Can't Attack. Put a morphic goo into your hand.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Add","Morphic Goo"}},
+			["Power"] = {{"Add","Morphic Goo","Ally"}},
 			Target = "Opponent",
 		},
 		["Bio"] = "Waste product is still product.",
@@ -18266,7 +18265,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Haydoscale",
 			Description = "Whenever your opponent summons a fighter, put a nightmare into both players' hands.",
 			["Type"] = "OnEnemySummon",
-			["Power"] = {{"Add","Nightmare"}},
+			["Power"] = {{"Add","Nightmare","Ally"},{"Add","Nightmare","Opponent"}},
 			Target = "All",
 		},
 		["Bio"] = "Trade sand for furs, furs for gold, and gold for life. But in the end, you'll trade life for sand.",
@@ -18322,7 +18321,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 6,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "PENDING",
+			Description = "AAAAAA",
 			["Type"] = "When this card attacks, put a Morphic Goo and a Targeting Blip into your hand.",
 			["Power"] = {{"Add","Morphic Goo"},{"Add","Targeting Blip"}},
 			Target = "Ally",
@@ -18369,7 +18368,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Slenderman"] = {
-		["Id"] = "PENDING",
+		["Id"] = 3102,
 		["Name"] = "Slenderman",
 		["Health"] = 900,
 		["Power"] = 1200,
@@ -18407,7 +18406,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Pyramid Head"] = {
-		["Id"] = "PENDING",
+		["Id"] = 3102,
 		["Name"] = "Pyramid Head",
 		["Health"] = 600,
 		["Power"] = 400,
@@ -18426,7 +18425,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Patric Sinister"] = {
-		["Id"] = "PENDING",
+		["Id"] = 3102,
 		["Name"] = "Patric Sinister",
 		["Health"] = 350,
 		["Power"] = 350,
@@ -18467,7 +18466,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Eisenhower, the Alchemist"] = {
-		["Id"] = "PENDING",
+		["Id"] = 3102,
 		["Name"] = "Eisenhower, the Alchemist",
 		["Health"] = 5700,
 		["Power"] = 0,
@@ -18528,7 +18527,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Evil Prince"] = {
-		["Id"] = "PENDING",
+		["Id"] = 3102,
 		["Name"] = "Evil Prince",
 		["Health"] = 300,
 		["Power"] = 175,
@@ -18548,7 +18547,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Werefrog"] = {
-		["Id"] = "PENDING",
+		["Id"] = 3102,
 		["Name"] = "Werefrog",
 		["Health"] = 600,
 		["Power"] = 300,
@@ -18568,7 +18567,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Lumberjack"] = {
-		["Id"] = "PENDING",
+		["Id"] = 3102,
 		["Name"] = "Lumberjack",
 		["Health"] = 300,
 		["Power"] = 300,
@@ -18588,7 +18587,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Werebear"] = {
-		["Id"] = "PENDING",
+		["Id"] = 3102,
 		["Name"] = "Werebear",
 		["Health"] = 600,
 		["Power"] = 600,
@@ -18608,7 +18607,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Wolfbitten Noob"] = {
-		["Id"] = "PENDING",
+		["Id"] = 3102,
 		["Name"] = "Wolfbitten Noob",
 		["Health"] = 200,
 		["Power"] = 200,
@@ -18628,7 +18627,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Werewolf Savage"] = {
-		["Id"] = "PENDING",
+		["Id"] = 3102,
 		["Name"] = "Werewolf Savage",
 		["Health"] = 400,
 		["Power"] = 400,
@@ -18648,7 +18647,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Paraselene Ascetic"] = {
-		["Id"] = "PENDING",
+		["Id"] = 3102,
 		["Name"] = "Paraselene Ascetic",
 		["Health"] = 350,
 		["Power"] = 350,
@@ -18668,7 +18667,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Lunar Rager"] = {
-		["Id"] = "PENDING",
+		["Id"] = 3102,
 		["Name"] = "Lunar Rager",
 		["Health"] = 700,
 		["Power"] = 700,
@@ -18688,7 +18687,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Blessed Acolyte"] = {
-		["Id"] = "PENDING",
+		["Id"] = 3102,
 		["Name"] = "Blessed Acolyte",
 		["Health"] = 300,
 		["Power"] = 300,
@@ -18708,7 +18707,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Werewyrm"] = {
-		["Id"] = "PENDING",
+		["Id"] = 3102,
 		["Name"] = "Werewyrm",
 		["Health"] = 700,
 		["Power"] = 700,
@@ -18728,7 +18727,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Homeless Man"] = {
-		["Id"] = "PENDING",
+		["Id"] = 3102,
 		["Name"] = "Homeless Man",
 		["Health"] = 500,
 		["Power"] = 500,
@@ -18749,7 +18748,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["DIY: Werewolf"] = {
-		["Id"] = "PENDING",
+		["Id"] = 3102,
 		["Name"] = "DIY: Werewolf",
 		["Health"] = 1000,
 		["Power"] = 1000,
@@ -18769,7 +18768,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Wolven Blitz"] = {
-		["Id"] = "PENDING",
+		["Id"] = 3102,
 		["Name"] = "DIY: Werewolf",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -19056,7 +19055,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Haydoscale",
 			Description = "When this card is targeted, reveal its true form.",
 			["Type"] = "OnTarget",
-			["Power"] = {{"RandomSummon"}},
+			["Power"] = {{"RandomSummon",030}},
 			Target = "Ally",
 		},
 		["Bio"] = "Eisenhower's greatest weapon was what he never used.",
