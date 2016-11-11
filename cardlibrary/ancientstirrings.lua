@@ -2897,7 +2897,7 @@ local module = {
 		["Effect"] = {
 			Name = "Haydoscale";
 			Description = "At the end of your turns; deal 250 damage to all other fighters. They gain 250 power.";
-			["Type"] = "OnEmd";
+			["Type"] = "OnEnd";
 			["Power"] = {{"Heal";250;"Self"};{"Damage";250};{"Strengthen";250};{"Weaken";250;"Self"}};
 			Target = "All";
 		};
@@ -2937,7 +2937,7 @@ local module = {
 			Name = "Haydoscale";
 			Description = "When this card is targeted; reveal its true form.";
 			["Type"] = "OnTarget";
-			["Power"] = {{"RandomSummon"}};
+			["Power"] = {{"RandomSummon", "Morphic"}};
 			Target = "Ally";
 		};
 		["Bio"] = "Eisenhower's greatest weapon was what he never used.";
