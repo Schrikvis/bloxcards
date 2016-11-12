@@ -500,6 +500,7 @@ return {
 		CardPackId = 465492637,
 		Description = "Blue is the colour of logic, order, and structure. Thought packs contain cards that cost blue!",
 		Cards = {
+			"Deep Sea Diver",
 			"CalmFoxz",
 			"The Gentlemaniac",
 			"ReeseMcBlox",
@@ -678,6 +679,7 @@ return {
 		CardPackId = 465492745,
 		Description = "Yellow is the colour of chaos, emotion, and society. Revel packs contain cards that cost yellow!",
 		Cards = {
+			"Dicey Dave",
 			"Helperbot",
 			"PencilWizard",
 			"YotamTiti",
@@ -851,6 +853,8 @@ return {
 		CardPackId = 434684079,
 		Description = "Obvious Packs contain only white cards, joke cards and new cards. You must have 10 wins to open these packs.",
 		Cards = {
+			"Deep Sea Diver",
+			"Dicey Dave",
 			"wowwow2211",
 			"Aesthetical",
 			"AII_Duck",
@@ -948,8 +952,6 @@ return {
 			"Mzh3000",
 			"Miked",
 			"Fenrier",
-			"JaikKaik",
-			"Gravity Inspector",
 			"Wingman8",
 			"Rainbowjewelninga785",
 			"Body Guards",
