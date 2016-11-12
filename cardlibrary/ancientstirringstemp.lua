@@ -1,4 +1,5 @@
 --Ignore for now. Is for storage purposes!
+--[[
 	["Bitter Candy"] = {
 		["Id"] = "PENDING",
 		["Name"] = "Bitter Candy",
@@ -211,6 +212,7 @@
 		["Bio"] = "He got me. - Sword Critic",
 	},
 	
+--[[
 	
 BLUE
 COMMONS
@@ -351,7 +353,7 @@ EPICS
 LEGENDARIES
 1 - Hallow, the Sugarlord (Created)
 
-
+--]]
 	
 	["Haunted Korblox Armor"] = {
 		["Id"] = "PENDING",
@@ -2325,7 +2327,7 @@ LEGENDARIES
 			["Power"] = {{"Damage",500,"Archetype",},{"Strengthen",500,"Archetype"}},
 			Target = "Ally",
 		},
-		["Bio"] = "But the SCHALLOPS& I NEED the scallops.[ Scaloops< Scallops> Scall~ Scallops# Scallops@ Scaloppinelionia King Junior the Fourth on toastÂ£",
+		["Bio"] = "But the SCHALLOPS& I NEED the scallops.[ Scaloops< Scallops> Scall~ Scallops# Scallops@ Scaloppinelionia King Junior the Fourth on toast£",
 	},
 	
 	["Frankenstein"] = {
@@ -2921,7 +2923,7 @@ LEGENDARIES
 			["Power"] = {{"Summon","Homeless Man"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
-		["Bio"] = "Just look at 'im, groveling on all fours! What a patheti â€” ... Oh."
+		["Bio"] = "Just look at 'im, groveling on all fours! What a patheti — ... Oh."
 	},
 	
 	["Wolven Blitz"] = {
@@ -3023,6 +3025,8 @@ LEGENDARIES
 		["Bio"] = "Hallow has inventive ways of getting people to speak.",
 	},
 	
+
+--[[
 	RARES
 1 - Haunted Overseer Armor (Created)
 2 - DIY:Dark Dominus (Completed)
@@ -3035,3 +3039,6 @@ EPICS
 3 - Fearmiredon
 LEGENDARIES
 1 - Priestess Zanzel, the Promised One (Done)
+--]]
+
+--]]
