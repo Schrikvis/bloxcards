@@ -1,4 +1,4 @@
-local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO	
+local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO	
 	["Korblox Skeleton"] = {
 		["Id"] = 543041104,
 		["Name"] = "Korblox Skeleton",
