@@ -32,6 +32,7 @@ local function TestCard(library, id, card)
 	end
 	if card.Effect then
 		assert(card.Effect.Name and card.Effect.Description and card.Effect.Type and card.Effect.Power and card.Effect.Target, id.." has an incomplete card effect.")
+		assert(substring(card.Effect.Type, 1, 2) == "On" or card.Effect.Type == "Field", id.." has a nonsensical card effect trigger.")
 	end
 	if card.Original then
 		assert(library[card.Original], id.." has a non-existant Original card.")
