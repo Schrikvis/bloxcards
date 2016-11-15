@@ -12,6 +12,7 @@
 local cardlibrary = {}
 
 local pairs = pairs
+local substring = string.sub
 local cardcount = 0
 local assert = function(...) assert(...) end
 local c3n = Color3.new

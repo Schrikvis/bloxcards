@@ -193,15 +193,18 @@ Adds the card of name Increase to the Target's deck.
 
 - RandomAdd
 Adds a random card of rarity Increase to the Target's hand.
-RandomAdd's Increase allows for 'complex' statements. 
+RandomAdd's Increase allows for 'complex' statements.
+Shedletsky and Token cards are never selected.
 Stitch together a Color, Archetype and Rarity to specify from what 
-pool the card should be pulled. All of these specifiers are optional. 
+pool the card should be selected.
+Providing no specifier or "All" has the effect of selecting any card.
 Consider the following examples:
 "RareYellowDoge"
 "BlueNinja"
 "CommonGreen"
 "Neutral"
 "Bee"
+"All"
 
 - Summon
 Summons an Increase card to the Target's field. Does not trigger any
