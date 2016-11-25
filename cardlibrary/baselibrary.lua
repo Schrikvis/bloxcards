@@ -16320,51 +16320,6 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "TFW you realize this is a bee card.",
 	},	
 	
-	["Demon Lord Bebee2"] = {
-		["Id"] = 540808303,
-		["Name"] = "Demon Lord Bebee2",
-		["Original"] = "Bebee2",
-		["AltArt"] = true,
-		["Health"] = 500,
-		["Power"] = 500,
-		["Rarity"] = "Common",
-		["AttackEffect"] = "Thunder",
-		["Color"] = "Blue",
-		["Archetype"] = "Masant",
-		["Cost"] = {["Blue"] = 4,["Neutral"] = 4},
-		["Effect"] = {
-			Name = "Revival",
-			Description = "Summon Demonic Godbeasts until your life has ended.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Summon","Demonic Hellbeast"},{"Summon","Demonic Hellbeast"},{"Summon","Demonic Hellbeast"},{"Summon","Demonic Hellbeast"},{"Summon","Demonic Hellbeast"},{"Summon","Demonic Hellbeast"},{"Summon","Demonic Hellbeast"}},
-			Target = "Ally",
-		},
-		["Bio"] = "Et adorabunt me, nisi ut mittatur in púeros inferni detractos fili.",
-	
-	["Demonic Hellbeast"] = {
-		["Id"] = 540809448,
-		["Name"] = "Demonic Godbeast",
-		["Original"] = "Demonic Godbeast",
-		["Health"] = 10000,
-		["Power"] = 5000,
-		["Rarity"] = "Token",
-		["AttackEffect"] = "Thunder",
-		["Archetype"] = "Conjuration",
-		["AttackBlock"] = true,
-		["Token"] = true,
-		["Color"] = "Neutral",
-		["Cost"] = {["Neutral"] = 0},
-		["Effect"] = {
-			Name = "Revival",
-			Description = "Can't attack. Deal 9999 damage to this card at the end of your turn.",
-			["Type"] = "OnEnd",
-			["Power"] = "Damage",
-			Target = "Self",
-			Increase = 9999,
-		},
-		["Bio"] = "Spiritus domini dominus bebee2 regulam: omne quod fieri non videmus.",
-	},
-	
 	["Shemale Unlimxted"] = {
 		["Id"] = 540872352,
 		["Name"] = "Unlimxted",
@@ -16522,47 +16477,6 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "The female version of fave. She is fabulous, loves starblox, and hangs out with amber sometimes.",
 	},
 	
-	
-	
-}
-
-
-	
-
-local pairs = pairs
-local cardcount = 0
-local assert = assert
-local c3n = Color3.new
-local clr = {Blue = c3n(0.25,0.25,1), Red = c3n(1,0.25,0.25), Green = c3n(0.25,1,0.25), Yellow = c3n(1,1,0.25), Neutral = c3n(1,1,1)}
-for id,card in pairs(module) do
-	cardcount = cardcount + 1
-	assert(card.Name, id.." has no name.")
-	assert(card.Bio, id.." has no bio.")
-	assert(type(card.Id) == 'number', id.." id malformed.")
-	assert(card.Rarity, id.." has no rarity.")
-	assert(card.Power and card.Health and card.Color, id.." has no health or power or color.")
-	assert(card.AttackEffect or card.Archetype == "Terrain" or (card.Health == 0 and card.Power == 0), id.." has no attack effect animation.")
-	assert(card.Color, id.." has no color.")
-	assert(clr[card.Color], id.." has no real color.")
-	assert(card.Cost, id.." has no cost.")
-	for color,amount in pairs(card.Cost) do
-		assert(clr[color], id.." has an unreal color cost.")
-		assert(type(amount) == 'number', id.." has a non-number cost.")
-	end
-	if card.Effect then
-		assert(card.Effect.Name and card.Effect.Description and card.Effect.Type and card.Effect.Power and card.Effect.Target, id.." has an incomplete card effect.")
-	end
-	if card.Original then
-		assert(module[card.Original], id.." has a non-existant Original card.")
-	end
-	if card.AltCards then
-		for _,name in pairs(card.AltCards) do
-			assert(module[name], id.." has a non-existant Alt card "..name..".")
-		end
-	end
-end
-print(cardcount)
-=======
 	["Haggie125"] = {
 		["Id"] = 513644638,
 		["Name"] = "Haggie125",
@@ -16620,426 +16534,8 @@ print(cardcount)
 		["Bio"] = "Ice cold.",
 	},
 	
-	["Rollernaut"] = {
-		["Id"] = 540882729,
-		["Name"] = "Rollernaut",
-		["Health"] = 850,
-		["Power"] = 550,
-		["Rarity"] = "Rare",
-		["AttackEffect"] = "Dash",
-		["Token"] = true
-		["Color"] = "Blue",
-		["Cost"] = {["Blue"] = 2,["Neutral"] = 3,}, 
-		["Effect"] = {
-			Name = "Batter Up",
-			Description = "Swap a fighters stats. This card cannon generate icons.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Swap",030}},
-			Target = "Single",
-		},
-		["Bio"] = "Rollin' my way down town, pushing guys, off the ledge everyday.",
-	},
-	
-	["Egg Eyes Batter Dragon"] = {
-		["Id"] = 528149527,
-		["Name"] = "Egg Eyes Batter Dragon",
-		["Health"] = 1350,
-		["Power"] = 100,
-		["Rarity"] = "Epic",
-		["AttackEffect"] = "Fire",
-		["Color"] = "Neutral",
-		["Archetype"] = "Dragon",
-		["Cost"] = {["Yellow"] = 3,["Neutral"] = 4,}, 
-		["Effect"] = {
-			Name = "Batter Up",
-			Description = "Give a fighter 400 health.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Heal",400}},
-			Target = "Single",
-		},
-		["Bio"] = "I WARNED YOU TEA, NOW BATTER UP!",
-	},
-	
-	["CowboyV2"] = {
-		["Id"] = 540878417,
-		["Name"] = "Cowboy",
-		["Original"] = "Cowboy",
-		["AltArt"] = true,
-		["Health"] = 250,
-		["Power"] = 250,
-		["Rarity"] = "Common",
-		["AttackEffect"] = "PistolShot",
-		["Color"] = "Red",
-		["Archetype"] = "Masant",
-		["Cost"] = {["Neutral"] = 1,},
-		["Effect"] = {
-			Name = "High Noon",
-			Description = "Deal 50 damage to a target fighter.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",50}},
-			Target = "Single",
-		},
-		["Bio"] = "Oh boy, would ya look at the time.",
-	},
-	
-	["DJ Kangaroo"] = {
-		["Id"] = 540884098,
-		["Name"] = "DJ Kangaroo",
-		["Health"] = 100,
-		["Power"] = 100,
-		["Rarity"] = "Uncommon",
-		["AttackEffect"] = "Lightning",
-		["Color"] = "Blue",
-		["Cost"] = {["Neutral"] = 2,},
-		["Effect"] = {
-			Name = "BeatZZ",
-			Description = "All allied fighters gain 50 power and 50 health from listening to the sickest beatz.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Strengthen",50},{"Heal",50}},
-			Target = "Single",
-		},
-		["Bio"] = "He is australian, he loves hip-hop, and he always has the sick beatz.",
-	},
-	
-	["iiMasantv2"] = {
-		["Id"] = 540872032,
-		["Name"] = "iiMasant",
-		["Original"] = "iiMasant",
-		["AltArt"] = true,
-		["Health"] = 700,
-		["Power"] = 700,
-		["Rarity"] = "Epic",
-		["AttackEffect"] = "Dash",
-		["Color"] = "Red", 
-		["Archetype"] = "Masant",
-		["Cost"] = {["Red"] = 7,},
-		["Effect"] = {
-			Name = "AAAAAAAAAAAAAAAAAA",
-			Description = "Put two non-archetype alternate-art cards into your hand.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"RandomAdd","Masant"},{"RandomAdd","Masant"}},
-			Target = "Ally",
-		},
-		["Bio"] = "The iiMasant that outmasanted iiMasant himself.",
-	},
-	
-	["EfanPlayzv2"] = {
-		["Id"] = 540869055,
-		["Name"] = "EfanPlayz",
-		["Original"] = "EfanPlayz",
-		["AltArt"] = true,
-		["Health"] = 800,
-		["Power"] = 0,
-		["Rarity"] = "Uncommon",
-		["AttackEffect"] = "Lightning",
-		["Color"] = "Green",
-		["Archetype"] = "Masant",
-		["Cost"] = {["Neutral"] = 3,["Green"] = 2,},
-		["Effect"] = {
-			Name = "Twist",
-			Description = "Whenever this fighter is targeted, deal 300 damage to the opponent.",
-			["Type"] = "OnTarget",
-			["Power"] = {{"Inflict",300}},
-			Target = "Opponent",
-		},
-		["Bio"] = "What is his favorite color, you ask? Purple.",
-	},			
-	
-	["Skarra the DragonSlayerv2"] = {
-		["Id"] = 540870000,
-		["Name"] = "Skarra the DragonSlayer",
-		["Original"] = "Skarra the Dragonslayer",
-		["AltArt"] = true,
-		["Health"] = 700,
-		["Power"] = 700,
-		["Rarity"] = "Legendary",
-		["Archetype"] = "Dragon",
-		["AttackEffect"] = "Punch1",
-		["Color"] = "Red",
-		["Archetype"] = "Dragon",
-		["Cost"] = {["Red"] = 6, ["Neutral"] = 1,},
-		["Effect"] = {
-			Name = "Render",
-			Description = "At the end of your turn, call a dragon from ancient legends to help you.",
-			["Type"] = "OnEnd",
-			["Power"] = {{"RandomAdd","LegendaryDragon"}},
-			Target = "Ally",
-		},
-		["Bio"] = "An ancient dragon warrior. The only dragon Skarra wont kill is the one that he rides.",
-	},
-	
-	["Arceusdonv2"] = {
-		["Id"] = 540864054,
-		["Name"] = "Arceusdon",
-		["Original"] = "Arceusdon",
-		["AltArt"] = true,
-		["Health"] = 700,
-		["Power"] = 400,
-		["Rarity"] = "Legendary",
-		["AttackEffect"] = "Thunder",
-		["Color"] = "Blue",
-		["Archetype"] = "Masant",
-		["Cost"] = {["Neutral"] = 3,["Blue"] = 4,},
-		["Effect"] = {
-			Name = "Master Blast",
-			Description = "Set a target fighter's attack to 700.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Weaken",9999},{"Strengthen",700}},
-			Target = "Single",
-		},
-		["Bio"] = "o3o .eiD",
-	},
-	
-	["Teadaddy"] = {
-		["Id"] = 540871820,
-		["Name"] = "Teaism",
-		["Original"] = "Teaism",
-		["AltArt"] = true,
-		["Health"] = 1200,
-		["Power"] = 400,
-		["Rarity"] = "Legendary",
-		["AttackEffect"] = "Lightning",
-		["Archetype"] = "Noob",
-		["Token"] = true,
-		["Color"] = "Blue",
-		["Cost"] = {["Neutral"] = 7,["Blue"] = 3,},
-		["Effect"] = {
-			Name = "T2B",
-			Description = "Add Beedaddy to your hand and gain 3 Green icons. This card cannot generate icons.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Add","Beedaddy"},{"Green",3}},
-			Target = "Self",
-		},
-		["Bio"] = "Beta is coming SOONtm, right vis?",
-	},	
-	
-	["Beedaddy"] = {
-		["Id"] = 540864462,
-		["Name"] = "Beeism",
-		["Original"] = "Beeism",
-		["AltArt"] = true,
-		["Health"] = 900,
-		["Power"] = 500,
-		["Rarity"] = "Legendary",
-		["AttackEffect"] = "Lightning",
-		["Archetype"] = "Bee",
-		["Token"] = true,
-		["Color"] = "Green",
-		["Cost"] = {["Neutral"] = 2,["Green"] = 6,},
-		["Effect"] = {
-			Name = "B2T",
-			Description = "Add Teadaddy to your hand and gain 3 Blue icons. This card cannot generate icons.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Add","Teadaddy"},{"Blue",3}},
-			Target = "Self",
-		},
-		["Bio"] = "TFW you realize this is a bee card.",
-	},	
-	
-	["Demon Lord Bebee2"] = {
-		["Id"] = 540808303,
-		["Name"] = "Demon Lord Bebee2",
-		["Original"] = "Bebee2",
-		["AltArt"] = true,
-		["Health"] = 500,
-		["Power"] = 500,
-		["Rarity"] = "Common",
-		["AttackEffect"] = "Thunder",
-		["Color"] = "Blue",
-		["Archetype"] = "Masant",
-		["Cost"] = {["Blue"] = 4,["Neutral"] = 4},
-		["Effect"] = {
-			Name = "Revival",
-			Description = "Summon Demonic Godbeasts until your life has ended.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Summon","Demonic Hellbeast"},{"Summon","Demonic Hellbeast"},{"Summon","Demonic Hellbeast"},{"Summon","Demonic Hellbeast"},{"Summon","Demonic Hellbeast"},{"Summon","Demonic Hellbeast"},{"Summon","Demonic Hellbeast"}},
-			Target = "Ally",
-		},
-		["Bio"] = "Et adorabunt me, nisi ut mittatur in púeros inferni detractos fili.",
-	
-	["Demonic Hellbeast"] = {
-		["Id"] = 540809448,
-		["Name"] = "Demonic Godbeast",
-		["Original"] = "Demonic Godbeast",
-		["Health"] = 10000,
-		["Power"] = 5000,
-		["Rarity"] = "Token",
-		["AttackEffect"] = "Thunder",
-		["Archetype"] = "Conjuration",
-		["AttackBlock"] = true,
-		["Token"] = true,
-		["Color"] = "Neutral",
-		["Cost"] = {["Neutral"] = 0},
-		["Effect"] = {
-			Name = "Revival",
-			Description = "Can't attack. Deal 9999 damage to this card at the end of your turn.",
-			["Type"] = "OnEnd",
-			["Power"] = "Damage",
-			Target = "Self",
-			Increase = 9999,
-		},
-		["Bio"] = "Spiritus domini dominus bebee2 regulam: omne quod fieri non videmus.",
-	},
-	
-	["Shemale Unlimxted"] = {
-		["Id"] = 540872352,
-		["Name"] = "Unlimxted",
-		["Original"] = "Unlimxted",
-		["AltArt"] = true,
-		["Health"] = 800,
-		["Power"] = 900,
-		["Rarity"] = "Uncommon",
-		["AttackEffect"] = "Lightning",
-		["Color"] = "Yellow",
-		["Archetype"] = "Masant",
-		["Cost"] = {["Neutral"] = 1,["Yellow"] = 3,},
-		["Effect"] = {
-			Name = "TRIGGERED",
-			Description = "When this card is triggered, destroy it.",
-			["Type"] = "OnTarget",
-			["Power"] = {{"Damage",9999}},
-			Target = "Self",
-		},
-		["Bio"] = "I have many fanboys...",
-	},	
-	
-	["XxFreezerFlamesxXv2"] = {
-		["Id"] = 540877188,
-		["Name"] = "XxFreezerFlamesxX",
-		["Original"] = "XxFreezerFlamesxX",
-		["AltArt"] = true,
-		["Health"] = 400,
-		["Power"] = 800,
-		["Rarity"] = "Rare",
-		["DiscardBlock"] = true,
-		["AttackEffect"] = "Lightning",
-		["Token"] = true,
-		["Color"] = "Red",
-		["Archetype"] = "Masant",
-		["Cost"] = {["Neutral"] = 1,["Blue"] = 2,["Red"] = 2,},
-		["Effect"] = {
-			Name = "Knockdown",
-			Description = "Can't be discarded, or generate icons.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",0}},
-			Target = "Archetype",
-		},
-		["Bio"] = "Dying and living.",
-	},			
-
-	["DIY Headphonesv2"] = {
-		["Id"] = 540869392,
-		["Name"] = "DIY Headphones",
-		["Original"] = "DIY Headphones",
-		["AltArt"] = true,
-		["Health"] = 700,
-		["Power"] = 0,
-		["Rarity"] = "Rare",
-		["AttackEffect"] = "Punch1",
-		["Color"] = "Yellow",
-		["Archetype"] = "Masant",
-		["Cost"] = {["Neutral"] = 3,["Yellow"] = 1},
-		["Effect"] = {
-			Name = "Purlot",
-			Description = "Increase the health and attack of all your fighters by 100.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Strengthen",100},{"Heal",100}},
-			Target = "Ally",
-		},
-		["Bio"] = "Killing you in style!",
-	},
-	
-	["DIY Biggerheadv2"] = {
-		["Id"] = 540869609,
-		["Name"] = "DIY Biggerhead",
-		["Original"] = "DIY Biggerhead",
-		["AltArt"] = true,
-		["Health"] = 350,
-		["Power"] = 700,
-		["Rarity"] = "Rare",
-		["AttackEffect"] = "Fire",
-		["Color"] = "Red",
-		["Archetype"] = "Masant",
-		["Token"] = true,
-		["Cost"] = {["Neutral"] = 2,["Red"] = 2},
-		["Effect"] = {
-			Name = "Inflated Ego",
-			Description = "Deal 250 damage to a target fighter and increase that fighter's Power by 300. This card cannot generate icons.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Strengthen",300},{"Damage",250}},
-			Target = "Single",
-		},
-		["Bio"] = "Who needs robux for a biggerhead, ill just kill them and take it myself.",
-	},
-	
-	["DIY Azurewrathv2"] = {
-		["Id"] = 540865102,
-		["Name"] = "DIY Azurewrath",
-		["Original"] = "DIY Azurewrath",
-		["AltArt"] = true,
-		["Health"] = 1300,
-		["Power"] = 600,
-		["Rarity"] = "Rare",
-		["AttackEffect"] = "Punch1",
-		["Color"] = "Blue",
-		["Archetype"] = "Masant",
-		["Cost"] = {["Neutral"] = 3,["Blue"] = 3},
-		["Effect"] = {
-			Name = "Value Trading",
-			Description = "Deal 500 damage to all your fighters and draw 2 cards.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",500},{"Draw",2}},
-			Target = "Ally",
-		},
-		["Bio"] = "FEEL MY PAPER WRATH!",
-	},
-	
-	["1x1x1x1v2"] = {
-		["Id"] = 540800410,
-		["Name"] = "1x1x1x1",
-		["Original"] = "1x1x1x1",
-		["AltArt"] = true,
-		["Health"] = 1000,
-		["Power"] = 250,
-		["Rarity"] = "Legendary",
-		["AttackEffect"] = "Thunder",
-		["Color"] = "Green",
-		["Archetype"] = "Masant",
-		["Cost"] = {["Neutral"] = 4,["Green"] = 3,},
-		["Effect"] = {
-			Name = "H$X",
-			Description = "Hack the power of all figthers to 250.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Weaken",9999},{"Strengthen",250}},
-			Target = "All",
-		},
-		["Bio"] = "You should all be scared. I will come back one day, you will see.",
-	},
-	
-	["Favette"] = {
-		["Id"] = 540801394,
-		["Name"] = "Favette",
-		["Original"] = "Fave",
-		["AltArt"] = true,
-		["Health"] = 1200,
-		["Power"] = 350,
-		["Rarity"] = "Legendary",
-		["AttackEffect"] = "Dash",
-		["Cost"] = {["Red"] = 4,["Neutral"] = 6,},
-		["Color"] = "Red",
-		["Archetype"] = "Masant",
-		["Effect"] = {
-			Name = "Extreme Energy Care Package",
-			Description = "All your fighters gain 300 Health and 150 Power.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Strengthen",150},{"Heal",300}},
-			Target = "Ally",
-		},
-		["Bio"] = "The female version of fave. She is fabulous, loves starblox, and hangs out with amber sometimes.",
-	},
-	
 	["Kinnis97"] = {
-		["Id"] = 526036502,
+		["Id"] = 556057564,
 		["Name"] = "Kinnis97",
 		["Health"] = 550,
 		["Power"] = 775,
@@ -17058,7 +16554,7 @@ print(cardcount)
 	},
 	
 	["Games"] = {
-		["Id"] = 526036502,
+		["Id"] = 556058880,
 		["Name"] = "Games",
 		["Health"] = 300,
 		["Power"] = 300,
@@ -17077,7 +16573,7 @@ print(cardcount)
 	},	
 	
 	["Linked Sword"] = {
-		["Id"] = 336415507,
+		["Id"] = 556059305,
 		["Name"] = "Linked Sword",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -17097,7 +16593,7 @@ print(cardcount)
 	},		
 	
 	["Trowel"] = {
-		["Id"] = 336415507,
+		["Id"] = 556058515,
 		["Name"] = "Trowel",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -17117,7 +16613,7 @@ print(cardcount)
 	},		
 	
 	["Rocket Launcher"] = {
-		["Id"] = 336415507,
+		["Id"] = 556059978,
 		["Name"] = "Rocket Launcher",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -17137,7 +16633,7 @@ print(cardcount)
 	},	
 	
 	["Superball"] = {
-		["Id"] = 336415507,
+		["Id"] = 556059832,
 		["Name"] = "Superball",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -17157,7 +16653,7 @@ print(cardcount)
 	},		
 	
 	["Slingshot"] = {
-		["Id"] = 336415507,
+		["Id"] = 556059071,
 		["Name"] = "Slingshot",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -17177,7 +16673,7 @@ print(cardcount)
 	},			
 	
 	["Baby Noob"] = {
-		["Id"] = 295634458,
+		["Id"] = 556057423,
 		["Name"] = "Baby Noob",
 		["Health"] = 125,
 		["Power"] = 100,
@@ -17197,7 +16693,7 @@ print(cardcount)
 	},	
 	
 	["CanadianSanic"] = {
-		["Id"] = 295634458,
+		["Id"] = 556057994,
 		["Name"] = "CanadianSanic",
 		["Health"] = 1500,
 		["Power"] = 0,
@@ -17216,7 +16712,7 @@ print(cardcount)
 	},		
 	
 	["Epic Sauce"] = {
-		["Id"] = 295634458,
+		["Id"] = 556058173,
 		["Name"] = "Epic Sauce",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -17235,7 +16731,7 @@ print(cardcount)
 	},			
 	
 	["Remote Mine"] = {
-		["Id"] = 336415507,
+		["Id"] = 556057720,
 		["Name"] = "Remote Mine",
 		["Health"] = 100,
 		["Power"] = 100,
@@ -17255,7 +16751,7 @@ print(cardcount)
 	},		
 	
 	["Classy Bear"] = {
-		["Id"] = 336415507,
+		["Id"] = 556058684,
 		["Name"] = "Classy Bear",
 		["Health"] = 1000,
 		["Power"] = 0,
@@ -17274,7 +16770,7 @@ print(cardcount)
 	},			
 	
 	["Ship Raider"] = {
-		["Id"] = 336415507,
+		["Id"] = 556050275,
 		["Name"] = "Ship Raider",
 		["Health"] = 300,
 		["Power"] = 200,
@@ -17293,7 +16789,7 @@ print(cardcount)
 	},		
 
 	["Dodgeball Gambler Red"] = {
-		["Id"] = 336415507,
+		["Id"] = 556051112,
 		["Name"] = "Dodgeball Gambler Red",
 		["Health"] = 1000,
 		["Power"] = 500,
@@ -17312,7 +16808,7 @@ print(cardcount)
 	},	
 	
 	["Dodgeball Token"] = {
-		["Id"] = 336415507,
+		["Id"] = 556051112,
 		["Name"] = "Dodgeball Gambler Red",
 		["Health"] = 1000,
 		["Power"] = 500,
@@ -17331,7 +16827,7 @@ print(cardcount)
 	},		
 	
 	["Burning Tree"] = {
-		["Id"] = 336415507,
+		["Id"] = 556052191,
 		["Name"] = "Burning Tree",
 		["Health"] = 500,
 		["Power"] = 0,
@@ -17350,7 +16846,7 @@ print(cardcount)
 	},			
 	
 	["Forestfire Butterfly"] = {
-		["Id"] = 336415507,
+		["Id"] = 556051535,
 		["Name"] = "Forestfire Butterflies",
 		["Health"] = 100,
 		["Power"] = 100,
@@ -17370,7 +16866,7 @@ print(cardcount)
 	},		
 	
 	["NullSenseStudio"] = {
-		["Id"] = 336415507,
+		["Id"] = 556050061,
 		["Name"] = "NullSenseStudio",
 		["Health"] = 350,
 		["Power"] = 600,
@@ -17390,7 +16886,7 @@ print(cardcount)
 	},		
 	
 	["Den_S"] = {
-		["Id"] = 336415507,
+		["Id"] = 556050821,
 		["Name"] = "Den_S",
 		["Health"] = 700,
 		["Power"] = 400,
@@ -17409,7 +16905,7 @@ print(cardcount)
 	},	
 
 	["Happy Clown"] = {
-		["Id"] = 336415507,
+		["Id"] = 556049334,
 		["Name"] = "Happy Clown",
 		["Health"] = 100,
 		["Power"] = 100,
