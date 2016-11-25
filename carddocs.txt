@@ -109,6 +109,13 @@ Fires when the player or the enemy player gains or loses life.
 - OnDeath
 Fires when the card dies.
 
+- OnAnyDeath, OnEnemyDeath, OnAllyDeath
+Fires when a card dies on any field, the card's opposing field or the
+card's field.
+
+- OnLock, OnUnlock
+Fires when a card is locked or unlocked.
+
 ---------------------------------------------------------------
 
 Effect Targets
@@ -135,9 +142,10 @@ Targets the opposing card when applicable.
 - OpponentCards
 Targets all opposing cards.
 
-- Single
-- Target
-Targets a single card as chosen by the playing player.
+- Single, Target
+Targets a single card as chosen by the playing player. Target is
+preferred to Single to better communicate that the player Targets 
+a card, triggering OnTarget effects.
 
 - Self
 Targets the card itself.
@@ -159,14 +167,6 @@ Card effect Powers
 
 - Add
 Adds the card with the name of Increase to a hand.
-
-- The Set* effect types:
-	- SetNeutral
-	- SetGreen 
-	- SetYellow
-	- SetRed
-	- SetBlue
-Sets colored icons of Target (Ally or Opponent) to Increase.
 
 - Damage
 Damages the Target cards by Increase.
@@ -193,7 +193,29 @@ Adds the card of name Increase to the Target's deck.
 
 - RandomAdd
 Adds a random card of rarity Increase to the Target's hand.
-RandomAdd allows for 
+RandomAdd's Increase allows for 'complex' statements.
+Shedletsky and Token cards are never selected.
+Stitch together a Color, Archetype and Rarity to specify from what 
+pool the card should be selected.
+Providing no specifier or "All" has the effect of selecting any card.
+Consider the following examples:
+"RareYellowDoge"
+"BlueNinja"
+"CommonGreen"
+"Neutral"
+"Bee"
+"All"
+
+- Summon
+Summons an Increase card to the Target's field. Does not trigger any
+OnSummon effect.
+
+- SummonWithEffect
+Functions identically to Summon but does trigger an OnSummon effect
+if applicable.
+
+- RandomSummon, RandomSummonWithEffect
+Interprets Increase like RandomAdd would but instead summons the card.
 
 - Strenghten
 Adds Increase to Target cards' power.
@@ -214,6 +236,11 @@ Does the Shedletsky effect.
 Adds Increase icons of the color to the Target player.
 
 - SetColorName (ie. "SetBlue")
+	- SetNeutral
+	- SetGreen 
+	- SetYellow
+	- SetRed
+	- SetBlue
 Set the amount of colored icons of the Target player to Increase.
 
 - RevealHand
@@ -264,6 +291,10 @@ The card is immune to effects that decrease its health or power.
 
 - SwapImmune
 The card is immune to effects that swap its health and power.
+
+- Stealth
+When set to true, the card is not detected by OnAllySummon, 
+OnEnemySummon or OnAnySummon effects.
 
 ---------------------------------------------------------------
 
