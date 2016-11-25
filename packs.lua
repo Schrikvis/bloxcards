@@ -171,14 +171,16 @@ return {
 		CardPackId = 465492503,
 		Description = "Red is the colour of power, ambition, and control. Dominion packs contain cards that cost red!",
 		Cards = {
-<<<<<<< HEAD:cardpacks.lua
-			"BoomAtack"
-=======
+			"Epic Sauce"
+			"NullSenseStudio"
+			"Forestfire Butterflies"
+			"Burning Tree"
+			"Dodgeball Gambler Red"
+			"Kinnis97"
 			"Supersky712",
 			"BoomAtack",
 			"Mafia Grunt",
 			"Tricky Magician",
->>>>>>> origin/master:packs.lua
 			"iiMasant",
 			"Dwarvern Sentry: MAX",
 			"Dwarvern Sentry: Delta",
@@ -351,6 +353,7 @@ return {
 		CardPackId = 465492570,
 		Description = "Green is the colour of life, growth, and the primal forces. Vitality packs contain cards that cost green!",
 		Cards = {
+			"Classy Bear"
 			"Cat Ears Maid",
 			"HyperBlue",
 			"rhomlevko",
@@ -505,14 +508,12 @@ return {
 		Description = "Blue is the colour of logic, order, and structure. Thought packs contain cards that cost blue!",
 		Cards = {
 <<<<<<< HEAD:cardpacks.lua
+			"Ship Raider"
 			"DJ Kangaroo"
 			"Aesthetical"
-=======
-			"Deep Sea Diver",
 			"CalmFoxz",
 			"The Gentlemaniac",
 			"ReeseMcBlox",
->>>>>>> origin/master:packs.lua
 			"Yoshius",
 			"Nopants99",
 			"CIA Man",
@@ -688,14 +689,11 @@ return {
 		CardPackId = 465492745,
 		Description = "Yellow is the colour of chaos, emotion, and society. Revel packs contain cards that cost yellow!",
 		Cards = {
-<<<<<<< HEAD:cardpacks.lua
-			"Egg-Eyes Batter Dragon"
-			"AII_Duck"
-			"Helperbot"
-=======
-			"Dicey Dave",
+			"Happy Clown"
+			"Den_S"
+			"Egg-Eyes Batter Dragon",
+			"AII_Duck",
 			"Helperbot",
->>>>>>> origin/master:packs.lua
 			"PencilWizard",
 			"YotamTiti",
 			"Divine_Pengu",
@@ -868,8 +866,6 @@ return {
 		CardPackId = 434684079,
 		Description = "Obvious Packs contain only white cards, joke cards and new cards. You must have 10 wins to open these packs.",
 		Cards = {
-			"Deep Sea Diver",
-			"Dicey Dave",
 			"wowwow2211",
 			"Aesthetical",
 			"AII_Duck",
@@ -900,40 +896,40 @@ return {
 			"Dwarvern Energist",
 			"Dwarvern Miner",
 			"CIA Man",
-			"HyperBlue",
+			"Epic Sauce",
 			"Winchester Rotomo",
-			"rhomlevko",
-			"mrawesomecarter",
-			"__________",
+			"Remote Mine",
+			"Classy Bear",
+			"Ship Raider",
 			"JavierCollin88Poppin",
 			"YotamTiti",
 			"Mohawk2275",
-			"Divine_Pengu",
+			"NullSenseStudio",
 			"Prisman",
 			"Yoshius",
 			"JayTheCoder",
-			"Monopoly Man",
+			"Dodgeball Gambler Red",
 			"Friend Request Spammer",
-			"Smart Planner",
+			"Games",
 			"DJ Kangaroo",
-			"Luck Warrior of Pure Gold",
+			"Den_S",
 			"Zaquille",
 			"Brick_Man",
-			"B0BBA",
+			"CanadianSanic",
 			"Uncreativename123",
 			"Razikai",
-			"pa00",
+			"Forestfire Butterflies",
 			"666",
-			"Overseer Drake",
+			"Burning Tree",
 			"WoodReviewer",
-			"Tankbomer",
-			"The Piece Breaker",
+			"Happy Clown",
+			"Kinnis97",
 			"Mr.O the Traveling Merchant",
 			"One4utwo4me",
 			"InceptionTime",
 			"Cooldude4851",
 			"Jimminus",
-			"Aceguy100",
+			"Baby Noob",
 			"Mariochocolatemilk",
 			"HasTheHero",
 			"Korblox Shadowmage",
@@ -968,11 +964,8 @@ return {
 			"Helperbot",
 			"Fenrier",
 			"Wingman8",
-<<<<<<< HEAD:cardpacks.lua
 			"wowwow2211"
-=======
 			"Rainbowjewelninga785",
->>>>>>> origin/master:packs.lua
 			"Body Guards",
 			"Giftsplosion",
 			"DrPepperSlayer",
