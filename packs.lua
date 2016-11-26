@@ -171,12 +171,12 @@ return {
 		CardPackId = 465492503,
 		Description = "Red is the colour of power, ambition, and control. Dominion packs contain cards that cost red!",
 		Cards = {
-			"Epic Sauce"
-			"NullSenseStudio"
-			"Forestfire Butterflies"
-			"Burning Tree"
-			"Dodgeball Gambler Red"
-			"Kinnis97"
+			"Epic Sauce",
+			"NullSenseStudio",
+			"Forestfire Butterflies",
+			"Burning Tree",
+			"Dodgeball Gambler Red",
+			"Kinnis97",
 			"Supersky712",
 			"BoomAtack",
 			"Mafia Grunt",
@@ -353,7 +353,7 @@ return {
 		CardPackId = 465492570,
 		Description = "Green is the colour of life, growth, and the primal forces. Vitality packs contain cards that cost green!",
 		Cards = {
-			"Classy Bear"
+			"Classy Bear",
 			"Cat Ears Maid",
 			"HyperBlue",
 			"rhomlevko",
@@ -508,9 +508,10 @@ return {
 		Description = "Blue is the colour of logic, order, and structure. Thought packs contain cards that cost blue!",
 		Cards = {
 <<<<<<< HEAD:cardpacks.lua
-			"Ship Raider"
-			"DJ Kangaroo"
-			"Aesthetical"
+			"Dicey Drake",
+			"Ship Raider",
+			"DJ Kangaroo",
+			"Aesthetical",
 			"CalmFoxz",
 			"The Gentlemaniac",
 			"ReeseMcBlox",
@@ -689,8 +690,9 @@ return {
 		CardPackId = 465492745,
 		Description = "Yellow is the colour of chaos, emotion, and society. Revel packs contain cards that cost yellow!",
 		Cards = {
-			"Happy Clown"
-			"Den_S"
+			"Wild Reporter Tracy",
+			"Happy Clown",
+			"Den_S",
 			"Egg-Eyes Batter Dragon",
 			"AII_Duck",
 			"Helperbot",
@@ -866,6 +868,8 @@ return {
 		CardPackId = 434684079,
 		Description = "Obvious Packs contain only white cards, joke cards and new cards. You must have 10 wins to open these packs.",
 		Cards = {
+			"Dicey Drake",
+			"Wild Reporter Tracy",
 			"wowwow2211",
 			"Aesthetical",
 			"AII_Duck",
@@ -961,8 +965,6 @@ return {
 			"Lilmanofsalem",
 			"animallogic",
 			"Mzh3000",
-			"Helperbot",
-			"Fenrier",
 			"Wingman8",
 			"wowwow2211"
 			"Rainbowjewelninga785",
