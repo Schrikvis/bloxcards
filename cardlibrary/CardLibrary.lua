@@ -10,6 +10,7 @@
 ----------------------------------------------------------------------
 
 local cardlibrary = {}
+local altcardlibrary = {}
 
 local pairs = pairs
 local substring = string.sub
@@ -39,17 +40,23 @@ local function TestCard(library, id, card)
 		assert(library[card.Original], id.." has a non-existant Original card.")
 	end
 	if card.AltCards then
-		for _,name in pairs(card.AltCards) do
-			assert(library[name], id.." has a non-existant Alt card "..name..".")
+		for name,altcard in pairs(card.AltCards) do
+			setmetatable(altcard, {__index = card})
+			altcard.AltCards = false
+			altcard.Original = id
+			if altcard.Effect then
+				setmetatable(altcard.Effect, {__index = card.Effect})
+			end
+			altcardlibrary[name] = altcard
 		end
 	end
 	return true
 end
 
-for _,partlibrary in pairs(script:GetChildren()) do
-	local partlib = require(partlibrary)
+local function TestPartLibrary(partlibrary, partlib, parentlib)
+	local parentlib = parentlib or partlib
 	for index,card in pairs(partlib) do
-		local success, message = pcall(TestCard, partlib, index, card)
+		local success, message = pcall(TestCard, parentlib, index, card)
 		if success then
 			cardlibrary[index] = card
 			cardcount = cardcount + 1
@@ -58,6 +65,14 @@ for _,partlibrary in pairs(script:GetChildren()) do
 		end
 	end
 end
+
+for _,partlibrary in pairs(script:GetChildren()) do
+	local partlib = require(partlibrary)
+	TestPartLibrary(partlibrary, partlib)
+end
+
+TestPartLibrary({Name = "AltCards"}, altcardlibrary, cardlibrary)
+
 print(cardcount)
 
 return cardlibrary
