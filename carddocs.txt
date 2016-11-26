@@ -52,6 +52,7 @@ Effect = {
 }
 
 ---------------------------------------------------------------
+
 Some terms, "glossary"
 
 - Fatique
@@ -70,6 +71,9 @@ Assign these to card effects by setting their Type to one of
 these strings.
 
 - OnTarget
+Fires when the card is targeted.
+
+- OnAttacked
 Fires when the card is attacked.
 
 - OnSummon
