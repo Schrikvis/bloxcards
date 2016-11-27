@@ -171,6 +171,11 @@ return {
 		CardPackId = 465492503,
 		Description = "Red is the colour of power, ambition, and control. Dominion packs contain cards that cost red!",
 		Cards = {
+			"Tone"
+			"Ninja Kitty"
+			"KnitJa"
+			"Fire Fighter"
+			"Drager Bot"
 			"Epic Sauce"
 			"NullSenseStudio"
 			"Forestfire Butterflies"
@@ -353,6 +358,9 @@ return {
 		CardPackId = 465492570,
 		Description = "Green is the colour of life, growth, and the primal forces. Vitality packs contain cards that cost green!",
 		Cards = {
+			"WebGL3D"
+			"CorgiParade"
+			"brickmason"
 			"Classy Bear"
 			"Cat Ears Maid",
 			"HyperBlue",
@@ -507,7 +515,7 @@ return {
 		CardPackId = 465492637,
 		Description = "Blue is the colour of logic, order, and structure. Thought packs contain cards that cost blue!",
 		Cards = {
-<<<<<<< HEAD:cardpacks.lua
+			"Stravant"
 			"Ship Raider"
 			"DJ Kangaroo"
 			"Aesthetical"
@@ -689,6 +697,18 @@ return {
 		CardPackId = 465492745,
 		Description = "Yellow is the colour of chaos, emotion, and society. Revel packs contain cards that cost yellow!",
 		Cards = {
+			"CloneTrooper1019"
+			"Safe Chat"
+			"Noob Gunner"
+			"Merely"
+			"Golden Turkey"
+			"Pilgrim"
+			"Turkey Cannon"
+			"Thanksgiving Feast"
+			"Turkey"
+			"Turkeytron"
+			"Gobble Squad"
+			"Frenemy's Bargain"
 			"Happy Clown"
 			"Den_S"
 			"Egg-Eyes Batter Dragon",
@@ -866,17 +886,17 @@ return {
 		CardPackId = 434684079,
 		Description = "Obvious Packs contain only white cards, joke cards and new cards. You must have 10 wins to open these packs.",
 		Cards = {
-			"wowwow2211",
-			"Aesthetical",
-			"AII_Duck",
+			"Turkeytron",
+			"Stravant",
+			"KnitJa",
 			"Haggie125",
 			"Noob's Play Box",
 			"litozinnamon",
 			"CalmFoxz",
 			"The Gentlemaniac",
 			"ReeseMcBlox",
-			"Supersky712",
-			"Helperbot",
+			"Fire Fighter",
+			"CloneTrooper1019",
 			"BoomAtack",
 			"Mafia Grunt",
 			"Cat Ears Maid",
@@ -897,16 +917,16 @@ return {
 			"Dwarvern Miner",
 			"CIA Man",
 			"Epic Sauce",
-			"Winchester Rotomo",
+			"Frenemy's Bargain",
 			"Remote Mine",
 			"Classy Bear",
 			"Ship Raider",
-			"JavierCollin88Poppin",
-			"YotamTiti",
+			"Gobble Squad",
+			"Noob Gunner",
 			"Mohawk2275",
 			"NullSenseStudio",
 			"Prisman",
-			"Yoshius",
+			"Turkey",
 			"JayTheCoder",
 			"Dodgeball Gambler Red",
 			"Friend Request Spammer",
@@ -916,24 +936,24 @@ return {
 			"Zaquille",
 			"Brick_Man",
 			"CanadianSanic",
-			"Uncreativename123",
-			"Razikai",
+			"Merely",
+			"CorgiParade",
 			"Forestfire Butterflies",
-			"666",
+			"Ninja Kitty",
 			"Burning Tree",
-			"WoodReviewer",
+			"Gobble Squad",
 			"Happy Clown",
 			"Kinnis97",
-			"Mr.O the Traveling Merchant",
-			"One4utwo4me",
-			"InceptionTime",
+			"brickmason",
+			"Safe Chat",
+			"Thanksgiving Feast",
 			"Cooldude4851",
-			"Jimminus",
+			"Turkey Cannon",
 			"Baby Noob",
 			"Mariochocolatemilk",
 			"HasTheHero",
-			"Korblox Shadowmage",
-			"Redcliff Heretic",
+			"Golden Turkey",
+			"Pilgrim",
 			"stereoplexus",
 			"Cat's Eye Wing Flock",
 			"Cat's Eye Corpse Stealer",
@@ -942,7 +962,7 @@ return {
 			"Samksoon321",
 			"ST Leader Keeler1",
 			"BoomAtack",
-			"Bad Bread",
+			"Drager Bot",
 			"Aesthetical",
 			"Arashi Pikemen",
 			"BerskererPredator450",
@@ -954,8 +974,8 @@ return {
 			"AII_Duck",
 			"Sibs",
 			"Moon Rabbit's Rage",
-			"Pancake Break",
-			"BLOXER787",
+			"WebGL3D",
+			"Tone",
 			"Aurichalcum",
 			"Egg-Eyes Batter Dragon",
 			"Lilmanofsalem",
@@ -964,6 +984,8 @@ return {
 			"Helperbot",
 			"Fenrier",
 			"Wingman8",
+			"BrokenBone"
+			"Retro Gangster"
 			"wowwow2211"
 			"Rainbowjewelninga785",
 			"Body Guards",
