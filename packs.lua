@@ -507,7 +507,6 @@ return {
 		CardPackId = 465492637,
 		Description = "Blue is the colour of logic, order, and structure. Thought packs contain cards that cost blue!",
 		Cards = {
-<<<<<<< HEAD:cardpacks.lua
 			"Dicey Drake",
 			"Ship Raider",
 			"DJ Kangaroo",
@@ -693,7 +692,7 @@ return {
 			"Wild Reporter Tracy",
 			"Happy Clown",
 			"Den_S",
-			"Egg-Eyes Batter Dragon",
+			"Egg Eyes Batter Dragon",
 			"AII_Duck",
 			"Helperbot",
 			"PencilWizard",
@@ -1060,7 +1059,7 @@ return {
 		"Swarm of Bats",
 		"Nerf Zombie",
 		"Psychotic Freak",
-		"Spicy Lolipop",
+		"Spicy Lollipop",
 		"The Skull Collector",
 		"Priestess Zanzel, the Promised One",
 		"Stranglevines",

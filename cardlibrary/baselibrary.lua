@@ -15855,7 +15855,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "Ignis Mage was a little too careless this time...",
 	},			
 	
-	["Forestfire Butterfly"] = {
+	["Forestfire Butterflies"] = {
 		["Id"] = 556051535,
 		["Name"] = "Forestfire Butterflies",
 		["Health"] = 100,
