@@ -15544,25 +15544,6 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "Ice cold.",
 	},
 	
-	["Kinnis97"] = {
-		["Id"] = 556057564,
-		["Name"] = "Kinnis97",
-		["Health"] = 550,
-		["Power"] = 775,
-		["Rarity"] = "Epic",
-		["AttackEffect"] = "Lightning",
-		["Color"] = "Red",
-		["Cost"] = {["Red"] = 2, ["Neutral"] = 4,}, 
-		["Effect"] = {
-			Name = "Stop It, Slender!",
-			Description = "Add Slenderman to your hand.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Add","Slenderman"}},
-			Target = "Ally",
-		},
-		["Bio"] = "Furry, Pokemon battler, tarantula collector, mountain biker, and general weirdo.",
-	},
-	
 	["Games"] = {
 		["Id"] = 556058880,
 		["Name"] = "Games",
@@ -16469,7 +16450,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "ColorGreen",
 		},
 		["Bio"] = "What kind of parade is a corgi parade?",
-	},		
+	},
 	
 	["Kinnis97"] = {
 		["Id"] = 556057564,
@@ -16481,14 +16462,14 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 4,["Red"] = 2,},
 		["Effect"] = {
-			Name = "Thug Life",
+			Name = "Stop It, Slender!",
 			Description = "Add Slenderman to your hand.",
-			["Type"] = "OnDeath",
+			["Type"] = "OnSummon",
 			["Power"] = {{"Add","Slenderman"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Furry, Pokemon battler, tarantula collector, mountain biker, and general weirdo.",
-	},			
+	},
 	
 }
 
