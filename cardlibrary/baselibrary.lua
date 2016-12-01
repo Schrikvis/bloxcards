@@ -16022,7 +16022,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Common",
 		["AttackEffect"] = "UziShot",
 		["Color"] = "Yellow",
-		["Cost"] = {{["Neutral"] = 2,}},
+		["Cost"] = {["Neutral"] = 2,},
 		["Bio"] = "Time for a turkey hunt boys!",
 	},					
 	

@@ -11,9 +11,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 1,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "AAAAAAA",
-			["Type"] = "When this card is targeted, reverse time and turn it into Serhat12.",
-			["Power"] = {{"Summon","Serhat12"}},
+			Description = "When this card is targeted, reverse time and turn it into Serhat12.",
+			Type = "OnTarget",
+			Power = {{"Summon","Serhat12"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Nobody expects the serhat12 inquisition.",
