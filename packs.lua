@@ -1017,9 +1017,9 @@ return {
 			"Mzh3000",
 			"Wingman8",
 			"wowwow2211",
-			"BrokenBone"
-			"Retro Gangster"
-			"wowwow2211"
+			"BrokenBone",
+			"Retro Gangster",
+			"wowwow2211",
 			"Rainbowjewelninga785",
 			"Body Guards",
 			"Giftsplosion",

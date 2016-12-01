@@ -16008,7 +16008,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Gobble",
 			Description = "Deal 100 damage to a target fighter. Summon a turkey.",
 			["Type"] = "OnDeath",
-			["Power"] = {{"Damage",100},{"Summon","Turkey"}}
+			["Power"] = {{"Damage",100},{"Summon","Turkey"}},
 			Target = "Ally",
 		},
 		["Bio"] = "I think this cannon is broken, it gobbles when I press the trigger.",
@@ -16022,7 +16022,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Common",
 		["AttackEffect"] = "UziShot",
 		["Color"] = "Yellow",
-		["Cost"] = {{["Neutral"] = 2,}}
+		["Cost"] = {{["Neutral"] = 2,}},
 		["Bio"] = "Time for a turkey hunt boys!",
 	},					
 	
@@ -16208,7 +16208,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Slash",
 		["Color"] = "Green",
-		["Cost"] = {["Neutral"] = 5,["Green"] = 1},,
+		["Cost"] = {["Neutral"] = 5,["Green"] = 1},
 		["Effect"] = {
 			Name = "Thug Life",
 			Description = "When this card is summoned, add a copy of this card to your hand. This card can use this effect 3 times.",
@@ -16361,7 +16361,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 100,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "CatSlash",
-		["Archetype"] = "Ninja"
+		["Archetype"] = "Ninja",
 		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 1,["Red"] = 1,},
 		["Effect"] = {
