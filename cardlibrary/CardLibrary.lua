@@ -1,6 +1,19 @@
+----------------------------------------------------------------------
+-- USAGE:
+-- put me in a modulescript named "CardLibrary" inside of
+-- game.ReplicatedStorage
+-- put any subliraries you want to test in a modulescript
+-- inside of me, they can be named whatever
+-- enter "require(game.ReplicatedStorage.CardLibrary)" 
+-- in the console
+-- ~Vis
+----------------------------------------------------------------------
+
 local cardlibrary = {}
+local altcardlibrary = {}
 
 local pairs = pairs
+local substring = string.sub
 local cardcount = 0
 local assert = function(...) assert(...) end
 local c3n = Color3.new
@@ -21,22 +34,29 @@ local function TestCard(library, id, card)
 	end
 	if card.Effect then
 		assert(card.Effect.Name and card.Effect.Description and card.Effect.Type and card.Effect.Power and card.Effect.Target, id.." has an incomplete card effect.")
+		assert(substring(card.Effect.Type, 1, 2) == "On" or card.Effect.Type == "Field", id.." has a nonsensical card effect trigger.")
 	end
 	if card.Original then
 		assert(library[card.Original], id.." has a non-existant Original card.")
 	end
 	if card.AltCards then
-		for _,name in pairs(card.AltCards) do
-			assert(library[name], id.." has a non-existant Alt card "..name..".")
+		for name,altcard in pairs(card.AltCards) do
+			setmetatable(altcard, {__index = card})
+			altcard.AltCards = false
+			altcard.Original = id
+			if altcard.Effect then
+				setmetatable(altcard.Effect, {__index = card.Effect})
+			end
+			altcardlibrary[name] = altcard
 		end
 	end
 	return true
 end
 
-for _,partlibrary in pairs(script:GetChildren()) do
-	local partlib = require(partlibrary)
+local function TestPartLibrary(partlibrary, partlib, parentlib)
+	local parentlib = parentlib or partlib
 	for index,card in pairs(partlib) do
-		local success, message = pcall(TestCard, partlib, index, card)
+		local success, message = pcall(TestCard, parentlib, index, card)
 		if success then
 			cardlibrary[index] = card
 			cardcount = cardcount + 1
@@ -45,6 +65,14 @@ for _,partlibrary in pairs(script:GetChildren()) do
 		end
 	end
 end
+
+for _,partlibrary in pairs(script:GetChildren()) do
+	local partlib = require(partlibrary)
+	TestPartLibrary(partlibrary, partlib)
+end
+
+TestPartLibrary({Name = "AltCards"}, altcardlibrary, cardlibrary)
+
 print(cardcount)
 
 return cardlibrary
