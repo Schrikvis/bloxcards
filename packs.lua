@@ -1,5 +1,5 @@
 --main 1
-return {
+local packs = {
 	{
 		Name = "Exine", --STAPLES!
 		Cost = 25,
@@ -1176,3 +1176,5 @@ return {
 		},
 	};
 }
+
+return packs
