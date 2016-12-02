@@ -10434,12 +10434,12 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Cow God"] = {
-		["Id"] = 384007105,
+		["Id"] = 540075591,
 		["Name"] = "Cow",
 		["Original"] = "Cow",
 		["Health"] = 1800,
 		["Power"] = 400,
-		["Rarity"] = "Legendary",
+		["Rarity"] = "Rare",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Neutral",
 		["Cost"] = {["Neutral"] = 13,},
@@ -11506,7 +11506,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Blue"] = 1,["Red"] = 2,},
 		["Effect"] = {
 			Name = "Demon Eye",
-			Description = "Whenever you cast an action or terrain spell, LordVasco gains 200 health and power.",
+			Description = "Whenever an action or terrain spell, is cast, LordVasco gains 200 health and power.",
 			["Type"] = "OnCast",
 			["Power"] = {{"Heal",200},{"Strengthen",200}},
 			Target = "Self",
@@ -12508,9 +12508,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Poison",
-			Description = "Gain 2500 life, but add six Nightmares into your hand.",
+			Description = "Gain 2500 life. End the turn.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Cost",-2500},{"Add","Nightmare"},{"Add","Nightmare"},{"Add","Nightmare"},{"Add","Nightmare"},{"Add","Nightmare"},{"Add","Nightmare"}},
+			["Power"] = {{"Cost",-2500},{"EndTurn",1}},
 			Target = "Ally"
 		},
 		["Bio"] = "You would rather have swords jabbed into your eyeballs than eat this bread.",
@@ -12752,7 +12752,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Green",
 		["Charge"] = true,
-		["Archeytpe"] = "Masant",
+		["Archetype"] = "Masant",
 		["Cost"] = {["Green"] = 4,},
 		["Effect"] = {
 			Name = "Stud",
@@ -15416,8 +15416,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 8,},
 		["Effect"] = {
 			Name = "Sentry Heart",
-			Description = "After this card attacks, destroy all other allied fighters and draw 2 cards. This card can attack the turn it is summoned.",
-			["Type"] = "OnAttackEnd",
+			Description = "When this, destroy all other allied fighters and draw 2 cards. This card can attack the turn it is summoned.",
+			["Type"] = "OnAttack",
 			["Power"] = {{"Heal",9999,"Self"},{"Damage",9999},{"Draw",2}},
 			Target = "Ally",
 		},

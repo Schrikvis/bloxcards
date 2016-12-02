@@ -11,9 +11,9 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 1,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "AAAAAAA",
-			["Type"] = "When this card is targeted, reverse time and turn it into Serhat12.",
-			["Power"] = {{"Summon","Serhat12"}},
+			Description = "When this card is targeted, reverse time and turn it into Serhat12.",
+			["Type"] = "OnTarget",
+			["Power"] = {{"Summon","Serhat12"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Nobody expects the serhat12 inquisition.",
@@ -106,6 +106,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Blue", 
+		["Archetype"] = "Lunar",
 		["Cost"] = {["Blue"] = 2, ["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
@@ -188,7 +189,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Lunar",
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "0 charges. At the end of this turn, if you've cast 7 action or terrain spells after this one, you win the game.",
+			Description = "0 charges. At the end of this turn, if you've cast 11 action or terrain spells after this one, you win the game.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Summon","Gambit Reminder"},{"Summon","Gambit 1"}},
 			Target = "Ally",
@@ -230,7 +231,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Gambit",
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "0 Charges. At the end of this turn, if you've cast 7 action or terrain spells after this one, you win the game.",
+			Description = "-1 Charges. At the end of this turn, if you've cast 7 action or terrain spells after this one, you win the game.",
 			["Type"] = "OnAllyCast",
 			["Power"] = {{"Summon","Gambit 2"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -251,7 +252,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Gambit",
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "1 Charges. At the end of this turn, if you've cast 7 action or terrain spells after this one, you win the game.",
+			Description = "0 Charges. At the end of this turn, if you've cast 7 action or terrain spells after this one, you win the game.",
 			["Type"] = "OnAllyCast",
 			["Power"] = {{"Summon","Gambit 3"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -272,7 +273,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Gambit",
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "2 Charges. At the end of this turn, if you've cast 7 action or terrain spells after this one, you win the game.",
+			Description = "1 Charge. At the end of this turn, if you've cast 7 action or terrain spells after this one, you win the game.",
 			["Type"] = "OnAllyCast",
 			["Power"] = {{"Summon","Gambit 4"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -293,7 +294,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Gambit",
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "3 Charges. At the end of this turn, if you've cast 7 action or terrain spells after this one, you win the game.",
+			Description = "2 Charges. At the end of this turn, if you've cast 7 action or terrain spells after this one, you win the game.",
 			["Type"] = "OnAllyCast",
 			["Power"] = {{"Summon","Gambit 5"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -314,7 +315,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Gambit",
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "4 Charges. At the end of this turn, if you've cast 7 action or terrain spells after this one, you win the game.",
+			Description = "3 Charges. At the end of this turn, if you've cast 7 action or terrain spells after this one, you win the game.",
 			["Type"] = "OnAllyCast",
 			["Power"] = {{"Summon","Gambit 6"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -335,7 +336,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Gambit",
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "5 Charges. At the end of this turn, if you've cast 7 action or terrain spells after this one, you win the game.",
+			Description = "4 Charges. At the end of this turn, if you've cast 7 action or terrain spells after this one, you win the game.",
 			["Type"] = "OnAllyCast",
 			["Power"] = {{"Summon","Gambit 7"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -356,7 +357,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Gambit",
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "6 Charges. At the end of this turn, if you've cast 7 action or terrain spells after this one, you win the game.",
+			Description = "5 Charges. At the end of this turn, if you've cast 7 action or terrain spells after this one, you win the game.",
 			["Type"] = "OnAllyCast",
 			["Power"] = {{"Summon","Gambit 8"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -374,9 +375,135 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Blue", 
 		["Cost"] = {["Blue"] = 99,},
 		["AttackBlock"] = true,
+		["Archetype"] = "Gambit",
+		["Effect"] = {
+			Name = "Pyrotechnics",
+			Description = "6 Charges. At the end of this turn, if you've cast 7 action or terrain spells after this one, you win the game.",
+			["Type"] = "OnAllyCast",
+			["Power"] = {{"Summon","Gambit 9"},{"Damage",9999,"Self"}},
+			Target = "Ally",
+		},
+		["Bio"] = "Grapeshots ruined, Tendrils of Agony depleted. All that is left is the rush.",		
+	},
+	
+	["Gambit 9"] = {
+		["Id"] = 540076783,
+		["Name"] = "Stormchaser's Gambit",
+		["Health"] = 500,
+		["Power"] = 0,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Blue", 
+		["Cost"] = {["Blue"] = 99,},
+		["AttackBlock"] = true,
+		["Archetype"] = "Gambit",
 		["Effect"] = {
 			Name = "Pyrotechnics",
 			Description = "7 Charges. At the end of this turn, if you've cast 7 action or terrain spells after this one, you win the game.",
+			["Type"] = "OnAllyCast",
+			["Power"] = {{"Summon","Gambit 10"},{"Damage",9999,"Self"}},
+			Target = "Ally",
+		},
+		["Bio"] = "Grapeshots ruined, Tendrils of Agony depleted. All that is left is the rush.",		
+	},
+	
+	["Gambit 10"] = {
+		["Id"] = 540076783,
+		["Name"] = "Stormchaser's Gambit",
+		["Health"] = 500,
+		["Power"] = 0,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Blue", 
+		["Cost"] = {["Blue"] = 99,},
+		["AttackBlock"] = true,
+		["Archetype"] = "Gambit",
+		["Effect"] = {
+			Name = "Pyrotechnics",
+			Description = "8 Charges. At the end of this turn, if you've cast 7 action or terrain spells after this one, you win the game.",
+			["Type"] = "OnAllyCast",
+			["Power"] = {{"Summon","Gambit 11"},{"Damage",9999,"Self"}},
+			Target = "Ally",
+		},
+		["Bio"] = "Grapeshots ruined, Tendrils of Agony depleted. All that is left is the rush.",		
+	},
+	
+	["Gambit 11"] = {
+		["Id"] = 540076783,
+		["Name"] = "Stormchaser's Gambit",
+		["Health"] = 500,
+		["Power"] = 0,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Blue", 
+		["Cost"] = {["Blue"] = 99,},
+		["AttackBlock"] = true,
+		["Archetype"] = "Gambit",
+		["Effect"] = {
+			Name = "Pyrotechnics",
+			Description = "9 Charges. At the end of this turn, if you've cast 7 action or terrain spells after this one, you win the game.",
+			["Type"] = "OnAllyCast",
+			["Power"] = {{"Summon","Gambit 12"},{"Damage",9999,"Self"}},
+			Target = "Ally",
+		},
+		["Bio"] = "Grapeshots ruined, Tendrils of Agony depleted. All that is left is the rush.",		
+	},
+	
+	["Gambit 12"] = {
+		["Id"] = 540076783,
+		["Name"] = "Stormchaser's Gambit",
+		["Health"] = 500,
+		["Power"] = 0,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Blue", 
+		["Cost"] = {["Blue"] = 99,},
+		["AttackBlock"] = true,
+		["Archetype"] = "Gambit",
+		["Effect"] = {
+			Name = "Pyrotechnics",
+			Description = "10 Charges. At the end of this turn, if you've cast 7 action or terrain spells after this one, you win the game.",
+			["Type"] = "OnAllyCast",
+			["Power"] = {{"Summon","Gambit 13"},{"Damage",9999,"Self"}},
+			Target = "Ally",
+		},
+		["Bio"] = "Grapeshots ruined, Tendrils of Agony depleted. All that is left is the rush.",		
+	},
+	
+	["Gambit 13"] = {
+		["Id"] = 540076783,
+		["Name"] = "Stormchaser's Gambit",
+		["Health"] = 500,
+		["Power"] = 0,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Blue", 
+		["Cost"] = {["Blue"] = 99,},
+		["AttackBlock"] = true,
+		["Archetype"] = "Gambit",
+		["Effect"] = {
+			Name = "Pyrotechnics",
+			Description = "11 Charges. At the end of this turn, if you've cast 7 action or terrain spells after this one, you win the game.",
+			["Type"] = "OnAllyCast",
+			["Power"] = {{"Summon","Gambit Max"},{"Damage",9999,"Self"}},
+			Target = "Ally",
+		},
+		["Bio"] = "Grapeshots ruined, Tendrils of Agony depleted. All that is left is the rush.",		
+	},
+	
+	["Gambit Max"] = {
+		["Id"] = 540076783,
+		["Name"] = "Stormchaser's Gambit",
+		["Health"] = 500,
+		["Power"] = 0,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Blue", 
+		["Cost"] = {["Blue"] = 99,},
+		["AttackBlock"] = true,
+		["Effect"] = {
+			Name = "Pyrotechnics",
+			Description = "11 Charges. At the end of this turn, if you've cast 7 action or terrain spells after this one, you win the game.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Inflict",9999999}},
 			Target = "Opponent",
@@ -443,7 +570,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	
 	["Beast Within"] = {
 		["Id"] = 540076909,
-		["Name"] = "Beast Within",
+		["Name"] = "Beast Within",\
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Uncommon",
@@ -452,9 +579,9 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 3, ["Blue"] = 2,},
 		["Effect"] = {
 			Name = "Instinct Release",
-			Description = "Obliterate target fighter. Your opponent summons a Werewolf Savage.",
+			Description = "Obliterate target fighter. Your opponent summons a Carniverous Death Moth..",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Summon","Werewolf Savage","Opponent"},{"Damage",99999,"Single"}},
+			["Power"] = {{"Summon","Carniverous Death Moth","Opponent"},{"Damage",99999,"Single"}},
 			Target = "Ally",
 		},
 		["Bio"] = "DIYDTY",
@@ -625,7 +752,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Dredger980"] = {
-		["Id"] = 543041104,
+		["Id"] = 540075945,
 		["Name"] = "Dredger980",
 		["Health"] = 600,
 		["Power"] = 600,
@@ -857,13 +984,13 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	
 	["Infected Mushrooms"] = {
 		["Id"] = 543041104,
-		["Name"] = "Blood Moon Shard",
+		["Name"] = "Infected Mushrooms",
 		["Health"] = 400,
 		["Power"] = 0,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Green", 
-		["Cost"] = {["Red"] = 4,},
+		["Cost"] = {["Green"] = 2,},
 		["Effect"] = {
 			Name = "Stud",
 			Description = "Destroy all fighters with 200 or less health.",
@@ -871,7 +998,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Damage",200},{"Heal",200}},
 			Target = "All",
 		},
-		["Bio"] = "The blood of a werewolf can stain both soul and soulless.",
+		["Bio"] = "Everything's turning to a point where it stops and it turns around!",
 	},
 	
 	["KillCactaur"] = {
@@ -906,7 +1033,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Carniverous Death Moth"] = {
-		["Id"] = 543041104,
+		["Id"] = 540075658,
 		["Name"] = "Carniverous Death Moth",
 		["Health"] = 400,
 		["Power"] = 400,
@@ -1675,7 +1802,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Pyrotechnics",
 			Description = "Your opponent summons Lezus.",
-			["Type"] = "OnDestroy",
+			["Type"] = "OnSummon",
 			["Power"] = {{"Summon","Lezus 1"}},
 			Target = "Opponent",
 		},
@@ -2127,7 +2254,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Haydoscale",
 			Description = "Summon a copy of this card. This card can't generate icons.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Lock",0}},
+			["Power"] = {{"Summon","DoeDoe"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Eisenhower regretted how humans made the dodos extinct.",
@@ -2141,7 +2268,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Blue", 
-		["Archetyppe"] = "Sinister",
+		["Archetype"] = "Sinister",
 		["Cost"] = {["Blue"] = 2,},
 		["Effect"] = {
 			Name = "Haydoscale",
@@ -2651,7 +2778,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	
 	["Wolven Blitz"] = {
 		["Id"] = 543041104,
-		["Name"] = "DIY: Werewolf",
+		["Name"] = "Wolven Blitz",
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Uncommon",
@@ -2765,7 +2892,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Neutral",2}},
 			Target = "Ally",
 		},
-		["Bio"] = "A flower that runs from the sun.",
+		["Bio"] = "A reality that wants to disappear.",
 	},
 	
 	["Liechtenauer's Sophistry"] = {
@@ -2773,7 +2900,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Liechtenauer's Sophistry",
 		["Health"] = 350,
 		["Power"] = 350,
-		["Rarity"] = "Common",
+		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Green", 
 		["Archetype"] = "Mythic",
@@ -2926,9 +3053,10 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Morphic Goo"] = {
 		["Id"] = 540822293,
 		["Name"] = "Morphic Goo",
-		["Health"] = 250,
-		["Power"] = 250,
+		["Health"] = 50,
+		["Power"] = 50,
 		["Rarity"] = "Token",
+		["Token"] = true,
 		["AttackEffect"] = "Dash",
 		["Color"] = "Blue", 
 		["Cost"] = {["Neutral"] = 2,},
