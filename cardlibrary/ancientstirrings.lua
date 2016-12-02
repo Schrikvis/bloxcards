@@ -715,7 +715,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Reminder: Final Revels",
 		["Health"] = 4000,
 		["Power"] = 400,
-		["Rarity"] = "Rare",
+		["Rarity"] = "Token",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Yellow", 
 		["AttackBlock"] = true,
@@ -861,7 +861,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Damage",300}},
 			Target = "Opponent",
 		},
-		["Bio"] = "The gentle souls in Zanzel's wilderness never are.",
+		["Bio"] = "Always check your cards for razorblades.",
 	},
 	
 	["Inexorable Goo Tide"] = {
@@ -1061,14 +1061,14 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Strengthen",200,"Self"}},
 			Target = "Ally",
 		},
-		["Bio"] = "Zanzel went just a bit too far.",
+		["Bio"] = "Zanzel went just a bit too far with this golem.",
 	},
 	
 	["RoboLoleris"] = {
 		["Id"] = 540076884,
 		["Name"] = "RoboLoleris",
 		["Health"] = 100,
-		["Power"] = 700,
+		["Power"] = 350,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Blue", 
@@ -1653,7 +1653,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	
 	["It that will Howl"] = {
 		["Id"] = 543041104,
-		["Name"] = "It that is will Howl",
+		["Name"] = "It that will Howl",
 		["Health"] = 1000,
 		["Power"] = 1000,
 		["Rarity"] = "Token",
@@ -1704,7 +1704,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Pyrotechnics",
 			Description = "Your opponent summons Lezus.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Summon","Lezus 1"}},
+			["Power"] = {{"Summon","Lezus 1"},{"Unlock",9999,"Archetype"}},
 			Target = "Opponent",
 		},
 		["Bio"] = "Zanzel scoffed when she saw Lezus. These demons are why the world is so impure.",
@@ -2905,9 +2905,9 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "Both players put a morphic goo and a targeting blip into their hand.",
+			Description = "Both players summon a random fighter.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Add","Morphic Goo"},{"Add","Morphic Goo","Opponent"},{"Add","Targeting Blip"},{"Add","Targeting Blip","Opponent"}},
+			["Power"] = {{"RandomSummon","Any"},{"RandomSummon","Any","Opponent"}},
 			Target = "Ally",
 		},
 		["Bio"] = [["I got a korblox deathknight! Sweet! What did you get Jim?" ... "An extension cord."]],
@@ -2966,7 +2966,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Haydoscale",
 			Description = "When this card is targeted, reveal its true form.",
 			["Type"] = "OnTarget",
-			["Power"] = {{"RandomSummon",030}},
+			["Power"] = {{"RandomSummon","Any"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Eisenhower's greatest weapon was what he never used.",
