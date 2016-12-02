@@ -16399,7 +16399,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "GunShot",
 		["Color"] = "Green",
-		["Cost"] = {["Neutral"] = 1 ["Green"] = 5,},
+		["Cost"] = {["Neutral"] = 1, ["Green"] = 5,},
 		["WeakenImmune"] = true,
 		["Effect"] = {
 			Name = "Yarr..",
@@ -16482,7 +16482,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Stop It, Slender!",
 			Description = "All other red fighters lose 700 power.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Weaken",700,"ColorRed"},{"Strengthen",700"Self"}},
+			["Power"] = {{"Weaken",700,"ColorRed"},{"Strengthen",700,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Pokemon battler, tarantula collector, mountain biker.",
