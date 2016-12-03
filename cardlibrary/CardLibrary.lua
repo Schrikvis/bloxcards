@@ -2,7 +2,7 @@
 -- USAGE:
 -- put me in a modulescript named "CardLibrary" inside of
 -- game.ReplicatedStorage
--- put any subliraries you want to test in a modulescript
+-- put any sublibraries you want to test in a modulescript
 -- inside of me, they can be named whatever
 -- enter "require(game.ReplicatedStorage.CardLibrary)" 
 -- in the console
