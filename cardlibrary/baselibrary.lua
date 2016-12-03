@@ -15843,6 +15843,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Fire",
 		["Token"] = true,
+		["Charge"] = true,
 		["Color"] = "Red",
 		["Cost"] = {["Red"] = 1,},
 		["Effect"] = {
