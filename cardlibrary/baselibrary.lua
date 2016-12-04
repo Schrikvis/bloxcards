@@ -14880,7 +14880,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 
 	["Mohawk2275"] = {
 		["Id"] = 497079680,
-		["Name"] = "Mohawk2275",
+		["Name"] = "Mohawk725",
 		["Health"] = 400,
 		["Power"] = 400,
 		["Rarity"] = "Uncommon",
