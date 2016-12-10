@@ -15113,7 +15113,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "AAAAAAAAAAAAAAAAAA",
 			Description = "Put two alternate-art cards into your hand.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"RandomAdd","AltCard"},{"RandomAdd","AltCard"}},
+			["Power"] = {{"RandomAdd","Altcard"},{"RandomAdd","Altcard"}},
 			Target = "Ally",
 		},
 		["Bio"] = "The aife that outaifed aife herself.",
