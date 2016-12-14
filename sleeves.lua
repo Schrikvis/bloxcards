@@ -15,7 +15,6 @@ Category = {
 local sleeves = {
 	Basic = {
 		["Basic"] 						= {273687854,    0};
-		
 		["Legendary"] 				= {290771466, 1250};
 		["Magnus"] 						= {290876672,  650};
 		["Zero"] 							= {290876678, 1750};
@@ -24,25 +23,18 @@ local sleeves = {
 		["Golden"] 						= {290876688,  650};
 		["Nemesis"] 					= {291243677,  600};
 		["Mosaic"] 						= {326642689,  675};
-		
 		["Money"] 						= {379765242,  800};
 		["Tickets"] 					= {386561334,  650};
-		
 		["Blueprint"]					= {486505302, 1500};
 		["Inkling"]						= {486505300, 2000};
 		["Crystals"]					= {486449138, 1750};	
 		["Red Planet"]				= {486505296, 1500};
-		
-		["Anacalagon"]				= {486449221, 1500};
 		["Gentle Giant"]			= {486449213, 1500};
 		["Techno"]						= {486449207,  650};
-		["BlizzardCreeper"] 	= {486449200, 1250};
 		["Arial"]							= {486449185,  800};
+		["Invisible"]				= {0,1200};
 		["Clown Spiral"]			= {486449186,  600};
-		["Egotist"]						= {486449178,  850};
-		["MisterObvious"]			= {486449168,  800};
 		["Sleevefinity"]			= {486449155, 1500};
-		["Nova"]							= {486449146, 1200};
 		["Obvious"]						= {486449131, 1500};
 	};
 	
@@ -57,6 +49,7 @@ local sleeves = {
 		["GRAND DAD"]   	  	= {486505292, 1335};
 		["Flintstones"]				= {486533671, 1335};
 		["Harambe"]						= {486449244, 1250};
+		["Doge"]						= {574398544, 900};
 	};
 	
 	Halloween = {
@@ -69,9 +62,20 @@ local sleeves = {
 		["Ghost House"]				= {534131677,  500};
 		["Ghost House 2"]			= {534132135,  500};
 		["Halloween 2016"]  	= {534131858,  400};
-		
 		["Darkseed"]					= {559463641,  700};
-		["Zanzel"]						= {559461035, 1200};
+	};
+	
+	CardArt = {
+		["MisterObvious"]			= {486449168,  800};
+		["Egotist"]						= {486449178,  1000};
+		["BlizzardCreeper"] 	= {486449200, 1250};
+		["Anacalagon"]				= {486449221, 1500};
+		["Nova"]							= {486449146, 1200};
+		["Paraselene Sage"]				= {574430820, 2700};
+		["Brother's Grotesque"]			= {574431847, 1200};
+		["Myrmiredon"]					= {574431712, 1350};
+		["Zanzel"]						= {559461035, 1500};
+	
 	};
 	
 }
