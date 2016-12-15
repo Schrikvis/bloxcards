@@ -10,7 +10,7 @@ local participants = {
 		["Cost"] = {["Blue"] = 3,["Neutral"] = 1},
 		["Effect"] = {
 			Name = "Massive Stamina",
-			Description = "Add a random uncommon fighter each end of turn.",
+			Description = "Put a random uncommon fighter into your hand at the end of your turns.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"RandomAdd","Uncommon"}},
 			Target = "Ally",
@@ -29,7 +29,7 @@ local participants = {
 		["Cost"] = {["Yellow"] = 4,["Neutral"] = 1},
 		["Effect"] = {
 			Name = "Gamble till you drop",
-			Description = "Both player lose 500 life each turn.",
+			Description = "Both players lose 500 life each turn.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Inflict",500}},
 			Target = "All",
@@ -48,7 +48,7 @@ local participants = {
 		["Cost"] = {["Blue"] = 4,["Neutral"] = 2},
 		["Effect"] = {
 			Name = "Gamble till you drop",
-			Description = "When summoned, lock all opponent fighters for 1 turn. All opponent fighters that enters play lose 150 power.",
+			Description = "When summoned, lock all enemy fighters for 1 turn. All enemy fighters enter play with 150 less power.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Lock",1},{"Summon","Dicey Drake Token"},{"Damage",9999,"Self"}},
 			Target = "OpponentCards",
@@ -68,12 +68,12 @@ local participants = {
 		["Cost"] = {["Blue"] = 4,["Neutral"] = 2},
 		["Effect"] = {
 			Name = "Gamble till you drop",
-			Description = "When summoned, lock all opponent fighters for 1 turn. All opponent fighters that enters play lose 150 power.",
+			Description = "When summoned, lock all enemy fighters for 1 turn. All enemy fighters enter play with 150 less power.",
 			["Type"] = "OnEnemySummon",
-			["Power"] = {"Weaken",150},
+			["Power"] = {{"Weaken",150}},
 			Target = "Aggressor",
 		},
-		["Bio"] = "A hammer wielding former Korblox fighter that's itching for a gamble of the century.",
+		["Bio"] = "A hammer wielding fighter that's itching for a gamble of the century.",
 	},
 	
 	["Wild Reporter Tracy"] = {
@@ -87,12 +87,12 @@ local participants = {
 		["Cost"] = {["Blue"] = 2,["Neutral"] = 2,["Yellow"] = 4},
 		["Effect"] = {
 			Name = "Hot Ancient News",
-			Description = "When this card attacks, add a random epic.",
+			Description = "When this card attacks, put a random epic into your hand.",
 			["Type"] = "OnAttack",
-			["Power"] = {"RandomAdd","Epic"},
+			["Power"] = {{"RandomAdd","Epic"}},
 			Target = "Ally",
 		},
-		["Bio"] = "Possibly my waifu... bengbeng14-2016.",
+		["Bio"] = "Hot Ancient News.",
 	},
 }
 
