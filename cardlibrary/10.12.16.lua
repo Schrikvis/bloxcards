@@ -173,10 +173,10 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["RaveTea"] = {
-		["Id"] = 574173044,
+		["Id"] = 574343199,
 		["Name"] = "RaveTea",
-		["Health"] = 450,
-		["Power"] = 450,
+		["Health"] = 400,
+		["Power"] = 400,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Blue", 
@@ -192,10 +192,10 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["RaveTea Token"] = {
-		["Id"] = 574173044,
+		["Id"] = 574343199,
 		["Name"] = "RaveTea",
-		["Health"] = 450,
-		["Power"] = 450,
+		["Health"] = 400,
+		["Power"] = 400,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Blue", 
@@ -210,7 +210,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 1600,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Dash",
-		["CounterAttackBlock"] = true,
+		["CounterBlock"] = true,
 		["Color"] = "Green", 
 		["Cost"] = {["Neutral"] = 5, ["Blue"] = 1, ["Green"] = 5,},
 		["Archetype"] = "Nightmare",
