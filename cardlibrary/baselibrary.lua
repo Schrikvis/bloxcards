@@ -1025,12 +1025,11 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Fire",
 		["Color"] = "Red",
-		["Token"] = true,
 		["Cost"] = {["Neutral"] = 1,["Red"] = 2,},
-		["Bio"] = "From a spark, he generates a power that can cause instant combustion to anyone.",
+		["Bio"] = [[Yes, I think "toast" is an appropriate description.]],
 		["Effect"] = {
 			Name = "Pyroblast",
-			Description = "Deal 250 damage to a target fighter. This card cannot generate icons.",
+			Description = "Deal 250 damage to a target fighter.",
 			["Type"] = "OnSummon",
 			["Power"] = "Damage",
 			Target = "Single",
@@ -1050,7 +1049,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Red"] = 3,},
 		["Effect"] = {
 			Name = "Conflux",
-			Description = "This card can attack the turn it's summoned. When it does, set all of your opponent's coloured icons to 3.",
+			Description = "This card can attack the turn it's summoned. If it attacks a creature, set all of your opponent's coloured icons to 3.",
 			["Type"] = "OnAttack",
 			["Power"] = {{"SetYellow",3},{"SetGreen",3},{"SetBlue",3},{"SetRed",3}},
 			Target = "Opponent",
@@ -5857,7 +5856,6 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			},
 			["1x1x1x1v2"] = {
 				["Id"] = 540800410,
-				["AltArt"] = true,
 				["Effect"] = {
 					Name = "H$X",
 					Description = "Hack the power of all figthers to 250.",
@@ -7677,7 +7675,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Board Clear Preparation!",
 			Description = "Set the health and attack of all fighters to 300.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"SetHealth",300},{"SetPower",300}},
+			["Power"] = {{"Weaken",9999},{"Strengthen",300},{"Swap","Ally"},{"Weaken",9999},{"Strengthen",300},{"Swap"}},
 			Target = "All",
 		},
 	},
@@ -9893,9 +9891,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Green"] = 3,},
 		["Effect"] = {
 			Name = "Prakn'd",
-			Description = [[Draw negative three cards.]],
+			Description = [[Draw negative four cards.]],
 			["Type"] = "OnSummon",
-			["Power"] = {"Draw",-3},
+			["Power"] = {{"Draw", -4}},
 			Target = "Ally",
 		},
 		["Bio"] = "PRANKED!",
@@ -10155,7 +10153,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Knockdown",
 			Description = "When this card is summoned or dies, deal 250 damage to all Non-Redcliff fighters.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Summon","Redcliff Rogue Token"},{"Damage",250},{"Damage"},9999,"Self"},
+			["Power"] = {{"Summon","Redcliff Rogue Token"},{"Damage",250},{"Damage",9999,"Self"}},
 			Target = "NotArchetype",
 		},
 		["Bio"] = "The sword is way too thick and has pointless edges, its crossguard is too small, and the rogue's stance is poor at best. 4/10 would not summon - Sword Critic",
@@ -10309,7 +10307,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Cow",
 		["AltCards"] = {
 			["Cow God"] = {
-				["Id"] = 384007105,
+				["Id"] = 581988282,
 				["Name"] = "Cow God",
 				["Health"] = 1800,
 				["Power"] = 400,
@@ -10323,7 +10321,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 					Target = "Single",
 					Increase = 2
 				},
-				["Bio"] = "Thanks for working on Stirrings, fam!",
+				["Bio"] = "Thanks for working on ancient stirrings, fam.",
 			}
 		},
 		["Health"] = 900,
@@ -10673,22 +10671,22 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["CALL OF DOGE!?!"] = {
-		["Id"] = 384010629,
-		["Name"] = "CALL OF DOGE!?!",
+		["Id"] = 581985496,
+		["Name"] = "Doge Doge",
 		["Health"] = 0,
 		["Power"] = 0,
-		["Rarity"] = "Rare",
+		["Rarity"] = "Epic",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Yellow",
-		["Cost"] = {["Yellow"] = 4,},
+		["Cost"] = {["Neutral"] = 3, ["Yellow"] = 4,},
 		["Effect"] = {
 			Name = "B2T",
-			Description = [[Add 3 "Doge Hound" to your hand.]],
-			["Type"] = "OnSummon",
-			["Power"] = {{"Add","Doge Hound"},{"Add","Doge Hound"},{"Add","Doge Hound"}},
-			Target = "Self",
+			Description = [[Whenever an allied fighter dies, summon a doge.]],
+			["Type"] = "OnAllyDeath",
+			["Power"] = {{"Summon","Doge"}},
+			Target = "Ally",
 		},
-		["Bio"] = "DOGES? ATTACK!!",
+		["Bio"] = "Such sin. Much impure. Very purge. Wow.",
 	},			
 	
 	["Doge Hound"] = {
@@ -10696,12 +10694,12 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Doge Hound",
 		["Health"] = 250,
 		["Power"] = 250,
-		["Rarity"] = "Rare",
+		["Rarity"] = "Token",
 		["AttackEffect"] = "Lightning",
 		["Archetype"] = "Doge",
 		["Color"] = "Yellow",
 		["Cost"] = {["Yellow"] = 2,},
-		["Bio"] = "How is this different from a normal doge?",
+		["Bio"] = "FAILED CARD YAY",
 	},			
 	
 	["4.0 Robloxian"] = {
@@ -12751,7 +12749,14 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Paraselene Sage"] = {
 		["Id"] = 430961862,
 		["Name"] = "Paraselene Sage",
-		["Health"] = 700,
+		["AltCards"] = {
+			["ParasleneV2"] = {
+				["Id"] = 574430820,
+				["AltArt"] = true,
+				["Bio"] = "Zanzel? Eisenhower? Hallow? Imbeciles compared to the moon.",
+			}
+		},
+		["Health"] = 800,
 		["Power"] = 0,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Punch1",
@@ -14848,8 +14853,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Dwarvern Sentry: Alpha"] = {
 		["Id"] = 503535957,
 		["Name"] = "Dwarvern Sentry: Alpha",
-		["Health"] = 800,
-		["Power"] = 600,
+		["Health"] = 500,
+		["Power"] = 500,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "SlashDiagonal",
 		["Archetype"] = "Dwarf",
@@ -16644,8 +16649,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["CloneTrooper1019"] = {
 		["Id"] = 557990717,
 		["Name"] = "CloneTrooper1019",
-		["Health"] = 1000,
-		["Power"] = 1000,
+		["Health"] = 450,
+		["Power"] = 1250,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "GunShot",
 		["Color"] = "Yellow",

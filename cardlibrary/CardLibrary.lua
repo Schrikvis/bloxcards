@@ -1,78 +1,285 @@
-----------------------------------------------------------------------
--- USAGE:
--- put me in a modulescript named "CardLibrary" inside of
--- game.ReplicatedStorage
--- put any sublibraries you want to test in a modulescript
--- inside of me, they can be named whatever
--- enter "require(game.ReplicatedStorage.CardLibrary)" 
--- in the console
--- ~Vis
-----------------------------------------------------------------------
+local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO	
 
-local cardlibrary = {}
-local altcardlibrary = {}
+	["LeTruth"] = {
+		["Id"] = 540822293,
+		["Name"] = "LeTruth",
+		["Health"] = 250,
+		["Power"] = 250,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Red", 
+		["Cost"] = {["Red"] = 3,},
+		["Charge"] = true,
+		["Effect"] = {
+			Name = "Haydoscale",
+			Description = "Haste. Whenever your opponent loses life, LeTruth gains 150 health and power.",
+			["Type"] = "OnEnemyHealthLoss",
+			["Power"] = {{"Strengthen",150},{"Heal",150}},
+			Target = "Self",
+		},
+		["Bio"] = "To know something requires three things. You must know why it's true, it must be true, and you must believe it's true.",
+	},
+	
+	["Xenotrent"] = {
+		["Id"] = 573807351,
+		["Name"] = "Xenotrent",
+		["Health"] = 600,
+		["Power"] = 500,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Blue", 
+		["Cost"] = {["Neutral"] = 1, ["Blue"] = 4,},
+		["Effect"] = {
+			Name = "Haydoscale",
+			Description = "Whenever your opponent casts an action or terrain spell, end the turn.",
+			["Type"] = "OnEnemyCast",
+			["Power"] = {{"EndTurn",1}},
+			Target = "Self",
+		},
+		["Bio"] = "He rocks your world. Literally.",
+	},
+	
+	["Deep Sea Diver"] = {
+		["Id"] = 543830736,
+		["Name"] = "Deep Sea Diver",
+		["Health"] = 400,
+		["Power"] = 250,
+		["Rarity"] = "Rare",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Blue", 
+		["Cost"] = {["Blue"] = 3,["Neutral"] = 1},
+		["Effect"] = {
+			Name = "Massive Stamina",
+			Description = "Put a random uncommon fighter into your hand at the end of your turns.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"RandomAdd","Uncommon"}},
+			Target = "Ally",
+		},
+		["Bio"] = "Yes, diving 100 meters without a scuba gear is totally fine.",
+	},
+	
+	["Dicey Dave"] = {
+		["Id"] = 543830125,
+		["Name"] = "Dicey Dave",
+		["Health"] = 800,
+		["Power"] = 400,
+		["Rarity"] = "Epic",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Yellow", 
+		["Cost"] = {["Yellow"] = 4,["Neutral"] = 1},
+		["Effect"] = {
+			Name = "Gamble till you drop",
+			Description = "Both players lose 400 life each turn.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Inflict",400}},
+			Target = "All",
+		},
+		["Bio"] = "You up for a gamble?.",
+	},
+	
+	["Dicey Drake"] = {
+		["Id"] = 543830416,
+		["Name"] = "Dicey Drake",
+		["Health"] = 650,
+		["Power"] = 450,
+		["Rarity"] = "Epic",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Blue", 
+		["Cost"] = {["Blue"] = 4,["Neutral"] = 2},
+		["Effect"] = {
+			Name = "Gamble till you drop",
+			Description = "When summoned, lock all enemy fighters for 1 turn. All enemy fighters enter play with 150 less power.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Lock",1},{"Summon","Dicey Drake Token","Ally"},{"Damage",9999,"Self"}},
+			Target = "Opponent",
+		},
+		["Bio"] = "A hammer wielding former Korblox fighter that's itching for a gamble of the century.",
+	},
+	
+	["Dicey Drake Token"] = {
+		["Id"] = 543830416,
+		["Name"] = "Dicey Drake",
+		["Health"] = 650,
+		["Power"] = 450,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Blue", 
+		["Cost"] = {["Blue"] = 4,["Neutral"] = 2},
+		["Effect"] = {
+			Name = "Gamble till you drop",
+			Description = "When summoned, lock all enemy fighters for 1 turn. All enemy fighters enter play with 150 less power.",
+			["Type"] = "OnEnemySummon",
+			["Power"] = {{"Weaken",150}},
+			Target = "Aggressor",
+		},
+		["Bio"] = "A hammer wielding fighter that's itching for a gamble of the century.",
+	},
+	
+	["Wild Reporter Tracy"] = {
+		["Id"] = 556338220,
+		["Name"] = "Wild Reporter Tracy",
+		["Health"] = 750,
+		["Power"] = 500,
+		["Rarity"] = "Epic",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Yellow", 
+		["Cost"] = {["Blue"] = 2,["Neutral"] = 2,["Yellow"] = 4},
+		["Effect"] = {
+			Name = "Hot Ancient News",
+			Description = "When this card attacks, put a random epic into your hand.",
+			["Type"] = "OnAttack",
+			["Power"] = {{"RandomAdd","Epic"}},
+			Target = "Ally",
+		},
+		["Bio"] = "Hot Ancient News.",
+	},
 
-local pairs = pairs
-local substring = string.sub
-local cardcount = 0
-local assert = function(...) assert(...) end
-local c3n = Color3.new
-local clr = {Blue = c3n(0.25,0.25,1), Red = c3n(1,0.25,0.25), Green = c3n(0.25,1,0.25), Yellow = c3n(1,1,0.25), Neutral = c3n(1,1,1)}
-local function TestCard(library, id, card)
-	assert(card.Name, id.." has no name.")
-	assert(card.Bio, id.." has no bio.")
-	assert(type(card.Id) == 'number', id.." id malformed.")
-	assert(card.Rarity, id.." has no rarity.")
-	assert(card.Power and card.Health and card.Color, id.." has no health or power or color.")
-	assert(card.AttackEffect or card.Archetype == "Terrain" or (card.Health == 0 and card.Power == 0), id.." has no attack effect animation.")
-	assert(card.Color, id.." has no color.")
-	assert(clr[card.Color], id.." has no real color.")
-	assert(card.Cost, id.." has no cost.")
-	for color,amount in pairs(card.Cost) do
-		assert(clr[color], id.." has an unreal color cost.")
-		assert(type(amount) == 'number', id.." has a non-number cost.")
-	end
-	if card.Effect then
-		assert(card.Effect.Name and card.Effect.Description and card.Effect.Type and card.Effect.Power and card.Effect.Target, id.." has an incomplete card effect.")
-		assert(substring(card.Effect.Type, 1, 2) == "On" or card.Effect.Type == "Field", id.." has a nonsensical card effect trigger.")
-	end
-	if card.Original then
-		assert(library[card.Original], id.." has a non-existant Original card.")
-	end
-	if card.AltCards then
-		for name,altcard in pairs(card.AltCards) do
-			setmetatable(altcard, {__index = card})
-			altcard.AltCards = false
-			altcard.Original = id
-			if altcard.Effect then
-				setmetatable(altcard.Effect, {__index = card.Effect})
-			end
-			altcardlibrary[name] = altcard
-		end
-	end
-	return true
-end
+	["Has"] = {
+		["Id"] = 574173044,
+		["Name"] = "Has",
+		["Health"] = 0,
+		["Power"] = 0,
+		["Rarity"] = "Legendary",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Red", 
+		["Cost"] = {["Red"] = 6,},
+		["Effect"] = {
+			Name = "Hot Ancient News",
+			Description = "Summon a 450/750 fighter. Whenever you cast an action or terrain spell, increase the power of all allied fighters by 100.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Summon","Has Token"}},
+			Target = "Ally",
+		},
+		["Bio"] = "You can hasard a guess as to how this is going to end.",
+	},
 
-local function TestPartLibrary(partlibrary, partlib, parentlib)
-	local parentlib = parentlib or partlib
-	for index,card in pairs(partlib) do
-		local success, message = pcall(TestCard, parentlib, index, card)
-		if success then
-			cardlibrary[index] = card
-			cardcount = cardcount + 1
-		else
-			warn(partlibrary.Name, message)
-		end
-	end
-end
+	["Has Token"] = {
+		["Id"] = 574173044,
+		["Name"] = "Has",
+		["Health"] = 450,
+		["Power"] = 750,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Red", 
+		["Cost"] = {["Red"] = 6,},
+		["Effect"] = {
+			Name = "Hot Ancient News",
+			Description = "Summon a 450/750 fighter. Whenever you cast an action or terrain spell, increase the power of all allied fighters by 100.",
+			["Type"] = "OnAllyCast",
+			["Power"] = {{"Strengthen",100}},
+			Target = "Ally",
+		},
+		["Bio"] = "You can hasard a guess as to how this is going to end.",
+	},
 
-for _,partlibrary in pairs(script:GetChildren()) do
-	local partlib = require(partlibrary)
-	TestPartLibrary(partlibrary, partlib)
-end
+	["RaveTea"] = {
+		["Id"] = 574343199,
+		["Name"] = "RaveTea",
+		["Health"] = 400,
+		["Power"] = 400,
+		["Rarity"] = "Epic",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Blue", 
+		["Cost"] = {["Neutral"] = 3, ["Blue"] = 3,},
+		["Effect"] = {
+			Name = "Hot Ancient News",
+			Description = "Enemy fighters enter play as a copy of RaveTea, without this effect.",
+			["Type"] = "OnEnemySummon",
+			["Power"] = {{"Damage",9999,"Aggressor"},{"Summon","RaveTea Token"}},
+			Target = "Opponent",
+		},
+		["Bio"] = "The mind does not control the tea. The tea controls the mind.",
+	},
 
-TestPartLibrary({Name = "AltCards"}, altcardlibrary, cardlibrary)
+	["RaveTea Token"] = {
+		["Id"] = 574343199,
+		["Name"] = "RaveTea",
+		["Health"] = 400,
+		["Power"] = 400,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Blue", 
+		["Cost"] = {["Neutral"] = 3, ["Blue"] = 3,},
+		["Bio"] = "The mind does not control the body. The tea controls the body.",
+	},
 
-print(cardcount)
+	["Uncreation"] = {
+		["Id"] = 574356556,
+		["Name"] = "Uncreation",
+		["Health"] = 1600,
+		["Power"] = 1600,
+		["Rarity"] = "Legendary",
+		["AttackEffect"] = "Dash",
+		["CounterBlock"] = true,
+		["Color"] = "Green", 
+		["Cost"] = {["Neutral"] = 5, ["Blue"] = 1, ["Green"] = 5,},
+		["Archetype"] = "Nightmare",
+		["Effect"] = {
+			Name = "Hot Ancient News",
+			Description = "Whenever a fighter dies, shuffle a nightmare into your opponent's deck. This card can't counterattack.",
+			["Type"] = "OnAnyDeath",
+			["Power"] = {{"DeckAdd","Nightmare"}},
+			Target = "Opponent",
+		},
+		["Bio"] = "Soon.",
+	},
 
-return cardlibrary
+	["Treas0ner"] = {
+		["Id"] = 581970144,
+		["Name"] = "Treas0ner",
+		["Health"] = 200,
+		["Power"] = 0,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Red", 
+		["Cost"] = {["Neutral"] = 9,},
+		["Effect"] = {
+			Name = "Hot Ancient News",
+			Description = "At the end of your turns, set Treas0ner's health to 1500. It gains 100 power.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"SetHealth",1500,"Self"},{"Strengthen",100}},
+			Target = "Self",
+		},
+		["Bio"] = "I've seen spicier.",
+	},
+
+	["Razikai's Exploration"] = {
+		["Id"] = 581970386,
+		["Name"] = "Razikai's Exploration",
+		["Health"] = 0,
+		["Power"] = 0,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Blue", 
+		["Cost"] = {["Blue"] = 9, ["Green"] = 2,},
+		["Effect"] = {
+			Name = "Hot Ancient News",
+			Description = "Summon three space monsters.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Summon","Otub"},{"Summon","Otub"},{"Summon","Otub"}},
+			Target = "Ally",
+		},
+		["Bio"] = "I've seen spicier.",
+	},
+
+	["Jeeeeesus"] = {
+		["Id"] = 581970386,
+		["Name"] = "Jeeeeesus",
+		["Health"] = 222,
+		["Power"] = 2222.22,
+		["Rarity"] = "Legendary",
+		["AttackEffect"] = "Slash",
+		["Color"] = "Yellow", 
+		["Cost"] = {["Yellow"] = 5,},
+		["Effect"] = {
+			Name = "Hot Ancient News",
+			Description = "Your opponent draws 4 cards. End the turn.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Draw",4,"Opponent"},{"EndTurn",1}},
+			Target = "Ally",
+		},
+		["Bio"] = "NO, SCREW YOU, BUTTHOLE!",
+	},
+}
+
+return module

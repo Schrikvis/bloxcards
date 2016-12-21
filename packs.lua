@@ -171,18 +171,20 @@ local packs = {
 		CardPackId = 465492503,
 		Description = "Red is the colour of power, ambition, and control. Dominion packs contain cards that cost red!",
 		Cards = {
-      "Roblox Gift Card"
-			"Tone"
-			"Ninja Kitty"
-			"KnitJa"
-			"Fire Fighter"
-			"Drager Bot"
-			"Epic Sauce"
-			"NullSenseStudio"
-			"Forestfire Butterflies"
-			"Burning Tree"
-			"Dodgeball Gambler Red"
-			"Kinnis97"
+			"Treas0ner",
+			"Crazyblox",
+			"Roblox Gift Card",
+			"Tone",
+			"Ninja Kitty",
+			"KnitJa",
+			"Fire Fighter",
+			"Drager Bot",
+			"Epic Sauce",
+			"NullSenseStudio",
+			"Forestfire Butterflies",
+			"Burning Tree",
+			"Dodgeball Gambler Red",
+			"Kinnis97",
 			"Has",
 			"LeTruth",
 			"AVote",
@@ -379,8 +381,6 @@ local packs = {
 		CardPackId = 465492570,
 		Description = "Green is the colour of life, growth, and the primal forces. Vitality packs contain cards that cost green!",
 		Cards = {
-			"madattak"
-			"Darkfire Imp"
 			"Uncreation",
 			"WebGL3D",
 			"CorgiParade",
@@ -539,9 +539,7 @@ local packs = {
 		CardPackId = 465492637,
 		Description = "Blue is the colour of logic, order, and structure. Thought packs contain cards that cost blue!",
 		Cards = {
-			"Rollernaut"
-			"madkey900"
-			"Ghost Dragon"
+			"Razikai's Exploration",
 			"RaveTea",
 			"Xenotrent",
 			"Deep Sea Diver",
@@ -729,6 +727,7 @@ local packs = {
 		Description = 
 		"Yellow is the colour of chaos, emotion, and society. Revel packs contain cards that cost yellow!",
 		Cards = {
+			"Jeeeeesus",
 			"Dicey Dave",
 			"Wild Reporter Tracy",
 			"Happy Clown",
@@ -796,8 +795,7 @@ local packs = {
 			"Saprasam",
 			"MajorMattias",
 			"Radello",
-			"CALL OF DOGE!?!",
-			"Doge Hound",
+			"Doge Doge",
 			"Maplestick",
 			"Evil Wood Grain",
 			"Uncomfortably",
@@ -921,6 +919,9 @@ local packs = {
 		CardPackId = 434684079,
 		Description = "Exotic new cards from the black market! White cards and joke cards! It's all yours, as long as you have 10 wins!",
 		Cards = {
+			"Treas0ner",
+			"Razikai's Exploration",
+			"Jeeeeesus",
 			"LeTruth",
 			"Xenotrent",
 			"Has",
@@ -1229,6 +1230,7 @@ local packs = {
 		CardPackId = 543041104,
 		Description = "Filled with only cards belonging to an archetype, this pack can help you finish your deck provided you have at least 10 wins.",
 		Cards = {
+			"Fat Cat",
 			"Frankenstein",
 			"Psychotic Freak",
 			"StayBlue",
@@ -1247,10 +1249,9 @@ local packs = {
 			"Doge",
 			"PEEPSTERS",
 			"TrollTideTroll",
-			"Doge Hound",
 			"Haunted Doge Head",
 			"Kolby2020",
-			"CALL OF DOGE!?!",
+			"Doge Doge",
 			"Nova",
 			"Lunar Warrior",
 			"Lunar Acolyte",
@@ -1442,7 +1443,7 @@ local packs = {
 			"MUTO2014",
 			"TheSteelEagle",
 			"Tone",
-			"SnyFort",
+			"Master Josue",
 			"Has",
 			"Forbidden Power",
 			"Cherie",

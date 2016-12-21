@@ -2103,7 +2103,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Kalman Sinister"] = {
-		["Id"] = 543041104,
+		["Id"] = 581984943,
 		["Name"] = "Kalman Sinister",
 		["Health"] = 400,
 		["Power"] = 400,
@@ -2205,8 +2205,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["DairingSpookHead"] = {
 		["Id"] = 540075730,
 		["Name"] = "DairingSpookHead",
-		["Health"] = 800,
-		["Power"] = 800,
+		["Health"] = 650,
+		["Power"] = 650,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Blue", 
