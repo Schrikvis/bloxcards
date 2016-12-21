@@ -116,25 +116,6 @@
 		["Bio"] = "Do you know what makes a human being decent? Fear.",
 	},
 	
-	["Masked Extortionist"] =
-		["Id"] = "PENDING",
-		["Name"] = "Masked Extortionist",
-		["Health"] = 375,
-		["Power"] = 375,
-		["Rarity"] = "Common",
-		["AttackEffect"] = "Dash",
-		["Color"] = "Red", 
-		["Cost"] = {["Red"] = 3, ["Neutral"] = 1,},
-		["Effect"] = {
-			Name = "Damage for Top Deck",
-			Description = "Your opponent loses a red, a green, a yellow, and a blue icon. This effect can cause people to go into negative icons.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Green",-1},{"Blue",-1},{"Yellow",-1},{"Red",-1}},
-			Target = "Opponent",
-		},
-		["Bio"] = "Eisenhower was forced to cough up the sum to cross the river. The werewolf couldn't wait.",
-	},
-	
 	["Grove of the Burnwillows"] =
 		["Id"] = "PENDING",
 		["Name"] = "Grove of the Burnwillows",

@@ -1,6 +1,6 @@
 local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO	
 	["Korblox Skeleton"] = {
-		["Id"] = 543041104,
+		["Id"] = 574198419,
 		["Name"] = "Korblox Skeleton",
 		["Health"] = 700,
 		["Power"] = 100,
@@ -11,9 +11,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 1,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "AAAAAAA",
-			["Type"] = "When this card is targeted, reverse time and turn it into Serhat12.",
-			["Power"] = {{"Summon","Serhat12"}},
+			Description = "When this card is targeted, reverse time and turn it into Serhat12.",
+			["Type"] = "OnTarget",
+			["Power"] = {{"Summon","Serhat12"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Nobody expects the serhat12 inquisition.",
@@ -106,6 +106,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Blue", 
+		["Archetype"] = "Lunar",
 		["Cost"] = {["Blue"] = 2, ["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
@@ -118,7 +119,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Glaciem Knight"] = {
-		["Id"] = 543041104,
+		["Id"] = 574198491,
 		["Name"] = "Glaciem Knight",
 		["Health"] = 700,
 		["Power"] = 450,
@@ -184,11 +185,11 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Blue", 
-		["Cost"] = {["Blue"] = 0,},
+		["Cost"] = {["Blue"] = 1,},
 		["Archetype"] = "Lunar",
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "0 charges. At the end of this turn, if you've cast 7 action or terrain spells after this one, you win the game.",
+			Description = "At the end of this turn, deal 1300 damage to the opponent if you've cast at least seven actions after this one.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Summon","Gambit Reminder"},{"Summon","Gambit 1"}},
 			Target = "Ally",
@@ -209,7 +210,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Gambit",
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "At the end of this turn, if you've cast 7 action or terrain spells after this one, you win the game.",
+			Description = "At the end of this turn, you win the game if you've cast at least 11 actions after this one.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Damage",9999,"Archetype"}},
 			Target = "Ally",
@@ -227,10 +228,11 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Blue", 
 		["Cost"] = {["Blue"] = 99,},
 		["AttackBlock"] = true,
+		["Token"] = true,
 		["Archetype"] = "Gambit",
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "0 Charges. At the end of this turn, if you've cast 7 action or terrain spells after this one, you win the game.",
+			Description = "-1 Charges. At the end of this turn, if you've cast 7 action or terrain spells after this one, deal 1000 damage to the opponent.",
 			["Type"] = "OnAllyCast",
 			["Power"] = {{"Summon","Gambit 2"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -248,10 +250,11 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Blue", 
 		["Cost"] = {["Blue"] = 99,},
 		["AttackBlock"] = true,
+		["Token"] = true,
 		["Archetype"] = "Gambit",
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "1 Charges. At the end of this turn, if you've cast 7 action or terrain spells after this one, you win the game.",
+			Description = "0 Charges. At the end of this turn, if you've cast 7 action or terrain spells after this one, deal 1000 damage to the opponent.",
 			["Type"] = "OnAllyCast",
 			["Power"] = {{"Summon","Gambit 3"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -269,10 +272,11 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Blue", 
 		["Cost"] = {["Blue"] = 99,},
 		["AttackBlock"] = true,
+		["Token"] = true,
 		["Archetype"] = "Gambit",
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "2 Charges. At the end of this turn, if you've cast 7 action or terrain spells after this one, you win the game.",
+			Description = "1 Charge. At the end of this turn, if you've cast 7 action or terrain spells after this one, deal 1000 damage to the opponent.",
 			["Type"] = "OnAllyCast",
 			["Power"] = {{"Summon","Gambit 4"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -290,10 +294,11 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Blue", 
 		["Cost"] = {["Blue"] = 99,},
 		["AttackBlock"] = true,
+		["Token"] = true,
 		["Archetype"] = "Gambit",
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "3 Charges. At the end of this turn, if you've cast 7 action or terrain spells after this one, you win the game.",
+			Description = "2 Charges. At the end of this turn, if you've cast 7 action or terrain spells after this one, deal 1000 damage to the opponent.",
 			["Type"] = "OnAllyCast",
 			["Power"] = {{"Summon","Gambit 5"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -311,10 +316,11 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Blue", 
 		["Cost"] = {["Blue"] = 99,},
 		["AttackBlock"] = true,
+		["Token"] = true,
 		["Archetype"] = "Gambit",
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "4 Charges. At the end of this turn, if you've cast 7 action or terrain spells after this one, you win the game.",
+			Description = "3 Charges. At the end of this turn, if you've cast 7 action or terrain spells after this one, deal 1000 damage to the opponent.",
 			["Type"] = "OnAllyCast",
 			["Power"] = {{"Summon","Gambit 6"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -332,10 +338,11 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Blue", 
 		["Cost"] = {["Blue"] = 99,},
 		["AttackBlock"] = true,
+		["Token"] = true,
 		["Archetype"] = "Gambit",
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "5 Charges. At the end of this turn, if you've cast 7 action or terrain spells after this one, you win the game.",
+			Description = "4 Charges. At the end of this turn, if you've cast 7 action or terrain spells after this one, deal 1000 damage to the opponent.",
 			["Type"] = "OnAllyCast",
 			["Power"] = {{"Summon","Gambit 7"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -356,7 +363,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Gambit",
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "6 Charges. At the end of this turn, if you've cast 7 action or terrain spells after this one, you win the game.",
+			Description = "5 Charges. At the end of this turn, if you've cast 7 action or terrain spells after this one, deal 1000 damage to the opponent.",
 			["Type"] = "OnAllyCast",
 			["Power"] = {{"Summon","Gambit 8"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -374,11 +381,33 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Blue", 
 		["Cost"] = {["Blue"] = 99,},
 		["AttackBlock"] = true,
+		["Archetype"] = "Gambit",
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "7 Charges. At the end of this turn, if you've cast 7 action or terrain spells after this one, you win the game.",
+			Description = "6 Charges. At the end of this turn, if you've cast 7 action or terrain spells after this one, deal 1000 damage to the opponent.",
+			["Type"] = "OnAllyCast",
+			["Power"] = {{"Summon","Gambit Max"},{"Damage",9999,"Self"}},
+			Target = "Ally",
+		},
+		["Bio"] = "Grapeshots ruined, Tendrils of Agony depleted. All that is left is the rush.",		
+	},
+
+	["Gambit Max"] = {
+		["Id"] = 540076783,
+		["Name"] = "Stormchaser's Gambit",
+		["Health"] = 500,
+		["Power"] = 0,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Blue", 
+		["Cost"] = {["Blue"] = 99,},
+		["Archetype"] = "Gambit",
+		["AttackBlock"] = true,
+		["Effect"] = {
+			Name = "Pyrotechnics",
+			Description = "7 Charges. At the end of this turn, if you've cast 7 action or terrain spells after this one, deal 1000 damage to the opponent.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Inflict",9999999}},
+			["Power"] = {{"Inflict",1250}},
 			Target = "Opponent",
 		},
 		["Bio"] = "Grapeshots ruined, Tendrils of Agony depleted. All that is left is the rush.",		
@@ -403,7 +432,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Haunted Overseer Armor"] = {
-		["Id"] = 543041104,
+		["Id"] = 574315273,
 		["Name"] = "Haunted Overseer Armor",
 		["Health"] = 300,
 		["Power"] = 300,
@@ -452,9 +481,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 3, ["Blue"] = 2,},
 		["Effect"] = {
 			Name = "Instinct Release",
-			Description = "Obliterate target fighter. Your opponent summons a Werewolf Savage.",
+			Description = "Obliterate target fighter. Your opponent summons a Carniverous Death Moth..",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Summon","Werewolf Savage","Opponent"},{"Damage",99999,"Single"}},
+			["Power"] = {{"Summon","Carniverous Death Moth","Opponent"},{"Damage",99999,"Single"}},
 			Target = "Ally",
 		},
 		["Bio"] = "DIYDTY",
@@ -597,9 +626,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 4,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "Swap the stats of all non-green fighters.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Swap",030,"NotColorGreen"}},
+			Description = "When this fighter attacks, swap the stats of a target fighter.",
+			["Type"] = "OnAttack",
+			["Power"] = {{"Swap",030,"Single"}},
 			Target = "Ally",
 		},
 		["Bio"] = "I want to be strong so I made a dominus in goat flesh!",
@@ -608,12 +637,12 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Doll House"] = {
 		["Id"] = 540076130,
 		["Name"] = "Doll House",
-		["Health"] = 500,
+		["Health"] = 600,
 		["Power"] = 0,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Yellow", 
-		["Cost"] = {["Yellow"] = 1,},
+		["Cost"] = {["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
 			Description = "At the end of your turns, put a random common into your hand.",
@@ -625,7 +654,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Dredger980"] = {
-		["Id"] = 543041104,
+		["Id"] = 540075945,
 		["Name"] = "Dredger980",
 		["Health"] = 600,
 		["Power"] = 600,
@@ -687,7 +716,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Reminder: Final Revels",
 		["Health"] = 4000,
 		["Power"] = 400,
-		["Rarity"] = "Rare",
+		["Rarity"] = "Token",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Yellow", 
 		["AttackBlock"] = true,
@@ -798,8 +827,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Haunted Doge Head"] = {
-		["Id"] = 543041104,
-		["Name"] = "Haunted Overseer Armor",
+		["Id"] = 574315463,
+		["Name"] = "Haunted Doge Head",
 		["Health"] = 300,
 		["Power"] = 300,
 		["Rarity"] = "Rare",
@@ -833,13 +862,13 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Damage",300}},
 			Target = "Opponent",
 		},
-		["Bio"] = "The gentle souls in Zanzel's wilderness never are.",
+		["Bio"] = "Always check your cards for razorblades.",
 	},
 	
 	["Inexorable Goo Tide"] = {
 		["Id"] = 540076275,
 		["Name"] = "Inexorable Goo Tide",
-		["Health"] = 2700,
+		["Health"] = 2400,
 		["Power"] = 150,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Dash",
@@ -857,25 +886,25 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	
 	["Infected Mushrooms"] = {
 		["Id"] = 543041104,
-		["Name"] = "Blood Moon Shard",
-		["Health"] = 400,
-		["Power"] = 0,
+		["Name"] = "Infected Mushrooms",
+		["Health"] = 675,
+		["Power"] = 375,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Green", 
-		["Cost"] = {["Red"] = 4,},
+		["Cost"] = {["Neutral"] = 3, ["Green"] = 2,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Destroy all fighters with 200 or less health.",
+			Description = "Destroy target fighter if it has less than 350 power.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",200},{"Heal",200}},
-			Target = "All",
+			["Power"] = {{"Swap",030},{"Damage",350},{"Heal",350},{"Swap",030}},
+			Target = "Single",
 		},
-		["Bio"] = "The blood of a werewolf can stain both soul and soulless.",
+		["Bio"] = "Everything's turning to a point where it stops and it turns around!",
 	},
 	
 	["KillCactaur"] = {
-		["Id"] = 543041104,
+		["Id"] = 574315150,
 		["Name"] = "KillCactaur",
 		["Health"] = 800,
 		["Power"] = 300,
@@ -906,7 +935,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Carniverous Death Moth"] = {
-		["Id"] = 543041104,
+		["Id"] = 540075658,
 		["Name"] = "Carniverous Death Moth",
 		["Health"] = 400,
 		["Power"] = 400,
@@ -1010,7 +1039,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Haydoscale",
 			Description = "Whenever your opponent gains life, put a member of the Sinister family into your hand.",
-			["Type"] = "OnEnemyHealthGain",
+			["Type"] = "OnEnemyLifeGain",
 			["Power"] = {{"RandomAdd","Sinister"}},
 			Target = "Ally",
 		},
@@ -1033,14 +1062,14 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Strengthen",200,"Self"}},
 			Target = "Ally",
 		},
-		["Bio"] = "Zanzel went just a bit too far.",
+		["Bio"] = "Zanzel went just a bit too far with this golem.",
 	},
 	
 	["RoboLoleris"] = {
 		["Id"] = 540076884,
 		["Name"] = "RoboLoleris",
 		["Health"] = 100,
-		["Power"] = 700,
+		["Power"] = 350,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Blue", 
@@ -1237,7 +1266,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Headless Horseman"] = {
-		["Id"] = 543041104,
+		["Id"] = 574314948,
 		["Name"] = "Headless Horseman",
 		["Health"] = 500,
 		["Power"] = 500,
@@ -1247,16 +1276,16 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 3, ["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "When this card dies, ressurect it and lose 600 life.",
+			Description = "When this card dies, ressurect it and lose 500 life.",
 			["Type"] = "OnDeath",
-			["Power"] = {{"Summon","Headless Horseman"},{"Cost",600}},
+			["Power"] = {{"Summon","Headless Horseman"},{"Cost",500}},
 			Target = "Ally",
 		},
 		["Bio"] = "Your laws, much like your bones, were made to be broken.",
 	},
 	
 	["Haunted Redcliff Armor"] = {
-		["Id"] = 543041104,
+		["Id"] = 574314588,
 		["Name"] = "Haunted Redcliff Armor",
 		["Health"] = 300,
 		["Power"] = 300,
@@ -1610,7 +1639,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 500,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Dash",
-		["AttackBlock"] = true,
+		["CounterAttackBlockBlock"] = true,
 		["Color"] = "Red", 
 		["Cost"] = {["Red"] = 1,},
 		["Effect"] = {
@@ -1625,7 +1654,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	
 	["It that will Howl"] = {
 		["Id"] = 543041104,
-		["Name"] = "It that is will Howl",
+		["Name"] = "It that will Howl",
 		["Health"] = 1000,
 		["Power"] = 1000,
 		["Rarity"] = "Token",
@@ -1675,18 +1704,18 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Pyrotechnics",
 			Description = "Your opponent summons Lezus.",
-			["Type"] = "OnDestroy",
-			["Power"] = {{"Summon","Lezus 1"}},
+			["Type"] = "OnSummon",
+			["Power"] = {{"RandomSummon","U DUN GOOFED"}},
 			Target = "Opponent",
 		},
 		["Bio"] = "Zanzel scoffed when she saw Lezus. These demons are why the world is so impure.",
 	},
 	
 	["Lezus 1"] = {
-		["Id"] = 543041104,
+		["Id"] = 552162352,
 		["Name"] = "Lezus",
-		["Health"] = 500,
-		["Power"] = 500,
+		["Health"] = 700,
+		["Power"] = 400,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Red",
@@ -1696,17 +1725,17 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Pyrotechnics",
 			Description = "I am Lezus.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Summon","Lezus 2","Ally"},{"Cost",1000,"Ally"},{"Damage",9999},{"Unlock",9999,"Archetype"}},
+			["Power"] = {{"RandomSummon","U DUN GOOFED","Ally"},{"Heal",400,"Archetype"},{"Heal",400,"Opponent"},{"Damage",400,"Ally"},{"Damage",9999},{"Unlock",9999,"Archetype"}},
 			Target = "Self",
 		},
 		["Bio"] = "Fool.",
 	},
 	
 	["Lezus 2"] = {
-		["Id"] = 543041104,
+		["Id"] = 552162352,
 		["Name"] = "Lezus",
-		["Health"] = 500,
-		["Power"] = 500,
+		["Health"] = 700,
+		["Power"] = 400,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Red", 
@@ -1716,17 +1745,17 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Pyrotechnics",
 			Description = "I am Lezus.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Summon","Lezus 3","Ally"},{"SetNeutral",0,"Ally"},{"Damage",9999},{"Unlock",9999,"Archetype"}},
+			["Power"] = {{"RandomSummon","U DUN GOOFED","Ally"},{"SetNeutral",0,"Ally"},{"Blue",3,"Opponent"},{"Green",3,"Opponent"},{"White",3,"Opponent"},{"Yellow",3,"Opponent"},{"Red",3,"Opponent"},{"Damage",9999},{"Unlock",9999,"Archetype"}},
 			Target = "Self",
 		},
 		["Bio"] = "Peon.",
 	},
 	
 	["Lezus 3"] = {
-		["Id"] = 543041104,
+		["Id"] = 552162352,
 		["Name"] = "Lezus",
-		["Health"] = 500,
-		["Power"] = 500,
+		["Health"] = 700,
+		["Power"] = 400,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Red", 
@@ -1736,17 +1765,17 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Pyrotechnics",
 			Description = "I am Lezus.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Summon","Lezus 4","Ally"},{"Draw",2,"Opponent"},{"Damage",9999},{"Unlock",9999,"Archetype"}},
+			["Power"] = {{"RandomSummon","U DUN GOOFED", "Ally"},{"Draw",2,"Opponent"},{"Damage",9999},{"Unlock",9999,"Archetype"}},
 			Target = "Self",
 		},
 		["Bio"] = "Imbecile.",
 	},
 	
 	["Lezus 4"] = {
-		["Id"] = 543041104,
+		["Id"] = 552162352,
 		["Name"] = "Lezus",
-		["Health"] = 500,
-		["Power"] = 500,
+		["Health"] = 700,
+		["Power"] = 400,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Red", 
@@ -1756,17 +1785,17 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Pyrotechnics",
 			Description = "I am Lezus.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Summon","Lezus 5","Ally"},{"Heal",400,"Opponent"},{"Strengthen",400,"Opponent"},{"Damage",9999},{"Unlock",9999,"Archetype"}},
+			["Power"] = {{"RandomSummon","U DUN GOOFED","Ally"},{"Heal",400,"Opponent"},{"Strengthen",400,"Opponent"},{"Damage",9999},{"Unlock",9999,"Archetype"}},
 			Target = "Self",
 		},
 		["Bio"] = "Cur.",
 	},
 	
 	["Lezus 5"] = {
-		["Id"] = 543041104,
+		["Id"] = 552162352,
 		["Name"] = "Lezus",
-		["Health"] = 500,
-		["Power"] = 500,
+		["Health"] = 700,
+		["Power"] = 400,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Red", 
@@ -1776,14 +1805,34 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Pyrotechnics",
 			Description = "I am Lezus.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Summon","Lezus 1","Ally"},{"Summon","Lezus 1","Ally"},{"Damage",9999},{"Unlock",9999,"Archetype"}},
+			["Power"] = {{"RandomSummon","U DUN GOOFED","Ally"},{"RandomSummon","U DUN GOOFED","Ally"},{"Damage",9999},{"Unlock",9999,"Archetype"}},
 			Target = "Self",
 		},
 		["Bio"] = "Recur.",
 	},
 	
+	["Lezus 6"] = {
+		["Id"] = 552162352,
+		["Name"] = "Lezus",
+		["Health"] = 700,
+		["Power"] = 400,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Red", 
+		["Cost"] = {["Red"] = 6,},
+		["Archetype"] = "U DUN GOOFED",
+		["Effect"] = {
+			Name = "Pyrotechnics",
+			Description = "I am Lezus.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"RandomSummon","U DUN GOOFED","Ally"},{"Add","Nightmare","Ally"},{"Add","Nightmare","Ally"},{"Add","Nightmare","Ally"},{"Add","Nightmare","Ally"},{"Damage",9999},{"Unlock",9999,"Archetype"}},
+			Target = "Self",
+		},
+		["Bio"] = "Scatter.",
+	},
+	
 	["Mad Scientist"] = {
-		["Id"] = 543041104,
+		["Id"] = 552164401,
 		["Name"] = "Mad Scientist",
 		["Health"] = 500,
 		["Power"] = 300,
@@ -1817,7 +1866,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Lock",1,"Single"}},
 			Target = "Ally",
 		},
-		["Bio"] = "BoOO OOO ooO 0 oO oOo o 0 oO 0 Oo o oOo Ooo oOoOoO",
+		["Bio"] = "BOoOO OOO ooO oO oOo o oO Oo o oOo Ooo",
 	},
 	
 	["Gooplast"] = {
@@ -1840,7 +1889,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Hacker"] = {
-		["Id"] = 543041104,
+		["Id"] = 552162607,
 		["Name"] = "Hacker",
 		["Health"] = 400,
 		["Power"] = 400,
@@ -1859,7 +1908,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Ye Old Arte"] = {
-		["Id"] = 543041104,
+		["Id"] = 552175344,
 		["Name"] = "Ye Old Arte",
 		["Health"] = 500,
 		["Power"] = 300,
@@ -1907,7 +1956,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "When this card is summoned, put a random red or blue action into your hand. At the end of your turns, enemy fighters lose 25 power and Script Robber gains 125 power.",
+			Description = "When this card is summoned, put a random red or blue action into your hand. At the end of your turns, all fighters lose 25 power and Script Robber gains 150 power.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Summon","Robber Token",},{"RandomAdd","Lunar"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -1926,7 +1975,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "When this card is summoned, put a random red or blue action into your hand. At the end of your turns, enemy fighters lose 25 power and Script Robber gains 150 power.",
+			Description = "When this card is summoned, put a random red or blue action into your hand. At the end of your turns, all fighters lose 25 power and Script Robber gains 150 power.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Weaken",25},{"Strengthen",175,"Self"}},
 			Target = "All",
@@ -1992,7 +2041,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Ghoost"] = {
-		["Id"] = 543041104,
+		["Id"] = 574198186,
 		["Name"] = "Ghoost",
 		["Health"] = 100,
 		["Power"] = 200,
@@ -2127,7 +2176,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Haydoscale",
 			Description = "Summon a copy of this card. This card can't generate icons.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Lock",0}},
+			["Power"] = {{"Summon","DoeDoe"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Eisenhower regretted how humans made the dodos extinct.",
@@ -2141,7 +2190,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Blue", 
-		["Archetyppe"] = "Sinister",
+		["Archetype"] = "Sinister",
 		["Cost"] = {["Blue"] = 2,},
 		["Effect"] = {
 			Name = "Haydoscale",
@@ -2203,9 +2252,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 6,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "When this card attacks, put a Morphic Goo and a Targeting Blip into your hand.",
+			Description = "When this card attacks, put a Morphic Goo into your hand.",
 			["Type"] = "OnAttack",
-			["Power"] = {{"Add","Morphic Goo"},{"Add","Targeting Blip"}},
+			["Power"] = {{"Add","Morphic Goo"}},
 			Target = "Ally",
 		},
 		["Bio"] = "I'm trying really hard not to make a melting joke he - Dammit!",
@@ -2250,7 +2299,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Slenderman"] = {
-		["Id"] = 543041104,
+		["Id"] = 574314362,
 		["Name"] = "Slenderman",
 		["Health"] = 900,
 		["Power"] = 1200,
@@ -2263,7 +2312,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Description = "When this card attacks, it loses 200 power.",
 			["Type"] = "OnAttack",
 			["Power"] = {{"Weaken",200}},
-			Target = "Ally",
+			Target = "Self",
 		},
 		["Bio"] = "Find the eight pages to best me. All you have to do is ring the bell by the hotel reception.",
 	},
@@ -2288,7 +2337,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Pyramid Head"] = {
-		["Id"] = 543041104,
+		["Id"] = 574314477,
 		["Name"] = "Pyramid Head",
 		["Health"] = 600,
 		["Power"] = 400,
@@ -2307,7 +2356,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Patric Sinister"] = {
-		["Id"] = 543041104,
+		["Id"] = 574198606,
 		["Name"] = "Patric Sinister",
 		["Health"] = 350,
 		["Power"] = 350,
@@ -2651,7 +2700,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	
 	["Wolven Blitz"] = {
 		["Id"] = 543041104,
-		["Name"] = "DIY: Werewolf",
+		["Name"] = "Wolven Blitz",
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Uncommon",
@@ -2765,7 +2814,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Neutral",2}},
 			Target = "Ally",
 		},
-		["Bio"] = "A flower that runs from the sun.",
+		["Bio"] = "A reality that wants to disappear.",
 	},
 	
 	["Liechtenauer's Sophistry"] = {
@@ -2773,7 +2822,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Liechtenauer's Sophistry",
 		["Health"] = 350,
 		["Power"] = 350,
-		["Rarity"] = "Common",
+		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Green", 
 		["Archetype"] = "Mythic",
@@ -2877,9 +2926,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "Both players put a morphic goo and a targeting blip into their hand.",
+			Description = "Both players summon a random fighter.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Add","Morphic Goo"},{"Add","Morphic Goo","Opponent"},{"Add","Targeting Blip"},{"Add","Targeting Blip","Opponent"}},
+			["Power"] = {{"RandomSummon","Any"},{"RandomSummon","Any","Opponent"}},
 			Target = "Ally",
 		},
 		["Bio"] = [["I got a korblox deathknight! Sweet! What did you get Jim?" ... "An extension cord."]],
@@ -2926,8 +2975,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Morphic Goo"] = {
 		["Id"] = 540822293,
 		["Name"] = "Morphic Goo",
-		["Health"] = 250,
-		["Power"] = 250,
+		["Health"] = 50,
+		["Power"] = 50,
+		["Token"] = true,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Blue", 
@@ -2937,10 +2987,30 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Haydoscale",
 			Description = "When this card is targeted, reveal its true form.",
 			["Type"] = "OnTarget",
-			["Power"] = {{"RandomSummon",030}},
+			["Power"] = {{"RandomSummon","Any"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Eisenhower's greatest weapon was what he never used.",
+	},
+
+	["Fearmiredon"] = {
+		["Id"] = 574177392,
+		["Name"] = "Fearmiredon",
+		["Health"] = 900,
+		["Power"] = 900,
+		["Rarity"] = "Epic",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Green", 
+		["Cost"] = {["Green"] = 9,},
+		["Archetype"] = "Morphic",
+		["Effect"] = {
+			Name = "Haydoscale",
+			Description = "Set the power of a target fighter to -200.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"SetPower",-200}},
+			Target = "Single",
+		},
+		["Bio"] = "Zanzel is the greatest leader.",
 	},
 }
 

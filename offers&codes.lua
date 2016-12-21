@@ -11,6 +11,210 @@ local codes = {
 			Ranks = {}; -- {"DanTDM Superfan"}
 			BestBefore = 0; -- tick() + (3600*hours) + (86400*days) + (604800*weeks)
 		}
+		
+		Obfuscated = "3QM3";
+		Rewards = {      
+			Cards = {}; 
+			RandomCards = {}; 
+			Packs = {"Exine" = 5}; 
+			BloxBux = 500;
+			Charms = {0,0};
+			Sleeves = {};
+			Ranks = {};
+			BestBefore = 2419200; 
+		}
+
+		Obfuscated = "7qj+7";
+		Rewards = {      
+			Cards = {["Safe Chat"] = 1}; 
+			RandomCards = {};
+			Packs = {};
+			BloxBux = 0;
+			Charms = {0,0};
+			Sleeves = {}; 
+			Ranks = {};
+			BestBefore = 2419200; 
+		}
+		
+		Obfuscated = "M3G++Gf7M";
+		Rewards = {      
+			Cards = {["Cow God"] = 1}; 
+			RandomCards = {};
+			Packs = {"Stirrings" = 5};
+			BloxBux = 0;
+			Charms = {0,0};
+			Sleeves = {}; 
+			Ranks = {};
+			BestBefore = 604800;
+		}
+		
+		Obfuscated = "pjNa+QafQ+k";
+		Rewards = {      
+			Cards = {["FILTHYPRANKS"] = 1}; 
+			RandomCards = {};
+			Packs = {};
+			BloxBux = 0;
+			Charms = {0,0};
+			Sleeves = {}; 
+			Ranks = {};
+			BestBefore = 31449600;
+		}
+		
+		Obfuscated = "MUa00 e0GU5 5+afJ";
+		Rewards = {      
+			Cards = {}; 
+			RandomCards = {};
+			Packs = {};
+			BloxBux = 1000;
+			Charms = {0,0};
+			Sleeves = {}; 
+			Ranks = {};
+			BestBefore = 2419200; 
+		}
+		
+		Obfuscated = "M3G00 3WQ eQM3";
+		Rewards = {      
+			Cards = {["Gravity InspectorV2"] = 3}; 
+			RandomCards = {};
+			Packs = {};
+			BloxBux = 0;
+			Charms = {0,0};
+			Sleeves = {}; 
+			Ranks = {};
+			BestBefore = 2419200; 
+		}
+		
+		Obfuscated = "OGYQ";
+		Rewards = {      
+			Cards = {["Hyperblue"] = 1, ["RukatuKDH"] = 1, ["InceptionTime" = 1,]}; 
+			RandomCards = {};
+			Packs = {};
+			BloxBux = 0;
+			Charms = {0,0};
+			Sleeves = {}; 
+			Ranks = {};
+			BestBefore = 2419200; 
+		}
+		
+		Obfuscated = "+jej3GR";
+		Rewards = {      
+			Cards = {["BrokenBone"] = 1}; 
+			RandomCards = {};
+			Packs = {};
+			BloxBux = 0;
+			Charms = {0,0};
+			Sleeves = {}; 
+			Ranks = {};
+			BestBefore = 2419200; 
+		}
+		
+		Obfuscated = "0Qa7NQ";
+		Rewards = {      
+			Cards = {}; 
+			RandomCards = {};
+			Packs = {"Obvious" = 4,}
+			BloxBux = 0;
+			Charms = {3,3};
+			Sleeves = {}; 
+			Ranks = {};
+			BestBefore = 2419200; 
+		}
+		
+		Obfuscated = "7QFQ+a3Q";
+		Rewards = {      
+			Cards = {["ChickenDuckBird V2"] = 1}; 
+			RandomCards = {};
+			Packs = {}
+			BloxBux = 200;
+			Charms = {0,0};
+			Sleeves = {}; 
+			Ranks = {};
+			BestBefore = 2419200; 
+		}
+		
+		Obfuscated = "7QfJG KQ fQ";
+		Rewards = {      
+			Cards = {["Lunar Acolyte" = 3, ["Acolyte of the Rift"] = 3, ["Infernal Acolyte"] = 3, ["Necromantic Acolyte"] = 3, ["Fried Acolyte"] = 3, ["Nova"] = 3}; 
+			RandomCards = {};
+			Packs = {}
+			BloxBux = 0;
+			Charms = {0,0};
+			Sleeves = {}; 
+			Ranks = {};
+			BestBefore = 2419200; 
+		}
+		
+		Obfuscated = "M5jjJp e0jl";
+		Rewards = {      
+			Cards = {}; 
+			RandomCards = {};
+			Packs = {}
+			BloxBux = 0;
+			Charms = {2,2};
+			Sleeves = {"Goopy"}; 
+			Ranks = {};
+			BestBefore = 2419200; 
+		}
+		
+		Obfuscated = "MRa+p Ra+km";
+		Rewards = {      
+			Cards = {}; 
+			RandomCards = {["Disturbing Thoughts"] = 3};
+			Packs = {"Stirrings" = 1}
+			BloxBux = 0;
+			Charms = {0,0};
+			Sleeves = {"Spooky Scary"}; 
+			Ranks = {};
+			BestBefore = 2419200; 
+		}
+		
+		Obfuscated = "3N3j+Ga0";
+		Rewards = {      
+			Cards = {}; 
+			RandomCards = {};
+			Packs = {"Exine" = 10}
+			BloxBux = 0;
+			Charms = {0,0};
+			Sleeves = {"Spooky Scary"}; 
+			Ranks = {};
+			BestBefore = 2419200; 
+		}
+		
+		Obfuscated = "e0NQeQa+K";
+		Rewards = {      
+			Cards = {["Grand Pirate King"] = 2, ["Ship Raider"] = 4. ["Bearded Captain"] = 3, ["Pirate"] = 4, ["Brickmason"] = 1}; 
+			RandomCards = {};
+			Packs = {}
+			BloxBux = 0;
+			Charms = {0,0};
+			Sleeves = {}; 
+			Ranks = {};
+			BestBefore = 2419200; 
+		}
+		
+		Obfuscated = "7jjK Tje";
+		Rewards = {      
+			Cards = {["ROBLOXian Reborn"] = 1]}; 
+			RandomCards = {};
+			Packs = {}
+			BloxBux = 0;
+			Charms = {0,0};
+			Sleeves = {}; 
+			Ranks = {};
+			BestBefore = 2419200; 
+		}
+		
+		Obfuscated = "YG03Wp 5+afJM";
+		Rewards = {      
+			Cards = {["FILTHY PRANKS"] = -1}; 
+			RandomCards = {};
+			Packs = {}
+			BloxBux = 0;
+			Charms = {0,0};
+			Sleeves = {}; 
+			Ranks = {};
+			BestBefore = 2419200; 
+		}
 	};
 	
 
@@ -34,6 +238,7 @@ local offers = {
 		Ranks = {}; -- {"DanTDM Superfan"}
 		BestBefore = 0; -- tick() + (3600*hours) + (86400*days) + (604800*weeks)
 	};
+	
 }
 
 return {codes = codes; offers = offers;}
