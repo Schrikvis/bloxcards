@@ -171,6 +171,18 @@ local packs = {
 		CardPackId = 465492503,
 		Description = "Red is the colour of power, ambition, and control. Dominion packs contain cards that cost red!",
 		Cards = {
+      "Roblox Gift Card"
+			"Tone"
+			"Ninja Kitty"
+			"KnitJa"
+			"Fire Fighter"
+			"Drager Bot"
+			"Epic Sauce"
+			"NullSenseStudio"
+			"Forestfire Butterflies"
+			"Burning Tree"
+			"Dodgeball Gambler Red"
+			"Kinnis97"
 			"Has",
 			"LeTruth",
 			"AVote",
@@ -367,6 +379,8 @@ local packs = {
 		CardPackId = 465492570,
 		Description = "Green is the colour of life, growth, and the primal forces. Vitality packs contain cards that cost green!",
 		Cards = {
+			"madattak"
+			"Darkfire Imp"
 			"Uncreation",
 			"WebGL3D",
 			"CorgiParade",
@@ -525,6 +539,9 @@ local packs = {
 		CardPackId = 465492637,
 		Description = "Blue is the colour of logic, order, and structure. Thought packs contain cards that cost blue!",
 		Cards = {
+			"Rollernaut"
+			"madkey900"
+			"Ghost Dragon"
 			"RaveTea",
 			"Xenotrent",
 			"Deep Sea Diver",
@@ -930,13 +947,24 @@ local packs = {
 			"Fire Fighter",
 			"CloneTrooper1019",
 			"BoomAtack",
-			"Mafia Grunt",
-			"Cat Ears Maid",
+			"madattak",
+			"Brown Dairy Supply",
 			"Tricky Magician",
 			"iiMasant",
 			"PencilWizard",
 			"Nopants99",
-			"CIA Man",
+			"Dwarvern Sentry: MAX",
+			"Dwarvern Sentry: Delta",
+			"Dwarvern Sentry: Gamma",
+			"Dwarvern Sentry: Beta",
+			"Dwarvern Sentry: Alpha",
+			"Dwarvern Captain",
+			"Dwarvern Scientist",
+			"Dwarvern Mathematician",
+			"Dwarvern Engineer",
+			"Dwarvern Energist",
+			"Dwarvern Miner",
+			"madkey900",
 			"Epic Sauce",
 			"Winchester Rotomo",
 			"Frenemy's Bargain",
@@ -949,7 +977,7 @@ local packs = {
 			"Noob Gunner",
 			"Mohawk2275",
 			"NullSenseStudio",
-			"Prisman",
+			"Roblox Gift Card",
 			"Yoshius",
 			"Turkey",
 			"JayTheCoder",
@@ -983,7 +1011,7 @@ local packs = {
 			"Jimminus",
 			"Turkey Cannon",
 			"Baby Noob",
-			"Mariochocolatemilk",
+			"Rollernaut",
 			"HasTheHero",
 			"Korblox Shadowmage",
 			"Redcliff Heretic",
@@ -1002,13 +1030,13 @@ local packs = {
 			"Aesthetical",
 			"Arashi Pikemen",
 			"BerskererPredator450",
-			"Meeboid Champion",
+			"Darkfire Imp",
 			"NerfModder",
 			"ClanAtlas",
-			"KurosakiDXenos",
+			"Armor Stand",
 			"Skarra the DragonSlayer",
 			"AII_Duck",
-			"Sibs",
+			"Ghost Dragon",
 			"Moon Rabbit's Rage",
 			"Pancake Break",
 			"BLOXER787",
