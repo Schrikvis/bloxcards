@@ -171,6 +171,7 @@ return {
 		CardPackId = 465492503,
 		Description = "Red is the colour of power, ambition, and control. Dominion packs contain cards that cost red!",
 		Cards = {
+			"Roblox Gift Card"
 			"Tone"
 			"Ninja Kitty"
 			"KnitJa"
@@ -358,6 +359,8 @@ return {
 		CardPackId = 465492570,
 		Description = "Green is the colour of life, growth, and the primal forces. Vitality packs contain cards that cost green!",
 		Cards = {
+			"madattak"
+			"Darkfire Imp"
 			"WebGL3D"
 			"CorgiParade"
 			"brickmason"
@@ -515,6 +518,9 @@ return {
 		CardPackId = 465492637,
 		Description = "Blue is the colour of logic, order, and structure. Thought packs contain cards that cost blue!",
 		Cards = {
+			"Rollernaut"
+			"madkey900"
+			"Ghost Dragon"
 			"Stravant"
 			"Ship Raider"
 			"DJ Kangaroo"
@@ -898,8 +904,8 @@ return {
 			"Fire Fighter",
 			"CloneTrooper1019",
 			"BoomAtack",
-			"Mafia Grunt",
-			"Cat Ears Maid",
+			"madattak",
+			"Brown Dairy Supply",
 			"Tricky Magician",
 			"iiMasant",
 			"PencilWizard",
@@ -915,7 +921,7 @@ return {
 			"Dwarvern Engineer",
 			"Dwarvern Energist",
 			"Dwarvern Miner",
-			"CIA Man",
+			"madkey900",
 			"Epic Sauce",
 			"Frenemy's Bargain",
 			"Remote Mine",
@@ -925,7 +931,7 @@ return {
 			"Noob Gunner",
 			"Mohawk2275",
 			"NullSenseStudio",
-			"Prisman",
+			"Roblox Gift Card",
 			"Turkey",
 			"JayTheCoder",
 			"Dodgeball Gambler Red",
@@ -950,7 +956,7 @@ return {
 			"Cooldude4851",
 			"Turkey Cannon",
 			"Baby Noob",
-			"Mariochocolatemilk",
+			"Rollernaut",
 			"HasTheHero",
 			"Golden Turkey",
 			"Pilgrim",
@@ -966,13 +972,13 @@ return {
 			"Aesthetical",
 			"Arashi Pikemen",
 			"BerskererPredator450",
-			"Meeboid Champion",
+			"Darkfire Imp",
 			"NerfModder",
 			"ClanAtlas",
-			"KurosakiDXenos",
+			"Armor Stand",
 			"Skarra the DragonSlayer",
 			"AII_Duck",
-			"Sibs",
+			"Ghost Dragon",
 			"Moon Rabbit's Rage",
 			"WebGL3D",
 			"Tone",

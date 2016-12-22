@@ -404,8 +404,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 
 	["Favette"] = {
 		["Id"] = 532358085,
-		["Name"] = "Fave",
-		["Original"] = "Favette",
+		["Name"] = "Favette",
+		["Original"] = "Fave",
 		["AltArt"] = true,
 		["Health"] = 1200,
 		["Power"] = 350,
@@ -414,13 +414,13 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 4,["Neutral"] = 6,},
 		["Color"] = "Red",
 		["Effect"] = {
-			Name = "Extreme Energy Care Package",
+			Name = "Selfie",
 			Description = "All your fighters gain 300 Health and 150 Power.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Strengthen",150},{"Heal",300}},
 			Target = "Ally",
 		},
-		["Bio"] = "I AM POWER. I AM STRENGTH. HEAR ME ROAR.",
+		["Bio"] = "The female version of fave. She is fabulous, loves starblox, and hangs out with amber sometimes.",
 	},
 		
 	["Preston"] = {
@@ -973,7 +973,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "A cowboy from the ranch that wants to practice his aim.",
 	},
 	
-	["Mcree"] = {
+	["Mccree"] = {
 		["Id"] = 532358983,
 		["Name"] = "Cowboy",
 		["Original"] = "Cowboy",
@@ -985,14 +985,14 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 1,},
 		["Effect"] = {
-			Name = "Pow!",
+			Name = "Deadeye",
 			Description = "Deal 50 damage to a target fighter.",
 			["Type"] = "OnSummon",
 			["Power"] = "Damage",
 			Target = "Single",
 			Increase = 50,
 		},
-		["Bio"] = "Bamf.",
+		["Bio"] = "Oh boy, would ya' look at the time..",
 	},
 	
 	["Darpeh"] = {
@@ -1236,8 +1236,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["QuisMo"] = {
 		["Id"] = 271752446,
 		["Name"] = "QuisMo",
-		["Health"] = 50,
-		["Power"] = 200,
+		["Health"] = 150,
+		["Power"] = 250,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "PunchKick",
 		["Color"] = "Yellow",
@@ -1339,7 +1339,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 271753051,
 		["Name"] = "Wustard",
 		["Health"] = 700,
-		["Power"] = 100,
+		["Power"] = 200,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "GunShot",
 		["Color"] = "Green",
@@ -3888,7 +3888,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Lock",1},{"Strengthen",250}},
 			Target = "Archetype",
 		},
-		["Bio"] = "Professional fly swatting makes you some fair tix in ROBLOXia.",
+		["Bio"] = "Professional fly swatting makes you some fair cash in ROBLOXia.",
 	},			
 			
 	["Sylrath"] = {
@@ -6204,6 +6204,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Health"] = 100,
 		["Power"] = 400,
 		["Rarity"] = "Common",
+		["Archetype"] = "Noob",
 		["AttackEffect"] = "Thunder",
 		["Color"] = "Yellow",
 		["Cost"] = {["Neutral"] = 1,},
@@ -8239,7 +8240,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 332863593,
 		["Name"] = "Plushie Dino",
 		["Health"] = 2000,
-		["Power"] = 2000,
+		["Power"] = 1500,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Thunder",
 		["Color"] = "Yellow",
@@ -8247,9 +8248,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 5,["Neutral"] = 5,},
 		["Effect"] = {
 			Name = "Plushie Amp",
-			Description = [[When this card is targeted, Lock it for three turns. This card can't counterattack.]],
+			Description = "When this card is targeted, Lock it for two turns. This card can't counterattack.",
 			["Type"] = "OnTarget",
-			["Power"] = {{"Lock",3}},
+			["Power"] = {{"Lock",2}},
 			Target = "Self",
 		},
 		["Bio"] = "PLUSHAURUS REX!",
@@ -9967,7 +9968,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Weaken",9999},{"Strengthen",500},{"Swap",030},{"Weaken",9999},{"Strengthen",500},{"Return",030}},
 			Target = "Self",
 		},
-		["Bio"] = "The reason there isn't a Merely card is because Seranok IS Merely.",
+		["Bio"] = "The reason there isn't a Merely card is because Seran...wait there is a merely card...",
 	},	
 	
 	["TheAmazeMan"] = {
@@ -10801,29 +10802,29 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "Creator of Arcane Adventures. Hates the blood element.",
 	},
 	
-	["CALL OF DOGE!?!"] = {
+	["Doge Doge"] = {
 		["Id"] = 384010629,
-		["Name"] = "CALL OF DOGE!?!",
-		["Health"] = 0,
-		["Power"] = 0,
-		["Rarity"] = "Rare",
+		["Name"] = "Doge Doge",
+		["Health"] = 600,
+		["Power"] = 200,
+		["Rarity"] = "Epic",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Yellow",
-		["Cost"] = {["Yellow"] = 4,},
+		["Cost"] = {["Neutral"] = 3,["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "B2T",
-			Description = [[Add 3 "Doge Hound" to your hand.]],
-			["Type"] = "OnSummon",
-			["Power"] = {{"Add","Doge Hound"},{"Add","Doge Hound"},{"Add","Doge Hound"}},
-			Target = "Self",
+			Description = "Whenever an allied fighter dies, summon a doge.",
+			["Type"] = "OnAllyDeath",
+			["Power"] = {{"Summon","Doge"}},
+			Target = "Ally",
 		},
-		["Bio"] = "DOGES? ATTACK!!",
+		["Bio"] = "Such sin. Very impure. Much purge. Wow.",
 	},			
 	
 	["Doge Hound"] = {
 		["Id"] = 384010776,
 		["Name"] = "Doge Hound",
-		["Health"] = 250,
+		["Health"] = 400,
 		["Power"] = 250,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Lightning",
@@ -12222,7 +12223,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Weaken",9999},{"Strengthen",500},{"Swap",030},{"Weaken",9999},{"Strengthen",500},{"Return",030}},
 			Target = "Self",
 		},
-		["Bio"] = "The reason there isn't a Merely card is because I don't want to.",
+		["Bio"] = "This bio no longer makes any sense.",
 	},		
 	
 
@@ -15157,6 +15158,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Health"] = 350,
 		["Power"] = 350,
 		["Rarity"] = "Common",
+		["Archetype"] = "Noob",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Yellow", 
 		["Cost"] = {["Yellow"] = 1, ["Neutral"] = 2,},
@@ -15447,12 +15449,12 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Monopoly Man"] = {
 		["Id"] = 491581673,
 		["Name"] = "Monopoly Man",
-		["Health"] = 650,
-		["Power"] = 650,
+		["Health"] = 700,
+		["Power"] = 700,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Yellow", 
-		["Cost"] = {["Yellow"] = 3, ["Neutral"] = 2,},
+		["Cost"] = {["Yellow"] = 3, ["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Protection",
 			Description = "Play with your hand revealed.",
@@ -15766,10 +15768,10 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4, ["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "AAAAAAAAAAAAAAAAAA",
-			Description = "Deal 700 damage to all other yellow fighters.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Heal",700,"Self"},{"Damage",700}},
-			Target = "ColorYellow",
+			Description = "When this card attacks and destroys another, give it 200 health and 200 power.",
+			["Type"] = "OnAttackDestroy",
+			["Power"] = {{"Heal",200},{"Strengthen",700}},
+			Target = "Self",
 		},
 		["Bio"] = "The pen is mightier than the sword.",
 	},
@@ -16083,13 +16085,13 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Egg Eyes Batter Dragon"] = {
-		["Id"] = 528149527,
+		["Id"] = 581910730,
 		["Name"] = "Egg Eyes Batter Dragon",
 		["Health"] = 1350,
 		["Power"] = 100,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Fire",
-		["Color"] = "Neutral",
+		["Color"] = "Yellow",
 		["Archetype"] = "Dragon",
 		["Cost"] = {["Yellow"] = 3,["Neutral"] = 4,}, 
 		["Effect"] = {
@@ -16138,7 +16140,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Description = "All allied fighters gain 50 power and 50 health from listening to the sickest beatz.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Strengthen",50},{"Heal",50}},
-			Target = "Single",
+			Target = "Ally",
 		},
 		["Bio"] = "He is australian, he loves hip-hop, and he always has the sick beatz.",
 	},
@@ -16677,12 +16679,11 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Explode1",
 		["Color"] = "Neutral",
-		["Archetype"] = "Classic",
 		["Cost"] = {["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Explosion",
 			Description = "When targeted, deal 200 damage to all fighters.",
-			["Type"] = "OnSummon",
+			["Type"] = "OnTarget",
 			["Power"] = {{"Damage",200}},
 			Target = "All",
 		},
@@ -16965,8 +16966,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Pilgrim"] = {
 		["Id"] = 557947984,
 		["Name"] = "Pilgrim",
-		["Health"] = 200,
-		["Power"] = 300,
+		["Health"] = 350,
+		["Power"] = 350,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "UziShot",
 		["Color"] = "Yellow",
@@ -16976,7 +16977,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	
 	["Suicide Bomber"] = {
 		["Id"] = 557999834,
-		["Name"] = "Suicide Bomber",
+		["Name"] = "Bomber Noob",
 		["Health"] = 300,
 		["Power"] = 700,
 		["Rarity"] = "Common",
@@ -16986,7 +16987,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["CounterBlock"] = true,
 		["Effect"] = {
 			Name = "Rope, Lamp Oil, Bombs",
-			Description = "When this card dies, add a remote mine to your hand and deal 300 damage to all cards. Suicide Bomber cannot counterattack.",
+			Description = "When this card dies, add a remote mine to your hand and deal 300 damage to all cards. Bomber Noob cannot counterattack.",
 			["Type"] = "OnDeath",
 			["Power"] = {{"Damage",300,"All"},{"Add","Remote Mine"}},
 			Target = "Ally",
@@ -17132,8 +17133,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Tone"] = {
 		["Id"] = 557984530,
 		["Name"] = "Tone",
-		["Health"] = 600,
-		["Power"] = 700,
+		["Health"] = 500,
+		["Power"] = 600,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "SlashDiagonal",
 		["Color"] = "Red",
@@ -17331,7 +17332,6 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "GunShot",
 		["Color"] = "Green",
 		["Cost"] = {["Neutral"] = 1,["Yellow"] = 1,["Green"] = 4},
-		["WeakenImmune"] = true,
 		["Effect"] = {
 			Name = "Yarr..",
 			Description = "Lower the power of a fighter by 500. When this card attacks, give all fighters 100 health. This card is immune to effects that lower its power or health.",
@@ -17373,7 +17373,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 5,["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Thug Life",
-			Description = "Whenever you lose health, shuffle a Kit of Deception into your deck.",
+			Description = "Whenever you lose life, shuffle a Kit of Deception into your deck.",
 			["Type"] = "OnHealthLoss",
 			["Power"] = {{"DeckAdd","Kit of Deception"}},
 			Target = "Ally",
@@ -17412,11 +17412,128 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Thug Life",
 			Description = "Add Slenderman to your hand.",
-			["Type"] = "OnDeath",
+			["Type"] = "OnSummon",
 			["Power"] = {{"Add","Slenderman"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Furry, Pokemon battler, tarantula collector, mountain biker, and general weirdo.",
+	},			
+	
+	["madkey900"] = {
+		["Id"] = 581847885,
+		["Name"] = "madkey900",
+		["Health"] = 300,
+		["Power"] = 200,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Slash",
+		["Color"] = "Blue",
+		["Cost"] = {["Neutral"] = 1,["Blue"] = 2,},
+		["Effect"] = {
+			Name = "Thug Life",
+			Description = "Shuffle a Dairingpoophead into your deck.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"DeckAdd","DairingPoopHead"}},
+			Target = "Ally",
+		},
+		["Bio"] = "The maddest of keys.",
+	},				
+	
+	["Brown Dairy Supply"] = {
+		["Id"] = 581854933,
+		["Name"] = "Brown Dairy Supply",
+		["Health"] = 0,
+		["Power"] = 0,
+		["Rarity"] = "Rare",
+		["AttackEffect"] = "Null",
+		["Color"] = "Neutral",
+		["Cost"] = {["Neutral"] = 4,},
+		["Effect"] = {
+			Name = "moo",
+			Description = "Give all fighters 200 health. Both players summon a cow, and shuffle a cow into their deck",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Heal",200},{"Summon","Cow","Ally"},{"Summon","Cow","Opponent"},{"DeckAdd","Cow","Ally"},{"DeckAdd","Cow","Opponent"}},
+			Target = "All",
+		},
+		["Bio"] = "Nobody knows where he gets all that brown dairy from...",
+	},			
+	
+	["Darkfire Imp"] = {
+		["Id"] = 581907420,
+		["Name"] = "Darkfire Imp",
+		["Health"] = 300,
+		["Power"] = 500,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Fire",
+		["Color"] = "Green",
+		["Cost"] = {["Blue"] = 3,["Green"] = 1,},
+		["Effect"] = {
+			Name = "moo",
+			Description = "When this card dies, summon a random green rare.",
+			["Type"] = "OnDeath",
+			["Power"] = {{"RandomSummon","RareGreen"}},
+			Target = "All",
+		},
+		["Bio"] = "BURN IN HELL!",
+	},		
+	
+	["Ghost Dragon"] = {
+		["Id"] = 581907836,
+		["Name"] = "Ghost Dragon",
+		["Health"] = 650,
+		["Power"] = 100,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Fire",
+		["Archetype"] = "Dragon"
+		["Color"] = "Blue",
+		["Cost"] = {["Neutral"] = 3,["Blue"] = 2,},
+		["Effect"] = {
+			Name = "Reincarnation",
+			Description = "When this card is targeted, reincarnate it into a random dragon.",
+			["Type"] = "OnTarget",
+			["Power"] = {{"RandomSummon","Archetype","Ally"},{"Damage",9999}},
+			Target = "Self",
+		},
+		["Bio"] = "Legend says this was the soul that once inhabited NobleDragon's original dragon.",
+	},		
+	
+	["madattak"] = {
+		["Id"] = 581907237,
+		["Name"] = "madattak",
+		["Health"] = 1500,
+		["Power"] = 125,
+		["Rarity"] = "Legendary",
+		["AttackEffect"] = "Slash",
+		["Archetype"] = "Zombie"
+		["Color"] = "Green",
+		["Cost"] = {["Neutral"] = 5,["Green"] = 3,},
+		["Effect"] = {
+			Name = "Reincarnation",
+			Description = "Whenever an enemy fighter dies, summon a zombie.",
+			["Type"] = "OnEnemyDeath",
+			["Power"] = {{"Summon","Zombie"}},
+			Target = "Ally",
+		},
+		["Bio"] = "MY EXPERIMENT IS COMPLETE! ZOMBIES RUNNING LEFT AND RIGHT ACROSS THE WORLD! HAHAHAHAHAHAA!.",
+	},			
+	
+	["Armor Stand"] = {
+		["Id"] = 581906627,
+		["Name"] = "Armor Stand",
+		["Health"] = 1500,
+		["Power"] = 0,
+		["Rarity"] = "Rare",
+		["AttackEffect"] = "Punch1",
+		["Archetype"] = "Noob",
+		["Color"] = "White",
+		["Cost"] = {["Neutral"] = 2,},
+		["Effect"] = {
+			Name = "Capture",
+			Description = "At the end of your turn, This card becomes a 1500/0.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Weaken",9999},{"Strengthen",1500},{"Swap",030},{"Weaken",9999}},
+			Target = "Self",
+		},
+		["Bio"] = "How does metal armor regenerate all its steel plates anyway?",
 	},			
 	
 }
