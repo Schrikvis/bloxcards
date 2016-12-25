@@ -1,8 +1,8 @@
-local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO	
+local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO	
 	["Korblox Skeleton"] = {
 		["Id"] = 574198419,
-		["Name"] = "Korblox Skeleton",
-		["Health"] = 700,
+		["Name"] = "Krblox Skeleton",
+		["Health"] = 300,
 		["Power"] = 100,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Dash",
@@ -16,12 +16,20 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Summon","Serhat12"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
-		["Bio"] = "Nobody expects the serhat12 inquisition.",
+		["Bio"] = "Nobody expects the Serhat12 inquisition.",
 	},
 	
 	["Wolfbitten Noob"] = {
 		["Id"] = 543041104,
 		["Name"] = "Wolfbitten Noob",
+		["AltCards"] = {
+			["Wolfbitten Elf"] = {
+				["Id"] = 585627464,
+				["Name"] = "Wolfbitten Elf",
+				["Rarity"] = "Rare",
+				["Bio"] = "Can he deliver your gifts in time?",
+			}
+		},
 		["Health"] = 200,
 		["Power"] = 200,
 		["Rarity"] = "Common",
@@ -42,6 +50,14 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Werewolf Savage"] = {
 		["Id"] = 543041104,
 		["Name"] = "Werewolf Savage",
+		["AltCards"] = {
+			["Festive Werewolf"] = {
+				["Id"] = 585627502,
+				["Name"] = "Festive Werewolf",
+				["Rarity"] = "Rare",
+				["Bio"] = "The best kind of werewolf.",
+			}
+		},
 		["Health"] = 400,
 		["Power"] = 400,
 		["Rarity"] = "Token",
@@ -559,17 +575,26 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Cotton Candy Lion"] = {
-		["Id"] = 540075815,
+		["Id"] = 585627301,
 		["Name"] = "Cotton Candy Lion",
-		["Health"] = 350,
+		["AltCards"] = {
+			["Gingerbread Man"] = {
+				["Id"] = 585627288,
+				["Name"] = "Gingerbread Man",
+				["Rarity"] = "Rare",
+				["Bio"] = "I like my mince pies spicy.",
+			}
+		},
+		["Health"] = 100,
 		["Power"] = 350,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Yellow", 
 		["Cost"] = {["Neutral"] = 0,},
+		["Token"] = true,
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "When this card dies, enemy fighters eat it to gain 150 health.",
+			Description = "When this card dies, enemy fighters eat it to gain 150 health. This card can't generate Icons.",
 			["Type"] = "OnDeath",
 			["Power"] = {{"Heal",150,"Opponent"}},
 			Target = "Ally",
@@ -761,9 +786,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "Your opponent's opponent's opponent's opponent's opponent summons the Fried One.",
+			Description = "TO BE RENOVATED.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Summon","Shedletsky, the Fried One"}},
+			["Power"] = {{"None"}},
 			Target = "Opponent",
 		},
 		["Bio"] = "Let's cause an apocalypse over here!",
@@ -868,7 +893,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Inexorable Goo Tide"] = {
 		["Id"] = 540076275,
 		["Name"] = "Inexorable Goo Tide",
-		["Health"] = 2400,
+		["Health"] = 1600,
 		["Power"] = 150,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Dash",
@@ -1107,8 +1132,8 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Jason Voorhees"] = {
 		["Id"] = 529601481,
 		["Name"] = "Jason Voorhees",
-		["Health"] = 175,
-		["Power"] = 175,
+		["Health"] = 150,
+		["Power"] = 150,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Dash",
 		["CounterAttackBlock"] = true,
@@ -1268,17 +1293,17 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Headless Horseman"] = {
 		["Id"] = 574314948,
 		["Name"] = "Headless Horseman",
-		["Health"] = 500,
-		["Power"] = 500,
+		["Health"] = 400,
+		["Power"] = 400,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Red", 
 		["Cost"] = {["Red"] = 3, ["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "When this card dies, ressurect it and lose 500 life.",
+			Description = "When this card dies, ressurect it and lose 600 life.",
 			["Type"] = "OnDeath",
-			["Power"] = {{"Summon","Headless Horseman"},{"Cost",500}},
+			["Power"] = {{"Summon","Headless Horseman"},{"Cost",600}},
 			Target = "Ally",
 		},
 		["Bio"] = "Your laws, much like your bones, were made to be broken.",
@@ -2049,7 +2074,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Dash",
 		["Color"] = "Blue", 
 		["CounterAttackBlock"] = true,
-		["Cost"] = {["Blue"] = 1, ["Neutral"] = 3,},
+		["Cost"] = {["Blue"] = 1, ["Neutral"] = 7,},
 		["Effect"] = {
 			Name = "Haydoscale",
 			Description = "Summon three Morphic Goos. Ghoost can't be counterattacked.",
@@ -2103,7 +2128,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Kalman Sinister"] = {
-		["Id"] = 543041104,
+		["Id"] = 581984943,
 		["Name"] = "Kalman Sinister",
 		["Health"] = 400,
 		["Power"] = 400,
@@ -2114,9 +2139,9 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 2, ["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "Whenever your opponent summons a fighter, all allied fighters gain 50 health.",
+			Description = "Whenever your opponent summons a fighter, all allied fighters gain 75 health.",
 			["Type"] = "OnEnemySummon",
-			["Power"] = {{"Heal",50}},
+			["Power"] = {{"Heal",75}},
 			Target = "Ally",
 		},
 		["Bio"] = "We are too big to fail, and you are too small to matter, child.",
@@ -2378,8 +2403,16 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Edgelord"] = {
 		["Id"] = 540076100,
 		["Name"] = "Edgelord",
-		["Health"] = 550,
-		["Power"] = 550,
+		["AltCards"] = {
+			["Sugarlord"] = {
+				["Id"] = 585627329,
+				["Name"] = "Sugarlord",
+				["Rarity"] = "Rare",
+				["Bio"] = "I came seeking Hallow. All I found was you.",
+			}
+		},
+		["Health"] = 650,
+		["Power"] = 650,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Dash",
 		["AttackBlock"] = true,
@@ -2800,6 +2833,14 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Verisimilitudal Dissonance"] = {
 		["Id"] = 540076776,
 		["Name"] = "Verisimilitudal Dissonance",
+		["AltCards"] = {
+			["Eleemosynary Beneficient"] = {
+				["Id"] = 585627423,
+				["Name"] = "Eleemosynary Beneficient",
+				["Rarity"] = "Rare",
+				["Bio"] = "A gift that keeps on giving.",
+			}
+		},
 		["Health"] = 500,
 		["Power"] = 500,
 		["Rarity"] = "Common",
@@ -2981,7 +3022,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Blue", 
-		["Cost"] = {["Neutral"] = 2,},
+		["Cost"] = {["Neutral"] = 3,},
 		["Archetype"] = "Morphic",
 		["Effect"] = {
 			Name = "Haydoscale",
@@ -3014,4 +3055,4 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 }
 
-return module
+return stirrings

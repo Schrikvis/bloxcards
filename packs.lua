@@ -1414,7 +1414,7 @@ local packs = {
 			"MUTO2014",
 			"TheSteelEagle",
 			"Tone",
-			"SnyFort",
+			"Master Josue",
 			"Has",
 			"Forbidden Power",
 			"Cherie",
@@ -1437,6 +1437,34 @@ local packs = {
 			"KillCactaur",
 			"HyperBlue",
 			"InceptionTime",
+		},
+	};
+
+	{
+		Name = "Teaism's Gifts", --CHRISTMAS!
+		Cost = 1500,
+		CardsInPack = 4,
+		CardPackId = 585626122,
+		Description = "Teaism's special gift, just for you. Merry Christmas. (You need 10 wins to open this pack.)",
+		Cards = {
+			"Baker",
+			"Hot Chocolate",
+			"GRAND CLAUS",
+			"Gingerbread Man",
+			"Sugardlord",
+			"CrazyEggNoggin",
+			"Eggnog",
+			"MyDadIsASanta",
+			"Wooden Toy Train",
+			"Robo Santa",
+			"Eleemosynary Beneficient",
+			"Elfdevin",
+			"Entangling Lights",
+			"Wolfbitten Elf",
+			"Festive Werewolf",
+			"SantaSorin",
+			"Santa Doge",
+			"Fruit Cake",
 		},
 	};
 }
