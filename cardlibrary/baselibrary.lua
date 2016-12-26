@@ -2422,7 +2422,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Bowl of Greed",
 		["AltCards"] = {
 			["Bowl of GreedV2"] = {
-				["Id"] = 581988282,
+				["Id"] = 584441916,
 				["AltArt"] = true,
 				["Effect"] = {
 					Name = "MOO!",
@@ -2456,6 +2456,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Lord of Greed",
 		["AltCards"] = {
 			["Lord of GreedV2"] = {
+				["Name"] = "Pittacium Acolythus",
 				["Id"] = 585532545,
 				["Bio"] = "Why are you stealing something that *I* rightfully stole first?",			
 			}
@@ -2755,7 +2756,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Eye Spy",
 		["AltCards"] = {
 			["Entangling Lights"] = {
-				["Id"] = 585627429,
+				["Id"] = 585627443,
 				["Name"] = "Entangling Lights",
 				["Rarity"] = "Rare",
 				["Bio"] = "This is really just God's way of silently judging you.",
@@ -2941,6 +2942,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["SnyFort"] = {
 				["Id"] = 496184718,
 				["AltArt"] = true,
+				["Power"] = {{"Summon","Master Token","Ally"},{"Damage",9999,"Self"}},	
 				["Bio"] = "Why did the chicken cross the road?",
 			}
 		},
@@ -2955,7 +2957,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Level Up!",
 			Description = "Summon a 425/425 fighter. This card counts as an action.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Summon","Master Token","Ally"},{"Damage",9999,"Self"}},	
+			["Power"] = {{"Summon","TokenFort","Ally"},{"Damage",9999,"Self"}},	
 			Target = "ColorYellow",
 		},
 		["Bio"] = "What is the only word in the dictionary spelt incorrectly?",
@@ -3997,9 +3999,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Birthday Surprise",
-			Description = "Heal a target fighter and all allied fighters by 300, then draw a card.",
+			Description = "Heal a target fighter and all allied fighters by 200.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Heal",300},{"Heal",300,"Ally"},{"Draw",1,"Ally"}},
+			["Power"] = {{"Heal",200},{"Heal",200,"Ally"}},
 			Target = "Single",
 		},
 		["Bio"] = "SURPRISE!",
@@ -8571,7 +8573,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "WishNite",
 		["AltCards"] = {
 			["Wishnite-ArtV"] = {
-				["Id"] = 411804493,
+				["Name"] = "SilentNite",
+				["Id"] = 585627393,
 				["AltArt"] = true,
 				["Bio"] = "No presents. No turkey. No festivity allowed.",
 			}
@@ -8802,6 +8805,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["MyrmiredonV2"] = {
 				["Id"] = 480297793,
 				["AltArt"] = true,
+					["Effect"] = {
+					Name = "Dreadsteed",
+					Description = [[Shuffle a copy of this card back into your deck.]],
+					["Type"] = "OnSummon",
+					["Power"] = {{"DeckAdd","MyrmiredonV2"}},
+					Target = "Ally",
+		},
 				["Bio"] = "Greetings, honourable invaders. Thank you for coming so far. However, as you can see, we are poor. Do you truly believe you'll find what you want here?",
 			}
 		},
@@ -8813,9 +8823,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 5,},
 		["Effect"] = {
 			Name = "Dreadsteed",
-			Description = [[Shuffle a "Myrmiredon" into your deck.]],
+			Description = [[Shuffle a copy of this card back into your deck.]],
 			["Type"] = "OnSummon",
-			["Power"] = {{"DeckAdd","MyrmiredonV2"}},
+			["Power"] = {{"DeckAdd","Myrmiredon"}},
 			Target = "Ally",
 		},
 		["Bio"] = "A leader is the greatest servant. A master is the greatest tyrant. Myrmiredon is both.",
@@ -9858,9 +9868,10 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		AltCards = {
 			["Teadaddy"] = {
 				["Id"] = 540871820,
+				["Name"] = "Teadaddy",
 				["AltArt"] = true,
 				["Effect"] = {
-					Description = [[Add Beedaddy to your hand and gain 3 Green icons. This card cannot generate icons.]],
+					Description = [[Put Beedaddy to your hand and gain 3 Green icons.]],
 					["Power"] = {{"Add","Beedaddy"},{"Green",3}},
 				},
 				["Bio"] = "Beta is coming SOONtm, right vis?",
@@ -9871,12 +9882,11 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Lightning",
 		["Archetype"] = "Noob",
-		["Token"] = true,
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 7,["Blue"] = 3,},
 		["Effect"] = {
 			Name = "T2B",
-			Description = [[Add "Beeism" to your hand and gain 3 Green icons. This card cannot generate icons.]],
+			Description = [[Put "Beeism" into your hand and gain 3 Green icons.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Add","Beeism"},{"Green",3}},
 			Target = "Self",
@@ -9889,10 +9899,11 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Beeism",
 		AltCards = {
 			["Beedaddy"] = {
+				["Name"] = "Beedaddy",
 				["Id"] = 540864462,
 				["AltArt"] = true,
 				["Effect"] = {
-					Description = "Add Teadaddy to your hand and gain 3 Blue icons. This card cannot generate icons.",
+					Description = "Put Teadaddy into your hand and gain 3 Blue icons.",
 					["Power"] = {{"Add","Teadaddy"},{"Blue",3}},
 				},
 				["Bio"] = "TFW you realize this is a bee card.",
@@ -9903,12 +9914,11 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Lightning",
 		["Archetype"] = "Bee",
-		["Token"] = true,
 		["Color"] = "Green",
 		["Cost"] = {["Neutral"] = 2,["Green"] = 6,},
 		["Effect"] = {
 			Name = "B2T",
-			Description = [[Add "Teaism" to your hand and gain 3 Blue icons. This card cannot generate icons.]],
+			Description = [[Put "Teaism" into your hand and gain 3 Blue icons.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Add","Teaism"},{"Blue",3}},
 			Target = "Self",
@@ -10087,7 +10097,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Knockdown",
 			Description = "When this card is summoned or dies, deal 250 damage to all Non-Redcliff fighters.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Summon","Redcliff Rogue Token"},{"Damage",250},{"Damage"},9999,"Self"},
+			["Power"] = {{"Summon","Redcliff Rogue Token"},{"Damage",250},{"Damage",9999,"Self"}},
 			Target = "NotArchetype",
 		},
 		["Bio"] = "The sword is way too thick and has pointless edges, its crossguard is too small, and the rogue's stance is poor at best. 4/10 would not summon - Sword Critic",
@@ -10784,7 +10794,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Crazynoggin",
 		["AltCards"] = {
 			["CrazyEggNoggin"] = {
-				["Id"] = 585627288,
+				["Id"] = 585627330,
 				["Name"] = "CrazyEggNoggin",
 				["Rarity"] = "Rare",
 				["Bio"] = "Egg? EggEgg! Egg Egggggg? Nog Egg Cra.",
@@ -16576,7 +16586,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "GunShot",
 		["Color"] = "Green",
 		["Cost"] = {["Neutral"] = 1, ["Green"] = 5,},
-		["WeakenImmune"] = true,
 		["Effect"] = {
 			Name = "Yarr..",
 			Description = "When this card is summoned, lower the power of a target fighter by 500. When this card attacks, give all fighters 100 health. This card is immune to effects that lower its power or health.",

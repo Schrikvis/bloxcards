@@ -54,7 +54,6 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Festive Werewolf"] = {
 				["Id"] = 585627502,
 				["Name"] = "Festive Werewolf",
-				["Rarity"] = "Rare",
 				["Bio"] = "The best kind of werewolf.",
 			}
 		},
@@ -579,7 +578,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Cotton Candy Lion",
 		["AltCards"] = {
 			["Gingerbread Man"] = {
-				["Id"] = 585627288,
+				["Id"] = 585627301,
 				["Name"] = "Gingerbread Man",
 				["Rarity"] = "Rare",
 				["Bio"] = "I like my mince pies spicy.",
@@ -2568,46 +2567,6 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Ally",
 		},
 		["Bio"] = "He has indeed exercised his right to bear arms."
-	},
-	
-	["Wolfbitten Noob"] = {
-		["Id"] = 543041104,
-		["Name"] = "Wolfbitten Noob",
-		["Health"] = 200,
-		["Power"] = 200,
-		["Rarity"] = "Common",
-		["AttackEffect"] = "Dash",
-        ["Color"] = "Red", 
-		["Archetype"] = "Lycanthrope",
-		["Cost"] = {["Red"] = 1,},
-		["Effect"] = {
-			Name = "Halloween",
-			Description = "Whenever you cast an action or terrain spell, transform this card.",
-			["Type"] = "OnAllyCast",
-			["Power"] = {{"Summon","Werewolf Savage"},{"Damage",9999,"Self"}},
-			Target = "Ally",
-		},
-		["Bio"] = "Can he deliver his book to the library in time?",
-	},
-
-	["Werewolf Savage"] = {
-		["Id"] = 543041104,
-		["Name"] = "Werewolf Savage",
-		["Health"] = 400,
-		["Power"] = 400,
-		["Rarity"] = "Token",
-		["AttackEffect"] = "Dash",
-		["Color"] = "Red", 
-		["Archetype"] = "Lycanthrope",
-		["Cost"] = {["Red"] = 1,},
-		["Effect"] = {
-			Name = "Halloween",
-			Description = "Whenever your opponent casts an action or terrain spell, untransform this card.",
-			["Type"] = "OnEnemyCast",
-			["Power"] = {{"Summon","Wolfbitten Noob"},{"Damage",9999,"Self"}},
-			Target = "Ally",
-		},
-		["Bio"] = "Can you escape in time?",
 	},
 	
 	["Paraselene Ascetic"] = {
