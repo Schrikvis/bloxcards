@@ -6882,19 +6882,75 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Builderman"] = {
 		["Id"] = 315996541,
 		["Name"] = "Builderman",
-		["Health"] = 700,
-		["Power"] = 150,
+		["Health"] = 200,
+		["Power"] = 300,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Thunder",
 		["Color"] = "Yellow",
 		["Cost"] = {["Neutral"] = 2,["Yellow"] = 4,},
 		["Effect"] = {
 			Name = "Friendship",
-			Description = "Increase the Health all your fighters by 200.",
+			Description = "3 charges. When this card is summoned or targeted, remove a charge and increase the health of all allied fighters by 100.",
 			["Type"] = "OnSummon",
-			["Power"] = "Heal",
+			["Power"] = {{"Heal",100},{"Summon","Builderman 2"},{"Damage",9999,"Self"}}
 			Target = "Ally",
-			Increase = 200
+		},
+		["Bio"] = "He is everyone's friend, unless you unfriend him, and that isn't nice.",
+	},
+	
+	["Builderman 2"] = {
+		["Id"] = 315996541,
+		["Name"] = "Builderman",
+		["Health"] = 200,
+		["Power"] = 300,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Thunder",
+		["Color"] = "Yellow",
+		["Cost"] = {["Neutral"] = 2,["Yellow"] = 4,},
+		["Effect"] = {
+			Name = "Friendship",
+			Description = "2 charges. When this card is summoned or targeted, remove a charge and increase the health of all allied fighters by 100.",
+			["Type"] = "OnTarget",
+			["Power"] = {{"Heal",100},{"Summon","Builderman 3"},{"Damage",9999,"Self"}}
+			Target = "Ally",
+		},
+		["Bio"] = "He is everyone's friend, unless you unfriend him, and that isn't nice.",
+	},
+	
+	["Builderman 3"] = {
+		["Id"] = 315996541,
+		["Name"] = "Builderman",
+		["Health"] = 200,
+		["Power"] = 300,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Thunder",
+		["Color"] = "Yellow",
+		["Cost"] = {["Neutral"] = 2,["Yellow"] = 4,},
+		["Effect"] = {
+			Name = "Friendship",
+			Description = "1 charge. When this card is summoned or targeted, remove a charge and increase the health of all allied fighters by 100.",
+			["Type"] = "OnTarget",
+			["Power"] = {{"Heal",100},{"Summon","Builderman 4"},{"Damage",9999,"Self"}}
+			Target = "Ally",
+		},
+		["Bio"] = "He is everyone's friend, unless you unfriend him, and that isn't nice.",
+	},
+	
+	["Builderman 4"] = {
+		["Id"] = 315996541,
+		["Name"] = "Builderman",
+		["Health"] = 200,
+		["Power"] = 300,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Thunder",
+		["Color"] = "Yellow",
+		["Cost"] = {["Neutral"] = 2,["Yellow"] = 4,},
+		["Effect"] = {
+			Name = "Friendship",
+			Description = "0 charges. When this card is summoned or targeted, remove a charge and increase the health of all allied fighters by 100.",
+			["Type"] = "OnTarget",
+			["Power"] = {{"Heal",0}}
+			Target = "Ally",
 		},
 		["Bio"] = "He is everyone's friend, unless you unfriend him, and that isn't nice.",
 	},
@@ -11088,7 +11144,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Increase = 1,
 		},
 		["Bio"] = "He knows how to stop any potential murderer.",
-	},			
+wwww	},			
 
 	["Rockybow"] = {
 		["Id"] = 411809893,

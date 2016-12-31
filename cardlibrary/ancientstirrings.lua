@@ -1,7 +1,7 @@
 local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO	
 	["Korblox Skeleton"] = {
 		["Id"] = 574198419,
-		["Name"] = "Krblox Skeleton",
+		["Name"] = "Korblox Skeleton",
 		["Health"] = 300,
 		["Power"] = 100,
 		["Rarity"] = "Uncommon",
@@ -184,7 +184,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 3, ["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "Whenever you cast an action or terrin spell, set the health of all fighters to 400, then give Horrarceusdon 400 health.",
+			Description = "Whenever you cast an action or terrain spell, set the health of all fighters to 400, then give Horrarceusdon 400 health.",
 			["Type"] = "OnAllyCast",
 			["Power"] = {{"SetHealth",400},{"Heal",400,"Self"}},
 			Target = "All",
