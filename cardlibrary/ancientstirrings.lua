@@ -20,13 +20,12 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Wolfbitten Noob"] = {
-		["Id"] = 543041104,
+		["Id"] = 596607381,
 		["Name"] = "Wolfbitten Noob",
 		["AltCards"] = {
 			["Wolfbitten Elf"] = {
 				["Id"] = 585627464,
 				["Name"] = "Wolfbitten Elf",
-				["Rarity"] = "Rare",
 				["Bio"] = "Can he deliver your gifts in time?",
 			}
 		},
@@ -48,7 +47,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Werewolf Savage"] = {
-		["Id"] = 543041104,
+		["Id"] = 596217237,
 		["Name"] = "Werewolf Savage",
 		["AltCards"] = {
 			["Festive Werewolf"] = {
@@ -580,7 +579,6 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Gingerbread Man"] = {
 				["Id"] = 585627301,
 				["Name"] = "Gingerbread Man",
-				["Rarity"] = "Rare",
 				["Bio"] = "I like my mince pies spicy.",
 			}
 		},
@@ -1117,10 +1115,10 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Dash",
 		["Color"] = "Green", 
 		["Cost"] = {["Green"] = 3,},
-		["Requirement"] = {false,4,true},
+		["Requirement"] = {false,3,true},
 		["Effect"] = {
 			Name = "Slander",
-			Description = "Cast only if your opponent controls four or more fighters. Lock all enemy fighters for two turns.",
+			Description = "Cast only if your opponent controls three or more fighters. Lock all enemy fighters for two turns.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Lock",2,"Opponent"}},
 			Target = "Ally",
@@ -1135,16 +1133,15 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 150,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Dash",
-		["CounterAttackBlock"] = true,
 		["Charge"] = true,
 		["Color"] = "Red", 
 		["Cost"] = {["Red"] = 1,},
 		["Effect"] = {
 			Name = "Halloween",
-			Description = "Jason can't be counterattacked and can attack when summoned.",
+			Description = "Deal 50 damage to a fighter. Jason can attack the turn it is summoned.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Heal",0,"Self"}},
-			Target = "Ally",
+			["Power"] = {{"Damage",50}},
+			Target = "Single",
 		},
 		["Bio"] = "Hmph.",
 	},
@@ -2406,7 +2403,6 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Sugarlord"] = {
 				["Id"] = 585627329,
 				["Name"] = "Sugarlord",
-				["Rarity"] = "Rare",
 				["Bio"] = "I came seeking Hallow. All I found was you.",
 			}
 		},
@@ -2490,10 +2486,10 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Evil Prince"] = {
-		["Id"] = 543041104,
+		["Id"] = 596217196,
 		["Name"] = "Evil Prince",
 		["Health"] = 300,
-		["Power"] = 175,
+		["Power"] = 200,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Dash",
 		["Archetype"] = "Lycanthrope",
@@ -2510,10 +2506,10 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Werefrog"] = {
-		["Id"] = 543041104,
+		["Id"] = 596217279,
 		["Name"] = "Werefrog",
 		["Health"] = 600,
-		["Power"] = 300,
+		["Power"] = 400,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Dash",
 		["Archetype"] = "Lycanthrope",
@@ -2530,50 +2526,50 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Lumberjack"] = {
-		["Id"] = 543041104,
+		["Id"] = 596217151,
 		["Name"] = "Lumberjack",
-		["Health"] = 300,
-		["Power"] = 300,
+		["Health"] = 250,
+		["Power"] = 250,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Dash",
 		["Archetype"] = "Lycanthrope",
 		["Color"] = "Red", 
-		["Cost"] = {["Red"] = 1, ["Neutral"] = 2,},
+		["Cost"] = {["Red"] = 1, ["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Whenever you cast an action or terrain spell, transform this card, then generate a white icon.",
+			Description = "Whenever you cast an action or terrain spell, transform this card, then generate a red icon.",
 			["Type"] = "OnAllyCast",
-			["Power"] = {{"Summon","Werebear"},{"Neutral",1},{"Damage",9999,"Self"}},
+			["Power"] = {{"Summon","Werebear"},{"Red",1},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
-		["Bio"] = "I live in the forest so I can bear arms. 'overnment likes to take my pistol away.",
+		["Bio"] = "I hate how the government keeps taking my guns away. It's why I live in the forest!",
 	},
 	
 	["Werebear"] = {
-		["Id"] = 543041104,
+		["Id"] = 596217254,
 		["Name"] = "Werebear",
-		["Health"] = 600,
-		["Power"] = 600,
+		["Health"] = 500,
+		["Power"] = 500,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Dash",
 		["Archetype"] = "Lycanthrope",
 		["Color"] = "Red", 
-		["Cost"] = {["Red"] = 1,["Neutral"] = 2,},
+		["Cost"] = {["Red"] = 1,["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Whenever your opponent casts an action or terrain spell, untransform this card, then generate a white icon.",
+			Description = "Whenever your opponent casts an action or terrain spell, untransform this card, then generate a red icon.",
 			["Type"] = "OnEnemyCast",
-			["Power"] = {{"Summon","Lumberjack"},{"Neutral",1},{"Damage",9999,"Self"}},
+			["Power"] = {{"Summon","Lumberjack"},{"Red",1},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
-		["Bio"] = "He has indeed exercised his right to bear arms."
+		["Bio"] = "He has exercised his right to bear arms."
 	},
 	
 	["Paraselene Ascetic"] = {
 		["Id"] = 543041104,
 		["Name"] = "Paraselene Ascetic",
-		["Health"] = 350,
-		["Power"] = 350,
+		["Health"] = 300,
+		["Power"] = 300,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Dash",
 		["Archetype"] = "Lycanthrope",
@@ -2592,8 +2588,8 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Lunar Rager"] = {
 		["Id"] = 543041104,
 		["Name"] = "Lunar Rager",
-		["Health"] = 700,
-		["Power"] = 700,
+		["Health"] = 600,
+		["Power"] = 600,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Dash",
 		["Archetype"] = "Lycanthrope",
@@ -2610,10 +2606,10 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Blessed Acolyte"] = {
-		["Id"] = 543041104,
+		["Id"] = 596217211,
 		["Name"] = "Blessed Acolyte",
-		["Health"] = 300,
-		["Power"] = 300,
+		["Health"] = 350,
+		["Power"] = 350,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Dash",
 		["Archetype"] = "Lycanthrope",
@@ -2630,7 +2626,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Werewyrm"] = {
-		["Id"] = 543041104,
+		["Id"] = 596607441,
 		["Name"] = "Werewyrm",
 		["Health"] = 700,
 		["Power"] = 700,
@@ -2796,7 +2792,6 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Eleemosynary Beneficient"] = {
 				["Id"] = 585627423,
 				["Name"] = "Eleemosynary Beneficient",
-				["Rarity"] = "Rare",
 				["Bio"] = "A gift that keeps on giving.",
 			}
 		},
@@ -3015,3 +3010,4 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 }
 
 return stirrings
+

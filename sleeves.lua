@@ -36,6 +36,7 @@ local sleeves = {
 		["Clown Spiral"]        = {486449186,  600};
 		["Sleevefinity"]        = {486449155, 1500};
 		["Obvious"]             = {486449131, 1500};
+		["Wooden"]              = {596217246, 700};
 	};                     
 	
 	Valentines = {         
@@ -75,6 +76,7 @@ local sleeves = {
 		["Brother's Grotesque"] = {574431847, 1200};
 		["Myrmiredon"]          = {574431712, 1350};
 		["Zanzel"]              = {559461035, 1500};
+		["Papasmurf"]           = {596205593, 1400};
 	};
 	
 }

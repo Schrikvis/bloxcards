@@ -29,10 +29,10 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Thunder",
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 1,},
-		["CounterAttackBlock"] = true,
+		["Charge"] = true,
 		["Effect"] = {
 			Name = "Citrus Punch",
-			Description = "When this card attacks, deal 50 damage to all enemies. This card can't be counterattacked.",
+			Description = "Haste. When this card attacks, deal 50 damage to all enemy fighters.",
 			["Type"] = "OnAttack",
 			["Power"] = "Damage",
 			Target = "Opponent",
@@ -797,7 +797,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Blue"] = 4,},
 		["Effect"] = {
 			Name = "JUST SCRIPT IT",
-			Description = [[(EXPERIMENTAL EFFECT) When this card attacks another, lock that fighter for 4 turns.]],
+			Description = [[When this card attacks another, lock that fighter for 4 turns.]],
 			["Type"] = "OnAttack",
 			["Power"] = {{"Lock",4}},
 			Target = "Aggressor",
@@ -870,7 +870,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Baker"] = {
 				["Id"] = 585627288,
 				["Name"] = "Baker",
-				["Rarity"] = "Rare",
 				["Bio"] = "And for desert, why not try caramelized robloxian? Now with extra icing!",
 			}
 		},
@@ -1883,14 +1882,14 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["BadBreadMaker"] = {
-		["Id"] = 280562308,
+		["Id"] = 596205204,
 		["Name"] = "BadBreadMaker",
-		["Health"] = 575,
+		["Health"] = 300,
 		["Power"] = 200,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Punch2",
 		["Color"] = "Green",
-		["Cost"] = {["Green"] = 2,["Neutral"] = 2,},
+		["Cost"] = {["Green"] = 1,["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Bloated",
 			Description = "Put Bad Bread into your hand.",
@@ -2059,7 +2058,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["RoboSanta"] = {
 				["Id"] = 585627412,
 				["Name"] = "Robo Santa",
-				["Rarity"] = "Rare",
 				["Bio"] = "Some Santas just want to watch the world burn.",
 			}
 		},
@@ -2321,7 +2319,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Zolerus"] = {
-		["Id"] = 441918706,
+		["Id"] = 596607411,
 		["Name"] = "Zolerus",
 		["Health"] = 1150,
 		["Power"] = 0,
@@ -2758,7 +2756,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Entangling Lights"] = {
 				["Id"] = 585627443,
 				["Name"] = "Entangling Lights",
-				["Rarity"] = "Rare",
 				["Bio"] = "This is really just God's way of silently judging you.",
 			}
 		},
@@ -3014,7 +3011,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["MyDadIsASanta"] = {
 				["Id"] = 585627360,
 				["Name"] = "MyDadIsASanta",
-				["Rarity"] = "Rare",
 				["Bio"] = "The 87th santa, to be precise.",
 			}
 		},
@@ -3508,10 +3504,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "CatSlash",
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 1,},
-		["CounterAttackBlock"] = true,
 		["Effect"] = {
 			Name = "Overgrown",
-			Description = "Add a random red or blue action to your hand. MICHIKUSCHI can't be counterattacked.",
+			Description = "Add a random red or blue action to your hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"RandomAdd","Lunar"}},
 			Target = "Ally",
@@ -3987,7 +3982,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Fruit Cake"] = {
 				["Id"] = 585627498,
 				["Name"] = "Fruit Cake",
-				["Rarity"] = "Rare",
 				["Bio"] = "Made out of 100% Recycled Durians.",
 			}
 		},
@@ -4078,7 +4072,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 1,},
 		["Effect"] = {
 			Name = "Conflux",
-			Description = "(EXPERIMENTAL EFFECT) Haste. Whenever Halomaster233 attacks a fighter, that fighter is locked for 1 turn.",
+			Description = " Haste. Whenever Halomaster233 attacks a fighter, that fighter is locked for 1 turn.",
 			["Type"] = "OnAttack",
 			["Power"] = {{"Lock",1}},
 			Target = "Aggressor",
@@ -4733,7 +4727,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Santa Doge"] = {
 				["Id"] = 585627493,
 				["Name"] = "Santa Doge",
-				["Rarity"] = "Rare",
 				["Bio"] = "He is the gift.",
 			}
 		},
@@ -4764,10 +4757,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Redcliff",
 		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 1,["Red"] = 1,},
-		["CounterAttackBlock"] = true,
 		["Effect"] = {
 			Name = "Knockdown",
-			Description = "Deal 150 damage to all Non-Redcliff fighters. Redcliff Archer can't be counterattacked.",
+			Description = "Deal 150 damage to all Non-Redcliff fighters.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",150}},
 			Target = "NotArchetype",
@@ -6777,7 +6769,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Wooden Toy Train"] = {
 				["Id"] = 585627408,
 				["Name"] = "Wooden Toy Train",
-				["Rarity"] = "Rare",
 				["Bio"] = "Chugga chugga. The train is a century old.",
 			}
 		},
@@ -6892,7 +6883,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Friendship",
 			Description = "3 charges. When this card is summoned or targeted, remove a charge and increase the health of all allied fighters by 100.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Heal",100},{"Summon","Builderman 2"},{"Damage",9999,"Self"}}
+			["Power"] = {{"Heal",100},{"Summon","Builderman 2"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = "He is everyone's friend, unless you unfriend him, and that isn't nice.",
@@ -6911,7 +6902,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Friendship",
 			Description = "2 charges. When this card is summoned or targeted, remove a charge and increase the health of all allied fighters by 100.",
 			["Type"] = "OnTarget",
-			["Power"] = {{"Heal",100},{"Summon","Builderman 3"},{"Damage",9999,"Self"}}
+			["Power"] = {{"Heal",100},{"Summon","Builderman 3"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = "He is everyone's friend, unless you unfriend him, and that isn't nice.",
@@ -6930,7 +6921,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Friendship",
 			Description = "1 charge. When this card is summoned or targeted, remove a charge and increase the health of all allied fighters by 100.",
 			["Type"] = "OnTarget",
-			["Power"] = {{"Heal",100},{"Summon","Builderman 4"},{"Damage",9999,"Self"}}
+			["Power"] = {{"Heal",100},{"Summon","Builderman 4"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = "He is everyone's friend, unless you unfriend him, and that isn't nice.",
@@ -6949,7 +6940,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Friendship",
 			Description = "0 charges. When this card is summoned or targeted, remove a charge and increase the health of all allied fighters by 100.",
 			["Type"] = "OnTarget",
-			["Power"] = {{"Heal",0}}
+			["Power"] = {{"Heal",0}},
 			Target = "Ally",
 		},
 		["Bio"] = "He is everyone's friend, unless you unfriend him, and that isn't nice.",
@@ -7227,9 +7218,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Green"] = 4,},
 		["Effect"] = {
 			Name = "Endless Spooks",
-			Description = [[When this card attacks, increase its health by 400.]],
+			Description = [[When this card attacks, increase its health by 500.]],
 			["Type"] = "OnAttack",
-			["Power"] = {{"Heal",400}},
+			["Power"] = {{"Heal",500}},
 			Target = "Self",
 		},
 		["Bio"] = "He just loves lemons, and unicorns...",
@@ -9422,7 +9413,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Elfdevin"] = {
 				["Id"] = 585627429,
 				["Name"] = "Elfdevin",
-				["Rarity"] = "Rare",
 				["Bio"] = "I'm firing my laser, I guess... Blawh. ¬_¬",
 			}
 		},
@@ -9795,7 +9785,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Hot Chocolate"] = {
 				["Id"] = 585627292,
 				["Name"] = "Hot Chocolate",
-				["Rarity"] = "Rare",
 				["Bio"] = "Did you know that the FDA approves up to 90 insect fragments for every 100 grams of hot chocolate? Enjoy eating those mangled cockrooach heads.",
 			}
 		},
@@ -10852,7 +10841,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["CrazyEggNoggin"] = {
 				["Id"] = 585627330,
 				["Name"] = "CrazyEggNoggin",
-				["Rarity"] = "Rare",
 				["Bio"] = "Egg? EggEgg! Egg Egggggg? Nog Egg Cra.",
 			}
 		},
@@ -11172,7 +11160,6 @@ wwww	},
 			["SantaSorin"] = {
 				["Id"] = 585627477,
 				["Name"] = "SantaSorin",
-				["Rarity"] = "Rare",
 				["Bio"] = "So, what's it like being encased in a stone pillar by your ex?",
 			}
 		},
@@ -13151,22 +13138,20 @@ wwww	},
 	},
 	
 	["Cyandude585"] = {
-		["Id"] = 438688401,
+		["Id"] = 596217032,
 		["Name"] = "Cyandude858",
-		["Health"] = 300,
-		["Power"] = 300,
+		["Health"] = 550,
+		["Power"] = 550,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Blue",
-		["Charge"] = true,
-		["CounterAttackBlock"] = true,
-		["Cost"] = {["Neutral"] = 2, ["Blue"] = 2,},
+		["Cost"] = {["Red"] = 3, ["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Transfusion",
-			Description = "Cyandude can attack when summoned and can't be counterattacked.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Neutral",1}},
-			Target = "Ally",
+			Description = "Whenever you cast an action or terrain spell, deal 150 damage to a target fighter.",
+			["Type"] = "OnAllyCast",
+			["Power"] = {{"Damage",150}},
+			Target = "Single",
 		},
 		["Bio"] = "He's Cyan. He's a dude. I'm unsure why you think otherwise.",
 	},
@@ -14952,7 +14937,7 @@ wwww	},
 		["Cost"] = {["Neutral"] = 3,["Red"] = 5,},
 		["Effect"] = {
 			Name = "Sentry Heart",
-			Description = "After this card attacks, destroy all other allied fighters and increase the health of this card by 150. This card cannot be counter-attacked and can attack the turn it is summoned.",
+			Description = "Haste. After this card attacks, destroy all other allied fighters and increase the health of this card by 150. This card can't be counterattacked.",
 			["Type"] = "OnAttackEnd",
 			["Power"] = {{"Heal",9999,"Self"},{"Damage",9999},{"Heal",150,"Self"}},
 			Target = "Ally",
@@ -15513,20 +15498,42 @@ wwww	},
 	["The Gentlemaniac"] = {
 		["Id"] = 524241010,
 		["Name"] = "The Gentlemaniac",
- 		["Health"] = 600,
- 		["Power"] = 0,
+ 		["Health"] = 500,
+ 		["Power"] = 200,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Lightning",
  		["Color"] = "Neutral",
- 		["Cost"] = {["Blue"] = 1, ["Neutral"] = 4,}, 
+		["Requirement"] = {"Archetype",1},
+ 		["Cost"] = {["Neutral"] = 4, ["Blue"] = 1,},
+		["Archetype"] = "Chair", 
  		["Effect"] = {
  			Name = "Helping Out",
- 			Description = "(EXPERIMENTAL EFFECT) Destroy all other allied fighters and set all your icons to 3. End the turn.",
+ 			Description = "Can only be summoned if you control a wooden chair. All chairs gain 300 power.",
  			["Type"] = "OnSummon",
- 			["Power"] = {{"Heal",9999,"Self"},{"Damage",9999},{"SetYellow",3},{"SetGreen",3},{"SetBlue",3},{"SetRed",3},{"SetNeutral",0},{"EndTurn",1}},
+ 			["Power"] = {{"Strengthen",300,"Archetype"}},
  			Target = "Ally",
  		},
  		["Bio"] = "He'll be gentle... For a while.",
+	},
+
+	["Wooden Chair"] = {
+		["Id"] = 524241010,
+		["Name"] = "Wooden Chair",
+ 		["Health"] = 100,
+ 		["Power"] = 200,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Lightning",
+ 		["Color"] = "Blue",
+ 		["Cost"] = {["Neutral"] = 1,},
+		["Archetype"] = "Chair", 
+ 		["Effect"] = {
+ 			Name = "Helping Out",
+ 			Description = "Must be in play for The Gentlemaniac to be summonable. When this card dies, its waifu gains 300 power.",
+ 			["Type"] = "OnDeath",
+ 			["Power"] = {{"Strengthen",300,"Archetype"}},
+ 			Target = "Ally",
+ 		},
+ 		["Bio"] = "",
 	},
 
 	["Supersky712"] = {
@@ -16625,8 +16632,8 @@ wwww	},
 		["Cost"] = {["Neutral"] = 1,["Red"] = 1,},
 		["Effect"] = {
 			Name = "Thug Life",
-			Description = "(EXPERIMENTAL EFFECT) When this card is attacked, deal 100 damage to all non-Ninjas.",
-			["Type"] = "OnAttacked",
+			Description = "When this card attacks, deal 100 damage to all non-Ninjas.",
+			["Type"] = "OnAttack",
 			["Power"] = {{"Damage","100"}},
 			Target = "NotArchetype",
 		},

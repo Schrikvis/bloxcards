@@ -4,9 +4,10 @@ local packs = {
 		Name = "Exine", --STAPLES!
 		Cost = 25,
 		CardsInPack = 4,
-		CardPackId = 490218339,
+		CardPackId = 596205187,
 		Description = "Curated by the best players of the game, Exine contains only good cards.",
 		Cards = {
+			"CalmFoxz",
 			"Training Dummy",
 			"Samksoon321",
 			"Brycen27",
@@ -1437,33 +1438,6 @@ local packs = {
 			"KillCactaur",
 			"HyperBlue",
 			"InceptionTime",
-		},
-	};
-
-	{
-		Name = "Teaism's Gifts", --CHRISTMAS!
-		Cost = 1500,
-		CardsInPack = 4,
-		CardPackId = 585626122,
-		Description = "Teaism's special gift, just for you. Merry Christmas. (You need 10 wins to open this pack.)",
-		Cards = {
-			"Baker",
-			"Hot Chocolate",
-			"GRAND CLAUS",
-			"Gingerbread Man",
-			"Sugarlord",
-			"CrazyEggNoggin",
-			"Eggnog",
-			"MyDadIsASanta",
-			"Wooden Toy Train",
-			"Robo Santa",
-			"Eleemosynary Beneficient",
-			"Elfdevin",
-			"Entangling Lights",
-			"Wolfbitten Elf",
-			"SantaSorin",
-			"Santa Doge",
-			"Fruit Cake",
 		},
 	};
 }
