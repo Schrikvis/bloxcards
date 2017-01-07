@@ -2326,7 +2326,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Punch2",
 		["Color"] = "Green",
-		["Cost"] = {["Neutral"] = 4,["Green"] = 3,},
+		["Cost"] = {["Neutral"] = 6,["Green"] = 3,},
 		["Effect"] = {
 			Name = "Demon Eye",
 			Description = "Gain 5 Green icons and lower the attack of all fighters by 200.",
@@ -11199,7 +11199,7 @@ wwww	},
 	},			
 
 	["FatalWing"] = {
-		["Id"] = 411842159,
+		["Id"] = 603505214,
 		["Name"] = "FatalWing",
 		["Health"] = 800,
 		["Power"] = 600,
@@ -11497,7 +11497,7 @@ wwww	},
 	},			
 
 	["Mrbeanbean2"] = {
-		["Id"] = 411846117,
+		["Id"] = 603503291,
 		["Name"] = "Mrbeanbean2",
 		["Health"] = 150,
 		["Power"] = 150,
@@ -12785,7 +12785,7 @@ wwww	},
 	},
 	
 	["Luckymaxer"] = {
-		["Id"] = 430969245,
+		["Id"] = 603507745,
 		["Name"] = "Luckymaxer",
 		["Health"] = 200,
 		["Power"] = 200,
@@ -13582,7 +13582,7 @@ wwww	},
 	},
 	
 	["BLOXER787"] = {
-		["Id"] = 448016275,
+		["Id"] = 603504261,
 		["Name"] = "BLOXER787",
 		["Health"] = 1050,
 		["Power"] = 250,
