@@ -1458,7 +1458,7 @@ local packs = {
 			"Eggnog",
 			"MyDadIsASanta",
 			"Wooden Toy Train",
-			"Robo Santa",
+			"RoboSanta",
 			"Eleemosynary Beneficient",
 			"Elfdevin",
 			"Entangling Lights",
