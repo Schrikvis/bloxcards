@@ -11132,7 +11132,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Increase = 1,
 		},
 		["Bio"] = "He knows how to stop any potential murderer.",
-wwww	},			
+	},			
 
 	["Rockybow"] = {
 		["Id"] = 411809893,

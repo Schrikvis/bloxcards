@@ -22,6 +22,7 @@ local function TestCard(library, id, card)
 	assert(card.Name, id.." has no name.")
 	assert(card.Bio, id.." has no bio.")
 	assert(type(card.Id) == 'number', id.." id malformed.")
+	if card.Id == 543041104 then warn(id.." has placeholder art.") end
 	assert(not cardlibrary[id], id.." already exists.")
 	assert(card.Rarity, id.." has no rarity.")
 	assert(card.Power and card.Health and card.Color, id.." has no health or power or color.")
@@ -57,6 +58,7 @@ end
 local function TestPartLibrary(partlibrary, partlib, parentlib)
 	for index,card in pairs(partlib) do
 		local success, message = pcall(TestCard, parentlib or partlib, index, card)
+		card.LibraryIndex = index
 		if success then
 			cardlibrary[index] = card
 			cardcount = cardcount + 1
@@ -72,5 +74,7 @@ for _,partlibrary in pairs(script:GetChildren()) do
 end
 
 TestPartLibrary({Name = "AltCards"}, altcardlibrary, cardlibrary)
+
+print("Cards:"..cardcount)
 
 return cardlibrary
