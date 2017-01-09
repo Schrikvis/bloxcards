@@ -3547,7 +3547,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Nicolas1015"] = {
-		["Id"] = 504748773,
+		["Id"] = 607520745,
 		["Name"] = "Nicolas1015",
 		["Health"] = 650,
 		["Power"] = 650,
@@ -11199,7 +11199,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},			
 
 	["FatalWing"] = {
-		["Id"] = 603505214,
+		["Id"] = 603505212,
 		["Name"] = "FatalWing",
 		["Health"] = 800,
 		["Power"] = 600,
