@@ -13,7 +13,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Haydoscale",
 			Description = "Haste. Whenever your opponent loses life, LeTruth gains 200 health and power.",
-			["Type"] = "OnEnemyLifeLoss",
+			["Type"] = "OnEnemyHealthLoss",
 			["Power"] = {{"Strengthen",200},{"Heal",200}},
 			Target = "Self",
 		},
