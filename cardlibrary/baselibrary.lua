@@ -16563,7 +16563,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},				
 	
 	["BrokenBone"] = {
-		["Id"] = 557972729,
+		["Id"] = 611981310,
 		["Name"] = "BrokenBone",
 		["Health"] = 450,
 		["Power"] = 450,
@@ -16582,7 +16582,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},		
 	
 	["BrokenToken"] = {
-		["Id"] = 557972729,
+		["Id"] = 611981310,
 		["Name"] = "BrokenBone",
 		["Health"] = 450,
 		["Power"] = 450,
