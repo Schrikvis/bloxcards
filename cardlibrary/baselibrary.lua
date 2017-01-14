@@ -2455,7 +2455,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Lord of GreedV2"] = {
 				["Name"] = "Pittacium Acolythus",
-				["Id"] = 585532545,
+				["Id"] = 613203066,
 				["Bio"] = "Why are you stealing something that *I* rightfully stole first?",			
 			}
 		},
