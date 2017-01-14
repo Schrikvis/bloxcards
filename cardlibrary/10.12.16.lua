@@ -258,7 +258,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Reincarnation",
 			Description = "When this card is targeted, reincarnate it into a random dragon.",
 			["Type"] = "OnTarget",
-			["Power"] = {{"RandomSummon","Archetype","Ally"},{"Damage",9999}},
+			["Power"] = {{"RandomSummon","Dragon","Ally"},{"Damage",9999}},
 			Target = "Self",
 		},
 		["Bio"] = "Legend says this was the soul that once inhabited NobleDragon's original dragon.",
