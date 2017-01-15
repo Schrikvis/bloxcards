@@ -1,7 +1,7 @@
 local codes = {
 	{
 		Obfuscated = ""; -- generate these via the chat command !obfuscatecode <CodePlayersEnter>
-		Rewards = {      -- to get your code back, use !deobfuscatecode <Obfuscated>
+		Rewards = {-- to get your code back, use !deobfuscatecode <Obfuscated>
 			Cards = {}; -- {["Medic Kit"] = 1};
 			RandomCards = {}; -- {{"Medic Kit" = 1, ["Froot Ninja"] = 1}, 2}; ie, 50/50 chance for either card, 2 cards are given
 			Packs = {}; -- {"Exine" = 5};
@@ -11,9 +11,11 @@ local codes = {
 			Ranks = {}; -- {"DanTDM Superfan"}
 			BestBefore = 0; -- tick() + (3600*hours) + (86400*days) + (604800*weeks)
 		}
+	};
 		
+	{
 		Obfuscated = "3QM3";
-		Rewards = {      
+		Rewards = {
 			Cards = {}; 
 			RandomCards = {}; 
 			Packs = {"Exine" = 5}; 
@@ -21,11 +23,13 @@ local codes = {
 			Charms = {0,0};
 			Sleeves = {};
 			Ranks = {};
-			BestBefore = 2419200; 
+			BestBefore = nil; 
 		}
+	};
 
+	{
 		Obfuscated = "7qj+7";
-		Rewards = {      
+		Rewards = {
 			Cards = {["Safe Chat"] = 1}; 
 			RandomCards = {};
 			Packs = {};
@@ -33,11 +37,13 @@ local codes = {
 			Charms = {0,0};
 			Sleeves = {}; 
 			Ranks = {};
-			BestBefore = 2419200; 
+			BestBefore = nil; 
 		}
-		
+	};
+	
+	{
 		Obfuscated = "M3G++Gf7M";
-		Rewards = {      
+		Rewards = {
 			Cards = {["Cow God"] = 1}; 
 			RandomCards = {};
 			Packs = {"Stirrings" = 5};
@@ -47,9 +53,11 @@ local codes = {
 			Ranks = {};
 			BestBefore = 604800;
 		}
+	};
 		
+	{
 		Obfuscated = "pjNa+QafQ+k";
-		Rewards = {      
+		Rewards = {
 			Cards = {["FILTHYPRANKS"] = 1}; 
 			RandomCards = {};
 			Packs = {};
@@ -57,11 +65,13 @@ local codes = {
 			Charms = {0,0};
 			Sleeves = {}; 
 			Ranks = {};
-			BestBefore = 31449600;
+			BestBefore = nil;
 		}
+	};
 		
+	{
 		Obfuscated = "MUa00 e0GU5 5+afJ";
-		Rewards = {      
+		Rewards = {
 			Cards = {}; 
 			RandomCards = {};
 			Packs = {};
@@ -69,11 +79,13 @@ local codes = {
 			Charms = {0,0};
 			Sleeves = {}; 
 			Ranks = {};
-			BestBefore = 2419200; 
+			BestBefore = nil; 
 		}
-		
+	};
+	
+	{
 		Obfuscated = "M3G00 3WQ eQM3";
-		Rewards = {      
+		Rewards = {
 			Cards = {["Gravity InspectorV2"] = 3}; 
 			RandomCards = {};
 			Packs = {};
@@ -81,11 +93,13 @@ local codes = {
 			Charms = {0,0};
 			Sleeves = {}; 
 			Ranks = {};
-			BestBefore = 2419200; 
+			BestBefore = nil; 
 		}
-		
+	};
+	
+	{
 		Obfuscated = "OGYQ";
-		Rewards = {      
+		Rewards = {
 			Cards = {["Hyperblue"] = 1, ["RukatuKDH"] = 1, ["InceptionTime" = 1,]}; 
 			RandomCards = {};
 			Packs = {};
@@ -93,11 +107,13 @@ local codes = {
 			Charms = {0,0};
 			Sleeves = {}; 
 			Ranks = {};
-			BestBefore = 2419200; 
+			BestBefore = nil; 
 		}
-		
+	};
+	
+	{
 		Obfuscated = "+jej3GR";
-		Rewards = {      
+		Rewards = {
 			Cards = {["BrokenBone"] = 1}; 
 			RandomCards = {};
 			Packs = {};
@@ -105,11 +121,13 @@ local codes = {
 			Charms = {0,0};
 			Sleeves = {}; 
 			Ranks = {};
-			BestBefore = 2419200; 
+			BestBefore = nil; 
 		}
-		
+	};
+	
+	{		
 		Obfuscated = "0Qa7NQ";
-		Rewards = {      
+		Rewards = {
 			Cards = {}; 
 			RandomCards = {};
 			Packs = {"Obvious" = 4,}
@@ -117,11 +135,13 @@ local codes = {
 			Charms = {3,3};
 			Sleeves = {}; 
 			Ranks = {};
-			BestBefore = 2419200; 
+			BestBefore = nil; 
 		}
-		
+	};
+	
+	{
 		Obfuscated = "7QFQ+a3Q";
-		Rewards = {      
+		Rewards = {
 			Cards = {["ChickenDuckBird V2"] = 1}; 
 			RandomCards = {};
 			Packs = {}
@@ -129,11 +149,13 @@ local codes = {
 			Charms = {0,0};
 			Sleeves = {}; 
 			Ranks = {};
-			BestBefore = 2419200; 
+			BestBefore = nil; 
 		}
-		
+	};
+	
+	{
 		Obfuscated = "7QfJG KQ fQ";
-		Rewards = {      
+		Rewards = {
 			Cards = {["Lunar Acolyte" = 3, ["Acolyte of the Rift"] = 3, ["Infernal Acolyte"] = 3, ["Necromantic Acolyte"] = 3, ["Fried Acolyte"] = 3, ["Nova"] = 3}; 
 			RandomCards = {};
 			Packs = {}
@@ -141,11 +163,13 @@ local codes = {
 			Charms = {0,0};
 			Sleeves = {}; 
 			Ranks = {};
-			BestBefore = 2419200; 
+			BestBefore = nil; 
 		}
-		
+	};
+	
+	{
 		Obfuscated = "M5jjJp e0jl";
-		Rewards = {      
+		Rewards = {
 			Cards = {}; 
 			RandomCards = {};
 			Packs = {}
@@ -153,11 +177,13 @@ local codes = {
 			Charms = {2,2};
 			Sleeves = {"Goopy"}; 
 			Ranks = {};
-			BestBefore = 2419200; 
+			BestBefore = nil; 
 		}
-		
+	};
+	
+	{
 		Obfuscated = "MRa+p Ra+km";
-		Rewards = {      
+		Rewards = {
 			Cards = {}; 
 			RandomCards = {["Disturbing Thoughts"] = 3};
 			Packs = {"Stirrings" = 1}
@@ -165,11 +191,13 @@ local codes = {
 			Charms = {0,0};
 			Sleeves = {"Spooky Scary"}; 
 			Ranks = {};
-			BestBefore = 2419200; 
+			BestBefore = nil; 
 		}
-		
+	};
+	
+	{
 		Obfuscated = "3N3j+Ga0";
-		Rewards = {      
+		Rewards = {
 			Cards = {}; 
 			RandomCards = {};
 			Packs = {"Exine" = 10}
@@ -177,11 +205,13 @@ local codes = {
 			Charms = {0,0};
 			Sleeves = {"Spooky Scary"}; 
 			Ranks = {};
-			BestBefore = 2419200; 
+			BestBefore = nil; 
 		}
-		
+	};
+	
+	{
 		Obfuscated = "e0NQeQa+K";
-		Rewards = {      
+		Rewards = {
 			Cards = {["Grand Pirate King"] = 2, ["Ship Raider"] = 4. ["Bearded Captain"] = 3, ["Pirate"] = 4, ["Brickmason"] = 1}; 
 			RandomCards = {};
 			Packs = {}
@@ -189,11 +219,11 @@ local codes = {
 			Charms = {0,0};
 			Sleeves = {}; 
 			Ranks = {};
-			BestBefore = 2419200; 
+			BestBefore = nil; 
 		}
 		
 		Obfuscated = "7jjK Tje";
-		Rewards = {      
+		Rewards = {
 			Cards = {["ROBLOXian Reborn"] = 1]}; 
 			RandomCards = {};
 			Packs = {}
@@ -201,11 +231,13 @@ local codes = {
 			Charms = {0,0};
 			Sleeves = {}; 
 			Ranks = {};
-			BestBefore = 2419200; 
+			BestBefore = nil; 
 		}
-		
+	};
+	
+	{
 		Obfuscated = "YG03Wp 5+afJM";
-		Rewards = {      
+		Rewards = {
 			Cards = {["FILTHY PRANKS"] = -1}; 
 			RandomCards = {};
 			Packs = {}
@@ -213,10 +245,9 @@ local codes = {
 			Charms = {0,0};
 			Sleeves = {}; 
 			Ranks = {};
-			BestBefore = 2419200; 
+			BestBefore = nil; 
 		}
 	};
-	
 
 }
 
@@ -226,7 +257,7 @@ local offers = {
 		Tagline = ""; -- displayed, "A tagline should be about this length." 
 		Image = "rbxassetid://"; -- displayed, aspect ratio is 4:1
 		Price = {
-			Type = "BloxBux"; --"Robux"; 
+			Currency = "BloxBux"; --"Robux"; 
 			Amount = 0; -- robux amounts: 10, 50, 100, 150, 250
 		};
 		Cards = {}; -- {["Medic Kit"] = 1};
@@ -241,4 +272,4 @@ local offers = {
 	
 }
 
-return {codes = codes; offers = offers;}
+return {Codes = codes; Offers = offers;}

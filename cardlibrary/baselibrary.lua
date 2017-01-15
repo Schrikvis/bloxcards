@@ -2455,7 +2455,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Lord of GreedV2"] = {
 				["Name"] = "Pittacium Acolythus",
-				["Id"] = 585532545,
+				["Id"] = 613203066,
 				["Bio"] = "Why are you stealing something that *I* rightfully stole first?",			
 			}
 		},
@@ -2939,7 +2939,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["SnyFort"] = {
 				["Id"] = 496184718,
 				["AltArt"] = true,
-				["Power"] = {{"Summon","Master Token","Ally"},{"Damage",9999,"Self"}},	
+				["Effect"] = {{"Summon","Master Token","Ally"},{"Damage",9999,"Self"}},	
 				["Bio"] = "Why did the chicken cross the road?",
 			}
 		},
@@ -2961,7 +2961,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Master Token"] = {
-		["Id"] = 292778437,
+		["Id"] = 496184718,
 		["Name"] = "SnyFort",
 		["Health"] = 425,
 		["Power"] = 425,
@@ -2973,7 +2973,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["TokenFort"] = {
-		["Id"] = 496184718,
+		["Id"] = 292778437,
 		["Name"] = "SnyFort",
 		["Health"] = 425,
 		["Power"] = 425,
@@ -3547,7 +3547,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Nicolas1015"] = {
-		["Id"] = 504748773,
+		["Id"] = 607520745,
 		["Name"] = "Nicolas1015",
 		["Health"] = 650,
 		["Power"] = 650,
@@ -11199,7 +11199,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},			
 
 	["FatalWing"] = {
-		["Id"] = 411842159,
+		["Id"] = 603505212,
 		["Name"] = "FatalWing",
 		["Health"] = 800,
 		["Power"] = 600,
@@ -11497,7 +11497,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},			
 
 	["Mrbeanbean2"] = {
-		["Id"] = 411846117,
+		["Id"] = 603503291,
 		["Name"] = "Mrbeanbean2",
 		["Health"] = 150,
 		["Power"] = 150,
@@ -12785,7 +12785,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Luckymaxer"] = {
-		["Id"] = 430969245,
+		["Id"] = 603507745,
 		["Name"] = "Luckymaxer",
 		["Health"] = 200,
 		["Power"] = 200,
@@ -13582,7 +13582,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["BLOXER787"] = {
-		["Id"] = 448016275,
+		["Id"] = 603504261,
 		["Name"] = "BLOXER787",
 		["Health"] = 1050,
 		["Power"] = 250,
@@ -16563,7 +16563,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},				
 	
 	["BrokenBone"] = {
-		["Id"] = 557972729,
+		["Id"] = 611981310,
 		["Name"] = "BrokenBone",
 		["Health"] = 450,
 		["Power"] = 450,
@@ -16582,7 +16582,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},		
 	
 	["BrokenToken"] = {
-		["Id"] = 557972729,
+		["Id"] = 611981310,
 		["Name"] = "BrokenBone",
 		["Health"] = 450,
 		["Power"] = 450,

@@ -1440,6 +1440,35 @@ local packs = {
 			"InceptionTime",
 		},
 	};
+	
+	{
+		Name = "Teaism's Gifts", --CHRISTMAS!
+		Hidden = true;
+		Cost = 1500,
+		CardsInPack = 4,
+		CardPackId = 585626122,
+		Description = "Teaism's special gift, just for you. Merry Christmas. (You need 10 wins to open this pack.)",
+		Cards = {
+			"Baker",
+			"Hot Chocolate",
+			"GRAND CLAUS",
+			"Gingerbread Man",
+			"Sugarlord",
+			"CrazyEggNoggin",
+			"Eggnog",
+			"MyDadIsASanta",
+			"Wooden Toy Train",
+			"RoboSanta",
+			"Eleemosynary Beneficient",
+			"Elfdevin",
+			"Entangling Lights",
+			"Wolfbitten Elf",
+			"SantaSorin",
+			"Santa Doge",
+			"Fruit Cake",
+		},
+	};
+	
 }
 
 return packs

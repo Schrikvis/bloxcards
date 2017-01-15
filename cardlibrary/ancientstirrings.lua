@@ -657,7 +657,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Doll House"] = {
-		["Id"] = 540076130,
+		["Id"] = 609240137,
 		["Name"] = "Doll House",
 		["Health"] = 600,
 		["Power"] = 0,
@@ -736,8 +736,8 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Reminder: Final Revels"] = {
 		["Id"] = 540076076,
 		["Name"] = "Reminder: Final Revels",
-		["Health"] = 4000,
-		["Power"] = 400,
+		["Health"] = 9001,
+		["Power"] = 9001,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Yellow", 
@@ -746,7 +746,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Pyrotechnics",
 			Description = "Unlock all allied fighters. Destroy them by turn's end.",
-			["Type"] = "OnSummon",
+			["Type"] = "OnEnd",
 			["Power"] = {{"Damage",9999}},
 			Target = "Ally",
 		},
