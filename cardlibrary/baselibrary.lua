@@ -2961,7 +2961,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Master Token"] = {
-		["Id"] = 292778437,
+		["Id"] = 496184718,
 		["Name"] = "SnyFort",
 		["Health"] = 425,
 		["Power"] = 425,
@@ -2973,7 +2973,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["TokenFort"] = {
-		["Id"] = 496184718,
+		["Id"] = 292778437,
 		["Name"] = "SnyFort",
 		["Health"] = 425,
 		["Power"] = 425,
