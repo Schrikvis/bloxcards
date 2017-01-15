@@ -173,7 +173,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["RaveTea"] = {
-		["Id"] = 574173044,
+		["Id"] = 574343199,
 		["Name"] = "RaveTea",
 		["Health"] = 450,
 		["Power"] = 450,
@@ -192,7 +192,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["RaveTea Token"] = {
-		["Id"] = 574173044,
+		["Id"] = 574343199,
 		["Name"] = "RaveTea",
 		["Health"] = 450,
 		["Power"] = 450,

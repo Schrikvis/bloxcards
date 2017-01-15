@@ -939,7 +939,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Description = "Whenever you gain life, lower the power of all enemy fighters by 50.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",75}},
-			Target = "Ally",
+			Target = "Opponent",
 		},
 		["Bio"] = "Value be damned.",
 	},
