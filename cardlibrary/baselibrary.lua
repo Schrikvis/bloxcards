@@ -12280,7 +12280,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Stud",
 			Description = "Both players have a 50% chance to put a targeting blip or nightmare into their hand at the start of their turns.",
 			["Type"] = "Field",
-			["Power"] = {{"RandomAdd","Target"}},
+			["Power"] = {{"RandomAdd", {"Targeting Blip", "Nightmare"}}},
 			Target = "Ally",
 		},
 		["Bio"] = "If I time travel, I might step on a butterfly. That would be sad.",
