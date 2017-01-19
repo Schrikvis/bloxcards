@@ -12,9 +12,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Charge"] = true,
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "Haste. Whenever your opponent loses life, LeTruth gains 200 health and power.",
+			Description = "Haste. Whenever your opponent loses life, LeTruth gains 200 power.",
 			["Type"] = "OnEnemyHealthLoss",
-			["Power"] = {{"Strengthen",200},{"Heal",200}},
+			["Power"] = {{"Heal",200}},
 			Target = "Self",
 		},
 		["Bio"] = "To know something requires three things. You must know why it's true, it must be true, and you must believe it's true.",
@@ -173,7 +173,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["RaveTea"] = {
-		["Id"] = 574173044,
+		["Id"] = 574343201,
 		["Name"] = "RaveTea",
 		["Health"] = 450,
 		["Power"] = 450,
@@ -192,7 +192,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["RaveTea Token"] = {
-		["Id"] = 574173044,
+		["Id"] = 574343201,
 		["Name"] = "RaveTea",
 		["Health"] = 450,
 		["Power"] = 450,
@@ -210,7 +210,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 1600,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Dash",
-		["CounterAttackBlock"] = true,
+		["CounterBlock"] = true,
 		["Color"] = "Green", 
 		["Cost"] = {["Neutral"] = 5, ["Blue"] = 1, ["Green"] = 5,},
 		["Archetype"] = "Nightmare",
@@ -557,7 +557,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Thesupernessiiiii"] = {
-		["Id"] = 596217036,
+		["Id"] = 596217137,
 		["Name"] = "Thesupernessiiiii",
 		["Health"] = 300,
 		["Power"] = 300,
