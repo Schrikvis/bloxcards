@@ -6763,7 +6763,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Toy Train"] = {
-		["Id"] = 585627408,
+		["Id"] = 300976055,
 		["Name"] = "Toy Train",
 		["AltCards"] = {
 			["Wooden Toy Train"] = {
@@ -7569,7 +7569,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "SorryBurn",
 			Description = "At the end of this turn, set your life to 1000. At the end each other turn, gain 1000 life.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"SetLife",1000},{"Summon","Tweety Token"}},
+			["Power"] = {{"SetLife",1000},{"Summon","Tweety Token"}{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Twitter codes are fun, no?",
@@ -9501,9 +9501,10 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Red",
 		["Cost"] = {["Red"] = 8,["Neutral"] = 2,},
+                ["Charge"] = true,
 		["Effect"] = {
 			Name = "JUST SCRIPT IT",
-			Description = [[When this card attacks, deal 400 damage to all enemy fighters and lock this card for an additional two turns.]],
+			Description = [[Haste. When this card attacks, deal 400 damage to all enemy fighters and lock this card for an additional two turns.]],
 			["Type"] = "OnAttack",
 			["Power"] = {{"Damage",400},{"Lock",3,"Self"}},
 			Target = "Opponent",
@@ -10835,7 +10836,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},		
 
 	["Crazynoggin"] = {
-		["Id"] = 585627330,
+		["Id"] = 384050154,
 		["Name"] = "Crazynoggin",
 		["AltCards"] = {
 			["CrazyEggNoggin"] = {
@@ -11625,7 +11626,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Blue"] = 1,["Green"] = 1,["Yellow"] = 1,["Red"] = 1,},
 		["Effect"] = {
 			Name = "SCRIPTING PARTY",
-			Description = "Harm all fighters based on their color.",
+			Description = "Deal 200 damage to all yellow fighters, lower the attack of all red fighters by 200, swap the stats of all green fighters and lock all blue fighters for one turn.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",200,"ColorYellow"},{"Weaken",200,"ColorRed"},{"Lock",2,"ColorBlue"},{"Swap",030,"ColorGreen"}},
 			Target = "All",
@@ -15694,7 +15695,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Egg Eyes Batter Dragon"] = {
-		["Id"] = 528149527,
+		["Id"] = 581910732,
 		["Name"] = "Egg Eyes Batter Dragon",
 		["Health"] = 1350,
 		["Power"] = 100,
@@ -15803,7 +15804,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Roblox",
 			Description = "Add a Classic Roblox Gear to both players hands.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"RandomAdd","Classic","Ally"},{"RandomAdd","Classic","Opponent"}},
+			["Power"] = {{"RandomAdd","Classic"},{"RandomAdd","Classic","Opponent"}},
 			Target = "Ally",
 		},
 		["Bio"] = "He loves games.",
