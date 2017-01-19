@@ -1,27 +1,29 @@
 ----------------------------------------------------------------------
 -- USAGE:
--- put me in a modulescript named "CardLibrary" inside of
+-- put me in a script named "CardLibrary" inside of
 -- game.ReplicatedStorage
--- put any subliraries you want to test in a modulescript
+-- put any sublibraries you want to test in a modulescript
 -- inside of me, they can be named whatever
--- enter "require(game.ReplicatedStorage.CardLibrary)" 
--- in the console
+-- press play
 -- ~Vis
 ----------------------------------------------------------------------
 
 local cardlibrary = {}
 local altcardlibrary = {}
 
+local type = type
 local pairs = pairs
 local substring = string.sub
 local cardcount = 0
-local assert = function(...) assert(...) end
+local assert = assert
 local c3n = Color3.new
 local clr = {Blue = c3n(0.25,0.25,1), Red = c3n(1,0.25,0.25), Green = c3n(0.25,1,0.25), Yellow = c3n(1,1,0.25), Neutral = c3n(1,1,1)}
 local function TestCard(library, id, card)
 	assert(card.Name, id.." has no name.")
 	assert(card.Bio, id.." has no bio.")
 	assert(type(card.Id) == 'number', id.." id malformed.")
+	if card.Id == 543041104 then warn(id.." has placeholder art.") end
+	assert(not cardlibrary[id], id.." already exists.")
 	assert(card.Rarity, id.." has no rarity.")
 	assert(card.Power and card.Health and card.Color, id.." has no health or power or color.")
 	assert(card.AttackEffect or card.Archetype == "Terrain" or (card.Health == 0 and card.Power == 0), id.." has no attack effect animation.")
@@ -39,7 +41,7 @@ local function TestCard(library, id, card)
 	if card.Original then
 		assert(library[card.Original], id.." has a non-existant Original card.")
 	end
-	if card.AltCards then
+	if card.AltCards then		
 		for name,altcard in pairs(card.AltCards) do
 			setmetatable(altcard, {__index = card})
 			altcard.AltCards = false
@@ -54,9 +56,9 @@ local function TestCard(library, id, card)
 end
 
 local function TestPartLibrary(partlibrary, partlib, parentlib)
-	local parentlib = parentlib or partlib
 	for index,card in pairs(partlib) do
-		local success, message = pcall(TestCard, parentlib, index, card)
+		local success, message = pcall(TestCard, parentlib or partlib, index, card)
+		card.LibraryIndex = index
 		if success then
 			cardlibrary[index] = card
 			cardcount = cardcount + 1
@@ -73,6 +75,6 @@ end
 
 TestPartLibrary({Name = "AltCards"}, altcardlibrary, cardlibrary)
 
-print(cardcount)
+print("Cards:"..cardcount)
 
 return cardlibrary
