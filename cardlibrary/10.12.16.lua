@@ -721,7 +721,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Pyrotechnics",
 			Description = "Generate a red and white icon at the end of your turns.",
-			["Type"] = "OnHealthLoss",
+			["Type"] = "OnEnd",
 			["Power"] = {{"Neutral",1},{"Red",1}},
 			Target = "Ally",
 		},
@@ -748,7 +748,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	}, 
 
 	["FixingFailure"] = {
-		["Id"] = 622171055,
+		["Id"] = 622210140,
 		["Name"] = "FixingFailure",
 		["Health"] = 700,
 		["Power"] = 700,
