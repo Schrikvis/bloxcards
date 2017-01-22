@@ -171,6 +171,7 @@ local packs = {
 		CardPackId = 465492503,
 		Description = "Red is the colour of power, ambition, and control. Dominion packs contain cards that cost red!",
 		Cards = {
+			"Roblox Gift Card",
 			"MagikalYawn",
 			"SubZeroExtaByte0",
 			"Javier Killer",
@@ -535,6 +536,8 @@ local packs = {
 		CardPackId = 465492637,
 		Description = "Blue is the colour of logic, order, and structure. Thought packs contain cards that cost blue!",
 		Cards = {
+			"Wooden Chair",
+ +			"Rollernaut",
 			"Beyondthegong",
 			"SONICTHEHEDGEHOGXXX",
 			"Razikai's Exploration",
@@ -921,6 +924,11 @@ local packs = {
 		CardPackId = 434684079,
 		Description = "Exotic new cards from the black market! White cards and joke cards! It's all yours, as long as you have 10 wins!",
 		Cards = {
+			"Wooden Chair",
+ +			"Rollernaut",
+			"MurticUnicorn 5",
+			"Suicide Bomber",
+			"Roblox Gift Card",
 			"MagikalYawn",
 			"SubZeroExtaByte0",
 			"Histor",
