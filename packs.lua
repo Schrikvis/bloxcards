@@ -1183,7 +1183,7 @@ local packs = {
 		Name = "Tribal", --ARCHETYPES!
 		Cost = 50,
 		CardsInPack = 4,
-		CardPackId = 543041104,
+		CardPackId = 622832971,
 		Description = "Filled with only cards belonging to an archetype, this pack can help you finish your deck provided you have at least 10 wins.",
 		Cards = {
 			"Frankenstein",
