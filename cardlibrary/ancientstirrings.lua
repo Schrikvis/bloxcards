@@ -918,9 +918,9 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3, ["Green"] = 2,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Destroy target fighter if it has less than 350 power.",
+			Description = "Destroy target fighter if it has less than 200 power.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Swap",030},{"Damage",350},{"Heal",350},{"Swap",030}},
+			["Power"] = {{"Swap",030},{"Damage",200},{"Heal",200},{"Swap",030}},
 			Target = "Single",
 		},
 		["Bio"] = "Everything's turning to a point where it stops and it turns around!",
@@ -2456,7 +2456,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Dash",
 		["Archetype"] = "Lycanthrope",
 		["Color"] = "Red", 
-		["Cost"] = {["Red"] = 2, ["Neutral"] = 1,},
+		["Cost"] = {["Red"] = 1, ["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Stud",
 			Description = "Whenever you cast an action or terrain spell, transform this card, then unlock all Lycanthropes.",
@@ -2476,7 +2476,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Dash",
 		["Archetype"] = "Lycanthrope",
 		["Color"] = "Red", 
-		["Cost"] = {["Red"] = 2, ["Neutral"] = 1,},
+		["Cost"] = {["Red"] = 1, ["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Stud",
 			Description = "Whenever your opponent casts an action or terrain spell, untransform this card, then unlock all Lycanthropes.",

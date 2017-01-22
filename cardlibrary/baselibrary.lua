@@ -4568,9 +4568,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 7,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = [[(Experimental Effect) At the end of your turns, put a fried one limb into your hand, then draw a card. Then lock a target fighter for 2 turns.]],
+			Description = [[At the end of your turns, put a fried one limb into your hand, then draw a card. Then reveal your opponent's hand and put two nightmares into it.]],
 			["Type"] = "OnEnd",
-			["Power"] = {{"RandomAdd","Limb"},{"Draw",1},{"Lock",2,"Single"}},
+			["Power"] = {{"RandomAdd","Limb"},{"Draw",1},{"Add","Nightmare","Opponent"},{"Add","Nightmare","Opponent"},{"RevealHand",030,"Opponent"}},
 			Target = "Ally",	
 		},
 		["Bio"] = "Blame John.",
@@ -5956,7 +5956,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	
 	["Titano's Cavern"] = {
 		["Id"] = 296846068,
-		["Name"] = "Titano's Cavern",
+		["Name"] = "Spooky Caverns",
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Common",
@@ -9122,8 +9122,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Bio"] = "Greetings, honourable invaders. Thank you for coming so far. However, as you can see, we are poor. Do you truly believe you'll find what you want here?",
 			}
 		},
-		["Health"] = 500,
-		["Power"] = 500,
+		["Health"] = 400,
+		["Power"] = 400,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Butts",
 		["Archetype"] = "Recur",
@@ -9145,7 +9145,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["MyrmiredonV2 2"] = {
 				["Id"] = 480297793,
-				["AltArt"] = true,
 				["Effect"] = {
 						Name = "Dreadsteed",
 						Description = [[2 Charges. At the end of your turns, Remove a charge. If there are no charges, shuffle a copy of Myrmiredon back into your deck.]],
@@ -9156,8 +9155,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Bio"] = "Greetings, honourable invaders. Thank you for coming so far. However, as you can see, we are poor. Do you truly believe you'll find what you want here?",
 			}
 		},
-		["Health"] = 500,
-		["Power"] = 500,
+		["Health"] = 400,
+		["Power"] = 400,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Butts",
 		["Archetype"] = "Recur",
@@ -9179,7 +9178,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["MyrmiredonV2 3"] = {
 				["Id"] = 480297793,
-				["AltArt"] = true,
 				["Effect"] = {
 						Name = "Dreadsteed",
 						Description = [[1 Charge. At the end of your turns, Remove a charge. If there are no charges, shuffle a copy of Myrmiredon back into your deck.]],
@@ -9190,9 +9188,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Bio"] = "Greetings, honourable invaders. Thank you for coming so far. However, as you can see, we are poor. Do you truly believe you'll find what you want here?",
 			}
 		},
-		["Health"] = 500,
-		["Power"] = 500,
-		["Rarity"] = "Legendary",
+		["Health"] = 400,
+		["Power"] = 400,
+		["Rarity"] = "Token",
 		["AttackEffect"] = "Butts",
 		["Archetype"] = "Recur",
 		["Color"] = "Green",
@@ -9213,7 +9211,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["MyrmiredonV2 4"] = {
 				["Id"] = 480297793,
-				["AltArt"] = true,
 				["Effect"] = {
 					Name = "Dreadsteed",
 					Description = [[At the end of your turns, shuffle a copy of Myrmiredon into your deck.]],
@@ -9224,9 +9221,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Bio"] = "Greetings, honourable invaders. Thank you for coming so far. However, as you can see, we are poor. Do you truly believe you'll find what you want here?",
 			}
 		},
-		["Health"] = 500,
-		["Power"] = 500,
-		["Rarity"] = "Legendary",
+		["Health"] = 400,
+		["Power"] = 400,
+		["Rarity"] = "Token",
 		["AttackEffect"] = "Butts",
 		["Archetype"] = "Recur",
 		["Color"] = "Green",
@@ -16513,7 +16510,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "NullSenseStudio",
 		["Health"] = 500,
 		["Power"] = 500,
-		["Rarity"] = "Rare",
+		["Rarity"] = "Token",
 		["AttackEffect"] = "Fire",
 		["Color"] = "Red",
 		["Cost"] = {["Red"] = 3,["Neutral"] = 3},
@@ -17007,9 +17004,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Red"] = 3,},
 		["Effect"] = {
 			Name = "Thug Life",
-			Description = "After this card attacks, deal 200 damage to a target fighter and 200 damage to Drager Bot.",
+			Description = "After this card attacks, deal 200 damage to a target fighter.",
 			["Type"] = "OnAttackEnd",
-			["Power"] = {{"Damage","200"},{"Damage","200","Self"}},
+			["Power"] = {{"Damage","200"}},
 			Target = "Single",
 		},
 		["Bio"] = "It seems we may have a faker on our hands...",
