@@ -4724,7 +4724,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Deceipt",
 			Description = "Deal 500 damage to your opponent and 350 to all enemy fighters.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",350},{"Inflict",500,"Opponent"}},
+			["Power"] = {{"Damage",350},{"Inflict",500}},
 			Target = "Opponent",	
 		},
 		["Bio"] = "Like the game to see what the like animation looks like!",
