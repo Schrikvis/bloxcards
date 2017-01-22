@@ -535,7 +535,7 @@ local packs = {
 		CardPackId = 465492637,
 		Description = "Blue is the colour of logic, order, and structure. Thought packs contain cards that cost blue!",
 		Cards = {
-			"Beyondthegong"
+			"Beyondthegong",
 			"SONICTHEHEDGEHOGXXX",
 			"Razikai's Exploration",
 			"Ghost Dragon",
