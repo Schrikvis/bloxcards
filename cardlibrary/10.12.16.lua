@@ -210,7 +210,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 1000,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Dash",
-		["CounterAttackBlock"] = true,
+		["CounterBlock"] = true,
 		["Color"] = "Green", 
 		["Cost"] = {["Neutral"] = 5, ["Blue"] = 1, ["Green"] = 5,},
 		["Archetype"] = "Nightmare",
@@ -721,7 +721,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Pyrotechnics",
 			Description = "Generate a red and white icon at the end of your turns.",
-			["Type"] = "OnHealthLoss",
+			["Type"] = "OnEnd",
 			["Power"] = {{"Neutral",1},{"Red",1}},
 			Target = "Ally",
 		},
