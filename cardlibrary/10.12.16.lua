@@ -116,8 +116,15 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Wild Reporter Tracy"] = {
-		["Id"] = 556338220,
-		["Name"] = "Wild Reporter Tracy",
+		["Id"] = 627301023,
+		["Name"] = "Reporter Tracy",
+		["AltCards"] = {
+			["WildReporterTracyV2"] = {
+				["Name"] = "Wild Reporter Tracy",
+				["Id"] = 556338220,
+				["AltArt"] = true,
+			}
+		},
 		["Health"] = 750,
 		["Power"] = 525,
 		["Rarity"] = "Epic",
@@ -466,7 +473,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 3,},
 		["Effect"] = {
 			Name = "Reincarnation",
-			Description = "Summon a latice of green crystals, each with different effects.",
+			Description = "Summon a latice of green crystals, each with different effects. Crystals don't generate icons.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Summon","Crystal of Reality's Fractal"},{"Summon","Crystal of Nature's Surge"},{"Summon","Crystal of Heaven's Pulse"},{"Add","Targeting Blip"}},
 			Target = "Ally",
