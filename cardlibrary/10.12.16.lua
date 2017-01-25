@@ -173,7 +173,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["RaveTea"] = {
-		["Id"] = 574343199,
+		["Id"] = 626083913,
 		["Name"] = "RaveTea",
 		["Health"] = 450,
 		["Power"] = 450,
@@ -182,7 +182,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Blue", 
 		["Cost"] = {["Neutral"] = 3, ["Blue"] = 3,},
 		["Effect"] = {
-			Name = "Hot Ancient News",
+			Name = "Join The Rave",
 			Description = "Enemy fighters enter play as a copy of RaveTea, without this effect.",
 			["Type"] = "OnEnemySummon",
 			["Power"] = {{"Damage",9999,"Aggressor"},{"Summon","RaveTea Token"}},
@@ -192,7 +192,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["RaveTea Token"] = {
-		["Id"] = 574343199,
+		["Id"] = 626083913,
 		["Name"] = "RaveTea",
 		["Health"] = 450,
 		["Power"] = 450,
