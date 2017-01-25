@@ -26,6 +26,13 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Wolfbitten Elf"] = {
 				["Id"] = 585627464,
 				["Name"] = "Wolfbitten Elf",
+				["Effect"] = {
+					Name = "Woof",
+					Description = "Whenever you cast an action or terrain spell, transform this card.",
+					["Type"] = "OnAllyCast",
+					["Power"] = {{"Summon","Festive Werewolf"},{"Damage",9999,"Self"}},
+					Target = "Ally",
+				},
 				["Bio"] = "Can he deliver your gifts in time?",
 			}
 		},
@@ -33,7 +40,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 200,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Dash",
-    ["Color"] = "Red", 
+                ["Color"] = "Red", 
 		["Archetype"] = "Lycanthrope",
 		["Cost"] = {["Red"] = 1,},
 		["Effect"] = {
@@ -53,6 +60,13 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Festive Werewolf"] = {
 				["Id"] = 585627502,
 				["Name"] = "Festive Werewolf",
+				["Effect"] = {
+					Name = "Halloween",
+					Description = "Whenever your opponent casts an action or terrain spell, untransform this card.",
+					["Type"] = "OnEnemyCast",
+					["Power"] = {{"Summon","Wolfbitten Elf"},{"Damage",9999,"Self"}},
+					Target = "Ally",
+				},	
 				["Bio"] = "The best kind of werewolf.",
 			}
 		},
@@ -598,7 +612,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Inflict",300,"Opponent"}},
 			Target = "Ally",
 		},
-		["Bio"] = "SPOOPY SCARY - oh wait you can't even see what it is well that joke failed",
+		["Bio"] = "What was once a happy toy is now a reminder of the cruelty of Zanzel. You'd be a fool to put this in a Toy deck.",
 	},
 	
 	["Cringeleaf"] = {
@@ -711,13 +725,13 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Pyrotechnics",
 			Description = "Cast Final Revels only if your opponent has 6 or more fighters in play. Unlock all allied fighters.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Summon","Reminder: Final Revels"},{"Unlock",9999}},
+			["Power"] = {{"Unlock",9999}},
 			Target = "Ally",
 		},
 		["Bio"] = "A reward is worthless if you aren't around to enjoy it.",
 	},
 	
-	["Reminder: Final Revels"] = {
+	["Reminder: Final Revels"] = { --no longer used, due to the change on how Final Revels works
 		["Id"] = 540076076,
 		["Name"] = "Reminder: Final Revels",
 		["Health"] = 9001,
@@ -776,7 +790,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Gentle Elder"] = {
-		["Id"] = 543041104,
+		["Id"] = 626699228,
 		["Name"] = "Gentle Elder",
 		["Health"] = 500,
 		["Power"] = 300,
@@ -785,7 +799,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Green", 
 		["Cost"] = {["Green"] = 3,},
 		["Effect"] = {
-			Name = "Pyrotechnics",
+			Name = "Let It Grow",
 			Description = "Whenever an allied fighter dies, your opponent loses 150 life and you gain 150 life.",
 			["Type"] = "OnAllyDeath",
 			["Power"] = {{"Cost",-150},{"Inflict",150}},
@@ -910,7 +924,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["KillCactaur"] = {
-		["Id"] = 574315150,
+		["Id"] = 627353116,
 		["Name"] = "KillCactaur",
 		["Health"] = 800,
 		["Power"] = 300,
@@ -950,6 +964,13 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Dash",
 		["Color"] = "Green", 
 		["Cost"] = {["Green"] = 2,},
+		["Effect"] = {
+			Name = "Appetite",
+			Description = "This card can't generate icons.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Cost",0}},
+			Target = "Opponent",
+		},
 		["Bio"] = "Ooh. Flesh.",
 	},
 	
@@ -1234,7 +1255,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 540076669,
 		["Name"] = "The Skull Collector",
 		["Health"] = 800,
-		["Power"] = 0,
+		["Power"] = 300,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Yellow", 
