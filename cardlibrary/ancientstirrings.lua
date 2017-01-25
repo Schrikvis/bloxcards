@@ -465,24 +465,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "The overseers had to admit. The werewolves grew pretty fast.",
 	},
 	
-	["DIY: Dark Dominus"] = {
-		["Id"] = 543041104,
-		["Name"] = "DIY: Dark Dominus",
-		["Health"] = 300,
-		["Power"] = 300,
-		["Rarity"] = "Rare",
-		["AttackEffect"] = "Dash",
-		["Color"] = "Green", 
-		["Cost"] = {["Green"] = 5,},
-		["Effect"] = {
-			Name = "Pyrotechnics",
-			Description = "That's not a very goof",
-			["Type"] = "OnTarget",
-			["Power"] = {{"Summon","Bereghost"},{"Damage",9999,"Self"}},
-			Target = "Ally",
-		},
-		["Bio"] = "The overseers had to admit. The werewolves grew pretty fast.",
-	},
+	
 	
 	["Beast Within"] = {
 		["Id"] = 540076909,
@@ -515,7 +498,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Pyrotechnics",
 			Description = "Both players summon three guests.",
-			["Type"] = "OnTarget",
+			["Type"] = "OnSummon",
 			["Power"] = {{"Summon","Guest"},{"Summon","Guest","Opponent"},{"Summon","Guest"},{"Summon","Guest","Opponent"},{"Summon","Guest"},{"Summon","Guest","Opponent"}},
 			Target = "Ally",
 		},
@@ -531,7 +514,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Dash",
 		["Color"] = "Yellow", 
 		["Cost"] = {["Neutral"] = 1 , ["Yellow"] = 2.},
-		["Bio"] = "The overseers had to admit. The werewolves grew pretty fast.",
+		["Bio"] = "Freeze! Put your candy where I can see it!",
 	},
 	
 	["Cereal Killer"] = {
@@ -573,7 +556,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Cotton Candy Lion"] = {
-		["Id"] = 585627301,
+		["Id"] = 540075815,
 		["Name"] = "Cotton Candy Lion",
 		["AltCards"] = {
 			["Gingerbread Man"] = {
@@ -918,9 +901,9 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3, ["Green"] = 2,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Destroy target fighter if it has less than 350 power.",
+			Description = "Destroy target fighter if it has less than 200 power.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Swap",030},{"Damage",350},{"Heal",350},{"Swap",030}},
+			["Power"] = {{"Swap",030},{"Damage",200},{"Heal",200},{"Swap",030}},
 			Target = "Single",
 		},
 		["Bio"] = "Everything's turning to a point where it stops and it turns around!",
@@ -937,7 +920,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 4,},
 		["Effect"] = {
 			Name = "Halloween",
-			Description = "Whenever you gain life, lower the power of all enemy fighters by 50.",
+			Description = "Whenever you gain life, lower the power of all enemy fighters by 75.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",75}},
 			Target = "Opponent",
@@ -2100,7 +2083,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Damage",500,"Archetype",},{"Strengthen",500,"Archetype"}},
 			Target = "Ally",
 		},
-		["Bio"] = "But the SCHALLOPS& I NEED the scallops.[ Scaloops< Scallops> Scall~ Scallops# Scallops@ Scaloppinelionia King Junior the Fourth on toast£",
+		["Bio"] = "But the SCHALLOPS& I NEED the scallops.[ Scaloops< Scallops> Scall~ Scallops# Scallops@ Scaloppinelionia King Junior the Fourth on toastÂ£",
 	},
 	
 	["Frankenstein"] = {
@@ -2228,15 +2211,16 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["DairingSpookHead"] = {
 		["Id"] = 540075730,
 		["Name"] = "DairingSpookHead",
-		["Health"] = 800,
-		["Power"] = 800,
+		["Health"] = 700,
+		["Power"] = 700,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Dash",
+		["Token"] = true,
 		["Color"] = "Blue", 
 		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "When this card dies, put it into your opponent's hand.",
+			Description = "When this card dies, put it into your opponent's hand. This card can't generate icons.",
 			["Type"] = "OnDeath",
 			["Power"] = {{"Add","DairingSpookHead"}},
 			Target = "Opponent",
@@ -2351,7 +2335,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 1},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "Deal 50 damage to all fighters. They gain 50 health.",
+			Description = "Deal 50 damage to all fighters. They gain 50 attack.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",50},{"Strengthen",50}},
 			Target = "All",
@@ -2370,7 +2354,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 2, ["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "(EXPERIMENTAL EFFECT) After this card attacks, deal 200 damage to who it attacked.",
+			Description = "After this card attacks, deal 200 damage to who it attacked.",
 			["Type"] = "OnAttackEnd",
 			["Power"] = {{"Damage",200}},
 			Target = "Aggressor",
@@ -2456,7 +2440,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Dash",
 		["Archetype"] = "Lycanthrope",
 		["Color"] = "Red", 
-		["Cost"] = {["Red"] = 2, ["Neutral"] = 1,},
+		["Cost"] = {["Red"] = 1, ["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Stud",
 			Description = "Whenever you cast an action or terrain spell, transform this card, then unlock all Lycanthropes.",
@@ -2476,7 +2460,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Dash",
 		["Archetype"] = "Lycanthrope",
 		["Color"] = "Red", 
-		["Cost"] = {["Red"] = 2, ["Neutral"] = 1,},
+		["Cost"] = {["Red"] = 1, ["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Stud",
 			Description = "Whenever your opponent casts an action or terrain spell, untransform this card, then unlock all Lycanthropes.",
@@ -2741,7 +2725,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Haydoscale",
 			Description = "Destroy all fighters with 0 power.",
-			["Type"] = "OnEnemySummon",
+			["Type"] = "OnSummon",
 			["Power"] = {{"Swap",030},{"Swap",030}},
 			Target = "All",
 		},
