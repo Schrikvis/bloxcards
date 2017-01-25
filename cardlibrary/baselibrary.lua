@@ -6015,7 +6015,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["AltArt"] = true,
 				["Effect"] = {
 					Name = "H$X",
-					Description = "Hack the power of all figthers to 250.",
+					Description = "Hack the power of all fighters to 250.",
 				},
 				["Bio"] = "You should all be scared. I will come back one day, you will see.",
 			},
@@ -6029,7 +6029,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Green"] = 3,},
 		["Effect"] = {
 			Name = "Even Out",
-			Description = "Set the power of all figthers to 250.",
+			Description = "Set the power of all fighters to 250.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"SetPower",250}},
 			Target = "All",

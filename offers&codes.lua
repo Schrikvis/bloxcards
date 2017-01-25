@@ -144,7 +144,7 @@ local codes = {
 		Rewards = {
 			Cards = {["ChickenDuckBird V2"] = 1}; 
 			RandomCards = {};
-			Packs = {}
+			Packs = {};
 			BloxBux = 200;
 			Charms = {0,0};
 			Sleeves = {}; 
@@ -158,7 +158,7 @@ local codes = {
 		Rewards = {
 			Cards = {["Lunar Acolyte" = 3, ["Acolyte of the Rift"] = 3, ["Infernal Acolyte"] = 3, ["Necromantic Acolyte"] = 3, ["Fried Acolyte"] = 3, ["Nova"] = 3}; 
 			RandomCards = {};
-			Packs = {}
+			Packs = {};
 			BloxBux = 0;
 			Charms = {0,0};
 			Sleeves = {}; 
@@ -172,7 +172,7 @@ local codes = {
 		Rewards = {
 			Cards = {}; 
 			RandomCards = {};
-			Packs = {}
+			Packs = {};
 			BloxBux = 0;
 			Charms = {2,2};
 			Sleeves = {"Goopy"}; 
@@ -226,10 +226,10 @@ local codes = {
 		Rewards = {
 			Cards = {["ROBLOXian Reborn"] = 1]}; 
 			RandomCards = {};
-			Packs = {}
+			Packs = {};
 			BloxBux = 0;
 			Charms = {0,0};
-			Sleeves = {}; 
+			Sleeves = {};
 			Ranks = {};
 			BestBefore = nil; 
 		}
@@ -240,7 +240,7 @@ local codes = {
 		Rewards = {
 			Cards = {["FILTHY PRANKS"] = -1}; 
 			RandomCards = {};
-			Packs = {}
+			Packs = {};
 			BloxBux = 0;
 			Charms = {0,0};
 			Sleeves = {}; 
