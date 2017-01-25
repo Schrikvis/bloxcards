@@ -725,7 +725,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Pyrotechnics",
 			Description = "Cast Final Revels only if your opponent has 6 or more fighters in play. Unlock all allied fighters.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Summon","Reminder: Final Revels"},{"Unlock",9999}},
+			["Power"] = {{"Unlock",9999}},
 			Target = "Ally",
 		},
 		["Bio"] = "A reward is worthless if you aren't around to enjoy it.",
