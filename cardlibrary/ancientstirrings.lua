@@ -776,7 +776,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Gentle Elder"] = {
-		["Id"] = 543041104,
+		["Id"] = 626699228,
 		["Name"] = "Gentle Elder",
 		["Health"] = 500,
 		["Power"] = 300,
@@ -785,7 +785,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Green", 
 		["Cost"] = {["Green"] = 3,},
 		["Effect"] = {
-			Name = "Pyrotechnics",
+			Name = "Let It Grow",
 			Description = "Whenever an allied fighter dies, your opponent loses 150 life and you gain 150 life.",
 			["Type"] = "OnAllyDeath",
 			["Power"] = {{"Cost",-150},{"Inflict",150}},
