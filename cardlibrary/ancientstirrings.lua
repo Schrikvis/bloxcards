@@ -970,6 +970,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Type"] = "OnSummon",
 			["Power"] = {{"Cost",0}},
 			Target = "Opponent",
+		},
 		["Bio"] = "Ooh. Flesh.",
 	},
 	
