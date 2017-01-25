@@ -612,7 +612,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Inflict",300,"Opponent"}},
 			Target = "Ally",
 		},
-		["Bio"] = "SPOOPY SCARY - oh wait you can't even see what it is well that joke failed",
+		["Bio"] = "What was once a happy toy is now a reminder of the cruelty of Zanzel. You'd be a fool to put this in a Toy deck.",
 	},
 	
 	["Cringeleaf"] = {
@@ -731,7 +731,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "A reward is worthless if you aren't around to enjoy it.",
 	},
 	
-	["Reminder: Final Revels"] = {
+	["Reminder: Final Revels"] = { --no longer used, due to the change on how Final Revels works
 		["Id"] = 540076076,
 		["Name"] = "Reminder: Final Revels",
 		["Health"] = 9001,
