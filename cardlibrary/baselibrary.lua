@@ -7032,11 +7032,11 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Toy Train"] = {
-		["Id"] = 585627408,
+		["Id"] = 300976055,
 		["Name"] = "Toy Train",
 		["AltCards"] = {
 			["Wooden Toy Train"] = {
-				["Id"] = 300976055,
+				["Id"] = 585627408,
 				["Name"] = "Wooden Toy Train",
 				["Bio"] = "Chugga chugga. The train is a century old.",
 			}
@@ -7934,6 +7934,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 0,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Null",
+		["Archetype"] = "Lunar",
 		["Color"] = "Blue",
 		["Cost"] = {["Blue"] = 5},
 		["Bio"] = "You drown in the void of water...\nYeah, roll with it.",
@@ -14425,9 +14426,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4, ["Red"] = 4, ["Blue"] = 4,},
 		["Effect"] = {
 			Name = "HURT ALL THE THINGS",
-			Description = "Reduce the attack of all enemy fighters by 300, then swap their stats.",
+			Description = "Reduce the attack of all enemy fighters by 400, then swap their stats.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Weaken",300},{"Swap",030}},
+			["Power"] = {{"Weaken",400},{"Swap",030}},
 			Target = "Opponent",
 		},
 		["Bio"] = "Hatred outlives the hateful.",
