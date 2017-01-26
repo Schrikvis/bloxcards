@@ -6943,6 +6943,14 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Bread Factory"] = {
 		["Id"] = 300976028,
 		["Name"] = "Bread Factory",
+		["AltCards"] = {
+			["Bread Factoryv2"] = {
+				["Id"] = 628016499,
+				["Name"] = "Bread Factory",
+				["AltArt"] = true,
+				["Bio"] = "Uhh sir? This bread seems to have shaped our factory.",
+			}
+		},
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Uncommon",
