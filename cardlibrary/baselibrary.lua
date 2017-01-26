@@ -15725,10 +15725,10 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4, ["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "AAAAAAAAAAAAAAAAAA",
-			Description = "When this card strikes the opponent, unlock it. Your opponent summons a titan stone.",
-			["Type"] = "OnStrike",
-			["Power"] = {{"Unlock",9999,"Self"},{"Summon","Titan's Stone","Opponent"}},
-			Target = "ColorYellow",
+			Description = "When this card attacks and destroys another, give it 200 health and 200 power.",
+			["Type"] = "OnAttackDestroy",
+			["Power"] = {{"Heal",200},{"Strengthen",200}},
+			Target = "Self",
 		},
 		["Bio"] = "The pen is mightier than the sword.",
 	},
@@ -17022,7 +17022,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Thug Life",
-			Description = "Cast this card for free. At the end of this turn, lose 5 neutral icons. This effect can cause negative icons.",
+			Description = "Cast this card for free. At the end of this turn, lose 5 neutral icons. This effect can cause negative icons.",	
 			["Type"] = "OnEnd",
 			["Power"] = {{"Neutral",0}},
 			Target = "Self",
