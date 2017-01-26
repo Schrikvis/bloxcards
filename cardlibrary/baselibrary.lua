@@ -1198,8 +1198,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["QuisMo"] = {
 		["Id"] = 271752446,
 		["Name"] = "QuisMo",
-		["Health"] = 50,
-		["Power"] = 200,
+		["Health"] = 150,
+		["Power"] = 250,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "PunchKick",
 		["Color"] = "Yellow",
@@ -1301,7 +1301,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 271753051,
 		["Name"] = "Wustard",
 		["Health"] = 700,
-		["Power"] = 100,
+		["Power"] = 200,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "GunShot",
 		["Color"] = "Green",
@@ -1615,6 +1615,14 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Ninja"] = {
 		["Id"] = 275340372,
 		["Name"] = "Ninja",
+		["AltCards"] = {
+			["NinjaV2"] = {
+				["Name"] = "Ninja jpeg.",
+				["Id"] = 480385242,
+				["AltArt"] = true,
+				["Bio"] = "Silly developers, you forgot to cut this thing out!",
+			}
+		},
 		["Health"] = 350,
 		["Power"] = 350,
 		["Rarity"] = "Common",
@@ -4424,7 +4432,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	
 	["Shedletsky, the Raging Pulse"] = {
 		["Id"] = 616082604,
-		["Name"] = "Shedletsky, the Fried One",
+		["Name"] = "Shedletsky, the Raging Pulse",
 		["Health"] = 1000,
 		["Power"] = 300,
 		["Rarity"] = "Token",
@@ -4490,7 +4498,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	
 	["Shedletsky, Locus of Icons"] = {
 		["Id"] = 616082730,
-		["Name"] = "Shedletsky, the Fried One",
+		["Name"] = "Shedletsky, Locus of Icons",
 		["Health"] = 2000,
 		["Power"] = 0,
 		["Rarity"] = "Token",
@@ -4556,7 +4564,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	
 	["Shedletsky, the Resonator"] = {
 		["Id"] = 616082767,
-		["Name"] = "Shedletsky, the Fried One",
+		["Name"] = "Shedletsky, the Resonator",
 		["Health"] = 1500,
 		["Power"] = 100,
 		["Rarity"] = "Token",
@@ -4622,9 +4630,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	
 	["Shedletsky, Paragon of Unity 1"] = {
 		["Id"] = 291389590,
-		["Name"] = "Shedletsky, the Fried One",
-		["Health"] = 1250,
-		["Power"] = 200,
+		["Name"] = "Shedletsky, Paragon of Unity",
+		["Health"] = 750,
+		["Power"] = 0,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Punch1",
 		["WeakenImmune"] = true,
@@ -4644,9 +4652,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 
 	["Shedletsky 2"] = {
 		["Id"] = 291389590,
-		["Name"] = "Shedletsky, the Fried One",
-		["Health"] = 1250,
-		["Power"] = 200,
+		["Name"] = "Shedletsky, Paragon of Unity",
+		["Health"] = 750,
+		["Power"] = 0,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Punch1",
 		["WeakenImmune"] = true,
@@ -4666,7 +4674,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 
 	["Shedletsky 3"] = {
 		["Id"] = 291389590,
-		["Name"] = "Shedletsky, the Fried One",
+		["Name"] = "Shedletsky, Paragon of Unity",
 		["Health"] = 750,
 		["Power"] = 0,
 		["Rarity"] = "Token",
@@ -4688,7 +4696,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 
 	["Shedletsky 4"] = {
 		["Id"] = 291389590,
-		["Name"] = "Shedletsky, the Fried One",
+		["Name"] = "Shedletsky, Paragon of Unity",
 		["Health"] = 750,
 		["Power"] = 0,
 		["Rarity"] = "Token",
@@ -7024,11 +7032,11 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Toy Train"] = {
-		["Id"] = 300976055,
+		["Id"] = 585627408,
 		["Name"] = "Toy Train",
 		["AltCards"] = {
 			["Wooden Toy Train"] = {
-				["Id"] = 585627408,
+				["Id"] = 300976055,
 				["Name"] = "Wooden Toy Train",
 				["Bio"] = "Chugga chugga. The train is a century old.",
 			}
@@ -7644,8 +7652,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Theawesomist19"] = {
 		["Id"] = 323661120,
 		["Name"] = "Theawesomist19",
-		["Health"] = 300,
-		["Power"] = 600,
+		["Health"] = 400,
+		["Power"] = 500,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Blue",
@@ -7927,7 +7935,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Null",
 		["Color"] = "Blue",
-		["Archetype"] = "Lunar",
 		["Cost"] = {["Blue"] = 5},
 		["Bio"] = "You drown in the void of water...\nYeah, roll with it.",
 		["Effect"] = {
@@ -8384,9 +8391,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 5,["Neutral"] = 5,},
 		["Effect"] = {
 			Name = "Plushie Amp",
-			Description = [[When this card is targeted, Lock it for three turns. This card can't counterattack.]],
+			Description = "When this card is targeted, Lock it for two turns. This card can't counterattack.",
 			["Type"] = "OnTarget",
-			["Power"] = {{"Lock",3}},
+			["Power"] = {{"Lock",2}},
 			Target = "Self",
 		},
 		["Bio"] = "PLUSHAURUS REX!",
@@ -10199,7 +10206,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Seranok-ArtV"] = {
 				["Id"] = 469439910,
 				["AltArt"] = true,
-				["Bio"] = "The reason there isn't a Merely card is because I don't want to.",
+				["Bio"] = "This description has no meaning to me anymore. To be frank, its Merely a coincidence.",
 			}
 		},
 		["Health"] = 500,
@@ -10216,7 +10223,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"SetHealth",500},{"SetPower",500},{"Return",030}},
 			Target = "Self",
 		},
-		["Bio"] = "The reason there isn't a Merely card is because Seranok IS Merely.",
+		["Bio"] = "The reason there isn't a Merely card...wait there is one...uh...",
 	},	
 	
 	["TheAmazeMan"] = {
@@ -10563,7 +10570,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["DairingPoopHead-ArtV"] = {
 				["Id"] = 496185557,
 				["AltArt"] = true,
-				["Bio"] = "You just dared him. Prepare for brown dairy.",
+				["Bio"] = "You just dared him. Prepare for hellish dairy.",
 			}
 		},
 		["Health"] = 700,
@@ -10727,8 +10734,35 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 2,},
+		["Effect"] = {
+			Name = "Alien Beef Serum",
+			Description = "Summon a drone.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Summon","Drone"}},
+			Target = "Ally",
+		},
 		["Bio"] = "He's protecting his master with a clan of drones.",
-	},	
+	},
+	
+	["Drone"] = {
+		["Id"] = 384007490,
+		["Name"] = "Drone",
+		["Health"] = 100,
+		["Power"] = 200,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Lightning",
+		["Color"] = "Blue",
+		["CounterAttackBlock"] = true,
+		["Cost"] = {["Neutral"] = 1,},
+		["Effect"] = {
+			Name = "Alien Beef Serum",
+			Description = "Drone can't be counterattacked.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Heal",0}},
+			Target = "Ally",
+		},
+		["Bio"] = "It's protecting it's master with a clan of lasers.",
+	},
 	
 	["Maplestick"] = {
 		["Id"] = 384007615,
@@ -11050,8 +11084,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Doge Hound"] = {
 		["Id"] = 384010776,
 		["Name"] = "Doge Hound",
-		["Health"] = 250,
-		["Power"] = 250,
+		["Health"] = 400,
+		["Power"] = 300,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Lightning",
 		["Archetype"] = "Doge",
@@ -12283,7 +12317,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Lock",2,"ColorYellow"}},
 			Target = "All",
 		},
-		["Bio"] = "Just likes the show so much he's named it too. Too bad the show is ending though...",
+		["Bio"] = "Just likes the show so much he's named it too. Too bad the show is over though...",
 	},		
 	
 	["Kit of Deception"] = {
@@ -14391,9 +14425,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4, ["Red"] = 4, ["Blue"] = 4,},
 		["Effect"] = {
 			Name = "HURT ALL THE THINGS",
-			Description = "Reduce the attack of all enemy fighters by 400, then swap their stats.",
+			Description = "Reduce the attack of all enemy fighters by 300, then swap their stats.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Weaken",400},{"Swap",030}},
+			["Power"] = {{"Weaken",300},{"Swap",030}},
 			Target = "Opponent",
 		},
 		["Bio"] = "Hatred outlives the hateful.",
@@ -16073,7 +16107,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Swap",030}},
 			Target = "Single",
 		},
-		["Bio"] = "Rollin' my way down town, pushing guys, off the ledge everyday.",
+		["Bio"] = "They see me rollin'...",
 	},
 	
 	["Egg Eyes Batter Dragon"] = {
@@ -16083,7 +16117,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 100,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Fire",
-		["Color"] = "Neutral",
+		["Color"] = "Yellow",
 		["Archetype"] = "Dragon",
 		["Cost"] = {["Yellow"] = 3,["Neutral"] = 4,}, 
 		["Effect"] = {
@@ -16344,7 +16378,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "derp",
 			Description = "You lose 200 life. End the turn. Return this card to your hand.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Cost",200},{"EndTurn",1},{"Add","Epic Sauce"}},
+			["Power"] = {{"Cost",200},{"Add","Epic Sauce"},{"EndTurn",1}},
 			Target = "Ally",
 		},
 		["Bio"] = "WARNING: Contents contain the following: Ghost Peppers, Molten Lava, Drakobloxxer Saliva, Cinnamon-Coated Red Peppers, Curry, Wasabi, Chili, and Beans. Side Effects include damage to skin, melting bones, heartburn, and a craving for rice. Eat with caution!",
@@ -16383,8 +16417,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Monocle Polish",
 			Description = "When targeted, give this card 200 health and return it to your hand.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Heal",200},{"Return",030,"Self"}},
-			Target = "All",
+			["Power"] = {{"Heal",200},{"Return",030}},
+			Target = "Self",
 		},
 		["Bio"] = "Only the top class bears can bear to listen to DJ Kangaroo.",
 	},			
@@ -16651,9 +16685,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Gobble",
 			Description = "Deal 100 damage to a target fighter. Summon a turkey.",
-			["Type"] = "OnDeath",
+			["Type"] = "OnSummon,
 			["Power"] = {{"Damage",100},{"Summon","Turkey"}},
-			Target = "Ally",
+			Target = "Single",
 		},
 		["Bio"] = "I think this cannon is broken, it gobbles when I press the trigger.",
 	},			
@@ -16661,8 +16695,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Pilgrim"] = {
 		["Id"] = 557947984,
 		["Name"] = "Pilgrim",
-		["Health"] = 200,
-		["Power"] = 300,
+		["Health"] = 350,
+		["Power"] = 350,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "UziShot",
 		["Color"] = "Yellow",
@@ -16778,9 +16812,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Thug Life",
-			Description = "Lower the power of all fighters by 200. Summon a guest.",
+			Description = "Lower the power of all fighters by 100. Summon a guest.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Weaken",200},{"Summon","Guest","Ally"}},
+			["Power"] = {{"Weaken",100},{"Summon","Guest","Ally"}},
 			Target = "All",
 		},
 		["Bio"] = "OMG My house is on fire! GTG. Wanna be friends? Dinosaurs!",
@@ -17084,7 +17118,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 5, ["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Thug Life",
-			Description = "Whenever you lose health, shuffle a Kit of Deception into your deck.",
+			Description = "Whenever you lose life, shuffle a Kit of Deception into your deck.",
 			["Type"] = "OnHealthLoss",
 			["Power"] = {{"DeckAdd","Kit of Deception"}},
 			Target = "Ally",
