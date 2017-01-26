@@ -2504,6 +2504,20 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Camo Joe"] = {
 		["Id"] = 283992885,
 		["Name"] = "Camo Joe",
+		["AltCards"] = {
+			["Commando Chick"] = {
+				["Name"] = "Commando Chick",
+				["Id"] = 628008076,
+				["AltArt"] = true,
+				["Effect"] = {
+					Name = "Genocide",
+					Description = "Lock a target victim for 1 turn."],
+					["Type"] = "OnSummon",
+					["Power"] = {{"Lock",1}},
+					Target = "Single",
+				["Bio"] = "While it may seem cute, it has murdered an entire species with just a knife.",			
+			}
+		},
 		["Health"] = 150,
 		["Power"] = 600,
 		["Rarity"] = "Uncommon",
