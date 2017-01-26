@@ -511,9 +511,9 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 6,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "Both players summon three guests.",
+			Description = "Both players summon two guests and one corrupt guest.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Summon","Guest"},{"Summon","Guest","Opponent"},{"Summon","Guest"},{"Summon","Guest","Opponent"},{"Summon","Guest"},{"Summon","Guest","Opponent"}},
+			["Power"] = {{"Summon","Guest"},{"Summon","Guest","Opponent"},{"Summon","Guest"},{"Summon","Guest","Opponent"},{"Summon","Corrupt Guest"},{"Summon","Corrupt Guest","Opponent"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Victory is certain. The price? Negotiable.",

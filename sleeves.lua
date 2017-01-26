@@ -51,6 +51,7 @@ local sleeves = {
 		["Flintstones"]         = {486533671, 1335};
 		["Harambe"]             = {605029103, 1250};
 		["Doge"]                = {574398544,  900};
+		["Wood Grain"]          = {627815623,  750};
 	};                     
 	
 	Halloween = {          
