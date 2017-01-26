@@ -724,7 +724,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["BlazerCV2"] = {
 				["Id"] = 296708433,
-				["AltArt"] = true,
 				["Bio"] = "Demon Ninja.",
 			}
 		},
@@ -5485,7 +5484,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Summon","Combine Garrison"}},
 			Target = "Ally",
 		},
-		["Bio"] = "These troops are always searching for The Stalker.",
+		["Bio"] = "These troops are always searching for 
+		.",
 	},	
 
 	["Connoisseur"] = {
@@ -5834,7 +5834,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["RipullV2"] = {
 				["Id"] = 430936062,
-				["AltArt"] = true,
 				["Bio"] = "This isn't the 1940s. Silly Ripull!",
 			}
 		},
@@ -5861,7 +5860,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["The StalkerV2"] = {
 				["Id"] = 459231428,
-				["AltArt"] = true,
 				["Bio"] = "Even Sonic fears it.",
 			}
 		},
@@ -13357,7 +13355,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["NerfModderV2"] = {
 				["Id"] = 432804094,
-				["AltArt"] = true,
 				["Bio"] = "Even the most charistmatic and unbreakable can fall to depression.",
 			}
 		},
