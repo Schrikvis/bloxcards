@@ -774,7 +774,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	}, 
 	
 	["Brown Dairy Supply"] = {
-		["Id"] = 622210137,
+		["Id"] = 581854933,
 		["Name"] = "Brown Dairy Supply",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -793,7 +793,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	}, 
 		
 	["Armed Thief"] = {
-		["Id"] = 622210137,
+		["Id"] = 618784497,
 		["Name"] = "Armed Thief",
 		["Health"] = 200,
 		["Power"] = 100,
@@ -811,7 +811,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	}, 
 			
 	["BonesMcCormick"] = {
-		["Id"] = 622210137,
+		["Id"] = 627903698,
 		["Name"] = "BonesMcCormick",
 		["Health"] = 300,
 		["Power"] = 125,
