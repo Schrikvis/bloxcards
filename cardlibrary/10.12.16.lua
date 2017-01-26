@@ -806,9 +806,28 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Description = "Your opponent loses 1 white icon.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Neutral",-1}},
-			Target = "Opponent"
+			Target = "Opponent",
 		["Bio"] = "The only language I speak, is stealing.",
-	}, 	
+	}, 
+			
+	["BonesMcCormick"] = {
+		["Id"] = 622210137,
+		["Name"] = "BonesMcCormick",
+		["Health"] = 300,
+		["Power"] = 125,
+		["Rarity"] = "Rare",
+		["AttackEffect"] = "Fire",
+		["Color"] = "Green",
+		["Cost"] = {["Green"] = 3,},
+		["Effect"] = {
+			Name = "moo",
+			Description = "Whenever you gain life, add a targeting blip to your hand and increase BonsMcCormick's power by 100.",
+			["Type"] = "OnHealthGain",
+			["Power"] = {{"Add","Targeting Blip"},{"Strengthen",100,"Self"}},
+			Target = "Ally",
+		["Bio"] = "His gum is as string as his bones!",
+	}, 		
+			
 }
 
 return tentwelvesixteen
