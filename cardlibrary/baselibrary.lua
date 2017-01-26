@@ -7731,12 +7731,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 4,},
 		["Effect"] = {
 			Name = "EzWinz",
-			Description = "Add 1 random Rare and 1 random Red Legendary to your hand.",
+			Description = "Gain 3 yellow icon, but add 4 nightmares to your hand.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"RandomAdd","Rare"},{"RandomAdd","LegendaryRed"}},
+			["Power"] = {{"Yellow",3},{"Add","Nightmare"},{"Add","Nightmare",{"Add","Nightmare",{"Add","Nightmare"}},
 			Target = "Ally",
 		},
-		["Bio"] = "Very dapper collector of many artifacts.",
+		["Bio"] = "All dapper artifacts come at a cost....",
 	},
 	
 	["Dodgeball Player Red"] = {
@@ -10745,7 +10745,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Drone"] = {
-		["Id"] = 384007490,
+		["Id"] = 627791441,
 		["Name"] = "Drone",
 		["Health"] = 100,
 		["Power"] = 200,
@@ -10761,7 +10761,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Heal",0}},
 			Target = "Ally",
 		},
-		["Bio"] = "It's protecting it's master with a clan of lasers.",
+		["Bio"] = "It's protecting it's master with a volley of lasers.",
 	},
 	
 	["Maplestick"] = {
@@ -11174,7 +11174,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Red",1}},
 			Target = "Self",
 		},
-		["Bio"] = "He loves cows, reliable for food and useful in battle!",
+		["Bio"] = "He loves cows, reliable for food and useful in batttle!",
 	},			
 
 	["Bling Noob"] = {
