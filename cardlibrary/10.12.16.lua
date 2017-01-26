@@ -1,5 +1,5 @@
 local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO	
-
+	--[[
 	["LeTruth"] = {
 		["Id"] = 585558515,
 		["Name"] = "LeTruth",
@@ -790,7 +790,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Ally",
 		["Bio"] = "His gum is as string as his bones!",
 	}, 		
-			
+	--]]
 }
 
 return tentwelvesixteen
