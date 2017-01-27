@@ -788,6 +788,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Type"] = "OnHealthGain",
 			["Power"] = {{"Add","Targeting Blip"},{"Strengthen",100,"Self"}},
 			Target = "Ally",
+		},
 		["Bio"] = "His gum is as string as his bones!",
 	}, 	
 	
@@ -806,6 +807,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Type"] = "OnAttack",
 			["Power"] = {{"Cost",250},{"Strengthen",100,"Self"}},
 			Target = "Ally",
+		},
 		["Bio"] = "UHunt, ULive.",
 	}, 		
 	--]]
