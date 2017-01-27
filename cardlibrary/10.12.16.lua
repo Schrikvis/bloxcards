@@ -789,6 +789,24 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Add","Targeting Blip"},{"Strengthen",100,"Self"}},
 			Target = "Ally",
 		["Bio"] = "His gum is as string as his bones!",
+	}, 	
+	
+		["UHunterU"] = {
+		["Id"] = 627903698,
+		["Name"] = "UHunterU",
+		["Health"] = 200,
+		["Power"] = 400,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "GunShot",
+		["Color"] = "Red",
+		["Cost"] = {["Red"] = 3,},
+		["Effect"] = {
+			Name = "moo",
+			Description = "Whenever this card attacks, you lose 250 life and UHunterU gains 100 power.",
+			["Type"] = "OnAttack",
+			["Power"] = {{"Cost",250},{"Strengthen",100,"Self"}},
+			Target = "Ally",
+		["Bio"] = "UHunt, ULive.",
 	}, 		
 	--]]
 }
