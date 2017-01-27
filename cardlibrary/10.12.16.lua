@@ -791,7 +791,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "His gum is as string as his bones!",
 	}, 	
 	
-		["UHunterU"] = {
+	["UHunterU"] = {
 		["Id"] = 627903698,
 		["Name"] = "UHunterU",
 		["Health"] = 200,
