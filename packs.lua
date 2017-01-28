@@ -171,6 +171,7 @@ local packs = {
 		CardPackId = 465492503,
 		Description = "Red is the colour of power, ambition, and control. Dominion packs contain cards that cost red!",
 		Cards = {
+			"UHunterU",
 			"Roblox Gift Card",
 			"MagikalYawn",
 			"SubZeroExtaByte0",
@@ -375,6 +376,7 @@ local packs = {
 		CardPackId = 465492570,
 		Description = "Green is the colour of life, growth, and the primal forces. Vitality packs contain cards that cost green!",
 		Cards = {
+			"BonesMcCormick",
 			"Kariu",
 			"madattak",
 			"CrazyCaleb77",
@@ -536,6 +538,7 @@ local packs = {
 		CardPackId = 465492637,
 		Description = "Blue is the colour of logic, order, and structure. Thought packs contain cards that cost blue!",
 		Cards = {
+			"Steam Razikai",
 			"Wooden Chair",
  +			"Rollernaut",
 			"Beyondthegong",
@@ -924,6 +927,9 @@ local packs = {
 		CardPackId = 434684079,
 		Description = "Exotic new cards from the black market! White cards and joke cards! It's all yours, as long as you have 10 wins!",
 		Cards = {
+			"Steam Razikai",
+			"UHunterU",
+			"BonesMcCormick",
 			"Wooden Chair",
  +			"Rollernaut",
 			"MurticUnicorn 5",
