@@ -809,7 +809,26 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Ally",
 		},
 		["Bio"] = "UHunt, ULive.",
-	}, 		
+	},
+	
+	["Steam Razikai"] = {
+		["Id"] = 630010948,
+		["Name"] = "Steam Razikai",
+		["Health"] = 200,
+		["Power"] = 200,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Blue", 
+		["Cost"] = {["Blue"] = 3 , ["Yellow"] = 1},
+		["Effect"] = {
+			Name = "Sticks and Stones and Steam",
+			Description = "Whenever your opponent summons a fighter, return Steam Razikai and that fighter to their owner's hand",
+			["Type"] = "OnEnemySummon",
+			["Power"] = {{"Return",030},{"Return",030,"Aggressor"}}
+			Target = "Self",
+		},
+		["Bio"] = "Not to be confused with Valve's premier gaming service.",
+	},
 	--]]
 }
 
