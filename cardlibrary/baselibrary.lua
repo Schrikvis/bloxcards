@@ -2477,7 +2477,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Lord of GreedV2"] = {
 				["Name"] = "Pittacium Acolythus",
-				["Id"] = 626186125,
+				["Id"] = 613203066,
 				["Bio"] = "Why are you stealing something that *I* rightfully stole first?",			
 			}
 		},
@@ -10747,8 +10747,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["ClanDrone"] = {
 		["Id"] = 384007490,
 		["Name"] = "ClanDrone",
-		["Health"] = 600,
-		["Power"] = 600,
+		["Health"] = 500,
+		["Power"] = 500,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Blue",
@@ -10770,12 +10770,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 200,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Lightning",
+		["Token"] = true,
 		["Color"] = "Blue",
 		["CounterAttackBlock"] = true,
 		["Cost"] = {["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Alien Beef Serum",
-			Description = "Drone can't be counterattacked.",
+			Description = "Drone can't be counterattacked.This card doesn't generate icons.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",0}},
 			Target = "Ally",
@@ -12557,14 +12558,14 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 
 	["Imaginz00"] = {
-		["Id"] = 427435194,
+		["Id"] = 630782296,
 		["Name"] = "Imaginz00",
 		["Health"] = 1000,
 		["Power"] = 200,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Neutral",
-		["Cost"] = {["Neutral"] = 10,},
+		["Cost"] = {["Neutral"] = 8,},
 		["Effect"] = {
 			Name = "Zappow!",
 			Description = "Add three monstrum cards to your hand.",
@@ -15466,7 +15467,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Yellow", 
-		["Cost"] = {["Yellow"] = 7, ["Neutral"] = 1,},
+		["Cost"] = {["Yellow"] = 7, ["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Zerg Rush kekekeke",
 			Description = "Whenever you summon a fighter, deal 150 damage to all enemy fighters.",
@@ -15555,10 +15556,10 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["YotamTiti"] = {
-		["Id"] = 626149544,
+		["Id"] = 496076435,
 		["Name"] = "YotamTiti",
 		["Health"] = 400,
-		["Power"] = 400,
+		["Power"] = 600,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Yellow", 
@@ -15597,7 +15598,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},		
 	
 	["JavierCollin88Poppin"] = {
-		["Id"] = 626221891,
+		["Id"] = 496076329,
 		["Name"] = "JavierCollin88Poppin",
 		["Health"] = 400,
 		["Power"] = 400,
