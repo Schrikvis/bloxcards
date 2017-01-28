@@ -824,7 +824,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Sticks and Stones and Steam",
 			Description = "Whenever your opponent summons a fighter, return Steam Razikai and that fighter to their owner's hand",
 			["Type"] = "OnEnemySummon",
-			["Power"] = {{"Return",030},{"Return",030,"Aggressor"}}
+			["Power"] = {{"Return",030},{"Return",030,"Aggressor"}},
 			Target = "Self",
 		},
 		["Bio"] = "Not to be confused with Valve's premier gaming service.",
