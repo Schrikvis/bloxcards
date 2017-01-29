@@ -3117,11 +3117,12 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 300,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Dash",
+		["Token"] = true,
 		["Color"] = "Green", 
 		["Cost"] = {["Green"] = 1,},
 		["Effect"] = {
 			Name = "Undead Rising",
-			Description = "When this card attacks, lock it and the card it attacked for 1 turn.",
+			Description = "This card can't generate icons. When this card attacks, lock it and the card it attacked for 1 turn.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Lock",1},{"Lock",1,"Self"}},
 			Target = "Ally",
