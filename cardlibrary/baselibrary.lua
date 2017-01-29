@@ -7588,11 +7588,11 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Heavy Rain"] = {
-		["Id"] = 323275958,
+		["Id"] = 633130650,
 		["Name"] = "Heavy Rain",
 		["Health"] = 0,
 		["Power"] = 0,
-		["Rarity"] = "Epic",
+		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Punch1",
 		["Field"] = 323275951,
 		["Color"] = "Neutral",
