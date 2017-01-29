@@ -1,5 +1,4 @@
 local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO	
-	--[[
 	["LeTruth"] = {
 		["Id"] = 585558515,
 		["Name"] = "LeTruth",
@@ -795,8 +794,8 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["UHunterU"] = {
 		["Id"] = 627903698,
 		["Name"] = "UHunterU",
-		["Health"] = 200,
-		["Power"] = 400,
+		["Health"] = 400,
+		["Power"] = 200,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "GunShot",
 		["Color"] = "Red",
@@ -848,7 +847,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "He can easily tear a place down, then rebuild it.",
 	},	
-	--]]
+	
 }
 
 return tentwelvesixteen
