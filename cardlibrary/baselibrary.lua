@@ -12302,7 +12302,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Dodgeball Player Blue"] = {
-		["Id"] = 413939893,
+		["Id"] = 632442575,
 		["Name"] = "Dodgeball Player Blue",
 		["Health"] = 150,
 		["Power"] = 400,

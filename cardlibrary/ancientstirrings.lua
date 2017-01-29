@@ -147,7 +147,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Glaciem Knight"] = {
-		["Id"] = 574198491,
+		["Id"] = 632582777,
 		["Name"] = "Glaciem Knight",
 		["Health"] = 700,
 		["Power"] = 450,
@@ -1171,7 +1171,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Possessed Skull"] = {
-		["Id"] = 529624169,
+		["Id"] = 632581720,
 		["Name"] = "Possessed Skull",
 		["Health"] = 200,
 		["Power"] = 200,
@@ -1216,7 +1216,6 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Health"] = 200,
 		["Power"] = 200,
 		["Rarity"] = "Uncommon",
-		["Archetype"] = "Skull",
 		["AttackEffect"] = "Dash",
 		["Archetype"] = "Skull",
 		["Color"] = "Green", 
@@ -2149,7 +2148,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Victor Sinister"] = {
-		["Id"] = 543041104,
+		["Id"] = 632588308,
 		["Name"] = "Victor Sinister",
 		["Health"] = 400,
 		["Power"] = 400,
@@ -2230,7 +2229,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["DairingSpookHead"] = {
-		["Id"] = 540075730,
+		["Id"] = 632495216,
 		["Name"] = "DairingSpookHead",
 		["Health"] = 700,
 		["Power"] = 700,
