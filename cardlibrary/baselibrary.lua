@@ -5484,8 +5484,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Summon","Combine Garrison"}},
 			Target = "Ally",
 		},
-		["Bio"] = "These troops are always searching for 
-		.",
+		["Bio"] = "These troops are always searching for the Stalker.",
 	},	
 
 	["Connoisseur"] = {
@@ -12055,7 +12054,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Blue"] = 1,["Green"] = 1,["Yellow"] = 1,["Red"] = 1,},
 		["Effect"] = {
 			Name = "SCRIPTING PARTY",
-			Description = "Deal 200 damage to all yellow fighters, lower the attack of all red fighters by 200, swap the stats of all green fighters and lock all blue fighters for one turn."",
+			Description = "Deal 200 damage to all yellow fighters, lower the attack of all red fighters by 200, swap the stats of all green fighters and lock all blue fighters for one turn.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",200,"ColorYellow"},{"Weaken",200,"ColorRed"},{"Lock",2,"ColorBlue"},{"Swap",030,"ColorGreen"}},
 			Target = "All",
@@ -16704,7 +16703,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Gobble",
 			Description = "Deal 100 damage to a target fighter. Summon a turkey.",
-			["Type"] = "OnSummon,
+			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",100},{"Summon","Turkey"}},
 			Target = "Single",
 		},
