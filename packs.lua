@@ -540,7 +540,7 @@ local packs = {
 		Cards = {
 			"Steam Razikai",
 			"Wooden Chair",
- +			"Rollernaut",
+ 			"Rollernaut",
 			"Beyondthegong",
 			"SONICTHEHEDGEHOGXXX",
 			"Razikai's Exploration",
@@ -931,7 +931,7 @@ local packs = {
 			"UHunterU",
 			"BonesMcCormick",
 			"Wooden Chair",
- +			"Rollernaut",
+ 			"Rollernaut",
 			"MurticUnicorn 5",
 			"Suicide Bomber",
 			"Roblox Gift Card",
