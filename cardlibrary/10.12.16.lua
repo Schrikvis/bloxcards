@@ -833,7 +833,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["PlaceRebuilder"] = {
 		["Id"] = 630010948,
 		["Name"] = "PlaceRebuilder",
-		["Health"] = 1800,
+		["Health"] = 1200,
 		["Power"] = 100,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "GunShot",
@@ -841,7 +841,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2 , ["Blue"] = 4},
 		["Effect"] = {
 			Name = "Rebuilding The Place",
-			Description = "When PlaceReBuilder attacks, return the attacked fighter to it owners hand, then lock PlaceReBuilder for 2 turns.",
+			Description = "When PlaceRebuilder attacks, return the attacked fighter to it owners hand, then lock PlaceReBuilder for 2 turns.",
 			["Type"] = "OnAttack",
 			["Power"] = {{"Return",030},{"Lock",2,"Self"}},
 			Target = "Aggressor",
