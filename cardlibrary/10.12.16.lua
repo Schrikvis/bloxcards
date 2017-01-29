@@ -818,7 +818,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Blue", 
-		["Cost"] = {["Blue"] = 3 , ["Yellow"] = 1},
+		["Cost"] = {["Blue"] = 3, ["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "Sticks and Stones and Steam",
 			Description = "Whenever your opponent summons a fighter, return Steam Razikai and that fighter to their owner's hand.",
@@ -837,7 +837,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "GunShot",
 		["Color"] = "Blue", 
-		["Cost"] = {["Neutral"] = 2 , ["Blue"] = 4},
+		["Cost"] = {["Neutral"] = 4, ["Blue"] = 6,},
 		["Effect"] = {
 			Name = "Rebuilding The Place",
 			Description = "When PlaceRebuilder attacks, return the attacked fighter to it owners hand, then lock PlaceReBuilder for 2 turns.",
