@@ -822,13 +822,32 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 3 , ["Yellow"] = 1},
 		["Effect"] = {
 			Name = "Sticks and Stones and Steam",
-			Description = "Whenever your opponent summons a fighter, return Steam Razikai and that fighter to their owner's hand",
+			Description = "Whenever your opponent summons a fighter, return Steam Razikai and that fighter to their owner's hand.",
 			["Type"] = "OnEnemySummon",
 			["Power"] = {{"Return",030},{"Return",030,"Aggressor"}},
 			Target = "Self",
 		},
 		["Bio"] = "Not to be confused with Valve's premier gaming service.",
 	},
+	
+	["PlaceRebuilder"] = {
+		["Id"] = 630010948,
+		["Name"] = "PlaceRebuilder",
+		["Health"] = 1800,
+		["Power"] = 100,
+		["Rarity"] = "Legendary",
+		["AttackEffect"] = "GunShot",
+		["Color"] = "Blue", 
+		["Cost"] = {["Neutral"] = 2 , ["Blue"] = 4},
+		["Effect"] = {
+			Name = "Rebuilding The Place",
+			Description = "When PlaceReBuilder attacks, return the attacked fighter to it owners hand, then lock PlaceReBuilder for 2 turns.",
+			["Type"] = "OnAttack",
+			["Power"] = {{"Return",030},{"Lock",2,"Self"}},
+			Target = "Aggressor",
+		},
+		["Bio"] = "He can easily tear a place down, then rebuild it.",
+	},	
 	--]]
 }
 
