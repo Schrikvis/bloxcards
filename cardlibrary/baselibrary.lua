@@ -4770,7 +4770,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["JoeDev"] = {
-		["Id"] = 292778170,
+		["Id"] = 633172524,
 		["Name"] = "JoeDev",
 		["Health"] = 2000,
 		["Power"] = 200,
@@ -10763,7 +10763,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Drone"] = {
-		["Id"] = 627791441,
+		["Id"] = 633180753,
 		["Name"] = "Drone",
 		["Health"] = 100,
 		["Power"] = 200,
