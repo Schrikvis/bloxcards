@@ -12,7 +12,7 @@ local dairy = {
 			Name = "moo",
 			Description = "Give all fighters 200 health. Both players summon a cow, and shuffle a cow into their deck.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Heal",200},{"Summon","Cow","Ally"},{"Summon","Cow","Opponent"},{"DeckAdd","Cow","Ally"},{"DeckAdd","Cow","Opponent"},
+			["Power"] = {{"Heal",200},{"Summon","Cow","Ally"},{"Summon","Cow","Opponent"},{"DeckAdd","Cow","Ally"},{"DeckAdd","Cow","Opponent"}},
 			Target = "All",
 		},
 		["Bio"] = "Nobody knows where he gets all that brown dairy from...",
