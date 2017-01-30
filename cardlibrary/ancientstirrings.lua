@@ -935,8 +935,8 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Halloween",
 			Description = "Whenever you gain life, lower the power of all enemy fighters by 75.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Weaken",75}},
+			["Type"] = "OnHealthGain",
+			["Power"] = {{"Weaken",50}},
 			Target = "Opponent",
 		},
 		["Bio"] = "Value be damned.",
