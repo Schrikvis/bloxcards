@@ -1175,7 +1175,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["PixelPistol"] = {
-		["Id"] = 626186392,
+		["Id"] = 626186389,
 		["Name"] = "PixelPistol",
 		["Health"] = 425,
 		["Power"] = 500,
@@ -2772,7 +2772,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Eye Spy"] = {
-		["Id"] = 626090227,
+		["Id"] = 626090225,
 		["Name"] = "Eye Spy",
 		["AltCards"] = {
 			["Entangling Lights"] = {
@@ -4225,7 +4225,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Zombie"] = {
-		["Id"] = 626230878,
+		["Id"] = 626230874,
 		["Name"] = "Zombie",
 		["Health"] = 150,
 		["Power"] = 100,
@@ -4770,7 +4770,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["JoeDev"] = {
-		["Id"] = 633172524,
+		["Id"] = 633172522,
 		["Name"] = "JoeDev",
 		["Health"] = 2000,
 		["Power"] = 200,
@@ -5058,7 +5058,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Crossroads"] = {
-		["Id"] = 627367795,
+		["Id"] = 627367792,
 		["Name"] = "Crossroads",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -7588,7 +7588,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Heavy Rain"] = {
-		["Id"] = 633130650,
+		["Id"] = 633130647,
 		["Name"] = "Heavy Rain",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -9311,7 +9311,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Beehive"] = {
-		["Id"] = 626149396,
+		["Id"] = 626149394,
 		["Name"] = "Beehive",
 		["Health"] = 700,
 		["Power"] = 0,
@@ -9372,7 +9372,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Queen Bee"] = {
-		["Id"] = 626211563,
+		["Id"] = 626211561,
 		["Name"] = "Queen Bee",
 		["Health"] = 700,
 		["Power"] = 0,
@@ -9736,7 +9736,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Chickenduckbird"] = {
-		["Id"] = 626187159,
+		["Id"] = 626187155,
 		["Name"] = "ChickenDuckBird",
 		["Health"] = 800,
 		["Power"] = 200,
@@ -10763,7 +10763,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Drone"] = {
-		["Id"] = 633180753,
+		["Id"] = 633180751,
 		["Name"] = "Drone",
 		["Health"] = 100,
 		["Power"] = 200,
@@ -11082,7 +11082,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["CALL OF DOGE!?!"] = {
-		["Id"] = 626187532,
+		["Id"] = 626187529,
 		["Name"] = "Doge Doge",
 		["Health"] = 400,
 		["Power"] = 600,
@@ -12534,7 +12534,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Gravity Collapse",
 		["AltCards"] = {
 			["Gravity CollapseV2"] = {
-				["Id"] = 626082332,
+				["Id"] = 626082330,
 				["AltArt"] = true,
 				["Bio"] = "Stops even hope from escaping.",
 			}
@@ -12557,7 +12557,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 
 	["Imaginz00"] = {
-		["Id"] = 630782296,
+		["Id"] = 630782293,
 		["Name"] = "Imaginz00",
 		["Health"] = 1000,
 		["Power"] = 200,
@@ -14353,7 +14353,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Aceguy100"] = {
-		["Id"] = 626185821,
+		["Id"] = 626185818,
 		["Name"] = "Aceguy100",
 		["Health"] = 700,
 		["Power"] = 300,
@@ -15555,7 +15555,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["YotamTiti"] = {
-		["Id"] = 496076435,
+		["Id"] = 626149540,
 		["Name"] = "YotamTiti",
 		["Health"] = 400,
 		["Power"] = 600,
@@ -16384,7 +16384,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},		
 	
 	["Epic Sauce"] = {
-		["Id"] = 626081946,
+		["Id"] = 626081944,
 		["Name"] = "Epic Sauce",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -16499,7 +16499,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},		
 	
 	["Burning Tree"] = {
-		["Id"] = 626081767,
+		["Id"] = 626081765,
 		["Name"] = "Burning Tree",
 		["Health"] = 500,
 		["Power"] = 0,
@@ -17087,7 +17087,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["brickmason"] = {
-		["Id"] = 626082084,
+		["Id"] = 626082083,
 		["Name"] = "brickmason",
 		["Health"] = 500,
 		["Power"] = 300,
@@ -17106,7 +17106,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},		
 	
 	["brickmasonToken"] = {
-		["Id"] = 557971934,
+		["Id"] = 626082083,
 		["Name"] = "brickmason",
 		["Health"] = 500,
 		["Power"] = 300,
@@ -17145,7 +17145,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},		
 	
 	["CorgiParade"] = {
-		["Id"] = 626186835,
+		["Id"] = 626186832,
 		["Name"] = "CorgiParade",
 		["Health"] = 600,
 		["Power"] = 300,
