@@ -790,7 +790,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Gentle Elder"] = {
-		["Id"] = 626699228,
+		["Id"] = 626699227,
 		["Name"] = "Gentle Elder",
 		["Health"] = 500,
 		["Power"] = 300,
@@ -1637,7 +1637,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["It that was Silenced"] = {
-		["Id"] = 638008424,
+		["Id"] = 638008420,
 		["Name"] = "It that was Silenced",
 		["Health"] = 250,
 		["Power"] = 250,
@@ -1658,7 +1658,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["It that is Whispering"] = {
-		["Id"] = 638008255,
+		["Id"] = 638703994,
 		["Name"] = "It that is Whispering",
 		["Health"] = 500,
 		["Power"] = 500,
@@ -1678,7 +1678,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["It that will Howl"] = {
-		["Id"] = 638008080,
+		["Id"] = 638703765,
 		["Name"] = "It that will Howl",
 		["Health"] = 1000,
 		["Power"] = 1000,
@@ -2148,7 +2148,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Victor Sinister"] = {
-		["Id"] = 632588308,
+		["Id"] = 638008612,
 		["Name"] = "Victor Sinister",
 		["Health"] = 400,
 		["Power"] = 400,
