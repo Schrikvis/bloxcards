@@ -16434,7 +16434,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Monocle Polish",
 			Description = "When targeted, give this card 200 health and return it to your hand.",
-			["Type"] = "OnSummon",
+			["Type"] = "OnTarget",
 			["Power"] = {{"Heal",200},{"Return",030}},
 			Target = "Self",
 		},
