@@ -171,6 +171,7 @@ local packs = {
 		CardPackId = 465492503,
 		Description = "Red is the colour of power, ambition, and control. Dominion packs contain cards that cost red!",
 		Cards = {
+			"Eye of Heaven",
 			"UHunterU",
 			"Roblox Gift Card",
 			"MagikalYawn",
@@ -927,6 +928,7 @@ local packs = {
 		CardPackId = 434684079,
 		Description = "Exotic new cards from the black market! White cards and joke cards! It's all yours, as long as you have 10 wins!",
 		Cards = {
+			"Eye of Heaven",
 			"Steam Razikai",
 			"UHunterU",
 			"BonesMcCormick",

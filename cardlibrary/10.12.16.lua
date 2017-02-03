@@ -840,7 +840,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4, ["Blue"] = 6,},
 		["Effect"] = {
 			Name = "Rebuilding The Place",
-			Description = "When PlaceRebuilder attacks, return the attacked fighter to it owners hand, then lock PlaceReBuilder for 2 turns.",
+			Description = "When PlaceRebuilder attacks, return the attacked fighter to its owner's hand, then lock PlaceReBuilder for 2 turns.",
 			["Type"] = "OnAttack",
 			["Power"] = {{"Return",030},{"Lock",2,"Self"}},
 			Target = "Aggressor",
@@ -848,6 +848,24 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "He can easily tear a place down, then rebuild it.",
 	},	
 	
+	["Eye of Heaven"] = {
+		["Id"] = 638044941,
+		["Name"] = "Eye of Heaven",
+		["Health"] = 0,
+		["Power"] = 0,
+		["Rarity"] = "Legendary",
+		["AttackEffect"] = "GunShot",
+		["Color"] = "Red", 
+		["Cost"] = {["Red"] = 50,},
+		["Effect"] = {
+			Name = "Rebuilding The Place",
+			Description = "You win the game.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Damage",999999,"Opponent"}},
+			Target = "Aggressor",
+		},
+		["Bio"] = "",
+	},	
 }
 
 return tentwelvesixteen
