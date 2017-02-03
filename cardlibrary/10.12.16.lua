@@ -115,7 +115,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Wild Reporter Tracy"] = {
-		["Id"] = 627301023,
+		["Id"] = 627301021,
 		["Name"] = "Reporter Tracy",
 		["AltCards"] = {
 			["WildReporterTracyV2"] = {
@@ -179,7 +179,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["RaveTea"] = {
-		["Id"] = 626083913,
+		["Id"] = 626083911,
 		["Name"] = "RaveTea",
 		["Health"] = 450,
 		["Power"] = 450,
@@ -198,7 +198,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["RaveTea Token"] = {
-		["Id"] = 626083913,
+		["Id"] = 626083911,
 		["Name"] = "RaveTea",
 		["Health"] = 450,
 		["Power"] = 450,
@@ -659,7 +659,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	}, 
 
 	["Kariu"] = {
-		["Id"] = 620408177,
+		["Id"] = 627331996,
 		["Name"] = "Kariu",
 		["AltCards"] = {
 			["Kariu-ArtV"] = {
@@ -691,7 +691,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	}, 
 
 	["Kariu2"] = {
-		["Id"] = 620408177,
+		["Id"] = 627331996,
 		["Name"] = "Kariu",
 		["AltCards"] = {
 			["Kariu2-ArtV"] = {
@@ -716,7 +716,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	}, 
 
 	["Beyondthegong"] = {
-		["Id"] = 626451027,
+		["Id"] = 626451013,
 		["Name"] = "Beyondthegong",
 		["Health"] = 100,
 		["Power"] = 500,
@@ -792,7 +792,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	}, 	
 	
 	["UHunterU"] = {
-		["Id"] = 627903698,
+		["Id"] = 638721475,
 		["Name"] = "UHunterU",
 		["Health"] = 400,
 		["Power"] = 200,
@@ -811,7 +811,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Steam Razikai"] = {
-		["Id"] = 630010948,
+		["Id"] = 630010945,
 		["Name"] = "Steam Razikai",
 		["Health"] = 200,
 		["Power"] = 200,
