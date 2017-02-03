@@ -7730,7 +7730,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "EzWinz",
 			Description = "Gain 3 yellow icon, but add 4 nightmares to your hand.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Yellow",3},{"Add","Nightmare"},{"Add","Nightmare",{"Add","Nightmare",{"Add","Nightmare"}},
+			["Power"] = {{"Yellow",3},{"Add","Nightmare"},{"Add","Nightmare"},{"Add","Nightmare"},{"Add","Nightmare"}},
 			Target = "Ally",
 		},
 		["Bio"] = "All dapper artifacts come at a cost....",
