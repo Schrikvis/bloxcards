@@ -8792,7 +8792,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Render",
 			Description = "Deal 200 damage to a target fighter, then lock it for 1 turn. When an enemy fighter dies, return this fighter to your hand and gain a red icon.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Lock",1},{"Damage",200},{"Summon","LeetWizard Token","Ally"},{"Damage",9999,"Self"}},
+			["Power"] = {{"Summon","LeetWizard Token","Ally"},{"Lock",1},{"Damage",200},{"Damage",9999,"Self"}},
 			Target = "Single",
 
 		},
