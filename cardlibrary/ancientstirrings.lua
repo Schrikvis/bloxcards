@@ -1637,7 +1637,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["It that was Silenced"] = {
-		["Id"] = 543041104,
+		["Id"] = 638008424,
 		["Name"] = "It that was Silenced",
 		["Health"] = 250,
 		["Power"] = 250,
@@ -1658,7 +1658,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["It that is Whispering"] = {
-		["Id"] = 543041104,
+		["Id"] = 638008255,
 		["Name"] = "It that is Whispering",
 		["Health"] = 500,
 		["Power"] = 500,
@@ -1678,7 +1678,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["It that will Howl"] = {
-		["Id"] = 543041104,
+		["Id"] = 638008080,
 		["Name"] = "It that will Howl",
 		["Health"] = 1000,
 		["Power"] = 1000,
