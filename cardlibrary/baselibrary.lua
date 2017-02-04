@@ -9050,7 +9050,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Infinite Wishes"] = {
-		["Id"] = 447449135,
+		["Id"] = 447449134,
 		["Name"] = "Infinite Wishes",
 		["Health"] = 1,
 		["Power"] = 1,
