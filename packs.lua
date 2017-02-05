@@ -2,7 +2,8 @@
 local packs = {
 	{
 		Name = "Exine", --STAPLES!
-		Cost = 25,
+		PriceInBloxBux = 25,
+		PriceInRobux = 0;
 		CardsInPack = 4,
 		CardPackId = 596205187,
 		Description = "Curated by the best players of the game, Exine contains only good cards.",
@@ -166,7 +167,8 @@ local packs = {
 	}; 
 	{
 		Name = "Dominion", --RED!
-		Cost = 30,
+		PriceInBloxBux = 30,
+		PriceInRobux = 0;
 		CardsInPack = 4,
 		CardPackId = 465492503,
 		Description = "Red is the colour of power, ambition, and control. Dominion packs contain cards that cost red!",
@@ -371,7 +373,8 @@ local packs = {
 	}; 
 	{
 		Name = "Vitality", --GREEN!
-		Cost = 30,
+		PriceInBloxBux = 30,
+		PriceInRobux = 0;
 		CardsInPack = 4,
 		CardPackId = 465492570,
 		Description = "Green is the colour of life, growth, and the primal forces. Vitality packs contain cards that cost green!",
@@ -533,7 +536,8 @@ local packs = {
 	}; 
 	{
 		Name = "Thought", --BLUE!
-		Cost = 30,
+		PriceInBloxBux = 30,
+		PriceInRobux = 0;
 		CardsInPack = 4,
 		CardPackId = 465492637,
 		Description = "Blue is the colour of logic, order, and structure. Thought packs contain cards that cost blue!",
@@ -727,7 +731,8 @@ local packs = {
 	}; 
 	{
 		Name = "Revel", --YELLOW!
-		Cost = 30,
+		PriceInBloxBux = 30,
+		PriceInRobux = 0;
 		CardsInPack = 4,
 		CardPackId = 465492745,
 		Description = 
@@ -922,10 +927,12 @@ local packs = {
 	}; 
 	{
 		Name = "Obvious", --NEW / WHITE! All cards before Wingman8 rotate out once a new card comes in. Related cards rotate out at the same time.
-		Cost = 50,
+		PriceInBloxBux = 50,
+		PriceInRobux = 0;
 		CardsInPack = 4,
 		CardPackId = 434684079,
 		Description = "Exotic new cards from the black market! White cards and joke cards! It's all yours, as long as you have 10 wins!",
+		WinRequirement = 10;
 		Cards = {
 			"Steam Razikai",
 			"UHunterU",
@@ -1091,10 +1098,12 @@ local packs = {
 	};
 	{
 		Name = "Ancient Stirrings", --SPOOPY SCARY SKELETONS
-		Cost = 60,
+		PriceInBloxBux = 60,
+		PriceInRobux = 0;
 		CardsInPack = 4,
 		CardPackId = 540076976,
 		Description = "Priestess Zanzel has corrupted this world. Do you have the gall to stop her? You must have 10 wins to open this pack.",
+		WinRequirement = 10;
 		Cards = {
 		"Bedsheet Ghost",
 		"DoeDoe",
@@ -1204,10 +1213,12 @@ local packs = {
 	
 	{
 		Name = "Tribal", --ARCHETYPES!
-		Cost = 50,
+		PriceInBloxBux = 50,
+		PriceInRobux = 0;
 		CardsInPack = 4,
 		CardPackId = 622832971,
 		Description = "Filled with only cards belonging to an archetype, this pack can help you finish your deck provided you have at least 10 wins.",
+		WinRequirement = 10;
 		Cards = {
 			"Abhorrant Skull",
 			"Possessed Skull",
@@ -1454,10 +1465,12 @@ local packs = {
 	{
 		Name = "Teaism's Gifts", --CHRISTMAS!
 		Hidden = true;
-		Cost = 1500,
+		PriceInBloxBux = 0;
+		PriceInRobux = 50;
 		CardsInPack = 4,
 		CardPackId = 585626122,
 		Description = "Teaism's special gift, just for you. Merry Christmas. (You need 10 wins to open this pack.)",
+		WinRequirement = 10;
 		Cards = {
 			"Baker",
 			"Hot Chocolate",
