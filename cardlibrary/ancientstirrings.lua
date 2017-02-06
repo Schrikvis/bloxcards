@@ -2002,7 +2002,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Haydoscale",
 			Description = "When this card is summoned, put a random red or blue action into your hand. At the end of your turns, all fighters lose 25 power and Script Robber gains 150 power.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Weaken",25},{"Strengthen",175,"Self"}},
+			["Power"] = {{"Strengthen",175,"Self"},{"Weaken",25}},
 			Target = "All",
 		},
 		["Bio"] = "It's not stealing, It's marketing. Meanwhile, I'm not a sore loser. I'm just expressive.",
