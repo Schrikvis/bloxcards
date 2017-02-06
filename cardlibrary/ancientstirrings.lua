@@ -934,7 +934,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 4,},
 		["Effect"] = {
 			Name = "Halloween",
-			Description = "Whenever you gain life, lower the power of all enemy fighters by 75.",
+			Description = "Whenever you gain life, lower the power of all enemy fighters by 50.",
 			["Type"] = "OnHealthGain",
 			["Power"] = {{"Weaken",50}},
 			Target = "Opponent",
@@ -2643,7 +2643,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 2, ["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Whenever your opponent casts an action or terrain spell, untransform this card, then draw a card and lose 200 life.",
+			Description = "Whenever your opponent casts an action or terrain spell, untransform this card, then deal 150 damage to the opponent.",
 			["Type"] = "OnEnemyCast",
 			["Power"] = {{"Summon","Blessed Acolyte"},{"Inflict",150,"Opponent"},{"Damage",9999,"Self"}},
 			Target = "Ally",
