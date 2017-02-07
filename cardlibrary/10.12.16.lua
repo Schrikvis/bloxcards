@@ -848,6 +848,26 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "He can easily tear a place down, then rebuild it.",
 	},	
 	
+	["DominiusConfabricor"] = {
+		["Id"] = 645386479,
+		["Name"] = "DominiusConfabricor",
+		["Health"] = 900,
+		["Power"] = -50,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Gust",
+		["Color"] = "Yellow",
+		["AttackBlock"] = true,
+		["Archetype"] = "Defender",
+		["Cost"] = {["Neutral"] = 3, ["Yellow"] = 1,},
+		["Effect"] = {
+			Name = "Pacifist",
+			Description = "Can't attack. When this fighter dies, all ally fighters gain 200 Health and your opponent adds a copy of this card to his hand.",
+			["Type"] = "OnDeath",
+			["Power"] = {{"Heal",200},{"Add","DominiusConfabricor","Opponent"}},
+			Target = "Ally",
+		},
+		["Bio"] = "Love your neighbor as you love yourself, there is no greater commandment...than these.",
+	},
 }
 
 return tentwelvesixteen
