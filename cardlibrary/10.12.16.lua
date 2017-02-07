@@ -868,6 +868,25 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "Love your neighbor as you love yourself, there is no greater commandment...than these.",
 	},
+	
+	["SoulSearch"] = {
+		["Id"] = 645386479,
+		["Name"] = "SoulSearch",
+		["Health"] = 400,
+		["Power"] = 250,
+		["Rarity"] = "Epic",
+		["AttackEffect"] = "Gust",
+		["Color"] = "Blue",
+		["Cost"] = {["Neutral"] = 1, ["Red"] = 5,},
+		["Effect"] = {
+			Name = "Hellfire",
+			Description = "Whenever an ally fighter dies, this card gains 250 Attack and Health.",
+			["Type"] = "OnAllyDeath",
+			["Power"] = {{"Heal",250},{"Strengthen",250}},
+			Target = "Self",
+		},
+		["Bio"] = "Always searching for the perfect soul.",
+	},	
 }
 
 return tentwelvesixteen
