@@ -611,7 +611,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3, ["Red"] = 3,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "After this card finishes attacking a fighter, a target fighter gains 200 health.",
+			Description = "After this card finishes attacking a fighter, a target fighter gains 200 power.",
 			["Type"] = "OnAttackEnd",
 			["Power"] = {{"Strengthen",200}},
 			Target = "Single",
