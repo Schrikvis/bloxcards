@@ -115,7 +115,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Wild Reporter Tracy"] = {
-		["Id"] = 627301023,
+		["Id"] = 627301021,
 		["Name"] = "Reporter Tracy",
 		["AltCards"] = {
 			["WildReporterTracyV2"] = {
@@ -179,7 +179,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["RaveTea"] = {
-		["Id"] = 626083913,
+		["Id"] = 626083911,
 		["Name"] = "RaveTea",
 		["Health"] = 450,
 		["Power"] = 450,
@@ -198,7 +198,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["RaveTea Token"] = {
-		["Id"] = 626083913,
+		["Id"] = 626083911,
 		["Name"] = "RaveTea",
 		["Health"] = 450,
 		["Power"] = 450,
@@ -659,7 +659,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	}, 
 
 	["Kariu"] = {
-		["Id"] = 620408177,
+		["Id"] = 627331996,
 		["Name"] = "Kariu",
 		["AltCards"] = {
 			["Kariu-ArtV"] = {
@@ -691,7 +691,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	}, 
 
 	["Kariu2"] = {
-		["Id"] = 620408177,
+		["Id"] = 627331996,
 		["Name"] = "Kariu",
 		["AltCards"] = {
 			["Kariu2-ArtV"] = {
@@ -716,7 +716,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	}, 
 
 	["Beyondthegong"] = {
-		["Id"] = 626451027,
+		["Id"] = 626451013,
 		["Name"] = "Beyondthegong",
 		["Health"] = 100,
 		["Power"] = 500,
@@ -792,7 +792,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	}, 	
 	
 	["UHunterU"] = {
-		["Id"] = 627903698,
+		["Id"] = 638721475,
 		["Name"] = "UHunterU",
 		["Health"] = 400,
 		["Power"] = 200,
@@ -811,7 +811,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Steam Razikai"] = {
-		["Id"] = 630010948,
+		["Id"] = 630010945,
 		["Name"] = "Steam Razikai",
 		["Health"] = 200,
 		["Power"] = 200,
@@ -840,7 +840,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4, ["Blue"] = 6,},
 		["Effect"] = {
 			Name = "Rebuilding The Place",
-			Description = "When PlaceRebuilder attacks, return the attacked fighter to its owner's hand, then lock PlaceReBuilder for 2 turns.",
+			Description = "When PlaceRebuilder attacks, return the attacked fighter to it owners hand, then lock PlaceReBuilder for 2 turns.",
 			["Type"] = "OnAttack",
 			["Power"] = {{"Return",030},{"Lock",2,"Self"}},
 			Target = "Aggressor",
@@ -848,24 +848,64 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "He can easily tear a place down, then rebuild it.",
 	},	
 	
-	["Eye of Heaven"] = {
-		["Id"] = 638044941,
-		["Name"] = "Eye of Heaven",
-		["Health"] = 0,
-		["Power"] = 0,
+	["DominiusConfabricor"] = {
+		["Id"] = 645386479,
+		["Name"] = "DominiusConfabricor",
+		["Health"] = 900,
+		["Power"] = -50,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Gust",
+		["Color"] = "Yellow",
+		["AttackBlock"] = true,
+		["Archetype"] = "Defender",
+		["Cost"] = {["Neutral"] = 3, ["Yellow"] = 1,},
+		["Effect"] = {
+			Name = "Pacifist",
+			Description = "Can't attack. When this fighter dies, all ally fighters gain 200 Health and your opponent adds a copy of this card to his hand.",
+			["Type"] = "OnDeath",
+			["Power"] = {{"Heal",200},{"Add","DominiusConfabricor","Opponent"}},
+			Target = "Ally",
+		},
+		["Bio"] = "Love your neighbor as you love yourself, there is no greater commandment...than these.",
+	},
+	
+	["SoulSearch"] = {
+		["Id"] = 645386479,
+		["Name"] = "SoulSearch",
+		["Health"] = 400,
+		["Power"] = 250,
+		["Rarity"] = "Epic",
+		["AttackEffect"] = "Gust",
+		["Color"] = "Red",
+		["Cost"] = {["Neutral"] = 1, ["Red"] = 5,},
+		["Effect"] = {
+			Name = "Hellfire",
+			Description = "Whenever an ally fighter dies, this card gains 250 Attack and Health.",
+			["Type"] = "OnAllyDeath",
+			["Power"] = {{"Heal",250},{"Strengthen",250}},
+			Target = "Self",
+		},
+		["Bio"] = "Always searching for the perfect soul.",
+	},
+	
+	["hyp3rdeath"] = {
+		["Id"] = 645386479,
+		["Name"] = "hyp3rdeath",
+		["Health"] = 1750,
+		["Power"] = 500,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "GunShot",
-		["Color"] = "Red", 
-		["Cost"] = {["Red"] = 50,},
+		["Color"] = "Blue",
+		["Cost"] = {["Neutral"] = 6, ["Blue"] = 5,["Red"] = 1,},
 		["Effect"] = {
-			Name = "Rebuilding The Place",
-			Description = "You win the game.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",999999,"Opponent"}},
-			Target = "Aggressor",
+			Name = "Hellfire",
+			Description = "When this fighter is targeted, destroy it and spawn three Jackinators.",
+			["Type"] = "OnTarget",
+			["Power"] = {{"Summon","JackinatorMG"},{"Summon","JackinatorMG"},{"Summon","JackinatorMG"},{"Damage",9999,"Self"}},
+			Target = "Ally",
 		},
-		["Bio"] = "",
-	},	
+		["Bio"] = "I'm sorry, what were we doing? I was procrastinating so much that I kicked your butt on accident.",
+	},
 }
 
 return tentwelvesixteen

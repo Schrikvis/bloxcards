@@ -253,23 +253,37 @@ local codes = {
 
 local offers = {
 	Example = { -- where Example is ideally something descriptive
-		Name = ""; -- juicy
-		Tagline = ""; -- displayed, "A tagline should be about this length." 
-		Image = "rbxassetid://"; -- displayed, aspect ratio is 4:1
-		Price = {
-			Currency = "BloxBux"; --"Robux"; 
-			Amount = 0; -- robux amounts: 10, 50, 100, 150, 250
+		Title = "";    -- "A title should be about this length."
+		SubTitle = ""; -- "A subtitle can be a little longer: about this long is fine."
+		Image = "rbxassetid://"; -- aspect ratio is 4:1, can cleverly replace Title and SubTitle
+		DateConstraint = {
+			--Month = {"February"};
+			--Weekday = {"Wednesday"};
+			--Year = {2017, 2018};
+			--DayNight = {"Night", "Day"};
+			--BestBefore = tick();
 		};
+		PriceInRobux = 0; -- robux amounts: 10, 50, 100, 150, 250, 500, 750, 1000, 2500
+		PriceInBloxBux = 0;
 		Cards = {}; -- {["Medic Kit"] = 1};
-		RandomCards = {}; -- {{"Medic Kit" = 1, ["Froot Ninja"] = 1}, 2}; ie, 50/50 chance for either card, 2 cards are given
+		RandomCards = {
+			--Pool = {"Medic Kit" = 1, ["Froot Ninja"] = 1};
+			--Amount = 2;
+		}; -- In this example: 50/50 chance for either card, 2 cards are given
 		Packs = {}; -- {"Exine" = 5};
 		BloxBux = 0;
 		Charms = {0,0}; -- rabbit, clover
 		Sleeves = {}; -- {"Basic"}
 		Ranks = {}; -- {"DanTDM Superfan"}
-		BestBefore = 0; -- tick() + (3600*hours) + (86400*days) + (604800*weeks)
+		Missions = {
+			--{
+				--Title = "";
+				--Instruction = "";
+				--Event = "";
+				--Requirement = 0;
+			--};
+		};
 	};
-	
 }
 
 return {Codes = codes; Offers = offers;}
