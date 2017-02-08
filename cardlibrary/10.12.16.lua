@@ -886,7 +886,26 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Self",
 		},
 		["Bio"] = "Always searching for the perfect soul.",
-	},	
+	},
+	
+	["hyp3rdeath"] = {
+		["Id"] = 645386479,
+		["Name"] = "hyp3rdeath",
+		["Health"] = 1750,
+		["Power"] = 500,
+		["Rarity"] = "Legendary",
+		["AttackEffect"] = "GunShot",
+		["Color"] = "Blue",
+		["Cost"] = {["Neutral"] = 6, ["Blue"] = 5,["Red"] = 1,},
+		["Effect"] = {
+			Name = "Hellfire",
+			Description = "When this fighter is targeted, destroy it and spawn three Jackinators.",
+			["Type"] = "OnTarget",
+			["Power"] = {{"Summon","JackinatorMG"},{"Summon","JackinatorMG"},{"Summon","JackinatorMG"},{"Damage",9999,"Self"}},
+			Target = "Ally",
+		},
+		["Bio"] = "I'm sorry, what were we doing? I was procrastinating so much that I kicked your butt on accident.",
+	},
 }
 
 return tentwelvesixteen
