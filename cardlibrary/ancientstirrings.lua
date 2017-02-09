@@ -2710,7 +2710,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Draw",1},{"Damage",200,"Single"}},
 			Target = "Ally",
 		},
-		["Bio"] = "That noob never stood a chance."
+		["Bio"] = "Happy Blitzwolfer Appreciation Day, October 2013."
 	},
 	
 	["Claudia Sinister"] = {
