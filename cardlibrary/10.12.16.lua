@@ -788,7 +788,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Heal","300"},{"Strengthen","300"},{"EndTurn",1}},
 			Target = "Self",
 		},
-		["Bio"] = "His gum is as string as his bones!",
+		["Bio"] = "His gum is as strong as his bones!",
 	}, 	
 	
 	["UHunterU"] = {
