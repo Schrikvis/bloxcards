@@ -934,7 +934,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 4,},
 		["Effect"] = {
 			Name = "Halloween",
-			Description = "Whenever you gain life, lower the power of all enemy fighters by 75.",
+			Description = "Whenever you gain life, lower the power of all enemy fighters by 50.",
 			["Type"] = "OnHealthGain",
 			["Power"] = {{"Weaken",50}},
 			Target = "Opponent",
@@ -2002,7 +2002,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Haydoscale",
 			Description = "When this card is summoned, put a random red or blue action into your hand. At the end of your turns, all fighters lose 25 power and Script Robber gains 150 power.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Weaken",25},{"Strengthen",175,"Self"}},
+			["Power"] = {{"Strengthen",175,"Self"},{"Weaken",25}},
 			Target = "All",
 		},
 		["Bio"] = "It's not stealing, It's marketing. Meanwhile, I'm not a sore loser. I'm just expressive.",
@@ -2643,7 +2643,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 2, ["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Whenever your opponent casts an action or terrain spell, untransform this card, then draw a card and lose 200 life.",
+			Description = "Whenever your opponent casts an action or terrain spell, untransform this card, then deal 150 damage to the opponent.",
 			["Type"] = "OnEnemyCast",
 			["Power"] = {{"Summon","Blessed Acolyte"},{"Inflict",150,"Opponent"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -2710,7 +2710,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Draw",1},{"Damage",200,"Single"}},
 			Target = "Ally",
 		},
-		["Bio"] = "That noob never stood a chance."
+		["Bio"] = "Happy Blitzwolfer Appreciation Day, October 2013."
 	},
 	
 	["Claudia Sinister"] = {

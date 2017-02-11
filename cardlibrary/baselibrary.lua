@@ -871,6 +871,11 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Name"] = "Baker",
 				["Bio"] = "And for desert, why not try caramelized robloxian? Now with extra icing!",
 			}
+			["Chef-Val"] = {
+				["Id"] = 585627288,
+				["Name"] = "Romantic Chef",
+				["Bio"] = "Dont like caramel? How about a romantic desert, melted, buttered robloxian parts mixed with peanut butter and white chocolate on a cookie!",
+			}
 		},
 		["Health"] = 200,
 		["Power"] = 200,
@@ -1130,7 +1135,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Green",
 		["Stealth"] = true,
 		["Cost"] = {["Neutral"] = 2,["Green"] = 4,},
-		["Bio"] = "Some cards just happen to be defective, unfortunately. Sorry!",
+		["Bio"] = "Some cards just happen to be defective, unfortunately. !",
 	},
 	
 	["Noob"] = {
@@ -1177,6 +1182,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["PixelPistol"] = {
 		["Id"] = 626186389,
 		["Name"] = "PixelPistol",
+		["AltCards"] = {
+			["PixelPistol-Val"] = {
+				["Name"] = "PixelLove",
+				["Id"] = 480385242,
+				["Bio"] = "On second though, I'm alright with my past choices.",
+			}		
 		["Health"] = 425,
 		["Power"] = 500,
 		["Rarity"] = "Uncommon",
@@ -1256,6 +1267,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["TeeVee"] = {
 		["Id"] = 271752695,
 		["Name"] = "TeeVee",
+		["AltCards"] = {
+			["TeeVee-Val"] = {
+				["Name"] = "Ms. Teevee",
+				["Id"] = 480385242,
+				["Bio"] = "The only channels you will find on this teevee are love shows.",
+			}
 		["Health"] = 650,
 		["Power"] = 650,
 		["Rarity"] = "Common",
@@ -1406,6 +1423,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Newbie"] = {
 		["Id"] = 274145390,
 		["Name"] = "Newbie",
+		["AltCards"] = {
+			["Newbie-Val"] = {
+				["Name"] = "Female Newbie",
+				["Id"] = 480385242,
+				["Bio"] = "But alas, the common noob has been predated on ever since they realized there were no females for them to mate with.",
+			}	
 		["Health"] = 275,
 		["Power"] = 300,
 		["Rarity"] = "Common",
@@ -1835,6 +1858,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["RiceStorage"] = {
 		["Id"] = 275340576,
 		["Name"] = "RiceStorage",
+		["AltCards"] = {							
+			["RiceStorage-Val"] = {
+				["Id"] = 584441916,
+				["Name"] = "ChocolateStorage",						
+				["Bio"] = "His love of chocolate sometimes goes out of hand by filling his entire room with just chocolate, he'll store chocolate anywhere so he has plenty of rice to eat.",
+			}
+		},					
 		["Health"] = 450,
 		["Power"] = 300,
 		["Rarity"] = "Common",
@@ -1864,8 +1894,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Vampire",
 			Description = "Generate a green icon.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Green",1,"Ally"}},
-			Target = "Opponent",
+			["Power"] = {{"Green",1}},
+			Target = "Ally",
 		},
 		["Bio"] = "Ordinary salesman trying to sell his wares.",
 	},
@@ -1996,6 +2026,11 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["DDude"] = {
 		["Id"] = 280562544,
 		["Name"] = "DDude",
+		["AltCards"] = {
+			["DDude-Val"] = {
+				["Id"] = 480385242,
+				["Bio"] = "He loves life in the 8-bit world with his love gun! Pew!.",
+			}
 		["Health"] = 300,
 		["Power"] = 500,
 		["Rarity"] = "Common",
@@ -2453,6 +2488,18 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				},
 				["Bio"] = "BUT WHAT DOES IT DO?",
 			}
+			["Bowl of Greed-Val] = {
+				["Id"] = 584441916,
+				["Name"] = "Bowl of Candy Grams",
+				["Effect"] = {
+					Name = "MOO!",
+					Description = "Draw 2 Cards. Your opponent summons the Lord of Candy.",
+					["Type"] = "OnSummon",
+					["Power"] = {{"Draw",2,"Ally"},{"Summon","Lord of Candy"},{"Unlock",999,"Archetype"}},
+					Target = "Opponent",
+				},
+				["Bio"] = "Yummy?",
+			}
 		},
 		["Health"] = 0,
 		["Power"] = 0,
@@ -2479,6 +2526,11 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Name"] = "Pittacium Acolythus",
 				["Id"] = 613203066,
 				["Bio"] = "Why are you stealing something that *I* rightfully stole first?",			
+			}
+			["Lord of Greed-Val"] = {
+				["Id"] = 584441916,
+				["Name"] = "Lord of Candy",
+				["Bio"] = "Lord of Candy is to grams as chocolate is to wrappers.",
 			}
 		},
 		["Health"] = 550,
@@ -2592,6 +2644,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["DeadZoneHark"] = {
 		["Id"] = 283993063,
 		["Name"] = "DeadZoneHark",
+		["AltCards"] = {
+			["DeadZoneHark-Val"] = {
+				["Name"] = "LoveZoneHark",
+				["Id"] = 480385242,
+				["Bio"] = "LoveZone seems loving enough...until his bouquet touches you.",
+			}
 		["Health"] = 300,
 		["Power"] = 550,
 		["Rarity"] = "Common",
@@ -2852,6 +2910,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["IlIll"] = {
 		["Id"] = 283994366,
 		["Name"] = "IlIll",
+		["AltCards"] = {
+			["IlIll-Val"] = {
+				["Id"] = 481866741,
+				["Name"] = "IlIll",
+				["Bio"] = "Now haunting a teddy bear on a shelf, he is sure to make your valentines day a living hell.",
+			}
+		},
 		["Health"] = 300,
 		["Power"] = 300,
 		["Rarity"] = "Rare",
@@ -3121,6 +3186,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Sorry"] = {
 		["Id"] = 283996086,
 		["Name"] = "Sorry",
+		["AltCards"] = {
+			["Sorry-Val"] = {
+				["Name"] = "Heart Broken",
+				["Id"] = 480385242,
+				["Bio"] = "Sorry Eddy, I've met a REAL man.",
+			}					
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Common",
@@ -3539,6 +3610,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["MiloCortez"] = {
 		["Id"] = 285153302,
 		["Name"] = "MiloCortez",
+		["AltCards"] = {
+			["MiloCortez-Val"] = {
+				["Name"] = "MiloCortez",
+				["Id"] = 480385242,
+				["Bio"] = "Cupid did nothing wrong.",
+			}
 		["Health"] = 1000,
 		["Power"] = 600,
 		["Rarity"] = "Rare",
@@ -3622,6 +3699,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Pilot"] = {
 		["Id"] = 285153970,
 		["Name"] = "Pilot",
+		["AltCards"] = {							
+			["Pilot-Val"] = {
+				["Id"] = 584441916,
+				["Name"] = "Pilot Snoopy",						
+				["Bio"] = "Ew, I got kissed by a dog! I'm gonna go eat some peanuts to wash out the taste.",
+			}
+		},							
 		["Health"] = 200,
 		["Power"] = 200,
 		["Rarity"] = "Common",
@@ -3839,6 +3923,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Sylrath"] = {
 		["Id"] = 285155047,
 		["Name"] = "Sylrath",
+		["AltCards"] = {
+			["Sylrath-Val"] = {
+				["Id"] = 481866741,
+				["Name"] = "Sylrath",
+				["Bio"] = "One of the best Blox Card lovers in the game!",
+			}
+		},						
 		["Health"] = 50,
 		["Power"] = 400,
 		["Rarity"] = "Uncommon",
@@ -4111,6 +4202,11 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["AltArt"] = true,
 				["Bio"] = "That'ssss some very nice value you have there; It'd be succch a shame if something happended to it...",
 			}
+			["KingCactaur-Val"] = {
+				["Name"] = "KingCactaur",
+				["Id"] = 480385242,
+				["Bio"] = "I FEEL VIOLATED, STOP IT PLEASE. ~Myrmiredon, Dairingpoophead, Arceusdon, Dun_Goof, and many other victims.",
+			}							
 		},
 		["Health"] = 400,
 		["Power"] = 400,
@@ -4432,7 +4528,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Shedletsky, the Raging Pulse"] = {
 		["Id"] = 616082604,
 		["Name"] = "Shedletsky, the Raging Pulse",
-		["Health"] = 1000,
+		["Health"] = 800,
 		["Power"] = 300,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Punch1",
@@ -4498,7 +4594,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Shedletsky, Locus of Icons"] = {
 		["Id"] = 616082730,
 		["Name"] = "Shedletsky, Locus of Icons",
-		["Health"] = 2000,
+		["Health"] = 1500,
 		["Power"] = 0,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Punch1",
@@ -4564,7 +4660,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Shedletsky, the Resonator"] = {
 		["Id"] = 616082767,
 		["Name"] = "Shedletsky, the Resonator",
-		["Health"] = 1500,
+		["Health"] = 1000,
 		["Power"] = 100,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Punch1",
@@ -4575,9 +4671,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 7,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = [[At the end of your turns, put a fried one limb into your hand, then draw a card. Then reveal your opponent's hand and put two nightmares into it.]],
+			Description = [[At the end of your turns, put a fried one limb into your hand, then draw a card. Then reveal your opponent's hand.]],
 			["Type"] = "OnEnd",
-			["Power"] = {{"RandomAdd","Limb"},{"Draw",1},{"Add","Nightmare","Opponent"},{"Add","Nightmare","Opponent"},{"RevealHand",030,"Opponent"}},
+			["Power"] = {{"RandomAdd","Limb"},{"Draw",1},{"RevealHand",030,"Opponent"}},
 			Target = "Ally",	
 		},
 		["Bio"] = "Blame John.",
@@ -4630,7 +4726,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Shedletsky, Paragon of Unity 1"] = {
 		["Id"] = 291389590,
 		["Name"] = "Shedletsky, Paragon of Unity",
-		["Health"] = 750,
+		["Health"] = 700,
 		["Power"] = 0,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Punch1",
@@ -4652,7 +4748,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Shedletsky 2"] = {
 		["Id"] = 291389590,
 		["Name"] = "Shedletsky, Paragon of Unity",
-		["Health"] = 750,
+		["Health"] = 700,
 		["Power"] = 0,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Punch1",
@@ -4674,7 +4770,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Shedletsky 3"] = {
 		["Id"] = 291389590,
 		["Name"] = "Shedletsky, Paragon of Unity",
-		["Health"] = 750,
+		["Health"] = 700,
 		["Power"] = 0,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Punch1",
@@ -4696,7 +4792,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Shedletsky 4"] = {
 		["Id"] = 291389590,
 		["Name"] = "Shedletsky, Paragon of Unity",
-		["Health"] = 750,
+		["Health"] = 700,
 		["Power"] = 0,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Punch1",
@@ -4866,6 +4962,11 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Korblox Deathknight"] = {
 		["Id"] = 292778242,
 		["Name"] = "Korblox Deathknight",
+		["AltCards"] = {
+			["Korblox Deathknight-Val"] = {
+				["Name"] = "Korblox Deathknight",
+				["Id"] = 480385242,
+			}
 		["Health"] = 1000,
 		["Power"] = 1000,
 		["Rarity"] = "Epic",
@@ -5245,6 +5346,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Hamstermon"] = {
 		["Id"] = 294318899,
 		["Name"] = "Hamstermon",
+		["AltCards"] = {
+			["Hamstermon-Val"] = {
+				["Name"] = "Lovestermon",
+				["Id"] = 480385242,
+				["Bio"] = "It's time to put some love to this battlefield!",
+			}									
 		["Health"] = 750,
 		["Power"] = 350,
 		["Rarity"] = "Rare",
@@ -5470,8 +5577,14 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Combine Garrison"] = {
 		["Id"] = 294871396,
 		["Name"] = "Combine Garrison",
+			["Senpai Garrison"] = {
+				["Id"] = 459231428,
+				["Name"] = "Senpai Garrison",
+				["AltArt"] = True
+				["Bio"] = "These high school students are always ignoring Stalker-Chan.",
+		}
 		["Health"] = 300,
-		["Power"] = 100,
+		["Power"] = 300,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Lightning",
 		["Archetype"] = "Combine",
@@ -5622,6 +5735,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Pirate"] = {
 		["Id"] = 294871572,
 		["Name"] = "Pirate",
+		["AltCards"] = {
+			["Pirate-Val"] = {
+				["Name"] = "Pirate Cupid",
+				["Id"] = 480385242,
+				["Bio"] = "Want some love?",
+			}
 		["Health"] = 500,
 		["Power"] = 100,
 		["Rarity"] = "Common",
@@ -5861,6 +5980,17 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 459231428,
 				["Bio"] = "Even Sonic fears it.",
 			}
+			["The Hugger"] = {
+				["Id"] = 585627288,
+				["Name"] = "The Hugger",
+				["Bio"] = "Even pacifists fear it",
+			}
+			["Stalker-Chan"] = {
+				["Id"] = 585627288,
+				["Name"] = "Stalker-Chan",
+				["AltArt"] = true,
+				["Bio"] = "Even Senpai fears it",
+			}									
 		},
 		["Health"] = 3000,
 		["Power"] = 300,
@@ -6097,6 +6227,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Gato Luz"] = {
 		["Id"] = 297414530,
 		["Name"] = "Gato Luz",
+		["AltCards"] = {							
+			["Gato Luz-Val"] = {
+				["Id"] = 584441916,
+				["Name"] = "Gato Mars",						
+				["Bio"] = "Gato Uptown, Funk Luz.",
+			}
+		},									
 		["Health"] = 200,
 		["Power"] = 200,
 		["Rarity"] = "Common",
@@ -6201,10 +6338,16 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Burning Phoenix"] = {
 		["Id"] = 298792837,
 		["Name"] = "Burning Phoenix",
+		["AltCards"] = {
+			["Burning Phoenix-Val"] = {
+				["Name"] = "Valentine's Phoenix",
+				["Id"] = 480385242,
+				["Bio"] = "Rebirth of pure love!",
+			}
 		["Health"] = 1000,
 		["Power"] = 1000,
 		["Rarity"] = "Epic",
-		["AttackEffect"] = "Thunder",
+		["AttackEffect"] = "Fire",
 		["Color"] = "Yellow",
 		["Cost"] = {["Neutral"] = 4,["Yellow"] = 4,},
 		["Effect"] = {
@@ -7417,6 +7560,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Hallows Treats"] = {
 		["Id"] = 315997612,
 		["Name"] = "Hallow's Treats",
+		["AltCards"] = {							
+			["Hallows Treats-Val"] = {
+				["Id"] = 585627288,
+				["Name"] = "Box of Chocolates",
+				["Bio"] = "Happy Bloxentines day 2017.",
+			}							
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Legendary",
@@ -7884,12 +8033,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Divine FavorV2"] = {
 				["Id"] = 480274691,
-				["AltArt"] = true,
 				["Bio"] = "Vis' anguish does not apply to Teaism alone.",
 			}
 		},
 		["Health"] = 0,
 		["Power"] = 0,
+		["Requirement"] = {"Archetype",100},
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Null",
 		["Color"] = "Neutral",
@@ -7897,7 +8046,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "The Divine Favor? Being allowed to spell favour without a U.",
 		["Effect"] = {
 			Name = "Board Clear Preparation!",
-			Description = "Set the health and attack of all fighters to 300.",
+			Description = "[REMOVED FROM THE GAME FOR TWO WEEKS FOR EXPERIMENTAL PURPOSES] Set the health and attack of all fighters to 300.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"SetHealth",300},{"SetPower",300}},
 			Target = "All",
@@ -9356,7 +9505,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Beekeeper",
 		["Health"] = 300,
 		["Power"] = 0,
-		["Rarity"] = "Uncommon",
+		["Rarity"] = "Token",
 		["AttackEffect"] = "Slash",
 		["Archetype"] = "Bee",
 		["Color"] = "Blue",
@@ -9580,6 +9729,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["BlackSymphony"] = {
 		["Id"] = 344422357,
 		["Name"] = "BlackSymphony",
+		["AltCards"] = {							
+			["BlackSymphony-Val"] = {
+				["Id"] = 584441916,					
+				["Bio"] = "Stop showing your shoulders like that, it's l-l-lewd.",
+			}
+		},	
 		["Health"] = 600,
 		["Power"] = 600,
 		["Rarity"] = "Epic",
@@ -10445,6 +10600,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Dr.Fave"] = {
 		["Id"] = 384005661,
 		["Name"] = "Dr.Fave",
+		["AltCards"] = {							
+			["Dr.Fave-Val"] = {
+				["Id"] = 584441916,
+				["Name"] = "Love Doctor Fave",						
+				["Bio"] = "Time for a lesson from the LOOOOOVE DOCTOR.",
+			}
+		},										
 		["Health"] = 900,
 		["Power"] = 300,
 		["Rarity"] = "Epic",
@@ -12007,6 +12169,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["SuperCloud9"] = {
 		["Id"] = 413917683,
 		["Name"] = "SuperCloud9",
+		["AltCards"] = {							
+			["SuperCloud9-Val"] = {
+				["Id"] = 584441916,
+				["Name"] = "SuperHeart9",						
+				["Bio"] = "Is a lover always innocent?",
+			}
+		},
 		["Health"] = 150,
 		["Power"] = 800,
 		["Rarity"] = "Epic",
@@ -12263,6 +12432,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Vitality Potion"] = {
 		["Id"] = 413939591,
 		["Name"] = "Vitality Potion",
+		["AltCards"] = {							
+			["Vitality Potion-Val"] = {
+				["Id"] = 584441916,
+				["Name"] = "Love Potion",						
+				["Bio"] = "Please, love me!",
+			}
+		},							
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Epic",
@@ -12836,6 +13012,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Forbidden Power"] = {
 		["Id"] = 429397682,
 		["Name"] = "Forbidden Power",
+		["AltCards"] = {							
+			["Forbidden Power-Val"] = {
+				["Id"] = 584441916,
+				["Name"] = "Forbidden Passion",						
+				["Bio"] = "The moon is the only love i need.",
+			}
+		},								
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Rare",
@@ -13291,7 +13474,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	
 	["Mzh3000"] = {
 		["Id"] = 430970415,
-		["Name"] = "Mzh3000",
+		["Name"] = "Lmao you fell for it",
 		["Health"] = 250,
 		["Power"] = 1500,
 		["Rarity"] = "Epic",
@@ -13536,6 +13719,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Kill Script"] = {
 		["Id"] = 430942215,
 		["Name"] = "Kill Script",
+		["AltCards"] = {
+			["Kill Script-Val"] = {
+				["Name"] = "Love Letter",
+				["Id"] = 480385242,
+				["Bio"] = "Dear Masant, come over to my house later so we can have some fun ;). ~PencilWizard",
+			}												
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Token",
@@ -13652,6 +13841,20 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Cat's Eye Winglet"] = {
 		["Id"] = 441937632,
 		["Name"] = "Cat's Eye Winglet",
+		["AltCards"] = {
+			["Cupid's Eye Winglet"] = {
+				["Id"] = 620408233,
+				["Name"] = "Cupid's Eye Winglet",
+				["Effect"] = {
+					Name = "Pyrotechnics",
+					Description = "At the end of your turn, all other Cupid Eyes gain 100 health..",
+					["Type"] = "OnEnd",
+					["Power"] = {{"Heal",100}},
+					Target = "Archetype",
+				},
+			["Bio"] = "Who would give the disembodied eye of a cupid wings anyway? Sickos.",
+			}
+		},
 		["Health"] = 200,
 		["Power"] = 200,
 		["Rarity"] = "Token",
@@ -13666,12 +13869,26 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Heal",100}},
 			Target = "Archetype",
 		},
-		["Bio"] = "Who would give a disembodied eye of a kitten wings anyway? Sickos.",
+		["Bio"] = "Who would give the disembodied eye of a kitten wings anyway? Sickos.",
 	},
 	
 	["Cat's Eye Wing Flock"] = {
 		["Id"] = 441937712,
 		["Name"] = "Cat's Eye Wing Flock",
+		["AltCards"] = {
+			["Cupid's Eye Wing Flock"] = {
+				["Id"] = 620408233,
+				["Name"] = "Cupid's Eye Wing Flock",
+				["Effect"] = {
+					Name = "Pyrotechnics",
+					Description = "Add a Cupid's Eye Winglet into your hand. Cupid's Eye Wing Flock enters play locked for one turn.",
+					["Type"] = "OnSummon",
+					["Power"] = {{"Lock",1,},{"Add","Cupid's Eye Winglet","Ally"}},
+					Target = "Archetype",
+				},
+			["Bio"] = "FLYING CUPID EYES AAAAAAAA.",
+			}
+		},
 		["Health"] = 400,
 		["Power"] = 400,
 		["Rarity"] = "Common",
@@ -13681,7 +13898,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2, ["Green"] = 2,},
 		["Effect"] = {
 			Name = "Harassing Talons",
-			Description = "Add a Winglet into your hand. The Flock enters play locked for one turn.",
+			Description = "Add a Cat's Eye Winglet into your hand. Cat's Eye Wing Flock enters play locked for one turn.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Add","Cat's Eye Winglet","Ally"},{"Lock",1}},
 			Target = "Self",
@@ -13692,6 +13909,20 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Cat's Eye Cultist"] = {
 		["Id"] = 441937772,
 		["Name"] = "Cat's Eye Cultist",
+		["AltCards"] = {
+			["Cupid's Eye Cultist"] = {
+				["Id"] = 620408233,
+				["Name"] = "Cupid's Eye Cultist",
+				["Effect"] = {
+					Name = "Pyrotechnics",
+					Description = "Lower the power of a fighter by 200, then put a Cupid's Eye Wing Flock into your hand.",
+					["Type"] = "OnSummon",
+					["Power"] = {{"Weaken",200,},{"Add","Cupid's Eye Wing Flock","Ally"}},
+					Target = "Single",
+				},
+			["Bio"] = "The heart fuels the eye, and in return, the eye directs the heart",
+			}
+		},
 		["Health"] = 600,
 		["Power"] = 600,
 		["Rarity"] = "Uncommon",
@@ -13701,17 +13932,31 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3, ["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Harassing Talons",
-			Description = "lower the Power of a fighter by 200, then put a Cat's Eye Wing Flock into your hand.",
+			Description = "Lower the Power of a fighter by 200, then put a Cat's Eye Wing Flock into your hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",200},{"Add","Cat's Eye Wing Flock","Ally"}},
 			Target = "Single",
 		},
-		["Bio"] = "The heart fuels the eye, and in return, the eye directs the heart.",
+		["Bio"] = "The brain fuels the eye, and in return, the eye directs the brain.",
 	},
 	
 	["Cat's Eye Corpse Stealer"] = {
 		["Id"] = 441937886,
 		["Name"] = "Cat's Eye Corpse Stealer",
+		["AltCards"] = {
+			["Cupid's Eye Heart Stealer"] = {
+				["Id"] = 620408233,
+				["Name"] = "Cupid's Eye Heart Stealer",
+				["Effect"] = {
+					Name = "Pyrotechnics",
+					Description = "Your opponent loses 400 life and you gain 400 life. Add a Cupid's Eye Cultist into your hand. You lose all of your white icons.",
+					["Type"] = "OnSummon",
+					["Power"] = {{"Inflict",400,"Opponent"},{"Cost",-400,},{"Add","Cupid's Eye Cultist"}},
+					Target = "Ally",
+				},
+			["Bio"] = "She will stop at nothing to find her true love.",
+			}
+		},
 		["Health"] = 800,
 		["Power"] = 800,
 		["Rarity"] = "Rare",
@@ -13732,6 +13977,20 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Cat's Eye Nexus"] = {
 		["Id"] = 442809160,
 		["Name"] = "Cat's Eye Nexus",
+		["AltCards"] = {
+			["Cupid's Eye Nexus"] = {
+				["Id"] = 620408233,
+				["Name"] = "Cupid's Eye Nexus",
+				["Effect"] = {
+					Name = "Pyrotechnics",
+					Description = "Add a Cupid's Eye Heart Stealer to your hand. Your opponent draws two cards.",
+					["Type"] = "OnSummon",
+					["Power"] = {{"Add","Cupid's Eye Heart Stealer"},{"Draw",2,"Opponent"}},
+					Target = "Ally",
+				},
+			["Bio"] = "With your heart, awaken your third eye! ... And your fourth. And the fifth... Sixth as well. Seventh if you're in the mood. Don't forget the eighth, either! Or the ninth.",
+			}
+		},
 		["Health"] = 1000,
 		["Power"] = 1000,
 		["Rarity"] = "Epic",
@@ -13752,6 +14011,19 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Cat's Eye, Master of Perception"] = {
 		["Id"] = 441986585,
 		["Name"] = "Cat's Eye, Master of Perception",
+		["AltCards"] = {
+			["Cupid's Eye, Master of Romance"] = {
+				["Name"] = "Cupid's Eye, Master of Romance",
+				["Id"] = 480385242,
+				["Effect"] = {
+					Name = "Pyrotechnics",
+					Description = "Add a Cupid's Eye Nexus to your hand. Your opponent gains four white icons because I love you <3.",
+					["Type"] = "OnSummon",
+					["Power"] = {{"Add","Cupid's Eye Nexus Stealer"},{"Draw",2,"Opponent"}},
+					Target = "Ally",
+				},
+				["Bio"] = "Beauty is in the love of the arrow.",
+			}
 		["Health"] = 1200,
 		["Power"] = 1200,
 		["Rarity"] = "Legendary",
@@ -14163,7 +14435,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Kmansong2"] = {
-		["Id"] = 455952405,
+		["Id"] = 470425942,
 		["Name"] = "Kmansong2",
 		["Health"] = 700,
 		["Power"] = 700,
@@ -14278,6 +14550,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Pancake Break"] = {
 		["Id"] = 469456311,
 		["Name"] = "Pancake Break",
+		["AltCards"] = {
+			["Pancake Break-Val"] = {
+				["Name"] = "Peaceful Protest",
+				["Id"] = 480385242,
+				["Bio"] = "NO MORE TURBO SHED! NO MORE WISHNITE! NO MORE OP CARDS EVER!",
+			}															
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Common",
@@ -14994,6 +15272,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Uncreativename123"] = {
 		["Id"] = 490224057,
 		["Name"] = "Uncreativename123",
+		["AltCards"] = {							
+			["Uncreativename123-Val"] = {
+				["Id"] = 584441916,
+				["Name"] = "UncreativeGift123",						
+				["Bio"] = "Teddy Bears, Roses, and Chocolates.",
+			}
+		},					
 		["Health"] = 1000,
 		["Power"] = 800,
 		["Rarity"] = "Legendary",

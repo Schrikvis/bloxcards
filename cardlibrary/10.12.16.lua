@@ -611,7 +611,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3, ["Red"] = 3,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "After this card finishes attacking a fighter, a target fighter gains 200 health.",
+			Description = "After this card finishes attacking a fighter, a target fighter gains 200 power.",
 			["Type"] = "OnAttackEnd",
 			["Power"] = {{"Strengthen",200}},
 			Target = "Single",
@@ -783,18 +783,18 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 3,},
 		["Effect"] = {
 			Name = "moo",
-			Description = "Whenever you gain life, add a targeting blip to your hand and increase BonsMcCormick's power by 100.",
-			["Type"] = "OnHealthGain",
-			["Power"] = {{"Add","Targeting Blip"},{"Strengthen",100,"Self"}},
-			Target = "Ally",
+			Description = "When this card is targeted, it gains 300 health and power. End the turn.",
+			["Type"] = "OnTarget",
+			["Power"] = {{"Heal","300"},{"Strengthen","300"},{"EndTurn",1}},
+			Target = "Self",
 		},
-		["Bio"] = "His gum is as string as his bones!",
+		["Bio"] = "His gum is as strong as his bones!",
 	}, 	
 	
 	["UHunterU"] = {
 		["Id"] = 638721475,
 		["Name"] = "UHunterU",
-		["Health"] = 400,
+		["Health"] = 600,
 		["Power"] = 200,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "GunShot",
@@ -809,6 +809,25 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "UHunt, ULive.",
 	},
+	
+	["Eye of Heaven"] = {
+		["Id"] = 638044941,
+		["Name"] = "Eye of Heaven",
+		["Health"] = 0,
+		["Power"] = 0,
+		["Rarity"] = "Legendary",
+		["AttackEffect"] = "GunShot",
+		["Color"] = "Red", 
+		["Cost"] = {["Red"] = 50,},
+		["Effect"] = {
+			Name = "Rebuilding The Place",
+			Description = "You win the game.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Damage",999999,"Opponent"}},
+			Target = "Aggressor",
+		},
+		["Bio"] = "",
+	},	
 	
 	["Steam Razikai"] = {
 		["Id"] = 630010945,
@@ -848,6 +867,63 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "He can easily tear a place down, then rebuild it.",
 	},	
 	
+	["DominiusConfabricor"] = {
+		["Id"] = 645386479,
+		["Name"] = "DominiusConfabricor",
+		["Health"] = 900,
+		["Power"] = 0,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Gust",
+		["Color"] = "Yellow",
+		["AttackBlock"] = true,
+		["Cost"] = {["Neutral"] = 3, ["Yellow"] = 1,},
+		["Effect"] = {
+			Name = "Pacifist",
+			Description = "At the end of your turns, both players draw a card and generate two white icons.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Neutral",2},{"Draw",1}},
+			Target = "All",
+		},
+		["Bio"] = "Love your neighbor as you love yourself. There is no greater commandment.",
+	},
+	
+	["SoulSearch"] = {
+		["Id"] = 645386479,
+		["Name"] = "SoulSearch",
+		["Health"] = 400,
+		["Power"] = 250,
+		["Rarity"] = "Epic",
+		["AttackEffect"] = "Gust",
+		["Color"] = "Red",
+		["Cost"] = {["Neutral"] = 1, ["Red"] = 5,},
+		["Effect"] = {
+			Name = "Hellfire",
+			Description = "Whenever an allied fighter dies, SoulSearch gains 250 Power and Health.",
+			["Type"] = "OnAllyDeath",
+			["Power"] = {{"Heal",250},{"Strengthen",250}},
+			Target = "Self",
+		},
+		["Bio"] = "Always searching for the perfect soul.",
+	},
+	
+	["hyp3rdeath"] = {
+		["Id"] = 645386479,
+		["Name"] = "hyp3rdeath",
+		["Health"] = 1750,
+		["Power"] = 500,
+		["Rarity"] = "Legendary",
+		["AttackEffect"] = "GunShot",
+		["Color"] = "Blue",
+		["Cost"] = {["Neutral"] = 6, ["Blue"] = 5,["Red"] = 1,},
+		["Effect"] = {
+			Name = "Hellfire",
+			Description = "When this fighter is targeted, destroy it and spawn three Voidsealers.",
+			["Type"] = "OnTarget",
+			["Power"] = {{"Summon","Voidsealer"},{"Summon","Voidsealer"},{"Summon","Voidsealer"},{"Damage",9999,"Self"}},
+			Target = "Ally",
+		},
+		["Bio"] = "I'm sorry, what were we doing? I was procrastinating so much that I kicked your butt on accident.",
+	},
 }
 
 return tentwelvesixteen
