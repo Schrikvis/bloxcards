@@ -18,7 +18,7 @@ local codes = {
 		Rewards = {
 			Cards = {}; 
 			RandomCards = {}; 
-			Packs = {"Exine" = 5}; 
+			Packs = {Exine = 5}; 
 			BloxBux = 500;
 			Charms = {0,0};
 			Sleeves = {};
@@ -46,7 +46,7 @@ local codes = {
 		Rewards = {
 			Cards = {["Cow God"] = 1}; 
 			RandomCards = {};
-			Packs = {"Stirrings" = 5};
+			Packs = {Stirrings = 5};
 			BloxBux = 0;
 			Charms = {0,0};
 			Sleeves = {}; 
@@ -100,7 +100,7 @@ local codes = {
 	{
 		Obfuscated = "OGYQ";
 		Rewards = {
-			Cards = {["Hyperblue"] = 1, ["RukatuKDH"] = 1, ["InceptionTime" = 1,]}; 
+			Cards = {["Hyperblue"] = 1, ["RukatuKDH"] = 1, InceptionTime = 1,}; 
 			RandomCards = {};
 			Packs = {};
 			BloxBux = 0;
@@ -130,7 +130,7 @@ local codes = {
 		Rewards = {
 			Cards = {}; 
 			RandomCards = {};
-			Packs = {"Obvious" = 4,}
+			Packs = {Obvious = 4,};
 			BloxBux = 0;
 			Charms = {3,3};
 			Sleeves = {}; 
@@ -156,7 +156,7 @@ local codes = {
 	{
 		Obfuscated = "7QfJG KQ fQ";
 		Rewards = {
-			Cards = {["Lunar Acolyte" = 3, ["Acolyte of the Rift"] = 3, ["Infernal Acolyte"] = 3, ["Necromantic Acolyte"] = 3, ["Fried Acolyte"] = 3, ["Nova"] = 3}; 
+			Cards = {["Lunar Acolyte"] = 3, ["Acolyte of the Rift"] = 3, ["Infernal Acolyte"] = 3, ["Necromantic Acolyte"] = 3, ["Fried Acolyte"] = 3, ["Nova"] = 3}; 
 			RandomCards = {};
 			Packs = {};
 			BloxBux = 0;
@@ -186,7 +186,7 @@ local codes = {
 		Rewards = {
 			Cards = {}; 
 			RandomCards = {["Disturbing Thoughts"] = 3};
-			Packs = {"Stirrings" = 1}
+			Packs = {Stirrings = 1};
 			BloxBux = 0;
 			Charms = {0,0};
 			Sleeves = {"Spooky Scary"}; 
@@ -200,7 +200,7 @@ local codes = {
 		Rewards = {
 			Cards = {}; 
 			RandomCards = {};
-			Packs = {"Exine" = 10}
+			Packs = {Exine = 10};
 			BloxBux = 0;
 			Charms = {0,0};
 			Sleeves = {"Spooky Scary"}; 
@@ -212,24 +212,26 @@ local codes = {
 	{
 		Obfuscated = "e0NQeQa+K";
 		Rewards = {
-			Cards = {["Grand Pirate King"] = 2, ["Ship Raider"] = 4. ["Bearded Captain"] = 3, ["Pirate"] = 4, ["Brickmason"] = 1}; 
+			Cards = {["Grand Pirate King"] = 2, ["Ship Raider"] = 4, ["Bearded Captain"] = 3, ["Pirate"] = 4, ["Brickmason"] = 1}; 
 			RandomCards = {};
-			Packs = {}
+			Packs = {};
 			BloxBux = 0;
 			Charms = {0,0};
 			Sleeves = {}; 
 			Ranks = {};
 			BestBefore = nil; 
 		}
-		
+	};
+	
+	{
 		Obfuscated = "7jjK Tje";
 		Rewards = {
-			Cards = {["ROBLOXian Reborn"] = 1]}; 
+			Cards = {["ROBLOXian Reborn"] = 1}; 
 			RandomCards = {};
 			Packs = {};
 			BloxBux = 0;
 			Charms = {0,0};
-			Sleeves = {};
+			Sleeves = {}; 
 			Ranks = {};
 			BestBefore = nil; 
 		}
@@ -257,12 +259,18 @@ local offers = {
 		SubTitle = ""; -- "A subtitle can be a little longer: about this long is fine."
 		Image = "rbxassetid://"; -- aspect ratio is 4:1, can cleverly replace Title and SubTitle
 		DateConstraint = {
-			--Month = {"February"};
-			--Weekday = {"Wednesday"};
-			--Year = {2017, 2018};
-			--DayNight = {"Night", "Day"};
-			--BestBefore = tick();
+			-- the what days of the week / days of the month / of the year / hours / etc?
+			--year  = {}; -- 2016, 2017
+			--month = {}; -- 01-12
+			--wday  = {}; -- 0-6 sunday-saturday
+			--day   = {}; -- 01-31, 30, 28
+			--yday  = {}; -- 000-356
+			--min	  = {}; -- 00-59 (don't use)
+			--sec   = {}; -- 00-61 (don't use)
+			--hour  = {}; -- 00-23 (don't use)
+			
 		};
+		BestBefore = 0;
 		PriceInRobux = 0; -- robux amounts: 10, 50, 100, 150, 250, 500, 750, 1000, 2500
 		PriceInBloxBux = 0;
 		Cards = {}; -- {["Medic Kit"] = 1};
@@ -283,7 +291,29 @@ local offers = {
 				--Requirement = 0;
 			--};
 		};
+		SinglePurchase = false; -- can only be bought once, ie sleeve offers
+		Hidden = true;
 	};
+	
+	Feet = {
+		Title = "Rabbit's foot (synthetic)";
+		SubTitle = "We'd never sell real ones.";
+		Image = "rbxgameasset://Images/offer_feet";
+		PriceInRobux = 10;
+		Charms = {1,0};
+		Hidden = true;
+	};
+	
+	Clover = {
+		Title = "4-leaf clover";
+		SubTitle = "Luck of the Irish!";
+		Image = "rbxgameasset://Images/offer_clover";
+		PriceInRobux = 10;
+		Charms = {0,1};
+		Hidden = true;
+	};
+	
+	
 }
 
 return {Codes = codes; Offers = offers;}
