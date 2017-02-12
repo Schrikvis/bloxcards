@@ -494,22 +494,36 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Loogi"] = {
 		["Id"] = 265306270,
 		["Name"] = "Loogi",
-		["Power"] = 200,
+		["Power"] = 300,
 		["Health"] = 300,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Slice",
 		["Color"] = "Yellow",
+		["Stealth"] = true,
 		["Cost"] = {["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Greed Share",
-			Description = "Increase the Health and Power of all your fighters by 100.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Strengthen",100},{"Heal",100}},
+			Description = "The next fighter you summon has an additional 300 health and attack. Abilities don't trigger when Loogi enters play.",
+			["Type"] = "OnAllySummon",
+			["Power"] = {{"Summon","LoogiTOKEN"},{"Heal",300,"Aggressor"},{"Strengthen",300,"Aggressor"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
-		["Bio"] = "You get a buff, and you get a buff, and YOU get a buff! EVERYBODY GETS A BUFF!",
+		["Bio"] = "Loogi once shared the same ability with his brother; Qdhxx. Qdhxx's endless whining forced Loogi to awaken a new power for you to use.",
 	},
 
+	["LoogiTOKEN"] = {
+		["Id"] = 265306270,
+		["Name"] = "Loogi",
+		["Power"] = 300,
+		["Health"] = 300,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Slice",
+		["Color"] = "Yellow",
+		["Stealth"] = true,
+		["Cost"] = {["Yellow"] = 3,},
+		["Bio"] = "Loogi once shared the same ability with his brother; Qdhxx. Qdhxx's endless whining forced Loogi to awaken a new power for you to use.",
+	},
+	
 	["Qdhxx"] = {
 		["Id"] = 266031907,
 		["Name"] = "Qdhxx",
@@ -526,7 +540,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Strengthen",100},{"Heal",100}},
 			Target = "Ally",
 		},
-		["Bio"] = "You get a buff, and you get a buff, and YOU get a buff! SOMETIMES I WONDER WHY I'M THE SAME AS MY BROTHER!",
+		["Bio"] = "You get a buff, and you get a buff, and YOU get a buff! MOVE OVER, LOOGI!",
 	},
 
 	["Lyv"] = {
