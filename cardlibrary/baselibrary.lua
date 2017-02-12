@@ -1487,6 +1487,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Bloxy Victory"] = {
 		["Id"] = 275340034,
 		["Name"] = "Bloxy Victory",
+		["AltCards"] = {
+			["BloxyVictoryArtV1"] = {
+				["Id"] = 650977091,
+				["AltArt"] = true,
+				["Bio"] = "And the award for Best Play goes to...",
+			}
+		},			
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Legendary",
@@ -10440,6 +10447,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Taymaster"] = {
 		["Id"] = 363166556,
 		["Name"] = "Taymaster",
+			["AltCards"] = {
+			["TaymasterAltArtV1"] = {
+				["Id"] = 650990770,
+				["AltArt"] = true,
+				["Bio"] = "At this point, running won't help.",
+			}
+		},												
 		["Health"] = 300,
 		["Power"] = 925,
 		["Rarity"] = "Epic",
