@@ -650,9 +650,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 2,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "Whenever you lose life, Deal 50 damage to all enemy fighters.",
+			Description = "Whenever you lose life, Deal 25 damage to all enemy fighters.",
 			["Type"] = "OnHealthLoss",
-			["Power"] = {{"Damage",50,"Opponent"}},
+			["Power"] = {{"Damage",25,"Opponent"}},
 			Target = "Ally",
 		},
 		["Bio"] = "I will destroy all new houses.",
@@ -907,7 +907,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["hyp3rdeath"] = {
-		["Id"] = 650933716,
+		["Id"] = 645386479,
 		["Name"] = "hyp3rdeath",
 		["Health"] = 1750,
 		["Power"] = 500,
@@ -923,7 +923,46 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Ally",
 		},
 		["Bio"] = "I'm sorry, what were we doing? I was procrastinating so much that I kicked your butt on accident.",
+	}
+		
+	["Deadly Dicey Duo"] = {
+		["Id"] = 645386479,
+		["Name"] = "Deadly Dicey Duo",
+		["Health"] = 1400,
+		["Power"] = 650,
+		["Rarity"] = "Epic",
+		["AttackEffect"] = "Gust",
+		["Color"] = "Blue",
+		["Cost"] = {["Neutral"] = 2, ["Yellow"] = 5,["Blue"] = 5,},
+		["Effect"] = {
+			Name = "Hellfire",
+			Description = "Enemy fighters are locked for one turn. At the end of your turn, lower the power of all enemy fighters by 50, then both players lose 200 life.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Lock",1},{"Summon","Dicey Token"},{"Damage",9999,"Self"}},
+			Target = "Opponent",
+		},
+		["Bio"] = "Together as one, we gamble the night away!.",
 	},
+	
+	["Dicey Token"] = {
+		["Id"] = 645386479,
+		["Name"] = "Deadly Dicey Duo",
+		["Health"] = 1400,
+		["Power"] = 650,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Gust",
+		["Color"] = "Blue",
+		["Cost"] = {["Neutral"] = 2, ["Yellow"] = 5,["Blue"] = 5,},
+		["Effect"] = {
+			Name = "Hellfire",
+			Description = "Enemy fighters are locked for one turn. At the end of your turn, lower the power of all enemy fighters by 50, then both players lose 200 life.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Yellow",1},{"Weaken",50,"Opponent"},{"Cost",200},{"Inflict",200,"Opponent"}},
+			Target = "Opponent",
+		},
+		["Bio"] = "Together as one, we gamble the night away!.",
+	},	
+
 }
 
 return tentwelvesixteen
