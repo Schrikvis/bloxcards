@@ -10281,7 +10281,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Alapz"] = {
 		["Id"] = 415733887,
 		["Name"] = "Countercharm",
-		["Health"] = 1800,
+		["Health"] = 1000,
 		["Power"] = 0,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Lightning",
@@ -10289,13 +10289,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Green"] = 4,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Add a random Common to your hand at the end of each of your turns.",
+			Description = "Whenever you gain life, both players lose 100 life.",
 			["Type"] = "OnEnd",
-			["Power"] = "RandomAdd",
+			["Power"] = {{"Cost",100},{"Inflict",100,"Opponent"}},
 			Target = "Ally",
-			Increase = "Common",
 		},
-		["Bio"] = "He makes cards. The end.",
+		["Bio"] = "Its up to you to decide wether this card is lifegain or lifeloss. (It's not both)",
 	},		
 	
 	["Blockhaak"] = {
