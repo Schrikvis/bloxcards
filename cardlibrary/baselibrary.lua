@@ -1671,22 +1671,17 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Slash",
 		["Archetype"] = "Ninja",
+		["Stealth"] = true,			
 		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 2,["Red"] = 1,},
+		["Effect"] = {
+			Name = "Assimilate",
+			Description = "Ninja does not trigger any effects when summoned.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Heal",0},{"Strengthen",0}},
+			Target = "Archetype",
+		},					
 		["Bio"] = "Ninjas actually wore a dark-blue, not pure black. This prevented moonlight from exposing them.",
-	},
-
-	["NinjaV2"] = {
-		["Id"] = 480385242,
-		["Name"] = "Ninja",
-		["Health"] = 350,
-		["Power"] = 350,
-		["Rarity"] = "Common",
-		["AttackEffect"] = "Slash",
-		["Archetype"] = "Ninja",
-		["Color"] = "Red",
-		["Cost"] = {["Neutral"] = 2,["Red"] = 1,},
-		["Bio"] = "Ninjas actually wore a dark-blue, not pure black. This prevented ",
 	},
 	
 	["Ninja Elite"] = {
