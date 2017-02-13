@@ -542,10 +542,10 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "Whenever an allied fighter dies, Cereal Killer gains 100 health.",
+			Description = "Whenever an allied fighter dies, Cereal Killer gains 75 health and 75 power.",
 			["Type"] = "OnAllyDeath",
-			["Power"] = {{"Heal",100,"Self"}},
-			Target = "Ally",
+			["Power"] = {{"Heal",75},{"Strengthen",75}},
+			Target = "Self",
 		},
 		["Bio"] = "I like my noobs wholemeal.",
 	},
