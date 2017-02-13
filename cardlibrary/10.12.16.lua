@@ -650,9 +650,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 2,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "Whenever you lose life, Deal 25 damage to all enemy fighters.",
+			Description = "Whenever you lose life, Deal 50 damage to all enemy fighters.",
 			["Type"] = "OnHealthLoss",
-			["Power"] = {{"Damage",25,"Opponent"}},
+			["Power"] = {{"Damage",50,"Opponent"}},
 			Target = "Ally",
 		},
 		["Bio"] = "I will destroy all new houses.",
@@ -907,7 +907,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["hyp3rdeath"] = {
-		["Id"] = 645386479,
+		["Id"] = 650933716,
 		["Name"] = "hyp3rdeath",
 		["Health"] = 1750,
 		["Power"] = 500,
