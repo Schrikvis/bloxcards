@@ -895,7 +895,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Gust",
 		["Color"] = "Red",
-		["Cost"] = {["Neutral"] = 1, ["Red"] = 5,},
+		["Cost"] = {["Neutral"] = 1, ["Red"] = 3,},
 		["Effect"] = {
 			Name = "Hellfire",
 			Description = "Whenever an allied fighter dies, SoulSearch gains 250 Power and Health.",
@@ -999,6 +999,25 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Ally",
 		},
 		["Bio"] = "Just your average RoCitizen, with his trusty firebrand sword at his side.",
+	},
+	
+	["Bloxxy Radar"] = {
+		["Id"] = 645386479,
+		["Name"] = "Bloxxy Radar",
+		["Health"] = 0,
+		["Power"] = 0,
+		["Rarity"] = "Rare",
+		["AttackEffect"] = "Null",
+		["Color"] = "Green",
+		["Cost"] = {["Neutral"] = 1, ["Green"] = 2,},
+		["Effect"] = {
+			Name = "Hellfire",
+			Description = "Reveal your opponents hand.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Reveal",030}},
+			Target = "Opponent",
+		},
+		["Bio"] = "I can see so many robloxians...and planes...and tactical missiles...",
 	},	
 }
 
