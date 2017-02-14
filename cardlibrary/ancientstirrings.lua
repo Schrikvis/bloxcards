@@ -542,10 +542,10 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "Whenever an allied fighter dies, Cereal Killer gains 100 health.",
+			Description = "Whenever an allied fighter dies, Cereal Killer gains 75 health and 75 power.",
 			["Type"] = "OnAllyDeath",
-			["Power"] = {{"Heal",100,"Self"}},
-			Target = "Ally",
+			["Power"] = {{"Heal",75},{"Strengthen",75}},
+			Target = "Self",
 		},
 		["Bio"] = "I like my noobs wholemeal.",
 	},
@@ -1698,7 +1698,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Eclipse, Werewolf Colossus"] = {
-		["Id"] = 543041104,
+		["Id"] = 651213579,
 		["Name"] = "Eclipse, Werewolf Colossus",
 		["Health"] = 2000,
 		["Power"] = 2000,
@@ -2494,6 +2494,20 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Evil Prince"] = {
 		["Id"] = 596217196,
 		["Name"] = "Evil Prince",
+		["AltCards"] = {
+			["Evil Prince-Val"] = {
+				["Id"] = 655015108,
+				["Name"] = "Lovestruck Prince",
+				["Effect"] = {
+					Name = "Woof",
+					Description = "Whenever you cast an action or terrain spell, transform this card, then deal 100 damage to all enemy fighters.",
+					["Type"] = "OnAllyCast",
+					["Power"] = {{"Summon","Werefrog-Val"},{"Damage",100,"Opponent"},{"Damage",9999,"Self"}},
+					Target = "Ally",
+				},
+				["Bio"] = "Same kingdom, different crush. Time to conquer.",
+			}
+		},
 		["Health"] = 300,
 		["Power"] = 200,
 		["Rarity"] = "Common",
@@ -2514,6 +2528,20 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Werefrog"] = {
 		["Id"] = 596217279,
 		["Name"] = "Werefrog",
+			["AltCards"] = {
+			["Werefrog-Val"] = {
+				["Id"] = 655015511,
+				["Name"] = "Loving Frog",
+				["Effect"] = {
+					Name = "Woof",
+					Description = "Whenever your opponent casts an action or terrain spell, untransform this card, then deal 100 damage to all enemy fighters.",
+					["Type"] = "OnEnemyCast",
+					["Power"] = {{"Summon","Evil Prince-Val"},{"Damage",100,"Opponent"},{"Damage",9999,"Self"}},
+					Target = "Ally",
+				},
+				["Bio"] = "Same kingdom, different crush. Time to conquer.",
+			}
+		},
 		["Health"] = 600,
 		["Power"] = 400,
 		["Rarity"] = "Token",

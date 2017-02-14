@@ -1494,6 +1494,56 @@ local packs = {
 		},
 	};
 	
+		{
+		Name = "Tough Love", --VALENTINES!
+		PriceInBloxBux = 1750;
+		PriceInRobux = 0;
+		CardsInPack = 4,
+		CardPackId = 654911255,
+		Description = "Over 40 special edition Valentine themed cards! Can your heart resist them? <3 (You need 10 wins to open this pack.)",
+		WinRequirement = 10;
+		Cards = {
+			"Chef-Val",
+			"PixelPistol-Val",
+			"TeeVee-Val",
+			"Newbie-Val",
+			"RiceStorage-Val",
+			"Bowl of Greed-Val",
+			"Lord of Greed-Val",
+			"DeadZoneHark-Val",
+			"Sorry-Val",
+			"Pilot-Val",
+			"Hamstermon-Val",
+			"Pirate-Val",
+			"Gato Luz-Val",
+			"Burning Phoenix-Val",
+			"Hallows Treats-Val",
+			"Dr.Fave-Val",
+			"SuperCloud9-Val",
+			"Vitality Potion-Val",
+			"Pancake Break-Val",
+			"Uncreativename123-Val",
+			"IlIll-Val",
+			"MiloCortez-Val",
+			"Sylrath-Val",
+			"KingCactaur-Val",
+			"Korblox Deathknight-Val",
+			"The Hugger",
+			"BlackSymphony-Val",
+			"Forbidden Power-Val",
+			"Cupid's Eye Wing Flock",
+			"Cupid's Eye Cultist",
+			"Cupid's Eye Heart Stealer",
+			"Cupid's Eye Nexus",
+			"Cupid's Eye, Master of Romance",
+			"Senpai Garrison",
+			"Evil Prince-Val",
+			"SoulSearch-Val",
+		
+			
+		},
+	};
+	
 }
 
 return packs
