@@ -2494,6 +2494,20 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Evil Prince"] = {
 		["Id"] = 596217196,
 		["Name"] = "Evil Prince",
+		["AltCards"] = {
+			["Evil Prince-Val"] = {
+				["Id"] = 585627464,
+				["Name"] = "Lovestruck Prince",
+				["Effect"] = {
+					Name = "Woof",
+					Description = "Whenever you cast an action or terrain spell, transform this card, then deal 100 damage to all enemy fighters.",
+					["Type"] = "OnAllyCast",
+					["Power"] = {{"Summon","Werefrog-Val"},{"Damage",100,"Opponent"},{"Damage",9999,"Self"}},
+					Target = "Ally",
+				},
+				["Bio"] = "Same kingdom, different crush. Time to conquer.",
+			}
+		},
 		["Health"] = 300,
 		["Power"] = 200,
 		["Rarity"] = "Common",
@@ -2514,6 +2528,20 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Werefrog"] = {
 		["Id"] = 596217279,
 		["Name"] = "Werefrog",
+			["AltCards"] = {
+			["Werefrog-Val"] = {
+				["Id"] = 585627464,
+				["Name"] = "Loving Frog",
+				["Effect"] = {
+					Name = "Woof",
+					Description = "Whenever your opponent casts an action or terrain spell, untransform this card, then deal 100 damage to all enemy fighters.",
+					["Type"] = "OnEnemyCast",
+					["Power"] = {{"Summon","Evil Prince-Val"},{"Damage",100,"Opponent"},{"Damage",9999,"Self"}},
+					Target = "Ally",
+				},
+				["Bio"] = "Same kingdom, different crush. Time to conquer.",
+			}
+		},
 		["Health"] = 600,
 		["Power"] = 400,
 		["Rarity"] = "Token",
