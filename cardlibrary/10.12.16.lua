@@ -24,7 +24,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Xenotrent",
 		["Health"] = 600,
 		["Power"] = 500,
-		["Rarity"] = "Common",
+		["Rarity"] = "Rare",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Blue", 
 		["Cost"] = {["Neutral"] = 1, ["Blue"] = 4,},
@@ -257,7 +257,6 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 100,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Fire",
-		["Archetype"] = "Dragon",
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 2,},
 		["Effect"] = {
