@@ -876,7 +876,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Gust",
 		["Color"] = "Yellow",
 		["AttackBlock"] = true,
-		["Cost"] = {["Neutral"] = 3, ["Yellow"] = 1,},
+		["Cost"] = {["Neutral"] = 3,["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "Pacifist",
 			Description = "At the end of your turns, both players draw a card and generate two white icons.",
@@ -914,7 +914,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "GunShot",
 		["Color"] = "Blue",
-		["Cost"] = {["Neutral"] = 6, ["Blue"] = 5,["Red"] = 1,},
+		["Cost"] = {["Neutral"] = 6, ["Blue"] = 5, ["Red"] = 1,},
 		["Effect"] = {
 			Name = "Hellfire",
 			Description = "When this fighter is targeted, destroy it and spawn three Voidsealers.",
@@ -933,7 +933,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Gust",
 		["Color"] = "Blue",
-		["Cost"] = {["Neutral"] = 2, ["Yellow"] = 5,["Blue"] = 5,},
+		["Cost"] = {["Neutral"] = 2, ["Yellow"] = 5, ["Blue"] = 5,},
 		["Effect"] = {
 			Name = "Hellfire",
 			Description = "Enemy fighters are locked for one turn. At the end of your turn, lower the power of all enemy fighters by 50, then both players lose 200 life.",
@@ -952,7 +952,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Gust",
 		["Color"] = "Blue",
-		["Cost"] = {["Neutral"] = 2, ["Yellow"] = 5,["Blue"] = 5,},
+		["Cost"] = {["Neutral"] = 2, ["Yellow"] = 5, ["Blue"] = 5,},
 		["Effect"] = {
 			Name = "Hellfire",
 			Description = "Enemy fighters are locked for one turn. At the end of your turn, lower the power of all enemy fighters by 50, then both players lose 200 life.",
@@ -961,8 +961,45 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Opponent",
 		},
 		["Bio"] = "Together as one, we gamble the night away!.",
+	},
+	
+	["Defaultio"] = {
+		["Id"] = 645386479,
+		["Name"] = "Defaultio",
+		["Health"] = 800,
+		["Power"] = 650,
+		["Rarity"] = "Epic",
+		["AttackEffect"] = "SlashDiagonal",
+		["Color"] = "Yellow",
+		["Cost"] = {["Neutral"] = 4, ["Yellow"] = 3,},
+		["Effect"] = {
+			Name = "Hellfire",
+			Description = "Whenever your opponent cast an action or terrain spell, add a Bad Wood Grain to your hand.",
+			["Type"] = "OnEnemyCast",
+			["Power"] = {{"Add","Bad Wood Grain"}},
+			Target = "Ally",
+		},
+		["Bio"] = "Although WoodReviewer loves his axe, it's Defaultios taste in wood grain that keeps them from being friends...",
 	},	
-
+	
+	["Firebrand1"] = {
+		["Id"] = 645386479,
+		["Name"] = "Firebrand1",
+		["Health"] = 500,
+		["Power"] = 500,
+		["Rarity"] = "Rare",
+		["AttackEffect"] = "SlashDiagonal",
+		["Color"] = "Red",
+		["Cost"] = {["Red"] = 5,},
+		["Effect"] = {
+			Name = "Hellfire",
+			Description = "Summon a guest. Your opponent summons a Corrupt Guest.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Summon","Guest"},{"Summon","Firebrand1","Opponent"}},
+			Target = "Ally",
+		},
+		["Bio"] = "Just your average RoCitizen, with his trusty firebrand sword at his side.",
+	},	
 }
 
 return tentwelvesixteen
