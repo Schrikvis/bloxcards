@@ -48,7 +48,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Blue", 
 		["Cost"] = {["Blue"] = 3,["Neutral"] = 1},
 		["Effect"] = {
-			Name = "Massive Stamina",
+			Name = "Massive Stamaina",
 			Description = "Whenever you cast an action or terrain spell, generate a white icon.",
 			["Type"] = "OnAllyCast",
 			["Power"] = {{"Neutral",1}},
@@ -253,17 +253,17 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Ghost Dragon"] = {
 		["Id"] = 581907836,
 		["Name"] = "Ghost Dragon",
-		["Health"] = 650,
-		["Power"] = 100,
+		["Health"] = 400,
+		["Power"] = 400,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Fire",
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 2,},
 		["Effect"] = {
 			Name = "Reincarnation",
-			Description = "When this card is targeted, reincarnate it into a random dragon.",
-			["Type"] = "OnTarget",
-			["Power"] = {{"RandomSummon","Dragon","Ally"},{"Damage",9999}},
+			Description = "When this card attacks, what it attacked loses 200 HP.",
+			["Type"] = "OnAttack",
+			["Power"] = {{"Weaken",200,"Aggressor"}},
 			Target = "Self",
 		},
 		["Bio"] = "Legend says this was the soul that once inhabited NobleDragon's original dragon.",
@@ -874,7 +874,6 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Gust",
 		["Color"] = "Yellow",
-		["AttackBlock"] = true,
 		["Cost"] = {["Neutral"] = 3,["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "Pacifist",
@@ -936,7 +935,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Ally",
 		},
 		["Bio"] = "I'm sorry, what were we doing? I was procrastinating so much that I kicked your butt on accident.",
-	}
+	},
 		
 	["Deadly Dicey Duo"] = {
 		["Id"] = 645386479,
@@ -987,50 +986,12 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4, ["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Hellfire",
-			Description = "Whenever your opponent cast an action or terrain spell, add a Bad Wood Grain to your hand.",
+			Description = "Whenever your opponent casts an action or terrain spell, allied fighters gain 300 health.",
 			["Type"] = "OnEnemyCast",
-			["Power"] = {{"Add","Bad Wood Grain"}},
+			["Power"] = {{"Heal",300}},
 			Target = "Ally",
 		},
 		["Bio"] = "Although WoodReviewer loves his axe, it's Defaultios taste in wood grain that keeps them from being friends...",
-	},	
-	
-	["Firebrand1"] = {
-		["Id"] = 645386479,
-		["Name"] = "Firebrand1",
-		["Health"] = 500,
-		["Power"] = 500,
-		["Rarity"] = "Rare",
-		["AttackEffect"] = "SlashDiagonal",
-		["Color"] = "Red",
-		["Cost"] = {["Red"] = 5,},
-		["Effect"] = {
-			Name = "Hellfire",
-			Description = "Summon a guest. Your opponent summons a Corrupt Guest.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Summon","Guest"},{"Summon","Firebrand1","Opponent"}},
-			Target = "Ally",
-		},
-		["Bio"] = "Just your average RoCitizen, with his trusty firebrand sword at his side.",
-	},
-	
-	["Bloxxy Radar"] = {
-		["Id"] = 645386479,
-		["Name"] = "Bloxxy Radar",
-		["Health"] = 0,
-		["Power"] = 0,
-		["Rarity"] = "Rare",
-		["AttackEffect"] = "Null",
-		["Color"] = "Green",
-		["Cost"] = {["Neutral"] = 1, ["Green"] = 2,},
-		["Effect"] = {
-			Name = "Hellfire",
-			Description = "Reveal your opponents hand.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Reveal",030}},
-			Target = "Opponent",
-		},
-		["Bio"] = "I can see so many robloxians...and planes...and tactical missiles...",
 	},	
 }
 

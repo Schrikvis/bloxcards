@@ -884,7 +884,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 585627288,
 				["Name"] = "Baker",
 				["Bio"] = "And for desert, why not try caramelized robloxian? Now with extra icing!",
-			}
+			},
 			["Chef-Val"] = {
 				["Id"] = 655011632,
 				["Name"] = "Romantic Chef",
@@ -1202,8 +1202,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 655016789,
 				["Bio"] = "On second though, I'm alright with my past choices.",
 			}		
-		["Health"] = 425,
-		["Power"] = 500,
+		},
+		["Health"] = 475,
+		["Power"] = 400,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "PunchKick",
 		["Color"] = "Red",
@@ -1285,8 +1286,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["TeeVee-Val"] = {
 				["Name"] = "Ms. Teevee",
 				["Id"] = 480385242,
-				["Bio"] = "The only channels you will find on this teevee are love shows.",
+				["Bio"] = "The only channels you will find on this teevee are romcoms.",
 			}
+		},
 		["Health"] = 650,
 		["Power"] = 650,
 		["Rarity"] = "Common",
@@ -1350,11 +1352,10 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Yellow"] = 4,},
 		["Effect"] = {
 			Name = "Omega Charge",
-			Description = "Unlock all dragon fighters.",
+			Description = "Target a fighter. All fighters except that fighter gain 150 health and power.",
 			["Type"] = "OnSummon",
-			["Power"] = "Unlock",
-			Target = "Archetype",
-			Increase = 999,
+			["Power"] = {{"Heal",150},{"Strengthen",150},{"Damage",150,"Single"},{"Weaken",150,"Single"}},
+			Target = "All",
 		},
 		["Bio"] = "It took an aeon for the doges to repopulate from the Yellow Sandstorm.",
 	},
@@ -1383,7 +1384,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Omega Flame",
 			Description = "Target a fighter. Lock all fighters except that fighter for 2 turns. Set the lock on that fighter to 1 turn.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Lock",2,"All"},{"Unlock",9999,"Single"},{"Lock",1,"Single"}}
+			["Power"] = {{"Lock",2,"All"},{"Unlock",9999,"Single"},{"Lock",1,"Single"}},
 			Target = "Single",
 		},
 		["Cost"] = {["Neutral"] = 2,["Blue"] = 5,},
@@ -1402,10 +1403,10 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Green"] = 4,},
 		["Effect"] = {
 			Name = "Omega Division",
-			Description = [[At the end of each of your turns, you gain and your opponent loses 250 life.]],
-			["Type"] = "OnEnd",
-			["Power"] = {{"Inflict",250,"Opponent"},{"Cost",-250}},
-			Target = "Ally",
+			Description = [[Target a fighter. All fighters except that fighter lose 200 power.]],
+			["Type"] = "OnSummon",
+			["Power"] = {{"Strengthen",200},{"Weaken",200,"All"}},
+			Target = "Single",
 		},
 		["Bio"] = "It took an aeon for the Overseers to cut back the Green Flourishing.",
 	},
@@ -1435,11 +1436,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Newbie",
 		["AltCards"] = {
 			["Newbie-Val"] = {
-				["Name"] = "Female Newbie",
+				["Name"] = "Newbie",
 				["Id"] = 655013013,
-				["Bio"] = "But alas, the common noob has been predated on ever since they realized there were no females for them to mate with.",
+				["Bio"] = "Is that even a problem?",
 			}	
-		["Health"] = 275,
+		},
+		["Health"] = 300,
 		["Power"] = 300,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Punch2",
@@ -1857,7 +1859,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Omega Flame",
 			Description = "Target a fighter. Deal 300 damage to all fighters except that fighter.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Heal",300},{"Damage",300,"All"}}
+			["Power"] = {{"Heal",300},{"Damage",300,"All"}},
 			Target = "Single",
 		},
 		["Cost"] = {["Neutral"] = 2,["Red"] = 6,},
@@ -2045,10 +2047,11 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 					Description = "Whenever you gain life, put a Love Letter into your hand.",
 					["Power"] = {{"Add","Kill Script-Val"}},
 					Target = "Ally",
-		},			
+				},			
 				["Bio"] = "He loves life in the 8-bit world with his love gun! Pew!.",
 			}
-		["Health"] = 300,
+		},
+		["Health"] = 350,
 		["Power"] = 500,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Laser",
@@ -2504,8 +2507,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 					Target = "Opponent",
 				},
 				["Bio"] = "BUT WHAT DOES IT DO?",
-			}
-			["Bowl of Greed-Val] = {
+			},
+			["Bowl of Greed-Val"] = {
 				["Id"] = 655010991,
 				["Name"] = "Bowl of Candy Grams",
 				["Effect"] = {
@@ -2543,7 +2546,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Name"] = "Pittacium Acolythus",
 				["Id"] = 613203066,
 				["Bio"] = "Why are you stealing something that *I* rightfully stole first?",			
-			}
+			},
 			["Lord of Greed-Val"] = {
 				["Id"] = 584441916,
 				["Name"] = "Lord of Candy",
@@ -2663,11 +2666,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "DeadZoneHark",
 		["AltCards"] = {
 			["DeadZoneHark-Val"] = {
-				["Name"] = "LoveZoneHark",
+				["Name"] = "DeadZoneHark",
 				["Id"] = 655015343,
-				["Bio"] = "LoveZone seems loving enough...until his bouquet touches you.",
+				["Bio"] = "My glove touches all, and fills them with confidence.",
 			}
-		["Health"] = 300,
+		},
+		["Health"] = 350,
 		["Power"] = 550,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Punch1",
@@ -3208,7 +3212,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Name"] = "Heart Broken",
 				["Id"] = 655013605,
 				["Bio"] = "Sorry Eddy, I've met a REAL man.",
-			}					
+			}		
+		},			
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Common",
@@ -3633,6 +3638,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 655015603,
 				["Bio"] = "Cupid did nothing wrong.",
 			}
+		},
 		["Health"] = 1000,
 		["Power"] = 600,
 		["Rarity"] = "Rare",
@@ -4218,11 +4224,11 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 491538951,
 				["AltArt"] = true,
 				["Bio"] = "That'ssss some very nice value you have there; It'd be succch a shame if something happended to it...",
-			}
+			},
 			["KingCactaur-Val"] = {
 				["Name"] = "KingCactaur",
 				["Id"] = 655013880,
-				["Bio"] = "I FEEL VIOLATED, STOP IT PLEASE. ~Myrmiredon, Dairingpoophead, Arceusdon, Dun_Goof, and many other victims.",
+				["Bio"] = "I'm the advisor of valuetown. You're the mayor.",
 			}							
 		},
 		["Health"] = 400,
@@ -4991,6 +4997,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Name"] = "Korblox Deathknight",
 				["Id"] = 655014098,
 			}
+		},
 		["Health"] = 1000,
 		["Power"] = 1000,
 		["Rarity"] = "Epic",
@@ -5375,7 +5382,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Name"] = "Lovestermon",
 				["Id"] = 655014781,
 				["Bio"] = "It's time to put some love to this battlefield!",
-			}									
+			}		
+		},							
 		["Health"] = 750,
 		["Power"] = 350,
 		["Rarity"] = "Rare",
@@ -5601,12 +5609,14 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Combine Garrison"] = {
 		["Id"] = 294871396,
 		["Name"] = "Combine Garrison",
+		["AltCards"] = {
 			["Senpai Garrison"] = {
 				["Id"] = 655016996,
 				["Name"] = "Senpai Garrison",
-				["AltArt"] = True
+				["AltArt"] = true,
 				["Bio"] = "These high school students are always ignoring Stalker-Chan.",
-		}
+			}
+		},
 		["Health"] = 300,
 		["Power"] = 300,
 		["Rarity"] = "Epic",
@@ -5763,10 +5773,10 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Pirate-Val"] = {
 				["Name"] = "Pirate Cupid",
 				["Id"] = 655016531,
-				["Bio"] = "Want some love?",
 			}
-		["Health"] = 500,
-		["Power"] = 100,
+		},
+		["Health"] = 700,
+		["Power"] = 0,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Green",
@@ -6002,12 +6012,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["The StalkerV2"] = {
 				["Id"] = 459231428,
 				["Bio"] = "Even Sonic fears it.",
-			}
+			},
 			["The Hugger"] = {
 				["Id"] = 655018648,
 				["Name"] = "The Hugger",
 				["Bio"] = "Even pacifists fear it",
-			}
+			},
 			["Stalker-Chan"] = {
 				["Id"] = 655019396,
 				["Name"] = "Stalker-Chan",
@@ -6367,6 +6377,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 655019159,
 				["Bio"] = "Rebirth of pure love!",
 			}
+		},
 		["Health"] = 1000,
 		["Power"] = 1000,
 		["Rarity"] = "Epic",
@@ -7514,7 +7525,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Red"] = 1,["Blue"] = 5,},
 		["Effect"] = {
 			Name = "Endless Spooks",
-			Description = [[Add a "Skeleton Armada" to your hand, then increase the Health and Power of all Skeletons by 300.]],
+			Description = [[Put a "Skeleton Armada" into your hand, then increase the Health and Power of the armada by 300.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Add","Skeleton Armada"},{"Strengthen",300},{"Heal",300}},
 			Target = "Archetype",
@@ -7588,7 +7599,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 655011162,
 				["Name"] = "Box of Chocolates",
 				["Bio"] = "Happy Bloxentines day 2017.",
-			}							
+			}		
+		},					
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Legendary",
@@ -7880,10 +7892,10 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 2,["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Raging Rage",
-			Description = [[Deal 200 damage to all non-Dragon related cards and to the opponent.]],
+			Description = [[Deal 200 damage to all enemy fighters and a target fighter.]],
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",200},{"Inflict",200,"Opponent"}},
-			Target = "NotArchetype",
+			["Power"] = {{"Damage",200},{"Damage",200,"Single"}},
+			Target = "Opponent",
 		},
 		["Bio"] = "Power comes within the fittest.",
 	},
@@ -8692,7 +8704,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Zerax the Untameable"] = {
 		["Id"] = 334839689,
 		["Name"] = "Zerax the Untameable",
-		["Health"] = 300,
+		["Health"] = 700,
 		["Power"] = 700,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Fire",
@@ -8700,11 +8712,10 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Green"] = 4,},
 		["Effect"] = {
 			Name = "Nature's Shield",
-			Description = "Increase the health of all dragons fighters by 400.",
+			Description = "At the end of your turns, drain 250 life from your opponent.",
 			["Type"] = "OnSummon",
-			["Power"] = "Heal",
-			Target = "Archetype",
-			Increase = 400,
+			["Power"] = {{"Cost",-250},{"Inflict",250}},
+			Target = "Opponent",
 		},
 		["Bio"] = "When one is spotted by Zerax, the world is buried. Then nevermore.",
 	},
@@ -8720,9 +8731,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 4,["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Plushie Amp",
-			Description = [[Add 2 legendary dragons and another Dragon's Charm to your hand.]],
+			Description = [[Deal 400 damage to the opponent. Return this card to your hand.]],
 			["Type"] = "OnSummon",
-			["Power"] = {{"RandomAdd","LegendaryDragon"},{"RandomAdd","LegendaryDragon"},{"Add","Dragon's Charm"}},
+			["Power"] = {{"Inflict",400,"Opponent"},{"Add","Dragon's Charm"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Dragons may be contained in this charm if you believe hard enough.",
@@ -8771,7 +8782,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Gusmanak"] = {
 		["Id"] = 335687377,
 		["Name"] = "Gusmanak",
-		["Health"] = 1000,
+		["Health"] = 1200,
 		["Power"] = 500,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Thunder",
@@ -8779,9 +8790,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 5,["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Plushie Amp",
-			Description = [[When this card attacks and destroys a fighter, set its health to 1000 and its power to 500.]],
+			Description = [[When this card attacks and destroys a fighter, set its health to 1200 and its power to 500.]],
 			["Type"] = "OnAttackDestroy",
-			["Power"] = {{"SetHealth",1000},{"SetPower",500}},
+			["Power"] = {{"SetHealth",1200},{"SetPower",500}},
 			Target = "Self",
 		},
 		["Bio"] = "Time to blox zombies and eat beans from a can!",
@@ -8839,7 +8850,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 7,},
 		["Effect"] = {
 			Name = "Plushie Amp",
-			Description = [[When this card is targeted, gain 500 lifepoints and put a random Rare to your hand.]],
+			Description = [[When this card is targeted, gain 500 lifepoints and put a random Rare into your hand.]],
 			["Type"] = "OnTarget",
 			["Power"] = {{"Cost",-500},{"RandomAdd","Rare"}},
 			Target = "Ally",
@@ -8881,7 +8892,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Snowman Amp",
 			Description = [[Target a fighter and gain 1 Yellow Icon. Increase the lifepoints of both players by 500.]],
 			["Type"] = "OnSummon",
-			["Power"] = {{"Yellow",1,"Ally"},{"Inflict",-500,"All"}},
+			["Power"] = {{"Heal",0},{"Yellow",1,"Ally"},{"Inflict",-500,"All"}},
 			Target = "Single",
 		},
 		["Bio"] = "SNOW PLUSHIES! WAIT... THEY MELTED!",
@@ -10192,20 +10203,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Skullsten"] = {
 		["Id"] = 362315471,
 		["Name"] = "Skullsten",
-		["Health"] = 500,
-		["Power"] = 200,
+		["Health"] = 800,
+		["Power"] = 450,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Lightning",
-		["Archetype"] = "Skeleton",
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 4,["Blue"] = 1,},
-		["Effect"] = {
-			Name = "Endless Spooks",
-			Description = [[Add a "Skullsten" to your hand and increase the Attack of all Skeletons by 300. You lose 400 life.]],
-			["Type"] = "OnSummon",
-			["Power"] = {{"Add","Skullsten"},{"Strengthen",200},{"Cost",300}},
-			Target = "Archetype",
-		},
 		["Bio"] = "Not many skulls have names. Sten is an exception.",
 	},		
 	
@@ -12565,7 +12568,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 200,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Lightning",
-		["Archetype"] = "Skeleton",
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 1,},
 		["Effect"] = {
@@ -13221,10 +13223,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Skarra the DragonSlayer"] = {
 		["Id"] = 431106220,
 		["Name"] = "Skarra the DragonSlayer",
-		AltCards = {
+		["AltCards"] = {
 			["Skarra the DragonSlayerv2"] = {
 				["Id"] = 540870000,
-				["AltArt"] = true,
 				["Bio"] = "An ancient dragon warrior. The only dragon Skarra wont kill is the one that she rides.",
 			},
 		},
@@ -13236,9 +13237,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 6, ["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Render",
-			Description = "At the end of your turn, Add a random legendary dragon to your hand.",
-			["Type"] = "OnEnd",
-			["Power"] = {{"RandomAdd","LegendaryDragon"}},
+			Description = "(EXPERIMENTAL EFFECT) Whenever Skarra is targeted, deal 500 damage to what targeted it.",
+			["Type"] = "OnTarget",
+			["Power"] = {{"Damage",500,"Aggressor"}},
 			Target = "Ally",
 		},
 		["Bio"] = "If you breathe, she will fight you. If you breathe fire, she MUST fight you.",
@@ -13745,8 +13746,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Kill Script-Val"] = {
 				["Name"] = "Love Letter",
 				["Id"] = 655014233,
-				["Bio"] = "Dear Masant, come over to my house later so we can have some fun ;). ~PencilWizard",
-			}												
+				["Bio"] = "Roses are read, violets are blue, I've justified violence for you.",
+			}	
+		},											
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Token",
@@ -13942,7 +13944,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 					["Power"] = {{"Weaken",200,},{"Add","Cupid's Eye Wing Flock","Ally"}},
 					Target = "Single",
 				},
-			["Bio"] = "The heart fuels the eye, and in return, the eye directs the heart",
+			["Bio"] = "The heart fuels the eye, and in return, the eye directs the heart.",
 			}
 		},
 		["Health"] = 600,
@@ -13993,7 +13995,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Inflict",400,"Opponent"},{"Cost",-400},{"SetNeutral",0},{"Add","Cat's Eye Cultist"}},
 			Target = "Ally",
 		},
-		["Bio"] = "She consented to this in her will. Why she consented to this is another issue entirely.",
+		["Bio"] = "This is how I want to die.",
 	},
 	
 	["Cat's Eye Nexus"] = {
@@ -14010,7 +14012,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 					["Power"] = {{"Add","Cupid's Eye Heart Stealer"},{"Draw",2,"Opponent"}},
 					Target = "Ally",
 				},
-			["Bio"] = "With your heart, awaken your third eye! ... And your fourth. And the fifth... Sixth as well. Seventh if you're in the mood. Don't forget the eighth, either! Or the ninth.",
 			}
 		},
 		["Health"] = 1000,
@@ -14044,8 +14045,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 					["Power"] = {{"Add","Cupid's Eye Nexus"},{"White",4,"Opponent"}},
 					Target = "Ally",
 				},
-				["Bio"] = "Beauty is in the love of the arrow.",
+
 			}
+		},
 		["Health"] = 1200,
 		["Power"] = 1200,
 		["Rarity"] = "Legendary",
@@ -14577,7 +14579,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Name"] = "Peaceful Protest",
 				["Id"] = 480385242,
 				["Bio"] = "NO MORE TURBO SHED! NO MORE WISHNITE! NO MORE OP CARDS EVER!",
-			}															
+			}			
+		},												
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Common",
