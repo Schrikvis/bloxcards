@@ -173,6 +173,7 @@ local packs = {
 		CardPackId = 465492503,
 		Description = "Red is the colour of power, ambition, and control. Dominion packs contain cards that cost red!",
 		Cards = {
+			"SoulSearch",
 			"Eye of Heaven",
 			"UHunterU",
 			"Roblox Gift Card",
@@ -543,6 +544,8 @@ local packs = {
 		CardPackId = 465492637,
 		Description = "Blue is the colour of logic, order, and structure. Thought packs contain cards that cost blue!",
 		Cards = {
+			"Deadly Dicey Duo",
+			"hyp3rdeath",
 			"Steam Razikai",
 			"Wooden Chair",
  			"Rollernaut",
@@ -739,6 +742,8 @@ local packs = {
 		Description = 
 		"Yellow is the colour of chaos, emotion, and society. Revel packs contain cards that cost yellow!",
 		Cards = {
+			"DominiusConfabricor",
+			"Defaultio",
 			"Histor",
 			"Jeeeeesus",
 			"Dicey Dave",
@@ -935,6 +940,11 @@ local packs = {
 		Description = "Exotic new cards from the black market! White cards and joke cards! It's all yours, as long as you have 10 wins!",
 		WinRequirement = 10;
 		Cards = {
+			"SoulSearch",
+			"Defaultio",
+			"Deadly Dicey Duo",
+			"hyp3rdeath",
+			"DominiusConfabricor",
 			"Eye of Heaven",
 			"Steam Razikai",
 			"UHunterU",
@@ -1496,7 +1506,7 @@ local packs = {
 	
 		{
 		Name = "Tough Love", --VALENTINES!
-		PriceInBloxBux = 1750;
+		PriceInBloxBux = 1000;
 		PriceInRobux = 0;
 		CardsInPack = 4,
 		CardPackId = 654911255,
