@@ -1510,7 +1510,7 @@ local packs = {
 		PriceInRobux = 0;
 		CardsInPack = 4,
 		CardPackId = 654911255,
-		Description = "Over 40 special edition Valentine themed cards! Can your heart resist them? <3 (You need 10 wins to open this pack.)",
+		Description = "Over 40 special edition Valentine themed cards! Can your heart resist them? <3 (Minimum 10 wins. Stalker and Combine Garrison are in Aife Box during this event.)",
 		WinRequirement = 10;
 		Cards = {
 			"Chef-Val",
@@ -1538,7 +1538,6 @@ local packs = {
 			"Sylrath-Val",
 			"KingCactaur-Val",
 			"Korblox Deathknight-Val",
-			"The Hugger",
 			"BlackSymphony-Val",
 			"Forbidden Power-Val",
 			"Cupid's Eye Wing Flock",
@@ -1546,7 +1545,6 @@ local packs = {
 			"Cupid's Eye Heart Stealer",
 			"Cupid's Eye Nexus",
 			"Cupid's Eye, Master of Romance",
-			"Senpai Garrison",
 			"Evil Prince-Val",
 			"SoulSearch-Val",
 		
