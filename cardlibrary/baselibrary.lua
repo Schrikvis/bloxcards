@@ -6678,9 +6678,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 8,},
 		["Effect"] = {
 			Name = "Mimic",
-			Description = "Deal 1000 damage to a target fighter and put another copy of Mimic to your hand.",
+			Description = "Deal 1000 damage to a target fighter. Shuffle mimic back into your deck.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",1000},{"Add","Mimic","Ally"}},
+			["Power"] = {{"Damage",1000},{"DeckAdd","Mimic","Ally"}},
 			Target = "Single",
 		},
 		["Bio"] = "What happens when a mimic mimics itself, or a kirby eats another? This.",
@@ -7803,9 +7803,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "BobRoss the Canvas the Card the Effect",
-			Description = [[All fighters lose 150 health and gain 150 power.]],
+			Description = [[All fighters lose 75 health and gain 75 power.]],
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",150},{"Strengthen",150}},
+			["Power"] = {{"Damage",75},{"Strengthen",75}},
 			Target = "All",
 		},
 		["Bio"] = "Responsible for a lot of ROBLOX development innovations, BlueTaslem's prowess is fearsome and his work is to be awed.",
