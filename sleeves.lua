@@ -4,7 +4,8 @@ Category = {
 	["Name"] = {
 		ImageId;
 		CostInBloxBux;
-		ExpirationDate; (optional)
+		CostInRobux;
+		Hidden;
 	};
 }
 
@@ -27,7 +28,7 @@ local sleeves = {
 		["Tickets"]             = {386561334,  650};
 		["Blueprint"]           = {486505302, 1500};
 		["Inkling"]             = {486505300, 2000};
-		["Crystals"]            = {486449138, 1750};  
+		["Crystals"]            = {486449138, 1750};
 		["Red Planet"]          = {486505296, 1500};
 		["Gentle Giant"]        = {486449213, 1500};
 		["Techno"]              = {486449207,  650};
@@ -36,27 +37,31 @@ local sleeves = {
 		["Clown Spiral"]        = {486449186,  600};
 		["Sleevefinity"]        = {486449155, 1500};
 		["Obvious"]             = {486449131, 1500};
-		["Wooden"]              = {596217246, 700};
-	};                     
-	
-	Valentines = {         
+		["Wooden"]              = {596217246,  700};
+	};
+
+	Valentines = {
 		["Affectionate"]        = {362532185,  650};
 		["Hearts"]              = {362532384, 1000};
 		["Darkheart"]           = {362532271,  600};
-	};                     
-	
-	Memes = {              
+		["Refused"]             = {656316347,  500};
+		["Pink Lines"]          = {656316251,  500};
+		["Heartman"]            = {656316122,  500};
+		--["Hub"]                 = {};
+	};
+
+	Memes = {
 		["DanTDM"]              = {414086400,  400};
 		["GRAND DAD"]           = {486505292, 1335};
 		["Flintstones"]         = {486533671, 1335};
-		["Harambe"]             = {605029103, 1250};
+		["Harambe"]             = {656572214, 1250};
 		["Doge"]                = {574398544,  900};
 		["Wood Grain"]          = {627815623,  750};
-		["Cheese Grater"]       = {627815623, 9000};		
-		["PPAP(?)"]             = {627815623, 1200};		
-	};                     
-	
-	Halloween = {          
+		["Cheese Grater"]       = {627815623, 9000};
+		["PPAP"]                = {627815623, 1200};
+	};
+
+	Halloween = {
 		["Goopy"]               = {534129450,  460};
 		["Nerf"]                = {534129585, 2000};
 		["Spooky Scary"]        = {534129749,  500};
@@ -68,7 +73,7 @@ local sleeves = {
 		["Halloween 2016"]      = {534131858,  400};
 		["Darkseed"]            = {559463641,  700};
 	};
-	
+
 	CardArt = {
 		["MisterObvious"]       = {486449168,  800};
 		["Egotist"]             = {486449178, 1000};
@@ -81,7 +86,7 @@ local sleeves = {
 		["Zanzel"]              = {559461035, 1500};
 		["Papasmurf"]           = {596205593, 1400};
 	};
-	
+
 }
 
 return sleeves

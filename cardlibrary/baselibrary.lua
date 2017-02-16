@@ -2515,7 +2515,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 					Name = "MOO!",
 					Description = "Draw 2 Cards. Your opponent summons the Lord of Candy.",
 					["Type"] = "OnSummon",
-					["Power"] = {{"Draw",2,"Ally"},{"Summon","Lord of Candy"},{"Unlock",999,"Archetype"}},
+					["Power"] = {{"Draw",2,"Ally"},{"Summon","Lord of Greed-Val"},{"Unlock",999,"Archetype"}},
 					Target = "Opponent",
 				},
 				["Bio"] = "Yummy?",
@@ -2548,7 +2548,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Bio"] = "Why are you stealing something that *I* rightfully stole first?",			
 			},
 			["Lord of Greed-Val"] = {
-				["Id"] = 584441916,
+				["Id"] = 656732310,
 				["Name"] = "Lord of Candy",
 				["Bio"] = "Lord of Candy is to grams as chocolate is to wrappers.",
 			}
@@ -6848,7 +6848,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["SirAdurite"] = {
-		["Id"] = 298793730,
+		["Id"] = 656715482,
 		["Name"] = "SirAdurite",
 		["Health"] = 500,
 		["Power"] = 300,

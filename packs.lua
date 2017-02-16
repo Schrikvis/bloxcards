@@ -1504,13 +1504,13 @@ local packs = {
 		},
 	};
 	
-		{
+	{
 		Name = "Tough Love", --VALENTINES!
 		PriceInBloxBux = 1000;
 		PriceInRobux = 0;
 		CardsInPack = 4,
 		CardPackId = 654911255,
-		Description = "Over 40 special edition Valentine themed cards! Can your heart resist them? <3 (Minimum 10 wins. Stalker and Combine Garrison are in Aife Box during this event.)",
+		Description = "Over 40 special edition Valentine themed cards! Can your heart resist them? <3 (Minimum 10 wins. Stalker and Combine Garrison are only found in the Art Box.)",
 		WinRequirement = 10;
 		Cards = {
 			"Chef-Val",
