@@ -261,7 +261,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 2,},
 		["Effect"] = {
 			Name = "Reincarnation",
-			Description = "When this card attacks, what it attacked loses 200 HP.",
+			Description = "When this card attacks, what it attacked loses 200 power.",
 			["Type"] = "OnAttack",
 			["Power"] = {{"Weaken",200,"Aggressor"}},
 			Target = "Self",
