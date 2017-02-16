@@ -2548,7 +2548,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Bio"] = "Why are you stealing something that *I* rightfully stole first?",			
 			},
 			["Lord of Greed-Val"] = {
-				["Id"] = 584441916,
+				["Id"] = 656732310,
 				["Name"] = "Lord of Candy",
 				["Bio"] = "Lord of Candy is to grams as chocolate is to wrappers.",
 			}
