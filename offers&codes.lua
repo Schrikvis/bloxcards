@@ -2,13 +2,16 @@ local codes = {
 	{
 		Obfuscated = ""; -- generate these via the chat command !obfuscatecode <CodePlayersEnter>
 		Rewards = {-- to get your code back, use !deobfuscatecode <Obfuscated>
-			Cards = {}; -- {["Medic Kit"] = 1};
-			RandomCards = {}; -- {{"Medic Kit" = 1, ["Froot Ninja"] = 1}, 2}; ie, 50/50 chance for either card, 2 cards are given
+			Cards = {["Necromantic Acolyte"] = 1}; -- {["Medic Kit"] = 1};
+			RandomCards = {
+				Pool = {["Necromantic Acolyte"] = 1, ["Fried Acolyte"] = 1, ["Nova"] = 1};
+				Amount = 3;
+			}; -- {{"Medic Kit" = 1, ["Froot Ninja"] = 1}, 2}; ie, 50/50 chance for either card, 2 cards are given
 			Packs = {}; -- {"Exine" = 5};
-			BloxBux = 0;
-			Charms = {0,0}; -- rabbit, clover
-			Sleeves = {}; -- {"Basic"}
-			Ranks = {}; -- {"DanTDM Superfan"}
+			BloxBux = 10;
+			Charms = {1,1}; -- rabbit, clover
+			Sleeves = {"Legendary"}; -- {"Basic"}
+			Ranks = {"Tester"}; -- {"DanTDM Superfan"}
 			BestBefore = 0; -- tick() + (3600*hours) + (86400*days) + (604800*weeks)
 		}
 	};
@@ -16,9 +19,9 @@ local codes = {
 	{
 		Obfuscated = "3QM3";
 		Rewards = {
-			Cards = {}; 
-			RandomCards = {}; 
-			Packs = {Exine = 5}; 
+			Cards = {};
+			RandomCards = {};
+			Packs = {Exine = 5};
 			BloxBux = 500;
 			Charms = {0,0};
 			Sleeves = {};
@@ -100,7 +103,7 @@ local codes = {
 	{
 		Obfuscated = "OGYQ";
 		Rewards = {
-			Cards = {["Hyperblue"] = 1, ["RukatuKDH"] = 1, InceptionTime = 1,}; 
+			Cards = {["Hyperblue"] = 1, ["RukatuKDH"] = 1, ["InceptionTime"] = 1,}; 
 			RandomCards = {};
 			Packs = {};
 			BloxBux = 0;
@@ -200,7 +203,7 @@ local codes = {
 		Rewards = {
 			Cards = {}; 
 			RandomCards = {};
-			Packs = {Exine = 10};
+			Packs = {Exine = 5};
 			BloxBux = 0;
 			Charms = {0,0};
 			Sleeves = {"Spooky Scary"}; 
@@ -250,6 +253,20 @@ local codes = {
 			BestBefore = nil; 
 		}
 	};
+	
+	{
+		Obfuscated = "/a0Qf3GfQM";
+		Rewards = {
+			Cards = {}; 
+			RandomCards = {};
+			Packs = {["Tough Love"] = 2};
+			BloxBux = 0;
+			Charms = {0,0};
+			Sleeves = {}; 
+			Ranks = {};
+			BestBefore = nil; 
+		}
+	}
 
 }
 
@@ -259,31 +276,29 @@ local offers = {
 		SubTitle = ""; -- "A subtitle can be a little longer: about this long is fine."
 		Image = "rbxassetid://"; -- aspect ratio is 4:1, can cleverly replace Title and SubTitle
 		DateConstraint = {
-			-- the what days of the week / days of the month / of the year / hours / etc?
-			--year  = {}; -- 2016, 2017
+			--year  = {2017, 2018}; -- 2017
 			--month = {}; -- 01-12
-			--wday  = {}; -- 0-6 sunday-saturday
-			--day   = {}; -- 01-31, 30, 28
 			--yday  = {}; -- 000-356
-			--min	  = {}; -- 00-59 (don't use)
-			--sec   = {}; -- 00-61 (don't use)
-			--hour  = {}; -- 00-23 (don't use)
-			
+			--day   = {}; -- 01-31
+			--wday  = {}; -- 0-6; sunday-saturday			
+			--hour  = {}; -- 00-23 don't use
+			--min	  = {}; -- 00-59 don't use
+			--sec   = {}; -- 00-61 don't use
 		};
 		BestBefore = 0;
-		PriceInRobux = 0; -- robux amounts: 10, 50, 100, 150, 250, 500, 750, 1000, 2500
+		PriceInRobux = 250; -- robux amounts: 10, 50, 100, 150, 250, 500, 750, 1000, 2500
 		PriceInBloxBux = 0;
 		Cards = {}; -- {["Medic Kit"] = 1};
 		RandomCards = {
 			--Pool = {"Medic Kit" = 1, ["Froot Ninja"] = 1};
 			--Amount = 2;
 		}; -- In this example: 50/50 chance for either card, 2 cards are given
-		Packs = {}; -- {"Exine" = 5};
+		Packs = {}; -- {Exine = 5};
 		BloxBux = 0;
 		Charms = {0,0}; -- rabbit, clover
 		Sleeves = {}; -- {"Basic"}
 		Ranks = {}; -- {"DanTDM Superfan"}
-		Missions = {
+		Missions = { -- don't use
 			--{
 				--Title = "";
 				--Instruction = "";
@@ -291,8 +306,8 @@ local offers = {
 				--Requirement = 0;
 			--};
 		};
-		SinglePurchase = false; -- can only be bought once, ie sleeve offers
-		Hidden = true;
+		SinglePurchase = false; -- can only be bought once, ie sleeve/rank offers
+		Hidden = true; -- for internal use only, ie this example offer
 	};
 	
 	Feet = {
