@@ -2515,7 +2515,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 					Name = "MOO!",
 					Description = "Draw 2 Cards. Your opponent summons the Lord of Candy.",
 					["Type"] = "OnSummon",
-					["Power"] = {{"Draw",2,"Ally"},{"Summon","Lord of Candy"},{"Unlock",999,"Archetype"}},
+					["Power"] = {{"Draw",2,"Ally"},{"Summon","Lord of Greed-Val"},{"Unlock",999,"Archetype"}},
 					Target = "Opponent",
 				},
 				["Bio"] = "Yummy?",
