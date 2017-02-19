@@ -1198,7 +1198,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "PixelPistol",
 		["AltCards"] = {
 			["PixelPistol-Val"] = {
-				["Name"] = "PixelLove",
+				["Name"] = "PixelHeart",
 				["Id"] = 655016789,
 				["Bio"] = "On second though, I'm alright with my past choices.",
 			}		
@@ -1436,7 +1436,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Newbie",
 		["AltCards"] = {
 			["Newbie-Val"] = {
-				["Name"] = "Newbie",
+				["Name"] = "Female Newbie",
 				["Id"] = 655013013,
 				["Bio"] = "Is that even a problem?",
 			}	
@@ -1873,8 +1873,15 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {							
 			["RiceStorage-Val"] = {
 				["Id"] = 655011758,
-				["Name"] = "ChocolateStorage",						
-				["Bio"] = "His love of chocolate sometimes goes out of hand by filling his entire room with just chocolate, he'll store chocolate anywhere so he has plenty of rice to eat.",
+				["Name"] = "ChocolateStorage",	
+				["Effect"] = {
+					Name = "Assimilate",
+					Description = "Whenever your opponent gains life, Unlock ChocolateStorage.",
+					["Type"] = "OnEnemyLifeGain",
+					["Power"] = {{"Unlock",9999}},
+					Target = "Self",
+				},
+				["Bio"] = "His love of chocolate sometimes goes out of hand by filling his entire room with just chocolate, he'll store chocolate anywhere so he has plenty of chocolate to eat.",
 			}
 		},					
 		["Health"] = 450,
@@ -1896,20 +1903,20 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Salesman"] = {
 		["Id"] = 275340647,
 		["Name"] = "Salesman",
-		["Health"] = 325,
-		["Power"] = 450,
+		["Health"] = 300,
+		["Power"] = 400,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "PunchKick",
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 2,["Blue"] = 1,},
 		["Effect"] = {
 			Name = "Vampire",
-			Description = "Generate a green icon.",
+			Description = "Both players gain 50 life.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Green",1}},
+			["Power"] = {{"Cost",-50},{"Cost",-50}},
 			Target = "Ally",
 		},
-		["Bio"] = "Ordinary salesman trying to sell his wares.",
+		["Bio"] = "It's a win-win offer you cant refuse!",
 	},
 	
 	["TZSara"] = {
