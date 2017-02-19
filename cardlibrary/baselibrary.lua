@@ -14320,7 +14320,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Trout Slap",
 			Description = "Destroy all other fighters. Your opponent draws two cards and gains 4 white icons. End the turn.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Heal",9999,"Self"},{"Damage",9999},{"Draw",2,"Opponent"},{"EndTurn",1,"Ally"}},
+			["Power"] = {{"Heal",9999,"Self"},{"Damage",9999},{"Draw",2,"Opponent"},{"EndTurn",1,"Ally"},{"Neutral",4,"Opponent"}},
 			Target = "All",
 		},
 		["Bio"] = "I'm sorry I caused the apocalypse. Have some gold.",
