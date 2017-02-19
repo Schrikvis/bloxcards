@@ -1285,7 +1285,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["TeeVee-Val"] = {
 				["Name"] = "Ms. Teevee",
-				["Id"] = 480385242,
+				["Id"] = 662150269,
 				["Bio"] = "The only channels you will find on this teevee are romcoms.",
 			}
 		},
@@ -2555,7 +2555,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Bio"] = "Why are you stealing something that *I* rightfully stole first?",			
 			},
 			["Lord of Greed-Val"] = {
-				["Id"] = 656732310,
+				["Id"] = 662115217,
 				["Name"] = "Lord of Candy",
 				["Bio"] = "Lord of Candy is to grams as chocolate is to wrappers.",
 			}
