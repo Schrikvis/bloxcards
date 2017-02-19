@@ -9115,6 +9115,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Grand Chicken Lord"] = {
 		["Id"] = 336411229,
 		["Name"] = "Grand Chicken Lord",
+		["AltCards"] = {
+			["ChickenLord-ArtV"] = {
+				["Id"] = 661049986,
+				["AltArt"] = true,
+				["Bio"] = "You get a chicken leg, and YOU get a chicken leg! Everyone gets a chicken leg!",
+			};
+		},
 		["Health"] = 700,
 		["Power"] = 700,
 		["Rarity"] = "Rare",
@@ -9136,6 +9143,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Grand Glaciem Mage"] = {
 		["Id"] = 336411235,
 		["Name"] = "Grand Glaciem Mage",
+		["AltCards"] = {
+			["GrandGlaciem-ArtV"] = {
+				["Id"] = 661049605,
+				["AltArt"] = true,
+				["Bio"] = "Icier than Icytea.",
+			};
+		},		
 		["Health"] = 700,
 		["Power"] = 700,
 		["Rarity"] = "Rare",
@@ -9156,6 +9170,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Grand Ignis Mage"] = {
 		["Id"] = 336411248,
 		["Name"] = "Grand Ignis Mage",
+		["AltCards"] = {
+			["GrandIgnis-ArtV"] = {
+				["Id"] = 540744997,
+				["AltArt"] = true,
+				["Bio"] = "His Phoenix is as hot as his looks..",
+			};
+		},		
 		["Health"] = 700,
 		["Power"] = 700,
 		["Rarity"] = "Rare",
@@ -9176,6 +9197,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Grand Meeboid Totem"] = {
 		["Id"] = 336411268,
 		["Name"] = "Grand Meeboid Totem",
+		["AltCards"] = {
+			["meebtotem-ArtV"] = {
+				["Id"] = 411802926,
+				["AltArt"] = true,
+				["Bio"] = "Silly kids, Surfboards are for Meeboids!",
+			};
+		},
 		["Health"] = 700,
 		["Power"] = 0,
 		["Rarity"] = "Rare",
