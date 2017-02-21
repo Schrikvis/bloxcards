@@ -542,10 +542,10 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "Whenever an allied fighter dies, Cereal Killer gains 100 health.",
+			Description = "Whenever an allied fighter dies, Cereal Killer gains 75 health and 75 power.",
 			["Type"] = "OnAllyDeath",
-			["Power"] = {{"Heal",100,"Self"}},
-			Target = "Ally",
+			["Power"] = {{"Heal",75},{"Strengthen",75}},
+			Target = "Self",
 		},
 		["Bio"] = "I like my noobs wholemeal.",
 	},
@@ -664,10 +664,10 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "At the end of your turns, put a random common into your hand.",
-			["Type"] = "OnEnd",
-			["Power"] = {{"RandomAdd","Common"}},
-			Target = "Ally",
+			Description = "Whenever an enemy fighter dies, deal 50 damage to all enemy fighters. ",
+			["Type"] = "OnEnemyDeath",
+			["Power"] = {{"Damage",50,"Opponent"}},
+			Target = "Opponent",
 		},
 		["Bio"] = "For only 3.99.",
 	},
@@ -675,8 +675,8 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Dredger980"] = {
 		["Id"] = 540075945,
 		["Name"] = "Dredger980",
-		["Health"] = 600,
-		["Power"] = 600,
+		["Health"] = 800,
+		["Power"] = 800,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Yellow", 
@@ -934,7 +934,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 4,},
 		["Effect"] = {
 			Name = "Halloween",
-			Description = "Whenever you gain life, lower the power of all enemy fighters by 75.",
+			Description = "Whenever you gain life, lower the power of all enemy fighters by 50.",
 			["Type"] = "OnHealthGain",
 			["Power"] = {{"Weaken",50}},
 			Target = "Opponent",
@@ -1698,7 +1698,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Eclipse, Werewolf Colossus"] = {
-		["Id"] = 543041104,
+		["Id"] = 651213579,
 		["Name"] = "Eclipse, Werewolf Colossus",
 		["Health"] = 2000,
 		["Power"] = 2000,
@@ -2002,7 +2002,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Haydoscale",
 			Description = "When this card is summoned, put a random red or blue action into your hand. At the end of your turns, all fighters lose 25 power and Script Robber gains 150 power.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Weaken",25},{"Strengthen",175,"Self"}},
+			["Power"] = {{"Strengthen",175,"Self"},{"Weaken",25}},
 			Target = "All",
 		},
 		["Bio"] = "It's not stealing, It's marketing. Meanwhile, I'm not a sore loser. I'm just expressive.",
@@ -2454,8 +2454,8 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Horse Breeder"] = {
 		["Id"] = 540076443,
 		["Name"] = "Horse Breeder",
-		["Health"] = 250,
-		["Power"] = 250,
+		["Health"] = 150,
+		["Power"] = 150,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Dash",
 		["Archetype"] = "Lycanthrope",
@@ -2474,8 +2474,8 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Werecentaur"] = {
 		["Id"] = 540076929,
 		["Name"] = "Werecentaur",
-		["Health"] = 500,
-		["Power"] = 500,
+		["Health"] = 300,
+		["Power"] = 300,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Dash",
 		["Archetype"] = "Lycanthrope",
@@ -2494,6 +2494,20 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Evil Prince"] = {
 		["Id"] = 596217196,
 		["Name"] = "Evil Prince",
+		["AltCards"] = {
+			["Evil Prince-Val"] = {
+				["Id"] = 655015108,
+				["Name"] = "Lovestruck Prince",
+				["Effect"] = {
+					Name = "Woof",
+					Description = "Whenever you cast an action or terrain spell, transform this card, then deal 100 damage to all enemy fighters.",
+					["Type"] = "OnAllyCast",
+					["Power"] = {{"Summon","Werefrog-Val"},{"Damage",100,"Opponent"},{"Damage",9999,"Self"}},
+					Target = "Ally",
+				},
+				["Bio"] = "Same kingdom, different crush. Time to conquer.",
+			}
+		},
 		["Health"] = 300,
 		["Power"] = 200,
 		["Rarity"] = "Common",
@@ -2514,6 +2528,20 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Werefrog"] = {
 		["Id"] = 596217279,
 		["Name"] = "Werefrog",
+			["AltCards"] = {
+			["Werefrog-Val"] = {
+				["Id"] = 655015511,
+				["Name"] = "Loving Frog",
+				["Effect"] = {
+					Name = "Woof",
+					Description = "Whenever your opponent casts an action or terrain spell, untransform this card, then deal 100 damage to all enemy fighters.",
+					["Type"] = "OnEnemyCast",
+					["Power"] = {{"Summon","Evil Prince-Val"},{"Damage",100,"Opponent"},{"Damage",9999,"Self"}},
+					Target = "Ally",
+				},
+				["Bio"] = "Same kingdom, different crush. Time to conquer.",
+			}
+		},
 		["Health"] = 600,
 		["Power"] = 400,
 		["Rarity"] = "Token",
@@ -2583,9 +2611,9 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 2, ["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Whenever you cast an action or terrain spell, transform this card, then put a random red or blue action into your hand.",
+			Description = "Whenever you cast an action or terrain spell, transform this card, draw a card, then lose 300 life.",
 			["Type"] = "OnAllyCast",
-			["Power"] = {{"Summon","Lunar Rager"},{"RandomAdd","Lunar"},{"Damage",9999,"Self"}},
+			["Power"] = {{"Summon","Lunar Rager"},{"Draw",1},{"Cost",300},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = "The paraselene sages channel the moon to restrict.",
@@ -2603,9 +2631,9 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 2, ["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Whenever your opponent casts an action or terrain spell, untransform this card, then put a random red or blue action into your hand.",
+			Description = "Whenever your opponent casts an action or terrain spell, untransform this card.",
 			["Type"] = "OnEnemyCast",
-			["Power"] = {{"Summon","Paraselene Ascetic"},{"RandomAdd","Lunar"},{"Damage",9999,"Self"}},
+			["Power"] = {{"Summon","Paraselene Ascetic"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = "They are fools. Why would you restrict a blessing?"
@@ -2643,7 +2671,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 2, ["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Whenever your opponent casts an action or terrain spell, untransform this card, then draw a card and lose 200 life.",
+			Description = "Whenever your opponent casts an action or terrain spell, untransform this card, then deal 150 damage to the opponent.",
 			["Type"] = "OnEnemyCast",
 			["Power"] = {{"Summon","Blessed Acolyte"},{"Inflict",150,"Opponent"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -2654,8 +2682,8 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Homeless Man"] = {
 		["Id"] = 543041104,
 		["Name"] = "Homeless Man",
-		["Health"] = 500,
-		["Power"] = 500,
+		["Health"] = 450,
+		["Power"] = 450,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Dash",
 		["Archetype"] = "Lycanthrope",
@@ -2675,8 +2703,8 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["DIY: Werewolf"] = {
 		["Id"] = 543041104,
 		["Name"] = "DIY: Werewolf",
-		["Health"] = 1000,
-		["Power"] = 1000,
+		["Health"] = 900,
+		["Power"] = 900,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Dash",
 		["Archetype"] = "Lycanthrope",
@@ -2710,7 +2738,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Draw",1},{"Damage",200,"Single"}},
 			Target = "Ally",
 		},
-		["Bio"] = "That noob never stood a chance."
+		["Bio"] = "Happy Blitzwolfer Appreciation Day, October 2013."
 	},
 	
 	["Claudia Sinister"] = {
@@ -2939,17 +2967,17 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Hallow, the Sugarlord"] = {
 		["Id"] = 540076365,
 		["Name"] = "Hallow, the Sugarlord",
-		["Health"] = 1300,
-		["Power"] = 1300,
+		["Health"] = 100,
+		["Power"] = 100,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Yellow", 
 		["Cost"] = {["Yellow"] = 13,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "At the end of your turns, deal 250 damage to all other fighters. They gain 250 power.",
-			["Type"] = "OnEnd",
-			["Power"] = {{"Heal",250,"Self"},{"Damage",250},{"Strengthen",250},{"Weaken",250,"Self"}},
+			Description = "A target fighter gains 1300 health and power. End the turn.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Heal",1300,"Single"},{"Strengthen",1300,"Single"},{"EndTurn",1}},
 			Target = "All",
 		},
 		["Bio"] = "Lose yourself in my revelry.",
@@ -3093,7 +3121,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	
 	["Treasured Unicorn"] = {
 		["Id"] = 574177392,
-		["Name"] = "Treasured Unicorn",
+		["Name"] = "Treasured 	",
 		["Health"] = 700,
 		["Power"] = 50,
 		["Rarity"] = "Uncommon",
@@ -3102,9 +3130,9 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 3,},
 		["Effect"] = {
 			Name = "Undead Rising",
-			Description = "Both players summon a random uncommon fighter.",
+			Description = "Both players generate 3 white icons.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"RandomSummon","Uncommon"},{"RandomSummon","Uncommon","Opponent"}},
+			["Power"] = {{"Neutral",3,"All"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Zanzel used this specific breed to supply her forces with supplies.",

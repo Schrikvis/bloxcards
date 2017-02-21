@@ -173,6 +173,8 @@ local packs = {
 		CardPackId = 465492503,
 		Description = "Red is the colour of power, ambition, and control. Dominion packs contain cards that cost red!",
 		Cards = {
+			"SoulSearch",
+			"Eye of Heaven",
 			"UHunterU",
 			"Roblox Gift Card",
 			"MagikalYawn",
@@ -542,6 +544,8 @@ local packs = {
 		CardPackId = 465492637,
 		Description = "Blue is the colour of logic, order, and structure. Thought packs contain cards that cost blue!",
 		Cards = {
+			"Deadly Dicey Duo",
+			"hyp3rdeath",
 			"Steam Razikai",
 			"Wooden Chair",
  			"Rollernaut",
@@ -738,6 +742,8 @@ local packs = {
 		Description = 
 		"Yellow is the colour of chaos, emotion, and society. Revel packs contain cards that cost yellow!",
 		Cards = {
+			"DominiusConfabricor",
+			"Defaultio",
 			"Histor",
 			"Jeeeeesus",
 			"Dicey Dave",
@@ -934,6 +940,12 @@ local packs = {
 		Description = "Exotic new cards from the black market! White cards and joke cards! It's all yours, as long as you have 10 wins!",
 		WinRequirement = 10;
 		Cards = {
+			"SoulSearch",
+			"Defaultio",
+			"Deadly Dicey Duo",
+			"hyp3rdeath",
+			"DominiusConfabricor",
+			"Eye of Heaven",
 			"Steam Razikai",
 			"UHunterU",
 			"BonesMcCormick",
@@ -1489,6 +1501,54 @@ local packs = {
 			"SantaSorin",
 			"Santa Doge",
 			"Fruit Cake",
+		},
+	};
+	
+	{
+		Name = "Tough Love", --VALENTINES!
+		PriceInBloxBux = 1000;
+		PriceInRobux = 0;
+		CardsInPack = 4,
+		CardPackId = 654911255,
+		Description = "Over 40 special edition Valentine themed cards! Can your heart resist them? <3 (Minimum 10 wins. Stalker and Combine Garrison are only found in the Art Box.)",
+		WinRequirement = 10;
+		Cards = {
+			"Chef-Val",
+			"PixelPistol-Val",
+			"TeeVee-Val",
+			"Newbie-Val",
+			"RiceStorage-Val",
+			"Bowl of Greed-Val",
+			"Lord of Greed-Val",
+			"DeadZoneHark-Val",
+			"Sorry-Val",
+			"Pilot-Val",
+			"Hamstermon-Val",
+			"Pirate-Val",
+			"Gato Luz-Val",
+			"Burning Phoenix-Val",
+			"Hallows Treats-Val",
+			"Dr.Fave-Val",
+			"SuperCloud9-Val",
+			"Vitality Potion-Val",
+			"Pancake Break-Val",
+			"Uncreativename123-Val",
+			"IlIll-Val",
+			"MiloCortez-Val",
+			"Sylrath-Val",
+			"KingCactaur-Val",
+			"Korblox Deathknight-Val",
+			"BlackSymphony-Val",
+			"Forbidden Power-Val",
+			"Cupid's Eye Wing Flock",
+			"Cupid's Eye Cultist",
+			"Cupid's Eye Heart Stealer",
+			"Cupid's Eye Nexus",
+			"Cupid's Eye, Master of Romance",
+			"Evil Prince-Val",
+			"SoulSearch-Val",
+		
+			
 		},
 	};
 	
