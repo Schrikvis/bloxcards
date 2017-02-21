@@ -98,6 +98,14 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Meeboid"] = {
 		["Id"] = 263664744,
 		["Name"] = "Meeboid",
+		["AltCards"] = {
+			["Meeboidv2"] = {
+				["Id"] = 664141008,
+				["Name"] = "Weeboid"
+				["AltArt"] = true,
+				["Bio"] = "Searching online for the best anime.",
+			}
+		},		
 		["Health"] = 600,
 		["Power"] = 0,
 		["Rarity"] = "Common",
@@ -12110,7 +12118,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				},
 				["Bio"] = "SCRUUUUUGE?!",
 			}
-		},
+			["GrandDadPixel"] = {
+				["Id"] = 664140826,
+				["Name"] = "GRAND DAD"
+				["AltArt"] = true,
+				["Bio"] = "PIXEEEEEL?!",
+			}
+		},			
 		["Health"] = 777,
 		["Power"] = 777,
 		["Rarity"] = "Rare",
@@ -14209,6 +14223,21 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["ShockingRobux"] = {
 		["Id"] = 444253214,
 		["Name"] = "ShockingRobux",
+		["AltCards"] = {
+			["DepressingTix"] = {
+				["Id"] = 664140724,
+				["Name"] = "DepressingTix"
+				["AltArt"] = true,
+				["Effect"] = {
+					Name = "Trout Slap",
+					Description = "Haste. When it destroys a fighter, put a copy of DepressingTix to your hand.",
+					["Type"] = "OnDestroy",
+					["Power"] = {{"Add","DepressingTix"}},
+					Target = "Ally",
+				},
+				["Bio"] = "Contrasted to ShockingRobux.",
+			}
+		},		
 		["Health"] = 600,
 		["Power"] = 250,
 		["Rarity"] = "Uncommon",
@@ -14218,7 +14247,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 1, ["Blue"] = 4,},
 		["Effect"] = {
 			Name = "Trout Slap",
-			Description = "This card can attack the turn it's summoned. When it destroys a fighter, put a copy of ShockingRobux to your hand.",
+			Description = "Haste. When it destroys a fighter, put a copy of ShockingRobux to your hand.",
 			["Type"] = "OnDestroy",
 			["Power"] = {{"Add","ShockingRobux"}},
 			Target = "Ally",
