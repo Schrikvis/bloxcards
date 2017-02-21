@@ -8713,7 +8713,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Nature's Shield",
 			Description = "At the end of your turns, drain 250 life from your opponent.",
-			["Type"] = "OnSummon",
+			["Type"] = "OnEnd",
 			["Power"] = {{"Cost",-250},{"Inflict",250}},
 			Target = "Opponent",
 		},
@@ -10407,15 +10407,14 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Yellow",
 		["Cost"] = {["Yellow"] = 1,},
-		["Token"] = true,
 		["Effect"] = {
 			Name = "Wary",
-			Description = "Whenever your opponent summons a fighter, reset Seranok's stats and return it to your hand. Seranok can't generate icons.",
+			Description = "Whenever your opponent summons a fighter, reset Seranok's stats and return it to your hand.",
 			["Type"] = "OnEnemySummon",
-			["Power"] = {{"SetHealth",500},{"SetPower",500},{"Return",030}},
+			["Power"] = {{"SetHealth",500},{"SetPower",500},{"Unlock",9999}{"Return",030}},
 			Target = "Self",
 		},
-		["Bio"] = "The reason there isn't a Merely card...wait there is one...uh...",
+		["Bio"] = "There are people who you can't imagine being without. There are people you can't wait to destroy. Seranok is both - at the same time!",
 	},	
 	
 	["TheAmazeMan"] = {
