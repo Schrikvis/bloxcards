@@ -14227,7 +14227,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["DepressingTix"] = {
 				["Id"] = 664140724,
 				["Name"] = "DepressingTix"
-				["AltArt"] = true,
 				["Effect"] = {
 					Name = "Trout Slap",
 					Description = "Haste. When it destroys a fighter, put a copy of DepressingTix to your hand.",
