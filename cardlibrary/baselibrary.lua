@@ -1198,7 +1198,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "PixelPistol",
 		["AltCards"] = {
 			["PixelPistol-Val"] = {
-				["Name"] = "PixelLove",
+				["Name"] = "PixelHeart",
 				["Id"] = 655016789,
 				["Bio"] = "On second though, I'm alright with my past choices.",
 			}		
@@ -1285,7 +1285,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["TeeVee-Val"] = {
 				["Name"] = "Ms. Teevee",
-				["Id"] = 480385242,
+				["Id"] = 662150269,
 				["Bio"] = "The only channels you will find on this teevee are romcoms.",
 			}
 		},
@@ -1436,7 +1436,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Newbie",
 		["AltCards"] = {
 			["Newbie-Val"] = {
-				["Name"] = "Newbie",
+				["Name"] = "Female Newbie",
 				["Id"] = 655013013,
 				["Bio"] = "Is that even a problem?",
 			}	
@@ -1873,8 +1873,15 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {							
 			["RiceStorage-Val"] = {
 				["Id"] = 655011758,
-				["Name"] = "ChocolateStorage",						
-				["Bio"] = "His love of chocolate sometimes goes out of hand by filling his entire room with just chocolate, he'll store chocolate anywhere so he has plenty of rice to eat.",
+				["Name"] = "ChocolateStorage",	
+				["Effect"] = {
+					Name = "Assimilate",
+					Description = "Whenever your opponent gains life, Unlock ChocolateStorage.",
+					["Type"] = "OnEnemyLifeGain",
+					["Power"] = {{"Unlock",9999}},
+					Target = "Self",
+				},
+				["Bio"] = "His love of chocolate sometimes goes out of hand by filling his entire room with just chocolate, he'll store chocolate anywhere so he has plenty of chocolate to eat.",
 			}
 		},					
 		["Health"] = 450,
@@ -1896,20 +1903,20 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Salesman"] = {
 		["Id"] = 275340647,
 		["Name"] = "Salesman",
-		["Health"] = 325,
-		["Power"] = 450,
+		["Health"] = 300,
+		["Power"] = 400,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "PunchKick",
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 2,["Blue"] = 1,},
 		["Effect"] = {
 			Name = "Vampire",
-			Description = "Generate a green icon.",
+			Description = "Both players gain 50 life.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Green",1}},
+			["Power"] = {{"Cost",-50},{"Cost",-50,"Opponent"}},
 			Target = "Ally",
 		},
-		["Bio"] = "Ordinary salesman trying to sell his wares.",
+		["Bio"] = "It's a win-win offer you cant refuse!",
 	},
 	
 	["TZSara"] = {
@@ -2548,7 +2555,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Bio"] = "Why are you stealing something that *I* rightfully stole first?",			
 			},
 			["Lord of Greed-Val"] = {
-				["Id"] = 656732310,
+				["Id"] = 662115217,
 				["Name"] = "Lord of Candy",
 				["Bio"] = "Lord of Candy is to grams as chocolate is to wrappers.",
 			}
@@ -9108,6 +9115,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Grand Chicken Lord"] = {
 		["Id"] = 336411229,
 		["Name"] = "Grand Chicken Lord",
+		["AltCards"] = {
+			["ChickenLord-ArtV"] = {
+				["Id"] = 661049986,
+				["AltArt"] = true,
+				["Bio"] = "You get a chicken leg, and YOU get a chicken leg! Everyone gets a chicken leg!",
+			};
+		},
 		["Health"] = 700,
 		["Power"] = 700,
 		["Rarity"] = "Rare",
@@ -9129,6 +9143,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Grand Glaciem Mage"] = {
 		["Id"] = 336411235,
 		["Name"] = "Grand Glaciem Mage",
+		["AltCards"] = {
+			["GrandGlaciem-ArtV"] = {
+				["Id"] = 661049605,
+				["AltArt"] = true,
+				["Bio"] = "Icier than Icytea.",
+			};
+		},		
 		["Health"] = 700,
 		["Power"] = 700,
 		["Rarity"] = "Rare",
@@ -9149,6 +9170,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Grand Ignis Mage"] = {
 		["Id"] = 336411248,
 		["Name"] = "Grand Ignis Mage",
+		["AltCards"] = {
+			["GrandIgnis-ArtV"] = {
+				["Id"] = 540744997,
+				["AltArt"] = true,
+				["Bio"] = "His Phoenix is as hot as his looks..",
+			};
+		},		
 		["Health"] = 700,
 		["Power"] = 700,
 		["Rarity"] = "Rare",
@@ -9169,6 +9197,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Grand Meeboid Totem"] = {
 		["Id"] = 336411268,
 		["Name"] = "Grand Meeboid Totem",
+		["AltCards"] = {
+			["meebtotem-ArtV"] = {
+				["Id"] = 411802926,
+				["AltArt"] = true,
+				["Bio"] = "Silly kids, Surfboards are for Meeboids!",
+			};
+		},
 		["Health"] = 700,
 		["Power"] = 0,
 		["Rarity"] = "Rare",
@@ -14284,7 +14319,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Trout Slap",
 			Description = "Destroy all other fighters. Your opponent draws two cards and gains 4 white icons. End the turn.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Heal",9999,"Self"},{"Damage",9999},{"Draw",2,"Opponent"},{"EndTurn",1,"Ally"}},
+			["Power"] = {{"Heal",9999,"Self"},{"Damage",9999},{"Draw",2,"Opponent"},{"EndTurn",1,"Ally"},{"Neutral",4,"Opponent"}},
 			Target = "All",
 		},
 		["Bio"] = "I'm sorry I caused the apocalypse. Have some gold.",

@@ -640,7 +640,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 
 	["Javier Killer"] = {
 		["Id"] = 616082761,
-		["Name"] = "Javier Killer",
+		["Name"] = "xXJavier_killer1xX",
 		["Health"] = 200,
 		["Power"] = 600,
 		["Rarity"] = "Uncommon",
@@ -734,7 +734,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	}, 
 
 	["Peika Sammai"] = {
-		["Id"] = 622171055,
+		["Id"] = 662457643,
 		["Name"] = "Peika Sammai",
 		["Health"] = 600,
 		["Power"] = 600,
@@ -938,7 +938,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 		
 	["Deadly Dicey Duo"] = {
-		["Id"] = 645386479,
+		["Id"] = 658086563,
 		["Name"] = "Deadly Dicey Duo",
 		["Health"] = 1400,
 		["Power"] = 650,
@@ -948,7 +948,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2, ["Yellow"] = 5, ["Blue"] = 5,},
 		["Effect"] = {
 			Name = "Hellfire",
-			Description = "Enemy fighters are locked for one turn. At the end of your turn, lower the power of all enemy fighters by 50, then both players lose 200 life.",
+			Description = "Enemy fighters are locked for one turn. At the end of your turn, lower the power of all enemy fighters by 50, gain 1 yellow icon, then both players lose 200 life.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Lock",1},{"Summon","Dicey Token"},{"Damage",9999,"Self"}},
 			Target = "Opponent",
@@ -957,7 +957,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Dicey Token"] = {
-		["Id"] = 645386479,
+		["Id"] = 658086563,
 		["Name"] = "Deadly Dicey Duo",
 		["Health"] = 1400,
 		["Power"] = 650,
@@ -967,7 +967,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2, ["Yellow"] = 5, ["Blue"] = 5,},
 		["Effect"] = {
 			Name = "Hellfire",
-			Description = "Enemy fighters are locked for one turn. At the end of your turn, lower the power of all enemy fighters by 50, then both players lose 200 life.",
+			Description = "Enemy fighters are locked for one turn. At the end of your turn, lower the power of all enemy fighters by 50, gain 1 yellow icon, then both players lose 200 life.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Yellow",1},{"Weaken",50,"Opponent"},{"Cost",200},{"Inflict",200,"Opponent"}},
 			Target = "Opponent",

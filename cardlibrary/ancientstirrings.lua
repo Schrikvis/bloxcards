@@ -3121,7 +3121,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	
 	["Treasured Unicorn"] = {
 		["Id"] = 574177392,
-		["Name"] = "Treasured Unicorn",
+		["Name"] = "Treasured 	",
 		["Health"] = 700,
 		["Power"] = 50,
 		["Rarity"] = "Uncommon",
