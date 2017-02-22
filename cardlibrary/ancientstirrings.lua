@@ -1143,7 +1143,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 1,},
 		["Effect"] = {
 			Name = "Halloween",
-			Description = "Deal 50 damage to a fighter. Jason can attack the turn it is summoned.",
+			Description = "Haste. Deal 50 damage to a fighter.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",50}},
 			Target = "Single",
