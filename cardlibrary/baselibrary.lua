@@ -7502,7 +7502,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Master Blast",
 			Description = [[Set a target fighter's attack to 700.]],
 			["Type"] = "OnSummon",
-			["Power"] = {"SetPower",700},
+			["Power"] = {{"SetPower",700}},
 			Target = "Single",
 		},
 		["Bio"] = "Die. o3o",
@@ -11312,12 +11312,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["CALL OF DOGE!?!"] = {
-		["Id"] = 626187529,
+		["Id"] = 665983769,
 		["Name"] = "Doge Doge",
 		["Health"] = 400,
 		["Power"] = 600,
-		["Rarity"] = "Rare",
+		["Rarity"] = "Epic",
 		["AttackEffect"] = "Lightning",
+		["Archetype"] = "Doge",
 		["Color"] = "Yellow",
 		["Cost"] = {["Yellow"] = 4, ["Neutral"] = 3,},
 		["Effect"] = {
@@ -14126,7 +14127,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Render",
 			Description = "Whenever Lilmanofsalem is targeted by a creature, that creature becomes a copy of Lilmanofsalem, without this effect.",
 			["Type"] = "OnTarget",
-			["Power"] = {{"Damage",9999,"Aggressor"},{"Summon","Lilmanofsalem","Aggressor"}},
+			["Power"] = {{"Damage",9999,"Aggressor"},{"Summon","Lilmanofsalem Token","Aggressor"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Putting Death Millers in your game is bastard modding. No exceptions.",
@@ -14135,8 +14136,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Lilmanofsalem Token"] = {
 		["Id"] = 442933301,
 		["Name"] = "Lilmanofsalem",
-		["Health"] = 400,
-		["Power"] = 800,
+		["Health"] = 500,
+		["Power"] = 500,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Yellow",
@@ -17516,11 +17517,11 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},		
 	
 	["CorgiParade"] = {
-		["Id"] = 626186832,
+		["Id"] = 665983580,
 		["Name"] = "CorgiParade",
 		["Health"] = 600,
 		["Power"] = 300,
-		["Rarity"] = "Epic",
+		["Rarity"] = "Rare",
 		["AttackEffect"] = "Slap",
 		["Color"] = "Green",
 		["Cost"] = {["Neutral"] = 2, ["Green"] = 3,},
