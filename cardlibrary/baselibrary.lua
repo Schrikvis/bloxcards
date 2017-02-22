@@ -2775,7 +2775,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 450,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Punch1",
-/		["Color"] = "Green",
+		["Color"] = "Green",
 		["Cost"] = {["Green"] = 4},
 		["Effect"] = {
 			Name = "Arkhaiomelisidonophunikheratos",
@@ -8122,7 +8122,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 	},
 	
--- 	["Depths of the Nether"] = {
+ 	["Depths of the Nether"] = {
 		["Id"] = 326637276,
 		["Name"] = "Depths of the Nether",
 		["Health"] = 0,
