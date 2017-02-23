@@ -11394,9 +11394,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Red"] = 7,},
 		["Effect"] = {
 			Name = "Power Up",
-			Description = [[Grant a target fighter 350 health and 350 power, then draw three cards.]],
+			Description = [[Grant a target fighter 350 health and 350 power, then draw one card.]],
 			["Type"] = "OnSummon",
-			["Power"] = {{"Draw",3,"Ally"},{"Heal",350},{"Strengthen",350}},
+			["Power"] = {{"Draw",1,"Ally"},{"Heal",350},{"Strengthen",350}},
 			Target = "Single",
 		},
 		["Bio"] = "Aife's secretly been assigned to target anyone for some dosh!",
