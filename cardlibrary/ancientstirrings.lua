@@ -3132,8 +3132,8 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Undead Rising",
 			Description = "Both players generate 3 white icons.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Neutral",3,"All"}},
-			Target = "Ally",
+			["Power"] = {{"Neutral",3}},
+			Target = "All",
 		},
 		["Bio"] = "Zanzel used this specific breed to supply her forces with supplies.",
 	},	
@@ -3151,12 +3151,33 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Undead Rising",
 			Description = "This card can't generate icons. When this card attacks, lock it and the card it attacked for 1 turn.",
-			["Type"] = "OnSummon",
+			["Type"] = "OnAttack",
 			["Power"] = {{"Lock",1},{"Lock",1,"Self"}},
-			Target = "Ally",
+			Target = "Aggressor",
 		},
 		["Bio"] = "Zanzel was amazed at their power, but this power was destined to die off.",
-	},			
+	},
+	
+	["LovecraftWizard"] = {
+		["Id"] = 574177392,
+		["Name"] = "LovecraftWizard",
+		["Health"] = 600,
+		["Power"] = 400,
+		["Rarity"] = "Rare",
+		["AttackEffect"] = "Slash",
+		["Token"] = true,
+		["Color"] = "Green",
+		["CounterAttackBlock"] = true,
+		["Cost"] = {["Neutral"] = 4, ["Green"] = 1,},
+		["Effect"] = {
+			Name = "Undead Rising",
+			Description = "This card can't generate icons. When this card attacks and destroys another, give this card 200 power and 200 health. LovecraftWizard can't be counterattacked.",
+			["Type"] = "OnAttackDestroy",
+			["Power"] = {{"Strengthen",200},{"Heal",200}},
+			Target = "Self",
+		},
+		["Bio"] = "If I am mad, it is mercy! May the gods pity the man who in his callousness can remain sane to the hideous end!",
+	},	
 }
 
 return stirrings
