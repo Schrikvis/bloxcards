@@ -1058,15 +1058,14 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Red",
 		["Token"] = true,
 		["Cost"] = {["Neutral"] = 1,["Red"] = 2,},
-		["Bio"] = "From a spark, he generates a power that can cause instant combustion to anyone.",
 		["Effect"] = {
 			Name = "Pyroblast",
-			Description = "Deal 250 damage to a target fighter. This card cannot generate icons.",
+			Description = "Deal 250 damage to a target fighter,then deal 150 damage to all green fighters. This card cannot generate icons.",
 			["Type"] = "OnSummon",
-			["Power"] = "Damage",
-			Target = "Single",
-			Increase = 250,
+			["Power"] = {{"Damage",250,"Single"},{"Damage",150}},
+			Target = "ColorGreen",
 		},
+		["Bio"] = "From a spark, he generates a power that can cause instant combustion to anyone.",
 	},
 	
 	["Kamov"] = {
@@ -4447,7 +4446,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Ejob-Val"] = {
 				["Name"] = "Dawgra",						
 				["Id"] = 655012559,
-				["Bio"] = "What appears to be a brand new card is actually a copycat!",
+				["Bio"] = "Dawgra, the red-haired weeb. She made one contribution to BLOX CARDS : A small white bust with her name on it. What could it mean...?",
 			},
 		},						
 		["Health"] = 700,
@@ -5628,6 +5627,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Senpai Garrison"] = {
 				["Id"] = 655016996,
 				["Name"] = "Senpai Garrison",
+				["Effect"] = {
+					Name = "Overgrown",
+					Description = "At the end of your turn, summon another Senpai Garrison.",
+					["Type"] = "OnEnd",
+					["Power"] = {{"Summon","Senpai Garrison"}},
+					Target = "Ally",
+				},
 				["AltArt"] = true,
 				["Bio"] = "These high school students are always ignoring Stalker-Chan.",
 			}
@@ -11905,7 +11911,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["LordVasco"] = {
 		["Id"] = 411842987,
 		["Name"] = "LordVasco",
-		["Health"] = 900,
+		["Health"] = 700,
 		["Power"] = 0,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Lightning",
@@ -11913,7 +11919,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Blue"] = 1,["Red"] = 2,},
 		["Effect"] = {
 			Name = "Demon Eye",
-			Description = "Whenever you cast an action or terrain spell, LordVasco gains 200 health and power.",
+			Description = "Whenever an action or terrain spell is cast, LordVasco gains 200 health and power.",
 			["Type"] = "OnCast",
 			["Power"] = {{"Heal",200},{"Strengthen",200}},
 			Target = "Self",
@@ -12613,16 +12619,16 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["xXVitalityVoidXx"] = {
 		["Id"] = 413948179,
 		["Name"] = "xXVitalityVoidXx",
-		["Health"] = 200,
-		["Power"] = 200,
+		["Health"] = 450,
+		["Power"] = 450,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 1,},
 		["Effect"] = {
 			Name = "Endless Spooks",
-			Description = [[Whenever you cast an action or terrain spell, fighters your opponent control lose 50 power.]],
-			["Type"] = "OnAllyCast",
+			Description = [[Whenever an action or terrain spell, enemy fighters lose 50 power.]],
+			["Type"] = "OnCast",
 			["Power"] = {{"Weaken",50,"Opponent"}},
 			Target = "Archetype",
 		},
@@ -14359,19 +14365,19 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 446792148,
 		["Name"] = "TheEnderCorp",
 		["Health"] = 600,
-		["Power"] = 300,
+		["Power"] = 400,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 1, ["Red"] = 1, ["Blue"] = 3,},
 		["Effect"] = {
 			Name = "I AM NOT YOUR SLAVE DAD",
-			Description = "Both players draw a card.",
+			Description = "Both players draw a card. Then, reveal your opponent's hand.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Draw",1}},
+			["Power"] = {{"Draw",1},{"RevealHand",999,"Opponent"}},
 			Target = "All",
 		},
-		["Bio"] = "[InsertWittyFlavourTextHere]",
+		["Bio"] = "ALRIGHT, LOOK. I'll let you draw an extra card if you let me look at your hand! Just once! I promise! That's a good deal, right?",
 	},
 	
 	["BLOXER787"] = {
@@ -14702,8 +14708,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Mariochocolatemilk"] = {
 		["Id"] = 473309022,
 		["Name"] = "Mariochocolatemilk",
-		["Health"] = 600,
-		["Power"] = 100,
+		["Health"] = 700,
+		["Power"] = 200,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Green", 
@@ -17216,9 +17222,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Thug Life",
-			Description = "Lower the power of all fighters by 100. Summon a guest.",
+			Description = "Lower the power of all fighters by 200. Summon a guest.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Weaken",100},{"Summon","Guest","Ally"}},
+			["Power"] = {{"Weaken",200},{"Summon","Guest","Ally"}},
 			Target = "All",
 		},
 		["Bio"] = "OMG My house is on fire! GTG. Wanna be friends? Dinosaurs!",
