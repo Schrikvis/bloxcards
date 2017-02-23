@@ -1664,7 +1664,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 500,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Dash",
-		["CounterAttackBlockBlock"] = true,
+		["CounterBlock"] = true,
 		["Color"] = "Red", 
 		["Cost"] = {["Red"] = 1,},
 		["Effect"] = {
@@ -1709,7 +1709,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 1,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "Max level. Whenever any fighter dies, summon a Wolfbitten Noob and put a Wolven Blitz into your hand. Eclipse can't be counterattacked.",
+			Description = "Max level. Can't be counterattacked. Whenever any fighter dies, summon a Wolfbitten Noob and put a Wolven Blitz into your hand.",
 			["Type"] = "OnAnyDeath",
 			["Power"] = {{"Summon","Wolfbitten Noob"},{"Add","Wolven Blitz"}},
 			Target = "Ally",
@@ -2077,7 +2077,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 1, ["Neutral"] = 7,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "Summon three Morphic Goos. Ghoost can't be counterattacked.",
+			Description = "Can't be counterattacked. Summon three Morphic Goos.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Summon","Morphic Goo"},{"Summon","Morphic Goo"},{"Summon","Morphic Goo"}},
 			Target = "Ally",
@@ -3171,7 +3171,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4, ["Green"] = 1,},
 		["Effect"] = {
 			Name = "Undead Rising",
-			Description = "This card can't generate icons. When this card attacks and destroys another, give this card 200 power and 200 health. LovecraftWizard can't be counterattacked.",
+			Description = "Can't be counterattacked. This card can't generate icons. When this card attacks and destroys another, give this card 200 power and 200 health.",
 			["Type"] = "OnAttackDestroy",
 			["Power"] = {{"Strengthen",200},{"Heal",200}},
 			Target = "Self",
