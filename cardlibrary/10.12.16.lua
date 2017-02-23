@@ -711,7 +711,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"SetNeutral",3},{"SetGreen",3}},
 			Target = "Ally",
 		},
-		["Bio"] = "Consider _us_ blessed.",
+		["Bio"] = "Consider us blessed.",
 	}, 
 
 	["Beyondthegong"] = {
@@ -976,7 +976,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Defaultio"] = {
-		["Id"] = 645386479,
+		["Id"] = 666300396,
 		["Name"] = "Defaultio",
 		["Health"] = 800,
 		["Power"] = 650,
@@ -993,6 +993,46 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "Although WoodReviewer loves his axe, it's Defaultios taste in wood grain that keeps them from being friends...",
 	},	
+	
+	["Enlightened Whelp"] = {
+		["Id"] = 666289588,
+		["Name"] = "Enlightened Whelp",
+		["Health"] = 800,
+		["Power"] = 50,
+		["Rarity"] = "Uncommmon",
+		["AttackEffect"] = "Fire",
+		["Archetype"] = "Overseer",		
+		["Color"] = "Yellow",
+		["Cost"] = {["Green"] = 3,},
+		["Effect"] = {
+			Name = "Hellfire",
+			Description = "Summon an Eye of Overseer and give all overseers 100 power and 100 health. When Enlightened Whelp is targeted, Give all doges 100 health.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Summon","Eye of Overseer"},{"Strengthen",100,"Archetype"},{"Heal",100,"Archetype"},{"Summon","Whelp Token"},{"Damage",9999,"Self"}},
+			Target = "Ally",
+		},
+		["Bio"] = "Enlighten your soul with my eye.",
+	},
+	
+	["Whelp Token"] = {
+		["Id"] = 666289588,
+		["Name"] = "Enlightened Whelp",
+		["Health"] = 800,
+		["Power"] = 50,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Fire",
+		["Archetype"] = "Doge",		
+		["Color"] = "Yellow",
+		["Cost"] = {["Green"] = 3,},
+		["Effect"] = {
+			Name = "Hellfire",
+			Description = "Summon an Eye of Overseer and give all overseers 100 power and 100 health. When Enlightened Whelp is targeted, Give all doges 100 health.",
+			["Type"] = "OnTarget",
+			["Power"] = {{{"Heal",100,}},
+			Target = "Archetype",
+		},
+		["Bio"] = "Enlighten your soul with my eye.",
+	},		
 }
 
 return tentwelvesixteen
