@@ -16118,7 +16118,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 					["Power"] = {{"Summon","PencilWizard-Val"}},
 					Target = "Ally",
 				},				
-				["Bio"] = "I am Goat Mama, caretaker of the ruins, and I will show you a good time",
+				["Bio"] = "Did you just call me... 'Mom'? Well... I suppose... Would that make you happy?",
 			},
 		},		
 		["Health"] = 500,
