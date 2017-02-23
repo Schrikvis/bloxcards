@@ -1119,10 +1119,10 @@ local packs = {
 		Description = "Priestess Zanzel has corrupted this world. Do you have the gall to stop her? You must have 10 wins to open this pack.",
 		WinRequirement = 10;
 		Cards = {
-		"Undead Teddy"
-		"Treasured Unicorn"
-		"Graboid"
-		"LovecraftWizard"
+		"Undead Teddy",
+		"Treasured Unicorn",
+		"Graboid",
+		"LovecraftWizard",
 		"Bedsheet Ghost",
 		"DoeDoe",
 		"Tooth Decay",
@@ -1519,8 +1519,9 @@ local packs = {
 		Description = "Over 40 special edition Valentine themed cards! Can your heart resist them? <3 (Minimum 10 wins. Stalker and Combine Garrison are only found in the Art Box.)",
 		WinRequirement = 10;
 		Cards = {
-			"The Hugger"
-			"PencilWizard-Val"
+			"Ejob-Val",
+			"The Hugger",
+			"PencilWizard-Val",
 			"Chef-Val",
 			"PixelPistol-Val",
 			"TeeVee-Val",
