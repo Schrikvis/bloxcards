@@ -620,7 +620,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 
 	["Histor"] = {
 		["Id"] = 616082705,
-		["Name"] = "Historr",
+		["Name"] = "Histor",
 		["Health"] = 350,
 		["Power"] = 700,
 		["Rarity"] = "Uncommon",
