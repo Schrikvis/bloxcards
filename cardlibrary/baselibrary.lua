@@ -5043,7 +5043,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 5,["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Quick Shot",
-			Description = "Return a target fighter to its owner's hand. This card can't counterattack.",
+			Description = "Can't counterattack. Return a target fighter to its owner's hand.",
 			["Type"] = "OnSummon",
 			["Power"] = "Return",
 			Target = "Target",
@@ -5668,7 +5668,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 3,},
 		["Effect"] = {
 			Name = "THIS COOKERY IS TERRIBLE",
-			Description = "Connoisseur can't counterattack or be counterattacked.",
+			Description = "Can't counterattack or be counterattacked.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",0}},
 			Target = "Ally",
@@ -6055,7 +6055,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["CounterBlock"] = true,
 		["Effect"] = {
 			Name = "Combine Swipe",
-			Description = "At the end of your turn, deal 300 damage to all enemy fighters. The stalker can't counterattack.",
+			Description = "Can't counterattack. At the end of your turn, deal 300 damage to all enemy fighters.",
 			["Type"] = "OnEnd",
 			["Power"] = "Damage",
 			Target = "Opponent",
@@ -7266,7 +7266,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 6,},
 		["Effect"] = {
 			Name = "Build Up",
-			Description = "Lock all Toys and increase their Power and Health by 125 at the end of each of your turns. This card can't counterattack.",
+			Description = "Can't counterattack. Lock all Toys and increase their Power and Health by 125 at the end of each of your turns.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Lock",2},{"Strengthen",125},{"Heal",125}},
 			Target = "Archetype",
@@ -8593,7 +8593,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 5,["Neutral"] = 5,},
 		["Effect"] = {
 			Name = "Plushie Amp",
-			Description = "When this card is targeted, Lock it for two turns. This card can't counterattack.",
+			Description = "Can't counterattack. When this card is targeted, lock it for two turns.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Lock",2}},
 			Target = "Self",
@@ -9862,7 +9862,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["CounterBlock"] = true,
 		["Effect"] = {
 			Name = "Sudden Death",
-			Description = [[When this card dies, deal 4000 damage to all fighters. This card can't counterattack.]],
+			Description = [[Can't counterattack. When this card dies, deal 4000 damage to all fighters.]],
 			["Type"] = "OnDeath",
 			["Power"] = {{"Damage",4000}},
 			Target = "All",
@@ -10162,7 +10162,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["CounterBlock"] = true,
 		["Effect"] = {
 			Name = "Paranormanbiggestfan attack w/ Paranormanbiggestfan.",
-			Description = [[When this card destroys another, draw 2 cards. This card can't counterattack.]],
+			Description = [[Can't counterattack. When this card destroys another, draw 2 cards.]],
 			["Type"] = "OnDestroy",
 			["Power"] = "Draw",
 			Target = "Ally",
@@ -11011,7 +11011,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Alien Beef Serum",
-			Description = "Drone can't be counterattacked.This card doesn't generate icons.",
+			Description = "Can't be counterattacked.This card doesn't generate icons.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",0}},
 			Target = "Ally",
@@ -11512,7 +11512,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Red"] = 2,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = [[This card can't be counterattacked.]],
+			Description = [[Can't be counterattacked.]],
 			["Type"] = "OnTarget",
 			["Power"] = "None",
 			Target = "Self",	
@@ -12160,7 +12160,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["CounterBlock"] = true,
 		["Effect"] = {
 			Name = "Knockdown",
-			Description = [[Summon a copy of this card. This card can't counterattack.]],
+			Description = [[Can't counterattack. Summon a copy of this card.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Summon","John and Jane"}},
 			Target = "Ally",
@@ -14697,12 +14697,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1, ["Yellow"] = 1, ["Green"] = 1, ["Red"] = 4,},
 		["Effect"] = {
 			Name = "ROLLING AROUND AT THE SPEED OF SOUND",
-			Description = "This card can't counterattack.",
+			Description = "Can't counterattack.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",0}},
 			Target = "Self",
 		},
-		["Bio"] = "Live in the cost, you die to floods. Live in the mountains, you die to rockslides. You can't win, you know.",
+		["Bio"] = "Live on the coast, you die to floods. Live in the mountains, you die to rockslides. You can't win, you know.",
 	},
 	
 	["Mariochocolatemilk"] = {
@@ -14777,7 +14777,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["CounterBlock"] = true,
 		["Effect"] = {
 			Name = "HURT ALL THE THINGS",
-			Description = "Can't be discarded, generate icons, or counterattack. At the end of your turns, you lose 200 life.",
+			Description = "Can't counterattack, be discarded or generate icons. At the end of your turns, you lose 200 life.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Cost",200}},
 			Target = "Ally",
@@ -15383,7 +15383,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 5, ["Red"] = 1,},
 		["Effect"] = {
 			Name = "Level Up!",
-			Description = "When this card is targeted, put 2 nightmares into the opponent's hand and 2 nightmares into their deck. This card can't counterattack.",
+			Description = "Can't counterattack. When this card is targeted, put 2 nightmares into the opponent's hand and 2 nightmares into their deck.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Add","Nightmare"},{"Add","Nightmare"},{"DeckAdd","Nightmare"},{"DeckAdd","Nightmare"}},			
 			Target = "Opponent",
@@ -15557,7 +15557,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Dwarvern Heart",
-			Description = "Cant counterattack. When this card dies. Gain 1 red icon.",
+			Description = "Can't counterattack. When this card dies. Gain 1 red icon.",
 			["Type"] = "OnDeath",
 			["Power"] = "Red",
 			Target = "Ally",
@@ -15600,7 +15600,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2, ["Red"] = 2,},
 		["Effect"] = {
 			Name = "Dwarvern Heart",
-			Description = "When this card dies, give all Dwarf fighters 300 power.",
+			Description = "Can't counterattack. When this card dies, give all Dwarf fighters 300 power.",
 			["Type"] = "OnDeath",
 			["Power"] = "Strengthen",
 			Target = "Archetype",
@@ -15687,7 +15687,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Red"] = 3,},
 		["Effect"] = {
 			Name = "Sentry Heart",
-			Description = "Haste. When this card is summoned, destroy all other allied fighters. This card can't be counter-attacked.",
+			Description = "Haste. Can't be counterattacked. When this card is summoned, destroy all other allied fighters.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",9999,"Self"},{"Damage",9999}},
 			Target = "Ally",
@@ -15750,7 +15750,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Red"] = 5,},
 		["Effect"] = {
 			Name = "Sentry Heart",
-			Description = "Haste. After this card attacks, destroy all other allied fighters and increase the health of this card by 150. This card can't be counterattacked.",
+			Description = "Haste. Can't be counterattacked. After this card attacks, destroy all other allied fighters and increase the health of this card by 150.",
 			["Type"] = "OnAttackEnd",
 			["Power"] = {{"Heal",9999,"Self"},{"Damage",9999},{"Heal",150,"Self"}},
 			Target = "Ally",
@@ -15966,7 +15966,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "BossMonster",
-			Description = [[This card is immune to cards that lower or swap its Health or Power. This card cannot be counterattacked. When this card is destroyed, its controller loses the game.]],
+			Description = [[Can't be counterattacked. This card is immune to cards that lower or swap its Health or Power. When this card is destroyed, its controller loses the game.]],
 			["Type"] = "OnDeath",
 			["Power"] = "Inflict",
 			Target = "Self",	
