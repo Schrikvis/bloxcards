@@ -9987,7 +9987,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["ChickenduckbirdV2"] = {
-		["Id"] = 362315238,
+		["Id"] = 667222816,
 		["Name"] = "ChickenGooseBird",
 		["Health"] = 100,
 		["Power"] = 100,
