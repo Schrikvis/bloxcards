@@ -3044,7 +3044,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Undead Teddy"] = {
-		["Id"] = 574177392,
+		["Id"] = 666426765,
 		["Name"] = "Undead Teddy",
 		["Health"] = 100,
 		["Power"] = 100,
@@ -3063,7 +3063,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Teddy1"] = {
-		["Id"] = 574177392,
+		["Id"] = 666426765,
 		["Name"] = "Undead Teddy",
 		["Health"] = 100,
 		["Power"] = 100,
@@ -3082,7 +3082,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Teddy2"] = {
-		["Id"] = 574177392,
+		["Id"] = 666426765,
 		["Name"] = "Undead Teddy",
 		["Health"] = 100,
 		["Power"] = 100,
@@ -3101,7 +3101,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Teddy3"] = {
-		["Id"] = 574177392,
+		["Id"] = 666426765,
 		["Name"] = "Undead Teddy",
 		["Health"] = 100,
 		["Power"] = 100,
@@ -3120,7 +3120,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Treasured Unicorn"] = {
-		["Id"] = 574177392,
+		["Id"] = 666386958,
 		["Name"] = "Treasured 	",
 		["Health"] = 700,
 		["Power"] = 50,
@@ -3139,7 +3139,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Graboid"] = {
-		["Id"] = 574177392,
+		["Id"] = 666429825,
 		["Name"] = "Graboid",
 		["Health"] = 200,
 		["Power"] = 300,
@@ -3159,7 +3159,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["LovecraftWizard"] = {
-		["Id"] = 574177392,
+		["Id"] = 666379203,
 		["Name"] = "LovecraftWizard",
 		["Health"] = 600,
 		["Power"] = 400,
