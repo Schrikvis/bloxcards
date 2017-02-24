@@ -7916,7 +7916,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Red",
-		["Cost"] = {["Red"] = 2,["Neutral"] = 2,},
+		["Cost"] = {["Red"] = 4,["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Raging Rage",
 			Description = [[Deal 200 damage to all enemy fighters and a target fighter.]],
@@ -10350,7 +10350,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Stud",
 			Description = "Whenever you gain life, both players lose 100 life.",
-			["Type"] = "OnEnd",
+			["Type"] = "OnHealthGain",
 			["Power"] = {{"Cost",100},{"Inflict",100,"Opponent"}},
 			Target = "Ally",
 		},
@@ -12386,7 +12386,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["zKevin"] = {
 		["Id"] = 413921305,
 		["Name"] = "zKevin",
-		["Health"] = 300,
+		["Health"] = 400,
 		["Power"] = 700,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Lightning",
@@ -12868,9 +12868,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "Revival",
-			Description = "Whenever your opponent loses life, generate four targeting blips and destroy Wi_Sh. Targeting blips are used to trigger Target Effects.",
+			Description = "Whenever your opponent loses life, generate two white icons and destroy wi_sh.",
 			["Type"] = "OnEnemyHealthLoss",
-			["Power"] = {{"Add","Targeting Blip"},{"Add","Targeting Blip"},{"Add","Targeting Blip"},{"Add","Targeting Blip"},{"Damage",9999,"Self"}},
+			["Power"] = {{"Neutral",2,"Ally"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = "No dodgeballs. No plushies. No fun allowed.",
@@ -14463,7 +14463,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Korblox Shadowmage"] = {
 		["Id"] = 433133401,
 		["Name"] = "Korblox Shadowmage",
-		["Health"] = 900,
+		["Health"] = 600,
 		["Power"] = 100,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Punch1",
@@ -14472,9 +14472,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 3,},
 		["Effect"] = {
 			Name = "Vampire",
-			Description = "Whenever you gain life, deal 200 damage to the opponent, then Korblox Shadowmage gains 200 health.",
+			Description = "Whenever you gain life, deal 400 damage to the opponent, then, Korblox Shadowmage is destroyed.",
 			["Type"] = "OnHealthGain",
-			["Power"] = {{"Inflict",200},{"Heal",200,"Self"}},
+			["Power"] = {{"Inflict",400},{"Damage",9999,"Self"}},
 			Target = "Opponent",
 		},
 		["Bio"] = "The Shadowmages are a long-lost sect of the korblox army, ousted and fled for practicing forbidden nature magic.",
