@@ -11461,22 +11461,22 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},			
 
 	["Saprasam"] = {
-		["Id"] = 384020879,
+		["Id"] = 668506935,
 		["Name"] = "Saprasam",
 		["Health"] = 600,
 		["Power"] = 400,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Lightning",
-		["Color"] = "Yellow",
-		["Cost"] = {["Yellow"] = 3,["Green"] = 1,},
+		["Color"] = "Green",
+		["Cost"] = {["Yellow"] = 1,["Green"] = 3,},
 		["Effect"] = {
 			Name = "Sudden Death",
-			Description = [[Gain a green icon at the end of each turn.]],
+			Description = [[Gain a Yellow icon at the end of each turn.]],
 			["Type"] = "OnEnd",
-			["Power"] = {{"Green",1}},
+			["Power"] = {{"Yellow",1}},
 			Target = "Self",
 		},
-		["Bio"] = "RIP PEEPSTERS 2016-2016",
+		["Bio"] = "What can I say, he's a canadian Leprechaun.",
 	},		
 
 	["1337"] = {
