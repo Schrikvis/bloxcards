@@ -14639,7 +14639,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Pancake Break-Val"] = {
 				["Name"] = "Peaceful Protest",
-				["Id"] = 480385242,
+				["Id"] = 667391045,
 				["Bio"] = "NO MORE TURBO SHED! NO MORE WISHNITE! NO MORE OP CARDS EVER!",
 			}			
 		},												
