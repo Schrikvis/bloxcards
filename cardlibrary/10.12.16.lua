@@ -1032,6 +1032,25 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Archetype",
 		},
 		["Bio"] = "Enlighten your soul with my eye.",
+	},
+		
+	["Friaza"] = {
+		["Id"] = 668506369,
+		["Name"] = "Friaza",
+		["Health"] = 700,
+		["Power"] = 700,
+		["Rarity"] = "Legendary",
+		["AttackEffect"] = "PunchKick",		
+		["Color"] = "Blue",
+		["Cost"] = {["Neutral"] = 2, ["Blue"] = 6,},
+		["Effect"] = {
+			Name = "Hellfire",
+			Description = "WHenever you cast an action or terrain spell, unlock this fighter.",
+			["Type"] = "OnAllyCast",
+			["Power"] = {{{"Unlock",9999}},
+			Target = "Self",
+		},
+		["Bio"] = "THIS ISN'T EVEN MY FINAL FORM!",
 	},		
 }
 
