@@ -1718,7 +1718,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Unspeakable Summoning"] = {
-		["Id"] = 543041104,
+		["Id"] = 662121961,
 		["Name"] = "Unspeakable Summoning",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -1737,7 +1737,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Lezus 1"] = {
-		["Id"] = 552162352,
+		["Id"] = 662115933,
 		["Name"] = "Lezus",
 		["Health"] = 700,
 		["Power"] = 400,
@@ -1757,7 +1757,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Lezus 2"] = {
-		["Id"] = 552162352,
+		["Id"] = 662115933,
 		["Name"] = "Lezus",
 		["Health"] = 700,
 		["Power"] = 400,
@@ -1777,7 +1777,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Lezus 3"] = {
-		["Id"] = 552162352,
+		["Id"] = 662115933,
 		["Name"] = "Lezus",
 		["Health"] = 700,
 		["Power"] = 400,
@@ -1797,7 +1797,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Lezus 4"] = {
-		["Id"] = 552162352,
+		["Id"] = 662115933,
 		["Name"] = "Lezus",
 		["Health"] = 700,
 		["Power"] = 400,
@@ -1817,7 +1817,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Lezus 5"] = {
-		["Id"] = 552162352,
+		["Id"] = 662115933,
 		["Name"] = "Lezus",
 		["Health"] = 700,
 		["Power"] = 400,
@@ -1837,7 +1837,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Lezus 6"] = {
-		["Id"] = 552162352,
+		["Id"] = 662115933,
 		["Name"] = "Lezus",
 		["Health"] = 700,
 		["Power"] = 400,
