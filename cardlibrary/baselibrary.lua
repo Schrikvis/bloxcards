@@ -12134,7 +12134,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			}
 			["GrandDadPixel"] = {
 				["Id"] = 664140826,
-				["Name"] = "GRAND DAD"
+				["Name"] = "GRAND DAD",
 				["AltArt"] = true,
 				["Bio"] = "PIXEEEEEL?!",
 			}
