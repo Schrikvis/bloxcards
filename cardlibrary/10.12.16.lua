@@ -1069,6 +1069,25 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Aggressor",
 		},
 		["Bio"] = "But...what is your name?",
+	},
+	
+	["MarissaKitty04"] = {
+		["Id"] = 670945866,
+		["Name"] = "MarissaKitty04",
+		["Health"] = 600,
+		["Power"] = 100,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "SlashDiagonal",		
+		["Color"] = "Blue",
+		["Cost"] = {["Neutral"] = 2, ["Blue"] = 3,},
+		["Effect"] = {
+			Name = "Hellfire",
+			Description = "When this card is attacked, lock the card that attacked it for three turns.",
+			["Type"] = "OnAttacked",
+			["Power"] = {{"Lock",3}},
+			Target = "Aggressor",
+		},
+		["Bio"] = "Truth lies beyond the plane of existance, and stretches out further beyond to the endless grasp of the universe.",
 	},		
 }
 
