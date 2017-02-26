@@ -1050,6 +1050,25 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Self",
 		},
 		["Bio"] = "THIS ISN'T EVEN MY FINAL FORM!",
+	},
+	
+	["Your_Name"] = {
+		["Id"] = 668506369,
+		["Name"] = "Your_Name",
+		["Health"] = 700,
+		["Power"] = 700,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "SlashDiagonal",		
+		["Color"] = "Blue",
+		["Cost"] = {["Blue"] = 3,},
+		["Effect"] = {
+			Name = "Hellfire",
+			Description = "Enemy fighters enter play with 150 more health.",
+			["Type"] = "OnEnemySummon",
+			["Power"] = {{"Heal",150}},
+			Target = "Aggressor",
+		},
+		["Bio"] = "But...what is your name?",
 	},		
 }
 
