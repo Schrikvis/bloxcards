@@ -4053,7 +4053,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "PunchKick",
 		["Color"] = "Yellow",
-		["Cost"] = {["Neutral"] = 2,["Yellow"] = 1,},
+		["Cost"] = {["Neutral"] = 2,["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Split Ego",
 			Description = "Decrease the power of all fighters by 200.",
