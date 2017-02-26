@@ -801,9 +801,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 3,},
 		["Effect"] = {
 			Name = "moo",
-			Description = "Whenever this card attacks, you lose 250 life and UHunterU gains 100 power.",
+			Description = "Whenever this card attacks, you lose 200 life and UHunterU gains 100 power.",
 			["Type"] = "OnAttack",
-			["Power"] = {{"Cost",250},{"Strengthen",100,"Self"}},
+			["Power"] = {{"Cost",200},{"Strengthen",100,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = "UHunt, ULive.",
@@ -825,7 +825,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Inflict",999999,"Opponent"}},
 			Target = "Opponent",
 		},
-		["Bio"] = "",
+		["Bio"] = "You win. The end.",
 	},	
 	
 	["Steam Razikai"] = {
