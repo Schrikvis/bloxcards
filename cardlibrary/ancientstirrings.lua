@@ -1628,7 +1628,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 2, ["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "Generate two green iconw.",
+			Description = "Generate two green icons.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Green",1}},
 			Target = "Ally",
@@ -1838,10 +1838,10 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	
 	["Lezus 6"] = {
 		["Id"] = 662115933,
-		["Name"] = "Token",
+		["Name"] = "Lezus",
 		["Health"] = 700,
 		["Power"] = 400,
-		["Rarity"] = "Epic",
+		["Rarity"] = "Token",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Red", 
 		["Cost"] = {["Red"] = 6,},
