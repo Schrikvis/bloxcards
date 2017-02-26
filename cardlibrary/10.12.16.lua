@@ -1053,7 +1053,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Your_Name"] = {
-		["Id"] = 668506369,
+		["Id"] = 670686509,
 		["Name"] = "Your_Name",
 		["Health"] = 700,
 		["Power"] = 700,
