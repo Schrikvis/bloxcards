@@ -12135,7 +12135,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["GrandDadPixel"] = {
 				["Id"] = 664140826,
 				["Name"] = "GRAND DAD",
-				["AltArt"] = true,
 				["Bio"] = "PIXEEEEEL?!",
 			}
 		},			
@@ -12470,9 +12469,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 4,},
 		["Effect"] = {
 			Name = "Shatter",
-			Description = [[When this card is targeted, set its stats to 650/650.]],
+			Description = [[When this card is targeted, set its stats to 750/750.]],
 			["Type"] = "OnTarget",
-			["Power"] = {{"SetPower",650},{"SetHealth",650}},
+			["Power"] = {{"SetPower",750},{"SetHealth",750}},
 			Target = "Self",
 		},
 		["Bio"] = "I'm a derpy derp and I'm here to blow your mind with MEMES!",
@@ -12692,9 +12691,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = [[Add 3 targeting blips to your hand. Targeting Blips trigger target effects.]],
+			Description = [[Add 2 targeting blips to your hand. Targeting Blips trigger target effects.]],
 			["Type"] = "OnSummon",
-			["Power"] = {{"Add","Targeting Blip"},{"Add","Targeting Blip"},{"Add","Targeting Blip"}},
+			["Power"] = {{"Add","Targeting Blip"},{"Add","Targeting Blip"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Try to get past this guy.",
@@ -12703,7 +12702,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Uberubert"] = {
 		["Id"] = 415730433,
 		["Name"] = "Uberubert",
-		["Health"] = 400,
+		["Health"] = 500,
 		["Power"] = 600,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Lightning",
@@ -12823,7 +12822,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 630782293,
 		["Name"] = "Imaginz00",
 		["Health"] = 1000,
-		["Power"] = 200,
+		["Power"] = 150,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Neutral",
@@ -13130,7 +13129,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Sibs-ArtV"] = {
 				["Id"] = 430934562,
 				["AltArt"] = true,
-				["Bio"] = "Over a thousand years have passed since Jayson and Sibs have got together. Part of the 'Aife' Collection! Collect them all!",
+				["Bio"] = "Over a thousand years have passed since Jayson and Sibs have got together... Part of the 'Aife' Collection! Collect them all!",
 			}
 		},
 		["Health"] = 500,
@@ -13146,7 +13145,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"SetHealth",1000}},
 			Target = "Single",	
 		},
-		["Bio"] = "Over a year has passed since Jayson and Sibs have got together.",
+		["Bio"] = "Over a year has passed since Jayson and Sibs have got together...",
 	},
 	
 	["SomaticMizuSan"] = {
@@ -13227,6 +13226,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 585627205,
 				["Name"] = "Unwanted Gift",
 			}
+			["Bio"] = "MOM! I WANTED THE NEW XBLOX ONE, OR A PACK OF BLOX CARDS! NOT THIS!",			
 		},			
 		["Health"] = 0,
 		["Power"] = 0,
@@ -13329,8 +13329,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["KurosakiDXenos"] = {
 		["Id"] = 431102053,
 		["Name"] = "KurosakiDXenos",
-		["Health"] = 450,
-		["Power"] = 700,
+		["Health"] = 500,
+		["Power"] = 650,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Red",
@@ -13348,7 +13348,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Brymmy"] = {
 		["Id"] = 444223893,
 		["Name"] = "Brymmy",
-		["Health"] = 1200,
+		["Health"] = 1000,
 		["Power"] = 0,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Punch1",
@@ -13490,7 +13490,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Luckymaxer"] = {
 		["Id"] = 603507745,
 		["Name"] = "Luckymaxer",
-		["Health"] = 200,
+		["Health"] = 500,
 		["Power"] = 200,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Punch1",
@@ -13498,9 +13498,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 3, ["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Render",
-			Description = "Add four Mechanical Spiders to your hand.",
+			Description = "Summon two Mechanical Spiders, then add two Mechanical Spiders to your hand.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Add","Mechanical Spider"},{"Add","Mechanical Spider"},{"Add","Mechanical Spider"},{"Add","Mechanical Spider"}},
+			["Power"] = {{"Summon","Mechanical Spider"},{"Summon","Mechanical Spider"},{"Add","Mechanical Spider"},{"Add","Mechanical Spider"}},
 			Target = "Ally",
 		},
 		["Bio"] = "He makes gear. He is why plungers are more powerful than elegant, elvish swords.",
@@ -13808,7 +13808,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Kill Script-Val"] = {
 				["Name"] = "Love Letter",
 				["Id"] = 655014233,
-				["Bio"] = "Roses are read, violets are blue, I've justified violence for you.",
+				["Bio"] = "Roses are red, violets are blue, I've justified, violence for you.",
 			}	
 		},											
 		["Health"] = 0,
@@ -14102,7 +14102,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 655012411,
 				["Effect"] = {
 					Name = "Pyrotechnics",
-					Description = "Add a Cupid's Eye Nexus to your hand. Your opponent gains four white icons because I love you <3.",
+					Description = "Add a Cupid's Eye Nexus to your hand. Your opponent gains four white icons.",
 					["Type"] = "OnSummon",
 					["Power"] = {{"Add","Cupid's Eye Nexus"},{"White",4,"Opponent"}},
 					Target = "Ally",
@@ -14207,9 +14207,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Trout Slap",
-			Description = "Set your life to 2500.",
+			Description = "Set your life to 2500, and your white icons to 6.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"SetLife",2500}},
+			["Power"] = {{"SetLife",2500},{"SetNeutral",6}},
 			Target = "Ally",
 		},
 		["Bio"] = "The damp mayday-er. Combos well with Valletta.",
@@ -14246,7 +14246,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 1, ["Blue"] = 4,},
 		["Effect"] = {
 			Name = "Trout Slap",
-			Description = "Haste. When it destroys a fighter, put a copy of ShockingRobux to your hand.",
+			Description = "Haste. When ShockingRobux destroys a fighter, put a copy of ShockingRobux to your hand.",
 			["Type"] = "OnDestroy",
 			["Power"] = {{"Add","ShockingRobux"}},
 			Target = "Ally",
@@ -14640,7 +14640,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Pancake Break-Val"] = {
 				["Name"] = "Peaceful Protest",
 				["Id"] = 667391045,
-				["Bio"] = "NO MORE TURBO SHED! NO MORE WISHNITE! NO MORE OP CARDS EVER!",
+				["Bio"] = "NO MORE SOULSEARCH! NO MORE DUST! NO MORE OP CARDS EVER!",
 			}			
 		},												
 		["Health"] = 0,
@@ -14690,7 +14690,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1, ["Yellow"] = 1, ["Green"] = 1, ["Red"] = 4,},
 		["Effect"] = {
 			Name = "ROLLING AROUND AT THE SPEED OF SOUND",
-			Description = "Can't counterattack.",
+			Description = "Crazyblox can't counterattack.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",0}},
 			Target = "Self",
@@ -15353,7 +15353,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Heal","0"}},	
 			Target = "Ally",
 		},
-		["Bio"] = "Rainbow science helps me delay death actually.",
+		["Bio"] = "Rainbow science helps me delay death actually...",
 	},
 
 	["Uncreativename123"] = {
@@ -16037,10 +16037,10 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 2, ["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "IT'S BAAAAAAAAAAAAAAAAAAAAAAAAAAD!",
-			Description = "A target fighter gains 100 power.",
+			Description = "Drain 100 life from the opponent.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Strengthen",100}},
-			Target = "Single",
+			["Power"] = {{"Cost",100},{"Cost",-100,"Ally"}},
+			Target = "Opponent",
 		},
 		["Bio"] = "Green is love. Green is life.",
 	},
@@ -16354,7 +16354,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
  			["Power"] = {{"Strengthen",300,"Archetype"}},
  			Target = "Ally",
  		},
- 		["Bio"] = "",
+ 		["Bio"] = "...what the hell do i say here...uhh...the wood grain is...nice...I guess...it's..comfy?",
 	},
 
 	["Supersky712"] = {
@@ -16385,12 +16385,11 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Lightning",
  		["Color"] = "Blue",
  		["Cost"] = {["Blue"] = 3, ["Neutral"] = 2,}, 
-		["Stealth"] = true,
  		["Effect"] = {
  			Name = "Helping Out",
- 			Description = "ReeseMcBlox's summoning doesn't cause abilities to trigger.",
- 			["Type"] = "OnSummon",
- 			["Power"] = {{"Heal",0}},
+ 			Description = "When this card is targeted, lock all enemy fighters for one turn, deal 100 damage to ReeseMcBlox, and return ReeseMcBlox to your hand.",
+ 			["Type"] = "OnTarget",
+ 			["Power"] = {{"Lock",1,"Opponent"},{"Damage",100,"Self"},{"Return",030}},
  			Target = "Ally",
  		},
  		["Bio"] = "Please wait on hold.",
@@ -16589,7 +16588,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Weaken",100,"Ally"}},
 			Target = "Ally",
 		},
-		["Bio"] = "yayyyy!",
+		["Bio"] = "Yayyyy!",
 	},
 	
 	["litozinnamon"] = {
@@ -16988,9 +16987,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Traumatic Experience",
-			Description = "When this card destroys another, turn it into a Traumatic Clown.",
+			Description = "When this card destroys another, generate a red icon and turn it into a Traumatic Clown.",
 			["Type"] = "OnDestroy",
-			["Power"] = {{"Summon","Traumatic Clown"},{"Damage",9999}},
+			["Power"] = {{"Summon","Traumatic Clown"},{"Red",1,"Ally"},{"Damage",9999}},
 			Target = "Self",
 		},
 		["Bio"] = "He never wanted to hurt anyone. He could never forgive himself if he did.",
@@ -17216,9 +17215,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Thug Life",
-			Description = "Lower the power of all fighters by 200. Summon a guest.",
+			Description = "Lower the power of all fighters by 100. Summon a guest.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Weaken",200},{"Summon","Guest","Ally"}},
+			["Power"] = {{"Weaken",100},{"Summon","Guest","Ally"}},
 			Target = "All",
 		},
 		["Bio"] = "OMG My house is on fire! GTG. Wanna be friends? Dinosaurs!",
@@ -17464,8 +17463,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Red"] = 1,},
 		["Effect"] = {
 			Name = "Thug Life",
-			Description = "When this card attacks, deal 100 damage to all non-Ninjas.",
-			["Type"] = "OnAttack",
+			Description = "When this card is attacked, deal 100 damage to all non-Ninjas.",
+			["Type"] = "OnAttacked",
 			["Power"] = {{"Damage","100"}},
 			Target = "NotArchetype",
 		},
