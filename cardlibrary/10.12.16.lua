@@ -222,7 +222,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Nightmare",
 		["Effect"] = {
 			Name = "Hot Ancient News",
-			Description = "Whenever a fighter dies, shuffle a nightmare into your opponent's deck. This card can't counterattack.",
+			Description = "Can't counterattack. Whenever a fighter dies, shuffle a nightmare into your opponent's deck.",
 			["Type"] = "OnAnyDeath",
 			["Power"] = {{"DeckAdd","Nightmare"}},
 			Target = "Opponent",
@@ -620,7 +620,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 
 	["Histor"] = {
 		["Id"] = 616082705,
-		["Name"] = "Historr",
+		["Name"] = "Histor",
 		["Health"] = 350,
 		["Power"] = 700,
 		["Rarity"] = "Uncommon",
@@ -711,7 +711,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"SetNeutral",3},{"SetGreen",3}},
 			Target = "Ally",
 		},
-		["Bio"] = "Consider _us_ blessed.",
+		["Bio"] = "Consider us blessed.",
 	}, 
 
 	["Beyondthegong"] = {
@@ -801,9 +801,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 3,},
 		["Effect"] = {
 			Name = "moo",
-			Description = "Whenever this card attacks, you lose 250 life and UHunterU gains 100 power.",
+			Description = "Whenever this card attacks, you lose 200 life and UHunterU gains 100 power.",
 			["Type"] = "OnAttack",
-			["Power"] = {{"Cost",250},{"Strengthen",100,"Self"}},
+			["Power"] = {{"Cost",200},{"Strengthen",100,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = "UHunt, ULive.",
@@ -825,7 +825,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Inflict",999999,"Opponent"}},
 			Target = "Opponent",
 		},
-		["Bio"] = "",
+		["Bio"] = "You win. The end.",
 	},	
 	
 	["Steam Razikai"] = {
@@ -848,7 +848,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["PlaceRebuilder"] = {
-		["Id"] = 630010948,
+		["Id"] = 670422221,
 		["Name"] = "PlaceRebuilder",
 		["Health"] = 1200,
 		["Power"] = 100,
@@ -886,7 +886,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["SoulSearch"] = {
-		["Id"] = 645386479,
+		["Id"] = 667457465,
 		["Name"] = "SoulSearch",
 		["AltCards"] = {
 			["SoulSearch-Val"] = {
@@ -976,7 +976,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Defaultio"] = {
-		["Id"] = 645386479,
+		["Id"] = 666300396,
 		["Name"] = "Defaultio",
 		["Health"] = 800,
 		["Power"] = 650,
@@ -1075,6 +1075,102 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "Right now, you need intellect.",
 	},	
+	
+	["Enlightened Whelp"] = {
+		["Id"] = 666289588,
+		["Name"] = "Enlightened Whelp",
+		["Health"] = 800,
+		["Power"] = 50,
+		["Rarity"] = "Uncommmon",
+		["AttackEffect"] = "Fire",
+		["Archetype"] = "Overseer",		
+		["Color"] = "Yellow",
+		["Cost"] = {["Green"] = 3,},
+		["Effect"] = {
+			Name = "Hellfire",
+			Description = "Summon an Eye of Overseer and give all overseers 100 power and 100 health. When Enlightened Whelp is targeted, Give all doges 100 health.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Summon","Eye of Overseer"},{"Strengthen",100,"Archetype"},{"Heal",100,"Archetype"},{"Summon","Whelp Token"},{"Damage",9999,"Self"}},
+			Target = "Ally",
+		},
+		["Bio"] = "Enlighten your soul with my eye.",
+	},
+	
+	["Whelp Token"] = {
+		["Id"] = 666289588,
+		["Name"] = "Enlightened Whelp",
+		["Health"] = 800,
+		["Power"] = 50,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Fire",
+		["Color"] = "Yellow",
+		["Cost"] = {["Green"] = 3,},
+		["Effect"] = {
+			Name = "Hellfire",
+			Description = "Summon an Eye of Overseer and give all overseers 100 power and 100 health. When Enlightened Whelp is targeted, Give all allies 100 health.",
+			["Type"] = "OnTarget",
+			["Power"] = {{"Heal",100}},
+			Target = "Ally",
+		},
+		["Bio"] = "Enlighten your soul with my eye.",
+	},
+		
+	["Friaza"] = {
+		["Id"] = 668506369,
+		["Name"] = "Friaza",
+		["Health"] = 700,
+		["Power"] = 700,
+		["Rarity"] = "Legendary",
+		["AttackEffect"] = "PunchKick",		
+		["Color"] = "Blue",
+		["Cost"] = {["Neutral"] = 2, ["Blue"] = 6,},
+		["Effect"] = {
+			Name = "Hellfire",
+			Description = "Whenever you cast an action or terrain spell, unlock this fighter.",
+			["Type"] = "OnAllyCast",
+			["Power"] = {{"Unlock",9999}},
+			Target = "Self",
+		},
+		["Bio"] = "THIS ISN'T EVEN MY FINAL FORM!",
+	},
+	
+	["Your_Name"] = {
+		["Id"] = 670686509,
+		["Name"] = "Your_Name",
+		["Health"] = 600,
+		["Power"] = 600,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "SlashDiagonal",		
+		["Color"] = "Blue",
+		["Cost"] = {["Blue"] = 3,},
+		["Effect"] = {
+			Name = "Hellfire",
+			Description = "Enemy fighters enter play with 150 more health.",
+			["Type"] = "OnEnemySummon",
+			["Power"] = {{"Heal",150}},
+			Target = "Aggressor",
+		},
+		["Bio"] = "But...what is your name?",
+	},
+	
+	["MarissaKitty04"] = {
+		["Id"] = 670945866,
+		["Name"] = "MarissaKitty04",
+		["Health"] = 600,
+		["Power"] = 100,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "SlashDiagonal",		
+		["Color"] = "Blue",
+		["Cost"] = {["Neutral"] = 2, ["Blue"] = 3,},
+		["Effect"] = {
+			Name = "Hellfire",
+			Description = "When this card is attacked, lock the card that attacked it for three turns.",
+			["Type"] = "OnAttacked",
+			["Power"] = {{"Lock",3}},
+			Target = "Aggressor",
+		},
+		["Bio"] = "Truth lies beyond the plane of existance, and stretches out further beyond to the endless grasp of the universe.",
+	},		
 }
 
 return tentwelvesixteen

@@ -381,6 +381,8 @@ local packs = {
 		CardPackId = 465492570,
 		Description = "Green is the colour of life, growth, and the primal forces. Vitality packs contain cards that cost green!",
 		Cards = {
+			"Saprasam",
+			"Enlightened Whelp",
 			"BonesMcCormick",
 			"Kariu",
 			"madattak",
@@ -544,6 +546,7 @@ local packs = {
 		CardPackId = 465492637,
 		Description = "Blue is the colour of logic, order, and structure. Thought packs contain cards that cost blue!",
 		Cards = {
+			"Friaza",
 			"Deadly Dicey Duo",
 			"hyp3rdeath",
 			"Steam Razikai",
@@ -742,6 +745,7 @@ local packs = {
 		Description = 
 		"Yellow is the colour of chaos, emotion, and society. Revel packs contain cards that cost yellow!",
 		Cards = {
+			"Enlightened Whelp",
 			"DominiusConfabricor",
 			"Defaultio",
 			"Histor",
@@ -810,7 +814,6 @@ local packs = {
 			"MuPower",
 			"popcornhebe",
 			"CellBloxTango",
-			"Saprasam",
 			"MajorMattias",
 			"Radello",
 			"CALL OF DOGE!?!",
@@ -987,11 +990,11 @@ local packs = {
 			"Stravant",
 			"KnitJa",
 			"Haggie125",
-			"Noob's Play Box",
+			"Enlightened Whelp",
 			"litozinnamon",
 			"CalmFoxz",
 			"The Gentlemaniac",
-			"ReeseMcBlox",
+			"Friaza",
 			"Supersky712",
 			"Helperbot",
 			"Fire Fighter",
@@ -1117,6 +1120,10 @@ local packs = {
 		Description = "Priestess Zanzel has corrupted this world. Do you have the gall to stop her? You must have 10 wins to open this pack.",
 		WinRequirement = 10;
 		Cards = {
+		"Undead Teddy",
+		"Treasured Unicorn",
+		"Graboid",
+		"LovecraftWizard",
 		"Bedsheet Ghost",
 		"DoeDoe",
 		"Tooth Decay",
@@ -1513,6 +1520,9 @@ local packs = {
 		Description = "Over 40 special edition Valentine themed cards! Can your heart resist them? <3 (Minimum 10 wins. Stalker and Combine Garrison are only found in the Art Box.)",
 		WinRequirement = 10;
 		Cards = {
+			"Ejob-Val",
+			"The Hugger",
+			"PencilWizard-Val",
 			"Chef-Val",
 			"PixelPistol-Val",
 			"TeeVee-Val",

@@ -17,7 +17,11 @@ local substring = string.sub
 local cardcount = 0
 local assert = assert
 local c3n = Color3.new
+
+--CONFIG.CLR, CONFIG.RARITIES
 local clr = {Blue = c3n(0.25,0.25,1), Red = c3n(1,0.25,0.25), Green = c3n(0.25,1,0.25), Yellow = c3n(1,1,0.25), Neutral = c3n(1,1,1)}
+local rarities = {Common = 1, Uncommon = 2, Rare = 3, Epic = 4, Legendary = 5, Token = 6, Shedletsky = 7}
+
 local function TestCard(library, id, card)
 	assert(card.Name, id.." has no name.")
 	assert(card.Bio, id.." has no bio.")
@@ -25,6 +29,7 @@ local function TestCard(library, id, card)
 	if card.Id == 543041104 then warn(id.." has placeholder art.") end
 	assert(not cardlibrary[id], id.." already exists.")
 	assert(card.Rarity, id.." has no rarity.")
+	assert(rarities[card.Rarity], id.." has no real rarity.")
 	assert(card.Power and card.Health and card.Color, id.." has no health or power or color.")
 	assert(card.AttackEffect or card.Archetype == "Terrain" or (card.Health == 0 and card.Power == 0), id.." has no attack effect animation.")
 	assert(card.Color, id.." has no color.")
