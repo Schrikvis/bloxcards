@@ -4562,7 +4562,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Shedletsky, the Raging Pulse"] = {
-		["Id"] = 616082604,
+		["Id"] = 670716442,
 		["Name"] = "Shedletsky, the Raging Pulse",
 		["Health"] = 800,
 		["Power"] = 300,
@@ -4628,7 +4628,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Shedletsky, Locus of Icons"] = {
-		["Id"] = 616082730,
+		["Id"] = 670717315,
 		["Name"] = "Shedletsky, Locus of Icons",
 		["Health"] = 1500,
 		["Power"] = 0,
@@ -4694,7 +4694,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Shedletsky, the Resonator"] = {
-		["Id"] = 616082767,
+		["Id"] = 670715918,
 		["Name"] = "Shedletsky, the Resonator",
 		["Health"] = 1000,
 		["Power"] = 100,
@@ -4760,7 +4760,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Shedletsky, Paragon of Unity 1"] = {
-		["Id"] = 291389590,
+		["Id"] = 670716793,
 		["Name"] = "Shedletsky, Paragon of Unity",
 		["Health"] = 700,
 		["Power"] = 0,
@@ -4782,7 +4782,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Shedletsky 2"] = {
-		["Id"] = 291389590,
+		["Id"] = 670716793,
 		["Name"] = "Shedletsky, Paragon of Unity",
 		["Health"] = 700,
 		["Power"] = 0,
@@ -4804,7 +4804,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Shedletsky 3"] = {
-		["Id"] = 291389590,
+		["Id"] = 670716793,
 		["Name"] = "Shedletsky, Paragon of Unity",
 		["Health"] = 700,
 		["Power"] = 0,
@@ -4826,7 +4826,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Shedletsky 4"] = {
-		["Id"] = 291389590,
+		["Id"] = 670716793,
 		["Name"] = "Shedletsky, Paragon of Unity",
 		["Health"] = 700,
 		["Power"] = 0,
