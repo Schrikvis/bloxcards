@@ -442,7 +442,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Eisenhower, the Alchemist"] = {
-		["Id"] = 543041104,
+		["Id"] = 662115685,
 		["Name"] = "Eisenhower, the Alchemist",
 		["Health"] = 4000,
 		["Power"] = 0,
@@ -869,8 +869,8 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Hidden Razor"] = {
 		["Id"] = 540076373,
 		["Name"] = "Hidden Razor",
-		["Health"] = 550,
-		["Power"] = 550,
+		["Health"] = 500,
+		["Power"] = 500,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Yellow", 
@@ -1621,14 +1621,14 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 540076913,
 		["Name"] = "Mitcrawl",
 		["Health"] = 250,
-		["Power"] = 800,
+		["Power"] = 600,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Red", 
 		["Cost"] = {["Red"] = 2, ["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "Generate two green icons.",
+			Description = "Gain a green icon.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Green",1}},
 			Target = "Ally",
@@ -2431,7 +2431,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Eisenhower, the Alchemist"] = {
-		["Id"] = 543041104,
+		["Id"] = 662115685,
 		["Name"] = "Eisenhower, the Alchemist",
 		["Health"] = 5700,
 		["Power"] = 0,
@@ -2680,7 +2680,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Homeless Man"] = {
-		["Id"] = 543041104,
+		["Id"] = 662121363,
 		["Name"] = "Homeless Man",
 		["Health"] = 450,
 		["Power"] = 450,
@@ -2701,7 +2701,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["DIY: Werewolf"] = {
-		["Id"] = 543041104,
+		["Id"] = 662116256,
 		["Name"] = "DIY: Werewolf",
 		["Health"] = 900,
 		["Power"] = 900,
