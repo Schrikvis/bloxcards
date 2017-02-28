@@ -1088,7 +1088,27 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Aggressor",
 		},
 		["Bio"] = "Truth lies beyond the plane of existance, and stretches out further beyond to the endless grasp of the universe.",
-	},		
+	},
+	
+	["AII_Dragon"] = {
+		["Id"] = 670945866,
+		["Name"] = "AII_Dragon",
+		["Health"] = 700,
+		["Power"] = 650,
+		["Rarity"] = "Rare",
+		["AttackEffect"] = "Fire",
+		["Archetype"] = "Acolyte",
+		["Color"] = "Yellow",
+		["Cost"] = {["Yellow"] = 6,},
+		["Effect"] = {
+			Name = "Hellfire",
+			Description = "All Acolytes gain 100 health and 50 power, then all allied fighters gain 100 health.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Heal",100},{"Strengthen",50},{"Heal",100,"Ally"}},
+			Target = "Archetype",
+		},
+		["Bio"] = "100% Pure Dragon.",
+	},	
 }
 
 return tentwelvesixteen
