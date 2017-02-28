@@ -825,7 +825,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Inflict",999999,"Opponent"}},
 			Target = "Opponent",
 		},
-		["Bio"] = "You win. The end.",
+		["Bio"] = "",
 	},	
 	
 	["Steam Razikai"] = {
@@ -894,28 +894,28 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Name"] = "SoulMateSearch",
 				["Effect"] = {
 					Name = "Hellfire",
-					Description = "Whenever an allied fighter dies, SoulMateSearch gains 250 Power and Health.",
-					["Type"] = "OnAllyDeath",
-					["Power"] = {{"Heal",250},{"Strengthen",250}},
-					Target = "Self",
+					Description = "Whenever you lose life, set your life to 500.",
+					["Type"] = "OnHealthLoss",
+					["Power"] = {{"SetLife",500}},
+					Target = "Ally",
 		},
 			["Bio"] = "Always searching for the perfect soulmate.",
 			}
 		},
-		["Health"] = 400,
-		["Power"] = 250,
+		["Health"] = 900,
+		["Power"] = 600,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Gust",
 		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 1, ["Red"] = 5,},
 		["Effect"] = {
 			Name = "Hellfire",
-			Description = "Whenever an allied fighter dies, SoulSearch gains 250 Power and Health.",
-			["Type"] = "OnAllyDeath",
-			["Power"] = {{"Heal",250},{"Strengthen",250}},
-			Target = "Self",
+				Description = "Whenever you lose life, set your life to 500.",
+					["Type"] = "OnHealthLoss",
+					["Power"] = {{"SetLife",500}},
+					Target = "Ally",
 		},
-		["Bio"] = "Always searching for the perfect soul.",
+		["Bio"] = "Trust me your soul, I'll trust you your life, for as long as I live. For as long as I live.",
 	},
 	
 	["hyp3rdeath"] = {
