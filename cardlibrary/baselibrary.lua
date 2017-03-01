@@ -14471,9 +14471,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 3,},
 		["Effect"] = {
 			Name = "Vampire",
-			Description = "Whenever you gain life, deal 400 damage to the opponent, then, Korblox Shadowmage is destroyed.",
+			Description = "Whenever you gain life, deal 100 damage to the opponent.",
 			["Type"] = "OnHealthGain",
-			["Power"] = {{"Inflict",400},{"Damage",9999,"Self"}},
+			["Power"] = {{"Inflict",100}},
 			Target = "Opponent",
 		},
 		["Bio"] = "The Shadowmages are a long-lost sect of the korblox army, ousted and fled for practicing forbidden nature magic.",
