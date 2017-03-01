@@ -300,9 +300,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 9,},
 		["Effect"] = {
 			Name = "Reincarnation",
-			Description = "At the end of your turns, set Treas0ner's health to 1500. He gains 100 power.",
+			Description = "At the end of your turns, Treas0ner gains 300 health and 100 power.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"SetHealth",1500},{"Strengthen",100}},
+			["Power"] = {{"Heal",300},{"Strengthen",100}},
 			Target = "Self",
 		},
 		["Bio"] = "I was expecting something spicier.",
