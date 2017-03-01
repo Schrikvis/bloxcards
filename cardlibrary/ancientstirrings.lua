@@ -442,7 +442,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Eisenhower, the Alchemist"] = {
-		["Id"] = 543041104,
+		["Id"] = 662115685,
 		["Name"] = "Eisenhower, the Alchemist",
 		["Health"] = 4000,
 		["Power"] = 0,
@@ -1628,7 +1628,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 2, ["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "Generate a green icon.",
+			Description = "Gain a green icon.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Green",1}},
 			Target = "Ally",
@@ -1730,7 +1730,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Pyrotechnics",
 			Description = "Your opponent summons Lezus.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"RandomSummon","Token","Udungoofed"}},
+			["Power"] = {{"RandomSummon","TokenUdungoofed"}},
 			Target = "Opponent",
 		},
 		["Bio"] = "Zanzel scoffed when she saw Lezus. These demons are why the world is so impure.",
@@ -1761,7 +1761,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Lezus",
 		["Health"] = 700,
 		["Power"] = 400,
-		["Rarity"] = "Epic",
+		["Rarity"] = "Token",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Red", 
 		["Cost"] = {["Red"] = 6,},
@@ -1781,7 +1781,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Lezus",
 		["Health"] = 700,
 		["Power"] = 400,
-		["Rarity"] = "Epic",
+		["Rarity"] = "Token",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Red", 
 		["Cost"] = {["Red"] = 6,},
@@ -1801,7 +1801,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Lezus",
 		["Health"] = 700,
 		["Power"] = 400,
-		["Rarity"] = "Epic",
+		["Rarity"] = "Token",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Red", 
 		["Cost"] = {["Red"] = 6,},
@@ -1821,7 +1821,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Lezus",
 		["Health"] = 700,
 		["Power"] = 400,
-		["Rarity"] = "Epic",
+		["Rarity"] = "Token",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Red", 
 		["Cost"] = {["Red"] = 6,},
@@ -1841,7 +1841,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Lezus",
 		["Health"] = 700,
 		["Power"] = 400,
-		["Rarity"] = "Epic",
+		["Rarity"] = "Token",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Red", 
 		["Cost"] = {["Red"] = 6,},
@@ -2069,7 +2069,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 574198186,
 		["Name"] = "Ghoost",
 		["Health"] = 100,
-		["Power"] = 200,
+		["Power"] = 300,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Blue", 
@@ -2431,7 +2431,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Eisenhower, the Alchemist"] = {
-		["Id"] = 543041104,
+		["Id"] = 662115685,
 		["Name"] = "Eisenhower, the Alchemist",
 		["Health"] = 5700,
 		["Power"] = 0,
@@ -2680,7 +2680,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Homeless Man"] = {
-		["Id"] = 543041104,
+		["Id"] = 662121363,
 		["Name"] = "Homeless Man",
 		["Health"] = 450,
 		["Power"] = 450,
@@ -2701,7 +2701,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["DIY: Werewolf"] = {
-		["Id"] = 543041104,
+		["Id"] = 662116256,
 		["Name"] = "DIY: Werewolf",
 		["Health"] = 900,
 		["Power"] = 900,
@@ -2899,7 +2899,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "Whenever an allied fighter dies, you gain 200 life,then,destroy Nerf Zombie.",
+			Description = "Whenever an allied fighter dies, you gain 200 life, then destroy Nerf Zombie.",
 			["Type"] = "OnAllyDeath",
 			["Power"] = {{"Cost",-200},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -3121,7 +3121,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	
 	["Treasured Unicorn"] = {
 		["Id"] = 666386958,
-		["Name"] = "Treasured 	",
+		["Name"] = "Treasured Unicorn",
 		["Health"] = 700,
 		["Power"] = 50,
 		["Rarity"] = "Uncommon",
