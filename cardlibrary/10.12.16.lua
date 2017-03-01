@@ -1356,6 +1356,64 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "A single glimpse of perfection taught Zanzel all she had to do in life.",
 	},	
+	
+	["Enlightened Whelp"] = {
+		["Id"] = 666289586,
+		["Name"] = "Enlightened Whelp",
+		["Health"] = 800,
+		["Power"] = 0,
+		["Rarity"] = "Uncommmon",
+		["AttackEffect"] = "Fire",
+		["Color"] = "Yellow",
+		["Cost"] = {["Green"] = 3,},
+		["Effect"] = {
+			Name = "Hellfire",
+			Description = "Summon a Noob and give all allies 50 power when this card is summoned or when it dies.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Summon","Noob"},{"Strengthen",50,"Ally"},{"Summon","Whelp Token"},{"Damage",9999,"Self"}},
+			Target = "Ally",
+		},
+		["Bio"] = "Enlighten your soul with my eye.",
+	},
+	
+	["Whelp Token"] = {
+		["Id"] = 666289586,
+		["Name"] = "Enlightened Whelp",
+		["Health"] = 800,
+		["Power"] = 50,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Fire",
+		["Color"] = "Yellow",
+		["Cost"] = {["Green"] = 3,},
+		["Effect"] = {
+			Name = "Hellfire",
+			Description = "Summon a Noob and give all allies 50 power when this card is summoned or when it dies.",
+			["Type"] = "OnDeath",
+			["Power"] = {{"Summon","Noob"},{"Strengthen",50,"Ally"}},
+			Target = "Ally",
+		},
+		["Bio"] = "Enlighten your soul with my eye.",
+	},
+
+	["AII_Dragon"] = {
+        ["Id"] = 670945866,
+        ["Name"] = "AII_Dragon",
+        ["Health"] = 700,
+        ["Power"] = 650,
+        ["Rarity"] = "Rare",
+        ["AttackEffect"] = "Fire",
+        ["Archetype"] = "Acolyte",
+        ["Color"] = "Yellow",
+        ["Cost"] = {["Yellow"] = 6,},
+        ["Effect"] = {
+            Name = "Hellfire",
+            Description = "When this fighter is targeted by a fighter, ready that fighter. It gains 100 power.",
+            ["Type"] = "OnTarget",
+            ["Power"] = {{"Strengthen",100},{"Unlock",1}},
+            Target = "Aggressor",
+        },
+        ["Bio"] = "100% Pure Dragon.",
+    },
 }
 
 return tentwelvesixteen
