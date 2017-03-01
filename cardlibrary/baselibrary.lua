@@ -1912,7 +1912,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Vampire",
 			Description = "Both players gain 50 life. You gain one green icon.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Cost",-50},{"Cost",-50,"Opponent"},{"Green",1}},
+			["Power"] = {{"Cost",-50},{"Inflict",-50,"Opponent"},{"Green",1}},
 			Target = "Ally",
 		},
 		["Bio"] = "It's a win-win offer you cant refuse!",
