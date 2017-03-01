@@ -7105,7 +7105,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Dragon Horde",
 		["Health"] = 0,
 		["Power"] = 0,
-		["Rarity"] = "Rare",
+		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Punch1",
 		["Archetype"] = "Acolyte",
 		["Color"] = "Neutral",
@@ -10467,7 +10467,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Wary",
 			Description = "Whenever your opponent summons a fighter, reset Seranok's stats and return it to your hand.",
 			["Type"] = "OnEnemySummon",
-			["Power"] = {{"SetHealth",500},{"SetPower",500},{"Unlock",9999}{"Return",030}},
+			["Power"] = {{"SetHealth",500},{"SetPower",500},{"Unlock",9999},{"Return",030}},
 			Target = "Self",
 		},
 		["Bio"] = "There are people who you can't imagine being without. There are people you can't wait to destroy. Seranok is both - at the same time!",
@@ -12130,7 +12130,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 					Target = "Ally",
 				},
 				["Bio"] = "SCRUUUUUGE?!",
-			}
+			},
 			["GrandDadPixel"] = {
 				["Id"] = 664140826,
 				["Name"] = "GRAND DAD",
@@ -13224,8 +13224,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Unwanted Gift"] = {
 				["Id"] = 585627205,
 				["Name"] = "Unwanted Gift",
-			}
-			["Bio"] = "MOM! I WANTED THE NEW XBLOX ONE, OR A PACK OF BLOX CARDS! NOT THIS!",			
+				["Bio"] = "MOM! I WANTED THE NEW XBLOX ONE, OR A PACK OF BLOX CARDS! NOT THIS!",	
+			}		
 		},			
 		["Health"] = 0,
 		["Power"] = 0,
