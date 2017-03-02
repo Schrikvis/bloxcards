@@ -17107,9 +17107,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Gobble",
-			Description = "Deal 200 damage to a target fighter and give it 200 health. Summon a turkey.",
+			Description = "Deal 500 damage to a target fighter and unlock it. Summon a turkey.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",200},{"Heal",200},{"Summon","Turkey","Ally"}},
+			["Power"] = {{"Damage",500},{"Unlock",9999},{"Summon","Turkey","Ally"}},
 			Target = "Single",
 		},
 		["Bio"] = "I think this cannon is broken, it gobbles when I press the trigger.",
