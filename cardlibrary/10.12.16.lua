@@ -1396,24 +1396,24 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["AII_Dragon"] = {
-        ["Id"] = 670945866,
-        ["Name"] = "AII_Dragon",
-        ["Health"] = 700,
-        ["Power"] = 650,
-        ["Rarity"] = "Rare",
-        ["AttackEffect"] = "Fire",
-        ["Archetype"] = "Acolyte",
-        ["Color"] = "Yellow",
-        ["Cost"] = {["Yellow"] = 6,},
-        ["Effect"] = {
-            Name = "Hellfire",
-            Description = "When this fighter is targeted by a fighter, ready that fighter. It gains 100 power.",
-            ["Type"] = "OnTarget",
-            ["Power"] = {{"Strengthen",100},{"Unlock",1}},
-            Target = "Aggressor",
-        },
-        ["Bio"] = "100% Pure Dragon.",
-    },
+        	["Id"] = 670945866,
+        	["Name"] = "AII_Dragon",
+        	["Health"] = 700,
+        	["Power"] = 650,
+        	["Rarity"] = "Rare",
+        	["AttackEffect"] = "Fire",
+        	["Archetype"] = "Acolyte",
+        	["Color"] = "Yellow",
+        	["Cost"] = {["Yellow"] = 6,},
+        	["Effect"] = {
+           		Name = "Hellfire",
+           		Description = "When this fighter is targeted by a fighter, ready that fighter. It gains 100 power.",
+            		["Type"] = "OnTarget",
+            		["Power"] = {{"Strengthen",100},{"Unlock",1}},
+            		Target = "Aggressor",
+       	 	},
+        	["Bio"] = "100% Pure Dragon.",
+    	},
 }
 
 return tentwelvesixteen
