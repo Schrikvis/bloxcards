@@ -17071,7 +17071,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Gobble",
 			Description = "Give all fighters 300 power and lock them for 3 turns.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Heal",300},{"Lock",3}},
+			["Power"] = {{"Strengthen",300},{"Lock",3}},
 			Target = "All",
 		},
 		["Bio"] = "We are very thankful for this feast, now gobble up, pilgrims!",
