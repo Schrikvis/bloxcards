@@ -17028,7 +17028,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Yellow",
-		["Cost"] = {["Neutral"] = 3,["Yellow"] = 2,},
+		["Cost"] = {["Neutral"] = 2, ["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Gobble",
 			Description = "Set the health of all fighters to 500.",
