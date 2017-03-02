@@ -17109,7 +17109,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Gobble",
 			Description = "Deal 300 damage to a target fighter. Summon a turkey.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",500},{"Unlock",9999},{"Summon","Turkey","Ally"}},
+			["Power"] = {{"Damage",300},{"Summon","Turkey","Ally"}},
 			Target = "Single",
 		},
 		["Bio"] = "I think this cannon is broken, it gobbles when I press the trigger.",
