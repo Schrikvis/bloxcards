@@ -16386,7 +16386,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
  		["Cost"] = {["Blue"] = 3, ["Neutral"] = 2,}, 
  		["Effect"] = {
  			Name = "Helping Out",
- 			Description = "2 charges. Lock all fighters. If this card has charges remaining, add a copy of it to your hand with 1 charge removed.",
+ 			Description = "2 charges. Lock all fighters for 1 turn. If this card has charges remaining, add a copy of it to your hand with 1 charge removed.",
  			["Type"] = "OnSummon",
  			["Power"] = {{"Lock",1}, {"Add","ReeseMcBlox2","Ally"}},
  			Target = "All",
@@ -16405,7 +16405,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
  		["Cost"] = {["Blue"] = 3, ["Neutral"] = 2,}, 
  		["Effect"] = {
  			Name = "Helping Out",
- 			Description = "1 charge. Lock all fighters. If this card has charges remaining, add a copy of it to your hand with 1 charge removed.",
+ 			Description = "1 charge. Lock all fighters for 1 turn. If this card has charges remaining, add a copy of it to your hand with 1 charge removed.",
  			["Type"] = "OnSummon",
  			["Power"] = {{"Lock",1}, {"Add","ReeseMcBlox3","Ally"}},
  			Target = "All",
@@ -16424,7 +16424,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
  		["Cost"] = {["Blue"] = 3, ["Neutral"] = 2,}, 
  		["Effect"] = {
  			Name = "Helping Out",
- 			Description = "0 charges. Lock all fighters for one turn.",
+ 			Description = "0 charges. Lock all fighters for 1 turn.",
  			["Type"] = "OnSummon",
  			["Power"] = {{"Lock",1}},
  			Target = "All",
