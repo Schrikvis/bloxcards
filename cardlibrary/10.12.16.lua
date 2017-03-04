@@ -988,7 +988,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Your_Name"] = {
-		["Id"] = 645386479,
+		["Id"] = 679500982,
 		["Name"] = "Your_Name",
 		["Health"] = 450,
 		["Power"] = 450,
@@ -1396,7 +1396,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["AII_Dragon"] = {
-        	["Id"] = 670945866,
+        	["Id"] = 679504969,
         	["Name"] = "AII_Dragon",
         	["Health"] = 700,
         	["Power"] = 650,
@@ -1414,6 +1414,25 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
        	 	},
         	["Bio"] = "100% Pure Dragon.",
     	},
+	
+	["colesans16"] = {
+        	["Id"] = 679503783,
+        	["Name"] = "colesans16",
+        	["Health"] = 400,
+        	["Power"] = 300,
+        	["Rarity"] = "Common",
+        	["AttackEffect"] = "PunchKick",
+        	["Color"] = "White",
+        	["Cost"] = {["Neutral"] = 4,},
+        	["Effect"] = {
+           		Name = "Hellfire",
+           		Description = "All white fighters gain 50 health and 50 power",
+            		["Type"] = "OnSummon",
+            		["Power"] = {{"Strengthen",50},{"Heal",50}},
+            		Target = "ColorNeutral",
+       	 	},
+        	["Bio"] = "He certainly isn't.",
+    	},	
 }
 
 return tentwelvesixteen
