@@ -5581,7 +5581,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["ChosenCoast"] = {
-		["Id"] = 413917915,
+		["Id"] = 677334919,
 		["Name"] = "ChosenCoast",
 		["Health"] = 1200,
 		["Power"] = 500,
@@ -13827,7 +13827,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["MUTO2014"] = {
-		["Id"] = 430947715,
+		["Id"] = 682136636,
 		["Name"] = "MUTO2014",
 		["Health"] = 500,
 		["Power"] = 500,
@@ -15442,7 +15442,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Luck Warrior of Pure Gold"] = {
-		["Id"] = 491538837,
+		["Id"] = 677333821,
 		["Name"] = "Luck Warrior of Pure Gold",
 		["Health"] = 50,
 		["Power"] = 50,

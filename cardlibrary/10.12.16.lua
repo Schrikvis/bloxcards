@@ -931,7 +931,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 		
 	["Deadly Dicey Duo"] = {
-		["Id"] = 658086563,
+		["Id"] = 677356865,
 		["Name"] = "Deadly Dicey Duo",
 		["Health"] = 1400,
 		["Power"] = 650,
@@ -950,7 +950,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Dicey Token"] = {
-		["Id"] = 658086563,
+		["Id"] = 677356865,
 		["Name"] = "Deadly Dicey Duo",
 		["Health"] = 1400,
 		["Power"] = 650,
@@ -969,7 +969,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Defaultio"] = {
-		["Id"] = 666300396,
+		["Id"] = 677334267,
 		["Name"] = "Defaultio",
 		["Health"] = 800,
 		["Power"] = 650,
