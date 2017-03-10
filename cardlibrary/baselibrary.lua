@@ -6143,7 +6143,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Titano's Cavern"] = {
-		["Id"] = 296846068,
+		["Id"] = 688093581,
 		["Name"] = "Spooky Caverns",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -9303,7 +9303,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Infinite Frost"] = {
-		["Id"] = 336415515,
+		["Id"] = 688094321,
 		["Name"] = "Infinite Frost",
 		["Health"] = 1,
 		["Power"] = 1,
@@ -16452,7 +16452,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["AII_Duck"] = {
-		["Id"] = 526036502,
+		["Id"] = 683432959,
 		["Name"] = "AII_DUCK",
 		["Health"] = 900,
 		["Power"] = 700,
