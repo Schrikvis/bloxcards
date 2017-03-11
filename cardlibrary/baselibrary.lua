@@ -5581,7 +5581,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["ChosenCoast"] = {
-		["Id"] = 413917915,
+		["Id"] = 677334919,
 		["Name"] = "ChosenCoast",
 		["Health"] = 1200,
 		["Power"] = 500,
@@ -6143,7 +6143,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Titano's Cavern"] = {
-		["Id"] = 296846068,
+		["Id"] = 688093581,
 		["Name"] = "Spooky Caverns",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -9302,7 +9302,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Infinite Frost"] = {
-		["Id"] = 336415515,
+		["Id"] = 688094321,
 		["Name"] = "Infinite Frost",
 		["Health"] = 1,
 		["Power"] = 1,
@@ -13826,7 +13826,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["MUTO2014"] = {
-		["Id"] = 430947715,
+		["Id"] = 682136636,
 		["Name"] = "MUTO2014",
 		["Health"] = 500,
 		["Power"] = 500,
@@ -15441,7 +15441,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Luck Warrior of Pure Gold"] = {
-		["Id"] = 491538837,
+		["Id"] = 677333821,
 		["Name"] = "Luck Warrior of Pure Gold",
 		["Health"] = 50,
 		["Power"] = 50,
@@ -16377,22 +16377,60 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["ReeseMcBlox"] = {
 		["Id"] = 524379919,
 		["Name"] = "ReeseMcBlox",
- 		["Health"] = 600,
- 		["Power"] = 450,
+ 		["Health"] = 350,
+ 		["Power"] = 300,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Lightning",
  		["Color"] = "Blue",
  		["Cost"] = {["Blue"] = 3, ["Neutral"] = 2,}, 
  		["Effect"] = {
  			Name = "Helping Out",
- 			Description = "When this card is targeted, lock all enemy fighters for one turn, deal 100 damage to ReeseMcBlox, and return ReeseMcBlox to your hand.",
- 			["Type"] = "OnTarget",
- 			["Power"] = {{"Lock",1,"Opponent"},{"Damage",100,"Self"},{"Return",030}},
- 			Target = "Ally",
+ 			Description = "2 charges. Lock all fighters for 1 turn. If this card has charges remaining, add a copy of it to your hand with 1 charge removed.",
+ 			["Type"] = "OnSummon",
+ 			["Power"] = {{"Lock",1}, {"Add","ReeseMcBlox2","Ally"}},
+ 			Target = "All",
+ 		},
+ 		["Bio"] = "Please wait on hold.",
+	},
+	
+	["ReeseMcBlox2"] = {
+		["Id"] = 524379919,
+		["Name"] = "ReeseMcBlox",
+ 		["Health"] = 350,
+ 		["Power"] = 300,
+		["Rarity"] = "Rare",
+		["AttackEffect"] = "Lightning",
+ 		["Color"] = "Blue",
+ 		["Cost"] = {["Blue"] = 3, ["Neutral"] = 2,}, 
+ 		["Effect"] = {
+ 			Name = "Helping Out",
+ 			Description = "1 charge. Lock all fighters for 1 turn. If this card has charges remaining, add a copy of it to your hand with 1 charge removed.",
+ 			["Type"] = "OnSummon",
+ 			["Power"] = {{"Lock",1}, {"Add","ReeseMcBlox3","Ally"}},
+ 			Target = "All",
  		},
  		["Bio"] = "Please wait on hold.",
 	},
 
+	["ReeseMcBlox3"] = {
+		["Id"] = 524379919,
+		["Name"] = "ReeseMcBlox",
+ 		["Health"] = 350,
+ 		["Power"] = 300,
+		["Rarity"] = "Rare",
+		["AttackEffect"] = "Lightning",
+ 		["Color"] = "Blue",
+ 		["Cost"] = {["Blue"] = 3, ["Neutral"] = 2,}, 
+ 		["Effect"] = {
+ 			Name = "Helping Out",
+ 			Description = "0 charges. Lock all fighters for 1 turn.",
+ 			["Type"] = "OnSummon",
+ 			["Power"] = {{"Lock",1}},
+ 			Target = "All",
+ 		},
+ 		["Bio"] = "Please wait on hold.",
+	},
+	
 	["ReeseMcBlox Token"] = {
 		["Id"] = 524379919,
 		["Name"] = "ReeseMcBlox",
@@ -16413,7 +16451,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["AII_Duck"] = {
-		["Id"] = 526036502,
+		["Id"] = 683432959,
 		["Name"] = "AII_DUCK",
 		["Health"] = 900,
 		["Power"] = 700,
