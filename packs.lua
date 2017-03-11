@@ -1513,6 +1513,7 @@ local packs = {
 	
 	{
 		Name = "Tough Love", --VALENTINES!
+		Hidden = true;
 		PriceInBloxBux = 1000;
 		PriceInRobux = 0;
 		CardsInPack = 4,

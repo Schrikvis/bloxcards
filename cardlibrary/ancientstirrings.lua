@@ -675,20 +675,20 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Dredger980"] = {
 		["Id"] = 540075945,
 		["Name"] = "Dredger980",
-		["Health"] = 800,
-		["Power"] = 800,
+		["Health"] = 1500,
+		["Power"] = 300,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Yellow", 
 		["Cost"] = {["Neutral"] = 4, ["Yellow"] = 4,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "When this card dies, shuffle it into your deck, then draw a card.",
+			Description = "When this card is attacked, it gains 300 power.",
 			["Type"] = "OnDeath",
 			["Power"] = {{"DeckAdd","Dredger980"},{"Draw",1}},
 			Target = "Ally",
 		},
-		["Bio"] = "I FEEL SPOOPED ON",
+		["Bio"] = "Ousted, he hides in the sewers until his time is ripe.",
 	},
 	
 	["Dun_Boof"] = {
