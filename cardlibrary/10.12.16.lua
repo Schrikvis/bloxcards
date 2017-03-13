@@ -1411,7 +1411,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
             		["Type"] = "OnTarget",
             		["Power"] = {{"Strengthen",100},{"Unlock",1}},
             		Target = "Aggressor",
-       	 	},
+       	 	},	
         	["Bio"] = "100% Pure Dragon.",
     	},
 	
@@ -1432,7 +1432,96 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
             		Target = "ColorNeutral",
        	 	},
         	["Bio"] = "He certainly isn't.",
+    	},
+	
+	["emilvita"] = {
+           	["Id"] = 679503783,
+            	["Name"] = "emilvita",
+            	["Health"] = 300,
+            	["Power"] = 300,
+            	["Rarity"] = "Common",
+            	["AttackEffect"] = "UziShot",
+            	["Color"] = "Yellow",
+            	["Cost"] = {["Neutral"] = 2,},
+           	["Effect"] = {
+                  	Name = "Hellfire",
+                 	Description = "The next fighter your opponent summons become emilvita without this effect.",
+                    	["Type"] = "OnEnemySummon",
+                    	["Power"] = {{"Summon","emiltoken"},{"Summon","emiltoken","Ally"},{"Damage",9999,"Aggressor"},{"Damage",9999,"Self"}},
+                    	Target = "Opponent",
+                },
+            	["Bio"] = "SQUAT! SQUAT! SQUAT LUNGE SQUAT!",
+        },
+
+   	["emiltoken"] = {
+            	["Id"] = 679503783,
+            	["Name"] = "emilvita",
+            	["Health"] = 300,
+            	["Power"] = 300,
+            	["Rarity"] = "Token",
+            	["AttackEffect"] = "UziShot",
+            	["Color"] = "Yellow",
+            	["Cost"] = {["Neutral"] = 2,},
+            	["Bio"] = "SQUAT! SQUAT! SQUAT LUNGE SQUAT!",
+        },
+	
+	["Lord_Gizmo"] = {
+            	["Id"] = 679503783,
+           	["Name"] = "Lord_Gizmo",
+            	["Health"] = 500,
+            	["Power"] = 500,
+            	["Rarity"] = "Rare",
+            	["AttackEffect"] = "UziShot",
+            	["Color"] = "Green",
+            	["Cost"] = {["Neutral"] = 4,},
+            	["Effect"] = {
+                   Name = "Hellfire",
+                   Description = "When this card is attacked, your opponenet draws a card",
+                   ["Type"] = "OnAttacked",
+                   ["Power"] = {{"Draw",1}},
+                   Target = "Opponent",
+                },
+           	["Bio"] = "OMG COMMANDO PENGU 030",
+        },
+	
+	["wikiwakiwoirier"] = {
+            	["Id"] = 679503783,
+            	["Name"] = "colesans16",
+            	["Health"] = 600,
+            	["Power"] = 100,
+            	["Rarity"] = "Uncommon",
+            	["AttackEffect"] = "PunchKick",
+           	["Color"] = "Blue",
+            	["Cost"] = {["Neutral"] = 2, ["Blue"] = 3,},
+	   	["Effect"] = {
+            		Name = "Hellfire",
+            		Description = "When this card is attacked, lock the card that attacked it for three turns.",
+            		["Type"] = "OnAttacked",
+            		["Power"] = {{"Lock",3}},
+            		Target = "Aggressor",
+        	},
+           	["Bio"] = "Truth lies beyond the plane of existance, and stretches out further beyond to the endless grasp of the universe.",
     	},	
+	
+	["TheJazzCat22"] = {
+            	["Id"] = 679503783,
+            	["Name"] = "TheJazzCat22",
+            	["Health"] = 300,
+            	["Power"] = 300,
+            	["Rarity"] = "Legendary",
+            	["AttackEffect"] = "Fire",
+            	["Color"] = "Red",
+            	["Requirement"] = {"Opponent",2},
+            	["Cost"] = {["Neutral"] = 2, ["Red"] = 1,},
+            	["Effect"] = {
+                  	Name = "Hellfire",
+                   	Description = "Can only be summoned if your opponent has 2 or more fighters. Whenever you summon a fighter, TheJazzCat22 gains 150 power and 150 health.",
+                    	["Type"] = "OnAllySummon",
+                    	["Power"] = {{"Strengthen",150},{"Heal",150}},
+                    	Target = "Self",
+                },
+           	["Bio"] = "Ya' like jazz?",
+        }	
 }
 
 return tentwelvesixteen
