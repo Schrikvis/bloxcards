@@ -1445,8 +1445,8 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
             	["Cost"] = {["Neutral"] = 2,},
            	["Effect"] = {
                   	Name = "Hellfire",
-                 	Description = "The next fighter your opponent summons become emilvita without this effect.",
-                    	["Type"] = "OnEnemySummon",
+                 	Description = "When emilvita is targeted by a creature, turn that creature into emilvita. This effect can only be used once.",
+                    	["Type"] = "OnTarget",
                     	["Power"] = {{"Summon","emiltoken"},{"Summon","emiltoken","Ally"},{"Damage",9999,"Aggressor"},{"Damage",9999,"Self"}},
                     	Target = "Opponent",
                 },
