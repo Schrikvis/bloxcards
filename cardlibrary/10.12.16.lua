@@ -1435,7 +1435,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
     	},
 	
 	["emilvita"] = {
-           	["Id"] = 679503783,
+           	["Id"] = 695206120,
             	["Name"] = "emilvita",
             	["Health"] = 300,
             	["Power"] = 300,
@@ -1454,7 +1454,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
         },
 
    	["emiltoken"] = {
-            	["Id"] = 679503783,
+            	["Id"] = 695206120,
             	["Name"] = "emilvita",
             	["Health"] = 300,
             	["Power"] = 300,
@@ -1466,7 +1466,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
         },
 	
 	["Lord_Gizmo"] = {
-            	["Id"] = 679503783,
+            	["Id"] = 695207622,
            	["Name"] = "Lord_Gizmo",
             	["Health"] = 500,
             	["Power"] = 500,
@@ -1476,16 +1476,16 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
             	["Cost"] = {["Neutral"] = 4,},
             	["Effect"] = {
                    Name = "Hellfire",
-                   Description = "When this card is attacked, your opponenet draws a card",
+                   Description = "When this card is attacked, generate a green icon",
                    ["Type"] = "OnAttacked",
-                   ["Power"] = {{"Draw",1}},
-                   Target = "Opponent",
+                   ["Power"] = {{"Green",1}},
+                   Target = "Ally",
                 },
            	["Bio"] = "OMG COMMANDO PENGU 030",
         },
 	
 	["wikiwakiwoirier"] = {
-            	["Id"] = 679503783,
+            	["Id"] = 695209999,
             	["Name"] = "colesans16",
             	["Health"] = 600,
             	["Power"] = 100,
@@ -1504,7 +1504,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
     	},	
 	
 	["TheJazzCat22"] = {
-            	["Id"] = 679503783,
+            	["Id"] = 695209226,
             	["Name"] = "TheJazzCat22",
             	["Health"] = 300,
             	["Power"] = 300,
@@ -1515,13 +1515,13 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
             	["Cost"] = {["Neutral"] = 2, ["Red"] = 1,},
             	["Effect"] = {
                   	Name = "Hellfire",
-                   	Description = "Can only be summoned if your opponent has 2 or more fighters. Whenever you summon a fighter, TheJazzCat22 gains 150 power and 150 health.",
-                    	["Type"] = "OnAllySummon",
+                   	Description = "Can only be summoned if your opponent has 2 or more fighters. Whenever this card is attacked, TheJazzCat22 gains 150 power and 150 health.",
+                    	["Type"] = "OnAttacked",
                     	["Power"] = {{"Strengthen",150},{"Heal",150}},
                     	Target = "Self",
                 },
            	["Bio"] = "Ya' like jazz?",
-        }	
+        },	
 }
 
 return tentwelvesixteen
