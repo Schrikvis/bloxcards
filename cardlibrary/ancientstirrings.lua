@@ -675,20 +675,20 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Dredger980"] = {
 		["Id"] = 540075945,
 		["Name"] = "Dredger980",
-		["Health"] = 800,
-		["Power"] = 800,
+		["Health"] = 1500,
+		["Power"] = 300,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Yellow", 
 		["Cost"] = {["Neutral"] = 4, ["Yellow"] = 4,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "When this card dies, shuffle it into your deck, then draw a card.",
+			Description = "When this card is attacked, it gains 300 power.",
 			["Type"] = "OnDeath",
 			["Power"] = {{"DeckAdd","Dredger980"},{"Draw",1}},
 			Target = "Ally",
 		},
-		["Bio"] = "I FEEL SPOOPED ON",
+		["Bio"] = "Ousted, he hides in the sewers until his time is ripe.",
 	},
 	
 	["Dun_Boof"] = {
@@ -3119,25 +3119,6 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "They will never know the true horror that went into making this...",
 	},	
 	
-	["Treasured Unicorn"] = {
-		["Id"] = 666386958,
-		["Name"] = "Treasured Unicorn",
-		["Health"] = 700,
-		["Power"] = 50,
-		["Rarity"] = "Uncommon",
-		["AttackEffect"] = "Dash",
-		["Color"] = "Green", 
-		["Cost"] = {["Green"] = 3,},
-		["Effect"] = {
-			Name = "Undead Rising",
-			Description = "Both players generate 3 white icons.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Neutral",3}},
-			Target = "All",
-		},
-		["Bio"] = "Zanzel used this specific breed to supply her forces with supplies.",
-	},	
-	
 	["Graboid"] = {
 		["Id"] = 666429825,
 		["Name"] = "Graboid",
@@ -3156,6 +3137,63 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Aggressor",
 		},
 		["Bio"] = "Zanzel was amazed at their power, but this power was destined to die off.",
+	},
+	
+	["Treasured Unicorn"] = {
+		["Id"] = 666386958,
+		["Name"] = "Treasured Unicorn",
+		["Health"] = 1100,
+		["Power"] = 0,
+		["Rarity"] = "Uncommmon",
+		["AttackEffect"] = "Fire",
+		["Color"] = "Green",
+		["Cost"] = {["Green"] = 3,},
+		["Effect"] = {
+			Name = "Hellfire",
+			Description = "When this card is attacked, generate a green icon.",
+			["Type"] = "OnAttacked",
+			["Power"] = {{"Green",1}},
+			Target = "Ally",
+		},
+		["Bio"] = "Only a fiend would hurt such a pristine animal.",
+	},
+	
+	["Enlightened Whelp"] = {
+		["Id"] = 666289586,
+		["Name"] = "Enlightened Whelp",
+		["Health"] = 800,
+		["Power"] = 0,
+		["Rarity"] = "Uncommmon",
+		["AttackEffect"] = "Fire",
+		["Color"] = "Yellow",
+		["Cost"] = {["Green"] = 3,},
+		["Effect"] = {
+			Name = "Hellfire",
+			Description = "Summon a Noob and give all allies 100 power when this card is summoned or when it dies.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Summon","Noob"},{"Strengthen",100,"Ally"},{"Summon","Whelp Token"},{"Damage",9999,"Self"}},
+			Target = "Ally",
+		},
+		["Bio"] = "Do you slay the golden goose?",
+	},
+	
+	["Whelp Token"] = {
+		["Id"] = 666289586,
+		["Name"] = "Enlightened Whelp",
+		["Health"] = 800,
+		["Power"] = 100,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Fire",
+		["Color"] = "Yellow",
+		["Cost"] = {["Green"] = 3,},
+		["Effect"] = {
+			Name = "Hellfire",
+			Description = "Summon a Noob and give all allies 50 power when this card is summoned or when it dies.",
+			["Type"] = "OnDeath",
+			["Power"] = {{"Summon","Noob"},{"Strengthen",50,"Ally"}},
+			Target = "Ally",
+		},
+		["Bio"] = "Do you slay the chosen one?",
 	},
 	
 	["LovecraftWizard"] = {

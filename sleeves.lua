@@ -82,6 +82,7 @@ local sleeves = {
 
 	CardArt = {
 		["MisterObvious"]       = {486449168, 1800};
+		["Cindering"] 	        = {689606529, 3000};
 		["Egotist"]             = {486449178, 2000};
 		["BlizzardCreeper"]     = {486449200, 2250};
 		["Anacalagon"]          = {486449221, 2500};
