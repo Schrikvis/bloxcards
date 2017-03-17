@@ -1486,7 +1486,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	
 	["wikiwakiwoirier"] = {
             	["Id"] = 695209999,
-            	["Name"] = "colesans16",
+            	["Name"] = "wikiwakiwoirier",
             	["Health"] = 600,
             	["Power"] = 100,
             	["Rarity"] = "Uncommon",
@@ -1524,7 +1524,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
         },
 	
 	["ChaoticCommando"] = {
-            	["Id"] = 695207622,
+            	["Id"] = 697663303,
            	["Name"] = "ChaoticCommando",
             	["Health"] = 1200,
             	["Power"] = 500,
