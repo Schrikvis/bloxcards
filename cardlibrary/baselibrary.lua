@@ -12155,21 +12155,27 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["John and Jane"] = {
 		["Id"] = 411845604,
 		["Name"] = "John Doe & Jane Doe",
+		["AltCards"] = {
+			["John and Jane-ArtV"] = {
+				["Id"] = 698878114,
+				["AltArt"] = true,
+				["Bio"] = "3/18...",
+			},
+		},
 		["Health"] = 300,
 		["Power"] = 300,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Yellow",
 		["Cost"] = {["Neutral"] = 1,["Yellow"] = 3,},
-		["CounterBlock"] = true,
 		["Effect"] = {
 			Name = "Knockdown",
-			Description = [[Can't counterattack. Summon a copy of this card.]],
+			Description = [[Summon a copy of this card.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Summon","John and Jane"}},
 			Target = "Ally",
 		},
-		["Bio"] = "Stop.",
+		["Bio"] = "Hello. Friend.",
 	},			
 
 	["Mrbeanbean2"] = {
