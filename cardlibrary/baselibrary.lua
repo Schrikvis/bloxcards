@@ -12159,7 +12159,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["John and Jane-ArtV"] = {
 				["Id"] = 698878114,
 				["AltArt"] = true,
-				["Bio"] = "A test account. It's only a test account. John Doe is a test account. The real test starts now. ",
+				["Bio"] = "3/18...",
 			},
 		},
 		["Health"] = 300,
