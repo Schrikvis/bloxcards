@@ -890,7 +890,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "SoulSearch",
 		["AltCards"] = {
 			["SoulSearch-Val"] = {
-				["Id"] = 701072468,
+				["Id"] = 701782288,
 				["Name"] = "SoulMateSearch",
 			["Bio"] = "Always searching for the perfect soulmate.",
 			}
