@@ -7909,7 +7909,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Redrune Raider"] = {
-		["Id"] = 323660333,
+		["Id"] = 701142464,
 		["Name"] = "Redrune Raider",
 		["Health"] = 500,
 		["Power"] = 200,
@@ -12826,7 +12826,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 630782293,
 		["Name"] = "Imaginz00",
 		["Health"] = 1000,
-		["Power"] = 150,
+		["Power"] = 200,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Neutral",
@@ -14959,20 +14959,27 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["One4utwo4me"] = {
 		["Id"] = 430971601,
 		["Name"] = "One4utwo4me",
+		["AltCards"] = {
+			["One4utwo4me-ArtV"] = {
+				["Id"] = 701125140,
+				["AltArt"] = true,
+				["Bio"] = " I watched a snail crawl along the edge of a straight razor. That's my dream; that's my nightmare. Crawling, slithering, along the edge of a straight razor... and surviving.",
+			}
+		},
 		["Health"] = 600,
 		["Power"] = 200,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Red", 
-		["Cost"] = {["Neutral"] = 3, ["Red"] = 1,},
+		["Cost"] = {["Neutral"] = 2, ["Red"] = 3,},
 		["Effect"] = {
 			Name = "Bleeding",
-			Description = "Whenever you lose life, put a random red or blue action into your hand.",
-			["Type"] = "OnHealthLoss",
-			["Power"] = {{"RandomAdd","Lunar"}},
-			Target = "Ally",
+			Description = "Whenever this fighter strikes the opponent, give it 500 Power.",
+			["Type"] = "OnStrike",
+			["Power"] = {{"Strengthen",500}},
+			Target = "Self",
 		},
-		["Bio"] = "Have fun figuring out if this is a lunar or lifeloss card. (It's not both.)",
+		["Bio"] = " Someday this war's gonna end... ",
 	},
 
 	["Mr.O the Traveling Merchant"] = {
