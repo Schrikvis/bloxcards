@@ -11209,9 +11209,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 2,},
 		["Effect"] = {
 			Name = "Overgrown",
-			Description = "When this fighter dies, summon a Goo.",
+			Description = "When this fighter dies, summon a Morphic Goo.",
 			["Type"] = "OnDeath",
-			["Power"] = {{"Summon","Goo"}},
+			["Power"] = {{"Summon","Morphic Goo"}},
 			Target = "Ally",
 		},
 		["Bio"] = "He caused destruction for the 5033rd time.",
@@ -11973,7 +11973,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Card Hoarder"] = {
 		["Id"] = 411843983,
 		["Name"] = "Card Hoarder",
-		["Health"] = 800,
+		["Health"] = 500,
 		["Power"] = 250,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Lightning",
