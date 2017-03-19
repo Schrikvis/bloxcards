@@ -1606,15 +1606,15 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 
 	["Crystal of Death's Vengence"] = {
-		["Id"] = 675456755,
+		["Id"] = 689606434,
 		["Name"] = "Crystal of Death's Vengence",
 		["Health"] = 25,
 		["Power"] = 0,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Slash",
 		["Archetype"] = "Crystal",
-		["Color"] = "Blue",
-		["Cost"] = {["Blue"] = 1,},
+		["Color"] = "Red",
+		["Cost"] = {["Red"] = 1,},
 		["Token"] = true,
 		["Effect"] = {
 			Name = "Bloodstone",
@@ -1643,7 +1643,26 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Ally",
 		},
 		["Bio"] = "",
-	},	
+	},
+	
+	["Damaging26"] = {
+		["Id"] = 701255714,
+		["Name"] = "Damaging26",
+		["Health"] = 500,
+		["Power"] = 400,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Red", 
+		["Cost"] = {["Red"] = 1,["Neutral"] = 3},
+		["Effect"] = {
+			Name = "Redead",
+			Description = "When this fighter dies, deal 100 damage to all non-red fighters",
+			["Type"] = "OnDeath",
+			["Power"] = {{"Damage",100,"NotColorRed"}},
+			Target = "All",
+		},
+		["Bio"] = "If I'm to die, I'll try to bring you with me.",
+	},
 }
 
 return tentwelvesixteen
