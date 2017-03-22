@@ -886,26 +886,26 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["SoulSearch"] = {
-		["Id"] = 667457465,
+		["Id"] = 701066662,
 		["Name"] = "SoulSearch",
 		["AltCards"] = {
 			["SoulSearch-Val"] = {
-				["Id"] = 655017806,
+				["Id"] = 701782288,
 				["Name"] = "SoulMateSearch",
 			["Bio"] = "Always searching for the perfect soulmate.",
 			}
 		},
-		["Health"] = 1200,
-		["Power"] = 500,
+		["Health"] = 1000,
+		["Power"] = 300,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Gust",
 		["Color"] = "Red",
-		["Cost"] = {["Neutral"] = 1, ["Red"] = 5,},
+		["Cost"] = {["Red"] = 7,},
 		["Effect"] = {
 			Name = "Hellfire",
-			Description = "Whenever you lose life, set your life to 300.",
-			["Type"] = "OnHealthLoss",
-			["Power"] = {{"SetLife",300}},
+			Description = "Each time this fighter attacks, it gains 300 Power.",
+			["Type"] = "OnAttack",
+			["Power"] = {"Strengthen",300,"Self"},
 			Target = "Ally",
 		},
 		["Bio"] = "Always searching for the perfect soul.",
