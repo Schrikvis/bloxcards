@@ -1653,7 +1653,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Red", 
-		["Cost"] = {["Red"] = 1,["Neutral"] = 3},
+		["Cost"] = {["Red"] = 1,["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Redead",
 			Description = "When this fighter dies, deal 100 damage to all non-red fighters",
@@ -1663,6 +1663,26 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "If I'm to die, I'll try to bring you with me.",
 	},
+	
+	["iiSmolToaster"] = {
+		["Id"] = 709047246,
+		["Name"] = "iiSmolToaster",
+		["Health"] = 750,
+		["Power"] = 200,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Green", 
+		["Cost"] = {["Green"] = 2,["Neutral"] = 2,},
+		["Effect"] = {
+			Name = "Toasty",
+			Description = "When this fighter is attacked, you gain 300 Life.",
+			["Type"] = "OnAttacked",
+			["Power"] = {{"Cost",-300}},
+			Target = "Ally",
+		},
+		["Bio"] = "SmolToasters are sold withouth smol bread or batteries included.",
+	},
+
 }
 
 return tentwelvesixteen
