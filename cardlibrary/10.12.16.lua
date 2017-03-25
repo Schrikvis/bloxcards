@@ -817,7 +817,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "GunShot",
 		["Color"] = "Red", 
-		["Cost"] = {["Red"] = 50,},
+		["Cost"] = {["Red"] = 60,},
 		["Effect"] = {
 			Name = "Rebuilding The Place",
 			Description = "You win the game.",
@@ -825,7 +825,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Inflict",999999,"Opponent"}},
 			Target = "Opponent",
 		},
-		["Bio"] = "You win. The end.",
+		["Bio"] = "",
 	},	
 	
 	["Steam Razikai"] = {
