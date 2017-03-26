@@ -13292,6 +13292,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Skarra the DragonSlayerv2"] = {
 				["Id"] = 540870000,
+				["AltArt"] = true,
 				["Bio"] = "An ancient dragon warrior. The only dragon Skarra wont kill is the one that she rides.",
 			},
 		},
