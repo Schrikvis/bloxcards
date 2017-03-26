@@ -16029,9 +16029,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Racism is baaaaaaaaaaaaaaaaaaaaaaad",
-			Description = "Put a random Overseer, Zombie, Doge, and Toy card into your hand.",
+			Description = "You lose 1500 Life. Put a random Overseer, Zombie, Doge, and Toy card into your hand.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"RandomAdd","Overseer"},{"RandomAdd","Zombie"},{"RandomAdd","Doge"},{"RandomAdd","Toy"}},
+			["Power"] = {{"Cost",1500},{"RandomAdd","Overseer"},{"RandomAdd","Zombie"},{"RandomAdd","Doge"},{"RandomAdd","Toy"}},
 			Target = "Ally",
 		},
 		["Bio"] = "I can be anything you want, babe.",
