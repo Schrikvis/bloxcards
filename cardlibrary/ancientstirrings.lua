@@ -3197,14 +3197,14 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["LovecraftWizard"] = {
-		["Id"] = 666379203,
+		["Id"] = 712020702,
 		["Name"] = "LovecraftWizard",
-		["Health"] = 600,
+		["Health"] = 400,
 		["Power"] = 400,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Slash",
 		["Color"] = "Green",
-		["Cost"] = {["Neutral"] = 4, ["Green"] = 1,},
+		["Cost"] = {["Neutral"] = 3, ["Green"] = 3, ["Red"] = 2},
 		["Effect"] = {
 			Name = "Undead Rising",
 			Description = "At the end of your turns, gift your opponent 200 life. Allied fighters drain 100 health from enemy fighters.",
