@@ -3204,7 +3204,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Slash",
 		["Color"] = "Green",
-		["Cost"] = {["Neutral"] = 3, ["Green"] = 3, ["Red"] = 2},
+		["Cost"] = {["Neutral"] = 3, ["Green"] = 3, ["Red"] = 2,},
 		["Effect"] = {
 			Name = "Undead Rising",
 			Description = "At the end of your turns, gift your opponent 200 life. Allied fighters drain 100 health from enemy fighters.",
