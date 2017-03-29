@@ -11227,7 +11227,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Description = "Whenever you summon a fighter, reset ScriptMasTime's power.",
 			["Type"] = "OnAllySummon",
 			["Power"] = {{"SetPower",300}},
-			Target = "Ally",
+			Target = "Self",
 		},
 		["Bio"] = "ScriptMasTime is here, have some bugs and fear!~",
 	},		
