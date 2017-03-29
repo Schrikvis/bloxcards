@@ -948,7 +948,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Hellfire",
 			Description = "Enemy fighters are locked for one turn. At the end of your turn, lower the power of all enemy fighters by 50, gain 1 yellow icon, then both players lose 200 life.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Lock",1},{"Summon","Dicey Token"},{"Damage",9999,"Self"}},
+			["Power"] = {{"Lock",1},{"Summon","Dicey Token","Ally"},{"Damage",9999,"Self"}},
 			Target = "Opponent",
 		},
 		["Bio"] = "Together as one, we gamble the night away!.",
