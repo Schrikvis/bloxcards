@@ -173,6 +173,7 @@ local packs = {
 		CardPackId = 465492503,
 		Description = "Red is the colour of power, ambition, and control. Dominion packs contain cards that cost red!",
 		Cards = {
+			"Beyondthegong",
 			"Damaging26",
 			"MarissaKitty04",
 			"ChaoticCommando",
