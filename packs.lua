@@ -173,6 +173,12 @@ local packs = {
 		CardPackId = 465492503,
 		Description = "Red is the colour of power, ambition, and control. Dominion packs contain cards that cost red!",
 		Cards = {
+			"Beyondthegong",
+			"Damaging26",
+			"MarissaKitty04",
+			"ChaoticCommando",
+			"TheJazzCat22",
+			"Cindering",
 			"SoulSearch",
 			"Eye of Heaven",
 			"UHunterU",
@@ -381,6 +387,8 @@ local packs = {
 		CardPackId = 465492570,
 		Description = "Green is the colour of life, growth, and the primal forces. Vitality packs contain cards that cost green!",
 		Cards = {
+			"Lord_Gizmo",
+			"iiSmolToaster",
 			"Saprasam",
 			"Enlightened Whelp",
 			"BonesMcCormick",
@@ -546,13 +554,14 @@ local packs = {
 		CardPackId = 465492637,
 		Description = "Blue is the colour of logic, order, and structure. Thought packs contain cards that cost blue!",
 		Cards = {
+			"wikiwakiwoirier",
+			"Your_Name",
 			"Friaza",
 			"Deadly Dicey Duo",
 			"hyp3rdeath",
 			"Steam Razikai",
 			"Wooden Chair",
  			"Rollernaut",
-			"Beyondthegong",
 			"SONICTHEHEDGEHOGXXX",
 			"Razikai's Exploration",
 			"Ghost Dragon",
@@ -745,6 +754,8 @@ local packs = {
 		Description = 
 		"Yellow is the colour of chaos, emotion, and society. Revel packs contain cards that cost yellow!",
 		Cards = {
+			"AII_Dragon",
+			"emilvita",
 			"Enlightened Whelp",
 			"DominiusConfabricor",
 			"Defaultio",
