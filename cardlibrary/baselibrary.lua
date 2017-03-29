@@ -13408,6 +13408,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Skarra the DragonSlayerv2"] = {
 				["Id"] = 540870000,
+				["AltArt"] = true,
 				["Bio"] = "An ancient dragon warrior. The only dragon Skarra wont kill is the one that she rides.",
 			},
 		},
@@ -16159,9 +16160,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Racism is baaaaaaaaaaaaaaaaaaaaaaad",
-			Description = "Put a random Overseer, Zombie, Doge, and Toy card into your hand.",
+			Description = "You lose 1500 Life. Put a random Overseer, Zombie, Doge, and Toy card into your hand.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"RandomAdd","Overseer"},{"RandomAdd","Zombie"},{"RandomAdd","Doge"},{"RandomAdd","Toy"}},
+			["Power"] = {{"Cost",1500},{"RandomAdd","Overseer"},{"RandomAdd","Zombie"},{"RandomAdd","Doge"},{"RandomAdd","Toy"}},
 			Target = "Ally",
 		},
 		["Bio"] = "I can be anything you want, babe.",
@@ -16523,13 +16524,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["ReeseMcBlox"] = {
 		["Id"] = 524379919,
 		["Name"] = "ReeseMcBlox",
- 		["Health"] = 350,
- 		["Power"] = 300,
+ 		["Health"] = 500,
+ 		["Power"] = 500,
 		["Rarity"] = "Rare",
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Lightning",
  		["Color"] = "Blue",
- 		["Cost"] = {["Blue"] = 3, ["Neutral"] = 2,}, 
+ 		["Cost"] = {["Blue"] = 3, ["Neutral"] = 4,}, 
  		["Effect"] = {
  			Name = "Helping Out",
  			Description = "Shuffle two nightmares into your deck, then draw two cards.",
