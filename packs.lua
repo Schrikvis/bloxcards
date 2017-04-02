@@ -1056,6 +1056,8 @@ local packs = {
 			"Turkey",
 			"JayTheCoder",
 			"Wingman8",
+			"Games",
+			"CanadianSanic",
 			"Ultra Bestower",
 			"Ultra Enchancer",
 			"Ultra Otherer",
