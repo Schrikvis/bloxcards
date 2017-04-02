@@ -170,7 +170,7 @@ local packs = {
 		PriceInBloxBux = 30,
 		PriceInRobux = 0;
 		CardsInPack = 4,
-		CardPackId = 465492503,
+		CardPackId = 721400845,
 		Description = "Red is the colour of power, ambition, and control. Dominion packs contain cards that cost red!",
 		Cards = {
 			"Beyondthegong",
@@ -384,7 +384,7 @@ local packs = {
 		PriceInBloxBux = 30,
 		PriceInRobux = 0;
 		CardsInPack = 4,
-		CardPackId = 465492570,
+		CardPackId = 721399805,
 		Description = "Green is the colour of life, growth, and the primal forces. Vitality packs contain cards that cost green!",
 		Cards = {
 			"Lord_Gizmo",
@@ -551,7 +551,7 @@ local packs = {
 		PriceInBloxBux = 30,
 		PriceInRobux = 0;
 		CardsInPack = 4,
-		CardPackId = 465492637,
+		CardPackId = 721399466,
 		Description = "Blue is the colour of logic, order, and structure. Thought packs contain cards that cost blue!",
 		Cards = {
 			"wikiwakiwoirier",
@@ -750,7 +750,7 @@ local packs = {
 		PriceInBloxBux = 30,
 		PriceInRobux = 0;
 		CardsInPack = 4,
-		CardPackId = 465492745,
+		CardPackId = 721400239,
 		Description = 
 		"Yellow is the colour of chaos, emotion, and society. Revel packs contain cards that cost yellow!",
 		Cards = {
@@ -1154,7 +1154,7 @@ local packs = {
 		PriceInBloxBux = 60,
 		PriceInRobux = 0;
 		CardsInPack = 4,
-		CardPackId = 540076976,
+		CardPackId = 721399106,
 		Description = "Priestess Zanzel has corrupted this world. Do you have the gall to stop her? You must have 10 wins to open this pack.",
 		WinRequirement = 10;
 		Cards = {
