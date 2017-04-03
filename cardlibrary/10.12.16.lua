@@ -1505,7 +1505,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2, ["Red"] = 1,},
 		["Effect"] = {
 			Name = "Hellfire",
-			Description = "Can only be summoned if your opponent has 2 or more fighters. Whenever this fighter is attacked and survives, increase its health and power by 150..",
+			Description = "Can only be summoned if your opponent has 2 or more fighters. Whenever this fighter is attacked and survives, increase its health and power by 150.",
 			["Type"] = "OnAttacked",
 			["Power"] = {{"Strengthen",150},{"Heal",150}},
 			Target = "Self",
