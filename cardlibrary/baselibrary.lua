@@ -506,7 +506,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Greed Share",
-			Description = "The next fighter you summon has an additional 300 health and attack. Abilities don't trigger when Loogi enters play.",
+			Description = "The next fighter you summon has an additional 300 health and power. Abilities don't trigger when Loogi enters play.",
 			["Type"] = "OnAllySummon",
 			["Power"] = {{"Summon","LoogiTOKEN"},{"Heal",300,"Aggressor"},{"Strengthen",300,"Aggressor"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -875,7 +875,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Green"] = 3,},
 		["Effect"] = {
 			Name = "Bribe!",
-			Description = "All your monsters gain 150 health and attack, but your opponent gains 750 life.",
+			Description = "Your opponent gains 750 life. Increase the health and power of all allied fighters by 150.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Strengthen",150},{"Heal",150},{"Inflict",-750,"Opponent"}},
 			Target = "Ally",
@@ -1526,7 +1526,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "Some people wish to win the Bloxxies, but there can only be one.",
 		["Effect"] = {
 			Name = "Bloxy Victory",
-			Description = "Increase the Attack of all your fighters by 600, then decrease their health by 300.",
+			Description = "Decrease the health of all allied fighters by 300, and increase their power by 300.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Strengthen",600},{"Damage",300}},
 			Target = "Ally",
@@ -1777,7 +1777,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Red"] = 3,},
 		["Effect"] = {
 			Name = "Assimilate",
-			Description = "All Ninjas gain 200 Health and Attack.",
+			Description = "All Ninjas gain 200 health and power.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",200},{"Strengthen",200}},
 			Target = "Archetype",
@@ -2028,7 +2028,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Green"] = 3,},
 		["Effect"] = {
 			Name = "Arkhaiomelisidonophunikheratos",
-			Description = "Give a target fighter 50 attack, then swap their stats.",
+			Description = "Increase the power of a target fighter by 50, then swap its stats.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Strengthen",50},{"Swap",030}},
 			Target = "Single",
@@ -2138,7 +2138,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Yellow"] = 4},
 		["Effect"] = {
 			Name = "Routine Maintenance",
-			Description = "Increase the Health of all your fighers by 400, then decrease their attack by 100.",
+			Description = "Increase the health of all allied fighers by 400 and decrease their power by 100.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",100},{"Heal",400}},
 			Target = "Ally",
@@ -2291,7 +2291,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Yellow"] = 5,},
 		["Effect"] = {
 			Name = "Un-Animate",
-			Description = "Set the attack of a target fighter to 0 but increase its health by 2500.",
+			Description = "Increase the health of a target fighter by 2500 and set its power to 0.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"SetPower",0},{"Heal",2500}},
 			Target = "Single",
@@ -2429,7 +2429,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 6,["Green"] = 3,},
 		["Effect"] = {
 			Name = "Demon Eye",
-			Description = "Gain 5 Green icons and lower the attack of all fighters by 200.",
+			Description = "Gain 5 Green icons and lower the power of all fighters by 200.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Green",5,"Ally"},{"Weaken",200}},
 			Target = "All",
@@ -2508,7 +2508,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Red"] = 1,["Yellow"] = 1,["Green"] = 1,["Blue"] = 1,},
 		["Effect"] = {
 			Name = "Horde-Caller",
-			Description = "Deal 100 damage to all enemies and lower their attack by 100.",
+			Description = "Deal 100 damage to all enemies and lower their power by 100.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",100},{"Damage",100}},
 			Target = "Opponent",
@@ -2792,7 +2792,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 4},
 		["Effect"] = {
 			Name = "Arkhaiomelisidonophunikheratos",
-			Description = "Give all green fighters 50 power, then swap their stats.",
+			Description = "Increase the power of all green fighters by 50, then swap their stats.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Strengthen",50},{"Swap",030}},
 			Target = "ColorGreen",
@@ -2819,7 +2819,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Yellow"] = 1},
 		["Effect"] = {
 			Name = "Purlot",
-			Description = "Increase the health and attack of all your fighters by 100.",
+			Description = "Increase the health and power of all allied fighters by 100.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Strengthen",100},{"Heal",100}},
 			Target = "Ally",
@@ -2976,7 +2976,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 6,},
 		["Effect"] = {
 			Name = "Counter Block",
-			Description = "Deal 300 damage to all enemy fighters and lower their Attack by 150.",
+			Description = "Deal 300 damage to all enemy fighters and lower their power by 150.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",300},{"Weaken",150}},
 			Target = "Opponent",
@@ -3359,7 +3359,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 1,["Blue"] = 1,["Yellow"] = 1,["Red"] = 1,["Neutral"] = 6,},
 		["Effect"] = {
 			Name = "Warriors Intimidation",
-			Description = "Decrease the attack of all enemies by 100, decrease their health by 200, and lock them for 1 turn.",
+			Description = "Deal 200 health to all enemy fighters, decrease their power by 100 and lock them for 1 turn.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",200},{"Weaken",100},{"Lock",1}},
 			Target = "Opponent",
@@ -3833,7 +3833,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 3,},
 		["Effect"] = {
 			Name = "Acolyte",
-			Description = "All allies gain 50 attack at the end of each turn.",
+			Description = "Increase the power of all allied fighters by 50 at the end of your turns.",
 			["Type"] = "OnEnd",
 			["Power"] = "Strengthen",
 			Target = "Ally",
@@ -3974,7 +3974,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 2,},
 		["Effect"] = {
 			Name = "Split Ego",
-			Description = "Increase the attack of all Police by 250 but lock them for 1 turn.",
+			Description = "Increase the power of all Police by 250 and lock them for 1 turn.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Lock",1},{"Strengthen",250}},
 			Target = "Archetype",
@@ -4190,7 +4190,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 6,},
 		["Effect"] = {
 			Name = "Refreshments",
-			Description = "Heal all fighters by 1000, increase their attack by 250 and lock them all for 1 turn.",
+			Description = "Increase the health of all fighters by 1000, and the attack of all fighters by 250. Lock them all for 1 turn.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",1000},{"Strengthen",250},{"Lock",1}},
 			Target = "All",
@@ -4423,7 +4423,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 3,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Summon 1 Zombie, then give all your Zombies 100 Health and 150 Attack.",
+			Description = "Summon 1 Zombie, then increase the health of all Zombies by 100 and the power of all Zombies by 150.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Summon","Zombie","Ally"},{"Strengthen",150},{"Heal",100}},
 			Target = "Archetype",
@@ -4463,7 +4463,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Green"] = 6,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Give all your Zombies 500 Health and Attack.",
+			Description = "Increase the health and power of all zombies by 500.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Strengthen",500},{"Heal",500}},
 			Target = "Archetype",
@@ -4987,7 +4987,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 2,},
 		["Effect"] = {
 			Name = "Jagged Arrow",
-			Description = "Lower the attack of a target fighter by 400.",
+			Description = "Lower the power of a target fighter by 400.",
 			["Type"] = "OnSummon",
 			["Power"] = "Weaken",
 			Target = "Single",
@@ -5008,7 +5008,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Instill",
-			Description = "Increase the Attack of a target fighter by 250.",
+			Description = "Increase the power of a target fighter by 250.",
 			["Type"] = "OnSummon",
 			["Power"] = "Strengthen",
 			Target = "Single",
@@ -5056,7 +5056,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 5,},
 		["Effect"] = {
 			Name = "Quick Shot",
-			Description = "lower the attack of all non-Korblox fighters by 500.",
+			Description = "lower the power of all non-Korblox fighters by 500.",
 			["Type"] = "OnSummon",
 			["Power"] = "Weaken",
 			Target = "NotArchetype",
@@ -5160,7 +5160,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "All Doges gain 200 Attack.",
+			Description = "Increase the powre of all Doges by 200.",
 			["Type"] = "OnSummon",
 			["Power"] = "Strengthen",
 			Target = "Archetype",
@@ -5188,7 +5188,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "All Doges gain 150 Attack and Health. Draw 1 card.",
+			Description = "Increase the health and power of all Doges by 150. Draw 1 card.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Strengthen",150},{"Heal",150},{"Draw",1}},
 			Target = "Archetype",
@@ -5251,7 +5251,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Increase the attack of all fighters by 50 at the start of each turn.",
+			Description = "Increase the power of all fighters by 50 at the end of each turn.",
 			["Type"] = "Field",
 			["Power"] = "Strengthen",
 			Target = "All",	
@@ -5295,7 +5295,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Green"] = 1,["Blue"] = 1,["Yellow"] = 1,["Red"] = 1,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "lower the attack of all non-green fighters by 25 each turn.",
+			Description = "lower the power of all non-green fighters by 25 at the end of each turn.",
 			["Type"] = "Field",
 			["Power"] = "Weaken",
 			Target = "NotColorGreen",	
@@ -5317,7 +5317,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 0,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Opponent cards lose 100 Attack and Ally cards gain 100 Attack. This effect alternates between players at the start of each turn.",
+			Description = "Enemy cards lose 100 power and allied fighters gain 100 power. This effect alternates between players at the start of each turn.",
 			["Type"] = "Field",
 			["Power"] = {{"Weaken",100,"Opponent"},{"Strengthen",100,"Ally"}},
 			Target = "All",
@@ -5357,7 +5357,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Green"] = 2,},
 		["Effect"] = {
 			Name = "No-Zone",
-			Description = "lower the attack of a target fighter by 300.",
+			Description = "lower the power of a target fighter by 300.",
 			["Type"] = "OnSummon",
 			["Power"] = "Weaken",
 			Target = "Single",
@@ -5378,7 +5378,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 5,},
 		["Effect"] = {
 			Name = "Quick Shot",
-			Description = "lower the attack of all enemy fighters by 200.",
+			Description = "Lower the power of all enemy fighters by 200.",
 			["Type"] = "OnSummon",
 			["Power"] = "Weaken",
 			Target = "Opponent",
@@ -5399,7 +5399,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 5,},
 		["Effect"] = {
 			Name = "Investment",
-			Description = "Increase the attack of a target fighter by 500.",
+			Description = "Increase the power of a target fighter by 500.",
 			["Type"] = "OnSummon",
 			["Power"] = "Strengthen",
 			Target = "Single",
@@ -5420,7 +5420,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Red"] = 3,},
 		["Effect"] = {
 			Name = "Mafia Support",
-			Description = "Increase the attack of a target fighter by 500.",
+			Description = "Increase the power of a target fighter by 500.",
 			["Type"] = "OnSummon",
 			["Power"] = "Strengthen",
 			Target = "Single",
@@ -5469,7 +5469,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Psychotic",
-			Description = "Increase the attack of a target fighter by 1000, then lower their health by 750.",
+			Description = "Deal 750 damage to a target fighter and increase its power by 1000.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Strengthen",1000},{"Damage",750}},
 			Target = "Single",
@@ -5489,7 +5489,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Red"] = 4,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "All Redcliff gain 300 Attack and Health.",
+			Description = "Increase the health and power of all Redcliff by 300.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Strengthen",300},{"Heal",300}},
 			Target = "Archetype",
@@ -5509,7 +5509,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Red"] = 1,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "All Redcliff gain 100 Attack.",
+			Description = "Increase the power of all Redcliff by 100.",
 			["Type"] = "OnSummon",
 			["Power"] = "Strengthen",
 			Target = "Archetype",
@@ -5530,7 +5530,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 5,["Red"] = 5,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "All Redcliff gain 600 Attack and Health.",
+			Description = "Increase the health and power of all Redcliff by 600.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Strengthen",600},{"Heal",600}},
 			Target = "Archetype",
@@ -5550,7 +5550,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 1,},
 		["Effect"] = {
 			Name = "Message of Hope",
-			Description = "Increase the attack of a fighter by 100.",
+			Description = "Increase the power of a fighter by 100.",
 			["Type"] = "OnSummon",
 			["Power"] = "Strengthen",
 			Target = "Single",
@@ -6543,7 +6543,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Red"] = 4,},
 		["Effect"] = {
 			Name = "Firascale",
-			Description = "When this card Attacks, swap the Attack and Health of all allied fighters.",
+			Description = "When this card Attacks, swap the health and power of all allied fighters.",
 			["Type"] = "OnAttack",
 			["Power"] = "Swap",
 			Target = "Ally",
@@ -6602,7 +6602,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 7,["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "When this card Attacks, increase its Attack and Health by 200.",
+			Description = "When this card attacks, increase its health and power by 200.",
 			["Type"] = "OnAttack",
 			["Power"] = {{"Strengthen",200},{"Heal",200}},
 			Target = "Self",
@@ -6961,7 +6961,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 8,},
 		["Effect"] = {
 			Name = "Totem Magic",
-			Description = "Ally fighters gain 75 Health and Attack at the end of each of your turns.",
+			Description = "Increase the health and power of all allied fighters by 75 at the end of your turns.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Heal",75},{"Strengthen",75}},
 			Target = "Ally",
@@ -6980,7 +6980,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 2,},
 		["Effect"] = {
 			Name = "Frog-Legging",
-			Description = "Whenever this fighter is targeted, all enemy fighters lose 50 attack.",
+			Description = "Whenever this fighter is targeted, lower the power of all enemy fighters by 50.",
 			["Type"] = "OnTarget",
 			["Power"] = "Weaken",
 			Target = "Opponent",
@@ -7329,7 +7329,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 6,},
 		["Effect"] = {
 			Name = "Build Up",
-			Description = "Can't counterattack. Lock all Toys and increase their Power and Health by 125 at the end of each of your turns.",
+			Description = "Can't counterattack. Lock all Toys for 2 turns and increase their health and power by 125 at the end of your turns.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Lock",2},{"Strengthen",125},{"Heal",125}},
 			Target = "Archetype",
@@ -7349,7 +7349,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Build Up",
-			Description = "Unlock all toys and increase their Attack and Health by 100.",
+			Description = "Unlock all toys and increase their health and power by 100.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Unlock",999},{"Strengthen",100},{"Heal",100}},
 			Target = "Archetype",
@@ -7570,7 +7570,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 4,},
 		["Effect"] = {
 			Name = "Master Blast",
-			Description = [[Set a target fighter's attack to 700.]],
+			Description = [[Set the power of a target fighter to 700.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"SetPower",700}},
 			Target = "Single",
@@ -7871,7 +7871,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Ally cards lose 100 Attack and Opponent cards gain 100 Attack. This effect alternates between players at the start of each turn.",
+			Description = "All enemy fighters gain 100 power and all allied fighters lose 100 power. This effect alternates between players at the start of each turn.",
 			["Type"] = "Field",
 			["Power"] = {{"Strengthen",100,"Opponent"},{"Weaken",100,"Ally"}},
 			Target = "All",
@@ -7909,7 +7909,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 3,["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Confusion Strike",
-			Description = "Lock all enemy fighters for 1 turn. Give them 100 attack, then swap their stats.",
+			Description = "Lock all enemy fighters for 1 turn. Increase their power by 100, then swap their health and power.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Lock",1},{"Strengthen",100},{"Swap",0}},
 			Target = "Opponent",
@@ -8093,7 +8093,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 6,},
 		["Effect"] = {
 			Name = "SorryBurn",
-			Description = "When this card attacks, lower the power of all enemy fighters by 125.",
+			Description = "Whenever this card attacks, lower the power of all enemy fighters by 125.",
 			["Type"] = "OnAttack",
 			["Power"] = {{"Weaken",125}},
 			Target = "Opponent",
@@ -8177,7 +8177,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "The Divine Favor? Being allowed to spell favour without a U.",
 		["Effect"] = {
 			Name = "Board Clear Preparation!",
-			Description = "Set the health and attack of all fighters to 300. Your opponent summons a Demonic Godbeast.",
+			Description = "Set the health and power of all fighters to 300. Your opponent summons a Demonic Godbeast.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"SetHealth",300},{"SetPower",300},{"Summon","Demonic Godbeast","Opponent"}},
 			Target = "All",
@@ -8305,7 +8305,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "TWO ARMS, MEN!",
 		["Effect"] = {
 			Name = "Board Clear!",
-			Description = "All Redcliffs gain 500 Attack and Health. Draw 2 cards.",
+			Description = "Increase the health and power of all Redcliff by 500. Draw 2 cards.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Strengthen",500},{"Heal",500},{"Draw",2,"Ally"}},
 			Target = "Archetype",
@@ -8325,7 +8325,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "This card is treated as a Titan. Decrease this cards attack to 0 at the end of each of your turns. This card cannot generate icons.",
+			Description = "Can't generate icons. This card is treated as a Titan. Set the power of this fighter to 0 at the end of your turns.",
 			["Type"] = "OnEnd",
 			["Power"] = "Weaken",
 			Target = "Self",
@@ -8433,7 +8433,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 5,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Can only be summoned if you control another Titan. When this card is summoned, all Titan(s) gain 500 Health and Attack.",
+			Description = "Can only be summoned if you control another Titan. Increase the health and power of all Titans by 500.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",500},{"Strengthen",500}},
 			Target = "Archetype",
@@ -8454,7 +8454,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 5,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = [[Can only be summoned if you control another Titan. When this card is summoned, set the attack of all Non-Titans to 200. Then put "The Forgotten One" to your hand.]],
+			Description = [[Can only be summoned if you control another Titan. Set the power of all non-Titans to 200. Add "The Forgotten One" to your hand.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"SetPower",200},{"Add","The Forgotten One"}},
 			Target = "NotArchetype",
@@ -8535,7 +8535,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Lion Amp",
-			Description = [[lower the attack of a target fighter by 150. Gain 1 Yellow icon.]],
+			Description = [[Lower the power of a target fighter by 150. Gain 1 Yellow icon.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",150},{"Yellow",1,"Ally"}},
 			Target = "Single",
@@ -9110,7 +9110,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 2},
 		["Effect"] = {
 			Name = "Revival",
-			Description = "Whenever this card attacks, increase the attack of all monkies by 200.",
+			Description = "Whenever this card attacks, increase the power of all Monkeys by 200.",
 			["Type"] = "OnAttack",
 			["Power"] = "Strengthen",
 			Target = "Archetype",
@@ -9130,7 +9130,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 4,["Neutral"] = 4},
 		["Effect"] = {
 			Name = "Terrorise",
-			Description = "lower the attack of a target fighter by 300, then swap its stats.",
+			Description = "Lower the power of a target fighter by 300, then swap its health and power.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",300},{"Swap",030}},
 			Target = "Single",
@@ -9695,7 +9695,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 3,["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Hive Crack",
-			Description = [[Summon a "Bee" and increase the Attack and Health of all Bee related fighters by 50 at the end of each of your turns.]],
+			Description = [[Summon a "Bee" and increase the health and power of all Bee-related fighters by 50 at the end of your turns.]],
 			Type = "OnEnd",
 			Power = {{"Summon","Bee","Ally"},{"Strengthen",50},{"Heal",50}},
 			Target = "Archetype",
@@ -9715,7 +9715,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 5,["Yellow"] = 5,},
 		["Effect"] = {
 			Name = "Hive Crack",
-			Description = [[Summon 3 "Bee" fighters and increase the Attack and Health of all Bee related fighters by 250.]],
+			Description = [[Summon 3 "Bee" fighters and increase the health and power of all Bee-related fighters by 250.]],
 			Type = "OnSummon",
 			Power = {{"Summon","Bee"},{"Summon","Bee"},{"Summon","Bee"},{"Strengthen",250,"Archetype"},{"Heal",250,"Archetype"}},
 			Target = "Ally",
@@ -9776,7 +9776,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 1,["Green"] = 1,},
 		["Effect"] = {
 			Name = "Hive Crack",
-			Description = [[Put a Nightmare into your opponent's hand. Increase the attack of all Nightmare related fighters by 200.]],
+			Description = [[Put a "Nightmare" into your opponent's hand. Increase the power of all Nightmare fighters by 200.]],
 			Type = "OnSummon",
 			Power = {{"Add","Nightmare"},{"Strengthen",200,"Archetype"}},
 			Target = "Opponent",
@@ -10312,7 +10312,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 3,["Neutral"] = 3},
 		["Effect"] = {
 			Name = "Char",
-			Description = [[Deal 200 damage to a target fighter, Then swap its Attack and Health.]],
+			Description = [[Deal 200 damage to a target fighter, then swap its health and power.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",200},{"Swap","k"}},
 			Target = "Single",
@@ -10453,7 +10453,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Green"] = 3,},
 		["Effect"] = {
 			Name = "Ostrich Cannon",
-			Description = [[Increase this cards attack by 200 at the end of each of your turns.]],
+			Description = [[Increase this fighter's power by 200 at the end of your turns.]],
 			["Type"] = "OnEnd",
 			["Power"] = {{"Strengthen",200}},
 			Target = "Self",
@@ -10569,7 +10569,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Red"] = 3,},
 		["Effect"] = {
 			Name = "Twist",
-			Description = [[Whenever this fighter is targeted, increase its Attack by 100 but lower its Health by 100.]],
+			Description = [[Whenever this fighter is targeted, deal 100 damage to it and increase its power by 100.]],
 			["Type"] = "OnTarget",
 			["Power"] = {{"Damage",100},{"Strengthen",100}},
 			Target = "Self",
@@ -11585,7 +11585,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 10,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = [[This card is immune to cards that lower its Attack or Health.]],
+			Description = [[This card is immune to cards that lower its health or power.]],
 			["Type"] = "OnTarget",
 			["Power"] = "None",
 			Target = "Self",	
@@ -12102,7 +12102,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 1,["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Growl",
-			Description = [[Decrease the attack of a target fighter by 500.]],
+			Description = [[Lower the power of a target fighter by 500.]],
 			["Type"] = "OnSummon",
 			["Power"] = "Weaken",
 			Target = "Single",
@@ -12354,7 +12354,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 4,},
 		["Effect"] = {
 			Name = "Demoralising Chant",
-			Description = "lower the attack of a target fighter by 500.",
+			Description = "Lower the power of a target fighter by 500.",
 			["Type"] = "OnSummon",
 			["Power"] = "Weaken",
 			Target = "Single",
@@ -12421,7 +12421,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Blue"] = 1,["Green"] = 1,["Yellow"] = 1,["Red"] = 1,},
 		["Effect"] = {
 			Name = "SCRIPTING PARTY",
-			Description = "Deal 200 damage to all yellow fighters, lower the attack of all red fighters by 200, swap the stats of all green fighters and lock all blue fighters for one turn.",
+			Description = "Deal 200 damage to all yellow fighters, lower the power of all red fighters by 200, swap the health and power of all green fighters and lock all blue fighters for one turn.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",200,"ColorYellow"},{"Weaken",200,"ColorRed"},{"Lock",2,"ColorBlue"},{"Swap",030,"ColorGreen"}},
 			Target = "All",
@@ -13497,7 +13497,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 7, ["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Render",
-			Description = "At the end of your turn, fill your board with ClanAtlas, then set the attack and health of all allied fighters to 150. This card can't generate icons.",
+			Description = "Can't generate icons. Fill your board with ClanAtlas, then set health and power of all allied fighters to 150 at the end of your turns.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Weaken",9999},{"Strengthen",150},{"Swap",030},{"Weaken",9999},{"Strengthen",150}},
 			Target = "Ally",
@@ -14424,7 +14424,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2, ["Blue"] = 5,},
 		["Effect"] = {
 			Name = "Trout Slap",
-			Description = "Haste. Cast only if you have a Hamstermon in play. At the end of each of your turns, lower the attack of all enemy fighters by 200.",
+			Description = "Haste. Cast only if you have a Hamstermon in play. At the end of each of your turns, lower the power of all enemy fighters by 200.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Weaken",200}},
 			Target = "Opponent",
@@ -14937,7 +14937,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4, ["Red"] = 4, ["Blue"] = 4,},
 		["Effect"] = {
 			Name = "HURT ALL THE THINGS",
-			Description = "Reduce the attack of all enemy fighters by 400, then swap their stats.",
+			Description = "Lower the power of all enemy fighters by 400, then swap their stats.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",400},{"Swap",030}},
 			Target = "Opponent",
