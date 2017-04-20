@@ -331,7 +331,7 @@ For example, the following tables form a valid alt card system:
 			AltArt = true;
 			Bio = "Part of the Aife collection!";
 		};
-		[CardOne Halloween"] = {
+		["CardOne Halloween"] = {
 			Id = 461436099;
 			Effect = {
 				Name = "Spooky help";
