@@ -2310,7 +2310,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 1,},
 		["Effect"] = {
 			Name = "Amp",
-			Description = "Whenever this fighter is targeted, put a random Common card to your hand.",
+			Description = "Whenever this fighter is targeted, put a random Common card into your hand.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"RandomAdd","Common"}},
 			Target = "Self",
@@ -10968,7 +10968,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Infinite lockdown",
 			Description = "Deal 700 damage to all white fighters.",
-			["Type"] = "OnAllyCast",
+			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",9999,"ColorNeutral"}},
 			Target = "Ally",
 		},
