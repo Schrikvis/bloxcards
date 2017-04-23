@@ -1171,7 +1171,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Pyrotechnics",
 			Description = "When this card is targeted, reverse it back into the Final Tree,",
 			["Type"] = "OnTarget",
-			["Power"] = {{"Damage",9999,"Self"},{"Summon","Final Tree"}},
+			["Power"] = {{"Summon","Final Tree"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = "This tree is a reminder of what we've lost in these dark times.",
