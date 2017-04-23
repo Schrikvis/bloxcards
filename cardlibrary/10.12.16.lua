@@ -1689,7 +1689,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Summon","King Gecko"},{"Summon","Gecko Attendant"}},
 			Target = "Ally",
 		},
-		["Bio"] = "That is one angry gecko.",
+		["Bio"] = "Anger is an illusion",
 	},
 
 	["King Gecko"] = {
@@ -1724,12 +1724,12 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Gecko",
 		["Effect"] = {
 			Name = "Toasty",
-			Description = "When this card dies, King Gecko loses 1300 health.",
+			Description = "When this card dies, Set King Gecko's health to 200.",
 			["Type"] = "OnDeath",
-			["Power"] = {{"Damage",1300}},
+			["Power"] = {{"SetHealth",200}},
 			Target = "Archetype",
 		},
-		["Bio"] = "Jarvis had always hated crowds.",
+		["Bio"] = [["He treats me poorly, but I accept it. He'd be nowhere without me."]],
 	},
 
 	["Aesura"] = {
