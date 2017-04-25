@@ -2365,7 +2365,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 1},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "Deal 50 damage to all fighters. They gain 50 attack.",
+			Description = "Lower the health of all fighters by 50 and increase their power by 50.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",50},{"Strengthen",50}},
 			Target = "All",
