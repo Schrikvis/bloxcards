@@ -16734,7 +16734,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "AAAAAAAAAAAAAAAAAA",
 			Description = "All Noobs gain 150 health and power.",
-			["Type"] = "OnTarget",
+			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",150},{"Strengthen",150}},
 			Target = "Archetype",
 		},
