@@ -710,10 +710,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Overload",
 			Description = "All Non-Archetyped Rare fighters gain 75 power at the end of your turns.",
-			["Type"] = "OnSummon",
-			["Power"] = "Red",
-			Target = "All",
-			Increase = 2,
+			["Type"] = "OnEnd",
+			["Power"] = {{"Strengthen",75}},
+			Target = "Archetype",
 		},
 		["Bio"] = "MrSammeh loves his cheese, right?",
 	},
