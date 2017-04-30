@@ -1686,7 +1686,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Toasty",
 			Description = "Summon King Gecko and its attendant.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Summon","King Gecko"},{"Summon","Gecko Attendant"}},
+			["Power"] = {{"Summon","Gecko Attendant"},{"Summon","King Gecko"}},
 			Target = "Ally",
 		},
 		["Bio"] = "That is one angry gecko.",
