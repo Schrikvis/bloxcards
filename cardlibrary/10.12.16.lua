@@ -1586,9 +1586,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Token"] = true,
 		["Effect"] = {
 			Name = "Ending",
-			Description = "When this card is targeted, deal 350 damage to the opponent, then destroy all crystals.",
+			Description = "When this card is targeted, deal 400 damage to the opponent, then destroy all crystals.",
 			["Type"] = "OnTarget",
-			["Power"] = {{"Inflict",350,"Opponent"},{"Damage",9999,"Archetype"}},
+			["Power"] = {{"Inflict",400,"Opponent"},{"Damage",9999,"Archetype"}},
 			Target = "Ally",
 		},
 		["Bio"] = "One batch of ambition coming right up.",
@@ -1607,9 +1607,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Token"] = true,
 		["Effect"] = {
 			Name = "Bloodstone",
-			Description = "When this card is targeted, deal 250 damage to a target fighter, then destroy all crystals.",
+			Description = "When this card is targeted, deal 200 damage to a target fighter, then destroy all crystals.",
 			["Type"] = "OnTarget",
-			["Power"] = {{"Damage",250,"Single"},{"Damage",9999,"Archetype"}},
+			["Power"] = {{"Damage",200,"Single"},{"Damage",9999,"Archetype"}},
 			Target = "Ally",
 		},
 		["Bio"] = "One batch of SUBMISSION TO THE ALMIGHTY GOD-EMPEROR coming right up.",
