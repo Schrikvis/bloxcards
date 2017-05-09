@@ -1171,7 +1171,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Pyrotechnics",
 			Description = "When this card is targeted, reverse it back into the Final Tree,",
 			["Type"] = "OnTarget",
-			["Power"] = {{"Damage",9999,"Self"},{"Summon","Final Tree"}},
+			["Power"] = {{"Summon","Final Tree"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = "This tree is a reminder of what we've lost in these dark times.",
@@ -2365,7 +2365,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 1},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "Deal 50 damage to all fighters. They gain 50 attack.",
+			Description = "Lower the health of all fighters by 50 and increase their power by 50.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",50},{"Strengthen",50}},
 			Target = "All",
