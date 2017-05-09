@@ -372,7 +372,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Favette"] = {
 				["Id"] = 532358085,
 				["Name"] = "Favette",
-				["AltArt"] = true,
 				["Bio"] = "The female version of fave. She is fabulous, loves starblox, and hangs out with amber sometimes.",
 			}
 		},
@@ -944,7 +943,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			},
 			["CowboyV2"] = {
 				["Id"] = 540878417,
-				["AltArt"] = true,
 				["Bio"] = "Oh boy, would ya look at the time.",
 				["Effect"] = {
 					Name = "High Noon",
@@ -1672,7 +1670,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["NinjaV2"] = {
 				["Name"] = "Ninja jpeg.",
 				["Id"] = 480385242,
-				["AltArt"] = true,
 				["Bio"] = "Silly developers, you forgot to cut this thing out!",
 			}
 		},
@@ -1700,7 +1697,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Ninja Elite-ArtV"] = {
 				["Id"] = 487571425,
-				["AltArt"] = true,
 				["Bio"] = "Ninjas used the dilation in the eyes of a cat to figure out the current time.",
 			}
 		},
@@ -4009,7 +4005,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},			
 			
 	["TheChakraTree"] = {
-		["Id"] = 285155075,
+		["Id"] = 785620850,
 		["Name"] = "TheChakraTree",
 		["Health"] = 200,
 		["Power"] = 200,
@@ -4264,7 +4260,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["KingCactaur-ArtV"] = {
 				["Id"] = 491538951,
-				["AltArt"] = true,
 				["Bio"] = "That'ssss some very nice value you have there; It'd be succch a shame if something happended to it...",
 			},
 			["KingCactaur-Val"] = {
@@ -5676,7 +5671,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 					["Power"] = {{"Summon","Senpai Garrison"}},
 					Target = "Ally",
 				},
-				["AltArt"] = true,
 				["Bio"] = "These high school students are always ignoring Stalker-Chan.",
 			}
 		},
@@ -5826,7 +5820,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Odin-ArtV"] = {
 				["Id"] = 497625127,
-				["AltArt"] = true,
 				["Bio"] = "Perhaps I like my son too much.",
 			}
 		},
@@ -6097,7 +6090,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Stalker-Chan"] = {
 				["Id"] = 655019396,
 				["Name"] = "Stalker-Chan",
-				["AltArt"] = true,
 				["Bio"] = "Even Senpai fears it",
 			}									
 		},
@@ -6251,12 +6243,10 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["1x1x1x1x2"] = {
 				["Id"] = 532357578,
-				["AltArt"] = true,
 				["Bio"] = "Zanzel scoffed at the devil when she saw him. He was why everything in this world was stagnant and impure. The power the Alpha Brick had to sacrifice just to deal with him!",
 			},
 			["1x1x1x1v2"] = {
 				["Id"] = 540800410,
-				["AltArt"] = true,
 				["Effect"] = {
 					Name = "H$X",
 					Description = "Hack the power of all fighters to 250.",
@@ -6564,7 +6554,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Revival",
 			Description = "At the end of your turns, set this card's lock to 1.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Unlock",9999,"Self"},{"Lock",2,"Self"}}
+			["Power"] = {{"Unlock",9999,"Self"},{"Lock",2,"Self"}},
 			Target = "Ally"
 		},
 		["Bio"] = "Renders wildfires meaningless.",
@@ -6612,7 +6602,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 298793065,
 		["Name"] = "Hideaki",
 		["Health"] = 600,
-		["Power"] = 500,
+		["Power"] = 300,
 		["Rarity"] = "Rare",
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Thunder",
@@ -6634,7 +6624,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["KingShadowCrowV2"] = {
 				["Id"] = 462725820,
-				["AltArt"] = true,
 				["Bio"] = "wE arE HAVing dIFfiCULTy OPPerATINg aSINgle pEN . ..",
 			}
 		},
@@ -7800,8 +7789,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Hopelesssly"] = {
-		["Id"] = 316000990,
-		["Name"] = "Hopelesssly",
+		["Id"] = 785620553,
+		["Name"] = "Hop Lee",
 		["Health"] = 700,
 		["Power"] = 125,
 		["Rarity"] = "Legendary",
@@ -7815,7 +7804,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Damage",75},{"Weaken",50}},
 			Target = "Opponent",
 		},
-		["Bio"] = "You want to beat a squid who is a kid? Think again.",
+		["Bio"] = "You're not hopping to the task fast enough.",
 	},
 	
 	["XxWonderzxX"] = {
@@ -8060,7 +8049,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Papasmurf-ArtV"] = {
 				["Id"] = 487132041,
-				["AltArt"] = true,
 				["Bio"] = "Papa got volcanoes on his side.",
 			}
 		},
@@ -8230,7 +8218,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Mass Epidemic-ArtV"] = {
 				["Id"] = 480385063,
 				["Name"] = "Mass Destruction",
-				["AltArt"] = true,
 				["Bio"] = "YOU WILL UPDATE BLOXCARDS, AND YOU WILL DO IT WHEN I SAY SO!",
 			}
 		},
@@ -9187,7 +9174,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Wishnite-ArtV"] = {
 				["Name"] = "SilentNite",
 				["Id"] = 585627393,
-				["AltArt"] = true,
 				["Bio"] = "No presents. No turkey. No festivity allowed.",
 			}
 		},
@@ -9213,7 +9199,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["ChickenLord-ArtV"] = {
 				["Id"] = 661049986,
-				["AltArt"] = true,
 				["Bio"] = "You get a chicken leg, and YOU get a chicken leg! Everyone gets a chicken leg!",
 			};
 		},
@@ -9242,7 +9227,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["GrandGlaciem-ArtV"] = {
 				["Id"] = 661049605,
-				["AltArt"] = true,
 				["Bio"] = "Icier than Icytea.",
 			};
 		},		
@@ -9270,7 +9254,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["GrandIgnis-ArtV"] = {
 				["Id"] = 540744997,
-				["AltArt"] = true,
 				["Bio"] = "His Phoenix is as hot as his looks..",
 			};
 		},		
@@ -9298,7 +9281,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["meebtotem-ArtV"] = {
 				["Id"] = 411802926,
-				["AltArt"] = true,
 				["Bio"] = "Silly kids, Surfboards are for Meeboids!",
 			};
 		},
@@ -13587,7 +13569,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Paraselene Sage V2"] = {
 				["Id"] = 574430820,
-				["AltArt"] = true,
 				["Bio"] = "Zanzel? Hallow? Eisenhower? Imbeciles compared to the moon.",
 			}
 		},
@@ -14672,7 +14653,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Gravity InspectorV2"] = {
 				["Id"] = 433133596,
-				["AltArt"] = true,
 				["Bio"] = "To inspect gravity. To cause the fall.",
 			}
 		},
