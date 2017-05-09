@@ -473,7 +473,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 3,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "When targeted, transform into an Overseer Beast..",
+			Description = "When targeted, transform into an Overseer Beast.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Summon","Overseer Beast"},{"Damage",9999,"Self"}},
 			Target = "Ally",

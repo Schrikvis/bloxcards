@@ -8833,9 +8833,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 4,["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Plushie Amp",
-			Description = [[Deal 700 damage to the opponent. Return this card to your hand.]],
+			Description = [[Deal 450 damage to the opponent. Return this card to your hand.]],
 			["Type"] = "OnSummon",
-			["Power"] = {{"Inflict",700,"Opponent"},{"Add","Dragon's Charm"}},
+			["Power"] = {{"Inflict",450,"Opponent"},{"Add","Dragon's Charm"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Dragons may be contained in this charm if you believe hard enough.",
@@ -9003,8 +9003,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["TheInnovative"] = {
 		["Id"] = 335687720,
 		["Name"] = "TheInnovative",
-		["Health"] = 1000,
-		["Power"] = 1000,
+		["Health"] = 800,
+		["Power"] = 800,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Thunder",
 		["Color"] = "Neutral",
@@ -12267,6 +12267,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Bio"] = "3/18...",
 			},
 		},
+		["Token"] = true,
 		["Health"] = 300,
 		["Power"] = 300,
 		["Rarity"] = "Epic",
@@ -12275,7 +12276,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Knockdown",
-			Description = [[Summon a copy of this card.]],
+			Description = [[Summon a copy of this card. This card can't generate icons.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Summon","John and Jane"}},
 			Target = "Ally",
@@ -16734,7 +16735,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "AAAAAAAAAAAAAAAAAA",
 			Description = "All Noobs gain 150 health and power.",
-			["Type"] = "OnTarget",
+			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",150},{"Strengthen",150}},
 			Target = "Archetype",
 		},
