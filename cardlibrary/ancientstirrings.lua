@@ -2909,9 +2909,9 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "Whenever an allied fighter dies, you gain 200 life, then destroy Nerf Zombie.",
+			Description = "Whenever an allied fighter dies, you gain 100 life.",
 			["Type"] = "OnAllyDeath",
-			["Power"] = {{"Cost",-200},{"Damage",9999,"Self"}},
+			["Power"] = {{"Cost",-100}},
 			Target = "Ally",
 		},
 		["Bio"] = "IT'S NERF OR NOTHING!",
