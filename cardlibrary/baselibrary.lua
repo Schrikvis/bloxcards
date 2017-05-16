@@ -9416,7 +9416,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Infinite Frost",
-			Description = "Increase the Attack and Health of a target fighter by 100 and add a copy of this card to your hand.",
+			Description = "Increase the health and power of a target fighter by 100 and add a copy of this card to your hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Strengthen",100},{"Heal",100},{"Add","Infinite Chicken","Ally"}},
 			Target = "Single",
