@@ -2661,7 +2661,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Dairingpoophead, Tix God"] = {
-		["Id"] = 807879794,
+		["Id"] = 807879793,
 		["Name"] = "Dairingpoophead, Tix God",
 		["Health"] = 1000,
 		["Power"] = 700,
@@ -2672,7 +2672,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Life fam",
 			Description = "Whenever Dairingpoophead, Tix God destroys a fighter, summon two Pittacium Acolythus.",
-			["Type"] = "OnSummon",
+			["Type"] = "OnDestroy",
 			["Power"] = {{"Summon","Lord of GreedV2"},{"Summon","Lord of GreedV2"}},
 			Target = "Ally",
 		},
@@ -2680,7 +2680,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Regular_Talkshow"] = {
-		["Id"] = 807880604,
+		["Id"] = 807880600,
 		["Name"] = "Regular_Talkshow",
 		["Health"] = 300,
 		["Power"] = 550,
@@ -2699,7 +2699,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["EvilJacobthehero2013"] = {
-		["Id"] = 807878731,
+		["Id"] = 807878722,
 		["Name"] = "EvilJacobthehero2013",
 		["Health"] = 1200,
 		["Power"] = 600,
