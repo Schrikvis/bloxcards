@@ -28,7 +28,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Name"] = "Wolfbitten Elf",
 				["Effect"] = {
 					Name = "Woof",
-					Description = "Whenever you cast an action or terrain spell, transform this card.",
+					Description = "Whenever you cast an action or terrain spell, transform this card. This card can't generate icons.",
 					["Type"] = "OnAllyCast",
 					["Power"] = {{"Summon","Festive Werewolf"},{"Damage",9999,"Self"}},
 					Target = "Ally",
@@ -36,6 +36,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Bio"] = "Can he deliver your gifts in time?",
 			}
 		},
+		["Token"] = true,
 		["Health"] = 200,
 		["Power"] = 200,
 		["Rarity"] = "Common",
@@ -62,7 +63,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Name"] = "Festive Werewolf",
 				["Effect"] = {
 					Name = "Halloween",
-					Description = "Whenever your opponent casts an action or terrain spell, untransform this card.",
+					Description = "Whenever your opponent casts an action or terrain spell, untransform this card. This card can't generate icons.",
 					["Type"] = "OnEnemyCast",
 					["Power"] = {{"Summon","Wolfbitten Elf"},{"Damage",9999,"Self"}},
 					Target = "Ally",
@@ -70,6 +71,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Bio"] = "The best kind of werewolf.",
 			}
 		},
+		["Token"] = true,
 		["Health"] = 400,
 		["Power"] = 400,
 		["Rarity"] = "Token",
@@ -806,9 +808,9 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 3,},
 		["Effect"] = {
 			Name = "Let It Grow",
-			Description = "Gain a white icon.",
+			Description = "Whenever an allied fighter dies, drain 100 health from your opponent.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Neutral",1,"Ally"}},
+			["Power"] = {{"Inflict",100},{"Inflict",-100,"Ally"}},
 			Target = "Opponent",
 		},
 		["Bio"] = "The gentle souls in Zanzel's wilderness never are.",
@@ -1052,9 +1054,9 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 1,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "Deal 250 damage to a target fighter.",
+			Description = "Deal 250 damage to a target fighter. Draw a card.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",250}},
+			["Power"] = {{"Damage",250},{"Draw",1}},
 			Target = "Single",
 		},
 		["Bio"] = "For villagers, these bombs are signs that god has forsaken them. For Hallow, it's Tuesday.",
@@ -2129,8 +2131,8 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 2, ["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "Can't Attack. When this card destroys another, put a random red or blue action into your hand.",
-			["Type"] = "OnDestroy",
+			Description = "Can't Attack. Whenever this card survives an attack, put a random red or blue action into your hand.",
+			["Type"] = "OnAttacked",
 			["Power"] = {{"RandomAdd","Lunar"}},
 			Target = "Ally",
 		},
@@ -2432,9 +2434,9 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 2, ["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Can't attack. When this fighter destroys another, it gains 200 health and power.",
-			["Type"] = "OnDestroy",
-			["Power"] = {{"Heal",200},{"Strengthen",200}},
+			Description = "Can't attack. When this fighter survives an attack, it gains 150 health and power.",
+			["Type"] = "OnAttacked",
+			["Power"] = {{"Heal",150},{"Strengthen",150}},
 			Target = "Self",
 		},
 		["Bio"] = "I came seeking a challenge. All I found was you.",
@@ -2524,7 +2526,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Dash",
 		["Archetype"] = "Lycanthrope",
 		["Color"] = "Red", 
-		["Cost"] = {["Neutral"] = 2,},
+		["Cost"] = {["Neutral"] = 2, ["Red"] = 1,},
 		["Effect"] = {
 			Name = "Stud",
 			Description = "Whenever you cast an action or terrain spell, transform this card, then deal 100 damage to all enemy fighters.",
@@ -2558,7 +2560,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Dash",
 		["Archetype"] = "Lycanthrope",
 		["Color"] = "Red", 
-		["Cost"] = {["Neutral"] = 2,},
+		["Cost"] = {["Neutral"] = 2, ["Red"] = 1,},
 		["Effect"] = {
 			Name = "Stud",
 			Description = "Whenever your opponent casts an action or terrain spell, untransform this card, then deal 100 damage to all enemy fighters.",
@@ -2928,7 +2930,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 13,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "When this card is summoned, end the turn and give it 500 health and power. If this card strikes the opponent, they lose the game.",
+			Description = "When this card is summoned, end the turn and give it 800 health and power. If this card strikes the opponent, they lose the game.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Summon","Zanzel"},{"EndTurn",1}},
 			Target = "Ally",
@@ -2939,8 +2941,8 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Zanzel"] = {
 		["Id"] = 540076591,
 		["Name"] = "Priestess Zanzel, the Promised One",
-		["Health"] = 500,
-		["Power"] = 500,
+		["Health"] = 800,
+		["Power"] = 800,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Scatter",
 		["Color"] = "Green", 
