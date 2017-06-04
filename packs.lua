@@ -170,7 +170,7 @@ local packs = {
 		PriceInBloxBux = 30,
 		PriceInRobux = 0;
 		CardsInPack = 4,
-		CardPackId = 721400845,
+		CardPackId = 842435184, --721400845,
 		Description = "Red is the colour of power, ambition, and control. Dominion packs contain cards that cost red!",
 		Cards = {
 			"Beyondthegong",

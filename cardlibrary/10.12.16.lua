@@ -2262,7 +2262,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2, ["Yellow"] = 3, ["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Life fam",
-			Description = "At the end of your turns, destroy all fighters with no power, than give all fighters 100 power.",
+			Description = "At the end of your turns, destroy all fighters with no power, then give all fighters 100 power.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Swap",030},{"Swap",030},{"Strengthen",100}},
 			Target = "All",
@@ -2370,25 +2370,6 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Green", 
 		["Cost"] = {["Neutral"] = 3, ["Green"] = 4,},
 		["Bio"] = [[Sit. Fetch. Devastate.]],
-	},
-
-	["DigitalSon"] = {
-		["Id"] = 785621013,
-		["Name"] = "DigitalSon",
-		["Health"] = 500,
-		["Power"] = 500,
-		["Rarity"] = "Common",
-		["AttackEffect"] = "Punchkick",
-		["Color"] = "Blue", 
-		["Cost"] = {["Blue"] = 3,},
-		["Effect"] = {
-			Name = "Life fam",
-			Description = "Set the lock on all allied fighters to 1.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Unlock",9999},{"Lock",1}},
-			Target = "Ally",
-		},
-		["Bio"] = [[You and me and everything about us. Yours and mine and everything around us.]],
 	},
 
 	["DigitalSon"] = {
@@ -2667,6 +2648,63 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = [[Ow.]],
 	},
+	
+	["Dairingpoophead, Tix God"] = {
+		["Id"] = 807879793,
+		["Name"] = "Dairingpoophead, Tix God",
+		["Health"] = 1000,
+		["Power"] = 700,
+		["Rarity"] = "Epic",
+		["AttackEffect"] = "Slash",
+		["Color"] = "Yellow", 
+		["Cost"] = {["Neutral"] = 3, ["Yellow"] = 7,},
+		["Effect"] = {
+			Name = "Life fam",
+			Description = "Whenever Dairingpoophead, Tix God destroys a fighter, summon two Pittacium Acolythus.",
+			["Type"] = "OnDestroy",
+			["Power"] = {{"Summon","Lord of GreedV2"},{"Summon","Lord of GreedV2"}},
+			Target = "Ally",
+		},
+		["Bio"] = "Go forth my tix minions, make ROBLOX bow down to us until tix rise once again!",
+	},
+	
+	["Regular_Talkshow"] = {
+		["Id"] = 807880600,
+		["Name"] = "Regular_Talkshow",
+		["Health"] = 300,
+		["Power"] = 550,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Slash",
+		["Color"] = "Blue", 
+		["Cost"] = {["Neutral"] = 3,},
+		["Effect"] = {
+			Name = "Life fam",
+			Description = "Whenever you cast an action, deal 100 damage to all yellow fighters.",
+			["Type"] = "OnAllyCast",
+			["Power"] = {{"Damage",100}},
+			Target = "ColorYellow",
+		},
+		["Bio"] = "Hello Blox Cards nation I'm your host, Regular_Talkshow, let's get ROOOIIIGHT into the news!",
+	},
+	
+	["EvilJacobthehero2013"] = {
+		["Id"] = 807878722,
+		["Name"] = "EvilJacobthehero2013",
+		["Health"] = 1200,
+		["Power"] = 600,
+		["Rarity"] = "Legendary",
+		["AttackEffect"] = "Slash",
+		["Color"] = "Blue", 
+		["Cost"] = {["Neutral"] = 2, ["Blue"] = 6,},
+		["Effect"] = {
+			Name = "Life fam",
+			Description = "When EvilJacobthehero2013 attacks, draw a card.",
+			["Type"] = "OnAttack",
+			["Power"] = {{"Draw",1}},
+			Target = "Ally",
+		},
+		["Bio"] = "As opposed to NiceJacobthevillan3102.",
+	},	
 }
 
 return tentwelvesixteen
