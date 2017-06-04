@@ -1739,10 +1739,10 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Red", 
 		["Cost"] = {["Red"] = 13,},
 		["Effect"] = {
-			Name = "Pyrotechnics",
+			Name = "Stud",
 			Description = "Your opponent summons Lezus.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"RandomSummon","TokenUdungoofed"}},
+			["Power"] = {{"RandomSummon", {"Lezus 1","Lezus 2","Lezus 3","Lezus 4","Lezus 5","Lezus 6"}}},
 			Target = "Opponent",
 		},
 		["Bio"] = "Zanzel scoffed when she saw Lezus. These demons are why the world is so impure.",
@@ -1759,13 +1759,13 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 6,},
 		["Archetype"] = "Udungoofed",
 		["Effect"] = {
-			Name = "Pyrotechnics",
-			Description = "I am Lezus.",
-			["Type"] = "OnEnd",
-			["Power"] = {{"RandomSummon","TokenUdungoofed","Ally"},{"Heal",400,"Archetype"},{"Heal",400,"Opponent"},{"Damage",400,"Ally"},{"Damage",9999},{"Unlock",9999,"Archetype"}},
-			Target = "Self",
+			Name = "Stud",
+			Description = "Fool!",
+			["Type"] = "OnSummon",
+			["Power"] = {{"RandomSummon", {"Lezus 1","Lezus 2","Lezus 3","Lezus 4","Lezus 5","Lezus 6"},"Ally"},{"Heal",400,"Archetype"},{"Heal",400,"Opponent"},{"Damage",400,"Ally"},{"Damage",9999},{"Unlock",9999,"Archetype"}},
+			Target = "Opponent",
 		},
-		["Bio"] = "Fool.",
+		["Bio"] = "",
 	},
 	
 	["Lezus 2"] = {
@@ -1780,12 +1780,12 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Udungoofed",
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "I am Lezus.",
+			Description = "Peon!",
 			["Type"] = "OnEnd",
-			["Power"] = {{"RandomSummon","TokenUdungoofed","Ally"},{"SetNeutral",0,"Ally"},{"Blue",3,"Opponent"},{"Green",3,"Opponent"},{"White",3,"Opponent"},{"Yellow",3,"Opponent"},{"Red",3,"Opponent"},{"Damage",9999},{"Unlock",9999,"Archetype"}},
+			["Power"] = {{"RandomSummon", {"Lezus 1","Lezus 2","Lezus 3","Lezus 4","Lezus 5","Lezus 6"},"Ally"},{"SetNeutral",0,"Ally"},{"Blue",3,"Opponent"},{"Green",3,"Opponent"},{"White",3,"Opponent"},{"Yellow",3,"Opponent"},{"Red",3,"Opponent"},{"Neutral",3,"Opponent"},{"Damage",9999},{"Unlock",9999,"Archetype"}},
 			Target = "Self",
 		},
-		["Bio"] = "Peon.",
+		["Bio"] = "",
 	},
 	
 	["Lezus 3"] = {
@@ -1800,12 +1800,12 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Udungoofed",
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "I am Lezus.",
+			Description = "Imbecile!",
 			["Type"] = "OnEnd",
-			["Power"] = {{"RandomSummon","TokenUdungoofed","Ally"},{"Draw",2,"Opponent"},{"Damage",9999},{"Unlock",9999,"Archetype"}},
+			["Power"] = {{"RandomSummon", {"Lezus 1","Lezus 2","Lezus 3","Lezus 4","Lezus 5","Lezus 6"},"Ally"},{"Draw",2,"Opponent"},{"Damage",9999},{"Unlock",9999,"Archetype"}},
 			Target = "Self",
 		},
-		["Bio"] = "Imbecile.",
+		["Bio"] = "",
 	},
 	
 	["Lezus 4"] = {
@@ -1820,12 +1820,12 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Udungoofed",
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "I am Lezus.",
+			Description = "Cur!",
 			["Type"] = "OnEnd",
-			["Power"] = {{"RandomSummon","TokenUdungoofed","Ally"},{"Heal",400,"Opponent"},{"Strengthen",400,"Opponent"},{"Damage",9999},{"Unlock",9999,"Archetype"}},
+			["Power"] = {{"RandomSummon", {"Lezus 1","Lezus 2","Lezus 3","Lezus 4","Lezus 5","Lezus 6"},"Ally"},{"Heal",400,"Opponent"},{"Strengthen",400,"Opponent"},{"Damage",9999},{"Unlock",9999,"Archetype"}},
 			Target = "Self",
 		},
-		["Bio"] = "Cur.",
+		["Bio"] = "",
 	},
 	
 	["Lezus 5"] = {
@@ -1840,12 +1840,12 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Udungoofed",
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "I am Lezus.",
+			Description = "Recur!",
 			["Type"] = "OnEnd",
-			["Power"] = {{"RandomSummon","TokenUdungoofed","Ally"},{"RandomSummon","Udungoofed","Ally"},{"Damage",9999},{"Unlock",9999,"Archetype"}},
+			["Power"] = {{"RandomSummon", {"Lezus 1","Lezus 2","Lezus 3","Lezus 4","Lezus 5","Lezus 6"},"Ally"},{"RandomSummon", {"Lezus 1","Lezus 2","Lezus 3","Lezus 4","Lezus 5","Lezus 6"},"Ally"},{"Damage",9999},{"Unlock",9999,"Archetype"}},
 			Target = "Self",
 		},
-		["Bio"] = "Recur.",
+		["Bio"] = "",
 	},
 	
 	["Lezus 6"] = {
@@ -1860,12 +1860,32 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Udungoofed",
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "I am Lezus.",
+			Description = "Scatter!",
 			["Type"] = "OnEnd",
-			["Power"] = {{"RandomSummon","TokenUdungoofed","Ally"},{"Add","Nightmare","Ally"},{"Add","Nightmare","Ally"},{"Add","Nightmare","Ally"},{"Add","Nightmare","Ally"},{"Damage",9999},{"Unlock",9999,"Archetype"}},
+			["Power"] = {{"RandomSummon", {"Lezus 1","Lezus 2","Lezus 3","Lezus 4","Lezus 5","Lezus 7"},"Ally"},{"Add","Nightmare","Ally"},{"Add","Nightmare","Ally"},{"Add","Nightmare","Ally"},{"Add","Nightmare","Ally"},{"Damage",9999},{"Unlock",9999,"Archetype"}},
 			Target = "Self",
 		},
-		["Bio"] = "Scatter.",
+		["Bio"] = "",
+	},
+	
+	["Lezus 7"] = {
+		["Id"] = 662115933,
+		["Name"] = "Lezus",
+		["Health"] = 700,
+		["Power"] = 400,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Red", 
+		["Cost"] = {["Red"] = 6,},
+		["Archetype"] = "Udungoofed",
+		["Effect"] = {
+			Name = "Pyrotechnics",
+			Description = "Failure!",
+			["Type"] = "OnEnd",
+			["Power"] = {{"RandomSummon", {"Lezus 1","Lezus 2","Lezus 3","Lezus 4","Lezus 5"},"Ally"},{"RandomSummon", {"Lezus 1","Lezus 2","Lezus 3","Lezus 4","Lezus 5","Lezus 6"},"Ally"},{"Add","Nightmare","Ally"},{"Add","Nightmare","Ally"},{"Add","Nightmare","Ally"},{"Add","Nightmare","Ally"},{"Heal",400,"Opponent"},{"Strengthen",400,"Opponent"},{"Draw",2,"Opponent"},{"SetNeutral",0,"Ally"},{"Blue",3,"Opponent"},{"Green",3,"Opponent"},{"White",3,"Opponent"},{"Yellow",3,"Opponent"},{"Red",3,"Opponent"},{"Neutral",3,"Opponent"},{"Heal",400,"Archetype"},{"Heal",400,"Opponent"},{"Damage",400,"Ally"},{"Damage",9999},{"Unlock",9999,"Archetype"}},
+			Target = "Self",
+		},
+		["Bio"] = "",
 	},
 	
 	["Mad Scientist"] = {

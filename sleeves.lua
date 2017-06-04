@@ -65,6 +65,7 @@ local sleeves = {
 		["ContentDeleted"]      = {675456229,  1350};
 		["Cow"]                 = {675456703,  1400};
 		["Squidward"]           = {675456873,  700};
+		["Illuminatus"]           = {675456873,  800};
 	};
 
 	Halloween = {
@@ -78,6 +79,7 @@ local sleeves = {
 		["Ghost House 2"]       = {534132135,  500};
 		["Halloween 2016"]      = {534131858,  400};
 		["Darkseed"]            = {559463641,  100};
+		["PsychoVisleaf"]       = {850398436,  2450};
 	};
 
 	CardArt = {

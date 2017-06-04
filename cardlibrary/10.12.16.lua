@@ -594,10 +594,10 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3, ["Red"] = 5,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "Whenever you lose life, generate a white icon.",
-			["Type"] = "OnHealthLoss",
-			["Power"] = {{"Neutral",1}},
-			Target = "Ally",
+			Description = "Whenever you lose life, deal 200 damage to the opponent.",
+			["Type"] = "OnLifeLoss",
+			["Power"] = {{"Inflict",200}},
+			Target = "Opponent",
 		},
 		["Bio"] = "Let's... Get this show on the road, eh...? *Flop*",
 	}, 
@@ -1747,9 +1747,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1, ["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Toasty",
-			Description = "Whenever Graalgamer attacks a fighter, that fighter loses 100 power.",
+			Description = "Whenever Graalgamer attacks a fighter, that fighter loses 200 power.",
 			["Type"] = "OnAttack",
-			["Power"] = {{"Weaken",100}},
+			["Power"] = {{"Weaken",200}},
 			Target = "Aggressor",
 		},
 		["Bio"] = [[Now, to make a martini, you first need two parts lemon, three parts ma - *PEW!* - three parts mango, and four parts oyster.]],
@@ -1854,6 +1854,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Punchkick",
 		["Color"] = "Green", 
+		["Stealth"] = true,
 		["Cost"] = {["Neutral"] = 1, ["Green"] = 2,},
 		["Effect"] = {
 			Name = "befriending of scaly mutts",
@@ -2195,7 +2196,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Walyn"] = {
-		["Id"] = 785620591,
+		["Id"] = 785620578,
 		["Name"] = "Walyn",
 		["Health"] = 600,
 		["Power"] = 300,
@@ -2214,7 +2215,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["iamlogic"] = {
-		["Id"] = 714689059,
+		["Id"] = 785620591,
 		["Name"] = "iamlogic",
 		["Health"] = 600,
 		["Power"] = 600,
@@ -2414,8 +2415,8 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Wesker202"] = {
 		["Id"] = 785621046,
 		["Name"] = "Wesker202",
-		["Health"] = 600,
-		["Power"] = 1000,
+		["Health"] = 450,
+		["Power"] = 850,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Punchkick",
 		["Color"] = "Blue", 
@@ -2503,7 +2504,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Life fam",
 			Description = "At the end of your turns, generate a green icon. Then all non-archetyped rares drain 50 health from all cards that aren't non-archetyped rares.",
 			["Type"] = "OnEndDeath",
-			["Power"] = {{"Green",1}{"Damage",50,"NotArchetype"},{"Heal",50,"Archetype"}},
+			["Power"] = {{"Green",1},{"Damage",50,"NotArchetype"},{"Heal",50,"Archetype"}},
 			Target = "Ally",
 		},
 		["Bio"] = [[Use the force, Harry! Else you're a Klingon and you shall not pass!]],
@@ -2650,7 +2651,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Dairingpoophead, Tix God"] = {
-		["Id"] = 807879793,
+		["Id"] = 807879792,
 		["Name"] = "Dairingpoophead, Tix God",
 		["Health"] = 1000,
 		["Power"] = 700,
@@ -2698,12 +2699,32 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2, ["Blue"] = 6,},
 		["Effect"] = {
 			Name = "Life fam",
-			Description = "When EvilJacobthehero2013 attacks, draw a card.",
+			Description = "When this fighter attacks, draw a card.",
 			["Type"] = "OnAttack",
 			["Power"] = {{"Draw",1}},
 			Target = "Ally",
 		},
 		["Bio"] = "As opposed to NiceJacobthevillan3102.",
+	},	
+
+	["Kitten"] = {
+		["Id"] = 850398360,
+		["Name"] = "Kitten",
+		["Health"] = 200,
+		["Power"] = 200,
+		["Rarity"] = "Rare",
+		["AttackEffect"] = "Slash",
+		["Color"] = "Red", 
+		["Cost"] = {["Red"] = 1,},
+		["Token"] = true,
+		["Effect"] = {
+			Name = "Life fam",
+			Description = "Can't generate icons.",
+			["Type"] = "OnAttack",
+			["Power"] = {{"Draw",0}},
+			Target = "Ally",
+		},
+		["Bio"] = "Their cuteness hides their nefarious world-domination schemes.",
 	},	
 }
 
