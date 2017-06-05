@@ -2715,6 +2715,25 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Ally",
 		},
 		["Bio"] = "As opposed to NiceJacobthevillan3102.",
+	},
+	
+	["Shard Master"] = {
+		["Id"] = 807878722,
+		["Name"] = "Shard Master",
+		["Health"] = 1000,
+		["Power"] = 0,
+		["Rarity"] = "Epic",
+		["AttackEffect"] = "Slash",
+		["Color"] = "Red", 
+		["Cost"] = {["Red"] = 3, ["Green"] = 2, ["Blue"] = 2, ["Yellow"] = 2},
+		["Effect"] = {
+			Name = "Life fam",
+			Description = "At the end of your turns, summon three random crystals and put a targeting blip into your hand.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"RandomSummon","Crystal"},{"RandomSummon","Crystal"},{"RandomSummon","Crystal"},{"Add","Targeting Blip"}},
+			Target = "Ally",
+		},
+		["Bio"] = "I am the Shardian of the Galaxy...fear me.",
 	},	
 }
 
