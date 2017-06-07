@@ -594,10 +594,10 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3, ["Red"] = 5,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "Whenever you lose life, deal 200 damage to the opponent.",
+			Description = "Deal 500 damage to both players.",
 			["Type"] = "OnLifeLoss",
-			["Power"] = {{"Inflict",200}},
-			Target = "Opponent",
+			["Power"] = {{"Inflict",500}},
+			Target = "All",
 		},
 		["Bio"] = "Let's... Get this show on the road, eh...? *Flop*",
 	}, 
