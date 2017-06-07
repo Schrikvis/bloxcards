@@ -3610,20 +3610,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Mag"] = {
 		["Id"] = 285152809,
 		["Name"] = "Mag",
-		["Health"] = 300,
-		["Power"] = 300,
+		["Health"] = 325,
+		["Power"] = 325,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Red",
 		["Cost"] = {["Red"] = 1,},
-		["Effect"] = {
-			Name = "Booster",
-			Description = "Both players gain 2 Neutral Icons.",
-			["Type"] = "OnSummon",
-			["Power"] = "Neutral",
-			Target = "All",
-			Increase = 2,
-		},
 		["Bio"] = "Nobody knows what he really does, most just think of him as Ignis Mage Jr.",
 	},		
 		
