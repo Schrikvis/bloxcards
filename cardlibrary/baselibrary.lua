@@ -2305,7 +2305,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 1,},
 		["Effect"] = {
 			Name = "Amp",
-			Description = "Whenever this fighter is targeted, put a random Common card into your hand.",
+			Description = "Whenever this fighter is targeted, put a random common into your hand.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"RandomAdd","Common"}},
 			Target = "Self",
@@ -3350,7 +3350,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Rukiryo-ArtV"] = {
 				["Id"] = 411804493,
 				["AltArt"] = true,
-				["Bio"] = "Disputed Deity of ROBLOX MMORPGs. Part of the 'Aife' Collection! Collect them all!",
+				["Bio"] = "Disputed Deity of ROBLOX MMORPGs.",
 			}
 		},
 		["Health"] = 500,
@@ -3388,7 +3388,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 5,["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Disaster",
-			Description = "Lock all enemy fighters for 1 turn. Put 2 targeting blips to your hand. Targeting blips are used to trigger Target Effects.",
+			Description = "Lock all enemy fighters for 1 turn. Put 2 targeting blips into your hand. Targeting blips are used to trigger Target Effects.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Lock",1},{"Add","Targeting Blip","Ally"},{"Add","Targeting Blip","Ally"}},
 			Target = "Opponent",
@@ -3657,7 +3657,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Overgrown",
-			Description = "Put a random red or blue action to your hand.",
+			Description = "Put a random red or blue action into your hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"RandomAdd","Lunar"}},
 			Target = "Ally",
@@ -5099,7 +5099,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4, ["Blue"] = 4,},
 		["Effect"] = {
 			Name = "Quick Shot",
-			Description = "Unlock all Korblox fighters. Put a random Korblox card to your hand.",
+			Description = "Unlock all Korblox fighters. Put a random Korblox card into your hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Unlock",999},{"RandomAdd","Korblox"}},
 			Target = "Archetype",
@@ -5435,7 +5435,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Hamstermon-Val"] = {
 				["Name"] = "Lovestermon",
 				["Id"] = 655014781,
-				["Bio"] = "It's time to put some love to this battlefield!",
+				["Bio"] = "It's time to add some love to this battlefield!",
 			}		
 		},							
 		["Health"] = 750,
@@ -5452,7 +5452,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Weaken",100}},
 			Target = "Opponent",
 		},
-		["Bio"] = "It's time to put some color to this battlefield!",
+		["Bio"] = "It's time to add some color to this battlefield!",
 	},	
 	
 	["Psychotic"] = {
@@ -5609,7 +5609,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Charge"] = true,
 		["Effect"] = {
 			Name = "Overgrown",
-			Description = "Haste. When played, put Youngtan to your opponent's hand.",
+			Description = "Haste. When played, put a copy of Youngtan into your opponent's hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Add","Youngtan","Opponent"}},
 			Target = "Self",
@@ -14144,7 +14144,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Name"] = "Cupid's Eye Nexus",
 				["Effect"] = {
 					Name = "Pyrotechnics",
-					Description = "Put a Cupid's Eye Heart Stealer to your hand. Your opponent draws two cards.",
+					Description = "Put a Cupid's Eye Heart Stealer into your hand. Your opponent draws two cards.",
 					["Type"] = "OnSummon",
 					["Power"] = {{"Add","Cupid's Eye Heart Stealer"},{"Draw",2,"Opponent"}},
 					Target = "Ally",
@@ -14160,7 +14160,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 5, ["Yellow"] = 5,},
 		["Effect"] = {
 			Name = "Harassing Talons",
-			Description = "Put a Cat's Eye Corpse Stealer to your hand. Your opponent draws two cards.",
+			Description = "Put a Cat's Eye Corpse Stealer into your hand. Your opponent draws two cards.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Add","Cat's Eye Corpse Stealer"},{"Draw",2,"Opponent"}},
 			Target = "Ally",
@@ -14177,7 +14177,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 655012411,
 				["Effect"] = {
 					Name = "Pyrotechnics",
-					Description = "Put a Cupid's Eye Nexus to your hand. Your opponent gains four white icons.",
+					Description = "Put a Cupid's Eye Nexus into your hand. Your opponent gains four white icons.",
 					["Type"] = "OnSummon",
 					["Power"] = {{"Add","Cupid's Eye Nexus"},{"White",4,"Opponent"}},
 					Target = "Ally",
@@ -14194,7 +14194,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 6, ["Green"] = 6,},
 		["Effect"] = {
 			Name = "Harassing Talons",
-			Description = "Put a Cat's Eye Nexus to your hand. Your opponent gains four white icons.",
+			Description = "Put a Cat's Eye Nexus into your hand. Your opponent gains four white icons.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Add","Cat's Eye Nexus"},{"White",4,"Opponent"}},
 			Target = "Ally",
@@ -14311,7 +14311,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 1, ["Blue"] = 4,},
 		["Effect"] = {
 			Name = "Trout Slap",
-			Description = "Haste. When ShockingRobux destroys a fighter, put a copy of ShockingRobux to your hand.",
+			Description = "Haste. When ShockingRobux destroys a fighter, put a copy of ShockingRobux into your hand.",
 			["Type"] = "OnDestroy",
 			["Power"] = {{"Add","ShockingRobux"}},
 			Target = "Ally",
@@ -14449,7 +14449,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 2,["Neutral"] = 5,},
 		["Effect"] = {
 			Name = "EzWinz",
-			Description = "When this card attacks, put a random Yellow Legendary to your hand.",
+			Description = "When this card attacks, put a random Yellow Legendary into your hand.",
 			["Type"] = "OnAttack",
 			["Power"] = "RandomAdd",
 			Target = "Ally",
@@ -14556,7 +14556,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 3, ["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Mana Siphon",
-			Description = "Whenever your opponent casts an action or terrain card, draw a card and put a random red or blue action to your hand.",
+			Description = "Whenever your opponent casts an action or terrain card, draw a card and put a random red or blue action into your hand.",
 			["Type"] = "OnEnemyCast",
 			["Power"] = {{"Draw",1},{"RandomAdd","Lunar"}},
 			Target = "Ally",
@@ -16531,7 +16531,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 4, ["Neutral"] = 3, ["Green"] = 2,}, 
 		["Effect"] = {
 			Name = "Spotted",
-			Description = "Put a Camera to your hand.",
+			Description = "Put a Camera into your hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Add","Camera"}},
 			Target = "Ally",
@@ -16731,7 +16731,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,}, 
 		["Effect"] = {
 			Name = "Roblox",
-			Description = "Put a Classic Roblox Gear to both players hands.",
+			Description = "Put a Classic Roblox Gear into both players hands.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"RandomAdd","TokenClassic"},{"RandomAdd","TokenClassic","Opponent"}},
 			Target = "Ally",
@@ -17393,7 +17393,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Thug Life",
-			Description = "Put a random uncommon into both players hands, then put a roblox gift card into your opponents hand.",
+			Description = "Put a random uncommon into both players' hands, then put a roblox gift card into your opponents hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"RandomAdd","Uncommon"},{"RandomAdd","Uncommon","Opponent"},{"Add","Roblox Gift Card","Opponent"}},
 			Target = "Ally",
@@ -17432,7 +17432,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 5,["Green"] = 1},
 		["Effect"] = {
 			Name = "Thug Life",
-			Description = "When this card is summoned, put a copy of this card to your hand. This card can use this effect 3 times.",
+			Description = "When this card is summoned, put a copy of this card into your hand. This card can use this effect 3 times.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Add","WebGL3D 1"}},
 			Target = "Ally",
@@ -17451,7 +17451,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 5,["Green"] = 1},
 		["Effect"] = {
 			Name = "Thug Life",
-			Description = "When this card is summoned, put a copy of this card to your hand. This card can use this effect 2 more times.",
+			Description = "When this card is summoned, put a copy of this card into your hand. This card can use this effect 2 more times.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Add","WebGL3D 2"}},
 			Target = "Ally",
@@ -17470,7 +17470,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 5,["Green"] = 1},
 		["Effect"] = {
 			Name = "Thug Life",
-			Description = "When this card is summoned, put a copy of this card to your hand. This card can use this effect 1 more time.",
+			Description = "When this card is summoned, put a copy of this card into your hand. This card can use this effect 1 more time.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Add","WebGL3D 3"}},
 			Target = "Ally",
@@ -17487,13 +17487,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Slash",
 		["Color"] = "Green",
 		["Cost"] = {["Neutral"] = 5,["Green"] = 1},
-		["Effect"] = {
-			Name = "Thug Life",
-			Description = "When this card is summoned, put a copy of this card to your hand. This card can use this effect 0 more times.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Cost",0}},
-			Target = "Opponent",
-		},
 		["Bio"] = "Creator of the Roblox+Google Extention. He likes searching the web.",
 	},			
 	
@@ -17508,7 +17501,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Blue"] = 4},
 		["Effect"] = {
 			Name = "Thug Life",
-			Description = "When this card attacks and destroys another, put a random red or blue action to your hand.",
+			Description = "When this card attacks and destroys another, put a random red or blue action into your hand.",
 			["Type"] = "OnAttackDestroy",
 			["Power"] = {{"RandomAdd","Lunar"}},
 			Target = "Ally",
@@ -17527,7 +17520,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 8,},
 		["Effect"] = {
 			Name = "Thug Life",
-			Description = "When this card is targeted, put a random yellow legendary to your hand.",
+			Description = "When this card is targeted, put a random yellow legendary into your hand.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"RandomAdd","LegendaryYellow"}},
 			Target = "Ally",
