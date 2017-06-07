@@ -2503,7 +2503,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Life fam",
 			Description = "At the end of your turns, generate a green icon. Then all non-archetyped rares drain 50 health from all cards that aren't non-archetyped rares.",
-			["Type"] = "OnEndDeath",
+			["Type"] = "OnEnd",
 			["Power"] = {{"Green",1},{"Damage",50,"NotArchetype"},{"Heal",50,"Archetype"}},
 			Target = "Ally",
 		},
