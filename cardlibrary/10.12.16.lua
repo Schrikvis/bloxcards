@@ -2841,7 +2841,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Cost",200,"Ally"},{"Heal",200},{"Strengthen",200}},
 			Target = "Self",
 		},
-		["Bio"] = "At first he sided with the noobs against the communists. Now he sides with the communists against the noobs.",
+		["Bio"] = "Curses are more like gifts, enjoy them while they last...",
 	},
 	
 	["caone"] = {
