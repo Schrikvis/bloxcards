@@ -2801,7 +2801,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Description = "When this card is attacked, give it 50 power and health.",
 			["Type"] = "OnAttacked",
 			["Power"] = {{"Heal",50},{"Strengthen",50}},
-			Target = "Ally",
+			Target = "Self",
 		},
 		["Bio"] = "I am a champion...maybe just a virtual champion, but still a champion!",
 	},	
