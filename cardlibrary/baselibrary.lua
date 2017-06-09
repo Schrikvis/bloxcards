@@ -5152,7 +5152,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Increase the powre of all Doges by 200.",
+			Description = "Increase the power of all Doges by 200.",
 			["Type"] = "OnSummon",
 			["Power"] = "Strengthen",
 			Target = "Archetype",
