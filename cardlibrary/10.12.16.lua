@@ -2738,7 +2738,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3, ["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Life fam",
-			Description = "Whenever you cast an actin or terrain spell, generate 2 white icons and deal 700 damage to Killar.",
+			Description = "Whenever you cast an action or terrain spell, generate 2 white icons and deal 700 damage to Killar.",
 			["Type"] = "OnAllyCast",
 			["Power"] = {{"Neutral",2},{"Damage",700,"Self"}},
 			Target = "Ally",
