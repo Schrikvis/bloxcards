@@ -2852,7 +2852,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "PunchKick",
 		["Color"] = "Blue", 		
-		["Cost"] = {["Neutral"] = 2, ["Blue"] = 3,},
+		["Cost"] = {["Neutral"] = 2, ["Blue"] = 2,},
 		["Effect"] = {
 			Name = "Life fam",
 			Description = "Add either a Toxic Goo or a Morphic Goo to your hand.",
