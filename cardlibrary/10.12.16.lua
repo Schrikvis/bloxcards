@@ -2753,6 +2753,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 650,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "PunchKick",
+		["Requirement"] = {"ColorRed",2},
 		["Color"] = "Red", 
 		["Cost"] = {["Neutral"] = 0,},
 		["Token"] = true,
