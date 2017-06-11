@@ -924,7 +924,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Green"] = 1,},
 		["Effect"] = {
 			Name = "Booster",
-			Description = "You gain two white icons. Your opponent gains a white icon.",
+			Description = "You gain two white icons. Your opponent gains a white icon. Future updates to bloxcards can't buff or nerf Cillow, and Cillow can't be banned from tournaments.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Neutral",2},{"Neutral",1,"Opponent"}},
 			Target = "Ally",
