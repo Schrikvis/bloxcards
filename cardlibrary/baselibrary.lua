@@ -5240,7 +5240,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Field"] = 293402627,
 		["Color"] = "Neutral",
 		["Archetype"] = "Terrain",
-		["Cost"] = {["Neutral"] = 4,},
+		["Cost"] = {["Red"] = 2,},
 		["Effect"] = {
 			Name = "Stud",
 			Description = "Increase the power of all fighters by 50 at the end of each turn.",

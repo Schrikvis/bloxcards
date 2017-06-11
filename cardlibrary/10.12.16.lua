@@ -861,7 +861,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4, ["Blue"] = 6,},
 		["Effect"] = {
 			Name = "Rebuilding The Place",
-			Description = "When PlaceRebuilder attacks, return the attacked fighter to it owners hand, then lock PlaceReBuilder for 2 turns.",
+			Description = "When PlaceRebuilder attacks, return the attacked fighter to its owner's hand, then lock PlaceReBuilder for 2 turns.",
 			["Type"] = "OnAttack",
 			["Power"] = {{"Return",030},{"Lock",2,"Self"}},
 			Target = "Aggressor",
@@ -872,7 +872,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["DominiusConfabricor"] = {
 		["Id"] = 645386479,
 		["Name"] = "DominiusConfabricor",
-		["Health"] = 1100,
+		["Health"] = 700,
 		["Power"] = 100,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Gust",
@@ -965,7 +965,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Hellfire",
 			Description = "Enemy fighters are locked for one turn. At the end of your turn, lower the power of all enemy fighters by 50, gain 1 yellow icon, then both players lose 200 life.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Yellow",1},{"Weaken",50,"Opponent"},{"Cost",200},{"Inflict",200,"Opponent"}},
+			["Power"] = {{"Yellow",1,"Ally"},{"Weaken",50,"Opponent"},{"Cost",200},{"Inflict",200,"Opponent"}},
 			Target = "Opponent",
 		},
 		["Bio"] = "Together as one, we gamble the night away!.",
@@ -1395,7 +1395,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Hellfire",
            	Description = "Haste. When this card enters the battlefield or dies, deal 600 damage to your opponent.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Summon","Cindering Token"},{"Unlock",1,"Archetype"},{"Inflict",600,"Opponent"},{"Damage",9999,"Self"}},
+			["Power"] = {{"Summon","Cindering Token"},{"Unlock",1,"Archetype"},{"Lock",1,"Self"},{"Inflict",600,"Opponent"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = "He certainly isn't.",
@@ -1778,8 +1778,8 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Shaylan007"] = {
 		["Id"] = 712738238,
 		["Name"] = "Shaylan007",
-		["Health"] = 500,
-		["Power"] = 500,
+		["Health"] = 550,
+		["Power"] = 550,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Punchkick",
 		["Color"] = "Green", 
@@ -2052,7 +2052,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"SetYellow",0},{"Damage",9999,"Aggressor"},{"Damage",500,"Single"}},
 			Target = "Ally",
 		},
-		["Bio"] = [["The noble work of our order is to give free energy to all from the moon's rays. The emotional cries of our detractors is... Depressing."]],
+		["Bio"] = [["The noble work of our order is to give free energy to all from the moon's rays. The emotional cries of our detractors are... Distracting."]],
 	},
 
 	["Delirious Ooze"] = {
@@ -2123,6 +2123,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Token",
 		["Archetype"] = "Marxist",
 		["AttackEffect"] = "Punchkick",
+		["Token"] = true,
 		["Color"] = "Red", 
 		["Cost"] = {["Blue"] = 0,},
 		["Effect"] = {
@@ -2144,6 +2145,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Marxist",
 		["AttackEffect"] = "Punchkick",
 		["Color"] = "Red", 
+		["Token"] = true,
 		["Cost"] = {["Blue"] = 0,},
 		["Effect"] = {
 			Name = "let's roleplay",
@@ -2164,6 +2166,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Marxist",
 		["AttackEffect"] = "Punchkick",
 		["Color"] = "Red", 
+		["Token"] = true,
 		["Cost"] = {["Blue"] = 0,},
 		["Effect"] = {
 			Name = "let's roleplay",
@@ -2184,6 +2187,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Marxist",
 		["AttackEffect"] = "Punchkick",
 		["Color"] = "Red", 
+		["Token"] = true,
 		["Cost"] = {["Blue"] = 0,},
 		["Effect"] = {
 			Name = "let's roleplay",
@@ -2343,7 +2347,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Ruinate Time",
 			Description = "Set the lock of a target fighter to 1. It gains 300 health.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Lock",1},{"Heal",300}},
+			["Power"] = {{"Unlock",9999},{"Lock",1},{"Heal",300}},
 			Target = "Single",
 		},
 		["Bio"] = [[Many people are scared of the dark. If you're one of these people, just remember that darkness is just a lack of photons bouncing into your eyes. That's a pretty silly thing to be scared of.]],
@@ -2415,8 +2419,8 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Wesker202"] = {
 		["Id"] = 785621046,
 		["Name"] = "Wesker202",
-		["Health"] = 400,
-		["Power"] = 1000,
+		["Health"] = 250,
+		["Power"] = 850,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Punchkick",
 		["Color"] = "Blue", 
