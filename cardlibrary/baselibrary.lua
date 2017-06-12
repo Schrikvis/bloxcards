@@ -924,7 +924,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Green"] = 1,},
 		["Effect"] = {
 			Name = "Booster",
-			Description = "You gain two white icons. Your opponent gains a white icon.",
+			Description = "You gain two white icons. Your opponent gains a white icon. Future updates to bloxcards can't buff or nerf Cillow, and Cillow can't be banned from tournaments.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Neutral",2},{"Neutral",1,"Opponent"}},
 			Target = "Ally",
@@ -5152,7 +5152,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Increase the powre of all Doges by 200.",
+			Description = "Increase the power of all Doges by 200.",
 			["Type"] = "OnSummon",
 			["Power"] = "Strengthen",
 			Target = "Archetype",
@@ -5240,7 +5240,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Field"] = 293402627,
 		["Color"] = "Neutral",
 		["Archetype"] = "Terrain",
-		["Cost"] = {["Neutral"] = 4,},
+		["Cost"] = {["Red"] = 2,},
 		["Effect"] = {
 			Name = "Stud",
 			Description = "Increase the power of all fighters by 50 at the end of each turn.",
