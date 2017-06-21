@@ -2880,7 +2880,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Life fam",
 			Description = "Put either a Toxic Goo or a Morphic Goo into your hand.",
 			["Type"] = "OnSummon",
-			["Power"] = {{{"RandomAdd", {"Toxic Goo", "Morphic Goo",}}},
+			["Power"] = {{"RandomAdd", {"Toxic Goo", "Morphic Goo",}}},
 			Target = "Ally",
 		},
 		["Bio"] = "My goo is the goodest goo around. No goo is as good as my goo.",
