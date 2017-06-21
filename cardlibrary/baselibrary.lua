@@ -16725,7 +16725,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Roblox",
 			Description = "Put a Classic Roblox Gear into both players hands.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"RandomAdd", {"Linked Sword", "Trowel", "Rocket Launcher", "Superball", "Slingshot",}},
+			["Power"] = {{"RandomAdd", {"Linked Sword", "Trowel", "Rocket Launcher", "Superball", "Slingshot",}}},
 			Target = "All",
 		},
 		["Bio"] = "He loves games.",
