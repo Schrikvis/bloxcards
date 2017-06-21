@@ -65,7 +65,7 @@ local sleeves = {
 		["ContentDeleted"]      = {675456229,  1350};
 		["Cow"]                 = {675456703,  1400};
 		["Squidward"]           = {675456873,  700};
-		["Illuminatus"]           = {675456873,  800};
+		["Illuminatus"]         = {850398463,  850};
 	};
 
 	Halloween = {
