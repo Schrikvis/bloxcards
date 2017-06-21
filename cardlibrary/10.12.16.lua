@@ -906,9 +906,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 7,},
 		["Effect"] = {
 			Name = "Hellfire",
-			Description = "Each time this fighter attacks, it gains 300 Power.",
-			["Type"] = "OnAttack",
-			["Power"] = {"Strengthen",300,"Self"},
+			Description = "Whenever you lose life, set your life to 300. (This prevents death.)",
+			["Type"] = "OnLifeLoss",
+			["Power"] = {"SetLife",300,"Ally"},
 			Target = "Ally",
 		},
 		["Bio"] = "Always searching for the perfect soul.",

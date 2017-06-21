@@ -14907,7 +14907,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Revival",
 			Description = "Deal 15,000 damage to yourself. If you survive, you win the game.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Cost",15000},{"Summon","InceptionTime Token"},{"Damage",9999,"Self"}},
+			["Power"] = {{"Heal",9999,"Self"},{"Damage",9999},{"Cost",15000},{"Summon","InceptionTime Token"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = "It is not yet time.",
