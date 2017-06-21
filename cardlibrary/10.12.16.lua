@@ -349,7 +349,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "NOT THE OTUBS! ANYTHING BUT THAT!",
 	},	
 
-	["MurticUnicorn 5"] = {
+	["Exotic Murtic"] = {
 		["Id"] = 585561705,
 		["Name"] = "Exotic Murtic",
 		["Health"] = 800,
@@ -463,7 +463,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "The first 73 Rilies caused him trouble.",
 	},	
 
-	["CrazyCaleb"] = {
+	["CrazyCaleb77"] = {
 		["Id"] = 596217027,
 		["Name"] = "CrazyCaleb77",
 		["Health"] = 400,
@@ -2315,9 +2315,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = [[It's a shame there's no way to make unlocking cards faster in this game, eh?]],
 	},
 
-	["RealPiggy1234"] = {
+	["RealPiggy1261"] = {
 		["Id"] = 785620878,
-		["Name"] = "RealPiggy1234",
+		["Name"] = "RealPiggy1261",
 		["Health"] = 400,
 		["Power"] = 600,
 		["Rarity"] = "Uncommon",

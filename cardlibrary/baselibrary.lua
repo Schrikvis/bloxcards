@@ -17698,4 +17698,3 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 }
  
 return base
-
