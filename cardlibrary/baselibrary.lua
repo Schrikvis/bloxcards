@@ -5394,7 +5394,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Description = "Deal 500 damage to a target fighter and 300 damage to all other allied fighters.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",500},{"Heal",300,"Self"},{"Damage",300,"Ally"}},
-			Target - "Opponent",
+			Target = "Opponent",
 		},
 		["Bio"] = "Suitcase filled with more ammo for his signature weapon.",
 	},	
