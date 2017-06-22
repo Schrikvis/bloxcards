@@ -809,7 +809,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Let It Grow",
 			Description = "Whenever an allied fighter dies, drain 100 health from your opponent.",
-			["Type"] = "OnSummon",
+			["Type"] = "OnAllyDeath",
 			["Power"] = {{"Inflict",100},{"Inflict",-100,"Ally"}},
 			Target = "Opponent",
 		},
