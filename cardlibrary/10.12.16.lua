@@ -2514,7 +2514,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = [[Use the force, Harry! Else you're a Klingon and you shall not pass!]],
 	},
 
-	["Roundawesome"] = {
+	["Roundawsome"] = {
 		["Id"] = 785856699,
 		["Name"] = "Roundawsome",
 		["Health"] = 750,
