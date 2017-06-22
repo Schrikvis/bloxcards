@@ -2724,7 +2724,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Life fam",
 			Description = "At the end of your turns, summon three random crystals and put a targeting blip into your hand.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"RandomSummon","Crystal"},{"RandomSummon","Crystal"},{"RandomSummon","Crystal"},{"Add","Targeting Blip"}},
+			["Power"] = {{"RandomSummon",{"Crystal of Reality's Fractal","Crystal of Nature's Surge","Crystal of Heaven's Pulse","Crystal of Knowledge's Thirst","Crystal of Logic's Will","Crystal of Intellect's Scheme","Crystal of Power's Exploit","Crystal of Ambition's End","Crystal of Death's Vengence"}},{"RandomSummon",{"Crystal of Reality's Fractal","Crystal of Nature's Surge","Crystal of Heaven's Pulse","Crystal of Knowledge's Thirst","Crystal of Logic's Will","Crystal of Intellect's Scheme","Crystal of Power's Exploit","Crystal of Ambition's End","Crystal of Death's Vengence"}},{"RandomSummon",{"Crystal of Reality's Fractal","Crystal of Nature's Surge","Crystal of Heaven's Pulse","Crystal of Knowledge's Thirst","Crystal of Logic's Will","Crystal of Intellect's Scheme","Crystal of Power's Exploit","Crystal of Ambition's End","Crystal of Death's Vengence"}},{"Add","Targeting Blip"}},
 			Target = "Ally",
 		},
 		["Bio"] = "I am the Shardian of the Galaxy...fear me.",
