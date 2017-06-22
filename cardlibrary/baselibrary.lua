@@ -15013,7 +15013,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["One4utwo4me"] = {
-		["Id"] = 430971601,
+		["Id"] = 879069293,
 		["Name"] = "One4utwo4me",
 		["AltCards"] = {
 			["One4utwo4me-ArtV"] = {
