@@ -1501,8 +1501,8 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["ChaoticCommando"] = {
 		["Id"] = 697663303,
 		["Name"] = "ChaoticCommando",
-		["Health"] = 1200,
-		["Power"] = 500,
+		["Health"] = 1600,
+		["Power"] = 400,
 		["Rarity"] = "Rare",
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Slash",
@@ -1515,7 +1515,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Damage",400},{"Strengthen",100,"Aggressor"}},
 			Target = "Self",
 		},
-		["Bio"] = "If chaos could ever be controlled, word peace would be restored. *It* begs to differ...",
+		["Bio"] = "If chaos could ever be controlled, world peace would be restored. *It* begs to differ...",
 	},	
 		
 	["MarissaKitty04"] = {
