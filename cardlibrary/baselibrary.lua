@@ -15188,7 +15188,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Level Up!",
 			Description = "When this card enters play, All other yellow fighters gain 300 power. When it dies, deal 1000 damage to all allied fighters.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Strengthen",300},{"Damage",9999,"Self"},{"Summon","The Piece Breaker Token","Ally"}},			
+			["Power"] = {{"Strengthen",300},{"Summon","The Piece Breaker Token","Ally"},{"Damage",9999,"Self"}},			
 			Target = "ColorYellow",
 		},
 		["Bio"] = "It is time to break myself.",
