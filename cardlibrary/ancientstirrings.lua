@@ -2098,7 +2098,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Ghoost"] = {
-		["Id"] = 574198186,
+		["Id"] = 681970495,
 		["Name"] = "Ghoost",
 		["Health"] = 100,
 		["Power"] = 300,
@@ -3035,7 +3035,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Morphic Goo"] = {
-		["Id"] = 540822293,
+		["Id"] = 683432647,
 		["Name"] = "Morphic Goo",
 		["Health"] = 50,
 		["Power"] = 50,
