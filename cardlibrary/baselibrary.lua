@@ -914,7 +914,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Cillow"] = {
-		["Id"] = 271751077,
+		["Id"] = 878895520,
 		["Name"] = "Cillow",
 		["Health"] = 400,
 		["Power"] = 350,
@@ -2314,7 +2314,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["PhireFox"] = {
-		["Id"] = 280563106,
+		["Id"] = 878894010,
 		["Name"] = "PhireFox",
 		["Health"] = 700,
 		["Power"] = 400,
@@ -8966,7 +8966,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Robot"] = {
-		["Id"] = 335687601,
+		["Id"] = 878892293,
 		["Name"] = "Robot",
 		["Health"] = 200,
 		["Power"] = 200,
@@ -11035,7 +11035,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Drone"] = {
-		["Id"] = 633180751,
+		["Id"] = 878896845,
 		["Name"] = "Drone",
 		["Health"] = 500,
 		["Power"] = 500,
@@ -11115,7 +11115,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Radello"] = {
-		["Id"] = 384008042,
+		["Id"] = 878893071,
 		["Name"] = "Radello",
 		["Health"] = 500,
 		["Power"] = 500,
@@ -17299,7 +17299,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},			
 	
 	["Frenemy's Bargain"] = {
-		["Id"] = 557975196,
+		["Id"] = 878894752,
 		["Name"] = "Frenemy's Bargain",
 		["Health"] = 0,
 		["Power"] = 0,
