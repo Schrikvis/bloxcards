@@ -809,7 +809,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Let It Grow",
 			Description = "Whenever an allied fighter dies, drain 100 health from your opponent.",
-			["Type"] = "OnSummon",
+			["Type"] = "OnAllyDeath",
 			["Power"] = {{"Inflict",100},{"Inflict",-100,"Ally"}},
 			Target = "Opponent",
 		},
@@ -1763,7 +1763,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Description = "Fool!",
 			["Type"] = "OnEnd",
 			["Power"] = {{"RandomSummon", {"Lezus 1","Lezus 2","Lezus 3","Lezus 4","Lezus 5","Lezus 6"},"Ally"},{"Heal",400,"Archetype"},{"Heal",400,"Opponent"},{"Damage",400,"Ally"},{"Damage",9999},{"Unlock",9999,"Archetype"}},
-			Target = "Opponent",
+			Target = "Self",
 		},
 		["Bio"] = "",
 	},
