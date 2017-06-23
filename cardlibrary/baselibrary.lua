@@ -11242,7 +11242,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 2,},
 		["Effect"] = {
 			Name = "Overgrown",
-			Description = "When this fighter dies, summon a Morphic Goo.",
+			Description = "When this card dies, summon a Morphic Goo.",
 			["Type"] = "OnDeath",
 			["Power"] = {{"Summon","Morphic Goo"}},
 			Target = "Ally",
