@@ -4183,7 +4183,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 6,},
 		["Effect"] = {
 			Name = "Refreshments",
-			Description = "Increase the health of all fighters by 1000, and the attack of all fighters by 250. Lock them all for 1 turn.",
+			Description = "All fighters gain 1000 health and 250 power. Lock them all for 1 turn.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",1000},{"Strengthen",250},{"Lock",1}},
 			Target = "All",
