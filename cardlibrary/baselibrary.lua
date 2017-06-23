@@ -17532,7 +17532,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Thug Life",
-			Description = "Cast this card for free. At the end of this turn, lose 5 neutral icons. This effect can cause negative icons.",
+			Description = "Cast this card for free. At the end of this turn, lose 5 white icons. This effect can cause negative icons.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Neutral", -5},{"Summon","BrokenToken"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -17551,7 +17551,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Thug Life",
-			Description = "Cast this card for free. At the end of this turn, lose 5 neutral icons. This effect can cause negative icons.",	
+			Description = "Cast this card for free. At the end of this turn, lose 5 white icons. This effect can cause negative icons.",	
 			["Type"] = "OnEnd",
 			["Power"] = {{"Neutral",0}},
 			Target = "Self",
