@@ -4183,7 +4183,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 6,},
 		["Effect"] = {
 			Name = "Refreshments",
-			Description = "Increase the health of all fighters by 1000, and the attack of all fighters by 250. Lock them all for 1 turn.",
+			Description = "All fighters gain 1000 health and 250 power. Lock them all for 1 turn.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",1000},{"Strengthen",250},{"Lock",1}},
 			Target = "All",
@@ -7181,7 +7181,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Terrain",
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Players have their fighters health increased by 50 at the start of their turns.",
+			Description = "Allied fighters gain 50 health at the start of each turn. This effect alternates between players at the start of each turn.",
 			["Type"] = "Field",
 			["Power"] = "Heal",
 			Target = "Ally",	
@@ -11242,7 +11242,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 2,},
 		["Effect"] = {
 			Name = "Overgrown",
-			Description = "When this fighter dies, summon a Morphic Goo.",
+			Description = "When this card dies, summon a Morphic Goo.",
 			["Type"] = "OnDeath",
 			["Power"] = {{"Summon","Morphic Goo"}},
 			Target = "Ally",
@@ -14303,7 +14303,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 1, ["Blue"] = 4,},
 		["Effect"] = {
 			Name = "Trout Slap",
-			Description = "Haste. When ShockingRobux destroys a fighter, put a copy of ShockingRobux into your hand.",
+			Description = "Haste. When this card destroys another, put a copy of this card into your hand.",
 			["Type"] = "OnDestroy",
 			["Power"] = {{"Add","ShockingRobux"}},
 			Target = "Ally",
