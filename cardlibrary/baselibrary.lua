@@ -167,7 +167,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 6,},
 		["Effect"] = {
 			Name = "Build Up",
-			Description = "Summon 2 meeboid cultists.",
+			Description = "Summon 2 Meeboid Cultists.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Summon","Meeboid Cultist"},{"Summon","Meeboid Cultist"}},
 			Target = "Ally",
@@ -187,7 +187,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 3,},
 		["Effect"] = {
 			Name = "Meebling Infestation",
-			Description = "lower the power of a target fighter by 600 and summon a Meebling.",
+			Description = "Lower the power of a target fighter by 600 and summon a Meebling.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",600},{"Summon","Meebling","Ally"}},
 			Target = "Single",
@@ -209,7 +209,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Build Up",
-			Description = "Lower the Attack of all Non-Meeboids by 100 at the end of each of your turns. This card can't generate icons.",
+			Description = "Lower the power of all Non-Meeboids by 100 at the end of each of your turns. This card can't generate icons.",
 			["Type"] = "OnEnd",
 			["Power"] = "Weaken",
 			Target = "NotArchetype",
@@ -275,7 +275,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Build Up",
-			Description = "Deal 100 damage to all non-meeboids at the end of each of your turns. This card can't generate Icons.",
+			Description = "Deal 100 damage to all non-Meeboids at the end of each of your turns. This card can't generate Icons.",
 			["Type"] = "OnEnd",
 			["Power"] = "Damage",
 			Target = "NotArchetype",
