@@ -1858,7 +1858,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1, ["Green"] = 2,},
 		["Effect"] = {
 			Name = "befriending of scaly mutts",
-			Description = "Whenever any fighter is summoned, destroy CjMcGamingYT and lower that fighter's power by 600.",
+			Description = "Whenever any fighter is summoned, destroy CjMcGamingYT and lower that fighter's power by 600. Abilities don't trigger when this card enters play.",
 			["Type"] = "OnAnySummon",
 			["Power"] = {{"Damage",9999,"Self"},{"Weaken",600,"Aggressor"}},
 			Target = "Ally",
