@@ -3,7 +3,7 @@
 ## What?
 BloxCards is a trading card game on ROBLOX. It first scripted by Drager980 and is now
 maintained by Visleaf. In BloxCards, players can battle bots or each other using their
-decks and collect and trade over 900 cards.
+decks and collect and trade over 900 cards.  
 The game is heavily inspired by SNK vs. Capcom: Card Fighters Clash, sharing many of
 its core mechanics.
 
