@@ -167,7 +167,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 6,},
 		["Effect"] = {
 			Name = "Build Up",
-			Description = "Summon 2 meeboid cultists.",
+			Description = "Summon 2 Meeboid Cultists.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Summon","Meeboid Cultist"},{"Summon","Meeboid Cultist"}},
 			Target = "Ally",
@@ -187,7 +187,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 3,},
 		["Effect"] = {
 			Name = "Meebling Infestation",
-			Description = "lower the power of a target fighter by 600 and summon a Meebling.",
+			Description = "Lower the power of a target fighter by 600 and summon a Meebling.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",600},{"Summon","Meebling","Ally"}},
 			Target = "Single",
@@ -209,7 +209,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Build Up",
-			Description = "Lower the Attack of all Non-Meeboids by 100 at the end of each of your turns. This card can't generate icons.",
+			Description = "Lower the power of all Non-Meeboids by 100 at the end of each of your turns. This card can't generate icons.",
 			["Type"] = "OnEnd",
 			["Power"] = "Weaken",
 			Target = "NotArchetype",
@@ -275,7 +275,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Build Up",
-			Description = "Deal 100 damage to all non-meeboids at the end of each of your turns. This card can't generate Icons.",
+			Description = "Deal 100 damage to all non-Meeboids at the end of each of your turns. This card can't generate Icons.",
 			["Type"] = "OnEnd",
 			["Power"] = "Damage",
 			Target = "NotArchetype",
@@ -914,7 +914,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Cillow"] = {
-		["Id"] = 271751077,
+		["Id"] = 878895520,
 		["Name"] = "Cillow",
 		["Health"] = 400,
 		["Power"] = 350,
@@ -2314,7 +2314,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["PhireFox"] = {
-		["Id"] = 280563106,
+		["Id"] = 878894010,
 		["Name"] = "PhireFox",
 		["Health"] = 700,
 		["Power"] = 400,
@@ -4183,7 +4183,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 6,},
 		["Effect"] = {
 			Name = "Refreshments",
-			Description = "Increase the health of all fighters by 1000, and the attack of all fighters by 250. Lock them all for 1 turn.",
+			Description = "All fighters gain 1000 health and 250 power. Lock them all for 1 turn.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",1000},{"Strengthen",250},{"Lock",1}},
 			Target = "All",
@@ -7181,7 +7181,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Terrain",
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Players have their fighters health increased by 50 at the start of their turns.",
+			Description = "Allied fighters gain 50 health at the start of each turn. This effect alternates between players at the start of each turn.",
 			["Type"] = "Field",
 			["Power"] = "Heal",
 			Target = "Ally",	
@@ -8966,7 +8966,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Robot"] = {
-		["Id"] = 335687601,
+		["Id"] = 878892293,
 		["Name"] = "Robot",
 		["Health"] = 200,
 		["Power"] = 200,
@@ -11035,7 +11035,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Drone"] = {
-		["Id"] = 633180751,
+		["Id"] = 878896845,
 		["Name"] = "Drone",
 		["Health"] = 500,
 		["Power"] = 500,
@@ -11115,7 +11115,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Radello"] = {
-		["Id"] = 384008042,
+		["Id"] = 878893071,
 		["Name"] = "Radello",
 		["Health"] = 500,
 		["Power"] = 500,
@@ -11242,7 +11242,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 2,},
 		["Effect"] = {
 			Name = "Overgrown",
-			Description = "When this fighter dies, summon a Morphic Goo.",
+			Description = "When this card dies, summon a Morphic Goo.",
 			["Type"] = "OnDeath",
 			["Power"] = {{"Summon","Morphic Goo"}},
 			Target = "Ally",
@@ -14303,7 +14303,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 1, ["Blue"] = 4,},
 		["Effect"] = {
 			Name = "Trout Slap",
-			Description = "Haste. When ShockingRobux destroys a fighter, put a copy of ShockingRobux into your hand.",
+			Description = "Haste. When this card destroys another, put a copy of this card into your hand.",
 			["Type"] = "OnDestroy",
 			["Power"] = {{"Add","ShockingRobux"}},
 			Target = "Ally",
@@ -15013,7 +15013,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["One4utwo4me"] = {
-		["Id"] = 430971601,
+		["Id"] = 879069293,
 		["Name"] = "One4utwo4me",
 		["AltCards"] = {
 			["One4utwo4me-ArtV"] = {
@@ -15188,7 +15188,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Level Up!",
 			Description = "When this card enters play, All other yellow fighters gain 300 power. When it dies, deal 1000 damage to all allied fighters.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Strengthen",300},{"Damage",9999,"Self"},{"Summon","The Piece Breaker Token","Ally"}},			
+			["Power"] = {{"Strengthen",300},{"Summon","The Piece Breaker Token","Ally"},{"Damage",9999,"Self"}},			
 			Target = "ColorYellow",
 		},
 		["Bio"] = "It is time to break myself.",
@@ -17299,7 +17299,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},			
 	
 	["Frenemy's Bargain"] = {
-		["Id"] = 557975196,
+		["Id"] = 878894752,
 		["Name"] = "Frenemy's Bargain",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -17532,7 +17532,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Thug Life",
-			Description = "Cast this card for free. At the end of this turn, lose 5 neutral icons. This effect can cause negative icons.",
+			Description = "Cast this card for free. At the end of this turn, lose 5 white icons. This effect can cause negative icons.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Neutral", -5},{"Summon","BrokenToken"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -17551,7 +17551,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Thug Life",
-			Description = "Cast this card for free. At the end of this turn, lose 5 neutral icons. This effect can cause negative icons.",	
+			Description = "Cast this card for free. At the end of this turn, lose 5 white icons. This effect can cause negative icons.",	
 			["Type"] = "OnEnd",
 			["Power"] = {{"Neutral",0}},
 			Target = "Self",
