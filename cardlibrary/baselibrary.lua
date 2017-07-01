@@ -10866,7 +10866,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Blue",
-		["Cost"] = {["Neutral"] = 3,},
+		["Cost"] = {["Neutral"] = 3, ["Blue"] = 1,},
 		["Effect"] = {
 			Name = "Mental Preparation",
 			Description = "Locks himself for two turns to charge his strength!",
