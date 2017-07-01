@@ -3079,7 +3079,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["SnyFort"] = {
 				["Id"] = 496184718,
 				["AltArt"] = true,
-				["Effect"] = {{"Summon","Snyfort Token","Ally"},{"Damage",9999,"Self"}},	
+				["Effect"] = {{"Summon","Master Token","Ally"},{"Damage",9999,"Self"}},	
 				["Bio"] = "Why did the chicken cross the road?",
 			}
 		},
@@ -4202,7 +4202,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 4,},
 		["Effect"] = {
 			Name = "Arms up!",
-			Description = "Increase the power of a target fighter by 500.",
+			Description = "Increase the power of a target fighter by 300.",
 			["Type"] = "OnSummon",
 			["Power"] = "Strengthen",
 			Target = "Single",
