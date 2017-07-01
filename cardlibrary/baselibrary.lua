@@ -3361,7 +3361,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 1,["Blue"] = 1,["Yellow"] = 1,["Red"] = 1,["Neutral"] = 6,},
 		["Effect"] = {
 			Name = "Warriors Intimidation",
-			Description = "Deal 200 health to all enemy fighters, decrease their power by 100 and lock them for 1 turn.",
+			Description = "Deal 200 damage to all enemy fighters, decrease their power by 100, and lock them for 1 turn.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",200},{"Weaken",100},{"Lock",1}},
 			Target = "Opponent",
