@@ -7155,7 +7155,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 0,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Punch1",
-		["Requirement"] = {"Archetype",2},		
+		["Requirement"] = {"Archetype",1},		
 		["Archetype"] = "Acolyte",
 		["Color"] = "Neutral",
 		["Cost"] = {["Green"] = 1,["Blue"] = 1,["Yellow"] = 1,["Red"] = 1,["Neutral"] = 2,},
