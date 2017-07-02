@@ -433,13 +433,12 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Dash",
 		["Color"] = "Blue", 
 		["Cost"] = {["Blue"] = 99,},
-		["Archetype"] = "Gambit",
 		["AttackBlock"] = true,
 		["Effect"] = {
 			Name = "Pyrotechnics",
 			Description = "7 Charges. At the end of this turn, if you've cast 7 action or terrain spells after this one, deal 1250 damage to the opponent.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Inflict",1250}},
+			["Power"] = {{"Inflict",1250}},{{"Damage",9999,"Self"}}
 			Target = "Opponent",
 		},
 		["Bio"] = "Grapeshots ruined, Tendrils of Agony depleted. All that is left is the rush.",		
