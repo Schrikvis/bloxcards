@@ -110,7 +110,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Brothers Grotesque"] = {
-		["Id"] = 540075890,
+		["Id"] = 893409553,
 		["Name"] = "Brothers Grotesque",
 		["Health"] = 1700,
 		["Power"] = 900,
@@ -151,7 +151,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Glaciem Knight"] = {
-		["Id"] = 632582777,
+		["Id"] = 878891184,
 		["Name"] = "Glaciem Knight",
 		["Health"] = 700,
 		["Power"] = 450,
@@ -191,7 +191,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Horrarceusdon"] = {
-		["Id"] = 540076314,
+		["Id"] = 893440462,
 		["Name"] = "Horrarceusdon",
 		["Health"] = 1600,
 		["Power"] = 0,
@@ -201,16 +201,16 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 3, ["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "Whenever you cast an action or terrain spell, set the health of all fighters to 400, then give Horrarceusdon 400 health.",
+			Description = "Whenever you cast an action or terrain spell, set the health of all fighters to 500, then give Horrarceusdon 500 health.",
 			["Type"] = "OnAllyCast",
-			["Power"] = {{"SetHealth",400},{"Heal",400,"Self"}},
+			["Power"] = {{"SetHealth",500},{"Heal",500,"Self"}},
 			Target = "All",
 		},
 		["Bio"] = "Zanzel wanted him to die. He agreed. o3o",
 	},
 	
 	["Stormchaser's Gambit"] = {
-		["Id"] = 540076783,
+		["Id"] = 893412816,
 		["Name"] = "Stormchaser's Gambit",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -433,13 +433,12 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Dash",
 		["Color"] = "Blue", 
 		["Cost"] = {["Blue"] = 99,},
-		["Archetype"] = "Gambit",
 		["AttackBlock"] = true,
 		["Effect"] = {
 			Name = "Pyrotechnics",
 			Description = "7 Charges. At the end of this turn, if you've cast 7 action or terrain spells after this one, deal 1250 damage to the opponent.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Inflict",1250}},
+			["Power"] = {{"Inflict",1250}},{{"Damage",9999,"Self"}}
 			Target = "Opponent",
 		},
 		["Bio"] = "Grapeshots ruined, Tendrils of Agony depleted. All that is left is the rush.",		
@@ -809,7 +808,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Let It Grow",
 			Description = "Whenever an allied fighter dies, drain 100 health from your opponent.",
-			["Type"] = "OnSummon",
+			["Type"] = "OnAllyDeath",
 			["Power"] = {{"Inflict",100},{"Inflict",-100,"Ally"}},
 			Target = "Opponent",
 		},
@@ -1763,7 +1762,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Description = "Fool!",
 			["Type"] = "OnEnd",
 			["Power"] = {{"RandomSummon", {"Lezus 1","Lezus 2","Lezus 3","Lezus 4","Lezus 5","Lezus 6"},"Ally"},{"Heal",400,"Archetype"},{"Heal",400,"Opponent"},{"Damage",400,"Ally"},{"Damage",9999},{"Unlock",9999,"Archetype"}},
-			Target = "Opponent",
+			Target = "Self",
 		},
 		["Bio"] = "",
 	},
@@ -2098,7 +2097,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Ghoost"] = {
-		["Id"] = 574198186,
+		["Id"] = 681970495,
 		["Name"] = "Ghoost",
 		["Health"] = 100,
 		["Power"] = 300,
@@ -2387,9 +2386,9 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 1},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "Lower the health of all fighters by 50 and increase their power by 50.",
+			Description = "Lower the health of all fighters by 50 and increase their power by 50. Draw a card.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",50},{"Strengthen",50}},
+			["Power"] = {{"Damage",50},{"Strengthen",50},{"Draw",1}},
 			Target = "All",
 		},
 		["Bio"] = "He raged at the world, at his family, at his live. But mostly he just raged.",
@@ -2524,11 +2523,11 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Evil Prince"] = {
-		["Id"] = 596217196,
+		["Id"] = 893425803,
 		["Name"] = "Evil Prince",
 		["AltCards"] = {
 			["Evil Prince-Val"] = {
-				["Id"] = 655015108,
+				["Id"] = 893427386,
 				["Name"] = "Lovestruck Prince",
 				["Effect"] = {
 					Name = "Woof",
@@ -2558,11 +2557,11 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Werefrog"] = {
-		["Id"] = 596217279,
+		["Id"] = 893426470,
 		["Name"] = "Werefrog",
 			["AltCards"] = {
 			["Werefrog-Val"] = {
-				["Id"] = 655015511,
+				["Id"] = 893428350,
 				["Name"] = "Loving Frog",
 				["Effect"] = {
 					Name = "Woof",
@@ -2931,9 +2930,9 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "Whenever you summon a fighter, all Zombies gain 100 health.",
+			Description = "Whenever you summon a fighter, all Zombies gain 50 health.",
 			["Type"] = "OnAllySummon",
-			["Power"] = {{"Heal",100}},
+			["Power"] = {{"Heal",50}},
 			Target = "Archetype",
 		},
 		["Bio"] = "IT'S NERF OR NOTHING!",
@@ -3035,7 +3034,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Morphic Goo"] = {
-		["Id"] = 540822293,
+		["Id"] = 683432647,
 		["Name"] = "Morphic Goo",
 		["Health"] = 50,
 		["Power"] = 50,

@@ -331,7 +331,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 
 	["Razikai's Exploration"] = {
-		["Id"] = 581970386,
+		["Id"] = 892549472,
 		["Name"] = "Razikai's Exploration",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -349,7 +349,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "NOT THE OTUBS! ANYTHING BUT THAT!",
 	},	
 
-	["MurticUnicorn 5"] = {
+	["Exotic Murtic"] = {
 		["Id"] = 585561705,
 		["Name"] = "Exotic Murtic",
 		["Health"] = 800,
@@ -463,7 +463,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "The first 73 Rilies caused him trouble.",
 	},	
 
-	["CrazyCaleb"] = {
+	["CrazyCaleb77"] = {
 		["Id"] = 596217027,
 		["Name"] = "CrazyCaleb77",
 		["Health"] = 400,
@@ -813,7 +813,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Eye of Heaven"] = {
-		["Id"] = 638044941,
+		["Id"] = 892539198,
 		["Name"] = "Eye of Heaven",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -1501,8 +1501,8 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["ChaoticCommando"] = {
 		["Id"] = 697663303,
 		["Name"] = "ChaoticCommando",
-		["Health"] = 1200,
-		["Power"] = 500,
+		["Health"] = 1600,
+		["Power"] = 400,
 		["Rarity"] = "Rare",
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Slash",
@@ -1515,7 +1515,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Damage",400},{"Strengthen",100,"Aggressor"}},
 			Target = "Self",
 		},
-		["Bio"] = "If chaos could ever be controlled, word peace would be restored. *It* begs to differ...",
+		["Bio"] = "If chaos could ever be controlled, world peace would be restored. *It* begs to differ...",
 	},	
 		
 	["MarissaKitty04"] = {
@@ -1858,7 +1858,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1, ["Green"] = 2,},
 		["Effect"] = {
 			Name = "befriending of scaly mutts",
-			Description = "Whenever any fighter is summoned, destroy CjMcGamingYT and lower that fighter's power by 600.",
+			Description = "Whenever any fighter is summoned, destroy CjMcGamingYT and lower that fighter's power by 600. Abilities don't trigger when this card enters play.",
 			["Type"] = "OnAnySummon",
 			["Power"] = {{"Damage",9999,"Self"},{"Weaken",600,"Aggressor"}},
 			Target = "Ally",
@@ -2056,7 +2056,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Delirious Ooze"] = {
-		["Id"] = 714689056,
+		["Id"] = 714689042,
 		["Name"] = "Delirious Ooze",
 		["Health"] = 400,
 		["Power"] = 400,
@@ -2315,9 +2315,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = [[It's a shame there's no way to make unlocking cards faster in this game, eh?]],
 	},
 
-	["RealPiggy1234"] = {
+	["RealPiggy1261"] = {
 		["Id"] = 785620878,
-		["Name"] = "RealPiggy1234",
+		["Name"] = "RealPiggy1261",
 		["Health"] = 400,
 		["Power"] = 600,
 		["Rarity"] = "Uncommon",
@@ -2514,7 +2514,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = [[Use the force, Harry! Else you're a Klingon and you shall not pass!]],
 	},
 
-	["Roundawesome"] = {
+	["Roundawsome"] = {
 		["Id"] = 785856699,
 		["Name"] = "Roundawsome",
 		["Health"] = 750,
@@ -2724,7 +2724,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Life fam",
 			Description = "At the end of your turns, summon three random crystals and put a targeting blip into your hand.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"RandomSummon","Crystal"},{"RandomSummon","Crystal"},{"RandomSummon","Crystal"},{"Add","Targeting Blip"}},
+			["Power"] = {{"RandomSummon",{"Crystal of Reality's Fractal","Crystal of Nature's Surge","Crystal of Heaven's Pulse","Crystal of Knowledge's Thirst","Crystal of Logic's Will","Crystal of Intellect's Scheme","Crystal of Power's Exploit","Crystal of Ambition's End","Crystal of Death's Vengence"}},{"RandomSummon",{"Crystal of Reality's Fractal","Crystal of Nature's Surge","Crystal of Heaven's Pulse","Crystal of Knowledge's Thirst","Crystal of Logic's Will","Crystal of Intellect's Scheme","Crystal of Power's Exploit","Crystal of Ambition's End","Crystal of Death's Vengence"}},{"RandomSummon",{"Crystal of Reality's Fractal","Crystal of Nature's Surge","Crystal of Heaven's Pulse","Crystal of Knowledge's Thirst","Crystal of Logic's Will","Crystal of Intellect's Scheme","Crystal of Power's Exploit","Crystal of Ambition's End","Crystal of Death's Vengence"}},{"Add","Targeting Blip"}},
 			Target = "Ally",
 		},
 		["Bio"] = "I am the Shardian of the Galaxy...fear me.",
