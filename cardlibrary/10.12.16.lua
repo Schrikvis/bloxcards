@@ -328,7 +328,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 
 	["Razikai's Exploration"] = {
-		["Id"] = 581970386,
+		["Id"] = 892549472,
 		["Name"] = "Razikai's Exploration",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -810,7 +810,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Eye of Heaven"] = {
-		["Id"] = 638044941,
+		["Id"] = 892539198,
 		["Name"] = "Eye of Heaven",
 		["Health"] = 0,
 		["Power"] = 0,
