@@ -110,7 +110,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Brothers Grotesque"] = {
-		["Id"] = 540075890,
+		["Id"] = 893409553,
 		["Name"] = "Brothers Grotesque",
 		["Health"] = 1700,
 		["Power"] = 900,
@@ -191,7 +191,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Horrarceusdon"] = {
-		["Id"] = 540076314,
+		["Id"] = 893440462,
 		["Name"] = "Horrarceusdon",
 		["Health"] = 1600,
 		["Power"] = 0,
@@ -210,7 +210,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Stormchaser's Gambit"] = {
-		["Id"] = 540076783,
+		["Id"] = 893412816,
 		["Name"] = "Stormchaser's Gambit",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -2523,11 +2523,11 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Evil Prince"] = {
-		["Id"] = 596217196,
+		["Id"] = 893425803,
 		["Name"] = "Evil Prince",
 		["AltCards"] = {
 			["Evil Prince-Val"] = {
-				["Id"] = 655015108,
+				["Id"] = 893427386,
 				["Name"] = "Lovestruck Prince",
 				["Effect"] = {
 					Name = "Woof",
@@ -2557,11 +2557,11 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Werefrog"] = {
-		["Id"] = 596217279,
+		["Id"] = 893426470,
 		["Name"] = "Werefrog",
 			["AltCards"] = {
 			["Werefrog-Val"] = {
-				["Id"] = 655015511,
+				["Id"] = 893428350,
 				["Name"] = "Loving Frog",
 				["Effect"] = {
 					Name = "Woof",
