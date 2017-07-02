@@ -10662,7 +10662,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Anti Extreme Energy Care Package",
 			Description = "Whenever you cast an action or terrain spell, summon a kitten and deal 100 damage to Anti-Fave. Kittens can't generate icons.",
 			["Type"] = "OnAllyCast",
-			["Power"] = {{"RandomSummon", {"Kitten","Kitten2","Kitten3","Kitten4"}},{"Damage",100,"Self"}},
+			["Power"] = {{"Summon","Kitten"},{"Damage",100,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = "He only wants to blox Fave legally, so he's the good guy, right?",
