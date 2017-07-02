@@ -1054,9 +1054,9 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 1,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "Deal 250 damage to a target fighter. Draw a card.",
+			Description = "Deal 250 damage to a target fighter.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",250},{"Draw",1}},
+			["Power"] = {{"Damage",250}},
 			Target = "Single",
 		},
 		["Bio"] = "For villagers, these bombs are signs that god has forsaken them. For Hallow, it's Tuesday.",
@@ -2465,7 +2465,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Eisenhower, the Alchemist"] = {
 		["Id"] = 662115685,
 		["Name"] = "Eisenhower, the Alchemist",
-		["Health"] = 4000,
+		["Health"] = 4025,
 		["Power"] = 0,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Dash",

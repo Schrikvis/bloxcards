@@ -2068,7 +2068,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "befriending of scaly mutts",
 			Description = "Summon six random fighters. Trigger their effects, then lose all green icons, then end the turn.",
-			["Type"] = "OnySummon",
+			["Type"] = "OnSummon",
 			["Power"] = {{"RandomSummonWithEffect","Any","Ally"},{"RandomSummonWithEffect","Any","Ally"},{"RandomSummonWithEffect","Any","Ally"},{"RandomSummonWithEffect","Any","Ally"},{"RandomSummonWithEffect","Any","Ally"},{"RandomSummonWithEffect","Any","Ally"},{"SetGreen",0},{"EndTurn",1}},
 			Target = "Ally",
 		},
@@ -2393,7 +2393,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Unlock",9999},{"Lock",1}},
 			Target = "Ally",
 		},
-		["Bio"] = [[You and me and everything about us. Yours and mine and everything around us.]],
+		["Bio"] = [[Hey, Myr? Have you fixed the bio yet? Have you nerfed Lycans yet? Have you buffed Wesker yet? Have you fixed the bio yet? Cost/Damage/Cooldown on Gravity Light? Why is Dairing a good card? Have you fixed the bio yet? What is my bio Myr? Did you add Walyn into the game yet? Why don't you ever answer my questions?]],
 	},
 
 	["Themediamogul99"] = {
@@ -2735,7 +2735,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Kitten",
 		["Health"] = 200,
 		["Power"] = 200,
-		["Rarity"] = "Rare",
+		["Rarity"] = "Token",
 		["AttackEffect"] = "Slash",
 		["Color"] = "Red", 
 		["Cost"] = {["Red"] = 1,},
