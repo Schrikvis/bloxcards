@@ -2495,12 +2495,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Bloxikin Horde"] = {
 		["Id"] = 283992827,
 		["Name"] = "Bloxikin Horde",
-		["Health"] = 350,
-		["Power"] = 350,
-		["Rarity"] = "Rare",
+		["Health"] = 300,
+		["Power"] = 300,
+		["Rarity"] = "Epic",
 		["AttackEffect"] = "FurySwipe",
 		["Color"] = "Neutral",
-		["Cost"] = {["Neutral"] = 2,["Red"] = 1,["Yellow"] = 1,["Green"] = 1,["Blue"] = 1,},
+		["Cost"] = {["Neutral"] = 3,["Red"] = 1,["Yellow"] = 1,["Green"] = 1,["Blue"] = 1,},
 		["Effect"] = {
 			Name = "Horde-Caller",
 			Description = "Deal 100 damage to all enemies and lower their power by 100.",
