@@ -328,7 +328,64 @@ local offers = {
 		Hidden = true;
 	};
 	
+	BlueStarter = {
+		Title = "EVENT DECK: Voidcutter"; 
+		SubTitle = "Wield tricks and traps with this cunning blue deck.";
+		PriceInRobux = 10;
+		PriceInBloxBux = 500;
+		Cards = {["KrocoStar"] = 2, ["TinyTank"] = 2, ["Korblox General"] = 4, ["Mike"] = 2, ["FuryBlocks"] = 3, ["Sylrath"] = 3, ["DairingPoopHead"] = 3, ["Korblox Archer"] = 4, ["Stud"] = 2, ["Lord Tethamet"] = 2, ["DrTrayBlox"] = 1, ["VetexGames"] = 1, ["Glaciem Mage"] = 3, ["SharpTH"] = 2, ["Newbie"] = 3,};
+		Packs = {["Thought"] = 2};
+		Ranks = {"Acolyte of the Rift"};
+		SinglePurchase = true;
+		Hidden = true;
+	};
 	
+	RedStarter = {
+		Title = "EVENT DECK: Immolation"; 
+		SubTitle = "Roast anything in your path with this destructive red deck.";
+		PriceInRobux = 10;
+		PriceInBloxBux = 500;
+		Cards = {["RoboticMob"] = 4, ["Mitpaul"] = 3, ["AntiSammeh"] = 3,
+				 ["CoolDude4851"] = 3, ["SomaticMizuSan"] = 4, ["DerptasticDevil"] = 4,
+				 ["Player"] = 1, ["Rad"] = 4, ["FatherChristmaz"] = 4, 
+				 ["Cindering"] = 1, ["Ambamby"] = 4, ["Odin"] = 2, ["74Riley"] = 3};
+		Packs = {["Dominion"] = 2};
+		Ranks = {"Infernal Acolyte"};
+		SinglePurchase = true;
+		Hidden = true;
+	};
+	
+	GreenStarter = {
+		Title = "EVENT DECK: Overgrowth"; 
+		SubTitle = "Grow over your foes with this overwhelming green deck.";
+		PriceInRobux = 10;
+		PriceInBloxBux = 500;
+		Cards = {["Boogerguy123"] = 4, ["DerpDerpyness"] = 3, ["Overseer General"] = 2,
+				 ["Oozlebachr"] = 3, ["Duckywow"] = 3, ["Wustard"] = 2, 
+				 ["Pillager"] = 2, ["Luchador"] = 2, ["KasoduS"] = 1, 
+				 ["PolyHex"] = 1, ["Langz"] = 4, ["Byte"] = 2, 
+				 ["Chef"] = 4, ["Spikle"] = 4, ["Meebling Infestation"] = 3,};
+		Packs = {["Vitality"] = 2};
+		Ranks = {"Necromantic Acolyte"};
+		SinglePurchase = true;
+		Hidden = true;
+	};
+	
+	YellowStarter = {
+		Title = "EVENT DECK: Limitless Speed"; 
+		SubTitle = "Flood the board with this speedy yellow deck.";
+		PriceInRobux = 10;
+		PriceInBloxBux = 500;
+		Cards = {["TheGamer101"] = 1, ["BrackioTops"] = 4, ["Pilot"] = 3,
+				 ["Shamrock Doge"] = 4, ["Finland"] = 4, ["DIY Headphones"] = 2,
+				 ["Guest"] = 4, ["Western Bandit"] = 4, ["Qdhxx"] = 2,
+				 ["animallogic"] = 3, ["Fried Acolyte"] = 3, ["Ejob"] = 1,
+				 ["PEEPSTERS"] = 3, ["Toxic"] = 2};
+		Packs = {["Revel"] = 2};
+		Ranks = {"Fried Acolyte"};
+		SinglePurchase = true;
+		Hidden = true;
+	};
 }
 
 return {Codes = codes; Offers = offers;}

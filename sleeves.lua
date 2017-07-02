@@ -24,7 +24,7 @@ local sleeves = {
 		["Golden"]              = {290876688,  650};
 		["Nemesis"]             = {291243677,  600};
 		["Mosaic"]              = {326642689,  675};
-		["Money"]               = {379765242,  800};
+		["Money"]               = {379765242,  100};
 		["Tickets"]             = {386561334,  650};
 		["Blueprint"]           = {486505302, 1500};
 		["Inkling"]             = {486505300, 2000};
@@ -33,7 +33,7 @@ local sleeves = {
 		["Gentle Giant"]        = {486449213, 1500};
 		["Techno"]              = {486449207,  650};
 		["Arial"]               = {486449185,  800};
-		["Invisible"]           = {0,         3000};
+		["Invisible"]           = {0,         4000};
 		["Clown Spiral"]        = {486449186,  600};
 		["Sleevefinity"]        = {486449155, 1500};
 		["Obvious"]             = {486449131, 1500};
@@ -46,12 +46,12 @@ local sleeves = {
 		["Darkheart"]           = {362532271,  600};
 		["Refused"]             = {656316347,  500};
 		["Pink Lines"]          = {656316251,  500};
-		["Heartman"]            = {656316122,  500};
+		["Heartman"]            = {656316122,  100};
 		--["Hub"]                 = {};
 	};
 
 	Memes = {
-		["DanTDM"]              = {414086400,  400};
+		["DanTDM"]              = {414086400,  100};
 		["GRAND DAD"]           = {486505292, 1335};
 		["Flintstones"]         = {486533671, 1330};
 		["Harambe"]             = {656572214, 1250};
@@ -61,6 +61,11 @@ local sleeves = {
 		["PPAP"]                = {662644965,  800};
 		["Chocolate"]           = {657244077, 1000};
 		["Peanut"]              = {657244171,  700};
+		["FakePlaceHolder"]     = {675456203,  400};
+		["ContentDeleted"]      = {675456229,  1350};
+		["Cow"]                 = {675456703,  1400};
+		["Squidward"]           = {675456873,  700};
+		["Illuminatus"]         = {850398463,  850};
 	};
 
 	Halloween = {
@@ -73,20 +78,23 @@ local sleeves = {
 		["Ghost House"]         = {534131677,  500};
 		["Ghost House 2"]       = {534132135,  500};
 		["Halloween 2016"]      = {534131858,  400};
-		["Darkseed"]            = {559463641,  700};
+		["Darkseed"]            = {559463641,  100};
+		["PsychoVisleaf"]       = {850398436,  2450};
 	};
 
 	CardArt = {
-		["MisterObvious"]       = {486449168,  800};
-		["Egotist"]             = {486449178, 1000};
-		["BlizzardCreeper"]     = {486449200, 1250};
-		["Anacalagon"]          = {486449221, 1500};
-		["Nova"]                = {486449146, 1200};
-		["Paraselene Sage"]     = {574430820, 2700};
-		["Brother's Grotesque"] = {574431847, 1200};
-		["Myrmiredon"]          = {574431712, 1350};
-		["Zanzel"]              = {559461035, 1500};
-		["Papasmurf"]           = {596205593, 1400};
+		["MisterObvious"]       = {486449168, 1800};
+		["Cindering"] 	        = {689606529, 3000};
+		["Egotist"]             = {486449178, 2000};
+		["BlizzardCreeper"]     = {486449200, 2250};
+		["Anacalagon"]          = {486449221, 2500};
+		["Nova"]                = {486449146, 100};
+		["Paraselene Sage"]     = {574430820, 3700};
+		["Brother's Grotesque"] = {574431847, 2200};
+		["Myrmiredon"]          = {574431712, 2350};
+		["Zanzel"]              = {559461035, 2500};
+		["Papasmurf"]           = {596205593, 2400};
+		["UltraObliterator"]    = {675456737, 2000};
 	};
 
 }
