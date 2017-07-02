@@ -3723,7 +3723,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Oz"] = {
-		["Id"] = 285153870,
+		["Id"] = 894248947,
 		["Name"] = "Oz",
 		["Health"] = 650,
 		["Power"] = 500,
@@ -10794,7 +10794,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["ROBLOX"] = {
-		["Id"] = 893415903,
+		["Id"] = 894252975,
 		["Name"] = "ROBLOX",
 		["Health"] = 150,
 		["Power"] = 150,
@@ -17254,7 +17254,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Health"] = 400,
 		["Power"] = 700,
 		["Rarity"] = "Epic",
-		["AttackEffect"] = "SlashDiagonal",
+		["AttackEffect"] = "SlashDiagonal",F
 		["Color"] = "Red",
 		["Cost"] = {["Red"] = 3,["Neutral"] = 1},
 		["Effect"] = {
@@ -17268,7 +17268,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},		
 	
 	["WebGL3D"] = {
-		["Id"] = 557986026,
+		["Id"] = 894237039,
 		["Name"] = "WebGL3D",
 		["Health"] = 550,
 		["Power"] = 500,
