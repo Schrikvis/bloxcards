@@ -124,7 +124,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Meeboid Cultist"] = {
-		["Id"] = 295903316,
+		["Id"] = 893422130,
 		["Name"] = "Meeboid Cultist",
 		["Health"] = 450,
 		["Power"] = 0,
@@ -768,7 +768,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Tarfful"] = {
-		["Id"] = 460452009,
+		["Id"] = 892037872,
 		["Name"] = "Tarfful",
 		["Health"] = 900,
 		["Power"] = 350,
@@ -1612,7 +1612,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Luchador"] = {
-		["Id"] = 275340232,
+		["Id"] = 893418425,
 		["Name"] = "Luchador",
 		["Health"] = 700,
 		["Power"] = 200,
@@ -2508,11 +2508,11 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Bowl of Greed"] = {
-		["Id"] = 283992852,
+		["Id"] = 893417444,
 		["Name"] = "Bowl of Greed",
 		["AltCards"] = {
 			["Bowl of GreedV2"] = {
-				["Id"] = 584441916,
+				["Id"] = 893420099,
 				["AltArt"] = true,
 				["Effect"] = {
 					Name = "MOO!",
@@ -2524,7 +2524,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Bio"] = "BUT WHAT DOES IT DO?",
 			},
 			["Bowl of Greed-Val"] = {
-				["Id"] = 655010991,
+				["Id"] = 893421455,
 				["Name"] = "Bowl of Candy Grams",
 				["Effect"] = {
 					Name = "MOO!",
@@ -3704,7 +3704,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Oozlebachr"] = {
-		["Id"] = 285153791,
+		["Id"] = 892542022,
 		["Name"] = "Oozlebachr",
 		["Health"] = 900,
 		["Power"] = 200,
@@ -5205,7 +5205,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Crossroads"] = {
-		["Id"] = 627367792,
+		["Id"] = 893402889,
 		["Name"] = "Crossroads",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -5248,7 +5248,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},		
 	
 	["Haunted Mansion"] = {
-		["Id"] = 293402624,
+		["Id"] = 893396645,
 		["Name"] = "Haunted Mansion",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -5724,7 +5724,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["KennedyLeDog"] = {
-		["Id"] = 460452207,
+		["Id"] = 892548058,
 		["Name"] = "KennedyLeDog",
 		["Health"] = 500,
 		["Power"] = 200,
@@ -7138,7 +7138,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Toy Truck"] = {
-		["Id"] = 300976057,
+		["Id"] = 893423198,
 		["Name"] = "Toy Truck",
 		["Health"] = 200,
 		["Power"] = 500,
@@ -7487,7 +7487,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Arceusdon",
 		AltCards = {
 			["Arceusdonv2"] = {
-				["Id"] = 540864054,
+				["Id"] = 892041279,
 				["AltArt"] = true,
 				["Bio"] = "o3o .eiD",
 			},
@@ -7897,7 +7897,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Redrune Raider"] = {
-		["Id"] = 323660333,
+		["Id"] = 892055843,
 		["Name"] = "Redrune Raider",
 		["Health"] = 500,
 		["Power"] = 200,
@@ -10667,11 +10667,11 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Dr.Fave"] = {
-		["Id"] = 384005661,
+		["Id"] = 893397432,
 		["Name"] = "Dr.Fave",
 		["AltCards"] = {							
 			["Dr.Fave-Val"] = {
-				["Id"] = 655012818,
+				["Id"] = 893398482,
 				["Name"] = "Love Doctor Fave",						
 				["Bio"] = "Time for a lesson from the LOOOOOVE DOCTOR.",
 			}
@@ -10794,7 +10794,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["ROBLOX"] = {
-		["Id"] = 384006493,
+		["Id"] = 893415903,
 		["Name"] = "ROBLOX",
 		["Health"] = 150,
 		["Power"] = 150,
@@ -10813,11 +10813,11 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["DairingPoopHead"] = {
-		["Id"] = 454691965,
+		["Id"] = 893438922,
 		["Name"] = "Dairingpoophead",
 		["AltCards"] = {
 			["DairingPoopHead-ArtV"] = {
-				["Id"] = 496185557,
+				["Id"] = 893446906,
 				["AltArt"] = true,
 				["Bio"] = "You just dared him. Prepare for hellish dairy.",
 			}
@@ -11448,7 +11448,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},			
 
 	["Saprasam"] = {
-		["Id"] = 384020879,
+		["Id"] = 892044308,
 		["Name"] = "Saprasam",
 		["Health"] = 600,
 		["Power"] = 400,
@@ -11833,7 +11833,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},			
 
 	["Alkalola"] = {
-		["Id"] = 411842041,
+		["Id"] = 891988776,
 		["Name"] = "Alkalola",
 		["Health"] = 1200,
 		["Power"] = 150,
@@ -12902,7 +12902,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Bad Bread"] = {
-		["Id"] = 421954165,
+		["Id"] = 893423897,
 		["Name"] = "Bad Bread",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -14256,7 +14256,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["FabulousMettaton123"] = {
-		["Id"] = 443304594,
+		["Id"] = 892033558,
 		["Name"] = "FabulousMettaton123",
 		["Health"] = 800,
 		["Power"] = 1200,
@@ -14522,7 +14522,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Kmansong2"] = {
-		["Id"] = 470425942,
+		["Id"] = 892044308,
 		["Name"] = "Kmansong2",
 		["Health"] = 700,
 		["Power"] = 700,
@@ -14954,7 +14954,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["One4utwo4me"] = {
-		["Id"] = 430971601,
+		["Id"] = 893399885,
 		["Name"] = "One4utwo4me",
 		["Health"] = 600,
 		["Power"] = 200,
@@ -15539,7 +15539,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Dwarvern Miner"] = {
-		["Id"] = 503535946,
+		["Id"] = 893424622,
 		["Name"] = "Dwarvern Miner",
 		["Health"] = 425,
 		["Power"] = 400,
@@ -16363,7 +16363,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["ReeseMcBlox"] = {
-		["Id"] = 524379919,
+		["Id"] = 892549472,
 		["Name"] = "ReeseMcBlox",
  		["Health"] = 600,
  		["Power"] = 450,
@@ -17064,7 +17064,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},			
 	
 	["Turkey Cannon"] = {
-		["Id"] = 557964179,
+		["Id"] = 891994694,
 		["Name"] = "Turkey Cannon",
 		["Health"] = 0,
 		["Power"] = 0,
