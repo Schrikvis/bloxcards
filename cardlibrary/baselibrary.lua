@@ -14310,8 +14310,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 					Name = "Pyrotechnics",
 					Description = "Put a Cupid's Eye Winglet into your hand. Cupid's Eye Wing Flock enters play locked for one turn.",
 					["Type"] = "OnSummon",
-					["Power"] = {{"Lock",1,},{"Add","Cupid's Eye Winglet","Ally"}},
-					Target = "Archetype",
+					["Power"] = {{"Add","Cupid's Eye Winglet","Ally"},{"Lock",1}},
+					Target = "Self",
 				},
 			["Bio"] = "FLYING CUPID EYES AAAAAAAA.",
 			}
