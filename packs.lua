@@ -175,7 +175,6 @@ local packs = {
 		Cards = {
 			"Histor, Blood Warrior",
 			"superkicker2005",
-			"Kitten",
 			"Shard Master",
 			"Beyondthegong",
 			"Damaging26",
@@ -970,7 +969,6 @@ local packs = {
 			"xiVirtual",
 			"superkicker2005",
 			"Killar1234567",
-			"Kitten",
 			"Shard Master",
 			"EvilJacobthehero2013",
 			"Regular_Talkshow",
