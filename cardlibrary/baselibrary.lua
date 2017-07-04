@@ -2349,7 +2349,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Life Potion",
 		["AltCards"] = {
 			["Eggnog"] = {
-				["Id"] = 585627328,
+				["Id"] = 898725250,
 				["Name"] = "Eggnog",
 				["Bio"] = "But eggnog helps you in the long AND short run.",
 			}
@@ -2413,7 +2413,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["MisterObvious"] = {
 		["Id"] = 280563000,
 		["Name"] = "MisterObvious",
-		["Health"] = 1550,
+		["Health"] = 1000,
 		["Power"] = 500,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Explosion",
@@ -2955,10 +2955,10 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Yellow"] = 1},
 		["Effect"] = {
 			Name = "Purlot",
-			Description = "Increase the health and power of all allied fighters by 100.",
+			Description = "Increase the health and power of all yellow fighters by 100.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Strengthen",100},{"Heal",100}},
-			Target = "Ally",
+			Target = "ColorYellow",
 		},
 		["Bio"] = "I just look like that one cool guy.",
 	},
@@ -3879,7 +3879,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Nature's Gift",
 			Description = "Gain 4 Green Icons.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Green",3}},
+			["Power"] = {{"Green",4}},
 			Target = "Ally",
 		},
 		["Bio"] = "Sleeping voice of nature. Forumer too.",
@@ -4567,7 +4567,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Zombie Cultist"] = {
 		["Id"] = 288041119,
 		["Name"] = "Zombie Cultist",
-		["Health"] = 800,
+		["Health"] = 500,
 		["Power"] = 100,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Punch1",
@@ -5987,6 +5987,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 1,["Red"] = 1,},
+		["Effect"] = {
+			Name = "Double Life",
+			Description = "At the end of your turns, lose 50 Life.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Cost",50}},
+			Target = "Ally",
+		},
 		["Bio"] = "BY THUNDER BE PURGED!",
 	},	
 	
@@ -7567,7 +7574,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Phantom Power",
 			Description = "Whenever you lose life, generate a red and yellow icon.",
-			["Type"] = "OnLifeLoss",
+			["Type"] = "OnHealthLoss",
 			["Power"] = {{"Yellow",1},{"Red",1}},
 			Target = "Ally",
 		},
@@ -8166,9 +8173,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 4,},
 		["Effect"] = {
 			Name = "EzWinz",
-			Description = "Gain 3 yellow icon, but Put 4 nightmares to your hand.",
+			Description = "Gain 5 yellow icon, but put 4 nightmares to your hand.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Yellow",3},{"Add","Nightmare"},{"Add","Nightmare"},{"Add","Nightmare"},{"Add","Nightmare"}},
+			["Power"] = {{"Yellow",5},{"Add","Nightmare"},{"Add","Nightmare"},{"Add","Nightmare"},{"Add","Nightmare"}},
 			Target = "Ally",
 		},
 		["Bio"] = "All dapper artifacts come at a cost....",
@@ -9458,7 +9465,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Grand Meeboid Totem",
 		["AltCards"] = {
 			["meebtotem-ArtV"] = {
-				["Id"] = 411802926,
+				["Id"] = 661049837,
 				["Bio"] = "Silly kids, Surfboards are for Meeboids!",
 			};
 			["Grand Meeboid Totem-Sun"] = {
@@ -10016,7 +10023,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Great Lord Egotist",
 		["AltCards"] = {
 			["Great Lord Egotist-ArtV"] = {
-				["Id"] = 496184301,
+				["Id"] = 898724903,
 				["AltArt"] = true,
 				["Bio"] = [[I am the wild dog watching with sixteen omniscient eyes. Unblinking endless judgment, cast as the patterns rise.]],
 			}
@@ -10107,6 +10114,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["BlizzardCreeper"] = {
 		["Id"] = 616082779,
 		["Name"] = "Blizaki",
+		AltCards = {
+			["Blizaki-ArtV"] = {
+				["Id"] = 898725038,
+				["AltArt"] = true,
+				["Bio"] = "Live or die, you'll be lost.",
+			},
+		},
 		["Health"] = 3000,
 		["Power"] = 500,
 		["Rarity"] = "Legendary",
@@ -10984,7 +10998,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["TheGamer101"] = {
 		["Id"] = 384006017,
 		["Name"] = "TheGamer101",
-		["Health"] = 800,
+		["Health"] = 600,
 		["Power"] = 400,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Lightning",
@@ -11401,7 +11415,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Glitch",
 			Description = "Whenever you summon a fighter, reset ScriptMasTime's power.",
 			["Type"] = "OnAllySummon",
-			["Power"] = {{"SetPower",300}},
+			["Power"] = {{"SetPower",400}},
 			Target = "Self",
 		},
 		["Bio"] = "ScriptMasTime is here, have some bugs and fear!~",
@@ -14466,7 +14480,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Render",
 			Description = "Whenever you lose life, deal 100 damage to all fighters. They gain 100 power.",
-			["Type"] = "OnLifeLoss",
+			["Type"] = "OnHealthLoss",
 			["Power"] = {{"Damage",100},{"Strengthen",100}},
 			Target = "All",
 		},
@@ -16998,8 +17012,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Roblox",
 			Description = "Put a Classic Roblox Gear into both players hands.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"RandomAdd", {"Linked Sword", "Trowel", "Rocket Launcher", "Superball", "Slingshot",}}},
-			Target = "All",
+			["Power"] = {{"RandomAdd", {"Linked Sword", "Trowel", "Rocket Launcher", "Superball", "Slingshot",}},{"RandomAdd", {"Linked Sword", "Trowel", "Rocket Launcher", "Superball", "Slingshot",}, "Opponent"}}},
+			Target = "Ally",
 		},
 		["Bio"] = "He loves games.",
 	},	
@@ -17584,8 +17598,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Frenemy",
 			Description = "Each player puts a nightmare into their hand. 25% chance to replace the nightmare with three random epics.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"RandomAdd", {"Nightmare", "Nightmare", "Nightmare", "Frenemy's Reward"}}},
-			Target = "All",
+			["Power"] = {{"RandomAdd", {"Nightmare", "Nightmare", "Nightmare", "Frenemy's Reward"}},{"RandomAdd", {"Nightmare", "Nightmare", "Nightmare", "Frenemy's Reward"}, "Opponent",}}
+			Target = "Ally",
 		},
 		["Bio"] = "One bengbeng14 coming right up, my dear frenemy. This will cost you your soul, however.",
 	},
@@ -17689,8 +17703,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["WebGL3D"] = {
 		["Id"] = 894237039,
 		["Name"] = "WebGL3D",
-		["Health"] = 550,
-		["Power"] = 500,
+		["Health"] = 400,
+		["Power"] = 400,
 		["Rarity"] = "Rare",
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Slash",
@@ -17709,8 +17723,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["WebGL3D 1"] = {
 		["Id"] = 557986026,
 		["Name"] = "WebGL3D",
-		["Health"] = 550,
-		["Power"] = 500,
+		["Health"] = 400,
+		["Power"] = 400,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Slash",
 		["Color"] = "Green",
@@ -17728,8 +17742,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["WebGL3D 2"] = {
 		["Id"] = 557986026,
 		["Name"] = "WebGL3D",
-		["Health"] = 550,
-		["Power"] = 500,
+		["Health"] = 400,
+		["Power"] = 400,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Slash",
 		["Color"] = "Green",
@@ -17747,8 +17761,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["WebGL3D 3"] = {
 		["Id"] = 557986026,
 		["Name"] = "WebGL3D",
-		["Health"] = 550,
-		["Power"] = 500,
+		["Health"] = 400,
+		["Power"] = 400,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Slash",
 		["Color"] = "Green",
