@@ -3925,7 +3925,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Pixellus"] = {
-		["Id"] = 897244999,
+		["Id"] = 285154068,
 		["Name"] = "Pixellus",
 		["AltCards"] = {
 			["Pixellus-Sun"] = {
