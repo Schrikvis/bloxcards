@@ -438,7 +438,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Pyrotechnics",
 			Description = "7 Charges. At the end of this turn, if you've cast 7 action or terrain spells after this one, deal 1250 damage to the opponent.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Inflict",1250}},{{"Damage",9999,"Self"}}
+			["Power"] = {{"Inflict",1250}},{{"Damage",9999,"Self"}},
 			Target = "Opponent",
 		},
 		["Bio"] = "Grapeshots ruined, Tendrils of Agony depleted. All that is left is the rush.",		
@@ -447,6 +447,13 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Eisenhower, the Alchemist"] = {
 		["Id"] = 662115685,
 		["Name"] = "Eisenhower, the Alchemist",
+		["AltCards"] = {
+			["Eisenhower-Sun"] = {
+				["Id"] = 897236455,
+				["Name"] = "Eisenhower, the President",
+				["Bio"] = "I will take as much time as needed to legalise necromancy.",
+			},
+		},
 		["Health"] = 4000,
 		["Power"] = 0,
 		["Rarity"] = "Legendary",
@@ -459,7 +466,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"EndTurn",1}},
 			Target = "Opponent",
 		},
-		["Bio"] = "All it takes to go from student to archnemesis is a dead spouse.",		
+		["Bio"] = "I will take as much time as needed to avenge my love.",		
 	},
 	
 	["Haunted Overseer Armor"] = {
@@ -2464,7 +2471,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Eisenhower, the Alchemist"] = {
 		["Id"] = 662115685,
 		["Name"] = "Eisenhower, the Alchemist",
-		["Health"] = 4000,
+		["Health"] = 4025,
 		["Power"] = 0,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Dash",
@@ -2998,8 +3005,14 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Hallow, the Sugarlord"] = {
 		["Id"] = 540076365,
 		["Name"] = "Hallow, the Sugarlord",
-		["Health"] = 100,
-		["Power"] = 100,
+		["AltCards"] = {
+			["Hallow, the Sugarlord-Sun"] = {
+				["Id"] = 897238293,
+				["Bio"] = "Sometimes, the lord of Halloween just needs to take a break. Those times are every Monday.",
+			};
+		},	
+		["Health"] = 700,
+		["Power"] = 0,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Yellow", 

@@ -872,6 +872,13 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["DominiusConfabricor"] = {
 		["Id"] = 645386479,
 		["Name"] = "DominiusConfabricor",
+		["AltCards"] = {
+			["DominiusConfabricor-Sun"] = {
+				["Id"] = 897236455,
+				["Name"] = "DominiusConfabricor",
+				["Bio"] = "...But perhaps love yourself even more.",
+			},
+		},
 		["Health"] = 700,
 		["Power"] = 100,
 		["Rarity"] = "Uncommon",
@@ -1218,7 +1225,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Bleeding Reality",
-			Description = "Summon only if you control 3 or more Ultras. Deal 400 damage to a target fighter, then end the turn.@",
+			Description = "Summon only if you control 3 or more Ultras. Deal 400 damage to a target fighter, then end the turn.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",400,"Single"},{"EndTurn",1}},
 			Target = "Ally",
@@ -1521,6 +1528,19 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["MarissaKitty04"] = {
 		["Id"] = 689606519,
 		["Name"] = "MarissaKitty04",
+		["AltCards"] = {
+			["MarissaKitty04-Sun"] = {
+				["Id"] = 897248023,
+				["Bio"] = "Not all events are equal. Summer better than others.",
+				["Effect"] = {
+					Name = "Reincarnation",
+					Description = "Summon a lattice of red crystals, each with different effects. Crystals don't generate icons.",
+					["Type"] = "OnSummon",
+					["Power"] = {{"Summon","Crystal of Power's Exploit-Sun"},{"Summon","Crystal of Ambition's End-Sun"},{"Summon","Crystal of Death's Vengence-Sun"},{"Add","Targeting Blip"}},
+					Target = "Ally",
+				},
+			}
+		},
 		["Health"] = 400,
 		["Power"] = 400,
 		["Rarity"] = "Uncommon",
@@ -1540,6 +1560,13 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Crystal of Power's Exploit"] = {
 		["Id"] = 689606510,
 		["Name"] = "Crystal of Power's Exploit",
+		["AltCards"] = {
+			["Crystal of Power's Exploit-Sun"] = {
+				["Name"] = "Shell of Seas",
+				["Id"] = 897245094,
+				["Bio"] = "Marissa markets many molluscs. Say that five times fast.",
+			}
+		},
 		["Health"] = 25,
 		["Power"] = 0,
 		["Rarity"] = "Token",
@@ -1559,8 +1586,15 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Crystal of Ambition's End"] = {
-		["Id"] = 689606490,
-		["Name"] = "Crystal of Ambition's End",
+		["Name"] = "Ambition's End",
+		["Id"] = 897235450,
+		["AltCards"] = {
+			["Crystal of Ambition's End-Sun"] = {
+				["Name"] = "Castle of Coarseness",
+				["Id"] = 897248023,
+				["Bio"] = "lololololololol prequels XD",
+			}
+		},
 		["Health"] = 25,
 		["Power"] = 0,
 		["Rarity"] = "Token",
@@ -1582,6 +1616,13 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Crystal of Death's Vengence"] = {
 		["Id"] = 689606434,
 		["Name"] = "Crystal of Death's Vengence",
+		["AltCards"] = {
+			["Crystal of Death's Vengence-Sun"] = {
+				["Name"] = "Ball of Beaches",
+				["Id"] = 897236310,
+				["Bio"] = "Are you on the ball? Get on the ball!",
+			}
+		},
 		["Health"] = 25,
 		["Power"] = 0,
 		["Rarity"] = "Token",
@@ -1895,6 +1936,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Punchkick",
 		["Color"] = "Blue", 
+		["Archetype"] = "Nightmare",
 		["Cost"] = {["Neutral"] = 1, ["Blue"] = 2,},
 		["Effect"] = {
 			Name = "befriending of scaly mutts",
@@ -2017,6 +2059,20 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Satyr Firemaster"] = {
 		["Id"] = 714689069,
 		["Name"] = "Satyr Firemaster",
+		["AltCards"] = {
+			["Satyr Firemaster-Sun"] = {
+				["Name"] = "Satyr Firedancer",
+				["Id"] = 897246787,
+				["Bio"] = "Burny the Satyr says: Only YOU can start forest fires!",
+				["Effect"] = {
+					Name = "befriending of scaly mutts",
+					Description = "At the end of your turns, deal 100 damage to the opponent, then put a copy of Satyr Firemaster into play. You lose all of your red icons.",
+					["Type"] = "OnEnd",
+					["Power"] = {{"SetBlue",0},{"Summon","Satyr Firemaster-Sun"},{"Inflict",100,"Opponent"}},
+					Target = "Ally",
+				},
+			}
+		},
 		["Health"] = 350,
 		["Power"] = 350,
 		["Rarity"] = "Rare",
@@ -2068,7 +2124,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "befriending of scaly mutts",
 			Description = "Summon six random fighters. Trigger their effects, then lose all green icons, then end the turn.",
-			["Type"] = "OnySummon",
+			["Type"] = "OnSummon",
 			["Power"] = {{"RandomSummonWithEffect","Any","Ally"},{"RandomSummonWithEffect","Any","Ally"},{"RandomSummonWithEffect","Any","Ally"},{"RandomSummonWithEffect","Any","Ally"},{"RandomSummonWithEffect","Any","Ally"},{"RandomSummonWithEffect","Any","Ally"},{"SetGreen",0},{"EndTurn",1}},
 			Target = "Ally",
 		},
@@ -2215,7 +2271,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Strengthen",100}},
 			Target = "Self",
 		},
-		["Bio"] = [[I do not hate the doges. I merely pity them.]],
+		["Bio"] = [[Awaken, my masters in chat!]],
 	},
 
 	["iamlogic"] = {
@@ -2278,8 +2334,8 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["BenCanova1"] = {
 		["Id"] = 785620731,
 		["Name"] = "BenCanova1",
-		["Health"] = 500,
-		["Power"] = 500,
+		["Health"] = 550,
+		["Power"] = 550,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Punchkick",
 		["Color"] = "Red", 
@@ -2288,7 +2344,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Life fam",
 			Description = "Haste.",
-			["Type"] = "OnHeathGain",
+			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",0}},
 			Target = "All",
 		},
@@ -2393,7 +2449,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Unlock",9999},{"Lock",1}},
 			Target = "Ally",
 		},
-		["Bio"] = [[You and me and everything about us. Yours and mine and everything around us.]],
+		["Bio"] = [[Hey, Myr? Have you fixed the bio yet? Have you nerfed Blue yet? Have you buffed Tweety yet? Have you fixed the bio yet? Cost/Damage/Cooldown on Gravity Light? Why is Dairing a good card? Have you fixed the bio yet? Did you add Walyn into the game yet? What is my bio Myr?]],
 	},
 
 	["Themediamogul99"] = {
@@ -2518,7 +2574,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 785856699,
 		["Name"] = "Roundawsome",
 		["Health"] = 750,
-		["Power"] = 0,
+		["Power"] = 200,
 		["Rarity"] = "Rare",
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Punchkick",
@@ -2558,7 +2614,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 785856699,
 		["Name"] = "Roundawsome",
 		["Health"] = 750,
-		["Power"] = 0,
+		["Power"] = 200,
 		["Rarity"] = "Token",
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Punchkick",
@@ -2566,7 +2622,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 4,},
 		["Effect"] = {
 			Name = "Life fam",
-			Description = "2 charges. When summoned, deal 150 damage to all players. When targeted, remove a charge, reset its stats, and return this card to your hand.",
+			Description = "2 charges. When summoned, deal 150 damage to all enemy fighters. When targeted, remove a charge, reset its stats, and return this card to your hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",150,"Opponent"},{"Summon","Round4"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -2586,7 +2642,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 4,},
 		["Effect"] = {
 			Name = "Life fam",
-			Description = "2 charges. When summoned, deal 150 damage to all players. When targeted, remove a charge, reset its stats, and return this card to your hand.",
+			Description = "2 charges. When summoned, deal 150 damage to enemy fighters. When targeted, remove a charge, reset its stats, and return this card to your hand.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Add","Round5"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -2598,7 +2654,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 785856699,
 		["Name"] = "Roundawsome",
 		["Health"] = 750,
-		["Power"] = 0,
+		["Power"] = 200,
 		["Rarity"] = "Token",
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Punchkick",
@@ -2606,7 +2662,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 4,},
 		["Effect"] = {
 			Name = "Life fam",
-			Description = "1 charge. When summoned, deal 150 damage to all players. When targeted, remove a charge, reset its stats, and return this card to your hand.",
+			Description = "1 charge. When summoned, deal 150 damage to enemy fighters. When targeted, remove a charge, reset its stats, and return this card to your hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",150,"Opponent"},{"Summon","Round6"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -2626,7 +2682,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 4,},
 		["Effect"] = {
 			Name = "Life fam",
-			Description = "1 charge. When summoned, deal 150 damage to all players. When targeted, remove a charge, reset its stats, and return this card to your hand.",
+			Description = "1 charge. When summoned, deal 150 damage to enemy fighters. When targeted, remove a charge, reset its stats, and return this card to your hand.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Add","Round7"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -2638,7 +2694,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 785856699,
 		["Name"] = "Roundawsome",
 		["Health"] = 750,
-		["Power"] = 0,
+		["Power"] = 200,
 		["Rarity"] = "Token",
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Punchkick",
@@ -2646,7 +2702,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 4,},
 		["Effect"] = {
 			Name = "Life fam",
-			Description = "When summoned, deal 150 damage to all players.",
+			Description = "When summoned, deal 150 damage to enemy fighters.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",150,"Opponent"}},
 			Target = "Ally",
@@ -2735,7 +2791,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Kitten",
 		["Health"] = 200,
 		["Power"] = 200,
-		["Rarity"] = "Rare",
+		["Rarity"] = "Token",
 		["AttackEffect"] = "Slash",
 		["Color"] = "Red", 
 		["Cost"] = {["Red"] = 1,},
@@ -2761,7 +2817,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3, ["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Life fam",
-			Description = "When this cards is attacked and survives, set it's health to 500.",
+			Description = "When this cards is attacked and survives, set its health to 500.",
 			["Type"] = "OnAttacked",
 			["Power"] = {{"SetHealth",500}},
 			Target = "Self",
@@ -2835,6 +2891,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Health"] = 1000,
 		["Power"] = 0,
 		["Rarity"] = "Rare",
+		["Archetype"] = "Hero",
 		["AttackEffect"] = "PunchKick",
 		["Color"] = "Green", 		
 		["Cost"] = {["Neutral"] = 3, ["Green"] = 1,},
@@ -2854,12 +2911,13 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Health"] = 650,
 		["Power"] = 650,
 		["Rarity"] = "Rare",
+		["Archetype"] = "Hero",
 		["AttackEffect"] = "PunchKick",
 		["Color"] = "Red", 		
 		["Cost"] = {["Neutral"] = 3, ["Red"] = 7,},
 		["Effect"] = {
 			Name = "Life fam",
-			Description = "Whenever an enemy fighter dies, Histor gains 200 health and power, but drains 200 life from you.",
+			Description = "Whenever an enemy fighter dies, Histor gains 200 health and power. You lose 200 life.",
 			["Type"] = "OnEnemyDeath",
 			["Power"] = {{"Cost",200,"Ally"},{"Heal",200},{"Strengthen",200}},
 			Target = "Self",

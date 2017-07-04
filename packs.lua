@@ -1603,8 +1603,58 @@ local packs = {
 			"Evil Prince-Val",
 			"SoulSearch-Val",
 		},
+		
+		Name = "Summer Salt", --SUMMER!
+		PriceInBloxBux = 1000;
+		PriceInRobux = 0;
+		CardsInPack = 4,
+		CardPackId = 654911255,
+		Description = "",
+		WinRequirement = 10;
+		DateConstraint = {
+			month = {7};
+		};
+		Cards = {
+			"Ambamby-Sun",
+			"AntiSammeh-Sun",
+			"AVote-Sun",
+			"Heavy Rain-Sun",
+			"DominiusConfabricor-Sun",
+			"Eisenhower-Sun",
+			"Guest-Sun",
+			"Fenrier-Sun",
+			"Froot Ninja-Sun",
+			"GemInNight-Sun",
+			"Grand Meeboid Totem-Sun",
+			"Grand Pirate King-Sun",
+			"Hallow, the Sugarlord-Sun",
+			"Haunted Mansion-Sun",
+			"HuntarioRBLX-Sun",
+			"Jeptem-Sun",
+			"Jimminus-Sun",
+			"Lady Rednight-Sun",
+			"Latchie-Sun",
+			"LeetWizard-Sun",
+			"Luck o The Lobsters-Sun",
+			"Meebling Infestation-Sun",
+			"Meebling King-Sun",
+			"Meeboid-Sun",
+			"Meeboid Champion-Sun",
+			"Mitpaul-Sun",
+			"Oozlebachr-Sun",
+			"Pixellus-Sun",
+			"RachelDubs-Sun",
+			"Satyr Firemaster-Sun",
+			"Surfskateer-Sun",
+			"Spooky Caverns-Sun",
+			"Valletta-Sun",
+			"Weaven-Sun",
+			"Widgeon-Sun",
+		},
 	};
 	
 }
 
 return packs
+
+		

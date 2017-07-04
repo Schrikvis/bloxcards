@@ -2,6 +2,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Froot Ninja"] = {
 		["Id"] = 263342944,
 		["Name"] = "Froot Ninja",
+		["AltCards"] = {
+			["Froot Ninja-Sun"] = {
+				["Id"] =  897237327,
+				["Name"] = "Froot Smoothie Ninja",
+				["Bio"] = "Froot smoothies for sale! Made with ingredients fresh from the floor of an ancient ninja dojo!",
+			},
+		},
 		["Health"] = 250,
 		["Power"] = 200,
 		["Rarity"] = "Uncommon",
@@ -97,7 +104,14 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	
 	["Meeboid"] = {
 		["Id"] = 263664744,
-		["Name"] = "Meeboid",	
+		["Name"] = "Meeboid",
+		["AltCards"] = {
+			["Meeboid-Sun"] = {
+				["Name"] = "Meeboid",
+				["Id"] = 897244235,
+				["Bio"] = "Just be thankful it's not a weeboid.",
+			}
+		},	
 		["Health"] = 600,
 		["Power"] = 0,
 		["Rarity"] = "Common",
@@ -118,6 +132,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Meeboid Cultist"] = {
 		["Id"] = 893422130,
 		["Name"] = "Meeboid Cultist",
+		["AltCards"] = {
+			["Meeboid Surfer-Sun"] = {
+				["Name"] = "Meeboid Surfer",
+				["Id"] =  897803090,
+				["Bio"] = "Merp’s up, dudes!",
+			}
+		},
 		["Health"] = 450,
 		["Power"] = 0,
 		["Rarity"] = "Uncommon",
@@ -138,6 +159,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Meebling"] = {
 		["Id"] = 295903310,
 		["Name"] = "Meebling",
+		["AltCards"] = {
+			["Meebling-Sun"] = {
+				["Id"] = 897243957,
+				["Bio"] = "Meeblings are composed of 90% raw cuteness and 10% goof. This means that your average Meeboid weighs over five hundred tons.",
+			}
+		},
 		["Health"] = 150,
 		["Power"] = 0,
 		["Rarity"] = "Uncommon",
@@ -158,6 +185,20 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Meeboid King"] = {
 		["Id"] = 295903322,
 		["Name"] = "Meeboid King",
+		["AltCards"] = {
+			["Meeboid Champion-Sun"] = {
+				["Name"] = "Meeboid King",
+				["Id"] = 897244133,
+				["Bio"] = "Meep and Moop went up the mewp to morp a merp of water. Meep fell down and merped his merp and Moop came meeping after.",
+				["Effect"] = {
+					Name = "Build Up",
+					Description = "Summon 2 Meeboid Surfers.",
+					["Type"] = "OnSummon",
+					["Power"] = {{"Summon","Meeboid Cultist-Sun"},{"Summon","Meeboid Cultist-Sun"}},
+					Target = "Ally",
+				},
+			},
+		},	
 		["Health"] = 700,
 		["Power"] = 0,
 		["Rarity"] = "Rare",
@@ -178,6 +219,20 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Meebling Infestation"] = {
 		["Id"] = 295903319,
 		["Name"] = "Meebling Infestation",
+		["AltCards"] = {
+			["Meebling Infestation-Sun"] = {
+				["Name"] = "Meebling Infestation",
+				["Id"] = 897243750,
+				["Bio"] = "Dairing thought they were cute. They were. Dairing thought they were harmless. They were. Dairing thought they were annoying. They really, really were.",
+				["Effect"] = {
+					Name = "Meebling Infestation",
+					Description = "Lower the power of a target fighter by 600 and summon a Meebling.",
+					["Type"] = "OnSummon",
+					["Power"] = {{"Weaken",600},{"Summon","Meebling-Sun","Ally"}},
+					Target = "Single",
+				},
+			},
+		},
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Uncommon",
@@ -198,6 +253,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Titano's Fist of Agony"] = {
 		["Id"] = 616082641,
 		["Name"] = "Titano's Fist of Agony",
+		["AltCards"] = {
+			["TitanoAgony-Sun"] = {
+				["Id"] = 897247036,
+				["Bio"] = "The floor is Meepcity.",
+			}
+		},
 		["Health"] = 500,
 		["Power"] = 500,
 		["Rarity"] = "Token",
@@ -221,6 +282,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Titano's Half of Despair"] = {
 		["Id"] = 326995717,
 		["Name"] = "Titano's Half of Despair",
+		["AltCards"] = {
+			["TitanoDespair-Sun"] = {
+				["Id"] = 897238058,
+				["Bio"] = "The floor is Meepcity.",
+			}
+		},
 		["Health"] = 1000,
 		["Power"] = 0,
 		["Rarity"] = "Token",
@@ -242,6 +309,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Titano's Half of Immortality"] = {
 		["Id"] = 295903351,
 		["Name"] = "Titano's Half of Immortality",
+		["AltCards"] = {
+			["TitanoImmortality-Sun"] = {
+				["Name"] = "Kraken's Half of Immortality",
+				["Id"] = 897238183,
+				["Bio"] = "Hey, Despair, do you think the players'll notice I'm just you but flipped?",
+			}
+		},
 		["Health"] = 1000,
 		["Power"] = 0,
 		["Rarity"] = "Token",
@@ -264,6 +338,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Titano's Fist of Soul"] = {
 		["Id"] = 616082561,
 		["Name"] = "Titano's Fist of Soul",
+		["AltCards"] = {
+			["TitanoSoul-Sun"] = {
+				["Name"] = "Kraken's Tentacle of Soul",
+				["Id"] = 897247143,
+				["Bio"] = "We're not in Japan, Agony. We can't get away with that!",
+			}
+		},
 		["Health"] = 500,
 		["Power"] = 500,
 		["Rarity"] = "Token",
@@ -287,6 +368,20 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Summon! Meeboid Titano!"] = {
 		["Id"] = 295903387,
 		["Name"] = "Summon! Meeboid Titano!",
+		["Effect"] = {
+			Name = "Build Up",
+			Description = "Deal 4000 damage to all fighters, then summon Titano.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Damage",4000,"All"},{"Summon","TitanoAgony-Sun"},{"Summon","TitanoDespair-Sun"},{"Summon","TitanoImmortality-Sun"},{"Summon","TitanoSoul-Sun"}},
+			Target = "Ally",
+		},
+		["AltCards"] = {
+			["Titano-Sun"] = {
+				["Name"] = "Summon! Meeboid Kraken!",
+				["Id"] = 897247260,
+				["Bio"] = "Kraken open a cold one with the-- Oh crud, they’re all dead.",
+			}
+		},
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Legendary",
@@ -648,6 +743,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Ambamby"] = {
 		["Id"] = 266032038,
 		["Name"] = "Ambamby",
+		["AltCards"] = {
+			["Ambamby-Sun"] = {
+				["Id"] =  897235350,
+				["Bio"] = "Ambamby doesn’t have any clothes, so she’s not allowed in the water. Walrus attacks are serious business, you know?",
+			},
+		},
 		["Power"] = 350,
 		["Health"] = 150,
 		["Rarity"] = "Common",
@@ -1089,6 +1190,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Latchie"] = {
 		["Id"] = 271751781,
 		["Name"] = "Latchie",
+		["AltCards"] = {
+			["Latchie-Sun"] = {
+				["Id"] =  897242856,
+				["Bio"] = "A healthy breakfast to get you through the day consists of eggs, bacon, toast, and twenty cups of pirate juice.",
+			},
+		},
 		["Health"] = 550,
 		["Power"] = 450,
 		["Rarity"] = "Uncommon",
@@ -1319,6 +1426,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Valletta"] = {
 		["Id"] = 271752925,
 		["Name"] = "Valletta",
+		["AltCards"] = {
+			["Valletta-Sun"] = {
+				["Id"] = 897247645,
+				["Bio"] = "I can’t reach that damn cup. SERVANTS!",
+			}
+		},
 		["Health"] = 775,
 		["Power"] = 500,
 		["Rarity"] = "Uncommon",
@@ -1576,6 +1689,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["GemInNight"] = {
 		["Id"] = 275340181,
 		["Name"] = "GemInNight",
+		["AltCards"] = {
+			["GemInNight-Sun"] = {
+				["Id"] =  897237601,
+				["Name"] = "GemInNight",
+				["Bio"] = "Actually, I’m a Leo...",
+			},
+		},
 		["Health"] = 900,
 		["Power"] = 400,
 		["Rarity"] = "Uncommon",
@@ -1803,6 +1923,21 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Snowskateer"] = {
 		["Id"] = 295647303,
 		["Name"] = "Snowskateer",
+		["AltCards"] = {
+			["Snowskateer-Sun"] = {
+				["Name"] = "Surfskateer",
+				["Id"] = 897246913,
+				["Bio"] = "I watched a snail crawl along the edge of a straight razor. That's my dream; that's my nightmare. Crawling, slithering, along the edge of a straight razor... and surviving.",
+				["Effect"] = {
+					Name = "Assimilate",
+					Description = "Summon a Froot Smoothie Ninja. Surfskateer can't generate icons.",
+					["Type"] = "OnSummon",
+					["Power"] = "Summon",
+					Target = "Ally",
+					Increase = "Froot Ninja-Sun",
+				},
+			},
+		},
 		["Health"] = 300,
 		["Power"] = 300,
 		["Rarity"] = "Uncommon",
@@ -2455,6 +2590,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["AntiSammeh"] = {
 		["Id"] = 283992421,
 		["Name"] = "AntiSammeh",
+		["AltCards"] = {
+			["AntiSammeh-Sun"] = {
+				["Id"] = 897235725,
+				["Bio"] = "AntiSammeh is a guardian of the sand and nemesis of Poseidon.",
+			},
+		},
 		["Health"] = 350,
 		["Power"] = 500,
 		["Rarity"] = "Uncommon",
@@ -3721,6 +3862,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Oozlebachr"] = {
 		["Id"] = 892542022,
 		["Name"] = "Oozlebachr",
+		["AltCards"] = {
+			["Oozlebachr-Sun"] = {
+				["Name"] = "Oozlebachr",
+				["Id"] = 897244902,
+				["Bio"] = "She doesn’t work here. She’s smiling ‘cause she’s stealing.",
+			}
+		},
 		["Health"] = 900,
 		["Power"] = 200,
 		["Rarity"] = "Uncommon",
@@ -3779,6 +3927,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Pixellus"] = {
 		["Id"] = 285154068,
 		["Name"] = "Pixellus",
+		["AltCards"] = {
+			["Pixellus-Sun"] = {
+				["Id"] = 897244999,
+				["Bio"] = "When the editors suggested I go on vacation, This wasn’t what I had in mind.",
+			}
+		},
 		["Health"] = 550,
 		["Power"] = 550,
 		["Rarity"] = "Uncommon",
@@ -4300,6 +4454,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Mitpaul"] = {
 		["Id"] = 288040884,
 		["Name"] = "Mitpaul",
+		["AltCards"] = {
+			["Mitpaul-Sun"] = {
+				["Name"] = "Mitpaul",
+				["Id"] = 897244522,
+				["Bio"] = "OH MY GOD WHY DID I BRING MY PANTS INTO THIS POOL THE WALRUS WI-",
+			}
+		},
 		["Health"] = 500,
 		["Power"] = 600,
 		["Rarity"] = "Uncommon",
@@ -5276,6 +5437,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Haunted Mansion"] = {
 		["Id"] = 893396645,
 		["Name"] = "Haunted Mansion",
+		["AltCards"] = {
+			["Haunted Mansion-Sun"] = {
+				["Id"] = 897238400,
+				["Bio"] = "*-aws Theme Plays-",
+			};
+		},	
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Rare",
@@ -5554,18 +5721,11 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 294319313,
 		["Name"] = "ShyLightness",
 		["Health"] = 750,
-		["Power"] = 550,
+		["Power"] = 600,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Blue",
 		["Cost"] = {["Blue"] = 4,},
-		["Effect"] = {
-			Name = "Blow Dart",
-			Description = "When this card destroys another, you gain 300 life.",
-			["Type"] = "OnDestroy",
-			["Power"] = {{"Cost",-300}},
-			Target = "Ally",
-		},
 		["Bio"] = "Hovering skull doesn't scare you? Maybe my skill will.",
 	},	
 	
@@ -6190,6 +6350,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Titano's Cavern"] = {
 		["Id"] = 688093581,
 		["Name"] = "Spooky Caverns",
+		["AltCards"] = {
+			["Spooky Caverns-Sun"] = {
+				["Name"] = "Underwater Caverns",
+				["Id"] = 897247423,
+				["Bio"] = "-Jaws theme plays-",
+			}
+		},
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Common",
@@ -6303,6 +6470,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["AVote"] = {
 		["Id"] = 497549464,
 		["Name"] = "AVote",
+		["AltCards"] = {
+			["AVote-Sun"] = {
+				["Id"] = 897235915,
+				["Bio"] = "Whatever AVfloats your AVboat.",
+			}
+		},
 		["Health"] = 400,
 		["Power"] = 400,
 		["Rarity"] = "Rare",
@@ -6339,9 +6512,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Booting",
-			Description = "Set the lock on all allied fighters to 1. Reveal your opponent's hand.",
+			Description = "Set the lock on all allied fighters to 2. Reveal your opponent's hand.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Unlock",9999},{"Lock",1},{"RevealHand",1,"Opponent"}},
+			["Power"] = {{"Unlock",9999},{"Lock",2},{"RevealHand",1,"Opponent"}},
 			Target = "Ally",
 		},
 		["Bio"] = "This robotic cat is basically the mascot of 'The robots'. Don't worry, you won't be in the darkness when you're with it.",
@@ -6560,6 +6733,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Guest"] = {
 		["Id"] = 298793016,
 		["Name"] = "Guest",
+		["AltCards"] = {
+			["Guest-Sun"] = {
+				["Id"] = 897236954,
+				["Name"] = "Female Guest",
+				["Bio"] = "Wanna share this popsicle?",
+			},
+		},
 		["Health"] = 100,
 		["Power"] = 400,
 		["Rarity"] = "Common",
@@ -6644,6 +6824,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Lady RedNight"] = {
 		["Id"] = 298793120,
 		["Name"] = "Lady RedNight",
+		["AltCards"] = {
+			["Lady RedNight-Sun"] = {
+				["Id"] =  897242736,
+				["Bio"] = " Lady Red, White, and BlueNight. Green too, but we didn’t have the budget for Yellow.",
+			},
+		},
 		["Archetype"] = "Saprasam",
 		["Health"] = 700,
 		["Power"] = 500,
@@ -6678,6 +6864,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Luck o The Lobsters"] = {
 		["Id"] = 298793222,
 		["Name"] = "Luck o' the Lobsters",
+		["AltCards"] = {
+			["Luck o The Lobsters-Sun"] = {
+				["Name"] = "Luck o' the Lobsters",
+				["Id"] = 897243462,
+				["Bio"] = "Hey, Chef? Can I copy your homework? Yeah, be sure to change it up a bit so it doesn’t look obvious that you copied.",
+			}
+		},
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Epic",
@@ -7528,6 +7721,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Jeptem"] = {
 		["Id"] = 452976028,
 		["Name"] = "Jeptem",
+		["AltCards"] = {
+			["Jeptem-Sun"] = {
+				["Id"] =  897238773,
+				["Bio"] = "Jeptem will save only the worthy meeboids.",
+			},
+		},
 		["Health"] = 800,
 		["Power"] = 0,
 		["Rarity"] = "Rare",
@@ -7809,6 +8008,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Heavy Rain"] = {
 		["Id"] = 633130647,
 		["Name"] = "Heavy Rain",
+		["AltCards"] = {
+			["Heavy Rain-Sun"] = {
+				["Id"] =  897236117,
+				["Bio"] = "Everyday, Brits are suffering from rain and floods in their BLOODY SUMMER. With your help, we can help rehabilitate these people to their proper leisure.",
+			},
+		},
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Uncommon",
@@ -7907,6 +8112,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Weaven"] = {
 		["Id"] = 712738278,
 		["Name"] = "Weaven",
+		["AltCards"] = {
+			["Weaven-Sun"] = {
+				["Id"] = 897247848,
+				["Bio"] = "I just created a massive vortex. Time for a selfie.",
+			}
+		},
 		["Health"] = 300,
 		["Power"] = 300,
 		["Rarity"] = "Rare",
@@ -9009,6 +9220,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["LeetWizard"] = {
 		["Id"] = 335687451,
 		["Name"] = "LeetWizard",
+		["AltCards"] = {
+			["LeetWizard-Sun"] = {
+				["Id"] =  897242956,
+				["Bio"] = "Falling out of a boat… WITH STYLE.",
+			},
+		},
 		["Health"] = 500,
 		["Power"] = 300,
 		["Rarity"] = "Epic",
@@ -9244,6 +9461,10 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 411802926,
 				["Bio"] = "Silly kids, Surfboards are for Meeboids!",
 			};
+			["Grand Meeboid Totem-Sun"] = {
+				["Id"] = 897238058,
+				["Bio"] = "Are they worshipping Cthulhu, or praying for good weather? Who knows!? All they can say is ‘meep’ and ‘moop.’",
+			};
 		},
 		["Health"] = 700,
 		["Power"] = 0,
@@ -9265,6 +9486,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Grand Pirate King"] = {
 		["Id"] = 336411295,
 		["Name"] = "Grand Pirate King",
+		["AltCards"] = {
+			["Grand Pirate King-Sun"] = {
+				["Id"] = 897237873,
+				["Bio"] = "You get a cannon! And YOU get a cannon! Everybody gets a cannon!",
+			};
+		},	
 		["Health"] = 500,
 		["Power"] = 500,
 		["Rarity"] = "Rare",
@@ -10776,6 +11003,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Widgeon"] = {
 		["Id"] = 384006155,
 		["Name"] = "Widgeon",
+		["AltCards"] = {
+			["Widgeon-Sun"] = {
+				["Id"] = 897248023,
+				["Bio"] = "The floor is Meepcity.",
+			}
+		},
 		["Health"] = 700,
 		["Power"] = 225,
 		["Rarity"] = "Epic",
@@ -11606,6 +11839,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["RachelDubs"] = {
 		["Id"] = 411859030,
 		["Name"] = "RachelDubs",
+		["AltCards"] = {
+			["RachelDubs-Sun"] = {
+				["Id"] = 897245216,
+				["Bio"] = "IcyTea, make me an alt art now!",
+			}
+		},
 		["Health"] = 500,
 		["Power"] = 600,
 		["Rarity"] = "Epic",
@@ -11780,7 +12019,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Flufflefunz"] = {
 		["Id"] = 411809066,
 		["Name"] = "Flufflefunz",
-		["Health"] = 1100,
+		["Health"] = 800,
 		["Power"] = 250,
 		["Rarity"] = "Rare",
 		["Archetype"] = "Hero",
@@ -11789,11 +12028,10 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = [[Put a Targeting Blip to your hand at the end of each turn. Targeting Blips are used to trigger Target Effects.]],
-			["Type"] = "OnEnd",
-			["Power"] = "Add",
-			Target = "Ally",
-			Increase = "Targeting Blip",
+			Description = [[Whenever Flufflefunz is targeted, it gains 100 power. If it was targeted by a creature, that creature gains 100 power too.]],
+			["Type"] = "OnTarget",
+			["Power"] = {{"Strengthen",100},{"Strengthen",100,"Aggressor"}},
+			Target = "Self",
 		},
 		["Bio"] = "TWO TUFF FOR MEH!?",
 	},			
@@ -13790,6 +14028,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Meeboid Champion"] = {
 		["Id"] = 430962609,
 		["Name"] = "Meeboid Champion",
+		["AltCards"] = {
+			["Meeboid Champion-Sun"] = {
+				["Name"] = "Meeboid Swim Champion",
+				["Id"] = 897244325,
+				["Bio"] = "Have you ever overworked yourself so hard that you killed all your friends and family?",
+			}
+		},	
 		["Health"] = 700,
 		["Power"] = 600,
 		["Rarity"] = "Uncommon",
@@ -13851,6 +14096,14 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Erik.Cassel"] = {
 		["Id"] = 433134104,
 		["Name"] = "Erik.Cassel",
+		["AltCards"] = {
+			["Erik.Cassel-ArtV"] = {
+				["Id"] = 897236781,
+				["AltArt"] = true,
+				["Name"] = "Erik.Cassel",
+				["Bio"] = "The warmth of Summer is not sweet without bitter Winter.",
+			},
+		},
 		["Health"] = 850,
 		["Power"] = 200,
 		["Rarity"] = "Legendary",
@@ -13954,6 +14207,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["HuntarioRBLX"] = {
 		["Id"] = 441918826,
 		["Name"] = "HuntarioRBLX",
+		["AltCards"] = {
+			["HuntarioRBLX-Sun"] = {
+				["Id"] =  897238547,
+				["Bio"] = "What even is a knot? Why are we measuring ship speeds using interwoven ropes?",
+			},
+		},
 		["Health"] = 800,
 		["Power"] = 0,
 		["Rarity"] = "Uncommon",
@@ -13968,7 +14227,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Strengthen",200}},
 			Target = "Self",
 		},
-		["Bio"] = "An eye for an eye. A feather for a... Wait, humans don't have feathers. Well that analogy just went nowhere...",
+		["Bio"] = "An eye for an eye. A feather for a... Wait, humans don't have feathers. That analogy just went nowhere...",
 	},
 	
 	["animallogic"] = {
@@ -14270,7 +14529,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Summon","Noob"},{"Summon","Noob"}},
 			Target = "Ally",
 		},
-		["Bio"] = "The damp mayday-er. Combos well with Valletta.",
+		["Bio"] = "The dampest of mayday-ers.",
 	},
 	
 	["BerskererPredator450"] = {
@@ -14719,6 +14978,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Fenrier"] = {
 		["Id"] = 469550868,
 		["Name"] = "Fenrier",
+		["AltCards"] = {
+			["Fenrier-Sun"] = {
+				["Id"] = 897237162,
+				["Name"] = "Fenrier",
+				["Bio"] = "The sun is flat. Wake up, sheeple!",
+			},
+		},
 		["Health"] = 1225,
 		["Power"] = 0,
 		["Rarity"] = "Common",
@@ -14797,6 +15063,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Jimminus"] = {
 		["Id"] = 473308924,
 		["Name"] = "Jimminus",
+		["AltCards"] = {
+			["Jimminus-Sun"] = {
+				["Id"] =  897238920,
+				["Bio"] = "Ha! I got an alt and you didn't, Yoshius!",
+			},
+		},
 		["Health"] = 350,
 		["Power"] = 350,
 		["Rarity"] = "Common",
@@ -16180,10 +16452,10 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["PencilWizard-Val"] = {
 				["Id"] = 666372854,
-				["Name"] = "Goat Mama, Wizard",
+				["Name"] = "Goat Mama Wizard",
 				["Effect"] = {
 					Name = "AAAAAAAAAAAAAAAAAA",
-					Description = "When this card attacks and destrys another summon another Goat Mama, Wizard.",
+					Description = "When this card attacks and destroys another, summon another Goat Mama.",
 					["Type"] = "OnAttackDestroy",
 					["Power"] = {{"Summon","PencilWizard-Val"}},
 					Target = "Ally",
@@ -16199,7 +16471,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4, ["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "AAAAAAAAAAAAAAAAAA",
-			Description = "When this card attacks and destrys another summon another PencilWizard.",
+			Description = "When this card attacks and destroys another, summon another PencilWizard.",
 			["Type"] = "OnAttackDestroy",
 			["Power"] = {{"Summon","PencilWizard"}},
 			Target = "Ally",
@@ -17401,7 +17673,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Health"] = 400,
 		["Power"] = 700,
 		["Rarity"] = "Epic",
-		["AttackEffect"] = "SlashDiagonal",F
+		["AttackEffect"] = "SlashDiagonal",
 		["Color"] = "Red",
 		["Cost"] = {["Red"] = 3,["Neutral"] = 1},
 		["Effect"] = {
