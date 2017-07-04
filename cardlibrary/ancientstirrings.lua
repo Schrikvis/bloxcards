@@ -604,7 +604,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Heal",150,"Opponent"}},
 			Target = "Ally",
 		},
-		["Bio"] = "I like my noobs wholemeal.",
+		["Bio"] = "He certainly is.",
 	},
 	
 	["Creepy Toy"] = {
