@@ -896,7 +896,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["SoulSearch"] = {
-		["Id"] = 701066662,
+		["Id"] = 858902108,
 		["Name"] = "SoulSearch",
 		["AltCards"] = {
 			["SoulSearch-Val"] = {
@@ -914,7 +914,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Hellfire",
 			Description = "Whenever you lose life, set your life to 300. (This prevents death.)",
-			["Type"] = "OnLifeLoss",
+			["Type"] = "OnHealthLoss",
 			["Power"] = {"SetLife",300,"Ally"},
 			Target = "Ally",
 		},
@@ -932,9 +932,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 6, ["Blue"] = 5, ["Red"] = 1,},
 		["Effect"] = {
 			Name = "Hellfire",
-			Description = "When this fighter is targeted, destroy it and spawn three Voidsealers.",
+			Description = "Whenever this fighter is targeted, deal 750 damage to it and summon a Voidsealer.",
 			["Type"] = "OnTarget",
-			["Power"] = {{"Summon","Voidsealer"},{"Summon","Voidsealer"},{"Summon","Voidsealer"},{"Damage",9999,"Self"}},
+			["Power"] = {{"Summon","Voidsealer"},{"Damage",750,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = "I'm sorry, what were we doing? I was procrastinating so much that I kicked your butt on accident.",
@@ -1442,7 +1442,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Description = "Give a target fighter 50 power.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Strengthen",50}},
-			Target = "Ally",
+			Target = "Single",
 		},
 		["Bio"] = "SQUAT! SQUAT! SQUAT LUNGE SQUAT!",
 	},
