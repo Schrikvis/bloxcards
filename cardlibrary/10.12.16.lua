@@ -3000,9 +3000,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "Milky Way flavoured.",
 	},
 	
-	["iamUMBREON"] = {
+	["ImaUMBREON"] = {
 		["Id"] = 898800619,
-		["Name"] = "iamUMBREON",
+		["Name"] = "ImaUMBREON",
 		["Health"] = 350,
 		["Power"] = 450,
 		["Rarity"] = "Uncommon",
