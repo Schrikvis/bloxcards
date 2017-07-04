@@ -2349,7 +2349,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Life Potion",
 		["AltCards"] = {
 			["Eggnog"] = {
-				["Id"] = 585627328,
+				["Id"] = 898725250,
 				["Name"] = "Eggnog",
 				["Bio"] = "But eggnog helps you in the long AND short run.",
 			}
@@ -10023,7 +10023,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Great Lord Egotist",
 		["AltCards"] = {
 			["Great Lord Egotist-ArtV"] = {
-				["Id"] = 496184301,
+				["Id"] = 898724903,
 				["AltArt"] = true,
 				["Bio"] = [[I am the wild dog watching with sixteen omniscient eyes. Unblinking endless judgment, cast as the patterns rise.]],
 			}
@@ -10114,6 +10114,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["BlizzardCreeper"] = {
 		["Id"] = 616082779,
 		["Name"] = "Blizaki",
+		AltCards = {
+			["Blizaki-ArtV"] = {
+				["Id"] = 898725038,
+				["AltArt"] = true,
+				["Bio"] = "Live or die, you'll be lost.",
+			},
+		},
 		["Health"] = 3000,
 		["Power"] = 500,
 		["Rarity"] = "Legendary",
