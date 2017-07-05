@@ -110,7 +110,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Brothers Grotesque"] = {
-		["Id"] = 893409553,
+		["Id"] = 900461972,
 		["Name"] = "Brothers Grotesque",
 		["Health"] = 1700,
 		["Power"] = 900,
