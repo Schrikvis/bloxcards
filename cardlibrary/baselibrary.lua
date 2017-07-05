@@ -6666,7 +6666,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 298793152,
 		["Name"] = "Liz",
 		["Health"] = 400,
-		["Power"] = 600,
+		["Power"] = 
+		,
 		["Rarity"] = "Rare",
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Thunder",
@@ -14579,7 +14580,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Kmansong2"] = {
-		["Id"] = 892044308,
+		["Id"] = 892040198,
 		["Name"] = "Kmansong2",
 		["Health"] = 700,
 		["Power"] = 700,
@@ -17401,7 +17402,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Health"] = 400,
 		["Power"] = 700,
 		["Rarity"] = "Epic",
-		["AttackEffect"] = "SlashDiagonal",F
+		["AttackEffect"] = "SlashDiagonal",
 		["Color"] = "Red",
 		["Cost"] = {["Red"] = 3,["Neutral"] = 1},
 		["Effect"] = {
