@@ -17012,7 +17012,10 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Roblox",
 			Description = "Put a Classic Roblox Gear into both players hands.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"RandomAdd", {"Linked Sword", "Trowel", "Rocket Launcher", "Superball", "Slingshot",}},{"RandomAdd", {"Linked Sword", "Trowel", "Rocket Launcher", "Superball", "Slingshot",}, "Opponent"}}},
+			["Power"] = {
+				{"RandomAdd", {"Linked Sword", "Trowel", "Rocket Launcher", "Superball", "Slingshot",},},
+				{"RandomAdd", {"Linked Sword", "Trowel", "Rocket Launcher", "Superball", "Slingshot",}, "Opponent"},
+			},
 			Target = "Ally",
 		},
 		["Bio"] = "He loves games.",
@@ -17598,7 +17601,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Frenemy",
 			Description = "Each player puts a nightmare into their hand. 25% chance to replace the nightmare with three random epics.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"RandomAdd", {"Nightmare", "Nightmare", "Nightmare", "Frenemy's Reward"}},{"RandomAdd", {"Nightmare", "Nightmare", "Nightmare", "Frenemy's Reward"}, "Opponent",}}
+			["Power"] = {
+				{"RandomAdd", {"Nightmare", "Nightmare", "Nightmare", "Frenemy's Reward"}},
+				{"RandomAdd", {"Nightmare", "Nightmare", "Nightmare", "Frenemy's Reward"}, "Opponent",}},
 			Target = "Ally",
 		},
 		["Bio"] = "One bengbeng14 coming right up, my dear frenemy. This will cost you your soul, however.",
