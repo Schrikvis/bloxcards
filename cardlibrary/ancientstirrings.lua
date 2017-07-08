@@ -2200,7 +2200,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 2, ["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "Whenever your opponent casts an action or terrin spell, lock all enemy fighters for two turns.",
+			Description = "Whenever your opponent casts an action or terrain spell, lock all enemy fighters for two turns.",
 			["Type"] = "OnEnemyCast",
 			["Power"] = {{"Lock",3}},
 			Target = "Opponent",
