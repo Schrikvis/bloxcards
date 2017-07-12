@@ -8700,7 +8700,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Lion Amp",
-			Description = [[Lower the power of a target fighter by 150. Gain 1 Yellow icon.]],
+			Description = [[Target fighter loses 150 Power. Generate a Yellow icon.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",150},{"Yellow",1,"Ally"}},
 			Target = "Single",
@@ -8719,7 +8719,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Target Master",
-			Description = [[Target 1 fighter. Gain 3 Yellow icons.]],
+			Description = [[Target a fighter. Generate 3 Yellow icons.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",0},{"Yellow",3,"Ally"}},
 			Target = "Single",
@@ -8739,7 +8739,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 1,["Neutral"]=3,},
 		["Effect"] = {
 			Name = "Panda Amp",
-			Description = [[Increase the Health and Power of a target fighter by 350.]],
+			Description = [[Target fighter gains 350 Health and Power.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Strengthen",350},{"Heal",350}},
 			Target = "Single",
@@ -8758,7 +8758,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 2,["Neutral"]=2,},
 		["Effect"] = {
 			Name = "Polar Amp",
-			Description = [[Increase the Power of a target fighter by 100. Put a random yellow card to your hand.]],
+			Description = [[Target fighter gains 100 Power. Put a random yellow card into your hand.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Strengthen",100},{"RandomAdd","Yellow"}},
 			Target = "Single",
@@ -8777,7 +8777,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 2,["Neutral"]=2,},
 		["Effect"] = {
 			Name = "Tiger Amp",
-			Description = [[Increase the Health of a target fighter by 100. Put a random yellow card to your hand.]],
+			Description = [[Target fighter gains 100 Health. Put a random yellow card into your hand.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",100},{"RandomAdd","Yellow"}},
 			Target = "Single",
@@ -8817,7 +8817,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 4,["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Plushie Amp",
-			Description = [[When this card is targeted, put two random yellow cards to your hand.]],
+			Description = [[Whenever this card is targeted, put two random yellow cards into your hand.]],
 			["Type"] = "OnTarget",
 			["Power"] = {{"RandomAdd","Yellow"},{"RandomAdd","Yellow"}},
 			Target = "Ally",
@@ -8837,7 +8837,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 5,["Neutral"] = 5,},
 		["Effect"] = {
 			Name = "Plushie Amp",
-			Description = "Can't counterattack. When this card is targeted, lock it for two turns.",
+			Description = "Can't counterattack. Whenever this card is targeted, lock it for two turns.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Lock",2}},
 			Target = "Self",
@@ -9118,7 +9118,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 7,},
 		["Effect"] = {
 			Name = "Plushie Amp",
-			Description = [[When this card is targeted, gain 500 lifepoints and put a random Rare into your hand.]],
+			Description = [[Whenever this card is targeted, gain 500 Life and put a random Rare into your hand.]],
 			["Type"] = "OnTarget",
 			["Power"] = {{"Cost",-500},{"RandomAdd","Rare"}},
 			Target = "Ally",
@@ -9137,7 +9137,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Christmas Amp",
-			Description = [[Increase the Health of a target fighter by 300. Your opponent gains 300 life.]],
+			Description = [[Target fighter gains 300 health. Your opponent gains 300 life.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",300},{"Inflict",-300,"Opponent"}},
 			Target = "Single",
@@ -9157,7 +9157,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Snowman Amp",
-			Description = [[Target a fighter and gain 1 Yellow Icon. Increase the lifepoints of both players by 500.]],
+			Description = [[Target a fighter. Generate a Yellow icon. Both players gain 500 Life.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",0},{"Yellow",1,"Ally"},{"Inflict",-500,"All"}},
 			Target = "Single",
