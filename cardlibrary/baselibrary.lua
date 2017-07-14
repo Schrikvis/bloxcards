@@ -194,7 +194,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 					Name = "Build Up",
 					Description = "Summon 2 Meeboid Surfers.",
 					["Type"] = "OnSummon",
-					["Power"] = {{"Summon","Meeboid Cultist-Sun"},{"Summon","Meeboid Cultist-Sun"}},
+					["Power"] = {{"Summon","Meeboid Surfer-Sun"},{"Summon","Meeboid Surfer-Sun"}},
 					Target = "Ally",
 				},
 			},
