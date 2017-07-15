@@ -2730,7 +2730,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Regular_Talkshow"] = {
-		["Id"] = 807880600,
+		["Id"] = 918807176,
 		["Name"] = "Regular_Talkshow",
 		["Health"] = 300,
 		["Power"] = 550,
