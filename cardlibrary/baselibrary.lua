@@ -6666,8 +6666,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 298793152,
 		["Name"] = "Liz",
 		["Health"] = 400,
-		["Power"] = 
-		,
+		["Power"] = 600
 		["Rarity"] = "Rare",
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Thunder",
