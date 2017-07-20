@@ -1587,7 +1587,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 
 	["Crystal of Ambition's End"] = {
 		["Name"] = "Ambition's End",
-		["Id"] = 897235450,
+		["Id"] = 689606490,
 		["AltCards"] = {
 			["Crystal of Ambition's End-Sun"] = {
 				["Name"] = "Castle of Coarseness",
