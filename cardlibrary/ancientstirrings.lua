@@ -46,7 +46,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 1,},
 		["Effect"] = {
 			Name = "Halloween",
-			Description = "Whenever you cast an action or terrain spell, transform this card.",
+			Description = "Whenever you cast an action or terrain spell, transform this card. This card can't generate icons.",
 			["Type"] = "OnAllyCast",
 			["Power"] = {{"Summon","Werewolf Savage"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -81,7 +81,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 1,},
 		["Effect"] = {
 			Name = "Halloween",
-			Description = "Whenever your opponent casts an action or terrain spell, untransform this card.",
+			Description = "Whenever your opponent casts an action or terrain spell, untransform this card. This card can't generate icons.",
 			["Type"] = "OnEnemyCast",
 			["Power"] = {{"Summon","Wolfbitten Noob"},{"Damage",9999,"Self"}},
 			Target = "Ally",
