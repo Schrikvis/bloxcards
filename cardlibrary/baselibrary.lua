@@ -13590,7 +13590,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 6, ["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Render",
-			Description = "Whenever your opponent summons a fighter, they lose a white icon and you gain four green icon. This effect can cause negative icons.",
+			Description = "Whenever your opponent summons a fighter, they lose a white icon and you gain four green icons. This effect can cause negative icons.",
 			["Type"] = "OnEnemySummon",
 			["Power"] = {{"White",-1},{"Green",4,"Ally"}},
 			Target = "Opponent",

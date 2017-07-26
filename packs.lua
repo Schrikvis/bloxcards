@@ -466,7 +466,6 @@ local packs = {
 			"Mass Epidemic",
 			"Divine Favor",
 			"Mummy Peasant",
-			"Weaven",
 			"Zom-nobi",
 			"XxWonderzxX",
 			"Witch's True Brew",
@@ -956,6 +955,7 @@ local packs = {
 			"Lord of Greed",
 			"Doge",
 			"GalaxyFlame",
+			"Weaven"
 		},
 	}; 
 	{
