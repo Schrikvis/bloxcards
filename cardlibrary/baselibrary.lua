@@ -11931,6 +11931,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["inechi"] = {
 		["Id"] = 411803668,
 		["Name"] = "inechi",
+		["AltCards"] = {
+			["inechi-ArtV"] = {
+				["Id"] = 918645341,
+				["AltArt"] = true,
+				["Bio"] = "Fear is only as deep as the mind allows. So what if you lose yours?",
+			};
+		},
 		["Health"] = 950,
 		["Power"] = 450,
 		["Rarity"] = "Legendary",
