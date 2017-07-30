@@ -331,7 +331,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 
 	["Razikai's Exploration"] = {
-		["Id"] = 892549472,
+		["Id"] = 892550270,
 		["Name"] = "Razikai's Exploration",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -797,16 +797,16 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 638721475,
 		["Name"] = "UHunterU",
 		["Health"] = 600,
-		["Power"] = 200,
+		["Power"] = 300,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "GunShot",
 		["Color"] = "Red",
 		["Cost"] = {["Red"] = 3,},
 		["Effect"] = {
 			Name = "moo",
-			Description = "Whenever this card attacks, you lose 200 life and UHunterU gains 100 power.",
+			Description = "Whenever this card attacks, you lose 100 life and UHunterU gains 100 power.",
 			["Type"] = "OnAttack",
-			["Power"] = {{"Cost",200},{"Strengthen",100,"Self"}},
+			["Power"] = {{"Cost",100},{"Strengthen",100,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = "UHunt, ULive.",
@@ -896,7 +896,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["SoulSearch"] = {
-		["Id"] = 701066662,
+		["Id"] = 858902108,
 		["Name"] = "SoulSearch",
 		["AltCards"] = {
 			["SoulSearch-Val"] = {
@@ -914,7 +914,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Hellfire",
 			Description = "Whenever you lose life, set your life to 300. (This prevents death.)",
-			["Type"] = "OnLifeLoss",
+			["Type"] = "OnHealthLoss",
 			["Power"] = {"SetLife",300,"Ally"},
 			Target = "Ally",
 		},
@@ -932,9 +932,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 6, ["Blue"] = 5, ["Red"] = 1,},
 		["Effect"] = {
 			Name = "Hellfire",
-			Description = "When this fighter is targeted, destroy it and spawn three Voidsealers.",
+			Description = "Whenever this fighter is targeted, deal 750 damage to it and summon a Voidsealer.",
 			["Type"] = "OnTarget",
-			["Power"] = {{"Summon","Voidsealer"},{"Summon","Voidsealer"},{"Summon","Voidsealer"},{"Damage",9999,"Self"}},
+			["Power"] = {{"Summon","Voidsealer"},{"Damage",750,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = "I'm sorry, what were we doing? I was procrastinating so much that I kicked your butt on accident.",
@@ -1442,7 +1442,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Description = "Give a target fighter 50 power.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Strengthen",50}},
-			Target = "Ally",
+			Target = "Single",
 		},
 		["Bio"] = "SQUAT! SQUAT! SQUAT LUNGE SQUAT!",
 	},
@@ -1587,7 +1587,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 
 	["Crystal of Ambition's End"] = {
 		["Name"] = "Ambition's End",
-		["Id"] = 897235450,
+		["Id"] = 689606490,
 		["AltCards"] = {
 			["Crystal of Ambition's End-Sun"] = {
 				["Name"] = "Castle of Coarseness",
@@ -1666,7 +1666,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Health"] = 500,
 		["Power"] = 400,
 		["Rarity"] = "Uncommon",
-		["AttackEffect"] = "Dash",
+		["AttackEffect"] = "Slash",
 		["Color"] = "Red", 
 		["Cost"] = {["Red"] = 1,["Neutral"] = 3,},
 		["Effect"] = {
@@ -2112,7 +2112,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Delirious Ooze"] = {
-		["Id"] = 714689042,
+		["Id"] = 714689037,
 		["Name"] = "Delirious Ooze",
 		["Health"] = 400,
 		["Power"] = 400,
@@ -2374,7 +2374,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["RealPiggy1261"] = {
 		["Id"] = 785620878,
 		["Name"] = "RealPiggy1261",
-		["Health"] = 400,
+		["Health"] = 500,
 		["Power"] = 600,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Punchkick",
@@ -2384,7 +2384,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Life fam",
 			Description = "Whenever this card attacks and destroys another, reset its stats.",
 			["Type"] = "OnAttackDestroy",
-			["Power"] = {{"SetHealth",400},{"SetPower",600}},
+			["Power"] = {{"SetHealth",500},{"SetPower",600}},
 			Target = "Self",
 		},
 		["Bio"] = [[He wipes clean all stench of Suidae.]],
@@ -2712,18 +2712,18 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Dairingpoophead, Tix God"] = {
-		["Id"] = 807879792,
+		["Id"] = 898860322,
 		["Name"] = "Dairingpoophead, Tix God",
 		["Health"] = 1000,
-		["Power"] = 700,
+		["Power"] = 600,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Slash",
 		["Color"] = "Yellow", 
 		["Cost"] = {["Neutral"] = 3, ["Yellow"] = 7,},
 		["Effect"] = {
 			Name = "Life fam",
-			Description = "Whenever Dairingpoophead, Tix God destroys a fighter, summon two Pittacium Acolythus.",
-			["Type"] = "OnDestroy",
+			Description = "Whenever Tix God attacks and destroys a fighter, summon two Pittacium Acolythus.",
+			["Type"] = "OnAttackDestroy",
 			["Power"] = {{"Summon","Lord of GreedV2"},{"Summon","Lord of GreedV2"}},
 			Target = "Ally",
 		},
@@ -2731,7 +2731,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Regular_Talkshow"] = {
-		["Id"] = 807880600,
+		["Id"] = 920650049,
 		["Name"] = "Regular_Talkshow",
 		["Health"] = 300,
 		["Power"] = 550,
@@ -2741,9 +2741,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Life fam",
-			Description = "Whenever you cast an action, deal 100 damage to all yellow fighters.",
+			Description = "Whenever you cast an action, deal 150 damage to all yellow fighters.",
 			["Type"] = "OnAllyCast",
-			["Power"] = {{"Damage",100}},
+			["Power"] = {{"Damage",150}},
 			Target = "ColorYellow",
 		},
 		["Bio"] = "Hello Blox Cards nation I'm your host, Regular_Talkshow, let's get ROOOIIIGHT into the news!",
@@ -2829,19 +2829,18 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["superkicker2005"] = {
 		["Id"] = 857449867,
 		["Name"] = "superkicker2005",
-		["Health"] = 650,
-		["Power"] = 650,
+		["Health"] = 700,
+		["Power"] = 200,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "PunchKick",
 		["Color"] = "Red", 
-		["Cost"] = {["Red"] = 3,},
-		["Token"] = true,
+		["Cost"] = {["Red"] = 2,["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Life fam",
-			Description = "Can't generate icons. At the end of this turn, lose 3 red icons. This effect can cause negative icons.",
-			["Type"] = "OnEnd",
-			["Power"] = {{"Red",-3},{"Summon","kickertoken"},{"Damage",9999,"Self"}},
-			Target = "Ally",
+			Description = "When this card strikes the opponent, it deals a bonus 500 damage.",
+			["Type"] = "OnStrike",
+			["Power"] = {{"Inflict",500,"Opponent"}},
+			Target = "Opponent",
 		},
 		["Bio"] = "Hiya!",
 	},
@@ -2874,7 +2873,6 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Common",
 		["AttackEffect"] = "PunchKick",
 		["Color"] = "Blue", 
-		["Requirement"] = {"Opponent",3},		
 		["Cost"] = {["Neutral"] = 3, ["Blue"] = 2,},
 		["Effect"] = {
 			Name = "Life fam",
@@ -2930,7 +2928,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 857451758,
 		["Name"] = "caone",
 		["Health"] = 400,
-		["Power"] = 50,
+		["Power"] = 200,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "PunchKick",
 		["Color"] = "Blue", 		
@@ -2943,7 +2941,83 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Ally",
 		},
 		["Bio"] = "My goo is the goodest goo around. No goo is as good as my goo.",
-	},		
+	},
+	
+	["ProjectSlayer"] = {
+		["Id"] = 898791655,
+		["Name"] = "ProjectSlayer",
+		["Health"] = 500,
+		["Power"] = 500,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "PunchKick",
+		["Color"] = "Red", 		
+		["Cost"] = {["Red"] = 3,},
+		["Effect"] = {
+			Name = "Life fam",
+			Description = "Your opponent loses a white icon.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Neutral",-1}},
+			Target = "Opponent",
+		},
+		["Bio"] = "idc o3o",
+	},
+	
+	["Bigtank_s"] = {
+		["Id"] = 898791301,
+		["Name"] = "Bigtank_s",
+		["Health"] = 400,
+		["Power"] = 400,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "UziShot",
+		["Color"] = "Yellow", 		
+		["Cost"] = {["Neutral"] = 4,},
+		["Effect"] = {
+			Name = "Life fam",
+			Description = "At the end of your turns, this fighter gains 50 Health and Power.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Heal",50},{"Strengthen",50}},
+			Target = "Self",
+		},
+		["Bio"] = "You know you're in trouble when Bigtank_s comes out of his custom Panzerkampfwagen VI Tiger II just to fight you.",
+	},
+	
+		["iSpaceDonut"] = {
+		["Id"] = 898791450,
+		["Name"] = "iSpaceDonut",
+		["Health"] = 500,
+		["Power"] = 200,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "PunchKick",
+		["Color"] = "Green", 		
+		["Cost"] = {["Neutral"] = 3, ["Green"] = 1,},
+		["Effect"] = {
+			Name = "Life fam",
+			Description = "At the end of your turns, this fighter gains 100 Health.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Heal",100}},
+			Target = "Self",
+		},
+		["Bio"] = "Milky Way flavoured.",
+	},
+	
+	["ImaUMBREON"] = {
+		["Id"] = 898800619,
+		["Name"] = "ImaUMBREON",
+		["Health"] = 350,
+		["Power"] = 450,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "SlashDiagonal",
+		["Color"] = "Blue", 		
+		["Cost"] = {["Neutral"] = 3,},
+		["Effect"] = {
+			Name = "Dark Strike",
+			Description = "Target fighter loses 150 Power.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Weaken",150}},
+			Target = "Single",
+		},
+		["Bio"] = "Don't make him dual wield. Seriously, don't, it's ridiculous.",
+	},
 }
 
 return tentwelvesixteen

@@ -46,7 +46,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 1,},
 		["Effect"] = {
 			Name = "Halloween",
-			Description = "Whenever you cast an action or terrain spell, transform this card.",
+			Description = "Whenever you cast an action or terrain spell, transform this card. This card can't generate icons.",
 			["Type"] = "OnAllyCast",
 			["Power"] = {{"Summon","Werewolf Savage"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -81,7 +81,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 1,},
 		["Effect"] = {
 			Name = "Halloween",
-			Description = "Whenever your opponent casts an action or terrain spell, untransform this card.",
+			Description = "Whenever your opponent casts an action or terrain spell, untransform this card. This card can't generate icons.",
 			["Type"] = "OnEnemyCast",
 			["Power"] = {{"Summon","Wolfbitten Noob"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -110,7 +110,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Brothers Grotesque"] = {
-		["Id"] = 893409553,
+		["Id"] = 900461972,
 		["Name"] = "Brothers Grotesque",
 		["Health"] = 1700,
 		["Power"] = 900,
@@ -438,7 +438,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Pyrotechnics",
 			Description = "7 Charges. At the end of this turn, if you've cast 7 action or terrain spells after this one, deal 1250 damage to the opponent.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Inflict",1250}},{{"Damage",9999,"Self"}},
+			["Power"] = {{"Inflict",1250},{"Damage",9999,"Self"}},
 			Target = "Opponent",
 		},
 		["Bio"] = "Grapeshots ruined, Tendrils of Agony depleted. All that is left is the rush.",		
@@ -604,7 +604,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Heal",150,"Opponent"}},
 			Target = "Ally",
 		},
-		["Bio"] = "I like my noobs wholemeal.",
+		["Bio"] = "He certainly is.",
 	},
 	
 	["Creepy Toy"] = {
@@ -1682,6 +1682,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 500,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Dash",
+		["Archetype"] = "Lycanthrope",
 		["CounterBlock"] = true,
 		["Color"] = "Red", 
 		["Cost"] = {["Red"] = 1,},
@@ -1702,6 +1703,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 1000,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Dash",
+		["Archetype"] = "Lycanthrope",
 		["FaceBlock"] = true,
 		["Color"] = "Red", 
 		["Cost"] = {["Red"] = 1,},
@@ -1722,6 +1724,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 2000,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Dash",
+		["Archetype"] = "Lycanthrope",
 		["CounterAttackBlock"] = true,
 		["Color"] = "Red", 
 		["Cost"] = {["Red"] = 1,},
@@ -2197,7 +2200,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 2, ["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "Whenever your opponent casts an action or terrin spell, lock all enemy fighters for two turns.",
+			Description = "Whenever your opponent casts an action or terrain spell, lock all enemy fighters for two turns.",
 			["Type"] = "OnEnemyCast",
 			["Power"] = {{"Lock",3}},
 			Target = "Opponent",

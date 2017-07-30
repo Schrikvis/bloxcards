@@ -173,9 +173,9 @@ local packs = {
 		CardPackId = 842435184, --721400845,
 		Description = "Red is the colour of power, ambition, and control. Dominion packs contain cards that cost red!",
 		Cards = {
+			"ProjectSlayer",
 			"Histor, Blood Warrior",
 			"superkicker2005",
-			"Kitten",
 			"Shard Master",
 			"Beyondthegong",
 			"Damaging26",
@@ -391,6 +391,7 @@ local packs = {
 		CardPackId = 721399805,
 		Description = "Green is the colour of life, growth, and the primal forces. Vitality packs contain cards that cost green!",
 		Cards = {
+			"iSpaceDonut",
 			"Enderlox1",
 			"Lord_Gizmo",
 			"iiSmolToaster",
@@ -465,7 +466,6 @@ local packs = {
 			"Mass Epidemic",
 			"Divine Favor",
 			"Mummy Peasant",
-			"Weaven",
 			"Zom-nobi",
 			"XxWonderzxX",
 			"Witch's True Brew",
@@ -559,6 +559,7 @@ local packs = {
 		CardPackId = 721399466,
 		Description = "Blue is the colour of logic, order, and structure. Thought packs contain cards that cost blue!",
 		Cards = {
+			"ImaUMBREON",
 			"caone",
 			"xiVirtual",
 			"Killar1234567",
@@ -763,6 +764,7 @@ local packs = {
 		CardPackId = 721400239,
 		Description = "Yellow is the colour of chaos, emotion, and society. Revel packs contain cards that cost yellow!",
 		Cards = {
+			"Bigtank_s",
 			"Dairingpoophead, Tix God",
 			"AII_Dragon",
 			"emilvita",
@@ -953,6 +955,7 @@ local packs = {
 			"Lord of Greed",
 			"Doge",
 			"GalaxyFlame",
+			"Weaven"
 		},
 	}; 
 	{
@@ -964,13 +967,16 @@ local packs = {
 		Description = "Exotic new cards from the black market! White cards and joke cards! It's all yours, as long as you have 10 wins!",
 		WinRequirement = 10;
 		Cards = {
+			"Bigtank_s",
+			"ProjectSlayer",
+			"iSpaceDonut",
+			"ImaUMBREON",
 			"caone",
 			"Histor, Blood Warrior",
 			"Enderlox1",
 			"xiVirtual",
 			"superkicker2005",
 			"Killar1234567",
-			"Kitten",
 			"Shard Master",
 			"EvilJacobthehero2013",
 			"Regular_Talkshow",
@@ -1612,7 +1618,7 @@ local packs = {
 		Description = "",
 		WinRequirement = 10;
 		DateConstraint = {
-			month = {7};
+			month = {8};
 		};
 		Cards = {
 			"Ambamby-Sun",
@@ -1632,21 +1638,24 @@ local packs = {
 			"HuntarioRBLX-Sun",
 			"Jeptem-Sun",
 			"Jimminus-Sun",
-			"Lady Rednight-Sun",
+			"Lady RedNight-Sun",
 			"Latchie-Sun",
 			"LeetWizard-Sun",
 			"Luck o The Lobsters-Sun",
+			"MarissaKitty04-Sun",
 			"Meebling Infestation-Sun",
 			"Meebling King-Sun",
 			"Meeboid-Sun",
 			"Meeboid Champion-Sun",
+			"Meeboid Surfer-Sun",
 			"Mitpaul-Sun",
 			"Oozlebachr-Sun",
 			"Pixellus-Sun",
 			"RachelDubs-Sun",
 			"Satyr Firemaster-Sun",
-			"Surfskateer-Sun",
+			"Snowskateer-Sun",
 			"Spooky Caverns-Sun",
+			"Titano-Sun",
 			"Valletta-Sun",
 			"Weaven-Sun",
 			"Widgeon-Sun",
