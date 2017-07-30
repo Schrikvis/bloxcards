@@ -8700,7 +8700,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Lion Amp",
-			Description = [[Target fighter loses 150 Power. Generate a Yellow icon.]],
+			Description = [[A target fighter loses 150 Power. Generate a Yellow icon.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",150},{"Yellow",1,"Ally"}},
 			Target = "Single",
@@ -8739,7 +8739,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 1,["Neutral"]=3,},
 		["Effect"] = {
 			Name = "Panda Amp",
-			Description = [[Target fighter gains 350 Health and Power.]],
+			Description = [[A target fighter gains 350 Health and Power.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Strengthen",350},{"Heal",350}},
 			Target = "Single",
@@ -8758,7 +8758,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 2,["Neutral"]=2,},
 		["Effect"] = {
 			Name = "Polar Amp",
-			Description = [[Target fighter gains 100 Power. Put a random yellow card into your hand.]],
+			Description = [[A target fighter gains 100 Power. Put a random yellow card into your hand.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Strengthen",100},{"RandomAdd","Yellow"}},
 			Target = "Single",
@@ -8777,7 +8777,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 2,["Neutral"]=2,},
 		["Effect"] = {
 			Name = "Tiger Amp",
-			Description = [[Target fighter gains 100 Health. Put a random yellow card into your hand.]],
+			Description = [[A target fighter gains 100 Health. Put a random yellow card into your hand.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",100},{"RandomAdd","Yellow"}},
 			Target = "Single",
@@ -9137,7 +9137,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Christmas Amp",
-			Description = [[Target fighter gains 300 health. Your opponent gains 300 life.]],
+			Description = [[A target fighter gains 300 health. Your opponent gains 300 life.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",300},{"Inflict",-300,"Opponent"}},
 			Target = "Single",
