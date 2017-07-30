@@ -1320,7 +1320,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Bleeding Reality",
 			Description = "Cast only if you control 8 Ultras. All Ultras gain 500 health and power. Return this card to your hand, then end the turn.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Heal",500},{"Strengthen",500}},
+			["Power"] = {{"Heal",500},{"Strengthen",500},{"Add","Ultra Obliterator","Ally"}},
 			Target = "Archetype",
 		},
 		["Bio"] = "Ultras share a hivemind that allow others to be summoned. When this hivemind reaches a critical mass, regions get torn asunder from the sheer pressure.",
@@ -2063,10 +2063,10 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Satyr Firemaster-Sun"] = {
 				["Name"] = "Satyr Firedancer",
 				["Id"] = 897246787,
-				["Bio"] = "Burny the Satyr says: Only YOU can start forest fires!",
+				["Bio"] = "Burny the Satyr says: Only YOU can start forest fires! :D :D",
 				["Effect"] = {
 					Name = "befriending of scaly mutts",
-					Description = "At the end of your turns, deal 100 damage to the opponent, then put a copy of Satyr Firemaster into play. You lose all of your red icons.",
+					Description = "At the end of your turns, deal 100 damage to the opponent, then put a copy of Satyr Firedancer into play. You lose all of your blue icons.",
 					["Type"] = "OnEnd",
 					["Power"] = {{"SetBlue",0},{"Summon","Satyr Firemaster-Sun"},{"Inflict",100,"Opponent"}},
 					Target = "Ally",
@@ -2082,7 +2082,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 4, ["Yellow"] = 4, ["Green"] = 4,},
 		["Effect"] = {
 			Name = "befriending of scaly mutts",
-			Description = "At the end of your turns, deal 100 damage to the opponent, then put a copy of Satyr Firemaster into play. You lose all of your red icons.",
+			Description = "At the end of your turns, deal 100 damage to the opponent, then put a copy of Satyr Firemaster into play. You lose all of your blue icons.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"SetBlue",0},{"Summon","Satyr Firemaster"},{"Inflict",100,"Opponent"}},
 			Target = "Ally",
@@ -2449,7 +2449,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Unlock",9999},{"Lock",1}},
 			Target = "Ally",
 		},
-		["Bio"] = [[Hey, Myr? Have you fixed the bio yet? Have you nerfed Blue yet? Have you buffed Tweety yet? Have you fixed the bio yet? Cost/Damage/Cooldown on Gravity Light? Why is Dairing a good card? Have you fixed the bio yet? Did you add Walyn into the game yet? What is my bio Myr?]],
+		["Bio"] = [[Reeeeeeee.]],
 	},
 
 	["Themediamogul99"] = {
@@ -2484,12 +2484,12 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Hero",
 		["Effect"] = {
 			Name = "Life fam",
-			Description = "All non-archetype rares gain 300 health and lose 300 power.",
+			Description = "All non-archetyped rares gain 300 health and lose 300 power.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",300},{"Weaken",300}},
 			Target = "Archetype",
 		},
-		["Bio"] = [[Here comes the meat train!]],
+		["Bio"] = [[Here comes the meat train! ...No, it literally is a train of meat.]],
 	},
 
 
@@ -2521,6 +2521,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Punchkick",
 		["Color"] = "Green", 
 		["Cost"] = {["Green"] = 7,},
+		["Archetype"] = "Zombie",
 		["Effect"] = {
 			Name = "Life fam",
 			Description = "Summon two Zombies. Whenever an allied fighter dies, Zabiehunter drains 200 health from your opponent.",

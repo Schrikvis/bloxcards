@@ -1927,7 +1927,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Snowskateer-Sun"] = {
 				["Name"] = "Surfskateer",
 				["Id"] = 897246913,
-				["Bio"] = "I watched a snail crawl along the edge of a straight razor. That's my dream; that's my nightmare. Crawling, slithering, along the edge of a straight razor... and surviving.",
+				["Bio"] = "In a gleeful act of self defence, Surfskateer brutally flayed the flesh of his father and used it to adorn his surfboard. He then surfed across torrential peril to an ancient ninja monastery.",
 				["Effect"] = {
 					Name = "Assimilate",
 					Description = "Summon a Froot Smoothie Ninja. Surfskateer can't generate icons.",
@@ -8335,7 +8335,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "The Divine Favor? Being allowed to spell favour without a U.",
 		["Effect"] = {
 			Name = "Board Clear Preparation!",
-			Description = "Set the health and power of all fighters to 300. Your opponent summons a Demonic Godbeast.",
+			Description = "Set the health and power of all fighters to 300. You can't attack the opponent this turn.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"SetHealth",300},{"SetPower",300},{"Summon","Demonic Godbeast","Opponent"}},
 			Target = "All",
@@ -12243,12 +12243,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Green"] = 3,},
 		["Effect"] = {
 			Name = "Silence I keel you!",
-			Description = [[Lock target fighter for 1 turn. Put a Targeting Blip to your hand. Targeting Blips trigger Target Effects.]],
+			Description = [[Lock a target fighter for 1 turn. Put a Targeting Blip to your hand. Targeting Blips trigger Target Effects.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Lock",1},{"Add","Targeting Blip","Ally"}},
 			Target = "Single",
 		},
-		["Bio"] = "Step 1: Capture Myrmiredon. Step 2: Force him into a basement. Step 3: Force him to make Clashblox great again. Step 4: Rub it in PirateX12'a face.",
+		["Bio"] = "Step 1: Capture Myrmiredon. Step 2: Force him into a basement. Step 3: Force him to make Clashblox great again. Step 4: Rub it in PirateX12's face.",
 	},			
 
 	["Card Hoarder"] = {
