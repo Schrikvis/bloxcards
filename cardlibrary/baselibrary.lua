@@ -3925,17 +3925,18 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Pixellus"] = {
-		["Id"] = 285154068,
+		["Id"] = 950123403,
 		["Name"] = "Pixellus",
 		["AltCards"] = {
 			["Pixellus-Sun"] = {
-				["Id"] = 897244999,
+				["Id"] = 950122951,
 				["Bio"] = "When the editors suggested I go on vacation, This wasn’t what I had in mind.",
 			}
 		},
 		["Health"] = 550,
 		["Power"] = 550,
 		["Rarity"] = "Rare",
+		["Archetype"] = "Hero",
 		["AttackEffect"] = "PistolShot",
 		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 4,["Red"] = 2,},
@@ -15087,7 +15088,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Jimminus",
 		["AltCards"] = {
 			["Jimminus-Sun"] = {
-				["Id"] =  897238920,
+				["Id"] =  950121621,
 				["Bio"] = "Ha! I got an alt and you didn't, Yoshius!",
 			},
 		},
