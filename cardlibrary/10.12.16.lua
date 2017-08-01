@@ -870,7 +870,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["DominiusConfabricor"] = {
-		["Id"] = 645386479,
+		["Id"] = 950082879,
 		["Name"] = "DominiusConfabricor",
 		["AltCards"] = {
 			["DominiusConfabricor-Sun"] = {
