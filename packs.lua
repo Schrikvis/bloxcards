@@ -548,7 +548,8 @@ local packs = {
 			"Deadeye",
 			"DIY Dominus",
 			"Teal Eyes Green Dragon",
-			"Icepielover23",
+			"Icepielover23"
+			"Fate_Sealed",
 		},
 	}; 
 	{
@@ -1053,7 +1054,8 @@ local packs = {
 			"LeTruth",
 			"Xenotrent",
 			"Has",
-			"RaveTea",
+			"RaveTea"
+			"Fate_Sealed",
 
 			"Wingman8",
 			"Games",
