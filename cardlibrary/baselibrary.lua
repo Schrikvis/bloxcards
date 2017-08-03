@@ -17983,7 +17983,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Thug Life",
 			Description = "All Non-Archetyped Rare fighters gain 200 power and health.",
-			["Type"] = "OnDeath",
+			["Type"] = "OnSummon",
 			["Power"] = {{"Strengthen",200},{"Heal",200}},
 			Target = "Archetype",
 		},
