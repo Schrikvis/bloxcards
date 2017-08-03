@@ -3025,6 +3025,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Fate_Sealed",
 		["Health"] = 1250,
 		["Power"] = 250,
+		["Archetype"] = "Hero",
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "KnifeStab",
 		["Color"] = "Green", 
