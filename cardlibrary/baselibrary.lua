@@ -9233,7 +9233,14 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["LeetWizard-Sun"] = {
 				["Id"] =  897242956,
 				["Bio"] = "Falling out of a boat… WITH STYLE.",
-			},
+				["Effect"] = {
+					Name = "Render",
+					Description = "Deal 300 damage to a target fighter, then lock it for 1 turn. When an enemy fighter dies, return this fighter to your hand and gain a red icon.",
+					["Type"] = "OnSummon",
+					["Power"] = {{"Summon","LeetWizard Token-Sun","Ally"},{"Lock",1},{"Damage",300},{"Damage",9999,"Self"}},
+					Target = "Single",
+				},
+			}
 		},
 		["Health"] = 500,
 		["Power"] = 300,
@@ -9255,6 +9262,19 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["LeetWizard Token"] = {
 		["Id"] = 335687451,
 		["Name"] = "LeetWizard",
+		["AltCards"] = {
+			["LeetWizard Token-Sun"] = {
+				["Id"] =  897242956,
+				["Bio"] = "Falling out of a boat… WITH STYLE.",
+				["Effect"] = {
+					Name = "Render",
+					Description = "Deal 300 damage to a target fighter, then lock it for 1 turn. When an enemy fighter dies, return this fighter to your hand and gain a red icon.",
+					["Type"] = "OnSummon",
+					["Power"] = {{"Add","LeetWizard-Sun"},{"Red",1},{"Damage",9999,"Self"}},
+					Target = "Ally",
+				},
+			}
+		},
 		["Health"] = 500,
 		["Power"] = 300,
 		["Rarity"] = "Token",
