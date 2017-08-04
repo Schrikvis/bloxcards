@@ -10629,7 +10629,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},		
 	
 	["Alapz"] = {
-		["Id"] = 415733887,
+		["Id"] = 959677167,
 		["Name"] = "Countercharm",
 		["Health"] = 1000,
 		["Power"] = 0,
