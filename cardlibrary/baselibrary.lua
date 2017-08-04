@@ -16592,7 +16592,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Helperbot"] = {
-		["Id"] = 528150435,
+		["Id"] = 959641267,
 		["Name"] = "Helperbot",
 		["Health"] = 600,
 		["Power"] = 400,
