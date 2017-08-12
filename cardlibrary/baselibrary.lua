@@ -10629,7 +10629,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},		
 	
 	["Alapz"] = {
-		["Id"] = 415733887,
+		["Id"] = 959677164,
 		["Name"] = "Countercharm",
 		["Health"] = 1000,
 		["Power"] = 0,
@@ -12922,7 +12922,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Regular_Show"] = {
-		["Id"] = 413947233,
+		["Id"] = 959854495,
 		["Name"] = "Regular_Show",
 		["Health"] = 1500,
 		["Power"] = 800,
@@ -13073,7 +13073,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["BuildIntoGames"] = {
-		["Id"] = 415733793,
+		["Id"] = 959879542,
 		["Name"] = "BuildIntoGames",
 		["Health"] = 500,
 		["Power"] = 1100,
@@ -15530,7 +15530,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["WoodReviewer"] = {
-		["Id"] = 481828054,
+		["Id"] = 959854965,
 		["Name"] = "WoodReviewer",
 		["Health"] = 600,
 		["Power"] = 600,
@@ -16592,7 +16592,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Helperbot"] = {
-		["Id"] = 528150435,
+		["Id"] = 959641264,
 		["Name"] = "Helperbot",
 		["Health"] = 600,
 		["Power"] = 400,
@@ -16888,7 +16888,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["wowwow2211"] = {
-		["Id"] = 528149527,
+		["Id"] = 959882522,
 		["Name"] = "wowwow2211",
 		["Health"] = 550,
 		["Power"] = 550,
@@ -16930,7 +16930,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Egg Eyes Batter Dragon"] = {
-		["Id"] = 581910730,
+		["Id"] = 959856273,
 		["Name"] = "Egg Eyes Batter Dragon",
 		["Health"] = 1350,
 		["Power"] = 100,
@@ -17229,7 +17229,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},		
 	
 	["Classy Bear"] = {
-		["Id"] = 556058684,
+		["Id"] = 959855963,
 		["Name"] = "Classy Bear",
 		["Health"] = 1000,
 		["Power"] = 0,
@@ -17381,7 +17381,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},		
 	
 	["Den_S"] = {
-		["Id"] = 556050821,
+		["Id"] = 959856568,
 		["Name"] = "Den_S",
 		["Health"] = 700,
 		["Power"] = 400,
@@ -17991,7 +17991,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Kinnis97"] = {
-		["Id"] = 556057564,
+		["Id"] = 959877037,
 		["Name"] = "Kinnis97",
 		["Health"] = 550,
 		["Power"] = 750,
