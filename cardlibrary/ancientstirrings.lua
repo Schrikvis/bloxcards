@@ -954,7 +954,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Weaken",50}},
 			Target = "Opponent",
 		},
-		["Bio"] = "Value be damned.",
+		["Bio"] = "Value be darned.",
 	},
 	
 	["Little Girl"] = {
@@ -2424,7 +2424,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Patric Sinister"] = {
-		["Id"] = 574198606,
+		["Id"] = 959853982,
 		["Name"] = "Patric Sinister",
 		["Health"] = 350,
 		["Power"] = 350,

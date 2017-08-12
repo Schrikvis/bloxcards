@@ -1429,7 +1429,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Valletta-Sun"] = {
 				["Id"] = 897247645,
-				["Bio"] = "I can’t reach that damn cup. SERVANTS!",
+				["Bio"] = "I can’t reach that darn cup. SERVANTS!",
 			}
 		},
 		["Health"] = 775,
@@ -3925,17 +3925,18 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Pixellus"] = {
-		["Id"] = 285154068,
+		["Id"] = 950123403,
 		["Name"] = "Pixellus",
 		["AltCards"] = {
 			["Pixellus-Sun"] = {
-				["Id"] = 897244999,
+				["Id"] = 950122951,
 				["Bio"] = "When the editors suggested I go on vacation, This wasn’t what I had in mind.",
 			}
 		},
 		["Health"] = 550,
 		["Power"] = 550,
 		["Rarity"] = "Rare",
+		["Archetype"] = "Hero",
 		["AttackEffect"] = "PistolShot",
 		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 4,["Red"] = 2,},
@@ -4725,7 +4726,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Token"] = true,
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Turn shedletsky into its red form.",
+			Description = "Turn Shedletsky into its red form, The Raging Pulse.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",1},{"Add","Tyrannical Limb","Ally"}},
 			Target = "Self",	
@@ -4747,7 +4748,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Requirement"] = {"Archetype",1},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Turn shedletsky into its red form.",
+			Description = "Turn Shedletsky into its red form, The Raging Pulse.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"SetHealth",0,"Archetype"},{"Summon","Shedletsky, the Raging Pulse"}},
 			Target = "Ally",	
@@ -4791,7 +4792,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 2,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Turn shedletsky into its green form.",
+			Description = "Turn Shedletsky into its green form, Locus of Icons.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",1},{"Add","Verdant Limb","Ally"}},
 			Target = "Self",	
@@ -4813,7 +4814,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Requirement"] = {"Archetype",1},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Turn shedletsky into its green form.",
+			Description = "Turn Shedletsky into its green form, Locus of Icons.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"SetHealth",0,"Archetype"},{"Summon","Shedletsky, Locus of Icons"}},
 			Target = "Ally",	
@@ -4857,7 +4858,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 2,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Turn shedletsky into its blue form.",
+			Description = "Turn Shedletsky into its blue form, The Resonator.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",1},{"Add","Scintillant Limb","Ally"}},
 			Target = "Self",	
@@ -4879,7 +4880,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Requirement"] = {"Archetype",1},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Turn shedletsky into its blue form.",
+			Description = "Turn Shedletsky into its blue form, The Resonator.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"SetHealth",0,"Archetype"},{"Summon","Shedletsky, the Resonator"}},
 			Target = "Ally",	
@@ -4923,7 +4924,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Turn shedletsky into its yellow form.",
+			Description = "Turn Shedletsky into its yellow form, Paragon of Unity.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",1},{"Add","Multicultural Limb","Ally"}},
 			Target = "Self",	
@@ -4945,7 +4946,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Requirement"] = {"Archetype",1},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Turn shedletsky into its yellow form.",
+			Description = "Turn Shedletsky into its yellow form, Paragon of Unity.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"SetHealth",0,"Archetype"},{"Summon","Shedletsky, Paragon of Unity 1"}},
 			Target = "Ally",	
@@ -5454,10 +5455,10 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 6,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "lower the power of all non-green fighters by 25 at the end of each turn.",
+			Description = "Lower the power of all fighters by 25 at the end of each turn.",
 			["Type"] = "Field",
 			["Power"] = "Weaken",
-			Target = "NotColorGreen",	
+			Target = "All",	
 			Increase = 25,
 		},
 		["Bio"] = "It'll grind your sanity to dust.",
@@ -7005,7 +7006,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Green"] = 2,},
 		["Effect"] = {
 			Name = "Demon Eye",
-			Description = "Gain 2 Green icons and increase the Health of all Overseers by 400 and their power by 200.",
+			Description = "Gain 1 Green icon. Increase the Health of all Overseers by 400 and their power by 200.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Green",2,"Ally"},{"Heal",400},{"Strengthen",200}},
 			Target = "Archetype",
@@ -7462,10 +7463,11 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Thunder",
 		["Archetype"] = "Toy",
 		["Color"] = "Yellow",
+		["FaceBlock"] = true,
 		["Cost"] = {["Neutral"] = 1,["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "Build Up",
-			Description = "Unlock all Toy fighters.",
+			Description = "Can't attack the opponent directly. Unlock all Toy fighters.",
 			["Type"] = "OnSummon",
 			["Power"] = "Unlock",
 			Target = "Archetype",
@@ -7582,7 +7584,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Builderman"] = {
-		["Id"] = 315996541,
+		["Id"] = 951700034,
 		["Name"] = "Builderman",
 		["Health"] = 200,
 		["Power"] = 400,
@@ -7601,7 +7603,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Builderman 2"] = {
-		["Id"] = 315996541,
+		["Id"] = 951700034,
 		["Name"] = "Builderman",
 		["Health"] = 200,
 		["Power"] = 400,
@@ -7793,9 +7795,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Construction Zombie"] = {
 		["Id"] = 315997415,
 		["Name"] = "Construction Zombie",
-		["Health"] = 400,
-		["Power"] = 300,
-		["Rarity"] = "Common",
+		["Health"] = 300,
+		["Power"] = 100,
+		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Thunder",
 		["Archetype"] = "Zombie",
 		["Color"] = "Green",
@@ -8700,7 +8702,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Lion Amp",
-			Description = [[Lower the power of a target fighter by 150. Gain 1 Yellow icon.]],
+			Description = [[A target fighter loses 150 Power. Generate a Yellow icon.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",150},{"Yellow",1,"Ally"}},
 			Target = "Single",
@@ -8719,7 +8721,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Target Master",
-			Description = [[Target 1 fighter. Gain 3 Yellow icons.]],
+			Description = [[Target a fighter. Generate 3 Yellow icons.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",0},{"Yellow",3,"Ally"}},
 			Target = "Single",
@@ -8739,7 +8741,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 1,["Neutral"]=3,},
 		["Effect"] = {
 			Name = "Panda Amp",
-			Description = [[Increase the Health and Power of a target fighter by 350.]],
+			Description = [[A target fighter gains 350 Health and Power.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Strengthen",350},{"Heal",350}},
 			Target = "Single",
@@ -8758,7 +8760,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 2,["Neutral"]=2,},
 		["Effect"] = {
 			Name = "Polar Amp",
-			Description = [[Increase the Power of a target fighter by 100. Put a random yellow card to your hand.]],
+			Description = [[A target fighter gains 100 Power. Put a random yellow card into your hand.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Strengthen",100},{"RandomAdd","Yellow"}},
 			Target = "Single",
@@ -8777,7 +8779,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 2,["Neutral"]=2,},
 		["Effect"] = {
 			Name = "Tiger Amp",
-			Description = [[Increase the Health of a target fighter by 100. Put a random yellow card to your hand.]],
+			Description = [[A target fighter gains 100 Health. Put a random yellow card into your hand.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",100},{"RandomAdd","Yellow"}},
 			Target = "Single",
@@ -8817,7 +8819,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 4,["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Plushie Amp",
-			Description = [[When this card is targeted, put two random yellow cards to your hand.]],
+			Description = [[Whenever this card is targeted, put two random yellow cards into your hand.]],
 			["Type"] = "OnTarget",
 			["Power"] = {{"RandomAdd","Yellow"},{"RandomAdd","Yellow"}},
 			Target = "Ally",
@@ -8837,7 +8839,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 5,["Neutral"] = 5,},
 		["Effect"] = {
 			Name = "Plushie Amp",
-			Description = "Can't counterattack. When this card is targeted, lock it for two turns.",
+			Description = "Can't counterattack. Whenever this card is targeted, lock it for two turns.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Lock",2}},
 			Target = "Self",
@@ -9118,7 +9120,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 7,},
 		["Effect"] = {
 			Name = "Plushie Amp",
-			Description = [[When this card is targeted, gain 500 lifepoints and put a random Rare into your hand.]],
+			Description = [[Whenever this card is targeted, gain 500 Life and put a random Rare into your hand.]],
 			["Type"] = "OnTarget",
 			["Power"] = {{"Cost",-500},{"RandomAdd","Rare"}},
 			Target = "Ally",
@@ -9137,7 +9139,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Christmas Amp",
-			Description = [[Increase the Health of a target fighter by 300. Your opponent gains 300 life.]],
+			Description = [[A target fighter gains 300 health. Your opponent gains 300 life.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",300},{"Inflict",-300,"Opponent"}},
 			Target = "Single",
@@ -9157,7 +9159,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Snowman Amp",
-			Description = [[Target a fighter and gain 1 Yellow Icon. Increase the lifepoints of both players by 500.]],
+			Description = [[Target a fighter. Generate a Yellow icon. Both players gain 500 Life.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",0},{"Yellow",1,"Ally"},{"Inflict",-500,"All"}},
 			Target = "Single",
@@ -9232,7 +9234,14 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["LeetWizard-Sun"] = {
 				["Id"] =  897242956,
 				["Bio"] = "Falling out of a boat… WITH STYLE.",
-			},
+				["Effect"] = {
+					Name = "Render",
+					Description = "Deal 300 damage to a target fighter, then lock it for 1 turn. When an enemy fighter dies, return this fighter to your hand and gain a red icon.",
+					["Type"] = "OnSummon",
+					["Power"] = {{"Summon","LeetWizard Token-Sun","Ally"},{"Lock",1},{"Damage",300},{"Damage",9999,"Self"}},
+					Target = "Single",
+				},
+			}
 		},
 		["Health"] = 500,
 		["Power"] = 300,
@@ -9254,6 +9263,19 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["LeetWizard Token"] = {
 		["Id"] = 335687451,
 		["Name"] = "LeetWizard",
+		["AltCards"] = {
+			["LeetWizard Token-Sun"] = {
+				["Id"] =  897242956,
+				["Bio"] = "Falling out of a boat… WITH STYLE.",
+				["Effect"] = {
+					Name = "Render",
+					Description = "Deal 300 damage to a target fighter, then lock it for 1 turn. When an enemy fighter dies, return this fighter to your hand and gain a red icon.",
+					["Type"] = "OnSummon",
+					["Power"] = {{"Add","LeetWizard-Sun"},{"Red",1},{"Damage",9999,"Self"}},
+					Target = "Ally",
+				},
+			}
+		},
 		["Health"] = 500,
 		["Power"] = 300,
 		["Rarity"] = "Token",
@@ -10608,7 +10630,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},		
 	
 	["Alapz"] = {
-		["Id"] = 415733887,
+		["Id"] = 959677164,
 		["Name"] = "Countercharm",
 		["Health"] = 1000,
 		["Power"] = 0,
@@ -12901,7 +12923,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Regular_Show"] = {
-		["Id"] = 413947233,
+		["Id"] = 959854495,
 		["Name"] = "Regular_Show",
 		["Health"] = 1500,
 		["Power"] = 800,
@@ -13052,7 +13074,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["BuildIntoGames"] = {
-		["Id"] = 415733793,
+		["Id"] = 959879542,
 		["Name"] = "BuildIntoGames",
 		["Health"] = 500,
 		["Power"] = 1100,
@@ -15087,7 +15109,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Jimminus",
 		["AltCards"] = {
 			["Jimminus-Sun"] = {
-				["Id"] =  897238920,
+				["Id"] =  950121621,
 				["Bio"] = "Ha! I got an alt and you didn't, Yoshius!",
 			},
 		},
@@ -15509,7 +15531,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["WoodReviewer"] = {
-		["Id"] = 481828054,
+		["Id"] = 959854965,
 		["Name"] = "WoodReviewer",
 		["Health"] = 600,
 		["Power"] = 600,
@@ -16571,7 +16593,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Helperbot"] = {
-		["Id"] = 528150435,
+		["Id"] = 959641264,
 		["Name"] = "Helperbot",
 		["Health"] = 600,
 		["Power"] = 400,
@@ -16867,7 +16889,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["wowwow2211"] = {
-		["Id"] = 528149527,
+		["Id"] = 959882522,
 		["Name"] = "wowwow2211",
 		["Health"] = 550,
 		["Power"] = 550,
@@ -16909,7 +16931,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Egg Eyes Batter Dragon"] = {
-		["Id"] = 581910730,
+		["Id"] = 959856273,
 		["Name"] = "Egg Eyes Batter Dragon",
 		["Health"] = 1350,
 		["Power"] = 100,
@@ -17208,7 +17230,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},		
 	
 	["Classy Bear"] = {
-		["Id"] = 556058684,
+		["Id"] = 959855963,
 		["Name"] = "Classy Bear",
 		["Health"] = 1000,
 		["Power"] = 0,
@@ -17360,7 +17382,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},		
 	
 	["Den_S"] = {
-		["Id"] = 556050821,
+		["Id"] = 959856568,
 		["Name"] = "Den_S",
 		["Health"] = 700,
 		["Power"] = 400,
@@ -17818,7 +17840,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"RandomAdd","LegendaryYellow"}},
 			Target = "Ally",
 		},
-		["Bio"] = "Creator of trade hangout, even though he hates BC only places. Seranok be damned.",
+		["Bio"] = "Creator of trade hangout, even though he hates BC only places. Seranok be darned.",
 	},				
 	
 	["BrokenBone"] = {
@@ -17962,7 +17984,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Thug Life",
 			Description = "All Non-Archetyped Rare fighters gain 200 power and health.",
-			["Type"] = "OnDeath",
+			["Type"] = "OnSummon",
 			["Power"] = {{"Strengthen",200},{"Heal",200}},
 			Target = "Archetype",
 		},
@@ -17970,7 +17992,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Kinnis97"] = {
-		["Id"] = 556057564,
+		["Id"] = 959877037,
 		["Name"] = "Kinnis97",
 		["Health"] = 550,
 		["Power"] = 750,

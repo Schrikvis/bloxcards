@@ -396,7 +396,6 @@ local packs = {
 			"Lord_Gizmo",
 			"iiSmolToaster",
 			"Saprasam",
-			"Enlightened Whelp",
 			"BonesMcCormick",
 			"Kariu",
 			"madattak",
@@ -548,7 +547,8 @@ local packs = {
 			"Deadeye",
 			"DIY Dominus",
 			"Teal Eyes Green Dragon",
-			"Icepielover23",
+			"Icepielover23"
+			"Fate_Sealed",
 		},
 	}; 
 	{
@@ -768,7 +768,6 @@ local packs = {
 			"Dairingpoophead, Tix God",
 			"AII_Dragon",
 			"emilvita",
-			"Enlightened Whelp",
 			"DominiusConfabricor",
 			"Defaultio",
 			"Histor",
@@ -1030,7 +1029,7 @@ local packs = {
 			"BonesMcCormick",
 			"Wooden Chair",
  			"Rollernaut",
-			"MurticUnicorn",
+			"Exotic Murtic",
 			"Suicide Bomber",
 			"Roblox Gift Card",
 			"MagikalYawn",
@@ -1053,7 +1052,8 @@ local packs = {
 			"LeTruth",
 			"Xenotrent",
 			"Has",
-			"RaveTea",
+			"RaveTea"
+			"Fate_Sealed",
 
 			"Wingman8",
 			"Games",
@@ -1626,7 +1626,7 @@ local packs = {
 			"AVote-Sun",
 			"Heavy Rain-Sun",
 			"DominiusConfabricor-Sun",
-			"Eisenhower-Sun",
+			"Eisenhower, the President",
 			"Guest-Sun",
 			"Fenrier-Sun",
 			"Froot Ninja-Sun",
@@ -1644,7 +1644,7 @@ local packs = {
 			"Luck o The Lobsters-Sun",
 			"MarissaKitty04-Sun",
 			"Meebling Infestation-Sun",
-			"Meebling King-Sun",
+			"Meeboid King-Sun",
 			"Meeboid-Sun",
 			"Meeboid Champion-Sun",
 			"Meeboid Surfer-Sun",

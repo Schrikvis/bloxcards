@@ -870,7 +870,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["DominiusConfabricor"] = {
-		["Id"] = 645386479,
+		["Id"] = 950082879,
 		["Name"] = "DominiusConfabricor",
 		["AltCards"] = {
 			["DominiusConfabricor-Sun"] = {
@@ -3019,5 +3019,25 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "Don't make him dual wield. Seriously, don't, it's ridiculous.",
 	},
 }
+
+["Fate_Sealed"] = {
+		["Id"] = 955947464,
+		["Name"] = "Fate_Sealed",
+		["Health"] = 1000,
+		["Power"] = 250,
+		["Archetype"] = "Hero",
+		["Rarity"] = "Rare",
+		["AttackEffect"] = "KnifeStab",
+		["Color"] = "Green", 
+		["Cost"] = {["Neutral"] = 4,},
+		["Effect"] = {
+			Name = "Life fam",
+			Description = "Reset this card's power to 250 at the end of your turns.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"SetPower",250}},
+			Target = "Self",
+		},
+		["Bio"] = [[Pfft. How would you make someone's fate sealed? With glue?]],
+	},
 
 return tentwelvesixteen
