@@ -1429,7 +1429,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Valletta-Sun"] = {
 				["Id"] = 897247645,
-				["Bio"] = "I can’t reach that damn cup. SERVANTS!",
+				["Bio"] = "I can’t reach that darn cup. SERVANTS!",
 			}
 		},
 		["Health"] = 775,
@@ -17839,7 +17839,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"RandomAdd","LegendaryYellow"}},
 			Target = "Ally",
 		},
-		["Bio"] = "Creator of trade hangout, even though he hates BC only places. Seranok be damned.",
+		["Bio"] = "Creator of trade hangout, even though he hates BC only places. Seranok be darned.",
 	},				
 	
 	["BrokenBone"] = {
