@@ -6793,6 +6793,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Thunder",
 		["Color"] = "Blue",
 		["Cost"] = {["Blue"] = 4,},
+		["Charge"] = true,
 		["Effect"] = {
 			Name = "Haydoscale",
 			Description = "Haste. Lock all fighters that aren't Non-Archetyped Rares for a turn.",
