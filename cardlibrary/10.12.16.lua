@@ -915,7 +915,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Hellfire",
 			Description = "Whenever you lose life, set your life to 300. (This prevents death.)",
 			["Type"] = "OnHealthLoss",
-			["Power"] = {"SetLife",300,"Ally"},
+			["Power"] = {{"SetLife",300,"Ally"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Always searching for the perfect soul.",
