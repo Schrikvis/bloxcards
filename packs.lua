@@ -952,6 +952,7 @@ local packs = {
 			"Sand Eyes Yellow Dragon",
 			"Drager",
 			"Lord of Greed",
+			"Lord of Auctions",
 			"Doge",
 			"GalaxyFlame",
 			"Weaven"
@@ -1147,6 +1148,7 @@ local packs = {
 			"Shedletsky the Fried One",
 			"FixingFailure",
 			"Haggie125",
+			"Lord of Auctions",
 			"The Gentlemaniac",
 		},
 		
