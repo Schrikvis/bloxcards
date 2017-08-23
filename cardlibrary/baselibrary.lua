@@ -7363,7 +7363,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 1,["Blue"] = 1,["Yellow"] = 1,["Red"] = 1,["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Build Up",
-			Description = "This card requires 1 Acolyte to be played. Summon three Draconic Acolytes, then lock all allied cards for two turns.",
+			Description = "You must control a Acolyte to summon this card. Summon three Draconic Acolytes, then lock all allied cards for two turns.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Summon","Glaurung"},{"Summon","Smaug"},{"Summon","Aer Draco"},{"Lock",2}},
 			Target = "Ally",
@@ -16069,7 +16069,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Red"] = 3,},
 		["Effect"] = {
 			Name = "Sentry Heart",
-			Description = "Requires a Dwarf on the field to be summoned. Haste. Can't be counterattacked. When this card is summoned, destroy all other allied fighters.",
+			Description = "You must control a Dwarf or Sentry to summon this card. Haste. Can't be counterattacked. When this card is summoned, destroy all other allied fighters.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",9999,"Self"},{"Damage",9999}},
 			Target = "Ally",
@@ -16133,7 +16133,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Red"] = 5,},
 		["Effect"] = {
 			Name = "Sentry Heart",
-			Description = "Requires a Dwarf on the field to be summoned. Haste. Can't be counterattacked. After this card attacks, destroy all other allied fighters and increase the health of this card by 150.",
+			Description = "You must control a Dwarf or Sentry to summon this card. Haste. Can't be counterattacked. After this card attacks, destroy all other allied fighters and increase the health of this card by 150.",
 			["Type"] = "OnAttackEnd",
 			["Power"] = {{"Heal",9999,"Self"},{"Damage",9999},{"Heal",150,"Self"}},
 			Target = "Ally",
