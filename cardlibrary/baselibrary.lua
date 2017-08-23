@@ -7363,7 +7363,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 1,["Blue"] = 1,["Yellow"] = 1,["Red"] = 1,["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Build Up",
-			Description = "You must control a Acolyte to summon this card. Summon three Draconic Acolytes, then lock all allied cards for two turns.",
+			Description = "Cast only if you have one or more Acolytes in play. Summon three Draconic Acolytes, then lock all allied cards for two turns.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Summon","Glaurung"},{"Summon","Smaug"},{"Summon","Aer Draco"},{"Lock",2}},
 			Target = "Ally",
