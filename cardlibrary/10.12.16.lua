@@ -3018,9 +3018,8 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "Don't make him dual wield. Seriously, don't, it's ridiculous.",
 	},
-}
 
-["Fate_Sealed"] = {
+	["Fate_Sealed"] = {
 		["Id"] = 955947464,
 		["Name"] = "Fate_Sealed",
 		["Health"] = 1000,
@@ -3040,4 +3039,24 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = [[Pfft. How would you make someone's fate sealed? With glue?]],
 	},
 
+	["Lord of Auctions"] = {
+		["Id"] = 997944529,
+		["Name"] = "Lord of Auctions",
+		["Health"] = 500,
+		["Power"] = 500,
+		["Rarity"] = "Legendary",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Yellow", 
+		["Cost"] = {["Neutral"] = 2, ["Yellow"] = 7,},
+		["Effect"] = {
+			Name = "Auction God",
+			Description = "Generate 7 yellow icons and draw a card.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Yellow",7},{"Draw",1}},
+			Target = "Ally",
+		},
+		["Bio"] = "Kudos if you bought it from the auction.",
+	},
+
+}
 return tentwelvesixteen
