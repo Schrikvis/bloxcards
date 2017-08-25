@@ -6889,7 +6889,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 7,},
 		["Effect"] = {
 			Name = "Damage for Top Deck",
-			Description = "Activate only if your opponent controls 4 or more fighters. Deal 4000 damage to all fighters and gain 2 white icons.",
+			Description = "Your opponent must control at least 4 fighters to cast this card. Deal 4000 damage to all fighters and gain 2 white icons.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Neutral",2,"Ally"},{"Damage",4000}},
 			Target = "All",
@@ -7363,7 +7363,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 1,["Blue"] = 1,["Yellow"] = 1,["Red"] = 1,["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Build Up",
-			Description = "Cast only if you have one or more Acolytes in play. Summon three Draconic Acolytes, then lock all allied cards for two turns.",
+			Description = "You must control at least 1 acolyte to cast this card. Summon three Draconic Acolytes, then lock all allied cards for two turns.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Summon","Glaurung"},{"Summon","Smaug"},{"Summon","Aer Draco"},{"Lock",2}},
 			Target = "Ally",
@@ -7459,20 +7459,19 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 300976052,
 		["Name"] = "Toy Car",
 		["Health"] = 100,
-		["Power"] = 250,
+		["Power"] = 350,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Thunder",
 		["Archetype"] = "Toy",
 		["Color"] = "Yellow",
-		["FaceBlock"] = true,
-		["Cost"] = {["Neutral"] = 1,["Yellow"] = 1,},
+		["Charge"] = true,
+		["Cost"] = {["Neutral"] = 1,["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Build Up",
-			Description = "Can't attack the opponent directly. Unlock all Toy fighters.",
+			Description = "Unlock all Toy fighters.",
 			["Type"] = "OnSummon",
-			["Power"] = "Unlock",
+			["Power"] = {{"Unlock",999}},
 			Target = "Archetype",
-			Increase = 999,
 		},
 		["Bio"] = "VROOOM!",
 	},
@@ -8535,7 +8534,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 5,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Can only be summoned if you control another Titan. When this card is summoned, deal 500 damage to all Non-Titans.",
+			Description = "You must control at least 1 titan to summon this card. When this card is summoned, deal 500 damage to all Non-Titans.",
 			["Type"] = "OnSummon",
 			["Power"] = "Damage",
 			Target = "NotArchetype",
@@ -8557,7 +8556,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 5,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Can only be summoned if you control another Titan. When this card is summoned, lock all Non-Titans for 3 turns.",
+			Description = "You must have at least 1 titan in play to summon this card. When this card is summoned, lock all Non-Titans for 3 turns.",
 			["Type"] = "OnSummon",
 			["Power"] = "Lock",
 			Target = "NotArchetype",
@@ -8579,7 +8578,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 5,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Can only be summoned if you control another Titan. When this card is summoned, all Titan(s) gain 1000 Health.",
+			Description = "You must control at least 1 titan to summon this card. When this card is summoned, all Titan(s) gain 1000 Health.",
 			["Type"] = "OnSummon",
 			["Power"] = "Heal",
 			Target = "Archetype",
@@ -8601,7 +8600,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 5,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Can only be summoned if you control another Titan. Increase the health and power of all Titans by 500.",
+			Description = "You must control at least 1 titan to summon this card. Increase the health and power of all Titans by 500.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",500},{"Strengthen",500}},
 			Target = "Archetype",
@@ -8622,7 +8621,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 5,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = [[Can only be summoned if you control another Titan. Set the power of all non-Titans to 200. Put "The Forgotten One" to your hand.]],
+			Description = [[You must control at least 1 titan to summon this card. Set the power of all non-Titans to 200. Put "The Forgotten One" to your hand.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"SetPower",200},{"Add","The Forgotten One"}},
 			Target = "NotArchetype",
@@ -8643,7 +8642,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 5,["Red"] = 5, ["Green"] = 5, ["Yellow"] = 5, ["Blue"] = 5,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = [[Can only be summoned if you control 4 other Titans. At the end of each turn, deal 4000 damage to all Non-Titans, then unlock all titans.]],
+			Description = [[You must control at least 4 titans to summon this card. At the end of each turn, deal 4000 damage to all Non-Titans, then unlock all titans.]],
 			["Type"] = "OnEnd",
 			["Power"] = {{"Damage",4000,"NotArchetype",},{"Unlock",999,"Archetype"}},
 			Target = "NotArchetype",
@@ -8684,7 +8683,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 5,},
 		["Effect"] = {
 			Name = "TaxRevenue",
-			Description = [[This card can only be activated if you control 2 or more Overseers. Gain 2 Green, 2 White icons and Draw 2 cards.]],
+			Description = [[You must control at least 2 overseers to cast this card. Gain 2 Green, 2 White icons and Draw 2 cards.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Green",2},{"Neutral",2},{"Draw",2}},
 			Target = "Ally",
@@ -8881,7 +8880,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Yellow"] = 1,["Green"] = 1,["Red"] = 1,["Blue"] = 1,},
 		["Effect"] = {
 			Name = "Omega Cost",
-			Description = "Playable only if you have four or more Acolytes in play. Increase the health and power of all Acolytes by 300.",
+			Description = "You must control at least 4 Acolytes to summon this card. Increase the health and power of all Acolytes by 300.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",300},{"Strengthen",300}},
 			Target = "Archetype",
@@ -8901,7 +8900,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Yellow"] = 1,["Green"] = 1,["Red"] = 1,["Blue"] = 1,},
 		["Effect"] = {
 			Name = "Omega End",
-			Description = "This card can only be summoned if your Opponent controls 4 or more fighters.",
+			Description = "Your opponent must control at least 4 fighters to summon this card.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Yellow",0}},
 			Target = "All",
@@ -13917,7 +13916,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 1,["Yellow"] = 2,["Red"] = 1,["Neutral"] = 5,},
 		["Effect"] = {
 			Name = "Conflux",
-			Description = "Haste. Can only be cast if your opponent has 7 or 8 fighters in play. Destroy all enemy fighters.",
+			Description = "Haste. Your opponent must control at least 7 fighters to summon this card. Destroy all enemy fighters.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",9999}},
 			Target = "Opponent",
@@ -13938,7 +13937,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 3, ["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Conflux",
-			Description = "Can only be cast if your opponent has 3 or more fighters in play.",
+			Description = "Your opponent must control at least 3 fighters to summon this card.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",0}},
 			Target = "Opponent",
@@ -14531,7 +14530,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4, ["Red"] = 1,},
 		["Effect"] = {
 			Name = "AAAAAAAAAAAAAAAAAA",
-			Description = "Summon only if you control 4 or more Non-Archetyped Rares.",
+			Description = "You must control at least 4 non-archetyped rares to summon this card.",
 			["Type"] = "OnEnemySummon",
 			["Power"] = {{"Heal",0}},
 			Target = "Self",
@@ -14629,7 +14628,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2, ["Red"] = 5,},
 		["Effect"] = {
 			Name = "Moonlight Butterfly Dance",
-			Description = "Cast only if you have a KennedyLeDog in play. Deal 400 damage to all enemy fighters, and an additional 300 damage to a target fighter.",
+			Description = "Summon only if you have a KennedyLeDog in play. Deal 400 damage to all enemy fighters, and an additional 300 damage to a target fighter.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",300},{"Damage",400,"Opponent"}},
 			Target = "Single",
@@ -14658,7 +14657,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2, ["Blue"] = 5,},
 		["Effect"] = {
 			Name = "Trout Slap",
-			Description = "Haste. Cast only if you have a Hamstermon in play. At the end of each of your turns, lower the power of all enemy fighters by 200.",
+			Description = "Haste. Summon only if you have a Hamstermon in play. At the end of your turns, lower the power of all enemy fighters by 200.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Weaken",200}},
 			Target = "Opponent",
@@ -14768,7 +14767,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "EzWinz",
-			Description = "Cast only if you have two or more Acolytes in play. Generate an icon of every color, then draw a card.",
+			Description = "You must have at least 1 Acolyte in play to cast this card. Generate an icon of every color, then draw a card.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Yellow",1},{"Blue",1},{"Red",1},{"Green",1},{"Neutral",1},{"Draw",1}},
 			Target = "Ally",
@@ -15821,7 +15820,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 3, ["Neutral"] = 5},
 		["Effect"] = {
 			Name = "He can't fix it after all",
-			Description = "Cast Zaquille only if your opponent has 2 or more fighters in play. Your opponent loses all of their white icons and draws two cards.",
+			Description = "Your opponent must control at least 2 fighters to summon this card. Your opponent loses all of their white icons and draws two cards.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"SetNeutral",0,"Opponent"},{"Draw",2}},			
 			Target = "Opponent",
@@ -16069,7 +16068,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Red"] = 3,},
 		["Effect"] = {
 			Name = "Sentry Heart",
-			Description = "You must control a Dwarf or Sentry to summon this card. Haste. Can't be counterattacked. When this card is summoned, destroy all other allied fighters.",
+			Description = "Haste. Can't be counterattacked. You must control at least one Dwarf or Sentry to summon this card. When this card is summoned, destroy all other allied fighters.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",9999,"Self"},{"Damage",9999}},
 			Target = "Ally",
@@ -16133,7 +16132,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Red"] = 5,},
 		["Effect"] = {
 			Name = "Sentry Heart",
-			Description = "You must control a Dwarf or Sentry to summon this card. Haste. Can't be counterattacked. After this card attacks, destroy all other allied fighters and increase the health of this card by 150.",
+			Description = "Haste. Can't be counterattacked.  You must control at least one Dwarf or Sentry to summon this card. After this card attacks, destroy all other allied fighters and increase the health of this card by 150.",
 			["Type"] = "OnAttackEnd",
 			["Power"] = {{"Heal",9999,"Self"},{"Damage",9999},{"Heal",150,"Self"}},
 			Target = "Ally",
@@ -16985,7 +16984,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4, ["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "Harassing Talons",
-			Description = "Summon only if you control 2 or more Non-Archetyped Rares. When this card dies, draw two cards.",
+			Description = "You must control at least 2 non-archetyped rares to summon this card. When this card dies, draw two cards.",
 			["Type"] = "OnDeath",
 			["Power"] = {{"Draw",2}},
 			Target = "Ally",

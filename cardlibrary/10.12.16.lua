@@ -3018,9 +3018,8 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "Don't make him dual wield. Seriously, don't, it's ridiculous.",
 	},
-}
 
-["Fate_Sealed"] = {
+	["Fate_Sealed"] = {
 		["Id"] = 955947464,
 		["Name"] = "Fate_Sealed",
 		["Health"] = 1000,
@@ -3059,4 +3058,5 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "Kudos if you bought it from the auction.",
 	},
 
+}
 return tentwelvesixteen
