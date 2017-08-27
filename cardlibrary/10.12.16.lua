@@ -2845,24 +2845,24 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "Hiya!",
 	},
 	
-	["kickertoken"] = {
-		["Id"] = 857449867,
-		["Name"] = "superkicker2005",
-		["Health"] = 650,
-		["Power"] = 650,
-		["Rarity"] = "Token",
-		["AttackEffect"] = "PunchKick",
-		["Color"] = "Red", 
-		["Cost"] = {["Neutral"] = 0,},
-		["Token"] = true,
+	["VoxTrigati"] = {
+		["Id"] = 1007806448,
+		["Name"] = "ShyLightness",
+		["Health"] = 750,
+		["Power"] = 550,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Lightning",
+		["Color"] = "Blue",
+		["Cost"] = {["Blue"] = 4,},	
 		["Effect"] = {
-			Name = "Life fam",
-			Description = "Can't generate icons.",
-			["Type"] = "OnEnd",
-			["Power"] = {{"Damage",0}},
+			Name = "Blow Dart",
+			Description = "When this card destroys another, you gain 300 life.",
+			["Type"] = "OnDestroy",
+			["Power"] = {{"Cost",-300}},
 			Target = "Ally",
 		},
-		["Bio"] = "Hiya!",
+	
+			["Bio"] = "Shining bright, smacking you with all her might!",
 	},	
 	
 	["xiVirtual"] = {
