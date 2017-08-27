@@ -3044,6 +3044,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Lord of Auctions",
 		["Health"] = 500,
 		["Power"] = 500,
+		["Archetype"] = "Hero",
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Yellow", 
