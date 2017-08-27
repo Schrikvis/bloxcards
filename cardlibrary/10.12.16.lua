@@ -2845,9 +2845,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "Hiya!",
 	},
 	
-	["VoxTrigati"] = {
+	["kickertoken"] = {
 		["Id"] = 1007806448,
-		["Name"] = "ShyLightness",
+		["Name"] = "VoxTrigati",
 		["Health"] = 750,
 		["Power"] = 550,
 		["Rarity"] = "Uncommon",
@@ -3076,6 +3076,26 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Single",
 		},
 		["Bio"] = "Green cards and blue cards AREN'T basically the same thing.",
+	},
+	
+	["Blitzwolfer"] = {
+		["Id"] = 1008092198,
+		["Name"] = "Blitzwolfer",
+		["Health"] = 500,
+		["Power"] = 400,
+		["Rarity"] = "Rare",
+		["Archetype"] = "Hero",
+		["AttackEffect"] = "Lightning",
+		["Color"] = "Yellow",
+		["Cost"] = {["Yellow"] = 4, ["Neutral"] = 1,}, 
+		["Effect"] = {
+			Name = "Helping Out",
+			Description = "At the end of your turns, all Non-Archetyped Rare fighters gain 100 health.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Heal",100}},
+			Target = "Archetype",
+		},
+		["Bio"] = "A BLOX CARDS contributor. A BLOX CARDS artist. A BLOX CARDS Wikia owner. A BLOX CARDS Hero.",
 	},
 
 }
