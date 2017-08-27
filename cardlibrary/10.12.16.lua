@@ -3057,6 +3057,26 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "Kudos if you bought it from the auction.",
 	},
+	
+	["Superland6"] = {
+		["Id"] = 1003361089,
+		["Name"] = "Superland6",
+		["Health"] = 800,
+		["Power"] = 300,
+		["Archetype"] = "Hero",
+		["Rarity"] = "Rare",
+		["AttackEffect"] = "Gust",
+		["Color"] = "Green", 
+		["Cost"] = {["Neutral"] = 3, ["Green"] = 6,},
+		["Effect"] = {
+			Name = "Fissure",
+			Description = "Deal 300 damage to a target fighter. Give it 700 power.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Strengthen",700},{"Damage",300}},
+			Target = "Single",
+		},
+		["Bio"] = "Green cards and blue cards AREN'T basically the same thing.",
+	},
 
 }
 return tentwelvesixteen
