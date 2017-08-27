@@ -9954,7 +9954,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 4,["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Hive Crack",
-			Description = [[Put 2 Nightmares to your opponent's hand.]],
+			Description = [[Put 2 Nightmares into your opponent's hand.]],
 			Type = "OnSummon",
 			Power = {{"Add","Nightmare"},{"Add","Nightmare"}},
 			Target = "Opponent",
@@ -9974,7 +9974,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 1,["Green"] = 1,},
 		["Effect"] = {
 			Name = "Hive Crack",
-			Description = [[Put a "Nightmare" into your opponent's hand. Increase the power of all Nightmare fighters by 200.]],
+			Description = [[Put a Nightmare into your opponent's hand. All Nightmare-related fighters gain 200 Power.]],
 			Type = "OnSummon",
 			Power = {{"Add","Nightmare"},{"Strengthen",200,"Archetype"}},
 			Target = "Opponent",
@@ -10033,7 +10033,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 1,["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Nightmare!",
-			Description = [[Put a Nightmare to your opponent's hand. Increase the health of all Nightmare related fighters by 500.]],
+			Description = [[Put a Nightmare into your opponent's hand. All Nightmare-related fighters gain 500 Health.]],
 			Type = "OnSummon",
 			Power = {{"Add","Nightmare","Opponent"},{"Heal",500}},
 			Target = "Archetype",
@@ -10060,7 +10060,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Blue"] = 3,["Green"] = 2,},
 		["Effect"] = {
 			Name = "Night Creak",
-			Description = [[Put a Nightmare to the opponent's hand and increase the Health of all Nightmare related fighters by 300 at the end of each turn.]],
+			Description = [[At the end of your turns, put a Nightmare into your opponent's hand and give all Nightmare-related fighters 300 Health.]],
 			Type = "OnEnd",
 			Power = {{"Add","Nightmare"},{"Heal",300,"Archetype"}},
 			Target = "Opponent",
