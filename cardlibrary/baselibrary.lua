@@ -9235,13 +9235,24 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] =  897242956,
 				["Bio"] = "Falling out of a boat… WITH STYLE.",
 				["Effect"] = {
-					Name = "Render",
+					Name = "🤔",
 					Description = "Deal 300 damage to a target fighter, then lock it for 1 turn. When an enemy fighter dies, return this fighter to your hand and gain a red icon.",
 					["Type"] = "OnSummon",
 					["Power"] = {{"Summon","LeetWizard Token-Sun","Ally"},{"Lock",1},{"Damage",300},{"Damage",9999,"Self"}},
 					Target = "Single",
 				},
 			}
+			["LeetWizard-Masant"] = {
+				["Id"] =  1009952658,
+				["Bio"] = "Treas0ner, you're dumb. Wesker, you're toxic. Dairing, resize your images. Myr, stop being weird. Blitz, stop wasting your time. Histor, be quiet. Soul, stop admin abusing. Vis, man up.",
+				["Effect"] = {
+					Name = "🤔",
+					Description = "Deal 300 damage to a target fighter, then lock it for 1 turn. When an enemy fighter dies, return this fighter to your hand and gain a red icon.",
+					["Type"] = "OnSummon",
+					["Power"] = {{"Summon","LeetWizard Masantoken","Ally"},{"Lock",1},{"Damage",300},{"Damage",9999,"Self"}},
+					Target = "Single",
+				},
+			}			
 		},
 		["Health"] = 500,
 		["Power"] = 300,
@@ -9250,7 +9261,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 2, ["Red"] = 2},
 		["Effect"] = {
-			Name = "Render",
+			Name = "🤔",
 			Description = "Deal 300 damage to a target fighter, then lock it for 1 turn. When an enemy fighter dies, return this fighter to your hand and gain a red icon.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Summon","LeetWizard Token","Ally"},{"Lock",1},{"Damage",300},{"Damage",9999,"Self"}},
@@ -9268,13 +9279,23 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] =  897242956,
 				["Bio"] = "Falling out of a boat… WITH STYLE.",
 				["Effect"] = {
-					Name = "Render",
+					Name = "🤔",
 					Description = "Deal 300 damage to a target fighter, then lock it for 1 turn. When an enemy fighter dies, return this fighter to your hand and gain a red icon.",
 					["Type"] = "OnSummon",
 					["Power"] = {{"Add","LeetWizard-Sun"},{"Red",1},{"Damage",9999,"Self"}},
 					Target = "Ally",
 				},
-			}
+			["LeetWizard Masantoken"] = {
+				["Id"] =  897242956,
+				["Bio"] = "Treas0ner, you're dumb. Wesker, you're toxic. Dairing, resize your images. Myr, stop being weird. Blitz, stop wasting your time. Histor, be quiet. Soul, stop admin abusing. Vis, man up.",
+				["Effect"] = {
+					Name = "🤔",
+					Description = "Deal 300 damage to a target fighter, then lock it for 1 turn. When an enemy fighter dies, return this fighter to your hand and gain a red icon.",
+					["Type"] = "OnSummon",
+					["Power"] = {{"Add","LeetWizard-Masant"},{"Red",1},{"Damage",9999,"Self"}},
+					Target = "Ally",
+				},
+			}			
 		},
 		["Health"] = 500,
 		["Power"] = 300,
@@ -9283,7 +9304,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 2, ["Red"] = 2},
 		["Effect"] = {
-			Name = "Render",
+			Name = "🤔",
 			Description = "Deal 300 damage to a target fighter, then lock it for 1 turn. When an enemy fighter dies, return this fighter to your hand and gain a red icon.",
 			["Type"] = "OnEnemyDeath",
 			["Power"] = {{"Add","LeetWizard"},{"Red",1},{"Damage",9999,"Self"}},
