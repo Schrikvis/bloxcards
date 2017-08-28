@@ -9281,7 +9281,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Effect"] = {
 					Name = "🤔",
 					Description = "Deal 300 damage to a target fighter, then lock it for 1 turn. When an enemy fighter dies, return this fighter to your hand and gain a red icon.",
-					["Type"] = "OnSummon",
+					["Type"] = "OnEnemyDeath",
 					["Power"] = {{"Add","LeetWizard-Sun"},{"Red",1},{"Damage",9999,"Self"}},
 					Target = "Ally",
 				},
@@ -9291,7 +9291,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Effect"] = {
 					Name = "🤔",
 					Description = "Deal 300 damage to a target fighter, then lock it for 1 turn. When an enemy fighter dies, return this fighter to your hand and gain a red icon.",
-					["Type"] = "OnSummon",
+					["Type"] = "OnEnemyDeath",
 					["Power"] = {{"Add","LeetWizard-Masant"},{"Red",1},{"Damage",9999,"Self"}},
 					Target = "Ally",
 				},
