@@ -15037,7 +15037,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 4,},
 		["Effect"] = {
 			Name = "4691 Irradiated Haggis",
-			Description = "Unlock all fighers at the end of each of your turns,",
+			Description = "Unlock all fighters at the end of each of your turns,",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Unlock",999}},
 			Target = "All",
