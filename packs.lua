@@ -391,6 +391,7 @@ local packs = {
 		CardPackId = 721399805,
 		Description = "Green is the colour of life, growth, and the primal forces. Vitality packs contain cards that cost green!",
 		Cards = {
+			"Superland6",
 			"iSpaceDonut",
 			"Enderlox1",
 			"Lord_Gizmo",
@@ -559,6 +560,7 @@ local packs = {
 		CardPackId = 721399466,
 		Description = "Blue is the colour of logic, order, and structure. Thought packs contain cards that cost blue!",
 		Cards = {
+			"kickertoken",
 			"ImaUMBREON",
 			"caone",
 			"xiVirtual",
@@ -764,6 +766,7 @@ local packs = {
 		CardPackId = 721400239,
 		Description = "Yellow is the colour of chaos, emotion, and society. Revel packs contain cards that cost yellow!",
 		Cards = {
+			"Blitzwolfer",
 			"Bigtank_s",
 			"Dairingpoophead, Tix God",
 			"AII_Dragon",
@@ -967,6 +970,9 @@ local packs = {
 		Description = "Exotic new cards from the black market! White cards and joke cards! It's all yours, as long as you have 10 wins!",
 		WinRequirement = 10;
 		Cards = {
+			"Blitzwolfer",
+		        "kickertoken",
+			"Superland6",
 			"Bigtank_s",
 			"ProjectSlayer",
 			"iSpaceDonut",

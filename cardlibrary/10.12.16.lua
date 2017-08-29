@@ -2846,23 +2846,23 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["kickertoken"] = {
-		["Id"] = 857449867,
-		["Name"] = "superkicker2005",
-		["Health"] = 650,
-		["Power"] = 650,
-		["Rarity"] = "Token",
-		["AttackEffect"] = "PunchKick",
-		["Color"] = "Red", 
-		["Cost"] = {["Neutral"] = 0,},
-		["Token"] = true,
+		["Id"] = 1007806448,
+		["Name"] = "VoxTrigati",
+		["Health"] = 750,
+		["Power"] = 550,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Lightning",
+		["Color"] = "Blue",
+		["Cost"] = {["Blue"] = 4,},	
 		["Effect"] = {
-			Name = "Life fam",
-			Description = "Can't generate icons.",
-			["Type"] = "OnEnd",
-			["Power"] = {{"Damage",0}},
+			Name = "Blow Dart",
+			Description = "When this card destroys another, you gain 300 life.",
+			["Type"] = "OnDestroy",
+			["Power"] = {{"Cost",-300}},
 			Target = "Ally",
 		},
-		["Bio"] = "Hiya!",
+	
+			["Bio"] = "Shining bright, smacking you with all her might!",
 	},	
 	
 	["xiVirtual"] = {
@@ -3076,6 +3076,26 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Single",
 		},
 		["Bio"] = "Green cards and blue cards AREN'T basically the same thing.",
+	},
+	
+	["Blitzwolfer"] = {
+		["Id"] = 1008092198,
+		["Name"] = "Blitzwolfer",
+		["Health"] = 500,
+		["Power"] = 400,
+		["Rarity"] = "Rare",
+		["Archetype"] = "Hero",
+		["AttackEffect"] = "Lightning",
+		["Color"] = "Yellow",
+		["Cost"] = {["Yellow"] = 4, ["Neutral"] = 1,}, 
+		["Effect"] = {
+			Name = "Helping Out",
+			Description = "At the end of your turns, all Non-Archetyped Rare fighters gain 100 health.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Heal",100}},
+			Target = "Archetype",
+		},
+		["Bio"] = "A BLOX CARDS contributor. A BLOX CARDS artist. A BLOX CARDS Wikia owner. A BLOX CARDS Hero.",
 	},
 
 }
