@@ -1634,7 +1634,7 @@ local packs = {
 			"AVote-Sun",
 			"Heavy Rain-Sun",
 			"DominiusConfabricor-Sun",
-			"Eisenhower, the President",
+			"Eisenhower-Sun",
 			"Guest-Sun",
 			"Fenrier-Sun",
 			"Froot Ninja-Sun",
