@@ -147,7 +147,7 @@ local packs = {
 			"Toxic",
 			"Loogi",
 			"Qdhxx",
-			"Sammeh",
+			"Pikachukiller101",
 			"Noob Attack! Ninja Stars!",
 			"PhireFox",
 			"SharpTH",
