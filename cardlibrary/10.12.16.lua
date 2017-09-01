@@ -2769,7 +2769,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Shard Master"] = {
-		["Id"] = 807878722,
+		["Id"] = 1016706292,
 		["Name"] = "Shard Master",
 		["Health"] = 1000,
 		["Power"] = 0,
