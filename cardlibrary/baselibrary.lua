@@ -1096,7 +1096,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Punch2",
 		["Color"] = "Blue",
-		["Cost"] = {["Neutral"] = 4,},
+		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "DevEx",
 			Description = "Gain 500 Life Points.",
@@ -2019,9 +2019,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Name"] = "ChocolateStorage",	
 				["Effect"] = {
 					Name = "Assimilate",
-					Description = "Whenever your opponent gains life, Unlock ChocolateStorage.",
+					Description = "Whenever your opponent gains life, unlock ChocolateStorage and give it 100 Health and Power.",
 					["Type"] = "OnEnemyLifeGain",
-					["Power"] = {{"Unlock",9999}},
+					["Power"] = {{"Unlock",9999},{"Heal",100},{"Strengthen",100}},
 					Target = "Self",
 				},
 				["Bio"] = "His love of chocolate sometimes goes out of hand by filling his entire room with just chocolate, he'll store chocolate anywhere so he has plenty of chocolate to eat.",
@@ -2035,9 +2035,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Blue"] = 1,},
 		["Effect"] = {
 			Name = "Assimilate",
-			Description = "Whenever your opponent gains life, Unlock RiceStorage.",
+			Description = "Whenever your opponent gains life, unlock RiceStorage and give it 100 Health and Power.",
 			["Type"] = "OnEnemyLifeGain",
-			["Power"] = {{"Unlock",9999}},
+			["Power"] = {{"Unlock",9999},{"Heal",100},{"Strengthen",100}},
 			Target = "Self",
 		},
 		["Bio"] = "His love of rice sometimes goes out of hand by filling his entire room of just rice, he'll store rice anywhere so he has plenty of rice to eat.",
@@ -5452,7 +5452,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Field"] = 293402621,
 		["Color"] = "Neutral",
 		["Archetype"] = "Terrain",
-		["Cost"] = {["Green"] = 6,},
+		["Cost"] = {["Green"] = 5,},
 		["Effect"] = {
 			Name = "Stud",
 			Description = "Lower the power of all fighters by 25 at the end of each turn.",
@@ -6179,9 +6179,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Blue"] = 4,},
 		["Effect"] = {
 			Name = "TNL Blessing",
-			Description = "Gain 2500 Life Points.",
+			Description = "Gain 1250 Life Points.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Cost",-2500}},
+			["Power"] = {{"Cost",-1250}},
 			Target = "Opponent",
 		},
 		["Bio"] = "Known as the livestream host for ROBLOX's 'The Next Level,' Jack with his purple hair is the staple to any deck affiliated with its trait.",
@@ -9972,7 +9972,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Nightmare",
 		["AttackEffect"] = "Slash",
 		["Color"] = "Blue",
-		["Cost"] = {["Blue"] = 4,["Neutral"] = 2,},
+		["Cost"] = {["Blue"] = 3,["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Hive Crack",
 			Description = [[Put 2 Nightmares into your opponent's hand.]],
@@ -13210,9 +13210,28 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 4,},
 		["Effect"] = {
 			Name = "Vampire",
-			Description = "You lose 7500 life.",
+			Description = "You lose 7500 life. If you survive, gain 2500 Life at the end of this turn.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Cost",7500}},
+			["Power"] = {{"Cost",7500},{"Summon","RukatuKDHToken"},{"Damage",9999,"Self"}},
+			Target = "Ally",
+		},
+		["Bio"] = "Don't put all your eggs into one basket.",
+	},
+		
+	["RukatuKDHToken"] = {
+		["Id"] = 415734128,
+		["Name"] = "RukatuKDH",
+		["Health"] = 2000,
+		["Power"] = 2000,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Lightning",
+		["Color"] = "Blue",
+		["Cost"] = {["Neutral"] = 1,["Blue"] = 4,},
+		["Effect"] = {
+			Name = "Vampire",
+			Description = "You lose 7500 life. If you survive, gain 2500 Life at the end of this turn.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Cost",-2500},{"Summon","RukatuKDH"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Don't put all your eggs into one basket.",
@@ -14873,10 +14892,10 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 3, ["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Mana Siphon",
-			Description = "Whenever your opponent casts an action or terrain card, draw a card and put a random red or blue action into your hand.",
+			Description = "Whenever your opponent casts an action or terrain card, draw a card, put a random red or blue action into your hand and this fighter gains 150 Health and Power.",
 			["Type"] = "OnEnemyCast",
-			["Power"] = {{"Draw",1},{"RandomAdd","Lunar"}},
-			Target = "Ally",
+			["Power"] = {{"Draw",1,"Ally"},{"RandomAdd","Lunar","Ally"},{"Heal",150},{"Strengthen",150}},
+			Target = "Self",
 		},
 		["Bio"] = "Bombs, Bombers, Guns, Waves, Gases, Cancers, Bacteria, Etcetera.",
 	},
@@ -15926,7 +15945,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "PLEASE PLEASE PLEASE PLEASE PLEASE BE MY FRIEND PLEASE PLEASE PLEASE I'LL DO ANYTHING PLEASE THIS ISN'T ANNOYING AT ALL IS IT PLEASE PLEASE PLEASE I BEG YOU PLEASE PLEASE WHY DON'T YOU LISTEN TO ME PLEASE PLEASE PLEASE",
 	},
 	
-	["CIA Man"] = { -- TEST EFFECT
+	["CIA Man"] = { 
 		["Id"] = 503584176,
 		["Name"] = "CIA Man",
 		["Health"] = 500,
@@ -15937,8 +15956,27 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 5,["Blue"] = 2,},
 		["Effect"] = {
 			Name = "Protection",
-			Description = "When this fighter is targeted, summon a Body Guard.", -- Infinite loop, if they have CIA man as well?
-			["Type"] = "OnTarget",-- OnTarget
+			Description = "Summon a Body Guard. Whenever this fighter is targeted, summon a Body Guard.", 
+			["Type"] = "OnSummon",
+			["Power"] = {{"Summon","Body Guards"},{"Summon","CIA ManToken"},{"Damage",9999,"Self"}},
+			Target = "Ally",
+		},
+		["Bio"] = "Dr. Pavel, I'm CIA.",
+	},
+		
+	["CIA ManToken"] = { 
+		["Id"] = 503584176,
+		["Name"] = "CIA Man",
+		["Health"] = 500,
+		["Power"] = 200,
+		["Rarity"] = "Uncommon",   --left rarity as Uncommon, in case of RNG Summon
+		["AttackEffect"] = "GunShot",
+		["Color"] = "Blue", 
+		["Cost"] = {["Neutral"] = 5,["Blue"] = 2,},
+		["Effect"] = {
+			Name = "Protection",
+			Description = "Whenever this fighter is targeted, summon a Body Guard.", 
+			["Type"] = "OnTarget",
 			["Power"] = {{"Summon","Body Guards"}},
 			Target = "Ally",
 		},
@@ -17901,7 +17939,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 557973990,
 		["Name"] = "Drager Bot",
 		["Health"] = 1000,
-		["Power"] = 100,
+		["Power"] = 250,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Laser",
 		["Color"] = "Red",
