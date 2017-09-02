@@ -3568,7 +3568,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Bonk",
-			Description = "Deal 400 damage to a target fighter, then deal 400 damage to all allied fighters.",
+			Description = "Deal 400 damage to a target fighter, then deal 400 damage to all other allied fighters.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",400},{"Damage",400,"Ally"},{"Heal",400,"Self"}},
 			Target = "Single",
