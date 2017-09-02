@@ -91,7 +91,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Punch2",
 		["Color"] = "Red",
-		["Cost"] = {["Neutral"] = 3,},
+		["Cost"] = {["Neutral"] = 3,["Red"] = 1,},
 		["Effect"] = {
 			Name = "Conflux",
 			Description = "Lose one red icon and 25 life. This effect can cause negative icons.",
