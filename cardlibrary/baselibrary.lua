@@ -10817,7 +10817,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Green"] = 3,},
 		["Effect"] = {
 			Name = "Prakn'd",
-			Description = [[When this card is targeted, give a target fighter 100 health and power.]],
+			Description = [[Win the game. You may only summon this card after forfeiting.]],
 			["Type"] = "OnSummon",
 			["Power"] = {"Draw",-3},
 			Target = "Ally",
