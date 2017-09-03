@@ -1089,7 +1089,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Developer"] = {
-		["Id"] = 271751297,
+		["Id"] = 1024779575,
 		["Name"] = "Developer",
 		["Health"] = 200,
 		["Power"] = 500,
@@ -5436,7 +5436,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},		
 	
 	["Haunted Mansion"] = {
-		["Id"] = 893396645,
+		["Id"] = 1024779902,
 		["Name"] = "Haunted Mansion",
 		["AltCards"] = {
 			["Haunted Mansion-Sun"] = {
@@ -9964,7 +9964,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Delusionist"] = {
-		["Id"] = 345760339,
+		["Id"] = 1024780201,
 		["Name"] = "Delusionist",
 		["Health"] = 700,
 		["Power"] = 200,
@@ -9972,7 +9972,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Nightmare",
 		["AttackEffect"] = "Slash",
 		["Color"] = "Blue",
-		["Cost"] = {["Blue"] = 4,["Neutral"] = 2,},
+		["Cost"] = {["Blue"] = 3,["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Hive Crack",
 			Description = [[Put 2 Nightmares into your opponent's hand.]],
