@@ -7009,7 +7009,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Demon Eye",
 			Description = "Gain 1 Green icon. Increase the Health of all Overseers by 400 and their power by 200.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Green",2,"Ally"},{"Heal",400},{"Strengthen",200}},
+			["Power"] = {{"Green",1,"Ally"},{"Heal",400},{"Strengthen",200}},
 			Target = "Archetype",
 		},
 		["Bio"] = "Generalising is his hobby, but knitting is his passion.",
