@@ -16945,7 +16945,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 2,["Neutral"] = 3,}, 
 		["Effect"] = {
 			Name = "Batter Up",
-			Description = "Swap a fighters stats. This card cannon generate icons.",
+			Description = "Swap a target fighter's stats. This card cannot generate icons.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Swap",030}},
 			Target = "Single",
