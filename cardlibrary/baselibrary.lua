@@ -5273,7 +5273,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Summon 1 Doge. Draw a card.",
+			Description = "Summon a Doge. Draw a card.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Summon","Doge"},{"Draw",1}},
 			Target = "Ally",
@@ -5314,7 +5314,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Increase the power of all Doges by 200.",
+			Description = "All Doges gain 200 Power.",
 			["Type"] = "OnSummon",
 			["Power"] = "Strengthen",
 			Target = "Archetype",
@@ -5342,7 +5342,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Increase the health and power of all Doges by 150. Draw 1 card.",
+			Description = "All Doges gain 150 Health and Power. Draw a card.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Strengthen",150},{"Heal",150},{"Draw",1}},
 			Target = "Archetype",
@@ -10397,7 +10397,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "Infinite Doge",
-			Description = [[Put a random Doge to your hand.]],
+			Description = [[Put a random Doge into your hand.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"RandomAdd","Doge"}},
 			Target = "Ally",
@@ -10417,7 +10417,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Kobe can doge a ball",
-			Description = [[When this card attacks, put a random Doge to your hand.]],
+			Description = [[When this card attacks, put a random Doge into your hand.]],
 			["Type"] = "OnAttack",
 			["Power"] = {{"RandomAdd","Doge"}},
 			Target = "Self",
