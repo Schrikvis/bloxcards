@@ -4214,7 +4214,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Single",
 			Increase = 1,
 		},
-		["Bio"] = "Check out Tiny Tanks by ArceusInator if you like fun games like this one!",
+		["Bio"] = "Check out Tiny Tanks by Sharksie if you like fun games like this one!",
 	},			
 	
 	["Visleaf"] = {
