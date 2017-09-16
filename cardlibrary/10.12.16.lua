@@ -2124,9 +2124,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 4, ["Red"] = 4, ["Yellow"] = 4,},
 		["Effect"] = {
 			Name = "befriending of scaly mutts",
-			Description = "Summon three random fighters. Trigger their effects, then lose all green icons, then end the turn.",
+			Description = "Summon three random fighters. Trigger their effects, then lose all green icons.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"RandomSummonWithEffect","Any","Ally"},{"RandomSummonWithEffect","Any","Ally"},{"RandomSummonWithEffect","Any","Ally"},{"SetGreen",0},{"EndTurn",1}},
+			["Power"] = {{"RandomSummonWithEffect","Any","Ally"},{"RandomSummonWithEffect","Any","Ally"},{"RandomSummonWithEffect","Any","Ally"},{"SetGreen",0}},
 			Target = "Ally",
 		},
 		["Bio"] = [[Let it show you everything nature cannot do.]],
