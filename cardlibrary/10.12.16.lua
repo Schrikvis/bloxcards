@@ -2908,6 +2908,13 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Histor, Blood Warrior"] = {
 		["Id"] = 857451473,
 		["Name"] = "Histor, Blood Warrior",
+		["AltCards"] = {
+			["Histor, Blood Warrior-Masant"] = {
+				["Id"] =  1010478407,
+				["AltArt"] = true,
+				["Bio"] = "You had to pay money to get this communist card. That's kind of hypocritical.",
+			},
+		},
 		["Health"] = 650,
 		["Power"] = 650,
 		["Rarity"] = "Rare",
