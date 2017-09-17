@@ -12820,6 +12820,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["bengbeng14"] = {
 		["Id"] = 513645287,
 		["Name"] = "bengbeng14",
+			["AltCards"] = {
+			["bengbeng14-Masant"] = {
+				["Id"] =  1053193671,
+				["Bio"] = "SORE WA CHIGAU ZO!",
+			},
+		},
 		["Health"] = 400,
 		["Power"] = 900,
 		["Rarity"] = "Epic",
