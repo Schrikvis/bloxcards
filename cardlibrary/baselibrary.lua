@@ -1724,7 +1724,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Green"] = 2,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "When this card Attacks, increase your lifepoints by 500.",
+			Description = "Whenever this card attacks, you gain 500 Life.",
 			["Type"] = "OnAttack",
 			["Power"] = {{"Cost",-500}},
 			Target = "Self",
