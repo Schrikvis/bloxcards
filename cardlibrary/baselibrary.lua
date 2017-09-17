@@ -1089,7 +1089,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Developer"] = {
-		["Id"] = 271751297,
+		["Id"] = 1024779575,
 		["Name"] = "Developer",
 		["Health"] = 200,
 		["Power"] = 500,
@@ -5436,7 +5436,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},		
 	
 	["Haunted Mansion"] = {
-		["Id"] = 893396645,
+		["Id"] = 1024779902,
 		["Name"] = "Haunted Mansion",
 		["AltCards"] = {
 			["Haunted Mansion-Sun"] = {
@@ -9964,7 +9964,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Delusionist"] = {
-		["Id"] = 345760339,
+		["Id"] = 1024780201,
 		["Name"] = "Delusionist",
 		["Health"] = 700,
 		["Power"] = 200,
@@ -10817,7 +10817,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Green"] = 3,},
 		["Effect"] = {
 			Name = "Prakn'd",
-			Description = [[When this card is targeted, give a target fighter 100 health and power.]],
+			Description = [[Win the game. You may only summon this card after forfeiting.]],
 			["Type"] = "OnSummon",
 			["Power"] = {"Draw",-3},
 			Target = "Ally",
