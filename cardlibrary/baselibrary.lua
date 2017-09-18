@@ -6179,9 +6179,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Blue"] = 4,},
 		["Effect"] = {
 			Name = "TNL Blessing",
-			Description = "Gain 1250 Life Points.",
+			Description = "Gain 1500 Life Points.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Cost",-1250}},
+			["Power"] = {{"Cost",-1500}},
 			Target = "Opponent",
 		},
 		["Bio"] = "Known as the livestream host for ROBLOX's 'The Next Level,' Jack with his purple hair is the staple to any deck affiliated with its trait.",
