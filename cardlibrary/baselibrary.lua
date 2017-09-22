@@ -9241,7 +9241,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 					["Power"] = {{"Summon","LeetWizard Token-Sun","Ally"},{"Lock",1},{"Damage",300},{"Damage",9999,"Self"}},
 					Target = "Single",
 				},
-			}
+			},
 			["LeetWizard-Masant"] = {
 				["Id"] =  1009952658,
 				["Bio"] = "Treas0ner, you're dumb. Wesker, you're toxic. Dairing, resize your images. Myr, stop being weird. Blitz, stop wasting your time. Histor, be quiet. Soul, stop admin abusing. Vis, man up.",
@@ -9285,6 +9285,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 					["Power"] = {{"Add","LeetWizard-Sun"},{"Red",1},{"Damage",9999,"Self"}},
 					Target = "Ally",
 				},
+			},
 			["LeetWizard Masantoken"] = {
 				["Id"] =  897242956,
 				["Bio"] = "Treas0ner, you're dumb. Wesker, you're toxic. Dairing, resize your images. Myr, stop being weird. Blitz, stop wasting your time. Histor, be quiet. Soul, stop admin abusing. Vis, man up.",
