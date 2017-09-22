@@ -2398,7 +2398,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Haydoscale",
 			Description = "Lower the health of all fighters by 50 and increase their power by 50. Draw a card.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",50},{"Strengthen",50},{"Draw",1}},
+			["Power"] = {{"Damage",50},{"Strengthen",50},{"Draw",1,"Ally"}},
 			Target = "All",
 		},
 		["Bio"] = "He raged at the world, at his family, at his live. But mostly he just raged.",
