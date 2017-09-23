@@ -529,7 +529,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 6,["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Amp Up! Uzi!",
-			Description = "Increase the power of a target fighter by 500.",
+			Description = "A target fighter gains 500 Power.",
 			["Type"] = "OnSummon",
 			["Power"] = "Strengthen",
 			Target = "Single",
@@ -1324,7 +1324,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Red"] = 4,},
 		["Effect"] = {
 			Name = "Amp Up! Blaster!",
-			Description = "Increase the power of a target fighter by 500.",
+			Description = "A target fighter gains 500 Power.",
 			["Type"] = "OnSummon",
 			["Power"] = "Strengthen",
 			Target = "Single",
@@ -2104,7 +2104,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 1,["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Render",
-			Description = "Whenever BadBreadMaker is targeted by a creature, that creature and BadBreadMaker gain 300 health.",
+			Description = "Whenever BadBreadMaker is targeted by a fighter, that fighter and BadBreadMaker gain 300 health.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Heal",300,"Aggressor"},{"Heal",300}},
 			Target = "Self",
@@ -5579,7 +5579,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Red"] = 3,},
 		["Effect"] = {
 			Name = "Mafia Support",
-			Description = "Increase the power of a target fighter by 500.",
+			Description = "A target fighter gains 500 Power.",
 			["Type"] = "OnSummon",
 			["Power"] = "Strengthen",
 			Target = "Single",
@@ -5904,7 +5904,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 2,},
 		["Effect"] = {
 			Name = "Render",
-			Description = "Whenever GamesBloxx is targeted by a creature, that creature becomes a Noob",
+			Description = "Whenever GamesBloxx is targeted by a fighter, that fighter becomes a Noob",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Damage",9999,"Aggressor"},{"Summon","Noob","Aggressor"}},
 			Target = "Ally",
@@ -11182,7 +11182,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Render",
-			Description = "Whenever Bincent is targeted by a creature, lock that creature for six turns. It loses all of its power.",
+			Description = "Whenever Bincent is targeted by a fighter, that fighter loses all of its power, then locked for six turns.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Weaken",9999,"Aggressor"},{"Lock",6,"Aggressor"}},
 			Target = "Ally",
@@ -12094,7 +12094,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = [[Whenever Flufflefunz is targeted, it gains 100 power. If it was targeted by a creature, that creature gains 100 power too.]],
+			Description = [[Whenever Flufflefunz is targeted, it gains 100 power. If it was targeted by a fighter, that fighter gains 100 power too.]],
 			["Type"] = "OnTarget",
 			["Power"] = {{"Strengthen",100},{"Strengthen",100,"Aggressor"}},
 			Target = "Self",
