@@ -7967,7 +7967,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Hopelesssnesss",
-			Description = "At the end of each turn, damage all enemy fighters by 75 and weaken them by 50.",
+			Description = "At the end of your turns, all enemy fighters by lose 75 Health and 50 Power.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Damage",75},{"Weaken",50}},
 			Target = "Opponent",
@@ -9369,7 +9369,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0},
 		["Effect"] = {
 			Name = "Revival",
-			Description = "Can't attack. Deal 9999 damage to this card at the end of your turn.",
+			Description = "Can't attack. At the end of the turn, destroy this fighter.",
 			["Type"] = "OnEnd",
 			["Power"] = "Damage",
 			Target = "Self",
@@ -16692,7 +16692,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 3,["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Magic Trick!",
-			Description = "At the end of your turns, materialise a Hodif.",
+			Description = "At the end of your turns, summon a Hodif.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Summon","Hodif"}},
 			Target = "Ally",
