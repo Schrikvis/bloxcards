@@ -7652,7 +7652,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Red"] = 4,},
 		["Effect"] = {
 			Name = "Master Blast",
-			Description = [[Both players Red icons are set to exactly 4. You lose all your white icons. End the turn.]],
+			Description = [[Set both players' red icons to 4. You lose all your white icons. End the turn.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"SetRed",4},{"SetNeutral",0,"Ally"},{"EndTurn",1}},
 			Target = "All",
@@ -7672,7 +7672,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Red"] = 3,},
 		["Effect"] = {
 			Name = "EzWinz",
-			Description = "When this card destroys another, put a Red Legendary to your hand.",
+			Description = "Whenever this fighter destroys another, put a Red Legendary into your hand.",
 			["Type"] = "OnDestroy",
 			["Power"] = "RandomAdd",
 			Target = "Ally",
@@ -14654,7 +14654,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 1, ["Blue"] = 4,},
 		["Effect"] = {
 			Name = "Trout Slap",
-			Description = "Haste. When this card destroys another, put a copy of this card into your hand.",
+			Description = "Haste. Whenever this card destroys another, put a copy of this card into your hand.",
 			["Type"] = "OnDestroy",
 			["Power"] = {{"Add","ShockingRobux"}},
 			Target = "Ally",
