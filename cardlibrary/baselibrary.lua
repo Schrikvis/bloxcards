@@ -18,7 +18,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Citrus Punch",
-			Description = "Increase the power of a target fighter by 200.",
+			Description = "A target fighter gains 200 Power.",
 			["Type"] = "OnSummon",
 			["Power"] = "Strengthen",
 			Target = "Single",
@@ -2559,7 +2559,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 6,["Green"] = 3,},
 		["Effect"] = {
 			Name = "Demon Eye",
-			Description = "Gain 5 Green icons and lower the power of all fighters by 200.",
+			Description = "Generate 5 Green icons. All fighters lose 200 Power.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Green",5,"Ally"},{"Weaken",200}},
 			Target = "All",
@@ -3119,7 +3119,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 6,},
 		["Effect"] = {
 			Name = "Counter Block",
-			Description = "Deal 300 damage to all enemy fighters and lower their power by 150.",
+			Description = "All enemy fighters lose 300 Health and 150 Power.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",300},{"Weaken",150}},
 			Target = "Opponent",
@@ -4239,7 +4239,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "Split Ego",
-			Description = "Decrease the power of all fighters by 200.",
+			Description = "All fighters lose 200 Power.",
 			["Type"] = "OnSummon",
 			["Power"] = "Weaken",
 			Target = "All",
@@ -6928,7 +6928,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Green"] = 1,},
 		["Effect"] = {
 			Name = "Bandage",
-			Description = "Recover 1500 Lifepoints",
+			Description = "Gain 1500 Life.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Cost",-1500}},
 			Target = "Ally",
