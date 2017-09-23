@@ -16692,7 +16692,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 3,["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Magic Trick!",
-			Description = "At the end of your turns, summon a Hodif.",
+			Description = "At the end of your turns, materialise a Hodif.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Summon","Hodif"}},
 			Target = "Ally",
