@@ -1115,11 +1115,10 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "PunchKick",
 		["Color"] = "Red",
-		["Token"] = true,
 		["Cost"] = {["Neutral"] = 1,["Red"] = 1,},
 		["Effect"] = {
 			Name = "Appeal",
-			Description = "Hodif can't generate icons.",
+			Description = "N/A",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Cost",0}},
 			Target = "Opponent",
