@@ -1116,13 +1116,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "PunchKick",
 		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 1,["Red"] = 1,},
-		["Effect"] = {
-			Name = "Appeal",
-			Description = "N/A",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Cost",0}},
-			Target = "Opponent",
-		},
 		["Bio"] = "Powerful fighter with his MLG-certified meal to keep him ready for more foes.",
 	},
 	
