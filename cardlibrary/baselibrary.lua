@@ -1115,15 +1115,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "PunchKick",
 		["Color"] = "Red",
-		["Token"] = true,
 		["Cost"] = {["Neutral"] = 1,["Red"] = 1,},
-		["Effect"] = {
-			Name = "Appeal",
-			Description = "Hodif can't generate icons.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Cost",0}},
-			Target = "Opponent",
-		},
 		["Bio"] = "Powerful fighter with his MLG-certified meal to keep him ready for more foes.",
 	},
 	
@@ -16692,9 +16684,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 3,["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Magic Trick!",
-			Description = "At the end of your turns, materialise a Hodif.",
+			Description = "At the end of your turns, summon a Kitten out of the magician's hat.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Summon","Hodif"}},
+			["Power"] = {{"Summon","Kitten"}},
 			Target = "Ally",
 		},
 		["Bio"] = "I shall pull great things using my magic hat.",
