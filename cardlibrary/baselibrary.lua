@@ -15688,7 +15688,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "BurnForever!",
 			Description = "Whenever you lose life, shuffle a 666 into your deck, then draw a card.",
 			["Type"] = "OnHealthLoss",
-			["Power"] = {{"DeckAdd",666},{"Draw",1}},
+			["Power"] = {{"DeckAdd","666"},{"Draw",1}},
 			Target = "Ally",
 		},
 		["Bio"] = "Can you guess why wolves built heaven?",
