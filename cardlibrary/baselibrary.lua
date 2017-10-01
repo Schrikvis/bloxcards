@@ -17100,7 +17100,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,}, 
 		["Effect"] = {
 			Name = "Roblox",
-			Description = "Put a Classic Roblox Gear into both players hands.",
+			Description = "Put a Classic ROBLOX Gear into both players hands.",
 			["Type"] = "OnSummon",
 			["Power"] = {
 				{"RandomAdd", {"Linked Sword", "Trowel", "Rocket Launcher", "Superball", "Slingshot",},},
@@ -17123,7 +17123,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Power Up",
-			Description = "Give a fighter 300 power.",
+			Description = "A target fighter gains 300 power.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Strengthen",300}},
 			Target = "Single",
@@ -17143,7 +17143,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 1,},
 		["Effect"] = {
 			Name = "Power Up",
-			Description = "Give a fighter 300 health and lock it for 1 turn.",
+			Description = "Give a target fighter 300 health, then lock it for 1 turn.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",300},{"Lock",1}},
 			Target = "Single",
@@ -17163,7 +17163,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Red"] = 1,},
 		["Effect"] = {
 			Name = "Power Up",
-			Description = "Deal 500 damage to a fighter, and to both players.",
+			Description = "Deal 400 damage to a target fighter, and to both players.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",400},{"Cost",400},{"Inflict",400}},
 			Target = "Single",
@@ -17183,7 +17183,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Green"] = 1,},
 		["Effect"] = {
 			Name = "Power Up",
-			Description = "Deal 100 damage to a fighter and return this card to your hand.",
+			Description = "Deal 100 damage to a target fighter. Return this card to your hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",100},{"Add","Superball","Ally"}},
 			Target = "Single",
@@ -17203,7 +17203,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "Power Up",
-			Description = "Deal 200 damage to a fighter. Draw a card.",
+			Description = "Deal 200 damage to a target fighter. Draw a card.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",200},{"Draw",1,"Ally"}},
 			Target = "Single",
