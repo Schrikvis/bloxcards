@@ -11229,6 +11229,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Health"] = 600,
 		["Power"] = 700,
 		["Rarity"] = "Token",
+		["Archetype"] = "Hero",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Yellow",
 		["Cost"] = {["Yellow"] = 3,["Green"] = 3,},
@@ -17819,11 +17820,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},		
 	
 	["WebGL3D 1"] = {
-		["Id"] = 557986026,
+		["Id"] = 894237039,
 		["Name"] = "WebGL3D",
 		["Health"] = 400,
 		["Power"] = 400,
 		["Rarity"] = "Token",
+		["Archetype"] = "Hero",
 		["AttackEffect"] = "Slash",
 		["Color"] = "Green",
 		["Cost"] = {["Neutral"] = 4,["Green"] = 1},
@@ -17838,11 +17840,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},			
 	
 	["WebGL3D 2"] = {
-		["Id"] = 557986026,
+		["Id"] = 894237039,
 		["Name"] = "WebGL3D",
 		["Health"] = 400,
 		["Power"] = 400,
 		["Rarity"] = "Token",
+		["Archetype"] = "Hero",
 		["AttackEffect"] = "Slash",
 		["Color"] = "Green",
 		["Cost"] = {["Neutral"] = 4,["Green"] = 1},
