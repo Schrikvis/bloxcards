@@ -2104,7 +2104,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 1,["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Render",
-			Description = "Whenever BadBreadMaker is targeted by a fighter, that fighter and BadBreadMaker gain 300 health.",
+			Description = "Whenever BadBreadMaker is targeted, BadBreadMaker gains 300 Health. If it was targeted by a fighter, that fighter gains 300 Health too.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Heal",300,"Aggressor"},{"Heal",300}},
 			Target = "Self",
@@ -2336,7 +2336,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 2,},
 		["Effect"] = {
 			Name = "Parry",
-			Description = "Whenever this fighter is targeted, this fighter gains 100 Power and 100 Health..",
+			Description = "Whenever this fighter is targeted, this fighter gains 150 Power and 150 Health..",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Strengthen",150},{"Heal",150}},
 			Target = "Self",
