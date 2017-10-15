@@ -3105,6 +3105,25 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "A BLOX CARDS contributor. A BLOX CARDS artist. A BLOX CARDS Wikia owner. A BLOX CARDS Hero.",
 	},
+	
+	["The Famous Destruction5033"] = {
+		["Id"] = 1108825228,
+		["Name"] = "The Famous Destruction5033",
+		["Health"] = 1100,
+		["Power"] = 300,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Pulse",
+		["Color"] = "Blue",
+		["Cost"] = {["Neutral"] = 3, ["Blue"] = 5,},
+		["Effect"] = {
+			Name = "Under Attack",
+			Description = "When this card is attacked, lock the card that attacked it for an additional turn, then summon a Body Guard.",
+			["Type"] = "OnAttacked",
+			["Power"] = {{"Lock",2},{"Summon","Body Guards"}},
+			Target = "Aggressor",
+		},
+		["Bio"] = "Truth lies beyond the plane of existance, and stretches out further beyond to the endless grasp of the universe.",
+	},	
 
 }
 return tentwelvesixteen
