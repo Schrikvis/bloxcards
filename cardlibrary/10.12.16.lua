@@ -3122,7 +3122,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Lock",2},{"Summon","Body Guards"}},
 			Target = "Aggressor",
 		},
-		["Bio"] = "Truth lies beyond the plane of existance, and stretches out further beyond to the endless grasp of the universe.",
+		["Bio"] = "He's the most FAMOUSEST person in Blox Cards ... FAMOUSEST person?",
 	},	
 
 }
