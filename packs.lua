@@ -633,6 +633,7 @@ local packs = {
 			"Isaac0333-V2",
 			"Brick Bacon",
 			"Meme Thief",
+			"The Famous Destruction5033",
 			"Amber",
 			"Materking",
 			"tbradm",
@@ -1066,6 +1067,7 @@ local packs = {
 			"Xenotrent",
 			"Has",
 			"RaveTea",
+			"The Famous Destruction5033",
 			"Fate_Sealed",
 
 			"Wingman8",
