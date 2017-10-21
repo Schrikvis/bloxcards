@@ -1040,7 +1040,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Mcree"] = {
 				["Id"] = 532358983,
-				["Name"] = "Mcree",
+				["Name"] = "Cowboy",
 				["Bio"] = "Bamf.",
 			},
 			["CowboyV2"] = {
@@ -2829,7 +2829,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "DeadZoneHark",
 		["AltCards"] = {
 			["DeadZoneHark-Val"] = {
-				["Name"] = "DeadZoneHark",
+				["Name"] = "LoveZoneHark",
 				["Id"] = 655015343,
 				["Bio"] = "My glove touches all, and fills them with confidence.",
 			}
@@ -5442,6 +5442,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Haunted Mansion",
 		["AltCards"] = {
 			["Haunted Mansion-Sun"] = {
+				["Name"] = "Haunted Ship",
 				["Id"] = 897238400,
 				["Bio"] = "*-aws Theme Plays-",
 			};
@@ -8021,6 +8022,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Heavy Rain",
 		["AltCards"] = {
 			["Heavy Rain-Sun"] = {
+				["Name"] = "British Summer",
 				["Id"] =  897236117,
 				["Bio"] = "Everyday, Brits are suffering from rain and floods in their BLOODY SUMMER. With your help, we can help rehabilitate these people to their proper leisure.",
 			},
