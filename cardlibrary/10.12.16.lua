@@ -3105,6 +3105,25 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "A BLOX CARDS contributor. A BLOX CARDS artist. A BLOX CARDS Wikia owner. A BLOX CARDS Hero.",
 	},
+	
+	["how_inconvenient"] = {
+		["Id"] = 1076071154,
+		["Name"] = "how_inconvenient",
+		["Health"] = 600,
+		["Power"] = 500,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "UziShot",
+		["Color"] = "Red",
+		["Cost"] = {["Red"] = 3, ["Neutral"] = 2,},
+		["Effect"] = {
+			Name = "Render",
+			Description = "Whenever How_inconvenient is targeted by a creature, deal 300 damage to that creature.",
+			["Type"] = "OnTarget",
+			["Power"] = {{"Damage",300,"Aggressor"}},
+			Target = "Ally",
+		},
+		["Bio"] = "This effect is really inconvenient.",
+	},
 
 }
 return tentwelvesixteen
