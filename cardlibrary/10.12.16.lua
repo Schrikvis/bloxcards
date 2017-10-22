@@ -545,7 +545,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "Heaven. This is what I need.",
 	},	
 
-	["SONICTHEHEDGEHOGXX"] = {
+	["SONICTHEHEDGEHOGXXX"] = {
 		["Id"] = 596217036,
 		["Name"] = "SONICTHEHEDGEHOGXX",
 		["Health"] = 400,
