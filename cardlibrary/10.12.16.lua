@@ -575,7 +575,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1, ["Red"] = 2,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "Whenever your opponent acts an action or terrain spell, deal 700 damage to this card and end the turn.",
+			Description = "Whenever your opponent casts an action or terrain spell, deal 700 damage to this card and end the turn.",
 			["Type"] = "OnEnemyCast",
 			["Power"] = {{"Damage",700,"Self"},{"EndTurn",1}},
 			Target = "Ally",
