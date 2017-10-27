@@ -3119,7 +3119,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Under Attack",
 			Description = "Whenever this card is attacked and survives, lock the card that attacked it for an additional turn, then summon a Body Guard.",
 			["Type"] = "OnAttacked",
-			["Power"] = {{"Lock",1},{"Summon","Body Guards"}},
+			["Power"] = {{"Lock",1},{"Summon","Body Guards","Ally"}},
 			Target = "Aggressor",
 		},
 		["Bio"] = "He's the most FAMOUSEST person in Blox Cards ... FAMOUSEST person?",
