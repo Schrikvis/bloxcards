@@ -547,7 +547,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 
 	["SONICTHEHEDGEHOGXXX"] = {
 		["Id"] = 596217036,
-		["Name"] = "SONICTHEHEDGEHOGXXX",
+		["Name"] = "SONICTHEHEDGEHOGXX",
 		["Health"] = 400,
 		["Power"] = 600,
 		["Rarity"] = "Epic",
@@ -575,7 +575,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1, ["Red"] = 2,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "Whenever your opponent acts an action or terrain spell, deal 700 damage to this card and end the turn.",
+			Description = "Whenever your opponent casts an action or terrain spell, deal 700 damage to this card and end the turn.",
 			["Type"] = "OnEnemyCast",
 			["Power"] = {{"Damage",700,"Self"},{"EndTurn",1}},
 			Target = "Ally",
@@ -3085,6 +3085,25 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "Green cards and blue cards AREN'T basically the same thing.",
 	},
+  
+  ["The Famous Destruction5033"] = {
+		["Id"] = 1108825228,
+		["Name"] = "The Famous Destruction5033",
+		["Health"] = 1100,
+		["Power"] = 300,
+		["Rarity"] = "Epic",
+		["AttackEffect"] = "Pulse",
+		["Color"] = "Blue",
+		["Cost"] = {["Neutral"] = 3, ["Blue"] = 5,},
+		["Effect"] = {
+			Name = "Under Attack",
+			Description = "Whenever this card is attacked and survives, lock the card that attacked it for an additional turn, then summon a Body Guard.",
+			["Type"] = "OnAttacked",
+			["Power"] = {{"Lock",1},{"Summon","Body Guards","Ally"}},
+			Target = "Aggressor",
+		},
+		["Bio"] = "He's the most FAMOUSEST person in Blox Cards ... FAMOUSEST person?",
+	},
 	
 	["Blitzwolfer"] = {
 		["Id"] = 1008092198,
@@ -3106,24 +3125,24 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "A BLOX CARDS contributor. A BLOX CARDS artist. A BLOX CARDS Wikia owner. A BLOX CARDS Hero.",
 	},
 	
-	["The Famous Destruction5033"] = {
-		["Id"] = 1108825228,
-		["Name"] = "The Famous Destruction5033",
-		["Health"] = 1100,
-		["Power"] = 300,
-		["Rarity"] = "Epic",
-		["AttackEffect"] = "Pulse",
-		["Color"] = "Blue",
-		["Cost"] = {["Neutral"] = 3, ["Blue"] = 5,},
+	["how_inconvenient"] = {
+		["Id"] = 1076071154,
+		["Name"] = "how_inconvenient",
+		["Health"] = 600,
+		["Power"] = 500,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "UziShot",
+		["Color"] = "Red",
+		["Cost"] = {["Red"] = 3, ["Neutral"] = 2,},
 		["Effect"] = {
-			Name = "Under Attack",
-			Description = "Whenever this card is attacked and survives, lock the card that attacked it for an additional turn, then summon a Body Guard.",
-			["Type"] = "OnAttacked",
-			["Power"] = {{"Lock",1},{"Summon","Body Guards","Ally"}},
-			Target = "Aggressor",
+			Name = "Render",
+			Description = "Whenever How_inconvenient is targeted by a creature, deal 300 damage to that creature.",
+			["Type"] = "OnTarget",
+			["Power"] = {{"Damage",300,"Aggressor"}},
+			Target = "Ally",
 		},
-		["Bio"] = "He's the most FAMOUSEST person in Blox Cards ... FAMOUSEST person?",
-	},	
+		["Bio"] = "This effect is really inconvenient.",
+	},
 
 }
 return tentwelvesixteen
