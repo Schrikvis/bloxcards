@@ -3162,3 +3162,6 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "Dang, Myrmiredon has really let himself go this time!",
 	},
+
+}
+return tentwelvesixteen
