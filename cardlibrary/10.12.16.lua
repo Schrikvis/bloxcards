@@ -3144,5 +3144,21 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "This effect is really inconvenient.",
 	},
 
-}
-return tentwelvesixteen
+        ["Jimmyin1"] = {
+		["Id"] = 1120986433,
+		["Name"] = "Jimmyin1",
+		["Health"] = 900,
+		["Power"] = 400,
+		["Rarity"] = "Epic",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Green",
+		["Cost"] = {["Neutral"] = 4, ["Green"] = 3,},
+		["Effect"] = {
+			Name = "Poisonous Touch",
+			Description = " Whenever this card attacks, the fighter that was attacked loses 400 power. Then, lock this fighter for an additional two turns.",
+			["Type"] = "OnAttack",
+			["Power"] = {{"Weaken",400,"Aggressor"},{"Lock",2,"Self"}},
+			Target = "Self",
+		},
+		["Bio"] = "Dang, Myrmiredon has really let himself go this time!",
+	},
