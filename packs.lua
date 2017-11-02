@@ -557,6 +557,7 @@ local packs = {
 			"Teal Eyes Green Dragon",
 			"Icepielover23",
 			"Fate_Sealed",
+			"Jimmyin1",
 		},
 	}; 
 	{
@@ -1165,6 +1166,7 @@ local packs = {
 			"Haggie125",
 			"Lord of Auctions",
 			"The Gentlemaniac",
+			"Jimmyin1",
 		},
 		
 	};
