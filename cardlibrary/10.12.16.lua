@@ -3085,6 +3085,25 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "Green cards and blue cards AREN'T basically the same thing.",
 	},
+  
+  ["The Famous Destruction5033"] = {
+		["Id"] = 1108825228,
+		["Name"] = "The Famous Destruction5033",
+		["Health"] = 1100,
+		["Power"] = 300,
+		["Rarity"] = "Epic",
+		["AttackEffect"] = "Pulse",
+		["Color"] = "Blue",
+		["Cost"] = {["Neutral"] = 3, ["Blue"] = 5,},
+		["Effect"] = {
+			Name = "Under Attack",
+			Description = "Whenever this card is attacked and survives, lock the card that attacked it for an additional turn, then summon a Body Guard.",
+			["Type"] = "OnAttacked",
+			["Power"] = {{"Lock",1},{"Summon","Body Guards","Ally"}},
+			Target = "Aggressor",
+		},
+		["Bio"] = "He's the most FAMOUSEST person in Blox Cards ... FAMOUSEST person?",
+	},
 	
 	["Blitzwolfer"] = {
 		["Id"] = 1008092198,
@@ -3123,6 +3142,25 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Ally",
 		},
 		["Bio"] = "This effect is really inconvenient.",
+	},
+
+        ["Jimmyin1"] = {
+		["Id"] = 1120986433,
+		["Name"] = "Jimmyin1",
+		["Health"] = 900,
+		["Power"] = 400,
+		["Rarity"] = "Epic",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Green",
+		["Cost"] = {["Neutral"] = 4, ["Green"] = 3,},
+		["Effect"] = {
+			Name = "Poisonous Touch",
+			Description = " Whenever this card attacks, the fighter that was attacked loses 400 power. Then, lock this fighter for an additional two turns.",
+			["Type"] = "OnAttack",
+			["Power"] = {{"Weaken",400,"Aggressor"},{"Lock",2,"Self"}},
+			Target = "Self",
+		},
+		["Bio"] = "Dang, Myrmiredon has really let himself go this time!",
 	},
 
 }

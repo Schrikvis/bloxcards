@@ -2760,7 +2760,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Purlot Trap.",
 			Description = "Drain 500 life from the opponent.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Cost",-500}{"Inflict",500}},
+			["Power"] = {{"Cost",-500},{"Inflict",500}},
 			Target = "Opponent",
 		},
 		["Bio"] = "Drager's right hand man, he fixes every one of his tpyoes without failure.",
@@ -7942,7 +7942,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Forced sip",
 			Description = "Lower the health and power of a target fighter by 400. You gain 400 life.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Weaken",400},{"Damage",400},{"Cost",-400}} 
+			["Power"] = {{"Weaken",400},{"Damage",400},{"Cost",-400}},
 			Target = "Opponent",
 		},
 		["Bio"] = "This will make your enemies turn to ice and will last twice! AHAHAHHAHAHA!~~.",
