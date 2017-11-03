@@ -906,14 +906,14 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			}
 		},
 		["Health"] = 1000,
-		["Power"] = 300,
+		["Power"] = 500,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Gust",
 		["Color"] = "Red",
 		["Cost"] = {["Red"] = 7,},
 		["Effect"] = {
 			Name = "Hellfire",
-			Description = "Whenever you lose life, set your life to 300. (This prevents death.)",
+			Description = "Whenever SoulSearch strikes the opponent, it gains 300 health and power.",
 			["Type"] = "OnHealthLoss",
 			["Power"] = {{"SetLife",300,"Ally"}},
 			Target = "Ally",
@@ -1799,13 +1799,13 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Yoshilove574"] = {
 		["Id"] = 714689059,
 		["Name"] = "Yoshilove574",
-		["Health"] = 400,
-		["Power"] = 0,
+		["Health"] = 50,
+		["Power"] = 50,
 		["Rarity"] = "Rare",
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Punchkick",
 		["Color"] = "Green", 
-		["Cost"] = {["Green"] = 4,},
+		["Cost"] = {["Green"] = 4, ["White"] = 1,},
 		["Effect"] = {
 			Name = "befriending of scaly mutts",
 			Description = "A target fighter gains 400 health and power.",
