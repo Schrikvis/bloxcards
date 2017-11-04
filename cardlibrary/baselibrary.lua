@@ -7943,7 +7943,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Description = "Lower the health and power of a target fighter by 400. You gain 400 life.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",400},{"Damage",400},{"Cost",-400}},
-			Target = "Opponent",
+			Target = "Single",
 		},
 		["Bio"] = "This will make your enemies turn to ice and will last twice! AHAHAHHAHAHA!~~.",
 	},
