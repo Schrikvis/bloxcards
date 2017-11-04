@@ -3268,7 +3268,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Add","Swarm"},{"Add","Swarm"}},
 			Target = "Ally",
 		},
-		["Bio"] = "Bees flap their wings 230 times a second, creating a large displcement field that they sit on. This is how bees fly. -Sword Critic",
+		["Bio"] = "Bees flap their wings 230 times a second, creating a large displacement field that they sit on. This is how bees fly. -Sword Critic",
 	},
 	
 	["Elioofsheep"] = {
