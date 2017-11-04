@@ -16452,29 +16452,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "Cows are just plain evil.",
 	},
 	
-	["MasterHand"] = {
-		["Id"] = 502550783,
-		["Name"] = "MasterHand",
-		["Health"] = 5000,
-		["Power"] = 0,
-		["Rarity"] = "Token",
-		["AttackEffect"] = "Fire",
-		["WeakenImmune"] = true,
-		["SwapImmune"] = true,
-		["CounterAttackBlock"] = true,
-		["Color"] = "Neutral",
-		["Cost"] = {["Neutral"] = 3,},
-		["Effect"] = {
-			Name = "BossMonster",
-			Description = [[Can't be counterattacked. This card is immune to cards that lower or swap its Health or Power. When this card is destroyed, its controller loses the game.]],
-			["Type"] = "OnDeath",
-			["Power"] = "Inflict",
-			Target = "Self",	
-			Increase = 99999,
-		},
-		["Bio"] = "No gimmicks... Apart from this one.",
-	},		
-	
 	["JavierCollin88Poppin"] = {
 		["Id"] = 496076329,
 		["Name"] = "JavierCollin88Poppin",
