@@ -3194,7 +3194,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Poisonous Touch",
 			Description = "At the end of this turn, swap the stats of all allied fighters.",
-			["Type"] = "OnSummon",
+			["Type"] = "OnEnd",
 			["Power"] = {{"Swap",030},{"Summon","Arte71 3",},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
@@ -3226,7 +3226,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Poisonous Touch",
 			Description = "Allied fighters enter play with an additional 150 health and power.",
 			["Type"] = "OnAllySummon",
-			["Power"] = {{"Weaken",400,"Aggressor"},{"Lock",2,"Self"}},
+			["Power"] = {{"Heal",150,"Aggressor"},{"Strengthen",150,"Aggressor"},{"Lock",2,"Self"}},
 			Target = "Aggressor",
 		},
 		["Bio"] = "Turtle spammers seriously should learn how to play the game. 4 Stormchasers and 25 actions in one turn - that's REAL Blox Cards.",
@@ -3280,7 +3280,6 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Dash",
 		["Color"] = "Yellow",
 		["Cost"] = {["Yellow"] = 3,},
-		["Charge"] = true,
 		["Effect"] = {
 			Name = "Poisonous Touch",
 			Description = "At the end of your turns, put a noob into your hand. Elioofsheep can't generate icons.",
