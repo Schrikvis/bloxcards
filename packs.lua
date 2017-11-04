@@ -398,6 +398,8 @@ local packs = {
 		CardPackId = 721399805,
 		Description = "Green is the colour of life, growth, and the primal forces. Vitality packs contain cards that cost green!",
 		Cards = {
+			"Neutrinous",
+			"Turtleuser3",
 			"Superland6",
 			"iSpaceDonut",
 			"Enderlox1",
@@ -568,6 +570,7 @@ local packs = {
 		CardPackId = 721399466,
 		Description = "Blue is the colour of logic, order, and structure. Thought packs contain cards that cost blue!",
 		Cards = {
+			"Arte71",
 			"kickertoken",
 			"ImaUMBREON",
 			"caone",
@@ -775,6 +778,8 @@ local packs = {
 		CardPackId = 721400239,
 		Description = "Yellow is the colour of chaos, emotion, and society. Revel packs contain cards that cost yellow!",
 		Cards = {
+			"Elioofsheep",
+			"Bucket of Bees",
 			"Blitzwolfer",
 			"Bigtank_s",
 			"Dairingpoophead, Tix God",
@@ -979,6 +984,11 @@ local packs = {
 		Description = "Exotic new cards from the black market! White cards and joke cards! It's all yours, as long as you have 10 wins!",
 		WinRequirement = 10;
 		Cards = {
+			"Elioofsheep",
+			"Bucket of Bees",
+			"Neutrinous",
+			"Turtleuser3",
+			"Arte71",
 			"Jimmyin1",
 			"how_inconvenient",
 			"Blitzwolfer",
@@ -1058,11 +1068,6 @@ local packs = {
 			"Friaza",
 			"Your_Name",
 			"Defaultio",
-			"Deadly Dicey Duo",
-			"hyp3rdeath",
-			"SoulSearch",
-			"DominiusConfabricor",
-			"PlaceRebuilder",
 			-- PAST THIS POINT IS FOR WHITE CARDS AND JOKE CARDS ONLY. I'M LOOKING AT YOU, BLITZ.
 			"Wingman8",
 			"Games",
@@ -1296,6 +1301,7 @@ local packs = {
 		Description = "Filled with only cards belonging to an archetype, this pack can help you finish your deck provided you have at least 10 wins.",
 		WinRequirement = 10;
 		Cards = {
+			"Bucket of Bees",
 			"Themediamogul99",
 			"Abhorrant Skull",
 			"Possessed Skull",
