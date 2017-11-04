@@ -3233,7 +3233,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Neutrinous"] = {
-		["Id"] = 1151276826,
+		["Id"] = 1151275174,
 		["Name"] = "Neutrinous",
 		["Health"] = 1100,
 		["Power"] = 200,
@@ -3278,6 +3278,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 400,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Dash",
+		["Token"] = true,
 		["Color"] = "Yellow",
 		["Cost"] = {["Yellow"] = 3,},
 		["Effect"] = {
