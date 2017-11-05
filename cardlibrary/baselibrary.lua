@@ -849,7 +849,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Bio"] = "Demon Ninja.",
 			}
 		},
-		["Health"] = 1250,
+		["Health"] = 1000,
 		["Power"] = 100,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Thunder",
@@ -13691,8 +13691,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Brycen27"] = {
 		["Id"] = 430951310,
 		["Name"] = "Brycen27",
-		["Health"] = 500,
-		["Power"] = 500,
+		["Health"] = 400,
+		["Power"] = 400,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Green",

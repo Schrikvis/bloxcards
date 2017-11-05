@@ -1037,7 +1037,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Yellow", 
-		["Cost"] = {["Neutral"] = 4,},
+		["Cost"] = {["Neutral"] = 4, ["Red"] = 1,},
 		["Effect"] = {
 			Name = "Halloween",
 			Description = "Put a Pumpkin Bomb into your hand.",
