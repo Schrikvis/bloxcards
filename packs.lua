@@ -773,7 +773,7 @@ local packs = {
 			"FuryBlocks",
 			"Sharksie",
 			"PlaceRebuilder",
-			"Litozinnamon"
+			"Litozinnamon",
 		},
 	}; 
 	{
@@ -982,7 +982,7 @@ local packs = {
 			"Lord of Auctions",
 			"Doge",
 			"GalaxyFlame",
-			"Weaven"
+			"Weaven",
 		},
 	}; 
 	{
