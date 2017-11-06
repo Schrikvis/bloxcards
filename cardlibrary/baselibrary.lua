@@ -7930,7 +7930,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Witch's True Brew"] = {
-		["Id"] = 315997790,
+		["Id"] = 1159203563,
 		["Name"] = "Witch's True Brew",
 		["Health"] = 0,
 		["Power"] = 0,
