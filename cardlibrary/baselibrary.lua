@@ -5158,7 +5158,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Instill",
-			Description = "Increase the power of a target fighter by 250.",
+			Description = "Give a target fighter 250 Power.",
 			["Type"] = "OnSummon",
 			["Power"] = "Strengthen",
 			Target = "Single",
@@ -5179,7 +5179,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Quick Shot",
-			Description = "Increase the Health of all Korblox by 350.",
+			Description = "All Korblox fighters gain 350 Health.",
 			["Type"] = "OnSummon",
 			["Power"] = "Heal",
 			Target = "Archetype",
@@ -5207,7 +5207,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 5,},
 		["Effect"] = {
 			Name = "Quick Shot",
-			Description = "You must have a Korblox in play in order to summon this. Lower the power of all non-Korblox fighters by 500.",
+			Description = "You must have a Korblox in play in order to summon this. All non-Korblox fighters lose 500 Power.",
 			["Type"] = "OnSummon",
 			["Power"] = "Weaken",
 			Target = "NotArchetype",
@@ -12653,7 +12653,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 4,},
 		["Effect"] = {
 			Name = "Demoralising Chant",
-			Description = "You must have a Korblox in play in order to summon this. Lower the power of a target fighter by 500.",
+			Description = "You must have a Korblox in play in order to summon this. A target fighter loses 500 Power.",
 			["Type"] = "OnSummon",
 			["Power"] = "Weaken",
 			Target = "Single",
