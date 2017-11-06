@@ -6338,7 +6338,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 2,},
 		["Effect"] = {
 			Name = "Attack Modifier! Debuff!",
-			Description = "lower the attack of a target fighter by 300.",
+			Description = "A target fighter loses 300 Power.",
 			["Type"] = "OnSummon",
 			["Power"] = "Weaken",
 			Target = "Single",
@@ -6358,7 +6358,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 2,},
 		["Effect"] = {
 			Name = "Attack Modifier! Buff!",
-			Description = "Increase the attack of a target fighter by 300.",
+			Description = "A target fighter gains 300 Power.",
 			["Type"] = "OnSummon",
 			["Power"] = "Strengthen",
 			Target = "Single",
@@ -6378,7 +6378,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 2,},
 		["Effect"] = {
 			Name = "Defense Modifier! Buff!",
-			Description = "Increase the Health of a target fighter by 300.",
+			Description = "A target fighter gains 300 Health.",
 			["Type"] = "OnSummon",
 			["Power"] = "Heal",
 			Target = "Single",
