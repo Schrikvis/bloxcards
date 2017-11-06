@@ -480,7 +480,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Red",
 		["Effect"] = {
 			Name = "Extreme Energy Care Package",
-			Description = "All your fighters gain 300 Health and 150 Power.",
+			Description = "All of your allied fighters gain 300 Health and 150 Power.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Strengthen",150},{"Heal",300}},
 			Target = "Ally",
@@ -2896,7 +2896,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Red"] = 2},
 		["Effect"] = {
 			Name = "Inflated Ego",
-			Description = "Deal 250 damage to a target fighter and increase that fighter's Power by 300. This card cannot generate icons.",
+			Description = "Deal 250 damage to a target fighter, then give that fighter 300 Power. This card cannot generate icons.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Strengthen",300},{"Damage",250}},
 			Target = "Single",
@@ -3319,7 +3319,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 7,["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "Competition",
-			Description = "Draw 3 cards at the cost of 1500 life.",
+			Description = "Draw 3 cards. You lose 1500 Life.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Draw",3,"Ally"},{"Cost",1500}},
 			Target = "Opponent",
@@ -5137,7 +5137,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 2,},
 		["Effect"] = {
 			Name = "Jagged Arrow",
-			Description = "Lower the power of a target fighter by 400.",
+			Description = "A target fighter loses 400 Power.",
 			["Type"] = "OnSummon",
 			["Power"] = "Weaken",
 			Target = "Single",
@@ -6781,7 +6781,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Blue"] = 6,},
 		["Effect"] = {
 			Name = "Revival",
-			Description = "At the end of your turns, set this card's lock to 1.",
+			Description = "At the end of your turns, set the lock of this fighter to 1.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Unlock",9999,"Self"},{"Lock",2,"Self"}},
 			Target = "Ally"
@@ -6826,7 +6826,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 7,["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "When this card attacks, increase its health and power by 200.",
+			Description = "Whenever this card attacks, this card gains 200 Health and Power.",
 			["Type"] = "OnAttack",
 			["Power"] = {{"Strengthen",200},{"Heal",200}},
 			Target = "Self",
@@ -12205,7 +12205,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Green"] = 1,["Red"] = 5,},
 		["Effect"] = {
 			Name = "Twist",
-			Description = [[Whenever this fighter is targeted, put 2 random Rares to your hand.]],
+			Description = [[Whenever this fighter is targeted, put 2 random Rares into your hand.]],
 			["Type"] = "OnTarget",
 			["Power"] = {{"RandomAdd","Rare"},{"RandomAdd","Rare"}},
 			Target = "Ally",
@@ -12360,7 +12360,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Green"] = 3,},
 		["Effect"] = {
 			Name = "Silence I keel you!",
-			Description = [[Reduce the power of a target fighter by 200. Put a Targeting Blip to your hand. Targeting Blips trigger Target Effects.]],
+			Description = [[A target fighter loses 200 Power. Put a Targeting Blip into your hand. Targeting Blips trigger Target Effects.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",200},{"Add","Targeting Blip","Ally"}},
 			Target = "Single",
@@ -12771,7 +12771,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 7,["Red"] = 1,},
 		["Effect"] = {
 			Name = "SCRIPTING PARTY",
-			Description = "When played, put Ultoris NOOBrae to your hand.",
+			Description = "Put a copy of Ultoris NOOBrae into your hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Add","Ultoris NOOBrae"}},
 			Target = "Ally",
