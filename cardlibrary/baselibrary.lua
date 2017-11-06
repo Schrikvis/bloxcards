@@ -6388,7 +6388,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Biostream"] = {
-		["Id"] = 296845343,
+		["Id"] = 1159022386,
 		["Name"] = "Biostream",
 		["Health"] = 1000,
 		["Power"] = 350,
