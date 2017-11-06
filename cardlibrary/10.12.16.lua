@@ -1797,8 +1797,8 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Yoshilove574"] = {
-		["Id"] = 714689059,
-		["Name"] = "Yoshilove574",
+		["Id"] = 1159034543,
+		["Name"] = "Yoshilover574",
 		["Health"] = 50,
 		["Power"] = 50,
 		["Rarity"] = "Rare",
