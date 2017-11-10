@@ -6388,7 +6388,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Biostream"] = {
-		["Id"] = 296845343,
+		["Id"] = 1159022386,
 		["Name"] = "Biostream",
 		["Health"] = 1000,
 		["Power"] = 350,
@@ -7930,7 +7930,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Witch's True Brew"] = {
-		["Id"] = 315997790,
+		["Id"] = 1159203563,
 		["Name"] = "Witch's True Brew",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -7943,7 +7943,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Description = "Lower the health and power of a target fighter by 400. You gain 400 life.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",400},{"Damage",400},{"Cost",-400}},
-			Target = "Opponent",
+			Target = "Single",
 		},
 		["Bio"] = "This will make your enemies turn to ice and will last twice! AHAHAHHAHAHA!~~.",
 	},
