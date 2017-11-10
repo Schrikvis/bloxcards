@@ -905,7 +905,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Bio"] = "Always searching for the perfect soulmate.",
 			}
 		},
-		["Health"] = 1000,
+		["Health"] = 1300,
 		["Power"] = 500,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Gust",
@@ -913,10 +913,10 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 7,},
 		["Effect"] = {
 			Name = "Hellfire",
-			Description = "Whenever SoulSearch strikes the opponent, it gains 300 health and power.",
+			Description = "Whenever this card strikes the opponent, it gains 300 health and power.",
 			["Type"] = "OnHealthLoss",
-			["Power"] = {{"SetLife",300,"Ally"}},
-			Target = "Ally",
+			["Power"] = {{"Heal",300},{"Strengthen",300}},
+			Target = "Self",
 		},
 		["Bio"] = "Always searching for the perfect soul.",
 	},
