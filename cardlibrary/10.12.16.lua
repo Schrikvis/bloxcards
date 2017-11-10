@@ -914,7 +914,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Hellfire",
 			Description = "Whenever this card strikes the opponent, it gains 300 health and power.",
-			["Type"] = "OnHealthLoss",
+			["Type"] = "OnStrike",
 			["Power"] = {{"Heal",300},{"Strengthen",300}},
 			Target = "Self",
 		},
