@@ -1082,7 +1082,7 @@ local packs = {
 			"Wingman8",
 			"Games",
 			"Remote Mine",
-			"Suicide Bomber"
+			"Suicide Bomber",
 			"CanadianSanic",
 			"Ultra Bestower",
 			"Ultra Enhancer",
@@ -1640,7 +1640,9 @@ local packs = {
 			"Evil Prince-Val",
 			"SoulSearch-Val",
 		},
-		
+	};
+	
+	{
 		Name = "Summer Salt", --SUMMER!
 		PriceInBloxBux = 1000;
 		PriceInRobux = 0;
@@ -1696,5 +1698,3 @@ local packs = {
 }
 
 return packs
-
-		
