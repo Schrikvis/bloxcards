@@ -2106,7 +2106,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Lunar Rays",
 			Description = "Whenever you summon another fighter, destroy that fighter and deal 300 damage to a target fighter. Your lose all of your yellow icons.",
 			["Type"] = "OnAllySummon",
-			["Power"] = {{"SetYellow",0},{"Damage",9999,"Aggressor"},{"Damage",500,"Single"}},
+			["Power"] = {{"SetYellow",0},{"Damage",9999,"Aggressor"},{"Damage",300,"Single"}},
 			Target = "Ally",
 		},
 		["Bio"] = [["The noble work of our order is to give free energy to all from the moon's rays. The emotional cries of our detractors are... Distracting."]],
