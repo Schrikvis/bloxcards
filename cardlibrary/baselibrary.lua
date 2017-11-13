@@ -960,7 +960,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "seventh jutsu of the final sun's rend",
 			Description = "Deal 400 damage to a target fighter. You lose 600 life.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",400},{"Cost",600}},
+			["Power"] = {{"Cost",600},{"Damage",400}},
 			Target = "Single",
 		},
 		["Bio"] = "Your blood is worth just as much as his. If I waste his, you are to be wasted too.",
