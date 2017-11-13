@@ -3474,17 +3474,17 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Poisonous Touch",
-			Description = "Put Splintered Energy into your hand. Cast Alar Actions only if you have 3 or more Alar Knights in play.",
+			Description = "Put Splintered Embers into your hand. Cast Alar Actions only if you have 3 or more Alar Knights in play.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Add","Splintered Energy"}},
+			["Power"] = {{"Add","Splintered Embers"}},
 			Target = "Ally",
 		},
-		["Bio"] = "",
+		["Bio"] = "The Korblox are helpless in the air. Many skirmishes are won simply by the Heralds stating their presence.",
 	},
 	
-	["Splintered Energy"] = {
-		["Id"] = 1174085748,
-		["Name"] = "Splintered Energy",
+	["Splintered Embers"] = {
+		["Id"] = 1174087731,
+		["Name"] = "Splintered Embers",
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Token",
@@ -3496,12 +3496,12 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1, ["Red"] = 1,},
 		["Effect"] = {
 			Name = "Poisonous Touch",
-			Description = "Cast Alar Actions only if you have 3 or more Alar Knights in play. Return this card to your hand. Gain a Green icon.",
+			Description = "Cast Alar Actions only if you have 3 or more Alar Knights in play. Return this card to your hand. Gain a Red icon.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Add","Splintered Energy"},{"Green",1}},
+			["Power"] = {{"Add","Splintered Embers"},{"Red",1}},
 			Target = "Ally",
 		},
-		["Bio"] = "Man met aether, and aether found vitality.",
+		["Bio"] = "Man met aether, and aether found dominion.",
 	},
 	
 	["Alar Trainee"] = {
@@ -3516,17 +3516,17 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Poisonous Touch",
-			Description = "Put Splintered Embers into your hand. Cast Alar Actions only if you have 3 or more Alar Knights in play.",
+			Description = "Put Splintered Energy into your hand. Cast Alar Actions only if you have 3 or more Alar Knights in play.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Add","Splintered Embers"}},
+			["Power"] = {{"Add","Splintered Energy"}},
 			Target = "Ally",
 		},
 		["Bio"] = "I'll ascend just like Dukran did. Just you wait!",
 	},
 	
-	["Splintered Embers"] = {
-		["Id"] = 1174087731,
-		["Name"] = "Splintered Embers",
+	["Splintered Energy"] = {
+		["Id"] = 1174085748,
+		["Name"] = "Splintered Energy",
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Token",
@@ -3538,12 +3538,12 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1, ["Green"] = 1,},
 		["Effect"] = {
 			Name = "Poisonous Touch",
-			Description = "Cast Alar Actions only if you have 3 or more Alar Knights in play. Return this card to your hand. Gain a Red icon.",
+			Description = "Cast Alar Actions only if you have 3 or more Alar Knights in play. Return this card to your hand. Gain a Green icon.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Add","Splintered Energy"},{"Red",1}},
+			["Power"] = {{"Add","Splintered Energy"},{"Green",1}},
 			Target = "Ally",
 		},
-		["Bio"] = "Man met aether, and aether found dominion.",
+		["Bio"] = "Man met aether, and aether found vitality.",
 	},
 	
 	["Dukran the Celestial"] = {
@@ -3553,6 +3553,13 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Dukran-T"] = {
 				["Id"] =  1174085752,
 				["AltArt"] = true,
+				["Effect"] = {
+					Name = "Poisonous Touch",
+					Description = "Put Splintered Genesis into your hand. At the end of your turns, summon either an Alar Trainee or Herald.",
+					["Type"] = "OnSummon",
+					["Power"] = {{"Add","Splintered Genesis"},{"Summon","Dukran2-T"},{"Damage",9999,"Self"}},
+					Target = "Ally",
+				},
 				["Bio"] = "",
 			},
 		},
@@ -3580,6 +3587,13 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Dukran2-T"] = {
 				["Id"] =  1174085752,
 				["AltArt"] = true,
+				["Effect"] = {
+					Name = "Poisonous Touch",
+					Description = "Put Splintered Genesis into your hand. At the end of your turns, summon either an Alar Trainee or Herald.",
+					["Type"] = "OnEnd",
+					["Power"] = {{"RandomSummon",{"Alar Trainee", "Alar Herald"}}},
+					Target = "Ally",
+				},
 				["Bio"] = "",
 			},
 		},
