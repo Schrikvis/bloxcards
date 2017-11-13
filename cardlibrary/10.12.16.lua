@@ -1295,9 +1295,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Bleeding Reality",
-			Description = "Summon only if you control 6 or more Ultras. Lock all enemy fighters for 3 turns, Set the lock on all Ultras to 1, then end the turn.",
+			Description = "Summon only if you control 6 or more Ultras. Lock all enemy fighters for 3 turns, unlock all Ultras, then end the turn.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Lock",3,"Opponent"},{"Unlock",1,"Archetype"},{"Lock",1,"Archetype"},{"EndTurn",1}},
+			["Power"] = {{"Lock",3,"Opponent"},{"Unlock",9999,"Archetype"},{"EndTurn",1}},
 			Target = "Ally",
 		},
 		["Bio"] = "The intelligence of Ultras was questionable at best until reports of a species resembling a religious figure surfaced.",
