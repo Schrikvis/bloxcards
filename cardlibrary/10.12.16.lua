@@ -3534,7 +3534,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Requirement"] = {"Archetype",3},
 		["AttackEffect"] = "Dash",
 		["Stealth"] = true,
-		["Color"] = "Red",
+		["Color"] = "Green",
 		["Cost"] = {["Neutral"] = 1, ["Green"] = 1,},
 		["Effect"] = {
 			Name = "Poisonous Touch",
