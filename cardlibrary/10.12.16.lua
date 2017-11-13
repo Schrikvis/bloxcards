@@ -3535,7 +3535,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Dash",
 		["Stealth"] = true,
 		["Color"] = "Red",
-		["Cost"] = {["Neutral"] = 1, ["Red"] = 1,},
+		["Cost"] = {["Neutral"] = 1, ["Green"] = 1,},
 		["Effect"] = {
 			Name = "Poisonous Touch",
 			Description = "Cast Alar Actions only if you have 3 or more Alar Knights in play. Return this card to your hand. Gain a Green icon.",
