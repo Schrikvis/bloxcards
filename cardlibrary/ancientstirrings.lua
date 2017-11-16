@@ -1317,7 +1317,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 3, ["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "When this card dies, ressurect it and lose 600 life.",
+			Description = "When this card dies, resurrect it and lose 600 life.",
 			["Type"] = "OnDeath",
 			["Power"] = {{"Summon","Headless Horseman"},{"Cost",600}},
 			Target = "Ally",
