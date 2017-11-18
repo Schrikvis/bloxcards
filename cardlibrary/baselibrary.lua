@@ -257,7 +257,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["TitanoAgony-Sun"] = {
 				["Id"] = 897247036,
-				["Bio"] = "The floor is Meepcity.",
+				["Bio"] = "Keep this away from Ambamby!",
 			}
 		},
 		["Health"] = 500,
@@ -286,7 +286,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["TitanoDespair-Sun"] = {
 				["Id"] = 897238058,
-				["Bio"] = "The floor is Meepcity.",
+				["Bio"] = "Shut up, Immoratlity! It’s supposed to be a secret!",
 			}
 		},
 		["Health"] = 1000,
