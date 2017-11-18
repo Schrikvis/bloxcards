@@ -398,7 +398,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Damage",4000,"NotArchetype"},{"Summon","Titano's Fist of Agony"},{"Summon","Titano's Half of Despair"},{"Summon","Titano's Half of Immortality"},{"Summon","Titano's Fist of Soul"}},
 			Target = "Ally",
 		},
-		["Bio"] = "Meeps amd Moops are the cutest way of summoning an eldritch horror.",
+		["Bio"] = "Meeps and Moops are the cutest way of summoning an eldritch horror.",
 	},
 	
 	["Glaciem Mage"] = {
