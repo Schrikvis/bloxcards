@@ -373,7 +373,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Build Up",
 			Description = "Deal 4000 damage to all fighters, then summon Titano.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",4000,"All"},{"Summon","TitanoAgony-Sun"},{"Summon","TitanoDespair-Sun"},{"Summon","TitanoImmortality-Sun"},{"Summon","TitanoSoul-Sun"}},
+			["Power"] = {{"Damage",4000,"NotArchetype"},{"Summon","TitanoAgony-Sun"},{"Summon","TitanoDespair-Sun"},{"Summon","TitanoImmortality-Sun"},{"Summon","TitanoSoul-Sun"}},
 			Target = "Ally",
 		},
 		["AltCards"] = {
