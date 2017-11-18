@@ -369,18 +369,18 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Summon! Meeboid Titano!"] = {
 		["Id"] = 295903387,
 		["Name"] = "Summon! Meeboid Titano!",
-		["Effect"] = {
-			Name = "Build Up",
-			Description = "You must have a Meeboid in play to cast this. Deal 4000 damage to all non-Meeboids, then summon Kraken.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",4000,"NotArchetype"},{"Summon","TitanoAgony-Sun"},{"Summon","TitanoDespair-Sun"},{"Summon","TitanoImmortality-Sun"},{"Summon","TitanoSoul-Sun"}},
-			Target = "Ally",
-		},
 		["AltCards"] = {
 			["Titano-Sun"] = {
 				["Name"] = "Summon! Meeboid Kraken!",
 				["Id"] = 897247260,
 				["Bio"] = "Kraken open a cold one with the-- Oh crud, they’re all dead.",
+				["Effect"] = {
+					Name = "Build Up",
+					Description = "You must have a Meeboid in play to cast this. Deal 4000 damage to all non-Meeboids, then summon Kraken.",
+					["Type"] = "OnSummon",
+					["Power"] = {{"Damage",4000,"NotArchetype"},{"Summon","TitanoAgony-Sun"},{"Summon","TitanoDespair-Sun"},{"Summon","TitanoImmortality-Sun"},{"Summon","TitanoSoul-Sun"}},
+					Target = "Ally",
+				},
 			}
 		},
 		["Health"] = 0,
