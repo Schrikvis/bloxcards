@@ -17249,7 +17249,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},		
 	
 	["Epic Sauce"] = {
-		["Id"] = 626081944,
+		["Id"] = 1187815470,
 		["Name"] = "Epic Sauce",
 		["Health"] = 0,
 		["Power"] = 0,
