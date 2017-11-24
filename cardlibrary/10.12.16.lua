@@ -3513,9 +3513,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1, ["Red"] = 1,},
 		["Effect"] = {
 			Name = "Poisonous Touch",
-			Description = "Cast Alar Actions only if you have 3 or more Alar Knights in play. Return this card to your hand. Gain a Red icon.",
+			Description = "Cast Alar Actions only if you have 3 or more Alar Knights in play. Return this card to your hand. Gain a Green icon.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Add","Splintered Embers"},{"Red",1}},
+			["Power"] = {{"Add","Splintered Embers"},{"Green",1}},
 			Target = "Ally",
 		},
 		["Bio"] = "Man met aether, and aether found dominion.",
@@ -3555,9 +3555,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1, ["Green"] = 1,},
 		["Effect"] = {
 			Name = "Poisonous Touch",
-			Description = "Cast Alar Actions only if you have 3 or more Alar Knights in play. Return this card to your hand. Gain a Green icon.",
+			Description = "Cast Alar Actions only if you have 3 or more Alar Knights in play. Return this card to your hand. Gain a Red icon.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Add","Splintered Energy"},{"Green",1}},
+			["Power"] = {{"Add","Splintered Energy"},{"Red",1}},
 			Target = "Ally",
 		},
 		["Bio"] = "Man met aether, and aether found vitality.",
