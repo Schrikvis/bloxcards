@@ -675,9 +675,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Green"] = 1,},
 		["Effect"] = {
 			Name = "Conflux",
-			Description = "Haste.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Heal",0}},
+			Description = "Haste. Whenever this fighter strikes the opponent, you gain 500 Life.",
+			["Type"] = "OnStrike",
+			["Power"] = {{"Cost",-500}},
 			Target = "Self",
 		},
 		["Bio"] = "Cackletta disapproves.",
@@ -13127,7 +13127,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Uberubert"] = {
 		["Id"] = 415730433,
 		["Name"] = "Uberubert",
-		["Health"] = 500,
+		["Health"] = 400,
 		["Power"] = 600,
 		["Rarity"] = "Rare",
 		["Archetype"] = "Hero",
