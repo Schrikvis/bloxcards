@@ -28,7 +28,6 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Name"] = "Wolfbitten Elf",
 				["Effect"] = {
 					Name = "Woof",
-					Description = "Whenever you cast an action or terrain spell, transform this card. This card can't generate icons.",
 					["Type"] = "OnAllyCast",
 					["Power"] = {{"Summon","Festive Werewolf"},{"Damage",9999,"Self"}},
 					Target = "Ally",
@@ -36,7 +35,6 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Bio"] = "Can he deliver your gifts in time?",
 			}
 		},
-		["Token"] = true,
 		["Health"] = 200,
 		["Power"] = 200,
 		["Rarity"] = "Common",
@@ -46,7 +44,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 1,},
 		["Effect"] = {
 			Name = "Halloween",
-			Description = "Whenever you cast an action or terrain spell, transform this card. This card can't generate icons.",
+			Description = "Whenever you cast an action or terrain spell, transform this card.",
 			["Type"] = "OnAllyCast",
 			["Power"] = {{"Summon","Werewolf Savage"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -63,7 +61,6 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Name"] = "Festive Werewolf",
 				["Effect"] = {
 					Name = "Halloween",
-					Description = "Whenever your opponent casts an action or terrain spell, untransform this card. This card can't generate icons.",
 					["Type"] = "OnEnemyCast",
 					["Power"] = {{"Summon","Wolfbitten Elf"},{"Damage",9999,"Self"}},
 					Target = "Ally",
@@ -71,7 +68,6 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Bio"] = "The best kind of werewolf.",
 			}
 		},
-		["Token"] = true,
 		["Health"] = 400,
 		["Power"] = 400,
 		["Rarity"] = "Token",
@@ -81,7 +77,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 1,},
 		["Effect"] = {
 			Name = "Halloween",
-			Description = "Whenever your opponent casts an action or terrain spell, untransform this card. This card can't generate icons.",
+			Description = "Whenever your opponent casts an action or terrain spell, untransform this card.",
 			["Type"] = "OnEnemyCast",
 			["Power"] = {{"Summon","Wolfbitten Noob"},{"Damage",9999,"Self"}},
 			Target = "Ally",
