@@ -2794,17 +2794,14 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Kitten2"] = {
 				["Id"] =  1192986468,
-				["AltArt"] = true,
 				["Bio"] = "rawr...",
 			},
 			["Kitten3"] = {
 				["Id"] =  1192986973,
-				["AltArt"] = true,
 				["Bio"] = "Spooky scary skelecats send hairballs down your spine.",
 			},
 			["Kitten4"] = {
 				["Id"] =  1192987402,
-				["AltArt"] = true,
 				["Bio"] = "Ew...what IS that thing?!",
 			},
 		},		
