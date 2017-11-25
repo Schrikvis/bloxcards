@@ -8910,7 +8910,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 6,["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Plushie Amp",
-			Description = [[Whenever you summon a fighter, set its stats to 25/700. Plushie Unicorn does not trigger effects when summoned.]],
+			Description = [[Whenever you summon a fighter, set that fighter's stats to 25/700. Plushie Unicorn does not trigger effects when summoned.]],
 			["Type"] = "OnAllySummon",
 			["Power"] = {{"SetPower",700},{"SetHealth",25}},
 			Target = "Aggressor",
