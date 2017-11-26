@@ -9295,6 +9295,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			},
 			["LeetWizard-Masant"] = {
 				["Id"] =  1009952658,
+				["AltArt"] = true,
 				["Bio"] = "Treas0ner, you're dumb. Wesker, you're toxic. Dairing, resize your images. Myr, stop being weird. Blitz, stop wasting your time. Histor, be quiet. Soul, stop admin abusing. Vis, man up.",
 				["Effect"] = {
 					Name = "🤔",
@@ -12881,6 +12882,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["AltCards"] = {
 			["bengbeng14-Masant"] = {
 				["Id"] =  1053193671,
+				["AltArt"] = true,
 				["Bio"] = "SORE WA CHIGAU ZO!",
 			},
 		},
