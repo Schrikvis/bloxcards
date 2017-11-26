@@ -9565,7 +9565,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Bio"] = "Silly kids, Surfboards are for Meeboids!",
 			};
 			["Grand Meeboid Totem-Sun"] = {
-				["Id"] = 897238058,
+				["Id"] = 897237736,
 				["Bio"] = "Are they worshipping Cthulhu, or praying for good weather? Who knows!? All they can say is ‘meep’ and ‘moop.’",
 			};
 		},
