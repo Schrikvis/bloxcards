@@ -8146,7 +8146,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"SetHealth",400},{"SetPower",500}},
 			Target = "Self",
 		},
-		["Bio"] = "Just an average forumer nobody, nothing to see here.",
+		["Bio"] = "This is peach_tea. He has over 300 four-letter usernames. And no life.",
 	},
 	
 	["Zom-nobi"] = {
