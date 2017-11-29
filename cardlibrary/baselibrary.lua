@@ -7960,7 +7960,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Green"] = 4,},
 		["Effect"] = {
 			Name = "Endless Spooks",
-			Description = [[When this card attacks, increase its health by 500.]],
+			Description = "Whenever this card attacks, this card gains 500 Health.",
 			["Type"] = "OnAttack",
 			["Power"] = {{"Heal",500}},
 			Target = "Self",
