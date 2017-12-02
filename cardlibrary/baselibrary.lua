@@ -3037,7 +3037,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 1,},
 		["Effect"] = {
 			Name = "Nerve Wrecker",
-			Description = "lower the power of all enemy fighters by 100. Draw a card.",
+			Description = "All enemy fighters lose 100 Power. Draw a card.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",100,}, {"Draw",1,"Ally"}},
 			Target = "Opponent",
@@ -11568,7 +11568,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Blue"] = 4,},
 		["Effect"] = {
 			Name = "Strike Diamond!",
-			Description = "When this card Attacks, increase your lifepoints by 300.",
+			Description = "Whenever this card attacks, you gain 300 Life.",
 			["Type"] = "OnAttack",
 			["Power"] = {{"Cost",-300}},
 			Target = "Self",
@@ -14346,7 +14346,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3, ["Green"] = 2,},
 		["Effect"] = {
 			Name = "Sugar and Ice",
-			Description = "Target fighter gains 400 health. You gain 400 life.",
+			Description = "A target fighter gains 400 health. You gain 400 life.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",400},{"Cost",-400}},
 			Target = "Single",
