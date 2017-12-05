@@ -438,7 +438,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Reincarnation",
 			Description = "1 charge. At the end of your turns, remove a charge. When you remove the last, add 5 charges and return all non-white fighters to their owner's hand.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Return",030,"ColorRed"},{"Return",030,"ColorYellow"},{"Return",030,"ColorBlue"},{"Return",030,"ColorGreen"},{"Summon", "MurticUnicorn 5"},{"Damage",9999,"Self"}},
+			["Power"] = {{"Return",030,"ColorRed"},{"Return",030,"ColorYellow"},{"Return",030,"ColorBlue"},{"Return",030,"ColorGreen"},{"Summon", "Exotic Murtic"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = "To help us FADE!",
