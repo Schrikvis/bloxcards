@@ -3660,7 +3660,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Green"] = 3,},
 		["Effect"] = {
 			Name = "Breakfast in Bread",
-			Description = "Whenever ChaseThePsycho targeted by a fighter, that fighter loses all of its power. Then, ChaseThePsycho gains 100 Health.",
+			Description = "Whenever ChaseThePsycho is targeted by a fighter, that fighter loses all of its power. Then, ChaseThePsycho gains 100 Health.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Weaken",9999,"Aggressor"},{"Heal",100,"Self"}},
 			Target = "Ally",
