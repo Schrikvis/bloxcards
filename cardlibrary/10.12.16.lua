@@ -3648,5 +3648,24 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "Man met aether. He regretted it.",
 	},
+	
+	["ChaseThePsycho"] = {
+		["Id"] = 1221117313,
+		["Name"] = "ChaseThePsycho",
+		["Health"] = 800,
+		["Power"] = 400,
+		["Rarity"] = "Rare",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Green",
+		["Cost"] = {["Neutral"] = 3,["Green"] = 3,},
+		["Effect"] = {
+			Name = "Breakfast in Bread",
+			Description = "Whenever ChaseThePsycho is targeted by a fighter, that fighter loses all of its power. Then, ChaseThePsycho gains 100 Health.",
+			["Type"] = "OnTarget",
+			["Power"] = {{"Weaken",9999,"Aggressor"},{"Heal",100,"Self"}},
+			Target = "Ally",
+		},
+		["Bio"] = "Life's just one big chase, but sometimes, it helps to stop and smell the flowers.",
+	},	
 }
 return tentwelvesixteen
