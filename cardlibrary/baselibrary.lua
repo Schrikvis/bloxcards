@@ -8131,22 +8131,22 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 		
 	["Theawesomist19"] = {
-		["Id"] = 323661120,
-		["Name"] = "Theawesomist19",
+		["Id"] = 1209530021,
+		["Name"] = "peach_tea",
 		["Health"] = 400,
 		["Power"] = 500,
 		["Rarity"] = "Uncommon",
-		["AttackEffect"] = "Punch1",
+		["AttackEffect"] = "Slice",
 		["Color"] = "Blue",
 		["Cost"] = {["Blue"] = 2,["Neutral"] = 2,},
 		["Effect"] = {
-			Name = "Wary",
-			Description = "Whenever your opponent summons a fighter, reset Theawesomist19's stats.",
+			Name = "Bepis",
+			Description = "Whenever your opponent summons a fighter, reset peach_tea's stats.",
 			["Type"] = "OnEnemySummon",
 			["Power"] = {{"SetHealth",400},{"SetPower",500}},
 			Target = "Self",
 		},
-		["Bio"] = "Just an average forumer nobody, nothing to see here.",
+		["Bio"] = "This is peach_tea. He has over 300 four-letter usernames. And no life.",
 	},
 	
 	["Zom-nobi"] = {
