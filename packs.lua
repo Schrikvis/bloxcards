@@ -403,6 +403,7 @@ local packs = {
 		CardPackId = 721399805,
 		Description = "Green is the colour of life, growth, and the primal forces. Vitality packs contain cards that cost green!",
 		Cards = {
+			"ChaseThePsycho",
 			"Alar Sentinel",
 			"Alar Blade Archer",
 			"Alar Trainee",
@@ -992,7 +993,7 @@ local packs = {
 		},
 	}; 
 	{
-		Name = "Exotic", --NEW / WHITE! All cards before Wingman8 rotate out once a new card comes in. Related cards rotate out at the same time.
+		Name = "Exotic", --NEW / WHITE! All cards before the break point rotate out once a new card comes in. Related cards rotate out at the same time.
 		PriceInBloxBux = 50,
 		PriceInRobux = 0;
 		CardsInPack = 4,
@@ -1000,6 +1001,7 @@ local packs = {
 		Description = "Exotic new cards from the black market! White cards and joke cards! It's all yours, as long as you have 10 wins!",
 		WinRequirement = 10;
 		Cards = {
+			"ChaseThePsycho",
 			"Dukran the Celestial",
 			"Alar Trainee",
 			"Alar Herald",
@@ -1083,7 +1085,6 @@ local packs = {
 			"Ultra Vanquisher",
 			"Ultra Depriver",
 			"Ultra Severer",
-			"Ultra Desirer",
 			-- PAST THIS POINT IS FOR WHITE CARDS AND JOKE CARDS ONLY. I'M LOOKING AT YOU, BLITZ.
 			"Dukran the Celestial",
 			"Wingman8",
