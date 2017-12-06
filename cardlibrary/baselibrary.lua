@@ -12567,6 +12567,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 					["Type"] = "OnSummon",
 					["Power"] = {{"Summon","John and Jane-ArtV"}},
 					Target = "Ally",
+				};
 				["Bio"] = "3/18...",
 			},
 		},
