@@ -6200,7 +6200,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Ultimate Bowl of Greed"] = {
-		["Id"] = 296708186,
+		["Id"] = 1226642161,
 		["Name"] = "Ultimate Bowl of Greed",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -9139,7 +9139,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["JJ5x5"] = {
-		["Id"] = 335687418,
+		["Id"] = 1226640246,
 		["Name"] = "JJ5x5",
 		["Health"] = 500,
 		["Power"] = 300,
