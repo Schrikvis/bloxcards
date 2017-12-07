@@ -16660,8 +16660,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "SlashDiagonal",
 		["Color"] = "Red",
-		["AttackBlock"] = true,
-		["Archetype"] = "Defender",
 		["Cost"] = {["Neutral"] = 2,["Red"] = 1,}, 
 		["Effect"] = {
 			Name = "Booming Red",
