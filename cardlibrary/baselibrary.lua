@@ -6215,7 +6215,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Type"] = "OnSummon",
 			["Power"] = "Draw",
 			Target = "Ally",
-			Increase = 3,
+			Increase = 5,
 		},
 	},
 	
