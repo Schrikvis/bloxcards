@@ -3368,7 +3368,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Type"] = "OnSummon",
 			["Power"] = "Weaken",
 			Target = "Single",
-			Increase = -150,
+			Increase = 150,
 		},
 		["Bio"] = "His love of Red Cola gives him extra strength against foes larger than him.",
 	},	
