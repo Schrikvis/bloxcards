@@ -16709,7 +16709,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Helping Out",
 			Description = "At the end of your turns, all Non-Archetyped Rare fighters gain 100 power.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Heal",100}},
+			["Power"] = {{"Strengthen",100}},
 			Target = "Archetype",
 		},
 		["Bio"] = "Hello there robloxian, what do you need help with?",
