@@ -17616,7 +17616,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Rope, Lamp Oil, Bombs",
 			Description = "When this card dies, add two Remote Mines to your hand.",
-			["Type"] = "OnEnd",
+			["Type"] = "OnDeath",
 			["Power"] = {{"Add","Remote Mine"},{"Add","Remote Mine"}},
 			Target = "Ally",
 		},
