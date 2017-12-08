@@ -1081,11 +1081,6 @@ local packs = {
 			"Cindering",
 			"colesans16",
 			"AII_Dragon",
-			"Ultra Annihilator",
-			"Ultra Obliterator",
-			"Ultra Orator",
-			"Ultra Vanquisher",
-			"Ultra Depriver",
 			-- PAST THIS POINT IS FOR WHITE CARDS AND JOKE CARDS ONLY. I'M LOOKING AT YOU, BLITZ.
 			"Dukran the Celestial",
 			"Wingman8",
