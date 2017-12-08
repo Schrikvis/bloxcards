@@ -180,6 +180,7 @@ local packs = {
 		CardPackId = 842435184, --721400845,
 		Description = "Red is the colour of power, ambition, and control. Dominion packs contain cards that cost red!",
 		Cards = {
+			"Damaging26, Flaming Fighter",
 			"Alar Myrmidon",
 			"Alar Blade Chaser",
 			"Alar Herald",
@@ -1001,6 +1002,7 @@ local packs = {
 		Description = "Exotic new cards from the black market! White cards and joke cards! It's all yours, as long as you have 10 wins!",
 		WinRequirement = 10;
 		Cards = {
+			"Damaging26, Flaming Fighter",
 			"ChaseThePsycho",
 			"Dukran the Celestial",
 			"Alar Trainee",
@@ -1079,12 +1081,6 @@ local packs = {
 			"Cindering",
 			"colesans16",
 			"AII_Dragon",
-			"Ultra Annihilator",
-			"Ultra Obliterator",
-			"Ultra Orator",
-			"Ultra Vanquisher",
-			"Ultra Depriver",
-			"Ultra Severer",
 			-- PAST THIS POINT IS FOR WHITE CARDS AND JOKE CARDS ONLY. I'M LOOKING AT YOU, BLITZ.
 			"Dukran the Celestial",
 			"Wingman8",
