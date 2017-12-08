@@ -3668,5 +3668,25 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "Life's just one big chase, but sometimes, it helps to stop and smell the flowers.",
 	},	
+	
+	["Damaging26, Flaming Fighter"] = {
+		["Id"] = 1228472771,
+		["Name"] = "Damaging26, Flaming Fighter",
+		["Health"] = 750,
+		["Power"] = 550,
+		["Rarity"] = "Rare",
+		["Archetype"] = "Hero",
+		["AttackEffect"] = "PunchKick",
+		["Color"] = "Red", 		
+		["Cost"] = {["Neutral"] = 4, ["Red"] = 5,},
+		["Effect"] = {
+			Name = "Burning Fists of Rage",
+			Description = "Whenever an enemy fighter dies, deal 200 damage to the opponent, and give Damaging26, Flaming Fighter 200 power.",
+			["Type"] = "OnEnemyDeath",
+			["Power"] = {{"Inflict",200,"Opponent"},{"Strengthen",200}},
+			Target = "Self",
+		},
+		["Bio"] = "Ｎｏｗ ｔｈａｔ＇ｓ ａ ｌｏｔｔａ ｄａｍａｇｅ",
+	},
 }
 return tentwelvesixteen
