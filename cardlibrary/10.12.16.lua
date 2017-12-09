@@ -3688,5 +3688,25 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "Ｎｏｗ ｔｈａｔ＇ｓ ａ ｌｏｔｔａ ｄａｍａｇｅ",
 	},
+	
+		["FourXIV"] = {
+		["Id"] = 1231373982,
+		["Name"] = "FourXIV",
+		["Health"] = 1000,
+		["Power"] = 400,
+		["Rarity"] = "Rare",
+		["Archetype"] = "Hero",
+		["AttackEffect"] = "PunchKick",
+		["Color"] = "Yellow", 		
+		["Cost"] = {["Neutral"] = 2, ["Yellow"] = 4,},
+		["Effect"] = {
+			Name = "Setstat Shenanigans",
+			Description = "When FourXIV finishes attacking, set the health of the card it attacked to 400.",
+			["Type"] = "OnAttackEnd",
+			["Power"] = {{"SetHealth",400}},
+			Target = "Aggressor",
+		},
+		["Bio"] = "Ｈｅ ｃｅｒｔａｉｎｌｙ ｉｓ.",
+	},
 }
 return tentwelvesixteen
