@@ -11072,7 +11072,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Doctor's Bag",
 			Description = "Both players gain 2 white icons and gain 400 life.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Neutral",2},{"Cost",400}},
+			["Power"] = {{"Neutral",2},{"Cost",-400}},
 			Target = "All",
 		},
 		["Bio"] = "Apparently Fave is the one that stole his last name.",
