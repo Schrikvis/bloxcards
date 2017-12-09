@@ -16698,7 +16698,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Booming Red",
 			Description = "Can't attack or generate icons.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Heal","0"}},
+			["Power"] = {{"Heal",0}},
 			Target = "Ally",
 		},
 		["Bio"] = "It's A Tack, not attack.",
