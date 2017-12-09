@@ -792,6 +792,7 @@ local packs = {
 		CardPackId = 721400239,
 		Description = "Yellow is the colour of chaos, emotion, and society. Revel packs contain cards that cost yellow!",
 		Cards = {
+			"FourXIV",
 			"Elioofsheep",
 			"Bucket of Bees",
 			"Blitzwolfer",
@@ -1002,6 +1003,7 @@ local packs = {
 		Description = "Exotic new cards from the black market! White cards and joke cards! It's all yours, as long as you have 10 wins!",
 		WinRequirement = 10;
 		Cards = {
+			"FourXIV",
 			"Damaging26, Flaming Fighter",
 			"ChaseThePsycho",
 			"Dukran the Celestial",
@@ -1080,7 +1082,6 @@ local packs = {
 			"emilvita",
 			"Cindering",
 			"colesans16",
-			"AII_Dragon",
 			-- PAST THIS POINT IS FOR WHITE CARDS AND JOKE CARDS ONLY. I'M LOOKING AT YOU, BLITZ.
 			"Dukran the Celestial",
 			"Wingman8",
