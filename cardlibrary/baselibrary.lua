@@ -3037,7 +3037,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 1,},
 		["Effect"] = {
 			Name = "Nerve Wrecker",
-			Description = "lower the power of all enemy fighters by 100. Draw a card.",
+			Description = "All enemy fighters lose 100 Power. Draw a card.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",100,}, {"Draw",1,"Ally"}},
 			Target = "Opponent",
@@ -5052,7 +5052,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 8,["Red"] = 1,},
 		["Effect"] = {
 			Name = "Deceipt",
-			Description = "Deal 500 damage to your opponent and 350 to all enemy fighters.",
+			Description = "Deal 350 damage to all enemy fighters and 500 damage to the opponent.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",350},{"Inflict",500}},
 			Target = "Opponent",	
@@ -7960,7 +7960,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Green"] = 4,},
 		["Effect"] = {
 			Name = "Endless Spooks",
-			Description = [[When this card attacks, increase its health by 500.]],
+			Description = "Whenever this card attacks, this card gains 500 Health.",
 			["Type"] = "OnAttack",
 			["Power"] = {{"Heal",500}},
 			Target = "Self",
@@ -9091,8 +9091,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Neutral",
 		["Cost"] = {["Neutral"] = 2,["Blue"] = 3,},
 		["Effect"] = {
-			Name = "Plushie Amp",
-			Description = [[When this card attacks, generate 1 Blue and 1 white icons.]],
+			Name = "Over the Hills of Snow",
+			Description = "Whenever this card attacks, generate one Blue and one White icon.",
 			["Type"] = "OnAttack",
 			["Power"] = {{"Blue",1},{"Neutral",1}},
 			Target = "Ally",
@@ -9111,7 +9111,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 5,["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Plushie Amp",
-			Description = [[When this card attacks and destroys a fighter, set its health to 1200 and its power to 500.]],
+			Description = "Whenever this card attacks and destroys a fighter, reset Gusmanak's stats.",
 			["Type"] = "OnAttackDestroy",
 			["Power"] = {{"SetHealth",1200},{"SetPower",500}},
 			Target = "Self",
@@ -10304,7 +10304,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Sudden Death",
-			Description = [[Gain 1 Red icon at the end of each of your turns.]],
+			Description = "At the end of your turns, generate a red icon.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Red",1}},
 			Target = "Self",
@@ -10325,7 +10325,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Green"] = 2,},
 		["Effect"] = {
 			Name = "Sudden Death",
-			Description = [[Haste. When this card attacks, put a random Rare to your hand.]],
+			Description = "Haste. Whenever this card attacks, put a random Rare into your hand.",
 			["Type"] = "OnAttack",
 			["Power"] = "RandomAdd",
 			Target = "Ally",
@@ -10489,7 +10489,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 3,["Blue"] = 1,},
 		["Effect"] = {
 			Name = "Bren tier meal.",
-			Description = [[When this card attacks, gain 1 Yellow icon.]],
+			Description = "Whenever this card attacks, generate a Yellow icon.",
 			["Type"] = "OnAttack",
 			["Power"] = "Yellow",
 			Target = "Self",
@@ -11568,7 +11568,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Blue"] = 4,},
 		["Effect"] = {
 			Name = "Strike Diamond!",
-			Description = "When this card Attacks, increase your lifepoints by 300.",
+			Description = "Whenever this card attacks, you gain 300 Life.",
 			["Type"] = "OnAttack",
 			["Power"] = {{"Cost",-300}},
 			Target = "Self",
@@ -11808,8 +11808,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Yellow",
 		["Cost"] = {["Red"] = 1,["Yellow"] = 3,},
 		["Effect"] = {
-			Name = "Sudden Death",
-			Description = [[Gain a Red icon at the end of each turn.]],
+			Name = "Cow Sergeant",
+			Description = "At the end of your turns, generate a red icon.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Red",1}},
 			Target = "Self",
@@ -11829,8 +11829,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Yellow",
 		["Cost"] = {["Neutral"] = 1,["Yellow"] = 3,},
 		["Effect"] = {
-			Name = "Sudden Death",
-			Description = [[If you have BC, lose 500 bloxbux.]],
+			Name = "Tix",
+			Description = "If you have BC, lose 500 BloxBux.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Red",0}},
 			Target = "Ally",
@@ -12420,7 +12420,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 1,["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Love the blues",
-			Description = [[Gain a blue icon at the end of each turn.]],
+			Description = "At the end of your turns, generate a Blue icon.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Blue",1}},
 			Target = "Self",
@@ -13153,7 +13153,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 6,},
 		["Effect"] = {
 			Name = "Totem Magic",
-			Description = "At the end of each turn, Her0z loses 800 health and all of its power. Her0z can't attack.",
+			Description = "At the end of your turns, Her0z loses 800 health and all of its power. Her0z can't attack.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Damage",800},{"Weaken",9999}},
 			Target = "Self",
@@ -13823,13 +13823,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Health"] = 150,
 		["Power"] = 150,
 		["Rarity"] = "Legendary",
-		["AttackEffect"] = "Punch1",
+		["AttackEffect"] = "Slash",
 		["Token"] = true,
 		["Color"] = "Red",
 		["Cost"] = {["Red"] = 7, ["Neutral"] = 2,},
 		["Effect"] = {
-			Name = "Render",
-			Description = "Can't generate icons. Fill your board with ClanAtlas, then set health and power of all allied fighters to 150 at the end of your turns.",
+			Name = "Infinite Army",
+			Description = "Can't generate icons. At the end of your turns, fill your board with ClanAtlas, then set the health and power of all allied fighters to 150.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Weaken",9999},{"Strengthen",150},{"Swap",030},{"Weaken",9999},{"Strengthen",150}},
 			Target = "Ally",
@@ -13848,7 +13848,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 3,},
 		["Effect"] = {
 			Name = "Render",
-			Description = "Increase the health of all allied fighters by 200.",
+			Description = "All allied fighters gain 200 Health.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",200}},
 			Target = "Ally",
@@ -13867,7 +13867,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 5,},
 		["Effect"] = {
 			Name = "Render",
-			Description = "Put two ST Grunts into play. They can't generate icons.",
+			Description = "Summon two ST Grunts. ST Grunts can't generate icons.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Summon","ST Grunt"},{"Summon","ST Grunt"}},
 			Target = "Ally",
@@ -14347,7 +14347,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3, ["Green"] = 2,},
 		["Effect"] = {
 			Name = "Sugar and Ice",
-			Description = "Target fighter gains 400 health. You gain 400 life.",
+			Description = "A target fighter gains 400 health. You gain 400 life.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",400},{"Cost",-400}},
 			Target = "Single",
@@ -14973,14 +14973,14 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Health"] = 300,
 		["Power"] = 300,
 		["Rarity"] = "Uncommon",
-		["AttackEffect"] = "Punch1",
+		["AttackEffect"] = "Slice",
 		["Archetype"] = "Ninja",
 		["Color"] = "Blue",
 		["Cost"] = {["Red"] = 3,},
 		["Charge"] = true,
 		["Effect"] = {
 			Name = "Zerg rush kekekekeke",
-			Description = "Haste. When this fighter strikes the opponent, ready all other ninjas, give them 100 power, then lock this card for 3 turns.",
+			Description = "Haste. Whenever this fighter strikes the opponent, ready all other ninjas, give them 100 power, then lock this card for 3 turns.",
 			["Type"] = "OnStrike",
 			["Power"] = {{"Unlock",1},{"Strengthen",100},{"Lock",4,"Self"},{"Weaken",100,"Self"}},
 			Target = "Archetype",
