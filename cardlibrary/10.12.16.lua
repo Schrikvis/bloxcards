@@ -1830,7 +1830,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "befriending of scaly mutts",
 			Description = "Haste. Whenever another allied fighter dies, reset Shay's stats and return it to its owner's hand.",
 			["Type"] = "OnAllyDeath",
-			["Power"] = {{"SetHealth",550},{"SetPower",550},{"Unlock",9999},{"Return",030,"Self"}},
+			["Power"] = {{"SetHealth",550},{"SetPower",550},{"Unlock",9999},{"Return",030}},
 			Target = "Self",
 		},
 		["Bio"] = [[His hoverboard is fuelled with the souls of the dead.]],
