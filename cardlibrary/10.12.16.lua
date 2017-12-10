@@ -3717,11 +3717,12 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Legendary",
 		["Archetype"] = "Midas",		
 		["AttackEffect"] = "PunchKick",
+		["Charge"] = true,
 		["Color"] = "Yellow", 		
 		["Cost"] = {["Neutral"] = 5, ["Yellow"] = 4,},
 		["Effect"] = {
 			Name = "Burning Fists of Rage",
-			Description = "When this card finishes attacking, summon Midas's Stand. It has haste.",
+			Description = "Haste. When this card finishes attacking, summon Midas's Stand. It has haste.",
 			["Type"] = "OnAttackEnd",
 			["Power"] = {{"Summon","Midas's Stand","Ally"},{"Unlock",9999},{"Lock",1,"Self"}},
 			Target = "Archetype",
