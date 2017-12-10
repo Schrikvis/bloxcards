@@ -3720,8 +3720,8 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 5, ["Yellow"] = 4,},
 		["Effect"] = {
 			Name = "Burning Fists of Rage",
-			Description = "Whenever this card attacks, summon Midas's Stand. It has haste.",
-			["Type"] = "OnAttack",
+			Description = "When this card finishes attacking, summon Midas's Stand. It has haste.",
+			["Type"] = "OnAttackEnd",
 			["Power"] = {{"Summon","Midas's Stand","Ally"},{"Unlock",9999},{"Lock",1,"Self"}},
 			Target = "Archetype",
 		},
