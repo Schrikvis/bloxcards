@@ -3689,7 +3689,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "Ｎｏｗ ｔｈａｔ＇ｓ ａ ｌｏｔｔａ ｄａｍａｇｅ",
 	},
 	
-		["FourXIV"] = {
+	["FourXIV"] = {
 		["Id"] = 1231373982,
 		["Name"] = "FourXIV",
 		["Health"] = 1000,
@@ -3708,6 +3708,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "Ｈｅ ｃｅｒｔａｉｎｌｙ ｉｓ.",
 	},
+	
 	["midastheking123"] = {
 		["Id"] = 1233327678,
 		["Name"] = "midastheking123",
@@ -3727,6 +3728,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "Ｎｏｗ ｔｈａｔ＇ｓ ａ ｌｉｔｔｌｅ ｄａｍａｇｅ",
 	},
+	
 	["Midas's Stand"] = {
 		["Id"] = 1233326496,
 		["Name"] = "Midas's Stand",
