@@ -1,6 +1,6 @@
 local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO	
 	["Korblox Skeleton"] = {
-		["Id"] = 574198419,
+		["Id"] = 1237896695,
 		["Name"] = "Korblox Skeleton",
 		["Health"] = 300,
 		["Power"] = 100,
@@ -3223,7 +3223,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 		
 	["Hallow's Boon"] = {
-		["Id"] = 540076145,
+		["Id"] = 1237897132,
 		["Name"] = "Hallow's Boon",
 		["Health"] = 100,
 		["Power"] = 300,
@@ -3242,7 +3242,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 			
 	["Boon Token"] = {
-		["Id"] = 540076145,
+		["Id"] = 1237897132,
 		["Name"] = "Hallow's Boon",
 		["Health"] = 100,
 		["Power"] = 300,
@@ -3261,7 +3261,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 			
 	["Hallow's Eradicator"] = {
-		["Id"] = 540076145,
+		["Id"] = 1237897652,
 		["Name"] = "Hallow's Eradicator",
 		["Health"] = 400,
 		["Power"] = 500,
@@ -3280,7 +3280,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 			
 	["Eradicator Token"] = {
-		["Id"] = 540076145,
+		["Id"] = 1237897652,
 		["Name"] = "Hallow's Eradicator",
 		["Health"] = 400,
 		["Power"] = 500,
@@ -3299,7 +3299,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 					
 	["Hallow's Knight"] = {
-		["Id"] = 540076145,
+		["Id"] = 1237898161,
 		["Name"] = "Hallow's Knight",
 		["Health"] = 700,
 		["Power"] = 500,
@@ -3318,7 +3318,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 			
 	["Knight Token"] = {
-		["Id"] = 540076145,
+		["Id"] = 1237898161,
 		["Name"] = "Hallow's Knight",
 		["Health"] = 700,
 		["Power"] = 500,
