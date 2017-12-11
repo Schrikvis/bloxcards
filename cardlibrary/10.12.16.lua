@@ -3749,5 +3749,25 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "IS THAT A JOJO REFERENCE?!",
 	},	
+	
+	["vanjohnson"] = {
+		["Id"] = 1235228562,
+		["Name"] = "vanjohnson",
+		["Health"] = 1000,
+		["Power"] = 300,
+		["Rarity"] = "Rare",
+		["Archetype"] = "Hero",		
+		["AttackEffect"] = "Pulse",
+		["Color"] = "Green", 		
+		["Cost"] = {["Neutral"] = 2, ["Green"] = 4,},
+		["Effect"] = {
+			Name = "Vroom",
+			Description = "After this card attacks, drain 300 Life from your opponent.",
+			["Type"] = "OnAttackEnd",
+			["Power"] = {{"Cost",-300},{"Inflict",300,"Opponent"}},
+			Target = "Ally",
+		},
+		["Bio"] = "Those of you who volunteered to be injected with praying mantis DNA, I've got some good news and bad news. Bad news is that we're postponing those tests indefinitely. Good news is that we've got a new test for you: Fighting an army of mantis men.",
+	},
 }
 return tentwelvesixteen
