@@ -7164,11 +7164,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Thunder",
 		["Color"] = "Blue",
+		["CounterBlock"] = true,		
 		["Archetype"] = "Korblox",
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Pepper Spray",
-			Description = "When this card dies, turn it into a Korblox Skeleton.",
+			Description = "Can't Counterattack. When this card dies, turn it into a Korblox Skeleton.",
 			["Type"] = "OnDeath",
 			["Power"] = {{"Summon","Korblox Skeleton"}},
 			Target = "Ally",
