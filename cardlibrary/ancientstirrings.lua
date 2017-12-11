@@ -3230,6 +3230,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Yellow", 
+		["Fading"] = true, 
 		["Cost"] = {["Neutral"] = 1, ["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
@@ -3268,6 +3269,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Fire",
 		["Color"] = "Yellow", 
+		["Fading"] = true, 
 		["Cost"] = {["Neutral"] = 3, ["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
@@ -3306,6 +3308,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Slash",
 		["Color"] = "Yellow", 
+		["Fading"] = true, 
 		["Cost"] = {["Neutral"] = 1, ["Yellow"] = 5,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
