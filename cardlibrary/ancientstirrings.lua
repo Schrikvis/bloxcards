@@ -190,7 +190,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 893440462,
 		["Name"] = "Horrarceusdon",
 		["Health"] = 1600,
-		["Power"] = 400,
+		["Power"] = 200,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Blue", 
@@ -477,7 +477,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 3,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "When targeted, give all fighters 150 health and power, all Overseer fighters 150 health and power, and transform it into an Overseer Eye.",
+			Description = "When targeted, give all fighters 150 Health and Power, give all Overseers an additional 150 Health and Power, and transform this card into an Eye of Overseer.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Summon","Overseer Eye"},{"Strengthen",150,"All"},{"Heal",150,"All"},{"Heal",150,"Archetype"}{"Strengthen",150,"Overseer"},{"Damage",9999,"Self"}},
 			Target = "Ally",
