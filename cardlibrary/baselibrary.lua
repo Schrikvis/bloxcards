@@ -880,7 +880,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Revival",
 			Description = "Set your yellow icons to 5. Lose all other icons.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"SetYellow",4},{"SetGreen",0},{"SetBlue",0},{"SetRed",0},{"SetNeutral",0}},
+			["Power"] = {{"SetYellow",5},{"SetGreen",0},{"SetBlue",0},{"SetRed",0},{"SetNeutral",0}},
 			Target = "Ally",
 		},
 		["Bio"] = "If he stops eating, he'll die. Won't we all?",
