@@ -304,7 +304,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 9,},
 		["Effect"] = {
 			Name = "Reincarnation",
-			Description = "At the end of your turns, reset this card's Health to 1500 and give it 100 Power.",
+			Description = "At the end of your turns, reset this card's Health to 1500 and give it 100 Power. This card is immune to effects that swap its health and power.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"SetHealth",1500},{"Strengthen",100}},
 			Target = "Self",
