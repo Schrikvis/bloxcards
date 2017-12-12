@@ -2491,7 +2491,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Heal",200},{"Weaken",200}},
 			Target = "Self",
 		},
-		["Bio"] = [[Here comes the meat train! ...No, it literally is a train of meat.]],
+		["Bio"] = "Here comes the meat train! ...No, it literally is a train of meat.",
 	},
 
 
