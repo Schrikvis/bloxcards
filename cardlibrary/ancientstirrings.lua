@@ -3351,6 +3351,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 500,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Slash",
+		["Archetype"] = "Hero",
 		["Color"] = "Yellow", 
 		["Fading"] = true, 
 		["Cost"] = {["Neutral"] = 1, ["Yellow"] = 5,},
@@ -3371,6 +3372,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 500,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Slash",
+		["Archetype"] = "Hero",
 		["Color"] = "Yellow", 
 		["Cost"] = {["Neutral"] = 1, ["Yellow"] = 5,},
 		["Effect"] = {
