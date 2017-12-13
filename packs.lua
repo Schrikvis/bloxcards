@@ -404,7 +404,7 @@ local packs = {
 		CardPackId = 721399805,
 		Description = "Green is the colour of life, growth, and the primal forces. Vitality packs contain cards that cost green!",
 		Cards = {
-			"vanjohnson"
+			"vanjohnson",
 			"ChaseThePsycho",
 			"Alar Sentinel",
 			"Alar Blade Archer",
@@ -1005,7 +1005,7 @@ local packs = {
 		Description = "Exotic new cards from the black market! White cards and joke cards! It's all yours, as long as you have 10 wins!",
 		WinRequirement = 10;
 		Cards = {
-			"vanjohnson"
+			"vanjohnson",
 			"midastheking123",
 			"FourXIV",
 			"Damaging26, Flaming Fighter",
