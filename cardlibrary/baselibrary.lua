@@ -10257,9 +10257,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["CounterBlock"] = true,
 		["Effect"] = {
 			Name = "Sudden Death",
-			Description = "Can't counterattack. When this card dies, deal 4000 damage to all fighters.",
+			Description = "Can't counterattack. When this card dies, return all fighters to their owners hands.",
 			["Type"] = "OnDeath",
-			["Power"] = {{"Damage",4000}},
+			["Power"] = {{"Return",030}},
 			Target = "All",
 		},
 		["Bio"] = "Hey guys! I brought a frost nuke to the new year's part- *Trips*",
