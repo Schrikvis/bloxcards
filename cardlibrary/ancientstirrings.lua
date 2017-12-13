@@ -498,7 +498,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Pyrotechnics",
 			Description = "When targeted, give all fighters 150 Health and Power, give all Overseers an additional 150 Health and Power, and transform this card into an Eye of Overseer.",
 			["Type"] = "OnTarget",
-			["Power"] = {{"Summon","Eye of Overseer"},{"Strengthen",150,"All"},{"Heal",150,"All"},{"Heal",150,"Archetype"}{"Strengthen",150,"Overseer"},{"Damage",9999,"Self"}},
+			["Power"] = {{"Summon","Eye of Overseer"},{"Strengthen",150,"All"},{"Heal",150,"All"},{"Heal",150,"Archetype"},{"Strengthen",150,"Archetype"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = "The overseers had to admit. The werewolves grew pretty fast.",
