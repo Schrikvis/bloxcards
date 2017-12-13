@@ -3816,7 +3816,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Test",
 			Description = "When this card becomes unlocked, lock it for 2 turns.",
-			["Type"] = "OnUnock",
+			["Type"] = "OnUnlock",
 			["Power"] = {{"Lock",2}},
 			Target = "Self",
 		},
