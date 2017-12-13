@@ -3322,7 +3322,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Draw",1},{"Summon","Eradicator Token","Ally"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
-		["Bio"] = "Never underestimate the power of hallow's minions.",
+		["Bio"] = "Never underestimate the power of the minions of Hallow.",
 	},
 			
 	["Eradicator Token"] = {
@@ -3338,10 +3338,10 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Pyrotechnics",
 			Description = "When this card enters play, draw a card. When this card dies, add a nightmare to your hand.",
 			["Type"] = "OnDeath",
-			["Power"] = {{"Add""Nightmare"}},
+			["Power"] = {{"Add","Nightmare"}},
 			Target = "Ally",
 		},
-		["Bio"] = "Never underestimate the power of hallow's minions.",
+		["Bio"] = "Never underestimate the power of the minions of Hallow.",
 	},
 					
 	["Hallow's Knight"] = {
@@ -3361,7 +3361,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Cost",500},{"Summon","Knight Token","Ally"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
-		["Bio"] = "Never underestimate the power of hallow's minions.",
+		["Bio"] = "Only lose what you can then take from another.",
 	},
 			
 	["Knight Token"] = {
@@ -3380,7 +3380,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Inflict",500}},
 			Target = "Opponent",
 		},
-		["Bio"] = "Never underestimate the power of hallow's minions.",
+		["Bio"] = "Only lose what you can then take from another.",
 	},
 }
 
