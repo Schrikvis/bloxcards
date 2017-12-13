@@ -1197,6 +1197,9 @@ local packs = {
 			month = 10};
 		};--]]
 		Cards = {
+			"Hallow's Boon",
+			"Hallow's Eradicator",
+			"Hallow's Knight",
 			"Undead Teddy",
 			"Treasured Unicorn",
 			"Graboid",
