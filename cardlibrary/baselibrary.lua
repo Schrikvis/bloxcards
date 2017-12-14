@@ -10893,7 +10893,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["FILTHY PRANKS"] = {
 		["Id"] = 363198345,
 		["Name"] = "FILTHY PRANKS",
-		["Health"] = 400,
+		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Lightning",
@@ -10902,9 +10902,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Green"] = 3,},
 		["Effect"] = {
 			Name = "It's a meme you dip",
-			Description = "When this card strikes the opponent, you win the game. when this card is unlocked, lock it for 2 turns.",
+			Description = "Gain ½ a white icon.",
 			["Type"] = "OnUnlock",
-			["Power"] = {{"Lock",2}},
+			["Power"] = {{"Neutral",.5}},
 			Target = "Single",
 		},
 		["Bio"] = "PRANKED!",
