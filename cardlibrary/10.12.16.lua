@@ -3803,5 +3803,24 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "Those of you who volunteered to be injected with praying mantis DNA, I've got some good news and bad news. Bad news is that we're postponing those tests indefinitely. Good news is that we've got a new test for you: Fighting an army of mantis men.",
 	},
+		
+	["Test Dummy"] = {
+		["Id"] = 1241199448,
+		["Name"] = "Test Dummy",
+		["Health"] = 500,
+		["Power"] = 0,
+		["Rarity"] = "Common",		
+		["AttackEffect"] = "Punch",
+		["Color"] = "Neutral", 		
+		["Cost"] = {["Neutral"] = 0,},
+		["Effect"] = {
+			Name = "Test",
+			Description = "When this card becomes unlocked, lock it for 2 turns.",
+			["Type"] = "OnUnlock",
+			["Power"] = {{"Lock",2}},
+			Target = "Self",
+		},
+		["Bio"] = "This dummy has been through more torture and abuse than you could even imagine...",
+	},
 }
 return tentwelvesixteen
