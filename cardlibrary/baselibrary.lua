@@ -14252,7 +14252,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Capture",
-			Description = "At the end of your turn, This card becomes a 600/0.",
+			Description = "At the end of your turns, reset this card's stats.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"SetHealth",600},{"SetPower",0}},
 			Target = "Self",
