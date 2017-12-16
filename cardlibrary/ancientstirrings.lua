@@ -2950,6 +2950,13 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Unresting Tombstone"] = {
 		["Id"] = 540076938,
 		["Name"] = "Unresting Tombstone",
+		["AltCards"] = {
+			["Zombie Factory"] = {
+				["Id"] = 1247431010,
+				["Name"] = "Zombie Factory",
+				["Bio"] = "Are the gifts turning into zombies, or are the zombies turning into gifts?.",
+			}
+		},		
 		["Health"] = 2000,
 		["Power"] = 0,
 		["Rarity"] = "Common",
