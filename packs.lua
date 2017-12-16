@@ -1574,7 +1574,7 @@ local packs = {
 	
 	{
 		Name = "Teaism's Gifts", --CHRISTMAS!
-		Hidden = true;
+		Hidden = false;
 		PriceInBloxBux = 0;
 		PriceInRobux = 50;
 		CardsInPack = 4,
