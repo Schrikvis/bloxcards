@@ -81,6 +81,20 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Dicey Drake"] = {
 		["Id"] = 543830416,
 		["Name"] = "Dicey Drake",
+		["AltCards"] = {
+			["Icy Drake"] = {
+				["Id"] = 1247063996,
+				["Name"] = "Icy Drake",
+				["Effect"] = {
+					Name = "Gamble till you freeze",
+					Description = "When summoned, lock all enemy fighters for 1 turn. All enemy fighters enter play with 150 less power.",
+					["Type"] = "OnSummon",
+					["Power"] = {{"Lock",1},{"Summon","Icy Drake Token","Ally"},{"Damage",9999,"Self"}},
+					Target = "Opponent",
+				},
+				["Bio"] = "My new years resolution: Keep gambling.",
+			},
+		},
 		["Health"] = 400,
 		["Power"] = 400,
 		["Rarity"] = "Epic",
@@ -95,12 +109,26 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Lock",1},{"Summon","Dicey Drake Token","Ally"},{"Damage",9999,"Self"}},
 			Target = "Opponent",
 		},
-		["Bio"] = "A hammer wielding former Korblox fighter that's itching for a gamble of the century.",
+		["Bio"] = "A hammer wielding fighter that's itching for a gamble of the century.",
 	},
 	
 	["Dicey Drake Token"] = {
 		["Id"] = 543830416,
 		["Name"] = "Dicey Drake",
+		["AltCards"] = {
+			["Icy Drake Token"] = {
+				["Id"] = 1247063996,
+				["Name"] = "Icy Drake",
+				["Effect"] = {
+					Name = "Gamble till you freeze",
+					Description = "When summoned, lock all enemy fighters for 1 turn. All enemy fighters enter play with 150 less power.",
+					["Type"] = "OnEnemySummon",
+					["Power"] = {{"Weaken",150}},
+					Target = "Aggressor",
+				},
+				["Bio"] = "My new years resolution: Keep gambling.",
+			},
+		},
 		["Health"] = 400,
 		["Power"] = 400,
 		["Rarity"] = "Token",
@@ -3819,6 +3847,30 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Self",
 		},
 		["Bio"] = "This dummy has been through more torture and abuse than you could even imagine...",
+	},
+	
+	["Silver_Semtexagon"] = {
+		["Id"] = 1247510883,
+		["Name"] = "Silver_Semtexagon",
+		["Health"] = 1000,
+		["Power"] = 1000,
+		["Rarity"] = "Legendary",
+		["AttackEffect"] = "Slash",
+		["Color"] = "Blue",
+		["Cost"] = {["Neutral"] = 4, ["Blue"] = 4,},
+		["WeakenImmune"] = true,
+		["SwapImmune"] = true,
+		["SetImmune"] = true,
+		["StrenghtenImmune"] = true,
+		["HealImmune"] = true,
+		["Effect"] = {
+			Name = "Stalwart Barrier",
+			Description = "This card is immune to all stat-changing effects.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Heal",9999999999999999}},
+			["Target"] = "Self",
+		},
+		["Bio"] "For the player that just can't stand green.",
 	},
 }
 return tentwelvesixteen
