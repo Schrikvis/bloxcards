@@ -13867,7 +13867,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Infinite Army",
 			Description = "Can't generate icons. At the end of your turns, fill your board with ClanAtlas, then set the health and power of all allied fighters to 150.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"SetHealth",150},{"SetPower",150}},
+			["Power"] = {{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"SetHealth",150},{"SetPower",150}},
 			Target = "Ally",
 		},
 		["Bio"] = "Good decks play AoE.",
