@@ -2905,7 +2905,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Verisimilitudal Dissonance",
 		["AltCards"] = {
 			["Eleemosynary Beneficient"] = {
-				["Id"] = 585627423,
+				["Id"] = 1247579756,
 				["Name"] = "Eleemosynary Beneficient",
 				["Bio"] = "A gift that keeps on giving.",
 			}
@@ -2924,7 +2924,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Neutral",2}},
 			Target = "Ally",
 		},
-		["Bio"] = "A reality that wants to disappear.",
+		["Bio"] = "I got this thesaurus for Christmas. Not only is it terrible, but it’s also terrible.",
 	},
 	
 	["Liechtenauer's Sophistry"] = {
