@@ -581,6 +581,7 @@ local packs = {
 		CardPackId = 721399466,
 		Description = "Blue is the colour of logic, order, and structure. Thought packs contain cards that cost blue!",
 		Cards = {
+			"Silver_Semtexagon",
 			"Arte71",
 			"kickertoken",
 			"ImaUMBREON",
@@ -1005,6 +1006,7 @@ local packs = {
 		Description = "Exotic new cards from the black market! White cards and joke cards! It's all yours, as long as you have 10 wins!",
 		WinRequirement = 10;
 		Cards = {
+			"Silver_Semtexagon",
 			"vanjohnson",
 			"midastheking123",
 			"FourXIV",
@@ -1083,7 +1085,6 @@ local packs = {
 			"TheJazzCat22",
 			"wikiwakiwoirier",
 			"Lord_Gizmo",
-			"emilvita",
 			-- PAST THIS POINT IS FOR WHITE CARDS AND JOKE CARDS ONLY. I'M LOOKING AT YOU, BLITZ.
 			"Dukran the Celestial",
 			"Wingman8",
@@ -1584,6 +1585,14 @@ local packs = {
 			month = {12};
 		};
 		Cards = {
+			"Unwanted Gift",
+			"Zombie Santa",
+			"Zombie Elf",
+			"JackinatorMG-C",
+			"StickMasterLukeV2",
+			"Tomspick-C",
+			"Tombstone-C",
+			"Icy Drake",
 			"Baker",
 			"Hot Chocolate",
 			"GRAND CLAUS",
