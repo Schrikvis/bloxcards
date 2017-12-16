@@ -25,7 +25,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Wolfbitten Noob",
 		["AltCards"] = {
 			["Wolfbitten Elf"] = {
-				["Id"] = 1247066678,
+				["Id"] = 585627464,
 				["Name"] = "Wolfbitten Elf",
 				["Effect"] = {
 					Name = "Woof",
@@ -33,7 +33,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 					["Power"] = {{"Summon","Festive Werewolf"},{"Damage",9999,"Self"}},
 					Target = "Ally",
 				},
-				["Bio"] = "Is The Nightmare Before Christmas a Halloween movie or a Christmas movie?",
+				["Bio"] = "Can he deliver your gifts in time?",
 			}
 		},
 		["Health"] = 200,
@@ -59,7 +59,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Werewolf Savage",
 		["AltCards"] = {
 			["Festive Werewolf"] = {
-				["Id"] = 1247062521,
+				["Id"] = 585627502,
 				["Name"] = "Festive Werewolf",
 				["Effect"] = {
 					Name = "Halloween",
@@ -67,7 +67,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 					["Power"] = {{"Summon","Wolfbitten Elf"},{"Damage",9999,"Self"}},
 					Target = "Ally",
 				},	
-				["Bio"] = "It’s a Halloween movie, now shut up.",
+				["Bio"] = "The best kind of werewolf.",
 			}
 		},
 		["Health"] = 400,
@@ -600,9 +600,9 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Cotton Candy Lion",
 		["AltCards"] = {
 			["Gingerbread Man"] = {
-				["Id"] = 1247063059,
+				["Id"] = 585627301,
 				["Name"] = "Gingerbread Man",
-				["Bio"] = "A gingerbread man sits in a gingerbread house. Is the house made of flesh, or is he made of house? He screams, for he does not know.",
+				["Bio"] = "I like my mince pies spicy.",
 			}
 		},
 		["Health"] = 100,
@@ -614,9 +614,9 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Token"] = true,
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "When this card dies, enemy fighters eat it to gain 100 health. This card can't generate Icons.",
+			Description = "When this card dies, enemy fighters eat it to gain 150 health. This card can't generate Icons.",
 			["Type"] = "OnDeath",
-			["Power"] = {{"Heal",100,"Opponent"}},
+			["Power"] = {{"Heal",150,"Opponent"}},
 			Target = "Ally",
 		},
 		["Bio"] = "He certainly is.",
@@ -2496,9 +2496,9 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Edgelord",
 		["AltCards"] = {
 			["Sugarlord"] = {
-				["Id"] = 1247065996,
-				["Name"] = "The Grinch",
-				["Bio"] = "All the Whos down in Whoville liked Christmas a lot, but the Grinch, who lived just north of Whoville, did not. The Grinch hated Christmas - the whole Christmas season. Oh, please don't ask why, no one quite knows the reason. It could be, perhaps, that his shoes were too tight. Or maybe his head wasn't screwed on just right. But I think that the best reason of all may have been that his heart was two sizes too small.",
+				["Id"] = 585627329,
+				["Name"] = "Sugarlord",
+				["Bio"] = "I came seeking Hallow. All I found was you.",
 			}
 		},
 		["Health"] = 650,
@@ -2905,7 +2905,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Verisimilitudal Dissonance",
 		["AltCards"] = {
 			["Eleemosynary Beneficient"] = {
-				["Id"] = 1247579756,
+				["Id"] = 585627423,
 				["Name"] = "Eleemosynary Beneficient",
 				["Bio"] = "A gift that keeps on giving.",
 			}
@@ -2924,7 +2924,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Neutral",2}},
 			Target = "Ally",
 		},
-		["Bio"] = "I got this thesaurus for Christmas. Not only is it terrible, but it’s also terrible.",
+		["Bio"] = "A reality that wants to disappear.",
 	},
 	
 	["Liechtenauer's Sophistry"] = {
@@ -2950,13 +2950,6 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Unresting Tombstone"] = {
 		["Id"] = 540076938,
 		["Name"] = "Unresting Tombstone",
-		["AltCards"] = {
-			["Zombie Factory"] = {
-				["Id"] = 1247431010,
-				["Name"] = "Zombie Factory",
-				["Bio"] = "Are the gifts turning into zombies, or are the zombies turning into gifts?.",
-			}
-		},		
 		["Health"] = 2000,
 		["Power"] = 0,
 		["Rarity"] = "Common",
