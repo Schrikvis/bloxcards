@@ -266,8 +266,24 @@ local codes = {
 			Ranks = {};
 			BestBefore = nil; 
 		}
-	}
-
+	};
+	
+	{
+		Obfuscated = "RW+GM3UaM";
+		Rewards = {
+			Cards = {["Unwanted Gift"] = 1};
+			RandomCards = {
+				Pool = {["Unwanted Gift"] = 999, ["ROBLOX-C"] = 1};
+				Amount = 1;
+			};
+			Packs = {["Teaism's Gifts"] = 1};
+			BloxBux = 1;
+			Charms = {0,0};
+			Sleeves = {};
+			Ranks = {};
+			BestBefore = nil;
+		};
+	};
 }
 
 local offers = {
