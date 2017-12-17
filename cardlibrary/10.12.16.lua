@@ -3856,7 +3856,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Test",
 			Description = "Transform all other fighters to random fighters. This card does not activate effects upon dying.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",99999},{"Summon","Test DummyA","Ally"},{"SetHealth",0,"NotArchetype"},{"Damage",9999,"Archetype"},{"Summon","Test Dummy","Ally}},
+			["Power"] = {{"Damage",99999},{"Summon","Test DummyA","Ally"},{"SetHealth",0,"NotArchetype"},{"Damage",9999,"Archetype"},{"Summon","Test Dummy","Ally"}},
 			Target = "Self",
 		},
 		["Bio"] = "This dummy has been through more torture and abuse than you could even imagine...",
