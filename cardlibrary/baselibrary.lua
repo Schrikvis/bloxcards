@@ -13759,7 +13759,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Unwanted Trend",
 		["AltCards"] = {
 			["Unwanted Gift"] = {
-				["Id"] = 1247066427,
+				["Id"] = 1249803106,
 				["Name"] = "Unwanted Gift",
 				["Bio"] = "Hey, at least it wasn't coal.",	
 			},
