@@ -1575,8 +1575,8 @@ local packs = {
 	{
 		Name = "Teaism's Gifts", --CHRISTMAS!
 		Hidden = false;
-		PriceInBloxBux = 0;
-		PriceInRobux = 50;
+		PriceInBloxBux = 1000;
+		PriceInRobux = 0;
 		CardsInPack = 4,
 		CardPackId = 585626122,
 		Description = "Teaism's special gift, just for you. Merry Christmas. (You need 10 wins to open this pack.)",
