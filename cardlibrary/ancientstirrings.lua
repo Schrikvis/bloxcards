@@ -1738,7 +1738,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Summon","Eclipse, Werewolf Colossus"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
-		["Bio"] = "A lei of skulls was placed around the grave, cradelling his return. The shadows were relentless in their assault.",
+		["Bio"] = "A lei of skulls was placed around the grave, cradling his return. The shadows were relentless in their assault.",
 	},
 	
 	["Eclipse, Werewolf Colossus"] = {
@@ -1760,7 +1760,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Summon","Wolfbitten Noob"},{"Add","Wolven Blitz"}},
 			Target = "Ally",
 		},
-		["Bio"] = "And then the rose to the moon and cast a shadow on the shadows.",
+		["Bio"] = "And then he rose to the moon and cast a shadow on the shadows.",
 	},
 	
 	["Unspeakable Summoning"] = {
