@@ -992,7 +992,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Chef",
 		["AltCards"] = {
 			["Baker"] = {
-				["Id"] = 585627288,
+				["Id"] = 1247061539,
 				["Name"] = "Baker",
 				["Bio"] = "And for desert, why not try caramelized robloxian? Now with extra icing!",
 			},
@@ -2279,9 +2279,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "FatherChristmaz",
 		["AltCards"] = {
 			["RoboSanta"] = {
-				["Id"] = 585627412,
-				["Name"] = "Robo Santa",
-				["Bio"] = "Some Santas just want to watch the world burn.",
+				["Id"] = 1247064782,
+				["Name"] = "Robo-Santa",
+				["Bio"] = "In the distant year of 2019, Santa made a robotic version of himself to aid him in gift-giving. And thus began the reign of Robo-Santa the Usurper.",
 			},
 		},
 		["Health"] = 350,
@@ -2347,9 +2347,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Life Potion",
 		["AltCards"] = {
 			["Eggnog"] = {
-				["Id"] = 898725250,
+				["Id"] = 1247061717,
 				["Name"] = "Eggnog",
-				["Bio"] = "But eggnog helps you in the long AND short run.",
+				["Bio"] = "An eggcellent drink for all of your family.",
 			},
 		},
 		["Health"] = 0,
@@ -2509,6 +2509,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Tomspick"] = {
 		["Id"] = 280563401,
 		["Name"] = "Tomspick",
+		["AltCards"] = {
+			["Tomspick-C"] = {
+				["Id"] = 1247418791,
+				["Bio"] = "Yes, I eat turkey on Christmas. You thought it was just a Thanksgiving thing?",
+			},
+		},
 		["Health"] = 600,
 		["Power"] = 0,
 		["Rarity"] = "Common",
@@ -3033,9 +3039,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Eye Spy",
 		["AltCards"] = {
 			["Entangling Lights"] = {
-				["Id"] = 585627443,
+				["Id"] = 1247062292,
 				["Name"] = "Entangling Lights",
-				["Bio"] = "This is really just God's way of silently judging you.",
+				["Bio"] = "Why do these cords have to be so damn long! They get tangled too often!",
 			},
 		},
 		["Health"] = 0,
@@ -3296,9 +3302,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "MyDadIsAGuest",
 		["AltCards"] = {
 			["MyDadIsASanta"] = {
-				["Id"] = 585627360,
+				["Id"] = 1247064378,
 				["Name"] = "MyDadIsASanta",
-				["Bio"] = "The 87th santa, to be precise.",
+				["Bio"] = "My dad is santa i’ll tell him to put you on the naughty list. :/",
 			},
 		},
 		["Health"] = 100,
@@ -3522,7 +3528,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "StickMasterLuke",
 		["AltCards"] = {
 			["StickMasterLukeV2"] = {
-				["Id"] = 585627244,
+				["Id"] = 1247705401,
 				["Name"] = "MintMasterLuke",
 				["Bio"] = "Colder than breath, deeper than sky.",
 			},
@@ -3696,6 +3702,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["JackinatorMG"] = {
 		["Id"] = 285152525,
 		["Name"] = "JackinatorMG",
+		["AltCards"] = {
+			["JackinatorMG-C"] = {
+				["Id"] = 1247417926,
+				["Bio"] = "Hot chocolate is the true drink for any occasion! I have ditched my habit of drinking Mountain Dew and switched to 100% pure hot chocolate!",
+			},
+		},
 		["Health"] = 300,
 		["Power"] = 200,
 		["Rarity"] = "Uncommon",
@@ -4311,9 +4323,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Birthday Surprise",
 		["AltCards"] = {
 			["Fruit Cake"] = {
-				["Id"] = 585627498,
+				["Id"] = 1247062758,
 				["Name"] = "Fruit Cake",
-				["Bio"] = "Made out of 100% Recycled Durians.",
+				["Bio"] = "Even all the trash on Christmas it smells so sweetly. This Christmas feels like the very first Christmas to me. LALALALALALALA-",
 			},
 		},
 		["Health"] = 0,
@@ -4552,6 +4564,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Zombie"] = {
 		["Id"] = 626230874,
 		["Name"] = "Zombie",
+		["AltCards"] = {
+			["Zombie Elf"] = {
+				["Name"] = "Zombie Elf",
+				["Id"] = 1247421375,
+				["Bio"] = "I wonder how elves get recruited in the first place? Do they fill out an application, or perhaps they’re Santa’s children? There’s also the possibility Santa kidnaps children and becomes his slaves, but you shouldn’t think too hard on that one.",
+			},
+		},
 		["Health"] = 150,
 		["Power"] = 150,
 		["Rarity"] = "Common",
@@ -4574,6 +4593,20 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Zombie Cultist"] = {
 		["Id"] = 288041119,
 		["Name"] = "Zombie Cultist",
+		["AltCards"] = {
+			["Zombie Santa"] = {
+				["Name"] = "Zombie Santa",
+				["Id"] = 1247421832,
+				["Effect"] = {
+					Name = "Zombmas",
+					Description = "Summon a Zombie Elf, then increase the health of all Zombies by 100 and the power of all Zombies by 150.",
+					["Type"] = "OnSummon",
+					["Power"] = {{"Summon","Zombie Elf","Ally"},{"Strengthen",150},{"Heal",100}},
+					Target = "Archetype",
+				},
+				["Bio"] = "Since Santa travels EVERYWHERE the night before Christmas, doesn’t he have the chance of contracting and spreading deadly diseases throughout everybody’s homes?",
+			},
+		},
 		["Health"] = 500,
 		["Power"] = 100,
 		["Rarity"] = "Uncommon",
@@ -5346,9 +5379,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Abraham Doge",
 		["AltCards"] = {
 			["Santa Doge"] = {
-				["Id"] = 585627493,
+				["Id"] = 1247065222,
 				["Name"] = "Santa Doge",
-				["Bio"] = "He is the gift.",
+				["Bio"] = "Why do doges, the worst archetype, have a different variant of Santa?",
 			},
 		},
 		["Health"] = 100,
@@ -7554,9 +7587,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Toy Train",
 		["AltCards"] = {
 			["Wooden Toy Train"] = {
-				["Id"] = 585627408,
+				["Id"] = 1247066872,
 				["Name"] = "Wooden Toy Train",
-				["Bio"] = "Chugga chugga. The train is a century old.",
+				["Bio"] = "Roses are red. Violets are blue. My dad got hit by a train. Chugga choo choo.",
 			},
 		},
 		["Health"] = 200,
@@ -10448,9 +10481,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Eidevin",
 		["AltCards"] = {
 			["Elfdevin"] = {
-				["Id"] = 585627429,
+				["Id"] = 1247061944,
 				["Name"] = "Elfdevin",
-				["Bio"] = "I'm firing my laser, I guess... Blawh. ¬_¬",
+				["Bio"] = "I just had a horrible nightmare where I looked objectively worse than my regular art!",
 			},
 		},
 		["Health"] = 600,
@@ -10796,7 +10829,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Cup O Tea",
 		["AltCards"] = {
 			["Hot Chocolate"] = {
-				["Id"] = 585627292,
+				["Id"] = 1247063639,
 				["Name"] = "Hot Chocolate",
 				["Effect"] = {
 					Name = "Sudden Death",
@@ -10913,7 +10946,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Taymaster"] = {
 		["Id"] = 363166556,
 		["Name"] = "Taymaster",
-			["AltCards"] = {
+		["AltCards"] = {
 			["TaymasterAltArtV1"] = {
 				["Id"] = 650990770,
 				["AltArt"] = true,
@@ -10939,7 +10972,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Teaism"] = {
 		["Id"] = 363172300,
 		["Name"] = "Teaism",
-		AltCards = {
+		["AltCards"] = {
 			["Teadaddy"] = {
 				["Id"] = 540871820,
 				["Name"] = "Teadaddy",
@@ -10971,7 +11004,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Beeism"] = {
 		["Id"] = 363172190,
 		["Name"] = "Beeism",
-		AltCards = {
+		["AltCards"] = {
 			["Beedaddy"] = {
 				["Name"] = "Beedaddy",
 				["Id"] = 540864462,
@@ -11060,6 +11093,14 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["legoseed"] = {
 		["Id"] = 384005579,
 		["Name"] = "legoseed",
+		["AltCards"] = {
+			["LegoWraith"] = {
+				["Name"] = "LegoWraith",
+				["Id"] = 1247643090,
+				["AltArt"] = true,
+				["Bio"], = "The Lego of Christmas Past.",
+			},
+		},
 		["Health"] = 800,
 		["Power"] = 800,
 		["Rarity"] = "Legendary",
@@ -11213,6 +11254,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["ROBLOX"] = {
 		["Id"] = 894252975,
 		["Name"] = "ROBLOX",
+		["AltCards"] = {
+			["ROBLOX-C"] = {
+				["Id"] = 1247642009,
+				["Bio"] = "Giving the gift of yellow icons since 1980.",
+				["AltArt"] = true,
+			},
+		},
 		["Health"] = 150,
 		["Power"] = 150,
 		["Rarity"] = "Legendary",
@@ -11919,9 +11967,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Crazynoggin",
 		["AltCards"] = {
 			["CrazyEggNoggin"] = {
-				["Id"] = 585627330,
+				["Id"] = 1247799864,
 				["Name"] = "CrazyEggNoggin",
-				["Bio"] = "Egg? EggEgg! Egg Egggggg? Nog Egg Cra.",
+				["Bio"] = "My house is flooded with eggnog. Just what i wanted for christmas. Thanks, santa!",
 			},
 		},
 		["Health"] = 300,
@@ -12253,9 +12301,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "SirSorin",
 		["AltCards"] = {
 			["SantaSorin"] = {
-				["Id"] = 585627477,
+				["Id"] = 1247065615,
 				["Name"] = "SantaSorin",
-				["Bio"] = "So, what's it like being encased in a stone pillar by your ex?",
+				["Bio"] = "Santa? Happiness? Your dad? All illusions!",
 			},
 		},
 		["Health"] = 750,
@@ -12555,7 +12603,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "GRAND DAD",
 		["AltCards"] = {
 			["GRAND CLAUS"] = {
-				["Id"] = 585627294,
+				["Id"] = 1247063343,
 				["Name"] = "GRAND CLAUS",
 				["Effect"] = {
 					Name = "Subversion",
@@ -13711,9 +13759,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Unwanted Trend",
 		["AltCards"] = {
 			["Unwanted Gift"] = {
-				["Id"] = 585627205,
+				["Id"] = 1247066427,
 				["Name"] = "Unwanted Gift",
-				["Bio"] = "MOM! I WANTED THE NEW XBLOX ONE, OR A PACK OF BLOX CARDS! NOT THIS!",	
+				["Bio"] = "Hey, at least it wasn't coal.",	
 			},
 		},			
 		["Health"] = 0,
@@ -15144,7 +15192,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Pancake Break-Val"] = {
 				["Name"] = "Peaceful Protest",
 				["Id"] = 667391045,
-				["Bio"] = "NO MORE LUNAR! NO MORE LEITRIS! NO MORE OP CARDS EVER!",
+				["Bio"] = "NO MORE AJIT PAI! NO MORE PHATION! NO MORE CORRUPT DICTATORS EVER!",
 			},			
 		},												
 		["Health"] = 0,
