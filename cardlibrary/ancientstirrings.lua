@@ -1760,7 +1760,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Summon","Wolfbitten Noob"},{"Add","Wolven Blitz"}},
 			Target = "Ally",
 		},
-		["Bio"] = "He rose to the moon and cast a shadow on the shadows.",
+		["Bio"] = "And then he rose to the moon and cast a shadow on the shadows.",
 	},
 	
 	["Unspeakable Summoning"] = {
