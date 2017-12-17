@@ -15192,7 +15192,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Pancake Break-Val"] = {
 				["Name"] = "Peaceful Protest",
 				["Id"] = 667391045,
-				["Bio"] = "NO MORE LUNAR! NO MORE LEITRIS! NO MORE OP CARDS EVER!",
+				["Bio"] = "NO MORE AJIT PAI! NO MORE PHATION! NO MORE CORRUPT DICTATORS EVER!",
 			},			
 		},												
 		["Health"] = 0,
