@@ -3833,17 +3833,29 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Test Dummy"] = {
 		["Id"] = 1241199448,
 		["Name"] = "Test Dummy",
+		["AltCards"] = {
+			["Test DummyA"] = {
+				["Effect"] = {
+					Name = "Test",
+					Description = "Transform all other fighters to random fighters.",
+					["Type"] = "OnAnyDeath",
+					["Power"] = {{"RandomSummon"}},
+					Target = "Aggressor",
+				},
+			},
+		},
 		["Health"] = 500,
 		["Power"] = 0,
-		["Rarity"] = "Common",		
+		["Rarity"] = "Common",
+		["Archetype"] = "TestDummy",
 		["AttackEffect"] = "Punch",
 		["Color"] = "Neutral", 		
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Test",
-			Description = "When this card becomes unlocked, lock it for 2 turns.",
-			["Type"] = "OnUnlock",
-			["Power"] = {{"Lock",2}},
+			Description = "Transform all other fighters to random fighters.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Damage",99999},{"Summon","Test DummyA","Ally"},{"SetHealth",0,"NotArchetype"},{"Damage",9999,"Archetype"},{"Summon","Test Dummy","Ally}},
 			Target = "Self",
 		},
 		["Bio"] = "This dummy has been through more torture and abuse than you could even imagine...",
