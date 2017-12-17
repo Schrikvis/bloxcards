@@ -2541,7 +2541,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Heal",200},{"Weaken",200}},
 			Target = "Self",
 		},
-		["Bio"] = "Here comes the meat train! ...No, it literally is a train of meat.",
+		["Bio"] = "Ninja foxes are a somewhat aggressive race whom tend to pound on the ground to keep their anger in check, as they tend to get quite angry due to their superiority complex.  If it builds too high, they can become feral, and end up slaughtering whomever is most unfortunate enough to be in the vicinity.",
 	},
 
 
