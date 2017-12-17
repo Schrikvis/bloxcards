@@ -5538,12 +5538,11 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Scrub"] = {
-		["Id"] = 292778415,
+		["Id"] = 1250581202,
 		["Name"] = "Scrub",
 		["Health"] = 1000,
 		["Power"] = 50,
-		["Rarity"] = "Rare",
-		["Archetype"] = "Hero",
+		["Rarity"] = "Common",
 		["AttackEffect"] = "GunShot",
 		["Color"] = "Yellow",
 		["Cost"] = {["Neutral"] = 3,["Yellow"] = 2,},
