@@ -3835,11 +3835,12 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Test Dummy",
 		["AltCards"] = {
 			["Test DummyA"] = {
+				["Rarity"] = "Token",
 				["Effect"] = {
 					Name = "Test",
 					Description = "Transform all other fighters to random fighters.",
 					["Type"] = "OnAnyDeath",
-					["Power"] = {{"RandomSummon"}},
+					["Power"] = {{"RandomSummon","Any"}},
 					Target = "Aggressor",
 				},
 			},
