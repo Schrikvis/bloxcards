@@ -2970,9 +2970,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3, ["Green"] = 1,},
 		["Effect"] = {
 			Name = "Life fam",
-			Description = "When this card dies, gain 750 life.",
+			Description = "When this card dies, gain 1250 life.",
 			["Type"] = "OnDeath",
-			["Power"] = {{"Cost",-750}},
+			["Power"] = {{"Cost",-1250}},
 			Target = "Ally",
 		},
 		["Bio"] = "MEDIIIIC!!!",

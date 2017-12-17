@@ -17829,14 +17829,14 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},			
 	
 	["Safe Chat"] = {
-		["Id"] = 557983645,
+		["Id"] = 1249708531,
 		["Name"] = "Safe Chat",
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Null",
 		["Color"] = "Yellow",
-		["Cost"] = {["Neutral"] = 4,},
+		["Cost"] = {["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Thug Life",
 			Description = "Lower the power of all fighters by 100. Summon a guest.",
@@ -17850,15 +17850,16 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Fire Fighter"] = {
 		["Id"] = 557974486,
 		["Name"] = "Fire Fighter",
-		["Health"] = 500,
-		["Power"] = 400,
+		["Health"] = 550,
+		["Power"] = 450,
 		["Rarity"] = "Uncommon",
+		["Requirement"] = {false,1,true},
 		["AttackEffect"] = "Lighting",
 		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 3,["Red"] = 2},
 		["Effect"] = {
 			Name = "Damage for Top Deck",
-			Description = "Your opponent loses a red, a green, a yellow, and a blue icon. This effect can cause people to go into negative icons.",
+			Description = "Can only be summoned if you're opponent controls a fighter.  Your opponent loses a red, a green, a yellow, and a blue icon. This effect can cause people to go into negative icons.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Green",-1},{"Blue",-1},{"Yellow",-1},{"Red",-1}},
 			Target = "Opponent",
