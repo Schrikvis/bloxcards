@@ -660,7 +660,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	}, 
 
 	["Histor"] = {
-		["Id"] = 616082705,
+		["Id"] = 1248514766,
 		["Name"] = "Histor",
 		["Health"] = 350,
 		["Power"] = 700,
@@ -670,9 +670,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "Whenever you lose life, summon a noob.",
+			Description = "Whenever you lose life, summon a noob, and gain a yellow icon.",
 			["Type"] = "OnHealthLoss",
-			["Power"] = {{"Summon","Noob"}},
+			["Power"] = {{"Summon","Noob"},{"Yellow",1}},
 			Target = "Ally",
 		},
 		["Bio"] = "Historically, you're a scrub.",
