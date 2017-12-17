@@ -11098,7 +11098,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Name"] = "LegoWraith",
 				["Id"] = 1247643090,
 				["AltArt"] = true,
-				["Bio"], = "The Lego of Christmas Past.",
+				["Bio"] = "The Lego of Christmas Past.",
 			},
 		},
 		["Health"] = 800,

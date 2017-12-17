@@ -3870,7 +3870,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Heal",9999999999999999}},
 			["Target"] = "Self",
 		},
-		["Bio"] "For the player that just can't stand green.",
+		["Bio"] = "For the player that just can't stand green.",
 	},
 }
 return tentwelvesixteen
