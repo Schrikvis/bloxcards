@@ -3041,7 +3041,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Entangling Lights"] = {
 				["Id"] = 1247062292,
 				["Name"] = "Entangling Lights",
-				["Bio"] = "Why do these cords have to be so damn long! They get tangled too often!",
+				["Bio"] = "Why do these cords have to be so darn long! They get tangled too often!",
 			},
 		},
 		["Health"] = 0,
