@@ -9518,6 +9518,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Wishnite-ArtV"] = {
 				["Name"] = "SilentNite",
+				["AltArt"] = true,
 				["Id"] = 585627393,
 				["Bio"] = "No presents. No turkey. No festivity allowed.",
 			},
