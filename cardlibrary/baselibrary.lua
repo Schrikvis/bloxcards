@@ -1834,7 +1834,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "NotArchetype",
 			Increase = 200,
 		},
-		["Bio"] = "Ninjas were only ever around 5 feet tall. Any higher would make it hard to be manevourable.",
+		["Bio"] = "Ninjas were only ever around 5 feet tall. Any higher would make it hard to be maneuverable.",
 	},
 	
 	["Ninja Trainee"] = {
@@ -17862,7 +17862,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Red"] = 2},
 		["Effect"] = {
 			Name = "Damage for Top Deck",
-			Description = "Can only be summoned if you're opponent controls a fighter.  Your opponent loses a red, a green, a yellow, and a blue icon. This effect can cause people to go into negative icons.",
+			Description = "Can only be summoned if your opponent controls a fighter.  Your opponent loses a red, a green, a yellow, and a blue icon. This effect can cause people to go into negative icons.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Green",-1},{"Blue",-1},{"Yellow",-1},{"Red",-1}},
 			Target = "Opponent",
