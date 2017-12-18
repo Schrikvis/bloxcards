@@ -3448,7 +3448,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Green"] = 3,},
 		["Effect"] = {
 			Name = "OUTRAGE!!",
-			Description = "lower the power of all non-green fighters by 200. Increase the health of all green fighters by 200.",
+			Description = "All non-green fighters lose 200 Power. All green fighters gain 200 Health.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",200,"NotColorGreen"},{"Heal",200,"ColorGreen"}},
 			Target = "All",
@@ -10961,7 +10961,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 5,},
 		["Effect"] = {
 			Name = "OUTRAGE!!",
-			Description = "Red fighters gain 200 power. Deal 200 damage to all non-red fighters.",
+			Description = "All non-red fighters lose 200 Health. All red fighters gain 200 Power.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Strengthen",200,"ColorRed"},{"Damage",200,"NotColorRed"}},
 			Target = "All",
@@ -11176,7 +11176,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Yellow"] = 5,},
 		["Effect"] = {
 			Name = "Investment",
-			Description = "Deal 200 damage to all non-Yellow fighters. Yellow fighters gain 200 health.",
+			Description = "All non-yellow fighters lose 200 Health. All yellow fighters gain 200 Health.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",200,"NotColorYellow"},{"Heal",200,"ColorYellow"}},
 			Target = "All",
@@ -11708,7 +11708,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 5,},
 		["Effect"] = {
 			Name = "Strike it up!",
-			Description = "Non-blue fighters lose 200 power. Blue fighters gain 200 power.",
+			Description = "All non-blue fighters lose 200 Power. All blue fighters gain 200 Power.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",200,"NotColorBlue"},{"Strengthen",200,"ColorBlue"}},
 			Target = "Ally",
