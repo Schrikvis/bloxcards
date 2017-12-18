@@ -5493,7 +5493,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Haunted Mansion-Sun"] = {
 				["Name"] = "Haunted Ship",
 				["Id"] = 897238400,
-				["Bio"] = "*-aws Theme Plays-",
+				["Bio"] = "*-Jaws Theme Plays-",
 			},
 		},	
 		["Health"] = 0,
