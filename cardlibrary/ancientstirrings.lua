@@ -2892,7 +2892,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 1,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "When this card strikes the opponent, put a random Mythic Shadow into your hand.",
+			Description = "Whenever this card strikes the opponent, put a random Mythic Shadow into your hand.",
 			["Type"] = "OnStrike",
 			["Power"] = {{"RandomAdd","Mythic"}},
 			Target = "Ally",
@@ -2919,7 +2919,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 3,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "When this card strikes the opponent, generate two white icons.",
+			Description = "Whenever this card strikes the opponent, generate two white icons.",
 			["Type"] = "OnStrike",
 			["Power"] = {{"Neutral",2}},
 			Target = "Ally",
@@ -2939,7 +2939,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 2,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "When this card strikes the opponent, it gains 200 health and power.",
+			Description = "Whenever this card strikes the opponent, it gains 200 health and power.",
 			["Type"] = "OnStrike",
 			["Power"] = {{"Strengthen",200},{"Heal",200}},
 			Target = "Self",
