@@ -674,7 +674,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 4,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "When this fighter attacks, swap the stats of a target fighter.",
+			Description = "Whenever this fighter attacks, swap the stats of a target fighter.",
 			["Type"] = "OnAttack",
 			["Power"] = {{"Swap",030,"Single"}},
 			Target = "Ally",
@@ -2269,7 +2269,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 1, ["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "Can't Attack. Put a morphic goo into your hand.",
+			Description = "Can't Attack. Put a Morphic Goo into your hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Add","Morphic Goo","Ally"}},
 			Target = "Opponent",
@@ -2309,7 +2309,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 2,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "Whenever your opponent summons a fighter, put a nightmare into both players' hands.",
+			Description = "Whenever your opponent summons a fighter, put a Nightmare into both players' hands.",
 			["Type"] = "OnEnemySummon",
 			["Power"] = {{"Add","Nightmare","Ally"},{"Add","Nightmare","Opponent"}},
 			Target = "All",
@@ -2329,7 +2329,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "When this card dies, put it into your opponent's hand. This card can't generate icons.",
+			Description = "When this card dies, put a copy of this card into your opponent's hand. This card can't generate icons.",
 			["Type"] = "OnDeath",
 			["Power"] = {{"Add","DairingSpookHead"}},
 			Target = "Opponent",
@@ -2368,7 +2368,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 6,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "When this card attacks, put a Morphic Goo into your hand.",
+			Description = "Whenever this card attacks, put a Morphic Goo into your hand.",
 			["Type"] = "OnAttack",
 			["Power"] = {{"Add","Morphic Goo"}},
 			Target = "Ally",
@@ -2387,7 +2387,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 1,},
 		["Effect"] = {
 			Name = "Hive Crack",
-			Description = [[Put 2 Nightmares into your opponent's hand.]],
+			Description = "Put 2 Nightmares into your opponent's hand.",
 			Type = "OnSummon",
 			Power = {{"Add","Nightmare"},{"Add","Nightmare"}},
 			Target = "Opponent",
@@ -2425,7 +2425,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 4, ["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "When this card attacks, it loses 200 power.",
+			Description = "Whenever this card attacks, this card loses 200 power.",
 			["Type"] = "OnAttack",
 			["Power"] = {{"Weaken",200}},
 			Target = "Self",
@@ -2444,7 +2444,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 1},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "Lower the health of all fighters by 50 and increase their power by 50. Draw a card.",
+			Description = "All fighters lose 50 Health and gain 50 Power. Draw a card.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",50},{"Strengthen",50},{"Draw",1,"Ally"}},
 			Target = "All",
@@ -2511,7 +2511,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 2, ["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Can't attack. When this fighter survives an attack, it gains 150 health and power.",
+			Description = "Can't attack. Whenever this fighter survives an attack, it gains 150 health and power.",
 			["Type"] = "OnAttacked",
 			["Power"] = {{"Heal",150},{"Strengthen",150}},
 			Target = "Self",
