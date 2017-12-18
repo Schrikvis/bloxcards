@@ -101,7 +101,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "When targeted, transform into a Korblox Archmage, then unlock all Korblox. This card does not trigger any effects upon dying.",
+			Description = "When this card is targeted, transform this card into a Korblox Archmage, then unlock all Korblox. This card does not trigger any effects upon dying.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Summon","Korblox Archmage"},{"Unlock",999,"Archetype"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -496,7 +496,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 3,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "When targeted, give all fighters 150 Health and Power, give all Overseers an additional 150 Health and Power, and transform this card into an Eye of Overseer.",
+			Description = "When this card is targeted, give all fighters 150 Health and Power, give all Overseers an additional 150 Health and Power, and transform this card into an Eye of Overseer.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Summon","Eye of Overseer"},{"Strengthen",150,"All"},{"Heal",150,"All"},{"Heal",150,"Archetype"},{"Strengthen",150,"Archetype"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -890,7 +890,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "When targeted, transform into four doges. This card does not trigger any effects upon dying.",
+			Description = "When this card is targeted, transform this card into four doges. This card does not trigger any effects upon dying.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Summon","Doge"},{"Summon","Doge"},{"Summon","Doge"},{"Summon","Doge"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -1358,7 +1358,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 3,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "When targeted, transform into a Redcliff Elite Commander, than give all Redcliff 200 health and power. This card does not trigger any effects upon dying.",
+			Description = "When this card is targeted, transform this card into a Redcliff Elite Commander, then give all Redcliff 200 health and power. This card does not trigger any effects upon dying.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Summon","Redcliff Elite Commander"},{"Strengthen",200,"Archetype"},{"Heal",200,"Archetype"},{"Damage",9999,"Self"}},
 			Target = "Ally",
