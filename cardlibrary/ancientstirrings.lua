@@ -3156,7 +3156,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1, ["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Undead Rising",
-			Description = "3 Charges. When this card dies, spend a charge, lose 100 life and ressurect it.",
+			Description = "3 Charges. When this card dies, remove a charge, lose 100 Life, and resurrect it.",
 			["Type"] = "OnDeath",
 			["Power"] = {{"Summon","Teddy1"},{"Cost",100},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -3175,7 +3175,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1, ["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Undead Rising",
-			Description = "2 Charges. When this card dies, spend a charge, lose 100 life and ressurect it.",
+			Description = "2 Charges. When this card dies, remove a charge, lose 100 Life, and resurrect it.",
 			["Type"] = "OnDeath",
 			["Power"] = {{"Summon","Teddy2"},{"Cost",100},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -3194,7 +3194,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1, ["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Undead Rising",
-			Description = "1 Charge. When this card dies, spend a charge, lose 100 life and ressurect it.",
+			Description = "1 Charge. When this card dies, remove a charge, lose 100 Life, and resurrect it.",
 			["Type"] = "OnDeath",
 			["Power"] = {{"Summon","Teddy3"},{"Cost",100},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -3213,7 +3213,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1, ["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Undead Rising",
-			Description = "0 Charges. When this card dies, spend a charge, lose 100 life and ressurect it.",
+			Description = "0 Charges. When this card dies, remove a charge, lose 100 Life, and resurrect it.",
 			["Type"] = "OnDeath",
 			["Power"] = {{"Cost",0}},
 			Target = "Ally",
@@ -3232,7 +3232,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 3,},
 		["Effect"] = {
 			Name = "Undead Rising",
-			Description = "When this card survives being attacked, generate a green icon.",
+			Description = "Whenever this card survives being attacked, generate a green icon.",
 			["Type"] = "OnAttacked",
 			["Power"] = {{"Green",1}},
 			Target = "Ally",
