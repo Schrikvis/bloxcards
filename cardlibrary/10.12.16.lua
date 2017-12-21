@@ -2415,8 +2415,8 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["CounterBlock"] = true,
 		["Effect"] = {
 			Name = "Life fam",
-			Description = "Can't Counterattack. Whenever this card attacks, lock it for 5 turns.",
-			["Type"] = "OnAttack",
+			Description = "Can't Counterattack. After this card attacks, lock it for 5 turns.",
+			["Type"] = "OnAttackEnd",
 			["Power"] = {{"Lock",5,"Self"}},
 			Target = "All",
 		},
