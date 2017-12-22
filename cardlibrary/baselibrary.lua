@@ -10717,6 +10717,20 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["OstrichSized"] = {
 		["Id"] = 362315583,
 		["Name"] = "OstrichSized",
+		["AltCards"] = {
+			["Baba Yaga"] = {
+				["Id"] =  1262128046,
+				["Name"] = "Baba Yaga",
+				["Effect"] = {
+					Name = "What's a Baba Yaga?",
+					Description = "Summon an Bab Yaga at the end of each of your turns. Bab Yagas can't generate icons.",
+					["Type"] = "OnEnd",
+					["Power"] = {{"Summon","Bab Yaga"}},
+					Target = "Ally",
+				},
+				["Bio"] = "The real question is, would Shedletsky eat this?",
+			},
+		},
 		["Health"] = 1200,
 		["Power"] = 675,
 		["Rarity"] = "Legendary",
@@ -10736,6 +10750,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Ostrich"] = {
 		["Id"] = 362315628,
 		["Name"] = "Ostrich",
+		["AltCards"] = {
+			["Bab Yaga"] = {
+				["Id"] =  1262132339,
+				["Name"] = "Bab Yaga",
+				["Bio"] = "Shedletsky would DEFINITELY eat this",
+			},
+		},
 		["Token"] = true,
 		["Health"] = 300,
 		["Power"] = 150,
