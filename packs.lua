@@ -1586,6 +1586,7 @@ local packs = {
 		};
 		Cards = {
 			"Unwanted Gift",
+			"Baba Yaga",
 			"Zombie Santa",
 			"Zombie Elf",
 			"JackinatorMG-C",
