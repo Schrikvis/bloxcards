@@ -10754,7 +10754,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Bab Yaga"] = {
 				["Id"] =  1262132339,
 				["Name"] = "Bab Yaga",
-				["Bio"] = "Shedletsky would DEFINITELY eat this",
+				["Bio"] = "Shedletsky would DEFINITELY eat this.",
 			},
 		},
 		["Token"] = true,
