@@ -14185,7 +14185,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["NerfModderV2"] = {
 				["Id"] = 432804094,
-				["Bio"] = "Even the most charistmatic and unbreakable can fall to depression.",
+				["Bio"] = "Even the most charismatic and unbreakable can fall to depression.",
 			},
 		},
 		["Health"] = 1000,
@@ -14197,12 +14197,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 5,},
 		["Effect"] = {
 			Name = "Double Life",
-			Description = "At the end of your turn, give all allied fighters 200 power and lose 900 life. This card is immune to effects that lower its power or health.",
+			Description = "At the end of your turns, give all allied fighters 200 power and lose 900 Life. This card is immune to effects that lower its Health or Power.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Strengthen",200},{"Cost",900}},
 			Target = "Ally",
 		},
-		["Bio"] = "Even the charistmatic and unbreakable can fall to depression.",
+		["Bio"] = "Even the charismatic and unbreakable can fall to depression.",
 	},
 	
 	["Beam Sword"] = {
