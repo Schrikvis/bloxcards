@@ -473,6 +473,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Blue", 
+		["Cost"] = {["Blue"] = 13},
 		["Effect"] = {
 			Name = "Pyrotechnics",
 			Description = "Whenever a fighter is summoned, end the turn.",
