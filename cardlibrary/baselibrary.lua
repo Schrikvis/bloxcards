@@ -7689,7 +7689,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Builderman"] = {
-		["Id"] = 951700034,
+		["Id"] = 1266655937,
 		["Name"] = "Builderman",
 		["Health"] = 200,
 		["Power"] = 400,
@@ -7709,7 +7709,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Builderman 2"] = {
-		["Id"] = 951700034,
+		["Id"] = 1266655937,
 		["Name"] = "Builderman",
 		["Health"] = 200,
 		["Power"] = 400,
