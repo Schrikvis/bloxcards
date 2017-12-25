@@ -101,7 +101,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "When targeted, transform into a Korblox Archmage, then unlock all Korblox. This card does not trigger any effects upon dying.",
+			Description = "When this card is targeted, transform this card into a Korblox Archmage, then unlock all Korblox. This card does not trigger any effects upon dying.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Summon","Korblox Archmage"},{"Unlock",999,"Archetype"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -496,7 +496,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 3,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "When targeted, give all fighters 150 Health and Power, give all Overseers an additional 150 Health and Power, and transform this card into an Eye of Overseer.",
+			Description = "When this card is targeted, give all fighters 150 Health and Power, give all Overseers an additional 150 Health and Power, and transform this card into an Eye of Overseer.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Summon","Eye of Overseer"},{"Strengthen",150,"All"},{"Heal",150,"All"},{"Heal",150,"Archetype"},{"Strengthen",150,"Archetype"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -674,7 +674,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 4,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "When this fighter attacks, swap the stats of a target fighter.",
+			Description = "Whenever this fighter attacks, swap the stats of a target fighter.",
 			["Type"] = "OnAttack",
 			["Power"] = {{"Swap",030,"Single"}},
 			Target = "Ally",
@@ -890,7 +890,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "When targeted, transform into four doges. This card does not trigger any effects upon dying.",
+			Description = "When this card is targeted, transform this card into four doges. This card does not trigger any effects upon dying.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Summon","Doge"},{"Summon","Doge"},{"Summon","Doge"},{"Summon","Doge"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -1358,7 +1358,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 3,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "When targeted, transform into a Redcliff Elite Commander, than give all Redcliff 200 health and power. This card does not trigger any effects upon dying.",
+			Description = "When this card is targeted, transform this card into a Redcliff Elite Commander, then give all Redcliff 200 health and power. This card does not trigger any effects upon dying.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Summon","Redcliff Elite Commander"},{"Strengthen",200,"Archetype"},{"Heal",200,"Archetype"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -2269,7 +2269,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 1, ["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "Can't Attack. Put a morphic goo into your hand.",
+			Description = "Can't Attack. Put a Morphic Goo into your hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Add","Morphic Goo","Ally"}},
 			Target = "Opponent",
@@ -2309,7 +2309,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 2,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "Whenever your opponent summons a fighter, put a nightmare into both players' hands.",
+			Description = "Whenever your opponent summons a fighter, put a Nightmare into both players' hands.",
 			["Type"] = "OnEnemySummon",
 			["Power"] = {{"Add","Nightmare","Ally"},{"Add","Nightmare","Opponent"}},
 			Target = "All",
@@ -2329,7 +2329,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "When this card dies, put it into your opponent's hand. This card can't generate icons.",
+			Description = "When this card dies, put a copy of this card into your opponent's hand. This card can't generate icons.",
 			["Type"] = "OnDeath",
 			["Power"] = {{"Add","DairingSpookHead"}},
 			Target = "Opponent",
@@ -2368,7 +2368,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 6,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "When this card attacks, put a Morphic Goo into your hand.",
+			Description = "Whenever this card attacks, put a Morphic Goo into your hand.",
 			["Type"] = "OnAttack",
 			["Power"] = {{"Add","Morphic Goo"}},
 			Target = "Ally",
@@ -2387,7 +2387,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 1,},
 		["Effect"] = {
 			Name = "Hive Crack",
-			Description = [[Put 2 Nightmares into your opponent's hand.]],
+			Description = "Put 2 Nightmares into your opponent's hand.",
 			Type = "OnSummon",
 			Power = {{"Add","Nightmare"},{"Add","Nightmare"}},
 			Target = "Opponent",
@@ -2425,7 +2425,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 4, ["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "When this card attacks, it loses 200 power.",
+			Description = "Whenever this card attacks, this card loses 200 power.",
 			["Type"] = "OnAttack",
 			["Power"] = {{"Weaken",200}},
 			Target = "Self",
@@ -2444,7 +2444,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 1},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "Lower the health of all fighters by 50 and increase their power by 50. Draw a card.",
+			Description = "All fighters lose 50 Health and gain 50 Power. Draw a card.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",50},{"Strengthen",50},{"Draw",1,"Ally"}},
 			Target = "All",
@@ -2511,7 +2511,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 2, ["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Can't attack. When this fighter survives an attack, it gains 150 health and power.",
+			Description = "Can't attack. Whenever this fighter survives an attack, it gains 150 health and power.",
 			["Type"] = "OnAttacked",
 			["Power"] = {{"Heal",150},{"Strengthen",150}},
 			Target = "Self",
@@ -2892,7 +2892,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 1,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "When this card strikes the opponent, put a random Mythic Shadow into your hand.",
+			Description = "Whenever this card strikes the opponent, put a random Mythic Shadow into your hand.",
 			["Type"] = "OnStrike",
 			["Power"] = {{"RandomAdd","Mythic"}},
 			Target = "Ally",
@@ -2919,7 +2919,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 3,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "When this card strikes the opponent, generate two white icons.",
+			Description = "Whenever this card strikes the opponent, generate two white icons.",
 			["Type"] = "OnStrike",
 			["Power"] = {{"Neutral",2}},
 			Target = "Ally",
@@ -2939,7 +2939,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 2,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "When this card strikes the opponent, it gains 200 health and power.",
+			Description = "Whenever this card strikes the opponent, it gains 200 health and power.",
 			["Type"] = "OnStrike",
 			["Power"] = {{"Strengthen",200},{"Heal",200}},
 			Target = "Self",
@@ -3156,7 +3156,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1, ["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Undead Rising",
-			Description = "3 Charges. When this card dies, spend a charge, lose 100 life and ressurect it.",
+			Description = "3 Charges. When this card dies, remove a charge, lose 100 Life, and resurrect it.",
 			["Type"] = "OnDeath",
 			["Power"] = {{"Summon","Teddy1"},{"Cost",100},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -3175,7 +3175,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1, ["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Undead Rising",
-			Description = "2 Charges. When this card dies, spend a charge, lose 100 life and ressurect it.",
+			Description = "2 Charges. When this card dies, remove a charge, lose 100 Life, and resurrect it.",
 			["Type"] = "OnDeath",
 			["Power"] = {{"Summon","Teddy2"},{"Cost",100},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -3194,7 +3194,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1, ["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Undead Rising",
-			Description = "1 Charge. When this card dies, spend a charge, lose 100 life and ressurect it.",
+			Description = "1 Charge. When this card dies, remove a charge, lose 100 Life, and resurrect it.",
 			["Type"] = "OnDeath",
 			["Power"] = {{"Summon","Teddy3"},{"Cost",100},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -3213,7 +3213,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1, ["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Undead Rising",
-			Description = "0 Charges. When this card dies, spend a charge, lose 100 life and ressurect it.",
+			Description = "0 Charges. When this card dies, remove a charge, lose 100 Life, and resurrect it.",
 			["Type"] = "OnDeath",
 			["Power"] = {{"Cost",0}},
 			Target = "Ally",
@@ -3232,7 +3232,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 3,},
 		["Effect"] = {
 			Name = "Undead Rising",
-			Description = "When this card survives being attacked, generate a green icon.",
+			Description = "Whenever this card survives being attacked, generate a green icon.",
 			["Type"] = "OnAttacked",
 			["Power"] = {{"Green",1}},
 			Target = "Ally",

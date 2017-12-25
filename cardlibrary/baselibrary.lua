@@ -226,7 +226,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Bio"] = "Dairing thought they were cute. They were. Dairing thought they were harmless. They were. Dairing thought they were annoying. They really, really were.",
 				["Effect"] = {
 					Name = "Meebling Infestation",
-					Description = "Lower the power of a target fighter by 600 and summon a Meebling.",
+					Description = "You must have a Meeboid in play in order to cast this. Lower the power of a target fighter by 600 and summon a Meebling.",
 					["Type"] = "OnSummon",
 					["Power"] = {{"Weaken",600},{"Summon","Meebling-Sun","Ally"}},
 					Target = "Single",
@@ -1834,7 +1834,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "NotArchetype",
 			Increase = 200,
 		},
-		["Bio"] = "Ninjas were only ever around 5 feet tall. Any higher would make it hard to be manevourable.",
+		["Bio"] = "Ninjas were only ever around 5 feet tall. Any higher would make it hard to be maneuverable.",
 	},
 	
 	["Ninja Trainee"] = {
@@ -3448,7 +3448,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Green"] = 3,},
 		["Effect"] = {
 			Name = "OUTRAGE!!",
-			Description = "lower the power of all non-green fighters by 200. Increase the health of all green fighters by 200.",
+			Description = "All non-green fighters lose 200 Power. All green fighters gain 200 Health.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",200,"NotColorGreen"},{"Heal",200,"ColorGreen"}},
 			Target = "All",
@@ -5493,7 +5493,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Haunted Mansion-Sun"] = {
 				["Name"] = "Haunted Ship",
 				["Id"] = 897238400,
-				["Bio"] = "*-aws Theme Plays-",
+				["Bio"] = "*-Jaws Theme Plays-",
 			},
 		},	
 		["Health"] = 0,
@@ -6197,12 +6197,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Health"] = 1000,
 		["Power"] = 0,
 		["Rarity"] = "Uncommon",
-		["AttackEffect"] = "Lightning",
+		["AttackEffect"] = "Fire",
 		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 2,["Red"] = 3,},
 		["Effect"] = {
 			Name = "Acolyte",
-			Description = "Gain 1 Red Icon at the end of each of your turns.",
+			Description = "At the end of your turns, generate a red icon.",
 			["Type"] = "OnEnd",
 			["Power"] = "Red",
 			Target = "Ally",
@@ -10982,7 +10982,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 5,},
 		["Effect"] = {
 			Name = "OUTRAGE!!",
-			Description = "Red fighters gain 200 power. Deal 200 damage to all non-red fighters.",
+			Description = "All non-red fighters lose 200 Health. All red fighters gain 200 Power.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Strengthen",200,"ColorRed"},{"Damage",200,"NotColorRed"}},
 			Target = "All",
@@ -11197,7 +11197,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Yellow"] = 5,},
 		["Effect"] = {
 			Name = "Investment",
-			Description = "Deal 200 damage to all non-Yellow fighters. Yellow fighters gain 200 health.",
+			Description = "All non-yellow fighters lose 200 Health. All yellow fighters gain 200 Health.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",200,"NotColorYellow"},{"Heal",200,"ColorYellow"}},
 			Target = "All",
@@ -11729,7 +11729,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 5,},
 		["Effect"] = {
 			Name = "Strike it up!",
-			Description = "Non-blue fighters lose 200 power. Blue fighters gain 200 power.",
+			Description = "All non-blue fighters lose 200 Power. All blue fighters gain 200 Power.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",200,"NotColorBlue"},{"Strengthen",200,"ColorBlue"}},
 			Target = "Ally",
@@ -11770,12 +11770,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Health"] = 300,
 		["Power"] = 300,
 		["Rarity"] = "Legendary",
-		["AttackEffect"] = "Lightning",
+		["AttackEffect"] = "GunShot",
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 4,["Green"] = 1,["Blue"] = 1,},
 		["Effect"] = {
 			Name = "Snipe!",
-			Description = "When played, lock a target fighter for 3 turns, then deal 300 damage to it.",
+			Description = "Lock a target fighter for 3 turns, then deal 300 damage to it.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Lock",3},{"Damage",300}},
 			Target = "Single",
@@ -11794,7 +11794,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 5,},
 		["Effect"] = {
 			Name = "Quick Shot",
-			Description = "Draw 3 cards.",
+			Description = "Draw three cards.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Draw",3}},
 			Target = "Ally",
@@ -11808,14 +11808,14 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Health"] = 800,
 		["Power"] = 400,
 		["Rarity"] = "Epic",
-		["AttackEffect"] = "Lightning",
+		["AttackEffect"] = "FurySwipe",
 		["Fading"] = true,
 		["Archetype"] = "Doge",
 		["Color"] = "Yellow",
 		["Cost"] = {["Yellow"] = 4, ["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "B2T",
-			Description = "Whenever an allied fighter dies, summon a doge. This fighter does not activate effects upon death.",
+			Description = "Whenever an allied fighter dies, summon a Doge. This fighter does not activate effects upon death.",
 			["Type"] = "OnAllyDeath",
 			["Power"] = {{"Summon","Doge"}},
 			Target = "Ally",
@@ -12324,6 +12324,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["SantaSorin"] = {
 				["Id"] = 1247065615,
 				["Name"] = "SantaSorin",
+				["Effect"] = {
+					Description = "At the end of your turns, all other fighters lose 25 power and SantaSorin gains 200 power.",
+				},
 				["Bio"] = "Santa? Happiness? Your dad? All illusions!",
 			},
 		},
@@ -12331,12 +12334,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 25,
 		["Rarity"] = "Rare",
 		["Archetype"] = "Hero",
-		["AttackEffect"] = "Lightning",
+		["AttackEffect"] = "Slash",
 		["Color"] = "Yellow",
 		["Cost"] = {["Neutral"] = 2,["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Routine Maitenance",
-			Description = "At the end of your turn, all other fighters lose 25 power and sirsorin gains 200 power.",
+			Description = "At the end of your turns, all other fighters lose 25 power and SirSorin gains 200 power.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Weaken",25,"All"},{"Strengthen",225}},
 			Target = "Self",
@@ -14203,7 +14206,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["NerfModderV2"] = {
 				["Id"] = 432804094,
-				["Bio"] = "Even the most charistmatic and unbreakable can fall to depression.",
+				["Bio"] = "Even the most charismatic and unbreakable can fall to depression.",
 			},
 		},
 		["Health"] = 1000,
@@ -14215,12 +14218,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 5,},
 		["Effect"] = {
 			Name = "Double Life",
-			Description = "At the end of your turn, give all allied fighters 200 power and lose 900 life. This card is immune to effects that lower its power or health.",
+			Description = "At the end of your turns, give all allied fighters 200 power and lose 900 Life. This card is immune to effects that lower its Health or Power.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Strengthen",200},{"Cost",900}},
 			Target = "Ally",
 		},
-		["Bio"] = "Even the charistmatic and unbreakable can fall to depression.",
+		["Bio"] = "Even the charismatic and unbreakable can fall to depression.",
 	},
 	
 	["Beam Sword"] = {
@@ -15060,12 +15063,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Health"] = 400,
 		["Power"] = 400,
 		["Rarity"] = "Common",
-		["AttackEffect"] = "Punch1",
+		["AttackEffect"] = "Freeze",
 		["Color"] = "Blue",
 		["Cost"] = {["Blue"] = 3, ["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Mana Siphon",
-			Description = "Whenever your opponent casts an action or terrain card, draw a card, put a random red or blue action into your hand and this fighter gains 150 Health and Power.",
+			Description = "Whenever your opponent casts an action or terrain card, draw a card, put a random Red or Blue action into your hand, and give this fighter 150 Health and Power.",
 			["Type"] = "OnEnemyCast",
 			["Power"] = {{"Draw",1,"Ally"},{"RandomAdd","Lunar","Ally"},{"Heal",150},{"Strengthen",150}},
 			Target = "Self",
@@ -17880,7 +17883,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Red"] = 2},
 		["Effect"] = {
 			Name = "Damage for Top Deck",
-			Description = "Can only be summoned if you're opponent controls a fighter.  Your opponent loses a red, a green, a yellow, and a blue icon. This effect can cause people to go into negative icons.",
+			Description = "Can only be summoned if your opponent controls a fighter.  Your opponent loses a red, a green, a yellow, and a blue icon. This effect can cause people to go into negative icons.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Green",-1},{"Blue",-1},{"Yellow",-1},{"Red",-1}},
 			Target = "Opponent",
