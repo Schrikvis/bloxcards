@@ -3839,9 +3839,20 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Effect"] = {
 					Name = "Test",
 					Description = "Transform all other fighters to random fighters.",
-					["Type"] = "OnAnyDeath",
+					["Type"] = "OnEnemyDeath",
 					["Power"] = {{"RandomSummon","Any"}},
-					Target = "Aggressor",
+					Target = "Opponent",
+				},
+			},
+			
+			["Test DummyB"] = {
+				["Rarity"] = "Token",
+				["Effect"] = {
+					Name = "Test",
+					Description = "Transform all other fighters to random fighters.",
+					["Type"] = "OnAllyDeath",
+					["Power"] = {{"RandomSummon","Any"}},
+					Target = "Ally",
 				},
 			},
 		},
@@ -3851,13 +3862,14 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "TestDummy",
 		["AttackEffect"] = "Punch",
 		["Fading"] = true,
+		["SetImmune"] = true,
 		["Color"] = "Neutral", 		
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Test",
 			Description = "Transform all other fighters to random fighters. This card does not activate effects upon dying.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",99999},{"Summon","Test DummyA","Ally"},{"SetHealth",0,"NotArchetype"},{"Damage",9999,"Archetype"},{"Neutral",1},{"Neutral",-1},{"Summon","Test Dummy","Ally"}},
+			["Power"] = {{"Summon","Test DummyA","Ally"},{"SetHealth",0,"Opponent"},{"Heal",9999},{"Damage",9999,"Archetype"},{"Summon","Test DummyB","Ally"},{"SetHealth",0,"Ally"},{"Heal",9999},{"Damage",9999,"Archetype"}},
 			Target = "Self",
 		},
 		["Bio"] = "This dummy has been through more torture and abuse than you could even imagine...",
