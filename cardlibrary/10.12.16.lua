@@ -3910,12 +3910,12 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 7,},
 		["Effect"] = {
 			Name = "Pancake Break 2.0",
-			Description = "Give all allied fighters 250 Health and Power, and return them to your hand. Summon a 1200/400 fighter.",
+			Description = "Give all allied fighters 250 Health and Power, then return them to your hand. Summon a 1200/400 fighter.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Strengthen",250},{"Heal",250},{"Return",030},{"Yellow",-1},{"Yellow",1},{"Summon","ExtolYToken"}},
 			["Target"] = "Ally",
 		},
-		["Bio"] = [[Aha! After studying various "planets" collapsing under their own "power", I have managed to create this "contraption" which will only affect a select few "beings".  The "effects" of this "contraption" not only "sends" those whom are within its "requirements" to a different "spacial position", but it also "awakens" their "true potential".]],
+		["Bio"] = [[Aha! After studying various "planets" collapsing under their own "power", I have managed to create this "contraption" which will only affect a select few "beings". The "effects" of this "contraption" not only "sends" those whom are within its "requirements" to a different "spacial position", but it also "awakens" their "true potential".]],
 	},
 	
 	["ExtolYToken"] = {
@@ -3924,17 +3924,10 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Health"] = 1200,
 		["Power"] = 400,
 		["Rarity"] = "Token",
-		["AttackEffect"] = "Dash",
+		["AttackEffect"] = "Pulse",
 		["Color"] = "Yellow",
 		["Cost"] = {["Yellow"] = 7,},
-		["Effect"] = {
-			Name = "Please shut this annoyance up.",
-			Description = "Give all allied fighters 250 Health and Power, and return them to your hand. Summon a 1200/400 fighter.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Yellow",0}},
-			["Target"] = "Ally",
-		},
-		["Bio"] = [[And now... it is time you "witness" firsthand this "power" that i have "granted" to those "individuals".  Try not to "waste" away your "strength" by "charging" straight into their "full power".]],
+		["Bio"] = [[And now... it is time you "witness" firsthand this "power" that I have "granted" to those "individuals". Try not to "waste" away your "strength" by "charging" straight into their "full power".]],
 	},
 }
 return tentwelvesixteen
