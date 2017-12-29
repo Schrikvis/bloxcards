@@ -7292,7 +7292,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Acolyte",
-			Description = "Gain 1 Yellow Icon and all Acolytes gain 50 health and power at the end of each of your turns.",
+			Description = "At the end of your turns, generate a yellow icon and all Acolytes gain 50 Heath and Power.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Yellow",1,"Ally"},{"Heal",50},{"Strengthen",50}},
 			Target = "Archetype",
@@ -7312,7 +7312,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Acolyte",
-			Description = "Generate an additional white icon at the end of each of your turns.",
+			Description = "At the end of your turns, generate an additional white icon.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Neutral",1}},
 			Target = "Ally",
@@ -7332,7 +7332,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Acolyte",
-			Description = "After this card attacks a fighter, put a random Acolyte into your hand.",
+			Description = "After this card attacks, put a random Acolyte into your hand.",
 			["Type"] = "OnAttackEnd",
 			["Power"] = {{"RandomAdd","Acolyte"}},
 			Target = "Ally",
@@ -7352,7 +7352,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Acolyte",
-			Description = "Gain 1 Red Icon and deal 100 to all non-Acolytes at the end of each of your turns.",
+			Description = "At the end of your turns, generate a red icon and deal 100 damage to all non-Acolytes.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Red",1,"Ally"},{"Damage",100}},
 			Target = "NotArchetype",
@@ -7372,7 +7372,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Acolyte",
-			Description = "Gain 1 Blue Icon and unlock all Acolytes at the end of each of your turns.",
+			Description = "At the end of your turns, generate a blue icon and unlock all Acolytes.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Blue",1,"Ally"},{"Unlock",999}},
 			Target = "Archetype",
@@ -7392,7 +7392,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Acolyte",
-			Description = "Gain 1 Green Icon and all Acolytes gain 100 Health at the end of each of your turns.",
+			Description = "At the end of your turns, generate a green icon and all Acolytes gain 100 Health.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Green",1,"Ally"},{"Heal",100}},
 			Target = "Archetype",
@@ -7413,7 +7413,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Build Up",
-			Description = "At the end of your turn, all Acolytes gain 50 health. Glaurung can't generate icons.",
+			Description = "At the end of your turns, all Acolytes gain 50 Health. Glaurung can't generate icons.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Heal",50}},
 			Target = "Archetype",
@@ -7447,7 +7447,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Build Up",
-			Description = "At the end of your turn, all Acolytes gain 50 power. Aer Draco can't generate icons.",
+			Description = "At the end of your turns, all Acolytes gain 50 Power. Aer Draco can't generate icons.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Strengthen",50}},
 			Target = "Archetype",
@@ -7468,7 +7468,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 1,["Blue"] = 1,["Yellow"] = 1,["Red"] = 1,["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Build Up",
-			Description = "You must control at least 1 acolyte to cast this card. Summon three Draconic Acolytes, then lock all allied cards for two turns.",
+			Description = "Cast only if you control at least one Acolyte. Summon three Draconic Acolytes, then lock all allied fighters for two turns.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Summon","Glaurung"},{"Summon","Smaug"},{"Summon","Aer Draco"},{"Lock",2}},
 			Target = "Ally",
@@ -8989,7 +8989,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Yellow"] = 1,["Green"] = 1,["Red"] = 1,["Blue"] = 1,},
 		["Effect"] = {
 			Name = "Omega Cost",
-			Description = "You must control at least 4 Acolytes to summon this card. Increase the health and power of all Acolytes by 300.",
+			Description = "Summon only if you control four or more Acolytes. All Acolytes gain 300 Health and Power.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",300},{"Strengthen",300}},
 			Target = "Archetype",
@@ -14984,7 +14984,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "EzWinz",
-			Description = "You must have at least 2 Acolyte in play to cast this card. Generate an icon of every color, then draw a card.",
+			Description = "Cast only if you control two or more Acolytes. Generate an icon of every color, then draw a card.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Yellow",1},{"Blue",1},{"Red",1},{"Green",1},{"Neutral",1},{"Draw",1}},
 			Target = "Ally",
