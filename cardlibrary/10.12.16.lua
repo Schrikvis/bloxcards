@@ -3929,5 +3929,24 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 7,},
 		["Bio"] = [[And now... it is time you "witness" firsthand this "power" that I have "granted" to those "individuals". Try not to "waste" away your "strength" by "charging" straight into their "full power".]],
 	},
+	
+	["Yggdrasil Faerie"] = {
+		["Id"] = 1283239091,
+		["Name"] = "Yggdrasil Faerie",
+		["Health"] = 1500,
+		["Power"] = 200,
+		["Rarity"] = "Legendary",
+		["AttackEffect"] = "Pulse",
+		["Color"] = "Green",
+		["Cost"] = {["Neutral"] = 6, ["Green"] = 3,},
+		["Effect"] = {
+			Name = "It's not easy being green.",
+			Description = "Add 2 random green cards that cost only green icons to your hand.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"RandomAdd",{"Chef", "Overseer Drake", "Pirate", "DerpDerpyness", "Kariu", "Samksoon", "Deadeye", "FatalWing", "KingShadowCrow", "Mummy Peasant", "KasoduS", "Tom's Beans", "Mass Epidemic", "Myrmiredon", "Ripull", "1337", "Zombie Cultist", "Zombie Summoner", "Haunted Overseer Armor", "MiloCortez", "Roundawsome", "Wrath of King Gecko", "Bad Bread"}},{"RandomAdd",{"Chef", "Overseer Drake", "Pirate", "DerpDerpyness", "Kariu", "Samksoon", "Deadeye", "FatalWing", "KingShadowCrow", "Mummy Peasant", "KasoduS", "Tom's Beans", "Mass Epidemic", "Myrmiredon", "Ripull", "1337", "Zombie Cultist", "Zombie Summoner", "Haunted Overseer Armor", "MiloCortez", "Roundawsome", "Wrath of King Gecko", "Bad Bread"}}},
+			["Target"] = "Ally",
+		},
+		["Bio"] = "Regardless if you call it Fairy, faery, or faerie;  it’s still going to kick your butt.",
+	},
 }
 return tentwelvesixteen
