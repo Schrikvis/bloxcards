@@ -5271,7 +5271,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Korblox Deathkeeper"] = {
-		["Id"] = 292778200,
+		["Id"] = 1286602394,
 		["Name"] = "Korblox Deathkeeper",
 		["Health"] = 2500,
 		["Power"] = 500,
