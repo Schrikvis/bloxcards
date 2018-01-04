@@ -2258,7 +2258,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Toxic Goo"] = {
-		["Id"] = 540076556,
+		["Id"] = 1297919682,
 		["Name"] = "Toxic Goo",
 		["Health"] = 400,
 		["Power"] =  400,
@@ -2267,7 +2267,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Blue",
 		["AttackBlock"] = true,
 		["Archetype"] = "Defender",
-		["Cost"] = {["Blue"] = 1, ["Neutral"] = 1,},
+		["Cost"] = {["Blue"] = 1, ["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Haydoscale",
 			Description = "Can't Attack. Put a Morphic Goo into your hand.",
