@@ -3960,9 +3960,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 5,["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Thaw",
-			Description = "After this card attacks, set the lock of a target fighter to 1.",
+			Description = "After this card attacks, set the lock of a target fighter to 2.",
 			["Type"] = "OnAttackEnd",
-			["Power"] = {{"Unlock",9999},{"Lock",1}},
+			["Power"] = {{"Unlock",9999},{"Lock",2}},
 			Target = "Single",
 		},
 		["Bio"] = "Sit down. Let's talk about that iFunny watermark.",
