@@ -3948,5 +3948,24 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "Regardless if you call it Fairy, faery, or faerie;  it’s still going to kick your butt.",
 	},
+	
+	["MesouricPhantom976"] = {
+		["Id"] = 1299839877,
+		["Name"] = "MesouricPhantom976",
+		["Health"] = 1225,
+		["Power"] = 400,
+		["Rarity"] = "Rare",
+		["AttackEffect"] = "Punch2",
+		["Color"] = "Blue",
+		["Cost"] = {["Neutral"] = 5,["Blue"] = 3,},
+		["Effect"] = {
+			Name = "Thaw",
+			Description = "After this card attacks, set the lock of a target fighter to 2.",
+			["Type"] = "OnAttackEnd",
+			["Power"] = {{"Unlock",9999},{"Lock",2}},
+			Target = "Single",
+		},
+		["Bio"] = "Sit down. Let's talk about that iFunny watermark.",
+	},
 }
 return tentwelvesixteen
