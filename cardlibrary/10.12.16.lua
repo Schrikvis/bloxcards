@@ -3941,7 +3941,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 6, ["Green"] = 3,},
 		["Effect"] = {
 			Name = "It's not easy being green.",
-			Description = "Add 2 random green cards that cost only green icons to your hand.",
+			Description = "Put 2 random green cards that cost only green icons into your hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"RandomAdd",{"Chef", "Overseer Drake", "Pirate", "DerpDerpyness", "Kariu", "Samksoon", "Deadeye", "FatalWing", "KingShadowCrow", "Mummy Peasant", "KasoduS", "Tom's Beans", "Mass Epidemic", "Myrmiredon", "Ripull", "1337", "Zombie Cultist", "Zombie Summoner", "Haunted Overseer Armor", "MiloCortez", "Roundawsome", "Wrath of King Gecko", "Bad Bread", "Priestess Zanzel, the Promised One"}},{"RandomAdd",{"Chef", "Overseer Drake", "Pirate", "DerpDerpyness", "Kariu", "Samksoon", "Deadeye", "FatalWing", "KingShadowCrow", "Mummy Peasant", "KasoduS", "Tom's Beans", "Mass Epidemic", "Myrmiredon", "Ripull", "1337", "Zombie Cultist", "Zombie Summoner", "Haunted Overseer Armor", "MiloCortez", "Roundawsome", "Wrath of King Gecko", "Bad Bread", "Priestess Zanzel, the Promised One"}}},
 			["Target"] = "Ally",
