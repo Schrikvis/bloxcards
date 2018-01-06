@@ -3967,5 +3967,24 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "Sit down. Let's talk about that iFunny watermark.",
 	},
+	
+	["B550"] = {
+		["Id"] = 1304351037,
+		["Name"] = "B550",
+		["Health"] = 550,
+		["Power"] = 550,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "GunShot",
+		["Color"] = "Red", 		
+		["Cost"] = {["Neutral"] = 2, ["Red"] = 3,},
+		["Effect"] = {
+			Name = "550 Miles",
+			Description = "Whenever your opponent casts an action or terrain spell, give this card 550 Power.",
+			["Type"] = "OnEnemyCast",
+			["Power"] = {{"Stengthen",550}},
+			Target = "Self",
+		},
+		["Bio"] = "B550 is a blank slate - A gunman with no identity: stripped of humanity and built for only one purpose. His story - not important; his name - even less so.",
+	},
 }
 return tentwelvesixteen
