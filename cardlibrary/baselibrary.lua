@@ -12893,7 +12893,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Ultoris NOOBrae"] = {
-		["Id"] = 413921007,
+		["Id"] = 1303976830,
 		["Name"] = "Ultoris NOOBrae",
 		["Health"] = 600,
 		["Power"] = 350,
@@ -12901,7 +12901,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Lightning",
 		["Archetype"] = "Noob",
 		["Color"] = "Red",
-		["Cost"] = {["Neutral"] = 4,["Red"] = 1,},
+		["Cost"] = {["Neutral"] = 3,["Red"] = 1,},
 		["Bio"] = "OMG TENEBRAE MORE LIKE TENEBAE HELL REK UR STUFF M8 KEK",
 	},	
 	
