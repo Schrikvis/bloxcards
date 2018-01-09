@@ -2130,7 +2130,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Haydoscale",
 			Description = "When played, summon a copy of this card. When this card attacks and destroys another, draw a card.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Summon","Lead"},{"Damage",9999,"Self"},{"Summon","Lead"}},
+			["Power"] = {{"Summon","Lead"},{"Summon","Lead"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = "From fan to murderer.",

@@ -2579,7 +2579,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Life fam",
 			Description = "Summon two Zombies. Whenever an allied fighter dies, Zabiehunter drains 200 health from your opponent.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Summon","Zabiehuntertoken"},{"Damage",9999,"Self"},{"Summon","Zombie"},{"Summon","Zombie"}},
+			["Power"] = {{"Summon","Zabiehuntertoken"},{"Summon","Zombie"},{"Summon","Zombie"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = [[I want to see if the light can pass through me.]],
