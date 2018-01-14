@@ -601,6 +601,7 @@ local packs = {
 			"hyp3rdeath",
 			"Steam Razikai",
 			"Jimminus",
+			"Bearded Captain",
 			"Wooden Chair",
  			"Rollernaut",
 			"SONICTHEHEDGEHOGXXX",
