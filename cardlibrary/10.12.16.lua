@@ -3986,5 +3986,43 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "B550 is a blank slate - A gunman with no identity: stripped of humanity and built for only one purpose. His story - not important; his name - even less so.",
 	},
+	
+	["ThatGrimGuy"] = {
+		["Id"] = 1328298822,
+		["Name"] = "ThatGrimGuy",
+		["Health"] = 300,
+		["Power"] = 600,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Punch2",
+		["Color"] = "Red", 		
+		["Cost"] = {["Neutral"] = 3, ["Red"] = 1,},
+		["Effect"] = {
+			Name = "Not TheGrimGuy",
+			Description = "This card triggers death effects twice when it dies.",
+			["Type"] = "OnDeath",
+			["Power"] = {{"SummonWithEffect","ThatGrimGuyTOKEN"}},
+			Target = "Ally",
+		},
+		["Bio"] = "Is your big head too SMALL? Just add water to acheive BIGGERHEAD.",
+	},
+	
+	["ThatGrimGuyTOKEN"] = {
+		["Id"] = 1328298822,
+		["Name"] = "ThatGrimGuy",
+		["Health"] = 300,
+		["Power"] = 600,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Punch2",
+		["Color"] = "Red", 		
+		["Cost"] = {["Neutral"] = 3, ["Red"] = 1,},
+		["Effect"] = {
+			Name = "Oof",
+			Description = "This card is supposed to die via ThatGrimGuy's effect.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Damage",9999}},
+			Target = "Self",
+		},
+		["Bio"] = "As the development team slowly becomes less and less active, the more I realize of the inevitable for us. We are human beings, with lives beyond the computer screens, and I can't bear that we would have to depart from this game sooner or later. Before the inevitable comes, I just want to say thank you to each person who contributed to this game. This game is where I made the most friends, and met the people who made me happy the most. And when that day comes, I'll wish you the best of luck in this journey of life. -Blitzwolfer",
+	},
 }
 return tentwelvesixteen
