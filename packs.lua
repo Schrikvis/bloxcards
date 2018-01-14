@@ -180,6 +180,7 @@ local packs = {
 		CardPackId = 842435184, --721400845,
 		Description = "Red is the colour of power, ambition, and control. Dominion packs contain cards that cost red!",
 		Cards = {
+			"ThatGrimGuy",
 			"B550",
 			"Damaging26, Flaming Fighter",
 			"Alar Myrmidon",
@@ -1010,6 +1011,7 @@ local packs = {
 		Description = "Exotic new cards from the black market! White cards and joke cards! It's all yours, as long as you have 10 wins!",
 		WinRequirement = 10;
 		Cards = {
+			"ThatGrimGuy",
 			"B550",
 			"MesouricPhantom976",
 			"Yggdrasil Faerie",
@@ -1088,7 +1090,6 @@ local packs = {
 			"Wrath of King Gecko",
 			"iiSmolToaster",
 			"Damaging26",
-			"MarissaKitty04",
 			-- PAST THIS POINT IS FOR WHITE CARDS AND JOKE CARDS ONLY. I'M LOOKING AT YOU, BLITZ.
 			"Dukran the Celestial",
 			"Wingman8",
