@@ -4022,7 +4022,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Damage",9999}},
 			Target = "Self",
 		},
-		["Bio"] = "As the development team slowly becomes less and less active, the more I realize of the inevitable for us. We are human beings, with lives beyond the computer screens, and I can't bare that we would have to depart from this game sooner or later. Before the inevitable comes, I just want to say thank you to each person who has helped contribute to this game. This game is where I made the most friends, and met the people that made me happy the most. And when that day comes, I'll wish you the best of luck in this journey of life. -Blitzwolfer",
+		["Bio"] = "As the development team slowly becomes less and less active, the more I realize of the inevitable for us. We are human beings, with lives beyond the computer screens, and I can't bear that we would have to depart from this game sooner or later. Before the inevitable comes, I just want to say thank you to each person who contributed to this game. This game is where I made the most friends, and met the people who made me happy the most. And when that day comes, I'll wish you the best of luck in this journey of life. -Blitzwolfer",
 	},
 }
 return tentwelvesixteen
