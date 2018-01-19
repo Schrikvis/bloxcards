@@ -3960,9 +3960,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Red"] = 2,},
 		["Effect"] = {
 			Name = "Adventurer's Cannon",
-			Description = "Deal 250 damage to a target fighter and draw 1 card.",
+			Description = "Deal 250 damage to a target fighter.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",250},{"Draw",1,"Ally"}},
+			["Power"] = {{"Damage",250}},
 			Target = "Single",
 		},
 		["Bio"] = "Adventure Club enthusiast. Bit cheesy. Likes McNuggets.",
