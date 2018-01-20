@@ -18,7 +18,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Citrus Punch",
-			Description = "Increase the power of a target fighter by 200.",
+			Description = "A target fighter gains 200 Power.",
 			["Type"] = "OnSummon",
 			["Power"] = "Strengthen",
 			Target = "Single",
@@ -56,7 +56,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 411802926,
 				["AltArt"] = true,
 				["Bio"] = "Master of arts and ice, IcyTea is an impeccable fighter capable of advanced magic and destructive power. Watch out! Part of the 'Aife' Collection! Collect them all!",
-			};
+			},
 		},
 		["Health"] = 700,
 		["Power"] = 500,
@@ -84,19 +84,19 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 496078769,
 				["AltArt"] = true,
 				["Bio"] = "Freedom is good. Volcanic apocalypse is bad.",
-			}
+			},
 		},
-		["Health"] = 550,
-		["Power"] = 550,
+		["Health"] = 500,
+		["Power"] = 500,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Punch2",
 		["Color"] = "Red",
-		["Cost"] = {["Neutral"] = 3,},
+		["Cost"] = {["Neutral"] = 3,["Red"] = 1,},
 		["Effect"] = {
 			Name = "Conflux",
-			Description = "Lose one red icon and 25 life. This effect can cause negative icons.",
+			Description = "Lose 25 life.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Red",-1,"Ally"},{"Cost",25}},
+			["Power"] = {{"Cost",25}},
 			Target = "Self",
 		},
 		["Bio"] = "Freedom is good. Punching faces is bad.",
@@ -110,7 +110,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Name"] = "Meeboid",
 				["Id"] = 897244235,
 				["Bio"] = "Just be thankful it's not a weeboid.",
-			}
+			},
 		},	
 		["Health"] = 600,
 		["Power"] = 0,
@@ -137,7 +137,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Name"] = "Meeboid Surfer",
 				["Id"] =  897803090,
 				["Bio"] = "Merp’s up, dudes!",
-			}
+			},
 		},
 		["Health"] = 450,
 		["Power"] = 0,
@@ -163,7 +163,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Meebling-Sun"] = {
 				["Id"] = 897243957,
 				["Bio"] = "Meeblings are composed of 90% raw cuteness and 10% goof. This means that your average Meeboid weighs over five hundred tons.",
-			}
+			},
 		},
 		["Health"] = 150,
 		["Power"] = 0,
@@ -226,7 +226,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Bio"] = "Dairing thought they were cute. They were. Dairing thought they were harmless. They were. Dairing thought they were annoying. They really, really were.",
 				["Effect"] = {
 					Name = "Meebling Infestation",
-					Description = "Lower the power of a target fighter by 600 and summon a Meebling.",
+					Description = "You must have a Meeboid in play in order to cast this. Lower the power of a target fighter by 600 and summon a Meebling.",
 					["Type"] = "OnSummon",
 					["Power"] = {{"Weaken",600},{"Summon","Meebling-Sun","Ally"}},
 					Target = "Single",
@@ -238,11 +238,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Punch1",
 		["Archetype"] = "Meeboid",
+		["Requirement"] = {"Archetype",1},
 		["Color"] = "Green",
 		["Cost"] = {["Green"] = 3,},
 		["Effect"] = {
 			Name = "Meebling Infestation",
-			Description = "Lower the power of a target fighter by 600 and summon a Meebling.",
+			Description = "You must have a Meeboid in play in order to cast this. Lower the power of a target fighter by 600 and summon a Meebling.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",600},{"Summon","Meebling","Ally"}},
 			Target = "Single",
@@ -256,8 +257,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["TitanoAgony-Sun"] = {
 				["Id"] = 897247036,
-				["Bio"] = "The floor is Meepcity.",
-			}
+				["Bio"] = "Keep this away from Ambamby!",
+			},
 		},
 		["Health"] = 500,
 		["Power"] = 500,
@@ -285,8 +286,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["TitanoDespair-Sun"] = {
 				["Id"] = 897238058,
-				["Bio"] = "The floor is Meepcity.",
-			}
+				["Bio"] = "Shut up, Immoratlity! It’s supposed to be a secret!",
+			},
 		},
 		["Health"] = 1000,
 		["Power"] = 0,
@@ -314,7 +315,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Name"] = "Kraken's Half of Immortality",
 				["Id"] = 897238183,
 				["Bio"] = "Hey, Despair, do you think the players'll notice I'm just you but flipped?",
-			}
+			},
 		},
 		["Health"] = 1000,
 		["Power"] = 0,
@@ -343,7 +344,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Name"] = "Kraken's Tentacle of Soul",
 				["Id"] = 897247143,
 				["Bio"] = "We're not in Japan, Agony. We can't get away with that!",
-			}
+			},
 		},
 		["Health"] = 500,
 		["Power"] = 500,
@@ -368,35 +369,36 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Summon! Meeboid Titano!"] = {
 		["Id"] = 295903387,
 		["Name"] = "Summon! Meeboid Titano!",
-		["Effect"] = {
-			Name = "Build Up",
-			Description = "Deal 4000 damage to all fighters, then summon Titano.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",4000,"All"},{"Summon","TitanoAgony-Sun"},{"Summon","TitanoDespair-Sun"},{"Summon","TitanoImmortality-Sun"},{"Summon","TitanoSoul-Sun"}},
-			Target = "Ally",
-		},
 		["AltCards"] = {
 			["Titano-Sun"] = {
 				["Name"] = "Summon! Meeboid Kraken!",
 				["Id"] = 897247260,
 				["Bio"] = "Kraken open a cold one with the-- Oh crud, they’re all dead.",
-			}
+				["Effect"] = {
+					Name = "Build Up",
+					Description = "You must have a Meeboid in play to cast this. Deal 4000 damage to all non-Meeboids, then summon Kraken.",
+					["Type"] = "OnSummon",
+					["Power"] = {{"Damage",4000,"NotArchetype"},{"Summon","TitanoAgony-Sun"},{"Summon","TitanoDespair-Sun"},{"Summon","TitanoImmortality-Sun"},{"Summon","TitanoSoul-Sun"}},
+					Target = "Ally",
+				},
+			},
 		},
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Punch1",
 		["Archetype"] = "Meeboid",
+		["Requirement"] = {"Archetype",1},
 		["Color"] = "Green",
 		["Cost"] = {["Green"] = 15,},
 		["Effect"] = {
 			Name = "Build Up",
-			Description = "Deal 4000 damage to all fighters, then summon Titano.",
+			Description = "You must have a Meeboid in play to cast this. Deal 4000 damage to all non-Meeboids, then summon Titano.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",4000,"All"},{"Summon","Titano's Fist of Agony"},{"Summon","Titano's Half of Despair"},{"Summon","Titano's Half of Immortality"},{"Summon","Titano's Fist of Soul"}},
+			["Power"] = {{"Damage",4000,"NotArchetype"},{"Summon","Titano's Fist of Agony"},{"Summon","Titano's Half of Despair"},{"Summon","Titano's Half of Immortality"},{"Summon","Titano's Fist of Soul"}},
 			Target = "Ally",
 		},
-		["Bio"] = "Meeps amd Moops are the cutest way of summoning an eldritch horror.",
+		["Bio"] = "Meeps and Moops are the cutest way of summoning an eldritch horror.",
 	},
 	
 	["Glaciem Mage"] = {
@@ -452,9 +454,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 1,["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Conflux",
-			Description = "Haste.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Heal",0}},
+			Description = "Haste. When this card attacks the opponent directly, set its stats to 300/300.",
+			["Type"] = "OnStrike",
+			["Power"] = {{"SetHealth",300},{"SetPower",300}},
 			Target = "Self",
 		},
 		["Bio"] = "Daisy and her ninja star, that is all. She is also known as daisy1002.",
@@ -468,7 +470,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 532358085,
 				["Name"] = "Favette",
 				["Bio"] = "The female version of fave. She is fabulous, loves starblox, and hangs out with amber sometimes.",
-			}
+			},
 		},
 		["Health"] = 1500,
 		["Power"] = 350,
@@ -478,7 +480,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Red",
 		["Effect"] = {
 			Name = "Extreme Energy Care Package",
-			Description = "All your fighters gain 300 Health and 150 Power.",
+			Description = "All of your allied fighters gain 300 Health and 150 Power.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Strengthen",150},{"Heal",300}},
 			Target = "Ally",
@@ -529,7 +531,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 6,["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Amp Up! Uzi!",
-			Description = "Increase the power of a target fighter by 500.",
+			Description = "A target fighter gains 500 Power.",
 			["Type"] = "OnSummon",
 			["Power"] = "Strengthen",
 			Target = "Single",
@@ -573,7 +575,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 496184621,
 				["AltArt"] = true,
 				["Bio"] = "DANGER! Cheetos found on the road may contain traces of slag!",
-			}
+			},
 		},
 		["Cost"] = {["Yellow"] = 1,["Neutral"] = 2,},
 		["Effect"] = {
@@ -597,6 +599,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Slice",
 		["Color"] = "Yellow",
 		["Stealth"] = true,
+		["Fading"] = true,
 		["Cost"] = {["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Greed Share",
@@ -614,6 +617,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 300,
 		["Health"] = 300,
 		["Rarity"] = "Token",
+		["Archetype"] = "Hero",
 		["AttackEffect"] = "Slice",
 		["Color"] = "Yellow",
 		["Stealth"] = true,
@@ -672,9 +676,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Green"] = 1,},
 		["Effect"] = {
 			Name = "Conflux",
-			Description = "Haste.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Heal",0}},
+			Description = "Haste. Whenever this fighter strikes the opponent, you gain 500 Life.",
+			["Type"] = "OnStrike",
+			["Power"] = {{"Cost",-500}},
 			Target = "Self",
 		},
 		["Bio"] = "Cackletta disapproves.",
@@ -844,9 +848,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["BlazerCV2"] = {
 				["Id"] = 296708433,
 				["Bio"] = "Demon Ninja.",
-			}
+			},
 		},
-		["Health"] = 1250,
+		["Health"] = 1000,
 		["Power"] = 100,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Thunder",
@@ -877,7 +881,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Revival",
 			Description = "Set your yellow icons to 5. Lose all other icons.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"SetYellow",4},{"SetGreen",0},{"SetBlue",0},{"SetRed",0},{"SetNeutral",0}},
+			["Power"] = {{"SetYellow",5},{"SetGreen",0},{"SetBlue",0},{"SetRed",0},{"SetNeutral",0}},
 			Target = "Ally",
 		},
 		["Bio"] = "If he stops eating, he'll die. Won't we all?",
@@ -892,10 +896,11 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Punch2",
 		["Color"] = "Green",
 		["Token"] = true,
+		["Fading"] = true,
 		["Cost"] = {["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Krazy Boost",
-			Description = "Increase the power of a target fighter by 100. This card can't generate icons.",
+			Description = "Increase the power of a target fighter by 100. This card can't generate icons. This card does not trigger effects upon dying.",
 			["Type"] = "OnSummon",
 			["Power"] = "Strengthen",
 			Target = "Single",
@@ -957,7 +962,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "seventh jutsu of the final sun's rend",
 			Description = "Deal 400 damage to a target fighter. You lose 600 life.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",400},{"Cost",600}},
+			["Power"] = {{"Cost",600},{"Damage",400}},
 			Target = "Single",
 		},
 		["Bio"] = "Your blood is worth just as much as his. If I waste his, you are to be wasted too.",
@@ -987,7 +992,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Chef",
 		["AltCards"] = {
 			["Baker"] = {
-				["Id"] = 585627288,
+				["Id"] = 1247061539,
 				["Name"] = "Baker",
 				["Bio"] = "And for desert, why not try caramelized robloxian? Now with extra icing!",
 			},
@@ -995,7 +1000,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 655011632,
 				["Name"] = "Romantic Chef",
 				["Bio"] = "Dont like caramel? How about a romantic desert, melted, buttered robloxian parts mixed with peanut butter and white chocolate on a cookie!",
-			}
+			},
 		},
 		["Health"] = 200,
 		["Power"] = 200,
@@ -1039,7 +1044,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Mcree"] = {
 				["Id"] = 532358983,
-				["Name"] = "Mcree",
+				["Name"] = "Cowboy",
 				["Bio"] = "Bamf.",
 			},
 			["CowboyV2"] = {
@@ -1047,8 +1052,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Bio"] = "Oh boy, would ya look at the time.",
 				["Effect"] = {
 					Name = "High Noon",
-				}
-			}
+				},
+			},
 		},
 		["Health"] = 250,
 		["Power"] = 250,
@@ -1089,17 +1094,17 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Developer"] = {
-		["Id"] = 271751297,
+		["Id"] = 1024779575,
 		["Name"] = "Developer",
 		["Health"] = 200,
 		["Power"] = 500,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Punch2",
 		["Color"] = "Blue",
-		["Cost"] = {["Neutral"] = 4,},
+		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "DevEx",
-			Description = "Gain 500 Life Points.",
+			Description = "Gain 500 Life.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Cost",-500}},
 			Target = "Opponent",
@@ -1115,15 +1120,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "PunchKick",
 		["Color"] = "Red",
-		["Token"] = true,
 		["Cost"] = {["Neutral"] = 1,["Red"] = 1,},
-		["Effect"] = {
-			Name = "Appeal",
-			Description = "Hodif can't generate icons.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Cost",0}},
-			Target = "Opponent",
-		},
 		["Bio"] = "Powerful fighter with his MLG-certified meal to keep him ready for more foes.",
 	},
 	
@@ -1241,12 +1238,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Punch2",
 		["Color"] = "Green",
 		["Stealth"] = true,
+		["Fading"] = true,
 		["Cost"] = {["Neutral"] = 2,["Green"] = 4,},
 		["Effect"] = {
 			Name = "Sandbox",
-			Description = "The next fighter you summon has an additional 1000 health. Abilities don't trigger when NICCO enters play.",
+			Description = "The next fighter you summon has an additional 500 health. Abilities don't trigger when NICCO enters play.",
 			["Type"] = "OnAllySummon",
-			["Power"] = {{"Summon","NICCOToken"},{"Heal",1000,"Aggressor"},{"Damage",9999,"Self"}},
+			["Power"] = {{"Summon","NICCOToken"},{"Heal",500,"Aggressor"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Some cards just happen to be defective, unfortunately. Sorry!",
@@ -1258,11 +1256,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Health"] = 1250,
 		["Power"] = 250,
 		["Rarity"] = "Token",
+		["Archetype"] = "Hero",
 		["AttackEffect"] = "Punch2",
 		["Color"] = "Green",
 		["Stealth"] = true,
 		["Cost"] = {["Neutral"] = 2,["Green"] = 4,},
-		["Bio"] = "Some cards just happen to be defective, unfortunately. !",
+		["Bio"] = "Some cards just happen to be defective, unfortunately. Sorry!",
 	},
 	
 	["Noob"] = {
@@ -1313,7 +1312,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["PixelPistol-Val"] = {
 				["Name"] = "PixelHeart",
 				["Id"] = 655016789,
-				["Bio"] = "On second though, I'm alright with my past choices.",
+				["Bio"] = "On second thought, I'm alright with my past choices.",
 			}		
 		},
 		["Health"] = 475,
@@ -1324,7 +1323,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Red"] = 4,},
 		["Effect"] = {
 			Name = "Amp Up! Blaster!",
-			Description = "Increase the power of a target fighter by 500.",
+			Description = "A target fighter gains 500 Power.",
 			["Type"] = "OnSummon",
 			["Power"] = "Strengthen",
 			Target = "Single",
@@ -1400,7 +1399,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Name"] = "Ms. Teevee",
 				["Id"] = 662150269,
 				["Bio"] = "The only channels you will find on this teevee are romcoms.",
-			}
+			},
 		},
 		["Health"] = 650,
 		["Power"] = 650,
@@ -1432,7 +1431,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Bio"] = "I can’t reach that darn cup. SERVANTS!",
 			}
 		},
-		["Health"] = 775,
+		["Health"] = 500,
 		["Power"] = 500,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "PistolShot",
@@ -1559,7 +1558,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Name"] = "Female Newbie",
 				["Id"] = 655013013,
 				["Bio"] = "Is that even a problem?",
-			}	
+			},
 		},
 		["Health"] = 300,
 		["Power"] = 300,
@@ -1599,18 +1598,18 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["BO0M"] = {
-		["Id"] = 275339974,
+		["Id"] = 1226233348,
 		["Name"] = "BO0M",
 		["Health"] = 400,
 		["Power"] = 250,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Punch2",
-		["Color"] = "Green",
-		["Cost"] = {["Neutral"] = 1,["Green"] = 3,},
+		["Color"] = "Red",
+		["Cost"] = {["Neutral"] = 1,["Red"] = 3,},
 		["Bio"] = "My boy, bombs are what all true warriors strive for!",
 		["Effect"] = {
 			Name = "DO0M",
-			Description = "Deal 500 to both players, then draw 1 card.",
+			Description = "Deal 500 to both players and draw a card.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Inflict",500},{"Draw",1,"Ally"}},
 			Target = "All",
@@ -1625,7 +1624,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 650977091,
 				["AltArt"] = true,
 				["Bio"] = "And the award for Best Play goes to...",
-			}
+			},
 		},			
 		["Health"] = 0,
 		["Power"] = 0,
@@ -1716,7 +1715,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 275340209,
 		["Name"] = "Inventor1116",
 		["Archetype"] = "Saprasam",
-		["Health"] = 850,
+		["Health"] = 750,
 		["Power"] = 400,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Punch1",
@@ -1724,9 +1723,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Green"] = 2,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "When this card Attacks, increase your lifepoints by 500.",
+			Description = "Whenever this card attacks, you gain 400 Life.",
 			["Type"] = "OnAttack",
-			["Power"] = {{"Cost",-500}},
+			["Power"] = {{"Cost",-400}},
 			Target = "Self",
 		},
 		["Bio"] = "Inventing new things every moment, he just can't stop his creative flow!",
@@ -1788,10 +1787,10 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Ninja",
 		["AltCards"] = {
 			["NinjaV2"] = {
-				["Name"] = "Ninja jpeg.",
+				["Name"] = "Ninja.jpg",
 				["Id"] = 480385242,
 				["Bio"] = "Silly developers, you forgot to cut this thing out!",
-			}
+			},
 		},
 		["Health"] = 350,
 		["Power"] = 350,
@@ -1818,7 +1817,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Ninja Elite-ArtV"] = {
 				["Id"] = 487571425,
 				["Bio"] = "Ninjas used the dilation in the eyes of a cat to figure out the current time.",
-			}
+			},
 		},
 		["Health"] = 400,
 		["Power"] = 300,
@@ -1835,7 +1834,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "NotArchetype",
 			Increase = 200,
 		},
-		["Bio"] = "Ninjas were only ever around 5 feet tall. Any higher would make it hard to be manevourable.",
+		["Bio"] = "Ninjas were only ever around 5 feet tall. Any higher would make it hard to be maneuverable.",
 	},
 	
 	["Ninja Trainee"] = {
@@ -2019,13 +2018,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Name"] = "ChocolateStorage",	
 				["Effect"] = {
 					Name = "Assimilate",
-					Description = "Whenever your opponent gains life, Unlock ChocolateStorage.",
+					Description = "Whenever your opponent gains life, unlock ChocolateStorage and give it 100 Health and Power.",
 					["Type"] = "OnEnemyLifeGain",
-					["Power"] = {{"Unlock",9999}},
+					["Power"] = {{"Unlock",9999},{"Heal",100},{"Strengthen",100}},
 					Target = "Self",
 				},
 				["Bio"] = "His love of chocolate sometimes goes out of hand by filling his entire room with just chocolate, he'll store chocolate anywhere so he has plenty of chocolate to eat.",
-			}
+			},
 		},					
 		["Health"] = 450,
 		["Power"] = 300,
@@ -2035,9 +2034,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Blue"] = 1,},
 		["Effect"] = {
 			Name = "Assimilate",
-			Description = "Whenever your opponent gains life, Unlock RiceStorage.",
+			Description = "Whenever your opponent gains life, unlock RiceStorage and give it 100 Health and Power.",
 			["Type"] = "OnEnemyLifeGain",
-			["Power"] = {{"Unlock",9999}},
+			["Power"] = {{"Unlock",9999},{"Heal",100},{"Strengthen",100}},
 			Target = "Self",
 		},
 		["Bio"] = "His love of rice sometimes goes out of hand by filling his entire room of just rice, he'll store rice anywhere so he has plenty of rice to eat.",
@@ -2104,9 +2103,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 1,["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Render",
-			Description = "Whenever BadBreadMaker is targeted by a creature, that creature and BadBreadMaker gain 300 health.",
+			Description = "Whenever BadBreadMaker is targeted, BadBreadMaker gains 150 Health. If it was targeted by a fighter, that fighter gains 150 Health too.",
 			["Type"] = "OnTarget",
-			["Power"] = {{"Heal",300,"Aggressor"},{"Heal",300}},
+			["Power"] = {{"Heal",150,"Aggressor"},{"Heal",150}},
 			Target = "Self",
 		},
 		["Bio"] = "Even the worst bread is nutritious.",
@@ -2143,7 +2142,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Slice",
 		["Color"] = "Blue",
 		["Cost"] = {["Blue"] = 2,["Neutral"] = 1,},
-
 		["Bio"] = "He will gently poke you.",
 	},
 	
@@ -2199,7 +2197,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 					Target = "Ally",
 				},			
 				["Bio"] = "He loves life in the 8-bit world with his love gun! Pew!.",
-			}
+			},
 		},
 		["Health"] = 350,
 		["Power"] = 500,
@@ -2258,7 +2256,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 411810760,
 				["AltArt"] = true,
 				["Bio"] = "Also known as drager980, Drager is the original scripter of Blox Cards and is secretly a wizard. Part of the 'Aife' Collection! Collect them all!",
-			}
+			},
 		},
 		["Health"] = 600,
 		["Power"] = 850,
@@ -2281,10 +2279,10 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "FatherChristmaz",
 		["AltCards"] = {
 			["RoboSanta"] = {
-				["Id"] = 585627412,
-				["Name"] = "Robo Santa",
-				["Bio"] = "Some Santas just want to watch the world burn.",
-			}
+				["Id"] = 1247064782,
+				["Name"] = "Robo-Santa",
+				["Bio"] = "In the distant year of 2019, Santa made a robotic version of himself to aid him in gift-giving. And thus began the reign of Robo-Santa the Usurper.",
+			},
 		},
 		["Health"] = 350,
 		["Power"] = 50,
@@ -2316,9 +2314,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Green"] = 1,},
 		["Effect"] = {
 			Name = "Spark",
-			Description = "Increase the Power of a target fighter by 300, then deal 300 damage to it.",
+			Description = "Increase the Power of a target fighter by 200, then deal 200 damage to it.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Strengthen",300},{"Damage",300}},
+			["Power"] = {{"Strengthen",200},{"Damage",200}},
 			Target = "Single",
 		},
 		["Bio"] = "He's a mage of science! Don't think he's that Glaciem Mage, he isn't at all!",
@@ -2336,7 +2334,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 2,},
 		["Effect"] = {
 			Name = "Parry",
-			Description = "Whenever this fighter is targeted, this fighter gains 100 Power and 100 Health..",
+			Description = "Whenever this fighter is targeted, this fighter gains 150 Power and 150 Health..",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Strengthen",150},{"Heal",150}},
 			Target = "Self",
@@ -2349,10 +2347,10 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Life Potion",
 		["AltCards"] = {
 			["Eggnog"] = {
-				["Id"] = 898725250,
+				["Id"] = 1247061717,
 				["Name"] = "Eggnog",
-				["Bio"] = "But eggnog helps you in the long AND short run.",
-			}
+				["Bio"] = "An eggcellent drink for all of your family.",
+			},
 		},
 		["Health"] = 0,
 		["Power"] = 0,
@@ -2384,7 +2382,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "The lesser known apprentice of Drager, don't read his code or your eyes might melt in horror.",
 		["Effect"] = {
 			Name = "Bonanza!",
-			Description = "Gain 1 of every icon. Lose all your white and 500 life. This card can't GENERATE icons.",
+			Description = "Gain 1 of every icon. Lose all your white and 500 life. This card can't generate icons.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Yellow",1},{"Blue",1},{"Red",1},{"Green",1},{"SetNeutral",0},{"Cost",500}},
 			Target = "Ally",
@@ -2402,7 +2400,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Blue"] = 2,},
 		["Effect"] = {
 			Name = "MackDonalds FishBurger Deluxe",
-			Description = [[Increase the health of a target fighter by 50.]],
+			Description = "Increase the health of a target fighter by 50.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",50}},
 			Target = "Single",
@@ -2460,9 +2458,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Green"] = 2,},
 		["Effect"] = {
 			Name = "Amp",
-			Description = "Whenever this fighter is targeted, gain 2 Green icons.",
+			Description = "Whenever this fighter is targeted, gain a Green icon.",
 			["Type"] = "OnTarget",
-			["Power"] = {{"Green",2}},
+			["Power"] = {{"Green",1}},
 			Target = "Ally",
 		},
 		["Bio"] = "Part time Roblox pundit. Part time Harambe slayer.",
@@ -2479,7 +2477,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Blue"] = 1,},
 		["Effect"] = {
 			Name = "Encourage",
-			Description = "Increase the Power and Health of a target fighter by 125.",
+			Description = "Increase the health and power of a target fighter by 125.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Strengthen",125},{"Heal",125}},
 			Target = "Single",
@@ -2511,6 +2509,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Tomspick"] = {
 		["Id"] = 280563401,
 		["Name"] = "Tomspick",
+		["AltCards"] = {
+			["Tomspick-C"] = {
+				["Id"] = 1247418791,
+				["Bio"] = "Yes, I eat turkey on Christmas. You thought it was just a Thanksgiving thing?",
+			},
+		},
 		["Health"] = 600,
 		["Power"] = 0,
 		["Rarity"] = "Common",
@@ -2559,7 +2563,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 6,["Green"] = 3,},
 		["Effect"] = {
 			Name = "Demon Eye",
-			Description = "Gain 5 Green icons and lower the power of all fighters by 200.",
+			Description = "Generate 5 Green icons. All fighters lose 200 Power.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Green",5,"Ally"},{"Weaken",200}},
 			Target = "All",
@@ -2638,8 +2642,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Bloxikin Horde",
 		["Health"] = 300,
 		["Power"] = 300,
-		["Rarity"] = "Epic",
+		["Rarity"] = "Rare",
 		["AttackEffect"] = "FurySwipe",
+		["Archetype"] = "Hero",
 		["Color"] = "Neutral",
 		["Cost"] = {["Neutral"] = 3,["Red"] = 1,["Yellow"] = 1,["Green"] = 1,["Blue"] = 1,},
 		["Effect"] = {
@@ -2679,7 +2684,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 					Target = "Opponent",
 				},
 				["Bio"] = "Yummy?",
-			}
+			},
 		},
 		["Health"] = 0,
 		["Power"] = 0,
@@ -2711,7 +2716,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 662115217,
 				["Name"] = "Lord of Candy",
 				["Bio"] = "Lord of Candy is to grams as chocolate is to wrappers.",
-			}
+			},
 		},
 		["Health"] = 550,
 		["Power"] = 100,
@@ -2735,17 +2740,17 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Camo Joe"] = {
 		["Id"] = 283992885,
 		["Name"] = "Camo Joe",
-		["Health"] = 150,
-		["Power"] = 600,
+		["Health"] = 400,
+		["Power"] = 300,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "GunShot",
 		["Color"] = "Green",
 		["Cost"] = {["Neutral"] = 2,["Green"] = 2,},
 		["Effect"] = {
 			Name = "Blow Dart",
-			Description = "Lock a target fighter for 1 turn.",
+			Description = "Lower the power of a target fighter by 200. You gain 100 life.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Lock",1}},
+			["Power"] = {{"Weaken",200},{"Cost",-100}},
 			Target = "Single",
 		},
 		["Bio"] = "Lurking in places you will never find him, which is your old shoe almost exclusively.",
@@ -2754,7 +2759,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Chaoszeroomega"] = {
 		["Id"] = 283992920,
 		["Name"] = "Chaoszeroomega",
-		["Health"] = 900,
+		["Health"] = 1200,
 		["Power"] = 200,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Punch1",
@@ -2762,9 +2767,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 5,["Green"] = 2,},
 		["Effect"] = {
 			Name = "Purlot Trap.",
-			Description = "Draw 1 card and deal 500 damage to the opponent.",
+			Description = "Drain 500 life from the opponent.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Draw",1,"Ally"},{"Inflict",500}},
+			["Power"] = {{"Cost",-500},{"Inflict",500}},
 			Target = "Opponent",
 		},
 		["Bio"] = "Drager's right hand man, he fixes every one of his tpyoes without failure.",
@@ -2779,6 +2784,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 2,["Blue"] = 1,},
+		["Effect"] = {
+			Name = "ability to force people to watch a movie, and use his CinematicMind as a projector",
+			Description = "Set the lock of a target fighter to 1.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Unlock",9999},{"Lock",1}},
+			Target = "Single",
+		},
 		["Bio"] = "Note: Cannot compute radio signals.",
 	},
 	
@@ -2827,10 +2839,10 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "DeadZoneHark",
 		["AltCards"] = {
 			["DeadZoneHark-Val"] = {
-				["Name"] = "DeadZoneHark",
+				["Name"] = "LoveZoneHark",
 				["Id"] = 655015343,
 				["Bio"] = "My glove touches all, and fills them with confidence.",
-			}
+			},
 		},
 		["Health"] = 350,
 		["Power"] = 550,
@@ -2861,7 +2873,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 540865102,
 				["AltArt"] = true,
 				["Bio"] = "FEEL MY PAPER WRATH!",
-			}
+			},
 		},
 		["Health"] = 1300,
 		["Power"] = 600,
@@ -2888,7 +2900,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 540869609,
 				["AltArt"] = true,
 				["Bio"] = "Who needs robux for a biggerhead, ill just kill them and take it myself.",
-			}
+			},
 		},
 		["Health"] = 350,
 		["Power"] = 700,
@@ -2900,7 +2912,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Red"] = 2},
 		["Effect"] = {
 			Name = "Inflated Ego",
-			Description = "Deal 250 damage to a target fighter and increase that fighter's Power by 300. This card cannot generate icons.",
+			Description = "Deal 250 damage to a target fighter, then give that fighter 300 Power. This card cannot generate icons.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Strengthen",300},{"Damage",250}},
 			Target = "Single",
@@ -3027,10 +3039,10 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Eye Spy",
 		["AltCards"] = {
 			["Entangling Lights"] = {
-				["Id"] = 585627443,
+				["Id"] = 1247062292,
 				["Name"] = "Entangling Lights",
-				["Bio"] = "This is really just God's way of silently judging you.",
-			}
+				["Bio"] = "Why do these cords have to be so darn long! They get tangled too often!",
+			},
 		},
 		["Health"] = 0,
 		["Power"] = 0,
@@ -3041,7 +3053,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 1,},
 		["Effect"] = {
 			Name = "Nerve Wrecker",
-			Description = "lower the power of all enemy fighters by 100. Draw a card.",
+			Description = "All enemy fighters lose 100 Power. Draw a card.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",100,}, {"Draw",1,"Ally"}},
 			Target = "Opponent",
@@ -3084,17 +3096,17 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Icepielover23"] = {
 		["Id"] = 283994272,
 		["Name"] = "Icepielover23",
-		["Health"] = 200,
-		["Power"] = 200,
+		["Health"] = 250,
+		["Power"] = 50,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Punch2",
 		["Color"] = "Green",
 		["Cost"] = {["Neutral"] = 1,["Green"] = 1,},
 		["Effect"] = {
 			Name = "Amp",
-			Description = "Whenever this fighter is targeted, gain 2 Green icons.",
+			Description = "Whenever this fighter is targeted, gain 2 Green icons and deal 100 damage to Icepielover.",
 			["Type"] = "OnTarget",
-			["Power"] = {{"Green",2}},
+			["Power"] = {{"Green",2},{"Damage",100,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Give them pie, they'll give you energy.",
@@ -3108,7 +3120,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 655013736,
 				["Name"] = "IlIll",
 				["Bio"] = "Now haunting a teddy bear on a shelf, he is sure to make your valentines day a living hell.",
-			}
+			},
 		},
 		["Health"] = 300,
 		["Power"] = 300,
@@ -3119,7 +3131,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 6,},
 		["Effect"] = {
 			Name = "Counter Block",
-			Description = "Deal 300 damage to all enemy fighters and lower their power by 150.",
+			Description = "All enemy fighters lose 300 Health and 150 Power.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",300},{"Weaken",150}},
 			Target = "Opponent",
@@ -3197,7 +3209,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 481866741,
 				["AltArt"] = true,
 				["Bio"] = "Candy is good for the brains you know.",
-			}
+			},
 		},
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Slap",
@@ -3222,7 +3234,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["AltArt"] = true,
 				["Effect"] = {{"Summon","Master Token","Ally"},{"Damage",9999,"Self"}},	
 				["Bio"] = "Why did the chicken cross the road?",
-			}
+			},
 		},
 		["Health"] = 0,
 		["Power"] = 0,
@@ -3290,10 +3302,10 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "MyDadIsAGuest",
 		["AltCards"] = {
 			["MyDadIsASanta"] = {
-				["Id"] = 585627360,
+				["Id"] = 1247064378,
 				["Name"] = "MyDadIsASanta",
-				["Bio"] = "The 87th santa, to be precise.",
-			}
+				["Bio"] = "My dad is santa i’ll tell him to put you on the naughty list. :/",
+			},
 		},
 		["Health"] = 100,
 		["Power"] = 200,
@@ -3323,7 +3335,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 7,["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "Competition",
-			Description = "Draw 3 cards at the cost of 1500 life.",
+			Description = "Draw 3 cards. You lose 1500 Life.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Draw",3,"Ally"},{"Cost",1500}},
 			Target = "Opponent",
@@ -3339,7 +3351,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 496076569,
 				["AltArt"] = true,
 				["Bio"] = "Whatever floats your goat, right?",
-			}
+			},
 		},
 		["Health"] = 400,
 		["Power"] = 400,
@@ -3368,11 +3380,11 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Cola Sting",
-			Description = "Lock a target fighter for 3 turns.",
+			Description = "Lower the power of a target fighter by 150.",
 			["Type"] = "OnSummon",
-			["Power"] = "Lock",
+			["Power"] = "Weaken",
 			Target = "Single",
-			Increase = 3,
+			Increase = 150,
 		},
 		["Bio"] = "His love of Red Cola gives him extra strength against foes larger than him.",
 	},	
@@ -3385,7 +3397,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Name"] = "Heart Broken",
 				["Id"] = 655013605,
 				["Bio"] = "Sorry Eddy, I've met a REAL man.",
-			}		
+			},		
 		},			
 		["Health"] = 0,
 		["Power"] = 0,
@@ -3436,7 +3448,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Green"] = 3,},
 		["Effect"] = {
 			Name = "OUTRAGE!!",
-			Description = "lower the power of all non-green fighters by 200. Increase the health of all green fighters by 200.",
+			Description = "All non-green fighters lose 200 Power. All green fighters gain 200 Health.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",200,"NotColorGreen"},{"Heal",200,"ColorGreen"}},
 			Target = "All",
@@ -3492,7 +3504,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 411804493,
 				["AltArt"] = true,
 				["Bio"] = "Disputed Deity of ROBLOX MMORPGs.",
-			}
+			},
 		},
 		["Health"] = 500,
 		["Power"] = 700,
@@ -3516,22 +3528,22 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "StickMasterLuke",
 		["AltCards"] = {
 			["StickMasterLukeV2"] = {
-				["Id"] = 585627244,
+				["Id"] = 1247705401,
 				["Name"] = "MintMasterLuke",
 				["Bio"] = "Colder than breath, deeper than sky.",
-			}
+			},
 		},
 		["Health"] = 1000,
-		["Power"] = 350,
+		["Power"] = 400,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Slash",
 		["Color"] = "Green",
 		["Cost"] = {["Green"] = 5,["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Disaster",
-			Description = "Lock all enemy fighters for 1 turn. Put 2 targeting blips into your hand. Targeting blips are used to trigger Target Effects.",
+			Description = "You gain 500 life. Put 2 targeting blips into your hand. Targeting blips are used to trigger Target Effects.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Lock",1},{"Add","Targeting Blip","Ally"},{"Add","Targeting Blip","Ally"}},
+			["Power"] = {{"Cost",-500},{"Add","Targeting Blip","Ally"},{"Add","Targeting Blip","Ally"}},
 			Target = "Opponent",
 		},
 		["Bio"] = "Most likely accident prone worker at ROBLOX. He made it there from scripting, so can you!",
@@ -3568,7 +3580,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Bonk",
-			Description = "Deal 400 damage to a target fighter, then deal 400 damage to all allied fighters.",
+			Description = "Deal 400 damage to a target fighter, then deal 400 damage to all other allied fighters.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",400},{"Damage",400,"Ally"},{"Heal",400,"Self"}},
 			Target = "Single",
@@ -3690,6 +3702,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["JackinatorMG"] = {
 		["Id"] = 285152525,
 		["Name"] = "JackinatorMG",
+		["AltCards"] = {
+			["JackinatorMG-C"] = {
+				["Id"] = 1247417926,
+				["Bio"] = "Hot chocolate is the true drink for any occasion! I have ditched my habit of drinking Mountain Dew and switched to 100% pure hot chocolate!",
+			},
+		},
 		["Health"] = 300,
 		["Power"] = 200,
 		["Rarity"] = "Uncommon",
@@ -3806,7 +3824,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Name"] = "MiloCortez",
 				["Id"] = 655015603,
 				["Bio"] = "Cupid did nothing wrong.",
-			}
+			},
 		},
 		["Health"] = 1000,
 		["Power"] = 600,
@@ -3867,7 +3885,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Name"] = "Oozlebachr",
 				["Id"] = 897244902,
 				["Bio"] = "She doesn’t work here. She’s smiling ‘cause she’s stealing.",
-			}
+			},
 		},
 		["Health"] = 900,
 		["Power"] = 200,
@@ -3905,7 +3923,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 655017538,
 				["Name"] = "Pilot Snoopy",						
 				["Bio"] = "Ew, I got kissed by a dog! I'm gonna go eat some peanuts to wash out the taste.",
-			}
+			},
 		},							
 		["Health"] = 200,
 		["Power"] = 200,
@@ -3931,7 +3949,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Pixellus-Sun"] = {
 				["Id"] = 950122951,
 				["Bio"] = "When the editors suggested I go on vacation, This wasn’t what I had in mind.",
-			}
+			},
 		},
 		["Health"] = 550,
 		["Power"] = 550,
@@ -3942,9 +3960,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Red"] = 2,},
 		["Effect"] = {
 			Name = "Adventurer's Cannon",
-			Description = "Deal 250 damage to a target fighter and draw 1 card.",
+			Description = "Deal 250 damage to a target fighter.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",250},{"Draw",1,"Ally"}},
+			["Power"] = {{"Damage",250}},
 			Target = "Single",
 		},
 		["Bio"] = "Adventure Club enthusiast. Bit cheesy. Likes McNuggets.",
@@ -4023,7 +4041,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Overhaul",
 			Description = "Deal 300 damage to a target fighter and the opponent.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",300},{"Inflict",300,"Opponent"}},
+			["Power"] = {{"Inflict",300,"Opponent"},{"Damage",300}},
 			Target = "Single",
 		},
 		["Bio"] = "Fills in at local saleless stores on Black Friday.",
@@ -4049,7 +4067,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},		
 		
 	["Spark"] = {
-		["Id"] = 285154627,
+		["Id"] = 1226321633,
 		["Name"] = "Spark",
 		["Health"] = 200,
 		["Power"] = 200,
@@ -4057,7 +4075,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Lightning",
 		["Archetype"] = "Spark",
 		["Color"] = "Blue",
-		["Cost"] = {["Blue"] = 2,},
+		["Cost"] = {["Blue"] = 1,},
 		["Charge"] = true,
 		["Effect"] = {
 			Name = "Conflux",
@@ -4098,6 +4116,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Null",
 		["Token"] = true,
 		["AttackBlock"] = true,
+		["Fading"] = true,
 		["Color"] = "Yellow",
 		["Cost"] = {["Yellow"] = 2,},
 		["Effect"] = {
@@ -4138,7 +4157,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 655018267,
 				["Name"] = "Sylrath",
 				["Bio"] = "One of the best Blox Card lovers in the game!",
-			}
+			},
 		},						
 		["Health"] = 150,
 		["Power"] = 400,
@@ -4152,7 +4171,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Type"] = "OnDeath",
 			["Power"] = "Draw",
 			Target = "Ally",
-			Increase = 1
+			Increase = 1,
 		},
 		["Bio"] = "One of the best Blox Card fighters in the game! See him around!",
 	},			
@@ -4208,13 +4227,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Shell Shock",
-			Description = "Lower the power of a target fighter  by 200 and lock the fighter for 1 turn.",
+			Description = "Lower the power of a target fighter by 200 and lock the fighter for 1 turn.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Lock",1},{"Weaken",200}},
 			Target = "Single",
 			Increase = 1,
 		},
-		["Bio"] = "Check out Tiny Tanks by ArceusInator if you like fun games like this one!",
+		["Bio"] = "Check out Tiny Tanks by Sharksie if you like fun games like this one!",
 	},			
 	
 	["Visleaf"] = {
@@ -4239,7 +4258,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "Split Ego",
-			Description = "Decrease the power of all fighters by 200.",
+			Description = "All fighters lose 200 Power.",
 			["Type"] = "OnSummon",
 			["Power"] = "Weaken",
 			Target = "All",
@@ -4281,20 +4300,19 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},		
 	
 	["WildSpeedy"] = {
-		["Id"] = 285155786,
+		["Id"] = 1226368326,
 		["Name"] = "WildSpeedy",
 		["Health"] = 1000,
 		["Power"] = 100,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Slash",
 		["Color"] = "Blue",
-		["Cost"] = {["Neutral"] = 4,},
-		["Charge"] = true,
+		["Cost"] = {["Neutral"] = 2,["Blue"] = 1},
 		["Effect"] = {
 			Name = "Conflux",
-			Description = "Haste.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",0}},
+			Description = "Whenever this fighter is attacked and survives, give it 200 health.",
+			["Type"] = "OnAttacked",
+			["Power"] = {{"Heal",200}},
 			Target = "Self",
 		},
 		["Bio"] = "Pretty wild. Pretty fast. Is it Sonic?",
@@ -4305,10 +4323,10 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Birthday Surprise",
 		["AltCards"] = {
 			["Fruit Cake"] = {
-				["Id"] = 585627498,
+				["Id"] = 1247062758,
 				["Name"] = "Fruit Cake",
-				["Bio"] = "Made out of 100% Recycled Durians.",
-			}
+				["Bio"] = "Even all the trash on Christmas it smells so sweetly. This Christmas feels like the very first Christmas to me. LALALALALALALA-",
+			},
 		},
 		["Health"] = 0,
 		["Power"] = 0,
@@ -4419,7 +4437,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Name"] = "KingCactaur",
 				["Id"] = 655013880,
 				["Bio"] = "I'm the advisor of valuetown. You're the mayor.",
-			}							
+			},							
 		},
 		["Health"] = 400,
 		["Power"] = 400,
@@ -4460,7 +4478,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Name"] = "Mitpaul",
 				["Id"] = 897244522,
 				["Bio"] = "OH MY GOD WHY DID I BRING MY PANTS INTO THIS POOL THE WALRUS WI-",
-			}
+			},
 		},
 		["Health"] = 500,
 		["Power"] = 600,
@@ -4546,6 +4564,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Zombie"] = {
 		["Id"] = 626230874,
 		["Name"] = "Zombie",
+		["AltCards"] = {
+			["Zombie Elf"] = {
+				["Name"] = "Zombie Elf",
+				["Id"] = 1247421375,
+				["Bio"] = "I wonder how elves get recruited in the first place? Do they fill out an application, or perhaps they’re Santa’s children? There’s also the possibility Santa kidnaps children and becomes his slaves, but you shouldn’t think too hard on that one.",
+			},
+		},
 		["Health"] = 150,
 		["Power"] = 150,
 		["Rarity"] = "Common",
@@ -4568,6 +4593,20 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Zombie Cultist"] = {
 		["Id"] = 288041119,
 		["Name"] = "Zombie Cultist",
+		["AltCards"] = {
+			["Zombie Santa"] = {
+				["Name"] = "Zombie Santa",
+				["Id"] = 1247421832,
+				["Effect"] = {
+					Name = "Zombmas",
+					Description = "Summon a Zombie Elf, then increase the health of all Zombies by 100 and the power of all Zombies by 150.",
+					["Type"] = "OnSummon",
+					["Power"] = {{"Summon","Zombie Elf","Ally"},{"Strengthen",150},{"Heal",100}},
+					Target = "Archetype",
+				},
+				["Bio"] = "Since Santa travels EVERYWHERE the night before Christmas, doesn’t he have the chance of contracting and spreading deadly diseases throughout everybody’s homes?",
+			},
+		},
 		["Health"] = 500,
 		["Power"] = 100,
 		["Rarity"] = "Uncommon",
@@ -4663,9 +4702,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 5,},
 		["Effect"] = {
 			Name = "Soul Release",
-			Description = "Deal 4000 damage to a target fighter. Your opponent gains 1500 life.",
+			Description = "Deal 4000 damage to a target fighter. It's owner gains 1500 life.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",4000},{"Inflict",-1500,"Opponent"}},
+			["Power"] = {{"Damage",4000},{"Inflict",-1500,"Aggressor"}},
 			Target = "Single",	
 		},
 		["Bio"] = "BEGONE! FOUL SPIRIT!",
@@ -4679,12 +4718,15 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 0,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Punch1",
+		["WeakenImmune"] = true,
+		["SwapImmune"] = true,
+		["Fading"] = true,
 		["Color"] = "Neutral",
 		["Archetype"] = "Shedletsky",
 		["Cost"] = {["Neutral"] = 7,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = [[(UNDERGOING RENOVATION) At the end of your turns, shuffle a fried one cultist into your deck, then draw a card. This fighter is immune to effects that lower or swap its health or power.]],
+			Description = "At the end of your turns, shuffle a fried one cultist into your deck, then draw a card. This fighter is immune to effects that lower or swap its health or power. This card does not activate effects upon dying.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"DeckAdd","Fried One Cultist"},{"Draw",1}},
 			Target = "Ally",	
@@ -4704,7 +4746,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 1,["Blue"] = 1,["Yellow"] = 6,["Red"] = 1,["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = [[THAT'S SOME STRONG GOO, ISN'T IT]],
+			Description = "THAT'S SOME STRONG GOO, ISN'T IT",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Unlock",999,"Self"}},
 			Target = "Ally",	
@@ -4724,6 +4766,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Red",
 		["Cost"] = {["Red"] = 2,},
 		["Token"] = true,
+		["Fading"] = true,
 		["Effect"] = {
 			Name = "Stud",
 			Description = "Turn Shedletsky into its red form, The Raging Pulse.",
@@ -4765,12 +4808,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Punch1",
 		["WeakenImmune"] = true,
 		["SwapImmune"] = true,
+		["Fading"] = true,
 		["Archetype"] = "Shedletsky",
 		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 7,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = [[At the end of your turns, shuffle a fried one cultist into your deck, then draw a card. Then deal 200 damage to the opponent and all enemy fighters.]],
+			Description = "At the end of your turns, shuffle a fried one cultist into your deck, then draw a card. Then deal 200 damage to the opponent and all enemy fighters. This card does not activate effects upon dying.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"DeckAdd","Fried One Cultist"},{"Draw",1},{"Inflict",200,"Opponent"},{"Damage",200,"Opponent"}},
 			Target = "Ally",	
@@ -4789,6 +4833,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Stealth"] = true,
 		["Color"] = "Green",
 		["Token"] = true,
+		["Fading"] = true,
 		["Cost"] = {["Green"] = 2,},
 		["Effect"] = {
 			Name = "Stud",
@@ -4831,12 +4876,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Punch1",
 		["WeakenImmune"] = true,
 		["SwapImmune"] = true,
+		["Fading"] = true,
 		["Archetype"] = "Shedletsky",
 		["Color"] = "Green",
 		["Cost"] = {["Neutral"] = 7,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = [[At the end of your turns, shuffle a fried one cultist into your deck, then draw a card. Then generate one of every icon.]],
+			Description = "At the end of your turns, shuffle a fried one cultist into your deck, then draw a card. Then generate one of every icon. This card does not activate effects upon dying.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"DeckAdd","Fried One Cultist"},{"Draw",1},{"Yellow",1},{"Blue",1},{"Red",1},{"Green",1},{"Neutral",1}},
 			Target = "Ally",	
@@ -4855,6 +4901,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Stealth"] = true,
 		["Color"] = "Blue",
 		["Token"] = true,
+		["Fading"] = true,
 		["Cost"] = {["Blue"] = 2,},
 		["Effect"] = {
 			Name = "Stud",
@@ -4897,12 +4944,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Punch1",
 		["WeakenImmune"] = true,
 		["SwapImmune"] = true,
+		["Fading"] = true,
 		["Archetype"] = "Shedletsky",
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 7,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = [[At the end of your turns, put a fried one limb into your hand, then draw a card. Then reveal your opponent's hand.]],
+			Description = "At the end of your turns, put a fried one limb into your hand, then draw a card. Then reveal your opponent's hand. This card does not activate effects upon dying.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"RandomAdd","Limb"},{"Draw",1},{"RevealHand",030,"Opponent"}},
 			Target = "Ally",	
@@ -4921,6 +4969,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Stealth"] = true,
 		["Color"] = "Yellow",
 		["Token"] = true,
+		["Fading"] = true,
 		["Cost"] = {["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Stud",
@@ -4963,12 +5012,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Punch1",
 		["WeakenImmune"] = true,
 		["SwapImmune"] = true,
+		["Fading"] = true,
 		["Archetype"] = "Shedletsky",
 		["Color"] = "Yellow",
-		["Cost"] = {["Green"] = 2,},
+		["Cost"] = {["Neutral"] = 7,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = [[4 charges. At the end of your turns, shuffle a fried one cultist into your deck, then draw a card. Then remove a charge. When you remove the last, put 3 charges on Shed and shuffle a copy of Shedletsky into your deck.]],
+			Description = "4 charges. At the end of your turns, shuffle a fried one cultist into your deck, then draw a card. Then remove a charge. When you remove the last, put 3 charges on Shed and shuffle a copy of Shedletsky into your deck. This card does not activate effects upon dying.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"DeckAdd","Fried One Cultist"},{"Draw",1},{"Summon","Shedletsky 2"},{"SetHealth",0,"Self"}},
 			Target = "Ally",	
@@ -4985,12 +5035,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Punch1",
 		["WeakenImmune"] = true,
 		["SwapImmune"] = true,
+		["Fading"] = true,
 		["Archetype"] = "Shedletsky",
 		["Color"] = "Yellow",
-		["Cost"] = {["Green"] = 2,},
+		["Cost"] = {["Neutral"] = 7,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = [[3 charges. At the end of your turns, shuffle a fried one cultist into your deck, then draw a card. Then remove a charge. When you remove the last, put 3 charges on Shed and shuffle a copy of Shedletsky into your deck.]],
+			Description = "3 charges. At the end of your turns, shuffle a fried one cultist into your deck, then draw a card. Then remove a charge. When you remove the last, put 3 charges on Shed and shuffle a copy of Shedletsky into your deck. This card does not activate effects upon dying.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"DeckAdd","Fried One Cultist"},{"Draw",1},{"Summon","Shedletsky 3"},{"SetHealth",0,"Self"}},
 			Target = "Ally",	
@@ -5007,12 +5058,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Punch1",
 		["WeakenImmune"] = true,
 		["SwapImmune"] = true,
+		["Fading"] = true,
 		["Archetype"] = "Shedletsky",
 		["Color"] = "Yellow",
-		["Cost"] = {["Green"] = 2,},
+		["Cost"] = {["Neutral"] = 7,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = [[2 charges. At the end of your turns, shuffle a fried one cultist into your deck, then draw a card. Then remove a charge. When you remove the last, put 3 charges on Shed and shuffle a copy of Shedletsky into your deck.]],
+			Description = "2 charges. At the end of your turns, shuffle a fried one cultist into your deck, then draw a card. Then remove a charge. When you remove the last, put 3 charges on Shed and shuffle a copy of Shedletsky into your deck. This card does not activate effects upon dying.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"DeckAdd","Fried One Cultist"},{"Draw",1},{"Summon","Shedletsky 4"},{"SetHealth",0,"Self"}},
 			Target = "Ally",	
@@ -5029,21 +5081,19 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Punch1",
 		["WeakenImmune"] = true,
 		["SwapImmune"] = true,
+		["Fading"] = true,
 		["Archetype"] = "Shedletsky",
 		["Color"] = "Yellow",
-		["Cost"] = {["Green"] = 2,},
+		["Cost"] = {["Neutral"] = 7,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = [[1 charge. At the end of your turns, shuffle a fried one cultist into your deck, then draw a card. Then remove a charge. When you remove the last, put 3 charges on Shed and shuffle a copy of Shedletsky into your deck.]],
+			Description = "1 charge. At the end of your turns, shuffle a fried one cultist into your deck, then draw a card. Then remove a charge. When you remove the last, put 3 charges on Shed and shuffle a copy of Shedletsky into your deck. This card does not activate effects upon dying.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"DeckAdd","Fried One Cultist"},{"DeckAdd","Shedletsky the Fried One"},{"Draw",1},{"Summon","Shedletsky, Paragon of Unity 1"},{"SetHealth",0,"Self"}},
 			Target = "Ally",	
 		},
 		["Bio"] = "Blame John.",
 	},
-	
-	
-	
 	
 	["DrKig"] = {
 		["Id"] = 292778152,
@@ -5056,7 +5106,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 8,["Red"] = 1,},
 		["Effect"] = {
 			Name = "Deceipt",
-			Description = "Deal 500 damage to your opponent and 350 to all enemy fighters.",
+			Description = "Deal 350 damage to all enemy fighters and 500 damage to the opponent.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",350},{"Inflict",500}},
 			Target = "Opponent",	
@@ -5141,7 +5191,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 2,},
 		["Effect"] = {
 			Name = "Jagged Arrow",
-			Description = "Lower the power of a target fighter by 400.",
+			Description = "A target fighter loses 400 Power.",
 			["Type"] = "OnSummon",
 			["Power"] = "Weaken",
 			Target = "Single",
@@ -5162,7 +5212,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Instill",
-			Description = "Increase the power of a target fighter by 250.",
+			Description = "Give a target fighter 250 Power.",
 			["Type"] = "OnSummon",
 			["Power"] = "Strengthen",
 			Target = "Single",
@@ -5183,7 +5233,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Quick Shot",
-			Description = "Increase the Health of all Korblox by 350.",
+			Description = "All Korblox fighters gain 350 Health.",
 			["Type"] = "OnSummon",
 			["Power"] = "Heal",
 			Target = "Archetype",
@@ -5199,19 +5249,19 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Korblox Deathknight-Val"] = {
 				["Name"] = "Korblox Deathknight",
 				["Id"] = 655014098,
-			}
+			},
 		},
 		["Health"] = 1000,
 		["Power"] = 1000,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Punch1",
 		["Archetype"] = "Korblox",
+		["Requirement"] = {"Archetype",1},
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 5,},
-		["Requirement"] = {"Archetype",1},
 		["Effect"] = {
 			Name = "Quick Shot",
-			Description = "You must control a Korblox to summon this card. Lower the power of all non-Korblox fighters by 500.",
+			Description = "You must have a Korblox in play in order to summon this. All non-Korblox fighters lose 500 Power.",
 			["Type"] = "OnSummon",
 			["Power"] = "Weaken",
 			Target = "NotArchetype",
@@ -5221,7 +5271,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Korblox Deathkeeper"] = {
-		["Id"] = 292778200,
+		["Id"] = 1286602394,
 		["Name"] = "Korblox Deathkeeper",
 		["Health"] = 2500,
 		["Power"] = 500,
@@ -5274,7 +5324,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Summon 1 Doge. Draw a card.",
+			Description = "Summon a Doge. Draw a card.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Summon","Doge"},{"Draw",1}},
 			Target = "Ally",
@@ -5315,7 +5365,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Increase the power of all Doges by 200.",
+			Description = "All Doges gain 200 Power.",
 			["Type"] = "OnSummon",
 			["Power"] = "Strengthen",
 			Target = "Archetype",
@@ -5329,10 +5379,10 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Abraham Doge",
 		["AltCards"] = {
 			["Santa Doge"] = {
-				["Id"] = 585627493,
+				["Id"] = 1247065222,
 				["Name"] = "Santa Doge",
-				["Bio"] = "He is the gift.",
-			}
+				["Bio"] = "Why do doges, the worst archetype, have a different variant of Santa?",
+			},
 		},
 		["Health"] = 100,
 		["Power"] = 100,
@@ -5343,7 +5393,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Increase the health and power of all Doges by 150. Draw 1 card.",
+			Description = "All Doges gain 150 Health and Power. Draw a card.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Strengthen",150},{"Heal",150},{"Draw",1}},
 			Target = "Archetype",
@@ -5437,13 +5487,14 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},		
 	
 	["Haunted Mansion"] = {
-		["Id"] = 893396645,
+		["Id"] = 1024779902,
 		["Name"] = "Haunted Mansion",
 		["AltCards"] = {
 			["Haunted Mansion-Sun"] = {
+				["Name"] = "Haunted Ship",
 				["Id"] = 897238400,
-				["Bio"] = "*-aws Theme Plays-",
-			};
+				["Bio"] = "*-Jaws Theme Plays-",
+			},
 		},	
 		["Health"] = 0,
 		["Power"] = 0,
@@ -5453,7 +5504,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Field"] = 293402621,
 		["Color"] = "Neutral",
 		["Archetype"] = "Terrain",
-		["Cost"] = {["Green"] = 6,},
+		["Cost"] = {["Green"] = 5,},
 		["Effect"] = {
 			Name = "Stud",
 			Description = "Lower the power of all fighters by 25 at the end of each turn.",
@@ -5487,12 +5538,11 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Scrub"] = {
-		["Id"] = 292778415,
+		["Id"] = 1250581202,
 		["Name"] = "Scrub",
 		["Health"] = 1000,
 		["Power"] = 50,
-		["Rarity"] = "Rare",
-		["Archetype"] = "Hero",
+		["Rarity"] = "Common",
 		["AttackEffect"] = "GunShot",
 		["Color"] = "Yellow",
 		["Cost"] = {["Neutral"] = 3,["Yellow"] = 2,},
@@ -5509,8 +5559,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Leitris"] = {
 		["Id"] = 292778372,
 		["Name"] = "Leitris",
-		["Health"] = 300,
-		["Power"] = 600,
+		["Health"] = 450,
+		["Power"] = 400,
 		["Rarity"] = "Rare",
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Lightning",
@@ -5518,11 +5568,11 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Green"] = 2,},
 		["Effect"] = {
 			Name = "No-Zone",
-			Description = "lower the power of a target fighter by 300.",
+			Description = "Lower the power of a target fighter by 200.",
 			["Type"] = "OnSummon",
 			["Power"] = "Weaken",
 			Target = "Single",
-			Increase = 300
+			Increase = 200
 		},
 		["Bio"] = "It's cold in here!",
 	},	
@@ -5563,7 +5613,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Description = "Deal 500 damage to a target fighter and 300 damage to all other allied fighters.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",500},{"Heal",300,"Self"},{"Damage",300,"Ally"}},
-			Target = "Opponent",
+			Target = "Single",
 		},
 		["Bio"] = "Suitcase filled with more ammo for his signature weapon.",
 	},	
@@ -5580,7 +5630,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Red"] = 3,},
 		["Effect"] = {
 			Name = "Mafia Support",
-			Description = "Increase the power of a target fighter by 500.",
+			Description = "A target fighter gains 500 Power.",
 			["Type"] = "OnSummon",
 			["Power"] = "Strengthen",
 			Target = "Single",
@@ -5597,8 +5647,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Name"] = "Lovestermon",
 				["Id"] = 655014781,
 				["Bio"] = "It's time to add some love to this battlefield!",
-			}		
-		},							
+			},
+		},
 		["Health"] = 750,
 		["Power"] = 350,
 		["Rarity"] = "Rare",
@@ -5614,7 +5664,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Opponent",
 		},
 		["Bio"] = "It's time to add some color to this battlefield!",
-	},	
+	},
 	
 	["Psychotic"] = {
 		["Id"] = 294319160,
@@ -5634,7 +5684,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Strengthen",1000},{"Damage",750}},
 			Target = "Single",
 		},
-		["Bio"] = "GWAAH!",
+		["Bio"] = "SCALLOPS!!",
 	},	
 		
 	["Redcliff Enforcer"] = {
@@ -5714,7 +5764,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Type"] = "OnSummon",
 			["Power"] = "Strengthen",
 			Target = "Single",
-			Increase = 100
+			Increase = 100,
 		},
 		["Bio"] = [[They sent us a message. "If we enter your village, we will burn it down and kill all your children." Our reply? "If".]],
 	},	
@@ -5825,15 +5875,15 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Name"] = "Senpai Garrison",
 				["Effect"] = {
 					Name = "Overgrown",
-					Description = "At the end of your turn, summon another Senpai Garrison.",
+					Description = "2 Charges. At the end of your turn, If this card has a charge on it, summon another Senpai Garrison with one less charge.",
 					["Type"] = "OnEnd",
-					["Power"] = {{"Summon","Senpai Garrison"}},
+					["Power"] = {{"Summon","Senpai Garrison 2"}},
 					Target = "Ally",
 				},
 				["Bio"] = "These high school students are always ignoring Stalker-Chan.",
-			}
+			},
 		},
-		["Health"] = 300,
+		["Health"] = 100,
 		["Power"] = 300,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Lightning",
@@ -5842,11 +5892,65 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 6,},
 		["Effect"] = {
 			Name = "Overgrown",
-			Description = "At the end of your turn, summon another Combine Garrison.",
+			Description = "2 Charges. At the end of your turn, If this card has a charge on it, summon another Combine Garrison with one less charge.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Summon","Combine Garrison"}},
+			["Power"] = {{"Summon","Combine Garrison 2"}},
 			Target = "Ally",
 		},
+		["Bio"] = "These troops are always searching for the Stalker.",
+	},	
+	
+	["Combine Garrison 2"] = {
+		["Id"] = 294871396,
+		["Name"] = "Lesser Combine Garrison",
+		["AltCards"] = {
+			["Senpai Garrison 2"] = {
+				["Id"] = 655016996,
+				["Name"] = "Lesser Senpai Garrison",
+				["Effect"] = {
+					Name = "Overgrown",
+					Description = "1 Charge. At the end of your turn, If this card has a charge on it, summon another Senpai Garrison with one less charge.",
+					["Type"] = "OnEnd",
+					["Power"] = {{"Summon","Senpai Garrison 3"}},
+					Target = "Ally",
+				},
+				["Bio"] = "These high school students are always ignoring Stalker-Chan.",
+			},
+		},
+		["Health"] = 100,
+		["Power"] = 300,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Lightning",
+		["Archetype"] = "Combine",
+		["Color"] = "Yellow",
+		["Cost"] = {["Yellow"] = 6,},
+		["Effect"] = {
+			Name = "Overgrown",
+			Description = "1 Charge. At the end of your turn, If this card has a charge on it, summon another Combine Garrison with one less charge.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Summon","Combine Garrison 3"}},
+			Target = "Ally",
+		},
+		["Bio"] = "These troops are always searching for the Stalker.",
+	},	
+	
+	["Combine Garrison 3"] = {
+		["Id"] = 294871396,
+		["Name"] = "Combine",
+		["AltCards"] = {
+			["Senpai Garrison 3"] = {
+				["Id"] = 655016996,
+				["Name"] = "Yandere Garrison",
+				["Bio"] = "These high school students are always ignoring Stalker-Chan.",
+			}
+		},
+		["Health"] = 100,
+		["Power"] = 300,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Lightning",
+		["Archetype"] = "Combine",
+		["Color"] = "Yellow",
+		["Cost"] = {["Yellow"] = 6,},
 		["Bio"] = "These troops are always searching for the Stalker.",
 	},	
 
@@ -5905,7 +6009,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 2,},
 		["Effect"] = {
 			Name = "Render",
-			Description = "Whenever GamesBloxx is targeted by a creature, that creature becomes a Noob",
+			Description = "Whenever GamesBloxx is targeted by a fighter, that fighter becomes a Noob",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Damage",9999,"Aggressor"},{"Summon","Noob","Aggressor"}},
 			Target = "Ally",
@@ -5980,7 +6084,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Odin-ArtV"] = {
 				["Id"] = 497625127,
 				["Bio"] = "Perhaps I like my son too much.",
-			}
+			},
 		},
 		["Health"] = 500,
 		["Power"] = 300,
@@ -6006,7 +6110,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Pirate-Val"] = {
 				["Name"] = "Pirate Cupid",
 				["Id"] = 655016531,
-			}
+			},
 		},
 		["Health"] = 700,
 		["Power"] = 0,
@@ -6093,12 +6197,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Health"] = 1000,
 		["Power"] = 0,
 		["Rarity"] = "Uncommon",
-		["AttackEffect"] = "Lightning",
+		["AttackEffect"] = "Fire",
 		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 2,["Red"] = 3,},
 		["Effect"] = {
 			Name = "Acolyte",
-			Description = "Gain 1 Red Icon at the end of each of your turns.",
+			Description = "At the end of your turns, generate a red icon.",
 			["Type"] = "OnEnd",
 			["Power"] = "Red",
 			Target = "Ally",
@@ -6150,22 +6254,22 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Ultimate Bowl of Greed"] = {
-		["Id"] = 296708186,
+		["Id"] = 1226642161,
 		["Name"] = "Ultimate Bowl of Greed",
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Null",
 		["Color"] = "Yellow",
-		["Cost"] = {["Neutral"] = 4,["Yellow"] = 2,},
+		["Cost"] = {["Neutral"] = 4,["Yellow"] = 6,},
 		["Bio"] = "Fame and fortune awaits.",
 		["Effect"] = {
 			Name = "Ultimate Bowl of Greed",
-			Description = "Draw 3 Cards.",
+			Description = "Draw 5 Cards.",
 			["Type"] = "OnSummon",
 			["Power"] = "Draw",
 			Target = "Ally",
-			Increase = 3,
+			Increase = 5,
 		},
 	},
 	
@@ -6180,9 +6284,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Blue"] = 4,},
 		["Effect"] = {
 			Name = "TNL Blessing",
-			Description = "Gain 2500 Life Points.",
+			Description = "Gain 2000 Life Points.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Cost",-2500}},
+			["Power"] = {{"Cost",-2000}},
 			Target = "Opponent",
 		},
 		["Bio"] = "Known as the livestream host for ROBLOX's 'The Next Level,' Jack with his purple hair is the staple to any deck affiliated with its trait.",
@@ -6196,7 +6300,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 415728794,
 				["AltArt"] = true,
 				["Bio"] = "Known as the livestream host for ROBLOX's 'The Next Level,' Bob with his Noble Dragon is the staple to any deck affiliated with its trait. Part of the 'Aife' Collection! Collect them all!",
-			}
+			},
 		},
 		["Health"] = 700,
 		["Power"] = 700,
@@ -6221,20 +6325,19 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["RipullV2"] = {
 				["Id"] = 430936062,
 				["Bio"] = "This isn't the 1940s. Silly Ripull!",
-			}
+			},
 		},
 		["Health"] = 500,
 		["Power"] = 500,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Green",
-		["Charge"] = true,
 		["Cost"] = {["Green"] = 4,},
 		["Effect"] = {
 			Name = "Minigame Start!",
-			Description = "Haste. Gain 3 white icons and 500 life.",
+			Description = "Gain 1 white icon and 500 life.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Unlock",9999,"Self"},{"Neutral",3},{"Cost",-500}},
+			["Power"] = {{"Neutral",1},{"Cost",-500}},
 			Target = "Ally",
 		},
 		["Bio"] = "Creator of Ripull's Minigames (obviously!), Ripull created the 'Ripull Effect' and we clearly know what that means!",
@@ -6257,7 +6360,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 655019396,
 				["Name"] = "Stalker-Chan",
 				["Bio"] = "Even Senpai fears it",
-			}									
+			},									
 		},
 		["Health"] = 3000,
 		["Power"] = 300,
@@ -6288,7 +6391,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 2,},
 		["Effect"] = {
 			Name = "Attack Modifier! Debuff!",
-			Description = "lower the attack of a target fighter by 300.",
+			Description = "A target fighter loses 300 Power.",
 			["Type"] = "OnSummon",
 			["Power"] = "Weaken",
 			Target = "Single",
@@ -6308,7 +6411,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 2,},
 		["Effect"] = {
 			Name = "Attack Modifier! Buff!",
-			Description = "Increase the attack of a target fighter by 300.",
+			Description = "A target fighter gains 300 Power.",
 			["Type"] = "OnSummon",
 			["Power"] = "Strengthen",
 			Target = "Single",
@@ -6328,7 +6431,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 2,},
 		["Effect"] = {
 			Name = "Defense Modifier! Buff!",
-			Description = "Increase the Health of a target fighter by 300.",
+			Description = "A target fighter gains 300 Health.",
 			["Type"] = "OnSummon",
 			["Power"] = "Heal",
 			Target = "Single",
@@ -6338,14 +6441,14 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Biostream"] = {
-		["Id"] = 296845343,
+		["Id"] = 1159022386,
 		["Name"] = "Biostream",
 		["Health"] = 1000,
 		["Power"] = 350,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Thunder",
 		["Color"] = "Green",
-		["Cost"] = {["Neutral"] = 3,["Green"] = 3,},
+		["Cost"] = {["Neutral"] = 3,["Green"] = 5,},
 		["Effect"] = {
 			Name = "Hexaria Booster Pack",
 			Description = "Put 3 Hexaria related cards to your hand.",
@@ -6364,7 +6467,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Name"] = "Underwater Caverns",
 				["Id"] = 897247423,
 				["Bio"] = "-Jaws theme plays-",
-			}
+			},
 		},
 		["Health"] = 0,
 		["Power"] = 0,
@@ -6483,7 +6586,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["AVote-Sun"] = {
 				["Id"] = 897235915,
 				["Bio"] = "Whatever AVfloats your AVboat.",
-			}
+			},
 		},
 		["Health"] = 400,
 		["Power"] = 400,
@@ -6511,7 +6614,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 655013398,
 				["Name"] = "Gato Mars",						
 				["Bio"] = "Gato Uptown, Funk Luz.",
-			}
+			},
 		},									
 		["Health"] = 250,
 		["Power"] = 250,
@@ -6557,10 +6660,10 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 298297409,
 				["AltArt"] = true,
 				["Bio"] = "The truest form of PolyHex, also known as TylerMcBride. He's fortunate that he's a 2-D character ready to drop explosives on unsuspecting survivors.",
-			}
+			},
 		},
-		["Health"] = 1000,
-		["Power"] = 1000,
+		["Health"] = 800,
+		["Power"] = 800,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Explosion",
 		["Color"] = "Green",
@@ -6622,7 +6725,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Name"] = "Valentine's Phoenix",
 				["Id"] = 655019159,
 				["Bio"] = "Rebirth of pure love!",
-			}
+			},
 		},
 		["Health"] = 1000,
 		["Power"] = 1000,
@@ -6651,7 +6754,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 2,},
 		["Effect"] = {
 			Name = "Firascale",
-			Description = "When this card Attacks, gain 2 Red Icons.",
+			Description = "When this card Attacks, gain 2 red icons.",
 			["Type"] = "OnAttack",
 			["Power"] = "Red",
 			Target = "Ally",
@@ -6692,7 +6795,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Red"] = 4,},
 		["Effect"] = {
 			Name = "Fallen Guardian",
-			Description = "Set the Power of a target fighter to 0 and heal it by 1500.",
+			Description = "Set the Power of a target fighter to 0 and give it 1500 health.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"SetPower",0},{"Heal",1500}},
 			Target = "Single",
@@ -6731,7 +6834,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Blue"] = 6,},
 		["Effect"] = {
 			Name = "Revival",
-			Description = "At the end of your turns, set this card's lock to 1.",
+			Description = "At the end of your turns, set the lock of this fighter to 1.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Unlock",9999,"Self"},{"Lock",2,"Self"}},
 			Target = "Ally"
@@ -6776,7 +6879,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 7,["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "When this card attacks, increase its health and power by 200.",
+			Description = "Whenever this card attacks, this card gains 200 Health and Power.",
 			["Type"] = "OnAttack",
 			["Power"] = {{"Strengthen",200},{"Heal",200}},
 			Target = "Self",
@@ -6812,7 +6915,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["KingShadowCrowV2"] = {
 				["Id"] = 462725820,
 				["Bio"] = "wE arE HAVing dIFfiCULTy OPPerATINg aSINgle pEN . ..",
-			}
+			},
 		},
 		["Health"] = 900,
 		["Power"] = 400,
@@ -6879,7 +6982,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Name"] = "Luck o' the Lobsters",
 				["Id"] = 897243462,
 				["Bio"] = "Hey, Chef? Can I copy your homework? Yeah, be sure to change it up a bit so it doesn’t look obvious that you copied.",
-			}
+			},
 		},
 		["Health"] = 0,
 		["Power"] = 0,
@@ -6929,7 +7032,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Green"] = 1,},
 		["Effect"] = {
 			Name = "Bandage",
-			Description = "Recover 1500 Lifepoints",
+			Description = "Gain 1500 Life.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Cost",-1500}},
 			Target = "Ally",
@@ -7010,7 +7113,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Demon Eye",
 			Description = "Gain 1 Green icon. Increase the Health of all Overseers by 400 and their power by 200.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Green",2,"Ally"},{"Heal",400},{"Strengthen",200}},
+			["Power"] = {{"Green",1,"Ally"},{"Heal",400},{"Strengthen",200}},
 			Target = "Archetype",
 		},
 		["Bio"] = "Generalising is his hobby, but knitting is his passion.",
@@ -7106,11 +7209,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Thunder",
 		["Color"] = "Blue",
+		["CounterBlock"] = true,		
 		["Archetype"] = "Korblox",
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Pepper Spray",
-			Description = "When this card dies, turn it into a Korblox Skeleton.",
+			Description = "Can't Counterattack. When this card dies, turn it into a Korblox Skeleton.",
 			["Type"] = "OnDeath",
 			["Power"] = {{"Summon","Korblox Skeleton"}},
 			Target = "Ally",
@@ -7188,7 +7292,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Acolyte",
-			Description = "Gain 1 Yellow Icon and all Acolytes gain 50 health and power at the end of each of your turns.",
+			Description = "At the end of your turns, generate a yellow icon and all Acolytes gain 50 Heath and Power.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Yellow",1,"Ally"},{"Heal",50},{"Strengthen",50}},
 			Target = "Archetype",
@@ -7208,7 +7312,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Acolyte",
-			Description = "Generate an additional white icon at the end of each of your turns.",
+			Description = "At the end of your turns, generate an additional white icon.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Neutral",1}},
 			Target = "Ally",
@@ -7228,7 +7332,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Acolyte",
-			Description = "After this card attacks a fighter, put a random Acolyte into your hand.",
+			Description = "After this card attacks, put a random Acolyte into your hand.",
 			["Type"] = "OnAttackEnd",
 			["Power"] = {{"RandomAdd","Acolyte"}},
 			Target = "Ally",
@@ -7248,7 +7352,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Acolyte",
-			Description = "Gain 1 Red Icon and deal 100 to all non-Acolytes at the end of each of your turns.",
+			Description = "At the end of your turns, generate a red icon and deal 100 damage to all non-Acolytes.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Red",1,"Ally"},{"Damage",100}},
 			Target = "NotArchetype",
@@ -7268,7 +7372,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Acolyte",
-			Description = "Gain 1 Blue Icon and unlock all Acolytes at the end of each of your turns.",
+			Description = "At the end of your turns, generate a blue icon and unlock all Acolytes.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Blue",1,"Ally"},{"Unlock",999}},
 			Target = "Archetype",
@@ -7279,7 +7383,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Necromantic Acolyte"] = {
 		["Id"] = 300638699,
 		["Name"] = "Necromantic Acolyte",
-		["Health"] = 750,
+		["Health"] = 700,
 		["Power"] = 0,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Thunder",
@@ -7288,9 +7392,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Acolyte",
-			Description = "Gain 1 Green Icon and all Acolytes gain 150 Health at the end of each of your turns.",
+			Description = "At the end of your turns, generate a green icon and all Acolytes gain 100 Health.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Green",1,"Ally"},{"Heal",150}},
+			["Power"] = {{"Green",1,"Ally"},{"Heal",100}},
 			Target = "Archetype",
 		},
 		["Bio"] = "HE JUST DOESN'T. GO. AWAY.",
@@ -7309,7 +7413,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Build Up",
-			Description = "At the end of your turn, all Acolytes gain 50 health. Glaurung can't generate icons.",
+			Description = "At the end of your turns, all Acolytes gain 50 Health. Glaurung can't generate icons.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Heal",50}},
 			Target = "Archetype",
@@ -7343,7 +7447,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Build Up",
-			Description = "At the end of your turn, all Acolytes gain 50 power. Aer Draco can't generate icons.",
+			Description = "At the end of your turns, all Acolytes gain 50 Power. Aer Draco can't generate icons.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Strengthen",50}},
 			Target = "Archetype",
@@ -7364,7 +7468,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 1,["Blue"] = 1,["Yellow"] = 1,["Red"] = 1,["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Build Up",
-			Description = "You must control at least 1 acolyte to cast this card. Summon three Draconic Acolytes, then lock all allied cards for two turns.",
+			Description = "Cast only if you control at least one Acolyte. Summon three Draconic Acolytes, then lock all allied fighters for two turns.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Summon","Glaurung"},{"Summon","Smaug"},{"Summon","Aer Draco"},{"Lock",2}},
 			Target = "Ally",
@@ -7482,10 +7586,10 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Toy Train",
 		["AltCards"] = {
 			["Wooden Toy Train"] = {
-				["Id"] = 585627408,
+				["Id"] = 1247066872,
 				["Name"] = "Wooden Toy Train",
-				["Bio"] = "Chugga chugga. The train is a century old.",
-			}
+				["Bio"] = "Roses are red. Violets are blue. My dad got hit by a train. Chugga choo choo.",
+			},
 		},
 		["Health"] = 200,
 		["Power"] = 250,
@@ -7585,17 +7689,18 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Builderman"] = {
-		["Id"] = 951700034,
+		["Id"] = 1266655937,
 		["Name"] = "Builderman",
 		["Health"] = 200,
 		["Power"] = 400,
 		["Rarity"] = "Legendary",
+		["Fading"] = true,
 		["AttackEffect"] = "Thunder",
 		["Color"] = "Yellow",
 		["Cost"] = {["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Friendship",
-			Description = "When this card is summoned, increase the health of all allied fighters by 100. When this card is targeted, return it to its owner's hand.",
+			Description = "When this card is summoned, increase the health of all allied fighters by 100. When this card is targeted, return it to its owner's hand. This card does not trigger effects upon dying.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",100},{"Summon","Builderman 2"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -7604,17 +7709,18 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Builderman 2"] = {
-		["Id"] = 951700034,
+		["Id"] = 1266655937,
 		["Name"] = "Builderman",
 		["Health"] = 200,
 		["Power"] = 400,
 		["Rarity"] = "Token",
+		["Fading"] = true,
 		["AttackEffect"] = "Thunder",
 		["Color"] = "Yellow",
 		["Cost"] = {["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Friendship",
-			Description = "When this card is summoned, increase the health of all allied fighters by 100. When this card is targeted, return it to its owner's hand.",
+			Description = "When this card is summoned, increase the health of all allied fighters by 100. When this card is targeted, return it to its owner's hand. This card does not trigger effects upon dying.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Add","Builderman"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -7653,7 +7759,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Red"] = 4,},
 		["Effect"] = {
 			Name = "Master Blast",
-			Description = [[Both players Red icons are set to exactly 4. You lose all your white icons. End the turn.]],
+			Description = "Set both players red icons to 4. You lose all your white icons. End the turn.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"SetRed",4},{"SetNeutral",0,"Ally"},{"EndTurn",1}},
 			Target = "All",
@@ -7673,7 +7779,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Red"] = 3,},
 		["Effect"] = {
 			Name = "EzWinz",
-			Description = "When this card destroys another, put a Red Legendary to your hand.",
+			Description = "Whenever this fighter destroys another, put a Red Legendary into your hand.",
 			["Type"] = "OnDestroy",
 			["Power"] = "RandomAdd",
 			Target = "Ally",
@@ -7705,7 +7811,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Arceusdon"] = {
 		["Id"] = 430946689,
 		["Name"] = "Arceusdon",
-		AltCards = {
+		["AltCards"] = {
 			["Arceusdonv2"] = {
 				["Id"] = 892041279,
 				["AltArt"] = true,
@@ -7785,7 +7891,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Green"] = 2,},
 		["Effect"] = {
 			Name = "Endless Spooks",
-			Description = [[Generate a red icon.]],
+			Description = "Generate a red icon.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Red",1}},
 			Target = "Ally",
@@ -7805,7 +7911,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Green"] = 3},
 		["Effect"] = {
 			Name = "Endless Spooks",
-			Description = [[Draw a card and increase the health of all Zombies by 150.]],
+			Description = "Draw a card and increase the health of all Zombies by 150.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Draw",1,"Ally"},{"Heal",150}},
 			Target = "Archetype",
@@ -7841,7 +7947,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 655011162,
 				["Name"] = "Box of Chocolates",
 				["Bio"] = "Happy Bloxentines day 2017.",
-			}		
+			},
 		},					
 		["Health"] = 0,
 		["Power"] = 0,
@@ -7851,7 +7957,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Green"] = 1,["Blue"] = 1,["Red"] = 1,["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Endless Spooks",
-			Description = [[Deal 400 damage to all fighters.]],
+			Description = "Deal 400 damage to all fighters.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",400}},
 			Target = "All",
@@ -7880,21 +7986,20 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Witch's True Brew"] = {
-		["Id"] = 315997790,
+		["Id"] = 1159203563,
 		["Name"] = "Witch's True Brew",
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Thunder",
 		["Color"] = "Green",
-		["Cost"] = {["Green"] = 4,},
+		["Cost"] = {["Neutral"] = 1, ["Green"] = 4,},
 		["Effect"] = {
 			Name = "Forced sip",
-			Description = "Locks all enemy fighters for two turns.",
+			Description = "Lower the health and power of a target fighter by 400. You gain 400 life.",
 			["Type"] = "OnSummon",
-			["Power"] = "Lock",
-			Target = "Opponent",
-			Increase = 2,
+			["Power"] = {{"Weaken",400},{"Damage",400},{"Cost",-400}},
+			Target = "Single",
 		},
 		["Bio"] = "This will make your enemies turn to ice and will last twice! AHAHAHHAHAHA!~~.",
 	},
@@ -7911,7 +8016,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Green"] = 4,},
 		["Effect"] = {
 			Name = "Endless Spooks",
-			Description = [[When this card attacks, increase its health by 500.]],
+			Description = "Whenever this card attacks, this card gains 500 Health.",
 			["Type"] = "OnAttack",
 			["Power"] = {{"Heal",500}},
 			Target = "Self",
@@ -7930,7 +8035,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 5,},
 		["Effect"] = {
 			Name = "Endless Spooks",
-			Description = [[Increase the health of a target fighter by 1000, then return it to its owner's hand.]],
+			Description = "Increase the health of a target fighter by 1000, then return it to its owner's hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",1000},{"Return",999}},
 			Target = "Single",
@@ -7949,7 +8054,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Yellow"] = 7,},
 		["Effect"] = {
 			Name = "Endless Spooks",
-			Description = [[At the end of your turns, set both player's yellow icons to 4.]],
+			Description = "At the end of your turns, set both player's yellow icons to 4.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"SetYellow",4}},
 			Target = "All",
@@ -7968,7 +8073,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Hopelesssnesss",
-			Description = "At the end of each turn, damage all enemy fighters by 75 and weaken them by 50.",
+			Description = "At the end of your turns, all enemy fighters by lose 75 Health and 50 Power.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Damage",75},{"Weaken",50}},
 			Target = "Opponent",
@@ -7987,7 +8092,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Green"] = 4,},
 		["Effect"] = {
 			Name = "Endless Spooks",
-			Description = [[When this card attacks, deal 250 damage to all enemy fighters.]],
+			Description = "When this card attacks, deal 250 damage to all enemy fighters.",
 			["Type"] = "OnAttack",
 			["Power"] = {{"Damage",250}},
 			Target = "Opponent",
@@ -8006,7 +8111,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Yellow"] = 4,},
 		["Effect"] = {
 			Name = "Master Blast",
-			Description = [[When this card attacks, your Opponent gains 2 white icons.]],
+			Description = "When this card attacks, your Opponent gains 2 white icons.",
 			["Type"] = "OnAttack",
 			["Power"] = "Neutral",
 			Target = "Opponent",
@@ -8020,6 +8125,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Heavy Rain",
 		["AltCards"] = {
 			["Heavy Rain-Sun"] = {
+				["Name"] = "British Summer",
 				["Id"] =  897236117,
 				["Bio"] = "Everyday, Brits are suffering from rain and floods in their BLOODY SUMMER. With your help, we can help rehabilitate these people to their proper leisure.",
 			},
@@ -8053,7 +8159,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "BobRoss the Canvas the Card the Effect",
-			Description = [[All fighters lose 75 health and gain 75 power.]],
+			Description = "All fighters lose 75 health and gain 75 power.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",75},{"Strengthen",75}},
 			Target = "All",
@@ -8081,22 +8187,22 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 		
 	["Theawesomist19"] = {
-		["Id"] = 323661120,
-		["Name"] = "Theawesomist19",
+		["Id"] = 1209530021,
+		["Name"] = "peach_tea",
 		["Health"] = 400,
 		["Power"] = 500,
 		["Rarity"] = "Uncommon",
-		["AttackEffect"] = "Punch1",
+		["AttackEffect"] = "Slice",
 		["Color"] = "Blue",
 		["Cost"] = {["Blue"] = 2,["Neutral"] = 2,},
 		["Effect"] = {
-			Name = "Wary",
-			Description = "Whenever your opponent summons a fighter, reset Theawesomist19's stats.",
+			Name = "Bepis",
+			Description = "Whenever your opponent summons a fighter, reset peach_tea's stats.",
 			["Type"] = "OnEnemySummon",
 			["Power"] = {{"SetHealth",400},{"SetPower",500}},
 			Target = "Self",
 		},
-		["Bio"] = "Just an average forumer nobody, nothing to see here.",
+		["Bio"] = "This is peach_tea. He has over 300 four-letter usernames. And no life.",
 	},
 	
 	["Zom-nobi"] = {
@@ -8126,7 +8232,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Weaven-Sun"] = {
 				["Id"] = 897247848,
 				["Bio"] = "I just created a massive vortex. Time for a selfie.",
-			}
+			},
 		},
 		["Health"] = 300,
 		["Power"] = 300,
@@ -8156,7 +8262,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 4,["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Raging Rage",
-			Description = [[Deal 200 damage to all enemy fighters and a target fighter.]],
+			Description = "Deal 200 damage to all enemy fighters and a target fighter.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",200},{"Damage",200,"Single"}},
 			Target = "Opponent",
@@ -8176,9 +8282,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 4,},
 		["Effect"] = {
 			Name = "EzWinz",
-			Description = "Gain 5 yellow icon, but put 4 nightmares to your hand.",
+			Description = "Gain 5 yellow icons, but put 3 nightmares in your hand.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Yellow",5},{"Add","Nightmare"},{"Add","Nightmare"},{"Add","Nightmare"},{"Add","Nightmare"}},
+			["Power"] = {{"Yellow",5},{"Add","Nightmare"},{"Add","Nightmare"},{"Add","Nightmare"}},
 			Target = "Ally",
 		},
 		["Bio"] = "All dapper artifacts come at a cost....",
@@ -8231,7 +8337,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Papasmurf-ArtV"] = {
 				["Id"] = 487132041,
 				["Bio"] = "Papa got volcanoes on his side.",
-			}
+			},
 		},
 		["Health"] = 500,
 		["Power"] = 500,
@@ -8276,6 +8382,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 50,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Punch1",
+		["Fading"] = true,
 		["Color"] = "Blue",
 		["Cost"] = {["Blue"] = 4,},
 		["Effect"] = {
@@ -8299,7 +8406,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 4,},
 		["Effect"] = {
 			Name = "SorryBurn",
-			Description = "At the end of this turn, set your life to 1000. At the end each other turn, gain 1000 life.",
+			Description = "At the end of each turn, gain 1000 life.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Cost",-1000}},
 			Target = "Ally",
@@ -8333,7 +8440,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Divine FavorV2"] = {
 				["Id"] = 480274691,
 				["Bio"] = "Vis' anguish does not apply to Teaism alone.",
-			}
+			},
 		},
 		["Health"] = 0,
 		["Power"] = 0,
@@ -8400,7 +8507,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 480385063,
 				["Name"] = "Mass Destruction",
 				["Bio"] = "YOU WILL UPDATE BLOXCARDS, AND YOU WILL DO IT WHEN I SAY SO!",
-			}
+			},
 		},
 		["Health"] = 0,
 		["Power"] = 0,
@@ -8660,11 +8767,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Overseer",
 		["AttackEffect"] = "Thunder",
 		["Token"] = true,
+		["Stealth"] = true,
 		["Color"] = "Green",
 		["Cost"] = {["Green"] = 2,},
 		["Effect"] = {
 			Name = "Dreadsteed",
-			Description = [[Put an "Overseer's Steed" to your hand when this card dies. This card can't generate icons.]],
+			Description = "Put an Overseer's Steed to your hand when this card dies. This card can't generate icons. This card does not activate effects when summoned.",
 			["Type"] = "OnDeath",
 			["Power"] = {{"Add","Overseer's Steed"}},
 			Target = "Ally",
@@ -8684,7 +8792,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 5,},
 		["Effect"] = {
 			Name = "TaxRevenue",
-			Description = [[You must control at least 2 overseers to cast this card. Gain 2 Green, 2 White icons and Draw 2 cards.]],
+			Description = "You must control at least 2 overseers to cast this card. Gain 2 Green, 2 White icons and Draw 2 cards.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Green",2},{"Neutral",2},{"Draw",2}},
 			Target = "Ally",
@@ -8703,7 +8811,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Lion Amp",
-			Description = [[A target fighter loses 150 Power. Generate a Yellow icon.]],
+			Description = "A target fighter loses 150 Power. Generate a Yellow icon.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",150},{"Yellow",1,"Ally"}},
 			Target = "Single",
@@ -8722,7 +8830,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Target Master",
-			Description = [[Target a fighter. Generate 3 Yellow icons.]],
+			Description = "Target a fighter. Generate 3 Yellow icons.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",0},{"Yellow",3,"Ally"}},
 			Target = "Single",
@@ -8742,7 +8850,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 1,["Neutral"]=3,},
 		["Effect"] = {
 			Name = "Panda Amp",
-			Description = [[A target fighter gains 350 Health and Power.]],
+			Description = "A target fighter gains 350 Health and Power.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Strengthen",350},{"Heal",350}},
 			Target = "Single",
@@ -8761,7 +8869,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 2,["Neutral"]=2,},
 		["Effect"] = {
 			Name = "Polar Amp",
-			Description = [[A target fighter gains 100 Power. Put a random yellow card into your hand.]],
+			Description = "A target fighter gains 100 Power. Put a random yellow card into your hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Strengthen",100},{"RandomAdd","Yellow"}},
 			Target = "Single",
@@ -8780,7 +8888,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 2,["Neutral"]=2,},
 		["Effect"] = {
 			Name = "Tiger Amp",
-			Description = [[A target fighter gains 100 Health. Put a random yellow card into your hand.]],
+			Description = "A target fighter gains 100 Health. Put a random yellow card into your hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",100},{"RandomAdd","Yellow"}},
 			Target = "Single",
@@ -8800,7 +8908,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 4,},
 		["Effect"] = {
 			Name = "Plushie Amp",
-			Description = [[Whenever your opponent summons a fighter, generate a targeting blip. Targeting blips are used to trigger target effects.]],
+			Description = "Whenever your opponent summons a fighter, generate a targeting blip. Targeting blips are used to trigger target effects.",
 			["Type"] = "OnEnemySummon",
 			["Power"] = {{"Add","Targeting Blip"}},
 			Target = "Ally",
@@ -8820,7 +8928,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 4,["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Plushie Amp",
-			Description = [[Whenever this card is targeted, put two random yellow cards into your hand.]],
+			Description = "Whenever this card is targeted, put two random yellow cards into your hand.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"RandomAdd","Yellow"},{"RandomAdd","Yellow"}},
 			Target = "Ally",
@@ -8860,7 +8968,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 6,["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Plushie Amp",
-			Description = [[Whenever you summon a fighter, set its stats to 25/700. Plushie Unicorn does not trigger effects when summoned.]],
+			Description = "Whenever you summon a fighter, set that fighter's stats to 25/700. Plushie Unicorn does not trigger effects when summoned.",
 			["Type"] = "OnAllySummon",
 			["Power"] = {{"SetPower",700},{"SetHealth",25}},
 			Target = "Aggressor",
@@ -8881,7 +8989,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Yellow"] = 1,["Green"] = 1,["Red"] = 1,["Blue"] = 1,},
 		["Effect"] = {
 			Name = "Omega Cost",
-			Description = "You must control at least 4 Acolytes to summon this card. Increase the health and power of all Acolytes by 300.",
+			Description = "Summon only if you control four or more Acolytes. All Acolytes gain 300 Health and Power.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",300},{"Strengthen",300}},
 			Target = "Archetype",
@@ -8943,7 +9051,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "OBLITERATION",
 			Description = "Deal 700 damage to a target fighter and 500 to the opponent.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",700},{"Inflict",500,"Opponent"}},
+			["Power"] = {{"Inflict",500,"Opponent"},{"Damage",700}},
 			Target = "Single",
 		},
 		["Bio"] = "When one sees the flames of Nymn, the world goes red. Then nevermore.",
@@ -9001,7 +9109,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 4,["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Plushie Amp",
-			Description = [[Deal 500 damage to the opponent. Return this card to your hand and end the turn.]],
+			Description = "Deal 500 damage to the opponent. Return this card to your hand and end the turn.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Inflict",500,"Opponent"},{"Add","Dragon's Charm"},{"EndTurn",1}},
 			Target = "Ally",
@@ -9022,7 +9130,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 3,["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Plushie Amp",
-			Description = [[Fleskhjerta can't attack.]],
+			Description = "Fleskhjerta can't attack.",
 			["Type"] = "OnAttack",
 			["Power"] = {{"Damage",0}},
 			Target = "Self",
@@ -9041,8 +9149,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Neutral",
 		["Cost"] = {["Neutral"] = 2,["Blue"] = 3,},
 		["Effect"] = {
-			Name = "Plushie Amp",
-			Description = [[When this card attacks, generate 1 Blue and 1 white icons.]],
+			Name = "Over the Hills of Snow",
+			Description = "Whenever this card attacks, generate one Blue and one White icon.",
 			["Type"] = "OnAttack",
 			["Power"] = {{"Blue",1},{"Neutral",1}},
 			Target = "Ally",
@@ -9061,7 +9169,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 5,["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Plushie Amp",
-			Description = [[When this card attacks and destroys a fighter, set its health to 1200 and its power to 500.]],
+			Description = "Whenever this card attacks and destroys a fighter, reset Gusmanak's stats.",
 			["Type"] = "OnAttackDestroy",
 			["Power"] = {{"SetHealth",1200},{"SetPower",500}},
 			Target = "Self",
@@ -9080,7 +9188,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 2,["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Syzygy's Sheen",
-			Description = [[Lock a target fighter for 3 turns.]],
+			Description = "Lock a target fighter for 3 turns.",
 			["Type"] = "OnSummon",
 			["Power"] = "Lock",
 			Target = "Single",
@@ -9090,20 +9198,20 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["JJ5x5"] = {
-		["Id"] = 335687418,
+		["Id"] = 1226640246,
 		["Name"] = "JJ5x5",
-		["Health"] = 700,
+		["Health"] = 500,
 		["Power"] = 300,
 		["Rarity"] = "Rare",
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Thunder",
 		["Color"] = "Green",
-		["Cost"] = {["Green"] = 4,["Neutral"] = 1,},
+		["Cost"] = {["Green"] = 3,["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Plushie Amp",
-			Description = [[When this card destroys another, it gains 250 Health and Power.]],
+			Description = "When this card destroys another, it gains 150 Health and Power.",
 			["Type"] = "OnDestroy",
-			["Power"] = {{"Heal",250},{"Strengthen",250}},
+			["Power"] = {{"Heal",150},{"Strengthen",150}},
 			Target = "Self",
 		},
 		["Bio"] = "Yo! I made Thrillville on ROBLOX and some other silly ROBLOX videos...",
@@ -9121,7 +9229,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 7,},
 		["Effect"] = {
 			Name = "Plushie Amp",
-			Description = [[Whenever this card is targeted, gain 500 Life and put a random Rare into your hand.]],
+			Description = "Whenever this card is targeted, gain 500 Life and put a random Rare into your hand.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Cost",-500},{"RandomAdd","Rare"}},
 			Target = "Ally",
@@ -9140,7 +9248,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Christmas Amp",
-			Description = [[A target fighter gains 300 health. Your opponent gains 300 life.]],
+			Description = "A target fighter gains 300 health. Your opponent gains 300 life.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",300},{"Inflict",-300,"Opponent"}},
 			Target = "Single",
@@ -9160,7 +9268,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Snowman Amp",
-			Description = [[Target a fighter. Generate a Yellow icon. Both players gain 500 Life.]],
+			Description = "Target a fighter. Generate a Yellow icon. Both players gain 500 Life.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",0},{"Yellow",1,"Ally"},{"Inflict",-500,"All"}},
 			Target = "Single",
@@ -9195,12 +9303,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Rare",
 		["Archetype"] = "Hero",
 		["Token"] = true,
+		["Fading"] = true,
 		["AttackEffect"] = "Thunder",
 		["Color"] = "Neutral",
 		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Revival",
-			Description = "Put a copy of this card into your hand. Robot can't generate icons.",
+			Description = "Put a copy of this card into your hand. Robot can't generate icons. This card does not activate effects upon dying.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Add","Robot"}},
 			Target = "Ally",
@@ -9236,23 +9345,36 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] =  897242956,
 				["Bio"] = "Falling out of a boat… WITH STYLE.",
 				["Effect"] = {
-					Name = "Render",
-					Description = "Deal 300 damage to a target fighter, then lock it for 1 turn. When an enemy fighter dies, return this fighter to your hand and gain a red icon.",
+					Name = "🤔",
+					Description = "Deal 300 damage to a target fighter, then lock it for 1 turn. When an enemy fighter dies, return this fighter to your hand and gain a red icon. This card does not activate any effects upon dying.",
 					["Type"] = "OnSummon",
 					["Power"] = {{"Summon","LeetWizard Token-Sun","Ally"},{"Lock",1},{"Damage",300},{"Damage",9999,"Self"}},
 					Target = "Single",
 				},
-			}
+			},
+			["LeetWizard-Masant"] = {
+				["Id"] =  1009952658,
+				["AltArt"] = true,
+				["Bio"] = "Treas0ner, you're dumb. Wesker, you're toxic. Dairing, resize your images. Myr, stop being weird. Blitz, stop wasting your time. Histor, be quiet. Soul, stop admin abusing. Vis, man up.",
+				["Effect"] = {
+					Name = "🤔",
+					Description = "Deal 300 damage to a target fighter, then lock it for 1 turn. When an enemy fighter dies, return this fighter to your hand and gain a red icon. This card does not activate any effects upon dying.",
+					["Type"] = "OnSummon",
+					["Power"] = {{"Summon","LeetWizard Masantoken","Ally"},{"Lock",1},{"Damage",300},{"Damage",9999,"Self"}},
+					Target = "Single",
+				},
+			},
 		},
 		["Health"] = 500,
 		["Power"] = 300,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Thunder",
+		["Fading"] = true,
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 2, ["Red"] = 2},
 		["Effect"] = {
-			Name = "Render",
-			Description = "Deal 300 damage to a target fighter, then lock it for 1 turn. When an enemy fighter dies, return this fighter to your hand and gain a red icon.",
+			Name = "🤔",
+			Description = "Deal 300 damage to a target fighter, then lock it for 1 turn. When an enemy fighter dies, return this fighter to your hand and gain a red icon. This card does not activate any effects upon dying.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Summon","LeetWizard Token","Ally"},{"Lock",1},{"Damage",300},{"Damage",9999,"Self"}},
 			Target = "Single",
@@ -9269,23 +9391,35 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] =  897242956,
 				["Bio"] = "Falling out of a boat… WITH STYLE.",
 				["Effect"] = {
-					Name = "Render",
-					Description = "Deal 300 damage to a target fighter, then lock it for 1 turn. When an enemy fighter dies, return this fighter to your hand and gain a red icon.",
-					["Type"] = "OnSummon",
+					Name = "🤔",
+					Description = "Deal 300 damage to a target fighter, then lock it for 1 turn. When an enemy fighter dies, return this fighter to your hand and gain a red icon. This card does not activate any effects upon dying.",
+					["Type"] = "OnEnemyDeath",
 					["Power"] = {{"Add","LeetWizard-Sun"},{"Red",1},{"Damage",9999,"Self"}},
 					Target = "Ally",
 				},
-			}
+			},
+			["LeetWizard Masantoken"] = {
+				["Id"] =  897242956,
+				["Bio"] = "Treas0ner, you're dumb. Wesker, you're toxic. Dairing, resize your images. Myr, stop being weird. Blitz, stop wasting your time. Histor, be quiet. Soul, stop admin abusing. Vis, man up.",
+				["Effect"] = {
+					Name = "🤔",
+					Description = "Deal 300 damage to a target fighter, then lock it for 1 turn. When an enemy fighter dies, return this fighter to your hand and gain a red icon. This card does not activate any effects upon dying.",
+					["Type"] = "OnEnemyDeath",
+					["Power"] = {{"Add","LeetWizard-Masant"},{"Red",1},{"Damage",9999,"Self"}},
+					Target = "Ally",
+				},
+			},			
 		},
 		["Health"] = 500,
 		["Power"] = 300,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Thunder",
+		["Fading"] = true,
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 2, ["Red"] = 2},
 		["Effect"] = {
-			Name = "Render",
-			Description = "Deal 300 damage to a target fighter, then lock it for 1 turn. When an enemy fighter dies, return this fighter to your hand and gain a red icon.",
+			Name = "🤔",
+			Description = "Deal 300 damage to a target fighter, then lock it for 1 turn. When an enemy fighter dies, return this fighter to your hand and gain a red icon. This card does not activate any effects upon dying.",
 			["Type"] = "OnEnemyDeath",
 			["Power"] = {{"Add","LeetWizard"},{"Red",1},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -9344,11 +9478,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackBlock"] = true,
 		["Archetype"] = "Defender",
 		["Token"] = true,
+		["Fading"] = true,
 		["Color"] = "Neutral",
 		["Cost"] = {["Neutral"] = 0},
 		["Effect"] = {
 			Name = "Revival",
-			Description = "Can't attack. Deal 9999 damage to this card at the end of your turn.",
+			Description = "Can't attack. At the end of the turn, destroy this fighter. This card does not activate any effects upon dying.",
 			["Type"] = "OnEnd",
 			["Power"] = "Damage",
 			Target = "Self",
@@ -9382,9 +9517,10 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Wishnite-ArtV"] = {
 				["Name"] = "SilentNite",
+				["AltArt"] = true,
 				["Id"] = 585627393,
 				["Bio"] = "No presents. No turkey. No festivity allowed.",
-			}
+			},
 		},
 		["Health"] = 750,
 		["Power"] = 1000,
@@ -9394,7 +9530,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 8,},
 		["Effect"] = {
 			Name = "Wishing Amp",
-			Description = [[When this card attacks and destroys a fighter, Unlock this fighter and increase its Health by 150.]],
+			Description = "When this card attacks and destroys a fighter, Unlock this fighter and increase its Health by 150.",
 			["Type"] = "OnAttackDestroy",
 			["Power"] = {{"Heal",150},{"Unlock",999}},
 			Target = "Self",
@@ -9409,10 +9545,10 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["ChickenLord-ArtV"] = {
 				["Id"] = 661049986,
 				["Bio"] = "You get a chicken leg, and YOU get a chicken leg! Everyone gets a chicken leg!",
-			};
+			},
 		},
-		["Health"] = 700,
-		["Power"] = 700,
+		["Health"] = 650,
+		["Power"] = 650,
 		["Rarity"] = "Rare",
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Thunder",
@@ -9437,10 +9573,10 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["GrandGlaciem-ArtV"] = {
 				["Id"] = 661049605,
 				["Bio"] = "Icier than Icytea.",
-			};
+			},
 		},		
 		["Health"] = 700,
-		["Power"] = 700,
+		["Power"] = 500,
 		["Rarity"] = "Rare",
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Thunder",
@@ -9464,9 +9600,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["GrandIgnis-ArtV"] = {
 				["Id"] = 540744997,
 				["Bio"] = "His Phoenix is as hot as his looks..",
-			};
+			},
 		},		
-		["Health"] = 700,
+		["Health"] = 500,
 		["Power"] = 700,
 		["Rarity"] = "Rare",
 		["Archetype"] = "Hero",
@@ -9491,11 +9627,11 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["meebtotem-ArtV"] = {
 				["Id"] = 661049837,
 				["Bio"] = "Silly kids, Surfboards are for Meeboids!",
-			};
+			},
 			["Grand Meeboid Totem-Sun"] = {
-				["Id"] = 897238058,
+				["Id"] = 897237736,
 				["Bio"] = "Are they worshipping Cthulhu, or praying for good weather? Who knows!? All they can say is ‘meep’ and ‘moop.’",
-			};
+			},
 		},
 		["Health"] = 700,
 		["Power"] = 0,
@@ -9521,7 +9657,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Grand Pirate King-Sun"] = {
 				["Id"] = 897237873,
 				["Bio"] = "You get a cannon! And YOU get a cannon! Everybody gets a cannon!",
-			};
+			},
 		},	
 		["Health"] = 500,
 		["Power"] = 500,
@@ -9651,14 +9787,14 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 480297793,
 				["AltArt"] = true,
 				["Effect"] = {
-						Name = "Dreadsteed",
-						Description = [[Shuffle a copy of Myrmiredon back into your deck.]],
-						["Type"] = "OnSummon",
-						["Power"] = {{"DeckAdd","MyrmiredonV2"}},
-						Target = "Ally",
+					Name = "Dreadsteed",
+					Description = "Shuffle a copy of Myrmiredon back into your deck.",
+					["Type"] = "OnSummon",
+					["Power"] = {{"DeckAdd","MyrmiredonV2"}},
+					Target = "Ally",
 				},
 				["Bio"] = "Greetings, honourable invaders. Thank you for coming so far. However, as you can see, we are poor. Do you truly believe you'll find what you want here?",
-			}
+			},
 		},
 		["Health"] = 500,
 		["Power"] = 500,
@@ -9668,7 +9804,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 5,},
 		["Effect"] = {
 			Name = "Dreadsteed",
-			Description = [[Shuffle a copy of Myrmiredon back into your deck.]],
+			Description = "Shuffle a copy of Myrmiredon back into your deck.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"DeckAdd","Myrmiredon"}},
 			Target = "Ally",
@@ -9683,14 +9819,14 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["MyrmiredonV2 2"] = {
 				["Id"] = 480297793,
 				["Effect"] = {
-						Name = "Dreadsteed",
-						Description = [[2 Charges. At the end of your turns, Remove a charge. If there are no charges, shuffle a copy of Myrmiredon back into your deck.]],
-						["Type"] = "OnEnd",
-						["Power"] = {{"Summon","MyrmiredonV2 3"},{"Unlock",9999,"Archetype"},{"Damage",9999,"Self"}},
-						Target = "Ally",
+					Name = "Dreadsteed",
+					Description = [[2 Charges. At the end of your turns, Remove a charge. If there are no charges, shuffle a copy of Myrmiredon back into your deck.]],
+					["Type"] = "OnEnd",
+					["Power"] = {{"Summon","MyrmiredonV2 3"},{"Unlock",9999,"Archetype"},{"Damage",9999,"Self"}},
+					Target = "Ally",
 				},
 				["Bio"] = "Greetings, honourable invaders. Thank you for coming so far. However, as you can see, we are poor. Do you truly believe you'll find what you want here?",
-			}
+			},
 		},
 		["Health"] = 400,
 		["Power"] = 400,
@@ -9716,14 +9852,14 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["MyrmiredonV2 3"] = {
 				["Id"] = 480297793,
 				["Effect"] = {
-						Name = "Dreadsteed",
-						Description = [[1 Charge. At the end of your turns, Remove a charge. If there are no charges, shuffle a copy of Myrmiredon back into your deck.]],
-						["Type"] = "OnEnd",
-						["Power"] = {{"Summon","MyrmiredonV2 4"},{"Unlock",9999,"Archetype"},{"Damage",9999,"Self"}},
-						Target = "Ally",
+					Name = "Dreadsteed",
+					Description = [[1 Charge. At the end of your turns, Remove a charge. If there are no charges, shuffle a copy of Myrmiredon back into your deck.]],
+					["Type"] = "OnEnd",
+					["Power"] = {{"Summon","MyrmiredonV2 4"},{"Unlock",9999,"Archetype"},{"Damage",9999,"Self"}},
+					Target = "Ally",
 				},
 				["Bio"] = "Greetings, honourable invaders. Thank you for coming so far. However, as you can see, we are poor. Do you truly believe you'll find what you want here?",
-			}
+			},
 		},
 		["Health"] = 400,
 		["Power"] = 400,
@@ -9756,7 +9892,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 					Target = "Ally",
 				},
 				["Bio"] = "Greetings, honourable invaders. Thank you for coming so far. However, as you can see, we are poor. Do you truly believe you'll find what you want here?",
-			}
+			},
 		},
 		["Health"] = 400,
 		["Power"] = 400,
@@ -9788,8 +9924,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Token"] = true,
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
-			Name = "Sadnuss",
-			Description = [[When this card attacks, gain 1 Yellow icon. This card cannot generate icons through other means.]],
+			Name = "Nerf",
+			Description = "When this card attacks, gain 1 Yellow icon. This card cannot generate icons through other means.",
 			Type = "OnAttack",
 			Power = "Yellow",
 			Target = "Ally",
@@ -9811,8 +9947,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
-			Name = "Swarm",
-			Description = [[Haste. When this card attacks, put a random Bee card into your hand. This card can't generate icons.]],
+			Name = "Nerf",
+			Description = "Haste. When this card attacks, put a random Bee card into your hand. This card can't generate icons.",
 			Type = "OnAttack",
 			Power = "RandomAdd",
 			Target = "Ally",
@@ -9832,8 +9968,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Blue",
 		["Cost"] = {["Blue"] = 3,["Yellow"] = 1,},
 		["Effect"] = {
-			Name = "Hive Crack",
-			Description = [[Put a Swarm into your hand at the end of each of your turns.]],
+			Name = "Nerf",
+			Description = "Put a Swarm into your hand at the end of each of your turns.",
 			Type = "OnEnd",
 			Power = "Add",
 			Target = "Ally",
@@ -9850,16 +9986,17 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Slash",
 		["Archetype"] = "Bee",
+		["Fading"] = true,
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 2,["Yellow"] = 2,},
 		["Effect"] = {
-			Name = "Hive Crack",
-			Description = [[Put two bees into your hand. Whenever you summon a fighter, increase the power of all bees by 25.]],
+			Name = "Nerf",
+			Description = "Put two bees into your hand. Whenever you summon a fighter, increase the power of all bees by 25.",
 			Type = "OnSummon",
 			Power = {{"Add","Bee"},{"Add","Bee"},{"Summon","Beekeeper Token"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
-		["Bio"] = [[Beekeepers have the hardest job in the entire beeverse. But they're one of the most important.]],
+		["Bio"] = "Beekeepers have the hardest job in the entire beeverse. But they're one of the most important.",
 	},
 	
 	["Beekeeper Token"] = {
@@ -9873,13 +10010,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 2,["Yellow"] = 2,},
 		["Effect"] = {
-			Name = "Hive Crack",
-			Description = [[Put two bees into your hand. Whenever you summon a fighter, increase the power of all bees by 25.]],
+			Name = "Nerf",
+			Description = "Put two bees into your hand. Whenever you summon a fighter, increase the power of all bees by 25.",
 			Type = "OnAllySummon",
 			Power = {{"Strengthen",25,"Archetype"}},
 			Target = "Ally",
 		},
-		["Bio"] = [[Beekeepers have the hardest job in the entire beeverse. But they're one of the most important.]],
+		["Bio"] = "Beekeepers have the hardest job in the entire beeverse. But they're one of the most important.",
 	},
 	
 	["Queen Bee"] = {
@@ -9893,13 +10030,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Blue",
 		["Cost"] = {["Blue"] = 3,["Yellow"] = 3,},
 		["Effect"] = {
-			Name = "Hive Crack",
+			Name = "Nerf",
 			Description = [[Summon a "Bee" and increase the health and power of all Bee-related fighters by 50 at the end of your turns.]],
 			Type = "OnEnd",
 			Power = {{"Summon","Bee","Ally"},{"Strengthen",50},{"Heal",50}},
 			Target = "Archetype",
 		},
-		["Bio"] = [[She creates Bees to do the same thing she does every night. Try and take over the world!]],
+		["Bio"] = "She creates Bees to do the same thing she does every night. Try and take over the world!",
 	},
 	
 	["True Hivemind"] = {
@@ -9913,13 +10050,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Blue",
 		["Cost"] = {["Blue"] = 5,["Yellow"] = 5,},
 		["Effect"] = {
-			Name = "Hive Crack",
+			Name = "NERF BEES",
 			Description = [[Summon 3 "Bee" fighters and increase the health and power of all Bee-related fighters by 250.]],
 			Type = "OnSummon",
 			Power = {{"Summon","Bee"},{"Summon","Bee"},{"Summon","Bee"},{"Strengthen",250,"Archetype"},{"Heal",250,"Archetype"}},
 			Target = "Ally",
 		},
-		["Bio"] = [[When we are dry. You think it is all over? No, it has only just beegun.]],
+		["Bio"] = "When we are dry. You think it is all over? No, it has only just beegun.",
 	},
 	
 	["Nightmare"] = {
@@ -9934,17 +10071,17 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Nightmare!",
-			Description = [[This card cant be discarded. You lose 300 life.]],
+			Description = "This card cant be discarded. You lose 300 life.",
 			Type = "OnSummon",
 			Power = "Cost",
 			Target = "Ally",
 			Increase = 300
 		},
-		["Bio"] = [[It begins.]],
+		["Bio"] = "It begins.",
 	},
 	
 	["Delusionist"] = {
-		["Id"] = 345760339,
+		["Id"] = 1024780201,
 		["Name"] = "Delusionist",
 		["Health"] = 700,
 		["Power"] = 200,
@@ -9952,15 +10089,15 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Nightmare",
 		["AttackEffect"] = "Slash",
 		["Color"] = "Blue",
-		["Cost"] = {["Blue"] = 4,["Neutral"] = 2,},
+		["Cost"] = {["Blue"] = 3,["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Hive Crack",
-			Description = [[Put 2 Nightmares to your opponent's hand.]],
+			Description = "Put 2 Nightmares into your opponent's hand.",
 			Type = "OnSummon",
 			Power = {{"Add","Nightmare"},{"Add","Nightmare"}},
 			Target = "Opponent",
 		},
-		["Bio"] = [[This card isn't even real.]],
+		["Bio"] = "This card isn't even real.",
 	},
 	
 	["Rat King"] = {
@@ -9975,12 +10112,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 1,["Green"] = 1,},
 		["Effect"] = {
 			Name = "Hive Crack",
-			Description = [[Put a "Nightmare" into your opponent's hand. Increase the power of all Nightmare fighters by 200.]],
+			Description = "Put a Nightmare into your opponent's hand. All Nightmare-related fighters gain 200 Power.",
 			Type = "OnSummon",
 			Power = {{"Add","Nightmare"},{"Strengthen",200,"Archetype"}},
 			Target = "Opponent",
 		},
-		["Bio"] = [[To immobilize the weak. That is what the Rat King makes those fear.]],
+		["Bio"] = "To immobilize the weak. That is what the Rat King makes those fear.",
 	},
 	
 	["Traumaturge"] = {
@@ -9995,12 +10132,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 3,["Green"] = 1,},
 		["Effect"] = {
 			Name = "Night Creak",
-			Description = [[Lock a target fighter for two turns. Put two nightmares into your opponent's hand.]],
+			Description = "Lock a target fighter for two turns. Put two nightmares into your opponent's hand.",
 			Type = "OnSummon",
 			Power = {{"Add","Nightmare"},{"Add","Nightmare"},{"Lock",2,"Single"}},
 			Target = "Opponent",
 		},
-		["Bio"] = [[A nightmare of a choice.]],
+		["Bio"] = "A nightmare of a choice.",
 	},
 	
 	
@@ -10015,12 +10152,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 3,["Blue"] = 1,},
 		["Effect"] = {
 			Name = "Nightmare!",
-			Description = [[Your opponent loses 2 white icons. This effect can cause negative icons. Draw a card.]],
+			Description = "Your opponent loses 2 white icons. This effect can cause negative icons. Draw a card.",
 			Type = "OnSummon",
 			Power = {{"White",-2},{"Draw",1,"Ally"}},
 			Target = "Opponent",
 		},
-		["Bio"] = [[Reccomended by Mr.Bones that you do NOT go on this wild ride.]],
+		["Bio"] = "Reccomended by Mr.Bones that you do NOT go on this wild ride.",
 	},
 	
 	["Consume Dream"] = {
@@ -10034,12 +10171,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 1,["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Nightmare!",
-			Description = [[Put a Nightmare to your opponent's hand. Increase the health of all Nightmare related fighters by 500.]],
+			Description = "Put a Nightmare into your opponent's hand. All Nightmare-related fighters gain 500 Health.",
 			Type = "OnSummon",
 			Power = {{"Add","Nightmare","Opponent"},{"Heal",500}},
 			Target = "Archetype",
 		},
-		["Bio"] = [[Gengar approved.]],
+		["Bio"] = "Gengar approved.",
 	},
 	
 	["Great Lord Egotist"] = {
@@ -10049,8 +10186,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Great Lord Egotist-ArtV"] = {
 				["Id"] = 898724903,
 				["AltArt"] = true,
-				["Bio"] = [[I am the wild dog watching with sixteen omniscient eyes. Unblinking endless judgment, cast as the patterns rise.]],
-			}
+				["Bio"] = "I am the wild dog watching with sixteen omniscient eyes. Unblinking endless judgment, cast as the patterns rise.",
+			},
 		},
 		["Health"] = 1200,
 		["Power"] = 0,
@@ -10061,12 +10198,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Blue"] = 3,["Green"] = 2,},
 		["Effect"] = {
 			Name = "Night Creak",
-			Description = [[Put a Nightmare to the opponent's hand and increase the Health of all Nightmare related fighters by 300 at the end of each turn.]],
+			Description = "At the end of your turns, put a Nightmare into your opponent's hand and give all Nightmare-related fighters 300 Health.",
 			Type = "OnEnd",
 			Power = {{"Add","Nightmare"},{"Heal",300,"Archetype"}},
 			Target = "Opponent",
 		},
-		["Bio"] = [[Once, I was human. Now, I am much more.]],
+		["Bio"] = "Once, I was human. Now, I am much more.",
 	},
 
 	["Vermin's Caress"] = {
@@ -10080,12 +10217,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 2},
 		["Effect"] = {
 			Name = "Nightmare!",
-			Description = [[Shuffle 3 Nightmares into your opponent's deck.]],
+			Description = "Shuffle 3 Nightmares into your opponent's deck.",
 			Type = "OnSummon",
 			Power = {{"DeckAdd","Nightmare"},{"DeckAdd","Nightmare"},{"DeckAdd","Nightmare"}},
 			Target = "Opponent",
 		},
-		["Bio"] = [[They'll be complaining that they drew it every, single, time.]],
+		["Bio"] = "They'll be complaining that they drew it every, single, time.",
 	},
 	
 	["BlackSymphony"] = {
@@ -10095,7 +10232,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["BlackSymphony-Val"] = {
 				["Id"] = 655010800,					
 				["Bio"] = "Stop showing your shoulders like that, it's l-l-lewd.",
-			}
+			},
 		},	
 		["Health"] = 650,
 		["Power"] = 650,
@@ -10106,7 +10243,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 5,["Neutral"] = 3},
 		["Effect"] = {
 			Name = "Dreadfreeze",
-			Description = [[Shuffle a copy of BlackSymphony into your deck. This card can't generate icons.]],
+			Description = "Shuffle a copy of BlackSymphony into your deck. This card can't generate icons.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"DeckAdd","BlackSymphony"}},
 			Target = "Self",
@@ -10126,8 +10263,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 3},
 		["Effect"] = {
 			Name = "Counter Strike",
-			Description = "When this card Attacks, Lock all enemy fighters for 1 turn. This fighter is locked an additional two turns when it attacks.",
-			["Type"] = "OnAttack",
+			Description = "After this card Attacks, Lock all enemy fighters for 1 turn. This fighter is locked an additional two turns when it attacks.",
+			["Type"] = "OnAttackEnd",
 			["Power"] = {{"Lock",1},{"Lock",3,"Self"}},
 			Target = "Opponent",
 			Increase = 1
@@ -10154,9 +10291,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["CounterBlock"] = true,
 		["Effect"] = {
 			Name = "Sudden Death",
-			Description = [[Can't counterattack. When this card dies, return all fighters to their owner's hand.]],
+			Description = "Can't counterattack. When this card dies, return all fighters to their owners hands.",
 			["Type"] = "OnDeath",
-			["Power"] = {{"Return",4000}},
+			["Power"] = {{"Return",030}},
 			Target = "All",
 		},
 		["Bio"] = "Hey guys! I brought a frost nuke to the new year's part- *Trips*",
@@ -10174,7 +10311,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Red"] = 1,["Green"] = 1,},
 		["Effect"] = {
 			Name = "Sudden Death",
-			Description = [[When this card attacks and destroys another, Destroy this fighter.]],
+			Description = "When this card attacks and destroys another, Destroy this fighter.",
 			["Type"] = "OnAttackDestroy",
 			["Power"] = {{"Damage",9999}},
 			Target = "Self",
@@ -10193,7 +10330,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Green"] = 4,},
 		["Effect"] = {
 			Name = "Sudden Death",
-			Description = [[Whenever you summon a fighter, swap the stats of a target fighter.]],
+			Description = "Whenever you summon a fighter, swap the stats of a target fighter.",
 			["Type"] = "OnAllySummon",
 			["Power"] = {{"Swap",1}},
 			Target = "Target",
@@ -10204,6 +10341,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["WarbearNomkins"] = {
 		["Id"] = 358596502,
 		["Name"] = "WarbearNomkins",
+		AltCards = {
+			["WarnomBearkins"] = {
+				["Id"] = 1340258846,
+				["Bio"] = "In Soviet Russia, bear ride you!",
+			},
+		},
 		["Health"] = 500,
 		["Power"] = 700,
 		["Rarity"] = "Uncommon",
@@ -10212,7 +10355,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Sudden Death",
-			Description = [[When this card attacks, increase the health of all Ally fighters by 100.]],
+			Description = "When this card attacks, increase the health of all Ally fighters by 100.",
 			["Type"] = "OnAttack",
 			["Power"] = {{"Heal",100}},
 			Target = "Ally",
@@ -10231,7 +10374,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Sudden Death",
-			Description = [[Gain 1 Red icon at the end of each of your turns.]],
+			Description = "At the end of your turns, generate a red icon.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Red",1}},
 			Target = "Self",
@@ -10252,7 +10395,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Green"] = 2,},
 		["Effect"] = {
 			Name = "Sudden Death",
-			Description = [[Haste. When this card attacks, put a random Rare to your hand.]],
+			Description = "Haste. Whenever this card attacks, put a random Rare into your hand.",
 			["Type"] = "OnAttack",
 			["Power"] = "RandomAdd",
 			Target = "Ally",
@@ -10274,7 +10417,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Assimilate",
 			Description = "At the end of your turns, put a fried one limb into your hand.",
-			["Type"] = "OnSummon",
+			["Type"] = "OnTurnEnd",
 			["Power"] = {{"RandomAdd","Limb"}},
 			Target = "Ally",
 		},
@@ -10311,7 +10454,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 4,["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Sudden Profit",
-			Description = [[Gain 1 Red and 1 Yellow icon at the end of each of your turns.]],
+			Description = "Gain 1 Red and 1 Yellow icon at the end of each of your turns.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Red",1},{"Yellow",1}},
 			Target = "Self",
@@ -10322,7 +10465,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["zachattack83"] = {
 		["Id"] = 362314734,
 		["Name"] = "zachattack83",
-		["Health"] = 600,
+		["Health"] = 700,
 		["Power"] = 1400,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Lightning",
@@ -10330,7 +10473,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 3,["Blue"] = 1,["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Zach + Attack = Pun",
-			Description = [[When this card attacks, gain 1 Red icon.]],
+			Description = "When this card attacks, gain 1 Red icon.",
 			["Type"] = "OnAttack",
 			["Power"] = "Red",
 			Target = "Self",
@@ -10344,10 +10487,10 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Eidevin",
 		["AltCards"] = {
 			["Elfdevin"] = {
-				["Id"] = 585627429,
+				["Id"] = 1247061944,
 				["Name"] = "Elfdevin",
-				["Bio"] = "I'm firing my laser, I guess... Blawh. ¬_¬",
-			}
+				["Bio"] = "I just had a horrible nightmare where I looked objectively worse than my regular art!",
+			},
 		},
 		["Health"] = 600,
 		["Power"] = 300,
@@ -10357,7 +10500,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 2,["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Infinite Profit",
-			Description = [[When this card attacks, draw a card.]],
+			Description = "When this card attacks, draw a card.",
 			["Type"] = "OnAttack",
 			["Power"] = {{"Draw",1}},
 			Target = "Ally",
@@ -10377,7 +10520,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "Infinite Doge",
-			Description = [[Put a random Doge to your hand.]],
+			Description = "Put a random Doge into your hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"RandomAdd","Doge"}},
 			Target = "Ally",
@@ -10397,7 +10540,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Kobe can doge a ball",
-			Description = [[When this card attacks, put a random Doge to your hand.]],
+			Description = "When this card attacks, put a random Doge into your hand.",
 			["Type"] = "OnAttack",
 			["Power"] = {{"RandomAdd","Doge"}},
 			Target = "Self",
@@ -10416,7 +10559,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 3,["Blue"] = 1,},
 		["Effect"] = {
 			Name = "Bren tier meal.",
-			Description = [[When this card attacks, gain 1 Yellow icon.]],
+			Description = "Whenever this card attacks, generate a Yellow icon.",
 			["Type"] = "OnAttack",
 			["Power"] = "Yellow",
 			Target = "Self",
@@ -10437,9 +10580,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Charge"] = true,
 		["Effect"] = {
 			Name = "JUST SCRIPT IT",
-			Description = [[Haste. When this card attacks, deal 400 damage to all enemy fighters and lock this card for an additional two turns.]],
+			Description = "Haste. When this card attacks, deal 400 damage to all enemy fighters and lock this card for an additional two turns.",
 			["Type"] = "OnAttack",
-			["Power"] = {{"Damage",400},{"Lock",3,"Self"}},
+			["Power"] = {{"Damage",400},{"Lock",2,"Self"}},
 			Target = "Opponent",
 		},
 		["Bio"] = "A lot of thought and letters went into Paranormanbiggestfan's name.",
@@ -10458,7 +10601,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["CounterBlock"] = true,
 		["Effect"] = {
 			Name = "Paranormanbiggestfan attack w/ Paranormanbiggestfan.",
-			Description = [[Can't counterattack. When this card destroys another, draw 2 cards.]],
+			Description = "Can't counterattack. When this card destroys another, draw 2 cards.",
 			["Type"] = "OnDestroy",
 			["Power"] = "Draw",
 			Target = "Ally",
@@ -10478,7 +10621,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Green"] = 2,},
 		["Effect"] = {
 			Name = "Blaster Hardscope",
-			Description = [[Deal 200 damage to a target fighter.]],
+			Description = "Deal 200 damage to a target fighter.",
 			["Type"] = "OnSummon",
 			["Power"] = "Damage",
 			Target = "Single",
@@ -10498,7 +10641,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 2,},
 		["Effect"] = {
 			Name = "Blaster Hardscope",
-			Description = [[When this card attacks, put a random red or blue action to your hand.]],
+			Description = "When this card attacks, put a random red or blue action to your hand.",
 			["Type"] = "OnAttack",
 			["Power"] = {{"RandomAdd","Lunar"}},
 			Target = "Ally",
@@ -10518,7 +10661,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 3,["Neutral"] = 3},
 		["Effect"] = {
 			Name = "Char",
-			Description = [[Deal 200 damage to a target fighter, then swap its health and power.]],
+			Description = "Deal 200 damage to a target fighter, then swap its health and power.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",200},{"Swap","k"}},
 			Target = "Single",
@@ -10537,7 +10680,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 4,},
 		["Effect"] = {
 			Name = "Fattening",
-			Description = [[Increase the Health of a target fighter by 500.]],
+			Description = "Increase the Health of a target fighter by 500.",
 			["Type"] = "OnSummon",
 			["Power"] = "Heal",
 			Target = "Single",
@@ -10569,7 +10712,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 8,["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "Solar Hardscope",
-			Description = [[At the end of each of your turns, draw a card and deal 400 damage to SolarCrane.]],
+			Description = "At the end of each of your turns, draw a card and deal 400 damage to SolarCrane.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Draw",1},{"Damage",500}},
 			Target = "Self",
@@ -10580,6 +10723,20 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["OstrichSized"] = {
 		["Id"] = 362315583,
 		["Name"] = "OstrichSized",
+		["AltCards"] = {
+			["Baba Yaga"] = {
+				["Id"] =  1262128046,
+				["Name"] = "Baba Yaga",
+				["Effect"] = {
+					Name = "What's a Baba Yaga?",
+					Description = "Summon a Bab Yaga at the end of each of your turns. Bab Yagas can't generate icons.",
+					["Type"] = "OnEnd",
+					["Power"] = {{"Summon","Bab Yaga"}},
+					Target = "Ally",
+				},
+				["Bio"] = "The real question is, would Shedletsky eat this?",
+			},
+		},
 		["Health"] = 1200,
 		["Power"] = 675,
 		["Rarity"] = "Legendary",
@@ -10588,7 +10745,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Yellow"] = 4,},
 		["Effect"] = {
 			Name = "Ostrich Cannon",
-			Description = [[Summon an Ostrich at the end of each of your turns. Ostriches can't generate icons.]],
+			Description = "Summon an Ostrich at the end of each of your turns. Ostriches can't generate icons.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Summon","Ostrich"}},
 			Target = "Ally",
@@ -10599,6 +10756,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Ostrich"] = {
 		["Id"] = 362315628,
 		["Name"] = "Ostrich",
+		["AltCards"] = {
+			["Bab Yaga"] = {
+				["Id"] =  1262132339,
+				["Name"] = "Bab Yaga",
+				["Bio"] = "Shedletsky would DEFINITELY eat this.",
+			},
+		},
 		["Token"] = true,
 		["Health"] = 300,
 		["Power"] = 150,
@@ -10633,20 +10797,20 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Alapz"] = {
 		["Id"] = 959677164,
 		["Name"] = "Countercharm",
-		["Health"] = 1000,
-		["Power"] = 0,
+		["Health"] = 700,
+		["Power"] = 700,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Green",
 		["Cost"] = {["Neutral"] = 4,["Green"] = 4,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Whenever you gain life, both players lose 100 life.",
+			Description = "Whenever you gain life, reset Countercharm's stats.",
 			["Type"] = "OnHealthGain",
-			["Power"] = {{"Cost",100},{"Inflict",100,"Opponent"}},
-			Target = "Ally",
+			["Power"] = {{"SetPower",700},{"SetHealth",700}},
+			Target = "Self",
 		},
-		["Bio"] = "Its up to you to decide wether this card is lifegain or lifeloss. (It's not both)",
+		["Bio"] = "Give him an inch, he'll give you a mile. ...Get your mind out of the gutter.",
 	},		
 	
 	["Blockhaak"] = {
@@ -10660,7 +10824,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Green"] = 3,},
 		["Effect"] = {
 			Name = "Ostrich Cannon",
-			Description = [[Increase this fighter's power by 200 at the end of your turns.]],
+			Description = "Increase this fighter's power by 200 at the end of your turns.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Strengthen",200}},
 			Target = "Self",
@@ -10671,7 +10835,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["BrightEyes"] = {
 		["Id"] = 363166042,
 		["Name"] = "BrightEyes",
-		AltCards = {
+		["AltCards"] = {
 			["BrightEyes-ArtV"] = {
 				["Id"] = 411806569,
 				["AltArt"] = true,
@@ -10692,17 +10856,17 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Cup O Tea",
 		["AltCards"] = {
 			["Hot Chocolate"] = {
-				["Id"] = 585627292,
+				["Id"] = 1247063639,
 				["Name"] = "Hot Chocolate",
 				["Effect"] = {
 					Name = "Sudden Death",
-					Description = [[Shuffle this card back into your deck.]],
+					Description = "Shuffle this card back into your deck.",
 					["Type"] = "OnSummon",
 					["Power"] = {{"DeckAdd","Hot Chocolate"}},
 					Target = "Self",
 				},
 				["Bio"] = "Did you know that the FDA approves up to 90 insect fragments for every 100 grams of hot chocolate? Enjoy eating those mangled cockrooach heads.",
-			}
+			},
 		},
 		["Health"] = 0,
 		["Power"] = 0,
@@ -10712,7 +10876,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 5,},
 		["Effect"] = {
 			Name = "Sudden Death",
-			Description = [[Shuffle this card back into your deck.]],
+			Description = "Shuffle this card back into your deck.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"DeckAdd","Cup O Tea"}},
 			Target = "Self",
@@ -10733,7 +10897,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Defender",
 		["Effect"] = {
 			Name = "Snorlaxing",
-			Description = [[Can't attack. Increase this fighter's health by 300 at the end of each of your turns.]],
+			Description = "Can't attack. Increase this fighter's health by 300 at the end of each of your turns.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Heal",300}},
 			Target = "Self",
@@ -10749,7 +10913,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 469439910,
 				["AltArt"] = true,
 				["Bio"] = "This description has no meaning to me anymore. To be frank, its Merely a coincidence. Part of the 'Aife' Collection! Collect them all!",
-			}
+			},
 		},
 		["Health"] = 500,
 		["Power"] = 500,
@@ -10778,7 +10942,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Red"] = 3,},
 		["Effect"] = {
 			Name = "Twist",
-			Description = [[Whenever this fighter is targeted, deal 100 damage to it and increase its power by 100.]],
+			Description = "Whenever this fighter is targeted, deal 100 damage to it and increase its power by 100.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Damage",100},{"Strengthen",100}},
 			Target = "Self",
@@ -10793,14 +10957,15 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 0,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Lightning",
+		["AttackBlock"] = true,
 		["Color"] = "Green",
 		["Cost"] = {["Neutral"] = 3,["Green"] = 3,},
 		["Effect"] = {
-			Name = "Prakn'd",
-			Description = [[When this card is targeted, give a target fighter 100 health and power.]],
-			["Type"] = "OnSummon",
-			["Power"] = {"Draw",-3},
-			Target = "Ally",
+			Name = "It's a meme you dip",
+			Description = "Gain ½ a white icon.",
+			["Type"] = "OnUnlock",
+			["Power"] = {{"Neutral",.5}},
+			Target = "Single",
 		},
 		["Bio"] = "PRANKED!",
 	},	
@@ -10808,12 +10973,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Taymaster"] = {
 		["Id"] = 363166556,
 		["Name"] = "Taymaster",
-			["AltCards"] = {
+		["AltCards"] = {
 			["TaymasterAltArtV1"] = {
 				["Id"] = 650990770,
 				["AltArt"] = true,
 				["Bio"] = "At this point, running won't help.",
-			}
+			},
 		},												
 		["Health"] = 300,
 		["Power"] = 925,
@@ -10823,7 +10988,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 5,},
 		["Effect"] = {
 			Name = "OUTRAGE!!",
-			Description = "Red fighters gain 200 power. Deal 200 damage to all non-red fighters.",
+			Description = "All non-red fighters lose 200 Health. All red fighters gain 200 Power.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Strengthen",200,"ColorRed"},{"Damage",200,"NotColorRed"}},
 			Target = "All",
@@ -10834,13 +10999,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Teaism"] = {
 		["Id"] = 363172300,
 		["Name"] = "Teaism",
-		AltCards = {
+		["AltCards"] = {
 			["Teadaddy"] = {
 				["Id"] = 540871820,
 				["Name"] = "Teadaddy",
 				["AltArt"] = true,
 				["Effect"] = {
-					Description = [[Put Beedaddy to your hand and gain 3 Green icons.]],
+					Description = "Put Beedaddy to your hand and gain 3 Green icons.",
 					["Power"] = {{"Add","Beedaddy"},{"Green",3}},
 				},
 				["Bio"] = "Beta is coming SOONtm, right Vis?",
@@ -10855,7 +11020,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 7,["Blue"] = 3,},
 		["Effect"] = {
 			Name = "T2B",
-			Description = [[Put "Beeism" into your hand and gain 3 Green icons.]],
+			Description = "Put Beeism into your hand and gain 3 Green icons.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Add","Beeism"},{"Green",3}},
 			Target = "Self",
@@ -10866,7 +11031,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Beeism"] = {
 		["Id"] = 363172190,
 		["Name"] = "Beeism",
-		AltCards = {
+		["AltCards"] = {
 			["Beedaddy"] = {
 				["Name"] = "Beedaddy",
 				["Id"] = 540864462,
@@ -10887,7 +11052,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Green"] = 6,},
 		["Effect"] = {
 			Name = "B2T",
-			Description = [[Put "Teaism" into your hand and gain 3 Blue icons.]],
+			Description = "Put Teaism into your hand and gain 3 Blue icons.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Add","Teaism"},{"Blue",3}},
 			Target = "Self",
@@ -10927,7 +11092,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Anti Extreme Energy Care Package",
 			Description = "Whenever you cast an action or terrain spell, summon a kitten and deal 100 damage to Anti-Fave. Kittens can't generate icons.",
 			["Type"] = "OnAllyCast",
-			["Power"] = {{"Summon","Kitten"},{"Damage",100,"Self"}},
+			["Power"] = {{"RandomSummon",{"Kitten","Kitten2","Kitten3","Kitten4"}},{"Damage",100,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = "He only wants to blox Fave legally, so he's the good guy, right?",
@@ -10955,6 +11120,14 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["legoseed"] = {
 		["Id"] = 384005579,
 		["Name"] = "legoseed",
+		["AltCards"] = {
+			["LegoWraith"] = {
+				["Name"] = "LegoWraith",
+				["Id"] = 1247643090,
+				["AltArt"] = true,
+				["Bio"] = "The Lego of Christmas Past.",
+			},
+		},
 		["Health"] = 800,
 		["Power"] = 800,
 		["Rarity"] = "Legendary",
@@ -10979,7 +11152,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 893398482,
 				["Name"] = "Love Doctor Fave",						
 				["Bio"] = "Time for a lesson from the LOOOOOVE DOCTOR.",
-			}
+			},
 		},										
 		["Health"] = 900,
 		["Power"] = 300,
@@ -10989,9 +11162,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 5,},
 		["Effect"] = {
 			Name = "Doctor's Bag",
-			Description = "Both players gain 2 white icons.",
+			Description = "Both players gain 2 white icons and gain 400 life.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Neutral",2}},
+			["Power"] = {{"Neutral",2},{"Cost",-400}},
 			Target = "All",
 		},
 		["Bio"] = "Apparently Fave is the one that stole his last name.",
@@ -11016,7 +11189,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Ally",
 			Increase = 0,
 		},
-		["Bio"] = "He just likes to see the world frozen.",
+		["Bio"] = "Why can't I attack with StayBlue?",
 	},	
 	
 	["TheGamer101"] = {
@@ -11030,7 +11203,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Yellow"] = 5,},
 		["Effect"] = {
 			Name = "Investment",
-			Description = [[Deal 200 damage to all non-Yellow fighters. Yellow fighters gain 200 health.]],
+			Description = "All non-yellow fighters lose 200 Health. All yellow fighters gain 200 Health.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",200,"NotColorYellow"},{"Heal",200,"ColorYellow"}},
 			Target = "All",
@@ -11045,7 +11218,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Widgeon-Sun"] = {
 				["Id"] = 897248023,
 				["Bio"] = "The floor is Meepcity.",
-			}
+			},
 		},
 		["Health"] = 700,
 		["Power"] = 225,
@@ -11072,6 +11245,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Lightning",
 		["Archetype"] = "Redcliff",
+		["Fading"] = true,
 		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 3,["Red"] = 6,},
 		["Effect"] = {
@@ -11107,6 +11281,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["ROBLOX"] = {
 		["Id"] = 894252975,
 		["Name"] = "ROBLOX",
+		["AltCards"] = {
+			["ROBLOX-C"] = {
+				["Id"] = 1247642009,
+				["Bio"] = "Giving the gift of yellow icons since 1980.",
+				["AltArt"] = true,
+			},
+		},
 		["Health"] = 150,
 		["Power"] = 150,
 		["Rarity"] = "Legendary",
@@ -11131,7 +11312,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 893446906,
 				["AltArt"] = true,
 				["Bio"] = "You just dared him. Prepare for hellish dairy.",
-			}
+			},
 		},
 		["Health"] = 700,
 		["Power"] = 500,
@@ -11161,7 +11342,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Render",
-			Description = "Whenever Bincent is targeted by a creature, lock that creature for six turns. It loses all of its power.",
+			Description = "Whenever Bincent is targeted by a fighter, that fighter loses all of its power, then locked for six turns.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Weaken",9999,"Aggressor"},{"Lock",6,"Aggressor"}},
 			Target = "Ally",
@@ -11194,8 +11375,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Health"] = 600,
 		["Power"] = 700,
 		["Rarity"] = "Rare",
-		["Archetype"] = "Hero",
 		["AttackEffect"] = "Lightning",
+		["Fading"] = true,
 		["Color"] = "Yellow",
 		["Cost"] = {["Yellow"] = 3,["Green"] = 3,},
 			["Effect"] = {
@@ -11214,6 +11395,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Health"] = 600,
 		["Power"] = 700,
 		["Rarity"] = "Token",
+		["Archetype"] = "Hero",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Yellow",
 		["Cost"] = {["Yellow"] = 3,["Green"] = 3,},
@@ -11247,7 +11429,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 					Increase = 2
 				},
 				["Bio"] = "Hmph.",
-			}
+			},
 		},
 		["Health"] = 900,
 		["Power"] = 200,
@@ -11357,7 +11539,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = [[Whenever this fighter is targeted, increase its health by 400.]],
+			Description = "Whenever this fighter is targeted, increase its health by 400.",
 			["Type"] = "OnTarget",
 			["Power"] = "Heal",
 			Target = "Self",	
@@ -11418,7 +11600,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = [[At the end of your turn, unlock Puffy.]],
+			Description = "At the end of your turns, unlock Puffy.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Unlock",999}},
 			Target = "Self",	
@@ -11456,7 +11638,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Subversion",
-			Description = [[Target fighter's stats become 500/500.]],
+			Description = "Target fighter's stats become 500/500.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"SetHealth",500},{"SetPower",500}},
 			Target = "Single",	
@@ -11476,7 +11658,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 3,["Green"] = 1,},
 		["Effect"] = {
 			Name = "Suversion",
-			Description = [[When this card attacks, your opponent gains 500 life.]],
+			Description = "When this card attacks, your opponent gains 500 life.",
 			["Type"] = "OnAttack",
 			["Power"] = {{"Inflict",-500}},
 			Target = "Opponent",	
@@ -11495,7 +11677,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Blue"] = 4,},
 		["Effect"] = {
 			Name = "Strike Diamond!",
-			Description = "When this card Attacks, increase your lifepoints by 300.",
+			Description = "Whenever this card attacks, you gain 300 Life.",
 			["Type"] = "OnAttack",
 			["Power"] = {{"Cost",-300}},
 			Target = "Self",
@@ -11553,7 +11735,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 5,},
 		["Effect"] = {
 			Name = "Strike it up!",
-			Description = "Non-blue fighters lose 200 power. Blue fighters gain 200 power.",
+			Description = "All non-blue fighters lose 200 Power. All blue fighters gain 200 Power.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",200,"NotColorBlue"},{"Strengthen",200,"ColorBlue"}},
 			Target = "Ally",
@@ -11569,7 +11751,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 480385631,
 				["AltArt"] = true,
 				["Bio"] = "Make a pirate pokemon now. iiMasant would love you if you did.",
-			}
+			},
 		},
 		["Health"] = 700,
 		["Power"] = 700,
@@ -11594,12 +11776,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Health"] = 300,
 		["Power"] = 300,
 		["Rarity"] = "Legendary",
-		["AttackEffect"] = "Lightning",
+		["AttackEffect"] = "GunShot",
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 4,["Green"] = 1,["Blue"] = 1,},
 		["Effect"] = {
 			Name = "Snipe!",
-			Description = [[When played, lock a target fighter for 3 turns, then deal 300 damage to it.]],
+			Description = "Lock a target fighter for 3 turns, then deal 300 damage to it.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Lock",3},{"Damage",300}},
 			Target = "Single",
@@ -11618,10 +11800,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 5,},
 		["Effect"] = {
 			Name = "Quick Shot",
-			Description = "Draw 3 cards.",
+			Description = "Draw three cards.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Draw",3},
-		},
+			["Power"] = {{"Draw",3}},
 			Target = "Ally",
 		},
 		["Bio"] = "Creator of Arcane Adventures. Hates the blood element.",
@@ -11633,13 +11814,14 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Health"] = 800,
 		["Power"] = 400,
 		["Rarity"] = "Epic",
-		["AttackEffect"] = "Lightning",
+		["AttackEffect"] = "FurySwipe",
+		["Fading"] = true,
 		["Archetype"] = "Doge",
 		["Color"] = "Yellow",
 		["Cost"] = {["Yellow"] = 4, ["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "B2T",
-			Description = [[Whenever an allied fighter dies, summon a doge.]],
+			Description = "Whenever an allied fighter dies, summon a Doge. This fighter does not activate effects upon death.",
 			["Type"] = "OnAllyDeath",
 			["Power"] = {{"Summon","Doge"}},
 			Target = "Ally",
@@ -11671,7 +11853,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 1,["Blue"] = 2,},
 		["Effect"] = {
 			Name = "Generate all the yellows",
-			Description = [[Gain a Yellow icon at the end of each turn.]],
+			Description = "Gain a Yellow icon at the end of each turn.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Yellow",1}},
 			Target = "Ally",
@@ -11687,7 +11869,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 384011227,
 				["AltArt"] = true,
 				["Bio"] = "Aife's secretly been assigned to target anyone for some dosh! Part of the 'Aife' Collection! Collect them all!",
-			}
+			},
 		},
 		["Health"] = 1250,
 		["Power"] = 700,
@@ -11697,7 +11879,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Red"] = 7,},
 		["Effect"] = {
 			Name = "Power Up",
-			Description = [[Grant a target fighter 350 health and 350 power, then draw one card.]],
+			Description = "Give a target fighter 350 health and power, then draw one card.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Draw",1,"Ally"},{"Heal",350},{"Strengthen",350}},
 			Target = "Single",
@@ -11717,7 +11899,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Green"] = 4,},
 		["Effect"] = {
 			Name = "Hyper Cannon",
-			Description = [[Deal 200 damage to fighters that aren't Non-Archetyped Rares. Put a targeting blip into your hand.]],
+			Description = "Deal 200 damage to fighters that aren't Non-Archetyped Rares. Put a targeting blip into your hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Add","Targeting Blip","Ally"},{"Damage",200}},
 			Target = "NotArchetype",
@@ -11735,8 +11917,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Yellow",
 		["Cost"] = {["Red"] = 1,["Yellow"] = 3,},
 		["Effect"] = {
-			Name = "Sudden Death",
-			Description = [[Gain a Red icon at the end of each turn.]],
+			Name = "Cow Sergeant",
+			Description = "At the end of your turns, generate a red icon.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Red",1}},
 			Target = "Self",
@@ -11756,8 +11938,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Yellow",
 		["Cost"] = {["Neutral"] = 1,["Yellow"] = 3,},
 		["Effect"] = {
-			Name = "Sudden Death",
-			Description = [[If you have BC, lose 500 bloxbux.]],
+			Name = "Tix",
+			Description = "If you have BC, lose 500 BloxBux.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Red",0}},
 			Target = "Ally",
@@ -11778,9 +11960,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 7,},
 		["Effect"] = {
 			Name = "Sudden Death",
-			Description = [[Summon a random fighter with an attack-related effect. Ready it.]],
+			Description = "Summon a random fighter with an attack-related effect. Ready it.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"RandomSummon", {"Mummy Peasant", "Ghost Dragon", "Lady RedNight", "Murtic", "Inventor1116", "Animallogic", "DIY: Dark Dominus", "Ghost Dragon"}},{"Unlock",1,"Archetype"},{"Lock",1,"Self"}},
+			["Power"] = {{"RandomSummon", {"Mummy Peasant", "Ghost Dragon", "Lady RedNight", "Murtic", "Inventor1116", "Animallogic", "DIY: Dark Dominus"}},{"Unlock",1,"Archetype"},{"Lock",1,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = "What can I say, he's a canadian Leprechaun.",
@@ -11798,7 +11980,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 10,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = [[This card is immune to cards that lower its health or power.]],
+			Description = "This card is immune to cards that lower its health or power.",
 			["Type"] = "OnTarget",
 			["Power"] = "None",
 			Target = "Self",	
@@ -11812,10 +11994,10 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Crazynoggin",
 		["AltCards"] = {
 			["CrazyEggNoggin"] = {
-				["Id"] = 585627330,
+				["Id"] = 1247799864,
 				["Name"] = "CrazyEggNoggin",
-				["Bio"] = "Egg? EggEgg! Egg Egggggg? Nog Egg Cra.",
-			}
+				["Bio"] = "My house is flooded with eggnog. Just what i wanted for christmas. Thanks, santa!",
+			},
 		},
 		["Health"] = 300,
 		["Power"] = 400,
@@ -11827,7 +12009,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Red"] = 2,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = [[Can't be counterattacked.]],
+			Description = "Can't be counterattacked.",
 			["Type"] = "OnTarget",
 			["Power"] = "None",
 			Target = "Self",	
@@ -11847,7 +12029,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 5,},
 		["Effect"] = {
 			Name = "Pineapples",
-			Description = [[Gain 250 life at the end of each turn.]],
+			Description = "Gain 250 life at the end of each turn.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Cost",-250}},
 			Target = "Ally",
@@ -11881,7 +12063,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["RachelDubs-Sun"] = {
 				["Id"] = 897245216,
 				["Bio"] = "IcyTea, make me an alt art now!",
-			}
+			},
 		},
 		["Health"] = 500,
 		["Power"] = 600,
@@ -11922,9 +12104,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Yellow",
 		["Effect"] = {
 			Name = "Dancing Jail",
-			Description = "Give a target fighter 400 health, but lock it for 2 turns. Put two targeting blip to your hand.",
+			Description = "Give a target fighter 400 health, but lock it for 2 turns. Put two targeting blips to your hand.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Lock",3},{"Heal",400},{"Add","Targeting Blip","Ally"},{"Add","Targeting Blip","Ally"}},
+			["Power"] = {{"Lock",2},{"Heal",400},{"Add","Targeting Blip","Ally"},{"Add","Targeting Blip","Ally"}},
 			Target = "Single",
 		},
 		["Cost"] = {["Neutral"] = 5,["Yellow"] = 2,},
@@ -11959,7 +12141,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 918645341,
 				["AltArt"] = true,
 				["Bio"] = "Fear is only as deep as the mind allows. So what if you lose yours?",
-			};
+			},
 		},
 		["Health"] = 950,
 		["Power"] = 450,
@@ -12018,7 +12200,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["EfanPlayz"] = {
 		["Id"] = 411808556,
 		["Name"] = "EfanPlayz",
-		AltCards = {
+		["AltCards"] = {
 			["EfanPlayzv2"] = {
 				["Id"] = 540869055,
 				["AltArt"] = true,
@@ -12033,7 +12215,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Green"] = 2,},
 		["Effect"] = {
 			Name = "Twist",
-			Description = [[Whenever this fighter is targeted, deal 300 damage to the opponent.]],
+			Description = "Whenever this fighter is targeted, deal 300 damage to the opponent.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Inflict",300}},
 			Target = "Opponent",
@@ -12073,7 +12255,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = [[Whenever Flufflefunz is targeted, it gains 100 power. If it was targeted by a creature, that creature gains 100 power too.]],
+			Description = "Whenever Flufflefunz is targeted, it gains 100 power. If it was targeted by a fighter, that fighter gains 100 power too.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Strengthen",100},{"Strengthen",100,"Aggressor"}},
 			Target = "Self",
@@ -12133,7 +12315,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Green"] = 1,["Red"] = 5,},
 		["Effect"] = {
 			Name = "Twist",
-			Description = [[Whenever this fighter is targeted, put 2 random Rares to your hand.]],
+			Description = "Whenever this fighter is targeted, put 2 random Rares into your hand.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"RandomAdd","Rare"},{"RandomAdd","Rare"}},
 			Target = "Ally",
@@ -12146,21 +12328,24 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "SirSorin",
 		["AltCards"] = {
 			["SantaSorin"] = {
-				["Id"] = 585627477,
+				["Id"] = 1247065615,
 				["Name"] = "SantaSorin",
-				["Bio"] = "So, what's it like being encased in a stone pillar by your ex?",
-			}
+				["Effect"] = {
+					Description = "At the end of your turns, all other fighters lose 25 power and SantaSorin gains 200 power.",
+				},
+				["Bio"] = "Santa? Happiness? Your dad? All illusions!",
+			},
 		},
 		["Health"] = 750,
 		["Power"] = 25,
 		["Rarity"] = "Rare",
 		["Archetype"] = "Hero",
-		["AttackEffect"] = "Lightning",
+		["AttackEffect"] = "Slash",
 		["Color"] = "Yellow",
 		["Cost"] = {["Neutral"] = 2,["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Routine Maitenance",
-			Description = "At the end of your turn, all other fighters lose 25 power and sirsorin gains 200 power.",
+			Description = "At the end of your turns, all other fighters lose 25 power and SirSorin gains 200 power.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Weaken",25,"All"},{"Strengthen",225}},
 			Target = "Self",
@@ -12169,7 +12354,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},			
 
 	["Alkalola"] = {
-		["Id"] = 891988776,
+		["Id"] = 1137002780,
 		["Name"] = "Alkalola",
 		["Health"] = 1200,
 		["Power"] = 0,
@@ -12219,9 +12404,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Police",
 		["Effect"] = {
 			Name = "ASSEMBLE.",
-			Description = [[Summon four Kittens. You lose 2000 life.]],
+			Description = "Summon four Kittens. You lose 2000 life.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Cost",2000},{"Summon","Kitten"},{"Summon","Kitten"},{"Summon","Kitten"},{"Summon","Kitten"}},
+			["Power"] = {{"Cost",2000},{"RandomSummon",{"Kitten","Kitten2","Kitten3","Kitten4"}},{"RandomSummon",{"Kitten","Kitten2","Kitten3","Kitten4"}},{"RandomSummon",{"Kitten","Kitten2","Kitten3","Kitten4"}},{"RandomSummon",{"Kitten","Kitten2","Kitten3","Kitten4"}}},
 			Target = "Ally",
 		},
 		["Bio"] = "Knock knock, Guv! Who's there? IT'S ISAAC, GUV!!",
@@ -12269,7 +12454,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Silence I keel you!",
-			Description = [[When this card destroys another, draw a card and put a Targeting Blip to your hand. Targeting Blips trigger Target Effects.]],
+			Description = "When this card destroys another, draw a card and put a Targeting Blip to your hand. Targeting Blips trigger Target Effects.",
 			["Type"] = "OnDestroy",
 			["Power"] = {{"Draw",1},{"Add","Targeting Blip"}},
 			Target = "Ally",
@@ -12288,9 +12473,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Green"] = 3,},
 		["Effect"] = {
 			Name = "Silence I keel you!",
-			Description = [[Lock a target fighter for 1 turn. Put a Targeting Blip to your hand. Targeting Blips trigger Target Effects.]],
+			Description = "A target fighter loses 200 Power. Put a Targeting Blip into your hand. Targeting Blips trigger Target Effects.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Lock",1},{"Add","Targeting Blip","Ally"}},
+			["Power"] = {{"Weaken",200},{"Add","Targeting Blip","Ally"}},
 			Target = "Single",
 		},
 		["Bio"] = "Step 1: Capture Myrmiredon. Step 2: Force him into a basement. Step 3: Force him to make Clashblox great again. Step 4: Rub it in PirateX12's face.",
@@ -12308,7 +12493,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Recognize",
-			Description = [[Draw a card per turn.]],
+			Description = "Draw a card per turn.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Draw",1}},
 			Target = "Ally",
@@ -12323,15 +12508,15 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 0,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Lightning",
+		["Token"] = true,
 		["Color"] = "Blue",
 		["Cost"] = {["Green"] = 1,["Blue"] = 3,},
 		["Effect"] = {
-			Name = "Growl",
-			Description = [[Lower the power of a target fighter by 500.]],
+			Name = "Pirate Is Free",
+			Description = "A target fighter loses 500 Power. Summon a Ship Raider. Bearded Captain cannot generate icons.",
 			["Type"] = "OnSummon",
-			["Power"] = "Weaken",
+			["Power"] = {{"Weaken",500},{"Summon","Ship Raider","Ally"}},
 			Target = "Single",
-			Increase = 500
 		},
 		["Bio"] = "Arrrrr. I wish I had some soda for my pirate dinner.",
 	},			
@@ -12347,7 +12532,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 1,["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Love the blues",
-			Description = [[Gain a blue icon at the end of each turn.]],
+			Description = "At the end of your turns, generate a Blue icon.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Blue",1}},
 			Target = "Self",
@@ -12435,7 +12620,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Yellow"] = 4,},
 		["Effect"] = {
 			Name = "Subversion",
-			Description = [[Set the stats of a target fighter to 500/500.]],
+			Description = "Set the stats of a target fighter to 500/500.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"SetHealth",500},{"SetPower",500}},
 			Target = "Single",	
@@ -12448,11 +12633,11 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "GRAND DAD",
 		["AltCards"] = {
 			["GRAND CLAUS"] = {
-				["Id"] = 585627294,
+				["Id"] = 1247063343,
 				["Name"] = "GRAND CLAUS",
 				["Effect"] = {
 					Name = "Subversion",
-					Description = [[Put an Unwanted Gift into your hand.]],
+					Description = "Put an Unwanted Gift into your hand.",
 					["Type"] = "OnSummon",
 					["Power"] = {{"Add","Unwanted Gift"}},
 					Target = "Ally",
@@ -12463,7 +12648,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 664140826,
 				["Name"] = "GRAND DAD",
 				["Bio"] = "PIXEEEEEL?!",
-			}
+			},
 		},			
 		["Health"] = 777,
 		["Power"] = 777,
@@ -12474,7 +12659,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Red"] = 4,},
 		["Effect"] = {
 			Name = "Subversion",
-			Description = [[Put an unwanted trend into your hand.]],
+			Description = "Put an unwanted trend into your hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Add","Unwanted Trend"}},
 			Target = "Ally",
@@ -12489,6 +12674,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["John and Jane-ArtV"] = {
 				["Id"] = 698878114,
 				["AltArt"] = true,
+				["Effect"] = {
+					Name = "March 18",
+					["Type"] = "OnSummon",
+					["Power"] = {{"Summon","John and Jane-ArtV"}},
+					Target = "Ally",
+				},
 				["Bio"] = "3/18...",
 			},
 		},
@@ -12501,7 +12692,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Knockdown",
-			Description = [[Summon a copy of this card. This card can't generate icons.]],
+			Description = "Summon a copy of this card. This card can't generate icons.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Summon","John and Jane"}},
 			Target = "Ally",
@@ -12572,15 +12763,16 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 411847310,
 		["Name"] = "Korblox Shaman",
 		["Health"] = 500,
-		["Power"] = 400,
+		["Power"] = 500,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Punch1",
 		["Archetype"] = "Korblox",
+		["Requirement"] = {"Archetype",1},
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 4,},
 		["Effect"] = {
 			Name = "Demoralising Chant",
-			Description = "Lower the power of a target fighter by 500.",
+			Description = "You must have a Korblox in play in order to summon this. A target fighter loses 500 Power.",
 			["Type"] = "OnSummon",
 			["Power"] = "Weaken",
 			Target = "Single",
@@ -12597,7 +12789,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 655018078,
 				["Name"] = "SuperHeart9",						
 				["Bio"] = "Is a lover always innocent?",
-			}
+			},
 		},
 		["Health"] = 150,
 		["Power"] = 800,
@@ -12667,7 +12859,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Red"] = 5,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = [[Whenever you cast an action or terrain spell, put a random red or blue action into your hand.]],
+			Description = "Whenever you cast an action or terrain spell, put a random red or blue action into your hand.",
 			["Type"] = "OnAllyCast",
 			["Power"] = {{"RandomAdd","Lunar"}},
 			Target = "Ally",	
@@ -12698,7 +12890,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 7,["Red"] = 1,},
 		["Effect"] = {
 			Name = "SCRIPTING PARTY",
-			Description = "When played, put Ultoris NOOBrae to your hand.",
+			Description = "Put a copy of Ultoris NOOBrae into your hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Add","Ultoris NOOBrae"}},
 			Target = "Ally",
@@ -12707,7 +12899,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Ultoris NOOBrae"] = {
-		["Id"] = 413921007,
+		["Id"] = 1303976830,
 		["Name"] = "Ultoris NOOBrae",
 		["Health"] = 600,
 		["Power"] = 350,
@@ -12715,7 +12907,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Lightning",
 		["Archetype"] = "Noob",
 		["Color"] = "Red",
-		["Cost"] = {["Neutral"] = 4,["Red"] = 1,},
+		["Cost"] = {["Neutral"] = 3,["Red"] = 1,},
 		["Bio"] = "OMG TENEBRAE MORE LIKE TENEBAE HELL REK UR STUFF M8 KEK",
 	},	
 	
@@ -12800,6 +12992,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["bengbeng14"] = {
 		["Id"] = 513645287,
 		["Name"] = "bengbeng14",
+			["AltCards"] = {
+			["bengbeng14-Masant"] = {
+				["Id"] =  1053193671,
+				["AltArt"] = true,
+				["Bio"] = "SORE WA CHIGAU ZO!",
+			},
+		},
 		["Health"] = 400,
 		["Power"] = 900,
 		["Rarity"] = "Epic",
@@ -12808,7 +13007,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 4,},
 		["Effect"] = {
 			Name = "Shatter",
-			Description = [[When this card is targeted, set its stats to 750/750.]],
+			Description = "When this card is targeted, set its stats to 750/750.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"SetPower",750},{"SetHealth",750}},
 			Target = "Self",
@@ -12827,7 +13026,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Red"] = 1,},
 		["Effect"] = {
 			Name = "Sudden Death",
-			Description = [[Gain 1 Yellow icon at the end of each of your turns.]],
+			Description = "Gain 1 Yellow icon at the end of each of your turns.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Yellow",1}},
 			Target = "Self",
@@ -12863,7 +13062,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 655014498,
 				["Name"] = "Love Potion",						
 				["Bio"] = "Please, love me!",
-			}
+			},
 		},							
 		["Health"] = 0,
 		["Power"] = 0,
@@ -12974,7 +13173,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 1,},
 		["Effect"] = {
 			Name = "Endless Spooks",
-			Description = [[Whenever an action or terrain spell is cast, enemy fighters lose 50 power.]],
+			Description = "Whenever an action or terrain spell is cast, enemy fighters lose 50 power.",
 			["Type"] = "OnCast",
 			["Power"] = {{"Weaken",50,"Opponent"}},
 			Target = "Archetype",
@@ -13032,7 +13231,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = [[Put 2 targeting blips to your hand. Targeting Blips trigger target effects.]],
+			Description = "Put 2 targeting blips to your hand. Targeting Blips trigger target effects.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Add","Targeting Blip"},{"Add","Targeting Blip"}},
 			Target = "Ally",
@@ -13043,7 +13242,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Uberubert"] = {
 		["Id"] = 415730433,
 		["Name"] = "Uberubert",
-		["Health"] = 500,
+		["Health"] = 400,
 		["Power"] = 600,
 		["Rarity"] = "Rare",
 		["Archetype"] = "Hero",
@@ -13066,7 +13265,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 6,},
 		["Effect"] = {
 			Name = "Totem Magic",
-			Description = "At the end of each turn, Her0z loses 800 health and all of its power. Her0z can't attack.",
+			Description = "At the end of your turns, Her0z loses 800 health and all of its power. Her0z can't attack.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Damage",800},{"Weaken",9999}},
 			Target = "Self",
@@ -13106,7 +13305,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Sudden Death",
-			Description = [[Lock all non-ninjas for one turn.]],
+			Description = "Lock all non-ninjas for one turn.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Lock",1}},
 			Target = "NotArchetype",
@@ -13141,7 +13340,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 626082330,
 				["AltArt"] = true,
 				["Bio"] = "Stops even hope from escaping.",
-			}
+			},
 		},
 		["Health"] = 0,
 		["Power"] = 0,
@@ -13186,13 +13385,34 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 2000,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Lightning",
+		["Fading"] = true,
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 4,},
 		["Effect"] = {
 			Name = "Vampire",
-			Description = "You lose 7500 life.",
+			Description = "You lose 7500 life. If you survive, gain 2500 Life at the end of this turn. This card does not activate effects upon dying.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Cost",7500}},
+			["Power"] = {{"Cost",7500},{"Summon","RukatuKDHToken"},{"Damage",9999,"Self"}},
+			Target = "Ally",
+		},
+		["Bio"] = "Don't put all your eggs into one basket.",
+	},
+		
+	["RukatuKDHToken"] = {
+		["Id"] = 415734128,
+		["Name"] = "RukatuKDH",
+		["Health"] = 2000,
+		["Power"] = 2000,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Lightning",
+		["Fading"] = true,
+		["Color"] = "Blue",
+		["Cost"] = {["Neutral"] = 1,["Blue"] = 4,},
+		["Effect"] = {
+			Name = "Vampire",
+			Description = "You lose 7500 life. If you survive, gain 2500 Life at the end of this turn. This card does not activate effects upon dying.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Cost",-2500},{"Summon","RukatuKDH"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Don't put all your eggs into one basket.",
@@ -13228,7 +13448,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Blue"] = 1,},
 		["Effect"] = {
 			Name = "Icon Hardscope",
-			Description = [[Gain 1 Blue icon and draw a card.]],
+			Description = "Gain 1 Blue icon and draw a card.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Blue",1},{"Draw",1}},
 			Target = "Ally",
@@ -13447,7 +13667,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 655013263,
 				["Name"] = "Forbidden Passion",						
 				["Bio"] = "The moon is the only love I need.",
-			}
+			},
 		},								
 		["Health"] = 0,
 		["Power"] = 0,
@@ -13455,13 +13675,14 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Red",
+		["Requirement"] = {false,4,true},
 		["Archetype"] = "Lunar",
 		["Cost"] = {["Blue"] = 3,["Red"] = 3,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Destroy all allied fighters. Generate 4 blue icons, 4 red icons, draw two cards, gain 500 life, and put a nightmare into the opponent's hand.",
+			Description = "Cast only when your opponent controls 4 or more fighters. Generate 4 blue icons, 4 red icons, draw two cards, gain 500 life, and put a nightmare into the opponent's hand.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",9999},{"Blue",4},{"Red",4},{"Draw",2},{"Cost",-500},{"Add","Nightmare","Opponent"}},
+			["Power"] = {{"Blue",4},{"Red",4},{"Draw",2},{"Cost",-500},{"Add","Nightmare","Opponent"}},
 			Target = "Ally",
 		},
 		["Bio"] = "The moon is the only flesh I need.",
@@ -13475,7 +13696,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 430934562,
 				["AltArt"] = true,
 				["Bio"] = "Over a thousand years have passed since Jayson and Sibs have got together... Part of the 'Aife' Collection! Collect them all!",
-			}
+			},
 		},
 		["Health"] = 500,
 		["Power"] = 900,
@@ -13569,10 +13790,10 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Unwanted Trend",
 		["AltCards"] = {
 			["Unwanted Gift"] = {
-				["Id"] = 585627205,
+				["Id"] = 1249803106,
 				["Name"] = "Unwanted Gift",
-				["Bio"] = "MOM! I WANTED THE NEW XBLOX ONE, OR A PACK OF BLOX CARDS! NOT THIS!",	
-			}		
+				["Bio"] = "Hey, at least it wasn't coal.",	
+			},
 		},			
 		["Health"] = 0,
 		["Power"] = 0,
@@ -13582,10 +13803,10 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 1, ["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Deal 100,002 damage to yourself.",
+			Description = "Deal 100,003 damage to yourself.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Cost",100002}},
-			Target = "Ally",	
+			["Power"] = {{"Cost",100003}},
+			Target = "Ally",
 		},
 		["Bio"] = "Hey, at least the name is true to itself.",
 	},
@@ -13593,8 +13814,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Brycen27"] = {
 		["Id"] = 430951310,
 		["Name"] = "Brycen27",
-		["Health"] = 500,
-		["Power"] = 500,
+		["Health"] = 400,
+		["Power"] = 400,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Green",
@@ -13638,8 +13859,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Bio"] = "An ancient dragon warrior. The only dragon Skarra wont kill is the one that she rides.",
 			},
 		},
-		["Health"] = 700,
-		["Power"] = 700,
+		["Health"] = 850,
+		["Power"] = 850,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Red",
@@ -13717,15 +13938,15 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Health"] = 150,
 		["Power"] = 150,
 		["Rarity"] = "Legendary",
-		["AttackEffect"] = "Punch1",
+		["AttackEffect"] = "Slash",
 		["Token"] = true,
 		["Color"] = "Red",
 		["Cost"] = {["Red"] = 7, ["Neutral"] = 2,},
 		["Effect"] = {
-			Name = "Render",
-			Description = "Can't generate icons. Fill your board with ClanAtlas, then set health and power of all allied fighters to 150 at the end of your turns.",
+			Name = "Infinite Army",
+			Description = "Can't generate icons. At the end of your turns, fill your board with ClanAtlas, then set the health and power of all allied fighters to 150.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Weaken",9999},{"Strengthen",150},{"Swap",030},{"Weaken",9999},{"Strengthen",150}},
+			["Power"] = {{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"Summon","ClanAtlas"},{"SetHealth",150},{"SetPower",150}},
 			Target = "Ally",
 		},
 		["Bio"] = "Good decks play AoE.",
@@ -13742,7 +13963,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 3,},
 		["Effect"] = {
 			Name = "Render",
-			Description = "Increase the health of all allied fighters by 200.",
+			Description = "All allied fighters gain 200 Health.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",200}},
 			Target = "Ally",
@@ -13761,7 +13982,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 5,},
 		["Effect"] = {
 			Name = "Render",
-			Description = "Put two ST Grunts into play. They can't generate icons.",
+			Description = "Summon two ST Grunts. ST Grunts can't generate icons.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Summon","ST Grunt"},{"Summon","ST Grunt"}},
 			Target = "Ally",
@@ -13783,7 +14004,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Render",
 			Description = "At the end of your turn, gain 100 life.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Cost",-200}},
+			["Power"] = {{"Cost",-100}},
 			Target = "Ally",
 		},
 		["Bio"] = "What? I can't cast 59 ceramic potions in a single huge chain? Worst game 2016 Nexx master race",
@@ -13815,7 +14036,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Paraselene Sage V2"] = {
 				["Id"] = 574430820,
 				["Bio"] = "Zanzel? Hallow? Eisenhower? Imbeciles compared to the moon.",
-			}
+			},
 		},
 		["Health"] = 700,
 		["Power"] = 0,
@@ -13992,8 +14213,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["NerfModderV2"] = {
 				["Id"] = 432804094,
-				["Bio"] = "Even the most charistmatic and unbreakable can fall to depression.",
-			}
+				["Bio"] = "Even the most charismatic and unbreakable can fall to depression.",
+			},
 		},
 		["Health"] = 1000,
 		["Power"] = 0,
@@ -14004,12 +14225,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 5,},
 		["Effect"] = {
 			Name = "Double Life",
-			Description = "At the end of your turn, give all allied fighters 200 power and lose 900 life. This card is immune to effects that lower its power or health.",
+			Description = "At the end of your turns, give all allied fighters 200 power and lose 900 Life. This card is immune to effects that lower its Health or Power.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Strengthen",200},{"Cost",900}},
 			Target = "Ally",
 		},
-		["Bio"] = "Even the charistmatic and unbreakable can fall to depression.",
+		["Bio"] = "Even the charismatic and unbreakable can fall to depression.",
 	},
 	
 	["Beam Sword"] = {
@@ -14078,7 +14299,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Name"] = "Meeboid Swim Champion",
 				["Id"] = 897244325,
 				["Bio"] = "Have you ever overworked yourself so hard that you killed all your friends and family?",
-			}
+			},
 		},	
 		["Health"] = 700,
 		["Power"] = 600,
@@ -14101,7 +14322,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Training Dummy"] = {
 		["Id"] = 430936560,
 		["Name"] = "Training Dummy",
-		["Health"] = 500,
+		["Health"] = 600,
 		["Power"] = 0,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Punch1",
@@ -14110,9 +14331,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Capture",
-			Description = "At the end of your turn, This card becomes a 600/0.",
+			Description = "At the end of your turns, reset this card's stats.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Weaken",9999},{"Strengthen",600},{"Swap",030},{"Weaken",9999}},
+			["Power"] = {{"SetHealth",600},{"SetPower",0}},
 			Target = "Self",
 		},
 		["Bio"] = "How does a dummy regenerate all its fluff anyway?",
@@ -14126,7 +14347,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Blue",
-		["Cost"] = {["Neutral"] = 2, ["Blue"] = 5,},
+		["Cost"] = {["Neutral"] = 3, ["Blue"] = 4,},
 		["Archetype"] = "Spark",
 		["Effect"] = {
 			Name = "Capture",
@@ -14173,7 +14394,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Name"] = "Love Letter",
 				["Id"] = 655014233,
 				["Bio"] = "Roses are red, violets are blue, I've justified, violence for you.",
-			}	
+			},
 		},											
 		["Health"] = 0,
 		["Power"] = 0,
@@ -14241,7 +14462,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3, ["Green"] = 2,},
 		["Effect"] = {
 			Name = "Sugar and Ice",
-			Description = "Target fighter gains 400 health. You gain 400 life.",
+			Description = "A target fighter gains 400 health. You gain 400 life.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",400},{"Cost",-400}},
 			Target = "Single",
@@ -14310,8 +14531,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 					["Power"] = {{"Heal",100}},
 					Target = "Archetype",
 				},
-			["Bio"] = "Who would give the disembodied eye of a cupid wings anyway? Sickos.",
-			}
+				["Bio"] = "Who would give the disembodied eye of a cupid wings anyway? Sickos.",
+			},
 		},
 		["Health"] = 200,
 		["Power"] = 200,
@@ -14344,8 +14565,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 					["Power"] = {{"Add","Cupid's Eye Winglet","Ally"},{"Lock",1}},
 					Target = "Self",
 				},
-			["Bio"] = "FLYING CUPID EYES AAAAAAAA.",
-			}
+				["Bio"] = "FLYING CUPID EYES AAAAAAAA.",
+			},
 		},
 		["Health"] = 400,
 		["Power"] = 400,
@@ -14356,7 +14577,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2, ["Green"] = 2,},
 		["Effect"] = {
 			Name = "Harassing Talons",
-			Description = "Put a Cat's Eye Winglet into your hand. Cat's Eye Wing Flock enters play locked for one turn.",
+			Description = "Put a Cat's Eye Winglet into your hand. Cat's Eye Wing Flock enters play locked for an extra turn.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Add","Cat's Eye Winglet","Ally"},{"Lock",1}},
 			Target = "Self",
@@ -14378,8 +14599,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 					["Power"] = {{"Weaken",200,},{"Add","Cupid's Eye Wing Flock","Ally"}},
 					Target = "Single",
 				},
-			["Bio"] = "The heart fuels the eye, and in return, the eye directs the heart.",
-			}
+				["Bio"] = "The heart fuels the eye, and in return, the eye directs the heart.",
+			},
 		},
 		["Health"] = 600,
 		["Power"] = 600,
@@ -14412,8 +14633,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 					["Power"] = {{"Inflict",400,"Opponent"},{"Cost",-400,},{"Add","Cupid's Eye Cultist"}},
 					Target = "Ally",
 				},
-			["Bio"] = "She will stop at nothing to find her true love.",
-			}
+				["Bio"] = "She will stop at nothing to find her true love.",
+			},
 		},
 		["Health"] = 800,
 		["Power"] = 800,
@@ -14446,7 +14667,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 					["Power"] = {{"Add","Cupid's Eye Heart Stealer"},{"Draw",2,"Opponent"}},
 					Target = "Ally",
 				},
-			}
+				["Bio"] = "With your heart, awaken your third eye! ... And your fourth. And the fifth... Sixth as well. Seventh if you're in the mood. Don't forget the eighth, either! Or the ninth.",
+			},
 		},
 		["Health"] = 1000,
 		["Power"] = 1000,
@@ -14479,8 +14701,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 					["Power"] = {{"Add","Cupid's Eye Nexus"},{"White",4,"Opponent"}},
 					Target = "Ally",
 				},
-
-			}
+				["Bio"] = "Beauty is in the love of the arrow.",
+			},
 		},
 		["Health"] = 1200,
 		["Power"] = 1200,
@@ -14608,7 +14830,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 1, ["Blue"] = 4,},
 		["Effect"] = {
 			Name = "Trout Slap",
-			Description = "Haste. When this card destroys another, put a copy of this card into your hand.",
+			Description = "Haste. Whenever this card destroys another, put a copy of this card into your hand.",
 			["Type"] = "OnDestroy",
 			["Power"] = {{"Add","ShockingRobux"}},
 			Target = "Ally",
@@ -14645,7 +14867,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 490899115,
 				["AltArt"] = true,
 				["Bio"] = "My elegance in combat is unparalleled!",
-			}
+			},
 		},
 		["Health"] = 1200,
 		["Power"] = 800,
@@ -14698,7 +14920,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 458640388,
 				["AltArt"] = true,
 				["Bio"] = "I'm sorry I caused the apocalypse. Have some lens flare. Part of the 'Aife' Collection! Collect them all!",
-			}
+			},
 		},
 		["Health"] = 600,
 		["Power"] = 600,
@@ -14768,7 +14990,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "EzWinz",
-			Description = "You must have at least 1 Acolyte in play to cast this card. Generate an icon of every color, then draw a card.",
+			Description = "Cast only if you control two or more Acolytes. Generate an icon of every color, then draw a card.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Yellow",1},{"Blue",1},{"Red",1},{"Green",1},{"Neutral",1},{"Draw",1}},
 			Target = "Ally",
@@ -14804,7 +15026,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 490899262,
 				["AltArt"] = true,
 				["Bio"] = "...or is it?",
-			}
+			},
 		},
 		["Health"] = 600,
 		["Power"] = 1200,
@@ -14848,15 +15070,15 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Health"] = 400,
 		["Power"] = 400,
 		["Rarity"] = "Common",
-		["AttackEffect"] = "Punch1",
+		["AttackEffect"] = "Freeze",
 		["Color"] = "Blue",
 		["Cost"] = {["Blue"] = 3, ["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Mana Siphon",
-			Description = "Whenever your opponent casts an action or terrain card, draw a card and put a random red or blue action into your hand.",
+			Description = "Whenever your opponent casts an action or terrain card, draw a card, put a random Red or Blue action into your hand, and give this fighter 150 Health and Power.",
 			["Type"] = "OnEnemyCast",
-			["Power"] = {{"Draw",1},{"RandomAdd","Lunar"}},
-			Target = "Ally",
+			["Power"] = {{"Draw",1,"Ally"},{"RandomAdd","Lunar","Ally"},{"Heal",150},{"Strengthen",150}},
+			Target = "Self",
 		},
 		["Bio"] = "Bombs, Bombers, Guns, Waves, Gases, Cancers, Bacteria, Etcetera.",
 	},
@@ -14867,14 +15089,14 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Health"] = 300,
 		["Power"] = 300,
 		["Rarity"] = "Uncommon",
-		["AttackEffect"] = "Punch1",
+		["AttackEffect"] = "Slice",
 		["Archetype"] = "Ninja",
 		["Color"] = "Blue",
 		["Cost"] = {["Red"] = 3,},
 		["Charge"] = true,
 		["Effect"] = {
 			Name = "Zerg rush kekekekeke",
-			Description = "Haste. When this fighter strikes the opponent, ready all other ninjas, give them 100 power, then lock this card for 3 turns.",
+			Description = "Haste. Whenever this fighter strikes the opponent, ready all other ninjas, give them 100 power, then lock this card for 3 turns.",
 			["Type"] = "OnStrike",
 			["Power"] = {{"Unlock",1},{"Strengthen",100},{"Lock",4,"Self"},{"Weaken",100,"Self"}},
 			Target = "Archetype",
@@ -14908,7 +15130,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Gravity InspectorV2"] = {
 				["Id"] = 433133596,
 				["Bio"] = "To inspect gravity. To cause the fall.",
-			}
+			},
 		},
 		["Health"] = 100,
 		["Power"] = 100,
@@ -14935,7 +15157,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 458640455,
 				["AltArt"] = true,
 				["Bio"] = "But has no desire to pay him.",
-			}
+			},
 		},
 		["Health"] = 800,
 		["Power"] = 600,
@@ -14946,7 +15168,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Charge"] = true,
 		["Effect"] = {
 			Name = "Knockdown",
-			Description = "Haste. When this card is targeted, reset its stats, return it to its owner's hand, and give them 4 white icons.",
+			Description = "Haste. When this card is targeted, reset its stats, return it to its owner's hand, and give the owner 4 white icons.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"SetPower",600},{"SetHealth",800},{"Unlock",999},{"Return",030},{"Neutral",4,"Ally"}},
 			Target = "Self",
@@ -15001,8 +15223,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Pancake Break-Val"] = {
 				["Name"] = "Peaceful Protest",
 				["Id"] = 667391045,
-				["Bio"] = "NO MORE SOULSEARCH! NO MORE DUST! NO MORE OP CARDS EVER!",
-			}			
+				["Bio"] = "NO MORE AJIT PAI! NO MORE PHATION! NO MORE CORRUPT DICTATORS EVER!",
+			},			
 		},												
 		["Health"] = 0,
 		["Power"] = 0,
@@ -15218,6 +15440,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Health"] = 1300,
 		["Power"] = 300,
 		["Rarity"] = "Legendary",
+		["Fading"] = true,
 		["AttackEffect"] = "Dash",
 		["Color"] = "Green", 
 		["Cost"] = {["Green"] = 4, ["Neutral"] = 5,},
@@ -15282,9 +15505,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 10,},
 		["Effect"] = {
 			Name = "Fanaticism",
-			Description = "Generate 4 red icons.",
+			Description = "Generate 5 red icons.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Red",4}},
+			["Power"] = {{"Red",5}},
 			Target = "Ally",
 		},
 		["Bio"] = "Why control anything when you can control god?",
@@ -15322,9 +15545,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 10,},
 		["Effect"] = {
 			Name = "Fanaticism",
-			Description = "Generate 10 green icons.",
+			Description = "Generate 7 green icons.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Green",10}},
+			["Power"] = {{"Green",7}},
 			Target = "Ally",
 		},
 		["Bio"] = "Why grow anything when you can grow heaven?",
@@ -15338,7 +15561,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 701125140,
 				["AltArt"] = true,
 				["Bio"] = " I watched a snail crawl along the edge of a straight razor. That's my dream; that's my nightmare. Crawling, slithering, along the edge of a straight razor... and surviving.",
-			}
+			},
 		},
 		["Health"] = 600,
 		["Power"] = 200,
@@ -15383,11 +15606,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 200,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Dash",
+		["Fading"] = true,
 		["Color"] = "Yellow", 
 		["Cost"] = {["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Level Up!",
-			Description = "Whenever this card attacks and destroys another, level it up and raise the health of all allied fighters by 150 at the end of this turn.",
+			Description = "Whenever this card attacks and destroys another, level it up and raise the health of all allied fighters by 150 at the end of this turn. This card does not trigger effects upon death.",
 			["Type"] = "OnAttackDestroy",
 			["Power"] = {{"Summon","Hedonist Chieftain Token"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -15402,11 +15626,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 300,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Dash",
+		["Fading"] = true,
 		["Color"] = "Yellow", 
 		["Cost"] = {["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Level Up!",
-			Description = "Whenever this card attacks and destroys another, level it up and raise the power of all other allied fighters by 150 at the end of this turn.",
+			Description = "Whenever this card attacks and destroys another, level it up and raise the power of all other allied fighters by 150 at the end of this turn. This card does not trigger effects upon death.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Heal",150},{"Summon","Hedonist Chieftain"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -15421,11 +15646,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 300,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Dash",
+		["Fading"] = true,
 		["Color"] = "Yellow", 
 		["Cost"] = {["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Level Up!",
-			Description = "Whenever this card attacks and destroys another, level it up and raise the power of all allied fighters by 150 at the end of this turn.",
+			Description = "Whenever this card attacks and destroys another, level it up and raise the power of all allied fighters by 150 at the end of this turn. This card does not trigger effects upon death.",
 			["Type"] = "OnAttackDestroy",
 			["Power"] = {{"Summon","Pleasure Maker Token"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -15439,12 +15665,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Health"] = 700,
 		["Power"] = 400,
 		["Rarity"] = "Token",
+		["Fading"] = true,
 		["AttackEffect"] = "Dash",
 		["Color"] = "Yellow", 
 		["Cost"] = {["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Level Up!",
-			Description = "Whenever this card attacks and destroys another, level it up.",
+			Description = "Whenever this card attacks and destroys another, level it up. This card does not trigger effects upon death.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Strengthen",150},{"Summon","Pleasure Maker"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -15458,12 +15685,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Health"] = 700,
 		["Power"] = 400,
 		["Rarity"] = "Token",
+		["Fading"] = true,
 		["AttackEffect"] = "Dash",
 		["Color"] = "Yellow", 
 		["Cost"] = {["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Level Up!",
-			Description = "Whenever this card attacks and destroys another, level it up.",
+			Description = "Whenever this card attacks and destroys another, level it up. This card does not trigger effects upon death.",
 			["Type"] = "OnAttackDestroy",
 			["Power"] = {{"Summon","Commander of Chaos"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -15478,13 +15706,14 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 300,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Dash",
+		["Fading"] = true,
 		["Color"] = "Yellow", 
 		["Cost"] = {["Yellow"] = 7,},
 		["WeakenImmune"] = true,
 		["Archetype"] = "Masant",
 		["Effect"] = {
 			Name = "Level Up!",
-			Description = "At the end of your turns, summon a noob, increase the power of all fighters by 200, then unlock all allied fighters. This card is immune to effects that lower its health or power.",
+			Description = "At the end of your turns, summon a noob, increase the power of all fighters by 200, then unlock all allied fighters. This card is immune to effects that lower its health or power. This card does not trigger effects upon death.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Summon","Noob"},{"Strengthen",200,"All"},{"Unlock",999}},			
 			Target = "Ally",
@@ -15499,6 +15728,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Health"] = 200,
 		["Power"] = 0,
 		["Rarity"] = "Epic",
+		["Fading"] = true,
 		["AttackEffect"] = "Dash",
 		["Color"] = "Yellow", 
 		["Cost"] = {["Yellow"] = 1, ["Neutral"] = 1,},
@@ -15596,12 +15826,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 250,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Dash",
+		["Fading"] = true,
 		["Color"] = "Green", 
 		["Archetype"] = "Overseer",
 		["Cost"] = {["Green"] = 2,},
 		["Effect"] = {
 			Name = "WoodReviewer",
-			Description = "When this card is summoned, put a random overseer card into your hand. Whenever your opponent casts an action or terrain spell, return it to your hand.",
+			Description = "When this card is summoned, put a random overseer card into your hand. Whenever your opponent casts an action or terrain spell, return it to your hand. This card does not trigger effects upon death.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"RandomAdd","Overseer"},{"Summon","Overseer Drake Token"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -15616,12 +15847,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 250,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Dash",
+		["Fading"] = true,
 		["Color"] = "Green", 
 		["Archetype"] = "Overseer",
 		["Cost"] = {["Green"] = 2,},
 		["Effect"] = {
 			Name = "WoodReviewer",
-			Description = "When this card is summoned, put a random overseer card into your hand. Whenever your opponent casts an action or terrain spell, return it to your hand.",
+			Description = "When this card is summoned, put a random overseer card into your hand. Whenever your opponent casts an action or terrain spell, return it to your hand. This card does not trigger effects upon death.",
 			["Type"] = "OnEnemyCast",
 			["Power"] = {{"Add","Overseer Drake"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -15642,7 +15874,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "BurnForever!",
 			Description = "Whenever you lose life, shuffle a 666 into your deck, then draw a card.",
 			["Type"] = "OnHealthLoss",
-			["Power"] = {{"DeckAdd",666},{"Draw",1}},
+			["Power"] = {{"DeckAdd","666"},{"Draw",1}},
 			Target = "Ally",
 		},
 		["Bio"] = "Can you guess why wolves built heaven?",
@@ -15751,7 +15983,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 655018966,
 				["Name"] = "UncreativeGift123",						
 				["Bio"] = "Teddy Bears, Roses, and Chocolates.",
-			}
+			},
 		},					
 		["Health"] = 1000,
 		["Power"] = 800,
@@ -15906,19 +16138,39 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "PLEASE PLEASE PLEASE PLEASE PLEASE BE MY FRIEND PLEASE PLEASE PLEASE I'LL DO ANYTHING PLEASE THIS ISN'T ANNOYING AT ALL IS IT PLEASE PLEASE PLEASE I BEG YOU PLEASE PLEASE WHY DON'T YOU LISTEN TO ME PLEASE PLEASE PLEASE",
 	},
 	
-	["CIA Man"] = { -- TEST EFFECT
+	["CIA Man"] = { 
 		["Id"] = 503584176,
 		["Name"] = "CIA Man",
 		["Health"] = 500,
 		["Power"] = 200,
 		["Rarity"] = "Uncommon",
+		["Fading"] = true,
 		["AttackEffect"] = "GunShot",
 		["Color"] = "Blue", 
 		["Cost"] = {["Neutral"] = 5,["Blue"] = 2,},
 		["Effect"] = {
 			Name = "Protection",
-			Description = "When this fighter is targeted, summon a Body Guard.", -- Infinite loop, if they have CIA man as well?
-			["Type"] = "OnTarget",-- OnTarget
+			Description = "Summon a Body Guard. Whenever this fighter is targeted, summon a Body Guard.", 
+			["Type"] = "OnSummon",
+			["Power"] = {{"Summon","Body Guards"},{"Summon","CIA ManToken"},{"Damage",9999,"Self"}},
+			Target = "Ally",
+		},
+		["Bio"] = "Dr. Pavel, I'm CIA.",
+	},
+		
+	["CIA ManToken"] = { 
+		["Id"] = 503584176,
+		["Name"] = "CIA Man",
+		["Health"] = 500,
+		["Power"] = 200,
+		["Rarity"] = "Uncommon",   --left rarity as Uncommon, in case of RNG Summon
+		["AttackEffect"] = "GunShot",
+		["Color"] = "Blue", 
+		["Cost"] = {["Neutral"] = 5,["Blue"] = 2,},
+		["Effect"] = {
+			Name = "Protection",
+			Description = "Whenever this fighter is targeted, summon a Body Guard.", 
+			["Type"] = "OnTarget",
 			["Power"] = {{"Summon","Body Guards"}},
 			Target = "Ally",
 		},
@@ -16335,29 +16587,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "Cows are just plain evil.",
 	},
 	
-	["MasterHand"] = {
-		["Id"] = 502550783,
-		["Name"] = "MasterHand",
-		["Health"] = 5000,
-		["Power"] = 0,
-		["Rarity"] = "Token",
-		["AttackEffect"] = "Fire",
-		["WeakenImmune"] = true,
-		["SwapImmune"] = true,
-		["CounterAttackBlock"] = true,
-		["Color"] = "Neutral",
-		["Cost"] = {["Neutral"] = 3,},
-		["Effect"] = {
-			Name = "BossMonster",
-			Description = [[Can't be counterattacked. This card is immune to cards that lower or swap its Health or Power. When this card is destroyed, its controller loses the game.]],
-			["Type"] = "OnDeath",
-			["Power"] = "Inflict",
-			Target = "Self",	
-			Increase = 99999,
-		},
-		["Bio"] = "No gimmicks... Apart from this one.",
-	},		
-	
 	["JavierCollin88Poppin"] = {
 		["Id"] = 496076329,
 		["Name"] = "JavierCollin88Poppin",
@@ -16556,11 +16785,11 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 513641417,
 		["Name"] = "BoomAtack",
 		["Health"] = 600,
-		["Power"] = 100,
+		["Power"] = 200,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "SlashDiagonal",
-		["Color"] = "Red",
 		["AttackBlock"] = true,
+		["Color"] = "Red", 
 		["Archetype"] = "Defender",
 		["Cost"] = {["Red"] = 4,}, 
 		["Effect"] = {
@@ -16577,7 +16806,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 513641417,
 		["Name"] = "BoomAtack",
 		["Health"] = 600,
-		["Power"] = 100,
+		["Power"] = 200,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "SlashDiagonal",
 		["Color"] = "Red",
@@ -16589,7 +16818,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Booming Red",
 			Description = "Can't attack or generate icons.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Summon","Boom2"}},
+			["Power"] = {{"Heal",0}},
 			Target = "Ally",
 		},
 		["Bio"] = "It's A Tack, not attack.",
@@ -16599,7 +16828,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 959641264,
 		["Name"] = "Helperbot",
 		["Health"] = 600,
-		["Power"] = 400,
+		["Power"] = 300,
 		["Rarity"] = "Rare",
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Lightning",
@@ -16607,9 +16836,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 4, ["Neutral"] = 1,}, 
 		["Effect"] = {
 			Name = "Helping Out",
-			Description = "At the end of your turns, all Non-Archetyped Rare fighters gain 100 health.",
+			Description = "At the end of your turns, all Non-Archetyped Rare fighters gain 100 power.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Heal",100}},
+			["Power"] = {{"Strengthen",100}},
 			Target = "Archetype",
 		},
 		["Bio"] = "Hello there robloxian, what do you need help with?",
@@ -16627,9 +16856,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 3,["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Magic Trick!",
-			Description = "At the end of your turns, materialise a Hodif.",
+			Description = "At the end of your turns, summon a Kitten out of the magician's hat.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Summon","Hodif"}},
+			["Power"] = {{"RandomSummon",{"Kitten","Kitten2","Kitten3","Kitten4"}}},
 			Target = "Ally",
 		},
 		["Bio"] = "I shall pull great things using my magic hat.",
@@ -16672,45 +16901,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "All",
 		},
 		["Bio"] = "GIMME YER CHIPS!.",
-	},
-		
-	["BoomAtack"] = {
- 		["Id"] = 513641417,
- 		["Name"] = "BoomAtack",
- 		["Health"] = 300,
- 		["Power"] = 200,
- 		["Rarity"] = "Uncommon",
- 		["AttackEffect"] = "SlashDiagonal",
-		["Color"] = "Red",
- 		["Cost"] = {["Neutral"] = 2, ["Red"] = 1,}, 
- 		["Effect"] = {
- 			Name = "Booming Red",
- 			Description = "When this card dies, generate a red icon and a white icon.",
- 			["Type"] = "OnDeath",
-			["Power"] = {{"Red",1},{"Neutral",1}},
-			Target = "Ally",
- 		},
- 		["Bio"] = "It's A Tack, not attack.",
- 	},
- 	
-	["Helperbot"] = {
-		["Id"] = 528150435,
-		["Name"] = "Helperbot",
- 		["Health"] = 500,
- 		["Power"] = 800,
-		["Rarity"] = "Rare",
-		["Archetype"] = "Hero",
-		["AttackEffect"] = "Lightning",
- 		["Color"] = "Yellow",
- 		["Cost"] = {["Yellow"] = 4, ["Neutral"] = 1,}, 
- 		["Effect"] = {
- 			Name = "Helping Out",
- 			Description = "At the end of your turns, you opponent gains 200 life.",
- 			["Type"] = "OnEnd",
- 			["Power"] = {{"Inflict",-200,"Opponent"}},
- 			Target = "Opponent",
- 		},
- 		["Bio"] = "Hello there, Robloxian! What do you need help with?",
 	},
 
 	["CalmFoxz"] = {
@@ -16925,7 +17115,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 2,["Neutral"] = 3,}, 
 		["Effect"] = {
 			Name = "Batter Up",
-			Description = "Swap a fighters stats. This card cannon generate icons.",
+			Description = "Swap a target fighter's stats. This card can't generate icons.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Swap",030}},
 			Target = "Single",
@@ -17043,12 +17233,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,}, 
 		["Effect"] = {
 			Name = "Roblox",
-			Description = "Put a Classic Roblox Gear into both players hands.",
+			Description = "Put a Classic ROBLOX Gear into both players hands.",
 			["Type"] = "OnSummon",
-			["Power"] = {
-				{"RandomAdd", {"Linked Sword", "Trowel", "Rocket Launcher", "Superball", "Slingshot",},},
-				{"RandomAdd", {"Linked Sword", "Trowel", "Rocket Launcher", "Superball", "Slingshot",}, "Opponent"},
-			},
+			["Power"] = {{"RandomAdd",{"Linked Sword","Trowel","Rocket Launcher","Superball","Slingshot"}},{"RandomAdd",{"Linked Sword","Trowel","Rocket Launcher","Superball","Slingshot"},"Opponent"}},
 			Target = "Ally",
 		},
 		["Bio"] = "He loves games.",
@@ -17066,7 +17253,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Power Up",
-			Description = "Give a fighter 300 power.",
+			Description = "A target fighter gains 300 power.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Strengthen",300}},
 			Target = "Single",
@@ -17086,7 +17273,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 1,},
 		["Effect"] = {
 			Name = "Power Up",
-			Description = "Give a fighter 300 health and lock it for 1 turn.",
+			Description = "Give a target fighter 300 health, then lock it for 1 turn.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",300},{"Lock",1}},
 			Target = "Single",
@@ -17106,7 +17293,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Red"] = 1,},
 		["Effect"] = {
 			Name = "Power Up",
-			Description = "Deal 500 damage to a fighter, and to both players.",
+			Description = "Deal 400 damage to a target fighter, and to both players.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",400},{"Cost",400},{"Inflict",400}},
 			Target = "Single",
@@ -17126,7 +17313,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Green"] = 1,},
 		["Effect"] = {
 			Name = "Power Up",
-			Description = "Deal 100 damage to a fighter and return this card to your hand.",
+			Description = "Deal 100 damage to a target fighter. Return this card to your hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",100},{"Add","Superball","Ally"}},
 			Target = "Single",
@@ -17146,7 +17333,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "Power Up",
-			Description = "Deal 200 damage to a fighter. Draw a card.",
+			Description = "Deal 200 damage to a target fighter. Draw a card.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",200},{"Draw",1,"Ally"}},
 			Target = "Single",
@@ -17194,7 +17381,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},		
 	
 	["Epic Sauce"] = {
-		["Id"] = 626081944,
+		["Id"] = 1187815470,
 		["Name"] = "Epic Sauce",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -17224,9 +17411,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Explosion",
-			Description = "This card can't be discarded. When targeted, deal 200 damage to all fighters.",
-			["Type"] = "OnTarget",
-			["Power"] = {{"Damage",200}},
+			Description = "This card can't be discarded. When this card dies, deal 100 damage to all fighters.",
+			["Type"] = "OnDeath",
+			["Power"] = {{"Damage",100}},
 			Target = "All",
 		},
 		["Bio"] = "A simple tool. Be sure to not blow yourself up.",
@@ -17277,6 +17464,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Health"] = 1000,
 		["Power"] = 500,
 		["Rarity"] = "Legendary",
+		["Fading"] = true,
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Red",
 		["Cost"] = {["Red"] = 5,["Neutral"] = 5,},
@@ -17306,7 +17494,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Draw",2}},
 			Target = "Ally",
 		},
-		["Bio"] = "I quit playin' ball long ago, but I still got it in me!",
+		["Bio"] = "On second thought, I think I'll just stick to gambling.",
 	},		
 	
 	["Burning Tree"] = {
@@ -17358,13 +17546,14 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 500,
 		["Rarity"] = "Rare",
 		["Archetype"] = "Hero",
+		["Fading"] = true,
 		["AttackEffect"] = "Fire",
 		["Color"] = "Red",
 		["Stealth"] = true,
 		["Cost"] = {["Red"] = 3,["Neutral"] = 3},
 		["Effect"] = {
 			Name = "Sandbox",
-			Description = "The next fighter you summon has an additional 500 power. Abilities don't trigger when NullSenseStudio enters play.",
+			Description = "The next fighter you summon has an additional 500 power. Abilities don't trigger when NullSenseStudio enters play or dies.",
 			["Type"] = "OnAllySummon",
 			["Power"] = {{"Summon","NullToken"},{"Strengthen",500,"Aggressor"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -17378,9 +17567,19 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Health"] = 500,
 		["Power"] = 500,
 		["Rarity"] = "Token",
+		["Archetype"] = "Hero",
+		["Fading"] = true,
+		["Stealth"] = true,
 		["AttackEffect"] = "Fire",
 		["Color"] = "Red",
 		["Cost"] = {["Red"] = 3,["Neutral"] = 3},
+		["Effect"] = {
+			Name = "Sandbox",
+			Description = "Abilities don't trigger when NullSenseStudio enters play or dies.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Cost",0}},
+			Target = "Opponent",
+		},
 		["Bio"] = "As a kid he played in the sandbox. As an adult he created the sandbox.",
 	},		
 	
@@ -17546,17 +17745,17 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Suicide Bomber"] = {
 		["Id"] = 557999834,
 		["Name"] = "Frenzied Bomber",
-		["Health"] = 400,
-		["Power"] = 400,
+		["Health"] = 300,
+		["Power"] = 500,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Explode1",
 		["Color"] = "Neutral",
 		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Rope, Lamp Oil, Bombs",
-			Description = "At the end of your turns, put a remote mine into your hand.",
-			["Type"] = "OnEnd",
-			["Power"] = {{"Add","Remote Mine"}},
+			Description = "When this card dies, add two Remote Mines to your hand.",
+			["Type"] = "OnDeath",
+			["Power"] = {{"Add","Remote Mine"},{"Add","Remote Mine"}},
 			Target = "Ally",
 		},
 		["Bio"] = "I'M GONNA DO IT!",
@@ -17570,10 +17769,11 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Common",
 		["AttackEffect"] = "GunShot",
 		["Color"] = "Neutral",
+		["Token"] = true,
 		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Thug Life",
-			Description = "When this card dies, put a random common into your hand.",
+			Description = "When this card dies, put a random common into your hand. This card can't generate icons.",
 			["Type"] = "OnDeath",
 			["Power"] = {{"RandomAdd","Common"}},
 			Target = "Ally",
@@ -17634,9 +17834,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Frenemy",
 			Description = "Each player puts a nightmare into their hand. 25% chance to replace the nightmare with three random epics.",
 			["Type"] = "OnSummon",
-			["Power"] = {
-				{"RandomAdd", {"Nightmare", "Nightmare", "Nightmare", "Frenemy's Reward"}},
-				{"RandomAdd", {"Nightmare", "Nightmare", "Nightmare", "Frenemy's Reward"}, "Opponent",}},
+			["Power"] = {{"RandomAdd",{"Nightmare","Nightmare","Nightmare","Frenemy's Reward"}},{"RandomAdd",{"Nightmare","Nightmare","Nightmare","Frenemy's Reward"},"Opponent"}},
 			Target = "Ally",
 		},
 		["Bio"] = "One bengbeng14 coming right up, my dear frenemy. This will cost you your soul, however.",
@@ -17658,18 +17856,18 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"RandomAdd","Epic"},{"RandomAdd","Epic"},{"RandomAdd","Epic"}},
 			Target = "All",
 		},
-		["Bio"] = "On second thought, have a bengbeng14, an Anti-Fave, and a ROBLOXian reborn!.",
+		["Bio"] = "On second thought, have a bengbeng14, an Anti-Fave, and a ROBLOXian reborn! All free of charge!",
 	},			
 	
 	["Safe Chat"] = {
-		["Id"] = 557983645,
+		["Id"] = 1249708531,
 		["Name"] = "Safe Chat",
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Null",
 		["Color"] = "Yellow",
-		["Cost"] = {["Neutral"] = 4,},
+		["Cost"] = {["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Thug Life",
 			Description = "Lower the power of all fighters by 100. Summon a guest.",
@@ -17683,15 +17881,16 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Fire Fighter"] = {
 		["Id"] = 557974486,
 		["Name"] = "Fire Fighter",
-		["Health"] = 500,
-		["Power"] = 400,
+		["Health"] = 550,
+		["Power"] = 450,
 		["Rarity"] = "Uncommon",
+		["Requirement"] = {false,1,true},
 		["AttackEffect"] = "Lighting",
 		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 3,["Red"] = 2},
 		["Effect"] = {
 			Name = "Damage for Top Deck",
-			Description = "Your opponent loses a red, a green, a yellow, and a blue icon. This effect can cause people to go into negative icons.",
+			Description = "Can only be summoned if your opponent controls a fighter.  Your opponent loses a red, a green, a yellow, and a blue icon. This effect can cause people to go into negative icons.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Green",-1},{"Blue",-1},{"Yellow",-1},{"Red",-1}},
 			Target = "Opponent",
@@ -17759,11 +17958,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},		
 	
 	["WebGL3D 1"] = {
-		["Id"] = 557986026,
+		["Id"] = 894237039,
 		["Name"] = "WebGL3D",
 		["Health"] = 400,
 		["Power"] = 400,
 		["Rarity"] = "Token",
+		["Archetype"] = "Hero",
 		["AttackEffect"] = "Slash",
 		["Color"] = "Green",
 		["Cost"] = {["Neutral"] = 4,["Green"] = 1},
@@ -17778,11 +17978,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},			
 	
 	["WebGL3D 2"] = {
-		["Id"] = 557986026,
+		["Id"] = 894237039,
 		["Name"] = "WebGL3D",
 		["Health"] = 400,
 		["Power"] = 400,
 		["Rarity"] = "Token",
+		["Archetype"] = "Hero",
 		["AttackEffect"] = "Slash",
 		["Color"] = "Green",
 		["Cost"] = {["Neutral"] = 4,["Green"] = 1},
@@ -17802,6 +18003,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Health"] = 400,
 		["Power"] = 400,
 		["Rarity"] = "Token",
+		["Archetype"] = "Hero",
 		["AttackEffect"] = "Slash",
 		["Color"] = "Green",
 		["Cost"] = {["Neutral"] = 4,["Green"] = 1},
@@ -17843,7 +18045,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"RandomAdd","LegendaryYellow"}},
 			Target = "Ally",
 		},
-		["Bio"] = "Creator of trade hangout, even though he hates BC only places. Seranok be darned.",
+		["Bio"] = "Creator of trade hangout, even though he hates BC only places.",
 	},				
 	
 	["BrokenBone"] = {
@@ -17852,6 +18054,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Health"] = 450,
 		["Power"] = 450,
 		["Rarity"] = "Legendary",
+		["Fading"] = true,
 		["AttackEffect"] = "Dash",
 		["Color"] = "Neutral",
 		["Cost"] = {["Neutral"] = 0,},
@@ -17881,7 +18084,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 557973990,
 		["Name"] = "Drager Bot",
 		["Health"] = 1000,
-		["Power"] = 100,
+		["Power"] = 250,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Laser",
 		["Color"] = "Red",
@@ -17923,6 +18126,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 300,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "GunShot",
+		["Fading"] = true,
 		["Color"] = "Green",
 		["Cost"] = {["Neutral"] = 1, ["Green"] = 5,},
 		["Effect"] = {

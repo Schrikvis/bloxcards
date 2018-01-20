@@ -290,15 +290,28 @@ When set to true, the card can't generate icons.
 - Charge
 When set to true, the card can attack when summoned.
 
+- HealImmune
+The card is immune to effects that increase its health.
+
+- StrenghtenImmune
+The card is immune to effects that increase its power.
+
 - WeakenImmune
 The card is immune to effects that decrease its health or power.
 
 - SwapImmune
 The card is immune to effects that swap its health and power.
 
+- SetImmune
+The card is immune to effects that set its health or power.
+
 - Stealth
-When set to true, the card is not detected by OnAllySummon, 
+When set to true, the card is not detected by OnAllySummon,
 OnEnemySummon or OnAnySummon effects.
+
+- Fading
+When set to true, the card is not detected by OnAllyDeath,
+OnEnemyDeath or OnAnyDeath effects.
 
 ---------------------------------------------------------------
 
