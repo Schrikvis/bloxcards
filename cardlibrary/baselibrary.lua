@@ -18111,8 +18111,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Red"] = 1,},
 		["Effect"] = {
 			Name = "Thug Life",
-			Description = "When this card is attacked, deal 100 damage to all non-Ninjas.",
-			["Type"] = "OnAttacked",
+			Description = "When this card dies, deal 100 damage to all non-Ninjas.",
+			["Type"] = "OnDeath",
 			["Power"] = {{"Damage","100"}},
 			Target = "NotArchetype",
 		},
