@@ -5208,9 +5208,10 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Korblox",
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 5,},
+		["Requirement"] = {"Archetype",1},
 		["Effect"] = {
 			Name = "Quick Shot",
-			Description = "lower the power of all non-Korblox fighters by 500.",
+			Description = "You must control a Korblox to summon this card. Lower the power of all non-Korblox fighters by 500.",
 			["Type"] = "OnSummon",
 			["Power"] = "Weaken",
 			Target = "NotArchetype",

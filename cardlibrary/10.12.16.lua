@@ -1320,7 +1320,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Bleeding Reality",
 			Description = "Cast only if you control 8 Ultras. All Ultras gain 500 health and power. Return this card to your hand, then end the turn.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Heal",500},{"Strengthen",500},{"Add","Ultra Obliterator","Ally"}},
+			["Power"] = {{"Heal",500},{"Strengthen",500},{"Add","Ultra Obliterator","Ally"},{"EndTurn",1,"Ally"}},
 			Target = "Archetype",
 		},
 		["Bio"] = "Ultras share a hivemind that allow others to be summoned. When this hivemind reaches a critical mass, regions get torn asunder from the sheer pressure.",
@@ -1824,6 +1824,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Punchkick",
 		["Color"] = "Green", 
+		["Charge"] = true,
 		["Cost"] = {["Neutral"] = 3, ["Green"] = 3,},
 		["Effect"] = {
 			Name = "befriending of scaly mutts",
@@ -2541,6 +2542,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Punchkick",
 		["Color"] = "Green", 
 		["Cost"] = {["Green"] = 7,},
+		["Archetype"] = "Zombie",
 		["Effect"] = {
 			Name = "Life fam",
 			Description = "Summon two Zombies. Whenever an allied fighter dies, Zabiehunter drains 200 health from your opponent.",
