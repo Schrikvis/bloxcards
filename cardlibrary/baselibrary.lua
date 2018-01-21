@@ -2617,7 +2617,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Awful Good"] = {
-		["Id"] = 283992798,
+		["Id"] = 1346604876,
 		["Name"] = "Awful Good",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -2625,7 +2625,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Null",
 		["Color"] = "Green",
-		["Cost"] = {["Green"] = 2,},
+		["Cost"] = {["Green"] = 1,},
 		["Bio"] = "Jolly terrible, my dear enemy!",
 		["Effect"] = {
 			Name = "Awful Good",
