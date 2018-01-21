@@ -2617,7 +2617,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Awful Good"] = {
-		["Id"] = 283992798,
+		["Id"] = 1346604876,
 		["Name"] = "Awful Good",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -2625,7 +2625,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Null",
 		["Color"] = "Green",
-		["Cost"] = {["Green"] = 2,},
+		["Cost"] = {["Green"] = 1,},
 		["Bio"] = "Jolly terrible, my dear enemy!",
 		["Effect"] = {
 			Name = "Awful Good",
@@ -13720,7 +13720,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Health"] = 500,
 		["Power"] = 500,
 		["Rarity"] = "Common",
-	.["AttackEffect"] = "Punch1",
+		["AttackEffect"] = "Punch1",
 		["Color"] = "Red",
 		["Cost"] = {["Red"] = 3, ["Neutral"] = 2},
 		["Effect"] = {
@@ -14880,9 +14880,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2, ["Blue"] = 5,},
 		["Effect"] = {
 			Name = "Trout Slap",
-			Description = "Haste. Summon only if you have Hamstermon in play. At the end of your turns, lower the power of all enemy fighters by 100.",
+			Description = "Haste. Summon only if you have Hamstermon in play. At the end of your turns, lower the power of all enemy fighters by 150.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Weaken",100}},
+			["Power"] = {{"Weaken",150}},
 			Target = "Opponent",
 		},
 		["Bio"] = "More fabulous than an inelegant robot!",
@@ -18111,8 +18111,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Red"] = 1,},
 		["Effect"] = {
 			Name = "Thug Life",
-			Description = "When this card is attacked, deal 100 damage to all non-Ninjas.",
-			["Type"] = "OnAttacked",
+			Description = "When this card dies, deal 100 damage to all non-Ninjas.",
+			["Type"] = "OnDeath",
 			["Power"] = {{"Damage","100"}},
 			Target = "NotArchetype",
 		},
