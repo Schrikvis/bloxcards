@@ -14939,14 +14939,14 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["TheEnderCorp"] = {
-		["Id"] = 446792148,
+		["Id"] = 1352072418,
 		["Name"] = "TheEnderCorp",
 		["Health"] = 600,
 		["Power"] = 400,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Blue",
-		["Cost"] = {["Neutral"] = 1, ["Red"] = 1, ["Blue"] = 3,},
+		["Cost"] = {["Neutral"] = 1, ["Blue"] = 3,},
 		["Effect"] = {
 			Name = "I AM NOT YOUR SLAVE DAD",
 			Description = "Both players draw a card. Reveal your opponent's hand.",
