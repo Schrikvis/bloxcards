@@ -2854,7 +2854,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["DerptasticDevil"] = {
-		["Id"] = 460067529,
+		["Id"] = 1350058078,
 		["Name"] = "DerptasticDevil",
 		["Health"] = 1200,
 		["Power"] = 400,
@@ -3680,7 +3680,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["HyperVoxel"] = {
-		["Id"] = 285152442,
+		["Id"] = 1350078596,
 		["Name"] = "HyperVoxel",
 		["Health"] = 750,
 		["Power"] = 250,
