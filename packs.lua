@@ -788,7 +788,7 @@ local packs = {
 			"FuryBlocks",
 			"Sharksie",
 			"PlaceRebuilder",
-			"Litozinnamon",
+			"litozinnamon",
 		},
 	}; 
 	{
@@ -821,7 +821,7 @@ local packs = {
 			"CloneTrooper1019",
 			"Baby Noob",
 			"Revelling Satyr",
-			"ChickenGooseBird",
+			"ChickenduckbirdV2",
 			"Noob's Play Box",
 			"Safe Chat",
 			"Noob Gunner",
