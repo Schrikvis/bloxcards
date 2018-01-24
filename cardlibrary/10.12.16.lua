@@ -4119,7 +4119,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Summon","Permafrost 5"},{"Damage",9999,"Self"}},
 			["Target"] = "Ally",
 		},
-		["Bio"] = "Many people act irrational while freezing to death. Some people get naked while others try to get inside small holes to seek shelter. The motives behind those actions are still not completely understood.",
+		["Bio"] = "Many people act irrational while freezing to death. Some people get raw while others try to get inside small holes to seek shelter. The motives behind those actions are still not completely understood.",
 	},
 	
 	["Permafrost 5"] = {
