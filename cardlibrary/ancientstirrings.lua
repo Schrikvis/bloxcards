@@ -3332,7 +3332,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2, ["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "When this card enters play, draw a card. When this card dies, add a nightmare to your hand.",
+			Description = "When this card enters play, draw a card. When this card dies, your opponent draws a card.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Draw",1},{"Summon","Eradicator Token","Ally"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -3351,10 +3351,10 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2, ["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "When this card enters play, draw a card. When this card dies, add a nightmare to your hand.",
+			Description = "When this card enters play, draw a card. When this card dies, your opponent draws a card.",
 			["Type"] = "OnDeath",
-			["Power"] = {{"Add","Nightmare"}},
-			Target = "Ally",
+			["Power"] = {{"Draw",1}},
+			Target = "Opponent",
 		},
 		["Bio"] = "Never underestimate the power of the minions of Hallow.",
 	},
