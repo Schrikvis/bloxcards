@@ -4233,7 +4233,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Inflict",1000000}},
 			["Target"] = "Opponent",
 		},
-		["Bio"] = "",
+		["Bio"] = "As the darkness sets in, the seconds count, time was slowing down, the ice had frozen solid.",
 	},
 }
 return tentwelvesixteen
