@@ -4218,7 +4218,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Permafrost 10"] = {
-		["Id"] = 1357088327,
+		["Id"] = 1357237858,
 		["Name"] = "Permafrost Storm",
 		["Health"] = 1000,
 		["Power"] = 0,
