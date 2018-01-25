@@ -584,6 +584,7 @@ local packs = {
 		CardPackId = 721399466,
 		Description = "Blue is the colour of logic, order, and structure. Thought packs contain cards that cost blue!",
 		Cards = {
+			"Permafrost Storm",
 			"MesouricPhantom976",
 			"Silver_Semtexagon",
 			"Arte71",
@@ -1012,6 +1013,7 @@ local packs = {
 		Description = "Exotic new cards from the black market! White cards and joke cards! It's all yours, as long as you have 10 wins!",
 		WinRequirement = 10;
 		Cards = {
+			"Permafrost Storm",
 			"ThatGrimGuy",
 			"B550",
 			"MesouricPhantom976",
@@ -1090,7 +1092,6 @@ local packs = {
 			"Aesura",
 			"Wrath of King Gecko",
 			"iiSmolToaster",
-			"Damaging26",
 			-- PAST THIS POINT IS FOR WHITE CARDS AND JOKE CARDS ONLY. I'M LOOKING AT YOU, BLITZ.
 			"Dukran the Celestial",
 			"Wingman8",
