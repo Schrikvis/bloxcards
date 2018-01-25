@@ -13449,9 +13449,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Blue"] = 1,},
 		["Effect"] = {
 			Name = "Icon Hardscope",
-			Description = "Gain 1 Blue icon and draw a card.",
+			Description = "Draw a card.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Blue",1},{"Draw",1}},
+			["Power"] = {{"Draw",1}},
 			Target = "Ally",
 		},
 		["Bio"] = "You're a kid now! Dark souls fills you with determination! Zhang He is love, Zhang He is life! Storm Crow OP! Git Gud! End him rightly! Fractal anything is a viable deck! Jet fuel can't melt steel beams!",
