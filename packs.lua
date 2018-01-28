@@ -10,6 +10,10 @@ local packs = {
 		Cards = {
 			"CalmFoxz",
 			"Lyv",
+			"Bigtank_s",
+			"Pilgrim",
+			"Graalgamer",
+			"Western Bandit",
 			"Samksoon321",
 			"Brycen27",
 			"AsrielMemer",
