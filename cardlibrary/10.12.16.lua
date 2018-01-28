@@ -3983,7 +3983,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "550 Miles",
 			Description = "Whenever your opponent casts an action or terrain spell, give this card 550 Power.",
 			["Type"] = "OnEnemyCast",
-			["Power"] = {{"Stengthen",550}},
+			["Power"] = {{"Strengthen",550}},
 			Target = "Self",
 		},
 		["Bio"] = "B550 is a blank slate - A gunman with no identity: stripped of humanity and built for only one purpose. His story - not important; his name - even less so.",
