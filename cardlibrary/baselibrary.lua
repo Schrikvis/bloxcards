@@ -17541,11 +17541,11 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},		
 
 ["Forestfire Butterflies2"] = {
-		["Id"] = 556051535,
+		["Id"] = 1371878542,
 		["Name"] = "Forestfire Butterflies",
 		["Health"] = 100,
 		["Power"] = 100,
-		["Rarity"] = "Common",
+		["Rarity"] = "Token",
 		["AttackEffect"] = "Fire",
 		["Token"] = true,
 		["Charge"] = true,
