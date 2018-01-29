@@ -13657,7 +13657,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Damage",1,"Self"},{"Damage",0}},
 			Target = "Single",
 		},
-		["Bio"] = "Take it easy on the B button, would ya?!",
+		["Bio"] = "Take it easy on the B button, would ya!",
 	},	
 	
 	["Bad Bread"] = {
