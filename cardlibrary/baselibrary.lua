@@ -17509,7 +17509,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 2,},
 		["Effect"] = {
 			Name = "Firefly",
-			Description = "When this card dies, add 1 Forestfire Butterfly to your hand.",
+			Description = "When this card dies, put a Forestfire Butterfly into your hand.",
 			["Type"] = "OnDeath",
 			["Power"] = {{"Add","Forestfire Butterflies"}},
 			Target = "Ally",
@@ -17530,7 +17530,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 0,},
 		["Effect"] = {
 			Name = "Firefly",
-			Description = "Haste. Can't generate icons. Add a copy of this card to your hand without this effect.",
+			Description = "Haste. Can't generate icons. Put a copy of this card into your hand without this effect.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Add","Forestfire Butterflies2"}},
 			Target = "Ally",
