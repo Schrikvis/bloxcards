@@ -17507,7 +17507,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Fire",
 		["Color"] = "Red",
 		["Cost"] = {["Red"] = 2,},
-		["Archetype"] = "TRIBETACULAR",
 		["Effect"] = {
 			Name = "Firefly",
 			Description = "When this card dies, add 1 Forestfire Butterfly to your hand.",
@@ -17529,7 +17528,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Charge"] = true,
 		["Color"] = "Red",
 		["Cost"] = {["Red"] = 0,},
-		["Archetype"] = "TRIBETACULAR",
 		["Effect"] = {
 			Name = "Firefly",
 			Description = "Haste. Can't generate icons. Add a copy of this card to your hand without this effect.",
@@ -17551,7 +17549,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Charge"] = true,
 		["Color"] = "Red",
 		["Cost"] = {["Red"] = 0,},
-		["Archetype"] = "TRIBETACULAR",
 		["Effect"] = {
 			Name = "Firefly",
 			Description = "Haste. Can't generate icons.",
