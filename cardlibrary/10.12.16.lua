@@ -2175,7 +2175,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "R",
 			Description = "Randomly transform all other fighters to random fighters, and lose all your green icons. This card is immune to effects that set its stats.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Summon","DeliriousTokenA","Ally"},{"SetHealth",0,"Opponent"},{"Heal",9999},{"Damage",9999,"Archetype"},{"Summon","DeliriousTokenB","Ally"},{"SetHealth",0,"Ally"},{"Heal",9999},{"Damage",9999,"Archetype"},{"SetGreen",0}},
+			["Power"] = {{"Summon","DeliriousTokenA","Ally"},{"SetHealth",0,"Opponent"},{"Heal",9999},{"Damage",9999,"Archetype"},{"Summon","DeliriousTokenB","Ally"},{"SetHealth",0,"Ally"},{"Heal",9999},{"Damage",9999,"Archetype"},{"SetGreen",0,"Ally"}},
 			Target = "Self",
 		},
 		["Bio"] = "Let it show you everything nature cannot do.",
