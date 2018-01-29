@@ -8388,8 +8388,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 4,},
 		["Effect"] = {
 			Name = "SorryBurn",
-			Description = "At the end of this turn, set your life to 1000. At the end each other turn, gain 1000 life.",
-			["Type"] = "OnEnd",
+			Description = "Set your Life to 1000. At the end of your turns, gain 1000 Life.",
+			["Type"] = "OnSummon",
 			["Power"] = {{"SetLife",1000},{"Summon","Tweety Token"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
@@ -8407,7 +8407,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 4,},
 		["Effect"] = {
 			Name = "SorryBurn",
-			Description = "At the end of each turn, gain 1000 life.",
+			Description = "At the end of your turns, gain 1000 life.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Cost",-1000}},
 			Target = "Ally",
