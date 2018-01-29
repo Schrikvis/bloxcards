@@ -13468,7 +13468,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 12,},
 		["Effect"] = {
 			Name = "Revival",
-			Description = "Add a Super Blip to your hand. It can be used 8 times.",
+			Description = "Add a Super Targeting Blip to your hand. It can be used 8 times.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Add","Super Blip1"}},
 			Target = "Ally",
@@ -13478,7 +13478,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 
 	["Super Blip1"] = {
 		["Id"] = 1372147861,
-		["Name"] = "Super Blip",
+		["Name"] = "Super Targeting Blip",
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Token",
@@ -13499,7 +13499,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 
 	["Super Blip2"] = {
 		["Id"] = 1372147861,
-		["Name"] = "Super Blip",
+		["Name"] = "Super Targeting Blip",
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Token",
@@ -13520,7 +13520,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	
 	["Super Blip3"] = {
 		["Id"] = 1372147861,
-		["Name"] = "Super Blip",
+		["Name"] = "Super Targeting Blip",
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Token",
@@ -13541,7 +13541,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 
 	["Super Blip4"] = {
 		["Id"] = 1372147861,
-		["Name"] = "Super Blip",
+		["Name"] = "Super Targeting Blip",
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Token",
@@ -13562,7 +13562,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 
 	["Super Blip5"] = {
 		["Id"] = 1372147861,
-		["Name"] = "Super Blip",
+		["Name"] = "Super Targeting Blip",
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Token",
@@ -13583,7 +13583,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 
 	["Super Blip6"] = {
 		["Id"] = 1372147861,
-		["Name"] = "Super Blip",
+		["Name"] = "Super Targeting Blip",
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Token",
@@ -13604,7 +13604,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 
 	["Super Blip7"] = {
 		["Id"] = 1372147861,
-		["Name"] = "Super Blip",
+		["Name"] = "Super Targeting Blip",
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Token",
@@ -13625,7 +13625,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 
 	["Super Blip8"] = {
 		["Id"] = 1372147861,
-		["Name"] = "Super Blip",
+		["Name"] = "Super Targeting Blip",
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Token",
