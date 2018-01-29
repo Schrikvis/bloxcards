@@ -17519,7 +17519,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},			
 	
 	["Forestfire Butterflies"] = {
-		["Id"] = 556051535,
+		["Id"] = 1371878542,
 		["Name"] = "Forestfire Butterflies",
 		["Health"] = 100,
 		["Power"] = 100,
