@@ -11423,11 +11423,11 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Rarity"] = "Legendary",
 				["Effect"] = {
 					Name = "MOO!",
-					Description = "Deal 2 damage to a target fighter.",
+					Description = "Increase the health of all allied fighters by 1.",
 					Type = "OnSummon",
-					Power = "Damage",
-					Target = "Single",
-					Increase = 2
+					Power = "Heal",
+					Target = "Ally",
+					Increase = 1
 				},
 				["Bio"] = "Hmph.",
 			},
@@ -11441,9 +11441,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 5,},
 		["Effect"] = {
 			Name = "MOO!",
-			Description = "Deal 1 damage to a target fighter.",
+			Description = "Increase the health of a target fighter by 1.",
 			Type = "OnSummon",
-			Power = "Damage",
+			Power = "Heal",
 			Target = "Single",
 			Increase = 1
 		},
