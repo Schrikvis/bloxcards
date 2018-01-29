@@ -2444,14 +2444,14 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Darklord1506"] = {
-		["Id"] = 785620896,
+		["Id"] = 1372169759,
 		["Name"] = "Darklord1506",
 		["Health"] = 200,
 		["Power"] = 400,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Punchkick",
 		["Color"] = "Blue", 
-		["Cost"] = {["Yellow"] = 1, ["Blue"] = 3,},
+		["Cost"] = {["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Ruinate Time",
 			Description = "Set the lock of a target fighter to 1. It gains 300 health.",
