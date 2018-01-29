@@ -13476,7 +13476,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "Even Pokemon can make good games.",
 	},	
 
-["Super Blip1"] = {
+	["Super Blip1"] = {
 		["Id"] = 1372147861,
 		["Name"] = "Super Blip",
 		["Health"] = 0,
@@ -13484,8 +13484,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Neutral",
-		["Archetype"] = "Target",
-		["Token"] = true,
 		["DiscardBlock"] = true,
 		["Stealth"] = true,
 		["Cost"] = {["Neutral"] = 0,},
@@ -13493,13 +13491,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Target",
 			Description = "Can't be discarded. 7 charges. Target a fighter.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",1,"Self"},{"Damage",0},{"Add","Super Blip2", "Ally"}},
+			["Power"] = {{"Damage",0},{"Add","Super Blip2", "Ally"}},
 			Target = "Single",
 		},
 		["Bio"] = "What? Targeting blip is evolving!",
 	},	
 
-["Super Blip2"] = {
+	["Super Blip2"] = {
 		["Id"] = 1372147861,
 		["Name"] = "Super Blip",
 		["Health"] = 0,
@@ -13507,8 +13505,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Neutral",
-		["Archetype"] = "Target",
-		["Token"] = true,
 		["DiscardBlock"] = true,
 		["Stealth"] = true,
 		["Cost"] = {["Neutral"] = 0,},
@@ -13516,13 +13512,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Target",
 			Description = "Can't be discarded. 6 charges. Target a fighter.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",1,"Self"},{"Damage",0},{"Add","Super Blip3", "Ally"}},
+			["Power"] = {{"Damage",0},{"Add","Super Blip3", "Ally"}},
 			Target = "Single",
 		},
 		["Bio"] = "What? Targeting blip is evolving?!",
 	},
 	
-["Super Blip3"] = {
+	["Super Blip3"] = {
 		["Id"] = 1372147861,
 		["Name"] = "Super Blip",
 		["Health"] = 0,
@@ -13530,8 +13526,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Neutral",
-		["Archetype"] = "Target",
-		["Token"] = true,
 		["DiscardBlock"] = true,
 		["Stealth"] = true,
 		["Cost"] = {["Neutral"] = 0,},
@@ -13539,13 +13533,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Target",
 			Description = "Can't be discarded. 5 charges. Target a fighter.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",1,"Self"},{"Damage",0},{"Add","Super Blip4", "Ally"}},
+			["Power"] = {{"Damage",0},{"Add","Super Blip4", "Ally"}},
 			Target = "Single",
 		},
 		["Bio"] = "What? Targeting blip is evolving?",
 	},
 
-["Super Blip4"] = {
+	["Super Blip4"] = {
 		["Id"] = 1372147861,
 		["Name"] = "Super Blip",
 		["Health"] = 0,
@@ -13553,8 +13547,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Neutral",
-		["Archetype"] = "Target",
-		["Token"] = true,
 		["DiscardBlock"] = true,
 		["Stealth"] = true,
 		["Cost"] = {["Neutral"] = 0,},
@@ -13562,13 +13554,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Target",
 			Description = "Can't be discarded. 4 charges. Target a fighter.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",1,"Self"},{"Damage",0},{"Add","Super Blip5", "Ally"}},
+			["Power"] = {{"Damage",0},{"Add","Super Blip5", "Ally"}},
 			Target = "Single",
 		},
 		["Bio"] = "What? Targeting blip is evolving...?",
 	},
 
-["Super Blip5"] = {
+	["Super Blip5"] = {
 		["Id"] = 1372147861,
 		["Name"] = "Super Blip",
 		["Health"] = 0,
@@ -13576,8 +13568,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Neutral",
-		["Archetype"] = "Target",
-		["Token"] = true,
 		["DiscardBlock"] = true,
 		["Stealth"] = true,
 		["Cost"] = {["Neutral"] = 0,},
@@ -13585,13 +13575,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Target",
 			Description = "Can't be discarded. 3 charges. Target a fighter.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",1,"Self"},{"Damage",0},{"Add","Super Blip6", "Ally"}},
+			["Power"] = {{"Damage",0},{"Add","Super Blip6", "Ally"}},
 			Target = "Single",
 		},
 		["Bio"] = "What...?",
 	},
 
-["Super Blip6"] = {
+	["Super Blip6"] = {
 		["Id"] = 1372147861,
 		["Name"] = "Super Blip",
 		["Health"] = 0,
@@ -13599,8 +13589,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Neutral",
-		["Archetype"] = "Target",
-		["Token"] = true,
 		["DiscardBlock"] = true,
 		["Stealth"] = true,
 		["Cost"] = {["Neutral"] = 0,},
@@ -13608,13 +13596,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Target",
 			Description = "Can't be discarded. 2 charges. Target a fighter.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",1,"Self"},{"Damage",0},{"Add","Super Blip7", "Ally"}},
+			["Power"] = {{"Damage",0},{"Add","Super Blip7", "Ally"}},
 			Target = "Single",
 		},
 		["Bio"] = "...",
 	},	
 
-["Super Blip7"] = {
+	["Super Blip7"] = {
 		["Id"] = 1372147861,
 		["Name"] = "Super Blip",
 		["Health"] = 0,
@@ -13622,8 +13610,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Neutral",
-		["Archetype"] = "Target",
-		["Token"] = true,
 		["DiscardBlock"] = true,
 		["Stealth"] = true,
 		["Cost"] = {["Neutral"] = 0,},
@@ -13631,13 +13617,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Target",
 			Description = "Can't be discarded. 1 charge. Target a fighter.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",1,"Self"},{"Damage",0},{"Add","Super Blip8", "Ally"}},
+			["Power"] = {{"Damage",0},{"Add","Super Blip8", "Ally"}},
 			Target = "Single",
 		},
 		["Bio"] = "...",
 	},	
 
-["Super Blip8"] = {
+	["Super Blip8"] = {
 		["Id"] = 1372147861,
 		["Name"] = "Super Blip",
 		["Health"] = 0,
@@ -13645,8 +13631,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Neutral",
-		["Archetype"] = "Target",
-		["Token"] = true,
 		["DiscardBlock"] = true,
 		["Stealth"] = true,
 		["Cost"] = {["Neutral"] = 0,},
@@ -13657,7 +13641,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Damage",1,"Self"},{"Damage",0}},
 			Target = "Single",
 		},
-		["Bio"] = "Take it easy on the B button, would ya!",
+		["Bio"] = "Take it easy on the B button, would ya?!",
 	},	
 	
 	["Bad Bread"] = {
