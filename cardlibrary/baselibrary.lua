@@ -13489,7 +13489,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Target",
-			Description = "Can't be discarded. 7 charges. Target a fighter.",
+			Description = "7 Charges. Target a fighter, then remove a charge. Can't be discarded.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",0},{"Add","Super Blip2", "Ally"}},
 			Target = "Single",
@@ -13510,7 +13510,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Target",
-			Description = "Can't be discarded. 6 charges. Target a fighter.",
+			Description = "6 Charges. Target a fighter, then remove a charge. Can't be discarded.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",0},{"Add","Super Blip3", "Ally"}},
 			Target = "Single",
@@ -13531,7 +13531,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Target",
-			Description = "Can't be discarded. 5 charges. Target a fighter.",
+			Description = "5 Charges. Target a fighter, then remove a charge. Can't be discarded.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",0},{"Add","Super Blip4", "Ally"}},
 			Target = "Single",
@@ -13552,7 +13552,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Target",
-			Description = "Can't be discarded. 4 charges. Target a fighter.",
+			Description = "4 Charges. Target a fighter, then remove a charge. Can't be discarded.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",0},{"Add","Super Blip5", "Ally"}},
 			Target = "Single",
@@ -13573,7 +13573,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Target",
-			Description = "Can't be discarded. 3 charges. Target a fighter.",
+			Description = "3 Charges. Target a fighter, then remove a charge. Can't be discarded.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",0},{"Add","Super Blip6", "Ally"}},
 			Target = "Single",
@@ -13594,7 +13594,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Target",
-			Description = "Can't be discarded. 2 charges. Target a fighter.",
+			Description = "2 Charges. Target a fighter, then remove a charge. Can't be discarded.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",0},{"Add","Super Blip7", "Ally"}},
 			Target = "Single",
@@ -13615,7 +13615,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Target",
-			Description = "Can't be discarded. 1 charge. Target a fighter.",
+			Description = "1 Charge. Target a fighter, then remove a charge. Can't be discarded.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",0},{"Add","Super Blip8", "Ally"}},
 			Target = "Single",
@@ -13636,7 +13636,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Target",
-			Description = "Can't be discarded. Target a fighter.",
+			Description = "0 Charges. Target a fighter. Can't be discarded.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",1,"Self"},{"Damage",0}},
 			Target = "Single",
