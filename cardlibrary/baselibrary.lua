@@ -13468,7 +13468,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 12,},
 		["Effect"] = {
 			Name = "Revival",
-			Description = "Add a Super Targeting Blip to your hand. It can be used 8 times.",
+			Description = "Put a Super Targeting Blip into your hand. It can be used 8 times.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Add","Super Blip1"}},
 			Target = "Ally",
