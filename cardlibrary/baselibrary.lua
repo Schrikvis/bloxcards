@@ -2854,14 +2854,14 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["DerptasticDevil"] = {
-		["Id"] = 1350058078,
+		["Id"] = 1375039481,
 		["Name"] = "DerptasticDevil",
 		["Health"] = 1200,
 		["Power"] = 400,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Red",
-		["Cost"] = {["Neutral"] = 6, ["Red"] = 1},
+		["Cost"] = {["Neutral"] = 5, ["Red"] = 1},
 		["Bio"] = "I bet he can beat you in a thumb war.",
 	},
 	
