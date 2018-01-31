@@ -10264,7 +10264,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 3},
 		["Effect"] = {
 			Name = "Counter Strike",
-			Description = "After this card Attacks, Lock all enemy fighters for 1 turn. This fighter is locked an additional two turns when it attacks.",
+			Description = "After this card attacks, lock all enemy fighters for 1 turn. This fighter is locked an additional three turns when it attacks.",
 			["Type"] = "OnAttackEnd",
 			["Power"] = {{"Lock",1},{"Lock",3,"Self"}},
 			Target = "Opponent",
