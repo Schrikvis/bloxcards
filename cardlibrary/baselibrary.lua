@@ -7511,7 +7511,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2, ["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "Build Up",
-			Description = "Lock this card for 2 turns. Put a random toy card to your hand.",
+			Description = "Lock this card for 2 turns. Put a random Toy card into your hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Lock",2},{"RandomAdd","Toy"}},
 			Target = "Self",
@@ -7574,7 +7574,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Build Up",
-			Description = "Unlock all Toy fighters.",
+			Description = "Unlock all Toys.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Unlock",999}},
 			Target = "Archetype",
@@ -7601,7 +7601,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Build Up",
-			Description = "Lock all Toys and increase their health by 100 at the end of each of your turns.",
+			Description = "At the end of your turns, lock all Toys for one turn and give them 100 Health.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Lock",2},{"Heal",100}},
 			Target = "Archetype",
@@ -7622,7 +7622,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 6,},
 		["Effect"] = {
 			Name = "Build Up",
-			Description = "Can't counterattack. Lock all Toys for 2 turns and increase their health and power by 125 at the end of your turns.",
+			Description = "Can't counterattack. At the end of your turns, lock all Toys for 2 turns and give them 125 Health and Power.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Lock",2},{"Strengthen",125},{"Heal",125}},
 			Target = "Archetype",
@@ -7642,12 +7642,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Build Up",
-			Description = "Unlock all toys and increase their health and power by 100.",
+			Description = "Unlock all Toys. They gain 100 Health and Power.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Unlock",999},{"Strengthen",100},{"Heal",100}},
 			Target = "Archetype",
 		},
-		["Bio"] = "Cant wait? GO AHEAD! Unless you're taking turns with your annoying siblings.",
+		["Bio"] = "Can't wait? GO AHEAD! Unless you're taking turns with your annoying siblings.",
 	},
 	
 	["Call of the Teddy Bear"] = {
@@ -7662,7 +7662,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 7,},
 		["Effect"] = {
 			Name = "Build Up",
-			Description = "Unlock all Toy fighters and put 3 random Toy cards to your hand.",
+			Description = "Unlock all Toys. Put three random Toy cards into your hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Unlock",999},{"RandomAdd","Toy"},{"RandomAdd","Toy"},{"RandomAdd","Toy"}},
 			Target = "Archetype",
@@ -17601,7 +17601,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Green"] = 2,},
 		["Effect"] = {
 			Name = "Monocle Polish",
-			Description = "Cant be counterattacked, or have it's power increased.  When this card attacks a fighter, the fighter it attacked loses 200 power.",
+			Description = "Can't be counterattacked, or have its power increased.  When this card attacks a fighter, the fighter it attacked loses 200 power.",
 			["Type"] = "OnAttack",
 			["Power"] = {{"Weaken",200}},
 			Target = "Aggressor",
