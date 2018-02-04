@@ -4702,9 +4702,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 5,},
 		["Effect"] = {
 			Name = "Soul Release",
-			Description = "Deal 4000 damage to a target fighter. It's owner gains 1500 life.",
+			Description = "Deal 4000 damage to a target fighter. Gain 750 life.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",4000},{"Inflict",-1500,"Aggressor"}},
+			["Power"] = {{"Damage",4000},{"Cost",-750}},
 			Target = "Single",	
 		},
 		["Bio"] = "BEGONE! FOUL SPIRIT!",
