@@ -7987,14 +7987,14 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Witch's True Brew"] = {
-		["Id"] = 1159203563,
+		["Id"] = 315997790,
 		["Name"] = "Witch's True Brew",
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Thunder",
 		["Color"] = "Green",
-		["Cost"] = {["Neutral"] = 1, ["Green"] = 4,},
+		["Cost"] = {["Neutral"] = 0, ["Green"] = 4,},
 		["Effect"] = {
 			Name = "Forced sip",
 			Description = "Lower the health and power of a target fighter by 400. You gain 400 life.",
