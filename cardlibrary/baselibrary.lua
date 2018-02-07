@@ -6766,19 +6766,19 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["DominatedLegacy"] = {
 		["Id"] = 298792892,
 		["Name"] = "DominatedLegacy",
-		["Health"] = 150,
+		["Health"] = 450,
 		["Power"] = 600,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Thunder",
 		["Color"] = "Blue",
+		["Cost"] = {["Neutral"] = 2,["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Vampire",
 			Description = "Whenever you gain life, DominatedLegacy gains 150 health.",
 			["Type"] = "OnHealthGain",
-			["Power"] = {{"Heal",150,"Self"}},
-			Target = "Opponent",
+			["Power"] = {{"Heal",150}},
+			Target = "Self",
 		},
-		["Cost"] = {["Neutral"] = 2,["Blue"] = 3,},
 		["Bio"] = "Exile at once!!",
 	},
 	
