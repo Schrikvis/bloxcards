@@ -14901,9 +14901,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Render",
-			Description = "Whenever you lose life, deal 100 damage to all fighters. They gain 100 power.",
+			Description = "Whenever you lose life, deal 100 damage to all fighters besides this one. Then increase the power of all fighters by 100.",
 			["Type"] = "OnHealthLoss",
-			["Power"] = {{"Damage",100},{"Strengthen",100}},
+			["Power"] = {{"Heal",100,"Self"},{"Damage",100,"All"},{"Strengthen",100,"All"}}
 			Target = "All",
 		},
 		["Bio"] = "Putting Death Millers in your game is bastard modding. No exceptions.",
