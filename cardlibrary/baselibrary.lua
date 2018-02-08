@@ -6624,7 +6624,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Booting",
-			Description = "Ready all allied fighters twice, then lock all unlocked allied fighters for 1 turn. Reveal your opponent's hand.",
+			Description = "Reduce the locks on all allied fighters by 2. They cannot be reduced to less than 1. Reveal your opponent's hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Unlock",3},{"Lock",1},{"RevealHand",1,"Opponent"}},
 			Target = "Ally",
