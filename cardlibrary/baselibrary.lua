@@ -14901,7 +14901,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Render",
-			Description = "Whenever you lose life, deal 100 damage to all fighters besides this one. Then increase the power of all fighters by 100.",
+			Description = "Whenever you lose life, deal 100 damage to all other fighters. Then increase the power of all fighters by 100.",
 			["Type"] = "OnHealthLoss",
 			["Power"] = {{"Heal",100,"Self"},{"Damage",100,"All"},{"Strengthen",100,"All"}}
 			Target = "All",
