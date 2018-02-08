@@ -6624,9 +6624,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Booting",
-			Description = "Set the lock on all allied fighters to 2. Reveal your opponent's hand.",
+			Description = "Ready all allied fighters twice, then lock all unlocked allied fighters for 1 turn. Reveal your opponent's hand.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Unlock",9999},{"Lock",2},{"RevealHand",1,"Opponent"}},
+			["Power"] = {{"Unlock",3},{"Lock",1},{"RevealHand",1,"Opponent"}},
 			Target = "Ally",
 		},
 		["Bio"] = "This robotic cat is basically the mascot of 'The robots'. Don't worry, you won't be in the darkness when you're with it.",
