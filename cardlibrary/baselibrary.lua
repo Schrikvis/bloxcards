@@ -1419,6 +1419,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "UziShot",
 		["Color"] = "Yellow",
 		["Cost"] = {["Neutral"] = 2,["Yellow"] = 1,},
+		["Effect"] = {
+			Name = "Target Master",
+			Description = "Target a fighter.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Heal",0}},
+			Target = "Single",
+		},
 		["Bio"] = "He gets the job done by building machinary that defends his allies as well as himself.",
 	},
 	
