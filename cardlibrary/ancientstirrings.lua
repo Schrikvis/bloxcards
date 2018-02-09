@@ -726,7 +726,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Dun_Boof",
 		["Health"] = 300,
 		["Power"] = 300,
-		["Rarity"] = "Common",
+		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Yellow", 
 		["Charge"] = true,
@@ -1147,7 +1147,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Stranglevines"] = {
-		["Id"] = 540076577,
+		["Id"] = 1402770410,
 		["Name"] = "Stranglevines",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -1307,7 +1307,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	
 
 	["Spicy Lollipop"] = {
-		["Id"] = 540076683,
+		["Id"] = 1402766377,
 		["Name"] = "Spicy Lollipop",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -2256,7 +2256,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 2, ["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "Whenever your opponent casts an action or terrain spell, lock all enemy fighters for two turns.",
+			Description = "Whenever your opponent casts an action or terrain spell, lock all enemy fighters for 3 turns.",
 			["Type"] = "OnEnemyCast",
 			["Power"] = {{"Lock",3}},
 			Target = "Opponent",
@@ -2830,7 +2830,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Claudia Sinister"] = {
-		["Id"] = 540075818,
+		["Id"] = 1402767583,
 		["Name"] = "Claudia Sinister",
 		["Health"] = 300,
 		["Power"] = 300,
@@ -2936,7 +2936,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Liechtenauer's Sophistry"] = {
-		["Id"] = 540807350,
+		["Id"] = 1403597701,
 		["Name"] = "Liechtenauer's Sophistry",
 		["Health"] = 350,
 		["Power"] = 350,
