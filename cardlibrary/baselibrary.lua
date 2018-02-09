@@ -77,11 +77,11 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["PixelFlame"] = {
-		["Id"] = 273688130,
+		["Id"] = 1402768115,
 		["Name"] = "PixelFlame",
 		["AltCards"] = {
 			["PixelFlameV2"] = {
-				["Id"] = 496078769,
+				["Id"] = 1403670783,
 				["AltArt"] = true,
 				["Bio"] = "Freedom is good. Volcanic apocalypse is bad.",
 			},
@@ -511,13 +511,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Green",
 		["Effect"] = {
 			Name = "Vampire",
-			Description = "Whenever you gain life, give all allied fighters 25 power. ",
+			Description = "Whenever you gain life, all allied fighters gain 25 power. ",
 			["Type"] = "OnHealthGain",
 			["Power"] = {{"Strengthen",25}},
 			Target = "Ally",
 		},
 		["Cost"] = {["Green"] = 1,["Neutral"] = 1,},
-		["Bio"] = "Old Filmmaker, who has joined and left, but implemented a comical form of 'hacking' with his magical tornado of bytes.",
+		["Bio"] = "Old filmmaker, who has joined and left, but implemented a comical form of 'hacking' with his magical tornado of bytes.",
 	},
 	
 	["Exine"] = {
@@ -2187,7 +2187,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Strengthen",100},{"Heal",100}},
 			Target = "Self",
 		},
-		["Bio"] = "Cherie2002. She's cute, until you realise all of those animals have been trained to tear your limbs off and eat you alive.",
+		["Bio"] = "Cherie2002. She's cute, until you realize all of those animals have been trained to tear your limbs off and eat you alive.",
 	},
 	
 	["DDude"] = {
@@ -2341,7 +2341,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 2,},
 		["Effect"] = {
 			Name = "Parry",
-			Description = "Whenever this fighter is targeted, this fighter gains 150 Power and 150 Health..",
+			Description = "Whenever this fighter is targeted, this fighter gains 150 Power and 150 Health.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Strengthen",150},{"Heal",150}},
 			Target = "Self",
@@ -3460,7 +3460,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Weaken",200,"NotColorGreen"},{"Heal",200,"ColorGreen"}},
 			Target = "All",
 		},
-		["Bio"] = "Creator of Raging ROBLOX Reviewer and his love of Valve games, XiaoXiaoMan has no problem shooting you down with his M4A1.",
+		["Bio"] = "Creator of Raging ROBLOX Reviewer and lover of Valve games, XiaoXiaoMan has no problem shooting you down with his M4A1.",
 	},	
 		
 	["Xlzeck"] = {
@@ -3960,7 +3960,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Health"] = 550,
 		["Power"] = 550,
-		["Rarity"] = "Rare",
+		["Rarity"] = "Uncommon",
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "PistolShot",
 		["Color"] = "Red",
@@ -5451,7 +5451,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Crossroads"] = {
-		["Id"] = 893402889,
+		["Id"] = 1402774811,
 		["Name"] = "Crossroads",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -5499,7 +5499,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Haunted Mansion-Sun"] = {
 				["Name"] = "Haunted Ship",
-				["Id"] = 897238400,
+				["Id"] = 1402764709,
 				["Bio"] = "*-Jaws Theme Plays-",
 			},
 		},	
@@ -6045,7 +6045,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["KennedyLeDog"] = {
-		["Id"] = 892548058,
+		["Id"] = 1402777377,
 		["Name"] = "KennedyLeDog",
 		["Health"] = 750,
 		["Power"] = 350,
@@ -6117,6 +6117,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Pirate-Val"] = {
 				["Name"] = "Pirate Cupid",
 				["Id"] = 655016531,
+				["Bio"] = "Want some love?",
 			},
 		},
 		["Health"] = 700,
@@ -7569,7 +7570,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Toy Car"] = {
-		["Id"] = 300976052,
+		["Id"] = 1402778333,
 		["Name"] = "Toy Car",
 		["Health"] = 100,
 		["Power"] = 350,
@@ -7908,7 +7909,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Construction Zombie"] = {
-		["Id"] = 315997415,
+		["Id"] = 1402773377,
 		["Name"] = "Construction Zombie",
 		["Health"] = 300,
 		["Power"] = 100,
@@ -8488,7 +8489,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
  	["Depths of the Nether"] = {
-		["Id"] = 326637276,
+		["Id"] = 1402765728,
 		["Name"] = "Depths of the Nether",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -8678,7 +8679,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "NotArchetype",
 			Increase = 3,
 		},
-		["Bio"] = "Cthulhu's cousin's cousin's cousin. He's like, BASICALY the reason he became popular.",
+		["Bio"] = "Cthulhu's cousin's cousin's cousin. He's like, BASICALLY the reason he became popular.",
 	},
 	
 	["Titan of the Dying Forest"] = {
@@ -9726,7 +9727,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Infinite Frost"] = {
-		["Id"] = 688094321,
+		["Id"] = 1402775997,
 		["Name"] = "Infinite Frost",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -10064,7 +10065,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Power = {{"Summon","Bee"},{"Summon","Bee"},{"Summon","Bee"},{"Strengthen",250,"Archetype"},{"Heal",250,"Archetype"}},
 			Target = "Ally",
 		},
-		["Bio"] = "When we are dry. You think it is all over? No, it has only just beegun.",
+		["Bio"] = "You think it is all over? No, it has only just beegun.",
 	},
 	
 	["Nightmare"] = {
@@ -10762,7 +10763,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},		
 	
 	["Ostrich"] = {
-		["Id"] = 362315628,
+		["Id"] = 1403620391,
 		["Name"] = "Ostrich",
 		["AltCards"] = {
 			["Bab Yaga"] = {
@@ -11794,7 +11795,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Lock",3},{"Damage",300}},
 			Target = "Single",
 		},
-		["Bio"] = "One of the creators of Combact League, his sniper will take care of you.",
+		["Bio"] = "One of the creators of Combat League, his sniper will take care of you.",
 	},		
 	
 	["VetexGames"] = {
@@ -14384,11 +14385,11 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["NerfModder"] = {
-		["Id"] = 435723208,
+		["Id"] = 1402763140,
 		["Name"] = "NerfModder",
 		["AltCards"] = {
 			["NerfModderV2"] = {
-				["Id"] = 432804094,
+				["Id"] = 1402763716,
 				["Bio"] = "Even the most charismatic and unbreakable can fall to depression.",
 			},
 		},
@@ -14459,7 +14460,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "Capture",
-			Description = "lower the power of a target fighter by 100.",
+			Description = "Lower the power of a target fighter by 100.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",100}},
 			Target = "Single",
@@ -16763,7 +16764,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["JavierCollin88Poppin"] = {
-		["Id"] = 496076329,
+		["Id"] = 1402776767,
 		["Name"] = "JavierCollin88Poppin",
 		["Health"] = 400,
 		["Power"] = 400,
@@ -16957,7 +16958,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["BoomAtack"] = {
-		["Id"] = 513641417,
+		["Id"] = 1402771211,
 		["Name"] = "BoomAtack",
 		["Health"] = 600,
 		["Power"] = 200,
@@ -17070,12 +17071,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 2,["Neutral"] = 2},
 		["Effect"] = {
 			Name = "BANG BANG BANG!!!",
-			Description = "Deal 100 damage to nonred fighters at the end of each turn.",
+			Description = "Deal 100 damage to non-red fighters at the end of each turn.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Damage",100,"NotColorRed"}},
 			Target = "All",
 		},
-		["Bio"] = "GIMME YER CHIPS!.",
+		["Bio"] = "GIMME YER CHIPS!",
 	},
 
 	["CalmFoxz"] = {
@@ -18222,7 +18223,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"RandomAdd","Lunar"}},
 			Target = "Ally",
 		},
-		["Bio"] = "His methods of attack are extravagent, His moustache is unparalleled, and he is an all around chill guy with a shocking personality.",
+		["Bio"] = "His methods of attack are extravagant, his mustache is unparalleled, and he is an all around chill guy with a shocking personality.",
 	},			
 	
 	["Merely"] = {
