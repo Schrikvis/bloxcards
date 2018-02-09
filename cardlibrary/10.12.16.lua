@@ -2903,7 +2903,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Bio"] = "rawr...",
 			},
 			["Kitten3"] = {
-				["Id"] =  1192986973,
+				["Id"] =  1404827381,
 				["Bio"] = "Spooky scary skelecats send hairballs down your spine.",
 			},
 			["Kitten4"] = {
