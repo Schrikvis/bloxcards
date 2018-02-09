@@ -17076,7 +17076,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Damage",100,"NotColorRed"}},
 			Target = "All",
 		},
-		["Bio"] = "GIMME YER CHIPS!.",
+		["Bio"] = "GIMME YER CHIPS!",
 	},
 
 	["CalmFoxz"] = {
