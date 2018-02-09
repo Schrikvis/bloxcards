@@ -18223,7 +18223,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"RandomAdd","Lunar"}},
 			Target = "Ally",
 		},
-		["Bio"] = "His methods of attack are extravagent, his moustache is unparalleled, and he is an all around chill guy with a shocking personality.",
+		["Bio"] = "His methods of attack are extravagant, his moustache is unparalleled, and he is an all around chill guy with a shocking personality.",
 	},			
 	
 	["Merely"] = {
