@@ -2471,8 +2471,8 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 2, ["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "After this card attacks, deal 200 damage to who it attacked.",
-			["Type"] = "OnAttackEnd",
+			Description = "When this card attacks, deal 200 damage to who it attacked.",
+			["Type"] = "OnAttack",
 			["Power"] = {{"Damage",200}},
 			Target = "Aggressor",
 		},
