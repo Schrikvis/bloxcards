@@ -2645,7 +2645,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Bloxikin Horde"] = {
-		["Id"] = 283992827,
+		["Id"] = 1404845602,
 		["Name"] = "Bloxikin Horde",
 		["Health"] = 300,
 		["Power"] = 300,
