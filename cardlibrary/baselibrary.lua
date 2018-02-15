@@ -13315,14 +13315,14 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["UAE"] = {
-		["Id"] = 415734280,
+		["Id"] = 1422823626,
 		["Name"] = "UAE",
 		["Health"] = 1800,
 		["Power"] = 800,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Red",
-		["Cost"] = {["Neutral"] = 0,["Red"] = 10,},
+		["Cost"] = {["Neutral"] = 2,["Red"] = 10,},
 		["Effect"] = {
 			Name = "Double Bleeding",
 			Description = "Whenever you lose life, Deal 400 damage to all other fighters and the opponent.",
