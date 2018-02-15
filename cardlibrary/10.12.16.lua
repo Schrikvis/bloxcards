@@ -3882,23 +3882,28 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Test Dummy",
 		["AltCards"] = {
 			["Test DummyA"] = {
+				["Health"] = 1000,
+				["Power"] = 200
 				["Rarity"] = "Token",
+				["Field"] = 850398360,
 				["Effect"] = {
 					Name = "Test",
-					Description = "All fighters gain 500 power.",
-					["Type"] = "OnSummon",
-					["Power"] = {{"Strengthen",500}},
+					Description = "Bring about the Kittenpocalypse.",
+					["Type"] = "Field",
+					["Power"] = {{"Summon","Kitten"}},
 					Target = "All",
 				},
 			},
 			
 			["Test DummyB"] = {
+				["Health"] = 400,
+				["Power"] = 400,
 				["Rarity"] = "Token",
 				["Effect"] = {
 					Name = "Test",
-					Description = "All fighters lose 500 health.",
-					["Type"] = "OnSummon",
-					["Power"] = {{"Damage",500}},
+					Description = "Bring about the Myrmpocalypse.",
+					["Type"] = "Field",
+					["Power"] = {{"DeckAdd","Myrmiredon"}},
 					Target = "All",
 				},
 			},
@@ -3911,12 +3916,12 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Test",
-			Description = "Add a card to your deck that either boosts all fighters power by 500, or deals 500 damage to them.",
+			Description = "Add a card to your deck that does a random terrain effect.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"DeckAdd",{"Test DummyA","Test DummyB"}}},
 			Target = "Ally",
 		},
-		["Bio"] = "This dummy has been through more torture and abuse than you could even imagine... is what I would say, if we didn't stop putting potentially OP effects on it.",
+		["Bio"] = "This dummy has been through more torture and abuse than you could even imagine... is what I would say, if we stopped putting potentially OP effects on it.",
 	},
 	
 	["Silver_Semtexagon"] = {
