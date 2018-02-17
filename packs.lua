@@ -184,6 +184,8 @@ local packs = {
 		CardPackId = 842435184, --721400845,
 		Description = "Red is the colour of power, ambition, and control. Dominion packs contain cards that cost red!",
 		Cards = {
+			"DrWeaseI",
+			"stormmaster7722",
 			"ThatGrimGuy",
 			"B550",
 			"Damaging26, Flaming Fighter",
@@ -192,6 +194,7 @@ local packs = {
 			"Alar Herald",
 			"ProjectSlayer",
 			"Histor, Blood Warrior",
+			"Aesura",
 			"superkicker2005",
 			"Shard Master",
 			"Beyondthegong",
@@ -423,6 +426,7 @@ local packs = {
 			"iSpaceDonut",
 			"Enderlox1",
 			"Lord_Gizmo",
+			"Wrath of King Gecko",
 			"iiSmolToaster",
 			"Saprasam",
 			"BonesMcCormick",
@@ -804,6 +808,7 @@ local packs = {
 		CardPackId = 721400239,
 		Description = "Yellow is the colour of chaos, emotion, and society. Revel packs contain cards that cost yellow!",
 		Cards = {
+			"lolbeniceokay",
 			"ExtolYT",
 			"midastheking123",
 			"FourXIV",
@@ -1017,6 +1022,9 @@ local packs = {
 		Description = "Exotic new cards from the black market! White cards and joke cards! It's all yours, as long as you have 10 wins!",
 		WinRequirement = 10;
 		Cards = {
+			"DrWeaseI",
+			"lolbeniceokay",
+			"stormmaster7722",
 			"Permafrost Storm",
 			"ThatGrimGuy",
 			"B550",
@@ -1093,9 +1101,6 @@ local packs = {
 			"Shaylan007",
 			"Yoshilove574",
 			"Graalgamer",
-			"Aesura",
-			"Wrath of King Gecko",
-			"iiSmolToaster",
 			-- PAST THIS POINT IS FOR WHITE CARDS AND JOKE CARDS ONLY. I'M LOOKING AT YOU, BLITZ.
 			"Dukran the Celestial",
 			"Wingman8",

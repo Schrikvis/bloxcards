@@ -4282,5 +4282,63 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "As the darkness sets in, the seconds count, time was slowing down, the ice ha-",
 	},
+	
+	["stormmaster7722"] = {
+		["Id"] = 1421958837,
+		["Name"] = "stormmaster7722",
+		["Health"] = 200,
+		["Power"] = 800,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Red", 
+		["Cost"] = {["Red"] = 2, ["Neutral"] = 1},
+		["Effect"] = {
+			Name = "Lightning After the Thunder",
+			Description = "Both players lose 200 Life.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Inflict",200}},
+			Target = "All",
+		},
+		["Bio"] = "Sk00lz 4 nurds.",
+	},
+	
+	["lolbeniceok"] = {
+		["Id"] = 1421958601,
+		["Name"] = "lolbeniceok",
+		["Health"] = 900,
+		["Power"] = 300,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "CatSlash",
+		["Color"] = "Yellow",
+		["Cost"] = {["Yellow"] = 4, ["Neutral"] = 2},
+		["Effect"] = {
+			Name = "Your mom",
+			Description = "Whenever you lose life, draw a card.",
+			["Type"] = "OnHealthLoss",
+			["Power"] = {{"Draw",1}},
+			Target = "Ally",
+		},
+		["Bio"] = "no u.",
+	},
+	
+	["DrWeaseI"] = {
+		["Id"] = 1421958346,
+		["Name"] = "DrWeaseI",
+		["Health"] = 700,
+		["Power"] = 700,
+		["Rarity"] = "Rare",
+		["Archetype"] = "Hero",
+		["AttackEffect"] = "Slash",
+		["Color"] = "Red",
+		["Cost"] = {["Red"] = 3, ["Neutral"] = 3},
+		["Effect"] = {
+			Name = "Bat Swarm",
+			Description = "Deal 200 damage to all allied fighters. They gain 200 Power.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Damage",200},{"Strengthen",200}},
+			Target = "Ally",
+		},
+		["Bio"] = "Looks like we couldn't weasel our way out of putting this in the game.",
+	},
 }
 return tentwelvesixteen
