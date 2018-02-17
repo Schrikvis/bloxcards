@@ -1881,7 +1881,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"SetHealth",550},{"SetPower",550},{"Unlock",9999},{"Return",030}},
 			Target = "Self",
 		},
-		["Bio"] = [[His hoverboard is fueled with the souls of the dead.]],
+		["Bio"] = [[His hoverboard is fuelled with the souls of the dead.]],
 	},
 
 	["Indoorsnowball"] = {
