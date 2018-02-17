@@ -7881,7 +7881,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Red"] = 1,["Blue"] = 5,},
 		["Effect"] = {
 			Name = "Endless Spooks",
-			Description = [[Put a "Skeleton Armada" into your hand. The Skeleton Armada gains 300 Health and Power.]],
+			Description = [[Put a "Skeleton Armada" into your hand. All copies of Skeleton Armada gain 300 Health and Power.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Add","Skeleton Armada"},{"Strengthen",300},{"Heal",300}},
 			Target = "Archetype",
