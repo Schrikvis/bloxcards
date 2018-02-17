@@ -7709,7 +7709,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Friendship",
-			Description = "When this card is summoned, increase the health of all allied fighters by 100. When this card is targeted, return it to its owner's hand. This card does not trigger effects upon dying.",
+			Description = "When this card is summoned, all allied fighters gain 100 Health. When this card is targeted, return it to its owner's hand. This card does not trigger effects upon dying.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",100},{"Summon","Builderman 2"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -7729,7 +7729,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Friendship",
-			Description = "When this card is summoned, increase the health of all allied fighters by 100. When this card is targeted, return it to its owner's hand. This card does not trigger effects upon dying.",
+			Description = "When this card is summoned, all allied fighters gain 100 Health. When this card is targeted, return it to its owner's hand. This card does not trigger effects upon dying.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Add","Builderman"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -7748,7 +7748,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 6,},
 		["Effect"] = {
 			Name = "Eye for an eye",
-			Description = "Damage all enemy fighters by 100 at the end of each turn.",
+			Description = "At the end of your turns, deal 100 damage to all enemy fighters.",
 			["Type"] = "OnEnd",
 			["Power"] = "Damage",
 			Target = "Opponent",
@@ -7768,7 +7768,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Red"] = 4,},
 		["Effect"] = {
 			Name = "Master Blast",
-			Description = "Set both players red icons to 4. You lose all your white icons. End the turn.",
+			Description = "Set both players' red icons to 4. You lose all your white icons. End the turn.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"SetRed",4},{"SetNeutral",0,"Ally"},{"EndTurn",1}},
 			Target = "All",
@@ -7809,7 +7809,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "EzWinz",
-			Description = "When this card attacks, put a frozen fish to your hand.",
+			Description = "Whenever this card attacks, put a frozen fish to your hand.",
 			["Type"] = "OnAttack",
 			["Power"] = {{"Add","Frozen Fish"}},
 			Target = "Ally",
@@ -7881,7 +7881,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Red"] = 1,["Blue"] = 5,},
 		["Effect"] = {
 			Name = "Endless Spooks",
-			Description = [[Put a "Skeleton Armada" into your hand, then increase the Health and Power of the armada by 300.]],
+			Description = [[Put a "Skeleton Armada" into your hand. All copies of Skeleton Armada gain 300 Health and Power.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Add","Skeleton Armada"},{"Strengthen",300},{"Heal",300}},
 			Target = "Archetype",
