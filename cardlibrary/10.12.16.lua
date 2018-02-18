@@ -690,7 +690,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 2,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "Whenever you lose life, Deal 50 damage to all enemy fighters.",
+			Description = "Whenever you lose life, deal 50 damage to all enemy fighters.",
 			["Type"] = "OnHealthLoss",
 			["Power"] = {{"Damage",50,"Opponent"}},
 			Target = "Ally",
@@ -853,7 +853,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Eye of Heaven"] = {
-		["Id"] = 892539198,
+		["Id"] = 1402761393,
 		["Name"] = "Eye of Heaven",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -1039,7 +1039,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Your_Name"] = {
-		["Id"] = 679500982,
+		["Id"] = 1402765235,
 		["Name"] = "Your_Name",
 		["Health"] = 400,
 		["Power"] = 400,
@@ -1187,7 +1187,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Ultra Otherer"] = {
-		["Id"] = 675456335,
+		["Id"] = 1402766937,
 		["Name"] = "Ultra Otherer",
 		["Health"] = 300,
 		["Power"] = 300,
@@ -1200,7 +1200,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Hellfire",
-			Description = "Lose all coloured icons. (This helps cast stronger Ultras.)",
+			Description = "Haste. Lose all coloured icons. (This helps cast stronger Ultras.)",
 			["Type"] = "OnSummon",
 			["Power"] = {{"SetYellow",0},{"SetGreen",0},{"SetBlue",0},{"SetRed",0},{"Unlock",1,"Self"}},
 			Target = "Ally",
@@ -1278,7 +1278,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 
 	["Ultra Depriver"] = {
-		["Id"] = 675456540,
+		["Id"] = 1402778889,
 		["Name"] = "Ultra Depriver",
 		["Health"] = 750,
 		["Power"] = 750,
@@ -2152,7 +2152,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 4, ["Blue"] = 4, ["Red"] = 4,},
 		["Effect"] = {
 			Name = "Lunar Rays",
-			Description = "Whenever you summon another fighter, destroy that fighter and deal 300 damage to a target fighter. Your lose all of your yellow icons.",
+			Description = "Whenever you summon another fighter, destroy that fighter and deal 300 damage to a target fighter, then lose all of your yellow icons. Abilities don't trigger when this fighter enters play.",
 			["Type"] = "OnAllySummon",
 			["Power"] = {{"SetYellow",0},{"Damage",9999,"Aggressor"},{"Damage",300,"Single"}},
 			Target = "Ally",
@@ -2450,7 +2450,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Icerain"] = {
-		["Id"] = 785620732,
+		["Id"] = 1402768622,
 		["Name"] = "Icerain",
 		["Health"] = 1000,
 		["Power"] = 600,
@@ -2508,7 +2508,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Pikachukiller101"] = {
-		["Id"] = 785620919,
+		["Id"] = 1402769418,
 		["Name"] = "Pikachukiller101",
 		["Health"] = 700,
 		["Power"] = 350,
@@ -2895,19 +2895,19 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 
 	["Kitten"] = {
-		["Id"] = 850398360,
+		["Id"] = 1402757748,
 		["Name"] = "Kitten",
 		["AltCards"] = {
 			["Kitten2"] = {
-				["Id"] =  1192986468,
+				["Id"] =  1402758718,
 				["Bio"] = "rawr...",
 			},
 			["Kitten3"] = {
-				["Id"] =  1192986973,
+				["Id"] =  1404827381,
 				["Bio"] = "Spooky scary skelecats send hairballs down your spine.",
 			},
 			["Kitten4"] = {
-				["Id"] =  1192987402,
+				["Id"] =  1402760304,
 				["Bio"] = "Ew...what IS that thing?!",
 			},
 		},		
@@ -3053,7 +3053,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["caone"] = {
-		["Id"] = 857451758,
+		["Id"] = 1402769671,
 		["Name"] = "caone",
 		["Health"] = 400,
 		["Power"] = 200,
