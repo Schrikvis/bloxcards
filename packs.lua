@@ -808,7 +808,7 @@ local packs = {
 		CardPackId = 721400239,
 		Description = "Yellow is the colour of chaos, emotion, and society. Revel packs contain cards that cost yellow!",
 		Cards = {
-			"lolbeniceokay",
+			"lolbeniceok",
 			"ExtolYT",
 			"midastheking123",
 			"FourXIV",
@@ -1023,7 +1023,7 @@ local packs = {
 		WinRequirement = 10;
 		Cards = {
 			"DrWeaseI",
-			"lolbeniceokay",
+			"lolbeniceok",
 			"stormmaster7722",
 			"Permafrost Storm",
 			"ThatGrimGuy",
