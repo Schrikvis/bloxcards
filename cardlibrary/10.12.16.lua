@@ -2152,7 +2152,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 4, ["Blue"] = 4, ["Red"] = 4,},
 		["Effect"] = {
 			Name = "Lunar Rays",
-			Description = "Whenever you summon another fighter, lose all of your yellow icons, destroy that fighter and deal 300 damage to a target fighter. Abilities don't trigger when this fighter enters play.",
+			Description = "Whenever you summon another fighter, destroy that fighter and deal 300 damage to a target fighter, then lose all of your yellow icons. Abilities don't trigger when this fighter enters play.",
 			["Type"] = "OnAllySummon",
 			["Power"] = {{"SetYellow",0},{"Damage",9999,"Aggressor"},{"Damage",300,"Single"}},
 			Target = "Ally",
