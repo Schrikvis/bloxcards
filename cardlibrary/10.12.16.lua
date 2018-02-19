@@ -3916,9 +3916,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Test",
-			Description = "Add a card to your deck that does a random terrain effect.",
+			Description = "Summon a card that brings the kittenpocalypse. Add a card to your deck that brings the myrmpocalypse.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"DeckAdd",{"Test DummyA","Test DummyB"}}},
+			["Power"] = {{"Summon","Test DummyA"},{"DeckAdd","Test DummyB"}},
 			Target = "Ally",
 		},
 		["Bio"] = "This dummy has been through more torture and abuse than you could even imagine... is what I would say, if we stopped putting potentially OP effects on it.",
