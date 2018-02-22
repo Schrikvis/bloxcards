@@ -4465,7 +4465,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["KrocoStar"] = {
-		["Id"] = 288040849,
+		["Id"] = 1446541685,
 		["Name"] = "KrocoStar",
 		["Health"] = 1300,
 		["Power"] = 750,
@@ -4473,7 +4473,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Slice",
 		["Color"] = "Blue",
-		["Cost"] = {["Blue"] = 6,},
+		["Cost"] = {["Blue"] = 7,},
 		["Bio"] = "NO. ITS KROCOSTAR! GET IT RIGHT, MOM!",
 	},
 	
