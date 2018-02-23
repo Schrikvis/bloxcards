@@ -17121,7 +17121,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Wooden Chair"] = {
-		["Id"] = 596607408,
+		["Id"] = 1450756765,
 		["Name"] = "Wooden Chair",
  		["Health"] = 100,
  		["Power"] = 200,
