@@ -3986,9 +3986,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Red"] = 3,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "When this card attacks, deal 200 damage to the opponent.",
+			Description = "When this card attacks, deal 500 damage to the opponent.",
 			["Type"] = "OnAttack",
-			["Power"] = {{"Inflict",200}},
+			["Power"] = {{"Inflict",500}},
 			Target = "Opponent",
 			Increase = 0,
 		},
