@@ -9180,7 +9180,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Plushie Amp",
 			Description = "Whenever this card attacks and destroys a fighter, reset Gusmanak's stats.",
 			["Type"] = "OnAttackDestroy",
-			["Power"] = {{"SetHealth",1200},{"SetPower",500}},
+			["Power"] = {{"SetHealth",1000},{"SetPower",500}},
 			Target = "Self",
 		},
 		["Bio"] = "Time to blox zombies and eat beans from a can!",
