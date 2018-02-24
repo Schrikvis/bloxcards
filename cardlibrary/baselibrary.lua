@@ -13485,7 +13485,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 
 	["Super Blip1"] = {
-		["Id"] = 1372147861,
+		["Id"] = 1372147856,
 		["Name"] = "Super Targeting Blip",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -13506,7 +13506,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 
 	["Super Blip2"] = {
-		["Id"] = 1372147861,
+		["Id"] = 1372147856,
 		["Name"] = "Super Targeting Blip",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -13527,7 +13527,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Super Blip3"] = {
-		["Id"] = 1372147861,
+		["Id"] = 1372147856,
 		["Name"] = "Super Targeting Blip",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -13548,7 +13548,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Super Blip4"] = {
-		["Id"] = 1372147861,
+		["Id"] = 1372147856,
 		["Name"] = "Super Targeting Blip",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -13569,7 +13569,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Super Blip5"] = {
-		["Id"] = 1372147861,
+		["Id"] = 1372147856,
 		["Name"] = "Super Targeting Blip",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -13590,7 +13590,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Super Blip6"] = {
-		["Id"] = 1372147861,
+		["Id"] = 1372147856,
 		["Name"] = "Super Targeting Blip",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -13611,7 +13611,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 
 	["Super Blip7"] = {
-		["Id"] = 1372147861,
+		["Id"] = 1372147856,
 		["Name"] = "Super Targeting Blip",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -13632,7 +13632,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 
 	["Super Blip8"] = {
-		["Id"] = 1372147861,
+		["Id"] = 1372147856,
 		["Name"] = "Super Targeting Blip",
 		["Health"] = 0,
 		["Power"] = 0,
