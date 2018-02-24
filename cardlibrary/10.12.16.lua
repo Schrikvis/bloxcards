@@ -4403,5 +4403,25 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
   		},
   		["Bio"] = "The new trend in chair fashion, throw out your boring WOOD chairs and get our new MODERN chair.",
  	},
+	
+	["SpeedySeat"] = {
+		["Id"] = 1455024250,
+ 		["Name"] = "SpeedySeat",
+  		["Health"] = 400,
+  		["Power"] = 400,
+ 		["Rarity"] = "Rare",
+ 		["AttackEffect"] = "Lightning",
+ 		["Color"] = "White",		
+  		["Cost"] = {["Neutral"] = 4, ["Yellow"] = 1,},
+ 		["Archetype"] = "Chair", 
+  		["Effect"] = {
+  			Name = "Helping Out",
+ 			Description = "Can only be summoned if you control 2 chairs. Unlock all chairs.",
+  			["Type"] = "OnSummon",
+ 			["Power"] = {{"Unlock",9999}},
+  			Target = "Archetype",
+  		},
+  		["Bio"] = "The new trend in chair fashion, throw out your boring WOOD chairs and get our new MODERN chair.",
+ 	},	
 }
 return tentwelvesixteen
