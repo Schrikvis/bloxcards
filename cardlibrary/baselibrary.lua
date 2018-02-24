@@ -17128,11 +17128,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Lightning",
  		["Color"] = "Green",
+		["Token"] = true,		
  		["Cost"] = {["Neutral"] = 1,},
 		["Archetype"] = "Chair", 
  		["Effect"] = {
  			Name = "Helping Out",
- 			Description = "Must be in play for The Gentlemaniac to be summonable. When this card dies, all chairs gains 100 health.",
+ 			Description = "Must be in play for The Gentlemaniac to be summonable. When this card dies, all chairs gains 100 health. This card can't generate icons.",
  			["Type"] = "OnDeath",
  			["Power"] = {{"Heal",100,"Archetype"}},
  			Target = "Ally",
