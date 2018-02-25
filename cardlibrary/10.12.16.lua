@@ -4401,7 +4401,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
  			["Power"] = {{"Strengthen",100,"Archetype"}},
   			Target = "Ally",
   		},
-  		["Bio"] = "The new trend in chair fashion, throw out your boring WOOD chairs and get our new MODERN chair.",
+  		["Bio"] = "Quite fancy if I do say so myself...",
  	},
 	
 	["SpeedySeat"] = {
