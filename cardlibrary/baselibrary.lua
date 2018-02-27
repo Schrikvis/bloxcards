@@ -3541,7 +3541,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			},
 		},
 		["Health"] = 1000,
-		["Power"] = 400,
+		["Power"] = 300,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Slash",
 		["Color"] = "Green",
