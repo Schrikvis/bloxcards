@@ -3551,7 +3551,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Description = "Whenever Stickmasterluke attacks, he drains 150 Health from a target fighter.",
 			["Type"] = "OnAttack",
 			["Power"] = {{"Heal",150,"Self"},{"Damage",150}},
-			Target = "Opponent",
+			Target = "Single",
 		},
 		["Bio"] = "Most likely accident prone worker at ROBLOX. He made it there from scripting, so can you!",
 	},
