@@ -1,21 +1,18 @@
-# The BloxCards card library.
+# The BloxCards Card Library
 
-## What?
-BloxCards is a trading card game on ROBLOX. It first scripted by Drager980 and is now
-maintained by Visleaf. In BloxCards, players can battle bots or each other using their
-decks and collect and trade over 900 cards.
-The game is heavily inspired by SNK vs. Capcom: Card Fighters Clash, sharing many of
-its core mechanics.
+BloxCards is a trading card game on ROBLOX.
+The game was first developed by Drager980; it is now maintained by Visleaf.
+In BloxCards, players can play duels against each other or AI, build their
+own decks and collect and trade cards.
+The game is heavily inspired by SNK vs. Capcom: Card Fighters Clash,
+stealing many of its core mechanics.
 
-## Then?
-Everyone agreed it'd be a good idea to let the community handle the stats and effects of
-the game's cards.
+The BloxCards community manages the card library via this repository.
 
-## Submission guidelines
-Every change to every card should be its own commit. Do not cluster changes to multiple
-cards into one big commit. Before you commit, test the changes as documented elsewhere.
-Do not commit broken files.
+## Contribution Guidelines
+Every change to every card should ideally be its own commit.
+Try not to cluster changes to multiple cards into one big commit.
+Multiple small commits go into one big pull request; keeping the
+changes seperate lets people easily assess what's being changed.
 
-## The future
-The library files on this repository will eventually be converted to the JSON format so
-the server can fetch them on startup.
+Test every change as documented in AssetTest.lua and CardLibraryTest.lua.
