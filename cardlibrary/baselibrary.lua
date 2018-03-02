@@ -8608,7 +8608,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Can't generate icons or be discarded. Set the power of this fighter to 0 at the end of your turns. (This card is used to play stronger titans.)",
+			Description = "Can't generate icons. Set the power of this fighter to 0 at the end of your turns. (This card is used to play stronger titans.)",
 			["Type"] = "OnEnd",
 			["Power"] = "Weaken",
 			Target = "Self",
@@ -8629,7 +8629,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = [[At the end of of your turns, put a "Titan's Stone" to your hand.]],
+			Description = [[At the end of of your turns, put a "Titan's Stone" to your hand. This card can't generate icons.]],
 			["Type"] = "OnEnd",
 			["Power"] = "Add",
 			Target = "Ally",
