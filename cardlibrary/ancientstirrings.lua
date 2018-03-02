@@ -168,7 +168,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Heal",150,"Archetype"}},
 			Target = "Ally",
 		},
-		["Bio"] = "Only the Glaciem knights remained from their legion. Their prepared for their own defense against Zanzel.",
+		["Bio"] = "Only the Glaciem knights remained from their legion. They're prepared for their own defense against Zanzel.",
 	},
 	
 	["Grey Goo Scenario"] = {
