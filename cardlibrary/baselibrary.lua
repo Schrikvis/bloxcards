@@ -8604,7 +8604,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Punch1",
 		["Archetype"] = "Titan",
 		["Token"] = true,
-		["DiscardBlock"] = true,
 		["Color"] = "Neutral",
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
@@ -8625,6 +8624,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 0,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Punch1",
+		["Token"] = true,
 		["Color"] = "Neutral",
 		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
