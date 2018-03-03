@@ -831,6 +831,7 @@ local packs = {
 			"Egg Eyes Batter Dragon",
 			"CloneTrooper1019",
 			"Baby Noob",
+			"Graalgamer",
 			"Revelling Satyr",
 			"ChickenduckbirdV2",
 			"Noob's Play Box",
