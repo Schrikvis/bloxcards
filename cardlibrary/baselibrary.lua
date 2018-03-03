@@ -10036,7 +10036,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Effect"] = {
 					Name = "Nerf",
 					Description = "Put two Newbees into your hand. Whenever you summon a fighter, increase the power of all bees by 25.",
-					Type = "OnAllySummon",
+					Type = "OnSummon",
 					Power = {{"Add","Newbee"},{"Add","Newbee"},{"Summon","Beestor Token"},{"Damage",9999,"Self"}},
 					Target = "Ally",
 				},
