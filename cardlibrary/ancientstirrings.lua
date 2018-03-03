@@ -2135,7 +2135,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 7,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "When played, summon a copy of this card. When this card attacks and destroys another, draw a card.",
+			Description = "Summon a copy of this card. When this fighter destroys another, draw a card.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Summon","Lead"},{"Summon","Lead"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -2154,8 +2154,8 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 7,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "When played, summon a copy of this card. When this card attacks and destroys another, draw a card.",
-			["Type"] = "OnAttackDestroy",
+			Description = "Summon a copy of this card. When this fighter destroys another, draw a card.",
+			["Type"] = "OnDestroy",
 			["Power"] = {{"Draw",1}},
 			Target = "Ally",
 		},
