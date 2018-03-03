@@ -4342,7 +4342,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["ThePestilentOne"] = {
-		["Id"] = 1473224515,
+		["Id"] = 1474056814,
 		["Name"] = "ThePestilentOne",
 		["Health"] = 500,
 		["Power"] = 500,
@@ -4357,7 +4357,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Cost",-500},{"Add","Targeting Blip"},{"Add","Targeting Blip"}}
 			["Target"] = "Ally",
 		},
-		["Bio"] = "Placeholder bio.",
+		["Bio"] = "ＴＡＰ　ＨＥＲＥ　ＴＯ　ＡＤＤ　ＴＥＸＴ",
 	},
 }
 return tentwelvesixteen
