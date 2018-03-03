@@ -4340,5 +4340,24 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "Looks like we couldn't weasel our way out of putting this in the game.",
 	},
+	
+	["ThePestilentOne"] = {
+		["Id"] = 1473224515,
+		["Name"] = "ThePestilentOne",
+		["Health"] = 500,
+		["Power"] = 500,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Pulse",
+		["Color"] = "Green",
+		["Cost"] = {["Green"] = 4,},
+		["Effect"] = {
+			Name = "Tombstone",
+			Description = "Gain 500 Life. Put two targeting blips into your hand. Targeting blips trigger targeting effects.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Cost",-500},{"Add","Targeting Blip"},{"Add","Targeting Blip"}}
+			["Target"] = "Ally",
+		},
+		["Bio"] = "Placeholder bio.",
+	},
 }
 return tentwelvesixteen
