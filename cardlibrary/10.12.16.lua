@@ -4354,7 +4354,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Tombstone",
 			Description = "Gain 500 Life. Put two targeting blips into your hand. Targeting blips trigger targeting effects.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Cost",-500},{"Add","Targeting Blip"},{"Add","Targeting Blip"}}
+			["Power"] = {{"Cost",-500},{"Add","Targeting Blip"},{"Add","Targeting Blip"}},
 			["Target"] = "Ally",
 		},
 		["Bio"] = "ＴＡＰ　ＨＥＲＥ　ＴＯ　ＡＤＤ　ＴＥＸＴ",
