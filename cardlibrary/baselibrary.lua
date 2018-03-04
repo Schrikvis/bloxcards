@@ -267,7 +267,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Token"] = true,
 		["Archetype"] = "Meeboid",
 		["Color"] = "Green",
-		["Requirement"] = {"Archetype",8},
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Build Up",
@@ -353,7 +352,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Token"] = true,
 		["Archetype"] = "Meeboid",
 		["Color"] = "Green",
-		["Requirement"] = {"Archetype",8},
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Build Up",
@@ -17609,7 +17607,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Green"] = 2,},
 		["Effect"] = {
 			Name = "Monocle Polish",
-			Description = "Can't be counterattacked, or have its power increased.  When this card attacks a fighter, the fighter it attacked loses 200 power.",
+			Description = "Haste. Can't be counterattacked, or have its power increased.  When this card attacks a fighter, the fighter it attacked loses 200 power.",
 			["Type"] = "OnAttack",
 			["Power"] = {{"Weaken",200}},
 			Target = "Aggressor",
