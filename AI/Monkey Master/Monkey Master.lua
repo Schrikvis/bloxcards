@@ -10,7 +10,7 @@ bot.Rewards = {
 }
 
 bot.Info = {
-	Name = "The Scholar";
+	Name = "Monkey Master";
 	Id = 140238954;
 	Rewards = bot.Rewards;
 	ChallengeMessage = require(script.Dialogue);
