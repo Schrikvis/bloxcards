@@ -257,7 +257,7 @@ local botcards = { -- Cards used by an AI that are not meant for human play go h
 	--These cards are used by The Merchant.	
 	
 	["Master Acolyte's Altar"] = {
-		["Id"] = 1480441236,
+		["Id"] = 1480565605,
 		["Name"] = "Master Acolyte's Altar",
 		["Health"] = 1100,
 		["Power"] = 0,
