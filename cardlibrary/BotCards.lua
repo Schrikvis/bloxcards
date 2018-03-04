@@ -204,11 +204,12 @@ local botcards = { -- Cards used by an AI that are not meant for human play go h
 			["Darken the Skies"] = {
 				["Id"] =  1469405051,
 				["Cost"] = {["Blue"] = 25,},
+				["Rarity"] = "Epic",
 				["Requirement"] = {"Archetype",6},
 				["Archetype"] = "Nightmare",
 				["Effect"] = {
 					Name = "Matriarch",
-					Description = [[Caszt only if you control 6 nightmare-related fighters. Shuffle a copy of the Matriarch's deck into your deck. Draw a card.]],
+					Description = [[Cast only if you control 6 nightmare-related fighters. Shuffle a copy of the Matriarch's deck into your deck. Draw a card.]],
 					["Type"] = "OnSummon",
 					["Power"] = {{"DeckAdd","Crow of Eternal Torment"},{"DeckAdd","Crow of Eternal Torment"},{"DeckAdd","Crow of Eternal Torment"},{"DeckAdd","Crow of Eternal Torment"},{"DeckAdd","Crow of Eternal Torment"},{"DeckAdd","Crow of Eternal Torment"},{"DeckAdd","Crow of Eternal Torment"},{"DeckAdd","Crow of Eternal Torment"},{"DeckAdd","Crow of Eternal Torment"},{"DeckAdd","Bird of Eternal Paradise"},{"DeckAdd","Bird of Eternal Paradise"},{"DeckAdd","Bird of Eternal Paradise"},{"DeckAdd","Bird of Eternal Paradise"},{"DeckAdd","Bird of Eternal Paradise"},{"DeckAdd","Bird of Eternal Paradise"},{"DeckAdd","Bird of Eternal Paradise"},{"DeckAdd","Bird of Eternal Paradise"},{"DeckAdd","Bird of Eternal Paradise"},{"DeckAdd","Parrot of Eternal Dominion"},{"DeckAdd","Parrot of Eternal Dominion"},{"DeckAdd","Parrot of Eternal Dominion"},{"DeckAdd","Parrot of Eternal Dominion"},{"DeckAdd","Parrot of Eternal Dominion"},{"DeckAdd","Parrot of Eternal Dominion"},{"DeckAdd","Parrot of Eternal Dominion"},{"DeckAdd","Parrot of Eternal Dominion"},{"DeckAdd","Parrot of Eternal Dominion"},{"DeckAdd","Eternal Tweety"},{"DeckAdd","Eternal Tweety"},{"DeckAdd","Eternal Tweety"},{"DeckAdd","Eternal Tweety"},{"DeckAdd","Eternal Tweety"},{"DeckAdd","Eternal Tweety"},{"DeckAdd","Eternal Tweety"},{"DeckAdd","Eternal Tweety"},{"DeckAdd","Eternal Tweety"},{"DeckAdd","Bird Colossus"},{"DeckAdd","Divine Favor"},{"DeckAdd","Divine Favor"},{"DeckAdd","Darken the Skies"},{"Draw",1}},
 					Target = "Ally",	
@@ -256,7 +257,7 @@ local botcards = { -- Cards used by an AI that are not meant for human play go h
 	--These cards are used by The Merchant.	
 	
 	["Master Acolyte's Altar"] = {
-		["Id"] = 300638699,
+		["Id"] = 1480441236,
 		["Name"] = "Master Acolyte's Altar",
 		["Health"] = 1100,
 		["Power"] = 0,

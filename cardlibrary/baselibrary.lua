@@ -267,7 +267,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Token"] = true,
 		["Archetype"] = "Meeboid",
 		["Color"] = "Green",
-		["Requirement"] = {"Archetype",8},
+		["Cost"] = {["Neutral"] = 0,}
 		["Effect"] = {
 			Name = "Build Up",
 			Description = "Lower the power of all Non-Meeboids by 100 at the end of each of your turns. This card can't generate icons.",
