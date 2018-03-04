@@ -1589,6 +1589,30 @@ local packs = {
 	};
 	
 	{
+		Name = "Innovative", --those meme alts or something i guess!
+		Hidden = false;
+		PriceInBloxBux = 1337,
+		PriceInRobux = 0;
+		CardsInPack = 1,
+		CardPackId = 596205187, --Change this with an actual pack art when possible, its currently using exine.
+		Description = "This pack only contains the dankest of the dank alt arts, so rare that you will never see them in the artbox.  These majestic packs only contain one godly card per pack, and require 20 wins to buy.",
+		WinRequirement = 20;
+		DateConstraint = {
+			month = {4};
+			day = {1};
+		};
+		Cards = {
+			"IcyBee",
+			"Bee Ninja",
+			"Newbee",
+			"Beestor",
+			"Tom's Bees",
+			"MrBeeBee2",
+			"Beeskateer",
+			"WarnomBearkins",
+		},
+	};
+	{
 		Name = "Teaism's Gifts", --CHRISTMAS!
 		Hidden = false;
 		PriceInBloxBux = 1000;
@@ -1631,7 +1655,7 @@ local packs = {
 	};
 	
 	{
-		Name = "Tough Love", --VALENTINES!
+		Name = "Tough Love", --VALENTINES & WHITE DAY!
 		Hidden = false;
 		PriceInBloxBux = 1000;
 		PriceInRobux = 0;
@@ -1640,7 +1664,8 @@ local packs = {
 		Description = "Over 40 special edition Valentine themed cards! Can your heart resist them? <3 (Minimum 10 wins. Stalker and Combine Garrison are only found in the Art Box.)",
 		WinRequirement = 10;
 		DateConstraint = {
-			month = {2};
+			month = {2, 3};
+			day = {14, 15, 16, 17, 18, 19, 20};
 		};
 		Cards = {
 			"Ejob-Val",
