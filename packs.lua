@@ -415,6 +415,7 @@ local packs = {
 		Description = "Green is the colour of life, growth, and the primal forces. Vitality packs contain cards that cost green!",
 		Cards = {
 			"Tl_rd",
+			"ThePestilentOne",
 			"Yggdrasil Faerie",
 			"vanjohnson",
 			"ChaseThePsycho",
@@ -831,6 +832,7 @@ local packs = {
 			"Egg Eyes Batter Dragon",
 			"CloneTrooper1019",
 			"Baby Noob",
+			"Graalgamer",
 			"Revelling Satyr",
 			"ChickenduckbirdV2",
 			"Noob's Play Box",
@@ -1024,6 +1026,7 @@ local packs = {
 		WinRequirement = 10;
 		Cards = {
 			"Tl_rd",
+			"ThePestilentOne",
 			"DrWeaseI",
 			"lolbeniceok",
 			"stormmaster7722",
@@ -1101,7 +1104,6 @@ local packs = {
 			"CjMcGamingYT",
 			"Indoorsnowball",
 			"Shaylan007",
-			"Yoshilove574",
 			-- PAST THIS POINT IS FOR WHITE CARDS AND JOKE CARDS ONLY. I'M LOOKING AT YOU, BLITZ.
 			"Dukran the Celestial",
 			"Wingman8",
