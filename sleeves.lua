@@ -84,6 +84,8 @@ local sleeves = {
 	};
 
 	CardArt = {
+		["Ninja Fox"]		= {1172564327, 4200};
+		["Digimon"]		= {1172564751, 2700};
 		["MisterObvious"]       = {486449168, 1800};
 		["Cindering"] 	        = {689606529, 3000};
 		["Egotist"]             = {486449178, 2000};
