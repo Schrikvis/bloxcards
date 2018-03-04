@@ -4385,20 +4385,21 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Tl_rd"] = {
 		["Id"] = 1480664892,
 		["Name"] = "Tl_rd",
-		["Health"] = 1100,
+		["Health"] = 1000,
 		["Power"] = 100,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Gust",
+		["Archetype"] = "Hero",
 		["Color"] = "Green",
 		["Cost"] = {["Green"] = 3, ["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Tombstone",
 			Description = "At the end of your turns, shove Tom's Beans into your hand.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Add","Tom's Beans"},
+			["Power"] = {{"Add","Tom's Beans"}},
 			["Target"] = "Ally",
 		},
-		["Bio"] = "#KelloggsGoneWild He Certainly Is. His life motto: The future is bright. Beans, beans, the musical fruit! The more you eat, the more you toot! The more you toot, the better you feel! So we have beans at every meal!",
+		["Bio"] = "#KelloggsGoneWild can u guys make some and vote or something He Certainly Is. What kind of monster cooks beans in a bloxy cola can? His life motto: The future is bright. Beans, beans, the musical fruit! The more you eat, the more you toot! The more you toot, the better you feel! So we have beans at every meal! idk Yes, I am BLACK. Green is love, green is life.",
 	},
 }
 return tentwelvesixteen
