@@ -4381,5 +4381,24 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "ＴＡＰ　ＨＥＲＥ　ＴＯ　ＡＤＤ　ＴＥＸＴ",
 	},
+	
+	["Tl_rd"] = {
+		["Id"] = 1480664892,
+		["Name"] = "Tl_rd",
+		["Health"] = 1100,
+		["Power"] = 100,
+		["Rarity"] = "Rare",
+		["AttackEffect"] = "Gust",
+		["Color"] = "Green",
+		["Cost"] = {["Green"] = 3, ["Neutral"] = 3,},
+		["Effect"] = {
+			Name = "Tombstone",
+			Description = "At the end of your turns, shove Tom's Beans into your hand.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Add","Tom's Beans"},
+			["Target"] = "Ally",
+		},
+		["Bio"] = "#KelloggsGoneWild He Certainly Is. His life motto: The future is bright. Beans, beans, the musical fruit! The more you eat, the more you toot! The more you toot, the better you feel! So we have beans at every meal!",
+	},
 }
 return tentwelvesixteen
