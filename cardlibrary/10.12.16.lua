@@ -3407,6 +3407,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Yellow",
+		["Archetype"] = "Bird",
 		["Cost"] = {["Neutral"] = 1, ["Blue"] = 2, ["Yellow"] = 2,},
 		["Charge"] = true,
 		["Effect"] = {
