@@ -4395,7 +4395,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Tombstone",
 			Description = "At the end of your turns, shove Tom's Beans into your hand.",
-			["Type"] = "OnSummon",
+			["Type"] = "OnEnd",
 			["Power"] = {{"Add","Tom's Beans"}},
 			["Target"] = "Ally",
 		},
