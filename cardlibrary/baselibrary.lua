@@ -10093,7 +10093,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 1024780201,
 		["Name"] = "Delusionist",
 		["Health"] = 700,
-		["Power"] = 200,
+		["Power"] = 300,
 		["Rarity"] = "Uncommon",
 		["Archetype"] = "Nightmare",
 		["AttackEffect"] = "Slash",
@@ -10101,9 +10101,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 3,["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Hive Crack",
-			Description = "Put 2 Nightmares into your opponent's hand.",
-			Type = "OnSummon",
-			Power = {{"Add","Nightmare"},{"Add","Nightmare"}},
+			Description = "At the end of your turns, put a Nightmare into the opponent's hand.",
+			Type = "OnEnd",
+			Power = {{"Add","Nightmare"}},
 			Target = "Opponent",
 		},
 		["Bio"] = "This card isn't even real.",
@@ -10112,7 +10112,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Rat King"] = {
 		["Id"] = 345761101,
 		["Name"] = "Rat King",
-		["Health"] = 100,
+		["Health"] = 25,
 		["Power"] = 0,
 		["Rarity"] = "Uncommon",
 		["Archetype"] = "Nightmare",
@@ -10121,9 +10121,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 1,["Green"] = 1,},
 		["Effect"] = {
 			Name = "Hive Crack",
-			Description = "Put a Nightmare into your opponent's hand. All Nightmare-related fighters gain 200 Power.",
+			Description = "Put two Nightmares into your opponent's hand. All Nightmare-related fighters gain 200 Power and health.",
 			Type = "OnSummon",
-			Power = {{"Add","Nightmare"},{"Strengthen",200,"Archetype"}},
+			Power = {{"Add","Nightmare"},{"Add","Nightmare"},{"Strengthen",200,"Archetype"},{"Heal",200,"Archetype"}},
 			Target = "Opponent",
 		},
 		["Bio"] = "To immobilize the weak. That is what the Rat King makes those fear.",
@@ -10141,9 +10141,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 3,["Green"] = 1,},
 		["Effect"] = {
 			Name = "Night Creak",
-			Description = "Lock a target fighter for two turns. Put two nightmares into your opponent's hand.",
+			Description = "Lock a target fighter for three turns. Put two nightmares into your opponent's hand.",
 			Type = "OnSummon",
-			Power = {{"Add","Nightmare"},{"Add","Nightmare"},{"Lock",2,"Single"}},
+			Power = {{"Add","Nightmare"},{"Add","Nightmare"},{"Lock",3,"Single"}},
 			Target = "Opponent",
 		},
 		["Bio"] = "A nightmare of a choice.",
@@ -10161,9 +10161,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 3,["Blue"] = 1,},
 		["Effect"] = {
 			Name = "Nightmare!",
-			Description = "Your opponent loses 2 white icons. This effect can cause negative icons. Draw a card.",
+			Description = "Put a nightmare into your opponent's hand. Your opponent loses 3 white icons. This effect can cause negative icons. Draw a card.",
 			Type = "OnSummon",
-			Power = {{"White",-2},{"Draw",1,"Ally"}},
+			Power = {{"Add","Nightmare"},{"White",-3},{"Draw",1,"Ally"}},
 			Target = "Opponent",
 		},
 		["Bio"] = "Reccomended by Mr.Bones that you do NOT go on this wild ride.",
@@ -10180,9 +10180,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 1,["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Nightmare!",
-			Description = "Put a Nightmare into your opponent's hand. All Nightmare-related fighters gain 500 Health.",
+			Description = "Put two Nightmares into your opponent's hand. All non-Nightmare-related fighters lose 200 Power. All Nightmare-related fighters gain 500 Health.",
 			Type = "OnSummon",
-			Power = {{"Add","Nightmare","Opponent"},{"Heal",500}},
+			Power = {{"Add","Nightmare","Opponent"},{"Add","Nightmare","Opponent"},{"Weaken",200,"NotArchetype"},{"Heal",500}},
 			Target = "Archetype",
 		},
 		["Bio"] = "Gengar approved.",
@@ -10198,7 +10198,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Bio"] = "I am the wild dog watching with sixteen omniscient eyes. Unblinking endless judgment, cast as the patterns rise.",
 			},
 		},
-		["Health"] = 1200,
+		["Health"] = 1300,
 		["Power"] = 0,
 		["Rarity"] = "Legendary",
 		["Archetype"] = "Nightmare",
@@ -10207,7 +10207,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Blue"] = 3,["Green"] = 2,},
 		["Effect"] = {
 			Name = "Night Creak",
-			Description = "At the end of your turns, put a Nightmare into your opponent's hand and give all Nightmare-related fighters 300 Health.",
+			Description = "At the end of your turns, put a Nightmare into your opponent's hand. All Nightmare-related fighters gain 300 health.",
 			Type = "OnEnd",
 			Power = {{"Add","Nightmare"},{"Heal",300,"Archetype"}},
 			Target = "Opponent",
@@ -10226,9 +10226,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 2},
 		["Effect"] = {
 			Name = "Nightmare!",
-			Description = "Shuffle 3 Nightmares into your opponent's deck.",
+			Description = "Shuffle 5 Nightmares into your opponent's deck. Draw a card.",
 			Type = "OnSummon",
-			Power = {{"DeckAdd","Nightmare"},{"DeckAdd","Nightmare"},{"DeckAdd","Nightmare"}},
+			Power = {{"DeckAdd","Nightmare"},{"DeckAdd","Nightmare"},{"DeckAdd","Nightmare"},{"DeckAdd","Nightmare"},{"DeckAdd","Nightmare"},{"Draw",1,"Ally"}},
 			Target = "Opponent",
 		},
 		["Bio"] = "They'll be complaining that they drew it every, single, time.",
@@ -13669,7 +13669,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Cost",-2000},{"EndTurn",1}},
 			Target = "Ally"
 		},
-		["Bio"] = "You would rather have swords jabbed into your eyeballs than eat this bread.",
+		["Bio"] = "You would rather have swords jabbed into your eyeballs than eat this bread. I know from experience.",
 	},
 	
 	["Targeting Blip"] = {
@@ -13787,9 +13787,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 4,["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Put 4 red or blue actions to your hand, then generate 4 red icons.",
+			Description = "Put six red or blue actions to your hand, then generate 6 red icons.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"RandomAdd","Lunar"},{"RandomAdd","Lunar"},{"RandomAdd","Lunar"},{"RandomAdd","Lunar"},{"Red",4}},
+			["Power"] = {{"RandomAdd","Lunar"},{"RandomAdd","Lunar"},{"RandomAdd","Lunar"},{"RandomAdd","Lunar"},{"RandomAdd","Lunar"},{"RandomAdd","Lunar"},{"Red",6}},
 			Target = "Ally",	
 		},
 		["Bio"] = "The Paraselene Sage thought he found the most forbidden of powers. He was wrong.",
@@ -13872,7 +13872,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Sibs-ArtV"] = {
 				["Id"] = 430934562,
 				["AltArt"] = true,
-				["Bio"] = "Over a thousand years have passed since Jayson and Sibs have got together... Part of the 'Aife' Collection! Collect them all!",
+				["Bio"] = "...And they still work so well together.",
 			},
 		},
 		["Health"] = 500,
@@ -15623,9 +15623,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 4, ["Neutral"] = 5,},
 		["Effect"] = {
 			Name = "Revival",
-			Description = "Deal 15,000 damage to yourself. If you survive, you win the game.",
+			Description = "Deal 12,000 damage to yourself. If you survive, you win the game.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Heal",9999,"Self"},{"Damage",9999},{"Cost",15000},{"Summon","InceptionTime Token"},{"Damage",9999,"Self"}},
+			["Power"] = {{"Heal",9999,"Self"},{"Damage",9999},{"Cost",12000},{"Summon","InceptionTime Token"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = "It is not yet time.",
@@ -15642,7 +15642,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 4, ["Neutral"] = 5,},
 		["Effect"] = {
 			Name = "Revival",
-			Description = "Deal 15,000 damage to yourself. If you survive, you win the game.",
+			Description = "Deal 12,000 damage to yourself. If you survive, you win the game.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Inflict",999999}},
 			Target = "Opponent",
@@ -16312,7 +16312,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Draw",1}},
 			Target = "Opponent",
 		},
-		["Bio"] = "PLEASE PLEASE PLEASE PLEASE PLEASE BE MY FRIEND PLEASE PLEASE PLEASE I'LL DO ANYTHING PLEASE THIS ISN'T ANNOYING AT ALL IS IT PLEASE PLEASE PLEASE I BEG YOU PLEASE PLEASE WHY DON'T YOU LISTEN TO ME PLEASE PLEASE PLEASE",
+		["Bio"] = "PLEASE PLEASE PLEASE PLEASE PLEASE BE MY FRIEND PLEASE PLEASE PLEASE I'LL DO ANYTHING PLEASE THIS ISN'T ANNOYING AT ALL IS IT PLEASE PLEASE PLEASE I BEG YOU PLEASE PLEASE WHY DON'T YOU LISTEN TO ME PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE BE MY FRIEND PLEASE PLEASE PLEASE I'LL DO ANYTHING PLEASE THIS ISN'T ANNOYING AT ALL IS IT PLEASE PLEASE PLEASE I BEG YOU PLEASE PLEASE WHY DON'T YOU LISTEN TO ME PLEASE PLEASE PLEASE",
 	},
 	
 	["CIA Man"] = { 
@@ -16340,7 +16340,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "CIA Man",
 		["Health"] = 500,
 		["Power"] = 200,
-		["Rarity"] = "Uncommon",   --left rarity as Uncommon, in case of RNG Summon
+		["Rarity"] = "Token",   --left rarity as Uncommon, in case of RNG Summon
 		["AttackEffect"] = "GunShot",
 		["Color"] = "Blue", 
 		["Cost"] = {["Neutral"] = 5,["Blue"] = 2,},
@@ -17604,6 +17604,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Slash",
 		["CounterAttackBlock"] = true,
 		["StrengthenImmune"] = true,
+		["Charge"] = true,
 		["Color"] = "Green",
 		["Cost"] = {["Neutral"] = 1,["Green"] = 2,},
 		["Effect"] = {
@@ -17676,19 +17677,19 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},		
 	
 	["Burning Tree"] = {
-		["Id"] = 626081765,
+		["Id"] = 1479981590,
 		["Name"] = "Burning Tree",
-		["Health"] = 500,
+		["Health"] = 600,
 		["Power"] = 0,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Fire",
 		["Color"] = "Red",
-		["Cost"] = {["Red"] = 2,},
+		["Cost"] = {["Red"] = 2, ["Neutral"] = 2},
 		["Effect"] = {
 			Name = "Firefly",
-			Description = "When this card dies, put a Forestfire Butterfly into your hand.",
-			["Type"] = "OnDeath",
-			["Power"] = {{"Add","Forestfire Butterflies"}},
+			Description = "When this card survives an attack, put two Forestfire Butterflies into your hand.",
+			["Type"] = "OnAttacked",
+			["Power"] = {{"Add","Forestfire Butterflies"},{"Add","Forestfire Butterflies"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Ignis Mage was a little too careless this time...",
@@ -17699,7 +17700,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Forestfire Butterflies",
 		["Health"] = 100,
 		["Power"] = 100,
-		["Rarity"] = "Common",
+		["Rarity"] = "Token",
 		["AttackEffect"] = "Fire",
 		["Token"] = true,
 		["Charge"] = true,
@@ -17715,7 +17716,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "The buzzing noise is the sound of their wings burning, silly.",
 	},		
 
-["Forestfire Butterflies2"] = {
+	["Forestfire Butterflies2"] = {
 		["Id"] = 1371878542,
 		["Name"] = "Forestfire Butterflies",
 		["Health"] = 100,
@@ -17733,7 +17734,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Cost",0}},
 			Target = "Opponent",
 		},
-		["Bio"] = "The buzzing noise is the sound of their wings burning, silly.",
+		["Bio"] = "I hear they like being on fire.",
 	},	
 	
 	["NullSenseStudio"] = {
