@@ -236,7 +236,7 @@ local botcards = { -- Cards used by an AI that are not meant for human play go h
 	--These cards are used by The Scholar.
 	
 	["Fatal Discovery"] = { 
-		["Id"] = 1469082737,
+		["Id"] = 1480499313,
 		["Name"] = "Fatal Discovery",
 		["Health"] = 0,
 		["Power"] = 0,
