@@ -3014,8 +3014,8 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "PunchKick",
 		["Color"] = "Green", 
-		["Stealth"] = true,
 		["Cost"] = {["Neutral"] = 3, ["Green"] = 1,},
+		["Fading"] = true,
 		["Effect"] = {
 			Name = "Life fam",
 			Description = "When this card is summoned, Put a Demonic Godbeast into your hand and your opponent summons a Demonic Godbeast. At the end of your turns, summon a Demonic Godbeast.",
