@@ -66,29 +66,10 @@ local botcards = { -- Cards used by an AI that are not meant for human play go h
 		["Bio"] = "He certainly is!",
 	},	
 	
-	--Used by the Matriarch AI.
-	
-	["Timothy"] = { 
-		["Id"] = 1151269011,
-		["Name"] = "Timothy",
-		["Health"] = 0,
-		["Power"] = 0,
-		["Rarity"] = "Token",
-		["AttackEffect"] = "Fire",
-		["Color"] = "Yellow",
-		["Cost"] = {["Neutral"] = 3,},
-		["Effect"] = {
-			Name = "BossMonster",
-			Description = [[Lower the health and power of all enemy fighters by 200. Summon a Beehive.]],
-			["Type"] = "OnSummon",
-			["Power"] = {{"Weaken",200},{"Damage",200},{"Summon","Beehive","Ally"}},
-			Target = "Enemy",	
-		},
-		["Bio"] = "He certainly is!",
-	},		
+	--Used by the Matriarch AI.	
 	
 	["Crow of Eternal Torment"] = { 
-		["Id"] = 1151269011,
+		["Id"] = 1469009998,
 		["Name"] = "Crow of Eternal Torment",
 		["Health"] = 200,
 		["Power"] = 200,
@@ -153,17 +134,16 @@ local botcards = { -- Cards used by an AI that are not meant for human play go h
 	["Eternal Tweety"] = { 
 		["Id"] = 1469068943,
 		["Name"] = "Eternal Tweety",
-		["Health"] = 200,
+		["Health"] = 225,
 		["Power"] = 200,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Fire",
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 0,},
 		["Archetype"] = "Bird",
-		["Stealth"] = true,
 		["Effect"] = {
 			Name = "Matriarch",
-			Description = [[Abilities don't trigger when this card enters play. Ready all Birds.]],
+			Description = [[Ready all Birds.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Unlock",1}},
 			Target = "Ally",	
