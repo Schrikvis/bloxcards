@@ -30,7 +30,6 @@ local sleeves = {
 		["Inkling"]             = {486505300, 2000};
 		["Crystals"]            = {486449138, 1750};
 		["Red Planet"]          = {486505296, 1500};
-		["Gentle Giant"]        = {486449213, 1500};
 		["Techno"]              = {486449207,  650};
 		["Arial"]               = {486449185,  800};
 		["Invisible"]           = {0,         4000};
@@ -38,6 +37,7 @@ local sleeves = {
 		["Sleevefinity"]        = {486449155, 1500};
 		["Obvious"]             = {486449131, 1500};
 		["Wooden"]              = {596217246,  700};
+		["Nerf"]                = {534129585, 2000};
 	};
 
 	Valentines = {
@@ -72,7 +72,6 @@ local sleeves = {
 
 	Halloween = {
 		["Goopy"]               = {534129450,  460};
-		["Nerf"]                = {534129585, 2000};
 		["Spooky Scary"]        = {534129749,  500};
 		["Lunar"]               = {534130016, 1200};
 		["Arachnid"]            = {534130351, 1300};
@@ -97,6 +96,7 @@ local sleeves = {
 		["Zanzel"]              = {559461035, 2500};
 		["Papasmurf"]           = {596205593, 2400};
 		["UltraObliterator"]    = {675456737, 2000};
+		["Gentle Giant"]        = {486449213, 1500};
 	};
 
 }
