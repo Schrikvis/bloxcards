@@ -4363,6 +4363,89 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "Looks like we couldn't weasel our way out of putting this in the game.",
 	},
 	
+	["Modern Chair"] = {
+		["Id"] = 1450760888,
+ 		["Name"] = "Modern Chair",
+  		["Health"] = 100,
+  		["Power"] = 200,
+ 		["Rarity"] = "Common",
+ 		["AttackEffect"] = "Lightning",
+ 		["Color"] = "Blue",
+		["Token"] = true,		
+  		["Cost"] = {["Neutral"] = 1,},
+ 		["Archetype"] = "Chair", 
+  		["Effect"] = {
+  			Name = "Helping Out",
+ 			Description = "When this card dies, all chairs gain 50 health and power. This card can't generate icons.",
+  			["Type"] = "OnEnd",
+ 			["Power"] = {{"Heal",50,"Archetype"}},
+  			Target = "Ally",
+  		},
+  		["Bio"] = "The new trend in chair fashion, throw out your boring WOOD chairs and get our new MODERN chair.",
+ 	},
+	
+	["Steel Chair"] = {
+		["Id"] = 1450760402,
+ 		["Name"] = "Steel Chair",
+  		["Health"] = 100,
+  		["Power"] = 200,
+ 		["Rarity"] = "Common",
+ 		["AttackEffect"] = "Lightning",
+ 		["Color"] = "Red",
+		["Token"] = true,		
+  		["Cost"] = {["Neutral"] = 1,},
+ 		["Archetype"] = "Chair", 
+  		["Effect"] = {
+  			Name = "Helping Out",
+ 			Description = "When this card dies, deal 100 damage to all non-chairs. This card can't generate icons.",
+  			["Type"] = "OnDeath",
+ 			["Power"] = {{"Damage",100,"NotArchetype"}},
+  			Target = "Ally",
+  		},
+  		["Bio"] = "Are you ready for this Sunday night when WWE champ John Cena defends his title in the WWE Super Slam? Right now you can order this awesome pay-per-view event for just $59.99!",
+ 	},
+	
+	["Royal Chair"] = {
+		["Id"] = 1450761408,
+ 		["Name"] = "Royal Chair",
+  		["Health"] = 100,
+  		["Power"] = 200,
+ 		["Rarity"] = "Common",
+ 		["AttackEffect"] = "Lightning",
+ 		["Color"] = "Yellow",
+		["Token"] = true,		
+  		["Cost"] = {["Neutral"] = 1,},
+ 		["Archetype"] = "Chair", 
+  		["Effect"] = {
+  			Name = "Helping Out",
+ 			Description = "When this card dies, all chairs gain 100 power. This card can't generate icons.",
+  			["Type"] = "OnDeath",
+ 			["Power"] = {{"Strengthen",100,"Archetype"}},
+  			Target = "Ally",
+  		},
+  		["Bio"] = "Quite fancy if I do say so myself...",
+ 	},
+	
+	["SpeedySeat"] = {
+		["Id"] = 1455024250,
+ 		["Name"] = "SpeedySeat",
+  		["Health"] = 400,
+  		["Power"] = 400,
+ 		["Rarity"] = "Rare",
+ 		["AttackEffect"] = "Lightning",
+ 		["Color"] = "White",		
+  		["Cost"] = {["Neutral"] = 4, ["Yellow"] = 1,},
+ 		["Archetype"] = "Chair", 
+  		["Effect"] = {
+  			Name = "Helping Out",
+ 			Description = "Can only be summoned if you control 2 chairs. Unlock all chairs.",
+  			["Type"] = "OnSummon",
+ 			["Power"] = {{"Unlock",9999}},
+  			Target = "Archetype",
+  		},
+  		["Bio"] = "W'sup?",
+ 	},	
+
 	["ThePestilentOne"] = {
 		["Id"] = 1474056814,
 		["Name"] = "ThePestilentOne",
@@ -4401,5 +4484,6 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "#KelloggsGoneWild can u guys make some and vote or something He Certainly Is. What kind of monster cooks beans in a bloxy cola can? His life motto: The future is bright. Beans, beans, the musical fruit! The more you eat, the more you toot! The more you toot, the better you feel! So we have beans at every meal! idk Yes, I am BLACK. Green is love, green is life.",
 	},
+  
 }
 return tentwelvesixteen
