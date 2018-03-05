@@ -415,6 +415,8 @@ local packs = {
 		CardPackId = 721399805,
 		Description = "Green is the colour of life, growth, and the primal forces. Vitality packs contain cards that cost green!",
 		Cards = {
+			"Indoorsnowball",
+			"Shaylan007",
 			"Wooden Chair",
 			"Tl_rd",
 			"ThePestilentOne",
