@@ -9922,6 +9922,19 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Bee"] = {
 		["Id"] = 338188697,
 		["Name"] = "Bee",
+		["AltCards"] = {
+			["Bee Ninja"] = {
+				["Name"] = "Bee Ninja",
+				["Id"] = 1476527372,
+				["Bio"] = "Inb4 complaints that this isn't a part of the ninja archetype.",
+			},
+			
+			["Newbee"] = {
+				["Name"] = "Newbee",
+				["Id"] = 1476567839,
+				["Bio"] = "The bees were bound to take over at some point...",
+			},
+		},
 		["Health"] = 150,
 		["Power"] = 150,
 		["Rarity"] = "Common",
@@ -9944,6 +9957,20 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Swarm"] = {
 		["Id"] = 338173861,
 		["Name"] = "Swarm",
+		["AltCards"] = {
+			["MrBeeBee2"] = {
+				["Name"] = "MrBeeBee2",
+				["Id"] = 1473837362,
+				["Effect"] = {
+					Name = "Nerf",
+					Description = "Haste. When this card attacks, put a random Bee card into your hand. This card can't generate icons.",
+					["Type"] = "OnAttack",
+					["Power"] = {{"RandomAdd", {"Bee Ninja", "MrBeeBee2", "IcyBee", "Beestor", "Beeskateer", "Tom's Bees", "Waspism",}}},
+					Target = "Ally",
+				},
+				["Bio"] = "Uh Oh! You silly moron. You just got BEE'D!!! Put this card to your deck to totally BEE! your opponents!",
+			},
+		},
 		["Health"] = 100,
 		["Power"] = 100,
 		["Rarity"] = "Common",
@@ -9956,17 +9983,30 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Nerf",
 			Description = "Haste. When this card attacks, put a random Bee card into your hand. This card can't generate icons.",
-			Type = "OnAttack",
-			Power = "RandomAdd",
+			["Type"] = "OnAttack",
+			["Power"] = {{"RandomAdd", {"Bee", "Swarm", "Beehive", "Beekeeper", "Queen Bee", "True Hivemind", "Waspism"}}},
 			Target = "Ally",
-			Increase = "Bee"
 		},
-		["Bio"] = [[NOT THE BEES!!!]],
+		["Bio"] = "NOT THE BEES!!!",
 	},
 	
 	["Beehive"] = {
 		["Id"] = 626149394,
 		["Name"] = "Beehive",
+		["AltCards"] = {
+			["IcyBee"] = {
+				["Name"] = "IcyBee",
+				["Id"] = 1476569307,
+				["Effect"] = {
+					Name = "Nerf",
+					Description = "Put MrBeeBee2 into your hand at the end of each of your turns.",
+					Type = "OnEnd",
+					Power = {{"Add","MrBeeBee2"}},
+					Target = "Ally",
+				},
+				["Bio"] = "The bee to the... bee?",
+			},
+		},
 		["Health"] = 700,
 		["Power"] = 0,
 		["Rarity"] = "Uncommon",
@@ -9978,9 +10018,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Nerf",
 			Description = "Put a Swarm into your hand at the end of each of your turns.",
 			Type = "OnEnd",
-			Power = "Add",
+			Power = {{"Add","Swarm"}},
 			Target = "Ally",
-			Increase = "Swarm"
 		},
 		["Bio"] = [[Beehive traps would even make Nerubians proud.]],
 	},
@@ -9988,6 +10027,20 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Beekeeper"] = {
 		["Id"] = 338188894,
 		["Name"] = "Beekeeper",
+		["AltCards"] = {
+			["Beestor"] = {
+				["Name"] = "Beestor",
+				["Id"] = 1476566080,
+				["Effect"] = {
+					Name = "Nerf",
+					Description = "Put two Newbees into your hand. Whenever you summon a fighter, increase the power of all bees by 25.",
+					Type = "OnSummon",
+					Power = {{"Add","Newbee"},{"Add","Newbee"},{"Summon","Beestor Token"},{"Damage",9999,"Self"}},
+					Target = "Ally",
+				},
+				["Bio"] = "Hey kid...wanna buy some bees?",
+			},
+		},
 		["Health"] = 300,
 		["Power"] = 0,
 		["Rarity"] = "Uncommon",
@@ -10009,6 +10062,20 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Beekeeper Token"] = {
 		["Id"] = 338188894,
 		["Name"] = "Beekeeper",
+		["AltCards"] = {
+			["Beestor Token"] = {
+				["Name"] = "Beestor",
+				["Id"] = 1476566080,
+				["Effect"] = {
+					Name = "Nerf",
+					Description = "Put two Newbees into your hand. Whenever you summon a fighter, increase the power of all bees by 25.",
+					Type = "OnAllySummon",
+					Power = {{"Strengthen",25,"Archetype"}},
+					Target = "Ally",
+				},
+				["Bio"] = "Hey kid...wanna buy some bees?",
+			},
+		},
 		["Health"] = 300,
 		["Power"] = 0,
 		["Rarity"] = "Token",
@@ -10029,6 +10096,20 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Queen Bee"] = {
 		["Id"] = 626211561,
 		["Name"] = "Queen Bee",
+		["AltCards"] = {
+			["Beeskateer"] = {
+				["Name"] = "Beeskateer",
+				["Id"] = 1473928363,
+				["Effect"] = {
+					Name = "Nerf",
+					Description = [[Summon a "Bee Ninja" and increase the health and power of all Bee-related fighters by 50 at the end of your turns.]],
+					Type = "OnEnd",
+					Power = {{"Summon","Bee Ninja","Ally"},{"Strengthen",50},{"Heal",50}},
+					Target = "Archetype",
+				},
+				["Bio"] = [[According to all known laws of aviation, there is no way a bee should be able to fly. Its wings are too small to get its fat little body off the ground. The bee, of course, flies anyway because bees don't care what humans think is impossible. Yellow, black. Yellow, black. Yellow, black. Yellow, black. Ooh, black and yellow! Let's shake it up a little. Barry!]],
+			},
+		},
 		["Health"] = 700,
 		["Power"] = 0,
 		["Rarity"] = "Uncommon",
@@ -10049,6 +10130,20 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["True Hivemind"] = {
 		["Id"] = 338206480,
 		["Name"] = "True Hivemind",
+		["AltCards"] = {
+			["Tom's Bees"] = {
+				["Name"] = "Tom's Bees",
+				["Id"] = 1473880726,
+				["Effect"] = {
+					Name = "NERF BEES",
+					Description = [[Summon 3 "Bee Ninjas" and increase the health and power of all Bee-related fighters by 250.]],
+					Type = "OnSummon",
+					Power = {{"Summon","Bee Ninja"},{"Summon","Bee Ninja"},{"Summon","Bee Ninja"},{"Strengthen",250,"Archetype"},{"Heal",250,"Archetype"}},
+					Target = "Ally",
+				},
+				["Bio"] = "What do you mean someone took a can of beans and shoved tons of bees in it?",
+			},
+		},
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Legendary",
