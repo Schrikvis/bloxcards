@@ -596,6 +596,7 @@ local packs = {
 		CardPackId = 721399466,
 		Description = "Blue is the colour of logic, order, and structure. Thought packs contain cards that cost blue!",
 		Cards = {
+			"Creeperkiller510",
 			"Modern Chair",
 			"Permafrost Storm",
 			"MesouricPhantom976",
@@ -1029,6 +1030,7 @@ local packs = {
 		Description = "Exotic new cards from the black market! White cards and joke cards! It's all yours, as long as you have 10 wins!",
 		WinRequirement = 10;
 		Cards = {
+			"Creeperkiller510",
 			"Tl_rd",
 			"ThePestilentOne",
 			"SpeedySeat",
@@ -1107,7 +1109,6 @@ local packs = {
 			"Fenfie08",
 			"AMerryCan",
 			"CjMcGamingYT",
-			"Indoorsnowball",
 			-- PAST THIS POINT IS FOR WHITE CARDS AND JOKE CARDS ONLY. I'M LOOKING AT YOU, BLITZ.
 			"SpeedySeat",
 			"Dukran the Celestial",
@@ -1347,6 +1348,7 @@ local packs = {
 		Description = "Filled with only cards belonging to an archetype, this pack can help you finish your deck provided you have at least 10 wins.",
 		WinRequirement = 10;
 		Cards = {
+			"Creeperkiller510",
 			"Alar Myrmidon",
 			"Alar Sentinel",
 			"Alar Blade Archer",
