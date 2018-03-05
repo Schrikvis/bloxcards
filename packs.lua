@@ -184,6 +184,7 @@ local packs = {
 		CardPackId = 842435184, --721400845,
 		Description = "Red is the colour of power, ambition, and control. Dominion packs contain cards that cost red!",
 		Cards = {
+			"Steel Chair",
 			"DrWeaseI",
 			"stormmaster7722",
 			"ThatGrimGuy",
@@ -414,6 +415,7 @@ local packs = {
 		CardPackId = 721399805,
 		Description = "Green is the colour of life, growth, and the primal forces. Vitality packs contain cards that cost green!",
 		Cards = {
+			"Wooden Chair",
 			"Tl_rd",
 			"ThePestilentOne",
 			"Yggdrasil Faerie",
@@ -594,6 +596,7 @@ local packs = {
 		CardPackId = 721399466,
 		Description = "Blue is the colour of logic, order, and structure. Thought packs contain cards that cost blue!",
 		Cards = {
+			"Modern Chair",
 			"Permafrost Storm",
 			"MesouricPhantom976",
 			"Silver_Semtexagon",
@@ -613,7 +616,6 @@ local packs = {
 			"Steam Razikai",
 			"Jimminus",
 			"Bearded Captain",
-			"Wooden Chair",
  			"Rollernaut",
 			"SONICTHEHEDGEHOGXXX",
 			"Razikai's Exploration",
@@ -810,6 +812,8 @@ local packs = {
 		CardPackId = 721400239,
 		Description = "Yellow is the colour of chaos, emotion, and society. Revel packs contain cards that cost yellow!",
 		Cards = {
+			"SpeedySeat",
+			"Royal Chair",
 			"lolbeniceok",
 			"ExtolYT",
 			"midastheking123",
@@ -1027,6 +1031,7 @@ local packs = {
 		Cards = {
 			"Tl_rd",
 			"ThePestilentOne",
+			"SpeedySeat",
 			"DrWeaseI",
 			"lolbeniceok",
 			"stormmaster7722",
@@ -1103,8 +1108,8 @@ local packs = {
 			"AMerryCan",
 			"CjMcGamingYT",
 			"Indoorsnowball",
-			"Shaylan007",
 			-- PAST THIS POINT IS FOR WHITE CARDS AND JOKE CARDS ONLY. I'M LOOKING AT YOU, BLITZ.
+			"SpeedySeat",
 			"Dukran the Celestial",
 			"Wingman8",
 			"Games",
