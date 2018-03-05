@@ -267,7 +267,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Token"] = true,
 		["Archetype"] = "Meeboid",
 		["Color"] = "Green",
-		["Requirement"] = {"Archetype",8},
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Build Up",
@@ -353,7 +352,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Token"] = true,
 		["Archetype"] = "Meeboid",
 		["Color"] = "Green",
-		["Requirement"] = {"Archetype",8},
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Build Up",
@@ -3541,17 +3539,17 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			},
 		},
 		["Health"] = 1000,
-		["Power"] = 400,
+		["Power"] = 300,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Slash",
 		["Color"] = "Green",
 		["Cost"] = {["Green"] = 5,["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Disaster",
-			Description = "You gain 500 life. Put 2 targeting blips into your hand. Targeting blips are used to trigger Target Effects.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Cost",-500},{"Add","Targeting Blip","Ally"},{"Add","Targeting Blip","Ally"}},
-			Target = "Opponent",
+			Description = "Whenever Stickmasterluke attacks, he drains 150 Health from a target fighter.",
+			["Type"] = "OnAttack",
+			["Power"] = {{"Heal",150,"Self"},{"Damage",150}},
+			Target = "Single",
 		},
 		["Bio"] = "Most likely accident prone worker at ROBLOX. He made it there from scripting, so can you!",
 	},
@@ -8604,12 +8602,11 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Punch1",
 		["Archetype"] = "Titan",
 		["Token"] = true,
-		["DiscardBlock"] = true,
 		["Color"] = "Neutral",
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Can't generate icons or be discarded. Set the power of this fighter to 0 at the end of your turns. (This card is used to play stronger titans.)",
+			Description = "Can't generate icons. Set the power of this fighter to 0 at the end of your turns. (This card is used to play stronger titans.)",
 			["Type"] = "OnEnd",
 			["Power"] = "Weaken",
 			Target = "Self",
@@ -8625,11 +8622,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 0,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Punch1",
+		["Token"] = true,
 		["Color"] = "Neutral",
 		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = [[At the end of of your turns, put a "Titan's Stone" to your hand.]],
+			Description = [[At the end of of your turns, put a "Titan's Stone" to your hand. This card can't generate icons.]],
 			["Type"] = "OnEnd",
 			["Power"] = "Add",
 			Target = "Ally",
@@ -9170,7 +9168,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Gusmanak"] = {
 		["Id"] = 335687377,
 		["Name"] = "Gusmanak",
-		["Health"] = 1200,
+		["Health"] = 1000,
 		["Power"] = 500,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Thunder",
@@ -9180,7 +9178,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Plushie Amp",
 			Description = "Whenever this card attacks and destroys a fighter, reset Gusmanak's stats.",
 			["Type"] = "OnAttackDestroy",
-			["Power"] = {{"SetHealth",1200},{"SetPower",500}},
+			["Power"] = {{"SetHealth",1000},{"SetPower",500}},
 			Target = "Self",
 		},
 		["Bio"] = "Time to blox zombies and eat beans from a can!",
@@ -9924,6 +9922,19 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Bee"] = {
 		["Id"] = 338188697,
 		["Name"] = "Bee",
+		["AltCards"] = {
+			["Bee Ninja"] = {
+				["Name"] = "Bee Ninja",
+				["Id"] = 1476527372,
+				["Bio"] = "Inb4 complaints that this isn't a part of the ninja archetype.",
+			},
+			
+			["Newbee"] = {
+				["Name"] = "Newbee",
+				["Id"] = 1476567839,
+				["Bio"] = "The bees were bound to take over at some point...",
+			},
+		},
 		["Health"] = 150,
 		["Power"] = 150,
 		["Rarity"] = "Common",
@@ -9946,6 +9957,20 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Swarm"] = {
 		["Id"] = 338173861,
 		["Name"] = "Swarm",
+		["AltCards"] = {
+			["MrBeeBee2"] = {
+				["Name"] = "MrBeeBee2",
+				["Id"] = 1473837362,
+				["Effect"] = {
+					Name = "Nerf",
+					Description = "Haste. When this card attacks, put a random Bee card into your hand. This card can't generate icons.",
+					["Type"] = "OnAttack",
+					["Power"] = {{"RandomAdd", {"Bee Ninja", "MrBeeBee2", "IcyBee", "Beestor", "Beeskateer", "Tom's Bees", "Waspism",}}},
+					Target = "Ally",
+				},
+				["Bio"] = "Uh Oh! You silly moron. You just got BEE'D!!! Put this card to your deck to totally BEE! your opponents!",
+			},
+		},
 		["Health"] = 100,
 		["Power"] = 100,
 		["Rarity"] = "Common",
@@ -9958,17 +9983,30 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Nerf",
 			Description = "Haste. When this card attacks, put a random Bee card into your hand. This card can't generate icons.",
-			Type = "OnAttack",
-			Power = "RandomAdd",
+			["Type"] = "OnAttack",
+			["Power"] = {{"RandomAdd", {"Bee", "Swarm", "Beehive", "Beekeeper", "Queen Bee", "True Hivemind", "Waspism"}}},
 			Target = "Ally",
-			Increase = "Bee"
 		},
-		["Bio"] = [[NOT THE BEES!!!]],
+		["Bio"] = "NOT THE BEES!!!",
 	},
 	
 	["Beehive"] = {
 		["Id"] = 626149394,
 		["Name"] = "Beehive",
+		["AltCards"] = {
+			["IcyBee"] = {
+				["Name"] = "IcyBee",
+				["Id"] = 1476569307,
+				["Effect"] = {
+					Name = "Nerf",
+					Description = "Put MrBeeBee2 into your hand at the end of each of your turns.",
+					Type = "OnEnd",
+					Power = {{"Add","MrBeeBee2"}},
+					Target = "Ally",
+				},
+				["Bio"] = "The bee to the... bee?",
+			},
+		},
 		["Health"] = 700,
 		["Power"] = 0,
 		["Rarity"] = "Uncommon",
@@ -9980,9 +10018,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Nerf",
 			Description = "Put a Swarm into your hand at the end of each of your turns.",
 			Type = "OnEnd",
-			Power = "Add",
+			Power = {{"Add","Swarm"}},
 			Target = "Ally",
-			Increase = "Swarm"
 		},
 		["Bio"] = [[Beehive traps would even make Nerubians proud.]],
 	},
@@ -9990,6 +10027,20 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Beekeeper"] = {
 		["Id"] = 338188894,
 		["Name"] = "Beekeeper",
+		["AltCards"] = {
+			["Beestor"] = {
+				["Name"] = "Beestor",
+				["Id"] = 1476566080,
+				["Effect"] = {
+					Name = "Nerf",
+					Description = "Put two Newbees into your hand. Whenever you summon a fighter, increase the power of all bees by 25.",
+					Type = "OnSummon",
+					Power = {{"Add","Newbee"},{"Add","Newbee"},{"Summon","Beestor Token"},{"Damage",9999,"Self"}},
+					Target = "Ally",
+				},
+				["Bio"] = "Hey kid...wanna buy some bees?",
+			},
+		},
 		["Health"] = 300,
 		["Power"] = 0,
 		["Rarity"] = "Uncommon",
@@ -10011,6 +10062,20 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Beekeeper Token"] = {
 		["Id"] = 338188894,
 		["Name"] = "Beekeeper",
+		["AltCards"] = {
+			["Beestor Token"] = {
+				["Name"] = "Beestor",
+				["Id"] = 1476566080,
+				["Effect"] = {
+					Name = "Nerf",
+					Description = "Put two Newbees into your hand. Whenever you summon a fighter, increase the power of all bees by 25.",
+					Type = "OnAllySummon",
+					Power = {{"Strengthen",25,"Archetype"}},
+					Target = "Ally",
+				},
+				["Bio"] = "Hey kid...wanna buy some bees?",
+			},
+		},
 		["Health"] = 300,
 		["Power"] = 0,
 		["Rarity"] = "Token",
@@ -10031,6 +10096,20 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Queen Bee"] = {
 		["Id"] = 626211561,
 		["Name"] = "Queen Bee",
+		["AltCards"] = {
+			["Beeskateer"] = {
+				["Name"] = "Beeskateer",
+				["Id"] = 1473928363,
+				["Effect"] = {
+					Name = "Nerf",
+					Description = [[Summon a "Bee Ninja" and increase the health and power of all Bee-related fighters by 50 at the end of your turns.]],
+					Type = "OnEnd",
+					Power = {{"Summon","Bee Ninja","Ally"},{"Strengthen",50},{"Heal",50}},
+					Target = "Archetype",
+				},
+				["Bio"] = [[According to all known laws of aviation, there is no way a bee should be able to fly. Its wings are too small to get its fat little body off the ground. The bee, of course, flies anyway because bees don't care what humans think is impossible. Yellow, black. Yellow, black. Yellow, black. Yellow, black. Ooh, black and yellow! Let's shake it up a little. Barry!]],
+			},
+		},
 		["Health"] = 700,
 		["Power"] = 0,
 		["Rarity"] = "Uncommon",
@@ -10051,6 +10130,20 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["True Hivemind"] = {
 		["Id"] = 338206480,
 		["Name"] = "True Hivemind",
+		["AltCards"] = {
+			["Tom's Bees"] = {
+				["Name"] = "Tom's Bees",
+				["Id"] = 1473880726,
+				["Effect"] = {
+					Name = "NERF BEES",
+					Description = [[Summon 3 "Bee Ninjas" and increase the health and power of all Bee-related fighters by 250.]],
+					Type = "OnSummon",
+					Power = {{"Summon","Bee Ninja"},{"Summon","Bee Ninja"},{"Summon","Bee Ninja"},{"Strengthen",250,"Archetype"},{"Heal",250,"Archetype"}},
+					Target = "Ally",
+				},
+				["Bio"] = "What do you mean someone took a can of beans and shoved tons of bees in it?",
+			},
+		},
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Legendary",
@@ -10093,7 +10186,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 1024780201,
 		["Name"] = "Delusionist",
 		["Health"] = 700,
-		["Power"] = 200,
+		["Power"] = 300,
 		["Rarity"] = "Uncommon",
 		["Archetype"] = "Nightmare",
 		["AttackEffect"] = "Slash",
@@ -10101,9 +10194,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 3,["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Hive Crack",
-			Description = "Put 2 Nightmares into your opponent's hand.",
-			Type = "OnSummon",
-			Power = {{"Add","Nightmare"},{"Add","Nightmare"}},
+			Description = "At the end of your turns, put a Nightmare into the opponent's hand.",
+			Type = "OnEnd",
+			Power = {{"Add","Nightmare"}},
 			Target = "Opponent",
 		},
 		["Bio"] = "This card isn't even real.",
@@ -10112,7 +10205,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Rat King"] = {
 		["Id"] = 345761101,
 		["Name"] = "Rat King",
-		["Health"] = 100,
+		["Health"] = 25,
 		["Power"] = 0,
 		["Rarity"] = "Uncommon",
 		["Archetype"] = "Nightmare",
@@ -10121,9 +10214,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 1,["Green"] = 1,},
 		["Effect"] = {
 			Name = "Hive Crack",
-			Description = "Put a Nightmare into your opponent's hand. All Nightmare-related fighters gain 200 Power.",
+			Description = "Put two Nightmares into your opponent's hand. All Nightmare-related fighters gain 200 Power and health.",
 			Type = "OnSummon",
-			Power = {{"Add","Nightmare"},{"Strengthen",200,"Archetype"}},
+			Power = {{"Add","Nightmare"},{"Add","Nightmare"},{"Strengthen",200,"Archetype"},{"Heal",200,"Archetype"}},
 			Target = "Opponent",
 		},
 		["Bio"] = "To immobilize the weak. That is what the Rat King makes those fear.",
@@ -10141,9 +10234,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 3,["Green"] = 1,},
 		["Effect"] = {
 			Name = "Night Creak",
-			Description = "Lock a target fighter for two turns. Put two nightmares into your opponent's hand.",
+			Description = "Lock a target fighter for three turns. Put two nightmares into your opponent's hand.",
 			Type = "OnSummon",
-			Power = {{"Add","Nightmare"},{"Add","Nightmare"},{"Lock",2,"Single"}},
+			Power = {{"Add","Nightmare"},{"Add","Nightmare"},{"Lock",3,"Single"}},
 			Target = "Opponent",
 		},
 		["Bio"] = "A nightmare of a choice.",
@@ -10161,9 +10254,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 3,["Blue"] = 1,},
 		["Effect"] = {
 			Name = "Nightmare!",
-			Description = "Your opponent loses 2 white icons. This effect can cause negative icons. Draw a card.",
+			Description = "Put a nightmare into your opponent's hand. Your opponent loses 3 white icons. This effect can cause negative icons. Draw a card.",
 			Type = "OnSummon",
-			Power = {{"White",-2},{"Draw",1,"Ally"}},
+			Power = {{"Add","Nightmare"},{"White",-3},{"Draw",1,"Ally"}},
 			Target = "Opponent",
 		},
 		["Bio"] = "Reccomended by Mr.Bones that you do NOT go on this wild ride.",
@@ -10180,9 +10273,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 1,["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Nightmare!",
-			Description = "Put a Nightmare into your opponent's hand. All Nightmare-related fighters gain 500 Health.",
+			Description = "Put two Nightmares into your opponent's hand. All non-Nightmare-related fighters lose 200 Power. All Nightmare-related fighters gain 500 Health.",
 			Type = "OnSummon",
-			Power = {{"Add","Nightmare","Opponent"},{"Heal",500}},
+			Power = {{"Add","Nightmare","Opponent"},{"Add","Nightmare","Opponent"},{"Weaken",200,"NotArchetype"},{"Heal",500}},
 			Target = "Archetype",
 		},
 		["Bio"] = "Gengar approved.",
@@ -10198,7 +10291,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Bio"] = "I am the wild dog watching with sixteen omniscient eyes. Unblinking endless judgment, cast as the patterns rise.",
 			},
 		},
-		["Health"] = 1200,
+		["Health"] = 1300,
 		["Power"] = 0,
 		["Rarity"] = "Legendary",
 		["Archetype"] = "Nightmare",
@@ -10207,7 +10300,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Blue"] = 3,["Green"] = 2,},
 		["Effect"] = {
 			Name = "Night Creak",
-			Description = "At the end of your turns, put a Nightmare into your opponent's hand and give all Nightmare-related fighters 300 Health.",
+			Description = "At the end of your turns, put a Nightmare into your opponent's hand. All Nightmare-related fighters gain 300 health.",
 			Type = "OnEnd",
 			Power = {{"Add","Nightmare"},{"Heal",300,"Archetype"}},
 			Target = "Opponent",
@@ -10226,9 +10319,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 2},
 		["Effect"] = {
 			Name = "Nightmare!",
-			Description = "Shuffle 3 Nightmares into your opponent's deck.",
+			Description = "Shuffle 5 Nightmares into your opponent's deck. Draw a card.",
 			Type = "OnSummon",
-			Power = {{"DeckAdd","Nightmare"},{"DeckAdd","Nightmare"},{"DeckAdd","Nightmare"}},
+			Power = {{"DeckAdd","Nightmare"},{"DeckAdd","Nightmare"},{"DeckAdd","Nightmare"},{"DeckAdd","Nightmare"},{"DeckAdd","Nightmare"},{"Draw",1,"Ally"}},
 			Target = "Opponent",
 		},
 		["Bio"] = "They'll be complaining that they drew it every, single, time.",
@@ -13485,7 +13578,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 
 	["Super Blip1"] = {
-		["Id"] = 1372147861,
+		["Id"] = 1372147856,
 		["Name"] = "Super Targeting Blip",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -13506,7 +13599,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 
 	["Super Blip2"] = {
-		["Id"] = 1372147861,
+		["Id"] = 1372147856,
 		["Name"] = "Super Targeting Blip",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -13527,7 +13620,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Super Blip3"] = {
-		["Id"] = 1372147861,
+		["Id"] = 1372147856,
 		["Name"] = "Super Targeting Blip",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -13548,7 +13641,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Super Blip4"] = {
-		["Id"] = 1372147861,
+		["Id"] = 1372147856,
 		["Name"] = "Super Targeting Blip",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -13569,7 +13662,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Super Blip5"] = {
-		["Id"] = 1372147861,
+		["Id"] = 1372147856,
 		["Name"] = "Super Targeting Blip",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -13590,7 +13683,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Super Blip6"] = {
-		["Id"] = 1372147861,
+		["Id"] = 1372147856,
 		["Name"] = "Super Targeting Blip",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -13611,7 +13704,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 
 	["Super Blip7"] = {
-		["Id"] = 1372147861,
+		["Id"] = 1372147856,
 		["Name"] = "Super Targeting Blip",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -13632,7 +13725,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 
 	["Super Blip8"] = {
-		["Id"] = 1372147861,
+		["Id"] = 1372147856,
 		["Name"] = "Super Targeting Blip",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -13669,7 +13762,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Cost",-2000},{"EndTurn",1}},
 			Target = "Ally"
 		},
-		["Bio"] = "You would rather have swords jabbed into your eyeballs than eat this bread.",
+		["Bio"] = "You would rather have swords jabbed into your eyeballs than eat this bread. I know from experience.",
 	},
 	
 	["Targeting Blip"] = {
@@ -13787,9 +13880,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 4,["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Put 4 red or blue actions to your hand, then generate 4 red icons.",
+			Description = "Put six red or blue actions to your hand, then generate 6 red icons.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"RandomAdd","Lunar"},{"RandomAdd","Lunar"},{"RandomAdd","Lunar"},{"RandomAdd","Lunar"},{"Red",4}},
+			["Power"] = {{"RandomAdd","Lunar"},{"RandomAdd","Lunar"},{"RandomAdd","Lunar"},{"RandomAdd","Lunar"},{"RandomAdd","Lunar"},{"RandomAdd","Lunar"},{"Red",6}},
 			Target = "Ally",	
 		},
 		["Bio"] = "The Paraselene Sage thought he found the most forbidden of powers. He was wrong.",
@@ -13872,7 +13965,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Sibs-ArtV"] = {
 				["Id"] = 430934562,
 				["AltArt"] = true,
-				["Bio"] = "Over a thousand years have passed since Jayson and Sibs have got together... Part of the 'Aife' Collection! Collect them all!",
+				["Bio"] = "...And they still work so well together.",
 			},
 		},
 		["Health"] = 500,
@@ -15623,9 +15716,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 4, ["Neutral"] = 5,},
 		["Effect"] = {
 			Name = "Revival",
-			Description = "Deal 15,000 damage to yourself. If you survive, you win the game.",
+			Description = "Deal 12,000 damage to yourself. If you survive, you win the game.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Heal",9999,"Self"},{"Damage",9999},{"Cost",15000},{"Summon","InceptionTime Token"},{"Damage",9999,"Self"}},
+			["Power"] = {{"Heal",9999,"Self"},{"Damage",9999},{"Cost",12000},{"Summon","InceptionTime Token"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = "It is not yet time.",
@@ -15642,7 +15735,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 4, ["Neutral"] = 5,},
 		["Effect"] = {
 			Name = "Revival",
-			Description = "Deal 15,000 damage to yourself. If you survive, you win the game.",
+			Description = "Deal 12,000 damage to yourself. If you survive, you win the game.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Inflict",999999}},
 			Target = "Opponent",
@@ -16312,7 +16405,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Draw",1}},
 			Target = "Opponent",
 		},
-		["Bio"] = "PLEASE PLEASE PLEASE PLEASE PLEASE BE MY FRIEND PLEASE PLEASE PLEASE I'LL DO ANYTHING PLEASE THIS ISN'T ANNOYING AT ALL IS IT PLEASE PLEASE PLEASE I BEG YOU PLEASE PLEASE WHY DON'T YOU LISTEN TO ME PLEASE PLEASE PLEASE",
+		["Bio"] = "PLEASE PLEASE PLEASE PLEASE PLEASE BE MY FRIEND PLEASE PLEASE PLEASE I'LL DO ANYTHING PLEASE THIS ISN'T ANNOYING AT ALL IS IT PLEASE PLEASE PLEASE I BEG YOU PLEASE PLEASE WHY DON'T YOU LISTEN TO ME PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE BE MY FRIEND PLEASE PLEASE PLEASE I'LL DO ANYTHING PLEASE THIS ISN'T ANNOYING AT ALL IS IT PLEASE PLEASE PLEASE I BEG YOU PLEASE PLEASE WHY DON'T YOU LISTEN TO ME PLEASE PLEASE PLEASE",
 	},
 	
 	["CIA Man"] = { 
@@ -16340,7 +16433,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "CIA Man",
 		["Health"] = 500,
 		["Power"] = 200,
-		["Rarity"] = "Uncommon",   --left rarity as Uncommon, in case of RNG Summon
+		["Rarity"] = "Token",   --left rarity as Uncommon, in case of RNG Summon
 		["AttackEffect"] = "GunShot",
 		["Color"] = "Blue", 
 		["Cost"] = {["Neutral"] = 5,["Blue"] = 2,},
@@ -17112,7 +17205,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Chair", 
  		["Effect"] = {
  			Name = "Helping Out",
- 			Description = "Can only be summoned if you control a wooden chair. All chairs gain 300 power.",
+ 			Description = "Can only be summoned if you control a chair. All chairs gain 300 power.",
  			["Type"] = "OnSummon",
  			["Power"] = {{"Strengthen",300,"Archetype"}},
  			Target = "Ally",
@@ -17121,20 +17214,21 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Wooden Chair"] = {
-		["Id"] = 596607408,
+		["Id"] = 1450756765,
 		["Name"] = "Wooden Chair",
  		["Health"] = 100,
  		["Power"] = 200,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Lightning",
- 		["Color"] = "Blue",
+ 		["Color"] = "Green",
+		["Token"] = true,		
  		["Cost"] = {["Neutral"] = 1,},
 		["Archetype"] = "Chair", 
  		["Effect"] = {
  			Name = "Helping Out",
- 			Description = "Must be in play for The Gentlemaniac to be summonable. When this card dies, he gains 300 power.",
+ 			Description = "When this card dies, all chairs gains 100 health. This card can't generate icons.",
  			["Type"] = "OnDeath",
- 			["Power"] = {{"Strengthen",300,"Archetype"}},
+ 			["Power"] = {{"Heal",100,"Archetype"}},
  			Target = "Ally",
  		},
  		["Bio"] = "...what the hell do i say here...uhh...the wood grain is...nice...I guess...it's..comfy?",
@@ -17604,11 +17698,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Slash",
 		["CounterAttackBlock"] = true,
 		["StrengthenImmune"] = true,
+		["Charge"] = true,
 		["Color"] = "Green",
 		["Cost"] = {["Neutral"] = 1,["Green"] = 2,},
 		["Effect"] = {
 			Name = "Monocle Polish",
-			Description = "Can't be counterattacked, or have its power increased.  When this card attacks a fighter, the fighter it attacked loses 200 power.",
+			Description = "Haste. Can't be counterattacked, or have its power increased.  When this card attacks a fighter, the fighter it attacked loses 200 power.",
 			["Type"] = "OnAttack",
 			["Power"] = {{"Weaken",200}},
 			Target = "Aggressor",
@@ -17676,19 +17771,19 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},		
 	
 	["Burning Tree"] = {
-		["Id"] = 626081765,
+		["Id"] = 1479981590,
 		["Name"] = "Burning Tree",
-		["Health"] = 500,
+		["Health"] = 600,
 		["Power"] = 0,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Fire",
 		["Color"] = "Red",
-		["Cost"] = {["Red"] = 2,},
+		["Cost"] = {["Red"] = 2, ["Neutral"] = 2},
 		["Effect"] = {
 			Name = "Firefly",
-			Description = "When this card dies, put a Forestfire Butterfly into your hand.",
-			["Type"] = "OnDeath",
-			["Power"] = {{"Add","Forestfire Butterflies"}},
+			Description = "When this card survives an attack, put two Forestfire Butterflies into your hand.",
+			["Type"] = "OnAttacked",
+			["Power"] = {{"Add","Forestfire Butterflies"},{"Add","Forestfire Butterflies"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Ignis Mage was a little too careless this time...",
@@ -17699,7 +17794,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Forestfire Butterflies",
 		["Health"] = 100,
 		["Power"] = 100,
-		["Rarity"] = "Common",
+		["Rarity"] = "Token",
 		["AttackEffect"] = "Fire",
 		["Token"] = true,
 		["Charge"] = true,
@@ -17715,7 +17810,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "The buzzing noise is the sound of their wings burning, silly.",
 	},		
 
-["Forestfire Butterflies2"] = {
+	["Forestfire Butterflies2"] = {
 		["Id"] = 1371878542,
 		["Name"] = "Forestfire Butterflies",
 		["Health"] = 100,
@@ -17733,7 +17828,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Cost",0}},
 			Target = "Opponent",
 		},
-		["Bio"] = "The buzzing noise is the sound of their wings burning, silly.",
+		["Bio"] = "I hear they like being on fire.",
 	},	
 	
 	["NullSenseStudio"] = {
