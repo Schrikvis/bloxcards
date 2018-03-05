@@ -4503,7 +4503,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Heal",300}},
 			Target = "Self",
 		},
-		["Bio"] = "Pretty wild. Pretty fast. Is it Sonic?",
+		["Bio"] = "I will kill your entire family.",
 	},	
   
 }
