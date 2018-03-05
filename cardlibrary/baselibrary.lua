@@ -5196,11 +5196,11 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 2,},
 		["Effect"] = {
 			Name = "Jagged Arrow",
-			Description = "A target fighter loses 400 Power.",
+			Description = "A target fighter loses 300 Power.",
 			["Type"] = "OnSummon",
 			["Power"] = "Weaken",
 			Target = "Single",
-			Increase = 400
+			Increase = 300
 		},
 		["Bio"] = "Korblox arrows are made of a powerful ore known as Iron. Check up with your GP for symptoms if you get shot by one.",
 	},
@@ -6267,7 +6267,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Null",
 		["Color"] = "Yellow",
-		["Cost"] = {["Neutral"] = 4,["Yellow"] = 6,},
+		["Cost"] = {["Neutral"] = 4,["Yellow"] = 4,},
 		["Bio"] = "Fame and fortune awaits.",
 		["Effect"] = {
 			Name = "Ultimate Bowl of Greed",
@@ -8837,9 +8837,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Target Master",
-			Description = "Target a fighter. Generate 3 Yellow icons.",
+			Description = "Target a fighter. Generate 2 Yellow icons.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Heal",0},{"Yellow",3,"Ally"}},
+			["Power"] = {{"Heal",0},{"Yellow",2,"Ally"}},
 			Target = "Single",
 		},
 		["Bio"] = "SPOOKY PLUSHIES!",
