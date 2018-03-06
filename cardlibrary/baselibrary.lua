@@ -1444,9 +1444,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Just Business",
-			Description = "Draw 2 cards at the cost of 750 life.",
+			Description = "Draw 2 cards.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Draw",2},{"Cost",750}},
+			["Power"] = {{"Draw",2}},
 			Target = "Ally",
 		},
 		["Bio"] = "With security and an organized team of criminals, Valletta can easily take any threat down and tie loose ends.",
