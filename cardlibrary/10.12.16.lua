@@ -4484,6 +4484,27 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "#KelloggsGoneWild can u guys make some and vote or something He Certainly Is. What kind of monster cooks beans in a bloxy cola can? His life motto: The future is bright. Beans, beans, the musical fruit! The more you eat, the more you toot! The more you toot, the better you feel! So we have beans at every meal! idk Yes, I am BLACK. Green is love, green is life.",
 	},
+	
+	["Creeperkiller510"] = {
+		["Id"] = 1483291247,
+		["Name"] = "Creeperkiller510",
+		["Health"] = 900,
+		["Power"] = 300,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "KnifeStab",
+		["Color"] = "Blue",
+		["Cost"] = {["Neutral"] = 2,["Blue"] = 3},
+		["AttackBlock"] = true,
+		["Archetype"] = "Defender",
+		["Effect"] = {
+			Name = "No Creepers in My House",
+			Description = "Can't attack. Whenever this fighter is attacked and survives, give it 300 health.",
+			["Type"] = "OnAttacked",
+			["Power"] = {{"Heal",300}},
+			Target = "Self",
+		},
+		["Bio"] = "I will kill your entire family.",
+	},	
   
 }
 return tentwelvesixteen
