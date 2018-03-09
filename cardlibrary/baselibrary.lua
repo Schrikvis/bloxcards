@@ -6260,7 +6260,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Ultimate Bowl of Greed"] = {
-		["Id"] = 1226642161,
+		["Id"] = 1483599756,
 		["Name"] = "Ultimate Bowl of Greed",
 		["Health"] = 0,
 		["Power"] = 0,
