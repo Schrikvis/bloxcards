@@ -3891,8 +3891,8 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2, ["Green"] = 4,},
 		["Effect"] = {
 			Name = "Vroom",
-			Description = "After this card attacks, drain 300 Life from your opponent.",
-			["Type"] = "OnAttackEnd",
+			Description = "Whenever this card attacks, drain 300 Life from your opponent.",
+			["Type"] = "OnAttack",
 			["Power"] = {{"Cost",-300},{"Inflict",300,"Opponent"}},
 			Target = "Ally",
 		},
