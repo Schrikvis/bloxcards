@@ -408,12 +408,14 @@ local packs = {
 		CardPackId = 721399805,
 		Description = "Green is the colour of life, growth, and the primal forces. Vitality packs contain cards that cost green!",
 		Cards = {
+			"Damarioguy",
 			"Indoorsnowball",
 			"Shaylan007",
 			"Wooden Chair",
 			"Tl_rd",
 			"ThePestilentOne",
 			"Yggdrasil Faerie",
+			"CjMcGamingYT",
 			"vanjohnson",
 			"ChaseThePsycho",
 			"Alar Sentinel",
@@ -1025,6 +1027,7 @@ local packs = {
 		Description = "Exotic new cards from the black market! White cards and joke cards! It's all yours, as long as you have 10 wins!",
 		WinRequirement = 10;
 		Cards = {
+			"Damarioguy",
 			"Creeperkiller510",
 			"Tl_rd",
 			"ThePestilentOne",
@@ -1103,7 +1106,6 @@ local packs = {
 			"BrandonOccult",
 			"Fenfie08",
 			"AMerryCan",
-			"CjMcGamingYT",
 			-- PAST THIS POINT IS FOR WHITE CARDS AND JOKE CARDS ONLY. I'M LOOKING AT YOU, BLITZ.
 			"SpeedySeat",
 			"Dukran the Celestial",
