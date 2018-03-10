@@ -4506,5 +4506,25 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "I will kill your entire family.",
 	},	
   
+	["Damarioguy"] = {
+		["Id"] = 1495347928,
+		["Name"] = "Damarioguy",
+		["Health"] = 675,
+		["Power"] = 675,
+		["Rarity"] = "Rare",
+		["AttackEffect"] "Erasure",
+		["Color"] = "Green",
+		["Cost"] = {["Neutral"] = 2,["Green"] = 2},
+		["Archetype"] = "Hero",
+		["Effect"] = {
+			["Name"] = "ULTIMA MEME DANK TROLL GAME BREAKING WIN CONDITION (GONE WRONG) (NOT CLICKBAIT) (18+) (FOR KIDS) (TOY REVIEW) (HE PULLED UP A GUN) (EMOTIONAL) (WATCH TILL THE END) (FREE GIFT CARD GIVEAWAY) (ONE LIKE = ONE RESPECT) (SHARE IF YOU HAVE A HEART)",
+			["Description"] = "When this card destroys a fighter, your opponent draws 2 cards.",
+			["Type"] = "OnDestroy",
+			["Power"] = {{"Draw",2}},
+			["Target"] = "Enemy",
+		},
+		["Bio"] = [[WESKER202 THE NINJAFOX PLOWS VISLEAF THE BLOBUNNY AND FERTILIZES THEIR EGGS IN THE NEW HIT MOVIE "ZOOTOPIA 2: VIABLE LIFEGAIN BOOGALOO"!!!]],
+	},
+	
 }
 return tentwelvesixteen
