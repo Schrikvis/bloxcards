@@ -4521,7 +4521,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Description"] = "When this card destroys a fighter, your opponent draws 2 cards.",
 			["Type"] = "OnDestroy",
 			["Power"] = {{"Draw",2}},
-			["Target"] = "Enemy",
+			["Target"] = "Opponent",
 		},
 		["Bio"] = [[WESKER202 THE NINJAFOX PLOWS VISLEAF THE BLOBUNNY AND FERTILIZES THEIR EGGS IN THE NEW HIT MOVIE "ZOOTOPIA 2: VIABLE LIFEGAIN BOOGALOO"!!!]],
 	},
