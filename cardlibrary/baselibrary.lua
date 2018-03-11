@@ -13012,7 +13012,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Red"] = 1,},
 		["Effect"] = {
 			Name = "Diagnosed with Noob",
-			Description = "When played, this card and Ultoris Tenebrae gain 250 Health and Power.",
+			Description = "When summoned, this card and Ultoris Tenebrae gain 250 Health and Power.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Strengthen",250},{"Heal",250}},
 			Target = "Archetype",
