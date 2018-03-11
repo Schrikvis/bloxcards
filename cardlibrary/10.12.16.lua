@@ -1071,10 +1071,10 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Token"] = true,
 		["Effect"] = {
 			Name = "Reincarnation",
-			Description = "When this card is targeted, draw a card, then destroy all crystals.",
+			Description = "When this card is targeted, swap a target fighter's stats, then destroy all crystals.",
 			["Type"] = "OnTarget",
-			["Power"] = {{"Draw",1},{"Damage",9999,"Archetype"}},
-			Target = "Ally",
+			["Power"] = {{"Swap",030},{"Damage",9999,"Archetype"}},
+			Target = "Single",
 		},
 		["Bio"] = "Right now, you need knowledge.",
 	},
