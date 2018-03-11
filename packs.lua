@@ -282,7 +282,6 @@ local packs = {
 			"zKevin",
 			"Explode1",
 			"Ultoris Tenebrae",
-			"Ultoris NOOBrae",
 			"TheSteelEagle",
 			"ROBLOXADOR!!",
 			"XxFreezerFlamesxX",
