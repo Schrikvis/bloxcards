@@ -197,6 +197,7 @@ local packs = {
 			"Histor, Blood Warrior",
 			"Aesura",
 			"superkicker2005",
+			"AMerryCan",
 			"Shard Master",
 			"Beyondthegong",
 			"Damaging26",
@@ -593,12 +594,14 @@ local packs = {
 		CardPackId = 721399466,
 		Description = "Blue is the colour of logic, order, and structure. Thought packs contain cards that cost blue!",
 		Cards = {
+			"DunclubDuncan",
 			"Creeperkiller510",
 			"Modern Chair",
 			"Permafrost Storm",
 			"MesouricPhantom976",
 			"Silver_Semtexagon",
 			"Arte71",
+			"AMerryCan",
 			"kickertoken",
 			"ImaUMBREON",
 			"caone",
@@ -1027,6 +1030,7 @@ local packs = {
 		Description = "Exotic new cards from the black market! White cards and joke cards! It's all yours, as long as you have 10 wins!",
 		WinRequirement = 10;
 		Cards = {
+			"DunclubDuncan",
 			"Damarioguy",
 			"Creeperkiller510",
 			"Tl_rd",
@@ -1105,7 +1109,6 @@ local packs = {
 			"BandiheartYT",
 			"BrandonOccult",
 			"Fenfie08",
-			"AMerryCan",
 			-- PAST THIS POINT IS FOR WHITE CARDS AND JOKE CARDS ONLY. I'M LOOKING AT YOU, BLITZ.
 			"SpeedySeat",
 			"Dukran the Celestial",
@@ -1345,6 +1348,7 @@ local packs = {
 		Description = "Filled with only cards belonging to an archetype, this pack can help you finish your deck provided you have at least 10 wins.",
 		WinRequirement = 10;
 		Cards = {
+			"AMerryCan",
 			"Creeperkiller510",
 			"Alar Myrmidon",
 			"Alar Sentinel",

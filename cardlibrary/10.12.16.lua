@@ -4526,5 +4526,43 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = [[WESKER202 THE NINJAFOX PLOWS VISLEAF THE BLOBUNNY AND FERTILIZES THEIR EGGS IN THE NEW HIT MOVIE "ZOOTOPIA 2: VIABLE LIFEGAIN BOOGALOO"!!!]],
 	},
 	
+	["DunclubDuncan"] = {
+		["Id"] = 1512697995,
+		["Name"] = "DunclubDuncan",
+		["Health"] = 1250,
+		["Power"] = 500,
+		["Rarity"] = "Legendary",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Blue", 
+		["Cost"] = {["Neutral"] = 5, ["Blue"] = 6,},
+		["Effect"] = {
+			Name = "Clash",
+			Description = "When this card dies, lock all fighters for two turns, then transform DunclubDuncan into its flank mode.",
+			["Type"] = "OnDeath",
+			["Power"] = {{"Lock",2},{"Summon","DunclubDuncan Token","Ally"},{"Damage",9999,"Self"}},
+			Target = "All",
+		},
+		["Bio"] = "me me big boy",
+	},
+	
+	["DunclubDuncan Token"] = {
+		["Id"] = 1512698272,
+		["Name"] = "DunclubDuncan",
+		["Health"] = 500,
+		["Power"] = 500,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Blue", 
+		["Cost"] = {["Neutral"] = 5, ["Blue"] = 6,},
+		["Effect"] = {
+			Name = "Clash",
+			Description = "Whenever this card attacks, lock a target fighter for one turn.",
+			["Type"] = "OnAttack",
+			["Power"] = {{"Lock",1}},
+			Target = "Single",
+		},
+		["Bio"] = "me me smol boy",
+	},
+	
 }
 return tentwelvesixteen
