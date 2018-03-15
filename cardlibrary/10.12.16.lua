@@ -4542,7 +4542,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Lock",2},{"Summon","DunclubDuncan Token","Ally"},{"Damage",9999,"Self"}},
 			Target = "All",
 		},
-		["Bio"] = "",
+		["Bio"] = "me me big boy",
 	},
 	
 	["DunclubDuncan Token"] = {
@@ -4561,7 +4561,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Lock",1}},
 			Target = "Single",
 		},
-		["Bio"] = "",
+		["Bio"] = "me me smol boy",
 	},
 	
 }
