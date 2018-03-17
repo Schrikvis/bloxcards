@@ -1134,9 +1134,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Green"] = 2,},
 		["Effect"] = {
 			Name = "Appeal",
-			Description = "Gain 500 Life.",
+			Description = "Gain 800 Life.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Cost",-500}},
+			["Power"] = {{"Cost",-800}},
 			Target = "Opponent",
 		},
 		["Bio"] = "The paper bag hides his identity, even though you can just read the name of the card.",
