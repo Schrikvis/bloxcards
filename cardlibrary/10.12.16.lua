@@ -4576,9 +4576,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3, ["Red"] = 10,},
 		["Effect"] = {
 			Name = "Unleash Hell",
-			Description = "Destroy all other fighters. For each fighter destroyed, the opponent loses 200-300 life.",
+			Description = "Destroy all other fighters. For each fighter destroyed, the opponent loses 200 life. End the turn.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Heal",18888,"Self"},{"Summon","Rach Token","Ally"},{"Damage",9999,"All"},{"Damage",9999,"Archetype"}},
+			["Power"] = {{"Heal",18888,"Self"},{"Summon","Rach Token","Ally"},{"Damage",9999,"All"},{"Damage",9999,"Archetype"},{"EndTurn",1}},
 			Target = "All",
 		},
 		["Bio"] = "You can run...",
@@ -4596,7 +4596,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3, ["Red"] = 10,},
 		["Effect"] = {
 			Name = "Unleash Hell",
-			Description = "Destroy all other fighters. For each fighter destroyed, the opponent loses 200-300 life.",
+			Description = "Destroy all other fighters. For each fighter destroyed, the opponent loses 200 life. End the turn.",
 			["Type"] = "OnAnyDeath",
 			["Power"] = {{"Inflict",200}},
 			Target = "Opponent",
