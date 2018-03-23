@@ -4585,7 +4585,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 			
 	["Rach Token"] = {
-		["Id"] = 1512697995,
+		["Id"] = 1535962352,
 		["Name"] = "rachjumper",
 		["Health"] = 18000,
 		["Power"] = 750,
