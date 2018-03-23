@@ -17080,7 +17080,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Boom2"] = {
-		["Id"] = 513641417,
+		["Id"] = 1402771211,
 		["Name"] = "BoomAtack",
 		["Health"] = 600,
 		["Power"] = 200,
