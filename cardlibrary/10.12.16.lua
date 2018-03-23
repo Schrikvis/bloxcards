@@ -4563,6 +4563,47 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "me me smol boy",
 	},
+		
+	["rachjumper"] = {
+		["Id"] = 1535962352,
+		["Name"] = "rachjumper",
+		["Health"] = 1250,
+		["Power"] = 750,
+		["Rarity"] = "Legendary",
+		["AttackEffect"] = "Lightning",
+		["Color"] = "Red", 
+		["Archetype"] = "Rachjumper",		
+		["Cost"] = {["Neutral"] = 3, ["Red"] = 10,},
+		["Effect"] = {
+			Name = "Unleash Hell",
+			Description = "Destroy all other fighters. For each fighter destroyed, the opponent loses 200 life. End the turn.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Heal",18888,"Self"},{"Summon","Rach Token","Ally"},{"Damage",9999,"All"},{"Damage",9999,"Archetype"},{"EndTurn",1}},
+			Target = "All",
+		},
+		["Bio"] = "You can run...",
+	},
+			
+	["Rach Token"] = {
+		["Id"] = 1535962352,
+		["Name"] = "rachjumper",
+		["Health"] = 18000,
+		["Power"] = 750,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Lightning",
+		["Color"] = "Red", 
+		["Fading"] = true,		
+		["Archetype"] = "Rachjumper",		
+		["Cost"] = {["Neutral"] = 3, ["Red"] = 10,},
+		["Effect"] = {
+			Name = "Unleash Hell",
+			Description = "Destroy all other fighters. For each fighter destroyed, the opponent loses 200 life. End the turn.",
+			["Type"] = "OnAnyDeath",
+			["Power"] = {{"Inflict",200}},
+			Target = "Opponent",
+		},
+		["Bio"] = "...but you can't hide.",
+	},
 	
 }
 return tentwelvesixteen

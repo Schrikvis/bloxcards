@@ -184,6 +184,7 @@ local packs = {
 		CardPackId = 842435184, --721400845,
 		Description = "Red is the colour of power, ambition, and control. Dominion packs contain cards that cost red!",
 		Cards = {
+			"rachjumper",
 			"Steel Chair",
 			"DrWeaseI",
 			"stormmaster7722",
@@ -614,6 +615,7 @@ local packs = {
 			"Deadly Dicey Duo",
 			"hyp3rdeath",
 			"Steam Razikai",
+			"Fenfie08",
 			"Jimminus",
 			"Bearded Captain",
  			"Rollernaut",
@@ -1029,6 +1031,7 @@ local packs = {
 		Description = "Exotic new cards from the black market! White cards and joke cards! It's all yours, as long as you have 10 wins!",
 		WinRequirement = 10;
 		Cards = {
+			"rachjumper",
 			"DunclubDuncan",
 			"Damarioguy",
 			"Creeperkiller510",
@@ -1107,7 +1110,6 @@ local packs = {
 			"Satyr Firemaster",
 			"BandiheartYT",
 			"BrandonOccult",
-			"Fenfie08",
 			-- PAST THIS POINT IS FOR WHITE CARDS AND JOKE CARDS ONLY. I'M LOOKING AT YOU, BLITZ.
 			"SpeedySeat",
 			"Dukran the Celestial",
