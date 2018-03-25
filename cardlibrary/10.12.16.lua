@@ -4578,7 +4578,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Unleash Hell",
 			Description = "Destroy all other fighters. For each fighter destroyed, the opponent loses 200 life. End the turn.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Heal",18888,"Self"},{"Summon","Rach Token","Ally"},{"Damage",9999,"All"},{"Damage",9999,"Archetype"},{"EndTurn",1}},
+			["Power"] = {{"Heal",19998,"Self"},{"Summon","Rach Token","Ally"},{"Damage",9999,"All"},{"Damage",9999,"Archetype"},{"EndTurn",1}},
 			Target = "All",
 		},
 		["Bio"] = "You can run...",
