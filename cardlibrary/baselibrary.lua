@@ -2433,14 +2433,14 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Kago"] = {
-		["Id"] = 283994481,
+		["Id"] = 1545393801,
 		["Name"] = "Kago",
 		["Health"] = 150,
 		["Power"] = 150,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Fire",
-		["Color"] = "Blue",
-		["Cost"] = {["Neutral"] = 1,["Blue"] = 1,},
+		["Color"] = "Yellow",
+		["Cost"] = {["Neutral"] = 1,["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "Amp",
 			Description = "Whenever this fighter is targeted, put a random common into your hand.",
@@ -2448,7 +2448,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"RandomAdd","Common"}},
 			Target = "Self",
 		},
-		["Bio"] = "Pink fire is a lovely fire, too bad effects don't look so pink.",
+		["Bio"] = "KAGOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO0oOOOOOOOOOOOOOOO",
 	},
 	
 	["PhireFox"] = {
@@ -11194,7 +11194,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Anti Extreme Energy Care Package",
 			Description = "Whenever you cast an action or terrain spell, summon a kitten and deal 100 damage to Anti-Fave. Kittens can't generate icons.",
 			["Type"] = "OnAllyCast",
-			["Power"] = {{"RandomSummon",{"Kitten","Kitten2","Kitten3","Kitten4"}},{"Damage",100,"Self"}},
+			["Power"] = {{"RandomSummon",{"Kitten","Kitten2","Kitten3","Kitten4","Kitten5","Kitten6","Kitten7","Kitten8","Kitten9"}},{"Damage",100,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = "He only wants to blox Fave legally, so he's the good guy, right?",
@@ -12508,7 +12508,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "ASSEMBLE.",
 			Description = "Summon four Kittens. You lose 2000 life.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Cost",2000},{"RandomSummon",{"Kitten","Kitten2","Kitten3","Kitten4"}},{"RandomSummon",{"Kitten","Kitten2","Kitten3","Kitten4"}},{"RandomSummon",{"Kitten","Kitten2","Kitten3","Kitten4"}},{"RandomSummon",{"Kitten","Kitten2","Kitten3","Kitten4"}}},
+			["Power"] = {{"Cost",2000},{"RandomSummon",{"Kitten","Kitten2","Kitten3","Kitten4","Kitten5","Kitten6","Kitten7","Kitten8","Kitten9"}},{"RandomSummon",{"Kitten","Kitten2","Kitten3","Kitten4","Kitten5","Kitten6","Kitten7","Kitten8","Kitten9"}},{"RandomSummon",{"Kitten","Kitten2","Kitten3","Kitten4","Kitten5","Kitten6","Kitten7","Kitten8","Kitten9"}},{"RandomSummon",{"Kitten","Kitten2","Kitten3","Kitten4","Kitten5","Kitten6","Kitten7","Kitten8","Kitten9"}}},
 			Target = "Ally",
 		},
 		["Bio"] = "Knock knock, Guv! Who's there? IT'S ISAAC, GUV!!",
@@ -17135,7 +17135,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Magic Trick!",
 			Description = "At the end of your turns, summon a Kitten out of the magician's hat.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"RandomSummon",{"Kitten","Kitten2","Kitten3","Kitten4"}}},
+			["Power"] = {{"RandomSummon",{"Kitten","Kitten2","Kitten3","Kitten4","Kitten5","Kitten6","Kitten7","Kitten8","Kitten9"}}},
 			Target = "Ally",
 		},
 		["Bio"] = "I shall pull great things using my magic hat.",
