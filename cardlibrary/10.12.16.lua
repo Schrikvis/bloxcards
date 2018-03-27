@@ -2910,6 +2910,26 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] =  1402760304,
 				["Bio"] = "Ew...what IS that thing?!",
 			},
+			["Kitten5"] = {
+				["Id"] =  1549934707,
+				["Bio"] = "Strolllllllllllllllllllllllllllllllllllllllling on in.",
+			},
+			["Kitten6"] = {
+				["Id"] =  1549935440,
+				["Bio"] = "The sun did not shine. It was too wet to play. So we sat in the house All that cold, cold, wet day. I sat there with Sally. We sat there, we two. And I said, “How I wish We had something to do!” Too wet to go out And too cold to play ball. So we sat in the house. We did nothing at all. So all we could do was to Sit! Sit! Sit! Sit! And we did not like it. Not one little bit. And then Something went BUMP! How that bump made us jump! We looked! Then we saw him step in on the mat! We looked! And we saw him! The Cat in the Hat!",
+			},
+			["Kitten7"] = {
+				["Id"] =  1549936070,
+				["Bio"] = "Meow!",
+			},
+			["Kitten8"] = {
+				["Id"] =  1549937583,
+				["Bio"] = "It farts rainbows.",
+			},	
+			["Kitten9"] = {
+				["Id"] =  1549937120,
+				["Bio"] = "There are gajillions of stories... of mischief and fun, but to keep things simple, let's start with just one... about a mom and two kids... and a house and a hat... that, oddly enough, was worn by a cat. But soon enough we will get to all that. In the valley that stretches from this hill to that hill, a city is nestled... that city is Anville. - [Kid] Hurry up! We'll miss the movie! - Any more tutti-frutti? I'll check. Thanks! It's a town that's not huge, but quite big enough... for buyers and sellers to sell and buy stuff, from shoes and shirts... and elongated ladders... to sailboats and gibble-grated berry-juice bladders. So our story begins at the corner of Main and Montroob... in the spotless real estate offiice... run by Hank Humberfloob.",
+			},			
 		},		
 		["Health"] = 200,
 		["Power"] = 200,
@@ -4602,8 +4622,48 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Inflict",200}},
 			Target = "Opponent",
 		},
-		["Bio"] = "...but you can't hide.",
+		["Bio"] = "...but you can't hide.",	
 	},
+	
+	["Enriched Neutrinous"] = {
+		["Id"] = 1549643103,
+		["Name"] = "Enriched Neutrinous",
+		["Health"] = 1000,
+		["Power"] = 100,
+		["Rarity"] = "Epic",
+		["AttackEffect"] = "PunchKick",
+		["Color"] = "Green",
+		["Cost"] = {["Neutral"] = 3, ["Green"] = 3,},
+		["Effect"] = {
+			Name = "Poisonous Touch",
+			Description = "When this card is attacked and survives, give allied fighters 150 health.",
+			["Type"] = "OnAttacked",
+			["Power"] = {{"Heal",150}},
+			Target = "Ally",
+		},
+		["Bio"] = "Get up lazy bones! While you slept and took fire, we did ALL the work!",
+	},
+	
+	["Sands of Purgatory"] = {
+		["Id"] = 1549933495,
+		["Name"] = "Sands of Purgatory",
+		["Health"] = 0,
+		["Power"] = 0,
+		["Rarity"] = "Rare",
+		["AttackEffect"] = "Punch1",
+		["Field"] = 1549933495,
+		["Archetype"] = "Terrain",
+		["Color"] = "Neutral",
+		["Cost"] = {["Red"] = 4,},
+		["Effect"] = {
+			Name = "Stud",
+			Description = "At the start of each players turn, that player loses 250 life.",
+			["Type"] = "Field",
+			["Power"] = {{"Inflict",250}},
+			Target = "Ally",
+		},
+		["Bio"] = "Nothing can survive here...besides ultras.",
+	},	
 	
 }
 return tentwelvesixteen
