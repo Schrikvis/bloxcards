@@ -13811,9 +13811,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 1,["Blue"] = 1,["Yellow"] = 1,["Red"] = 1,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Both players have a 50% chance to put a targeting blip or nightmare into their hand at the start of their turns.",
+			Description = "Both players have a 50% chance to put a targeting blip into their hand at the start of their turns.",
 			["Type"] = "Field",
-			["Power"] = {{"RandomAdd", {"Targeting Blip", "Nightmare"}}},
+			["Power"] = {{"RandomAdd", {"Targeting Blip", ""}}},
 			Target = "Ally",
 		},
 		["Bio"] = "If I time travel, I might step on a butterfly. That would be sad.",
