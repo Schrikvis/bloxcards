@@ -16115,7 +16115,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"RandomAdd","Overseer"},{"Summon","Overseer Drake Token"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
-		["Bio"] = "The messengers of the overseer army, Overseer Drakes deliver the word of their masters to overgrow any land they come across.",
+		["Bio"] = "The messengers of the overseer army.",
 	},
 
 	["Overseer Drake Token"] = {
