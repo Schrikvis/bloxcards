@@ -4665,5 +4665,29 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "Nothing can survive here...besides ultras.",
 	},	
 	
+	["Rubber Duck"] = {
+		["Id"] = 1555340100,
+		["Name"] = "Rubber Duck",
+		["Health"] = 0,
+		["Power"] = 0,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Lightning",
+		["Color"] = "Yellow",
+		["Archetype"] = "Target",
+		["Token"] = true,
+		["DiscardBlock"] = true,
+		["Stealth"] = true,
+		["Cost"] = {["Neutral"] = 0,},
+		["Effect"] = {
+			Name = "Quack",
+			Description = "It does absolutely nothing.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Damage",0}},
+			Target = "Ally",
+		},
+		["Bio"] = "TEH EPIK DUCK IS COMING!!!",
+	},
+
+	
 }
 return tentwelvesixteen
