@@ -15622,7 +15622,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 1, ["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "I only cri half of the time",
-			Description = "All enemy fighters loses 100 Power.",
+			Description = "All enemy fighters lose 100 Power.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",100,"Opponent"}},
 			Target = "Opponent",
