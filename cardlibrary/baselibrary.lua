@@ -15724,9 +15724,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 4, ["Neutral"] = 5,},
 		["Effect"] = {
 			Name = "Revival",
-			Description = "Deal 12,000 damage to yourself. If you survive, you win the game.",
+			Description = "Deal 14,000 damage to yourself. If you survive, you win the game.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Heal",9999,"Self"},{"Damage",9999},{"Cost",12000},{"Summon","InceptionTime Token"},{"Damage",9999,"Self"}},
+			["Power"] = {{"Heal",9999,"Self"},{"Damage",9999},{"Cost",14000},{"Summon","InceptionTime Token"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = "It is not yet time.",
@@ -15743,12 +15743,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 4, ["Neutral"] = 5,},
 		["Effect"] = {
 			Name = "Revival",
-			Description = "Deal 12,000 damage to yourself. If you survive, you win the game.",
+			Description = "Lol u ded",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Inflict",999999}},
 			Target = "Opponent",
 		},
-		["Bio"] = "It is not yet time.",
+		["Bio"] = "",
 	},
 
 	["Blue Fanatic"] = {
