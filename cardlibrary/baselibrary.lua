@@ -15622,9 +15622,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 1, ["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "I only cri half of the time",
-			Description = "Lower the power of all enemy fighters by 100, then lower the power of all yellow fighters by 100.",
+			Description = "All enemy fighters loses 100 Power.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Weaken",100,"Opponent"},{"Weaken",100,"ColorYellow"}},
+			["Power"] = {{"Weaken",100,"Opponent"}},
 			Target = "Opponent",
 		},
 		["Bio"] = "NO FUN ALLOWED. >:(",
