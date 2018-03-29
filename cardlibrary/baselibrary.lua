@@ -17705,7 +17705,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Slash",
 		["CounterAttackBlock"] = true,
-		["StrentghenImmune"] = true,
+		["StrenghtenImmune"] = true,
 		["Charge"] = true,
 		["Color"] = "Green",
 		["Cost"] = {["Neutral"] = 1,["Green"] = 2,},
