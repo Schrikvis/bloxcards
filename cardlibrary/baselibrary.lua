@@ -6144,7 +6144,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Bio"] = "I have many fanboys...",
 				["Effect"] = {
 					Name = "TRIGGERED",
-					Description = "When this card is triggered, destroy this card.",
+					Description = "When this card is triggered, destroy it.",
 				},
 			},
 		},
@@ -6156,7 +6156,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Even Out",
-			Description = "When this card is targeted, destroy this card.",
+			Description = "When this card is targeted, destroy it.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Damage",9999}},
 			Target = "Self",
@@ -16136,7 +16136,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Add","Overseer Drake"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
-		["Bio"] = "The messengers of the overseer army, Overseer Drakes deliver the word of their masters to overgrow any land they come across.",
+		["Bio"] = "The messengers of the overseer army.",
 	},
 
 	["666"] = {
