@@ -740,14 +740,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Langz-E"] = {
 				["Id"] = 1567578025,
-				["Effect"] = {
-					Name = "Glitch Bomb +1",
-					Description = "When played, deals 151 damage to all enemies.",
-					["Type"] = "OnSummon",
-					["Power"] = "Damage",
-					Target = "Opponent",
-					Increase = 151,
-				},
 				["Bio"] = "Hey guys check out my new camera...wait this isn't a camera",
 			},
 		},
@@ -8886,9 +8878,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Bio"] = "The arrival of titan signalled the beginning of the nega-rapture: The spirits of all blobbunnies would coalesce and form the Blobgotten One.",
 				["Effect"] = {
 					Name = "Stud",
-					Description = [[You must control at least 1 Bunny Blob to summon this card. Set the power of all non-Blobs to 150. Put "The Blobgotten One" to your hand.]],
+					Description = [[You must control at least 1 Bunny Blob to summon this card. Set the power of all non-Blobs to 0. Put "The Blobgotten One" to your hand.]],
 					["Type"] = "OnSummon",
-					["Power"] = {{"SetPower",150},{"Add","The Blobgotten One"}},
+					["Power"] = {{"SetPower",0},{"Add","The Blobgotten One"}},
 					Target = "NotArchetype",
 				},
 			},
@@ -8903,9 +8895,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 5,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = [[You must control at least 1 titan to summon this card. Set the power of all non-Titans to 150. Put "The Forgotten One" to your hand.]],
+			Description = [[You must control at least 1 titan to summon this card. Set the power of all non-Titans to 0. Put "The Forgotten One" to your hand.]],
 			["Type"] = "OnSummon",
-			["Power"] = {{"SetPower",150},{"Add","The Forgotten One"}},
+			["Power"] = {{"SetPower",0},{"Add","The Forgotten One"}},
 			Target = "NotArchetype",
 		},
 		["Bio"] = "Probably just gonna be standard anti-aggro used in every second deck, but the thought is nice.",
