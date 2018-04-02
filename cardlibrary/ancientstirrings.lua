@@ -2095,6 +2095,13 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Robber Token"] = {
 		["Id"] = 540076456,
 		["Name"] = "Script Robber",
+		["AltCards"] = {
+			["Script Robber-E"] = {
+				["Name"] = "Egg Robber",
+				["Id"] = 1567583873,
+				["Bio"] = "It’s not stealing, it’s HUNTING.",
+			},
+		},
 		["Health"] = 600,
 		["Power"] = 0,
 		["Rarity"] = "Token",
