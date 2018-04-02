@@ -652,6 +652,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Lyv"] = {
 		["Id"] = 266031925,
 		["Name"] = "Lyv",
+		["AltCards"] = {
+			["Lyv-E"] = {
+				["Id"] = 1567579083,
+				["Bio"] = "Do cats eat eggs? That’s a good question. I love good questions. Imagine, me and this egg, sitting alone on a beach, discussing the universe…",
+			},
+		},
 		["Power"] = 300,
 		["Health"] = 300,
 		["Rarity"] = "Uncommon",
@@ -731,6 +737,20 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Langz"] = {
 		["Id"] = 266032017,
 		["Name"] = "Langz",
+		["AltCards"] = {
+			["Langz-E"] = {
+				["Id"] = 1567578025,
+				["Effect"] = {
+					Name = "Glitch Bomb +1",
+					Description = "When played, deals 151 damage to all enemies.",
+					["Type"] = "OnSummon",
+					["Power"] = "Damage",
+					Target = "Opponent",
+					Increase = 151,
+				},
+				["Bio"] = "Hey guys check out my new camera...wait this isn't a camera",
+			},
+		},
 		["Power"] = 150,
 		["Health"] = 150,
 		["Rarity"] = "Common",
@@ -769,6 +789,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["SharpTH"] = {
 		["Id"] = 266032097,
 		["Name"] = "SharpTH",
+		["AltCards"] = {
+			["SharpTH-E"] = {
+				["Id"] = 1567584496,
+				["Bio"] = "Wow, I didn’t even notice that egg. What a decearing egg.",
+			},
+		},
 		["Power"] = 500,
 		["Health"] = 500,
 		["Rarity"] = "Rare",
@@ -1692,6 +1718,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Dued1"] = {
 		["Id"] = 275340124,
 		["Name"] = "Dued1",
+		["AltCards"] = {
+			["Dued1-E"] = {
+				["Id"] = 1567572187,
+				["Bio"] = "Stop bickering about pineapple on pizza. We have to face the greater evil: Eggs on pizza.",
+			},
+		},
 		["Health"] = 600,
 		["Power"] = 500,
 		["Rarity"] = "Epic",
@@ -2571,6 +2603,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Zolerus"] = {
 		["Id"] = 596607411,
 		["Name"] = "Zolerus",
+		["AltCards"] = {
+			["Zolerus-E"] = {
+				["Id"] = 1567592250,
+				["Bio"] = "What do teapots have anything to do with Easter?",
+			},
+		},
 		["Health"] = 1150,
 		["Power"] = 0,
 		["Rarity"] = "Common",
@@ -4194,6 +4232,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["TheChakraTree"] = {
 		["Id"] = 785620850,
 		["Name"] = "TheChakraTree",
+		["AltCards"] = {
+			["TheChakraTree-E"] = {
+				["Id"] = 1567586121,
+				["Bio"] = "I’ll haunt those who want this egg!",
+			},
+		},
 		["Health"] = 200,
 		["Power"] = 200,
 		["Rarity"] = "Common",
@@ -4263,6 +4307,10 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 411803152,
 				["AltArt"] = true,
 				["Bio"] = "Scripter of Blox Cards and an amazing GFX artist. Watch out! Part of the 'Aife' Collection! Collect them all!",
+			},
+			["Visleaf-E"] = {
+				["Id"] = 1567573586,
+				["Bio"] = "Easter Art Cabal Matriarch, rather than the Patriarch.",
 			},
 		},
 		["Health"] = 500,
@@ -8866,6 +8914,20 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["The Forgotten One"] = {
 		["Id"] = 328831702,
 		["Name"] = "The Forgotten One",
+		["AltCards"] = {
+			["The Blobgotten One"] = {
+				["Name"] = "The Blobgotten One",
+				["Id"] = 1567585398,
+				["Bio"] = "There was no reason to pray. Its arrival was already an act of the gods.",
+				["Effect"] = {
+					Name = "Stud",
+					Description = [[You must control at least 4 Bunny Blobs to summon this card. At the end of each turn, deal 4000 damage to all Non-Blobs, then unlock all Blobs.]],
+					["Type"] = "OnEnd",
+					["Power"] = {{"Damage",4000,"NotArchetype",},{"Unlock",999,"Archetype"}},
+					Target = "NotArchetype",
+				},
+			},
+		},
 		["Health"] = 5000,
 		["Power"] = 5000,
 		["Rarity"] = "Token",
@@ -8948,6 +9010,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Plushie Mummy"] = {
 		["Id"] = 332863678,
 		["Name"] = "Plushie Mummy",
+		["AltCards"] = {
+			["Plushie Mummy-E"] = {
+				["Name"] = "Plushie Bunny",
+				["Id"] = 1567581644,
+				["Bio"] = "The food chain goes something like blobunnies, then regular bunnies, then amorphous blobs of eldritch ooze that babble incoherently about your sins.",
+			},
+		},
 		["Health"] = 300,
 		["Power"] = 300,
 		["Rarity"] = "Uncommon",
@@ -9326,6 +9395,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["JJ5x5"] = {
 		["Id"] = 1226640246,
 		["Name"] = "JJ5x5",
+		["AltCards"] = {
+			["JJ5x5-E"] = {
+				["Id"] = 1567576716,
+				["Bio"] = "Just a fellow, playing with his pet rabbit and running from the weirdo... he is the hat of course.",
+			},
+		},
 		["Health"] = 500,
 		["Power"] = 300,
 		["Rarity"] = "Rare",
@@ -10544,6 +10619,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["ReverseBackwards"] = {
 		["Id"] = 358606026,
 		["Name"] = "ReverseBackwards",
+		["AltCards"] = {
+			["ReverseBackwards-E"] = {
+				["Id"] = 1567583243,
+				["Bio"] = "えぐえぐえぐえぐえぐえぐえぐ",
+			},
+		},
 		["Health"] = 700,
 		["Power"] = 750,
 		["Rarity"] = "Legendary",
@@ -10569,16 +10650,16 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Bio"] = "In Soviet Russia, bear ride you!",
 			},
 		},
-		["Health"] = 500,
-		["Power"] = 700,
+		["Health"] = 400,
+		["Power"] = 600,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Yellow",
 		["Cost"] = {["Neutral"] = 2,["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Sudden Death",
-			Description = "When this card attacks, increase the health of all Ally fighters by 100.",
-			["Type"] = "OnAttack",
+			Description = "After this card attacks, increase the health of all Ally fighters by 100.",
+			["Type"] = "OnAttackEnd",
 			["Power"] = {{"Heal",100}},
 			Target = "Ally",
 		},
@@ -10855,6 +10936,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["wer8888"] = {
 		["Id"] = 362315297,
 		["Name"] = "wer8888",
+		["AltCards"] = {
+			["Wer8888-E"] = {
+				["Id"] = 1567587396,
+				["Bio"] = "I gave up on egg hunting long ago. All I could ever find were pumpkin bombs.",
+			},
+		},
 		["Health"] = 800,
 		["Power"] = 200,
 		["Rarity"] = "Common",
@@ -12706,6 +12793,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Card Hoarder"] = {
 		["Id"] = 411843983,
 		["Name"] = "Card Hoarder",
+		["AltCards"] = {
+			["Card Hoarder-E"] = {
+				["Name"] = "Egg Hoarder",
+				["Id"] = 1567572871,
+				["Bio"] = "Collecting eggs since 2008.",
+			},
+		},
 		["Health"] = 500,
 		["Power"] = 250,
 		["Rarity"] = "Rare",
@@ -14673,6 +14767,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Western Bandit"] = {
 		["Id"] = 430960897,
 		["Name"] = "Western Bandit",
+		["AltCards"] = {
+			["Western Bandit-E"] = {
+				["Id"] = 1567591506,
+				["Bio"] = "He ALWAYS ruins easter for the cowboys…",
+			},
+		},
 		["Health"] = 250,
 		["Power"] = 250,
 		["Rarity"] = "Common",
@@ -17284,6 +17384,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Mafia Grunt"] = {
 		["Id"] = 518352766,
 		["Name"] = "Mafia Grunt",
+		["AltCards"] = {
+			["Mafia Grunt-E"] = {
+				["Id"] = 1567579853,
+				["Bio"] = "baddabing badaboom fugeddaboutit HAY I’M WALKEN HEER",
+			},
+		},
 		["Health"] = 400,
 		["Power"] = 400,
 		["Rarity"] = "Uncommon",
