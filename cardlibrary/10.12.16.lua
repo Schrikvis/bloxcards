@@ -1562,9 +1562,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 4,},
 		["Effect"] = {
 			Name = "Hellfire",
-			Description = "Whenever you summon a fighter, deal 400 damage to ChaoticCommando and give that fighter 100 power.",
+			Description = "Whenever you summon a fighter, deal 400 damage to ChaoticCommando and give that fighter 200 power.",
 			["Type"] = "OnAllySummon",
-			["Power"] = {{"Damage",400},{"Strengthen",100,"Aggressor"}},
+			["Power"] = {{"Damage",400},{"Strengthen",200,"Aggressor"}},
 			Target = "Self",
 		},
 		["Bio"] = "If chaos could ever be controlled, world peace would be restored. *It* begs to differ...",
