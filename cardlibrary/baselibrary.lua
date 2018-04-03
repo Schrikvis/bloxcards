@@ -3874,8 +3874,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Green"] = 2,},
 		["Effect"] = {
 			Name = "Nature's Reconciliation",
-			Description = "This fighter is immune to effects that lower its health or power. At the end of your turn, destroy all allied fighters.",
-			["Type"] = "OnEnd",
+			Description = "This fighter is immune to effects that lower its health or power. Whenever you summon a fighter, destroy all allied fighters.",
+			["Type"] = "OnAllySummon",
 			["Power"] = {{"Damage",9999}},
 			Target = "Ally",
 		},
@@ -14589,8 +14589,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 3,},
 		["Effect"] = {
 			Name = "Capture",
-			Description = "This card is immune to effects that lower its power or health. At the end of each of your turns, generate a red icon and destroy all allied fighters.",
-			["Type"] = "OnEnd",
+			Description = "This card is immune to effects that lower its power or health. Whenever you summon a fighter, generate a red icon and destroy all allied fighters.",
+			["Type"] = "OnAllySummon",
 			["Power"] = {{"Red",1},{"Damage",9999}},
 			Target = "Ally",
 		},
