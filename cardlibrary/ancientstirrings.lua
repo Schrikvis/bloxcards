@@ -3220,13 +3220,6 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Dash",
 		["Color"] = "Yellow", 
 		["Cost"] = {["Neutral"] = 1, ["Yellow"] = 2,},
-		["Effect"] = {
-			Name = "Undead Rising",
-			Description = "0 Charges. When this card dies, remove a charge, lose 100 Life, and resurrect it.",
-			["Type"] = "OnDeath",
-			["Power"] = {{"Cost",0}},
-			Target = "Ally",
-		},
 		["Bio"] = "They will never know the true horror that went into making this...",
 	},	
 	
