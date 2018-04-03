@@ -555,6 +555,13 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Dash",
 		["Color"] = "Yellow", 
 		["Cost"] = {["Neutral"] = 1 , ["Yellow"] = 2.},
+		["Effect"] = {
+			Name = "Booster",
+			Description = "Generate a white icon.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Neutral",1}},
+			Target = "Ally",
+		},
 		["Bio"] = "Candy robbers were commissioned by Hallow to steal the candy of their victims. On Sunday, all the candy is collected into a dragon-horde as a treat for Hallow.",
 	},
 	
