@@ -4504,7 +4504,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "BEANAENAED",
 			Description = "This card is immune to all stat-changing effects. Whenever you target this card, return tl_rd and shove Tom's Beans into your hand.",
 			["Type"] = "OnTarget",
-			["Power"] = {{"Add","Tom's Beans"}},
+			["Power"] = {{"Add","Tom's Beans"},{"Return",030,"Self"}},
 			["Target"] = "Ally",
 		},
 		["Bio"] = "#KelloggsGoneWild can u guys make some and vote or something He Certainly Is. What kind of monster cooks beans in a bloxy cola can? His life motto: The future is bright. Beans, beans, the musical fruit! The more you eat, the more you toot! The more you toot, the better you feel! So we have beans at every meal! idk Yes, I am BLACK. Green is love, green is life.",
