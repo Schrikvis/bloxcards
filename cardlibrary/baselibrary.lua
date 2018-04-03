@@ -1119,6 +1119,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "PunchKick",
 		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 1,["Red"] = 1,},
+		["Effect"] = {
+			Name = "Puts PixelFlame to shame",
+			Description = "Lose 100 life.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Cost",100}},
+			Target = "Self",
+		},
 		["Bio"] = "Powerful fighter with his MLG-certified meal to keep him ready for more foes.",
 	},
 	
