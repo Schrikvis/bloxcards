@@ -1121,7 +1121,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Red"] = 1,},
 		["Effect"] = {
 			Name = "Light Burn",
-			Description = "Deal 100 damage to the opponent",
+			Description = "Deal 100 damage to the opponent.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Inflict",100}},
 			Target = "Opponent",
