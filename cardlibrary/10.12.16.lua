@@ -706,9 +706,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 620408233,
 				["Effect"] = {
 					Name = "Pyrotechnics",
-					Description = "You gain 1000 life. Whenever you gain life, set your white and green icons to 3.",
+					Description = "You gain 1000 life. Whenever you gain life, set your white and green icons to 3. This fighter doesn't trigger its own effect.",
 					["Type"] = "OnSummon",
-					["Power"] = {{"Summon","Kariu2-ArtV"},{"Cost",-1000},{"Damage",9999,"Self"}},
+					["Power"] = {{"Cost",-1000},{"Summon","Kariu2-ArtV"},{"Damage",9999,"Self"}},
 					Target = "Ally",
 				},
 			},
@@ -722,9 +722,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 4,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "You gain 1000 life. Whenever you gain life, set your white and green icons to 3.",
+			Description = "You gain 1000 life. Whenever you gain life, set your white and green icons to 3. This fighter doesn't trigger its own effect.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Summon","Kariu2"},{"Cost",-1000},{"Damage",9999,"Self"}},
+			["Power"] = {{"Cost",-1000},{"Summon","Kariu2"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Consider me blessed.",
