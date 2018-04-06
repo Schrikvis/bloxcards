@@ -1773,6 +1773,51 @@ local packs = {
 		},
 	};
 	
+	{
+		Name = "Easter Feast",
+		Hidden = false;
+		PriceInBloxBux = 1000;
+		PriceInRobux = 0;
+		CardsInPack = 4,
+		CardPackId = 1574596642,
+		Description = "Go on a hunt to find these special Easter themed alts. Will you be able to collect them all? (requires 10 wins)",
+		WinRequirement = 10;
+		DateConstraint = {
+			month = {4};
+			day = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25};
+		};
+		Cards = {
+			"Jeeeeesus-E",
+			"Eye of Heaven-E",
+			"Mlgloga-E",
+			"Script Robber-E",
+			"Dayren-E",
+			"Lyv-E",
+			"Langz-E",
+			"SharpTH-E",
+			"Chef-E",
+			"Dued1-E",
+			"Zolerus-E",
+			"TheChakraTree-E",
+			"Visleaf-E",
+			"Blockerwiz-E",
+			"Titan's Stone-E",
+			"Recruiter-E",
+			"Titan of the Infernal Abyss-E",
+			"Titan of the Deep Below-E",
+			"Titan of the Dying Forest-E",
+			"Titan of the Fried One-E",
+			"Titan of the Holy Chamber-E",
+			"Plushie Mummy-E",
+			"JJ5x5-E",
+			"ReverseBackwards-E",
+			"Wer8888-E",
+			"Card Hoarder-E",
+			"Western Bandit-E",
+			"Mafia Grunt-E",
+		},
+	};
+	
 }
 
 return packs

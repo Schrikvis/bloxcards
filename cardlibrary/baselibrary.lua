@@ -541,6 +541,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Dayren"] = {
 		["Id"] = 264620119,
 		["Name"] = "Dayren",
+		["AltCards"] = {
+			["Dayren-E"] = {
+				["Id"] = 1567571638,
+				["Bio"] = "A nice little jig on his drums was all he needed to amass an army of rabbits.",
+			},
+		},
 		["Power"] = 250,
 		["Health"] = 250,
 		["Rarity"] = "Uncommon",
@@ -646,6 +652,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Lyv"] = {
 		["Id"] = 266031925,
 		["Name"] = "Lyv",
+		["AltCards"] = {
+			["Lyv-E"] = {
+				["Id"] = 1567579083,
+				["Bio"] = "Do cats eat eggs? That’s a good question. I love good questions. Imagine, me and this egg, sitting alone on a beach, discussing the universe…",
+			},
+		},
 		["Power"] = 300,
 		["Health"] = 300,
 		["Rarity"] = "Uncommon",
@@ -725,6 +737,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Langz"] = {
 		["Id"] = 266032017,
 		["Name"] = "Langz",
+		["AltCards"] = {
+			["Langz-E"] = {
+				["Id"] = 1567578025,
+				["Bio"] = "Hey guys check out my new camera...wait this isn't a camera",
+			},
+		},
 		["Power"] = 150,
 		["Health"] = 150,
 		["Rarity"] = "Common",
@@ -763,6 +781,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["SharpTH"] = {
 		["Id"] = 266032097,
 		["Name"] = "SharpTH",
+		["AltCards"] = {
+			["SharpTH-E"] = {
+				["Id"] = 1567584496,
+				["Bio"] = "Wow, I didn’t even notice that egg. What a decearing egg.",
+			},
+		},
 		["Power"] = 500,
 		["Health"] = 500,
 		["Rarity"] = "Rare",
@@ -989,6 +1013,11 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 271751037,
 		["Name"] = "Chef",
 		["AltCards"] = {
+			["Chef-E"] = {
+				["Id"] = 1567570823,
+				["Name"] = "Egg Chef",
+				["Bio"] = "If you aren’t in the mood for lunch, breakfast is still available. Delicious Robloxian eggs, cooked to perfection, sunny side up.",
+			},
 			["Baker"] = {
 				["Id"] = 1247061539,
 				["Name"] = "Baker",
@@ -1681,6 +1710,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Dued1"] = {
 		["Id"] = 275340124,
 		["Name"] = "Dued1",
+		["AltCards"] = {
+			["Dued1-E"] = {
+				["Id"] = 1567572187,
+				["Bio"] = "Stop bickering about pineapple on pizza. We have to face the greater evil: Eggs on pizza.",
+			},
+		},
 		["Health"] = 600,
 		["Power"] = 500,
 		["Rarity"] = "Epic",
@@ -2560,6 +2595,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Zolerus"] = {
 		["Id"] = 596607411,
 		["Name"] = "Zolerus",
+		["AltCards"] = {
+			["Zolerus-E"] = {
+				["Id"] = 1567592250,
+				["Bio"] = "What do teapots have anything to do with Easter?",
+			},
+		},
 		["Health"] = 1150,
 		["Power"] = 0,
 		["Rarity"] = "Common",
@@ -4183,6 +4224,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["TheChakraTree"] = {
 		["Id"] = 785620850,
 		["Name"] = "TheChakraTree",
+		["AltCards"] = {
+			["TheChakraTree-E"] = {
+				["Id"] = 1567586121,
+				["Bio"] = "I’ll haunt those who want this egg!",
+			},
+		},
 		["Health"] = 200,
 		["Power"] = 200,
 		["Rarity"] = "Common",
@@ -4252,6 +4299,10 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 411803152,
 				["AltArt"] = true,
 				["Bio"] = "Scripter of Blox Cards and an amazing GFX artist. Watch out! Part of the 'Aife' Collection! Collect them all!",
+			},
+			["Visleaf-E"] = {
+				["Id"] = 1567573586,
+				["Bio"] = "Easter Art Cabal Matriarch, rather than the Patriarch.",
 			},
 		},
 		["Health"] = 500,
@@ -5828,6 +5879,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Blockerwiz"] = {
 		["Id"] = 294871375,
 		["Name"] = "Blockerwiz",
+		["AltCards"] = {
+			["Blockerwiz-E"] = {
+				["Id"] =  1567564871,
+				["Bio"] = "Remember kids: eating raw eggs could give you salmonella poisoning! The symptoms of salmonella include chills, dehydration, diarrhea, fatigue, fever, headaches, loss of appetite, and pain areas in the abdomen or muscles.",
+			},
+		},
 		["Health"] = 900,
 		["Power"] = 450,
 		["Rarity"] = "Common",
@@ -8595,6 +8652,21 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Titan's Stone"] = {
 		["Id"] = 328831705,
 		["Name"] = "Titan's Stone",
+		["AltCards"] = {
+			["Titan's Stone-E"] = {
+				["Name"] = "Bunny Blob",
+				["Id"] = 1567565788,
+				["Bio"] = "Just a harmless bunny blob. Nothing more. Totally can’t summon giant titan blobs or anything. Totally not.",
+				["Effect"] = {
+					Name = "Stud",
+					Description = "Can't generate icons. Set the power of this fighter to 0 at the end of your turns.",
+					["Type"] = "OnEnd",
+					["Power"] = "Weaken",
+					Target = "Self",
+					Increase = 9999,
+				},
+			},
+		},
 		["Health"] = 500,
 		["Power"] = 0,
 		["Rarity"] = "Common",
@@ -8617,6 +8689,21 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Recruiter of the Titans"] = {
 		["Id"] = 328831691,
 		["Name"] = "Recruiter of the Titans",
+		["AltCards"] = {
+			["Recruiter-E"] = {
+				["Name"] = "Recruiter of the Bunny Blobs",
+				["Id"] = 1567582533,
+				["Bio"] = "Evewybody, pwease, get in hewe! I would be ewew gwateful if you did! uwu",
+				["Effect"] = {
+					Name = "Stud",
+					Description = [[At the end of of your turns, put a Bunny Blob into your hand. This card can't generate icons.]],
+					["Type"] = "OnEnd",
+					["Power"] = "Add",
+					Target = "Ally",
+					Increase = "Titan's Stone-E",
+				},
+			},
+		},
 		["Health"] = 600,
 		["Power"] = 0,
 		["Rarity"] = "Uncommon",
@@ -8626,7 +8713,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = [[At the end of of your turns, put a "Titan's Stone" to your hand. This card can't generate icons.]],
+			Description = [[At the end of of your turns, put a Titan's Stone into your hand. This card can't generate icons.]],
 			["Type"] = "OnEnd",
 			["Power"] = "Add",
 			Target = "Ally",
@@ -8638,6 +8725,21 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Titan of the Infernal Abyss"] = {
 		["Id"] = 328831698,
 		["Name"] = "Titan of the Infernal Abyss",
+		["AltCards"] = {
+			["Titan of the Infernal Abyss-E"] = {
+				["Name"] = "Bunny Blob of the Infernal Abyss",
+				["Id"] = 1567569380,
+				["Bio"] = "Guarding a pit of fire is pretty lame. Guarding an empty pit is even lamer.",
+				["Effect"] = {
+					Name = "Stud",
+					Description = "You must control at least 1 Bunny Blob to summon this card. When this card is summoned, deal 500 damage to all Non-Blobs.",
+					["Type"] = "OnSummon",
+					["Power"] = "Damage",
+					Target = "NotArchetype",
+					Increase = 500,
+				},
+			},
+		},
 		["Health"] = 2000,
 		["Power"] = 0,
 		["Rarity"] = "Rare",
@@ -8660,6 +8762,21 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Titan of the Deep Below"] = {
 		["Id"] = 328831715,
 		["Name"] = "Titan of the Deep Below",
+		["AltCards"] = {
+			["Titan of the Deep Below-E"] = {
+				["Name"] = "Bunny Blob of the Deep Below",
+				["Id"] = 1567566958,
+				["Bio"] = "April showers bring May flowers. April floods ruin harvests of spuds.",
+				["Effect"] = {
+					Name = "Stud",
+					Description = "You must have at least 1 Bunny Blob in play to summon this card. When this card is summoned, lock all Non-Blobs for 3 turns.",
+					["Type"] = "OnSummon",
+					["Power"] = "Lock",
+					Target = "NotArchetype",
+					Increase = 3,
+				},
+			},
+		},
 		["Health"] = 2000,
 		["Power"] = 0,
 		["Rarity"] = "Rare",
@@ -8682,6 +8799,21 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Titan of the Dying Forest"] = {
 		["Id"] = 328831713,
 		["Name"] = "Titan of the Dying Forest",
+		["AltCards"] = {
+			["Titan of the Dying Forest-E"] = {
+				["Name"] = "Bunny Blob of the Dying Forest",
+				["Id"] = 1567567466,
+				["Bio"] = "Easter is a celebration of life and rebirth, yet so much material is wasted wrapping candy eggs. Hypocritical, really.",
+				["Effect"] = {
+					Name = "Stud",
+					Description = "You must control at least 1 Bunny Blob to summon this card. When this card is summoned, all Blobs gain 1000 Health.",
+					["Type"] = "OnSummon",
+					["Power"] = "Heal",
+					Target = "Archetype",
+					Increase = 1000,
+				},
+			},
+		},
 		["Health"] = 2000,
 		["Power"] = 0,
 		["Rarity"] = "Rare",
@@ -8692,7 +8824,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 5,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "You must control at least 1 titan to summon this card. When this card is summoned, all Titan(s) gain 1000 Health.",
+			Description = "You must control at least 1 titan to summon this card. When this card is summoned, all Titans gain 1000 Health.",
 			["Type"] = "OnSummon",
 			["Power"] = "Heal",
 			Target = "Archetype",
@@ -8704,6 +8836,20 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Titan of the Fried One"] = {
 		["Id"] = 328831709,
 		["Name"] = "Titan of the Fried One",
+		["AltCards"] = {
+			["Titan of the Fried One-E"] = {
+				["Name"] = "Bunny Blob of the Fried One",
+				["Id"] = 1567568071,
+				["Bio"] = "Rabbits are higher on the food chain now…",
+				["Effect"] = {
+					Name = "Stud",
+					Description = "You must control at least 1 Bunny Blob to summon this card. Increase the health and power of all Blobs by 500.",
+					["Type"] = "OnSummon",
+					["Power"] = {{"Heal",500},{"Strengthen",500}},
+					Target = "Archetype",
+				},
+			},
+		},
 		["Health"] = 2000,
 		["Power"] = 0,
 		["Rarity"] = "Rare",
@@ -8725,6 +8871,20 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Titan of the Holy Chamber"] = {
 		["Id"] = 328831700,
 		["Name"] = "Titan of the Holy Chamber",
+		["AltCards"] = {
+			["Titan of the Holy Chamber-E"] = {
+				["Name"] = "Bunny Blob of the Holy Chamber",
+				["Id"] = 1567568604,
+				["Bio"] = "The arrival of titan signalled the beginning of the nega-rapture: The spirits of all blobbunnies would coalesce and form the Blobgotten One.",
+				["Effect"] = {
+					Name = "Stud",
+					Description = [[You must control at least 1 Bunny Blob to summon this card. Set the power of all non-Blobs to 0. Put "The Blobgotten One" to your hand.]],
+					["Type"] = "OnSummon",
+					["Power"] = {{"SetPower",0},{"Add","The Blobgotten One"}},
+					Target = "NotArchetype",
+				},
+			},
+		},
 		["Health"] = 2000,
 		["Power"] = 0,
 		["Rarity"] = "Rare",
@@ -8735,9 +8895,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 5,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = [[You must control at least 1 titan to summon this card. Set the power of all non-Titans to 200. Put "The Forgotten One" to your hand.]],
+			Description = [[You must control at least 1 titan to summon this card. Set the power of all non-Titans to 0. Put "The Forgotten One" to your hand.]],
 			["Type"] = "OnSummon",
-			["Power"] = {{"SetPower",200},{"Add","The Forgotten One"}},
+			["Power"] = {{"SetPower",0},{"Add","The Forgotten One"}},
 			Target = "NotArchetype",
 		},
 		["Bio"] = "Probably just gonna be standard anti-aggro used in every second deck, but the thought is nice.",
@@ -8746,6 +8906,20 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["The Forgotten One"] = {
 		["Id"] = 328831702,
 		["Name"] = "The Forgotten One",
+		["AltCards"] = {
+			["The Blobgotten One"] = {
+				["Name"] = "The Blobgotten One",
+				["Id"] = 1567585398,
+				["Bio"] = "There was no reason to pray. Its arrival was already an act of the gods.",
+				["Effect"] = {
+					Name = "Stud",
+					Description = [[You must control at least 4 Bunny Blobs to summon this card. At the end of each turn, deal 4000 damage to all Non-Blobs, then unlock all Blobs.]],
+					["Type"] = "OnEnd",
+					["Power"] = {{"Damage",4000,"NotArchetype",},{"Unlock",999,"Archetype"}},
+					Target = "NotArchetype",
+				},
+			},
+		},
 		["Health"] = 5000,
 		["Power"] = 5000,
 		["Rarity"] = "Token",
@@ -8828,6 +9002,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Plushie Mummy"] = {
 		["Id"] = 332863678,
 		["Name"] = "Plushie Mummy",
+		["AltCards"] = {
+			["Plushie Mummy-E"] = {
+				["Name"] = "Plushie Bunny",
+				["Id"] = 1567581644,
+				["Bio"] = "The food chain goes something like blobunnies, then regular bunnies, then amorphous blobs of eldritch ooze that babble incoherently about your sins.",
+			},
+		},
 		["Health"] = 300,
 		["Power"] = 300,
 		["Rarity"] = "Uncommon",
@@ -9206,6 +9387,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["JJ5x5"] = {
 		["Id"] = 1226640246,
 		["Name"] = "JJ5x5",
+		["AltCards"] = {
+			["JJ5x5-E"] = {
+				["Id"] = 1567576716,
+				["Bio"] = "Just a fellow, playing with his pet rabbit and running from the weirdo... he is the hat of course.",
+			},
+		},
 		["Health"] = 500,
 		["Power"] = 300,
 		["Rarity"] = "Rare",
@@ -10424,6 +10611,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["ReverseBackwards"] = {
 		["Id"] = 358606026,
 		["Name"] = "ReverseBackwards",
+		["AltCards"] = {
+			["ReverseBackwards-E"] = {
+				["Id"] = 1567583243,
+				["Bio"] = "えぐえぐえぐえぐえぐえぐえぐ",
+			},
+		},
 		["Health"] = 700,
 		["Power"] = 750,
 		["Rarity"] = "Legendary",
@@ -10735,6 +10928,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["wer8888"] = {
 		["Id"] = 362315297,
 		["Name"] = "wer8888",
+		["AltCards"] = {
+			["Wer8888-E"] = {
+				["Id"] = 1567587396,
+				["Bio"] = "I gave up on egg hunting long ago. All I could ever find were pumpkin bombs.",
+			},
+		},
 		["Health"] = 800,
 		["Power"] = 200,
 		["Rarity"] = "Common",
@@ -12586,6 +12785,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Card Hoarder"] = {
 		["Id"] = 411843983,
 		["Name"] = "Card Hoarder",
+		["AltCards"] = {
+			["Card Hoarder-E"] = {
+				["Name"] = "Egg Hoarder",
+				["Id"] = 1567572871,
+				["Bio"] = "Collecting eggs since 2008.",
+			},
+		},
 		["Health"] = 500,
 		["Power"] = 250,
 		["Rarity"] = "Rare",
@@ -14553,6 +14759,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Western Bandit"] = {
 		["Id"] = 430960897,
 		["Name"] = "Western Bandit",
+		["AltCards"] = {
+			["Western Bandit-E"] = {
+				["Id"] = 1567591506,
+				["Bio"] = "He ALWAYS ruins easter for the cowboys…",
+			},
+		},
 		["Health"] = 250,
 		["Power"] = 250,
 		["Rarity"] = "Common",
@@ -17164,6 +17376,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Mafia Grunt"] = {
 		["Id"] = 518352766,
 		["Name"] = "Mafia Grunt",
+		["AltCards"] = {
+			["Mafia Grunt-E"] = {
+				["Id"] = 1567579853,
+				["Bio"] = "baddabing badaboom fugeddaboutit HAY I’M WALKEN HEER",
+			},
+		},
 		["Health"] = 400,
 		["Power"] = 400,
 		["Rarity"] = "Uncommon",

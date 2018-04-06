@@ -2068,6 +2068,20 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Script Robber"] = {
 		["Id"] = 540076456,
 		["Name"] = "Script Robber",
+		["AltCards"] = {
+			["Script Robber-E"] = {
+				["Name"] = "Egg Robber",
+				["Id"] = 1567583873,
+				["Bio"] = "It’s not stealing, it’s HUNTING.",
+				["Effect"] = {
+					Name = "Haydoscale",
+					Description = "When this card is summoned, put a random red or blue action into your hand. At the end of your turns, all fighters lose 25 power and Egg Robber gains 150 power.",
+					["Type"] = "OnSummon",
+					["Power"] = {{"Summon","Robber Token-E",},{"RandomAdd","Lunar"},{"Damage",9999,"Self"}},
+					Target = "Ally",
+				},
+			},
+		},
 		["Health"] = 600,
 		["Power"] = 0,
 		["Rarity"] = "Common",
@@ -2088,6 +2102,20 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Robber Token"] = {
 		["Id"] = 540076456,
 		["Name"] = "Script Robber",
+		["AltCards"] = {
+			["Robber Token-E"] = {
+				["Name"] = "Egg Robber",
+				["Id"] = 1567583873,
+				["Bio"] = "It’s not stealing, it’s HUNTING.",
+				["Effect"] = {
+					Name = "Haydoscale",
+					Description = "When this card is summoned, put a random red or blue action into your hand. At the end of your turns, all fighters lose 25 power and Egg Robber gains 150 power.",
+					["Type"] = "OnEnd",
+					["Power"] = {{"Strengthen",175,"Self"},{"Weaken",25}},
+					Target = "All",
+				},
+			},
+		},
 		["Health"] = 600,
 		["Power"] = 0,
 		["Rarity"] = "Token",
