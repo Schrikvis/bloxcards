@@ -4099,6 +4099,22 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["ThatGrimGuy"] = {
 		["Id"] = 1328298822,
 		["Name"] = "ThatGrimGuy",
+		["AltCards"] = {
+			["ThatGrimGuy-Alt"] = {
+				["Id"] = 1590119716,
+				["AltArt"] = true,
+				["Name"] = "ThatGrimGuy",
+				["AttackEffect"] = "UziShot",
+				["Effect"] = {
+					Name = "Not TheGrimGuy",
+					Description = "This card triggers death effects twice when it dies.",
+					["Type"] = "OnDeath",
+					["Power"] = {{"SummonWithEffect","ThatGrimGuyTOKEN-Alt"}},
+					Target = "Ally",
+				},
+				["Bio"] = "As opposed to any other.",
+			},
+		},
 		["Health"] = 300,
 		["Power"] = 600,
 		["Rarity"] = "Common",
@@ -4118,6 +4134,20 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["ThatGrimGuyTOKEN"] = {
 		["Id"] = 1328298822,
 		["Name"] = "ThatGrimGuy",
+		["AltCards"] = {
+			["ThatGrimGuyTOKEN-Alt"] = {
+				["Id"] = 1590119716,
+				["Name"] = "ThatGrimGuy",
+				["Effect"] = {
+					Name = "Oof",
+					Description = "This card is supposed to die via ThatGrimGuy's effect.",
+					["Type"] = "OnSummon",
+					["Power"] = {{"Damage",9999}},
+					Target = "Self",
+				},
+				["Bio"] = "As opposed to any other.",
+			},
+		},
 		["Health"] = 300,
 		["Power"] = 600,
 		["Rarity"] = "Common",
