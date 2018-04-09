@@ -4711,7 +4711,30 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Ally",
 		},
 		["Bio"] = "Nothing can survive here...besides ultras.",
-	},	
+	},
+	
+	["jojobinks321"] = {
+		["Id"] = 1592312157,
+		["Name"] = "jojobinks321",
+ 		["Health"] = 800,
+ 		["Power"] = 800,
+		["Rarity"] = "Legendary",
+		["Archetype"] = "Nightmare",
+		["Requirement"] = {"Archetype",1},
+		["AttackEffect"] = "Lightning",
+ 		["Color"] = "Green",
+ 		["Cost"] = {["Green"] = 3, ["Neutral"] = 3,}, 
+ 		["Effect"] = {
+ 			Name = "Restless Reward",
+ 			Description = "Can only be summoned if you control at least one Nightmare. Shuffle six nightmares into your deck.",
+ 			["Type"] = "OnSummon",
+ 			["Power"] = {{"DeckAdd","Nightmare"},{"DeckAdd","Nightmare"},{"DeckAdd","Nightmare"},{"DeckAdd","Nightmare"},{"DeckAdd","Nightmare"},{"DeckAdd","Nightmare"}},
+ 			Target = "Ally",
+ 		},
+ 		["Bio"] = "Wake up? Give me more time. Your hope is mine to treasure.",
+	},
+
+
 	
 }
 return tentwelvesixteen
