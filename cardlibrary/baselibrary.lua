@@ -1148,6 +1148,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "PunchKick",
 		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 1,["Red"] = 1,},
+		["Effect"] = {
+			Name = "Light Burn",
+			Description = "Deal 100 damage to the opponent.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Inflict",100}},
+			Target = "Opponent",
+		},
 		["Bio"] = "Powerful fighter with his MLG-certified meal to keep him ready for more foes.",
 	},
 	
@@ -2311,7 +2318,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Weaken",100},{"Heal",400}},
 			Target = "Ally",
 		},
-		["Bio"] = "Also known as drager980, Drager is the sole scripter of Blox Cards and is secretly a wizard.",
+		["Bio"] = "Also known as drager980, Drager is the original scripter of Blox Cards and is secretly a wizard.",
 	},
 	
 	["FatherChristmaz"] = {
@@ -5548,7 +5555,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Haunted Mansion-Sun"] = {
 				["Name"] = "Haunted Ship",
 				["Id"] = 1402764709,
-				["Bio"] = "*-Jaws Theme Plays-",
+				["Bio"] = "*-Jaws Theme Plays-*",
 			},
 		},	
 		["Health"] = 0,
@@ -9710,7 +9717,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Wishnite-ArtV"] = {
 				["Name"] = "SilentNite",
-				["AltArt"] = true,
 				["Id"] = 585627393,
 				["Bio"] = "No presents. No turkey. No festivity allowed.",
 			},
@@ -12277,11 +12283,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Lightning",
 		["WeakenImmune"] = true,
+		["SetImmune"] = true,
 		["Color"] = "Green",
 		["Cost"] = {["Green"] = 10,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "This card is immune to cards that lower its health or power.",
+			Description = "This card is immune to cards that lower or set its health or power.",
 			["Type"] = "OnTarget",
 			["Power"] = "None",
 			Target = "Self",	
