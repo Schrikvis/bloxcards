@@ -410,6 +410,7 @@ local packs = {
 		Description = "Green is the colour of life, growth, and the primal forces. Vitality packs contain cards that cost green!",
 		Cards = {
 			"jojobinks321",
+			"Enriched Neutrinous",
 			"Damarioguy",
 			"BandiheartYT",
 			"Indoorsnowball",
@@ -1036,6 +1037,7 @@ local packs = {
 		Cards = {
 			"jojobinks321",
 			"Sands of Purgatory",
+			"Enriched Neutrinous",
 			"rachjumper",
 			"DunclubDuncan",
 			"Damarioguy",
@@ -1112,7 +1114,6 @@ local packs = {
 			"Confusion Elemental?",
 			"Delirious Ooze",
 			"Great Paraselene Sage",
-			"Satyr Firemaster",
 			-- PAST THIS POINT IS FOR WHITE CARDS AND JOKE CARDS ONLY. I'M LOOKING AT YOU, BLITZ.
 			"SpeedySeat",
 			"Dukran the Celestial",
