@@ -922,7 +922,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Krazy Boost",
-			Description = "Increase the power of a target fighter by 100. This card can't generate icons. This card does not trigger effects upon dying.",
+			Description = "A target fighter gains 100 Power. This card can't generate icons and doesn't trigger effects upon death.",
 			["Type"] = "OnSummon",
 			["Power"] = "Strengthen",
 			Target = "Single",
@@ -6050,7 +6050,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Charge"] = true,
 		["Effect"] = {
 			Name = "Charge",
-			Description = "Haste. Reduce the power of a target fighter by 300.",
+			Description = "Haste. A target fighter loses 300 Power.",
 			["Type"] = "OnSummon",
 			["Power"] = "Weaken",
 			Target = "Single",
@@ -11939,7 +11939,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Subversion",
-			Description = "Target fighter's stats become 500/500.",
+			Description = "Set a target fighter's stats to 500/500.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"SetHealth",500},{"SetPower",500}},
 			Target = "Single",	
@@ -12801,7 +12801,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Recognize",
-			Description = "Draw a card per turn.",
+			Description = "At the end of your turns, draw a card.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Draw",1}},
 			Target = "Ally",
@@ -13147,7 +13147,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Blue"] = 1,["Green"] = 1,["Yellow"] = 1,["Red"] = 1,},
 		["Effect"] = {
 			Name = "SCRIPTING PARTY",
-			Description = "Deal 200 damage to all yellow fighters, lower the power of all red fighters by 200, swap the health and power of all green fighters and lock all blue fighters for one turn.",
+			Description = "Deal 200 damage to all yellow fighters. All red fighters lose 200 Power. Swap the stats of all green fighters. Lock all blue fighters for one turn.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",200,"ColorYellow"},{"Weaken",200,"ColorRed"},{"Lock",2,"ColorBlue"},{"Swap",030,"ColorGreen"}},
 			Target = "All",
@@ -15790,7 +15790,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1, ["Green"] = 5,},
 		["Effect"] = {
 			Name = "Alien Probe",
-			Description = "At the end of each turn, set the stats of all allied fighters to 700/200 and reveal your opponent's hand.",
+			Description = "At the end of your turns, set the stats of all allied fighters to 700/200 and reveal your opponent's hand.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"SetHealth",700},{"SetPower",200},{"RevealHand",999,"Opponent"}},
 			Target = "Ally",
@@ -16322,12 +16322,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 2,},
 		["Effect"] = {
 			Name = "WoodReviewer",
-			Description = "When this card is summoned, put a random overseer card into your hand. Whenever your opponent casts an action or terrain spell, return it to your hand. This card does not trigger effects upon death.",
+			Description = "Put a random overseer card into your hand. Whenever your opponent casts an action or terrain spell, return it to your hand. This card doesn't trigger effects upon death.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"RandomAdd","Overseer"},{"Summon","Overseer Drake Token"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
-		["Bio"] = "The messengers of the overseer army, Overseer Drakes deliver the word of their masters to overgrow any land they come across.",
+		["Bio"] = "The messengers of the overseer army.",
 	},
 
 	["Overseer Drake Token"] = {
@@ -16343,12 +16343,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 2,},
 		["Effect"] = {
 			Name = "WoodReviewer",
-			Description = "When this card is summoned, put a random overseer card into your hand. Whenever your opponent casts an action or terrain spell, return it to your hand. This card does not trigger effects upon death.",
+			Description = "Whenever your opponent casts an action or terrain spell, return it to your hand. This card doesn't trigger effects upon death.",
 			["Type"] = "OnEnemyCast",
 			["Power"] = {{"Add","Overseer Drake"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
-		["Bio"] = "The messengers of the overseer army, Overseer Drakes deliver the word of their masters to overgrow any land they come across.",
+		["Bio"] = "The messengers of the overseer army.",
 	},
 
 	["666"] = {
