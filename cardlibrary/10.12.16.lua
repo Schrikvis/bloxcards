@@ -344,6 +344,12 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Jeeeeesus"] = {
 		["Id"] = 581984573,
 		["Name"] = "Jeeeeesus",
+		["AltCards"] = {
+			["Jeeeeesus-E"] = {
+				["Id"] = 1567575786,
+				["Bio"] = "I tried to teach them peace… and I will teach them again… BY FORCE!",
+			},
+		},
 		["Health"] = 222,
 		["Power"] = 2222.22,
 		["Rarity"] = "Legendary",
@@ -352,9 +358,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 5,},
 		["Effect"] = {
 			Name = "Reincarnation",
-			Description = "Your opponent draws 4 cards. End the turn.",
+			Description = "Your opponent draws 5 cards. End the turn.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Draw",4},{"EndTurn",030,"Ally"}},
+			["Power"] = {{"Draw",5},{"EndTurn",030,"Ally"}},
 			Target = "Opponent",
 		},
 		["Bio"] = "Christ!",
@@ -706,9 +712,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 620408233,
 				["Effect"] = {
 					Name = "Pyrotechnics",
-					Description = "You gain 1000 life. Whenever you gain life, set your white and green icons to 3.",
+					Description = "You gain 1000 life. Whenever you gain life, set your white and green icons to 3. This fighter doesn't trigger its own effect.",
 					["Type"] = "OnSummon",
-					["Power"] = {{"Summon","Kariu2-ArtV"},{"Cost",-1000},{"Damage",9999,"Self"}},
+					["Power"] = {{"Cost",-1000},{"Summon","Kariu2-ArtV"},{"Damage",9999,"Self"}},
 					Target = "Ally",
 				},
 			},
@@ -722,9 +728,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 4,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "You gain 1000 life. Whenever you gain life, set your white and green icons to 3.",
+			Description = "You gain 1000 life. Whenever you gain life, set your white and green icons to 3. This fighter doesn't trigger its own effect.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Summon","Kariu2"},{"Cost",-1000},{"Damage",9999,"Self"}},
+			["Power"] = {{"Cost",-1000},{"Summon","Kariu2"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Consider me blessed.",
@@ -855,6 +861,12 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Eye of Heaven"] = {
 		["Id"] = 1402761393,
 		["Name"] = "Eye of Heaven",
+		["AltCards"] = {
+			["Eye of Heaven-E"] = {
+				["Id"] = 1567574689,
+				["Bio"] = "This is the last image your opponents see before they are murdered by Jesus himself.",
+			},
+		},
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Legendary",
@@ -2594,6 +2606,12 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Mlgloga"] = {
 		["Id"] = 785621104,
 		["Name"] = "Mlgloga",
+		["AltCards"] = {
+			["Mlgloga-E"] = {
+				["Id"] = 1567580849,
+				["Bio"] = "Place your bets on who gets the egg first.",
+			},
+		},
 		["Health"] = 700,
 		["Power"] = 700,
 		["Rarity"] = "Uncommon",
@@ -4081,6 +4099,22 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["ThatGrimGuy"] = {
 		["Id"] = 1328298822,
 		["Name"] = "ThatGrimGuy",
+		["AltCards"] = {
+			["ThatGrimGuy-Alt"] = {
+				["Id"] = 1590119716,
+				["AltArt"] = true,
+				["Name"] = "ThatGrimGuy",
+				["AttackEffect"] = "UziShot",
+				["Effect"] = {
+					Name = "Not TheGrimGuy",
+					Description = "This card triggers death effects twice when it dies.",
+					["Type"] = "OnDeath",
+					["Power"] = {{"SummonWithEffect","ThatGrimGuyTOKEN-Alt"}},
+					Target = "Ally",
+				},
+				["Bio"] = "As opposed to any other.",
+			},
+		},
 		["Health"] = 300,
 		["Power"] = 600,
 		["Rarity"] = "Common",
@@ -4100,6 +4134,20 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["ThatGrimGuyTOKEN"] = {
 		["Id"] = 1328298822,
 		["Name"] = "ThatGrimGuy",
+		["AltCards"] = {
+			["ThatGrimGuyTOKEN-Alt"] = {
+				["Id"] = 1590119716,
+				["Name"] = "ThatGrimGuy",
+				["Effect"] = {
+					Name = "Oof",
+					Description = "This card is supposed to die via ThatGrimGuy's effect.",
+					["Type"] = "OnSummon",
+					["Power"] = {{"Damage",9999}},
+					Target = "Self",
+				},
+				["Bio"] = "As opposed to any other.",
+			},
+		},
 		["Health"] = 300,
 		["Power"] = 600,
 		["Rarity"] = "Common",
