@@ -1574,9 +1574,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 4,},
 		["Effect"] = {
 			Name = "Hellfire",
-			Description = "Whenever you summon a fighter, deal 400 damage to ChaoticCommando and give that fighter 100 power.",
+			Description = "Whenever you summon a fighter, deal 400 damage to ChaoticCommando and give that fighter 200 power.",
 			["Type"] = "OnAllySummon",
-			["Power"] = {{"Damage",400},{"Strengthen",100,"Aggressor"}},
+			["Power"] = {{"Damage",400},{"Strengthen",200,"Aggressor"}},
 			Target = "Self",
 		},
 		["Bio"] = "If chaos could ever be controlled, world peace would be restored. *It* begs to differ...",
@@ -4543,11 +4543,16 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Hero",
 		["Color"] = "Green",
 		["Cost"] = {["Green"] = 3, ["Neutral"] = 3,},
+		["WeakenImmune"] = true,
+		["SwapImmune"] = true,
+		["SetImmune"] = true,
+		["StrenghtenImmune"] = true,
+		["HealImmune"] = true,
 		["Effect"] = {
-			Name = "Tombstone",
-			Description = "At the end of your turns, shove Tom's Beans into your hand.",
-			["Type"] = "OnEnd",
-			["Power"] = {{"Add","Tom's Beans"}},
+			Name = "BEANAENAED",
+			Description = "This card is immune to all stat-changing effects. Whenever you target this card, return tl_rd and shove Tom's Beans into your hand.",
+			["Type"] = "OnTarget",
+			["Power"] = {{"Add","Tom's Beans"},{"Return",030,"Self"}},
 			["Target"] = "Ally",
 		},
 		["Bio"] = "#KelloggsGoneWild can u guys make some and vote or something He Certainly Is. What kind of monster cooks beans in a bloxy cola can? His life motto: The future is bright. Beans, beans, the musical fruit! The more you eat, the more you toot! The more you toot, the better you feel! So we have beans at every meal! idk Yes, I am BLACK. Green is love, green is life.",
@@ -4734,6 +4739,30 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
  		["Bio"] = "Wake up? Give me more time. Your hope is mine to treasure.",
 	},
 
+
+	
+	["Rubber Duck"] = {
+		["Id"] = 1555340100,
+		["Name"] = "Rubber Duck",
+		["Health"] = 0,
+		["Power"] = 0,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Lightning",
+		["Color"] = "Yellow",
+		["Archetype"] = "Target",
+		["Token"] = true,
+		["DiscardBlock"] = true,
+		["Stealth"] = true,
+		["Cost"] = {["Neutral"] = 0,},
+		["Effect"] = {
+			Name = "Quack",
+			Description = "It does absolutely nothing.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Damage",0}},
+			Target = "Ally",
+		},
+		["Bio"] = "TEH EPIK DUCK IS COMING!!!",
+	},
 
 	
 }
