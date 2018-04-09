@@ -17093,7 +17093,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Defender",
 		["Cost"] = {["Yellow"] = 1,["Blue"] = 1,["Green"] = 1,["Red"] = 1,["Neutral"] = 4,}, 
 		["Effect"] = {
-			Name = "Police Brutality",
+			Name = "Brutality",
 			Description = "When this card is targeted, gain one of every icon. Wowwow can't attack.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Blue",1},{"Green",1},{"White",1},{"Yellow",1},{"Red",1}},
