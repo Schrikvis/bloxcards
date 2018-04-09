@@ -184,6 +184,7 @@ local packs = {
 		CardPackId = 842435184, --721400845,
 		Description = "Red is the colour of power, ambition, and control. Dominion packs contain cards that cost red!",
 		Cards = {
+			"Sands of Purgatory",
 			"rachjumper",
 			"Steel Chair",
 			"DrWeaseI",
@@ -409,6 +410,7 @@ local packs = {
 		CardPackId = 721399805,
 		Description = "Green is the colour of life, growth, and the primal forces. Vitality packs contain cards that cost green!",
 		Cards = {
+			"Haunted Mansion",
 			"jojobinks321",
 			"Enriched Neutrinous",
 			"Damarioguy",
