@@ -409,7 +409,9 @@ local packs = {
 		CardPackId = 721399805,
 		Description = "Green is the colour of life, growth, and the primal forces. Vitality packs contain cards that cost green!",
 		Cards = {
+			"jojobinks321",
 			"Damarioguy",
+			"BandiheartYT",
 			"Indoorsnowball",
 			"Shaylan007",
 			"Wooden Chair",
@@ -814,6 +816,7 @@ local packs = {
 		CardPackId = 721400239,
 		Description = "Yellow is the colour of chaos, emotion, and society. Revel packs contain cards that cost yellow!",
 		Cards = {
+			"BrandonOccult",
 			"SpeedySeat",
 			"Royal Chair",
 			"lolbeniceok",
@@ -1031,6 +1034,8 @@ local packs = {
 		Description = "Exotic new cards from the black market! White cards and joke cards! It's all yours, as long as you have 10 wins!",
 		WinRequirement = 10;
 		Cards = {
+			"jojobinks321",
+			"Sands of Purgatory",
 			"rachjumper",
 			"DunclubDuncan",
 			"Damarioguy",
@@ -1108,8 +1113,6 @@ local packs = {
 			"Delirious Ooze",
 			"Great Paraselene Sage",
 			"Satyr Firemaster",
-			"BandiheartYT",
-			"BrandonOccult",
 			-- PAST THIS POINT IS FOR WHITE CARDS AND JOKE CARDS ONLY. I'M LOOKING AT YOU, BLITZ.
 			"SpeedySeat",
 			"Dukran the Celestial",
@@ -1189,6 +1192,7 @@ local packs = {
 			"Lunar Warrior",
 			"Mimic",
 			"Berezaa",
+			"Sands of Purgatory",
 			"Titano's Cavern",
 			"Sword Fights on the Heights",
 			"Haunted Mansion",
@@ -1460,6 +1464,7 @@ local packs = {
 			"Accursed Gate",
 			"Uncreativename123",
 			"Uncreation",
+			"jojobinks321",
 			"Grandmasters Ninja Dojo",
 			"Froot Ninja",
 			"Snowskateer",
