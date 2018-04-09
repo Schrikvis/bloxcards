@@ -4738,8 +4738,6 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
  		},
  		["Bio"] = "Wake up? Give me more time. Your hope is mine to treasure.",
 	},
-
-
 	
 	["Rubber Duck"] = {
 		["Id"] = 1555340100,
@@ -4763,7 +4761,5 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "TEH EPIK DUCK IS COMING!!!",
 	},
-
-	
 }
 return tentwelvesixteen
