@@ -4005,7 +4005,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Test",
 			Description = "MST_SUMMONINGEFFECT_DESCRIPTION",
 			["Type"] = "OnEnd",
-			["Power"] = {{"RandomSummon",{"Test Dummy","Test DummyA","Test DummyB","Test DummyC","Test DummyD}}},
+			["Power"] = {{"RandomSummon",{"Test Dummy","Test DummyA","Test DummyB","Test DummyC","Test DummyD"}}},
 			Target = "Ally",
 		},
 		["Bio"] = "MST_WORLDDOMINATION_DESCRIPTION",
