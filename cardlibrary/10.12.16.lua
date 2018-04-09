@@ -3979,6 +3979,19 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 					Target = "Archetype",
 				},
 			},
+			
+			["Test DummyD"] = {
+				["Health"] = 200,
+				["Power"] = 200,
+				["Rarity"] = "Token",
+				["Effect"] = {
+					Name = "Test",
+					Description = "MST_SUMMONERREFUNDEREFFECT_DESCRIPTION",
+					["Type"] = "OnDeath",
+					["Power"] = {{"Add","Test Dummy"}},
+					Target = "Ally",
+				},
+			},
 		},
 		["Health"] = 200,
 		["Power"] = 200,
@@ -3992,10 +4005,10 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Test",
 			Description = "MST_SUMMONINGEFFECT_DESCRIPTION",
 			["Type"] = "OnEnd",
-			["Power"] = {{"RandomSummon",{"Test Dummy","Test DummyA","Test DummyB","Test DummyC"}}},
+			["Power"] = {{"RandomSummon",{"Test Dummy","Test DummyA","Test DummyB","Test DummyC","Test DummyD}}},
 			Target = "Ally",
 		},
-		["Bio"] = "MST_BIO_DESCRIPTION",
+		["Bio"] = "MST_WORLDDOMINATION_DESCRIPTION",
 	},
 	
 	["Silver_Semtexagon"] = {
