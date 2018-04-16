@@ -11691,9 +11691,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 3,["Green"] = 3,},
 			["Effect"] = {
 			Name = "Sneak Attack",
-			Description = "When this card enters play, set your green and yellow icons to four, then lose all other icons. At the end of your turns, generate a green icon.",
+			Description = "When this card enters play, set your green and yellow icons to four, lose all other icons, and end the turn. At the end of your turns, generate a green icon.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"SetYellow",4},{"SetGreen",4},{"SetBlue",0},{"SetRed",0},{"SetNeutral",0},{"Summon","Uncomfortably Token"},{"Damage",9999,"Self"}},
+			["Power"] = {{"SetYellow",4},{"SetGreen",4},{"SetBlue",0},{"SetRed",0},{"SetNeutral",0},{"Summon","Uncomfortably Token"},{"Damage",9999,"Self"},{"EndTurn",1}},
 			Target = "Ally",
 		},
 		["Bio"] = "This is the kind of name that makes me flinch.",
@@ -11711,7 +11711,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 3,["Green"] = 3,},
 			["Effect"] = {
 			Name = "Sneak Attack",
-			Description = "When this card enters play, set your green and yellow icons to four, then lose all other icons. At the end of your turns, generate a green icon.",
+			Description = "At the end of your turns, generate a green icon.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Green",1}},
 			Target = "Ally",
@@ -17135,9 +17135,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Racism is baaaaaaaaaaaaaaaaaaaaaaad",
-			Description = "You lose 1500 Life. Put a random Overseer, Zombie, Doge, and Toy card into your hand.",
+			Description = "You lose 1500 Life. Put a random Overseer, Zombie, Doge, and Toy card into your hand. End the turn.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Cost",1500},{"RandomAdd","Overseer"},{"RandomAdd","Zombie"},{"RandomAdd","Doge"},{"RandomAdd","Toy"}},
+			["Power"] = {{"Cost",1500},{"RandomAdd","Overseer"},{"RandomAdd","Zombie"},{"RandomAdd","Doge"},{"RandomAdd","Toy"},{"EndTurn",1}},
 			Target = "Ally",
 		},
 		["Bio"] = "I can be anything you want, babe.",
