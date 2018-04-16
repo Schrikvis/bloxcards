@@ -666,7 +666,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Summon","Visleaf"},{"Weaken",200,"All"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
-		["Bio"] = "Zanzel was disgusted at the mess she saw. So odd, so imperfect.",
+		["Bio"] = "UPDATE THE GAME ALREADY, YOU STUPID BUNNY!",
 	},
 	
 	["DIY: Dark Dominus"] = {
