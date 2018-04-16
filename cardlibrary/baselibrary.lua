@@ -2013,10 +2013,11 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Red",
 		["Cost"] = {["Red"] = 3,},
 		["Archetype"] = "Ninja",
+		["Requirement"] = {"Archetype",1},		
 		["Bio"] = "Don't underestimate the amount of thrown ninja stars a noob can snatch!",
 		["Effect"] = {
 			Name = "Ninja Stars!",
-			Description = "Deal 300 damage to all non-Ninjas.",
+			Description = "Cast only if you control at least one Ninja. Deal 300 damage to all non-Ninjas.",
 			["Type"] = "OnSummon",
 			["Power"] = "Damage",
 			Target = "NotArchetype",
