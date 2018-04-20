@@ -6403,9 +6403,10 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Green",
 		["Cost"] = {["Green"] = 4,},
+		["Charge"] = true,
 		["Effect"] = {
 			Name = "Minigame Start!",
-			Description = "Gain 1 white icon and 500 life.",
+			Description = "Haste. Gain 1 white icon and 500 life.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Neutral",1},{"Cost",-500}},
 			Target = "Ally",
@@ -9363,7 +9364,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Yellow",
 		["Cost"] = {["Yellow"] = 5,["Neutral"] = 3,},
 		["Effect"] = {
-			Name = "Plushie Amp",
+			Name = "Apocalypse",
 			Description = "Whenever this card attacks and destroys a fighter, reset Gusmanak's stats.",
 			["Type"] = "OnAttackDestroy",
 			["Power"] = {{"SetHealth",1000},{"SetPower",500}},
