@@ -6138,7 +6138,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Even Out",
-			Description = "Set the power of all figthers to 400.",
+			Description = "Set the power of all fighters to 400.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"SetPower",400}},
 			Target = "All",
@@ -14252,7 +14252,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 5,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "At the end of your turn, put a random rare to your hand. This card can't generate icons.",
+			Description = "At the end of your turns, put a random rare into your hand. This card can't generate icons.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"RandomAdd","Rare"}},
 			Target = "Self",	
