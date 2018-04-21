@@ -14271,7 +14271,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 4, ["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Each time this card attacks, it becomes a 600/600.",
+			Description = "Whenever this card attacks, set its health and power to 600.",
 			["Type"] = "OnAttack",
 			["Power"] = {{"Weaken",9999},{"Strengthen",600},{"Swap",030},{"Weaken",9999},{"Strengthen",600}},
 			Target = "Self",	
