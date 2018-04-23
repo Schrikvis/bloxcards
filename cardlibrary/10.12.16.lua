@@ -4810,7 +4810,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Self",
 			Increase = 0,
 		},
-		["Bio"] = "???",
+		["Bio"] = "I'm too busy reading. I'll attack some other time.",
 	},
 	
 	["Cheesycakes"] = {
@@ -4829,7 +4829,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Heal",50},{"Strengthen",50},{"RandomAdd","Yellow"}},
 			Target = "Single",
 		},
-		["Bio"] = "???",
+		["Bio"] = "Cheesecakes are the true best cake, better than some silly half-baked pancake.",
 	},
 }
 return tentwelvesixteen
