@@ -780,7 +780,6 @@ local packs = {
 			"Salesman",
 			"Bloated",
 			"DDude",
-			"Kago",
 			"Regimen",
 			"Froot Ninja",
 			"Subata",
@@ -819,6 +818,7 @@ local packs = {
 		CardPackId = 721400239,
 		Description = "Yellow is the colour of chaos, emotion, and society. Revel packs contain cards that cost yellow!",
 		Cards = {
+			"Kago",
 			"BrandonOccult",
 			"SpeedySeat",
 			"Royal Chair",
