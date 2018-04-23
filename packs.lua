@@ -184,6 +184,7 @@ local packs = {
 		CardPackId = 842435184, --721400845,
 		Description = "Red is the colour of power, ambition, and control. Dominion packs contain cards that cost red!",
 		Cards = {
+			"ZeDerpyDonal",
 			"Sands of Purgatory",
 			"rachjumper",
 			"Steel Chair",
@@ -818,6 +819,7 @@ local packs = {
 		CardPackId = 721400239,
 		Description = "Yellow is the colour of chaos, emotion, and society. Revel packs contain cards that cost yellow!",
 		Cards = {
+			"Cheesycakes",
 			"Kago",
 			"BrandonOccult",
 			"SpeedySeat",
@@ -1037,6 +1039,8 @@ local packs = {
 		Description = "Exotic new cards from the black market! White cards and joke cards! It's all yours, as long as you have 10 wins!",
 		WinRequirement = 10;
 		Cards = {
+			"Cheesycakes",
+			"ZeDerpyDonal",
 			"jojobinks321",
 			"Sands of Purgatory",
 			"Enriched Neutrinous",
@@ -1114,8 +1118,6 @@ local packs = {
 			"iamlogic",
 			"Walyn",
 			"Confusion Elemental?",
-			"Delirious Ooze",
-			"Great Paraselene Sage",
 			-- PAST THIS POINT IS FOR WHITE CARDS AND JOKE CARDS ONLY. I'M LOOKING AT YOU, BLITZ.
 			"SpeedySeat",
 			"Dukran the Celestial",
@@ -1356,6 +1358,7 @@ local packs = {
 		Description = "Filled with only cards belonging to an archetype, this pack can help you finish your deck provided you have at least 10 wins.",
 		WinRequirement = 10;
 		Cards = {
+			"ZeDerpyDonal",
 			"AMerryCan",
 			"Creeperkiller510",
 			"Alar Myrmidon",
