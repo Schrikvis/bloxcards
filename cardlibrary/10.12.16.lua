@@ -4790,5 +4790,46 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "TEH EPIK DUCK IS COMING!!!",
 	},
+	
+	["ZeDerpyDonal"] = {
+		["Id"] = 1660333875,
+		["Name"] = "ZeDerpyDonal",
+		["Health"] = 1000,
+		["Power"] = 1000,
+		["Rarity"] = "Rare",
+		["AttackEffect"] = "Lightning",
+		["Color"] = "Blue",
+		["Cost"] = {["Neutral"] = 5,["Red"] = 1,},
+		["AttackBlock"] = true,
+		["Archetype"] = "Defender",
+		["Effect"] = {
+			Name = "Definitely Not StayBlue",
+			Description = "ZeDerpyDonal can't attack.",
+			["Type"] = "OnSummon",
+			["Power"] = "Damage",
+			Target = "Self",
+			Increase = 0,
+		},
+		["Bio"] = "???",
+	},
+	
+	["Cheesycakes"] = {
+		["Id"] = 1660265514,
+		["Name"] = "Cheesycakes",
+		["Health"] = 300,
+		["Power"] = 300,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Thunder",
+		["Color"] = "Yellow",
+		["Cost"] = {["Yellow"] = 2,["Neutral"] = 2,},
+		["Effect"] = {
+			Name = "Cake Amp",
+			Description = "A target fighter gains 50 Health and Power. Put a random yellow card into your hand.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Heal",50},{"Strengthen",50},{"RandomAdd","Yellow"}},
+			Target = "Single",
+		},
+		["Bio"] = "???",
+	},
 }
 return tentwelvesixteen
