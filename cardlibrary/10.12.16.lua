@@ -1879,6 +1879,13 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Shaylan007"] = {
 		["Id"] = 712738238,
 		["Name"] = "Shaylan007",
+		["AltCards"] = {
+			["Shaylan007-Alt"] = {
+				["Id"] =  1669804014,
+				["AltArt"] = true,
+				["Bio"] = "He's green, he's mean, he's- wait where did he go?",
+			},
+		},
 		["Health"] = 550,
 		["Power"] = 550,
 		["Rarity"] = "Legendary",
@@ -3879,6 +3886,21 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["midastheking123"] = {
 		["Id"] = 1233327678,
 		["Name"] = "midastheking123",
+		["AltCards"] = {
+			["midastheking123-Alt"] = {
+				["Id"] = 1670294064,
+				["AltArt"] = true,
+				["Name"] = "midasthekind123",
+				["Effect"] = {
+					Name = "Burning Fists of Rage",
+					Description = "Haste. When this card finishes attacking, summon マイダススタンド. It has haste.",
+					["Type"] = "OnAttackEnd",
+					["Power"] = {{"Summon","Midas's Stand-Alt","Ally"},{"Unlock",9999},{"Lock",1,"Self"}},
+					Target = "Archetype",
+				},
+				["Bio"] = "ザ・ワールド！",
+			},
+		},
 		["Health"] = 500,
 		["Power"] = 500,
 		["Rarity"] = "Legendary",
@@ -3900,6 +3922,20 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Midas's Stand"] = {
 		["Id"] = 1233326496,
 		["Name"] = "Midas's Stand",
+		["AltCards"] = {
+			["Midas's Stand-Alt"] = {
+				["Id"] = 1670295040,
+				["Name"] = "マイダススタンド",
+				["Effect"] = {
+					Name = "Burning Fists of Rage",
+					Description = "Haste. Destroy this card at the end of your turn. マイダススタンド does not trigger effects upon dying.",
+					["Type"] = "OnEnd",
+					["Power"] = {{"Damage",9999}},
+					Target = "Self",
+				},
+				["Bio"] = "くらえ！",
+			},
+		},
 		["Health"] = 500,
 		["Power"] = 500,
 		["Rarity"] = "Token",
