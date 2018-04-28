@@ -11692,9 +11692,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 4,["Green"] = 4,},
 			["Effect"] = {
 			Name = "Sneak Attack",
-			Description = "When this card enters play, set your green and yellow icons to four, lose all other icons, and end the turn. At the end of your turns, generate a green icon.",
+			Description = "When this card enters play, set your green and yellow icons to four and lose all other icons. At the end of your turns, generate a green icon.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"SetYellow",4},{"SetGreen",4},{"SetBlue",0},{"SetRed",0},{"SetNeutral",0},{"Summon","Uncomfortably Token"},{"Damage",9999,"Self"},{"EndTurn",1}},
+			["Power"] = {{"SetYellow",4},{"SetGreen",4},{"SetBlue",0},{"SetRed",0},{"SetNeutral",0},{"Summon","Uncomfortably Token"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = "This is the kind of name that makes me flinch.",
