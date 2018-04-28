@@ -11266,6 +11266,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Field"] = 363198345,
 		["AttackEffect"] = "Lightning",
 		["AttackBlock"] = true,
+		["Terrain"] = true,
 		["Archetype"] = "Test",
 		["Color"] = "Green",
 		["Cost"] = {["Neutral"] = 3,["Green"] = 3,},
