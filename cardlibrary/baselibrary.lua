@@ -12928,6 +12928,14 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["MustagedWorldYT"] = {
 		["Id"] = 411845252,
 		["Name"] = "MustagedWorldYT",
+		["AltCards"] = {
+			["MustagedWorldYT-ALT"] = {
+				["Id"] = 1669804633,
+				["AltArt"] = true,
+				["Name"] = "MustagedWorldYT",
+				["Bio"] = "Your first mistake? Not subscribing to his Twitch channel. Your last? Not expecting him to be summoned right now.",
+			},
+		},			
 		["Health"] = 725,
 		["Power"] = 400,
 		["Rarity"] = "Rare",
@@ -16475,13 +16483,19 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 
 	["Uncreativename123"] = {
 		["Id"] = 490224057,
-		["Name"] = "Uncreativename123",
+		["Name"] = "UncreativeName123",
 		["AltCards"] = {							
 			["Uncreativename123-Val"] = {
 				["Id"] = 655018966,
 				["Name"] = "UncreativeGift123",						
 				["Bio"] = "Teddy Bears, Roses, and Chocolates.",
 			},
+			["Uncreativename123-ALT"] = {
+				["Id"] = 1669805377,
+				["AltArt"] = true,
+				["Name"] = "UncreativeName123",
+				["Bio"] = "The sky broke like an egg into full sunset and the water caught flames. I began.",
+			},		
 		},					
 		["Health"] = 1000,
 		["Power"] = 800,
