@@ -120,7 +120,7 @@ local botcards = { -- Cards used by an AI that are not meant for human play go h
 		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 0,},
 		["Archetype"] = "Bird",
-		["CounterBlock"] = true,
+		["CounterAttackBlock"] = true,
 		["Effect"] = {
 			Name = "Matriarch",
 			Description = [[Can't be counterattacked. Incrase the power of all birds by 100. Draw a card.]],
