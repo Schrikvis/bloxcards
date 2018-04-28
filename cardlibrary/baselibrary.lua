@@ -11681,15 +11681,15 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Uncomfortably"] = {
-		["Id"] = 384007000,
+		["Id"] = 1683485837,
 		["Name"] = "Uncomfortably",
-		["Health"] = 600,
-		["Power"] = 700,
+		["Health"] = 700,
+		["Power"] = 800,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Lightning",
 		["Fading"] = true,
 		["Color"] = "Yellow",
-		["Cost"] = {["Yellow"] = 3,["Green"] = 3,},
+		["Cost"] = {["Yellow"] = 4,["Green"] = 4,},
 			["Effect"] = {
 			Name = "Sneak Attack",
 			Description = "When this card enters play, set your green and yellow icons to four, lose all other icons, and end the turn. At the end of your turns, generate a green icon.",
