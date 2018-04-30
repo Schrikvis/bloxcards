@@ -11702,7 +11702,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Uncomfortably Token"] = {
-		["Id"] = 384007000,
+		["Id"] = 1683485837,
 		["Name"] = "Uncomfortably",
 		["Health"] = 600,
 		["Power"] = 700,
@@ -11710,7 +11710,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Yellow",
-		["Cost"] = {["Yellow"] = 3,["Green"] = 3,},
+		["Cost"] = {["Yellow"] = 4,["Green"] = 4,},
 			["Effect"] = {
 			Name = "Sneak Attack",
 			Description = "At the end of your turns, generate a green icon.",
