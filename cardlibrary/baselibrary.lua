@@ -6884,12 +6884,11 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 1,["Red"] = 4,},
 		["Effect"] = {
-			Name = "Firascale",
-			Description = "When this card Attacks, swap the health and power of all allied fighters.",
+			Name = "Anchovies",
+			Description = "When this card attacks, deal 300 damage to who it attacked.",
 			["Type"] = "OnAttack",
-			["Power"] = "Swap",
-			Target = "Ally",
-			Increase = 50
+			["Power"] = {{"Damage",300}},
+			Target = "Aggressor",
 		},
 		["Bio"] = "IS IT A FISH? IS IT A BUBBLE? I'M SO CONFUSED!!",
 	},
