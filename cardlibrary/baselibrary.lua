@@ -10657,8 +10657,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Sudden Death",
-			Description = "When this card attacks, increase the health of all Ally fighters by 100.",
-			["Type"] = "OnAttack",
+			Description = "When this card finishes attacking, increase the health of all Ally fighters by 100.",
+			["Type"] = "OnAttackEnd",
 			["Power"] = {{"Heal",100}},
 			Target = "Ally",
 		},
