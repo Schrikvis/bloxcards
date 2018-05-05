@@ -5336,7 +5336,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Korblox Deathkeeper"] = {
 		["Id"] = 1286602394,
 		["Name"] = "Korblox Deathkeeper",
-		["Health"] = 2500,
+		["Health"] = 1500,
 		["Power"] = 500,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Punch1",
@@ -6522,7 +6522,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Green"] = 5,},
 		["Effect"] = {
 			Name = "Hexaria Booster Pack",
-			Description = "Put 3 Hexaria related cards to your hand.",
+			Description = "Put 3 Hexaria related cards into your hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Add","Defense Modifier! Buff!"},{"Add","Attack Modifier! Debuff!"},{"Add","Attack Modifier! Buff!"}},
 			Target = "Ally",
@@ -7304,7 +7304,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 2, ["Red"] = 2},
 		["Effect"] = {
 			Name = "Render",
-			Description = "When this card is targeted, give it 100 health and put a random red or blue action to your hand.",
+			Description = "When this card is targeted, give it 100 health and put a random red or blue action into your hand.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"RandomAdd","Lunar"},{"Heal",100,"Self"}},
 			Target = "Ally",
@@ -8314,7 +8314,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 2,["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Blown-in",
-			Description = "Put 2 random Rares to your hand.",
+			Description = "Put 2 random Rares into your hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"RandomAdd","Rare"},{"RandomAdd","Rare"}},
 			Target = "Ally",
@@ -8886,7 +8886,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Bio"] = "The arrival of titan signalled the beginning of the nega-rapture: The spirits of all blobbunnies would coalesce and form the Blobgotten One.",
 				["Effect"] = {
 					Name = "Stud",
-					Description = [[You must control at least 1 Bunny Blob to summon this card. Set the power of all non-Blobs to 0. Put "The Blobgotten One" to your hand.]],
+					Description = [[You must control at least 1 Bunny Blob to summon this card. Set the power of all non-Blobs to 0. Put "The Blobgotten One" into your hand.]],
 					["Type"] = "OnSummon",
 					["Power"] = {{"SetPower",0},{"Add","The Blobgotten One"}},
 					Target = "NotArchetype",
@@ -8960,7 +8960,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 2,},
 		["Effect"] = {
 			Name = "Dreadsteed",
-			Description = "Put an Overseer's Steed to your hand when this card dies. This card can't generate icons. This card does not activate effects when summoned.",
+			Description = "Put an Overseer's Steed into your hand when this card dies. This card can't generate icons. This card does not activate effects when summoned.",
 			["Type"] = "OnDeath",
 			["Power"] = {{"Add","Overseer's Steed"}},
 			Target = "Ally",
@@ -9756,7 +9756,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Revival",
-			Description = [[Put "Infinite Chicken" to your hand.]],
+			Description = [[Put "Infinite Chicken" into your hand.]],
 			["Type"] = "OnSummon",
 			["Power"] = "Add",
 			Target = "Ally",
@@ -9784,7 +9784,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Revival",
-			Description = [[Put "Infinite Frost" to your hand.]],
+			Description = [[Put "Infinite Frost" into your hand.]],
 			["Type"] = "OnSummon",
 			["Power"] = "Add",
 			Target = "Ally",
@@ -9811,7 +9811,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Red"] = 3,},
 		["Effect"] = {
 			Name = "Revival",
-			Description = [[Put "Infinite Flames" to your hand.]],
+			Description = [[Put "Infinite Flames" into your hand.]],
 			["Type"] = "OnSummon",
 			["Power"] = "Add",
 			Target = "Ally",
@@ -9868,7 +9868,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4},
 		["Effect"] = {
 			Name = "Revival",
-			Description = [[Put "Infinity Cannon" to your hand.]],
+			Description = [[Put "Infinity Cannon" into your hand.]],
 			["Type"] = "OnSummon",
 			["Power"] = "Add",
 			Target = "Ally",
@@ -9889,7 +9889,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Infinity Cannon",
-			Description = "Deal 200 damage to a target fighter and Put a copy of this card to your hand.",
+			Description = "Deal 200 damage to a target fighter and Put a copy of this card into your hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",200},{"Add","Infinity Cannon","Ally"}},
 			Target = "Single",
@@ -9909,7 +9909,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Stealth"] = true,
 		["Effect"] = {
 			Name = "Infinite Wishes",
-			Description = "Increase the health of a target fighter by 400 and Put a copy of this card to your hand.",
+			Description = "Increase the health of a target fighter by 400 and Put a copy of this card into your hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",400},{"Add","Infinite Wishes","Ally"}},
 			Target = "Single",
@@ -9930,7 +9930,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Infinite Frost",
-			Description = "Lock a target fighter for 1 turn and Put a copy of this card to your hand.",
+			Description = "Lock a target fighter for 1 turn and Put a copy of this card into your hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Lock",1},{"Add","Infinite Frost","Ally"}},
 			Target = "Single",
@@ -9951,7 +9951,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 3,},
 		["Effect"] = {
 			Name = "Infinite Flames",
-			Description = "Deal 100 damage to all enemy fighters and the opponent. Put a copy of this card to your hand.",
+			Description = "Deal 100 damage to all enemy fighters and the opponent. Put a copy of this card into your hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",100},{"Inflict",100},{"Add","Infinite Flames","Ally"}},
 			Target = "Opponent",
@@ -9971,7 +9971,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Infinite Frost",
-			Description = "Increase the Attack and Health of a target fighter by 100 and Put a copy of this card to your hand.",
+			Description = "Increase the Attack and Health of a target fighter by 100 and Put a copy of this card into your hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Strengthen",100},{"Heal",100},{"Add","Infinite Chicken","Ally"}},
 			Target = "Single",
@@ -10161,7 +10161,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 					["Power"] = {{"RandomAdd", {"Bee Ninja", "MrBeeBee2", "IcyBee", "Beestor", "Beeskateer", "Tom's Bees", "Waspism",}}},
 					Target = "Ally",
 				},
-				["Bio"] = "Uh Oh! You silly moron. You just got BEE'D!!! Put this card to your deck to totally BEE! your opponents!",
+				["Bio"] = "Uh Oh! You silly moron. You just got BEE'D!!! Add this card to your deck to totally BEE! your opponents!",
 			},
 		},
 		["Health"] = 100,
@@ -10649,8 +10649,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Bio"] = "In Soviet Russia, bear ride you!",
 			},
 		},
-		["Health"] = 500,
-		["Power"] = 700,
+		["Health"] = 400,
+		["Power"] = 600,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Yellow",
@@ -11316,7 +11316,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Name"] = "Teadaddy",
 				["AltArt"] = true,
 				["Effect"] = {
-					Description = "Put Beedaddy to your hand and gain 3 Green icons.",
+					Description = "Put Beedaddy into your hand and gain 3 Green icons.",
 					["Power"] = {{"Add","Beedaddy"},{"Green",3}},
 				},
 				["Bio"] = "Beta is coming SOONtm, right Vis?",
@@ -12416,7 +12416,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Yellow",
 		["Effect"] = {
 			Name = "Dancing Jail",
-			Description = "Give a target fighter 400 health, but lock it for 2 turns. Put two targeting blips to your hand.",
+			Description = "Give a target fighter 400 health, but lock it for 2 turns. Put two targeting blips into your hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Lock",2},{"Heal",400},{"Add","Targeting Blip","Ally"},{"Add","Targeting Blip","Ally"}},
 			Target = "Single",
@@ -13044,7 +13044,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"RandomAdd","Rare"}},
 			Target = "Ally",
 		},
-		["Bio"] = "Uh Oh! You silly moron. You just got BEANED!!! Put this card to your deck to totally BEAN! your opponents!",
+		["Bio"] = "Uh Oh! You silly moron. You just got BEANED!!! Add this card to your deck to totally BEAN! your opponents!",
 	},			
 
 	["Brick Bacon"] = {
@@ -13278,7 +13278,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 6,},
 		["Effect"] = {
 			Name = "SCRIPTING PARTY",
-			Description = "Put 3 random red or blue actions to your hand.",
+			Description = "Put 3 random red or blue actions into your hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"RandomAdd","Lunar"},{"RandomAdd","Lunar"},{"RandomAdd","Lunar"}},
 			Target = "Ally",
@@ -13567,7 +13567,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Put 2 targeting blips to your hand. Targeting Blips trigger target effects.",
+			Description = "Put 2 targeting blips into your hand. Targeting Blips trigger target effects.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Add","Targeting Blip"},{"Add","Targeting Blip"}},
 			Target = "Ally",
@@ -13621,7 +13621,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 7,["Blue"] = 1,},
 		["Effect"] = {
 			Name = "Totem Magic",
-			Description = "Put three Terrain cards to your hand. This card can't generate icons.",
+			Description = "Put three Terrain cards into your hand. This card can't generate icons.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Add","Titano's Cavern"},{"Add","Crossroads"},{"Add","Heavy Rain"}},
 			Target = "Ally",
@@ -13706,7 +13706,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 8,},
 		["Effect"] = {
 			Name = "Zappow!",
-			Description = "Put three monstrum cards to your hand.",
+			Description = "Put three monstrum cards into your hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Add","Monstrum Minotauris"},{"Add","Monstrum Zombie King"},{"Add","Monstrum Freezer"}},
 			Target = "Ally",
@@ -14114,7 +14114,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 4,["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Put six red or blue actions to your hand, then generate 6 red icons.",
+			Description = "Put six red or blue actions into your hand, then generate 6 red icons.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"RandomAdd","Lunar"},{"RandomAdd","Lunar"},{"RandomAdd","Lunar"},{"RandomAdd","Lunar"},{"RandomAdd","Lunar"},{"RandomAdd","Lunar"},{"Red",6}},
 			Target = "Ally",	
@@ -14620,7 +14620,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 8},
 		["Effect"] = {
 			Name = "Conflux",
-			Description = "Put 4 random rares to your hand.",
+			Description = "Put 4 random rares into your hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"RandomAdd","Rare"},{"RandomAdd","Rare"},{"RandomAdd","Rare"},{"RandomAdd","Rare"}},
 			Target = "Ally",
@@ -14682,7 +14682,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 3, ["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Foecal Incontinence",
-			Description = "Put Noob Repellent to your hand.",
+			Description = "Put Noob Repellent into your hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Add","Febreze: Anti Noob Spray"}},
 			Target = "Ally",
@@ -15171,9 +15171,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Name"] = "Cupid's Eye Nexus",
 				["Effect"] = {
 					Name = "Pyrotechnics",
-					Description = "Put a Cupid's Eye Heart Stealer into your hand. Your opponent draws a card.",
+					Description = "Put a Cupid's Eye Heart Stealer into your hand. Your opponent draws two cards.",
 					["Type"] = "OnSummon",
-					["Power"] = {{"Add","Cupid's Eye Heart Stealer"},{"Draw",1,"Opponent"}},
+					["Power"] = {{"Add","Cupid's Eye Heart Stealer"},{"Draw",2,"Opponent"}},
 					Target = "Ally",
 				},
 				["Bio"] = "With your heart, awaken your third eye! ... And your fourth. And the fifth... Sixth as well. Seventh if you're in the mood. Don't forget the eighth, either! Or the ninth.",
@@ -15188,9 +15188,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 5, ["Yellow"] = 5,},
 		["Effect"] = {
 			Name = "Harassing Talons",
-			Description = "Put a Cat's Eye Corpse Stealer into your hand. Your opponent draws a card.",
+			Description = "Put a Cat's Eye Corpse Stealer into your hand. Your opponent draws two cards.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Add","Cat's Eye Corpse Stealer"},{"Draw",1,"Opponent"}},
+			["Power"] = {{"Add","Cat's Eye Corpse Stealer"},{"Draw",2,"Opponent"}},
 			Target = "Ally",
 		},
 		["Bio"] = "With your chakra, awaken your third eye! ... And your fourth. And the fifth... Sixth as well. Seventh if you're in the mood. Don't forget the eighth, either! Or the ninth...",
