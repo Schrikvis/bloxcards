@@ -956,6 +956,23 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Name"] = "SoulMateSearch",
 				["Bio"] = "Always searching for the perfect soulmate.",
 			},
+			
+			["SoulSearch, Auschwitz Avenger"] = {
+				["Id"] = 858902108,
+				["Name"] = "Soulsearch, Auschwitz Avenger",
+				["Health"] = 1940,
+				["Power"] = 1945,
+				["Color"] = "Blue",
+				["Cost"] = {["Neutral"] = 1,["Blue"] = 3,},
+				["Effect"] = {
+					Name = "Gas Chamber",
+					Description = "Gain 420 Blue, Red, Green, and Yellow icons. Your opponent loses 1889 White icons. Gain 6000000 Life. Deal 430 damage to all allied fighters, and 1945 damage to all enemy fighters. Become a hero.",
+					["Type"] = "OnSummon",
+					["Power"] = {{"Blue",420},{"Red",420},{"Green",420},{"Yellow",420},{"Neutral",-1889,"Opponent"},{"Cost",-6000000},{"Damage",430},{"Damage",1945,"Opponent"},{"SetLife",0},{"Cost",858902108},{"Cost",858902108}},
+					Target = "Ally",
+				},
+				["Bio"] = "Time for a second Jewish Genocide",
+			},
 		},
 		["Health"] = 1300,
 		["Power"] = 500,
