@@ -4933,7 +4933,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"RandomAdd",{"God's Fury", "Hell's Wrath", "Nature's Poison", "Blinding Light"}}},
 			Target = "Ally",
 		},
-		["Bio"] = "Cheesecakes are the true best cake, better than some silly half-baked pancake.",
+		["Bio"] = "Don't let him near ants.",
 	},
 	
 	["God's Fury"] = {
