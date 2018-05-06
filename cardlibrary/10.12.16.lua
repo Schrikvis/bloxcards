@@ -4925,7 +4925,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "UziShot",
 		["Color"] = "Neutral",
-		["Cost"] = {["Neutral"] = 2, ["Yellow"] = 1, ["Green"] = 1, ["Blue"] = 1, ["Red"] = 1,},
+		["Cost"] = {["Neutral"] = 3, ["Yellow"] = 1, ["Green"] = 1, ["Blue"] = 1, ["Red"] = 1,},
 		["Effect"] = {
 			Name = "Gay Pride",
 			Description = "At the end of your turn, put a random colored arrow into your hand.",
