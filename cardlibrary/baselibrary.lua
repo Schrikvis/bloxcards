@@ -14849,7 +14849,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Coordinated Attack"] = {
-		["Id"] = 1718780220,
+		["Id"] = 1720507932,
 		["Name"] = "Coordinated Attack",
 		["Health"] = 0,
 		["Power"] = 0,
