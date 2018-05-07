@@ -12909,15 +12909,15 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},			
 
 	["President Duck"] = {
-		["Id"] = 456063667,
-		["Name"] = "President Duck",
+		["Id"] = 1674217925,
+		["Name"] = "Rapid Response",
 		["Health"] = 225,
 		["Power"] = 200,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Lightning",
 		["Archetype"] = "Police",
 		["Color"] = "Blue",
-		["Cost"] = {["Yellow"] = 3,},
+		["Cost"] = {["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Knockdown",
 			Description = "Unlock all police. Give them 100 power and health.",
@@ -12925,7 +12925,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Unlock",9999},{"Strengthen",100},{"Heal",100}},
 			Target = "Archetype",
 		},
-		["Bio"] = "My three main policies: Make sure aether wins war, make sure roblox takes your cash, and fire all of my employees!",
+		["Bio"] = "If only the police were really like this...", --I can't wait for sudden police OTK. ~damario 7/5/18
 	},			
 
 	["MustagedWorldYT"] = {
