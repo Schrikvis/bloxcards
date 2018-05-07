@@ -727,7 +727,6 @@ local packs = {
 			"Arceusdon",
 			"Acolyte of the Rift",
 			"Witch",
-			"Police Taskmaster",
 			"Police Combatant",
 			"Police Officer",
 			"Serhat12",
@@ -1043,7 +1042,6 @@ local packs = {
 		Description = "Exotic new cards from the black market! White cards and joke cards! It's all yours, as long as you have 10 wins!",
 		WinRequirement = 10;
 		Cards = {
-			"Police Taskmaster",
 			"Toy Jet Fighter",
 			"saud20",
 			"Cheesycakes",
@@ -1122,6 +1120,7 @@ local packs = {
 			"BenCanova1",
 			"MrEyeso",
 			"Micpro1234",
+			"iamlogic",
 			-- PAST THIS POINT IS FOR WHITE CARDS AND JOKE CARDS ONLY. I'M LOOKING AT YOU, BLITZ.
 			"saud20",
 			"SpeedySeat",
@@ -1503,7 +1502,6 @@ local packs = {
 			"Overseer General",
 			"Overseer Beast",
 			"Bereghost",
-			"Police Taskmaster",
 			"Police Officer",
 			"HatdaCat",
 			"Luigifan103",
