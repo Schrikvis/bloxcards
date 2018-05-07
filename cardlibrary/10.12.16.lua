@@ -5356,7 +5356,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "A",
 			Description = "At the end of your turn, return the chairman and this card to your hand, and summon a copy of the chairman.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Return",030,"Archetype"},{"Summon","The Chairman"},{"Unlock",1,"Archetype"},
+			["Power"] = {{"Return",030,"Archetype"},{"Summon","The Chairman"},{"Unlock",1,"Archetype"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Life was meaningless without power. The cancer was going to take everything away. He can't control Death, but now he can control Life.",
