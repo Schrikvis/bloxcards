@@ -13440,8 +13440,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Dodgeball Player Blue"] = {
 		["Id"] = 632442575,
 		["Name"] = "Dodgeball Player Blue",
-		["Health"] = 150,
-		["Power"] = 400,
+		["Health"] = 500,
+		["Power"] = 200,
 		["Rarity"] = "Rare",
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Lightning",
@@ -13449,9 +13449,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 3,},
 		["Effect"] = {
 			Name = "A dodgeball to the legs!",
-			Description = "Swap a target fighter's stats and lock it for 1 turn.",
+			Description = "Swap a target fighter's stats. Set that fighter's lock to 1.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Lock",1},{"Swap",030}},
+			["Power"] = {{"Unlock",999},{"Lock",1},{"Swap",030}},
 			Target = "Single",
 			Increase = 1,
 		},
