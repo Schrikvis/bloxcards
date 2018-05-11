@@ -5381,5 +5381,46 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "The Chairman's faithful second-in-command. Found the informant. Manipulated you into taking down the Yakuza for him. Now, you're the last loose end. Unparalleled killing power.",
 	},
+	
+	["MyCutenesskills"] = {
+		["Id"] = 1754304822,
+ 		["Name"] = "MyCutenesskills",
+		["Health"] = 600,
+ 		["Power"] = 200,
+ 		["Rarity"] = "Uncommon",
+ 		["AttackEffect"] = "SlashDiagonal",
+		["AttackBlock"] = true,
+ 		["Color"] = "Blue", 
+		["Archetype"] = "Defender",
+		["Cost"] = {["Blue"] = 4,}, 
+ 		["Effect"] = {
+ 			Name = "Booming Red",
+			Description = "Can't attack. Summon a copy of this card that can't generate icons.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Summon","MyCutenesskillsToken"}},
+ 		},
+ 		["Bio"] = "Rework? Nah. We'll just make a new card.",
+ 	},
+	
+	["MyCutenesskillsToken"] = {
+		["Id"] = 1754304822,
+ 		["Name"] = "MyCutenesskills",
+		["Health"] = 600,
+ 		["Power"] = 200,
+ 		["Rarity"] = "Uncommon",
+ 		["AttackEffect"] = "SlashDiagonal",
+		["AttackBlock"] = true,
+		["Token"] = true,
+ 		["Color"] = "Blue", 
+		["Archetype"] = "Defender",
+		["Cost"] = {["Blue"] = 4,}, 
+ 		["Effect"] = {
+ 			Name = "Booming Red",
+			Description = "Can't attack or generate icons.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Summon","Boom2"}},
+ 		},
+ 		["Bio"] = "On second thought, why not make a token with the card! Double the fun!",
+ 	},
 }
 return tentwelvesixteen
