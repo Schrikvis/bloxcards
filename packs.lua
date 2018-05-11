@@ -191,6 +191,7 @@ local packs = {
 			"DrWeaseI",
 			"stormmaster7722",
 			"ThatGrimGuy",
+			"iamlogic",
 			"B550",
 			"Damaging26, Flaming Fighter",
 			"Alar Myrmidon",
@@ -415,6 +416,7 @@ local packs = {
 			"jojobinks321",
 			"Enriched Neutrinous",
 			"Damarioguy",
+			"Walyn",
 			"BandiheartYT",
 			"Indoorsnowball",
 			"Shaylan007",
@@ -819,6 +821,7 @@ local packs = {
 		CardPackId = 721400239,
 		Description = "Yellow is the colour of chaos, emotion, and society. Revel packs contain cards that cost yellow!",
 		Cards = {
+			"Toy Jet Fighter",
 			"Cheesycakes",
 			"Kago",
 			"BrandonOccult",
@@ -1039,6 +1042,8 @@ local packs = {
 		Description = "Exotic new cards from the black market! White cards and joke cards! It's all yours, as long as you have 10 wins!",
 		WinRequirement = 10;
 		Cards = {
+			"Toy Jet Fighter",
+			"saud20",
 			"Cheesycakes",
 			"ZeDerpyDonal",
 			"jojobinks321",
@@ -1116,9 +1121,8 @@ local packs = {
 			"MrEyeso",
 			"Micpro1234",
 			"iamlogic",
-			"Walyn",
-			"Confusion Elemental?",
 			-- PAST THIS POINT IS FOR WHITE CARDS AND JOKE CARDS ONLY. I'M LOOKING AT YOU, BLITZ.
+			"saud20",
 			"SpeedySeat",
 			"Dukran the Celestial",
 			"Wingman8",
@@ -1541,6 +1545,7 @@ local packs = {
 			"Toy Truck",
 			"Toy Car",
 			"Toy Train",
+			"Toy Jet Fighter"
 			"Toy Boss Dino",
 			"Call of the Teddy Bear",
 			"Zombie",
