@@ -3,9 +3,9 @@ setmetatable(bot, {__index = require(script.Parent.Bot)})
 -- Model: https://www.roblox.com/catalog/1469557200
 
 bot.Rewards = {
-	Cards = {"Darken the Skies"}; --{["Medic Kit"] = 1};
+	Cards = {["Darken the Skies"] = 1}; --{["Medic Kit"] = 1};
 	RandomCards = {};
-	BloxBux = 1; -- Will be changed once we figure out the deck's power
+	BloxBux = 0; -- Will be changed once we figure out the deck's power
 	Charms = {0,0};
 	Sleeves = {};
 }

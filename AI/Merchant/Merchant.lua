@@ -4,7 +4,7 @@ setmetatable(bot, {__index = require(script.Parent.Bot)})
 bot.Rewards = {
 	Cards = {}; --{["Medic Kit"] = 1};
 	RandomCards = {["Necromantic Acolyte"] = 1, ["Acolyte of the Rift"] = 1, ["Infernal Acolyte"] = 1, ["Fried Acolyte"] = 1,["Lunar Acolyte"] = 1,}; --Opinions on giving the player the tokens in the deck?
-	BloxBux = 1; --To be changed as we learn the deck's power
+	BloxBux = 0; --To be changed as we learn the deck's power
 	Charms = {0,0};
 	Sleeves = {};
 }
@@ -20,8 +20,8 @@ bot.Info = {
 bot.Deck = {
 	-- Played 2nd last, but played first priority on turn 1/2
 	["Sylrath"] = 3;
-	["Spooky Caverns"] = 3;
-	["Lady Rednight"] = 3;	
+	["Titano's Cavern"] = 3;
+	["Lady RedNight"] = 3;	
 	["AsrielMemer"] = 1;
 	
 	-- Bee Cards (CARD SET A)	
@@ -35,14 +35,14 @@ bot.Deck = {
 	["Aer Draco"] = 3;
 	["Glaurung"] = 1;
 	["Smaug"] = 3;
-	["Master Acolyte"] = 3;
+	["Master Acolyte's Altar"] = 3;
 		
 	-- Play Last And only if one of Card Set A is in play
 	-- I reccomend adding Bread Factory x4 if you want more of these played
 	["Nova"] = 3;
 	["The Forgotten One"] = 1;
 	["Eclipse, Werewolf Colossus"] = 1;
-	["InceptionToken"] = 1;
+	["InceptionTime Token"] = 1;
 	["Monstrum Minotauris"] = 1;
 	["Monstrum Zombie King"] = 1;
 	["Monstrum Freezer"] = 1;
@@ -128,13 +128,13 @@ local SetA = {
 	"Wolfbitten Noob", "Wolven Blitz", "Eye Spy", "BrokenToken", "Titano's Fist of Soul", "Titano's Fist of Agony", "Fractal", "Forbidden Power", "Snyfort"
 }
 local SetB = {
-	"Master Acolyte", "Sorry!", "Aer Draco", "Glaurung", "Smaug"   
+	"Master Acolyte's Altar", "Sorry!", "Aer Draco", "Glaurung", "Smaug"   
 }
 local TurnOne = {
-	"Sylrath", "Spooky Caverns", "Lady Rednight", "AsrielMemer", "Pumpkin Bomb", "Beam Sword" 
+	"Sylrath", "Titano's Cavern", "Lady RedNight", "AsrielMemer", "Pumpkin Bomb", "Beam Sword" 
 }
 local Action = {
-	"Nova", "The Forgotten One", "Monstrum Minotauris", "Monstrum Zombie King", "Monstrum Freezer", "Commander of Chaos", "Eclipse, Werewolf Colossus", "Shedletsky, the Fried One", "InceptionToken", "Fallen Guardian"
+	"Nova", "The Forgotten One", "Monstrum Minotauris", "Monstrum Zombie King", "Monstrum Freezer", "Commander of Chaos", "Eclipse, Werewolf Colossus", "Shedletsky, the Fried One", "InceptionTime Token", "Fallen Guardian"
 }
 bot.turnOne = true -- don't mix up with TurnOne (capital T)
 function bot:YourTurn()

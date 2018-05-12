@@ -4,7 +4,7 @@ setmetatable(bot, {__index = require(script.Parent.Bot)})
 bot.Rewards = {
 	Cards = {["Eye of Heaven"] = 1}; --{["Medic Kit"] = 1};
 	RandomCards = {};
-	BloxBux = 1; -- Will be changed once we figure out the deck's power
+	BloxBux = 0; -- Will be changed once we figure out the deck's power
 	Charms = {0,0};
 	Sleeves = {};
 }
@@ -18,7 +18,7 @@ bot.Info = {
 }
 
 bot.Deck = {
-	["Fatal Attraction"] = 1;
+	["Fatal Discovery"] = 1;
 	["Sylrath"] = 22;
 	["SharpTH"] = 10;	
 	["AsrielMemer"] = 15;
@@ -26,10 +26,10 @@ bot.Deck = {
 	["Eye Spy"] = 15;
 	["DominiusConfabricor"] = 15;
 	["Lord of Greed"] = 5;
-	["Spooky Caverns"] = 12;
+	["Titano's Cavern"] = 12;
 	["Latchie"] = 15;
 	["Lord of Auctions"] = 15;
-	["Visleaf"] = "5";
+	["Visleaf"] = 5;
 	["Pikachukiller101"] = 15;
 	["B0BBA"] = 5;
 	["Enrage"] = 20;
@@ -108,18 +108,18 @@ function bot:SingleTarget(card, effect)
 	self:InvokeServer("SetTarget", self.battleId, targetId)
 end
 
-	
+
 local SetA = {
-	"Fatal Attraction", "B0BBA", "Enrage", "Eye Spy", "Lord of Auctions", "SharpTH", "Sylrath", "Lord of Greed", "Pikachukiller101", "Latchie", "2Hex", "DominiusConfabricor", "Valletta", "AsrielMemer", "Spiderboy", "Spooky Caverns", "Fatal Attraction"
+	"Fatal Discovery", "B0BBA", "Enrage", "Eye Spy", "Lord of Auctions", "SharpTH", "Sylrath", "Lord of Greed", "Pikachukiller101", "Latchie", "2Hex", "DominiusConfabricor", "Valletta", "AsrielMemer", "Spiderboy", "Titano's Cavern", "Fatal Attraction"
 }
 local SetB = {
-	"Fatal Attraction", "B0BBA", "Enrage", "Eye Spy", "Lord of Auctions", "SharpTH", "Sylrath", "Lord of Greed", "Pikachukiller101", "Latchie", "2Hex", "DominiusConfabricor", "Valletta", "AsrielMemer", "Spiderboy", "Spooky Caverns", "Fatal Attraction"
+	"Fatal Discovery", "B0BBA", "Enrage", "Eye Spy", "Lord of Auctions", "SharpTH", "Sylrath", "Lord of Greed", "Pikachukiller101", "Latchie", "2Hex", "DominiusConfabricor", "Valletta", "AsrielMemer", "Spiderboy", "Titano's Cavern", "Fatal Attraction"
 }
 local TurnOne = {
-	"Fatal Attraction", "Spooky Caverns"
+	"Fatal Discovery", "Titano's Cavern"
 }
 local Action = {
-	"Fatal Attraction", "B0BBA", "Enrage", "Eye Spy", "Lord of Auctions", "SharpTH", "Sylrath", "Lord of Greed", "Pikachukiller101", "Latchie", "2Hex", "DominiusConfabricor", "Valletta", "AsrielMemer", "Spiderboy", "Spooky Caverns", "Fatal Attraction"
+	"Fatal Discovery", "B0BBA", "Enrage", "Eye Spy", "Lord of Auctions", "SharpTH", "Sylrath", "Lord of Greed", "Pikachukiller101", "Latchie", "2Hex", "DominiusConfabricor", "Valletta", "AsrielMemer", "Spiderboy", "Titano's Cavern", "Fatal Attraction"
 }
 bot.turnOne = true -- don't mix up with TurnOne (capital T)
 function bot:YourTurn()
