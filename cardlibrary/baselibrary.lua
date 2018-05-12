@@ -6884,7 +6884,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 1,["Red"] = 4,},
 		["Effect"] = {
-			Name = "Fallen Guardian",
+			Name = "Anchovies",
 			Description = "When this card attacks a fighter, deal 300 damage to that fighter",
 			["Type"] = "OnAttack",
 			["Power"] = {{"Damage",300}},
@@ -11701,7 +11701,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Uncomfortably Token"] = {
-		["Id"] = 384007000,
+		["Id"] = 1683485837,
 		["Name"] = "Uncomfortably",
 		["Health"] = 600,
 		["Power"] = 700,
@@ -11709,7 +11709,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Yellow",
-		["Cost"] = {["Yellow"] = 3,["Green"] = 3,},
+		["Cost"] = {["Yellow"] = 4,["Green"] = 4,},
 			["Effect"] = {
 			Name = "Sneak Attack",
 			Description = "At the end of your turns, generate a green icon.",
@@ -13440,8 +13440,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Dodgeball Player Blue"] = {
 		["Id"] = 632442575,
 		["Name"] = "Dodgeball Player Blue",
-		["Health"] = 150,
-		["Power"] = 400,
+		["Health"] = 500,
+		["Power"] = 200,
 		["Rarity"] = "Rare",
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Lightning",
@@ -13449,9 +13449,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 3,},
 		["Effect"] = {
 			Name = "A dodgeball to the legs!",
-			Description = "Swap a target fighter's stats and lock it for 1 turn.",
+			Description = "Swap a target fighter's stats. Set that fighter's lock to 1.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Lock",1},{"Swap",030}},
+			["Power"] = {{"Unlock",999},{"Lock",1},{"Swap",030}},
 			Target = "Single",
 			Increase = 1,
 		},
