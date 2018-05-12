@@ -17,7 +17,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Summon","Serhat12"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
-		["Bio"] = "Nobody expects the Serhat12 inquisition.",
+		["Bio"] = "Nobody truly realizes the damage of our mistakes unless we experience them ourselves.",
 	},
 	
 	["Wolfbitten Noob"] = {
@@ -126,7 +126,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Weaken",100,"All"},{"Swap",030,"All"}},
 			Target = "Ally",
 		},
-		["Bio"] = "The goods are your tears. Your glorious, deep-fried tears.",
+		["Bio"] = "Zanzel saw the ugly rivalry between the two brothers. For their own good, they were stitched together so they can cry together as one.",
 	},
 	
 	["Dark Book of Spells"] = {
@@ -147,7 +147,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Lock",5,"Ally"},{"RandomAdd","Lunar"},{"RandomAdd","Lunar"},{"RandomAdd","Lunar"}},
 			Target = "Ally",
 		},
-		["Bio"] = "Always trust spells you don't know about or control.",
+		["Bio"] = "Out of desparation, Eisenhower asked to see his loved one again, trusting the words he had no knowledge or control over.",
 	},
 	
 	["Glaciem Knight"] = {
@@ -168,7 +168,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Heal",150,"Archetype"}},
 			Target = "Ally",
 		},
-		["Bio"] = "My honour is on the line.",
+		["Bio"] = "Only the Glaciem knights remained from their legion. They're prepared for their own defense against Zanzel.",
 	},
 	
 	["Grey Goo Scenario"] = {
@@ -187,7 +187,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Weaken",800,"All"},{"Summon","Morphic Goo"},{"Summon","Morphic Goo"},{"Summon","Morphic Goo"},{"Summon","Morphic Goo"}},
 			Target = "Ally",
 		},
-		["Bio"] = "Survival is the game now.",
+		["Bio"] = "Eisenhower feared the worst out of his experiments.",
 	},
 	
 	["Horrarceusdon"] = {
@@ -206,7 +206,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"SetHealth",500},{"Heal",500,"Self"}},
 			Target = "All",
 		},
-		["Bio"] = "Zanzel wanted him to die. He agreed. o3o",
+		["Bio"] = [[Seeing the souless, empty husk that was called a "person", Zanzel knew. Zanzel needed to create much more.]],
 	},
 	
 	["Stormchaser's Gambit"] = {
@@ -502,7 +502,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Summon","Eye of Overseer"},{"Strengthen",150,"All"},{"Heal",150,"All"},{"Heal",150,"Archetype"},{"Strengthen",150,"Archetype"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
-		["Bio"] = "The overseers had to admit. The werewolves grew pretty fast.",
+		["Bio"] = "Zanzel spited the Overseers. Their name was a lie in itself. Only Zanzel knew everything.",
 	},
 	
 	
@@ -523,7 +523,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Summon","Carniverous Death Moth","Opponent"},{"Damage",99999,"Single"}},
 			Target = "Ally",
 		},
-		["Bio"] = "DIYDTY",
+		["Bio"] = "The beast within cannot be tamed. Zanzel did what had to be done.",
 	},
 	
 	["Bribery"] = {
@@ -543,7 +543,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Summon","Guest"},{"Summon","Guest","Opponent"},{"Summon","Guest"},{"Summon","Guest","Opponent"},{"Summon","Corrupt Guest"},{"Summon","Corrupt Guest","Opponent"}},
 			Target = "Ally",
 		},
-		["Bio"] = "Victory is certain. The price? Negotiable.",
+		["Bio"] = "Eisenhower was struck a deal with Hallow, hearing his wish to resurrect his love. Hallow agreed to meet at Thursday night by her tombstone.",
 	},
 	
 	["Candy Robber"] = {
@@ -555,7 +555,14 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Dash",
 		["Color"] = "Yellow", 
 		["Cost"] = {["Neutral"] = 1 , ["Yellow"] = 2.},
-		["Bio"] = "Freeze! Put your candy where I can see it!",
+		["Effect"] = {
+			Name = "Booster",
+			Description = "Generate a white icon.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Neutral",1}},
+			Target = "Ally",
+		},
+		["Bio"] = "Candy robbers were commissioned by Hallow to steal the candy of their victims. On Sunday, all the candy is collected into a dragon-horde as a treat for Hallow.",
 	},
 	
 	["Cereal Killer"] = {
@@ -574,7 +581,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Strengthen",100}},
 			Target = "Self",
 		},
-		["Bio"] = "I like my noobs wholemeal.",
+		["Bio"] = "Saturday was the day of hunger. Hallow's servants were to kill or steal their victim's cattle or food.",
 	},
 	
 	["Cheshire Cat"] = {
@@ -620,7 +627,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Heal",150,"Opponent"}},
 			Target = "Ally",
 		},
-		["Bio"] = "He certainly is.",
+		["Bio"] = "These cotton candy lions were hunted to extinction by Hallow's servants. Saturday was a cruel day.",
 	},
 	
 	["Creepy Toy"] = {
@@ -659,7 +666,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Summon","Visleaf"},{"Weaken",200,"All"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
-		["Bio"] = "ADD IN TRADING ALREADY, YOU STUPID BUNNY!",
+		["Bio"] = "UPDATE THE GAME ALREADY, YOU STUPID BUNNY!",
 	},
 	
 	["DIY: Dark Dominus"] = {
@@ -699,7 +706,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Damage",50,"Opponent"}},
 			Target = "Opponent",
 		},
-		["Bio"] = "For only 3.99.",
+		["Bio"] = "Zanzel looked over and operated the world like how a little girl does with her dollhouse.",
 	},
 	
 	["Dredger980"] = {
@@ -718,7 +725,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"DeckAdd","Dredger980"},{"Draw",1}},
 			Target = "Ally",
 		},
-		["Bio"] = "I FEEL SPOOPED ON",
+		["Bio"] = "No one would ever leave from Zanzel. Now, no one could.",
 	},
 	
 	["Dun_Boof"] = {
@@ -738,7 +745,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Draw",2},{"Inflict",350,"Opponent"}},
 			Target = "Ally",
 		},
-		["Bio"] = "Pick a limb. Any limb.",
+		["Bio"] = "Zanzel shook her head in disappointment, for it was ignorant for him to try to take his own life from Zanzel.",
 	},
 	
 	["Final Revels"] = {
@@ -2068,6 +2075,20 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Script Robber"] = {
 		["Id"] = 540076456,
 		["Name"] = "Script Robber",
+		["AltCards"] = {
+			["Script Robber-E"] = {
+				["Name"] = "Egg Robber",
+				["Id"] = 1567583873,
+				["Bio"] = "It’s not stealing, it’s HUNTING.",
+				["Effect"] = {
+					Name = "Haydoscale",
+					Description = "When this card is summoned, put a random red or blue action into your hand. At the end of your turns, all fighters lose 25 power and Egg Robber gains 150 power.",
+					["Type"] = "OnSummon",
+					["Power"] = {{"Summon","Robber Token-E",},{"RandomAdd","Lunar"},{"Damage",9999,"Self"}},
+					Target = "Ally",
+				},
+			},
+		},
 		["Health"] = 600,
 		["Power"] = 0,
 		["Rarity"] = "Common",
@@ -2088,6 +2109,20 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Robber Token"] = {
 		["Id"] = 540076456,
 		["Name"] = "Script Robber",
+		["AltCards"] = {
+			["Robber Token-E"] = {
+				["Name"] = "Egg Robber",
+				["Id"] = 1567583873,
+				["Bio"] = "It’s not stealing, it’s HUNTING.",
+				["Effect"] = {
+					Name = "Haydoscale",
+					Description = "When this card is summoned, put a random red or blue action into your hand. At the end of your turns, all fighters lose 25 power and Egg Robber gains 150 power.",
+					["Type"] = "OnEnd",
+					["Power"] = {{"Strengthen",175,"Self"},{"Weaken",25}},
+					Target = "All",
+				},
+			},
+		},
 		["Health"] = 600,
 		["Power"] = 0,
 		["Rarity"] = "Token",
@@ -3220,13 +3255,6 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Dash",
 		["Color"] = "Yellow", 
 		["Cost"] = {["Neutral"] = 1, ["Yellow"] = 2,},
-		["Effect"] = {
-			Name = "Undead Rising",
-			Description = "0 Charges. When this card dies, remove a charge, lose 100 Life, and resurrect it.",
-			["Type"] = "OnDeath",
-			["Power"] = {{"Cost",0}},
-			Target = "Ally",
-		},
 		["Bio"] = "They will never know the true horror that went into making this...",
 	},	
 	
