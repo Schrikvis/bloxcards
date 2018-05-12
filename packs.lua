@@ -10,6 +10,10 @@ local packs = {
 		Cards = {
 			"CalmFoxz",
 			"Lyv",
+			"Bigtank_s",
+			"Pilgrim",
+			"Graalgamer",
+			"Western Bandit",
 			"Samksoon321",
 			"Brycen27",
 			"AsrielMemer",
@@ -180,9 +184,21 @@ local packs = {
 		CardPackId = 842435184, --721400845,
 		Description = "Red is the colour of power, ambition, and control. Dominion packs contain cards that cost red!",
 		Cards = {
+			"rachjumper",
+			"Steel Chair",
+			"DrWeaseI",
+			"stormmaster7722",
+			"ThatGrimGuy",
+			"B550",
+			"Damaging26, Flaming Fighter",
+			"Alar Myrmidon",
+			"Alar Blade Chaser",
+			"Alar Herald",
 			"ProjectSlayer",
 			"Histor, Blood Warrior",
+			"Aesura",
 			"superkicker2005",
+			"AMerryCan",
 			"Shard Master",
 			"Beyondthegong",
 			"Damaging26",
@@ -208,7 +224,6 @@ local packs = {
 			"AVote",
 			"Epic Sauce",
 			"NullSenseStudio",
-			"Forestfire Butterflies",
 			"Burning Tree",
 			"Dodgeball Gambler Red",
 			"Kinnis97",
@@ -217,12 +232,6 @@ local packs = {
 			"KnitJa",
 			"Fire Fighter",
 			"Drager Bot",
-			"Epic Sauce",
-			"NullSenseStudio",
-			"Forestfire Butterflies",
-			"Burning Tree",
-			"Dodgeball Gambler Red",
-			"Kinnis97",
 			"Supersky712",
 			"BoomAtack",
 			"Mafia Grunt",
@@ -275,7 +284,6 @@ local packs = {
 			"zKevin",
 			"Explode1",
 			"Ultoris Tenebrae",
-			"Ultoris NOOBrae",
 			"TheSteelEagle",
 			"ROBLOXADOR!!",
 			"XxFreezerFlamesxX",
@@ -374,6 +382,7 @@ local packs = {
 			"FuuTuu",
 			"BloodSpilled",
 			"Hodif",
+			"BO0M",
 			"Ninja Elite",
 			"Ninja Trainee",
 			"Ninja Assailant",
@@ -400,12 +409,26 @@ local packs = {
 		CardPackId = 721399805,
 		Description = "Green is the colour of life, growth, and the primal forces. Vitality packs contain cards that cost green!",
 		Cards = {
+			"Damarioguy",
+			"Indoorsnowball",
+			"Shaylan007",
+			"Wooden Chair",
+			"Tl_rd",
+			"ThePestilentOne",
+			"Yggdrasil Faerie",
+			"CjMcGamingYT",
+			"vanjohnson",
+			"ChaseThePsycho",
+			"Alar Sentinel",
+			"Alar Blade Archer",
+			"Alar Trainee",
 			"Neutrinous",
 			"Turtleuser3",
 			"Superland6",
 			"iSpaceDonut",
 			"Enderlox1",
 			"Lord_Gizmo",
+			"Wrath of King Gecko",
 			"iiSmolToaster",
 			"Saprasam",
 			"BonesMcCormick",
@@ -529,7 +552,6 @@ local packs = {
 			"Cillow",
 			"Otub",
 			"Robber",
-			"BO0M",
 			"Burglar",
 			"Glaecium",
 			"Life Potion",
@@ -572,7 +594,14 @@ local packs = {
 		CardPackId = 721399466,
 		Description = "Blue is the colour of logic, order, and structure. Thought packs contain cards that cost blue!",
 		Cards = {
+			"DunclubDuncan",
+			"Creeperkiller510",
+			"Modern Chair",
+			"Permafrost Storm",
+			"MesouricPhantom976",
+			"Silver_Semtexagon",
 			"Arte71",
+			"AMerryCan",
 			"kickertoken",
 			"ImaUMBREON",
 			"caone",
@@ -586,8 +615,9 @@ local packs = {
 			"Deadly Dicey Duo",
 			"hyp3rdeath",
 			"Steam Razikai",
+			"Fenfie08",
 			"Jimminus",
-			"Wooden Chair",
+			"Bearded Captain",
  			"Rollernaut",
 			"SONICTHEHEDGEHOGXXX",
 			"Razikai's Exploration",
@@ -773,7 +803,7 @@ local packs = {
 			"FuryBlocks",
 			"Sharksie",
 			"PlaceRebuilder",
-			"Litozinnamon",
+			"litozinnamon",
 		},
 	}; 
 	{
@@ -784,6 +814,12 @@ local packs = {
 		CardPackId = 721400239,
 		Description = "Yellow is the colour of chaos, emotion, and society. Revel packs contain cards that cost yellow!",
 		Cards = {
+			"SpeedySeat",
+			"Royal Chair",
+			"lolbeniceok",
+			"ExtolYT",
+			"midastheking123",
+			"FourXIV",
 			"Elioofsheep",
 			"Bucket of Bees",
 			"Blitzwolfer",
@@ -802,8 +838,9 @@ local packs = {
 			"Egg Eyes Batter Dragon",
 			"CloneTrooper1019",
 			"Baby Noob",
+			"Graalgamer",
 			"Revelling Satyr",
-			"ChickenGooseBird",
+			"ChickenduckbirdV2",
 			"Noob's Play Box",
 			"Safe Chat",
 			"Noob Gunner",
@@ -986,14 +1023,43 @@ local packs = {
 		},
 	}; 
 	{
-		Name = "Exotic", --NEW / WHITE! All cards before Wingman8 rotate out once a new card comes in. Related cards rotate out at the same time.
+		Name = "Exotic", --NEW / WHITE! All cards before the break point rotate out once a new card comes in. Related cards rotate out at the same time.
 		PriceInBloxBux = 50,
 		PriceInRobux = 0;
 		CardsInPack = 4,
-		CardPackId = 434684079,
+		CardPackId = 1251993699,
 		Description = "Exotic new cards from the black market! White cards and joke cards! It's all yours, as long as you have 10 wins!",
 		WinRequirement = 10;
 		Cards = {
+			"rachjumper",
+			"DunclubDuncan",
+			"Damarioguy",
+			"Creeperkiller510",
+			"Tl_rd",
+			"ThePestilentOne",
+			"SpeedySeat",
+			"DrWeaseI",
+			"lolbeniceok",
+			"stormmaster7722",
+			"Permafrost Storm",
+			"ThatGrimGuy",
+			"B550",
+			"MesouricPhantom976",
+			"Yggdrasil Faerie",
+			"ExtolYT",
+			"Silver_Semtexagon",
+			"vanjohnson",
+			"midastheking123",
+			"FourXIV",
+			"Damaging26, Flaming Fighter",
+			"ChaseThePsycho",
+			"Dukran the Celestial",
+			"Alar Trainee",
+			"Alar Herald",
+			"Alar Blade Chaser",
+			"Alar Blade Archer",
+			"Alar Sentinel",
+			"Alar Myrmidon",
 			"Elioofsheep",
 			"Bucket of Bees",
 			"Neutrinous",
@@ -1044,45 +1110,13 @@ local packs = {
 			"Satyr Firemaster",
 			"BandiheartYT",
 			"BrandonOccult",
-			"Fenfie08",
-			"AMerryCan",
-			"CjMcGamingYT",
-			"Indoorsnowball",
-			"Shaylan007",
-			"Yoshilove574",
-			"Graalgamer",
-			"Aesura",
-			"Wrath of King Gecko",
-			"iiSmolToaster",
-			"Damaging26",
-			"MarissaKitty04",
-			"ChaoticCommando",
-			"TheJazzCat22",
-			"wikiwakiwoirier",
-			"Lord_Gizmo",
-			"emilvita",
-			"Cindering",
-			"colesans16",
-			"AII_Dragon",
-			"Ultra Annihilator",
-			"Ultra Obliterator",
-			"Ultra Orator",
-			"Ultra Vanquisher",
-			"Ultra Depriver",
-			"Ultra Severer",
-			"Ultra Desirer",
-			"Ultra Beseecher",
-			"Ultra Otherer",
-			"Ultra Enhancer",
-			"Ultra Bestower",
-			"Friaza",
-			"Your_Name",
-			"Defaultio",
 			-- PAST THIS POINT IS FOR WHITE CARDS AND JOKE CARDS ONLY. I'M LOOKING AT YOU, BLITZ.
+			"SpeedySeat",
+			"Dukran the Celestial",
 			"Wingman8",
 			"Games",
 			"Remote Mine",
-			"Suicide Bomber"
+			"Suicide Bomber",
 			"CanadianSanic",
 			"Ultra Bestower",
 			"Ultra Enhancer",
@@ -1190,6 +1224,9 @@ local packs = {
 			month = 10};
 		};--]]
 		Cards = {
+			"Hallow's Boon",
+			"Hallow's Eradicator",
+			"Hallow's Knight",
 			"Undead Teddy",
 			"Treasured Unicorn",
 			"Graboid",
@@ -1312,6 +1349,15 @@ local packs = {
 		Description = "Filled with only cards belonging to an archetype, this pack can help you finish your deck provided you have at least 10 wins.",
 		WinRequirement = 10;
 		Cards = {
+			"AMerryCan",
+			"Creeperkiller510",
+			"Alar Myrmidon",
+			"Alar Sentinel",
+			"Alar Blade Archer",
+			"Alar Blade Chaser",
+			"Alar Herald",
+			"Alar Trainee",
+			"Dukran the Celestial",
 			"Bucket of Bees",
 			"Themediamogul99",
 			"Abhorrant Skull",
@@ -1514,7 +1560,6 @@ local packs = {
 			"Mad Scientist",
 			"destruction5033",
 			"MICHIKUSCHI",
-			"Grand Glaciem Mage",
 			"Erik.Cassel",
 			"JaikKaik",
 			"Stravant",
@@ -1523,7 +1568,6 @@ local packs = {
 			"LordVasco",
 			"mrawesomecarter",
 			"Paraselene Sage",
-			"Grand Ignis Mage",
 			"PassTheToiletPaper",
 			"MUTO2014",
 			"TheSteelEagle",
@@ -1557,18 +1601,51 @@ local packs = {
 	};
 	
 	{
+		Name = "Innovative", --those meme alts or something i guess!
+		Hidden = false;
+		PriceInBloxBux = 1337,
+		PriceInRobux = 0;
+		CardsInPack = 1,
+		CardPackId = 1532232174,
+		Description = "This pack only contains the dankest of the dank alt arts, so rare that you will never see them in the artbox.  These majestic packs only contain one godly card per pack, and require 20 wins to buy.",
+		WinRequirement = 20;
+		DateConstraint = {
+			month = {4};
+			day = {1};
+		};
+		Cards = {
+			"IcyBee",
+			"Bee Ninja",
+			"Newbee",
+			"Beestor",
+			"Tom's Bees",
+			"MrBeeBee2",
+			"Beeskateer",
+			"WarnomBearkins",
+		},
+	};
+	{
 		Name = "Teaism's Gifts", --CHRISTMAS!
-		Hidden = true;
-		PriceInBloxBux = 0;
-		PriceInRobux = 50;
+		Hidden = false;
+		PriceInBloxBux = 1000;
+		PriceInRobux = 0;
 		CardsInPack = 4,
-		CardPackId = 585626122,
+		CardPackId = 1248737582,
 		Description = "Teaism's special gift, just for you. Merry Christmas. (You need 10 wins to open this pack.)",
 		WinRequirement = 10;
 		DateConstraint = {
 			month = {12};
 		};
 		Cards = {
+			"Unwanted Gift",
+			"Baba Yaga",
+			"Zombie Santa",
+			"Zombie Elf",
+			"JackinatorMG-C",
+			"StickMasterLukeV2",
+			"Tomspick-C",
+			"Tombstone-C",
+			"Icy Drake",
 			"Baker",
 			"Hot Chocolate",
 			"GRAND CLAUS",
@@ -1590,8 +1667,8 @@ local packs = {
 	};
 	
 	{
-		Name = "Tough Love", --VALENTINES!
-		Hidden = true;
+		Name = "Tough Love", --VALENTINES & WHITE DAY!
+		Hidden = false;
 		PriceInBloxBux = 1000;
 		PriceInRobux = 0;
 		CardsInPack = 4,
@@ -1599,7 +1676,8 @@ local packs = {
 		Description = "Over 40 special edition Valentine themed cards! Can your heart resist them? <3 (Minimum 10 wins. Stalker and Combine Garrison are only found in the Art Box.)",
 		WinRequirement = 10;
 		DateConstraint = {
-			month = {2};
+			month = {2, 3};
+			day = {14, 15, 16, 17, 18, 19, 20};
 		};
 		Cards = {
 			"Ejob-Val",
@@ -1640,7 +1718,9 @@ local packs = {
 			"Evil Prince-Val",
 			"SoulSearch-Val",
 		},
-		
+	};
+	
+	{
 		Name = "Summer Salt", --SUMMER!
 		PriceInBloxBux = 1000;
 		PriceInRobux = 0;
@@ -1693,8 +1773,51 @@ local packs = {
 		},
 	};
 	
+	{
+		Name = "Easter Feast",
+		Hidden = false;
+		PriceInBloxBux = 1000;
+		PriceInRobux = 0;
+		CardsInPack = 4,
+		CardPackId = 1574596642,
+		Description = "Go on a hunt to find these special Easter themed alts. Will you be able to collect them all? (requires 10 wins)",
+		WinRequirement = 10;
+		DateConstraint = {
+			month = {4};
+			day = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25};
+		};
+		Cards = {
+			"Jeeeeesus-E",
+			"Eye of Heaven-E",
+			"Mlgloga-E",
+			"Script Robber-E",
+			"Dayren-E",
+			"Lyv-E",
+			"Langz-E",
+			"SharpTH-E",
+			"Chef-E",
+			"Dued1-E",
+			"Zolerus-E",
+			"TheChakraTree-E",
+			"Visleaf-E",
+			"Blockerwiz-E",
+			"Titan's Stone-E",
+			"Recruiter-E",
+			"Titan of the Infernal Abyss-E",
+			"Titan of the Deep Below-E",
+			"Titan of the Dying Forest-E",
+			"Titan of the Fried One-E",
+			"Titan of the Holy Chamber-E",
+			"Plushie Mummy-E",
+			"JJ5x5-E",
+			"ReverseBackwards-E",
+			"Wer8888-E",
+			"Card Hoarder-E",
+			"Western Bandit-E",
+			"Mafia Grunt-E",
+		},
+	};
+	
 }
 
 return packs
-
-		
