@@ -957,21 +957,10 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Bio"] = "Always searching for the perfect soulmate.",
 			},
 			
-			["SoulSearch, Auschwitz Avenger"] = {
-				["Id"] = 858902108,
-				["Name"] = "Soulsearch, Auschwitz Avenger",
-				["Health"] = 1940,
-				["Power"] = 1945,
-				["Color"] = "Blue",
-				["Cost"] = {["Neutral"] = 1,["Blue"] = 3,},
-				["Effect"] = {
-					Name = "Gas Chamber",
-					Description = "Gain 420 Blue, Red, Green, and Yellow icons. Your opponent loses 1889 White icons. Gain 6000000 Life. Deal 430 damage to all allied fighters, and 1945 damage to all enemy fighters. Become a hero.",
-					["Type"] = "OnSummon",
-					["Power"] = {{"Blue",420},{"Red",420},{"Green",420},{"Yellow",420},{"Neutral",-1889,"Opponent"},{"Cost",-6000000},{"Damage",430},{"Damage",1945,"Opponent"},{"SetLife",0},{"Cost",858902108},{"Cost",858902108}},
-					Target = "Ally",
-				},
-				["Bio"] = "Time for a second Jewish Genocide",
+			["SoulSearchEngine"] = {
+				["Id"] = 1762558487,
+				["Name"] = [[Soul"Search"]],
+				["Bio"] = "When in doubt, just google it.",
 			},
 		},
 		["Health"] = 1300,
@@ -3109,13 +3098,26 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Histor, Blood Warrior"] = {
-		["Id"] = 857451473,
+		["Id"] = 1761517242,
 		["Name"] = "Histor, Blood Warrior",
 		["AltCards"] = {
 			["Histor, Blood Warrior-Masant"] = {
 				["Id"] =  1010478407,
 				["AltArt"] = true,
 				["Bio"] = "You had to pay money to get this communist card. That's kind of hypocritical.",
+			},
+			
+			["Histor, Memecraft Slayer"] = {
+				["Name"] = "Histor, Meincraft Slayer",
+				["Id"] = 1761365881,
+				["Effect"] = {
+					Name = "Fluzard was here",
+					Description = "Whenever an enemy fighter dies, Histor gains 200 health and power, and you lose 300 life. If you craft a Blood Pickaxe and slay the Ender Dragon with this card, you win the game.",
+					["Type"] = "OnEnemyDeath",
+					["Power"] = {{"Cost",300,"Ally"},{"Heal",200},{"Strengthen",200}},
+					Target = "Self",
+				},
+				["Bio"] = "AlRiGhT GuYs... Im DoInG tAkE oN mE nOw... AlRiGhT... i I rEaLlY i ReAlLy LiKe ThIs SoNg It SoUnDs GoOd... MINING AWAY... I DONT KNOW WHAT TO MINE... ILL MINE THIS ANYWAY... IN THIS MINECRAFT DAY SO BEAUTIFUL... AND FURTHER DOWN... WHATS THAT I FOUND... MINE DIAMONDS... MINE DIAMONDS... ILL MINE THEM... SO FAR I GOT TWOOOOOO... SO EASY TO MINE... WITH MY MINECRAFT PICKAXE AND SHOVELS... HOPEFULLY THEY STAY... IN MY MINECRAFT CHESTS... SO IM GONNA MAKE... A LOCK ON IT... MINE DIAMONDS... MIIIIIINEE DIAAAAAMONNNDDDDDSSSS... IIIIIIILL MIIIIIIIINEE THEEEEEM... SO FAR I GOT TWOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO... Im AlRiGhT... iM rEaDy... ALL THESE DIAMONDS... SITTING CAREFULLY AWAY... IM GETTING LAID... IF THEY MIGHT GET STOOLED FROM MY ENDER CHEST... WAIT WHOOOS THAT... HOLY SHEEP ITS NOTCH... MIIINEEE DIAAAMOOONDS... MIIIIINEEEEE DIAAAAAAAAMOOOOOOONNDSS... MIIIIIIIIIIIIINNNEEEEEE DIAAAAAAAAAAAAAAAAAMOOOOOOOOONDSSSSSSSSSS... NOWWWWWW THEEEEERE SAAAAAAFEEEEEEEE... WOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO... NOW THAT THERE SAFE... WOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOAAAAAAAA... UHHHHHHH DIAAAAMOONNNDSSSSS... MIIIIIIIIINEEE DIAAAAMOOOOONNNDS... oH tHaNkS tHaNkS fOr LiStEnInG gUyS aNd ThAnKs FoR rEcOmMeNdInG tHiS sOnG",
 			},
 		},
 		["Health"] = 650,
@@ -3311,6 +3313,12 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Blitzwolfer"] = {
 		["Id"] = 1008092198,
 		["Name"] = "Blitzwolfer",
+		["AltCards"] = {
+			["Noobwolfer"] = {
+				["Id"] = 1761890967,
+				["Bio"] = "I'm sorry, but there's no swearing allowed on my christian blox cards server. I'm gonna have to ask you to leave.",
+			},
+		},
 		["Health"] = 500,
 		["Power"] = 400,
 		["Rarity"] = "Rare",
@@ -4835,6 +4843,12 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["jojobinks321"] = {
 		["Id"] = 1592312157,
 		["Name"] = "jojobinks321",
+		["AltCards"] = {
+			["jarjarbinks321"] = {
+				["Id"] = 1761915146,
+				--["Bio"] = "Someone make a bio for him plz",
+			},
+		},
  		["Health"] = 800,
  		["Power"] = 800,
 		["Rarity"] = "Legendary",
