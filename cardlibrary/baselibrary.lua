@@ -4312,6 +4312,11 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 1567573586,
 				["Bio"] = "Easter Art Cabal Matriarch, rather than the Patriarch.",
 			},
+			["Leaf"] = {
+				["Id"] = 1762590864,
+				["Name"] = [[Vis"Leaf"]],
+				["Bio"] = "UPDAET DA GAEM U SIL-E LEEF SCREEEEEEEEEEEEEEEEE",
+			},
 		},
 		["Health"] = 500,
 		["Power"] = 550,
@@ -7887,6 +7892,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 892041279,
 				["AltArt"] = true,
 				["Bio"] = "o3o .eiD",
+			},
+			
+			["Arceus"] = {
+				["Id"] = 1761885921,
+				["Name"] = [["Arceus"Don]],
+				["Bio"] = "He appears to pass judgement unto you. o3o",
 			},
 		},
 		["Health"] = 700,
@@ -11623,6 +11634,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 893446906,
 				["AltArt"] = true,
 				["Bio"] = "You just dared him. Prepare for hellish dairy.",
+			},
+			
+			["PoopHead"] = {
+				["Id"] = 1761903851,
+				["Name"] = [[Dairing "Poophead"]],
+				["Bio"] = "You just dared him. Prepare for his head.",
 			},
 		},
 		["Health"] = 700,
@@ -17009,6 +17026,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Yoshius"] = {
 		["Id"] = 497558395,
 		["Name"] = "Yoshius",
+		["AltCards"] = {
+			["Yoshi"] = {
+				["Id"] = 1762596189,
+				["Bio"] = "Sorry Jimminus, but I have an alt art now! Eat that!",
+			},
+		},
 		["Health"] = 500,
 		["Power"] = 100,
 		["Rarity"] = "Uncommon",
@@ -17251,6 +17274,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 					Target = "Ally",
 				},				
 				["Bio"] = "Did you just call me... 'Mom'? Well... I suppose... Would that make you happy?",
+			},
+			
+			["Pencil"] = {
+				["Id"] = 1761994050,
+				["Name"] = [["Pencil"Wizard]],
+				["Bio"] = "The real question is, which part of Pencil is the wand? The eraser, or the tip?",
 			},
 		},		
 		["Health"] = 500,
