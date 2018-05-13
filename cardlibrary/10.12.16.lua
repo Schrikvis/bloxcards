@@ -957,6 +957,12 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Bio"] = "Always searching for the perfect soulmate.",
 			},
 			
+			["SoulSearchEngine"] = {
+				["Id"] = 1762558487,
+				["Name"] = [[Soul"Search"]],
+				["Bio"] = "When in doubt, just google it.",
+			},
+			
 			["SoulSearch, Auschwitz Avenger"] = {
 				["Id"] = 858902108,
 				["Name"] = "Soulsearch, Auschwitz Avenger",
@@ -3324,6 +3330,12 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Blitzwolfer"] = {
 		["Id"] = 1008092198,
 		["Name"] = "Blitzwolfer",
+		["AltCards"] = {
+			["Noobwolfer"] = {
+				["Id"] = 1761890967,
+				["Bio"] = "I'm sorry, but there's no swearing allowed on my christian blox cards server. I'm gonna have to ask you to leave.",
+			},
+		},
 		["Health"] = 500,
 		["Power"] = 400,
 		["Rarity"] = "Rare",
@@ -4848,6 +4860,12 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["jojobinks321"] = {
 		["Id"] = 1592312157,
 		["Name"] = "jojobinks321",
+		["AltCards"] = {
+			["jarjarbinks321"] = {
+				["Id"] = 1761915146,
+				--["Bio"] = "Someone make a bio for him plz",
+			},
+		},
  		["Health"] = 800,
  		["Power"] = 800,
 		["Rarity"] = "Legendary",
