@@ -1631,6 +1631,14 @@ local packs = {
 			day = {1};
 		};
 		Cards = {
+			"SoulSearchEngine",
+			"Noobwolfer",
+			"jarjarbinks321",
+			"Leaf",
+			"Arceus",
+			"PoopHead",
+			"Yoshi",
+			"Pencil",
 			"Histor, Memecraft Slayer",
 			"IcyBee",
 			"Bee Ninja",
