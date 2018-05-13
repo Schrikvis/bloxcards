@@ -1619,19 +1619,19 @@ local packs = {
 	};
 	
 	{
-		Name = "Innovative", --those meme alts or something i guess!
+		Name = "Innovative", --those meme alts or something i guess
 		Hidden = false;
 		PriceInBloxBux = 1337,
 		PriceInRobux = 0;
 		CardsInPack = 1,
 		CardPackId = 1532232174,
-		Description = "This pack only contains the dankest of the dank alt arts, so rare that you will never see them in the artbox.  These majestic packs only contain one godly card per pack, and require 20 wins to buy.",
-		WinRequirement = 20;
+		Description = "This pack only contains the dankest of the dank alt arts, so rare that you will never see them in the artbox.  These majestic packs only contain one godly card per pack, and require 100 wins to buy.",
+		WinRequirement = 100;
 		DateConstraint = {
-			month = {4};
 			day = {1};
 		};
 		Cards = {
+			"Histor, Memecraft Slayer",
 			"IcyBee",
 			"Bee Ninja",
 			"Newbee",
