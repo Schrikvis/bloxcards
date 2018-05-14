@@ -9674,7 +9674,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Description = "Deal 200 damage to a target fighter, then destroy all fighters with 100 or less health.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",200,"Single"},{"Damage",100},{"Heal",100}},
-			Target = "Enemy",
+			Target = "Opponent",
 		},
 		["Bio"] = "Slamming players into banland since 1992.",
 	},
