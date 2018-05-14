@@ -5208,7 +5208,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Damage",9999,"Archetype"},{"Add","Case3"},{"Draw",2},{"Neutral",2},{"Blue",2},{"RandomAdd","Police"}},
 			Target = "Opponent",
 		},
-		["Bio"] = "Shooting black robloxians like theres no tomorrow.",
+		["Bio"] = [["I'm sorry, I truly am. They found me. If I don't give The Chairman the Yakuza files...they'll...he'll...my family..."]],
 	},
 	
 	["ConflictInterest"] = {
