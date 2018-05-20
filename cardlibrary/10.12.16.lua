@@ -4604,6 +4604,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
   		["Power"] = 400,
  		["Rarity"] = "Rare",
  		["AttackEffect"] = "Lightning",
+		["Requirement"] = {"Archetype",2},
  		["Color"] = "Neutral",		
   		["Cost"] = {["Neutral"] = 4, ["Yellow"] = 1,},
  		["Archetype"] = "Chair", 
@@ -4898,7 +4899,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 1000,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Lightning",
-		["Color"] = "Blue",
+		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 5,["Red"] = 1,},
 		["AttackBlock"] = true,
 		["Archetype"] = "Defender",
@@ -4915,7 +4916,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	
 	["Cheesycakes"] = {
 		["Id"] = 1660265514,
-		["Name"] = "Cheesycakes",
+		["Name"] = "Cheeseycakes",
 		["Health"] = 300,
 		["Power"] = 300,
 		["Rarity"] = "Uncommon",
@@ -5208,7 +5209,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Damage",9999,"Archetype"},{"Add","Case3"},{"Draw",2},{"Neutral",2},{"Blue",2},{"RandomAdd","Police"}},
 			Target = "Opponent",
 		},
-		["Bio"] = "Shooting black robloxians like theres no tomorrow.",
+		["Bio"] = [["I'm sorry, I truly am. They found me. If I don't give The Chairman the Yakuza files...they'll...he'll...my family..."]],
 	},
 	
 	["ConflictInterest"] = {
