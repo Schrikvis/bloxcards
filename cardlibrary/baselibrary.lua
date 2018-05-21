@@ -9722,11 +9722,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Defender",
 		["Token"] = true,
 		["Fading"] = true,
+		["DiscardBlock"] = true,
 		["Color"] = "Neutral",
 		["Cost"] = {["Neutral"] = 0},
 		["Effect"] = {
 			Name = "Revival",
-			Description = "Can't attack. At the end of the turn, destroy this fighter. This card does not activate any effects upon dying.",
+			Description = "Can't attack or be discarded. At the end of the turn, destroy this fighter. This card does not activate any effects upon dying.",
 			["Type"] = "OnEnd",
 			["Power"] = "Damage",
 			Target = "Self",
