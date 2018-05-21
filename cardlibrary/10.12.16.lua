@@ -3069,7 +3069,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Fading"] = true,
 		["Effect"] = {
 			Name = "Life fam",
-			Description = "When this card is summoned, Put a Demonic Godbeast into your hand and your opponent summons a Demonic Godbeast. At the end of your turns, summon a Demonic Godbeast.",
+			Description = "When this card is summoned, Put a Demonic Godbeast into your hand and your opponent summons a Demonic Godbeast. At the end of your turns, put a Demonic Godbeast into your hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Add","Enderlox's Godbeast"},{"Summon","Demonic Godbeast","Opponent"},{"Summon","Enderlox2"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -3089,9 +3089,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3, ["Green"] = 1,},
 		["Effect"] = {
 			Name = "Life fam",
-			Description = "When this card is summoned, Put a Demonic Godbeast into your hand and your opponent summons a Demonic Godbeast. At the end of your turns, summon a Demonic Godbeast.",
+			Description = "When this card is summoned, Put a Demonic Godbeast into your hand and your opponent summons a Demonic Godbeast. At the end of your turns, put a Demonic Godbeast into your hand.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Summon","Enderlox's Godbeast"}},
+			["Power"] = {{"Add","Enderlox's Godbeast"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Of course, this simply means NO ATTACKING ALLOWED.",
