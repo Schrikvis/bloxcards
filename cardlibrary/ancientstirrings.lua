@@ -2098,7 +2098,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "When this card is summoned, put a random red or blue action into your hand. At the end of your turns, all fighters lose 50 power and Script Robber gains 100 power.",
+			Description = "When this card is summoned, put a random red or blue action into your hand. At the end of your turns, all other fighters lose 50 power and Script Robber gains 100 power.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Summon","Robber Token",},{"RandomAdd","Lunar"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -2116,7 +2116,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Bio"] = "It’s not stealing, it’s HUNTING.",
 				["Effect"] = {
 					Name = "Haydoscale",
-					Description = "When this card is summoned, put a random red or blue action into your hand. At the end of your turns, all fighters lose 50 power and Egg Robber gains 100 power.",
+					Description = "When this card is summoned, put a random red or blue action into your hand. At the end of your turns, all other fighters lose 50 power and Egg Robber gains 100 power.",
 					["Type"] = "OnEnd",
 					["Power"] = {{"Strengthen",150,"Self"},{"Weaken",50}},
 					Target = "All",
