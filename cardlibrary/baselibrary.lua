@@ -1059,7 +1059,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Booster",
 			Description = "Drain 300 life from the opponent.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Heal",300},{"Inflict",300,"Opponent"}},
+			["Power"] = {{"Cost",-300},{"Inflict",300,"Opponent"}},
 			Target = "Ally",
 		},
 		["Bio"] = [[Sometimes, I like to throw ice on the ground and pretend I'm a walrus.]],
