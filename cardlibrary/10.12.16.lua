@@ -4090,8 +4090,8 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Silver_Semtexagon"] = {
 		["Id"] = 1247510883,
 		["Name"] = "Silver_Semtexagon",
-		["Health"] = 1000,
-		["Power"] = 1000,
+		["Health"] = 750,
+		["Power"] = 750,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Slash",
 		["Color"] = "Blue",
@@ -4218,7 +4218,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Bio"] = "As opposed to any other.",
 			},
 		},
-		["Health"] = 300,
+		["Health"] = 350,
 		["Power"] = 600,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Punch2",
@@ -4251,7 +4251,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Bio"] = "As opposed to any other.",
 			},
 		},
-		["Health"] = 300,
+		["Health"] = 350,
 		["Power"] = 600,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Punch2",
@@ -5440,5 +5440,25 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
  		},
  		["Bio"] = "On second thought, why not make a token with the card! Double the fun!",
  	},
+	
+	["ianmossaboss"] = {
+		["Id"] = 1827318452,
+ 		["Name"] = "ianmossaboss",
+		["Health"] = 250,
+ 		["Power"] = 450,
+ 		["Rarity"] = "Uncommon",
+ 		["AttackEffect"] = "PunchKick",
+ 		["Color"] = "Yellow", 
+		["Cost"] = {["Yellow"] = 2,["Neutral"] = 1,}, 
+ 		["Effect"] = {
+ 			Name = "e/cheer",
+			Description = "When this card dies, all enemy fighters lose 100 Power.",
+			["Type"] = "OnDeath",
+			["Power"] = {{"Weaken",100,"Opponent"}},
+			Target = "Ally",
+ 		},
+ 		["Bio"] = "e/ cheer",
+ 	},
+	
 }
 return tentwelvesixteen
