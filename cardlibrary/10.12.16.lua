@@ -5460,5 +5460,25 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
  		["Bio"] = "e/ cheer",
  	},
 	
+	["poke631"] = {
+		["Id"] = 1827376135,
+		["Name"] = "poke631",
+		["Health"] = 400,
+		["Power"] = 150,
+		["Token"] = true,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Punchkick",
+		["Color"] = "Yellow", 
+		["Cost"] = {["Neutral"] = 2, ["Yellow"] = 2,},
+		["Effect"] = {
+			Name = "GO! DOGE HOUND!",
+			Description = "Summon a Doge Hound. This card can't generate icons.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Summon","Doge Hound"}},
+			Target = "Ally",
+		},
+		["Bio"] = "An exile from Pokémon Brick Bronze. Can still tame a good pocket monster.",
+	},
+	
 }
 return tentwelvesixteen
