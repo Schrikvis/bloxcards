@@ -31,9 +31,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1, ["Blue"] = 4,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "Whenever your opponent casts an action or terrain spell, end the turn.",
+			Description = "Whenever your opponent casts an action or terrain spell give this fighter 200 Health and Power. End the turn.",
 			["Type"] = "OnEnemyCast",
-			["Power"] = {{"EndTurn",1}},
+			["Power"] = {{"Strengthen",200},{"Heal",200},{"EndTurn",1}},
 			Target = "Self",
 		},
 		["Bio"] = "He rocks your world. Literally.",
@@ -5480,5 +5480,23 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "An exile from Pokémon Brick Bronze. Can still tame a good pocket monster.",
 	},
 	
+	["lilBismarck"] = {
+		["Id"] = 1827447190,
+		["Name"] = "lilBismarck",
+		["Health"] = 800,
+		["Power"] = 400,
+		["Rarity"] = "Rare",
+		["AttackEffect"] = "CatSlash",
+		["Color"] = "Yellow", 
+		["Cost"] = {["Yellow"] = 2,["Neutral"] = 3},
+		["Effect"] = {
+			Name = "Anime Detected",
+			Description = "Your opponent loses 400 Life.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Inflict",400}},
+			Target = "Opponent",
+		},
+		["Bio"] = "######## ### Anime Patrol ##### ##.",
+	},
 }
 return tentwelvesixteen
