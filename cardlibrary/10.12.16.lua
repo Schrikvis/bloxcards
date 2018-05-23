@@ -31,7 +31,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1, ["Blue"] = 4,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "Whenever your opponent casts an action or terrain spell give this fighter 200 Health and Power. End the turn.",
+			Description = "Whenever your opponent casts an action or terrain spell, give this fighter 200 Health and Power. End the turn.",
 			["Type"] = "OnEnemyCast",
 			["Power"] = {{"Strengthen",200},{"Heal",200},{"EndTurn",1}},
 			Target = "Self",
@@ -212,6 +212,19 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["RaveTea"] = {
 		["Id"] = 626083911,
 		["Name"] = "RaveTea",
+		["AltCards"] = {
+			["RaveTea-ArtV"] = {
+				["Id"] = 1828695996,
+				["AltArt"] = true,
+				["Effect"] = {
+					Name = "Join The Rave",
+					["Type"] = "OnSummon",
+					["Power"] = {{"Damage",9999,"Aggressor"},{"Summon","RaveTea Token-ArtV"}},
+					Target = "Opponent",
+				},
+				["Bio"] = "The mind does not control the tea. The tea controls the mind.",
+			},
+		},
 		["Health"] = 450,
 		["Power"] = 450,
 		["Rarity"] = "Epic",
@@ -231,6 +244,11 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["RaveTea Token"] = {
 		["Id"] = 626083911,
 		["Name"] = "RaveTea",
+		["AltCards"] = {
+			["RaveTea Token-ArtV"] = {
+				["Id"] = 1828695996,
+			},
+		},
 		["Health"] = 450,
 		["Power"] = 450,
 		["Rarity"] = "Token",
@@ -2547,7 +2565,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Kcbeast666"] = {
 		["Id"] = 785620968,
 		["Name"] = "Kcbeast666",
-		["Health"] = 950,
+		["Health"] = 1000,
 		["Power"] = 550,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Punchkick",
@@ -4167,6 +4185,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Health"] = 1225,
 		["Power"] = 400,
 		["Rarity"] = "Rare",
+		["Archetype"] = "Hero",
 		["AttackEffect"] = "Punch2",
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 5,["Blue"] = 3,},
@@ -5488,7 +5507,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "CatSlash",
 		["Color"] = "Yellow", 
-		["Cost"] = {["Yellow"] = 2,["Neutral"] = 3},
+		["Cost"] = {["Yellow"] = 2,["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Anime Detected",
 			Description = "Your opponent loses 400 Life.",
@@ -5497,6 +5516,37 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Opponent",
 		},
 		["Bio"] = "######## ### Anime Patrol ##### ##.",
+	},
+	
+	["SmashDude88"] = {
+		["Id"] = 1828656843,
+		["Name"] = "SmashDude88",
+		["Health"] = 500,
+		["Power"] = 500,
+		["Rarity"] = "Legendary",
+		["AttackEffect"] = "Pulse",
+		["Color"] = "Yellow", 
+		["Cost"] = {["Yellow"] = 7,},
+		["Effect"] = {
+			Name = "Assembly",
+			Description = "Whenever SmashDude88 is targeted by a fighter, turn that fighter into a copy of this card, without this effect.",
+			["Type"] = "OnTarget",
+			["Power"] = {{"Damage",9999,"Aggressor"},{"Summon","SmashDude88TOKEN","Aggressor"}},
+			Target = "Opponent",
+		},
+		["Bio"] = "I dare ya, make the joke about his name again.",
+	},
+	
+	["SmashDude88TOKEN"] = {
+		["Id"] = 1828656843,
+		["Name"] = "SmashDude88",
+		["Health"] = 500,
+		["Power"] = 500,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Pulse",
+		["Color"] = "Yellow", 
+		["Cost"] = {["Neutral"] = 0,},
+		["Bio"] = "I dare ya, make the joke about his name again.",
 	},
 }
 return tentwelvesixteen
