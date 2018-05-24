@@ -5548,5 +5548,24 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Bio"] = "I dare ya, make the joke about his name again.",
 	},
+	
+	["PurpleBoy329"] = {
+		["Id"] = 1829425678,
+		["Name"] = "PurpleBoy329",
+		["Health"] = 400,
+		["Power"] = 250,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Flood",
+		["Color"] = "Blue", 
+		["Cost"] = {["Blue"] = 2,["Green"] = 1,},
+		["Effect"] = {
+			Name = "IT",
+			Description = "Whenever you cast an action or terrain spell, give this fighter 200 Health and gain 200 Life.",
+			["Type"] = "OnAllyCast",
+			["Power"] = {{"Cost",-200},{"Heal",200,"Self"}},
+			Target = "Ally",
+		},
+		["Bio"] = "It's It, the ittest it to ever it It.",
+	},
 }
 return tentwelvesixteen
