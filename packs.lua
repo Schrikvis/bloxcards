@@ -602,6 +602,7 @@ local packs = {
 		CardPackId = 721399466,
 		Description = "Blue is the colour of logic, order, and structure. Thought packs contain cards that cost blue!",
 		Cards = {
+			"PurpleBoy329",
 			"President Duck", --Rapid Response
 			"MyCutenesskills",
 			"DunclubDuncan",
@@ -823,6 +824,8 @@ local packs = {
 		CardPackId = 721400239,
 		Description = "Yellow is the colour of chaos, emotion, and society. Revel packs contain cards that cost yellow!",
 		Cards = {
+			"SmashDude88",
+			"lilBismarck",
 			"poke631",
 			"ianmossaboss",
 			"Toy Jet Fighter",
@@ -1045,6 +1048,9 @@ local packs = {
 		Description = "Exotic new cards from the black market! White cards and joke cards! It's all yours, as long as you have 10 wins!",
 		WinRequirement = 10;
 		Cards = {
+			"PurpleBoy329",
+			"SmashDude88",
+			"lilBismarck",
 			"poke631",
 			"ianmossaboss",
 			"MyCutenesskills",
@@ -1121,9 +1127,6 @@ local packs = {
 			"Kcbeast666",
 			"Pikachukiller101",
 			"Darklord1506",
-			"RealPiggy1261",
-			"Icerain",
-			"BenCanova1",
 			-- PAST THIS POINT IS FOR WHITE CARDS AND JOKE CARDS ONLY. I'M LOOKING AT YOU, BLITZ.
 			"saud20",
 			"SpeedySeat",
