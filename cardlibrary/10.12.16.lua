@@ -5568,5 +5568,77 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "It's It, the ittest it to ever it It.",
 	},
+	
+	["Llendlar"] = {
+		["Id"] = 1804619632,
+		["Name"] = "Llendlar",
+		["Health"] = 0,
+		["Power"] = 0,
+		["Rarity"] = "Common",
+		["AttackEffect"] = "Thunder",		
+		["Color"] = "Yellow",
+		["Cost"] = {["Yellow"] = 8,},
+		["Effect"] = {
+			Name = "oof",
+			Description = "Destroy all allied fighters. Fill your board with Techno Terrors. Add 'Mass Production' to your hand.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Damage",9999,"Ally"},{"Summon","Techno Terror"},{"Summon","Techno Terror"},{"Summon","Techno Terror"},{"Summon","Techno Terror"},{"Summon","Techno Terror"},{"Summon","Techno Terror"},{"Summon","Techno Terror"},{"Summon","Techno Terror"},{"Add","Mass Production"}, {"Add","Cost Modifier - Yellow"}},
+			Target = "Self",
+		},
+		["Bio"] = "For game brea...testing purposes.",
+	},	
+	
+	["Techno Terror"] = {
+		["Id"] = 1749451071,
+		["Name"] = "Techno Terror",
+		["Health"] = 100,
+		["Power"] = 100,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Thunder",		
+		["Color"] = "Yellow",
+		["Token"] = true,
+		["Cost"] = {["Yellow"] = 0,},
+		["Bio"] = "...",
+	},
+	
+	["Mass Production"] = {
+		["Id"] = 1804619632,
+		["Name"] = "Mass Production",
+		["Health"] = 0,
+		["Power"] = 0,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Thunder",		
+		["Color"] = "Yellow",
+		["Cost"] = {["Yellow"] = 0,},
+		["Effect"] = {
+			Name = "oof",
+			Description = "Summon 2 Techno Terrors. Return this to your hand and end the turn.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Summon","Techno Terror"},{"Summon","Techno Terror"},{"Add","Mass Production"},{"EndTurn",1}},
+			Target = "Self",
+		},
+		["Bio"] = "...",	
+	},
+	
+	["Cost Modifier - Yellow"] = {
+		["Id"] = 288041067,
+		["Name"] = "Cost Modifier - Yellow",
+		["Health"] = 0,
+		["Power"] = 0,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Thunder",		
+		["Color"] = "Yellow",
+		["Stealth"] = true,
+		["Cost"] = {["Yellow"] = 0,},
+		["Effect"] = {
+			Name = "oof",
+			Description = "Lose 1 yellow icon. Return this to your hand.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Yellow",-1}, {"Add","Cost Modifier - Yellow"}},
+			Target = "Self",
+		},
+		["Bio"] = "Used to modify cost for balancing purposes",	
+	},
+	
 }
 return tentwelvesixteen
