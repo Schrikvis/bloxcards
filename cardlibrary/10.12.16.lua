@@ -5582,7 +5582,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "oof",
 			Description = "Destroy all allied fighters. Fill your board with Techno Terrors. Add 'Mass Production' to your hand.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",9999,"Ally"},{"Summon","Techno Terror"},{"Summon","Techno Terror"},{"Summon","Techno Terror"},{"Summon","Techno Terror"},{"Summon","Techno Terror"},{"Summon","Techno Terror"},{"Summon","Techno Terror"},{"Summon","Techno Terror"},{"Add","Mass Production"}, {"Add","Cost Modifier - Yellow"}},
+			["Power"] = {{"Damage",9999,"Ally"},{"Summon","Techno Terror"},{"Summon","Techno Terror"},{"Summon","Techno Terror"},{"Summon","Techno Terror"},{"Summon","Techno Terror"},{"Summon","Techno Terror"},{"Summon","Techno Terror"},{"Summon","Techno Terror"},{"Add","Mass Production"}},
 			Target = "Self",
 		},
 		["Bio"] = "For game brea...testing purposes.",
@@ -5618,26 +5618,6 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Self",
 		},
 		["Bio"] = "...",	
-	},
-	
-	["Cost Modifier - Yellow"] = {
-		["Id"] = 288041067,
-		["Name"] = "Cost Modifier - Yellow",
-		["Health"] = 0,
-		["Power"] = 0,
-		["Rarity"] = "Token",
-		["AttackEffect"] = "Thunder",		
-		["Color"] = "Yellow",
-		["Stealth"] = true,
-		["Cost"] = {["Yellow"] = 0,},
-		["Effect"] = {
-			Name = "oof",
-			Description = "Lose 1 yellow icon. Return this to your hand.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Yellow",-1}, {"Add","Cost Modifier - Yellow"}},
-			Target = "Self",
-		},
-		["Bio"] = "Used to modify cost for balancing purposes",	
 	},
 	
 }
