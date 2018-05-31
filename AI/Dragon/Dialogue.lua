@@ -1,31 +1,31 @@
 return {
-		Owner = "Melee Disk";
+		Owner = "Dragon";
 		Start = {
 			Text = {
 				--WWWWWWWWWWWWWWWWWWW
-				"Wanna play a small game?";
-				"Fox only, Final Destination.";
-				"No items, 5 stocks.";
+				"Ohayo!";
+				"Duhragon Islando ni kangei!";
+				"Genki de ne.";
 			};
 			Question = {
 				Yes = {
-					Text = "Yes"; 
-					Destination = "StartFight";
+					Text = "What?"; 
+					Destination = "Same";
 				};
 				No = {
-					Text = "Sounds lame";
-					Destination = "Dissapoint";
+					Text = "Omae wa mou shindeiru.";
+					Destination = "StartFight";
 				};
 			};
 		};
 		
 		StartFight = {
-			Text = {"Well. Something like that."; "Too late to change your mind!"; "Let's go!"};
+			Text = {"Nani?"};
 			EndPoint = true;
 		};
-		Dissapoint = {
+		Same = {
 			Text = {
-				":(";
+				"Really?";
 			};
 			EndPoint = true;
 		}
