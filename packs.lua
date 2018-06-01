@@ -1636,6 +1636,7 @@ local packs = {
 			day = {1};
 		};
 		Cards = {
+			"It",
 			"SoulSearchEngine",
 			"Noobwolfer",
 			"jarjarbinks321",
