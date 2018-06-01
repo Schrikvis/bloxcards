@@ -5553,6 +5553,12 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["PurpleBoy329"] = {
 		["Id"] = 1829425678,
 		["Name"] = "PurpleBoy329",
+		["AltCards"] = {
+			["It"] = {
+				["Id"] = 1869196239,
+				["Bio"] = "It's It, the ittest it to ever it It.",
+			},
+		},
 		["Health"] = 400,
 		["Power"] = 250,
 		["Rarity"] = "Common",
@@ -5566,7 +5572,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Cost",-200},{"Heal",200,"Self"}},
 			Target = "Ally",
 		},
-		["Bio"] = "It's It, the ittest it to ever it It.",
+		["Bio"] = "Hey guys, my friend Llendlar told me how to make a viable lifegain deck.",
 	},
 	
 	["Llendlar"] = {
