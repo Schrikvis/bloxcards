@@ -5566,13 +5566,13 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Blue", 
 		["Cost"] = {["Blue"] = 2,["Green"] = 1,},
 		["Effect"] = {
-			Name = "IT",
+			Name = "Viable Lunargain",
 			Description = "Whenever you cast an action or terrain spell, give this fighter 200 Health and gain 200 Life.",
 			["Type"] = "OnAllyCast",
 			["Power"] = {{"Cost",-200},{"Heal",200,"Self"}},
 			Target = "Ally",
 		},
-		["Bio"] = "Hey guys, my friend Llendlar told me how to make a viable lifegain deck.",
+		["Bio"] = "Viable Lifegain decks need Lunar abuse.",
 	},
 	
 	["Llendlar"] = {
