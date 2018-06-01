@@ -9696,7 +9696,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 4,["Neutral"] = 4},
 		["Effect"] = {
 			Name = "Terrorise",
-			Description = "Deal 200 damage to a target fighter, then destroy all fighters with 100 or less health.",
+			Description = "Deal 200 damage to a target fighter, then destroy all enemy fighters with 100 or less health.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",200,"Single"},{"Damage",100},{"Heal",100}},
 			Target = "Opponent",
