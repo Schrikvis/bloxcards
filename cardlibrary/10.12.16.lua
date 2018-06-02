@@ -5553,20 +5553,26 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["PurpleBoy329"] = {
 		["Id"] = 1829425678,
 		["Name"] = "PurpleBoy329",
+		["AltCards"] = {
+			["It"] = {
+				["Id"] = 1869196239,
+				["Bio"] = "It's It, the ittest it to ever it It.",
+			},
+		},
 		["Health"] = 400,
 		["Power"] = 250,
-		["Rarity"] = "Common",
+		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Flood",
 		["Color"] = "Blue", 
 		["Cost"] = {["Blue"] = 2,["Green"] = 1,},
 		["Effect"] = {
-			Name = "IT",
+			Name = "Viable Lunargain",
 			Description = "Whenever you cast an action or terrain spell, give this fighter 200 Health and gain 200 Life.",
 			["Type"] = "OnAllyCast",
 			["Power"] = {{"Cost",-200},{"Heal",200,"Self"}},
 			Target = "Ally",
 		},
-		["Bio"] = "It's It, the ittest it to ever it It.",
+		["Bio"] = "Viable Lifegain decks need Lunar abuse.",
 	},
 	
 	["Llendlar"] = {
