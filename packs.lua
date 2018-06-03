@@ -602,6 +602,8 @@ local packs = {
 		CardPackId = 721399466,
 		Description = "Blue is the colour of logic, order, and structure. Thought packs contain cards that cost blue!",
 		Cards = {
+			"Police Taskmaster",
+			"CopperGlow",
 			"PurpleBoy329",
 			"President Duck", --Rapid Response
 			"MyCutenesskills",
@@ -1410,7 +1412,6 @@ local packs = {
 			"Lunar Acolyte",
 			"Dragon Horde",
 			"Egg Eyes Batter Dragon",
-			"Grimclaw the Unholy",
 			"Greygnarl",
 			"Acolyte of the Rift",
 			"Blue Eyes Indigo Dragon",
@@ -1552,7 +1553,7 @@ local packs = {
 			"Toy Truck",
 			"Toy Car",
 			"Toy Train",
-			"Toy Jet Fighter"
+			"Toy Jet Fighter",
 			"Toy Boss Dino",
 			"Call of the Teddy Bear",
 			"Zombie",
@@ -1626,14 +1627,14 @@ local packs = {
 	{
 		Name = "Innovative", --those meme alts or something i guess
 		Hidden = false;
-		PriceInBloxBux = 1337,
+		PriceInBloxBux = 1000,
 		PriceInRobux = 0;
 		CardsInPack = 1,
 		CardPackId = 1532232174,
-		Description = "This pack only contains the dankest of the dank alt arts, so rare that you will never see them in the artbox.  These majestic packs only contain one godly card per pack, and require 100 wins to buy.",
+		Description = "Appearing only on the 1st, 12th, and 23rd of a month, the Innovative pack contains incrediblt rare bling. Requires 100 wins.",
 		WinRequirement = 100;
 		DateConstraint = {
-			day = {1};
+			day = {1,12,23};
 		};
 		Cards = {
 			"SoulSearchEngine",
