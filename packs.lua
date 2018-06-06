@@ -184,6 +184,7 @@ local packs = {
 		CardPackId = 842435184, --721400845,
 		Description = "Red is the colour of power, ambition, and control. Dominion packs contain cards that cost red!",
 		Cards = {
+			"Melon Desu",
 			"ZeDerpyDonal",
 			"Sands of Purgatory",
 			"rachjumper",
@@ -412,6 +413,7 @@ local packs = {
 		CardPackId = 721399805,
 		Description = "Green is the colour of life, growth, and the primal forces. Vitality packs contain cards that cost green!",
 		Cards = {
+			"Darr1432",
 			"Haunted Mansion",
 			"jojobinks321",
 			"Enriched Neutrinous",
@@ -602,8 +604,11 @@ local packs = {
 		CardPackId = 721399466,
 		Description = "Blue is the colour of logic, order, and structure. Thought packs contain cards that cost blue!",
 		Cards = {
-			"Police Taskmaster",
 			"CopperGlow",
+			"Frosted Shaman Marissa",
+			"WookieCookieHD",
+			"SpacielChiald",
+			"Police Taskmaster",
 			"PurpleBoy329",
 			"President Duck", --Rapid Response
 			"MyCutenesskills",
@@ -1050,6 +1055,12 @@ local packs = {
 		Description = "Exotic new cards from the black market! White cards and joke cards! It's all yours, as long as you have 10 wins!",
 		WinRequirement = 10;
 		Cards = {
+			"CopperGlow",
+			"Frosted Shaman Marissa",
+			"Darr1432",
+			"WookieCookieHD",
+			"SpacielChiald",
+			"Melon Desu",
 			"PurpleBoy329",
 			"SmashDude88",
 			"lilBismarck",
