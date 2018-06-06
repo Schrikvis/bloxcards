@@ -1134,12 +1134,6 @@ local packs = {
 			"Wizardguy34",
 			"Zabiehunter",
 			"Mlgloga",
-			"Wesker202",
-			"Themediamogul99",
-			"DigitalSon",
-			"Kcbeast666",
-			"Pikachukiller101",
-			"Darklord1506",
 			-- PAST THIS POINT IS FOR WHITE CARDS AND JOKE CARDS ONLY. I'M LOOKING AT YOU, BLITZ.
 			"saud20",
 			"SpeedySeat",
