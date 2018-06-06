@@ -5509,6 +5509,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "CatSlash",
 		["Color"] = "Yellow", 
 		["Cost"] = {["Yellow"] = 2,["Neutral"] = 3,},
+		["Archetype"] = "Hero",
 		["Effect"] = {
 			Name = "Anime Detected",
 			Description = "Your opponent loses 400 Life.",
@@ -5756,6 +5757,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Thunder",
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 1, ["Blue"] = 4,},
+		["Archetype"] = "Hero",
 		["Effect"] = {
 			Name = "BLEU",
 			Description = "When played, summon a Totem of Frost. At the end of your turns, draw a card and deal 200 damage to Marissa.",
@@ -5775,6 +5777,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Thunder",
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 1, ["Blue"] = 4,},
+		["Archetype"] = "Hero",
 		["Effect"] = {
 			Name = "BLEU",
 			Description = "When played, summon a Totem of Frost. At the end of your turns, draw a card and deal 200 damage to Marissa.",
@@ -5812,7 +5815,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 300,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Thunder",
-		["Archetype"] = "CopperGlow",
+		["Archetype"] = "Hero",
 		["Color"] = "Blue",
 		["Cost"] = {["Blue"] = 4,},
 		["Effect"] = {
