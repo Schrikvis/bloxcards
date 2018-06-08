@@ -3274,7 +3274,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Sugar Taste",
-			Description = "Deal 250 damage to a target fighter, then deal 100 damage to all red fighters.",
+			Description = "Deal 250 damage to a target fighter.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage","250"}},
 			Target = "Single",
@@ -8898,7 +8898,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Punch1",
 		["Archetype"] = "Titan",
-		["Requirement"] = {"Archetype",1},
+		["Requirement"] = {"Archetype",2},
 		["Color"] = "Yellow",
 		["Cost"] = {["Yellow"] = 5,},
 		["Effect"] = {
@@ -12141,9 +12141,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Green"] = 1,["Blue"] = 1,},
 		["Effect"] = {
 			Name = "Snipe!",
-			Description = "Whenever you gain life, ",
-			["Type"] = "OnEnemyLifeGain",
-			["Power"] = {{"Cost",-200},{"Damage",200}},
+			Description = "Whenever you gain life, lose 100 life.",
+			["Type"] = "OnHealthGain",
+			["Power"] = {{"Cost",100}},
 			Target = "Self",
 		},
 		["Bio"] = "Target confirmed. Waiting for Korblox ambush.",
