@@ -5827,5 +5827,24 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "You can call it superstition, but my fever says it's pretty real, mate.",	
 	},
+	
+	["Unc, Uncorrupted"] = {
+		["Id"] = 1882355203,
+		["Name"] = "Unc, Uncorrupted",
+		["Health"] = 700,
+		["Power"] = 700,
+		["Rarity"] = "Legendary",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Yellow",
+		["Cost"] = {["Neutral"] = 4, ["Yellow"] = 4,},
+		["Effect"] = {
+			Name = "UNCorrupted",
+			Description = "Whenever this fighter is targeted, your opponent draws a card.",
+			["Type"] = "OnTarget",
+			["Power"] = {{"Draw",1}},
+			Target = "Opponent",
+		},
+		["Bio"] = "Despite common belief, axes are quite effective against nightmares.",	
+	},
 }
 return tentwelvesixteen

@@ -831,6 +831,7 @@ local packs = {
 		CardPackId = 721400239,
 		Description = "Yellow is the colour of chaos, emotion, and society. Revel packs contain cards that cost yellow!",
 		Cards = {
+			"Unc, Uncorrupted",
 			"SmashDude88",
 			"lilBismarck",
 			"poke631",
@@ -1055,6 +1056,7 @@ local packs = {
 		Description = "Exotic new cards from the black market! White cards and joke cards! It's all yours, as long as you have 10 wins!",
 		WinRequirement = 10;
 		Cards = {
+			"Unc, Uncorrupted",
 			"CopperGlow",
 			"Frosted Shaman Marissa",
 			"Darr1432",
@@ -1133,7 +1135,6 @@ local packs = {
 			"Roundawsome",
 			"Wizardguy34",
 			"Zabiehunter",
-			"Mlgloga",
 			-- PAST THIS POINT IS FOR WHITE CARDS AND JOKE CARDS ONLY. I'M LOOKING AT YOU, BLITZ.
 			"saud20",
 			"SpeedySeat",
