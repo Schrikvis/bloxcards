@@ -831,7 +831,7 @@ local packs = {
 		CardPackId = 721400239,
 		Description = "Yellow is the colour of chaos, emotion, and society. Revel packs contain cards that cost yellow!",
 		Cards = {
-			"Unc, Uncorrupted"
+			"Unc, Uncorrupted",
 			"SmashDude88",
 			"lilBismarck",
 			"poke631",
