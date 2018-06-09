@@ -2223,9 +2223,9 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Defender",
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "Can't Attack. All fighters that can't attack gain 500 power and lose 500 health.",
+			Description = "Can't Attack. All fighters that can't attack gain 500 Health and 250 Power.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",500,"Archetype",},{"Strengthen",500,"Archetype"}},
+			["Power"] = {{"Heal",500,"Archetype",},{"Strengthen",250,"Archetype"}},
 			Target = "Ally",
 		},
 		["Bio"] = "But the SCHALLOPS& I NEED the scallops.[ Scaloops< Scallops> Scall~ Scallops# Scallops@ Scaloppinelionia King Junior the Fourth on toast£",
