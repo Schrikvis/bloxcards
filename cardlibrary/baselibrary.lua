@@ -12967,9 +12967,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Knockdown",
-			Description = "Unlock all police. Give them 100 power and health.",
+			Description = "Ready all police. Give them 100 power and health.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Unlock",9999},{"Strengthen",100},{"Heal",100}},
+			["Power"] = {{"Unlock",1},{"Strengthen",100},{"Heal",100}},
 			Target = "Archetype",
 		},
 		["Bio"] = "If only the police were really like this...", --I can't wait for sudden police OTK. ~damario 7/5/18
