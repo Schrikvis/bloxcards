@@ -6319,7 +6319,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Red",
-		["Cost"] = {["Neutral"] = 1, ["Red"] = 4,},
+		["Cost"] = {["Neutral"] = 1, ["Red"] = 3,},
 		["Effect"] = {
 			Name = "Firaja",
 			Description = "At the end of your turn, deal 100 damage to all enemy fighters.",
