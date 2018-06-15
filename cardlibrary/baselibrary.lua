@@ -13058,6 +13058,31 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Bio"] = "3/18...",
 			},
 		},
+		["Health"] = 200,
+		["Power"] = 400,
+		["Rarity"] = "Epic",
+		["AttackEffect"] = "Lightning",
+		["Color"] = "Yellow",
+		["Cost"] = {["Neutral"] = 1,["Yellow"] = 3,},
+		["Effect"] = {
+			Name = "Knockdown",
+			Description = "Summon a copy of this card that can't generate icons.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Summon","John and Jane TOKEN"}},
+			Target = "Ally",
+		},
+		["Bio"] = "Hello. Friend.",
+	},
+	
+	["John and Jane TOKEN"] = {
+		["Id"] = 411845604,
+		["Name"] = "John Doe & Jane Doe",
+		["AltCards"] = {
+			["John and Jane-ArtV TOKEN"] = {
+				["Id"] = 698878114,
+				["Bio"] = "3/18...",
+			},
+		},
 		["Token"] = true,
 		["Health"] = 200,
 		["Power"] = 400,
@@ -13067,13 +13092,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Knockdown",
-			Description = "Summon a copy of this card. This card can't generate icons.",
+			Description = "Can't generate icons.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Summon","John and Jane"}},
-			Target = "Ally",
+			["Power"] = {{"Heal",0}},
+			Target = "Self",
 		},
 		["Bio"] = "Hello. Friend.",
-	},			
+	},	
 
 	["Mrbeanbean2"] = {
 		["Id"] = 603503291,
