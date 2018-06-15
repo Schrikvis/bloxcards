@@ -2450,9 +2450,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Blue"] = 2,},
 		["Effect"] = {
 			Name = "MackDonalds FishBurger Deluxe",
-			Description = "Increase the health of a target fighter by 50.",
+			Description = "Increase the health of a target fighter by 150.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Heal",50}},
+			["Power"] = {{"Heal",150}},
 			Target = "Single",
 		},
 		["Bio"] = "He was banished from banland on Blizzetta, but he came back as a fish merchant!?",
