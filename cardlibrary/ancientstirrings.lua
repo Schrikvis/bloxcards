@@ -2461,8 +2461,8 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 4, ["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "Whenever this card attacks, this card loses 200 power.",
-			["Type"] = "OnAttack",
+			Description = "After this card attacks, this card loses 200 power.",
+			["Type"] = "OnAttackEnd",
 			["Power"] = {{"Weaken",200}},
 			Target = "Self",
 		},
@@ -3262,9 +3262,9 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 3,},
 		["Effect"] = {
 			Name = "Undead Rising",
-			Description = "Whenever this card survives being attacked, generate a green icon.",
+			Description = "Whenever this card survives being attacked, generate two green icons.",
 			["Type"] = "OnAttacked",
-			["Power"] = {{"Green",1}},
+			["Power"] = {{"Green",2}},
 			Target = "Ally",
 		},
 		["Bio"] = "Zanzel used this specific breed to supply her forces with supplies.",
