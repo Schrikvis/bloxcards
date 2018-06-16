@@ -6312,14 +6312,14 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Drakobloxxer"] = {
-		["Id"] = 294871687,
+		["Id"] = 1924205747,
 		["Name"] = "Drakobloxxer",
 		["Health"] = 300,
 		["Power"] = 300,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Red",
-		["Cost"] = {["Red"] = 4,},
+		["Cost"] = {["Neutral"] = 1, ["Red"] = 3,},
 		["Effect"] = {
 			Name = "Firaja",
 			Description = "At the end of your turn, deal 100 damage to all enemy fighters.",
@@ -10658,7 +10658,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["ReverseBackwards"] = {
-		["Id"] = 358606026,
+		["Id"] = 1924206934,
 		["Name"] = "ReverseBackwards",
 		["AltCards"] = {
 			["ReverseBackwards-E"] = {
@@ -10671,7 +10671,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Green",
-		["Cost"] = {["Neutral"] = 3,["Green"] = 4,},
+		["Cost"] = {["Neutral"] = 3,["Green"] = 6,},
 		["Effect"] = {
 			Name = "Sudden Death",
 			Description = "Whenever you summon a fighter, swap the stats of a target fighter.",
