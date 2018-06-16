@@ -68,6 +68,8 @@ local sleeves = {
 		["Squidward"]           = {675456873,  700};
 		["Illuminatus"]         = {850398463,  850};
 		["Jojokes"]             = {1233428950, 1500};
+		["Supreme"]             = {1923820840, 2000};
+		["YuGiOh"]              = {1923821071, 1995};
 	};
 
 	Halloween = {
