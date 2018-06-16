@@ -849,9 +849,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 3,},
 		["Effect"] = {
 			Name = "moo",
-			Description = "When this card is targeted, it gains 300 health and power. End the turn.",
+			Description = "Put a Targeting Blip into your hand. When this card is targeted, it gains 300 health and power. End the turn.",
 			["Type"] = "OnTarget",
-			["Power"] = {{"Heal","300"},{"Strengthen","300"},{"EndTurn",1,"Ally"}},
+			["Power"] = {{"Add","Targeting Blip","Ally"},{"Heal","300"},{"Strengthen","300"},{"EndTurn",1,"Ally"}},
 			Target = "Self",
 		},
 		["Bio"] = "His gum is as strong as his bones!",
@@ -990,9 +990,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 7,},
 		["Effect"] = {
 			Name = "Hellfire",
-			Description = "Whenever this card strikes the opponent, it gains 300 health and power.",
+			Description = "Whenever this card strikes the opponent, it gains 500 health and power.",
 			["Type"] = "OnStrike",
-			["Power"] = {{"Heal",300},{"Strengthen",300}},
+			["Power"] = {{"Heal",500},{"Strengthen",500}},
 			Target = "Self",
 		},
 		["Bio"] = "Always searching for the perfect soul.",
@@ -1560,7 +1560,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2, ["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Hellfire",
-			Description = "When this card is attacked, lock the card that attacked it for two turns.",
+			Description = "When this card survives an attack, lock the card that attacked it for two turns.",
 			["Type"] = "OnAttacked",
 			["Power"] = {{"Lock",2}},
 			Target = "Aggressor",
@@ -2005,7 +2005,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 714801845,
 		["Name"] = "AMerryCan",
 		["Health"] = 250,
-		["Power"] = 150,
+		["Power"] = 50,
 		["Rarity"] = "Rare",
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Punchkick",
@@ -2013,9 +2013,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2, ["Red"] = 2, ["Blue"] = 2,},
 		["Effect"] = {
 			Name = "befriending of scaly mutts",
-			Description = "All red fighters gain 100 power. All blue fighters gain 100 health. All non-archetype rare fighters gain 100 health and power.",
+			Description = "All red fighters gain 100 power. All blue fighters gain 100 health. All non-archetype rare fighters gain 200 health and power.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Heal",100,"ColorBlue"},{"Strengthen",100,"ColorRed"},{"Heal",100},{"Strengthen",100}},
+			["Power"] = {{"Heal",100,"ColorBlue"},{"Strengthen",100,"ColorRed"},{"Heal",200},{"Strengthen",200}},
 			Target = "Archetype",
 		},
 		["Bio"] = [[AMerryCan! Eat Fresh!]],
@@ -4219,15 +4219,13 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "B550 is a blank slate - A gunman with no identity: stripped of humanity and built for only one purpose. His story - not important; his name - even less so.",
 	},
 	
-	["ThatGrimGuy"] = {
-		["Id"] = 1328298822,
-		["Name"] = "ThatGrimGuy",
+	["ThatGrimGuy"] = { -- is now Blockerwiz in appearance
+		["Id"] = 1939178065,
+		["Name"] = "Blockerwiz",
 		["AltCards"] = {
 			["ThatGrimGuy-Alt"] = {
-				["Id"] = 1590119716,
-				["AltArt"] = true,
-				["Name"] = "ThatGrimGuy",
-				["AttackEffect"] = "UziShot",
+				["Id"] = 1939177541,
+				["Name"] = "Blockerwiz",
 				["Effect"] = {
 					Name = "Not TheGrimGuy",
 					Description = "This card triggers death effects twice when it dies.",
@@ -4255,15 +4253,15 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["ThatGrimGuyTOKEN"] = {
-		["Id"] = 1328298822,
-		["Name"] = "ThatGrimGuy",
+		["Id"] = 1939178065,
+		["Name"] = "Blockerwiz",
 		["AltCards"] = {
 			["ThatGrimGuyTOKEN-Alt"] = {
-				["Id"] = 1590119716,
-				["Name"] = "ThatGrimGuy",
+				["Id"] = 1939177541,
+				["Name"] = "Blockerwiz",
 				["Effect"] = {
 					Name = "Oof",
-					Description = "This card is supposed to die via ThatGrimGuy's effect.",
+					Description = "This card is supposed to die via Blockerwiz's effect.",
 					["Type"] = "OnSummon",
 					["Power"] = {{"Damage",9999}},
 					Target = "Self",
@@ -4868,7 +4866,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["jarjarbinks321"] = {
 				["Id"] = 1761915146,
-				--["Bio"] = "Someone make a bio for him plz",
+				--["Bio"] = "Someone make a bio for him plz", --don't it's much funnier with the standard bio
 			},
 		},
  		["Health"] = 800,
@@ -5340,16 +5338,15 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Token",
-		["Requirement"] = {"Archetype",3},
 		["AttackEffect"] = "Gunshot",			
 		["Color"] = "Blue",
 		["Archetype"] = "Police",
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "A",
-			Description = "Requires 3 Police in play to investigate. Your opponent summons The Chairman, The Operative, and a Regenerating Vat. Draw 2 cards, gain 2 blue and white icons, and put 2 random Police into your hand. End the turn.",
+			Description = "Your opponent summons The Chairman, The Operative, and a Regenerating Vat. Draw 2 cards, gain 4 blue and white icons, and put 2 random Police into your hand. End the turn.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Lock",1},{"Summon","The Chairman"},{"Summon","The Operative"},{"Draw",2,"Ally"},{"Neutral",2,"Ally"},{"Blue",2,"Ally"},{"RandomAdd","Police","Ally"},{"RandomAdd","Police","Ally"},{"Unlock",1},{"EndTurn",030,"Ally"}},
+			["Power"] = {{"Lock",1},{"Summon","The Chairman"},{"Summon","The Operative"},{"Draw",2,"Ally"},{"Neutral",4,"Ally"},{"Blue",4,"Ally"},{"RandomAdd","Police","Ally"},{"RandomAdd","Police","Ally"},{"Unlock",1},{"EndTurn",030,"Ally"}},
 			Target = "Opponent",
 		},
 		["Bio"] = "One last case. The end of the road. Find the truth about The Chairman.",
@@ -5358,8 +5355,8 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["The Chairman"] = {
 		["Id"] = 1674219117,
 		["Name"] = "The Chairman",
-		["Health"] = 3000,
-		["Power"] = 3000,
+		["Health"] = 2500,
+		["Power"] = 2500,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Gunshot",
 		["WeakenImmune"] = true,
@@ -5367,7 +5364,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Charge"] = true,
 		["Color"] = "Blue",
 		["Archetype"] = "Crime4",
-		["Cost"] = {["Neutral"] = 0,}, --{["Neutral"] = 4,},  blitz you goof you uploaded the art without the cost.
+		["Cost"] = {["Neutral"] = 4,}, --{["Neutral"] = 4,},  blitz you goof you uploaded the art without the cost.
 		["Effect"] = {
 			Name = "C",
 			Description = "Haste. This card is immune to effects that lower, or set its stats. When this card dies, Case #4 is solved. You get arrested and lose the game.",
@@ -5661,9 +5658,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2, ["Red"] = 4,},
 		["Effect"] = {
 			Name = "ARE YOU HAPPY, DAIR?",
-			Description = "Put a Baseplate into your hand. (Baseplate is a terrain.)",
+			Description = "Gain a Red icon. Put a Baseplate into your hand. (Baseplate is a terrain.)",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Add","Baseplate"}},
+			["Power"] = {{"Add","Baseplate"},{"Red",1}},
 			Target = "Ally",
 		},
 		["Bio"] = "It's not like I like watermelons o-or anything...",	
@@ -5680,9 +5677,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2, ["Blue"] = 4,},
 		["Effect"] = {
 			Name = "ARE YOU HAPPY, DAIR?",
-			Description = "Put a Baseplate into your hand. (Baseplate is a terrain.)",
+			Description = "Gain a Blue icon. Put a Baseplate into your hand. (Baseplate is a terrain.)",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Add","Baseplate"}},
+			["Power"] = {{"Add","Baseplate"},{"Blue",1}},
 			Target = "Ally",
 		},
 		["Bio"] = "She is a master beyblader. That's pretty special.",	
