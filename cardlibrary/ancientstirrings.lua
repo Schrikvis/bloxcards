@@ -2461,8 +2461,8 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 4, ["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "Whenever this card attacks, this card loses 200 power.",
-			["Type"] = "OnAttack",
+			Description = "After this card attacks, this card loses 200 power.",
+			["Type"] = "OnAttackEnd",
 			["Power"] = {{"Weaken",200}},
 			Target = "Self",
 		},
