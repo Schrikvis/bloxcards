@@ -13059,7 +13059,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Effect"] = {
 					Name = "March 18",
 					["Type"] = "OnSummon",
-					["Power"] = {{"Summon","John and Jane-ArtV"}},
+					["Power"] = {{"Summon","John and Jane-ArtV TOKEN"}},
 					Target = "Ally",
 				},
 				["Bio"] = "3/18...",
