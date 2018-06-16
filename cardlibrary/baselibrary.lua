@@ -2192,6 +2192,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Slice",
 		["Color"] = "Blue",
 		["Cost"] = {["Blue"] = 2,["Neutral"] = 1,},
+		["Effect"] = {
+			Name = "Uptown Funk",
+			Description = "Both players gain 200 Life",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Cost",-200},{"Inflict",-200,"Opponent"}},
+			Target = "Ally",
+		},
 		["Bio"] = "He will gently poke you.",
 	},
 	
