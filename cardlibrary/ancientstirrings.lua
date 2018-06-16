@@ -3262,9 +3262,9 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 3,},
 		["Effect"] = {
 			Name = "Undead Rising",
-			Description = "Whenever this card survives being attacked, generate a green icon.",
+			Description = "Whenever this card survives being attacked, generate two green icons.",
 			["Type"] = "OnAttacked",
-			["Power"] = {{"Green",1}},
+			["Power"] = {{"Green",2}},
 			Target = "Ally",
 		},
 		["Bio"] = "Zanzel used this specific breed to supply her forces with supplies.",
