@@ -6490,6 +6490,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Attack Modifier! Debuff!"] = {
 		["Id"] = 296845337,
 		["Name"] = "Attack Modifier! Debuff!",
+		["AltCards"] = {
+			["Sticky Gum"] = {
+				["Id"] = 1926253934,
+				["Name"] = "Sticky Gum",
+				["Bio"] = "This certainly is turning into a bit of a gooey scenario.",
+			},
+		},
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Token",
@@ -6510,6 +6517,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Attack Modifier! Buff!"] = {
 		["Id"] = 296845339,
 		["Name"] = "Attack Modifier! Buff!",
+		["AltCards"] = {
+			["Lollipop Hammer"] = {
+				["Id"] = 1926253198,
+				["Name"] = "Lollipop Hammer",
+				["Bio"] = "Not as spicy as a certain other lollipop, but eh, it'll do.",
+			},
+		},
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Token",
@@ -6530,6 +6544,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Defense Modifier! Buff!"] = {
 		["Id"] = 296845341,
 		["Name"] = "Defense Modifier! Buff!",
+		["AltCards"] = {
+			["Jawbreaker"] = {
+				["Id"] = 1926253624,
+				["Name"] = "Jawbreaker",
+				["Bio"] = "Hopefully this won't give you tooth decay.",
+			},
+		},
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Token",
@@ -6550,6 +6571,17 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Biostream"] = {
 		["Id"] = 1159022386,
 		["Name"] = "Biostream",
+		["AltCards"] = {
+			["CandyStream"] = {
+				["Id"] = 1926252809,
+				["Effect"] = {
+					Name = "Please stop eating all that candy.",
+					Description = "Put 3 different candies into your hand.",
+					["Power"] = {{"Add","Lollipop Hammer"},{"Add","Jawbreaker"},{"Add","Sticky Gum"}},
+				},
+				["Bio"] = "With all that candy, he's certain to get bloated.",
+			},
+		},
 		["Health"] = 1000,
 		["Power"] = 350,
 		["Rarity"] = "Legendary",
@@ -16592,7 +16624,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["B0BBA"] = {
-		["Id"] = 490219260,
+		["Id"] = 1926252195,
 		["Name"] = "B0BBA",
 		["Health"] = 900,
 		["Power"] = 200,
@@ -18004,7 +18036,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},			
 	
 	["Remote Mine"] = {
-		["Id"] = 556057720,
+		["Id"] = 1942957630,
 		["Name"] = "Remote Mine",
 		["Health"] = 100,
 		["Power"] = 100,
@@ -18012,7 +18044,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Explode1",
 		["Color"] = "Neutral",
 		["DiscardBlock"] = true,
-		["Cost"] = {["Neutral"] = 2,},
+		["Cost"] = {["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Explosion",
 			Description = "This card can't be discarded. When this card dies, deal 100 damage to all fighters.",
