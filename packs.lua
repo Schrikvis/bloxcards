@@ -1635,16 +1635,18 @@ local packs = {
 	{
 		Name = "Innovative", --those meme alts or something i guess
 		Hidden = false;
-		PriceInBloxBux = 1000,
+		PriceInBloxBux = 1337,
 		PriceInRobux = 0;
 		CardsInPack = 1,
 		CardPackId = 1532232174,
-		Description = "Appearing only on the 1st, 12th, and 23rd of a month, the Innovative pack contains incrediblt rare bling. Requires 100 wins.",
+		Description = "Appearing only on the 1st, 12th, and 23rd of a month, the Innovative pack contains incredibly rare bling. Requires 100 wins.",
 		WinRequirement = 100;
 		DateConstraint = {
 			day = {1,12,23};
 		};
 		Cards = {
+			"CreativeName123",
+			"CandyStream",
 			"It",
 			"SoulSearchEngine",
 			"Noobwolfer",
