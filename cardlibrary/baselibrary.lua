@@ -18036,11 +18036,11 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},			
 	
 	["Remote Mine"] = {
-		["Id"] = 1942957630,
+		["Id"] = 1945349660,
 		["Name"] = "Remote Mine",
 		["Health"] = 100,
 		["Power"] = 100,
-		["Rarity"] = "Common",
+		["Rarity"] = "Token",
 		["AttackEffect"] = "Explode1",
 		["Color"] = "Neutral",
 		["DiscardBlock"] = true,
