@@ -13338,9 +13338,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Yellow"] = 2,["Red"] = 2,},
 		["Effect"] = {
 			Name = "SCRIPTING PARTY",
-			Description = "Whenever you lose life, gain a yellow icon.",
+			Description = "Whenever you lose life, swap the stats of all allied fighters.",
 			["Type"] = "OnHealthLoss",
-			["Power"] = {{"Yellow",1}},
+			["Power"] = {{"Swap",030}},
 			Target = "Ally",
 		},
 		["Bio"] = "THAT'S A PIPETTE, NOT A SWORD! 0/10 - Sword Critic",
