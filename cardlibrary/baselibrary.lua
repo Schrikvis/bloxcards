@@ -18043,11 +18043,10 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Explode1",
 		["Color"] = "Neutral",
-		["DiscardBlock"] = true,
 		["Cost"] = {["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Explosion",
-			Description = "This card can't be discarded. When this card dies, deal 100 damage to all fighters.",
+			Description = "When this card dies, deal 100 damage to all fighters.",
 			["Type"] = "OnDeath",
 			["Power"] = {{"Damage",100}},
 			Target = "All",
