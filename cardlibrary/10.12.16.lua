@@ -5891,6 +5891,12 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Unc, Uncorrupted"] = {
 		["Id"] = 1882355203,
 		["Name"] = "Unc, Uncorrupted",
+		["AltCards"] = {
+			["CreativeName123"] = {
+				["Id"] = 1942359213,
+				["Bio"] = "彼は確かにある。",
+			},
+		},
 		["Health"] = 700,
 		["Power"] = 700,
 		["Rarity"] = "Legendary",
