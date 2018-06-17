@@ -10420,7 +10420,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Nightmare"] = {
-		["Id"] = 1939410048,
+		["Id"] = 345760235,
 		["Name"] = "Nightmare",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -10428,14 +10428,14 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Target",
 		["DiscardBlock"] = true,
 		["Color"] = "Neutral",
-		["Cost"] = {["Neutral"] = 2,},
+		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Nightmare!",
 			Description = "This card cant be discarded. You lose 350 life.",
 			Type = "OnSummon",
 			Power = "Cost",
 			Target = "Ally",
-			Increase = 350
+			Increase = 300
 		},
 		["Bio"] = "It begins.",
 	},
@@ -10443,8 +10443,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Delusionist"] = {
 		["Id"] = 1024780201,
 		["Name"] = "Delusionist",
-		["Health"] = 700,
-		["Power"] = 100,
+		["Health"] = 550,
+		["Power"] = 150,
 		["Rarity"] = "Uncommon",
 		["Archetype"] = "Nightmare",
 		["AttackEffect"] = "Slash",
@@ -10463,8 +10463,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Rat King"] = {
 		["Id"] = 345761101,
 		["Name"] = "Rat King",
-		["Health"] = 50,
-		["Power"] = 0,
+		["Health"] = 100,
+		["Power"] = 50,
 		["Rarity"] = "Uncommon",
 		["Archetype"] = "Nightmare",
 		["AttackEffect"] = "Slash",
@@ -10472,9 +10472,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 1,["Green"] = 1,},
 		["Effect"] = {
 			Name = "Hive Crack",
-			Description = "Put a Nightmare into your opponent's hand. All Nightmare-related fighters gain 200 Power and health.",
+			Description = "Put a Nightmare into your opponent's hand. All Nightmare-related fighters gain 150 Power and Health.",
 			Type = "OnSummon",
-			Power = {{"Add","Nightmare"},{"Strengthen",200,"Archetype"},{"Heal",200,"Archetype"}},
+			Power = {{"Add","Nightmare"},{"Strengthen",150,"Archetype"},{"Heal",150,"Archetype"}},
 			Target = "Opponent",
 		},
 		["Bio"] = "To immobilize the weak. That is what the Rat King makes those fear.",
@@ -10483,7 +10483,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Traumaturge"] = {
 		["Id"] = 345763235,
 		["Name"] = "Traumaturge",
-		["Health"] = 100,
+		["Health"] = 500,
 		["Power"] = 0,
 		["Rarity"] = "Uncommon",
 		["Archetype"] = "Nightmare",
@@ -10492,9 +10492,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 3,["Green"] = 1,},
 		["Effect"] = {
 			Name = "Night Creak",
-			Description = "Lock a target fighter for three turns. Put two nightmares into your opponent's hand.",
+			Description = "Lock a target fighter for three turns. Put a Nightmare into your opponent's hand.",
 			Type = "OnSummon",
-			Power = {{"Add","Nightmare"},{"Add","Nightmare"},{"Lock",3,"Single"}},
+			Power = {{"Add","Nightmare"},{"Lock",3,"Single"}},
 			Target = "Opponent",
 		},
 		["Bio"] = "A nightmare of a choice.",
@@ -10512,7 +10512,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 3,["Blue"] = 1,},
 		["Effect"] = {
 			Name = "Nightmare!",
-			Description = "Put a nightmare into your opponent's hand. Your opponent loses 2 white icons. This effect can cause negative icons. Draw a card.",
+			Description = "Put a Nightmare into your opponent's hand. Your opponent loses 2 white icons. This effect can cause negative icons. Draw a card.",
 			Type = "OnSummon",
 			Power = {{"Add","Nightmare"},{"White",-2},{"Draw",1,"Ally"}},
 			Target = "Opponent",
@@ -10531,7 +10531,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 1,["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Nightmare!",
-			Description = "Put two Nightmares into your opponent's hand. All non-Nightmare-related fighters lose 200 Power. All Nightmare-related fighters gain 500 Health.",
+			Description = "Put a Nightmare into your opponent's hand. All non-Nightmare-related fighters lose 200 Power. All Nightmare-related fighters gain 500 Health.",
 			Type = "OnSummon",
 			Power = {{"Add","Nightmare","Opponent"},{"Add","Nightmare","Opponent"},{"Weaken",200,"NotArchetype"},{"Heal",500}},
 			Target = "Archetype",
@@ -10578,9 +10578,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 2},
 		["Effect"] = {
 			Name = "Nightmare!",
-			Description = "You must have a Nightmare-related fighter in play to cast this. Shuffle 5 Nightmares into your opponent's deck. Draw a card.",
+			Description = "You must have a Nightmare-related fighter in play to cast this. Shuffle 3 Nightmares into your opponent's deck. Draw a card.",
 			Type = "OnSummon",
-			Power = {{"DeckAdd","Nightmare"},{"DeckAdd","Nightmare"},{"DeckAdd","Nightmare"},{"DeckAdd","Nightmare"},{"DeckAdd","Nightmare"},{"Draw",1,"Ally"}},
+			Power = {{"DeckAdd","Nightmare"},{"DeckAdd","Nightmare"},{"DeckAdd","Nightmare"},{"Draw",1,"Ally"}},
 			Target = "Opponent",
 		},
 		["Bio"] = "They'll be complaining that they drew it every, single, time.",
