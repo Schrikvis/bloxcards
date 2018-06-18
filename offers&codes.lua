@@ -284,6 +284,20 @@ local codes = {
 			BestBefore = nil;
 		};
 	};
+	
+	{
+		Obfuscated = "KGMRjNf3 RjKQ aRaG";
+		Rewards = {
+			Cards = {};
+			RandomCards = {};
+			Packs = {["Innovative"] = 1};
+			BloxBux = 500;
+			Charms = {2,2};
+			Sleeves = {"YuGiOh"};
+			Ranks = {};
+			BestBefore = nil; 
+		}
+	};
 }
 
 local offers = {

@@ -184,6 +184,7 @@ local packs = {
 		CardPackId = 842435184, --721400845,
 		Description = "Red is the colour of power, ambition, and control. Dominion packs contain cards that cost red!",
 		Cards = {
+			"Magical Girl Histor",
 			"Vinrole",
 			"Melon Desu",
 			"ZeDerpyDonal",
@@ -1058,6 +1059,7 @@ local packs = {
 		Description = "Exotic new cards from the black market! White cards and joke cards! It's all yours, as long as you have 10 wins!",
 		WinRequirement = 10;
 		Cards = {
+			"Magical Girl Histor",
 			"Unc, Uncorrupted",
 			"SnailMan39",
 			"Vinrole",
@@ -1136,7 +1138,6 @@ local packs = {
 			"EvilJacobthehero2013",
 			"Regular_Talkshow",
 			"Dairingpoophead, Tix God",
-			"Roundawsome",
 			-- PAST THIS POINT IS FOR WHITE CARDS AND JOKE CARDS ONLY. I'M LOOKING AT YOU, BLITZ.
 			"saud20",
 			"SpeedySeat",
