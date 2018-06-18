@@ -5903,5 +5903,47 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "Despite common belief, axes are quite effective against nightmares.",	
 	},
+	
+	["Magical Girl Histor"] = {
+		["Id"] = 1947968303,
+		["Name"] = "Magical Girl Histor",
+		["Health"] = 600,
+		["Power"] = 600,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Red",
+		["Cost"] = {["Neutral"] = 3, ["Red"] = 4,},
+		["Effect"] = {
+			Name = "Chaos Entrapment",
+			Description = "Your opponent summons Corrupt SoulSearch.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Summon","Corrupt SoulSearch","Opponent"}},
+			Target = "Opponent",
+		},
+		["Bio"] = "The worst decision he's ever made? Signing that contract with a demon.",	
+	},
+	
+	["Corrupt SoulSearch"] = {
+		["Id"] = 1948470319,
+		["Name"] = "Corrupt SoulSearch",
+		["Health"] = 1000,
+		["Power"] = 200,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Lightning",
+		["Token"] = true,
+		["DiscardBlock"] = true,
+		["WeakenImmune"] = true,
+		["SetImmune"] = true,
+		["Color"] = "White",
+		["Cost"] = {["Neutral"] = 8,["Yellow"] = 8,["Red"] = 8,["Blue"] = 8,["Green"] = 8,},
+		["Effect"] = {
+			Name = "GENDER STATUS : HACKED",
+			Description = "Immune to effects that set or lower stats in any way. When this fighter dies, lose a white icon and deal 200 damage to all allied fighters.",
+			["Type"] = "OnDeath",
+			["Power"] = {{"Damage",200,"Ally"},{"Neutral",-1,"Ally"}},
+			Target = "Opponent",
+		},
+		["Bio"] = "Ｈａｃｋｅｄ.",	
+	},
 }
 return tentwelvesixteen
