@@ -5914,25 +5914,35 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "One sword for trust. One sword for betrayal.",
 	},	
 	
-	["Blockerwiz"] = { --this card is now ThatGrimGuy
-		["Id"] = 1939176081,
-		["Name"] = "ThatGrimGuy",  
+	["Blockerwiz"] = { 
+		["Id"] = 1939178065,
+		["Name"] = "Blockerwiz",
 		["AltCards"] = {
 			["Blockerwiz-E"] = {
-				["Name"] = "ThatGrimGuy",
-				["Id"] =  1939175444,
-				["AltArt"] = true,
-				["AttackEffect"] = "UziShot",
-				["Bio"] = "As opposed to any other.",
-			},
-		},
-		["Health"] = 900,
-		["Power"] = 300,
+				["Id"] = 1939177541,
+				["Name"] = "Blockerwiz",
+				["Bio"] = "Remember kids: eating raw eggs could give you salmonella poisoning! The symptoms of salmonella include chills, dehydration, diarrhea, fatigue, fever, headaches, loss of appetite, and pain areas in the abdomen or muscles.",
+				["Effect"] = {
+					Name = "Not TheGrimGuy",
+					Description = "This card triggers death effects twice when it dies.",
+					["Type"] = "OnDeath",
+					["Power"] = {{"SummonWithEffect","ThatGrimGuyTOKEN-Alt"}},
+					Target = "Ally",
+				},
+		["Health"] = 350,
+		["Power"] = 600,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Red",
-		["Cost"] = {["Neutral"] = 4,["Red"] = 1,},
+		["Cost"] = {["Neutral"] = 3,["Red"] = 1,},
 		["Bio"] = "Is your big head too SMALL? Just add water to achieve BIGGERHEAD.",
+		["Effect"] = {
+			Name = "Not TheGrimGuy",
+			Description = "This card triggers death effects twice when it dies.",
+			["Type"] = "OnDeath",
+			["Power"] = {{"SummonWithEffect","ThatGrimGuyTOKEN"}},
+			Target = "Ally",
+		},		
 	},	
 	
 	["ChosenCoast"] = {
