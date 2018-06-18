@@ -8422,10 +8422,10 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Yellow",
 		["Cost"] = {["Yellow"] = 4,},
 		["Effect"] = {
-			Name = "EzWinz",
+			Name = "NotWeaven",
 			Description = "Put two random Non-Archetyped Rares into your hand.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"RandomAdd","Hero"},{"RandomAdd","Hero"}}
+			["Power"] = {{"RandomAdd","Hero"},{"RandomAdd","Hero"}},
 			Target = "Ally",
 		},
 		["Bio"] = "All dapper artifacts come at a cost...",
