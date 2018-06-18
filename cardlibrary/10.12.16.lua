@@ -4219,38 +4219,26 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "B550 is a blank slate - A gunman with no identity: stripped of humanity and built for only one purpose. His story - not important; his name - even less so.",
 	},
 	
-	["ThatGrimGuy"] = { -- is now Blockerwiz in appearance
-		["Id"] = 1939178065,
-		["Name"] = "Blockerwiz",
-		["AltCards"] = {
-			["ThatGrimGuy-Alt"] = {
-				["Id"] = 1939177541,
-				["Name"] = "Blockerwiz",
-				["Effect"] = {
-					Name = "Not TheGrimGuy",
-					Description = "This card triggers death effects twice when it dies.",
-					["Type"] = "OnDeath",
-					["Power"] = {{"SummonWithEffect","ThatGrimGuyTOKEN-Alt"}},
-					Target = "Ally",
-				},
+	["ThatGrimGuy"] = { 
+		["Id"] = 1939176081,
+		["Name"] = "ThatGrimGuy",  
+ 		["AltCards"] = {
+ 			["ThatGrimGuy-Alt"] = {
+				["Name"] = "ThatGrimGuy",
+				["Id"] =  1939175444,
+				["AltArt"] = true,
+				["AttackEffect"] = "UziShot",
 				["Bio"] = "As opposed to any other.",
-			},
-		},
-		["Health"] = 350,
-		["Power"] = 600,
-		["Rarity"] = "Common",
-		["AttackEffect"] = "Punch2",
-		["Color"] = "Red", 		
-		["Cost"] = {["Neutral"] = 3, ["Red"] = 1,},
-		["Effect"] = {
-			Name = "Not TheGrimGuy",
-			Description = "This card triggers death effects twice when it dies.",
-			["Type"] = "OnDeath",
-			["Power"] = {{"SummonWithEffect","ThatGrimGuyTOKEN"}},
-			Target = "Ally",
-		},
-		["Bio"] = "Is your big head too SMALL? Just add water to acheive BIGGERHEAD.",
-	},
+ 			},
+ 		},
+ 		["Health"] = 900,
+ 		["Power"] = 300,
+ 		["Rarity"] = "Common",
+ 		["AttackEffect"] = "Lightning",
+ 		["Color"] = "Red",
+ 		["Cost"] = {["Neutral"] = 4,["Red"] = 1,},
+		["Bio"] = "Is your big head too SMALL? Just add water to achieve BIGGERHEAD.",
+ 	},	
 	
 	["ThatGrimGuyTOKEN"] = {
 		["Id"] = 1939178065,
@@ -4277,7 +4265,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3, ["Red"] = 1,},
 		["Effect"] = {
 			Name = "Oof",
-			Description = "This card is supposed to die via ThatGrimGuy's effect.",
+			Description = "This card is supposed to die via Blockerwiz's effect.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",9999}},
 			Target = "Self",
