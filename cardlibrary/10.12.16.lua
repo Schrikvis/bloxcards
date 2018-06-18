@@ -4221,10 +4221,10 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	
 	["ThatGrimGuy"] = {
 		["Id"] = 1939176081,
-		["Name"] = "ThatGrimGuy",  
- 		["AltCards"] = {
- 			["ThatGrimGuy-Alt"] = {
-				["Id"] =  1939175444,
+		["Name"] = "ThatGrimGuy",
+		["AltCards"] = {
+			["ThatGrimGuy-Alt"] = {
+				["Id"] = 1939175444,
 				["AltArt"] = true,
 				["AttackEffect"] = "UziShot",
 				["Bio"] = "As opposed to any other.",
@@ -4233,7 +4233,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
  		["Health"] = 900,
  		["Power"] = 300,
  		["Rarity"] = "Common",
- 		["AttackEffect"] = "Lightning",
+ 		["AttackEffect"] = "Punch2",
  		["Color"] = "Red",
  		["Cost"] = {["Neutral"] = 4,["Red"] = 1,},
 		["Bio"] = "Is your big head too SMALL? Just add water to achieve BIGGERHEAD.",
