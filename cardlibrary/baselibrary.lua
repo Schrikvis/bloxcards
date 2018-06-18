@@ -14377,9 +14377,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 4, ["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Whenever this card attacks, set its health and power to 600.",
+			Description = "Whenever this card attacks, set its health and power to 750.",
 			["Type"] = "OnAttack",
-			["Power"] = {{"Weaken",9999},{"Strengthen",600},{"Swap",030},{"Weaken",9999},{"Strengthen",600}},
+			["Power"] = {{"Weaken",9999},{"Strengthen",750},{"Swap",030},{"Weaken",9999},{"Strengthen",750}},
 			Target = "Self",	
 		},
 		["Bio"] = "Doregriffons don't understand humans. If they didn't want to be eaten, why are they made out of meat and treasure?",
