@@ -5914,13 +5914,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "One sword for trust. One sword for betrayal.",
 	},	
 	
-	["Blockerwiz"] = { 
+	["Blockerwiz"] = {
 		["Id"] = 1939178065,
 		["Name"] = "Blockerwiz",
 		["AltCards"] = {
 			["Blockerwiz-E"] = {
 				["Id"] = 1939177541,
-				["Name"] = "Blockerwiz",
 				["Bio"] = "Remember kids: eating raw eggs could give you salmonella poisoning! The symptoms of salmonella include chills, dehydration, diarrhea, fatigue, fever, headaches, loss of appetite, and pain areas in the abdomen or muscles.",
 				["Effect"] = {
 					Name = "Not TheGrimGuy",
@@ -5929,20 +5928,22 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 					["Power"] = {{"SummonWithEffect","ThatGrimGuyTOKEN-Alt"}},
 					Target = "Ally",
 				},
+			},
+		},
 		["Health"] = 350,
 		["Power"] = 600,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 3,["Red"] = 1,},
-		["Bio"] = "Is your big head too SMALL? Just add water to achieve BIGGERHEAD.",
 		["Effect"] = {
 			Name = "Not TheGrimGuy",
 			Description = "This card triggers death effects twice when it dies.",
 			["Type"] = "OnDeath",
 			["Power"] = {{"SummonWithEffect","ThatGrimGuyTOKEN"}},
 			Target = "Ally",
-		},		
+		},
+		["Bio"] = "Detects any foes with his tail, so be cautious!",
 	},	
 	
 	["ChosenCoast"] = {
@@ -8422,9 +8423,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 4,},
 		["Effect"] = {
 			Name = "EzWinz",
-			Description = "Put two random Rare cards into your hand.",
+			Description = "Put two random Non-Archetyped Rares into your hand.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"RandomAdd","Rare"},{"RandomAdd","Rare"}}
+			["Power"] = {{"RandomAdd","Hero"},{"RandomAdd","Hero"}}
 			Target = "Ally",
 		},
 		["Bio"] = "All dapper artifacts come at a cost...",
@@ -11674,13 +11675,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["AltArt"] = true,
 			},
 		},
-		["Health"] = 700,
+		["Health"] = 500,
 		["Power"] = 100,
 		["Token"] = true,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Yellow",
-		["Cost"] = {["Neutral"] = 5,},
+		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "ROBLOX(Card)",
 			Description = "At the end of your turns, put a random yellow card into your hand. ROBLOX can't generate icons.",
