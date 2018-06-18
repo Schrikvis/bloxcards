@@ -4219,12 +4219,11 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "B550 is a blank slate - A gunman with no identity: stripped of humanity and built for only one purpose. His story - not important; his name - even less so.",
 	},
 	
-	["ThatGrimGuy"] = { 
+	["ThatGrimGuy"] = {
 		["Id"] = 1939176081,
 		["Name"] = "ThatGrimGuy",  
  		["AltCards"] = {
  			["ThatGrimGuy-Alt"] = {
-				["Name"] = "ThatGrimGuy",
 				["Id"] =  1939175444,
 				["AltArt"] = true,
 				["AttackEffect"] = "UziShot",
@@ -4254,14 +4253,14 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 					["Power"] = {{"Damage",9999}},
 					Target = "Self",
 				},
-				["Bio"] = "As opposed to any other.",
+				["Bio"] = "Why did it take so long to fix this?",
 			},
 		},
 		["Health"] = 350,
 		["Power"] = 600,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Punch2",
-		["Color"] = "Red", 		
+		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 3, ["Red"] = 1,},
 		["Effect"] = {
 			Name = "Oof",
@@ -4270,7 +4269,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Damage",9999}},
 			Target = "Self",
 		},
-		["Bio"] = "As the development team slowly becomes less and less active, the more I realize of the inevitable for us. We are human beings, with lives beyond the computer screens, and I can't bear that we would have to depart from this game sooner or later. Before the inevitable comes, I just want to say thank you to each person who contributed to this game. This game is where I made the most friends, and met the people who made me happy the most. And when that day comes, I'll wish you the best of luck in this journey of life. -Blitzwolfer",
+		["Bio"] = "Soulplz",
 	},
 	
 	["Permafrost Storm"] = {
@@ -4854,7 +4853,6 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["jarjarbinks321"] = {
 				["Id"] = 1761915146,
-				--["Bio"] = "Someone make a bio for him plz", --don't it's much funnier with the standard bio
 			},
 		},
  		["Health"] = 800,
@@ -5332,7 +5330,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "A",
-			Description = "Your opponent summons The Chairman, The Operative, and a Regenerating Vat. Draw 2 cards, gain 4 blue and white icons, and put 2 random Police into your hand. End the turn.",
+			Description = "Your opponent summons The Chairman and The Operative. Draw 2 cards, gain 4 blue and white icons, and put 2 random Police into your hand. End the turn.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Lock",1},{"Summon","The Chairman"},{"Summon","The Operative"},{"Draw",2,"Ally"},{"Neutral",4,"Ally"},{"Blue",4,"Ally"},{"RandomAdd","Police","Ally"},{"RandomAdd","Police","Ally"},{"Unlock",1},{"EndTurn",030,"Ally"}},
 			Target = "Opponent",
@@ -5352,7 +5350,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Charge"] = true,
 		["Color"] = "Blue",
 		["Archetype"] = "Crime4",
-		["Cost"] = {["Neutral"] = 4,}, --{["Neutral"] = 4,},  blitz you goof you uploaded the art without the cost.
+		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "C",
 			Description = "Haste. This card is immune to effects that lower, or set its stats. When this card dies, Case #4 is solved. You get arrested and lose the game.",
