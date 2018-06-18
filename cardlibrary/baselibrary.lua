@@ -11671,7 +11671,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["ROBLOX"] = {
-		["Id"] = 894252975,
+		["Id"] = 1950414129,
 		["Name"] = "ROBLOX",
 		["AltCards"] = {
 			["ROBLOX-C"] = {
