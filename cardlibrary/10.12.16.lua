@@ -5920,7 +5920,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["DiscardBlock"] = true,
 		["WeakenImmune"] = true,
 		["SetImmune"] = true,
-		["Color"] = "White",
+		["Color"] = "Neutral",
 		["Cost"] = {["Neutral"] = 8,["Yellow"] = 8,["Red"] = 8,["Blue"] = 8,["Green"] = 8,},
 		["Effect"] = {
 			Name = "GENDER STATUS : HACKED",
