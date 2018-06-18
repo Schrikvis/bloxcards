@@ -10431,7 +10431,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Nightmare!",
-			Description = "This card cant be discarded. You lose 350 life.",
+			Description = "This card cant be discarded. You lose 300 life.",
 			Type = "OnSummon",
 			Power = "Cost",
 			Target = "Ally",
@@ -17684,7 +17684,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Aesthetical"] = {
-		["Id"] = 526036381,
+		["Id"] = 1939669465,
 		["Name"] = "Aesthetical",
 		["Health"] = 1000,
 		["Power"] = 350,
