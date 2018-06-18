@@ -185,6 +185,7 @@ local packs = {
 		Description = "Red is the colour of power, ambition, and control. Dominion packs contain cards that cost red!",
 		Cards = {
 			"Magical Girl Histor",
+			"Vinrole",
 			"Melon Desu",
 			"ZeDerpyDonal",
 			"Sands of Purgatory",
@@ -414,6 +415,7 @@ local packs = {
 		CardPackId = 721399805,
 		Description = "Green is the colour of life, growth, and the primal forces. Vitality packs contain cards that cost green!",
 		Cards = {
+			"SnailMan39",
 			"Darr1432",
 			"Haunted Mansion",
 			"jojobinks321",
@@ -1058,9 +1060,9 @@ local packs = {
 		WinRequirement = 10;
 		Cards = {
 			"Magical Girl Histor",
+			"Unc, Uncorrupted",
 			"SnailMan39",
 			"Vinrole",
-			"Unc, Uncorrupted",
 			"CopperGlow",
 			"Frosted Shaman Marissa",
 			"Darr1432",
@@ -1136,9 +1138,6 @@ local packs = {
 			"EvilJacobthehero2013",
 			"Regular_Talkshow",
 			"Dairingpoophead, Tix God",
-			"Roundawsome",
-			"Wizardguy34",
-			"Zabiehunter",
 			-- PAST THIS POINT IS FOR WHITE CARDS AND JOKE CARDS ONLY. I'M LOOKING AT YOU, BLITZ.
 			"saud20",
 			"SpeedySeat",
@@ -1637,16 +1636,18 @@ local packs = {
 	{
 		Name = "Innovative", --those meme alts or something i guess
 		Hidden = false;
-		PriceInBloxBux = 1000,
+		PriceInBloxBux = 1337,
 		PriceInRobux = 0;
 		CardsInPack = 1,
 		CardPackId = 1532232174,
-		Description = "Appearing only on the 1st, 12th, and 23rd of a month, the Innovative pack contains incrediblt rare bling. Requires 100 wins.",
+		Description = "Appearing only on the 1st, 12th, and 23rd of a month, the Innovative pack contains incredibly rare bling. Requires 100 wins.",
 		WinRequirement = 100;
 		DateConstraint = {
 			day = {1,12,23};
 		};
 		Cards = {
+			"CreativeName123",
+			"CandyStream",
 			"It",
 			"SoulSearchEngine",
 			"Noobwolfer",

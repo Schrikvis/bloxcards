@@ -3009,9 +3009,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3, ["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Life fam",
-			Description = "When this cards is attacked and survives, set its health to 500.",
+			Description = "When this cards is attacked and survives, set its health to 650.",
 			["Type"] = "OnAttacked",
-			["Power"] = {{"SetHealth",500}},
+			["Power"] = {{"SetHealth",650}},
 			Target = "Self",
 		},
 		["Bio"] = "So...anyone up for a game of football?",
@@ -5874,6 +5874,12 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Unc, Uncorrupted"] = {
 		["Id"] = 1882355203,
 		["Name"] = "Unc, Uncorrupted",
+		["AltCards"] = {
+			["CreativeName123"] = {
+				["Id"] = 1942359213,
+				["Bio"] = "彼は確かにある。",
+			},
+		},
 		["Health"] = 700,
 		["Power"] = 700,
 		["Rarity"] = "Legendary",
