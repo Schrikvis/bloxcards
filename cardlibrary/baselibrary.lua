@@ -11480,15 +11480,15 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 
 	["ROBLOXian Reborn"] = {
-		["Id"] = 1979006211,
+		["Id"] = 1996587339,
 		["Name"] = "ROBLOXian Reborn",
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Epic",
 		["Requirement"] = {false,4,true},
 		["AttackEffect"] = "Lightning",
-		["Color"] = "Blue",
-		["Cost"] = {["Neutral"] = 3,["Blue"] = 4,},
+		["Color"] = "Yellow",
+		["Cost"] = {["Neutral"] = 3,["Yellow"] = 4,},
 		["Effect"] = {
 			Name = "Rebirth of Pure Morphic Goo",
 			Description = "Can only be cast if your opponent has 4 fighters on their field. Transform a target fighter into a random fighter onto your field.",
