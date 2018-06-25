@@ -11480,7 +11480,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 
 	["ROBLOXian Reborn"] = {
-		["Id"] = 1996587339,
+		["Id"] = 1999115753,
 		["Name"] = "ROBLOXian Reborn",
 		["Health"] = 0,
 		["Power"] = 0,
