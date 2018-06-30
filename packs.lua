@@ -15,6 +15,7 @@ local packs = {
 			"Hallows Treats",
 			"Divine Favor",
 			"Stud",
+			"Lunar Acolyte",
 			"Titano's Cavern",
 			-- Each section has eight commons, six uncommons, four rares, two epics and two legendaries.
 			-- Blue Commons
