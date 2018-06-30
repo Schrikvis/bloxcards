@@ -1133,6 +1133,7 @@ local packs = {
 			"Clockwork",
 			"Calamity Box",
 			"Xor's Lab",
+			"Assist Trophy",
 			"Usering",
 			"Imaginz00",
 			"Scripter",
