@@ -32,7 +32,7 @@ local packs = {
 			"HuntarioRBLX",
 			"JackinatorMG",
 			"AsrielMemer",
-			"Yoshius",
+			"FuryBlocks",
 			-- Blue Rares
 			"KrocoStar",
 			"SharpTH",
