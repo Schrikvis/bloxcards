@@ -764,6 +764,7 @@ local packs = {
 			"SharpTH",
 			"Gaomon94",
 			"Darpeh",
+			"Pizzablawk",
 			"Mike",
 			"KnightDude",
 			"DIY Azurewrath",
