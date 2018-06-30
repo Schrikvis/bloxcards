@@ -13,6 +13,7 @@ local packs = {
 			"Luck o the Lobsters",
 			"Mass Epidemic",
 			"Hallows Treats",
+			"Divine Favor",
 			"Stud",
 			"Titano's Cavern",
 			-- Each section has eight commons, six uncommons, four rares, two epics and two legendaries.
