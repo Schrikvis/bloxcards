@@ -523,6 +523,7 @@ local packs = {
 			"Zolerus",
 			"Meeboid Cultist",
 			"Meebling",
+			"Meebling Infestation",
 			"NatzHakz",
 			"Faultful",
 			"Saiier",
