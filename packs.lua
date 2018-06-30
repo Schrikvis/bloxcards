@@ -348,6 +348,7 @@ local packs = {
 			"Teeny Ninja",
 			"AntiSammeh",
 			"Sammeh",
+			"PixelPistol",
 			"Noob Attack! Ninja Stars!",
 			"SirDapper",
 			"DIY Biggerhead",
