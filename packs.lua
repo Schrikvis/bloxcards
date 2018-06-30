@@ -600,6 +600,7 @@ local packs = {
 			"madkey900",
 			"RaveTea",
 			"Xenotrent",
+			"Icerain",
 			"Deep Sea Diver",
 			"Dicey Drake",
 			"Stravant",
