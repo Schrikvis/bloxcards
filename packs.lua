@@ -1097,6 +1097,7 @@ local packs = {
 			"Dukran the Celestial",
 			"Wingman8",
 			"Games",
+			"Nexx",
 			"Remote Mine",
 			"Suicide Bomber",
 			"CanadianSanic",
