@@ -463,7 +463,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Eisenhower, the Alchemist",
 		["AltCards"] = {
 			["Eisenhower-Sun"] = {
-				["Id"] = 897236455,
+				["Id"] = 2036648380,
 				["Name"] = "Eisenhower, the President",
 				["Bio"] = "I will take as much time as needed to legalise necromancy.",
 			},
