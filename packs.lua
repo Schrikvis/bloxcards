@@ -1728,7 +1728,7 @@ local packs = {
 		PriceInRobux = 0;
 		CardsInPack = 4,
 		CardPackId = 654911255,
-		Description = "",
+		Description = "From the vast ocean, to vibrant rainforests, this pack contains a wide variety of stunning Summer themed alt arts. Come and enjoy the outdoors with us! (requires 10 wins)",
 		WinRequirement = 10;
 		DateConstraint = {
 			month = {7, 8};
@@ -1756,6 +1756,7 @@ local packs = {
 			"LeetWizard-Sun",
 			"Luck o The Lobsters-Sun",
 			"MarissaKitty04-Sun",
+			"Meebling-Sun",
 			"Meebling Infestation-Sun",
 			"Meeboid King-Sun",
 			"Meeboid-Sun",
