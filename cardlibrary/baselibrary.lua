@@ -18070,12 +18070,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Health"] = 100,
 		["Power"] = 100,
 		["Rarity"] = "Token",
+		["Token"] = true,
 		["AttackEffect"] = "Explode1",
 		["Color"] = "Neutral",
 		["Cost"] = {["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Explosion",
-			Description = "When this card dies, deal 100 damage to all fighters.",
+			Description = "Can't be discarded. When this card dies, deal 100 damage to all fighters.",
 			["Type"] = "OnDeath",
 			["Power"] = {{"Damage",100}},
 			Target = "All",
@@ -18447,7 +18448,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Rope, Lamp Oil, Bombs",
-			Description = "When this card dies, add two Remote Mines to your hand.",
+			Description = "When this card dies, put two Remote Mines into your hand.",
 			["Type"] = "OnDeath",
 			["Power"] = {{"Add","Remote Mine"},{"Add","Remote Mine"}},
 			Target = "Ally",
