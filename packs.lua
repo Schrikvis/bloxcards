@@ -1731,7 +1731,7 @@ local packs = {
 		Description = "",
 		WinRequirement = 10;
 		DateConstraint = {
-			month = {8};
+			month = {7, 8};
 		};
 		Cards = {
 			"Ambamby-Sun",
