@@ -298,6 +298,20 @@ local codes = {
 			BestBefore = nil; 
 		}
 	};
+	
+	{
+		Obfuscated = "eQaRW ea+eQRNQ";
+		Rewards = {
+			Cards = {};
+			RandomCards = {};
+			Packs = {["Summer Salt"] = 1};
+			BloxBux = 500;
+			Charms = {1,1};
+			Sleeves = {};
+			Ranks = {};
+			BestBefore = nil; 
+		}
+	};
 }
 
 local offers = {
