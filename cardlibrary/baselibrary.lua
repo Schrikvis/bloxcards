@@ -103,13 +103,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Meeboid"] = {
-		["Id"] = 263664744,
+		["Id"] = 2036654538,
 		["Name"] = "Meeboid",
 		["AltCards"] = {
 			["Meeboid-Sun"] = {
 				["Name"] = "Meeboid",
 				["Id"] = 897244235,
-				["Bio"] = "Just be thankful it's not a weeboid.",
+				["Bio"] = "Merp’s up, dudes!",
 			},
 		},	
 		["Health"] = 600,
@@ -134,9 +134,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Meeboid Cultist",
 		["AltCards"] = {
 			["Meeboid Surfer-Sun"] = {
-				["Name"] = "Meeboid Surfer",
-				["Id"] =  897803090,
-				["Bio"] = "Merp’s up, dudes!",
+				["Id"] =  2036653497,
+				["Bio"] = "Just be thankful it's not a weeboid",
 			},
 		},
 		["Health"] = 450,
@@ -1974,9 +1973,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Snowskateer",
 		["AltCards"] = {
 			["Snowskateer-Sun"] = {
-				["Name"] = "Surfskateer",
-				["Id"] = 897246913,
-				["Bio"] = "In a gleeful act of self defence, Surfskateer brutally flayed the flesh of his father and used it to adorn his surfboard. He then surfed across torrential peril to an ancient ninja monastery.",
+				["Name"] = "Skateskateer",
+				["Id"] = 2036644572,
+				["Bio"] = "In a gleeful act of self defence, Skateskateer brutally flayed the flesh of his father and used it to adorn his skateboard. He then skated across torrential peril to an ancient ninja monastery.",
 				["Effect"] = {
 					Name = "Assimilate",
 					Description = "Summon a Froot Smoothie Ninja. Surfskateer can't generate icons.",
@@ -4013,8 +4012,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Pixellus",
 		["AltCards"] = {
 			["Pixellus-Sun"] = {
-				["Id"] = 950122951,
-				["Bio"] = "When the editors suggested I go on vacation, This wasn’t what I had in mind.",
+				["Id"] = 2036643001,
+				["Bio"] = "Step right up for some free ice cream! Hm? Why do I have a cannon? Because it’s better to launch it at your face than hand it out to you!",
 			},
 		},
 		["Health"] = 550,
@@ -6999,7 +6998,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Guest",
 		["AltCards"] = {
 			["Guest-Sun"] = {
-				["Id"] = 897236954,
+				["Id"] = 2036641875,
 				["Name"] = "Female Guest",
 				["Bio"] = "Wanna share this popsicle?",
 			},
@@ -11480,19 +11479,20 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 
 	["ROBLOXian Reborn"] = {
-		["Id"] = 382344481,
+		["Id"] = 1999115753,
 		["Name"] = "ROBLOXian Reborn",
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Epic",
+		["Requirement"] = {false,4,true},
 		["AttackEffect"] = "Lightning",
-		["Color"] = "Blue",
-		["Cost"] = {["Neutral"] = 2,},
+		["Color"] = "Yellow",
+		["Cost"] = {["Neutral"] = 3,["Yellow"] = 4,},
 		["Effect"] = {
-			Name = "Anti Extreme Energy Care Package",
-			Description = "N/A",
+			Name = "Rebirth of Pure Morphic Goo",
+			Description = "Can only be cast if your opponent has 4 fighters on their field. Transform a target fighter into a random fighter onto your field.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Cost",-0.1}},
+			["Power"] = {{"SetHealth",0,"Single"},{"RandomSummon","Any"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Grant a fallen ROBLOXian life again after being sent to the graveyard. We all have to have another chance, right? This might conflict some morals...",
@@ -15118,8 +15118,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "HuntarioRBLX",
 		["AltCards"] = {
 			["HuntarioRBLX-Sun"] = {
-				["Id"] =  897238547,
-				["Bio"] = "What even is a knot? Why are we measuring ship speeds using interwoven ropes?",
+				["Id"] =  2036647389,
+				["Bio"] = "He thinks someone photoshopped the sun.",
 			},
 		},
 		["Health"] = 800,
