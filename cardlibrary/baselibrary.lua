@@ -134,7 +134,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Meeboid Cultist",
 		["AltCards"] = {
 			["Meeboid Surfer-Sun"] = {
-				["Name"] = "Meeboid Surfer",
 				["Id"] =  2036653497,
 				["Bio"] = "Just be thankful it's not a weeboid",
 			},
