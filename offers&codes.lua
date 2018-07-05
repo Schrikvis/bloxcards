@@ -373,7 +373,7 @@ local offers = {
 	};
 	
 	BlueStarter = {
-		Title = "EVENT DECK: Voidcutter"; 
+		Title = "STARTER DECK: Voidcutter"; 
 		SubTitle = "Wield tricks and traps with this cunning blue deck.";
 		PriceInRobux = 10;
 		PriceInBloxBux = 500;
@@ -388,7 +388,7 @@ local offers = {
 	};
 	
 	RedStarter = {
-		Title = "EVENT DECK: Immolation"; 
+		Title = "STARTER DECK: Immolation"; 
 		SubTitle = "Roast anything in your path with this destructive red deck.";
 		PriceInRobux = 10;
 		PriceInBloxBux = 500;
@@ -403,7 +403,7 @@ local offers = {
 	};
 	
 	GreenStarter = {
-		Title = "EVENT DECK: Overgrowth"; 
+		Title = "STARTER DECK: Overgrowth"; 
 		SubTitle = "Grow over your foes with this overwhelming green deck.";
 		PriceInRobux = 10;
 		PriceInBloxBux = 500;
@@ -418,7 +418,7 @@ local offers = {
 	};
 	
 	YellowStarter = {
-		Title = "EVENT DECK: Limitless Speed"; 
+		Title = "STARTER DECK: Limitless Speed"; 
 		SubTitle = "Flood the board with this speedy yellow deck.";
 		PriceInRobux = 10;
 		PriceInBloxBux = 500;
