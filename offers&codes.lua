@@ -392,11 +392,11 @@ local offers = {
 		SubTitle = "Roast anything in your path with this destructive red deck.";
 		PriceInRobux = 10;
 		PriceInBloxBux = 500;
-		Cards = {["RoboticMob"] = 4, ["Mitpaul"] = 3, ["AntiSammeh"] = 3,
-				 ["CoolDude4851"] = 3, ["SomaticMizuSan"] = 4, ["DerptasticDevil"] = 4,
-				 ["Player"] = 1, ["Rad"] = 4, ["FatherChristmaz"] = 4, 
-				 ["Cindering"] = 1, ["Ambamby"] = 4, ["Odin"] = 2, ["74Riley"] = 3};
-		Packs = {["Dominion"] = 2};
+		Cards = {["Aesura"] = 1, ["Jayson13"] = 1,
+				["Player"] = 1, ["Dignity"] = 1,
+				["WhiteScarf"] = 2,
+				["Mitpaul"] = 3, ["Oz"] = 3,
+				["Rad"] = 4, ["Anderson"] = 4, ["BenCanova1"] = 4, ["ThatGrimGuy"] = 4, ["Mag"] = 4, ["ProjectSlayer"] = 4, ["Ambamby"] = 4};
 		Ranks = {"Infernal Acolyte"};
 		SinglePurchase = true;
 		Hidden = true;
@@ -407,12 +407,11 @@ local offers = {
 		SubTitle = "Grow over your foes with this overwhelming green deck.";
 		PriceInRobux = 10;
 		PriceInBloxBux = 500;
-		Cards = {["Boogerguy123"] = 4, ["DerpDerpyness"] = 3, ["Overseer General"] = 2,
-				 ["Oozlebachr"] = 3, ["Duckywow"] = 3, ["Wustard"] = 2, 
-				 ["Pillager"] = 2, ["Luchador"] = 2, ["KasoduS"] = 1, 
-				 ["PolyHex"] = 1, ["Langz"] = 4, ["Byte"] = 2, 
-				 ["Chef"] = 4, ["Spikle"] = 4, ["Meebling Infestation"] = 3,};
-		Packs = {["Vitality"] = 2};
+		Cards = {["Murtic"] = 1, ["Ripull"] = 1,
+				["Brick_Man"] = 1, ["KasoduS"] = 1,
+				["KingCactaur"] = 2, ["Wustard"] = 2, ["IlIll"] = 2,
+				["pa00"] = 3, ["Duckywow"] = 3, ["Inventor1116"] = 3, ["Stud"] = 3, ["Kcbeast666"] = 3, ["Oozlebachr"] = 3,
+				["Brycen27"] = 4, ["Boogerguy123"] = 4, ["Langz"] = 4};
 		Ranks = {"Necromantic Acolyte"};
 		SinglePurchase = true;
 		Hidden = true;
@@ -423,12 +422,11 @@ local offers = {
 		SubTitle = "Flood the board with this speedy yellow deck.";
 		PriceInRobux = 10;
 		PriceInBloxBux = 500;
-		Cards = {["TheGamer101"] = 1, ["BrackioTops"] = 4, ["Pilot"] = 3,
-				 ["Shamrock Doge"] = 4, ["Finland"] = 4, ["DIY Headphones"] = 2,
-				 ["Guest"] = 4, ["Western Bandit"] = 4, ["Qdhxx"] = 2,
-				 ["animallogic"] = 3, ["Fried Acolyte"] = 3, ["Ejob"] = 1,
-				 ["PEEPSTERS"] = 3, ["Toxic"] = 2};
-		Packs = {["Revel"] = 2};
+		Cards = {["Lord of Auctions"] = 1, ["OstrichSized"] = 1,
+				["Widgeon"] = 1, ["ejob"] = 1,
+				["Maelstronomer"] = 2,
+				["Valletta"] = 3, ["Plushie Mummy"] = 3, ["Stud"] = 3, ["Gobble Squad"] = 3, ["Pikachukiller101"] = 3, ["WarbearNomkins"] = 3,
+				["Guest"] = 4, ["Finland"] = 4, ["Pilgrim"] = 4, ["TeeVee"] = 4};
 		Ranks = {"Fried Acolyte"};
 		SinglePurchase = true;
 		Hidden = true;
