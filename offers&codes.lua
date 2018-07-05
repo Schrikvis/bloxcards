@@ -377,8 +377,11 @@ local offers = {
 		SubTitle = "Wield tricks and traps with this cunning blue deck.";
 		PriceInRobux = 10;
 		PriceInBloxBux = 500;
-		Cards = {["KrocoStar"] = 2, ["TinyTank"] = 2, ["Korblox General"] = 4, ["Mike"] = 2, ["FuryBlocks"] = 3, ["Sylrath"] = 3, ["DairingPoopHead"] = 3, ["Korblox Archer"] = 4, ["Stud"] = 2, ["Lord Tethamet"] = 2, ["DrTrayBlox"] = 1, ["VetexGames"] = 1, ["Glaciem Mage"] = 3, ["SharpTH"] = 2, ["Newbie"] = 3,};
-		Packs = {["Thought"] = 2};
+		Cards = {["Silver_Semtexagon"] = 1, ["IcyTea"] = 1,
+				["VetexGames"] = 1, ["Y05H1M4N"] = 1,
+				["KrocoStar"] = 2, ["Mike"] = 2,
+				["VoxTrigati"] = 3, ["ShyLightness"] = 3, ["Sylrath"] = 3, ["AsrielMemer"] = 3, ["2Hex"] = 3, ["Stud"] = 3, ["Eye Spy"] = 3, ["FuryBlocks"] = 3
+				["Spiderboy"] = 4, ["DairingPoopHead"] = 4};
 		Ranks = {"Acolyte of the Rift"};
 		SinglePurchase = true;
 		Hidden = true;
