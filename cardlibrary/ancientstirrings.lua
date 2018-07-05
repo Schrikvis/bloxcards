@@ -3099,7 +3099,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Hallow, the Sugarlord",
 		["AltCards"] = {
 			["Hallow, the Sugarlord-Sun"] = {
-				["Id"] = 897238293,
+				["Id"] = 2039538152,
 				["Name"] = "Hallow, the Summerlord",
 				["Bio"] = "Sometimes, the lord of Halloween just needs to take a break. Those times are every Monday.",
 			},
