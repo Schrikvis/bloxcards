@@ -431,6 +431,34 @@ local offers = {
 		SinglePurchase = true;
 		Hidden = true;
 	};
+	
+	Thaw = {
+		Title = "EVENT DECK: Thaw";
+		SubTitle = "Negate extra locks by setlocking your fighters to one turn!";
+		PriceInRobux = 10;
+		PriceInBloxBux = 500;
+		Cards = {["MesouricPhantom976"] = 2,
+				["Sylrath"] = 3, ["Subata"] = 3, ["Stevenl15"] = 3, ["Mlgloga"] = 3, ["Darklord1506"] = 3, ["CinematicMind"] = 3, ["AsrielMemer"] = 3,
+				["DairingPoopHead"] = 2, ["Icerain"] = 3, ["DigitalSon"] = 3, ["HatdaCat"] = 4, ["Gato Luz"] = 4};
+		Ranks = {"Chilled Out"};
+		SinglePurchase = true;
+		Hidden = true;
+	};
+	
+	GrinderRed = {
+		Title = "EVENT DECK: Grinder Red";
+		SubTitle = "Waste your opponent's icons. IT'S ALL ABOUT THAT GRIND!";
+		PriceInRobux = 10;
+		PriceInBloxBux = 500;
+		Cards = {["ClanAtlas"] = 1, ["WishNite"] = 1,
+				["Tone"] = 1, ["Doneyes"] = 1, ["Taymaster"] = 1, ["Traumatic Clown"] = 1,
+				["Divine Favor"] = 2,
+				["Ninja Elite"] = 3, ["MarissaKitty04"] = 3, ["Infernal Acolyte"] = 3, ["Fire Fighter"] = 3,
+				["ProjectSlayer"] = 4, ["Mag"] = 4, ["Corrupt Guest"] = 4, ["Ambamby"] = 4, ["Sorry"] = 2};
+		Ranks = {"Grinder"};
+		SinglePurchase = true;
+		Hidden = true;
+	};
 }
 
 return {Codes = codes; Offers = offers;}
