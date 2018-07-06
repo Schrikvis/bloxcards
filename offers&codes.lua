@@ -438,7 +438,7 @@ local offers = {
 		PriceInBloxBux = 500;
 		Cards = {["MesouricPhantom976"] = 2,
 				["Sylrath"] = 3, ["Subata"] = 3, ["Stevenl15"] = 3, ["Mlgloga"] = 3, ["Darklord1506"] = 3, ["CinematicMind"] = 3, ["AsrielMemer"] = 3,
-				["DairingPoopHead"] = 2, ["Icerain"] = 3, ["DigitalSon" ] = 3, ["HatdaCat"] = 4, ["Gato Luz"] = 4};
+				["DairingPoopHead"] = 2, ["Icerain"] = 3, ["DigitalSon"] = 3, ["HatdaCat"] = 4, ["Gato Luz"] = 4};
 		Ranks = {"Chilled Out"};
 		SinglePurchase = true;
 		Hidden = true;
