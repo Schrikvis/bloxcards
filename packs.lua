@@ -136,6 +136,7 @@ local packs = {
 		CardPackId = 842435184, --721400845,
 		Description = "Red is the colour of power, ambition, and control. Dominion packs contain cards that cost red!",
 		Cards = {
+			"DoomedAdventurer",
 			"Magical Girl Histor",
 			"Vinrole",
 			"Melon Desu",
@@ -369,6 +370,7 @@ local packs = {
 		CardPackId = 721399805,
 		Description = "Green is the colour of life, growth, and the primal forces. Vitality packs contain cards that cost green!",
 		Cards = {
+			"Tootso",
 			"SnailMan39",
 			"Darr1432",
 			"Haunted Mansion",
@@ -562,6 +564,7 @@ local packs = {
 		CardPackId = 721399466,
 		Description = "Blue is the colour of logic, order, and structure. Thought packs contain cards that cost blue!",
 		Cards = {
+			"WrathOfAzure",
 			"CopperGlow",
 			"Frosted Shaman Marissa",
 			"WookieCookieHD",
@@ -791,6 +794,7 @@ local packs = {
 		CardPackId = 721400239,
 		Description = "Yellow is the colour of chaos, emotion, and society. Revel packs contain cards that cost yellow!",
 		Cards = {
+			"ScareAndCrow",
 			"Unc, Uncorrupted",
 			"SmashDude88",
 			"lilBismarck",
@@ -1097,6 +1101,10 @@ local packs = {
 			"Regular_Talkshow",
 			"Dairingpoophead, Tix God",
 			-- PAST THIS POINT IS FOR WHITE CARDS AND JOKE CARDS ONLY. I'M LOOKING AT YOU, BLITZ.
+			"ScareAndCrow",
+			"DoomedAdventurer",
+			"Tootso",
+			"WrathOfAzure",
 			"saud20",
 			"SpeedySeat",
 			"Dukran the Celestial",
