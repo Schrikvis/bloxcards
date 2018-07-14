@@ -11644,11 +11644,11 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Widgeon"] = {
-		["Id"] = 384006155,
+		["Id"] = 2076396764,
 		["Name"] = "Widgeon",
 		["AltCards"] = {
 			["Widgeon-Sun"] = {
-				["Id"] = 897248023,
+				["Id"] = 2076161172,
 				["Bio"] = "The floor is Meepcity.",
 			},
 		},
@@ -12479,7 +12479,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 
 	["Amber"] = {
-		["Id"] = 411802713,
+		["Id"] = 2076181432,
 		["Name"] = "Amber",
 		["Health"] = 1200,
 		["Power"] = 400,
@@ -12555,7 +12555,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},			
 	
 	["Materking"] = {
-		["Id"] = 411803312,
+		["Id"] = 2076178795,
 		["Name"] = "Materking",
 		["Health"] = 500,
 		["Power"] = 500,
@@ -16743,7 +16743,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 4,},
 		["Effect"] = {
 			Name = "Too lucky 4 me",
-			Description = "Draw 10 cards, then discard 15 cards from your deck.",
+			Description = "Draw 10 cards, then discard 18 cards from your deck.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Draw",28}},
 			Target = "Ally",
