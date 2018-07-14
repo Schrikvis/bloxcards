@@ -5940,7 +5940,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["MesoSad"] = {
-		["Id"] = 2055753531,
+		["Id"] = 2066234268,
 		["Name"] = "M3soSAd",
 		["Health"] = 200,
 		["Power"] = 200,
@@ -5955,7 +5955,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Weaken",300}},
 			Target = "Single",
 		},
-		["Bio"] = "",	
+		["Bio"] = "As an avid researcher of fish aids, he passionately studies the lifestyle of the legendary fish Kanye West.",	
 	},
 }
 return tentwelvesixteen
