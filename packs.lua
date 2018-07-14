@@ -716,6 +716,7 @@ local packs = {
 			"Hamstermon",
 			"Lord Tethamet",
 			"Disaster Survival",
+			"Korblox Squire",
 			"Korblox Archmage",
 			"Korblox Deathknight",
 			"Korblox Deathkeeper",
@@ -791,6 +792,7 @@ local packs = {
 		CardPackId = 721400239,
 		Description = "Yellow is the colour of chaos, emotion, and society. Revel packs contain cards that cost yellow!",
 		Cards = {
+			"MesoSad",
 			"Unc, Uncorrupted",
 			"SmashDude88",
 			"lilBismarck",
@@ -1096,9 +1098,6 @@ local packs = {
 			"superkicker2005",
 			"Killar1234567",
 			"Shard Master",
-			"EvilJacobthehero2013",
-			"Regular_Talkshow",
-			"Dairingpoophead, Tix God",
 			-- PAST THIS POINT IS FOR WHITE CARDS AND JOKE CARDS ONLY. I'M LOOKING AT YOU, BLITZ.
 			"saud20",
 			"SpeedySeat",
@@ -1410,6 +1409,7 @@ local packs = {
 			"Dwarvern Engineer",
 			"Dwarvern Energist",
 			"Dwarvern Miner",
+			"Korblox Squire",
 			"Korblox Archer",
 			"Korblox General",
 			"Korblox Skeleton",
