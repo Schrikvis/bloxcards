@@ -6006,7 +6006,55 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "Ｈａｃｋｅｄ.",	
 	},
+
+	["ScareAndCrow"] = {
+		["Id"] = 2065469753,
+		["Name"] = "Scare & Crow",
+		["Health"] = 600,
+		["Power"] = 600,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Punch2",
+		["Color"] = "Neutral", 
+		["Cost"] = {["Yellow"] = 3,},
+		["Bio"] = "Crow once belonged to the Matriarch. Scare once belonged to Hallow. Now, they belong to themselves, on a mission to undo their black-hearted past.",
+	},
 	
+	["DoomedAdventurer"] = {
+		["Id"] = 2065467967,
+		["Name"] = "Doomed Adventurer",
+		["Health"] = 600,
+		["Power"] = 600,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Slash",
+		["Color"] = "Neutral", 
+		["Cost"] = {["Red"] = 3,},
+		["Bio"] = "Bears the Curse of the Acolyte, which binds him to slay Dragons. If he doesn't, his soul will become ash. If he fails, his body will.",
+	},
+	
+	["Tootso"] = {
+		["Id"] = 2065471880,
+		["Name"] = "Tootso",
+		["Health"] = 600,
+		["Power"] = 600,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Lightning",
+		["Color"] = "Neutral", 
+		["Cost"] = {["Green"] = 3,},
+		["Bio"] = "Tootso is a friendly toothy wizard! He loves to plant fruit trees wherever he goes! He is a pacifist by nature. He can also burst your lungs open by magically summoning pineapples inside you. Don't mess with Tootso.",
+	},
+	
+	["WrathOfAzure"] = {
+		["Id"] = 2065888639,
+		["Name"] = "Wrath of Azure",
+		["Health"] = 600,
+		["Power"] = 600,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "CatSlash",
+		["Color"] = "Neutral", 
+		["Cost"] = {["Blue"] = 3,},
+		["Bio"] = "A wraith is an incorporeal creature born of evil and darkness, despising light and all living things. A wraith drains the constitution from living creatures, turning them into new wraiths upon death. A wraith is powerless in natural sunlight and will flee from it.",
+  },
+    
 	["MesoSad"] = {
 		["Id"] = 2066234268,
 		["Name"] = "M3soSAd",
