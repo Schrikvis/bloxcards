@@ -3192,7 +3192,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Green",
 		["Cost"] = {["Neutral"] = 6,},
 		["Effect"] = {
-			Name = "Counter Block",
+			Name = "Barcode",
 			Description = "All enemy fighters lose 300 Health and 150 Power.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",300},{"Weaken",150}},
@@ -16790,14 +16790,14 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Friend Request Spammer"] = {
-		["Id"] = 491581069,
+		["Id"] = 2084782054,
 		["Name"] = "Friend Request Spammer",
 		["Health"] = 350,
 		["Power"] = 350,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Yellow", 
-		["Cost"] = {["Yellow"] = 1, ["Neutral"] = 2,},
+		["Cost"] = {["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE",
 			Description = "Your opponent draws a card.",
