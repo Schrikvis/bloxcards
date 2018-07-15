@@ -103,12 +103,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Meeboid"] = {
-		["Id"] = 2036654538,
+		["Id"] = 263664744,
 		["Name"] = "Meeboid",
 		["AltCards"] = {
 			["Meeboid-Sun"] = {
 				["Name"] = "Meeboid",
-				["Id"] = 897244235,
+				["Id"] = 2036654538,
 				["Bio"] = "Merp’s up, dudes!",
 			},
 		},	
@@ -3192,7 +3192,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Green",
 		["Cost"] = {["Neutral"] = 6,},
 		["Effect"] = {
-			Name = "Counter Block",
+			Name = "Barcode",
 			Description = "All enemy fighters lose 300 Health and 150 Power.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",300},{"Weaken",150}},
@@ -5705,8 +5705,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["SkySpell"] = {
 		["Id"] = 292778426,
 		["Name"] = "Skyspell",
-		["Health"] = 500,
-		["Power"] = 500,
+		["Health"] = 400,
+		["Power"] = 400,
 		["Rarity"] = "Rare",
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Lightning",
@@ -5714,12 +5714,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 5,},
 		["Effect"] = {
 			Name = "Investment",
-			Description = "Deal 500 damage to a target fighter and 300 damage to all other allied fighters.",
+			Description = "Deal 300 damage to the opponent, 200 damage to all enemy fighters, and 100 damage to a target fighter.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",500},{"Heal",300,"Self"},{"Damage",300,"Ally"}},
-			Target = "Single",
+			["Power"] = {{"Inflict",300},{"Damage",200},{"Damage",100,"Single"}},
+			Target = "Opponent",
 		},
-		["Bio"] = "Suitcase filled with more ammo for his signature weapon.",
+		["Bio"] = "An absolute zero. I'm nobody's hero.",
 	},	
 	
 	["Tomfl"] = {
@@ -14336,7 +14336,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 3,["Red"] = 3,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Destroy all allied fighters. Generate 2 blue and red icons, draw two cards, gain 500 life, and put a nightmare into the opponent's hand.",
+			Description = "Requires 4 enemy fighters. Generate 2 blue and red icons, draw two cards, gain 500 life, and put a nightmare into the opponent's hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damamge",9999},{"Blue",2},{"Red",2},{"Draw",2},{"Cost",-500},{"Add","Nightmare","Opponent"}},
 			Target = "Ally",
@@ -16790,14 +16790,14 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Friend Request Spammer"] = {
-		["Id"] = 491581069,
+		["Id"] = 2084782054,
 		["Name"] = "Friend Request Spammer",
 		["Health"] = 350,
 		["Power"] = 350,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Yellow", 
-		["Cost"] = {["Yellow"] = 1, ["Neutral"] = 2,},
+		["Cost"] = {["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE",
 			Description = "Your opponent draws a card.",
