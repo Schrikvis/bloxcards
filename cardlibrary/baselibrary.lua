@@ -5705,8 +5705,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["SkySpell"] = {
 		["Id"] = 292778426,
 		["Name"] = "Skyspell",
-		["Health"] = 500,
-		["Power"] = 500,
+		["Health"] = 400,
+		["Power"] = 400,
 		["Rarity"] = "Rare",
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Lightning",
@@ -5714,12 +5714,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 5,},
 		["Effect"] = {
 			Name = "Investment",
-			Description = "Deal 500 damage to a target fighter and 300 damage to all other allied fighters.",
+			Description = "Deal 300 damage to the opponent, 200 damage to all enemy fighters, and 100 damage to a target fighter.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",500},{"Heal",300,"Self"},{"Damage",300,"Ally"}},
-			Target = "Single",
+			["Power"] = {{"Inflict",300},{"Damage",200},{"Damage",100,"Single"}},
+			Target = "Opponent",
 		},
-		["Bio"] = "Suitcase filled with more ammo for his signature weapon.",
+		["Bio"] = "An absolute zero. I'm nobody's hero.",
 	},	
 	
 	["Tomfl"] = {
