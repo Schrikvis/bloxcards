@@ -1021,7 +1021,7 @@ local packs = {
 		Cards = {
 			"MesoSad",
 			"Korblox Squire",
-			"Llendlar",
+			"Call to Arms",
 			"Magical Girl Histor",
 			"Unc, Uncorrupted",
 			"SnailMan39",
