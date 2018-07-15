@@ -2385,9 +2385,9 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 4, ["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "Whenever you summon a fighter, give all bees 50 health and power.",
+			Description = "Whenever you summon a fighter, give all bees 50 power.",
 			["Type"] = "OnAllySummon",
-			["Power"] = {{"Heal",50},{"Strengthen",50}},
+			["Power"] = {{"Strengthen",50}},
 			Target = "Archetype",
 		},
 		["Bio"] = "The wasp to the tea.",

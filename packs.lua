@@ -719,6 +719,7 @@ local packs = {
 			"Hamstermon",
 			"Lord Tethamet",
 			"Disaster Survival",
+			"Korblox Squire",
 			"Korblox Archmage",
 			"Korblox Deathknight",
 			"Korblox Deathkeeper",
@@ -795,6 +796,7 @@ local packs = {
 		Description = "Yellow is the colour of chaos, emotion, and society. Revel packs contain cards that cost yellow!",
 		Cards = {
 			"ScareAndCrow",
+			"MesoSad",
 			"Unc, Uncorrupted",
 			"SmashDude88",
 			"lilBismarck",
@@ -1021,6 +1023,9 @@ local packs = {
 		Description = "Exotic new cards from the black market! White cards and joke cards! It's all yours, as long as you have 10 wins!",
 		WinRequirement = 10;
 		Cards = {
+			"MesoSad",
+			"Korblox Squire",
+			"Call to Arms",
 			"Magical Girl Histor",
 			"Unc, Uncorrupted",
 			"SnailMan39",
@@ -1097,9 +1102,6 @@ local packs = {
 			"superkicker2005",
 			"Killar1234567",
 			"Shard Master",
-			"EvilJacobthehero2013",
-			"Regular_Talkshow",
-			"Dairingpoophead, Tix God",
 			-- PAST THIS POINT IS FOR WHITE CARDS AND JOKE CARDS ONLY. I'M LOOKING AT YOU, BLITZ.
 			"ScareAndCrow",
 			"DoomedAdventurer",
@@ -1415,6 +1417,7 @@ local packs = {
 			"Dwarvern Engineer",
 			"Dwarvern Energist",
 			"Dwarvern Miner",
+			"Korblox Squire",
 			"Korblox Archer",
 			"Korblox General",
 			"Korblox Skeleton",
@@ -1735,8 +1738,8 @@ local packs = {
 		PriceInBloxBux = 1000;
 		PriceInRobux = 0;
 		CardsInPack = 4,
-		CardPackId = 654911255,
-		Description = "From the vast ocean, to vibrant rainforests, this pack contains a wide variety of stunning Summer themed alt arts. Come and enjoy the outdoors with us! (requires 10 wins)",
+		CardPackId = 899630666,
+		Description = "From the vast ocean to vibrant rainforests, this pack contains a wide variety of stunning Summer themed alt arts. Come and enjoy the outdoors with us! (requires 10 wins)",
 		WinRequirement = 10;
 		DateConstraint = {
 			month = {7, 8};
