@@ -837,6 +837,7 @@ local packs = {
 			"Bucket of Bees",
 			"Blitzwolfer",
 			"Bigtank_s",
+			"Pikachukiller101",
 			"Dairingpoophead, Tix God",
 			"AII_Dragon",
 			"emilvita",
