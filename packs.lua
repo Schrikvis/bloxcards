@@ -17,7 +17,8 @@ local packs = {
 			"Stud",
 			"Lunar Acolyte",
 			"Titano's Cavern",
-			-- Each section has eight commons, six uncommons, four rares, two epics and two legendaries.
+			"Exine", -- The kids are gonna want the card in the pack cover, y'know?
+			-- Each section has nine commons, seven uncommons, five rares, three epics and three legendaries.
 			-- Blue Commons
 			"Icerain",
 			"DeadZoneHark",
@@ -27,24 +28,29 @@ local packs = {
 			"Spiderboy",
 			"wer8888",
 			"DairingPoopHead",
+			"Spark",
 			-- Blue Uncommons
 			"Acolyte of the Rift",
 			"Glaciem Mage",
 			"HuntarioRBLX",
 			"JackinatorMG",
 			"AsrielMemer",
-			"FuryBlocks",
+			"Froot Ninja",
+			"Skullsten",
 			-- Blue Rares
 			"KrocoStar",
 			"SharpTH",
 			"Mike",
 			"Lord Tethamet",
+			"Korblox Archmage",
 			-- Blue Epics
 			"tbradm",
 			"B0BBA",
+			"VetexGames",
 			-- Blue Legendaries
 			"Silver_Semtexagon",
 			"DrTrayBlox",
+			"Megalodon the Dragon-Shark",
 			-- Red Commons
 			"Ambamby",
 			"Anderson",
@@ -54,6 +60,7 @@ local packs = {
 			"Rad",
 			"ThatGrimGuy",
 			"Mag",
+			"Redcliff Messenger",
 			-- Red Uncommons
 			"Pixellus",
 			"Mitpaul",
@@ -61,17 +68,21 @@ local packs = {
 			"Damaging26",
 			"Infernal Acolyte",
 			"Ninja Elite",
+			"Oz",
 			-- Red Rares
 			"Lady RedNight",
 			"AVote",
 			"Rinicye",
 			"Crazynoggin",
+			"Odin",
 			-- Red Epics
 			"Player",
 			"Taymaster",
+			"ChosenCoast",
 			-- Red Legendaries
 			"The Stalker",
 			"Jayson13",
+			"Nymn the Redrune Leader",
 			-- Green Commons
 			"Langz",
 			"Chef",
@@ -81,6 +92,7 @@ local packs = {
 			"Glaecium",
 			"Pillager",
 			"MyDadIsAGuest",
+			"Eye of Overseer",
 			-- Green Uncommons
 			"Necromantic Acolyte",
 			"Oozlebachr",
@@ -88,17 +100,21 @@ local packs = {
 			"Inventor1116",
 			"Luchador",
 			"Samksoon321",
+			"Kcbeast666",
 			-- Green Rares
 			"IlIll",
 			"Wustard",
 			"Tom's Beans",
 			"KingCactaur",
+			"Overseer General",
 			-- Green Epics
 			"Brick_Man",
 			"XiaoXiaoMan",
+			"KasoduS",
 			-- Green Legendaries
 			"PolyHexV2",
 			"Blockhaak",
+			"Zerax the Untameable",
 			-- Yellow Commons
 			"Guest",
 			"Graalgamer",
@@ -108,6 +124,7 @@ local packs = {
 			"Western Bandit",
 			"Pilgrim",
 			"Bigtank_s",
+			"Shamrock Doge",
 			-- Yellow Uncommons
 			"Latchie",
 			"animallogic",
@@ -115,17 +132,21 @@ local packs = {
 			"Lyv",
 			"MahBucket",
 			"Fried Acolyte",
+			"Pikachukiller101",
 			-- Yellow Rares
 			"Qdhxx",
 			"DIY Headphones",
 			"Card Hoarder",
 			"Uberubert",
+			"Cluck Buck",
 			-- Yellow Epics
 			"Visleaf",
 			"Ejob",
+			"MinePix110",
 			-- Yellow Legendaries
 			"JayTheCoder",
 			"TheGamer101",
+			"Typheus the Whelp",
 		},
 	}; 
 	{
