@@ -11140,7 +11140,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 8,["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "Solar Hardscope",
-			Description = "At the end of your turns, draw a card and deal 400 damage to SolarCrane.",
+			Description = "At the end of your turns, draw a card and deal 500 damage to SolarCrane.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Draw",1},{"Damage",500}},
 			Target = "Self",
