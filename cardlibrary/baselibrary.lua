@@ -12593,9 +12593,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 1,["Green"] = 3,},
 		["Effect"] = {
 			Name = "All is fair in love and duels.",
-			Description = "Can only be summoned if your opponent controls a fighter. All players lose 2 of each colored icon. This effect can make people have negative icons.",
+			Description = "Set the coloured icons of all players to 2.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Yellow",-2},{"Blue",-2},{"Red",-2},{"Green",-2}},
+			["Power"] = {{"SetYellow",2},{"Blue",-2},{"Red",-2},{"Green",-2}},
 			Target = "All",
 		},
 		["Bio"] = "A weird, odd, and eccentric girl who has an odd obsession with squids and lovecraftian horror. She is also a huge supporter towards Developers of Roblox.",

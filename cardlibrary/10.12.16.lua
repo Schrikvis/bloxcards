@@ -5565,15 +5565,15 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Llendlar",
 		["Health"] = 0,
 		["Power"] = 0,
-		["Rarity"] = "Epic",
+		["Rarity"] = "Common",
 		["AttackEffect"] = "Thunder",		
 		["Color"] = "Yellow",
 		["Cost"] = {["Yellow"] = 0,},
 		["Effect"] = {
 			Name = "oof",
-			Description = "",
+			Description = "Send your opponent a message.",
 			["Type"] = "OnSummon",
-			["Power"] = {},
+			["Power"] = {{"Draw",0}},
 			Target = "Self",
 		},
 		["Bio"] = "For game brea...testing purposes.",
@@ -5612,7 +5612,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "...",	
 	},
 	
-["Call to Arms"] = {
+	["Call to Arms"] = {
 		["Id"] = 2080913162,
 		["Name"] = "Call to Arms",
 		["Health"] = 0,
@@ -5643,6 +5643,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] =  2080911847,
 				["Bio"] = "Live to slack another day.",
 			},
+		},
 		["Health"] = 100,
 		["Power"] = 100,
 		["Rarity"] = "Token",
