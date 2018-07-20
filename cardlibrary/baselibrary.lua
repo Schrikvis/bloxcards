@@ -7677,18 +7677,19 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Toy Truck"] = {
-		["Id"] = 893423198,
+		["Id"] = 300976057,
 		["Name"] = "Toy Truck",
 		["Health"] = 200,
 		["Power"] = 500,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Thunder",
 		["Archetype"] = "Toy",
+		["Requirement"] = {"Archetype",1},
 		["Color"] = "Yellow",
-		["Cost"] = {["Neutral"] = 2, ["Yellow"] = 1,},
+		["Cost"] = {["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Build Up",
-			Description = "Lock this card for 2 turns. Put a random Toy card into your hand.",
+			Description = "Summon only if you control another Toy. Lock this card for 2 turns. Put a random Toy card into your hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Lock",2},{"RandomAdd","Toy"}},
 			Target = "Self",
