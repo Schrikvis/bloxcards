@@ -701,7 +701,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 5,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "Whenever an enemy fighter dies, deal 50 damage to all enemy fighters. ",
+			Description = "Whenever an enemy fighter dies, deal 100 damage to all enemy fighters. ",
 			["Type"] = "OnEnemyDeath",
 			["Power"] = {{"Damage",100,"Opponent"}},
 			Target = "Opponent",

@@ -3370,8 +3370,8 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Render",
 			Description = "Whenever How_inconvenient is targeted by a fighter, deal 200 damage to that fighter. That fighter gains 300 power.",
 			["Type"] = "OnTarget",
-			["Power"] = {{"Damage",200,"Aggressor"},{"Strengthen",300}},
-			Target = "Ally",
+			["Power"] = {{"Damage",200},{"Strengthen",300}},
+			Target = "Aggressor",
 		},
 		["Bio"] = "This effect is really inconvenient.",
 	},
@@ -3881,7 +3881,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Green"] = 3,},
 		["Effect"] = {
 			Name = "Breakfast in Bread",
-			Description = "Whenever ChaseThePsycho is targeted by a fighter, Set that fighter's power to 300 and give ChaseThePsycho 100 health. Apply this effecto ChaseThePsycho if this fighter is targeted by an action.",
+			Description = "Whenever ChaseThePsycho is targeted by a fighter, Set that fighter's power to 300 and give ChaseThePsycho 100 health. Apply this effect to ChaseThePsycho if this fighter is targeted by an action.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"SetPower",300,"Aggressor"},{"Heal",100,"Self"}},
 			Target = "Ally",
@@ -5873,7 +5873,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Thunder",
 		["Archetype"] = "Hero",
 		["Color"] = "Blue",
-		["Cost"] = {["Blue"] = 7,},
+		["Cost"] = {["Blue"] = 5,},
 		["Effect"] = {
 			Name = "BLEU",
 			Description = "Whenever you gain life, Put a copy of this card into your hand.",
