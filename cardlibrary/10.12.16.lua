@@ -1010,7 +1010,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 6, ["Blue"] = 5, ["Red"] = 1,},
 		["Effect"] = {
 			Name = "Hellfire",
-			Description = "Whenever this fighter is targeted, deal 750 damage to it and summon a Voidsealer.",
+			Description = "Whenever this fighter is targeted, deal 750 damage to it and summon a Voidsealer. This fighter can't counterattack.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Summon","Voidsealer"},{"Damage",750,"Self"}},
 			Target = "Ally",
@@ -1989,7 +1989,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Punchkick",
 		["Color"] = "Green", 
-		["Stealth"] = true,
+		["Requirement"] = {false,4,true},
 		["Cost"] = {["Neutral"] = 1, ["Green"] = 2,},
 		["Effect"] = {
 			Name = "befriending of scaly mutts",

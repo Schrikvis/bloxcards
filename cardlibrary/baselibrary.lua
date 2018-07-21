@@ -18911,7 +18911,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Lock",2}},
 			Target = "Self",
 		},
-		["Bio"] = "Im shocked he made so many good games with such bad aim.",
+		["Bio"] = "He hums in the face of apocalypse.",
 	},		
 	
 	["CorgiParade"] = {
