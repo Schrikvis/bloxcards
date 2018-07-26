@@ -7730,11 +7730,11 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Build Up",
-			Description = "Lock this card for 5 turns.",
+			Description = "Lock this card for 2 turns.",
 			["Type"] = "OnSummon",
 			["Power"] = "Lock",
 			Target = "Self",
-			Increase = 5,
+			Increase = 2,
 		},
 		["Bio"] = "WARNING: DO NOT ACTUALLY WEAR THESE AS TEETH",
 	},
