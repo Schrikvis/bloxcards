@@ -13944,7 +13944,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Draw",1}},
 			Target = "Ally",
 		},
-		["Bio"] = "How do you do, fellow kids? Numa numa yay! This is sparta! Ain't nobody got time for that! Hide your kids, hide your wife. Double rainbow! WEEGEE.",
+		["Bio"] = "How do you do, fellow kids? Numa numa yay! This is sparta! Ain't nobody got time for that! NYANNYANNYAN! Hide your kids, hide your wife! Double rainbow! WEEGEE.",
 	},	
 	
 	["Usering"] = {
