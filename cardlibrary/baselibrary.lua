@@ -13938,13 +13938,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 4,["Blue"] = 1,},
 		["Effect"] = {
-			Name = "Icon Hardscope",
+			Name = "FRESH MAYMAYS",
 			Description = "Draw a card.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Draw",1}},
 			Target = "Ally",
 		},
-		["Bio"] = "You're a kid now! Dark souls fills you with determination! Zhang He is love, Zhang He is life! Storm Crow OP! Git Gud! End him rightly! Fractal anything is a viable deck! Jet fuel can't melt steel beams!",
+		["Bio"] = "How do you do, fellow kids? Numa numa yay! This is sparta! Ain't nobody got time for that! Hide your kids, hide your wife. Double rainbow! WEEGEE.",
 	},	
 	
 	["Usering"] = {
