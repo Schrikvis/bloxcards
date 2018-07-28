@@ -14335,7 +14335,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Red",
 		["Cost"] = {["Blue"] = 3,["Red"] = 3,},
-		["Requirement"] = {false,7,true},
+		["Requirement"] = {false,4,true},
 		["Effect"] = {
 			Name = "Stud",
 			Description = "Requires 4 enemy fighters. Generate 2 blue and red icons, draw two cards, gain 500 life, and put a nightmare into the opponent's hand.",
