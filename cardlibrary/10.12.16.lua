@@ -6100,7 +6100,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Despacito. Quiero respirar tu cuello despacito. Deja que te diga cosas al oído. Para que te acuerdes si no estás conmigo.",
-			Description = "All allied fighters commit deathpacito. Release Despacito 2",
+			Description = "All allied fighters commit deathpacito. Release Despacito 2.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",9999},{"Add","Despacito 2"}},
 			Target = "Ally",
