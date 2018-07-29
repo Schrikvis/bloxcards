@@ -6073,5 +6073,24 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "As an avid researcher of fish aids, he passionately studies the lifestyle of the legendary fish Kanye West.",	
 	},
+	
+	["Despacito"] = {
+		["Id"] = 2065471880,
+		["Name"] = "Despacito",
+		["Health"] = 0,
+		["Power"] = 0,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Lightning",
+		["Color"] = "Neutral", 
+		["Cost"] = {["Neutral"] = 0,},
+		["Effect"] = {
+			Name = "Despacito. Quiero respirar tu cuello despacito. Deja que te diga cosas al oído. Para que te acuerdes si no estás conmigo.",
+			Description = "All allied fighters commit deathpacito.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Damage",9999}},
+			Target = "Ally",
+		},
+		["Bio"] = "Go commit die.",
+	},
 }
 return tentwelvesixteen
