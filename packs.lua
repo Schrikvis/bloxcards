@@ -1125,6 +1125,7 @@ local packs = {
 			"Killar1234567",
 			"Shard Master",
 			-- PAST THIS POINT IS FOR WHITE CARDS AND JOKE CARDS ONLY. I'M LOOKING AT YOU, BLITZ.
+			"Despacito",
 			"ScareAndCrow",
 			"DoomedAdventurer",
 			"Tootso",

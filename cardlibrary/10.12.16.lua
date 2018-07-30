@@ -6073,5 +6073,39 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "As an avid researcher of fish aids, he passionately studies the lifestyle of the legendary fish Kanye West.",	
 	},
+	
+	["Despacito"] = {
+		["Id"] = 2145696706,
+		["Name"] = "Despacito",
+		["AltCards"] = {
+			["Despacito 2"] = {
+				["Id"] = 2145900993,
+				["Name"] = "Despacito 2",
+				["Stealth"] = true,
+				["Effect"] = {
+					Name = "The Final Solution.",
+					Description = "Despacito 2 is canceled.",
+					["Type"] = "OnSummon",
+					["Power"] = {{"Draw",0}},
+					Target = "Ally",
+				},
+				["Bio"] = "This is so sad. Alexa, play Despacito.",
+			},
+		},
+		["Health"] = 0,
+		["Power"] = 0,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Lightning",
+		["Color"] = "Neutral", 
+		["Cost"] = {["Neutral"] = 0,},
+		["Effect"] = {
+			Name = "Despacito. Quiero respirar tu cuello despacito. Deja que te diga cosas al oído. Para que te acuerdes si no estás conmigo.",
+			Description = "All allied fighters commit deathpacito. Release Despacito 2.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Damage",9999},{"Add","Despacito 2"}},
+			Target = "Ally",
+		},
+		["Bio"] = "Go commit die.",
+	},
 }
 return tentwelvesixteen
