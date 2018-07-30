@@ -1034,6 +1034,7 @@ local packs = {
 			"Doge",
 			"GalaxyFlame",
 			"Weaven",
+			"StaceyD07",
 		},
 	}; 
 	{
@@ -1045,6 +1046,7 @@ local packs = {
 		Description = "Exotic new cards from the black market! White cards and joke cards! It's all yours, as long as you have 10 wins!",
 		WinRequirement = 10;
 		Cards = {
+			"StaceyD07",
 			"MesoSad",
 			"Korblox Squire",
 			"Call to Arms",
@@ -1123,7 +1125,6 @@ local packs = {
 			"kickertoken",
 			"superkicker2005",
 			"Killar1234567",
-			"Shard Master",
 			-- PAST THIS POINT IS FOR WHITE CARDS AND JOKE CARDS ONLY. I'M LOOKING AT YOU, BLITZ.
 			"Despacito",
 			"ScareAndCrow",
