@@ -1034,6 +1034,7 @@ local packs = {
 			"Doge",
 			"GalaxyFlame",
 			"Weaven",
+			"StaceyD07",
 		},
 	}; 
 	{
@@ -1089,7 +1090,7 @@ local packs = {
 			"ExtolYT",
 			"Silver_Semtexagon",
 			"vanjohnson",
-			"midastheking123",
+			"StaceyD07",
 			"FourXIV",
 			"Damaging26, Flaming Fighter",
 			"ChaseThePsycho",
