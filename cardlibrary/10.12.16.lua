@@ -6108,7 +6108,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "Go commit die.",
 	},
 		
-	["StaceyDO7"] = {
+	["StaceyD07"] = {
 		["Id"] = 2145872823,
 		["Name"] = "StaceyD07",
 		["Health"] = 400,
