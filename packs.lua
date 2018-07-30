@@ -1046,7 +1046,7 @@ local packs = {
 		Description = "Exotic new cards from the black market! White cards and joke cards! It's all yours, as long as you have 10 wins!",
 		WinRequirement = 10;
 		Cards = {
-			"StaceyD07
+			"StaceyD07",
 			"MesoSad",
 			"Korblox Squire",
 			"Call to Arms",
