@@ -6189,6 +6189,8 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Type"] = "OnTarget",
 			["Power"] = {{"Strengthen",150},{"Damage",9999,"Archetype"}},
 			Target = "Single",
+		},
+		["Bio"] = "Ambition is what we truly need.",		
 	},		
 }
 return tentwelvesixteen
