@@ -342,6 +342,11 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Treas0ner"] = {
 		["Id"] = 581970144,
 		["Name"] = "Treas0ner",
+		["AltCards"] = {
+			["Treas0ner-L"] = {
+				["Id"] = 2198827969,
+			},
+		},
 		["Health"] = 1500,
 		["Power"] = 0,
 		["Rarity"] = "Uncommon",
@@ -535,7 +540,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Reincarnation",
 			Description = "Summon a lattice of green crystals, each with different effects. Crystals don't generate icons.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Summon","Crystal of Reality's Fractal"},{"Summon","Crystal of Nature's Surge"},{"Summon","Crystal of Heaven's Pulse"},{"Add","Targeting Blip"}},
+			["Power"] = {{"Summon","Crystal of Reality's Fractal"},{"Summon","Crystal of Nature's Surge"},{"Summon","Crystal of Heaven's Pulse"},{"Strengthen",0,"Single"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Heaven. Earth. The realities inbetween. This is what I stand for.",
@@ -1261,9 +1266,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Hellfire",
-			Description = "Summon only if you control 2 or more Ultras. Add an Ultra Otherer to your hand and end the turn.",
+			Description = "Summon only if you control 2 or more Ultras. Put an Ultra Otherer into your hand.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Add","Ultra Otherer"},{"EndTurn",1}},
+			["Power"] = {{"Add","Ultra Otherer"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Only primitive Ultras were seen among the edges of their territories, before a breakthrough in technology happened. Now a properly trained person can delve as deeply as they want.",
@@ -2934,6 +2939,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 0,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Slash",
+		["AttackBlock"] = true,
 		["Color"] = "Red", 
 		["Cost"] = {["Red"] = 3, ["Green"] = 2, ["Blue"] = 2, ["Yellow"] = 2},
 		["Effect"] = {
@@ -4662,7 +4668,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["HealImmune"] = true,
 		["Effect"] = {
 			Name = "BEANAENAED",
-			Description = "This card is immune to all stat-changing effects. Whenever you target this card, return tl_rd and shove Tom's Beans into your hand.",
+			Description = "This card is immune to all stat-changing effects. Whenever you target this card, put it and a Tom's Beans into your hand.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Add","Tom's Beans"},{"Return",030,"Self"}},
 			["Target"] = "Ally",
@@ -4708,7 +4714,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Draw",2}},
 			["Target"] = "Opponent",
 		},
-		["Bio"] = [[WESKER202 THE NINJAFOX PLOWS VISLEAF THE BLOBUNNY AND FERTILIZES THEIR EGGS IN THE NEW HIT MOVIE "ZOOTOPIA 2: VIABLE LIFEGAIN BOOGALOO"!!!]],
+		["Bio"] = [[The master and curator of fair and balanced gameplay.]],
 	},
 	
 	["DunclubDuncan"] = {
@@ -5887,15 +5893,15 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Vinrole"] = {
 		["Id"] = 1899489258,
 		["Name"] = "Vinrole",
-		["Health"] = 700,
-		["Power"] = 350,
+		["Health"] = 800,
+		["Power"] = 250,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Thunder",
 		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 4, ["Red"] = 1,},
 		["Effect"] = {
 			Name = "BLEU",
-			Description = "Whenever your opponent summons a fighter, they lose 350 life.",
+			Description = "Whenever your opponent summons a fighter, they lose 250 life.",
 			["Type"] = "OnEnemySummon",
 			["Power"] = {{"Inflict",350}},
 			Target = "Opponent",
@@ -6069,7 +6075,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Yeet",
-			Description = "Lower the power of a target fighter by 300.",
+			Description = "Lower the power of a target fighter by 200.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",300}},
 			Target = "Single",

@@ -196,7 +196,7 @@ local packs = {
 			"SubZeroExtaByte0",
 			"Javier Killer",
 			"Peika Sammai",
-			"Treas0ner",
+			"Treas0ner-L",
 			"74Riley",
 			"Thesupernessiiiii",
 			"Has",
