@@ -2341,7 +2341,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			},
 		},
 		["Health"] = 350,
-		["Power"] = 350,
+		["Power"] = 150,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "UziShot",
 		["AttackBlock"] = true,
@@ -11326,7 +11326,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Defender",
 		["Effect"] = {
 			Name = "Snorlaxing",
-			Description = "Can't attack. At the end of your turns, all fighters who can't attack gain 300 Health and you gain 300 Life.",
+			Description = "Can't attack. At the end of your turns, all fighters who can't attack gain 300 Health and you gain 150 Life.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Heal",300},{"Cost",-150,"Ally"}},
 			Target = "Archetype",
