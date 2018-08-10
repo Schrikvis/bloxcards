@@ -13619,13 +13619,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Green"] = 1,},
 		["Effect"] = {
 			Name = "Vitality Potion",
-			Description = "Future updates to Blox Cards can't buff or nerf Rainbowjewel. Rainbowjewel can't be banned from tournaments.",
+			Description = "Summon a random Crystal. Target it.",
 			["Type"] = "OnSummon",
-			["Power"] = "Heal",
+			["Power"] = {{"RandomSummon",{"Crystal of Inverse Decay","Crystal of Pure Divinity","Crystal of Heroic Ambition","Crystal of Reality's Fractal","Crystal of Nature's Surge","Crystal of Heaven's Pulse","Crystal of Knowledge's Thirst","Crystal of Logic's Will","Crystal of Intellect's Scheme","Crystal of Power's Exploit","Crystal of Ambition's End","Crystal of Death's Vengence"}},{"RandomSummon",{"Crystal of Inverse Decay","Crystal of Pure Divinity","Crystal of Heroic Ambition","Crystal of Reality's Fractal","Crystal of Nature's Surge","Crystal of Heaven's Pulse","Crystal of Knowledge's Thirst","Crystal of Logic's Will","Crystal of Intellect's Scheme","Crystal of Power's Exploit","Crystal of Ambition's End","Crystal of Death's Vengence"}},{"Strengthen",0,"Single"}},
 			Target = "Self",
 			Increase = 0,
 		},
-		["Bio"] = "Rainbow? Jewel? Fine. But ninga? Is that a stealthy person or a racist statement?",
+		["Bio"] = "Future updates to Blox Cards can't buff or nerf Rainbowjewel. Rainbowjewel can't be banned from tournaments.",
 	},	
 	
 	["Dodgeball Player Blue"] = {
