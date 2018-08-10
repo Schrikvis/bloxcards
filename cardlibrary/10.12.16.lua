@@ -3881,7 +3881,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Green"] = 3,},
 		["Effect"] = {
 			Name = "Breakfast in Bread",
-			Description = "Whenever ChaseThePsycho is targeted by a fighter, Set that fighter's power to 300 and give ChaseThePsycho 100 health. Apply this effect to ChaseThePsycho if this fighter is targeted by an action.",
+			Description = "Whenever ChaseThePsycho is targeted by a fighter, Set that fighter's power to 300 and give ChaseThePsycho 100 health.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"SetPower",300,"Aggressor"},{"Heal",100,"Self"}},
 			Target = "Ally",
@@ -4667,7 +4667,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Add","Tom's Beans"},{"Return",030,"Self"}},
 			["Target"] = "Ally",
 		},
-		["Bio"] = "#KelloggsGoneWild can u guys make some and vote or something He Certainly Is. What kind of monster cooks beans in a bloxy cola can? His life motto: The future is bright. Beans, beans, the musical fruit! The more you eat, the more you toot! The more you toot, the better you feel! So we have beans at every meal! idk Yes, I am BLACK. Green is love, green is life.",
+		["Bio"] = "I spilled baked beans all over myself watching Cars 2 in theaters & a teenager shouted...",
 	},
 	
 	["Creeperkiller510"] = {

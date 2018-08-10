@@ -389,7 +389,7 @@ local offers = {
 	RedStarter = {
 		Title = "STARTER DECK: Immolation"; 
 		SubTitle = "Incinerate anything in your path with this destructive red deck.";
-		PriceInBloxBux = 500;
+		PriceInBloxBux = 300;
 		Cards = {["Aesura"] = 1, ["Jayson13"] = 1,
 				["Player"] = 1, ["Dignity"] = 1,
 				["WhiteScarf"] = 2,
@@ -419,7 +419,7 @@ local offers = {
 		SubTitle = "Flood the board with this speedy yellow deck.";
 		PriceInBloxBux = 300;
 		Cards = {["Lord of Auctions"] = 1, ["OstrichSized"] = 1,
-				["Widgeon"] = 1, ["ejob"] = 1,
+				["Widgeon"] = 1, ["Ejob"] = 1,
 				["Maelstronomer"] = 2,
 				["Valletta"] = 3, ["Plushie Mummy"] = 3, ["Stud"] = 3, ["Gobble Squad"] = 3, ["Pikachukiller101"] = 3, ["WarbearNomkins"] = 3,
 				["Guest"] = 4, ["Finland"] = 4, ["Pilgrim"] = 4, ["TeeVee"] = 4};

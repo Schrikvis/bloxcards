@@ -761,7 +761,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "Your opponent must control at least 6 fighters to cast this card. Unlock all allied fighters.",
+			Description = "Cast only if your opponent controls 6 or more fighters. Unlock all allied fighters.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Unlock",9999}},
 			Target = "Ally",

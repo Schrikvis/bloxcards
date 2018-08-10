@@ -1464,7 +1464,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Target Master",
 			Description = "A target fighter gains 100 power.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Strenghten",100}},
+			["Power"] = {{"Strengthen",100}},
 			Target = "Single",
 		},
 		["Bio"] = "He gets the job done by building machinary that defends his allies as well as himself.",
@@ -5548,7 +5548,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Stud",
 			Description = "Cast this card only if your opponent controls four or more fighters. At the beginning of each player's turn, deal 150 damage to each of that player's fighters.",
-			["Type"] = "Field",
+			["Type"] = "Ally",
 			["Power"] = "Damage",
 			Target = "All",	
 			Increase = 150,
@@ -7007,9 +7007,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Blue"] = 6,},
 		["Effect"] = {
 			Name = "Revival",
-			Description = "At the end of your turns, set the lock of this fighter to 1. This fighter can't counterattack.",
-			["Type"] = "OnEnd",
-			["Power"] = {{"Unlock",9999,"Self"},{"Lock",2,"Self"}},
+			Description = "Whenever this card attacks, set the lock of this fighter to 6. This fighter can't counterattack.",
+			["Type"] = "OnAttack",
+			["Power"] = {{"Unlock",9999,"Self"},{"Lock",6,"Self"}},
 			Target = "Ally"
 		},
 		["Bio"] = "Renders wildfires meaningless.",
@@ -10853,7 +10853,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Assimilate",
 			Description = "At the end of your turns, put a fried one limb into your hand.",
-			["Type"] = "OnTurnEnd",
+			["Type"] = "OnEnd",
 			["Power"] = {{"RandomAdd","Limb"}},
 			Target = "Ally",
 		},
@@ -17699,7 +17699,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
  		["Cost"] = {["Blue"] = 3, ["Neutral"] = 4,}, 
  		["Effect"] = {
  			Name = "Helping Out",
- 			Description = "Whenever this fighter is targeted by a fighter, return that fighter to its owner's hand. Whenever this fighter is targeted by an action, return this fighter to its owner's hand.",
+ 			Description = "Whenever this fighter is targeted by a fighter, return that fighter to its owner's hand.",
  			["Type"] = "OnTarget",
  			["Power"] = {{"Return",030}},
  			Target = "Aggressor",
