@@ -375,8 +375,7 @@ local offers = {
 	BlueStarter = {
 		Title = "STARTER DECK: Voidcutter"; 
 		SubTitle = "Wield tricks and traps with this cunning blue deck.";
-		PriceInRobux = 10;
-		PriceInBloxBux = 500;
+		PriceInBloxBux = 300;
 		Cards = {["Silver_Semtexagon"] = 1, ["IcyTea"] = 1,
 				["VetexGames"] = 1, ["Y05H1M4N"] = 1,
 				["KrocoStar"] = 2, ["Mike"] = 2,
@@ -384,14 +383,13 @@ local offers = {
 				["Spiderboy"] = 4, ["DairingPoopHead"] = 4};
 		Ranks = {"Acolyte of the Rift"};
 		SinglePurchase = true;
-		Hidden = true;
+		Hidden = false;
 	};
 	
 	RedStarter = {
 		Title = "STARTER DECK: Immolation"; 
-		SubTitle = "Roast anything in your path with this destructive red deck.";
-		PriceInRobux = 10;
-		PriceInBloxBux = 500;
+		SubTitle = "Incinerate anything in your path with this destructive red deck.";
+		PriceInBloxBux = 300;
 		Cards = {["Aesura"] = 1, ["Jayson13"] = 1,
 				["Player"] = 1, ["Dignity"] = 1,
 				["WhiteScarf"] = 2,
@@ -399,14 +397,13 @@ local offers = {
 				["Rad"] = 4, ["Anderson"] = 4, ["BenCanova1"] = 4, ["ThatGrimGuy"] = 4, ["Mag"] = 4, ["ProjectSlayer"] = 4, ["Ambamby"] = 4};
 		Ranks = {"Infernal Acolyte"};
 		SinglePurchase = true;
-		Hidden = true;
+		Hidden = false;
 	};
 	
 	GreenStarter = {
 		Title = "STARTER DECK: Overgrowth"; 
 		SubTitle = "Grow over your foes with this overwhelming green deck.";
-		PriceInRobux = 10;
-		PriceInBloxBux = 500;
+		PriceInBloxBux = 300;
 		Cards = {["Murtic"] = 1, ["Ripull"] = 1,
 				["Brick_Man"] = 1, ["KasoduS"] = 1,
 				["KingCactaur"] = 2, ["Wustard"] = 2, ["IlIll"] = 2,
@@ -414,42 +411,39 @@ local offers = {
 				["Brycen27"] = 4, ["Boogerguy123"] = 4, ["Langz"] = 4};
 		Ranks = {"Necromantic Acolyte"};
 		SinglePurchase = true;
-		Hidden = true;
+		Hidden = false;
 	};
 	
 	YellowStarter = {
 		Title = "STARTER DECK: Limitless Speed"; 
 		SubTitle = "Flood the board with this speedy yellow deck.";
-		PriceInRobux = 10;
-		PriceInBloxBux = 500;
+		PriceInBloxBux = 300;
 		Cards = {["Lord of Auctions"] = 1, ["OstrichSized"] = 1,
-				["Widgeon"] = 1, ["ejob"] = 1,
+				["Widgeon"] = 1, ["Ejob"] = 1,
 				["Maelstronomer"] = 2,
 				["Valletta"] = 3, ["Plushie Mummy"] = 3, ["Stud"] = 3, ["Gobble Squad"] = 3, ["Pikachukiller101"] = 3, ["WarbearNomkins"] = 3,
 				["Guest"] = 4, ["Finland"] = 4, ["Pilgrim"] = 4, ["TeeVee"] = 4};
 		Ranks = {"Fried Acolyte"};
 		SinglePurchase = true;
-		Hidden = true;
+		Hidden = false;
 	};
 	
 	Thaw = {
-		Title = "EVENT DECK: Thaw";
-		SubTitle = "Negate extra locks by setlocking your fighters to one turn!";
-		PriceInRobux = 10;
-		PriceInBloxBux = 500;
+		Title = "EVENT DECK: Out of Time";
+		SubTitle = "Cheat large fighters into play by removing their downsides with this devious blue deck.";
+		PriceInRobux = 50;
 		Cards = {["MesouricPhantom976"] = 2,
 				["Sylrath"] = 3, ["Subata"] = 3, ["Stevenl15"] = 3, ["Mlgloga"] = 3, ["Darklord1506"] = 3, ["CinematicMind"] = 3, ["AsrielMemer"] = 3,
 				["DairingPoopHead"] = 2, ["Icerain"] = 3, ["DigitalSon"] = 3, ["HatdaCat"] = 4, ["Gato Luz"] = 4};
 		Ranks = {"Chilled Out"};
 		SinglePurchase = true;
-		Hidden = true;
+		Hidden = false;
 	};
 	
 	GrinderRed = {
-		Title = "EVENT DECK: Grinder Red";
-		SubTitle = "Waste your opponent's icons. IT'S ALL ABOUT THAT GRIND!";
-		PriceInRobux = 10;
-		PriceInBloxBux = 500;
+		Title = "EVENT DECK: Grind to Dust";
+		SubTitle = "Slowly grind away your opponent's resources with this attritious red deck.";
+		PriceInRobux = 50;
 		Cards = {["ClanAtlas"] = 1, ["WishNite"] = 1,
 				["Tone"] = 1, ["Doneyes"] = 1, ["Taymaster"] = 1, ["Traumatic Clown"] = 1,
 				["Divine Favor"] = 2,
@@ -457,7 +451,16 @@ local offers = {
 				["ProjectSlayer"] = 4, ["Mag"] = 4, ["Corrupt Guest"] = 4, ["Ambamby"] = 4, ["Sorry"] = 2};
 		Ranks = {"Grinder"};
 		SinglePurchase = true;
-		Hidden = true;
+		Hidden = false;
+	};
+	
+	RankPack = {
+		Title = "Rank Pack";
+		SubTitle = "Bling out your game with this selection of custom ranks!";
+		PriceInRobux = 100;
+		Ranks = {"Raised by Fluzards", "Master of Waves", "Broken Dreamer", "Hacked by SoulSearch", "Revelling Satyr", "Viable Lifegain Deckbuilder", "SAMPLETEXT", "An Enemy Stand", "AI Slayer", "Little Girl", "Surveyor of Degeneracy", "Shadow Clone", "Planetbuster", "Double Decker", "Pootis", "Nenjas Trader", "Reading the card explains the card.", "Sweep Sweep Sweep", "Prince", "Fun Hater", "Nerf Bees!", "0800 1111", "Rigged from the Start", "Got Nerfed", "Totally not a Meeboid", "Savior of Penguins", "Innovative", "Ultra Enthusiasm", "Bat Lives Matter", "Not in Smash", "Empowered by God and Anime", "Average Joe", "Dabmaster"};
+		SinglePurchase = true;
+		Hidden = false;
 	};
 }
 
