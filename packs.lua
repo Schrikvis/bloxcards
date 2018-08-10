@@ -406,6 +406,7 @@ local packs = {
 			"Tl_rd",
 			"ThePestilentOne",
 			"Yggdrasil Faerie",
+			"Wizardguy34",
 			"CjMcGamingYT",
 			"vanjohnson",
 			"ChaseThePsycho",
