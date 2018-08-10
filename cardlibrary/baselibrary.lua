@@ -13601,7 +13601,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "THE REAL SHARD MASTER!!!",
 			Description = "Use the effect of a random crystal.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"RandomSummonWithEffect",{"Crystal of Inverse Decay","Crystal of Pure Divinity","Crystal of Heroic Ambition","Crystal of Reality's Fractal","Crystal of Nature's Surge","Crystal of Heaven's Pulse","Crystal of Knowledge's Thirst","Crystal of Logic's Will","Crystal of Intellect's Scheme","Crystal of Power's Exploit","Crystal of Ambition's End","Crystal of Death's Vengence"}}}
+			["Power"] = {{"RandomSummonWithEffect",{"Crystal of Inverse Decay","Crystal of Pure Divinity","Crystal of Heroic Ambition","Crystal of Reality's Fractal","Crystal of Nature's Surge","Crystal of Heaven's Pulse","Crystal of Knowledge's Thirst","Crystal of Logic's Will","Crystal of Intellect's Scheme","Crystal of Power's Exploit","Crystal of Ambition's End","Crystal of Death's Vengence"}}},
 			Target = "Ally",
 		},
 		["Bio"] = "Rainbow? Jewel? Fine. But ninga? Is that a stealthy person or a racist statement?",
