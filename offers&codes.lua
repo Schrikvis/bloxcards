@@ -463,6 +463,20 @@ local offers = {
 		Hidden = false;
 	};
 	
+	VanillaIceCream = {
+		Title = "EVENT DECK: Vicious Vanillas";
+		SubTitle = "Decimate your opponent using bulky effectless fighters with this ordinary blue/red deck.";
+		PriceInRobux = 50;
+		Cards = {["Clockwork"] = 1,
+				["Dued1"] = 1, ["Pizzablawk"] = 1, ["Dignity"] = 1, ["Rad"] = 1,
+				["Wrath of Azure"] = 2, ["Doomed Adventurer"] = 2, ["Spiderboy"] = 2, ["Ambamby"] = 2, ["Mitpaul"] = 2,
+				["Skullsten"] = 3, ["ShyLightness"] = 3, ["DeathETM"] = 3,
+				["DeadZoneHark"] = 4, ["Mag"] = 4, ["Anderson"] = 4 ["ThatGrimGuy"] = 4,};
+		Ranks = {"Plain"};
+		SinglePurchase = true;
+		Hidden = false;
+	};
+	
 	RankPack = {
 		Title = "Rank Pack";
 		SubTitle = "Bling out your game with this selection of custom ranks!";
