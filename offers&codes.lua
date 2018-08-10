@@ -312,6 +312,15 @@ local codes = {
 			BestBefore = nil; 
 		}
 	};
+	
+	{
+		Obfuscated = "KQM5aRG3j";
+		Rewards = {
+			Cards = {["Despacito"] = 2};
+			Charms = {2,2};
+			Ranks = {"Despacito"};
+		}
+	};
 }
 
 local offers = {
@@ -379,7 +388,7 @@ local offers = {
 		Cards = {["Silver_Semtexagon"] = 1, ["IcyTea"] = 1,
 				["VetexGames"] = 1, ["Y05H1M4N"] = 1,
 				["KrocoStar"] = 2, ["Mike"] = 2,
-				["VoxTrigati"] = 3, ["ShyLightness"] = 3, ["Sylrath"] = 3, ["AsrielMemer"] = 3, ["2Hex"] = 3, ["Stud"] = 3, ["Eye Spy"] = 3, ["FuryBlocks"] = 3,
+				["kickertoken"] = 3, ["ShyLightness"] = 3, ["Sylrath"] = 3, ["AsrielMemer"] = 3, ["2Hex"] = 3, ["Stud"] = 3, ["Eye Spy"] = 3, ["FuryBlocks"] = 3,
 				["Spiderboy"] = 4, ["DairingPoopHead"] = 4};
 		Ranks = {"Acolyte of the Rift"};
 		SinglePurchase = true;
