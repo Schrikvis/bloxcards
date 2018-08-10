@@ -1617,7 +1617,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Tom's Beans",
-			Description = "When this card dies, gain 200 life.",
+			Description = "When this card dies, you gain 200 Life.",
 			["Type"] = "OnDeath",
 			["Power"] = {{"Inflict",-200}},
 			Target = "Ally",
@@ -6425,7 +6425,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Blue"] = 4,},
 		["Effect"] = {
 			Name = "TNL Blessing",
-			Description = "Gain 2000 Life Points.",
+			Description = "Gain 2000 Life.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Cost",-2000}},
 			Target = "Opponent",
@@ -16638,7 +16638,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 3, ["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Asperger syndrome (AS), also known as Asperger's, is a developmental disorder characterized by significant difficulties in social interaction and nonverbal communication, along with restricted and repetitive patterns of behavior and interests.",
-			Description = "1 Charge. When this card dies, spend a charge and resurrect it.",
+			Description = "When this card dies, summon Razikai without its effect.",
 			["Type"] = "OnDeath",
 			["Power"] = {{"Summon","Razikai Token 1"}},	
 			Target = "Ally",
@@ -16655,13 +16655,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Dash",
 		["Color"] = "Blue", 
 		["Cost"] = {["Blue"] = 3, ["Neutral"] = 1,},
-		["Effect"] = {
-			Name = "SEDUCE ME WITH A BUCKET OF FRIED CHICKEN!",
-			Description = "0 Charges. When this card dies, spend a charge and resurrect it.",
-			["Type"] = "OnDeath",
-			["Power"] = {{"Heal","0"}},	
-			Target = "Ally",
-		},
 		["Bio"] = "Rainbow science helps me delay death actually...",
 	},
 
