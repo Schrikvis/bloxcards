@@ -1410,7 +1410,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Description = "Can't attack. At the end of your turns, all fighters who can't attack gain 150 Power and your opponent loses 150 Life.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Strengthen",150,"Archetype"},{"Inflict",150}},
-			Target = "Ally",
+			Target = "Opponent",
 		},
 		["Bio"] = "My dignity is on the line.",
 	},
