@@ -312,6 +312,15 @@ local codes = {
 			BestBefore = nil; 
 		}
 	};
+	
+	{
+		Obfuscated = "KQM5aRG3j";
+		Rewards = {
+			Cards = {["Despacito"] = 2};
+			Charms = {2,2};
+			Ranks = {"Despacito"};
+		}
+	};
 }
 
 local offers = {
@@ -379,7 +388,7 @@ local offers = {
 		Cards = {["Silver_Semtexagon"] = 1, ["IcyTea"] = 1,
 				["VetexGames"] = 1, ["Y05H1M4N"] = 1,
 				["KrocoStar"] = 2, ["Mike"] = 2,
-				["VoxTrigati"] = 3, ["ShyLightness"] = 3, ["Sylrath"] = 3, ["AsrielMemer"] = 3, ["2Hex"] = 3, ["Stud"] = 3, ["Eye Spy"] = 3, ["FuryBlocks"] = 3,
+				["kickertoken"] = 3, ["ShyLightness"] = 3, ["Sylrath"] = 3, ["AsrielMemer"] = 3, ["2Hex"] = 3, ["Stud"] = 3, ["Eye Spy"] = 3, ["FuryBlocks"] = 3,
 				["Spiderboy"] = 4, ["DairingPoopHead"] = 4};
 		Ranks = {"Acolyte of the Rift"};
 		SinglePurchase = true;
@@ -450,6 +459,20 @@ local offers = {
 				["Ninja Elite"] = 3, ["MarissaKitty04"] = 3, ["Infernal Acolyte"] = 3, ["Fire Fighter"] = 3,
 				["ProjectSlayer"] = 4, ["Mag"] = 4, ["Corrupt Guest"] = 4, ["Ambamby"] = 4, ["Sorry"] = 2};
 		Ranks = {"Grinder"};
+		SinglePurchase = true;
+		Hidden = false;
+	};
+	
+	VanillaIceCream = {
+		Title = "EVENT DECK: Vicious Vanillas";
+		SubTitle = "Decimate your opponent using bulky effectless fighters with this ordinary blue/red deck.";
+		PriceInRobux = 50;
+		Cards = {["Clockwork"] = 1,
+				["Dued1"] = 1, ["Pizzablawk"] = 1, ["Dignity"] = 1, ["Rad"] = 1,
+				["Wrath of Azure"] = 2, ["Doomed Adventurer"] = 2, ["Spiderboy"] = 2, ["Ambamby"] = 2, ["Mitpaul"] = 2,
+				["Skullsten"] = 3, ["ShyLightness"] = 3, ["DeathETM"] = 3,
+				["DeadZoneHark"] = 4, ["Mag"] = 4, ["Anderson"] = 4 ["ThatGrimGuy"] = 4,};
+		Ranks = {"Plain"};
 		SinglePurchase = true;
 		Hidden = false;
 	};
