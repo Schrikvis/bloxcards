@@ -14370,6 +14370,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Red",
+		["Requirement"] = {false,4,true},
 		["Cost"] = {["Blue"] = 3,["Red"] = 3,},
 		["Effect"] = {
 			Name = "Stud",
