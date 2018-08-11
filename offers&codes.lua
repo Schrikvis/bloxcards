@@ -471,7 +471,7 @@ local offers = {
 				["Dued1"] = 1, ["Pizzablawk"] = 1, ["Dignity"] = 1, ["Rad"] = 1,
 				["Wrath of Azure"] = 2, ["Doomed Adventurer"] = 2, ["Spiderboy"] = 2, ["Ambamby"] = 2, ["Mitpaul"] = 2,
 				["Skullsten"] = 3, ["ShyLightness"] = 3, ["DeathETM"] = 3,
-				["DeadZoneHark"] = 4, ["Mag"] = 4, ["Anderson"] = 4 ["ThatGrimGuy"] = 4,};
+				["DeadZoneHark"] = 4, ["Mag"] = 4, ["Anderson"] = 4, ["ThatGrimGuy"] = 4,};
 		Ranks = {"Plain"};
 		SinglePurchase = true;
 		Hidden = false;
