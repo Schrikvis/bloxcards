@@ -14373,9 +14373,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 3,["Red"] = 3,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Requires 4 enemy fighters. Generate 2 blue and red icons, draw two cards, gain 500 life, and put a nightmare into the opponent's hand.",
+			Description = "Cast only if your opponent controls at least 4 fighters. Generate 2 blue and red icons, draw two cards, gain 500 life, and put a nightmare into the opponent's hand.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damamge",9999},{"Blue",2},{"Red",2},{"Draw",2},{"Cost",-500},{"Add","Nightmare","Opponent"}},
+			["Power"] = {{"Blue",2},{"Red",2},{"Draw",2},{"Cost",-500},{"Add","Nightmare","Opponent"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Come to me, darkness.",
