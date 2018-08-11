@@ -1266,9 +1266,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Hellfire",
-			Description = "Summon only if you control 2 or more Ultras. Add an Ultra Otherer to your hand and end the turn.",
+			Description = "Cast only if you control 2 or more Ultras. Put an Ultra Otherer into your hand.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Add","Ultra Otherer"},{"EndTurn",1}},
+			["Power"] = {{"Add","Ultra Otherer"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Only primitive Ultras were seen among the edges of their territories, before a breakthrough in technology happened. Now a properly trained person can delve as deeply as they want.",
@@ -1289,7 +1289,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Hellfire",
-			Description = "Summon only if you control 1 or more Ultras. Summon a copy of this card, then end the turn.",
+			Description = "Cast only if you control 1 or more Ultras. Summon a copy of this card, then end the turn.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Summon","Ultra Desirer"},{"EndTurn",1}},
 			Target = "Ally",
@@ -1312,7 +1312,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Bleeding Reality",
-			Description = "Summon only if you control 3 or more Ultras. Deal 500 damage to a target fighter.",
+			Description = "Cast only if you control 3 or more Ultras. Deal 500 damage to a target fighter.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",500,"Single"}},
 			Target = "Ally",
@@ -1335,7 +1335,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Bleeding Reality",
-			Description = "Summon only if you control 4 or more Ultras. Your opponent loses three white icons, then end the turn.",
+			Description = "Cast only if you control 4 or more Ultras. Your opponent loses three white icons, then end the turn.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Neutral",-3,"Opponent"},{"EndTurn",1}},
 			Target = "Ally",
@@ -1358,9 +1358,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Bleeding Reality",
-			Description = "Summon only if you control 5 or more Ultras.",
+			Description = "Cast only if you control 5 or more Ultras. End the turn.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Neutral",0}},
+			["Power"] = {{"EndTurn",1}},
 			Target = "Ally",
 		},
 		["Bio"] = "When Ultras set up a new hive, Vanquishers are spawned to defend it. A single vanquisher takes a single army to remove.",
@@ -1382,7 +1382,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Bleeding Reality",
-			Description = "Summon only if you control 6 or more Ultras. Lock all enemy fighters for 3 turns, unlock all Ultras, then end the turn.",
+			Description = "Cast only if you control 6 or more Ultras. Lock all enemy fighters for 3 turns, unlock all Ultras, then end the turn.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Lock",3,"Opponent"},{"Unlock",9999,"Archetype"},{"EndTurn",1}},
 			Target = "Ally",
@@ -1428,7 +1428,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Bleeding Reality",
-			Description = "Summon only if you control 7 or more Ultras. Whenever an allied fighter dies, put an Ultra Enhancer into your hand.",
+			Description = "Cast only if you control 7 or more Ultras. Whenever an allied fighter dies, put an Ultra Enhancer into your hand.",
 			["Type"] = "OnAllyDeath",
 			["Power"] = {{"Add","Ultra Enhancer"}},
 			Target = "Ally",
@@ -1637,9 +1637,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 3,},
 		["Effect"] = {
 			Name = "Reincarnation",
-			Description = "Summon a lattice of red crystals, each with different effects. Crystals don't generate icons.",
+			Description = "Summon a lattice of red crystals, each with different effects, then target one of them. Crystals don't generate icons.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Summon","Crystal of Power's Exploit"},{"Summon","Crystal of Ambition's End"},{"Summon","Crystal of Death's Vengence"},{"Add","Targeting Blip"}},
+			["Power"] = {{"Summon","Crystal of Power's Exploit"},{"Summon","Crystal of Ambition's End"},{"Summon","Crystal of Death's Vengence"},{"Strengthen",0,"Single"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Power. Ambition. Death. Choose. <3",
@@ -6108,6 +6108,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Neutral", 
+		["Stealth"] = true,
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Despacito. Quiero respirar tu cuello despacito. Deja que te diga cosas al oído. Para que te acuerdes si no estás conmigo.",
