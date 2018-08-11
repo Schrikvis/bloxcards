@@ -342,6 +342,11 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Treas0ner"] = {
 		["Id"] = 581970144,
 		["Name"] = "Treas0ner",
+		["AltCards"] = {
+			["Treas0ner-L"] = {
+				["Id"] = 2198827969,
+			},
+		},
 		["Health"] = 1500,
 		["Power"] = 0,
 		["Rarity"] = "Uncommon",
@@ -533,9 +538,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 3,},
 		["Effect"] = {
 			Name = "Reincarnation",
-			Description = "Summon a lattice of green crystals, each with different effects. Crystals don't generate icons.",
+			Description = "Summon a lattice of green crystals, each with different effects, then target one of them. Crystals don't generate icons.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Summon","Crystal of Reality's Fractal"},{"Summon","Crystal of Nature's Surge"},{"Summon","Crystal of Heaven's Pulse"},{"Add","Targeting Blip"}},
+			["Power"] = {{"Summon","Crystal of Reality's Fractal"},{"Summon","Crystal of Nature's Surge"},{"Summon","Crystal of Heaven's Pulse"},{"Strengthen",0,"Single"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Heaven. Earth. The realities inbetween. This is what I stand for.",
@@ -1087,9 +1092,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Reincarnation",
-			Description = "Summon a lattice of blue crystals, each with different effects. Crystals don't generate icons.",
+			Description = "Summon a lattice of blue crystals, each with different effects, then target one of them. Crystals don't generate icons.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Summon","Crystal of Knowledge's Thirst"},{"Summon","Crystal of Logic's Will"},{"Summon","Crystal of Intellect's Scheme"},{"Add","Targeting Blip"}},
+			["Power"] = {{"Summon","Crystal of Knowledge's Thirst"},{"Summon","Crystal of Logic's Will"},{"Summon","Crystal of Intellect's Scheme"},{"Strengthen",0,"Single"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Give me knowledge, logic, and intellect, and I'll give you the game.",
@@ -1261,9 +1266,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Hellfire",
-			Description = "Summon only if you control 2 or more Ultras. Add an Ultra Otherer to your hand and end the turn.",
+			Description = "Cast only if you control 2 or more Ultras. Put an Ultra Otherer into your hand.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Add","Ultra Otherer"},{"EndTurn",1}},
+			["Power"] = {{"Add","Ultra Otherer"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Only primitive Ultras were seen among the edges of their territories, before a breakthrough in technology happened. Now a properly trained person can delve as deeply as they want.",
@@ -1284,7 +1289,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Hellfire",
-			Description = "Summon only if you control 1 or more Ultras. Summon a copy of this card, then end the turn.",
+			Description = "Cast only if you control 1 or more Ultras. Summon a copy of this card, then end the turn.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Summon","Ultra Desirer"},{"EndTurn",1}},
 			Target = "Ally",
@@ -1307,7 +1312,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Bleeding Reality",
-			Description = "Summon only if you control 3 or more Ultras. Deal 500 damage to a target fighter.",
+			Description = "Cast only if you control 3 or more Ultras. Deal 500 damage to a target fighter.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",500,"Single"}},
 			Target = "Ally",
@@ -1330,7 +1335,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Bleeding Reality",
-			Description = "Summon only if you control 4 or more Ultras. Your opponent loses three white icons, then end the turn.",
+			Description = "Cast only if you control 4 or more Ultras. Your opponent loses three white icons, then end the turn.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Neutral",-3,"Opponent"},{"EndTurn",1}},
 			Target = "Ally",
@@ -1353,9 +1358,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Bleeding Reality",
-			Description = "Summon only if you control 5 or more Ultras.",
+			Description = "Cast only if you control 5 or more Ultras. End the turn.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Neutral",0}},
+			["Power"] = {{"EndTurn",1}},
 			Target = "Ally",
 		},
 		["Bio"] = "When Ultras set up a new hive, Vanquishers are spawned to defend it. A single vanquisher takes a single army to remove.",
@@ -1377,7 +1382,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Bleeding Reality",
-			Description = "Summon only if you control 6 or more Ultras. Lock all enemy fighters for 3 turns, unlock all Ultras, then end the turn.",
+			Description = "Cast only if you control 6 or more Ultras. Lock all enemy fighters for 3 turns, unlock all Ultras, then end the turn.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Lock",3,"Opponent"},{"Unlock",9999,"Archetype"},{"EndTurn",1}},
 			Target = "Ally",
@@ -1423,7 +1428,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Bleeding Reality",
-			Description = "Summon only if you control 7 or more Ultras. Whenever an allied fighter dies, put an Ultra Enhancer into your hand.",
+			Description = "Cast only if you control 7 or more Ultras. Whenever an allied fighter dies, put an Ultra Enhancer into your hand.",
 			["Type"] = "OnAllyDeath",
 			["Power"] = {{"Add","Ultra Enhancer"}},
 			Target = "Ally",
@@ -1617,9 +1622,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Bio"] = "Not all events are equal. Summer better than others.",
 				["Effect"] = {
 					Name = "Reincarnation",
-					Description = "Summon a lattice of red crystals, each with different effects. Crystals don't generate icons.",
+					Description = "Summon a lattice of red crystals, each with different effects, then target one of them. Crystals don't generate icons.",
 					["Type"] = "OnSummon",
-					["Power"] = {{"Summon","Crystal of Power's Exploit-Sun"},{"Summon","Crystal of Ambition's End-Sun"},{"Summon","Crystal of Death's Vengence-Sun"},{"Add","Targeting Blip"}},
+					["Power"] = {{"Summon","Crystal of Power's Exploit-Sun"},{"Summon","Crystal of Ambition's End-Sun"},{"Summon","Crystal of Death's Vengence-Sun"},{"Strengthen",0,"Single"}},
 					Target = "Ally",
 				},
 			}
@@ -1632,9 +1637,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 3,},
 		["Effect"] = {
 			Name = "Reincarnation",
-			Description = "Summon a lattice of red crystals, each with different effects. Crystals don't generate icons.",
+			Description = "Summon a lattice of red crystals, each with different effects, then target one of them. Crystals don't generate icons.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Summon","Crystal of Power's Exploit"},{"Summon","Crystal of Ambition's End"},{"Summon","Crystal of Death's Vengence"},{"Add","Targeting Blip"}},
+			["Power"] = {{"Summon","Crystal of Power's Exploit"},{"Summon","Crystal of Ambition's End"},{"Summon","Crystal of Death's Vengence"},{"Strengthen",0,"Single"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Power. Ambition. Death. Choose. <3",
@@ -2930,17 +2935,18 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Shard Master"] = {
 		["Id"] = 1016706292,
 		["Name"] = "Shard Master",
-		["Health"] = 1000,
-		["Power"] = 250,
+		["Health"] = 1250,
+		["Power"] = 0,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Slash",
 		["Color"] = "Red", 
+		["AttackBlock"] = true,
 		["Cost"] = {["Red"] = 3, ["Green"] = 2, ["Blue"] = 2, ["Yellow"] = 2},
 		["Effect"] = {
 			Name = "inferior to rainbowjewelninga clearly.",
-			Description = "When Shard Master attacks, summon three random crystals and put a targeting blip into your hand.",
+			Description = "When Shard Master attacks, negate that attack and summon three random crystals and put a targeting blip into your hand.",
 			["Type"] = "OnAttack",
-			["Power"] = {{"RandomSummon",{"Crystal of Inverse Decay","Crystal of Pure Divinity","Crystal of Heroic Ambition","Crystal of Reality's Fractal","Crystal of Nature's Surge","Crystal of Heaven's Pulse","Crystal of Knowledge's Thirst","Crystal of Logic's Will","Crystal of Intellect's Scheme","Crystal of Power's Exploit","Crystal of Ambition's End","Crystal of Death's Vengence"}},{"RandomSummon",{"Crystal of Inverse Decay","Crystal of Pure Divinity","Crystal of Heroic Ambition","Crystal of Reality's Fractal","Crystal of Nature's Surge","Crystal of Heaven's Pulse","Crystal of Knowledge's Thirst","Crystal of Logic's Will","Crystal of Intellect's Scheme","Crystal of Power's Exploit","Crystal of Ambition's End","Crystal of Death's Vengence"}},{"RandomSummon",{"Crystal of Inverse Decay","Crystal of Pure Divinity","Crystal of Heroic Ambition","Crystal of Reality's Fractal","Crystal of Nature's Surge","Crystal of Heaven's Pulse","Crystal of Knowledge's Thirst","Crystal of Logic's Will","Crystal of Intellect's Scheme","Crystal of Power's Exploit","Crystal of Ambition's End","Crystal of Death's Vengence"}},{"Add","Targeting Blip"}},
+			["Power"] = {{"RandomSummon",{"Crystal of Inverse Decay","Crystal of Pure Divinity","Crystal of Heroic Ambition","Crystal of Reality's Fractal","Crystal of Nature's Surge","Crystal of Heaven's Pulse","Crystal of Knowledge's Thirst","Crystal of Logic's Will","Crystal of Intellect's Scheme","Crystal of Power's Exploit","Crystal of Ambition's End","Crystal of Death's Vengence"}},{"RandomSummon",{"Crystal of Inverse Decay","Crystal of Pure Divinity","Crystal of Heroic Ambition","Crystal of Reality's Fractal","Crystal of Nature's Surge","Crystal of Heaven's Pulse","Crystal of Knowledge's Thirst","Crystal of Logic's Will","Crystal of Intellect's Scheme","Crystal of Power's Exploit","Crystal of Ambition's End","Crystal of Death's Vengence"}},{"RandomSummon",{"Crystal of Inverse Decay","Crystal of Pure Divinity","Crystal of Heroic Ambition","Crystal of Reality's Fractal","Crystal of Nature's Surge","Crystal of Heaven's Pulse","Crystal of Knowledge's Thirst","Crystal of Logic's Will","Crystal of Intellect's Scheme","Crystal of Power's Exploit","Crystal of Ambition's End","Crystal of Death's Vengence"}},{"Strengthen",0,"Single"}},
 			Target = "Ally",
 		},
 		["Bio"] = "I am the Shardian of the Galaxy...fear me.",
@@ -6089,9 +6095,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Stealth"] = true,
 				["Effect"] = {
 					Name = "Initial Despacito",
-					Description = "Despacito 2 is canceled.",
+					Description = "Cancel Despacito 2. Destroy all allied fighters. Return this card to your hand.",
 					["Type"] = "OnSummon",
-					["Power"] = {{"Draw",0}},
+					["Power"] = {{"Damage",9999},{"Add","Despacito"}},
 					Target = "Ally",
 				},
 				["Bio"] = "This is so sad. Alexa, play Despacito.",
@@ -6102,10 +6108,11 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Neutral", 
+		["Stealth"] = true,
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Despacito. Quiero respirar tu cuello despacito. Deja que te diga cosas al oído. Para que te acuerdes si no estás conmigo.",
-			Description = "All allied fighters commit deathpacito. Release Despacito 2.",
+			Description = "Destroy all allied fighters. Return this card to your hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",9999},{"Add","Despacito 2"}},
 			Target = "Ally",
@@ -6124,12 +6131,12 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Reincarnation",
-			Description = "Summon a lattice of yellow crystals, each with different effects. Crystals don't generate icons.",
+			Description = "Summon a lattice of yellow crystals, each with different effects, then target one of them. Crystals don't generate icons.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Summon","Crystal of Inverse Decay"},{"Summon","Crystal of Pure Divinity"},{"Summon","Crystal of Heroic Ambition"},{"Add","Targeting Blip"}},
+			["Power"] = {{"Summon","Crystal of Inverse Decay"},{"Summon","Crystal of Pure Divinity"},{"Summon","Crystal of Heroic Ambition"},{"Strengthen",0,"Single"}},
 			Target = "Ally",
 		},
-		["Bio"] = "Decay, Divinity, and Ambition are just the things I use to keep people away from my bad roblox avatar.",
+		["Bio"] = "Decay, Divinity, and Ambition are just the things I use to keep people close to me.",
 	},	
 
 	["Crystal of Inverse Decay"] = {
