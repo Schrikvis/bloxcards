@@ -196,7 +196,7 @@ local packs = {
 			"SubZeroExtaByte0",
 			"Javier Killer",
 			"Peika Sammai",
-			"Treas0ner",
+			"Treas0ner-L",
 			"74Riley",
 			"Thesupernessiiiii",
 			"Has",
@@ -391,6 +391,8 @@ local packs = {
 		CardPackId = 721399805,
 		Description = "Green is the colour of life, growth, and the primal forces. Vitality packs contain cards that cost green!",
 		Cards = {
+			"zabiehunter",
+			"Roundawsome",
 			"Tootso",
 			"SnailMan39",
 			"Darr1432",
