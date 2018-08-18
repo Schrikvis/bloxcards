@@ -7,7 +7,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Uncommon",
 		["Fading"] = true,
 		["AttackEffect"] = "Dash",
-		["Color"] = "Blue", 
+		["Color"] = "Blue",
 		["Archetype"] = "Skeleton",
 		["Cost"] = {["Blue"] = 2,},
 		["Effect"] = {
@@ -672,7 +672,6 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["DIY: Dark Dominus"] = {
 		["Id"] = 540075686,
 		["Name"] = "DIY: Dark Dominus",
-		["Archetype"] = "Saprasam",
 		["Health"] = 550,
 		["Power"] = 550,
 		["Rarity"] = "Rare",
