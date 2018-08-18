@@ -730,7 +730,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "Yarrge",
-			Description = "Gain 1 Yellow Icon.",
+			Description = "Generate a yellow icon.",
 			["Type"] = "OnSummon",
 			["Power"] = "Yellow",
 			Target = "Ally",
@@ -1244,7 +1244,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Spider Venom",
-			Description = "Gain 1 Yellow icon.",
+			Description = "Generate a yellow icon.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Yellow",1}},
 			Target = "Ally",
@@ -1425,7 +1425,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Yellow"] = 4,},
 		["Effect"] = {
 			Name = "Yarrge",
-			Description = "Gain 2 Yellow icons.",
+			Description = "Generate two yellow icons.",
 			["Type"] = "OnSummon",
 			["Power"] = "Yellow",
 			Target = "Ally",
@@ -1591,7 +1591,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Yarrge",
-			Description = "Gain 1 Yellow icon.",
+			Description = "Generate a yellow icon.",
 			["Type"] = "OnSummon",
 			["Power"] = "Yellow",
 			Target = "Ally",
@@ -3845,7 +3845,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Yellow"] = 5,},
 		["Effect"] = {
 			Name = "Booster",
-			Description = "Gain 2 Yellow Icons.",
+			Description = "Generate two yellow icons.",
 			["Type"] = "OnSummon",
 			["Power"] = "Yellow",
 			Target = "Ally",
@@ -6009,7 +6009,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 4,},
 		["Effect"] = {
 			Name = "Yarrge",
-			Description = "Gain 2 Yellow Icons.",
+			Description = "Generate two yellow icons.",
 			["Type"] = "OnSummon",
 			["Power"] = "Yellow",
 			Target = "Ally",
@@ -11247,7 +11247,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Generate a Yellow icon.",
+			Description = "Generate a yellow icon.",
 			["Type"] = "OnSummon",
 			["Power"] = "Yellow",
 			Target = "Ally",
