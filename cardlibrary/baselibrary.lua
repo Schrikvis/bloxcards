@@ -5565,7 +5565,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Requirement"] = {false,4,true},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Cast this card only if your opponent controls four or more fighters. At the beginning of each player's turn, deal 150 damage to each of that player's fighters.",
+			Description = "Cast this card only if your opponent controls four or more fighters. At the beginning of each player's turn, deal 150 damage to all fighters.",
 			["Type"] = "Field",
 			["Power"] = "Damage",
 			Target = "All",	
@@ -5587,7 +5587,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 2,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Increase the power of all fighters by 50 at the end of each turn.",
+			Description = "At the beginning of each player's turn, increase the power of all fighters by 50.",
 			["Type"] = "Field",
 			["Power"] = "Strengthen",
 			Target = "All",	
