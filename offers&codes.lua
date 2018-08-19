@@ -63,7 +63,7 @@ local codes = {
 	{
 		Obfuscated = "OGYQ";
 		Rewards = {
-			Cards = {["Hyperblue"] = 1, ["RukatuKDH"] = 1, ["InceptionTime"] = 1,};
+			Cards = {["Hyperblue"] = 1, ["RukatuKDH"] = 1, ["InceptionTime"] = 1};
 		}
 	};
 	
@@ -167,8 +167,8 @@ local codes = {
 	{
 		Obfuscated = "KGMRjNf3 RjKQ aRaG";
 		Rewards = {
-			Packs = {["Innovative"] = 1};
-			BloxBux = 500;
+			Packs = {["Innovative"] = 5};
+			BloxBux = 1000;
 			Charms = {2,2};
 			Sleeves = {"YuGiOh"};
 		}
