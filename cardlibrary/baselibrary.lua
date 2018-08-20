@@ -14577,6 +14577,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Yellow",
 		["Cost"] = {["Yellow"] = 1, ["Neutral"] = 3,},
+		["Effect"] = {
+			Name = "Roller Coaster",
+			Description = "Deal 200 damage to all blue fighters.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Damage",200}},
+			Target = "ColorBlue",
+		},
 		["Bio"] = "Made seven years ago, Miked's paintball still Puts Loleris to shame.",
 	},
 	
