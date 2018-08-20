@@ -3900,7 +3900,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"RandomAdd","Lunar"}},
 			Target = "Ally",
 		},
-		["Bio"] = "Blame blswx card engine limitations, Jaik.",
+		["Bio"] = "Blame blawx card engine limitations, Jaik.",
 	},	
 	
 	["MiloCortez"] = {
@@ -3921,8 +3921,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Green",
 		["Cost"] = {["Green"] = 4,},
 		["Effect"] = {
-			Name = "Booster",
-			Description = "The enemy gains 6 white icons.",
+			Name = "WOAH, ALIENS?",
+			Description = "The opponent gains six white icons.",
 			["Type"] = "OnSummon",
 			["Power"] = "Neutral",
 			Target = "Opponent",
@@ -3982,7 +3982,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Green"] = 2,},
 		["Effect"] = {
 			Name = "Nature's Gift",
-			Description = "Gain 4 Green Icons.",
+			Description = "Generate four green icons.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Green",4}},
 			Target = "Ally",
@@ -4021,7 +4021,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 1,},
 		["Charge"] = true,
 		["Effect"] = {
-			Name = "Booster",
+			Name = "Airstrike",
 			Description = "Haste.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Neutral",0}},
