@@ -436,7 +436,6 @@ local packs = {
 			"Cat Ears Maid",
 			"HyperBlue",
 			"rhomlevko",
-			"__________",
 			"Smart Planner",
 			"Zombie",
 			"Brick_Man",
@@ -819,6 +818,8 @@ local packs = {
 		CardPackId = 721400239,
 		Description = "Yellow is the colour of chaos, emotion, and society. Revel packs contain cards that cost yellow!",
 		Cards = {
+			"__________",
+			"Wekov",
 			"ScareAndCrow",
 			"MesoSad",
 			"Unc, Uncorrupted",
