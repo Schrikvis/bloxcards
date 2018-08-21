@@ -7,7 +7,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Uncommon",
 		["Fading"] = true,
 		["AttackEffect"] = "Dash",
-		["Color"] = "Blue", 
+		["Color"] = "Blue",
 		["Archetype"] = "Skeleton",
 		["Cost"] = {["Blue"] = 2,},
 		["Effect"] = {

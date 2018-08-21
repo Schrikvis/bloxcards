@@ -7,264 +7,147 @@ local codes = {
 				Pool = {["Necromantic Acolyte"] = 1, ["Fried Acolyte"] = 1, ["Nova"] = 1};
 				Amount = 3;
 			}; -- {{"Medic Kit" = 1, ["Froot Ninja"] = 1}, 2}; ie, 50/50 chance for either card, 2 cards are given
-			Packs = {}; -- {"Exine" = 5};
+			-- Packs = {"Exine" = 5};
 			BloxBux = 10;
 			Charms = {1,1}; -- rabbit, clover
 			Sleeves = {"Legendary"}; -- {"Basic"}
 			Ranks = {"Tester"}; -- {"DanTDM Superfan"}
-			BestBefore = 0; -- tick() + (3600*hours) + (86400*days) + (604800*weeks)
+			--BestBefore = tick() + (3600*hours) + (86400*days) + (604800*weeks); doesnt work and pointless.
 		}
 	};
 		
 	{
 		Obfuscated = "3QM3";
 		Rewards = {
-			Cards = {};
-			RandomCards = {};
 			Packs = {Exine = 5};
 			BloxBux = 500;
-			Charms = {0,0};
-			Sleeves = {};
-			Ranks = {};
-			BestBefore = nil; 
 		}
 	};
 
 	{
 		Obfuscated = "7qj+7";
 		Rewards = {
-			Cards = {["Safe Chat"] = 1}; 
-			RandomCards = {};
-			Packs = {};
-			BloxBux = 0;
-			Charms = {0,0};
-			Sleeves = {}; 
-			Ranks = {};
-			BestBefore = nil; 
+			Cards = {["Safe Chat"] = 1};
 		}
 	};
 	
 	{
 		Obfuscated = "M3G++Gf7M";
 		Rewards = {
-			Cards = {["Cow God"] = 1}; 
-			RandomCards = {};
+			Cards = {["Cow God"] = 1};
 			Packs = {Stirrings = 5};
-			BloxBux = 0;
-			Charms = {0,0};
-			Sleeves = {}; 
-			Ranks = {};
-			BestBefore = 604800;
 		}
 	};
 		
 	{
 		Obfuscated = "pjNa+QafQ+k";
 		Rewards = {
-			Cards = {["FILTHYPRANKS"] = 1}; 
-			RandomCards = {};
-			Packs = {};
-			BloxBux = 0;
-			Charms = {0,0};
-			Sleeves = {}; 
-			Ranks = {};
-			BestBefore = nil;
+			Cards = {["FILTHYPRANKS"] = 1};
 		}
 	};
 		
 	{
 		Obfuscated = "MUa00 e0GU5 5+afJ";
 		Rewards = {
-			Cards = {}; 
-			RandomCards = {};
-			Packs = {};
 			BloxBux = 1000;
-			Charms = {0,0};
-			Sleeves = {}; 
-			Ranks = {};
-			BestBefore = nil; 
 		}
 	};
 	
 	{
 		Obfuscated = "M3G00 3WQ eQM3";
 		Rewards = {
-			Cards = {["Gravity InspectorV2"] = 3}; 
-			RandomCards = {};
-			Packs = {};
-			BloxBux = 0;
-			Charms = {0,0};
-			Sleeves = {}; 
-			Ranks = {};
-			BestBefore = nil; 
+			Cards = {["Gravity InspectorV2"] = 3};
 		}
 	};
 	
 	{
 		Obfuscated = "OGYQ";
 		Rewards = {
-			Cards = {["Hyperblue"] = 1, ["RukatuKDH"] = 1, ["InceptionTime"] = 1,}; 
-			RandomCards = {};
-			Packs = {};
-			BloxBux = 0;
-			Charms = {0,0};
-			Sleeves = {}; 
-			Ranks = {};
-			BestBefore = nil; 
+			Cards = {["Hyperblue"] = 1, ["RukatuKDH"] = 1, ["InceptionTime"] = 1};
 		}
 	};
 	
 	{
 		Obfuscated = "+jej3GR";
 		Rewards = {
-			Cards = {["BrokenBone"] = 1}; 
-			RandomCards = {};
-			Packs = {};
-			BloxBux = 0;
-			Charms = {0,0};
-			Sleeves = {}; 
-			Ranks = {};
-			BestBefore = nil; 
+			Cards = {["BrokenBone"] = 1};
 		}
 	};
 	
 	{		
 		Obfuscated = "0Qa7NQ";
 		Rewards = {
-			Cards = {}; 
-			RandomCards = {};
-			Packs = {Obvious = 4,};
-			BloxBux = 0;
+			Packs = {Obvious = 4};
 			Charms = {3,3};
-			Sleeves = {}; 
-			Ranks = {};
-			BestBefore = nil; 
 		}
 	};
 	
 	{
 		Obfuscated = "7QFQ+a3Q";
 		Rewards = {
-			Cards = {["ChickenDuckBird V2"] = 1}; 
-			RandomCards = {};
-			Packs = {};
+			Cards = {["ChickenDuckBird V2"] = 1};
 			BloxBux = 200;
-			Charms = {0,0};
-			Sleeves = {}; 
-			Ranks = {};
-			BestBefore = nil; 
 		}
 	};
 	
 	{
 		Obfuscated = "7QfJG KQ fQ";
 		Rewards = {
-			Cards = {["Lunar Acolyte"] = 3, ["Acolyte of the Rift"] = 3, ["Infernal Acolyte"] = 3, ["Necromantic Acolyte"] = 3, ["Fried Acolyte"] = 3, ["Nova"] = 3}; 
-			RandomCards = {};
-			Packs = {};
-			BloxBux = 0;
-			Charms = {0,0};
-			Sleeves = {}; 
-			Ranks = {};
-			BestBefore = nil; 
+			Cards = {["Lunar Acolyte"] = 3, ["Acolyte of the Rift"] = 3, ["Infernal Acolyte"] = 3, ["Necromantic Acolyte"] = 3, ["Fried Acolyte"] = 3, ["Nova"] = 3};
 		}
 	};
 	
 	{
 		Obfuscated = "M5jjJp e0jl";
 		Rewards = {
-			Cards = {}; 
-			RandomCards = {};
-			Packs = {};
-			BloxBux = 0;
 			Charms = {2,2};
-			Sleeves = {"Goopy"}; 
-			Ranks = {};
-			BestBefore = nil; 
+			Sleeves = {"Goopy"};
 		}
 	};
 	
 	{
 		Obfuscated = "MRa+p Ra+km";
 		Rewards = {
-			Cards = {}; 
-			RandomCards = {["Disturbing Thoughts"] = 3};
+			Cards = {["Disturbing Thoughts"] = 3};
 			Packs = {Stirrings = 1};
-			BloxBux = 0;
-			Charms = {0,0};
-			Sleeves = {"Spooky Scary"}; 
-			Ranks = {};
-			BestBefore = nil; 
+			Sleeves = {"Spooky Scary"};
 		}
 	};
 	
 	{
 		Obfuscated = "3N3j+Ga0";
 		Rewards = {
-			Cards = {}; 
-			RandomCards = {};
 			Packs = {Exine = 5};
-			BloxBux = 0;
-			Charms = {0,0};
-			Sleeves = {"Spooky Scary"}; 
-			Ranks = {};
-			BestBefore = nil; 
+			Sleeves = {"Spooky Scary"};
 		}
 	};
 	
 	{
 		Obfuscated = "e0NQeQa+K";
 		Rewards = {
-			Cards = {["Grand Pirate King"] = 2, ["Ship Raider"] = 4, ["Bearded Captain"] = 3, ["Pirate"] = 4, ["Brickmason"] = 1}; 
-			RandomCards = {};
-			Packs = {};
-			BloxBux = 0;
-			Charms = {0,0};
-			Sleeves = {}; 
-			Ranks = {};
-			BestBefore = nil; 
+			Cards = {["Grand Pirate King"] = 2, ["Ship Raider"] = 4, ["Bearded Captain"] = 3, ["Pirate"] = 4, ["Brickmason"] = 1};
 		}
 	};
 	
 	{
 		Obfuscated = "7jjK Tje";
 		Rewards = {
-			Cards = {["ROBLOXian Reborn"] = 1}; 
-			RandomCards = {};
-			Packs = {};
-			BloxBux = 0;
-			Charms = {0,0};
-			Sleeves = {}; 
-			Ranks = {};
-			BestBefore = nil; 
+			Cards = {["ROBLOXian Reborn"] = 1};
 		}
 	};
 	
 	{
 		Obfuscated = "YG03Wp 5+afJM";
 		Rewards = {
-			Cards = {["FILTHY PRANKS"] = -1}; 
-			RandomCards = {};
-			Packs = {};
-			BloxBux = 0;
-			Charms = {0,0};
-			Sleeves = {}; 
-			Ranks = {};
-			BestBefore = nil; 
+			Cards = {["FILTHY PRANKS"] = -1};
+			BloxBux = -100
 		}
 	};
 	
 	{
 		Obfuscated = "/a0Qf3GfQM";
 		Rewards = {
-			Cards = {}; 
-			RandomCards = {};
 			Packs = {["Tough Love"] = 2};
-			BloxBux = 0;
-			Charms = {0,0};
-			Sleeves = {}; 
-			Ranks = {};
-			BestBefore = nil; 
 		}
 	};
 	
@@ -278,38 +161,25 @@ local codes = {
 			};
 			Packs = {["Teaism's Gifts"] = 1};
 			BloxBux = 1;
-			Charms = {0,0};
-			Sleeves = {};
-			Ranks = {};
-			BestBefore = nil;
 		};
 	};
 	
 	{
 		Obfuscated = "KGMRjNf3 RjKQ aRaG";
 		Rewards = {
-			Cards = {};
-			RandomCards = {};
-			Packs = {["Innovative"] = 1};
-			BloxBux = 500;
+			Packs = {["Innovative"] = 5};
+			BloxBux = 1000;
 			Charms = {2,2};
 			Sleeves = {"YuGiOh"};
-			Ranks = {};
-			BestBefore = nil; 
 		}
 	};
 	
 	{
 		Obfuscated = "eQaRW ea+eQRNQ";
 		Rewards = {
-			Cards = {};
-			RandomCards = {};
 			Packs = {["Summer Salt"] = 1};
 			BloxBux = 500;
 			Charms = {1,1};
-			Sleeves = {};
-			Ranks = {};
-			BestBefore = nil; 
 		}
 	};
 	
@@ -471,7 +341,7 @@ local offers = {
 				["Dued1"] = 1, ["Pizzablawk"] = 1, ["Dignity"] = 1, ["Rad"] = 1,
 				["Wrath of Azure"] = 2, ["Doomed Adventurer"] = 2, ["Spiderboy"] = 2, ["Ambamby"] = 2, ["Mitpaul"] = 2,
 				["Skullsten"] = 3, ["ShyLightness"] = 3, ["DeathETM"] = 3,
-				["DeadZoneHark"] = 4, ["Mag"] = 4, ["Anderson"] = 4 ["ThatGrimGuy"] = 4,};
+				["DeadZoneHark"] = 4, ["Mag"] = 4, ["Anderson"] = 4, ["ThatGrimGuy"] = 4,};
 		Ranks = {"Plain"};
 		SinglePurchase = true;
 		Hidden = false;
