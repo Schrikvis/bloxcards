@@ -302,7 +302,6 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Ghost Dragon"] = {
 		["Id"] = 581907836,
 		["Name"] = "Ghost Dragon",
-		["Archetype"] = "Saprasam",
 		["Health"] = 400,
 		["Power"] = 400,
 		["Rarity"] = "Uncommon",
