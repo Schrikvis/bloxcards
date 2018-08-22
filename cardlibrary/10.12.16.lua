@@ -4045,7 +4045,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Health"] = 200,
 				["Power"] = 200,
 				["Rarity"] = "Token",
-				["Stealth"] = true,
+				["Charge"] = false,
 				["Effect"] = {
 					Name = "Test",
 					Description = "When this card is unlocked, deal 200 damage to enemies.",
@@ -4087,10 +4087,10 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Rarity"] = "Token",
 				["Effect"] = {
 					Name = "Test",
-					Description = "ERROR 261 EFFECT DESCRIPTION NOT FOUND",
-					["Type"] = "OnSummon",
-					["Power"] = {{"RandomAdd",{"Test Dummy","Test DummyA","Test DummyB","Test DummyC","Test DummyD","Test DummyE"},"Ally"},{"Shedletsky",030}},
-					Target = "Ally",
+					Description = "When this card is unlocked, deal 200 damage to enemies. Haste.",
+					["Type"] = "OnUnlock",
+					["Power"] = {{"RandomAdd",{"Test Dummy","Test DummyA","Test DummyB","Test DummyC","Test DummyD","Test DummyE"},"Ally"},{"Damage",200}},
+					Target = "Opponent",
 				},
 			},
 		},
