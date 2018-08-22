@@ -1915,7 +1915,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Ninja Assailant"] = {
-		["Id"] = 295634431,
+		["Id"] = 2252093964,
 		["Name"] = "Ninja Assailant",
 		["Health"] = 200,
 		["Power"] = 200,
