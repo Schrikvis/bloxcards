@@ -4368,11 +4368,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "PunchKick",
 		["Color"] = "Yellow",
 		["Cost"] = {["Neutral"] = 2,["Yellow"] = 1,},
-		["Archetype"] = "Conjuration",
-		["Requirement"] = {"Archetype",1},
 		["Effect"] = {
 			Name = "Split Ego",
-			Description = "[TEMPORARILY BANNED] All fighters lose 200 Power.",
+			Description = "All fighters lose 200 Power.",
 			["Type"] = "OnSummon",
 			["Power"] = "Weaken",
 			Target = "All",
