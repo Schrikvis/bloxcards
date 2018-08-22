@@ -5610,7 +5610,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Stud",
 			Description = "Each player shuffles a Ninja Trainee into their deck and draws a card at the start of your turn.",
 			["Type"] = "Field",
-			["Power"] = {{"DeckAdd","Ninja Trainee"},{"Draw",1},
+			["Power"] = {{"DeckAdd","Ninja Trainee"},{"Draw",1}},
 			Target = "Ally",	
 		},
 		["Bio"] = "The apex of all Dojos, providing both adept acceleration of mental and physical skill.",
@@ -18864,7 +18864,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1, ["Red"] = 1,},
 		["Effect"] = {
 			Name = "Thug Life",
-			Description = "Whenever a ninja dies, deal 50 damage to all non-ninjas.",
+			Description = "Whenever an allied ninja dies, deal 50 damage to all non-ninjas.",
 			["Type"] = "OnAllyDeath",
 			["Archetype"] = "Ninja",			
 			["Power"] = {{"Damage","50"}},
