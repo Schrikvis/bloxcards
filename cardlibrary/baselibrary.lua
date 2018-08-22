@@ -738,13 +738,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "Sweden generates blue icons, whilst Norway generates red ones. Scandinavia hates grass.",
 	},
-
+	
 	["Langz"] = {
-		["Id"] = 266032017,
+		["Id"] = 2252095899,
 		["Name"] = "Langz",
 		["AltCards"] = {
 			["Langz-E"] = {
-				["Id"] = 1567578025,
+				["Id"] = 2252097920,
 				["Bio"] = "Hey guys check out my new camera...wait this isn't a camera",
 			},
 		},
@@ -753,12 +753,10 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Common",
 		["AttackEffect"] = "PistolShot",
 		["Color"] = "Green",
-		["Cost"] = {["Neutral"] = 2,},
-		["Archetype"] = "Conjuration",
-		["Requirement"] = {"Archetype",1},
+		["Cost"] = {["Green"] = 2,},
 		["Effect"] = {
 			Name = "Glitch Bomb",
-			Description = "[TEMPORARILY BANNED] Deal 150 damage to all enemy fighters.",
+			Description = "Deal 150 damage to all enemy fighters.",
 			["Type"] = "OnSummon",
 			["Power"] = "Damage",
 			Target = "Opponent",
