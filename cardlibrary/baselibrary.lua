@@ -1881,7 +1881,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Ninja",
 		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 1,["Red"] = 2,},
-		["Requirement"] = 1,
+		["Requirement"] = {"Archetype",1},
 		["Effect"] = {
 			Name = "Assimilate",
 			Description = "Cast only if you control a ninja. Deal 200 damage to all non-Ninjas.",
@@ -5605,10 +5605,11 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Terrain",
 		["Field"] = 295562634,
 		["Color"] = "Neutral",
+		["Requirement"] = {"Archetype",3},		
 		["Cost"] = {["Neutral"] = 2},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Each player shuffles a Ninja Trainee into their deck and draws a card at the start of your turn.",
+			Description = "You must control 3 or more ninjas to cast this. Each player shuffles a Ninja Trainee into their deck and draws a card at the start of your turn.",
 			["Type"] = "Field",
 			["Power"] = {{"DeckAdd","Ninja Trainee"},{"Draw",1}},
 			Target = "Ally",	
@@ -18859,8 +18860,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Common",
 		["AttackEffect"] = "CatSlash",
 		["Archetype"] = "Ninja",
-		["Color"] = "Red",
-		["Requirement"] = {"Archetype",2},		
+		["Color"] = "Red",		
 		["Cost"] = {["Neutral"] = 1, ["Red"] = 1,},
 		["Effect"] = {
 			Name = "Thug Life",
