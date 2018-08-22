@@ -1927,10 +1927,10 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Assimilate",
 			Description = "At the end of your turn, all ninjas gain 50 health.",
-			["Type"] = "OnSummon",
+			["Type"] = "OnEnd",
 			["Power"] = "Heal",
 			Target = "Archetype",
-			Increase = 150,
+			Increase = 50,
 		},
 		["Bio"] = "Ninjas very rarely killed people, as they were all mostly spies.",
 	},
