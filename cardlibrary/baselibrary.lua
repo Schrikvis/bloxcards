@@ -18860,8 +18860,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Common",
 		["AttackEffect"] = "CatSlash",
 		["Archetype"] = "Ninja",
-		["Color"] = "Red",		
-		["Cost"] = {["Neutral"] = 1, ["Red"] = 1,},
+		["Color"] = "Red",
+		["Cost"] = {["Neutral"] = 1,["Red"] = 1,},
 		["Effect"] = {
 			Name = "Thug Life",
 			Description = "Whenever an allied ninja dies, deal 50 damage to all non-ninjas.",
