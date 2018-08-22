@@ -5608,9 +5608,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Shuffle a ninja trainee to each player's deck at the start of your turn.",
+			Description = "Each player shuffles a Ninja Trainee into their deck and draws a card at the start of your turn.",
 			["Type"] = "Field",
-			["Power"] = {{"DeckAdd","Ninja Trainee"}},
+			["Power"] = {{"DeckAdd","Ninja Trainee"},{"Draw",1},
 			Target = "Ally",	
 		},
 		["Bio"] = "The apex of all Dojos, providing both adept acceleration of mental and physical skill.",
