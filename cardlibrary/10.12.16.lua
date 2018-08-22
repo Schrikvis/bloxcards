@@ -4034,10 +4034,10 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Rarity"] = "Token",
 				["Effect"] = {
 					Name = "Test",
-					Description = "When the opponent summons a fighter, destroy this fighter, and the summoned fighter gets added to your hand instead.",
-					["Type"] = "OnEnemySummon",
-					["Power"] = {{"RandomAdd",{"Test Dummy","Test DummyA","Test DummyB","Test DummyC","Test DummyD","Test DummyE"},"Ally"},{"Return",030},{"Return",030},{"Damage",9999,"Self"}},
-					Target = "Aggressor",
+					Description = "When this card is locked, deal 200 damage to enemies.",
+					["Type"] = "OnLock",
+					["Power"] = {{"RandomAdd",{"Test Dummy","Test DummyA","Test DummyB","Test DummyC","Test DummyD","Test DummyE"},"Ally"},{"Damage",200}},
+					Target = "Opponent",
 				},
 			},
 			
@@ -4048,10 +4048,10 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Stealth"] = true,
 				["Effect"] = {
 					Name = "Test",
-					Description = "The next fighter you summon is instead added to the opponents hand. then, destroy this fighter.",
-					["Type"] = "OnAllySummon",
-					["Power"] = {{"RandomAdd",{"Test Dummy","Test DummyA","Test DummyB","Test DummyC","Test DummyD","Test DummyE"},"Ally"},{"Return",030},{"Return",030},{"Damage",9999,"Self"}},
-					Target = "Aggressor",
+					Description = "When this card is unlocked, deal 200 damage to enemies.",
+					["Type"] = "OnUnlock",
+					["Power"] = {{"RandomAdd",{"Test Dummy","Test DummyA","Test DummyB","Test DummyC","Test DummyD","Test DummyE"},"Ally"},{"Damage",200}},
+					Target = "Opponent",
 				},
 			},
 			
@@ -4061,10 +4061,10 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Rarity"] = "Token",
 				["Effect"] = {
 					Name = "Test",
-					Description = "Return all fighters to their owner's opponents hands.",
-					["Type"] = "OnTurnStart",
-					["Power"] = {{"RandomAdd",{"Test Dummy","Test DummyA","Test DummyB","Test DummyC","Test DummyD","Test DummyE"},"Ally"},{"Return",030},{"Return",030}},
-					Target = "All",
+					Description = "When the opponent summons a fighter, destroy this fighter, and the summoned fighter gets added to your hand instead.",
+					["Type"] = "OnEnemySummon",
+					["Power"] = {{"RandomAdd",{"Test Dummy","Test DummyA","Test DummyB","Test DummyC","Test DummyD","Test DummyE"},"Ally"},{"Return",030},{"Return",030},{"Damage",9999,"Self"}},
+					Target = "Aggressor",
 				},
 			},
 			
@@ -4089,7 +4089,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 					Name = "Test",
 					Description = "ERROR 261 EFFECT DESCRIPTION NOT FOUND",
 					["Type"] = "OnSummon",
-					["Power"] = {{"Shedletsky",030}},
+					["Power"] = {{"RandomAdd",{"Test Dummy","Test DummyA","Test DummyB","Test DummyC","Test DummyD","Test DummyE"},"Ally"},{"Shedletsky",030}},
 					Target = "Ally",
 				},
 			},
@@ -4106,7 +4106,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Test",
-			Description = "Return a target fighter. If it is owned by the opponent, put it into your hand instead.",
+			Description = "When this card attacks, put a target fighter from the field into your hand.",
 			["Type"] = "OnAttack",
 			["Power"] = {{"RandomAdd",{"Test Dummy","Test DummyA","Test DummyB","Test DummyC","Test DummyD","Test DummyE"}},{"Return",030,"Single"},{"Return",030,"Single"}},
 			Target = "Ally",
