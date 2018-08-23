@@ -6222,7 +6222,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"SummonWithEffect","ParadiseToken"}},
 			Target = "Ally",
 		},
-		["Bio"] = "Hey guys my good pal Llendlar I had a viable lifegain deck.",
+		["Bio"] = "Hey guys my good pal Llendlar said I had a viable lifegain deck.",
 	},
 	
 	["ParadiseToken"] = {
