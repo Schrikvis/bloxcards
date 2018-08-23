@@ -5564,7 +5564,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Cost",-200},{"Heal",200,"Self"}},
 			Target = "Ally",
 		},
-		["Bio"] = "Viable Lifegain decks need Lunar abuse.",
+		["Bio"] = "Hey guys my good pal Llendlar said I had a viable lifegain deck.",
 	},
 	
 	["Llendlar"] = {
@@ -6222,7 +6222,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"SummonWithEffect","ParadiseToken"}},
 			Target = "Ally",
 		},
-		["Bio"] = "Hey guys my good pal Llendlar said I had a viable lifegain deck.",
+		["Bio"] = "When the Forest of Paradise is burned down, it becomes the Sands of Purgatory.",
 	},
 	
 	["ParadiseToken"] = {
@@ -6242,7 +6242,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
  			["Power"] = {{"Cost",-250},{"SetHealth",0,"Self"}},
  			Target = "Ally",
  		},
- 		["Bio"] = "Heal.mp3.wav.jpeg.tiff.ogg.png.rbxl.svg.spc",
+ 		["Bio"] = "Hey guys my good pal Llendlar said I had a viable lifegain deck.",
 	},
 	
 }
