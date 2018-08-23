@@ -17351,6 +17351,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Name"] = "Wekov",
 				["Bio"] = "Creator of Gyro, a terrifying deck, responsible for many card nerfs. Also known as Nukoe, 0L7, Azyte, Odas, Odasity and ClothingSpammer...did we forget any other banned account?",
 			},
+		},
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Green", 
