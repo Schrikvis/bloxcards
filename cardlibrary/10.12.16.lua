@@ -6202,6 +6202,48 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Single",
 		},
 		["Bio"] = "Ambition is what we truly need.",		
-	},		
+	},
+	
+	["Forest of Paradise"] = {
+		["Id"] = 2257349789,
+		["Name"] = "Sands of Purgatory",
+		["Health"] = 0,
+		["Power"] = 0,
+		["Rarity"] = "Rare",
+		["AttackEffect"] = "Punch1",
+		["Field"] = 2257349789,
+		["Archetype"] = "Terrain",
+		["Color"] = "Neutral",
+		["Cost"] = {["Green"] = 4,},
+		["Effect"] = {
+			Name = "Stud",
+			Description = "At the start of each players turn, that player gains 250 life.",
+			["Type"] = "Field",
+			["Power"] = {{"SummonWithEffect","ParadiseToken"}},
+			Target = "Ally",
+		},
+		["Bio"] = "Hey guys my good pal Llendlar I had a viable lifegain deck.",
+	},
+	
+	["ParadiseToken"] = {
+		["Id"] = 2257349789,
+		["Name"] = "ViableLifegainToken!",
+ 		["Health"] = 10000000,
+ 		["Power"] = 0,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Lightning",
+ 		["Color"] = "Green",
+		["Cost"] = {["Green"] = 0,}, 
+		["Fading"] = true,
+ 		["Effect"] = {
+ 			Name = "i mean, its not like anyones gonna even be able to read this cards effect and bio ingame",
+ 			Description = "TOO MUCH GRASS AAAA",
+ 			["Type"] = "OnSummon",
+ 			["Power"] = {{"Cost",-250},{"SetHealth",0,"Self"}},
+ 			Target = "Ally",
+ 		},
+ 		["Bio"] = "Heal.mp3.wav.jpeg.tiff.ogg.png.rbxl.svg.spc",
+	},
+	
 }
 return tentwelvesixteen
