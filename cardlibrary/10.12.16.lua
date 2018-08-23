@@ -6206,7 +6206,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	
 	["Forest of Paradise"] = {
 		["Id"] = 2257349789,
-		["Name"] = "Sands of Purgatory",
+		["Name"] = "Forest of Paradise",
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Rare",
