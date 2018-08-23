@@ -14571,6 +14571,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Yellow",
 		["Cost"] = {["Yellow"] = 1, ["Neutral"] = 3,},
+		["Effect"] = {
+			Name = "Roller Coaster",
+			Description = "Deal 200 damage to all blue fighters.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Damage",200}},
+			Target = "ColorBlue",
+		},
 		["Bio"] = "Made seven years ago, Miked's paintball still Puts Loleris to shame.",
 	},
 	
@@ -17338,6 +17345,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "__________",
 		["Health"] = 400,
 		["Power"] = 100,
+		["AltCards"] = {
+			["Wekov"] = {
+				["Id"] = 2244572676,
+				["Name"] = "Wekov",
+				["Bio"] = "Creator of Gyro, a terrifying deck, responsible for many card nerfs. Also known as Nukoe, 0L7, Azyte, Odas, Odasity and ClothingSpammer...did we forget any other banned account?",
+			},
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Green", 
