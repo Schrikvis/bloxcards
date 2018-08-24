@@ -6213,7 +6213,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Punch1",
 		["Field"] = 2257349789,
 		["Archetype"] = "Terrain",
-		["Color"] = "Neutral",
+		["Color"] = "Green",
 		["Cost"] = {["Green"] = 4,},
 		["Effect"] = {
 			Name = "Stud",
