@@ -1894,7 +1894,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Ninja Trainee"] = {
 		["Id"] = 295634480,
 		["Name"] = "Ninja Trainee",
-		["Health"] = 350,
+		["Health"] = 300,
 		["Power"] = 550,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Slash",
@@ -1903,9 +1903,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Knockdown",
-			Description = "N/A", -- Placeholder effect; code only here for convenience.
+			Description = "Whenever this fighter destroys another, this fighter gains 50 Health and Power.",
 			["Type"] = "OnDestroy",
-			["Archetype"] = "Ninja",		
 			["Power"] = {{"Strengthen",50},{"Heal",50}},
 			Target = "Self",
 		},
