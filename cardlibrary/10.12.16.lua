@@ -3027,7 +3027,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["superkicker2005"] = {
 		["Id"] = 1055575844,
 		["Name"] = "superkicker2005",
-		["Health"] = 700,
+		["Health"] = 1000,
 		["Power"] = 200,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "PunchKick",
@@ -3035,12 +3035,12 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 2,["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Life fam",
-			Description = "When this card strikes the opponent, it deals a bonus 500 damage.",
+			Description = "When this card strikes the opponent, it deals a bonus 800 damage.",
 			["Type"] = "OnStrike",
-			["Power"] = {{"Inflict",500,"Opponent"}},
+			["Power"] = {{"Inflict",800,"Opponent"}},
 			Target = "Opponent",
 		},
-		["Bio"] = "Hiya!",
+		["Bio"] = "Hey what's up guys, it's your boi - SUPAHKICKER2005! Back with another LEGIT Minecraft review.",
 	},
 	
 	["kickertoken"] = {
@@ -4798,15 +4798,15 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Enriched Neutrinous"] = {
 		["Id"] = 1549643103,
 		["Name"] = "Enriched Neutrinous",
-		["Health"] = 1000,
-		["Power"] = 100,
+		["Health"] = 1500,
+		["Power"] = 150,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "PunchKick",
 		["Color"] = "Green",
 		["Cost"] = {["Neutral"] = 3, ["Green"] = 3,},
 		["Effect"] = {
 			Name = "Poisonous Touch",
-			Description = "When this card is attacked and survives, give allied fighters 150 health.",
+			Description = "When this card is attacked and survives, give all allied fighters 150 health.",
 			["Type"] = "OnAttacked",
 			["Power"] = {{"Heal",150}},
 			Target = "Ally",
@@ -5456,7 +5456,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 1827318452,
  		["Name"] = "ianmossaboss",
 		["Health"] = 250,
- 		["Power"] = 450,
+ 		["Power"] = 550,
  		["Rarity"] = "Uncommon",
  		["AttackEffect"] = "PunchKick",
  		["Color"] = "Yellow", 
