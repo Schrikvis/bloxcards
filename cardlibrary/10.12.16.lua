@@ -5468,7 +5468,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Weaken",100,"Opponent"}},
 			Target = "Ally",
  		},
- 		["Bio"] = "e/ cheer",
+ 		["Bio"] = "/e cheer",
  	},
 	
 	["poke631"] = {
