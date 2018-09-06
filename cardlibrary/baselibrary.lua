@@ -13052,7 +13052,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 2,["Red"] = 2,},
 		["Effect"] = {
 			Name = "Knockdown",
-			Description = "XxFreezerFlamesxX generate icons.",
+			Description = "XxFreezerFlamesxX can't generate icons.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Draw",0}},
 			Target = "Ally",
