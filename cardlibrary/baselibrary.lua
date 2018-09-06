@@ -13900,12 +13900,11 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 2000,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Lightning",
-		["Fading"] = true,
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 4,},
 		["Effect"] = {
 			Name = "Vampire",
-			Description = "You lose 7500 life. If you survive, gain 2500 Life at the end of this turn. This card does not activate effects upon dying.",
+			Description = "You lose 7500 life. If you survive, gain 7500 Life.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Cost",7500},{"Cost",-7500}},
 			Target = "Ally",
