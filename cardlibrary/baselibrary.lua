@@ -3123,7 +3123,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Nerve Wrecker",
 			Description = "All enemy fighters lose 100 Power. Reveal your oppponent's hand. Put a random blue or red action into your hand.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Weaken",100,},{"Reveal",030},{"RandomAdd","Lunar","Ally"}},
+			["Power"] = {{"Weaken",100},{"RevealHand",1},{"RandomAdd","Lunar","Ally"}},
 			Target = "Opponent",
 		},
 		["Bio"] = "I spy with my floating eye, someone's about to die.",
