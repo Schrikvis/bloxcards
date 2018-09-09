@@ -5626,7 +5626,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Punch1",
 		["Field"] = 293402621,
-		["Color"] = "Neutral",
+		["Color"] = "Green",
 		["Archetype"] = "Terrain",
 		["Cost"] = {["Green"] = 5,},
 		["Effect"] = {
@@ -5649,7 +5649,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Punch1",
 		["Field"] = 293402616,
 		["Archetype"] = "Terrain",
-		["Color"] = "Neutral",
+		["Color"] = "Yellow",
 		["Cost"] = {["Yellow"] = 0,},
 		["Effect"] = {
 			Name = "Stud",
@@ -6657,7 +6657,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Punch1",
 		["Field"] = 296846074,
-		["Color"] = "Neutral",
+		["Color"] = "Green",
 		["Archetype"] = "Terrain",
 		["Cost"] = {["Neutral"] = 4,},
 		["Effect"] = {
@@ -8342,7 +8342,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Punch1",
 		["Field"] = 323275951,
-		["Color"] = "Neutral",
+		["Color"] = "Blue",
 		["Archetype"] = "Terrain",
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
