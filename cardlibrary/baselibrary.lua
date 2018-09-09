@@ -14496,6 +14496,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Brycen27"] = {
 		["Id"] = 430951310,
 		["Name"] = "Brycen27",
+		["AltCards"] = {
+			["TheBrycen27"] = {
+				["Id"] = 2316612206,
+				["Bio"] = "Too much green? More like too little. He needs more green.",
+			},
+		},
 		["Health"] = 500,
 		["Power"] = 500,
 		["Rarity"] = "Common",
