@@ -6,7 +6,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 250,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Dash",
-		["Color"] = "Red", 
+		["Color"] = "Red",
 		["Cost"] = {["Red"] = 3,},
 		["Charge"] = true,
 		["Effect"] = {
@@ -4708,9 +4708,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Hero",
 		["Effect"] = {
 			["Name"] = "ULTIMA MEME DANK TROLL GAME BREAKING WIN CONDITION (GONE WRONG) (NOT CLICKBAIT) (18+) (FOR KIDS) (TOY REVIEW) (HE PULLED UP A GUN) (EMOTIONAL) (WATCH TILL THE END) (FREE GIFT CARD GIVEAWAY) (ONE LIKE = ONE RESPECT) (SHARE IF YOU HAVE A HEART)",
-			["Description"] = "When this card destroys a fighter, your opponent draws 2 cards.",
+			["Description"] = "When this card destroys a fighter, your opponent draws 3 cards.",
 			["Type"] = "OnDestroy",
-			["Power"] = {{"Draw",2}},
+			["Power"] = {{"Draw",3}},
 			["Target"] = "Opponent",
 		},
 		["Bio"] = [[WESKER202 THE NINJAFOX PLOWS VISLEAF THE BLOBUNNY AND FERTILIZES THEIR EGGS IN THE NEW HIT MOVIE "ZOOTOPIA 2: VIABLE LIFEGAIN BOOGALOO"!!!]],
@@ -5967,10 +5967,10 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4, ["Yellow"] = 4,},
 		["Effect"] = {
 			Name = "UNCorrupted",
-			Description = "Whenever this fighter is targeted, your opponent draws a card.",
+			Description = "Whenever this fighter is targeted, both players draw a card.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Draw",1}},
-			Target = "Opponent",
+			Target = "All",
 		},
 		["Bio"] = "Despite common belief, axes are quite effective against nightmares.",	
 	},
