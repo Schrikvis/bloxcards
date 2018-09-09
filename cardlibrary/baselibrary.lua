@@ -12557,7 +12557,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Red",
 		["Cost"] = {["Yellow"] = 4,["Red"] = 4,},
-		["Bio"] = "We will never know what he does.",
+		["Bio"] = "We will never know what he certainly is.",
 	},			
 
 	["CellBloxTango"] = {
