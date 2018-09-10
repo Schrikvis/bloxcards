@@ -17155,9 +17155,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 3, ["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Protection",
-			Description = "Whenever your opponent gains life, they draw three cards, and you gain a yellow icon.",
+			Description = "Whenever your opponent gains life, they draw three cards.",
 			["Type"] = "OnEnemyLifeGain",
-			["Power"] = {{"Draw",3},{"Yellow",1,"Ally"}},
+			["Power"] = {{"Draw",3}},
 			Target = "Opponent",
 		},
 		["Bio"] = "Look at my jewels! LOOK AT THEM!",
