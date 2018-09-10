@@ -7177,7 +7177,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 5,},
 		["Effect"] = {
 			Name = "Damage for Top Deck",
-			Description = "Cast this card only if your opponent controls 4 or more fighters. Deal 4000 damage to all fighters and gain 2 white icons.",
+			Description = "Cast this card only if your opponent controls 4 or more fighters. Deal 4000 damage to all fighters.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",4000}},
 			Target = "NotArchetype",
