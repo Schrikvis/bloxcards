@@ -209,6 +209,7 @@ local packs = {
 			"Kinnis97",
 			"Tone",
 			"Ninja Kitty",
+			"RealPiggy1261",
 			"KnitJa",
 			"Fire Fighter",
 			"Drager Bot",
@@ -1643,6 +1644,7 @@ local packs = {
 			day = {1,12,23};
 		};
 		Cards = {
+			"TheBrycen27",
 			"CreativeName123",
 			"CandyStream",
 			"It",
