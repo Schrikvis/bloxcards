@@ -4787,10 +4787,11 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Yellow",
+		["Requirement"] = {false,2,true},
 		["Cost"] = {["Neutral"] = 4,["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Summon Noobs until your board is full. End the turn.",
+			Description = "Cast this card only if your opponent controls two or more fighters. Summon Noobs until your board is full. End the turn.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Summon","Noob"},{"Summon","Noob"},{"Summon","Noob"},{"Summon","Noob"},{"Summon","Noob"},{"Summon","Noob"},{"Summon","Noob"},{"EndTurn",1}},
 			Target = "Ally",
@@ -5723,8 +5724,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	
 	["SkySpell"] = {
 		["Id"] = 292778426,
-		["Name"] = "Skyspell",
-		["Health"] = 400,
+		["Name"] = "SkySpell",
+		["Health"] = 500,
 		["Power"] = 400,
 		["Rarity"] = "Rare",
 		["Archetype"] = "Hero",
@@ -6872,9 +6873,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2, ["Green"] = 3,},
 		["Effect"] = {
 			Name = "Explosive Spoils!",
-			Description = "Your opponent draws an additional card at the start of their turn.", 
+			Description = "Your opponent draws two additional cards at the start of their turn.", 
 			["Type"] = "OnEnd",
-			["Power"] = {{"Draw",1}},
+			["Power"] = {{"Draw",2}},
 			Target = "Opponent",
 		},
 		["Bio"] = "It's Bereghost, what else should I say?!",
@@ -12555,7 +12556,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Red",
 		["Cost"] = {["Yellow"] = 4,["Red"] = 4,},
-		["Bio"] = "We will never know what he does.",
+		["Bio"] = "We will never know what he certainly is.",
 	},			
 
 	["CellBloxTango"] = {
@@ -12738,14 +12739,14 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Yellow",
 		["Requirement"] = {false,4,true},
+		["CounterAttackBlock"] = true,
 		["Cost"] = {["Neutral"] = 4,["Yellow"] = 7,},
 		["Effect"] = {
 			Name = "Disaster",
-			Description = "Cast only if your opponent controls 4 or more fighters. Destroy a target fighter.",
+			Description = "Cast only if your opponent controls 4 or more fighters. Destroy a target fighter. This card can't be counterattacked.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",9999,"Single"}},
-			Target = "All",
-			Increase = 1,
+			["Power"] = {{"Damage",9999}},
+			Target = "Single",
 		},
 		["Bio"] = "ONE BLOX MAN!! *anime opening music*",
 	},			
@@ -14494,6 +14495,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Brycen27"] = {
 		["Id"] = 430951310,
 		["Name"] = "Brycen27",
+		["AltCards"] = {
+			["TheBrycen27"] = {
+				["Id"] = 2316612206,
+				["Bio"] = "Too much green? More like too little. He needs more green.",
+			},
+		},
 		["Health"] = 500,
 		["Power"] = 500,
 		["Rarity"] = "Common",
@@ -16832,9 +16839,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE",
-			Description = "Your opponent draws a card.",
+			Description = "Your opponent draws three cards.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Draw",1}},
+			["Power"] = {{"Draw",3}},
 			Target = "Opponent",
 		},
 		["Bio"] = "PLEASE PLEASE PLEASE PLEASE PLEASE BE MY FRIEND PLEASE PLEASE PLEASE I'LL DO ANYTHING PLEASE THIS ISN'T ANNOYING AT ALL IS IT PLEASE PLEASE PLEASE I BEG YOU PLEASE PLEASE WHY DON'T YOU LISTEN TO ME PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE BE MY FRIEND PLEASE PLEASE PLEASE I'LL DO ANYTHING PLEASE THIS ISN'T ANNOYING AT ALL IS IT PLEASE PLEASE PLEASE I BEG YOU PLEASE PLEASE WHY DON'T YOU LISTEN TO ME PLEASE PLEASE PLEASE",
@@ -17147,9 +17154,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 3, ["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Protection",
-			Description = "Whenever your opponent gains life, they draw 2 cards.",
+			Description = "Whenever your opponent gains life, they draw three cards.",
 			["Type"] = "OnEnemyLifeGain",
-			["Power"] = {{"Draw",2}},
+			["Power"] = {{"Draw",3}},
 			Target = "Opponent",
 		},
 		["Bio"] = "Look at my jewels! LOOK AT THEM!",
