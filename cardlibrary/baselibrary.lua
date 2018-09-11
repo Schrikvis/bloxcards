@@ -16839,7 +16839,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE",
-			Description = "Your opponent draws three cards.",
+			Description = "Your opponent draws a card. Your opponent draws a card. Your opponent draws a card.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Draw",3}},
 			Target = "Opponent",
