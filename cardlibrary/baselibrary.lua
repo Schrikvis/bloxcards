@@ -9684,9 +9684,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Bio"] = "Falling out of a boat… WITH STYLE.",
 				["Effect"] = {
 					Name = "🤔",
-					Description = "Deal 300 damage to a target fighter, then lock it for 1 turn. When an enemy fighter dies, return this fighter to your hand and gain a red icon. This card does not activate any effects upon dying.",
+					Description = "Deal 300 damage to a target fighter, then lock it for 1 turn, and end the turn. On a turn other than the one this card is summoned, when an enemy fighter dies, return this fighter to your hand and gain a red icon. This card does not activate any effects upon dying.",
 					["Type"] = "OnSummon",
-					["Power"] = {{"Summon","LeetWizard Token-Sun","Ally"},{"Lock",1},{"Damage",300},{"Damage",9999,"Self"}},
+					["Power"] = {{"Damage",300},{"Lock",1},{"Summon","LeetWizard Token-Sun","Ally"},{"Damage",9999,"Self"},{"EndTurn",030}},
 					Target = "Single",
 				},
 			},
@@ -9696,9 +9696,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Bio"] = "Treas0ner, you're dumb. Wesker, you're toxic. Dairing, resize your images. Myr, stop being weird. Blitz, stop wasting your time. Histor, be quiet. Soul, stop admin abusing. Vis, man up.",
 				["Effect"] = {
 					Name = "🤔",
-					Description = "Deal 300 damage to a target fighter, then lock it for 1 turn. When an enemy fighter dies, return this fighter to your hand and gain a red icon. This card does not activate any effects upon dying.",
+					Description = "Deal 300 damage to a target fighter, then lock it for 1 turn, and end the turn. On a turn other than the one this card is summoned, when an enemy fighter dies, return this fighter to your hand and gain a red icon. This card does not activate any effects upon dying.",
 					["Type"] = "OnSummon",
-					["Power"] = {{"Summon","LeetWizard Masantoken","Ally"},{"Lock",1},{"Damage",300},{"Damage",9999,"Self"}},
+					["Power"] = {{"Damage",300},{"Lock",1},{"Summon","LeetWizard Masantoken","Ally"},{"Damage",9999,"Self"},{"EndTurn",030}},
 					Target = "Single",
 				},
 			},
@@ -9712,9 +9712,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 2, ["Red"] = 2},
 		["Effect"] = {
 			Name = "🤔",
-			Description = "Deal 300 damage to a target fighter, then lock it for 1 turn. When an enemy fighter dies, return this fighter to your hand and gain a red icon. This card does not activate any effects upon dying.",
+			Description = "Deal 300 damage to a target fighter, then lock it for 1 turn, and end the turn. On a turn other than the one this card is summoned, when an enemy fighter dies, return this fighter to your hand and gain a red icon. This card does not activate any effects upon dying.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Summon","LeetWizard Token","Ally"},{"Lock",1},{"Damage",300},{"Damage",9999,"Self"}},
+			["Power"] = {{"Damage",300},{"Lock",1},{"Summon","LeetWizard Token","Ally"},{"Damage",9999,"Self"},{"EndTurn",030}},
 			Target = "Single",
 
 		},
@@ -9730,7 +9730,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Bio"] = "Falling out of a boat… WITH STYLE.",
 				["Effect"] = {
 					Name = "🤔",
-					Description = "Deal 300 damage to a target fighter, then lock it for 1 turn. When an enemy fighter dies, return this fighter to your hand and gain a red icon. This card does not activate any effects upon dying.",
+					Description = "Deal 300 damage to a target fighter, then lock it for 1 turn, and end the turn. On a turn other than the one this card is summoned, when an enemy fighter dies, return this fighter to your hand and gain a red icon. This card does not activate any effects upon dying.",
 					["Type"] = "OnEnemyDeath",
 					["Power"] = {{"Add","LeetWizard-Sun"},{"Red",1},{"Damage",9999,"Self"}},
 					Target = "Ally",
@@ -9741,7 +9741,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Bio"] = "Treas0ner, you're dumb. Wesker, you're toxic. Dairing, resize your images. Myr, stop being weird. Blitz, stop wasting your time. Histor, be quiet. Soul, stop admin abusing. Vis, man up.",
 				["Effect"] = {
 					Name = "🤔",
-					Description = "Deal 300 damage to a target fighter, then lock it for 1 turn. When an enemy fighter dies, return this fighter to your hand and gain a red icon. This card does not activate any effects upon dying.",
+					Description = "Deal 300 damage to a target fighter, then lock it for 1 turn, and end the turn. On a turn other than the one this card is summoned, when an enemy fighter dies, return this fighter to your hand and gain a red icon. This card does not activate any effects upon dying.",
 					["Type"] = "OnEnemyDeath",
 					["Power"] = {{"Add","LeetWizard-Masant"},{"Red",1},{"Damage",9999,"Self"}},
 					Target = "Ally",
@@ -9757,7 +9757,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 2, ["Red"] = 2},
 		["Effect"] = {
 			Name = "🤔",
-			Description = "Deal 300 damage to a target fighter, then lock it for 1 turn. When an enemy fighter dies, return this fighter to your hand and gain a red icon. This card does not activate any effects upon dying.",
+			Description = "Deal 300 damage to a target fighter, then lock it for 1 turn, and end the turn. On a turn other than the one this card is summoned, when an enemy fighter dies, return this fighter to your hand and gain a red icon. This card does not activate any effects upon dying.",
 			["Type"] = "OnEnemyDeath",
 			["Power"] = {{"Add","LeetWizard"},{"Red",1},{"Damage",9999,"Self"}},
 			Target = "Ally",
