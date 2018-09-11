@@ -225,7 +225,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Bio"] = "Dairing thought they were cute. They were. Dairing thought they were harmless. They were. Dairing thought they were annoying. They really, really were.",
 				["Effect"] = {
 					Name = "Meebling Infestation",
-					Description = "You must have a Meeboid in play in order to cast this. Lower the power of a target fighter by 600 and summon a Meebling.",
+					Description = "A target fighter loses 600 Power. Summon a Meebling",
 					["Type"] = "OnSummon",
 					["Power"] = {{"Weaken",600},{"Summon","Meebling-Sun","Ally"}},
 					Target = "Single",
@@ -241,7 +241,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 3,},
 		["Effect"] = {
 			Name = "MOOOOP",
-			Description = "Lower the power of a target fighter by 600 and summon a Meebling.",
+			Description = "A target fighter loses 600 Power. Summon a Meebling.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",600},{"Summon","Meebling","Ally"}},
 			Target = "Single",
