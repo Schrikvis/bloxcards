@@ -13640,7 +13640,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Regular_Show"] = {
 		["Id"] = 959854495,
 		["Name"] = "Regular_Show",
-		["Health"] = 1500,
+		["Health"] = 800,
 		["Power"] = 800,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Lightning",
@@ -13648,9 +13648,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 7,},
 		["Effect"] = {
 			Name = "Disaster",
-			Description = "Lock all yellow fighters for 4 turns.",
+			Description = "Trigger all lock-related effects 5 times.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Lock",4,"ColorYellow"}},
+			["Power"] = {{"Lock",1},{"Unlock",1},{"Lock",1},{"Unlock",1},{"Lock",1},{"Unlock",1},{"Lock",1},{"Unlock",1},{"Lock",1},{"Unlock",1}},
 			Target = "All",
 		},
 		["Bio"] = "Just likes the show so much he's named it too. Too bad the show is over though...",
