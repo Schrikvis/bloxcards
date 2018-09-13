@@ -6101,7 +6101,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Connoisseur"] = {
 		["Id"] = 294871406,
 		["Name"] = "Connoisseur",
-		["Health"] = 50,
+		["Health"] = 150,
 		["Power"] = 800,
 		["Rarity"] = "Rare",
 		["Archetype"] = "Hero",
@@ -6117,7 +6117,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Draw",0}},
 			Target = "Ally",
 		},
-		["Bio"] = "Are you SURE you want to log out?",
+		["Bio"] = "What are you? An idiot sandwhich.",
 	},	
 	
 	["Cyclist"] = {
@@ -11945,9 +11945,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 2,},
 		["Effect"] = {
 			Name = "PREPARE FOR ENEMY REQUIREMENT SPAM.",
-			Description = "At the end of each turn, fill your opponents board with Drones, and set the health and power of all allies to 150. Drones can't generate icons.",
+			Description = "At the end of each turn, your opponent summons a Drone. Drones can't generate icons.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Summon","Drone"},{"Summon","Drone"},{"Summon","Drone"},{"Summon","Drone"},{"Summon","Drone"},{"Summon","Drone"},{"Summon","Drone"},{"Summon","Drone"},{"SetHealth",150,"Ally"},{"SetPower",150,"Ally"}},
+			["Power"] = {{"Summon","Drone"}},
 			Target = "Opponent",
 		},
 		["Bio"] = "Capable of creating mass amounts of drones, only for them to turn on him and his friends... or maybe that was his plan all along?",
@@ -14592,9 +14592,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 5,},
 		["Effect"] = {
 			Name = "Render",
-			Description = "When this card destroys another, unlock it.",
+			Description = "When this card destroys another, unlock it and give it 150 Power.",
 			["Type"] = "OnDestroy",
-			["Power"] = {{"Unlock",9999}},
+			["Power"] = {{"Unlock",9999},{"Strengthen",150}},
 			Target = "Self",
 		},
 		["Bio"] = "Coming in from Xenoverse, we have Xenos! A strong controller of the shadows! He's the first elemental to become a soul reaper! Also known as KurosakiDXenos2!",

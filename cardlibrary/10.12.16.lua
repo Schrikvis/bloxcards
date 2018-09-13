@@ -4034,10 +4034,10 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Rarity"] = "Token",
 				["Effect"] = {
 					Name = "Test",
-					Description = "When this card is locked, deal 200 damage to enemies.",
-					["Type"] = "OnLock",
+					Description = "When this card dies in battle, the card that destroyed it loses 200 health.",
+					["Type"] = "OnDeath",
 					["Power"] = {{"RandomAdd",{"Test Dummy","Test DummyA","Test DummyB","Test DummyC","Test DummyD","Test DummyE"},"Ally"},{"Damage",200}},
-					Target = "Opponent",
+					Target = "Aggressor",
 				},
 			},
 			
@@ -4045,19 +4045,18 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Health"] = 200,
 				["Power"] = 200,
 				["Rarity"] = "Token",
-				["Charge"] = false,
 				["Effect"] = {
 					Name = "Test",
-					Description = "When this card is unlocked, deal 200 damage to enemies.",
-					["Type"] = "OnUnlock",
-					["Power"] = {{"RandomAdd",{"Test Dummy","Test DummyA","Test DummyB","Test DummyC","Test DummyD","Test DummyE"},"Ally"},{"Damage",200}},
-					Target = "Opponent",
+					Description = "When this card dies in battle, the card that destroyed it loses 200 power.",
+					["Type"] = "OnDeath",
+					["Power"] = {{"RandomAdd",{"Test Dummy","Test DummyA","Test DummyB","Test DummyC","Test DummyD","Test DummyE"},"Ally"},{"Weaken",200}},
+					Target = "Aggressor",
 				},
 			},
 			
 			["Test DummyC"] = {
-				["Health"] = 0,
-				["Power"] = 0,
+				["Health"] = 200,
+				["Power"] = 200,
 				["Rarity"] = "Token",
 				["Effect"] = {
 					Name = "Test",
@@ -4082,16 +4081,17 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			},
 			
 			["Test DummyE"] = {
-				["Health"] = 200,
-				["Power"] = 200,
+				["Health"] = 116101115116100117109109121,
+				["Power"] = 8465827169847769,
 				["Rarity"] = "Token",
 				["Effect"] = {
 					Name = "Test",
-					Description = "When this card is unlocked, deal 200 damage to enemies. Haste.",
-					["Type"] = "OnUnlock",
-					["Power"] = {{"RandomAdd",{"Test Dummy","Test DummyA","Test DummyB","Test DummyC","Test DummyD","Test DummyE"},"Ally"},{"Damage",200}},
-					Target = "Opponent",
+					Description = "RVJST1IgNDA0IEVGRkVDVCBOT1QgRk9VTkQ=",
+					["Type"] = "OnTarget",
+					["Power"] = {{"RandomAdd",{"Test Dummy","Test DummyA","Test DummyB","Test DummyC","Test DummyD","Test DummyE"}},{"SetHealth",0}},
+					Target = "Self",
 				},
+				["Bio"] = ".--- ..- ... - ....... -- --- -. .. -.- .-",
 			},
 		},
 		["Health"] = 200,
@@ -6099,7 +6099,6 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Despacito 2"] = {
 				["Id"] = 2145900993,
 				["Name"] = "Despacito 2",
-				["Stealth"] = true,
 				["Effect"] = {
 					Name = "Initial Despacito",
 					Description = "Cancel Despacito 2. Destroy all allied fighters. Return this card to your hand.",
@@ -6114,8 +6113,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 0,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Lightning",
-		["Color"] = "Neutral", 
-		["Stealth"] = true,
+		["Color"] = "Neutral",
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Despacito. Quiero respirar tu cuello despacito. Deja que te diga cosas al oído. Para que te acuerdes si no estás conmigo.",
@@ -6250,7 +6248,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
  			["Power"] = {{"Cost",-250},{"SetHealth",0,"Self"}},
  			Target = "Ally",
  		},
- 		["Bio"] = "Hey guys my good pal Llendlar said I had a viable lifegain deck.",
+ 		["Bio"] = "When the Classic Border dies, it becomes the Luna Border.",
 	},
 	
 }

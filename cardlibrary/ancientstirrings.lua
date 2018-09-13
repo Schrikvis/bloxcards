@@ -1849,7 +1849,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Pyrotechnics",
 			Description = "Imbecile!",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Cost",500},{"RandomSummon", {"Lezus 1","Lezus 2","Lezus 3","Lezus 4","Lezus 5","Lezus 6"},"Ally"},{"Draw",2,"Opponent"},{"Damage",9999},{"Unlock",9999,"Archetype"}},
+			["Power"] = {{"Cost",500},{"RandomSummon", {"Lezus 1","Lezus 2","Lezus 3","Lezus 4","Lezus 5","Lezus 6"},"Ally"},{"RandomAdd","LegendaryRed","Opponent"},{"RandomAdd","LegendaryRed","Opponent"},{"Damage",9999},{"Unlock",9999,"Archetype"}},
 			Target = "Self",
 		},
 		["Bio"] = "",
