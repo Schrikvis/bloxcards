@@ -209,6 +209,7 @@ local packs = {
 			"Kinnis97",
 			"Tone",
 			"Ninja Kitty",
+			"RealPiggy1261",
 			"KnitJa",
 			"Fire Fighter",
 			"Drager Bot",
@@ -391,6 +392,7 @@ local packs = {
 		CardPackId = 721399805,
 		Description = "Green is the colour of life, growth, and the primal forces. Vitality packs contain cards that cost green!",
 		Cards = {
+			"Forest of Paradise",
 			"zabiehunter",
 			"Roundawsome",
 			"Tootso",
@@ -1050,6 +1052,7 @@ local packs = {
 		Description = "Exotic new cards from the black market! White cards and joke cards! It's all yours, as long as you have 10 wins!",
 		WinRequirement = 10;
 		Cards = {
+			"Forest of Paradise",
 			"StaceyD07",
 			"MesoSad",
 			"Korblox Squire",
@@ -1128,7 +1131,6 @@ local packs = {
 			"xiVirtual",
 			"kickertoken",
 			"superkicker2005",
-			"Killar1234567",
 			-- PAST THIS POINT IS FOR WHITE CARDS AND JOKE CARDS ONLY. I'M LOOKING AT YOU, BLITZ.
 			"Despacito",
 			"ScareAndCrow",
@@ -1214,7 +1216,6 @@ local packs = {
 			"Lunar Warrior",
 			"Mimic",
 			"Berezaa",
-			"Sands of Purgatory",
 			"Titano's Cavern",
 			"Sword Fights on the Heights",
 			"Haunted Mansion",
@@ -1643,6 +1644,7 @@ local packs = {
 			day = {1,12,23};
 		};
 		Cards = {
+			"TheBrycen27",
 			"CreativeName123",
 			"CandyStream",
 			"It",
