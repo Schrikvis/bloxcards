@@ -11,9 +11,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Charge"] = true,
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "Haste. Whenever your opponent loses life, LeTruth gains 200 power.",
+			Description = "Haste. Whenever your opponent loses life, LeTruth gains 250 power.",
 			["Type"] = "OnEnemyHealthLoss",
-			["Power"] = {{"Strengthen",200}},
+			["Power"] = {{"Strengthen",250}},
 			Target = "Self",
 		},
 		["Bio"] = "To know something requires three things. You must know why it's true, it must be true, and you must believe it's true.",
@@ -1526,7 +1526,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Hellfire",
-			Description = "Give a target fighter 100 Health.",
+			Description = "A target fighter gains 100 health.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",100}},
 			Target = "Single",
@@ -3143,7 +3143,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 					["Power"] = {{"Cost",300,"Ally"},{"Heal",200},{"Strengthen",200}},
 					Target = "Self",
 				},
-				["Bio"] = "AlRiGhT GuYs... Im DoInG tAkE oN mE nOw... AlRiGhT... i I rEaLlY i ReAlLy LiKe ThIs SoNg It SoUnDs GoOd... MINING AWAY... I DONT KNOW WHAT TO MINE... ILL MINE THIS ANYWAY... IN THIS MINECRAFT DAY SO BEAUTIFUL... AND FURTHER DOWN... WHATS THAT I FOUND... MINE DIAMONDS... MINE DIAMONDS... ILL MINE THEM... SO FAR I GOT TWOOOOOO... SO EASY TO MINE... WITH MY MINECRAFT PICKAXE AND SHOVELS... HOPEFULLY THEY STAY... IN MY MINECRAFT CHESTS... SO IM GONNA MAKE... A LOCK ON IT... MINE DIAMONDS... MIIIIIINEE DIAAAAAMONNNDDDDDSSSS... IIIIIIILL MIIIIIIIINEE THEEEEEM... SO FAR I GOT TWOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO... Im AlRiGhT... iM rEaDy... ALL THESE DIAMONDS... SITTING CAREFULLY AWAY... IM GETTING LAID... IF THEY MIGHT GET STOOLED FROM MY ENDER CHEST... WAIT WHOOOS THAT... HOLY SHEEP ITS NOTCH... MIIINEEE DIAAAMOOONDS... MIIIIINEEEEE DIAAAAAAAAMOOOOOOONNDSS... MIIIIIIIIIIIIINNNEEEEEE DIAAAAAAAAAAAAAAAAAMOOOOOOOOONDSSSSSSSSSS... NOWWWWWW THEEEEERE SAAAAAAFEEEEEEEE... WOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO... NOW THAT THERE SAFE... WOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOAAAAAAAA... UHHHHHHH DIAAAAMOONNNDSSSSS... MIIIIIIIIINEEE DIAAAAMOOOOONNNDS... oH tHaNkS tHaNkS fOr LiStEnInG gUyS aNd ThAnKs FoR rEcOmMeNdInG tHiS sOnG",
+				["Bio"] = "Minecraft vore is the best.",
 			},
 		},
 		["Health"] = 650,
@@ -4642,7 +4642,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 4,},
 		["Effect"] = {
 			Name = "Tombstone",
-			Description = "Gain 550 Life. Put two targeting blips into your hand. Targeting blips trigger targeting effects.",
+			Description = "You gain 550 Life. Put two targeting blips into your hand. Targeting blips trigger targeting effects.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Cost",-550},{"Add","Targeting Blip"},{"Add","Targeting Blip"}},
 			["Target"] = "Ally",
@@ -4713,7 +4713,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Draw",3}},
 			["Target"] = "Opponent",
 		},
-		["Bio"] = [[WESKER202 THE NINJAFOX PLOWS VISLEAF THE BLOBUNNY AND FERTILIZES THEIR EGGS IN THE NEW HIT MOVIE "ZOOTOPIA 2: VIABLE LIFEGAIN BOOGALOO"!!!]],
+		["Bio"] = [[The protector and connoisseur of fair and balanced gameplay.]],
 	},
 	
 	["DunclubDuncan"] = {
@@ -4806,7 +4806,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3, ["Green"] = 3,},
 		["Effect"] = {
 			Name = "Poisonous Touch",
-			Description = "When this card is attacked and survives, give all allied fighters 150 health.",
+			Description = "Whenever this card is attacked and survives, all allied fighters gain 150 health.",
 			["Type"] = "OnAttacked",
 			["Power"] = {{"Heal",150}},
 			Target = "Ally",
@@ -5564,15 +5564,15 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Cost",-200},{"Heal",200,"Self"}},
 			Target = "Ally",
 		},
-		["Bio"] = "Hey guys my good pal Llendlar said I had a viable lifegain deck.",
+		["Bio"] = "Hey guys my good pal Llendlar told me  I had a viable lifegain deck.",
 	},
 	
-	["Llendlar"] = {
+	["Action Tester"] = {
 		["Id"] = 1804619632,
-		["Name"] = "Llendlar",
+		["Name"] = "Action Tester",
 		["Health"] = 0,
 		["Power"] = 0,
-		["Rarity"] = "Epic",
+		["Rarity"] = "Common",
 		["AttackEffect"] = "Thunder",		
 		["Color"] = "Red",
 		["Cost"] = {["Red"] = 5,["Yellow"] = 5,},
@@ -5581,13 +5581,13 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Sacrificial Destruction",
 			Description = "Destroy all enemy fighters. For each fighter destroyed during this effect, lose 500 life. If you control 8 fighters, negate the lifeloss effect. End the turn.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Summon","Techno Terror"},{"Damage",9999,"Opponent"},{"SetHealth",0,"Archetype"},{"EndTurn",030}},
+			["Power"] = {{"Summon","Tester Terror"},{"Damage",9999,"Opponent"},{"SetHealth",0,"Archetype"},{"EndTurn",030}},
 			Target = "Ally",
 		},
 		["Bio"] = "For game brea...testing purposes.",
 	},	
 	
-	["Techno Terror"] = {
+	["Tester Terror"] = {
 		["Id"] = 1749451071,
 		["Name"] = "Llendlar",
 		["Health"] = 1,
@@ -5607,6 +5607,40 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Cost",500}},
 			Target = Ally,
 		},	
+		["Bio"] = "And with the price of my blood, annihilate all who cross my path!",
+	},
+	
+	["Llendlar"] = {
+		["Id"] = 1804619632,
+		["Name"] = "Llendlar",
+		["Health"] = 800,
+		["Power"] = 800,
+		["Rarity"] = "Epic",
+		["AttackEffect"] = "Thunder",		
+		["Color"] = "Yellow",
+		["Cost"] = {["Yellow"] = 9,},
+		["Archetype"] = "Llendlar",
+		["Effect"] = {
+			Name = "Sacrificial Destruction",
+			Description = "Destroy all other allied fighters. Fill the board with Techno Terrors and put Mass Production into your hand.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Heal",9999,"Self"},{"Damage",9999},{"Add","Mass Production"},{"Summon","Techno Terror"},{"Summon","Techno Terror"},{"Summon","Techno Terror"},{"Summon","Techno Terror"},{"Summon","Techno Terror"},{"Summon","Techno Terror"},{"Summon","Techno Terror"},{"Summon","Techno Terror"}},
+			Target = "Ally",
+		},
+		["Bio"] = "For game brea...testing purposes.",
+	},	
+	
+	["Techno Terror"] = {
+		["Id"] = 1749451071,
+		["Name"] = "Techno Terror",
+		["Health"] = 250,
+		["Power"] = 250,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Thunder",		
+		["Color"] = "Yellow",
+		["Token"] = true,
+		["Counterblock"] = true,
+		["Cost"] = {["Yellow"] = 0,},
 		["Bio"] = "And with the price of my blood, annihilate all who cross my path!",
 	},
 	
@@ -6225,12 +6259,12 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 4,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "At the start of each players turn, that player gains 250 life.",
+			Description = "At the start of each player's turn, that player gains 250 life.",
 			["Type"] = "Field",
 			["Power"] = {{"SummonWithEffect","ParadiseToken"}},
 			Target = "Ally",
 		},
-		["Bio"] = "When the Forest of Paradise is burned down, it becomes the Sands of Purgatory.",
+		["Bio"] = "Do you not feel the spirits?",
 	},
 	
 	["ParadiseToken"] = {
@@ -6250,7 +6284,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
  			["Power"] = {{"Cost",-250},{"SetHealth",0,"Self"}},
  			Target = "Ally",
  		},
- 		["Bio"] = "Hey guys my good pal Llendlar said I had a viable lifegain deck.",
+ 		["Bio"] = "Hey guys my good pal Llendlar told me how to make a viable lifegain deck.",
 	},
 	
 }
