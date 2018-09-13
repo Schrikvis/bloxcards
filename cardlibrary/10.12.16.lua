@@ -4034,10 +4034,10 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Rarity"] = "Token",
 				["Effect"] = {
 					Name = "Test",
-					Description = "When this card is locked, deal 200 damage to enemies.",
-					["Type"] = "OnLock",
+					Description = "When this card dies in battle, the card that destroyed it loses 200 health.",
+					["Type"] = "OnDeath",
 					["Power"] = {{"RandomAdd",{"Test Dummy","Test DummyA","Test DummyB","Test DummyC","Test DummyD","Test DummyE"},"Ally"},{"Damage",200}},
-					Target = "Opponent",
+					Target = "Aggressor",
 				},
 			},
 			
@@ -4045,19 +4045,18 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Health"] = 200,
 				["Power"] = 200,
 				["Rarity"] = "Token",
-				["Charge"] = false,
 				["Effect"] = {
 					Name = "Test",
-					Description = "When this card is unlocked, deal 200 damage to enemies.",
+					Description = "When this card dies in battle, the card that destroyed it loses 200 power.",
 					["Type"] = "OnUnlock",
-					["Power"] = {{"RandomAdd",{"Test Dummy","Test DummyA","Test DummyB","Test DummyC","Test DummyD","Test DummyE"},"Ally"},{"Damage",200}},
-					Target = "Opponent",
+					["Power"] = {{"RandomAdd",{"Test Dummy","Test DummyA","Test DummyB","Test DummyC","Test DummyD","Test DummyE"},"Ally"},{"Weaken",200}},
+					Target = "Aggressor",
 				},
 			},
 			
 			["Test DummyC"] = {
-				["Health"] = 0,
-				["Power"] = 0,
+				["Health"] = 200,
+				["Power"] = 200,
 				["Rarity"] = "Token",
 				["Effect"] = {
 					Name = "Test",
@@ -4082,16 +4081,17 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			},
 			
 			["Test DummyE"] = {
-				["Health"] = 200,
-				["Power"] = 200,
+				["Health"] = 116101115116100117109109121,
+				["Power"] = 8465827169847769,
 				["Rarity"] = "Token",
 				["Effect"] = {
 					Name = "Test",
-					Description = "When this card is unlocked, deal 200 damage to enemies. Haste.",
-					["Type"] = "OnUnlock",
-					["Power"] = {{"RandomAdd",{"Test Dummy","Test DummyA","Test DummyB","Test DummyC","Test DummyD","Test DummyE"},"Ally"},{"Damage",200}},
-					Target = "Opponent",
+					Description = "RVJST1IgNDA0IEVGRkVDVCBOT1QgRk9VTkQ=",
+					["Type"] = "OnTarget",
+					["Power"] = {{"RandomAdd",{"Test Dummy","Test DummyA","Test DummyB","Test DummyC","Test DummyD","Test DummyE"}},{"SetHealth",0}},
+					Target = "Self",
 				},
+				["Bio"] = ".--- ..- ... - ....... -- --- -. .. -.- .-",
 			},
 		},
 		["Health"] = 200,
