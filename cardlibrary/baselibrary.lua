@@ -6101,7 +6101,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Connoisseur"] = {
 		["Id"] = 294871406,
 		["Name"] = "Connoisseur",
-		["Health"] = 50,
+		["Health"] = 150,
 		["Power"] = 800,
 		["Rarity"] = "Rare",
 		["Archetype"] = "Hero",
@@ -6117,7 +6117,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Draw",0}},
 			Target = "Ally",
 		},
-		["Bio"] = "Are you SURE you want to log out?",
+		["Bio"] = "What are you? An idiot sandwhich.",
 	},	
 	
 	["Cyclist"] = {
@@ -14592,9 +14592,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 5,},
 		["Effect"] = {
 			Name = "Render",
-			Description = "When this card destroys another, unlock it.",
+			Description = "When this card destroys another, unlock it and give it 150 Power.",
 			["Type"] = "OnDestroy",
-			["Power"] = {{"Unlock",9999}},
+			["Power"] = {{"Unlock",9999},{"Strengthen",150}},
 			Target = "Self",
 		},
 		["Bio"] = "Coming in from Xenoverse, we have Xenos! A strong controller of the shadows! He's the first elemental to become a soul reaper! Also known as KurosakiDXenos2!",
