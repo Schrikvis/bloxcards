@@ -4048,7 +4048,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Effect"] = {
 					Name = "Test",
 					Description = "When this card dies in battle, the card that destroyed it loses 200 power.",
-					["Type"] = "OnUnlock",
+					["Type"] = "OnDeath",
 					["Power"] = {{"RandomAdd",{"Test Dummy","Test DummyA","Test DummyB","Test DummyC","Test DummyD","Test DummyE"},"Ally"},{"Weaken",200}},
 					Target = "Aggressor",
 				},
