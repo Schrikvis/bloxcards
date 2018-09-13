@@ -6099,7 +6099,6 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Despacito 2"] = {
 				["Id"] = 2145900993,
 				["Name"] = "Despacito 2",
-				["Stealth"] = true,
 				["Effect"] = {
 					Name = "Initial Despacito",
 					Description = "Cancel Despacito 2. Destroy all allied fighters. Return this card to your hand.",
@@ -6114,8 +6113,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 0,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Lightning",
-		["Color"] = "Neutral", 
-		["Stealth"] = true,
+		["Color"] = "Neutral",
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Despacito. Quiero respirar tu cuello despacito. Deja que te diga cosas al oído. Para que te acuerdes si no estás conmigo.",
@@ -6250,7 +6248,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
  			["Power"] = {{"Cost",-250},{"SetHealth",0,"Self"}},
  			Target = "Ally",
  		},
- 		["Bio"] = "Hey guys my good pal Llendlar said I had a viable lifegain deck.",
+ 		["Bio"] = "When the Classic Border dies, it becomes the Luna Border.",
 	},
 	
 }
