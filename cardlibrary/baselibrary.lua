@@ -11945,9 +11945,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 2,},
 		["Effect"] = {
 			Name = "PREPARE FOR ENEMY REQUIREMENT SPAM.",
-			Description = "At the end of each turn, fill your opponents board with Drones, and set the health and power of all allies to 150. Drones can't generate icons.",
+			Description = "At the end of each turn, your opponent summons a Drone. Drones can't generate icons.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Summon","Drone"},{"Summon","Drone"},{"Summon","Drone"},{"Summon","Drone"},{"Summon","Drone"},{"Summon","Drone"},{"Summon","Drone"},{"Summon","Drone"},{"SetHealth",150,"Ally"},{"SetPower",150,"Ally"}},
+			["Power"] = {{"Summon","Drone"}},
 			Target = "Opponent",
 		},
 		["Bio"] = "Capable of creating mass amounts of drones, only for them to turn on him and his friends... or maybe that was his plan all along?",
