@@ -3488,7 +3488,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 283996159,
 		["Name"] = "Thunder Bolt",
 		["AltCards"] = {
-			["H-Thunder"] = {
+			["H-Thunder"] = { -- Retired token.
 				["Rarity"] = "Token",
 				["Archetype"] = "Hero",
 				["Health"] = 25,
@@ -3511,10 +3511,10 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 8,},
 		["Effect"] = {
 			Name = "Zappow!",
-			Description = "Deal 4000 damage to all non-archetyped fighters.",
+			Description = "Deal 4000 damage to all fighters.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",4000,"Archetype"},{"SummonWithEffect","H-Thunder"}},
-			Target = "Ally",
+			["Power"] = {{"Damage",4000}},
+			Target = "All",
 		},
 		["Bio"] = "Zap!",
 	},	
