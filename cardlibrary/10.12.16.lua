@@ -6017,9 +6017,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 8,["Yellow"] = 8,["Red"] = 8,["Blue"] = 8,["Green"] = 8,},
 		["Effect"] = {
 			Name = "GENDER STATUS : HACKED",
-			Description = "Immune to effects that set or lower stats in any way. When this fighter dies, lose a white icon and deal 200 damage to all allied fighters.",
+			Description = "Immune to effects that set or lower stats in any way. When this fighter dies, lose two white icons and deal 200 damage to all allied fighters.",
 			["Type"] = "OnDeath",
-			["Power"] = {{"Damage",200,"Ally"},{"Neutral",-1,"Ally"}},
+			["Power"] = {{"Damage",200,"Ally"},{"Neutral",-2,"Ally"}},
 			Target = "Opponent",
 		},
 		["Bio"] = "Ｈａｃｋｅｄ.",	
