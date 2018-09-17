@@ -4417,6 +4417,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Slash",
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 2,["Blue"] = 1},
+		["Charge"] = true,
 		["Effect"] = {
 			Name = "Conflux",
 			Description = "Haste. When this fighter is unlocked, it gains 100 health and power.",
