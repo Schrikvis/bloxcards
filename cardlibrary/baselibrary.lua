@@ -3507,6 +3507,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 0,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Null",
+		["Archetype"] = "Boardwipe",
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 8,},
 		["Effect"] = {
@@ -3514,7 +3515,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Description = "Deal 4000 damage to all fighters.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",4000}},
-			Target = "All",
+			Target = "NotArchetype",
 		},
 		["Bio"] = "Zap!",
 	},	
