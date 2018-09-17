@@ -3488,7 +3488,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 283996159,
 		["Name"] = "Thunder Bolt",
 		["AltCards"] = {
-			["H-Thunder"] = {
+			["H-Thunder"] = { -- Retired token.
 				["Rarity"] = "Token",
 				["Archetype"] = "Hero",
 				["Health"] = 25,
@@ -3507,14 +3507,15 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 0,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Null",
+		["Archetype"] = "Boardwipe",
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 8,},
 		["Effect"] = {
 			Name = "Zappow!",
-			Description = "Deal 4000 damage to all non-archetyped fighters.",
+			Description = "Deal 4000 damage to all fighters.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",4000,"Archetype"},{"SummonWithEffect","H-Thunder"}},
-			Target = "Ally",
+			["Power"] = {{"Damage",4000}},
+			Target = "NotArchetype",
 		},
 		["Bio"] = "Zap!",
 	},	
@@ -4417,6 +4418,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Slash",
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 2,["Blue"] = 1},
+		["Charge"] = true,
 		["Effect"] = {
 			Name = "Conflux",
 			Description = "Haste. When this fighter is unlocked, it gains 100 health and power.",
