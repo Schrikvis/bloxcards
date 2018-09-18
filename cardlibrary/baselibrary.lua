@@ -563,7 +563,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Toxic"] = {
-		["Id"] = 264620178,
+		["Id"] = 2110162419,
 		["Name"] = "Toxic",
 		["Power"] = 400,
 		["Health"] = 400,
@@ -576,7 +576,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 1,["Neutral"] = 2,},
 		["AltCards"] = {
 			["Toxic-ArtV"] = {
-				["Id"] = 496184621,
+				["Id"] = 2110162967,
 				["AltArt"] = true,
 				["Effect"] = {
 					Name = "Yarrge",
@@ -3863,7 +3863,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},		
 		
 	["Majora7"] = {
-		["Id"] = 285152908,
+		["Id"] = 2110270361,
 		["Name"] = "Majora7",
 		["Health"] = 500,
 		["Power"] = 500,
@@ -6365,7 +6365,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Drakobloxxer"] = {
-		["Id"] = 1924205747,
+		["Id"] = 2110271050,
 		["Name"] = "Drakobloxxer",
 		["Health"] = 300,
 		["Power"] = 300,
@@ -12376,7 +12376,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},		
 
 	["MajorMattias"] = {
-		["Id"] = 384012500,
+		["Id"] = 2110155688,
 		["Name"] = "MajorMattias",
 		["Health"] = 400,
 		["Power"] = 600,
@@ -12997,7 +12997,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},			
 
 	["Lorenzo77555"] = {
-		["Id"] = 411844413,
+		["Id"] = 2110156256,
 		["Name"] = "Lorenzo77555",
 		["Health"] = 500,
 		["Power"] = 500,
@@ -13719,7 +13719,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["HungryBloxBoy"] = {
-		["Id"] = 415733536,
+		["Id"] = 2110156809,
 		["Name"] = "HungryBloxBoy",
 		["Health"] = 300,
 		["Power"] = 400,
@@ -15156,7 +15156,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["iAsuka"] = {
-		["Id"] = 440241003,
+		["Id"] = 2110154605,
 		["Name"] = "iAsuka",
 		["Health"] = 600,
 		["Power"] = 200,
