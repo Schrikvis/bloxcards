@@ -8766,7 +8766,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Red",
 		["Cost"] = {["Red"] = 6},
 		["Archetype"] = "Redcliff",
-		["Bio"] = "SUPRISE! REDCLIFFS!",
+		["Requirement"] = {"Archetype",1},
 		["Effect"] = {
 			Name = "Board Clear!",
 			Description = "Deal 500 damage to all Non-Redcliffs. Put a Common and Uncommon Redcliff into your hand.",
@@ -8774,6 +8774,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Damage",500},{"Add","Redcliff Messenger","Ally"},{"RandomAdd",{"Redcliff Archer","Redcliff Mauler"},"Ally"}},
 			Target = "NotArchetype",
 		},
+		["Bio"] = "SUPRISE! REDCLIFFS!",
 	},
 	
 	["Redcliff: Rise!"] = {
