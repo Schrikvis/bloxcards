@@ -559,9 +559,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Token"] = true,
 		["Effect"] = {
 			Name = "Reincarnation",
-			Description = "When this card is targeted, all allied fighters gain 150 health, then destroy all crystals.",
+			Description = "When this card is targeted, all allied fighters gain 100 health, then destroy all crystals.",
 			["Type"] = "OnTarget",
-			["Power"] = {{"Heal",150},{"Damage",9999,"Archetype"}},
+			["Power"] = {{"Heal",100},{"Damage",9999,"Archetype"}},
 			Target = "Ally",
 		},
 		["Bio"] = "The realities inbetween. This is what I need.",
