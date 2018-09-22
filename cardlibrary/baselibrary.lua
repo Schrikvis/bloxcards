@@ -13540,10 +13540,10 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Red"] = 1,},
 		["Effect"] = {
 			Name = "Sudden Death",
-			Description = "At the end of your turns, generate a Yellow icon and a Blue icon.",
-			["Type"] = "OnEnd",
+			Description = "Whenever this fighter attacks, generate a Yellow icon and a Blue icon.",
+			["Type"] = "OnAttack",
 			["Power"] = {{"Yellow",1},{"Blue",1}},
-			Target = "Self",
+			Target = "Ally",
 		},
 		["Bio"] = "He used to be a nice guy. Then acid burned half of his body. Anybody would be angry after that.",
 	},	
