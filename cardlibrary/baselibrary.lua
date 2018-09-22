@@ -9464,10 +9464,10 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 3,["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Plushie Amp",
-			Description = "When this card tries to attack, instead all allied fighters lose 200 health and gain 200 power. Activate this effect any number of times per turn.",
+			Description = "Fleshkhjerta can't attack",
 			["Type"] = "OnAttack",
-			["Power"] = {{"Strengthen",200},{"Damage",200},{"Unlock",999,"Self"}},
-			Target = "Ally",
+			["Power"] = {{"Lock",1}},
+			Target = "Self",
 		},
 		["Bio"] = "I, THE GREAT FLESKHJERTA, used to make ROBLOX videos and bloopers....",
 	},
