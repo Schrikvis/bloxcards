@@ -9464,10 +9464,10 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 3,["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Plushie Amp",
-			Description = "Fleshkhjerta can't attack",
+			Description = "When this card attacks, all unarchetyped rare fighters convert 200 health to 300 power.",
 			["Type"] = "OnAttack",
-			["Power"] = {{"Lock",1}},
-			Target = "Self",
+			["Power"] = {{"Damage",200},{"Strengthen",300}},
+			Target = "Archetype",
 		},
 		["Bio"] = "I, THE GREAT FLESKHJERTA, used to make ROBLOX videos and bloopers....",
 	},
