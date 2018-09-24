@@ -2234,7 +2234,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 2, ["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "Whenever this survives an attack, put a random red or blue action into your hand, then put a Nightmare into your opponent's hand.",
+			Description = "Can't attack. Whenever this survives an attack, put a random red or blue action into your hand, then put a Nightmare into your opponent's hand.",
 			["Type"] = "OnAttacked",
 			["Power"] = {{"RandomAdd","Lunar"},{"Add","Nightmare","Opponent"}},
 			Target = "Ally",
