@@ -12105,7 +12105,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Subversion",
 			Description = "Set a target fighter's stats to 500/500. Generate a blue icon.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"SetHealth",500},{"SetPower",500},{"Blue",1}},
+			["Power"] = {{"SetHealth",500},{"SetPower",500},{"Blue",1,"Ally"}},
 			Target = "Single",	
 		},
 		["Bio"] = "Hiding behind a wall with a paintball gun.",
