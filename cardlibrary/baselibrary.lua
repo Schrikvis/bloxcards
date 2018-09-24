@@ -3235,7 +3235,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "PunchKick",
 		["Color"] = "Blue",
 		["Token"] = true,
-		["Cost"] = {["Neutral"] = 2,},
+		["Cost"] = {["Neutral"] = 2,["Blue"] = 1,},
 		["Effect"] = {
 			Name = "Teamwork",
 			Description = "When this card is locked, gain a blue icon. This card can't generate icons naturally.",
@@ -4319,8 +4319,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Tiny Tank"] = {
 		["Id"] = 285155299,
 		["Name"] = "Tiny Tank",
-		["Health"] = 1000,
-		["Power"] = 100,
+		["Health"] = 800,
+		["Power"] = 0,
 		["Rarity"] = "Rare",
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Explosion",
