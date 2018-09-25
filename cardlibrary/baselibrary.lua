@@ -8254,7 +8254,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["HomingBeacon"] = {
 		["Id"] = 316000978,
 		["Name"] = "HomingBeacon",
-		["Health"] = 1400,
+		["Health"] = 1000,
 		["Power"] = 200,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Thunder",
@@ -8262,9 +8262,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Yellow"] = 7,},
 		["Effect"] = {
 			Name = "Generic",
-			Description = "Whenever you lose life, HomingBeacon gains 150 Power.",
+			Description = "Whenever you lose life, HomingBeacon gains 150 Health and Power.",
 			["Type"] = "OnHealthLoss",
-			["Power"] = {{"Strengthen",150}},
+			["Power"] = {{"Heal",150},{"Strengthen",150}},
 			Target = "Self",
 		},
 		["Bio"] = "A generic developer with a generic username and a generic game. Even its name has a generic title. I'm going to have to rate this one a GENERIC/10.",
