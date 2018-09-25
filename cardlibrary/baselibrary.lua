@@ -9464,7 +9464,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 3,["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Plushie Amp",
-			Description = "When this card attacks, all unarchetyped rare fighters convert 200 health to 300 power.",
+			Description = "When this card tries to attack, instead all unarchetyped rare fighters convert 200 health to 300 power.",
 			["Type"] = "OnAttack",
 			["Power"] = {{"Damage",200},{"Strengthen",300}},
 			Target = "Archetype",
