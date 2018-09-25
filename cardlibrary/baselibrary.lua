@@ -8254,20 +8254,20 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["HomingBeacon"] = {
 		["Id"] = 316000978,
 		["Name"] = "HomingBeacon",
-		["Health"] = 1200,
-		["Power"] = 450,
+		["Health"] = 1400,
+		["Power"] = 200,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Thunder",
 		["Color"] = "Yellow",
 		["Cost"] = {["Neutral"] = 1,["Yellow"] = 7,},
 		["Effect"] = {
-			Name = "Endless Spooks",
-			Description = "At the end of your turns, set both player's yellow icons to 4.",
-			["Type"] = "OnEnd",
-			["Power"] = {{"SetYellow",4}},
-			Target = "All",
+			Name = "Generic",
+			Description = "Whenever you lose life, HomingBeacon gains 150 Power.",
+			["Type"] = "OnHealthLoss",
+			["Power"] = {{"Strengthen",150}},
+			Target = "Self",
 		},
-		["Bio"] = "Target Acquired.",
+		["Bio"] = "A generic developer with a generic username and a generic game. Even its name has a generic title. I'm going to have to rate this one a GENERIC/10.",
 	},
 	
 	["Hopelesssly"] = {
