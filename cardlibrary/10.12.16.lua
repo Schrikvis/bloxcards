@@ -559,9 +559,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Token"] = true,
 		["Effect"] = {
 			Name = "Reincarnation",
-			Description = "When this card is targeted, all allied fighters gain 150 health, then destroy all crystals.",
+			Description = "When this card is targeted, all allied fighters gain 100 health, then destroy all crystals.",
 			["Type"] = "OnTarget",
-			["Power"] = {{"Heal",150},{"Damage",9999,"Archetype"}},
+			["Power"] = {{"Heal",100},{"Damage",9999,"Archetype"}},
 			Target = "Ally",
 		},
 		["Bio"] = "The realities inbetween. This is what I need.",
@@ -631,7 +631,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Thesupernessiiiii"] = {
-		["Id"] = 596217136,
+		["Id"] = 2041399537,
 		["Name"] = "Thesupernessiiiii",
 		["Health"] = 1000,
 		["Power"] = 0,
@@ -4685,13 +4685,12 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 2,["Blue"] = 3},
 		["AttackBlock"] = true,
-		["Archetype"] = "Defender",
 		["Effect"] = {
 			Name = "No Creepers in My House",
-			Description = "When Creeperkiller510 tries to attack, instead all Defenders convert 200 power to 300 health.",
+			Description = "When Creeperkiller510 tries to attack, instead all allies convert 200 power to 300 health.",
 			["Type"] = "OnAttack",
 			["Power"] = {{"Weaken",200},{"Heal",300}},
-			Target = "Archetype",
+			Target = "Ally",
 		},
 		["Bio"] = "I will kill your entire family.",
 	},	
@@ -4914,7 +4913,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 5,["Red"] = 1,},
 		["AttackBlock"] = true,
-		["Archetype"] = "Defender",
+		["Archetype"] = "Hero",
 		["Effect"] = {
 			Name = "Definitely Not StayBlue",
 			Description = "ZeDerpyDonal can't attack.",
@@ -5417,8 +5416,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
  		["Rarity"] = "Uncommon",
  		["AttackEffect"] = "SlashDiagonal",
 		["AttackBlock"] = true,
- 		["Color"] = "Blue", 
-		["Archetype"] = "Defender",
+ 		["Color"] = "Blue",
 		["Cost"] = {["Blue"] = 4,}, 
  		["Effect"] = {
  			Name = "Booming Red",
@@ -5439,8 +5437,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
  		["AttackEffect"] = "SlashDiagonal",
 		["AttackBlock"] = true,
 		["Token"] = true,
- 		["Color"] = "Blue", 
-		["Archetype"] = "Defender",
+		["Color"] = "Blue",
 		["Cost"] = {["Blue"] = 4,}, 
  		["Effect"] = {
  			Name = "Booming Red",

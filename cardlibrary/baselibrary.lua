@@ -563,7 +563,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Toxic"] = {
-		["Id"] = 264620178,
+		["Id"] = 2110162419,
 		["Name"] = "Toxic",
 		["Power"] = 400,
 		["Health"] = 400,
@@ -576,7 +576,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 1,["Neutral"] = 2,},
 		["AltCards"] = {
 			["Toxic-ArtV"] = {
-				["Id"] = 496184621,
+				["Id"] = 2110162967,
 				["AltArt"] = true,
 				["Effect"] = {
 					Name = "Yarrge",
@@ -2351,7 +2351,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Common",
 		["AttackEffect"] = "UziShot",
 		["AttackBlock"] = true,
-		["Archetype"] = "Defender",
 		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 2,},
 		["Effect"] = {
@@ -3236,7 +3235,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "PunchKick",
 		["Color"] = "Blue",
 		["Token"] = true,
-		["Cost"] = {["Neutral"] = 2,},
+		["Cost"] = {["Neutral"] = 2,["Blue"] = 1,},
 		["Effect"] = {
 			Name = "Teamwork",
 			Description = "When this card is locked, gain a blue icon. This card can't generate icons naturally.",
@@ -3863,7 +3862,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},		
 		
 	["Majora7"] = {
-		["Id"] = 285152908,
+		["Id"] = 2110270361,
 		["Name"] = "Majora7",
 		["Health"] = 500,
 		["Power"] = 500,
@@ -4320,8 +4319,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Tiny Tank"] = {
 		["Id"] = 285155299,
 		["Name"] = "Tiny Tank",
-		["Health"] = 1000,
-		["Power"] = 100,
+		["Health"] = 800,
+		["Power"] = 0,
 		["Rarity"] = "Rare",
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Explosion",
@@ -6365,7 +6364,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Drakobloxxer"] = {
-		["Id"] = 1924205747,
+		["Id"] = 2110271050,
 		["Name"] = "Drakobloxxer",
 		["Health"] = 300,
 		["Power"] = 300,
@@ -8766,14 +8765,15 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Red",
 		["Cost"] = {["Red"] = 6},
 		["Archetype"] = "Redcliff",
-		["Bio"] = "SUPRISE! REDCLIFFS!",
+		["Requirement"] = {"Archetype",1},
 		["Effect"] = {
 			Name = "Board Clear!",
-			Description = "Deal 500 damage to all Non-Redcliffs. Put a Common and Uncommon Redcliff into your hand.",
+			Description = "Requires a Redcliff to cast. Deal 500 damage to all Non-Redcliffs. Put a Common and Uncommon Redcliff into your hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",500},{"Add","Redcliff Messenger","Ally"},{"RandomAdd",{"Redcliff Archer","Redcliff Mauler"},"Ally"}},
 			Target = "NotArchetype",
 		},
+		["Bio"] = "SUPRISE! REDCLIFFS!",
 	},
 	
 	["Redcliff: Rise!"] = {
@@ -9459,14 +9459,14 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Thunder",
 		["Color"] = "Red",
+		["Archetype"] = "Hero",
 		["AttackBlock"] = true,
-		["Archetype"] = "Defender",
 		["Cost"] = {["Red"] = 3,["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Plushie Amp",
-			Description = "Fleskhjerta can't attack. When it tries to attack, instead all fighters that can't attack lose 200 health and gain 200 power. Activate this effect any number of times per turn.",
+			Description = "When this card tries to attack, instead all unarchetyped rare fighters convert 200 health to 300 power.",
 			["Type"] = "OnAttack",
-			["Power"] = {{"Strengthen",200},{"Damage",200},{"Unlock",999,"Self"}},
+			["Power"] = {{"Damage",200},{"Strengthen",300}},
 			Target = "Archetype",
 		},
 		["Bio"] = "I, THE GREAT FLESKHJERTA, used to make ROBLOX videos and bloopers....",
@@ -9822,7 +9822,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Thunder",
 		["AttackBlock"] = true,
-		["Archetype"] = "Defender",
 		["Token"] = true,
 		["Fading"] = true,
 		["DiscardBlock"] = true,
@@ -11342,20 +11341,19 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Fat Cat"] = {
 		["Id"] = 363166204,
 		["Name"] = "Fat Cat",
-		["Health"] = 700,
-		["Power"] = 0,
+		["Health"] = 800,
+		["Power"] = 200,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Neutral",
 		["Cost"] = {["Neutral"] = 6,},
 		["AttackBlock"] = true,
-		["Archetype"] = "Defender",
 		["Effect"] = {
 			Name = "Snorlaxing",
-			Description = "Can't attack. At the end of your turns, All fighters that can't attack gain 150 Health.",
-			["Type"] = "OnEnd",
-			["Power"] = {{"Heal",150}},
-			Target = "Archetype",
+			Description = "When this card tries to attack, instead give this card 200 health and summon a Kitten. Ready it.",
+			["Type"] = "OnAttack",
+			["Power"] = {{"Heal",200},{"Lock",1,"All"},{"RandomSummon",{"Kitten","Kitten2","Kitten3","Kitten4","Kitten5","Kitten6","Kitten7","Kitten8","Kitten9"}},{"Unlock",1,"All"}},
+			Target = "Self",
 		},
 		["Bio"] = "He haz regretz of his Chezburger dayz.",
 	},	
@@ -11640,7 +11638,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 2,["Blue"] = 2,},
 		["AttackBlock"] = true,
-		["Archetype"] = "Defender",
 		["Effect"] = {
 			Name = "Frostblast",
 			Description = "StayBlue can't attack.",
@@ -12108,7 +12105,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Subversion",
 			Description = "Set a target fighter's stats to 500/500. Generate a blue icon.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"SetHealth",500},{"SetPower",500},{"Blue",1}},
+			["Power"] = {{"SetHealth",500},{"SetPower",500},{"Blue",1,"Ally"}},
 			Target = "Single",	
 		},
 		["Bio"] = "Hiding behind a wall with a paintball gun.",
@@ -12376,7 +12373,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},		
 
 	["MajorMattias"] = {
-		["Id"] = 384012500,
+		["Id"] = 2110155688,
 		["Name"] = "MajorMattias",
 		["Health"] = 400,
 		["Power"] = 600,
@@ -12997,7 +12994,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},			
 
 	["Lorenzo77555"] = {
-		["Id"] = 411844413,
+		["Id"] = 2110156256,
 		["Name"] = "Lorenzo77555",
 		["Health"] = 500,
 		["Power"] = 500,
@@ -13543,10 +13540,10 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Red"] = 1,},
 		["Effect"] = {
 			Name = "Sudden Death",
-			Description = "At the end of your turns, generate a Yellow icon and a Blue icon.",
-			["Type"] = "OnEnd",
+			Description = "Whenever this fighter attacks, generate a Yellow icon and a Blue icon.",
+			["Type"] = "OnAttack",
 			["Power"] = {{"Yellow",1},{"Blue",1}},
-			Target = "Self",
+			Target = "Ally",
 		},
 		["Bio"] = "He used to be a nice guy. Then acid burned half of his body. Anybody would be angry after that.",
 	},	
@@ -13652,7 +13649,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Disaster",
 			Description = "Trigger all lock-related effects 5 times.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Lock",1},{"Unlock",1},{"Lock",1},{"Unlock",1},{"Lock",1},{"Unlock",1},{"Lock",1},{"Unlock",1},{"Lock",1},{"Unlock",1}},
+			["Power"] = {{"Lock",1},{"Neutral",-1},{"Neutral",1},{"Unlock",1},{"Neutral",-1},{"Neutral",1},{"Lock",1},{"Neutral",-1},{"Neutral",1},{"Unlock",1},{"Neutral",-1},{"Neutral",1},{"Lock",1},{"Neutral",-1},{"Neutral",1},{"Unlock",1},{"Neutral",-1},{"Neutral",1},{"Lock",1},{"Neutral",-1},{"Neutral",1},{"Unlock",1},{"Neutral",-1},{"Neutral",1},{"Lock",1},{"Neutral",-1},{"Neutral",1},{"Unlock",1}},
 			Target = "All",
 		},
 		["Bio"] = "Just likes the show so much he's named it too. Too bad the show is over though...",
@@ -13719,7 +13716,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["HungryBloxBoy"] = {
-		["Id"] = 415733536,
+		["Id"] = 2110156809,
 		["Name"] = "HungryBloxBoy",
 		["Health"] = 300,
 		["Power"] = 400,
@@ -13778,7 +13775,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Blue",
 		["AttackBlock"] = true,
-		["Archetype"] = "Defender",
 		["Cost"] = {["Blue"] = 6,},
 		["Effect"] = {
 			Name = "Totem Magic",
@@ -15156,7 +15152,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["iAsuka"] = {
-		["Id"] = 440241003,
+		["Id"] = 2110154605,
 		["Name"] = "iAsuka",
 		["Health"] = 600,
 		["Power"] = 200,
@@ -15908,10 +15904,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Blue",
 		["Cost"] = {["Blue"] = 7, ["Neutral"] = 3,},
 		["AttackBlock"] = true,
-		["Archetype"] = "Defender",
 		["Effect"] = {
 			Name = "Infinite lockdown",
-			Description = "Whenever you cast an action or terrain spell, shuffle a MICHIKUSCHI into your deck, then draw  a card. JaikKaik can't attack.",
+			Description = "Whenever you cast an action or terrain spell, shuffle a MICHIKUSCHI into your deck, then draw a card. JaikKaik can't attack.",
 			["Type"] = "OnAllyCast",
 			["Power"] = {{"DeckAdd","MICHIKUSCHI"},{"Draw",1}},
 			Target = "Ally",
@@ -15963,9 +15958,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 4,},
 		["Effect"] = {
 			Name = "4691 Irradiated Haggis",
-			Description = "At the end of each turn, trigger all lock related effects.",
+			Description = "At the end of each turn, trigger all lock-related effects.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Lock",1},{"Unlock",1}},
+			["Power"] = {{"Lock",1},{"Neutral",-1},{"Neutral",1},{"Unlock",1}},
 			Target = "All",
 		},
 		["Bio"] = "Spark the eternal strife, and turn summer into the next year's snow.", 
@@ -17539,7 +17534,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Red",
 		["AttackBlock"] = true,
 		["Token"] = true,
-		["Archetype"] = "Defender",
 		["Cost"] = {["Neutral"] = 2, ["Red"] = 1,}, 
 		["Effect"] = {
 			Name = "Booming Red",
@@ -17824,7 +17818,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Punch2",
 		["Color"] = "Neutral",
 		["AttackBlock"] = true,
-		["Archetype"] = "Defender",
+		["Archetype"] = "Hero",
 		["Cost"] = {["Yellow"] = 1,["Blue"] = 1,["Green"] = 1,["Red"] = 1,["Neutral"] = 4,}, 
 		["Effect"] = {
 			Name = "Police Brutality",
