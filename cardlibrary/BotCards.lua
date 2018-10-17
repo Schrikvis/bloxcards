@@ -203,15 +203,14 @@ local botcards = { -- Cards used by an AI that are not meant for human play go h
 		["AltCards"] = {
 			["Darken the Skies"] = {
 				["Id"] =  2234690805,
-				["Cost"] = {["Blue"] = 20,},
+				["Cost"] = {["Blue"] = 6,},
 				["Rarity"] = "Epic",
-				["Requirement"] = {"Archetype",8},
 				["Archetype"] = "Bee",
 				["Effect"] = {
 					Name = "birds and bees",
-					Description = [[Cast only if you control 8 bees. Shuffle a copy of the Matriarch's deck into your deck, and draw five cards.]],
+					Description = [[Shuffle Four birds into your deck. Draw two cards.]],
 					["Type"] = "OnSummon",
-					["Power"] = {{"DeckAdd","Crow of Eternal Torment"},{"DeckAdd","Crow of Eternal Torment"},{"DeckAdd","Crow of Eternal Torment"},{"DeckAdd","Crow of Eternal Torment"},{"DeckAdd","Crow of Eternal Torment"},{"DeckAdd","Crow of Eternal Torment"},{"DeckAdd","Crow of Eternal Torment"},{"DeckAdd","Crow of Eternal Torment"},{"DeckAdd","Crow of Eternal Torment"},{"DeckAdd","Bird of Eternal Paradise"},{"DeckAdd","Bird of Eternal Paradise"},{"DeckAdd","Bird of Eternal Paradise"},{"DeckAdd","Bird of Eternal Paradise"},{"DeckAdd","Bird of Eternal Paradise"},{"DeckAdd","Bird of Eternal Paradise"},{"DeckAdd","Bird of Eternal Paradise"},{"DeckAdd","Bird of Eternal Paradise"},{"DeckAdd","Bird of Eternal Paradise"},{"DeckAdd","Parrot of Eternal Dominion"},{"DeckAdd","Parrot of Eternal Dominion"},{"DeckAdd","Parrot of Eternal Dominion"},{"DeckAdd","Parrot of Eternal Dominion"},{"DeckAdd","Parrot of Eternal Dominion"},{"DeckAdd","Parrot of Eternal Dominion"},{"DeckAdd","Parrot of Eternal Dominion"},{"DeckAdd","Parrot of Eternal Dominion"},{"DeckAdd","Parrot of Eternal Dominion"},{"DeckAdd","Eternal Tweety"},{"DeckAdd","Eternal Tweety"},{"DeckAdd","Eternal Tweety"},{"DeckAdd","Eternal Tweety"},{"DeckAdd","Eternal Tweety"},{"DeckAdd","Eternal Tweety"},{"DeckAdd","Eternal Tweety"},{"DeckAdd","Eternal Tweety"},{"DeckAdd","Eternal Tweety"},{"DeckAdd","Bird Colossus"},{"DeckAdd","Divine Favor"},{"DeckAdd","Divine Favor"},{"DeckAdd","Darken the Skies"},{"Draw",5}},
+					["Power"] = {{"DeckAdd","Crow of Eternal Torment"},{"DeckAdd","Bird of Eternal Paradise"},{"DeckAdd","Parrot of Eternal Dominion"},{"DeckAdd","Eternal Tweety"},{"Draw",2}},
 					Target = "Ally",	
 				},
 				["Bio"] = "Now you can tap into the Matriarch's power!",
