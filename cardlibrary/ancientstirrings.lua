@@ -672,6 +672,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["DIY: Dark Dominus"] = {
 		["Id"] = 540075686,
 		["Name"] = "DIY: Dark Dominus",
+		["Archetype"] = "Hero",
 		["Health"] = 550,
 		["Power"] = 550,
 		["Rarity"] = "Rare",
@@ -1781,9 +1782,9 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 13,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Destroy a target fighter. Your opponent summons Lezus.",
+			Description = "Deal 6666 damage to a target fighter. Your opponent summons Lezus.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",9999,"Single"},{"RandomSummon", {"Lezus 1","Lezus 2","Lezus 3","Lezus 4","Lezus 5","Lezus 6"}}},
+			["Power"] = {{"Damage",6666,"Single"},{"RandomSummon", {"Lezus 1","Lezus 2","Lezus 3","Lezus 4","Lezus 5","Lezus 6"}}},
 			Target = "Opponent",
 		},
 		["Bio"] = "Zanzel scoffed when she saw Lezus. These demons are why the world is so impure.",
