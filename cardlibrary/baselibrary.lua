@@ -927,7 +927,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Krazy Boost",
-			Description = "A target fighter gains 100 Power. This card can't generate icons and doesn't trigger effects upon death.",
+			Description = "Fading. A target fighter gains 100 Power. This card can't generate icons.",
 			["Type"] = "OnSummon",
 			["Power"] = "Strengthen",
 			Target = "Single",
@@ -3872,8 +3872,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Double Bleeding",
-			Description = "At the end of your turns, generate a green icon.",
-			["Type"] = "OnEnd",
+			Description = "When Majora attacks, generate a green icon.",
+			["Type"] = "OnAttack",
 			["Power"] = {{"Green",1}},
 			Target = "Ally",
 		},
@@ -4836,7 +4836,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 7,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "At the end of your turns, shuffle a fried one cultist into your deck, then draw a card. This fighter is immune to effects that lower or swap its health or power. This card does not activate effects upon dying.",
+			Description = "At the end of your turns, shuffle a fried one cultist into your deck, then draw a card. This fighter is immune to effects that lower or swap its health or power. Fading.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"DeckAdd","Fried One Cultist"},{"Draw",1}},
 			Target = "Ally",	
@@ -4924,7 +4924,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 7,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "At the end of your turns, shuffle a fried one cultist into your deck, then draw a card. Then deal 200 damage to the opponent and all enemy fighters. This card does not activate effects upon dying.",
+			Description = "At the end of your turns, shuffle a fried one cultist into your deck, then draw a card. Then deal 200 damage to the opponent and all enemy fighters. Fading.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"DeckAdd","Fried One Cultist"},{"Draw",1},{"Inflict",200,"Opponent"},{"Damage",200,"Opponent"}},
 			Target = "Ally",	
@@ -4992,7 +4992,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 7,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "At the end of your turns, shuffle a fried one cultist into your deck, then draw a card. Then generate one of every icon. This card does not activate effects upon dying.",
+			Description = "At the end of your turns, shuffle a fried one cultist into your deck, then draw a card. Then generate one of every icon. Fading.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"DeckAdd","Fried One Cultist"},{"Draw",1},{"Yellow",1},{"Blue",1},{"Red",1},{"Green",1},{"Neutral",1}},
 			Target = "Ally",	
@@ -5060,7 +5060,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 7,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "At the end of your turns, put a fried one limb into your hand, then draw a card. Then reveal your opponent's hand. This card does not activate effects upon dying.",
+			Description = "At the end of your turns, put a fried one limb into your hand, then draw a card. Then reveal your opponent's hand. Fading.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"RandomAdd","Limb"},{"Draw",1},{"RevealHand",030,"Opponent"}},
 			Target = "Ally",	
@@ -5128,7 +5128,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 7,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "4 charges. At the end of your turns, shuffle a fried one cultist into your deck, then draw a card. Then remove a charge. When you remove the last, put 3 charges on Shed and shuffle a copy of Shedletsky into your deck. This card does not activate effects upon dying.",
+			Description = "4 charges. At the end of your turns, shuffle a fried one cultist into your deck, then draw a card. Then remove a charge. When you remove the last, put 3 charges on Shed and shuffle a copy of Shedletsky into your deck. Fading.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"DeckAdd","Fried One Cultist"},{"Draw",1},{"Summon","Shedletsky 2"},{"SetHealth",0,"Self"}},
 			Target = "Ally",	
@@ -5151,7 +5151,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 7,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "3 charges. At the end of your turns, shuffle a fried one cultist into your deck, then draw a card. Then remove a charge. When you remove the last, put 3 charges on Shed and shuffle a copy of Shedletsky into your deck. This card does not activate effects upon dying.",
+			Description = "3 charges. At the end of your turns, shuffle a fried one cultist into your deck, then draw a card. Then remove a charge. When you remove the last, put 3 charges on Shed and shuffle a copy of Shedletsky into your deck. Fading.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"DeckAdd","Fried One Cultist"},{"Draw",1},{"Summon","Shedletsky 3"},{"SetHealth",0,"Self"}},
 			Target = "Ally",	
@@ -5174,7 +5174,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 7,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "2 charges. At the end of your turns, shuffle a fried one cultist into your deck, then draw a card. Then remove a charge. When you remove the last, put 3 charges on Shed and shuffle a copy of Shedletsky into your deck. This card does not activate effects upon dying.",
+			Description = "2 charges. At the end of your turns, shuffle a fried one cultist into your deck, then draw a card. Then remove a charge. When you remove the last, put 3 charges on Shed and shuffle a copy of Shedletsky into your deck. Fading.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"DeckAdd","Fried One Cultist"},{"Draw",1},{"Summon","Shedletsky 4"},{"SetHealth",0,"Self"}},
 			Target = "Ally",	
@@ -5197,7 +5197,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 7,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "1 charge. At the end of your turns, shuffle a fried one cultist into your deck, then draw a card. Then remove a charge. When you remove the last, put 3 charges on Shed and shuffle a copy of Shedletsky into your deck. This card does not activate effects upon dying.",
+			Description = "1 charge. At the end of your turns, shuffle a fried one cultist into your deck, then draw a card. Then remove a charge. When you remove the last, put 3 charges on Shed and shuffle a copy of Shedletsky into your deck. Fading.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"DeckAdd","Fried One Cultist"},{"DeckAdd","Shedletsky the Fried One"},{"Draw",1},{"Summon","Shedletsky, Paragon of Unity 1"},{"SetHealth",0,"Self"}},
 			Target = "Ally",	
@@ -7905,7 +7905,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Friendship",
-			Description = "When this card is summoned, all allied fighters gain 100 Health. When this card is targeted, return it to its owner's hand. This card does not trigger effects upon dying.",
+			Description = "When this card is summoned, all allied fighters gain 100 Health. When this card is targeted, return it to its owner's hand. Fading.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",100},{"Summon","Builderman 2"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -7925,7 +7925,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Friendship",
-			Description = "When this card is summoned, all allied fighters gain 100 Health. When this card is targeted, return it to its owner's hand. This card does not trigger effects upon dying.",
+			Description = "When this card is summoned, all allied fighters gain 100 Health. When this card is targeted, return it to its owner's hand. Fading.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Add","Builderman"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -8663,9 +8663,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "The Divine Favor? Being allowed to spell favour without a U.",
 		["Effect"] = {
 			Name = "Board Clear Preparation!",
-			Description = "Set the health and power of all fighters to 300. You can't attack the opponent this turn.",
+			Description = "Set the health and power of all fighters to 300. You can't attack the opponent this turn. At the end of your opponents next turn, destroy all allied fighters.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"SetHealth",300},{"SetPower",300},{"Summon","Demonic Godbeast","Opponent"}},
+			["Power"] = {{"SetHealth",300},{"SetPower",300},{"Summon","Divine Godbeast","Opponent"}},
 			Target = "NotArchetype",
 		},
 	},
