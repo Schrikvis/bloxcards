@@ -218,7 +218,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["AltArt"] = true,
 				["Effect"] = {
 					Name = "Join The Rave",
-					["Type"] = "OnSummon",
+					["Type"] = "OnEnemySummon",
 					["Power"] = {{"Damage",9999,"Aggressor"},{"Summon","RaveTea Token-ArtV"}},
 					Target = "Opponent",
 				},
@@ -616,7 +616,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 596217036,
 		["Name"] = "SONICTHEHEDGEHOGXX",
 		["Health"] = 400,
-		["Power"] = 600,
+		["Power"] = 400,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Slash",
 		["Color"] = "Blue",
