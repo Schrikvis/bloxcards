@@ -420,7 +420,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 7,},
 		["Effect"] = {
 			Name = "Reincarnation",
-			Description = "5 charges. At the end of your turns, remove a charge. When you remove the last, add 5 charges and return all non-white fighters to their owner's hand. Exotic Murtic does not trigger effects upon dying.",
+			Description = "5 charges. At the end of your turns, remove a charge. When you remove the last, add 5 charges and return all non-white fighters to their owner's hand. Fading.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Summon", "MurticUnicorn 4"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -440,7 +440,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 7,},
 		["Effect"] = {
 			Name = "Reincarnation",
-			Description = "4 charges. At the end of your turns, remove a charge. When you remove the last, add 5 charges and return all non-white fighters to their owner's hand. Exotic Murtic does not trigger effects upon dying.",
+			Description = "4 charges. At the end of your turns, remove a charge. When you remove the last, add 5 charges and return all non-white fighters to their owner's hand. Fading.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Summon", "MurticUnicorn 3"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -460,7 +460,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 7,},
 		["Effect"] = {
 			Name = "Reincarnation",
-			Description = "3 charges. At the end of your turns, remove a charge. When you remove the last, add 5 charges and return all non-white fighters to their owner's hand. Exotic Murtic does not trigger effects upon dying.",
+			Description = "3 charges. At the end of your turns, remove a charge. When you remove the last, add 5 charges and return all non-white fighters to their owner's hand. Fading.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Summon", "MurticUnicorn 2"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -480,7 +480,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 7,},
 		["Effect"] = {
 			Name = "Reincarnation",
-			Description = "2 charges. At the end of your turns, remove a charge. When you remove the last, add 5 charges and return all non-white fighters to their owner's hand. Exotic Murtic does not trigger effects upon dying.",
+			Description = "2 charges. At the end of your turns, remove a charge. When you remove the last, add 5 charges and return all non-white fighters to their owner's hand. Fading.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Summon", "MurticUnicorn 1"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -500,7 +500,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 7,},
 		["Effect"] = {
 			Name = "Reincarnation",
-			Description = "1 charge. At the end of your turns, remove a charge. When you remove the last, add 5 charges and return all non-white fighters to their owner's hand. Exotic Murtic does not trigger effects upon dying.",
+			Description = "1 charge. At the end of your turns, remove a charge. When you remove the last, add 5 charges and return all non-white fighters to their owner's hand. Fading.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Return",030,"ColorRed"},{"Return",030,"ColorYellow"},{"Return",030,"ColorBlue"},{"Return",030,"ColorGreen"},{"Summon", "Exotic Murtic"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -530,8 +530,8 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["CrazyCaleb77"] = {
 		["Id"] = 596217027,
 		["Name"] = "CrazyCaleb77",
-		["Health"] = 400,
-		["Power"] = 400,
+		["Health"] = 350,
+		["Power"] = 350,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Slash",
 		["Color"] = "Green",
@@ -1084,8 +1084,8 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Your_Name"] = {
 		["Id"] = 1402765235,
 		["Name"] = "Your_Name",
-		["Health"] = 400,
-		["Power"] = 400,
+		["Health"] = 350,
+		["Power"] = 350,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "SlashDiagonal",
 		["Color"] = "Blue",
@@ -1629,8 +1629,8 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				},
 			}
 		},
-		["Health"] = 400,
-		["Power"] = 400,
+		["Health"] = 350,
+		["Power"] = 350,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "SlashDiagonal",
 		["Color"] = "Red",
@@ -2740,7 +2740,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 4,},
 		["Effect"] = {
 			Name = "Life fam",
-			Description = "When summoned, deal 150 damage to all enemy fighters. When targeted, reset its stats and return this card to your hand. Roundawsome does not trigger effects upon dying.",
+			Description = "When summoned, deal 150 damage to all enemy fighters. When targeted, reset its stats and return this card to your hand. Fading.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",150,"Opponent"},{"Summon","Round2"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -2761,7 +2761,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 4,},
 		["Effect"] = {
 			Name = "Life fam",
-			Description = "3 charges. When summoned, deal 150 damage to all enemy fighters. When targeted, remove a charge, reset its stats, and return this card to your hand. Roundawsome does not trigger effects upon dying.",
+			Description = "3 charges. When summoned, deal 150 damage to all enemy fighters. When targeted, remove a charge, reset its stats, and return this card to your hand. Fading.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Add","Roundawsome"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -2782,7 +2782,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 4,},
 		["Effect"] = {
 			Name = "Life fam",
-			Description = "2 charges. When summoned, deal 150 damage to all enemy fighters. When targeted, remove a charge, reset its stats, and return this card to your hand. Roundawsome does not trigger effects upon dying.",
+			Description = "2 charges. When summoned, deal 150 damage to all enemy fighters. When targeted, remove a charge, reset its stats, and return this card to your hand. Fading.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",150,"Opponent"},{"Summon","Round4"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -2803,7 +2803,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 4,},
 		["Effect"] = {
 			Name = "Life fam",
-			Description = "2 charges. When summoned, deal 150 damage to all enemy fighters. When targeted, remove a charge, reset its stats, and return this card to your hand. Roundawsome does not trigger effects upon dying.",
+			Description = "2 charges. When summoned, deal 150 damage to all enemy fighters. When targeted, remove a charge, reset its stats, and return this card to your hand. Fading.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Add","Round5"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -2824,7 +2824,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 4,},
 		["Effect"] = {
 			Name = "Life fam",
-			Description = "1 charge. When summoned, deal 150 damage to all enemy fighters. When targeted, remove a charge, reset its stats, and return this card to your hand. Roundawsome does not trigger effects upon dying.",
+			Description = "1 charge. When summoned, deal 150 damage to all enemy fighters. When targeted, remove a charge, reset its stats, and return this card to your hand. Fading.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",150,"Opponent"},{"Summon","Round6"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -2845,7 +2845,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 4,},
 		["Effect"] = {
 			Name = "Life fam",
-			Description = "1 charge. When summoned, deal 150 damage to all enemy fighters. When targeted, remove a charge, reset its stats, and return this card to your hand. Roundawsome does not trigger effects upon dying.",
+			Description = "1 charge. When summoned, deal 150 damage to all enemy fighters. When targeted, remove a charge, reset its stats, and return this card to your hand. Fading.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Add","Round7"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -2866,7 +2866,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 4,},
 		["Effect"] = {
 			Name = "Life fam",
-			Description = "When summoned, deal 150 damage to all enemy fighters. Roundawsome does not trigger effects upon dying.",
+			Description = "When summoned, deal 150 damage to all enemy fighters. Fading.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",150,"Opponent"}},
 			Target = "Ally",
@@ -5603,7 +5603,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Description = "",
 			["Type"] = "OnAnyDeath",
 			["Power"] = {{"Cost",500}},
-			Target = Ally,
+			Target = "Ally",
 		},	
 		["Bio"] = "And with the price of my blood, annihilate all who cross my path!",
 	},
@@ -5617,7 +5617,6 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Thunder",		
 		["Color"] = "Yellow",
 		["Cost"] = {["Yellow"] = 9,},
-		["Archetype"] = "Llendlar",
 		["Effect"] = {
 			Name = "Sacrificial Destruction",
 			Description = "Destroy all other allied fighters. Fill the board with Techno Terrors and put Mass Production into your hand.",
@@ -5755,8 +5754,8 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Melon Desu"] = {
 		["Id"] = 1868966344,
 		["Name"] = "Melon Desu",
-		["Health"] = 600,
-		["Power"] = 700,
+		["Health"] = 500,
+		["Power"] = 600,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Thunder",		
 		["Color"] = "Red",
@@ -6160,8 +6159,8 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["StaceyD07"] = {
 		["Id"] = 2145872823,
 		["Name"] = "StaceyD07",
-		["Health"] = 400,
-		["Power"] = 400,
+		["Health"] = 350,
+		["Power"] = 350,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Slash",
 		["Color"] = "Yellow",
@@ -6283,5 +6282,24 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
  		["Bio"] = "When the Classic Border dies, it becomes the Luna Border.",
 	},
 	
+	["Julez_X"] = {
+		["Id"] = 2546940455,
+		["Name"] = "Julez_X",
+		["Health"] = 600,
+		["Power"] = 600,
+		["Rarity"] = "Rare",
+		["Archetype"] = "Hero",
+		["AttackEffect"] = "Lightning",
+		["Color"] = "Red",
+		["Cost"] = {["Red"] = 3,["Yellow"] = 3,},
+		["Effect"] = {
+			Name = "Gilgamesh",
+			Description = "When you lose life, add a random roblox gear to your hand.",
+			["Type"] = "OnHealthLoss",
+			["Power"] = {{"RandomAdd",{"Linked Sword","Trowel","Rocket Launcher","Superball","Slingshot"}}},
+			Target = "Ally",
+		},
+		["Bio"] = "Have you ever noticed that some bios have no relevance at all to the cards they're on?",
+	},
 }
 return tentwelvesixteen
