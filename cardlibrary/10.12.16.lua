@@ -2761,7 +2761,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 4,},
 		["Effect"] = {
 			Name = "Life fam",
-			Description = "3 charges. When summoned, deal 150 damage to all enemy fighters. When targeted, remove a charge, reset its stats, and return this card to your hand. Fading.",
+			Description = "When summoned, deal 150 damage to all enemy fighters. When targeted, remove a charge, reset its stats, and return this card to your hand. Fading.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Add","Roundawsome"},{"Damage",9999,"Self"}},
 			Target = "Ally",
