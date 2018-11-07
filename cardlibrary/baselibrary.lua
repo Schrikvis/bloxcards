@@ -1357,7 +1357,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			}		
 		},
 		["Health"] = 500,
-		["Power"] = 400,
+		["Power"] = 200,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "PunchKick",
 		["Color"] = "Red",
@@ -5747,7 +5747,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 292778817,
 		["Name"] = "Tomfl",
 		["Health"] = 800,
-		["Power"] = 350,
+		["Power"] = 200,
 		["Rarity"] = "Rare",
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Lightning",
@@ -5755,11 +5755,11 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Red"] = 3,},
 		["Effect"] = {
 			Name = "Mafia Support",
-			Description = "A target fighter gains 500 Power.",
+			Description = "A target fighter gains 300 Power.",
 			["Type"] = "OnSummon",
 			["Power"] = "Strengthen",
 			Target = "Single",
-			Increase = 500
+			Increase = 300
 		},
 		["Bio"] = "Time to end this.",
 	},	
