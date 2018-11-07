@@ -281,12 +281,11 @@ local basetwo = { -- you know the drill by now.
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Thunder",
 		["Archetype"] = "Monkey",
-		["Charge"] = true,
 		["Color"] = "Green",
 		["Cost"] = {["Green"] = 2},
 		["Effect"] = {
 			Name = "Revival",
-			Description = "Haste. Whenever this card attacks, increase the power of all Monkeys by 200.",
+			Description = "Whenever this card attacks, increase the power of all Monkeys by 200.",
 			["Type"] = "OnAttack",
 			["Power"] = "Strengthen",
 			Target = "Archetype",
