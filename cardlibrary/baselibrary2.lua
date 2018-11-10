@@ -6920,9 +6920,9 @@ local basetwo = { -- you know the drill by now.
 		["Archetype"] = "Masant",
 		["Effect"] = {
 			Name = "Level Up!",
-			Description = "At the end of your turns, summon a noob, increase the power of all fighters by 200, then unlock all allied fighters. 10% chance that the noob is IcyTea. This card is immune to effects that lower its health or power. Fading.",
+			Description = "At the end of your turns, summon a noob, increase the power of all fighters by 200, then unlock all allied fighters. This card is immune to effects that lower its health or power. Fading.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"RandomSummon",{"Noob","Noob","Noob","Noob","Noob","Noob","Noob","Noob","Noob","IcyTea"}},{"Strengthen",200,"All"},{"Unlock",999}},			
+			["Power"] = {{"Summon","Noob"},{"Strengthen",200,"All"},{"Unlock",999}},			
 			Target = "Ally",
 		},
 		["Bio"] = "His endless revels were to celebrate his fragile life. How do you celebrate an uncullable life?",
