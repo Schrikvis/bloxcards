@@ -3238,7 +3238,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Blue"] = 1,},
 		["Effect"] = {
 			Name = "Teamwork",
-			Description = "Whenever Lohit gains a lock, generate a blue icon. Lohit can't generate icons naturally.",
+			Description = "Whenever Lohit becomes locked, generate a blue icon. Lohit can't generate icons naturally.",
 			["Type"] = "OnLock",
 			["Power"] = {{"Blue",1}},
 			Target = "Ally",
@@ -4328,7 +4328,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Shell Shock",
-			Description = "Whenever Tiny Tank gains a lock, it gains 100 health and power.",
+			Description = "Whenever Tiny Tank becomes locked, it gains 100 health and power.",
 			["Type"] = "OnLock",
 			["Power"] = {{"Heal",100},{"Strengthen",100}},
 			Target = "Self",
@@ -6355,7 +6355,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Red"] = 3,},
 		["Effect"] = {
 			Name = "Acolyte",
-			Description = "Whenever Zedredr gains a lock, your opponent loses 300 life.",
+			Description = "Whenever Zedredr becomes locked, your opponent loses 300 life.",
 			["Type"] = "OnLock",
 			["Power"] = {{"Inflict",300}},
 			Target = "Opponent",
