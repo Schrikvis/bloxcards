@@ -12,7 +12,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 2,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "When this card is targeted, reverse time and turn it into Serhat12. Korblox Skeleton does not trigger effects upon dying.",
+			Description = "When this card is targeted, reverse time and turn it into Serhat12. Fading.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Summon","Serhat12"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -46,7 +46,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 1,},
 		["Effect"] = {
 			Name = "Halloween",
-			Description = "Whenever you cast an action or terrain spell, transform this card. This card does not trigger any effects upon dying.",
+			Description = "Whenever you cast an action or terrain spell, transform this card. Fading.",
 			["Type"] = "OnAllyCast",
 			["Power"] = {{"Summon","Werewolf Savage"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -80,7 +80,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 1,},
 		["Effect"] = {
 			Name = "Halloween",
-			Description = "Whenever your opponent casts an action or terrain spell, untransform this card. This card does not trigger any effects upon dying.",
+			Description = "Whenever your opponent casts an action or terrain spell, untransform this card. Fading.",
 			["Type"] = "OnEnemyCast",
 			["Power"] = {{"Summon","Wolfbitten Noob"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -101,7 +101,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "When this card is targeted, transform this card into a Korblox Archmage, then unlock all Korblox. This card does not trigger any effects upon dying.",
+			Description = "When this card is targeted, transform this card into a Korblox Archmage, then unlock all Korblox. Fading.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Summon","Korblox Archmage"},{"Unlock",999,"Archetype"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -497,7 +497,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 3,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "When this card is targeted, give all fighters 150 Health and Power, give all Overseers an additional 150 Health and Power, and transform this card into an Eye of Overseer.",
+			Description = "When this card is targeted, give all fighters 150 Health and Power, give all Overseers an additional 150 Health and Power, and transform this card into an Eye of Overseer. Fading.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Summon","Eye of Overseer"},{"Strengthen",150,"All"},{"Heal",150,"All"},{"Heal",150,"Archetype"},{"Strengthen",150,"Archetype"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -532,16 +532,15 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Rare",
-		["Archetype"] = "Hero",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Yellow", 
 		["Cost"] = {["Yellow"] = 6,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "Both players summon two guests and one corrupt guest.",
+			Description = "A target fighter gains 800 health and power. Your opponent gains 800 life.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Summon","Guest"},{"Summon","Guest","Opponent"},{"Summon","Guest"},{"Summon","Guest","Opponent"},{"Summon","Corrupt Guest"},{"Summon","Corrupt Guest","Opponent"}},
-			Target = "Ally",
+			["Power"] = {{"Strengthen",800},{"Heal",800},{"Cost",-800,"Opponent"}},
+			Target = "Single",
 		},
 		["Bio"] = "Eisenhower was struck a deal with Hallow, hearing his wish to resurrect his love. Hallow agreed to meet at Thursday night by her tombstone.",
 	},
@@ -661,7 +660,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1, ["Yellow"] = 5,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "When this card is targeted, reduce the power of all fighters by 200 and turn this card into Visleaf. Cringeleaf does not trigger any effects upon dying.",
+			Description = "When this card is targeted, reduce the power of all fighters by 200 and turn this card into Visleaf. Fading.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Summon","Visleaf"},{"Weaken",200,"All"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -898,9 +897,9 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "When this card is targeted, transform this card into four doges. This card does not trigger any effects upon dying.",
+			Description = "When this card is targeted, transform this card into four doges, and ready them. Fading.",
 			["Type"] = "OnTarget",
-			["Power"] = {{"Summon","Doge"},{"Summon","Doge"},{"Summon","Doge"},{"Summon","Doge"},{"Damage",9999,"Self"}},
+			["Power"] = {{"Lock",1,"Archetype"},{"Summon","Doge"},{"Summon","Doge"},{"Summon","Doge"},{"Summon","Doge"},{"Unlock",1,"Archetype"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Doge heads aren't good enough armour against hallow's manipulation.",
@@ -1205,7 +1204,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 1,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "When this card is targeted, reverse it back into the Final Tree. This card does not trigger any effects upon dying.",
+			Description = "When this card is targeted, reverse it back into the Final Tree. Fading.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Summon","Final Tree"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -1366,7 +1365,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 3,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "When this card is targeted, transform this card into a Redcliff Elite Commander, then give all Redcliff 200 health and power. This card does not trigger any effects upon dying.",
+			Description = "When this card is targeted, transform this card into a Redcliff Elite Commander, then give all Redcliff 200 health and power. Fading.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Summon","Redcliff Elite Commander"},{"Strengthen",200,"Archetype"},{"Heal",200,"Archetype"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -1697,7 +1696,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 1,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "Level 1. Can't attack. Whenever your opponent casts an action or terrain spell, level this card up. This card does not trigger any effects upon dying.",
+			Description = "Level 1. Can't attack. Whenever your opponent casts an action or terrain spell, level this card up. Fading.",
 			["Type"] = "OnEnemyCast",
 			["Power"] = {{"Summon","It that is Whispering"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -1719,7 +1718,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 1,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "Level 2. Can't counterattack. Whenever your opponent casts an action or terrain spell, level this card up. This card does not trigger any effects upon dying.",
+			Description = "Level 2. Can't counterattack. Whenever your opponent casts an action or terrain spell, level this card up. Fading.",
 			["Type"] = "OnEnemyCast",
 			["Power"] = {{"Summon","It that will Howl"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -1741,7 +1740,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 1,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "Level 3. Can't attack the opponent. Whenever your opponent casts an action or terrain spell, level this card up. This card does not trigger any effects upon dying.",
+			Description = "Level 3. Can't attack the opponent. Whenever your opponent casts an action or terrain spell, level this card up. Fading.",
 			["Type"] = "OnEnemyCast",
 			["Power"] = {{"Summon","Eclipse, Werewolf Colossus"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -1763,7 +1762,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 1,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "Max level. Can't be counterattacked. Whenever any fighter dies, summon a Wolfbitten Noob and put a Wolven Blitz into your hand. This card does not trigger any effects upon dying.",
+			Description = "Max level. Can't be counterattacked. Whenever any fighter dies, summon a Wolfbitten Noob and put a Wolven Blitz into your hand. Fading.",
 			["Type"] = "OnAnyDeath",
 			["Power"] = {{"Summon","Wolfbitten Noob"},{"Add","Wolven Blitz"}},
 			Target = "Ally",
@@ -2557,7 +2556,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 1, ["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Whenever you cast an action or terrain spell, transform this card, then unlock all Lycanthropes. This card does not activate any effects upon dying.",
+			Description = "Whenever you cast an action or terrain spell, transform this card, then unlock all Lycanthropes. Fading.",
 			["Type"] = "OnAllyCast",
 			["Power"] = {{"Summon","Werecentaur"},{"Unlock",9999,"Archetype"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -2578,7 +2577,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 1, ["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Whenever your opponent casts an action or terrain spell, untransform this card, then unlock all Lycanthropes. This card does not activate any effects upon dying.",
+			Description = "Whenever your opponent casts an action or terrain spell, untransform this card, then unlock all Lycanthropes. Fading.",
 			["Type"] = "OnEnemyCast",
 			["Power"] = {{"Summon","Horse Breeder"},{"Unlock",9999,"Archetype"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -2595,7 +2594,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Name"] = "Lovestruck Prince",
 				["Effect"] = {
 					Name = "Woof",
-					Description = "Whenever you cast an action or terrain spell, transform this card, then deal 100 damage to all enemy fighters. This card does not activate any effects upon dying.",
+					Description = "Whenever you cast an action or terrain spell, transform this card, then deal 100 damage to all enemy fighters. Fading.",
 					["Type"] = "OnAllyCast",
 					["Power"] = {{"Summon","Werefrog-Val"},{"Damage",100,"Opponent"},{"Damage",9999,"Self"}},
 					Target = "Ally",
@@ -2613,7 +2612,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2, ["Red"] = 1,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Whenever you cast an action or terrain spell, transform this card, then deal 100 damage to all enemy fighters. This card does not activate any effects upon dying.",
+			Description = "Whenever you cast an action or terrain spell, transform this card, then deal 100 damage to all enemy fighters. Fading.",
 			["Type"] = "OnAllyCast",
 			["Power"] = {{"Summon","Werefrog"},{"Damage",100,"Opponent"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -2630,7 +2629,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Name"] = "Loving Frog",
 				["Effect"] = {
 					Name = "Woof",
-					Description = "Whenever your opponent casts an action or terrain spell, untransform this card, then deal 100 damage to all enemy fighters. This card does not activate any effects upon dying.",
+					Description = "Whenever your opponent casts an action or terrain spell, untransform this card, then deal 100 damage to all enemy fighters. Fading.",
 					["Type"] = "OnEnemyCast",
 					["Power"] = {{"Summon","Evil Prince-Val"},{"Damage",100,"Opponent"},{"Damage",9999,"Self"}},
 					Target = "Ally",
@@ -2648,7 +2647,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2, ["Red"] = 1,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Whenever your opponent casts an action or terrain spell, untransform this card, then deal 100 damage to all enemy fighters. This card does not activate any effects upon dying.",
+			Description = "Whenever your opponent casts an action or terrain spell, untransform this card, then deal 100 damage to all enemy fighters. This card does not activate any effects upon Fading.",
 			["Type"] = "OnEnemyCast",
 			["Power"] = {{"Summon","Evil Prince"},{"Damage",100,"Opponent"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -2669,7 +2668,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 1, ["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Whenever you cast an action or terrain spell, transform this card, then generate a red icon. This card does not activate any effects upon dying.",
+			Description = "Whenever you cast an action or terrain spell, transform this card, then generate a red icon. Fading.",
 			["Type"] = "OnAllyCast",
 			["Power"] = {{"Summon","Werebear"},{"Red",1},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -2690,7 +2689,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 1,["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Whenever your opponent casts an action or terrain spell, untransform this card, then generate a red icon. This card does not activate any effects upon dying.",
+			Description = "Whenever your opponent casts an action or terrain spell, untransform this card, then generate a red icon. Fading.",
 			["Type"] = "OnEnemyCast",
 			["Power"] = {{"Summon","Lumberjack"},{"Red",1},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -2711,7 +2710,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 2, ["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Whenever you cast an action or terrain spell, transform this card, draw a card, then lose 300 life. This card does not activate any effects upon dying.",
+			Description = "Whenever you cast an action or terrain spell, transform this card, draw a card, then lose 300 life. Fading.",
 			["Type"] = "OnAllyCast",
 			["Power"] = {{"Summon","Lunar Rager"},{"Draw",1},{"Cost",300},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -2732,7 +2731,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 2, ["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Whenever your opponent casts an action or terrain spell, untransform this card. This card does not activate any effects upon dying.",
+			Description = "Whenever your opponent casts an action or terrain spell, untransform this card. Fading.",
 			["Type"] = "OnEnemyCast",
 			["Power"] = {{"Summon","Paraselene Ascetic"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -2753,7 +2752,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 2, ["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Whenever you cast an action or terrain spell, transform this card, then deal 150 damage to the opponent. This card does not activate any effects upon dying.",
+			Description = "Whenever you cast an action or terrain spell, transform this card, then deal 150 damage to the opponent. Fading.",
 			["Type"] = "OnAllyCast",
 			["Power"] = {{"Summon","Werewyrm"},{"Inflict",150,"Opponent"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -2774,7 +2773,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 2, ["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Whenever your opponent casts an action or terrain spell, untransform this card, then deal 150 damage to the opponent. This card does not activate any effects upon dying.",
+			Description = "Whenever your opponent casts an action or terrain spell, untransform this card, then deal 150 damage to the opponent. Fading.",
 			["Type"] = "OnEnemyCast",
 			["Power"] = {{"Summon","Blessed Acolyte"},{"Inflict",150,"Opponent"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -2796,7 +2795,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 5,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Haste. Whenever you cast an action or terrain spell, transform this card. This card does not activate any effects upon dying.",
+			Description = "Haste. Whenever you cast an action or terrain spell, transform this card. Fading.",
 			["Type"] = "OnAllyCast",
 			["Power"] = {{"Summon","DIY: Werewolf"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -2817,7 +2816,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 5,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Whenever your opponent casts an action or terrain spell, untransform this card. This card does not activate any effects upon dying.",
+			Description = "Whenever your opponent casts an action or terrain spell, untransform this card. Fading.",
 			["Type"] = "OnEnemyCast",
 			["Power"] = {{"Summon","Homeless Man"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -3101,9 +3100,9 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 13,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "A target fighter gains 1300 health and power. End the turn.",
+			Description = "A target fighter gains 1300 health and power.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Heal",1300,"Single"},{"Strengthen",1300,"Single"},{"EndTurn",1}},
+			["Power"] = {{"Heal",1300,"Single"},{"Strengthen",1300,"Single"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Lose yourself in my revelry.",
@@ -3142,7 +3141,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Morphic",
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "When this card is targeted, reveal its true form. This card can't generate icons or activate effects upon dying.",
+			Description = "When this card is targeted, reveal its true form. This card can't generate icons. Fading.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"RandomSummon","Any"},{"Damage",9999,"Self"}},
 			Target = "Ally",
