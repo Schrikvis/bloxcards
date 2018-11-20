@@ -1,39 +1,46 @@
 local bot = {}
 setmetatable(bot, {__index = require(script.Parent.Bot)})
+-- Model: https://www.roblox.com/catalog/1469557200
 
 bot.Rewards = {
-	Cards = {["Eye of Heaven"] = 1}; --{["Medic Kit"] = 1};
+	Cards = {["KasoduS"] = 1}; --{["Medic Kit"] = 1};
 	RandomCards = {};
-	BloxBux = 0; -- Will be changed once we figure out the deck's power
+	BloxBux = 55;
 	Charms = {0,0};
 	Sleeves = {};
 }
 
 bot.Info = {
-	Name = "The Scholar";
+	Name = "KasoduS";
 	Id = 140238954;
 	Rewards = bot.Rewards;
 	ChallengeMessage = require(script.Dialogue);
-	Rank = "Ultra Enthusiast";
+	Rank = "";
 }
 
 bot.Deck = {
-	["Fatal Discovery"] = 1;
-	["Sylrath"] = 22;
-	["SharpTH"] = 10;	
-	["AsrielMemer"] = 15;
-	["2Hex"] = 15;
-	["Eye Spy"] = 15;
-	["DominiusConfabricor"] = 15;
-	["Lord of Greed"] = 5;
-	["Titano's Cavern"] = 12;
-	["Latchie"] = 15;
-	["Lord of Auctions"] = 15;
-	["Visleaf"] = 5;
-	["Pikachukiller101"] = 15;
-	["B0BBA"] = 5;
-	["Enrage"] = 20;
-	["Spiderboy"] = 15;
+	-- Turn 1!
+	["Lord_Gizmo"] = 2;
+	["Oozlebachr"] = 3;
+	["Necromantic Acolyte"] = 3;	
+	["Boogerguy123"] = 4;
+	["Neutrinous"] = 2;
+	
+	-- Beatsticks!
+	["TZSara"] = 3;
+	["Ripull"] = 1;
+	["Brycen27"] = 4;
+	["Langz"] = 4;
+	["Cillow"] = 3;
+	
+	-- Finishers!
+	["Brick_Man"] = 1;
+	["MiloCortez"] = 2;
+	["Overseer General"] = 2;
+	["KasoduS"] = 1;
+	["FatalWing"] = 2;
+	["PolyHex"] = 1;
+	["Beeism"] = 1;
 }
 
 bot.Data = {
@@ -42,8 +49,8 @@ bot.Data = {
 	"Basic",
 	bot.Deck,
 	{bot.Deck,{},{}},
-	703,725,
-	{"Sleevefinity"},
+	78, 94,
+	{"Red Planet"},
 	1,{0,0}
 }
 
@@ -108,18 +115,18 @@ function bot:SingleTarget(card, effect)
 	self:InvokeServer("SetTarget", self.battleId, targetId)
 end
 
-
+	
 local SetA = {
-	"Fatal Discovery", "B0BBA", "Enrage", "Eye Spy", "Lord of Auctions", "SharpTH", "Sylrath", "Lord of Greed", "Pikachukiller101", "Latchie", "2Hex", "DominiusConfabricor", "Valletta", "AsrielMemer", "Spiderboy", "Titano's Cavern", "Fatal Attraction"
+	"Brick_Man", "Beeism", "PolyHex", "FatalWing","KasoduS", "MiloCortez", "Overseer General",
 }
 local SetB = {
-	"Fatal Discovery", "B0BBA", "Enrage", "Eye Spy", "Lord of Auctions", "SharpTH", "Sylrath", "Lord of Greed", "Pikachukiller101", "Latchie", "2Hex", "DominiusConfabricor", "Valletta", "AsrielMemer", "Spiderboy", "Titano's Cavern", "Fatal Attraction"
+	"Ripull", "Brycen27", "TZsara", "Cillow", "Langz",
 }
 local TurnOne = {
-	"Fatal Discovery", "Titano's Cavern"
+	"Oozlebachr", "Boogerguy123", "Neutrinous", "Necromantic Acolyte", "Lord_Gizmo",
 }
 local Action = {
-	"Fatal Discovery", "B0BBA", "Enrage", "Eye Spy", "Lord of Auctions", "SharpTH", "Sylrath", "Lord of Greed", "Pikachukiller101", "Latchie", "2Hex", "DominiusConfabricor", "Valletta", "AsrielMemer", "Spiderboy", "Titano's Cavern", "Fatal Attraction"
+	"Unwanted Trend"
 }
 bot.turnOne = true -- don't mix up with TurnOne (capital T)
 function bot:YourTurn()

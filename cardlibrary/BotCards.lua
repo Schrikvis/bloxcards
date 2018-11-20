@@ -102,9 +102,9 @@ local botcards = { -- Cards used by an AI that are not meant for human play go h
 		["WeakenImmune"] = true,
 		["Effect"] = {
 			Name = "Matriarch",
-			Description = [[Immune to effects that lower health or power. Incrase the health of all birds by 100. Draw a card.]],
+			Description = [[Immune to effects that lower health or power. Increase the health of all birds by 100. Draw a card.]],
 			["Type"] = "OnSummon",
-			["Power"] = {{"Heal",100},{"Draw",1}},
+			["Power"] = {{"Heal",100,"Archetype"},{"Draw",1}},
 			Target = "Ally",	
 		},
 		["Bio"] = "The Matriarch searched far and wide, to all corners of Robloxia to find her most exotic allies.",
@@ -120,12 +120,12 @@ local botcards = { -- Cards used by an AI that are not meant for human play go h
 		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 0,},
 		["Archetype"] = "Bird",
-		["CounterBlock"] = true,
+		["CounterAttackBlock"] = true,
 		["Effect"] = {
 			Name = "Matriarch",
-			Description = [[Can't be counterattacked. Incrase the power of all birds by 100. Draw a card.]],
+			Description = [[Can't be counterattacked. Increase the power of all birds by 100. Draw a card.]],
 			["Type"] = "OnSummon",
-			["Power"] = {{"Strengthen",100},{"Draw",1}},
+			["Power"] = {{"Strengthen",100,"Archetype"},{"Draw",1}},
 			Target = "Ally",	
 		},
 		["Bio"] = "The best birds are those with birds of their own.",
@@ -146,7 +146,7 @@ local botcards = { -- Cards used by an AI that are not meant for human play go h
 			Description = [[Ready all Birds.]],
 			["Type"] = "OnSummon",
 			["Power"] = {{"Unlock",1}},
-			Target = "Ally",	
+			Target = "Archetype",	
 		},
 		["Bio"] = "Does The Matriarch control Tweety, or does Tweety control The Matriarch?",
 	},	
@@ -202,16 +202,15 @@ local botcards = { -- Cards used by an AI that are not meant for human play go h
 		["Name"] = "Blacken the Skies",
 		["AltCards"] = {
 			["Darken the Skies"] = {
-				["Id"] =  1469405051,
-				["Cost"] = {["Blue"] = 25,},
+				["Id"] =  2234690805,
+				["Cost"] = {["Blue"] = 6,},
 				["Rarity"] = "Epic",
-				["Requirement"] = {"Archetype",6},
-				["Archetype"] = "Nightmare",
+				["Archetype"] = "Bee",
 				["Effect"] = {
-					Name = "Matriarch",
-					Description = [[Cast only if you control 6 nightmare-related fighters. Shuffle a copy of the Matriarch's deck into your deck. Draw a card.]],
+					Name = "birds and bees",
+					Description = [[Shuffle Four birds into your deck. Draw two cards.]],
 					["Type"] = "OnSummon",
-					["Power"] = {{"DeckAdd","Crow of Eternal Torment"},{"DeckAdd","Crow of Eternal Torment"},{"DeckAdd","Crow of Eternal Torment"},{"DeckAdd","Crow of Eternal Torment"},{"DeckAdd","Crow of Eternal Torment"},{"DeckAdd","Crow of Eternal Torment"},{"DeckAdd","Crow of Eternal Torment"},{"DeckAdd","Crow of Eternal Torment"},{"DeckAdd","Crow of Eternal Torment"},{"DeckAdd","Bird of Eternal Paradise"},{"DeckAdd","Bird of Eternal Paradise"},{"DeckAdd","Bird of Eternal Paradise"},{"DeckAdd","Bird of Eternal Paradise"},{"DeckAdd","Bird of Eternal Paradise"},{"DeckAdd","Bird of Eternal Paradise"},{"DeckAdd","Bird of Eternal Paradise"},{"DeckAdd","Bird of Eternal Paradise"},{"DeckAdd","Bird of Eternal Paradise"},{"DeckAdd","Parrot of Eternal Dominion"},{"DeckAdd","Parrot of Eternal Dominion"},{"DeckAdd","Parrot of Eternal Dominion"},{"DeckAdd","Parrot of Eternal Dominion"},{"DeckAdd","Parrot of Eternal Dominion"},{"DeckAdd","Parrot of Eternal Dominion"},{"DeckAdd","Parrot of Eternal Dominion"},{"DeckAdd","Parrot of Eternal Dominion"},{"DeckAdd","Parrot of Eternal Dominion"},{"DeckAdd","Eternal Tweety"},{"DeckAdd","Eternal Tweety"},{"DeckAdd","Eternal Tweety"},{"DeckAdd","Eternal Tweety"},{"DeckAdd","Eternal Tweety"},{"DeckAdd","Eternal Tweety"},{"DeckAdd","Eternal Tweety"},{"DeckAdd","Eternal Tweety"},{"DeckAdd","Eternal Tweety"},{"DeckAdd","Bird Colossus"},{"DeckAdd","Divine Favor"},{"DeckAdd","Divine Favor"},{"DeckAdd","Darken the Skies"},{"Draw",1}},
+					["Power"] = {{"DeckAdd","Crow of Eternal Torment"},{"DeckAdd","Bird of Eternal Paradise"},{"DeckAdd","Parrot of Eternal Dominion"},{"DeckAdd","Eternal Tweety"},{"Draw",2}},
 					Target = "Ally",	
 				},
 				["Bio"] = "Now you can tap into the Matriarch's power!",
@@ -225,15 +224,15 @@ local botcards = { -- Cards used by an AI that are not meant for human play go h
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Matriarch",
-			Description = [[Shuffle a copy of the Matriarch's deck into your deck. Draw a card.]],
+			Description = [[Shuffle a copy of the Matriarch's deck into your deck, and draw five cards.]],
 			["Type"] = "OnSummon",
-			["Power"] = {{"DeckAdd","Crow of Eternal Torment"},{"DeckAdd","Crow of Eternal Torment"},{"DeckAdd","Crow of Eternal Torment"},{"DeckAdd","Crow of Eternal Torment"},{"DeckAdd","Crow of Eternal Torment"},{"DeckAdd","Crow of Eternal Torment"},{"DeckAdd","Crow of Eternal Torment"},{"DeckAdd","Crow of Eternal Torment"},{"DeckAdd","Crow of Eternal Torment"},{"DeckAdd","Bird of Eternal Paradise"},{"DeckAdd","Bird of Eternal Paradise"},{"DeckAdd","Bird of Eternal Paradise"},{"DeckAdd","Bird of Eternal Paradise"},{"DeckAdd","Bird of Eternal Paradise"},{"DeckAdd","Bird of Eternal Paradise"},{"DeckAdd","Bird of Eternal Paradise"},{"DeckAdd","Bird of Eternal Paradise"},{"DeckAdd","Bird of Eternal Paradise"},{"DeckAdd","Parrot of Eternal Dominion"},{"DeckAdd","Parrot of Eternal Dominion"},{"DeckAdd","Parrot of Eternal Dominion"},{"DeckAdd","Parrot of Eternal Dominion"},{"DeckAdd","Parrot of Eternal Dominion"},{"DeckAdd","Parrot of Eternal Dominion"},{"DeckAdd","Parrot of Eternal Dominion"},{"DeckAdd","Parrot of Eternal Dominion"},{"DeckAdd","Parrot of Eternal Dominion"},{"DeckAdd","Eternal Tweety"},{"DeckAdd","Eternal Tweety"},{"DeckAdd","Eternal Tweety"},{"DeckAdd","Eternal Tweety"},{"DeckAdd","Eternal Tweety"},{"DeckAdd","Eternal Tweety"},{"DeckAdd","Eternal Tweety"},{"DeckAdd","Eternal Tweety"},{"DeckAdd","Eternal Tweety"},{"DeckAdd","Bird Colossus"},{"DeckAdd","Divine Favor"},{"DeckAdd","Divine Favor"},{"DeckAdd","Blacken the Skies"},{"Draw",1}},
+			["Power"] = {{"DeckAdd","Crow of Eternal Torment"},{"DeckAdd","Crow of Eternal Torment"},{"DeckAdd","Crow of Eternal Torment"},{"DeckAdd","Crow of Eternal Torment"},{"DeckAdd","Crow of Eternal Torment"},{"DeckAdd","Crow of Eternal Torment"},{"DeckAdd","Crow of Eternal Torment"},{"DeckAdd","Crow of Eternal Torment"},{"DeckAdd","Crow of Eternal Torment"},{"DeckAdd","Bird of Eternal Paradise"},{"DeckAdd","Bird of Eternal Paradise"},{"DeckAdd","Bird of Eternal Paradise"},{"DeckAdd","Bird of Eternal Paradise"},{"DeckAdd","Bird of Eternal Paradise"},{"DeckAdd","Bird of Eternal Paradise"},{"DeckAdd","Bird of Eternal Paradise"},{"DeckAdd","Bird of Eternal Paradise"},{"DeckAdd","Bird of Eternal Paradise"},{"DeckAdd","Parrot of Eternal Dominion"},{"DeckAdd","Parrot of Eternal Dominion"},{"DeckAdd","Parrot of Eternal Dominion"},{"DeckAdd","Parrot of Eternal Dominion"},{"DeckAdd","Parrot of Eternal Dominion"},{"DeckAdd","Parrot of Eternal Dominion"},{"DeckAdd","Parrot of Eternal Dominion"},{"DeckAdd","Parrot of Eternal Dominion"},{"DeckAdd","Parrot of Eternal Dominion"},{"DeckAdd","Eternal Tweety"},{"DeckAdd","Eternal Tweety"},{"DeckAdd","Eternal Tweety"},{"DeckAdd","Eternal Tweety"},{"DeckAdd","Eternal Tweety"},{"DeckAdd","Eternal Tweety"},{"DeckAdd","Eternal Tweety"},{"DeckAdd","Eternal Tweety"},{"DeckAdd","Eternal Tweety"},{"DeckAdd","Bird Colossus"},{"DeckAdd","Divine Favor"},{"DeckAdd","Divine Favor"},{"DeckAdd","Blacken the Skies"},{"Draw",5}},
 			Target = "Ally",	
 		},
 		["Bio"] = "How can you kill someone with a duststorm if they simply fly away?",
 	},	
 
-	--These cards are used by The Scholar.
+	--This card is used by The Scholar.
 	
 	["Fatal Discovery"] = { 
 		["Id"] = 1480499313,
@@ -254,7 +253,7 @@ local botcards = { -- Cards used by an AI that are not meant for human play go h
 		["Bio"] = "At last, The Scholar found what he was looking for.",
 	},
 	
-	--These cards are used by The Merchant.	
+	--This card is used by The Merchant.	
 	
 	["Master Acolyte's Altar"] = {
 		["Id"] = 1480565605,
@@ -276,6 +275,27 @@ local botcards = { -- Cards used by an AI that are not meant for human play go h
 		["Bio"] = "Tfw the devs can't make AI play well so they have to make OP cards and cheat their way to victory.",
 	},
 	
+	--This card is used by Drager.
+	
+	["Drager's Disgust"] = {
+		["Id"] = 362314946,
+		["Name"] = "PEEPSTERS",
+		["Health"] = 250,
+		["Power"] = 250,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Lightning",
+		["Archetype"] = "Doge",
+		["Color"] = "Yellow",
+		["Cost"] = {["Yellow"] = 1,},
+		["Effect"] = {
+			Name = "I quit.",
+			Description = "Put a random Doge into your hand, and shuffle a copy of this card into your deck.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"RandomAdd","Doge"},{"DeckAdd","Drager's Disgust"}},
+			Target = "Ally",
+		},
+		["Bio"] = "I wonder if Drager ever realized he could just have nerfed this himself so he wouldn't have to get an aneurysm and quit.",
+	},
 }
 
 return botcards

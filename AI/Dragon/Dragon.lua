@@ -2,38 +2,47 @@ local bot = {}
 setmetatable(bot, {__index = require(script.Parent.Bot)})
 
 bot.Rewards = {
-	Cards = {["Eye of Heaven"] = 1}; --{["Medic Kit"] = 1};
-	RandomCards = {};
-	BloxBux = 0; -- Will be changed once we figure out the deck's power
+	Cards = {}; --{["Medic Kit"] = 1};
+	RandomCards = {["Lunar Warrior"] = 1,["Lunar Acolyte"] = 1, ["Necromantic Acolyte"] = 1, ["Fried Acolyte"] =1, ["Infernal Acolyte"] = 1, ["Acolyte of the Rift"] = 1};
+	BloxBux = 50;
 	Charms = {0,0};
 	Sleeves = {};
 }
 
 bot.Info = {
-	Name = "The Scholar";
+	Name = "Dragon";
 	Id = 140238954;
 	Rewards = bot.Rewards;
 	ChallengeMessage = require(script.Dialogue);
-	Rank = "Ultra Enthusiast";
+	Rank = "Korean Diety";
 }
 
 bot.Deck = {
-	["Fatal Discovery"] = 1;
-	["Sylrath"] = 22;
-	["SharpTH"] = 10;	
-	["AsrielMemer"] = 15;
-	["2Hex"] = 15;
-	["Eye Spy"] = 15;
-	["DominiusConfabricor"] = 15;
-	["Lord of Greed"] = 5;
-	["Titano's Cavern"] = 12;
-	["Latchie"] = 15;
-	["Lord of Auctions"] = 15;
-	["Visleaf"] = 5;
-	["Pikachukiller101"] = 15;
-	["B0BBA"] = 5;
-	["Enrage"] = 20;
-	["Spiderboy"] = 15;
+	-- Played 2nd last, but played first priority on turn 1/2 -- 15
+	["Lunar Warrior"] = 3;
+	["Clockwork"] = 1;
+	["Sylrath"] = 2;
+	["Titano's Cavern"] = 3;
+	
+	-- Set Cards (CARD SET A)	-- 11
+	["Lady RedNight"] = 2;
+	["ShyLightness"] = 3;
+	["Rad"] = 3;
+	["Lord of Auctions"] = 1;
+	["JackofMostTrades"] = 1;
+	["agodlypancake"] = 1;
+	["MiloCortez"] = 2;
+	["Ripull"] = 1;
+	["Infernal Acolyte"] = 3;
+	["Fried Acolyte"] = 3;
+	["Necromantic Acolyte"] = 2;
+	["Acolyte of the Rift"] = 1;
+	
+	-- Play Last And only if one of Card Set A is in play
+	["Nova"] = 3;
+	["Greygnarl"] = 1;
+	["Dragon Horde"] = 3;
+
 }
 
 bot.Data = {
@@ -42,7 +51,7 @@ bot.Data = {
 	"Basic",
 	bot.Deck,
 	{bot.Deck,{},{}},
-	703,725,
+	0,0.5,
 	{"Sleevefinity"},
 	1,{0,0}
 }
@@ -108,19 +117,20 @@ function bot:SingleTarget(card, effect)
 	self:InvokeServer("SetTarget", self.battleId, targetId)
 end
 
-
+	
 local SetA = {
-	"Fatal Discovery", "B0BBA", "Enrage", "Eye Spy", "Lord of Auctions", "SharpTH", "Sylrath", "Lord of Greed", "Pikachukiller101", "Latchie", "2Hex", "DominiusConfabricor", "Valletta", "AsrielMemer", "Spiderboy", "Titano's Cavern", "Fatal Attraction"
+	"Ripull", "Lady RedNight", "ShyLightness", "agodlypancake", "MiloCortez"
 }
 local SetB = {
-	"Fatal Discovery", "B0BBA", "Enrage", "Eye Spy", "Lord of Auctions", "SharpTH", "Sylrath", "Lord of Greed", "Pikachukiller101", "Latchie", "2Hex", "DominiusConfabricor", "Valletta", "AsrielMemer", "Spiderboy", "Titano's Cavern", "Fatal Attraction"
+	"Fried Acolyte", "Infernal Acolyte", "Necromantic Acolyte", "Acolyte of the Rift", "Rad", "Lord of Auctions", "JackofMostTrades"
 }
 local TurnOne = {
-	"Fatal Discovery", "Titano's Cavern"
+	"Titano's Cavern", "Lunar Warrior", "Lunar Acolyte", "Sylrath", "Clockwork"
 }
 local Action = {
-	"Fatal Discovery", "B0BBA", "Enrage", "Eye Spy", "Lord of Auctions", "SharpTH", "Sylrath", "Lord of Greed", "Pikachukiller101", "Latchie", "2Hex", "DominiusConfabricor", "Valletta", "AsrielMemer", "Spiderboy", "Titano's Cavern", "Fatal Attraction"
+	"Nova", "Dragon Horde", "Greygnarl"
 }
+
 bot.turnOne = true -- don't mix up with TurnOne (capital T)
 function bot:YourTurn()
 	self:FireServer("ReadyToStartTurn", self.battleId)

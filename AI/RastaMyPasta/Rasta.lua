@@ -2,38 +2,49 @@ local bot = {}
 setmetatable(bot, {__index = require(script.Parent.Bot)})
 
 bot.Rewards = {
-	Cards = {["Eye of Heaven"] = 1}; --{["Medic Kit"] = 1};
-	RandomCards = {};
-	BloxBux = 0; -- Will be changed once we figure out the deck's power
+	Cards = {["Eye Spy"] = 1}; --{["Medic Kit"] = 1};
+	RandomCards = {["Mike"] = 1,["Mag"] = 1, ["Vitality Potion"] = 1};
+	BloxBux = 50;
 	Charms = {0,0};
 	Sleeves = {};
 }
 
 bot.Info = {
-	Name = "The Scholar";
+	Name = "Pasta Queen";
 	Id = 140238954;
 	Rewards = bot.Rewards;
 	ChallengeMessage = require(script.Dialogue);
-	Rank = "Ultra Enthusiast";
+	Rank = "Queen of Noodles";
 }
 
 bot.Deck = {
-	["Fatal Discovery"] = 1;
-	["Sylrath"] = 22;
-	["SharpTH"] = 10;	
-	["AsrielMemer"] = 15;
-	["2Hex"] = 15;
-	["Eye Spy"] = 15;
-	["DominiusConfabricor"] = 15;
-	["Lord of Greed"] = 5;
-	["Titano's Cavern"] = 12;
-	["Latchie"] = 15;
-	["Lord of Auctions"] = 15;
-	["Visleaf"] = 5;
-	["Pikachukiller101"] = 15;
-	["B0BBA"] = 5;
-	["Enrage"] = 20;
-	["Spiderboy"] = 15;
+	-- Played 2nd last, but played first priority on turn 1/2 -- 15
+	["Sylrath-Val"] = 3;
+	["BrokenBone"] = 1;
+	["Mike"] = 2;
+	["Dayren-E"] = 3;
+	["FuuTuu"] = 2;
+	["Lohit"] = 2;
+	["Mag"] = 2;
+	
+	-- Set Cards (CARD SET A)	-- 11
+	["litozinnamon"] = 1;
+	["Favette"] = 1;
+	["Grand Glaciem Mage"] = 1;
+	["HatdaCat"] = 4;
+	["Lebron"] = 4;
+	
+	-- Support Cards (CARD SET B) -- 12
+	["Stud"] = 3;
+	["Eye Spy"] = 3;
+	["Jimminus"] = 2;
+	["Trick or Treat"] = 4;
+	
+	-- Play Last And only if one of Card Set A is in play
+	-- I reccomend adding Bread Factory x4 if you want more of these played
+	["WishNite"] = 1;
+	["IcyTea-ArtV"] = 1;
+
 }
 
 bot.Data = {
@@ -42,7 +53,7 @@ bot.Data = {
 	"Basic",
 	bot.Deck,
 	{bot.Deck,{},{}},
-	703,725,
+	0,0.5,
 	{"Sleevefinity"},
 	1,{0,0}
 }
@@ -108,18 +119,18 @@ function bot:SingleTarget(card, effect)
 	self:InvokeServer("SetTarget", self.battleId, targetId)
 end
 
-
+	
 local SetA = {
-	"Fatal Discovery", "B0BBA", "Enrage", "Eye Spy", "Lord of Auctions", "SharpTH", "Sylrath", "Lord of Greed", "Pikachukiller101", "Latchie", "2Hex", "DominiusConfabricor", "Valletta", "AsrielMemer", "Spiderboy", "Titano's Cavern", "Fatal Attraction"
+	"Mike", "FuuTuu", "Favette", "litozinnamon", "WishNite"
 }
 local SetB = {
-	"Fatal Discovery", "B0BBA", "Enrage", "Eye Spy", "Lord of Auctions", "SharpTH", "Sylrath", "Lord of Greed", "Pikachukiller101", "Latchie", "2Hex", "DominiusConfabricor", "Valletta", "AsrielMemer", "Spiderboy", "Titano's Cavern", "Fatal Attraction"
+	"Lebron", "IcyTea-ArtV", "Jimminus", "HatdaCat", "Grand Glaciem Mage"
 }
 local TurnOne = {
-	"Fatal Discovery", "Titano's Cavern"
+	"Sylrath-Val", "Mag", "Lohit", "Dayren-E", "BrokenBone"
 }
 local Action = {
-	"Fatal Discovery", "B0BBA", "Enrage", "Eye Spy", "Lord of Auctions", "SharpTH", "Sylrath", "Lord of Greed", "Pikachukiller101", "Latchie", "2Hex", "DominiusConfabricor", "Valletta", "AsrielMemer", "Spiderboy", "Titano's Cavern", "Fatal Attraction"
+	"Stud", "Eye Spy", "Trick or Treat"
 }
 bot.turnOne = true -- don't mix up with TurnOne (capital T)
 function bot:YourTurn()
