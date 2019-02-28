@@ -537,9 +537,9 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 6,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "A target fighter gains 800 health and power. Your opponent gains 800 life.",
+			Description = "A target fighter gains 400 health and power. Your opponent gains 400 life.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Strengthen",800},{"Heal",800},{"Inflict",-800,"Opponent"}},
+			["Power"] = {{"Strengthen",400},{"Heal",400},{"Inflict",-400,"Opponent"}},
 			Target = "Single",
 		},
 		["Bio"] = "Eisenhower was struck a deal with Hallow, hearing his wish to resurrect his love. Hallow agreed to meet at Thursday night by his tombstone.",
@@ -1683,7 +1683,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["It that was Silenced"] = {
-		["Id"] = 638008420,
+		["Id"] = 2787100115,
 		["Name"] = "It that was Silenced",
 		["Health"] = 200,
 		["Power"] = 200,
@@ -1693,7 +1693,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Fading"] = true,
 		["AttackBlock"] = true,
 		["Color"] = "Red", 
-		["Cost"] = {["Red"] = 1,},
+		["Cost"] = {["Red"] = 5,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
 			Description = "Level 1. Can't attack. Whenever you cast an action or terrain spell, level this card up and end the turn. Fading.",
@@ -1718,7 +1718,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 1,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "Level 2. Can't counterattack. Whenever your opponent casts an action or terrain spell, level this card up. Fading.",
+			Description = "Level 2. Can't counterattack. Whenever you cast an action or terrain spell, level this card up and end the turn. Fading.",
 			["Type"] = "OnAllyCast",
 			["Power"] = {{"Summon","It that will Howl"},{"Damage",9999,"Self"},{"EndTurn",030}},
 			Target = "Ally",
@@ -1729,8 +1729,8 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["It that will Howl"] = {
 		["Id"] = 638703765,
 		["Name"] = "It that will Howl",
-		["Health"] = 800,
-		["Power"] = 800,
+		["Health"] = 600,
+		["Power"] = 600,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Dash",
 		["Archetype"] = "Lycanthrope",
@@ -1740,7 +1740,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 1,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "Level 3. Can't attack the opponent. Whenever your opponent casts an action or terrain spell, level this card up. Fading.",
+			Description = "Level 3. Can't attack the opponent. Whenever you cast an action or terrain spell, level this card up and end the turn. Fading.",
 			["Type"] = "OnAllyCast",
 			["Power"] = {{"Summon","Eclipse, Werewolf Colossus"},{"Damage",9999,"Self"},{"EndTurn",030}},
 			Target = "Ally",
@@ -1766,11 +1766,11 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Strengthen",200,"Self"},{"Heal",200,"Self"},{"Summon","Wolfbitten Noob"},{"Add","Wolven Blitz"}},
 			Target = "Ally",
 		},
-		["Bio"] = "And then he rose to the moon and cast a shadow on the shadows.",
+		["Bio"] = "And then, Zanzel cried.",
 	},
 	
 	["Unspeakable Summoning"] = {
-		["Id"] = 662121961,
+		["Id"] = 2810640189,
 		["Name"] = "Unspeakable Summoning",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -2024,6 +2024,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Health"] = 500,
 		["Power"] = 300,
 		["Rarity"] = "Common",
+		["Archetype"] = "Nightmare",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Blue", 
 		["Cost"] = {["Blue"] = 2, ["Neutral"] = 2,},
@@ -2134,9 +2135,9 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 3, ["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "When this card dies, lock all fighters for two turns.",
+			Description = "When this card dies, lock all fighters for one turn.",
 			["Type"] = "OnDeath",
-			["Power"] = {{"Lock",2}},
+			["Power"] = {{"Lock",1}},
 			Target = "All",
 		},
 		["Bio"] = "According to this experiment's calculations, the milk will expire in 3... 2... 1... ... Dammit!",
@@ -2545,8 +2546,8 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Horse Breeder"] = {
 		["Id"] = 540076443,
 		["Name"] = "Horse Breeder",
-		["Health"] = 150,
-		["Power"] = 150,
+		["Health"] = 200,
+		["Power"] = 200,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Dash",
 		["Archetype"] = "Lycanthrope",
@@ -2555,9 +2556,9 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 1, ["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Whenever you cast an action or terrain spell, transform this card, then unlock all Lycanthropes. Fading.",
+			Description = "Whenever you cast an action or terrain spell, transform this card, then summon a 200/200 Weremare. Fading.",
 			["Type"] = "OnAllyCast",
-			["Power"] = {{"Summon","Werecentaur"},{"Unlock",9999,"Archetype"},{"Damage",9999,"Self"}},
+			["Power"] = {{"Summon","Werecentaur"},{"Summon","Weremare"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = "I love my horses. This one won a race, and this one won a dressage contest!",
@@ -2566,8 +2567,8 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Werecentaur"] = {
 		["Id"] = 540076929,
 		["Name"] = "Werecentaur",
-		["Health"] = 300,
-		["Power"] = 300,
+		["Health"] = 400,
+		["Power"] = 400,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Dash",
 		["Archetype"] = "Lycanthrope",
@@ -2576,13 +2577,35 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 1, ["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Whenever your opponent casts an action or terrain spell, untransform this card, then unlock all Lycanthropes. Fading.",
+			Description = "Whenever your opponent casts an action or terrain spell, untransform this card. Fading.",
 			["Type"] = "OnEnemyCast",
-			["Power"] = {{"Summon","Horse Breeder"},{"Unlock",9999,"Archetype"},{"Damage",9999,"Self"}},
+			["Power"] = {{"Summon","Horse Breeder"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = "He loves his horses just a little bit too much."
 	},
+		
+	["Weremare"] = {
+		["Id"] = 2591544905,
+		["Name"] = "Weremare",
+		["Health"] = 200,
+		["Power"] = 200,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Dash",
+		["Archetype"] = "Lycanthrope",
+		["Token"] = true,
+		["Color"] = "Red", 
+		["Cost"] = {["Red"] = 0,},
+		["Effect"] = {
+			Name = "Stud",
+			Description = "Can't generate icons.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Draw",0}},
+			Target = "Ally",
+		},
+		["Bio"] = "He loves his horses just a little bit too much."
+	},
+		
 
 	["Evil Prince"] = {
 		["Id"] = 893425803,
@@ -2611,9 +2634,9 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2, ["Red"] = 1,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Whenever you cast an action or terrain spell, transform this card, then deal 100 damage to all enemy fighters. Fading.",
+			Description = "Whenever you cast an action or terrain spell, transform this card. Fading.",
 			["Type"] = "OnAllyCast",
-			["Power"] = {{"Summon","Werefrog"},{"Damage",100,"Opponent"},{"Damage",9999,"Self"}},
+			["Power"] = {{"Summon","Werefrog"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Same kingdom, different leader. Time to conquer.",
@@ -2646,13 +2669,9 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2, ["Red"] = 1,},
 		["Effect"] = {
 			Name = "Stud",
-<<<<<<< HEAD
-			Description = "Whenever your opponent casts an action or terrain spell, untransform this card, then deal 100 damage to all enemy fighters. Fading.",
-=======
-			Description = "Whenever your opponent casts an action or terrain spell, untransform this card, then deal 100 damage to all enemy fighters. This card does not activate any effects upon Fading.",
->>>>>>> 014ae9f9dfe015a7189a083c6e9e751a896dfe0c
+			Description = "Whenever your opponent casts an action or terrain spell, untransform this card. Fading.",
 			["Type"] = "OnEnemyCast",
-			["Power"] = {{"Summon","Evil Prince"},{"Damage",100,"Opponent"},{"Damage",9999,"Self"}},
+			["Power"] = {{"Summon","Evil Prince"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Same leader, different kingdom."
@@ -2755,7 +2774,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 2, ["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Whenever you cast an action or terrain spell, transform this card, then deal 150 damage to the opponent. Fading.",
+			Description = "Whenever you cast an action or terrain spell, transform this card, then deal 350 damage to the opponent. Fading.",
 			["Type"] = "OnAllyCast",
 			["Power"] = {{"Summon","Werewyrm"},{"Inflict",150,"Opponent"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -2776,7 +2795,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 2, ["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Whenever your opponent casts an action or terrain spell, untransform this card, then deal 150 damage to the opponent. Fading.",
+			Description = "Whenever your opponent casts an action or terrain spell, untransform this card. Fading.",
 			["Type"] = "OnEnemyCast",
 			["Power"] = {{"Summon","Blessed Acolyte"},{"Inflict",150,"Opponent"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -2792,13 +2811,14 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Dash",
 		["Archetype"] = "Lycanthrope",
+		["Requirement"] = {"Archetype",1},
 		["Fading"] = true,
 		["Charge"] = true,
 		["Color"] = "Red", 
 		["Cost"] = {["Red"] = 5,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Haste. Whenever you cast an action or terrain spell, transform this card. Fading.",
+			Description = "Cast only if you control a Lycanthrope. Haste. Whenever you cast an action or terrain spell, transform this card. Fading.",
 			["Type"] = "OnAllyCast",
 			["Power"] = {{"Summon","DIY: Werewolf"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -2840,7 +2860,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Lycanthrope",
 		["Effect"] = {
 			Name = "Eviscerate",
-			Description = "You must control at least one Lycanthrope to cast this card. Deal 200 damage to a target fighter, then draw a card.",
+			Description = "Cast only if you control a Lycanthrope. Deal 200 damage to a target fighter, then draw a card.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Draw",1},{"Damage",200,"Single"}},
 			Target = "Ally",
@@ -3029,7 +3049,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Priestess Zanzel, the Promised One"] = {
-		["Id"] = 540076591,
+		["Id"] = 2810638080,
 		["Name"] = "Priestess Zanzel, the Promised One",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -3048,7 +3068,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Zanzel"] = {
-		["Id"] = 540076591,
+		["Id"] = 2810638080,
 		["Name"] = "Priestess Zanzel, the Promised One",
 		["Health"] = 1100,
 		["Power"] = 800,

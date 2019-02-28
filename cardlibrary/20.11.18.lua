@@ -1,5 +1,6 @@
-local basetwo = { -- you know the drill by now.
-	["Gusmanak"] = {
+local twentyeleveneighteen = {
+	
+["Gusmanak"] = {
 		["Id"] = 335687377,
 		["Name"] = "Gusmanak",
 		["Health"] = 1000,
@@ -104,7 +105,7 @@ local basetwo = { -- you know the drill by now.
 	},
 	
 	["Plushie Snowman"] = {
-		["Id"] = 335687550,
+		["Id"] = 2810636143,
 		["Name"] = "Plushie Snowman",
 		["Health"] = 700,
 		["Power"] = 0,
@@ -185,7 +186,7 @@ local basetwo = { -- you know the drill by now.
 	},
 	
 	["LeetWizard"] = {
-		["Id"] = 335687451,
+		["Id"] = 2792979511,
 		["Name"] = "LeetWizard",
 		["AltCards"] = {
 			["LeetWizard-Sun"] = {
@@ -322,7 +323,7 @@ local basetwo = { -- you know the drill by now.
 				["Power"] = 12000,
 			},
 			
-			["Divine Godbeast"] = { --This is a guess as to what you may have named the Godbeast for Divine Favor, Myr. Change it if it's wrong so it doesn't cause the game to have a fit.
+			["Favored Godbeast"] = {
 				["Effect"] = {
 					Name = "Divine Ruination",
 					Description = "Can't attack or be discarded. At the end of your turn, destroy all enemy fighters and this fighter. Fading.",
@@ -888,7 +889,7 @@ local basetwo = { -- you know the drill by now.
 				["Id"] = 1476566080,
 				["Effect"] = {
 					Name = "Nerf",
-					Description = "Put two Newbees into your hand. Whenever you summon a fighter, increase the power of all bees by 50.",
+					Description = "Put two Newbees into your hand. Whenever you summon a bee, increase the health and power of all bees by 50.",
 					Type = "OnSummon",
 					Power = {{"Add","Newbee"},{"Add","Newbee"},{"Summon","Beestor Token"},{"Damage",9999,"Self"}},
 					Target = "Ally",
@@ -906,7 +907,7 @@ local basetwo = { -- you know the drill by now.
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 2,["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Nerf",
-			Description = "Put two bees into your hand. Whenever you summon a fighter, increase the power of all bees by 50.",
+			Description = "Put two bees into your hand. Whenever you summon a bee, increase the health and power of all bees by 50.",
 			Type = "OnSummon",
 			Power = {{"Add","Bee"},{"Add","Bee"},{"Summon","Beekeeper Token"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -923,9 +924,9 @@ local basetwo = { -- you know the drill by now.
 				["Id"] = 1476566080,
 				["Effect"] = {
 					Name = "Nerf",
-					Description = "Put two Newbees into your hand. Whenever you summon a fighter, increase the power of all bees by 50.",
+					Description = "Put two Newbees into your hand. Whenever you summon a fighter, increase the health and power of all bees by 50.",
 					Type = "OnAllySummon",
-					Power = {{"Strengthen",50,"Archetype"}},
+					Power = {{"Heal",50,"Archetype"},{"Strengthen",50,"Archetype"}},
 					Target = "Ally",
 				},
 				["Bio"] = "Hey kid...wanna buy some bees?",
@@ -940,9 +941,10 @@ local basetwo = { -- you know the drill by now.
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 2,["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Nerf",
-			Description = "Put two bees into your hand. Whenever you summon a fighter, increase the power of all bees by 50.",
+			Description = "Put two bees into your hand. Whenever you summon a bee, increase the health and power of all bees by 50.",
 			Type = "OnAllySummon",
-			Power = {{"Strengthen",50,"Archetype"}},
+			Archetype = "Bee",
+			Power = {{"Heal",50,"Archetype"},{"Strengthen",50,"Archetype"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Beekeepers have the hardest job in the entire beeverse. But they're one of the most important.",
@@ -1446,7 +1448,7 @@ local basetwo = { -- you know the drill by now.
 	},		
 	
 	["Eldevin"] = {
-		["Id"] = 384008392,
+		["Id"] = 2810866009,
 		["Name"] = "Eidevin",
 		["AltCards"] = {
 			["Elfdevin"] = {
@@ -1472,7 +1474,7 @@ local basetwo = { -- you know the drill by now.
 	},		
 	
 	["PEEPSTERS"] = {
-		["Id"] = 362314946,
+		["Id"] = 2810830243,
 		["Name"] = "PEEPSTERS",
 		["Health"] = 150,
 		["Power"] = 150,
@@ -1532,7 +1534,7 @@ local basetwo = { -- you know the drill by now.
 	},		
 	
 	["Paranormanbiggestfan"] = {
-		["Id"] = 362315156,
+		["Id"] = 2857411534,
 		["Name"] = "Paranormanbiggestfan",
 		["Health"] = 800,
 		["Power"] = 100,
@@ -1638,7 +1640,7 @@ local basetwo = { -- you know the drill by now.
 	},		
 	
 	["agodlypancake"] = {
-		["Id"] = 362315429,
+		["Id"] = 2810865202,
 		["Name"] = "agodlypancake",
 		["Health"] = 400,
 		["Power"] = 400,
@@ -1658,7 +1660,7 @@ local basetwo = { -- you know the drill by now.
 	},		
 	
 	["Skullsten"] = {
-		["Id"] = 362315471,
+		["Id"] = 2857413843,
 		["Name"] = "Skullsten",
 		["Health"] = 800,
 		["Power"] = 450,
@@ -1670,7 +1672,7 @@ local basetwo = { -- you know the drill by now.
 	},		
 	
 	["SolarCrane"] = {
-		["Id"] = 362315537,
+		["Id"] = 2810639586,
 		["Name"] = "SolarCrane",
 		["Health"] = 1500,
 		["Power"] = 400,
@@ -2108,10 +2110,10 @@ local basetwo = { -- you know the drill by now.
 		["Cost"] = {["Red"] = 8,},
 		["Effect"] = {
 			Name = "Passive Aggressive Punishment",
-			Description = "At the end of your turns, destroy all enemy fighters with 300 or less power, or 300 or less health.",
+			Description = "At the end of your turn, destroy all fighters with 300 or less health or power.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Damage",300},{"Heal",300},{"Swap",030},{"Damage",300},{"Heal",300},{"Swap"}},
-			Target = "Opponent",
+			["Power"] = {{"Damage",300},{"Heal",300},{"Swap",030},{"Damage",300},{"Heal",300},{"Swap",030}},
+			Target = "All",
 		},
 		["Bio"] = "Known forumer who became a moderator, although some users are skeptical of him in general, his passive aggressive nature will haunt you.",
 	},	
@@ -2164,7 +2166,7 @@ local basetwo = { -- you know the drill by now.
 	},	
 	
 	["TheGamer101"] = {
-		["Id"] = 384006017,
+		["Id"] = 2857414948,
 		["Name"] = "TheGamer101",
 		["Health"] = 600,
 		["Power"] = 400,
@@ -2277,7 +2279,7 @@ local basetwo = { -- you know the drill by now.
 	},	
 	
 	["DairingPoopHead"] = {
-		["Id"] = 893438922,
+		["Id"] = 2810637529,
 		["Name"] = "Dairingpoophead",
 		["AltCards"] = {
 			["DairingPoopHead-ArtV"] = {
@@ -2350,14 +2352,14 @@ local basetwo = { -- you know the drill by now.
 	["Uncomfortably"] = {
 		["Id"] = 1683485837,
 		["Name"] = "Uncomfortably",
-		["Health"] = 700,
-		["Power"] = 800,
+		["Health"] = 600,
+		["Power"] = 700,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Lightning",
 		["Fading"] = true,
 		["Color"] = "Yellow",
 		["Cost"] = {["Yellow"] = 4,["Green"] = 4,},
-			["Effect"] = {
+		["Effect"] = {
 			Name = "Sneak Attack",
 			Description = "When this card enters play, set your green and yellow icons to four and lose all other icons. At the end of your turns, generate a green icon.",
 			["Type"] = "OnSummon",
@@ -2377,7 +2379,7 @@ local basetwo = { -- you know the drill by now.
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Yellow",
 		["Cost"] = {["Yellow"] = 4,["Green"] = 4,},
-			["Effect"] = {
+		["Effect"] = {
 			Name = "Sneak Attack",
 			Description = "At the end of your turns, generate a green icon.",
 			["Type"] = "OnEnd",
@@ -2567,7 +2569,7 @@ local basetwo = { -- you know the drill by now.
 	},	
 
 	["puffytenter12"] = {
-		["Id"] = 384008546,
+		["Id"] = 2792978804,
 		["Name"] = "puffytenter12",
 		["Health"] = 450,
 		["Power"] = 450,
@@ -2606,8 +2608,8 @@ local basetwo = { -- you know the drill by now.
 	},		
 	
 	["Olafisawesome100"] = {
-		["Id"] = 384008877,
-		["Name"] = "Olafisawesome100",
+		["Id"] = 2903577499,
+		["Name"] = "Toothy Deer's Gift",
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Common",
@@ -2622,7 +2624,7 @@ local basetwo = { -- you know the drill by now.
 			["Power"] = {{"SetHealth",500},{"SetPower",500},{"Blue",1,"Ally"}},
 			Target = "Single",	
 		},
-		["Bio"] = "Hiding behind a wall with a paintball gun.",
+		["Bio"] = "If you look like a toothy deer, make sure to hide.",
 	},		
 	
 	["Duel Axe Monster"] = {
@@ -2810,7 +2812,7 @@ local basetwo = { -- you know the drill by now.
 	},			
 	
 	["Doge Hound"] = {
-		["Id"] = 384010776,
+		["Id"] = 2810827681,
 		["Name"] = "Doge Hound",
 		["Health"] = 400,
 		["Power"] = 300,
@@ -2819,17 +2821,18 @@ local basetwo = { -- you know the drill by now.
 		["Archetype"] = "Doge",
 		["Color"] = "Yellow",
 		["Cost"] = {["Yellow"] = 2,},
-		["Bio"] = "How is this different from a normal doge?",
+		["Bio"] = "So it was all his work!",
 	},			
 	
 	["4.0 Robloxian"] = {
-		["Id"] = 384010917,
+		["Id"] = 2790028022,
 		["Name"] = "4.0 Robloxian",
 		["Health"] = 300,
 		["Power"] = 300,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Blue",
+		["Archetype"] = "Noob",
 		["Cost"] = {["Blue"] = 2,},
 		["Effect"] = {
 			Name = "Generate all the yellows",
@@ -3062,7 +3065,7 @@ local basetwo = { -- you know the drill by now.
 	},			
 
 	["Hoshpup"] = {
-		["Id"] = 411802783,
+		["Id"] = 2857409422,
 		["Name"] = "Hoshpup",
 		["Health"] = 1250,
 		["Power"] = 1250,
@@ -3204,22 +3207,41 @@ local basetwo = { -- you know the drill by now.
 	},			
 
 	["Meme Thief"] = {
-		["Id"] = 411808880,
+		["Id"] = 2789736959,
 		["Name"] = "Meme Thief",
-		["Health"] = 1700,
-		["Power"] = 400,
+		["Health"] = 700,
+		["Power"] = 600,
 		["Rarity"] = "Rare",
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Blue",
-		["Cost"] = {["Neutral"] = 5,["Blue"] = 2,},
-		["CounterBlock"] = true,
-		["Effect"] = {
-			Name = "Steals Memes",
-			Description = "This card can't counterattack. When this card attacks, it gains 400 health and you gain 400 life. ",
-			["Type"] = "OnAttack",
-			["Power"] = {{"Cost",-400},{"Heal",400}},
-			Target = "Self",
+		["Cost"] = {["Blue"] = 4,["Yellow"] = 4,},
+			["Effect"] = {
+			Name = "Sneak Attack",
+			Description = "When this card enters play, set your blue and yellow icons to four and lose all other icons. At the end of your turns, generate a yellow icon.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"SetYellow",4},{"SetGreen",0},{"SetBlue",4},{"SetRed",0},{"SetNeutral",0},{"Summon","MemeThiefToken"},{"Damage",9999,"Self"}},
+			Target = "Ally",
+		},
+		["Bio"] = "Due to the societal and economic collapse of World War 3, memes have become such a valuable commdity that smugglers will go to any length to obtain them.",
+	},	
+	
+	["MemeThiefToken"] = {
+		["Id"] = 2789736959,
+		["Name"] = "Meme Thief",
+		["Health"] = 600,
+		["Power"] = 700,
+		["Rarity"] = "Token",
+		["Archetype"] = "Hero",
+		["AttackEffect"] = "Lightning",
+		["Color"] = "Blue",
+		["Cost"] = {["Blue"] = 4,["Yellow"] = 4,},
+			["Effect"] = {
+			Name = "Sneak Attack",
+			Description = "At the end of your turns, generate a yellow icon.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Yellow",1}},
+			Target = "Ally",
 		},
 		["Bio"] = "Due to the societal and economic collapse of World War 3, memes have become such a valuable commdity that smugglers will go to any length to obtain them.",
 	},			
@@ -3547,7 +3569,7 @@ local basetwo = { -- you know the drill by now.
 	},			
 
 	["XxFreezerFlamesxX"] = {
-		["Id"] = 411844882,
+		["Id"] = 2857416082,
 		["Name"] = "XxFreezerFlamesxX",
 		AltCards = {
 			["XxFreezerFlamesxXv2"] = {
@@ -3654,7 +3676,7 @@ local basetwo = { -- you know the drill by now.
 	},			
 
 	["John and Jane"] = {
-		["Id"] = 411845604,
+		["Id"] = 2857410428,
 		["Name"] = "John Doe & Jane Doe",
 		["AltCards"] = {
 			["John and Jane-ArtV"] = {
@@ -3664,36 +3686,42 @@ local basetwo = { -- you know the drill by now.
 				["Effect"] = {
 					Name = "March 18",
 					["Type"] = "OnSummon",
-					["Power"] = {{"Summon","John and Jane-ArtV TOKEN"}},
+					["Power"] = {{"Summon","John and Jane-ArtV TOKEN"},{"Summon","John and Jane-ArtV TOKEN"}},
 					Target = "Ally",
 				},
 				["Bio"] = "3/18...",
 			},
 		},
-		["Health"] = 200,
-		["Power"] = 400,
+		["Health"] = 0,
+		["Power"] = 0,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Yellow",
 		["Cost"] = {["Neutral"] = 1,["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Knockdown",
-			Description = "Summon a copy of this card. The copy can't generate icons.",
+			Description = "Summon two 200/400 fighters. They can't generate icons. When they become locked, deal 200 to your opponent and generate a yellow icon.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Summon","John and Jane TOKEN"}},
+			["Power"] = {{"Summon","John and Jane TOKEN"},{"Summon","Jane TOKEN"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Hello. Friend.",
 	},
 	
 	["John and Jane TOKEN"] = {
-		["Id"] = 411845604,
-		["Name"] = "John Doe & Jane Doe",
+		["Id"] = 2857411042,
+		["Name"] = "John Doe",
 		["AltCards"] = {
 			["John and Jane-ArtV TOKEN"] = {
 				["Name"] = "John Doe",
 				["Id"] = 698878114,
 				["Bio"] = "3/18...",
+			},
+			
+			["Jane TOKEN"] = {
+				["Name"] = "Jane Doe",
+				["Id"] = 2857409855,
+				["Bio"] = "Friend.",
 			},
 		},
 		["Token"] = true,
@@ -3705,12 +3733,12 @@ local basetwo = { -- you know the drill by now.
 		["Cost"] = {["Neutral"] = 1,["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Knockdown",
-			Description = "Can't generate icons.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Draw",0}},
-			Target = "Ally",
+			Description = "Can't generate icons. When this card becomes locked, deal 200 to your opponent and generate a yellow icon.",
+			["Type"] = "OnLockIncrease",
+			["Power"] = {{"Yellow",1,"Ally"},{"Inflict",200}},
+			Target = "Opponent",
 		},
-		["Bio"] = "Hello. Friend.",
+		["Bio"] = "Hello.",
 	},	
 
 	["Mrbeanbean2"] = {
@@ -3944,9 +3972,9 @@ local basetwo = { -- you know the drill by now.
 		["Cost"] = {["Neutral"] = 3,["Yellow"] = 2,["Red"] = 2,},
 		["Effect"] = {
 			Name = "SCRIPTING PARTY",
-			Description = "Whenever you lose life, swap the stats of all allied fighters.",
+			Description = "Whenever you lose life, deal 100 damage to all enemy fighters.",
 			["Type"] = "OnHealthLoss",
-			["Power"] = {{"Swap",030}},
+			["Power"] = {{"Damage",100,"Opponent"}},
 			Target = "Ally",
 		},
 		["Bio"] = "THAT'S A PIPETTE, NOT A SWORD! 0/10 - Sword Critic",
@@ -4261,7 +4289,7 @@ local basetwo = { -- you know the drill by now.
 	},	
 		
 	["Uberubert"] = {
-		["Id"] = 415730433,
+		["Id"] = 2810870293,
 		["Name"] = "Uberubert",
 		["Health"] = 400,
 		["Power"] = 600,
@@ -4459,8 +4487,8 @@ local basetwo = { -- you know the drill by now.
 	["AsrielMemer"] = {
 		["Id"] = 416137484,
 		["Name"] = "AsrielMemer",
-		["Health"] = 550,
-		["Power"] = 550,
+		["Health"] = 450,
+		["Power"] = 450,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Blue",
@@ -4683,7 +4711,7 @@ local basetwo = { -- you know the drill by now.
 	},
 	
 	["Targeting Blip"] = {
-		["Id"] = 422056226,
+		["Id"] = 2857407317,
 		["Name"] = "Targeting Blip",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -4702,7 +4730,7 @@ local basetwo = { -- you know the drill by now.
 			["Power"] = {{"Damage",1,"Self"},{"Damage",0}},
 			Target = "Single",
 		},
-		["Bio"] = "How do you actually represent a card whose entire purpose is just to trigger target effects?",
+		["Bio"] = "Cast this card, then click a fighter. You'll be amazed how good it is!",
 	},
 
 	
@@ -4712,18 +4740,17 @@ local basetwo = { -- you know the drill by now.
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Rare",
-		["Archetype"] = "Hero",
 		["AttackEffect"] = "Punch1",
 		["Field"] = 429397560,
 		["Color"] = "Neutral",
 		["Archetype"] = "Terrain",
-		["Cost"] = {["Green"] = 1,["Blue"] = 1,["Yellow"] = 1,["Red"] = 1,},
+		["Cost"] = {["Yellow"] = 5,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Both players have a 50% chance to put a targeting blip into their hand at the start of their turns.",
+			Description = "At the beginning of each player's turn, that player's opponent puts a targeting blip into their hand.",
 			["Type"] = "Field",
-			["Power"] = {{"RandomAdd", {"Targeting Blip", "Rubber Duck"}}},
-			Target = "Ally",
+			["Power"] = {{"Add","Targeting Blip"}},
+			Target = "Opponent",
 		},
 		["Bio"] = "If I time travel, I might step on a butterfly. That would be sad.",
 	},
@@ -4847,28 +4874,54 @@ local basetwo = { -- you know the drill by now.
 	},
 	
 	["Forbidden Power"] = {
-		["Id"] = 429397682,
+		["Id"] = 2789668757,
 		["Name"] = "Forbidden Power",
 		["AltCards"] = {							
 			["Forbidden Power-Val"] = {
-				["Id"] = 655013263,
+				["Id"] = 2789669386,
 				["Name"] = "Forbidden Passion",						
 				["Bio"] = "The moon is the only love I need.",
 			},
 		},								
-		["Health"] = 0,
-		["Power"] = 0,
+		["Health"] = 600,
+		["Power"] = 700,
 		["Rarity"] = "Rare",
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Red",
-		["Requirement"] = {false,4,true},
-		["Cost"] = {["Blue"] = 3,["Red"] = 3,},
+		["Cost"] = {["Blue"] = 4,["Red"] = 4,},
 		["Effect"] = {
-			Name = "Stud",
-			Description = "Cast only if your opponent controls at least 4 fighters. Generate 2 blue and red icons, draw two cards, gain 500 life, and put a nightmare into the opponent's hand.",
+			Name = "Sneak Attack",
+			Description = "When this card enters play, set your blue and red icons to four and lose all other icons. At the end of your turns, generate a blue icon.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Blue",2},{"Red",2},{"Draw",2},{"Cost",-500},{"Add","Nightmare","Opponent"}},
+			["Power"] = {{"SetYellow",0},{"SetGreen",0},{"SetBlue",4},{"SetRed",4},{"SetNeutral",0},{"Summon","Forbidden Token"},{"Damage",9999,"Self"}},
+			Target = "Ally",
+		},
+		["Bio"] = "Come to me, darkness.",
+	},
+	
+		["Forbidden Token"] = {
+		["Id"] = 2789668757,
+		["Name"] = "Forbidden Power",
+		["AltCards"] = {							
+			["Forbidden Power-Val"] = {
+				["Id"] = 2789669386,
+				["Name"] = "Forbidden Passion",						
+				["Bio"] = "The moon is the only love I need.",
+			},
+		},								
+		["Health"] = 600,
+		["Power"] = 700,
+		["Rarity"] = "Token",
+		["Archetype"] = "Hero",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Red",
+		["Cost"] = {["Blue"] = 4,["Red"] = 4,},
+		["Effect"] = {
+			Name = "Sneak Attack",
+			Description = "At the end of your turns, generate a blue icon.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Blue",1}},
 			Target = "Ally",
 		},
 		["Bio"] = "Come to me, darkness.",
@@ -4920,7 +4973,7 @@ local basetwo = { -- you know the drill by now.
 	},
 	
 	["Clockwork"] = {
-		["Id"] = 430946949,
+		["Id"] = 2791587321,
 		["Name"] = "Clockwork",
 		["Health"] = 800,
 		["Power"] = 800,
@@ -5222,7 +5275,7 @@ local basetwo = { -- you know the drill by now.
 	},
 	
 	["Paraselene Sage"] = {
-		["Id"] = 430961862,
+		["Id"] = 2791588251,
 		["Name"] = "Paraselene Sage",
 		["AltCards"] = {
 			["Paraselene Sage V2"] = {
@@ -5347,25 +5400,44 @@ local basetwo = { -- you know the drill by now.
 	},
 	
 	["APlayerOfGames"] = {
-		["Id"] = 430970608,
+		["Id"] = 2793219325,
 		["Name"] = "APlayerOfGames",
-		["Health"] = 750,
-		["Power"] = 750,
+		["Health"] = 600,
+		["Power"] = 700,
 		["Rarity"] = "Rare",
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Punch1",
-		["Requirement"] = {false,4,true},
 		["Color"] = "Green",
-		["Cost"] = {["Green"] = 3, ["Neutral"] = 2,},
-		["Effect"] = {
-			Name = "Conflux",
-			Description = "Summon only if your opponent controls 4 or more fighters.",
+		["Cost"] = {["Red"] = 4,["Green"] = 4,},
+			["Effect"] = {
+			Name = "Sneak Attack",
+			Description = "When this card enters play, set your green and red icons to four and lose all other icons. At the end of your turns, generate a red icon.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",0}},
-			Target = "Opponent",
+			["Power"] = {{"SetYellow",0},{"SetGreen",4},{"SetBlue",0},{"SetRed",4},{"SetNeutral",0},{"Summon","APlayerofTokens"},{"Damage",9999,"Self"}},
+			Target = "Ally",
 		},
 		["Bio"] = "We are all this card.",
 	},
+	
+	["APlayerofTokens"] = {
+		["Id"] = 2793219325,
+		["Name"] = "APlayerofTokens",
+		["Health"] = 600,
+		["Power"] = 700,
+		["Rarity"] = "Token",
+		["Archetype"] = "Hero",
+		["AttackEffect"] = "Lightning",
+		["Color"] = "Green",
+		["Cost"] = {["Red"] = 4,["Green"] = 4,},
+			["Effect"] = {
+			Name = "Sneak Attack",
+			Description = "At the end of your turns, generate a red icon.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Red",1}},
+			Target = "Ally",
+		},
+		["Bio"] = "We are all this card.",
+	},	
 	
 	["Febrezer"] = {
 		["Id"] = 432713810,
@@ -5704,7 +5776,7 @@ local basetwo = { -- you know the drill by now.
 	},
 	
 	["animallogic"] = {
-		["Id"] = 441918887,
+		["Id"] = 2810824138,
 		["Name"] = "animallogic",
 		["Health"] = 150,
 		["Power"] = 200,
@@ -5988,7 +6060,7 @@ local basetwo = { -- you know the drill by now.
 	},
 	
 	["BrackioTops"] = {
-		["Id"] = 444079164,
+		["Id"] = 2857408212,
 		["Name"] = "BrackioTops",
 		["Health"] = 400,
 		["Power"] = 400,
@@ -6026,7 +6098,7 @@ local basetwo = { -- you know the drill by now.
 	},
 	
 	["ShockingRobux"] = {
-		["Id"] = 444253214,
+		["Id"] = 2900774390,
 		["Name"] = "ShockingRobux",
 		["Health"] = 600,
 		["Power"] = 250,
@@ -6217,10 +6289,11 @@ local basetwo = { -- you know the drill by now.
 		["Cost"] = {["Green"] = 3,},
 		["Effect"] = {
 			Name = "EzWinz",
-			Description = "Summon three zombies. Your opponent summons a Redcliff Mauler.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Summon","Zombie"},{"Summon","Zombie"},{"Summon","Zombie"},{"Summon","Redcliff Mauler","Opponent"}},
-			Target = "Ally",
+			Description = "Whenever you cast a Zombie, all Redcliff gain 100 power and health.",
+			["Type"] = "OnAllySummon",
+			["Archetype"] = "Zombie",
+			["Power"] = {{"Heal",100},{"Strengthen",100}},
+			Target = "Archetype",
 		},
 		["Bio"] = "If they had no issues dying for us once, they'll have no issues dying for us twice. Why is that so hard to understand?",
 	},
@@ -6559,13 +6632,12 @@ local basetwo = { -- you know the drill by now.
 	},
 	
 	["Undead Voodoo Doll"] = {
-		["Id"] = 473313075,
-		["Name"] = "Undead Voodoo Doll",
+		["Id"] = 2789876682,
+		["Name"] = "Haunted Puppet",
 		["Health"] = 600,
 		["Power"] = 300,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Dash",
-		["Archetype"] = "Zombie",
 		["Color"] = "Green", 
 		["Cost"] = {["Neutral"] = 0,},
 		["Token"] = true,
@@ -6578,7 +6650,7 @@ local basetwo = { -- you know the drill by now.
 			["Power"] = {{"Cost",200}},
 			Target = "Ally",
 		},
-		["Bio"] = "Voodoo Dolls kill themselves over the most trivial of sins. Don't appropriate their culture, you cis scum.",
+		["Bio"] = "Haunted Puppets kill themselves over the most trivial of sins. Don't appropriate their culture, you cis scum.",
 	},
 	
 	["Cooldude4851"] = {
@@ -6930,7 +7002,7 @@ local basetwo = { -- you know the drill by now.
 	
 
 	["The Piece Breaker"] = {
-		["Id"] = 481906871,
+		["Id"] = 2810869848,
 		["Name"] = "The Piece Breaker",
 		["Health"] = 200,
 		["Power"] = 0,
@@ -6950,7 +7022,7 @@ local basetwo = { -- you know the drill by now.
 	},
 
 	["The Piece Breaker Token"] = {
-		["Id"] = 481906871,
+		["Id"] = 2810869848,
 		["Name"] = "The Piece Breaker",
 		["Health"] = 200,
 		["Power"] = 0,
@@ -6979,9 +7051,9 @@ local basetwo = { -- you know the drill by now.
 		["Cost"] = {["Red"] = 3, ["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "WoodReviewer",
-			Description = "At the end of your turns, WoodReviewer gains 200 health and deals 200 damage to you.",
+			Description = "At the end of your turns, WoodReviewer gains 200 health and deals 400 damage to you.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Cost",200},{"Heal",200}},			
+			["Power"] = {{"Cost",400},{"Heal",200}},			
 			Target = "Self",
 		},
 		["Bio"] = "You can complain about wood grain all you want, but the metal used to make that axe is truly poor. 4/10 - Sword Critic",
@@ -7750,7 +7822,7 @@ local basetwo = { -- you know the drill by now.
 	},
 
 	["Divine_Pengu"] = {
-		["Id"] = 496076255,
+		["Id"] = 2857408761,
 		["Name"] = "Divine_Pengu",
 		["Health"] = 1450,
 		["Power"] = 300,
@@ -7846,7 +7918,7 @@ local basetwo = { -- you know the drill by now.
 	},
 	
 	["__________"] = {
-		["Id"] = 433132573,
+		["Id"] = 2810864721,
 		["Name"] = "__________",
 		["Health"] = 400,
 		["Power"] = 100,
@@ -7921,9 +7993,9 @@ local basetwo = { -- you know the drill by now.
 		["Cost"] = {["Blue"] = 3, ["Green"] = 3,},
 		["Effect"] = {
 			Name = "BWAAAAAAAAAAAAAAAAAAAAAAAAA",
-			Description = "Whenever you gain life, all allied fighters gain 200 health and are locked for 1 turn.",
+			Description = "Whenever you gain life, all allied fighters gain 200 health and their locks are set to 2.",
 			["Type"] = "OnHealthGain",
-			["Power"] = {{"Heal",200},{"Lock",1}},
+			["Power"] = {{"Heal",200},{"Unlock",9999},{"Lock",2}},
 			Target = "Ally",
 		},
 		["Bio"] = "This turtle will grow, and grow, and grow, and grow!",
@@ -8156,48 +8228,6 @@ local basetwo = { -- you know the drill by now.
  			Target = "Single",
  		},
  		["Bio"] = "He really is the bee's knees.",
-	},
-
-	["The Gentlemaniac"] = {
-		["Id"] = 524241010,
-		["Name"] = "The Gentlemaniac",
- 		["Health"] = 500,
- 		["Power"] = 200,
-		["Rarity"] = "Uncommon",
-		["AttackEffect"] = "Lightning",
- 		["Color"] = "Neutral",
-		["Requirement"] = {"Archetype",1},
- 		["Cost"] = {["Neutral"] = 4, ["Blue"] = 1,},
-		["Archetype"] = "Chair", 
- 		["Effect"] = {
- 			Name = "Helping Out",
- 			Description = "Can only be summoned if you control a chair. All chairs gain 300 power.",
- 			["Type"] = "OnSummon",
- 			["Power"] = {{"Strengthen",300,"Archetype"}},
- 			Target = "Ally",
- 		},
- 		["Bio"] = "He'll be gentle... For a while.",
-	},
-
-	["Wooden Chair"] = {
-		["Id"] = 1450756765,
-		["Name"] = "Wooden Chair",
- 		["Health"] = 100,
- 		["Power"] = 200,
-		["Rarity"] = "Common",
-		["AttackEffect"] = "Lightning",
- 		["Color"] = "Green",
-		["Token"] = true,		
- 		["Cost"] = {["Neutral"] = 1,},
-		["Archetype"] = "Chair", 
- 		["Effect"] = {
- 			Name = "Helping Out",
- 			Description = "When this card dies, all chairs gains 100 health. This card can't generate icons.",
- 			["Type"] = "OnDeath",
- 			["Power"] = {{"Heal",100}},
- 			Target = "Archetype",
- 		},
- 		["Bio"] = "...what the hell do i say here...uhh...the wood grain is...nice...I guess...it's..comfy?",
 	},
 
 	["Supersky712"] = {
@@ -8617,7 +8647,7 @@ local basetwo = { -- you know the drill by now.
 	},		
 	
 	["Epic Sauce"] = {
-		["Id"] = 1187815470,
+		["Id"] = 2810630157,
 		["Name"] = "Epic Sauce",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -8814,7 +8844,7 @@ local basetwo = { -- you know the drill by now.
 	},		
 	
 	["Den_S"] = {
-		["Id"] = 959856568,
+		["Id"] = 2817088154,
 		["Name"] = "Den_S",
 		["Health"] = 400,
 		["Power"] = 400,
@@ -8833,7 +8863,7 @@ local basetwo = { -- you know the drill by now.
 	},	
 
 	["Happy Clown"] = {
-		["Id"] = 556049334,
+		["Id"] = 2810631350,
 		["Name"] = "Happy Clown",
 		["Health"] = 150,
 		["Power"] = 150,
@@ -8930,24 +8960,44 @@ local basetwo = { -- you know the drill by now.
 	},			
 	
 	["Golden Turkey"] = {
-		["Id"] = 557965900,
+		["Id"] = 2786965117,
 		["Name"] = "Golden Turkey",
-		["Health"] = 700,
-		["Power"] = 500,
+		["Health"] = 600,
+		["Power"] = 700,
 		["Rarity"] = "Rare",
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Gust",
 		["Color"] = "Yellow",
-		["Cost"] = {["Neutral"] = 2,["Yellow"] = 3,},
+		["Cost"] = {["Red"] = 4,["Yellow"] = 4,},
+			["Effect"] = {
+			Name = "Sneak Attack",
+			Description = "When this card enters play, set your red and yellow icons to four and lose all other icons. At the end of your turns, generate a red icon.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"SetYellow",4},{"SetGreen",0},{"SetBlue",0},{"SetRed",4},{"SetNeutral",0},{"Summon","Golden Turkey Token"},{"Damage",9999,"Self"}},
+			Target = "Ally",
+		},	
+		["Bio"] = "This turkey will allow me to gobble up so much money!",
+	},		
+	
+	["Golden Turkey Token"] = {
+		["Id"] = 557965900,
+		["Name"] = "Golden Turkey",
+		["Health"] = 600,
+		["Power"] = 700,
+		["Rarity"] = "Token",
+		["Archetype"] = "Hero",
+		["AttackEffect"] = "Gust",
+		["Color"] = "Yellow",
+		["Cost"] = {["Red"] = 4,["Yellow"] = 4,},
 		["Effect"] = {
 			Name = "Gobble",
-			Description = "Whenever you summon a fighter, you lose 200 life.",
-			["Type"] = "OnAllySummon",
-			["Power"] = {{"Cost",200}},
+			Description = "At the end of your turns, generate a red icon.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Red",1}},
 			Target = "Ally",
 		},		
 		["Bio"] = "This turkey will allow me to gobble up so much money!",
-	},			
+	},		
 	
 	["Turkey Cannon"] = {
 		["Id"] = 891994694,
@@ -9062,24 +9112,46 @@ local basetwo = { -- you know the drill by now.
 	},			
 	
 	["KnitJa"] = {
-		["Id"] = 557975830,
-		["Name"] = "KnitJa",
-		["Health"] = 250,
-		["Power"] = 150,
-		["Rarity"] = "Common",
+		["Id"] = 2903828893,
+		["Name"] = "MSE6",
+		["Health"] = 600,
+		["Power"] = 600,
+		["Rarity"] = "Epic",
 		["AttackEffect"] = "SlashDiagonal",
 		["Color"] = "Red",
-		["Archetype"] = "Ninja",
-		["Cost"] = {["Red"] = 1,},
+		["Archetype"] = "MSE6",
+		["Cost"] = {["Red"] = 4,},
 		["Effect"] = {
 			Name = "Ninja Scarf",
-			Description = "Give all ninjas 150 health.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Heal","150"}},
+			Description = "Whenever this card attacks and destroys another, your opponent summons a 200/200 Innocent Man.",
+			["Type"] = "OnAttackDestroy",
+			["Power"] = {{"Summon","Innocent Man"}},
+			Target = "Opponent",
+		},
+		["Bio"] = "The scourge of OT and S&I alike.",
+	},		
+	
+	["Innocent Man"] = {
+		["Id"] = 2904097934,
+		["Name"] = "Innocent Man",
+		["Health"] = 200,
+		["Power"] = 200,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "SlashDiagonal",
+		["Color"] = "Red",
+		["Archetype"] = "MSE6",
+		["Cost"] = {["Red"] = 4,},
+		["DiscardBlock"] = true,
+		["Token"] = true,
+		["Effect"] = {
+			Name = "Ninja Scarf",
+			Description = "When this card dies, MSE6 and other copies of this card gain 300 power and health.",
+			["Type"] = "OnDeath",
+			["Power"] = {{"Heal","300"},{"Strengthen",300}},
 			Target = "Archetype",
 		},
-		["Bio"] = "This ninja makes the ninja suits using a thick, sleek, dark blue silk. Sometimes mistakes yarn for silk.",
-	},			
+		["Bio"] = [["Hey, kids! Today I'm at Builderman's flat, protesting the recent BC-only pla-"]],
+	},				
 	
 	["Frenemy's Bargain"] = {
 		["Id"] = 878894752,
@@ -9360,24 +9432,22 @@ local basetwo = { -- you know the drill by now.
 	},
 	
 	["Ninja Kitty"] = {
-		["Id"] = 558410769,
-		["Name"] = "Ninja Kitty",
-		["Health"] = 350,
-		["Power"] = 100,
-		["Rarity"] = "Common",
+		["Id"] = 2903828166,
+		["Name"] = "Fractality",
+		["Health"] = 800,
+		["Power"] = 400,
+		["Rarity"] = "Epic",
 		["AttackEffect"] = "CatSlash",
-		["Archetype"] = "Ninja",
 		["Color"] = "Red",
-		["Cost"] = {["Neutral"] = 1,["Red"] = 1,},
+		["Cost"] = {["Red"] = 3,["Green"] = 3,},
 		["Effect"] = {
 			Name = "Thug Life",
-			Description = "Whenever an allied ninja dies, deal 50 damage to all non-ninjas.",
-			["Type"] = "OnAllyDeath",
-			["Archetype"] = "Ninja",			
-			["Power"] = {{"Damage","50"}},
-			Target = "NotArchetype",
+			Description = "Whenever a player casts an action or terrain spell, if Fractality is still in play, deal 1500 damage to all fighters. End the turn.",
+			["Type"] = "OnCast",			
+			["Power"] = {{"Damage",1500},{"EndTurn",1}},
+			Target = "All",
 		},
-		["Bio"] = "Ninjas used the dilation in the eyes of a cat to figure out the current time.",
+		["Bio"] = "",
 	},	
 	
 	["brickmason"] = {
@@ -9392,7 +9462,7 @@ local basetwo = { -- you know the drill by now.
 		["Cost"] = {["Neutral"] = 1, ["Green"] = 5,},
 		["Effect"] = {
 			Name = "Yarr..",
-			Description = "When this card is summoned, lower the power of a target fighter by 500. When this card attacks, give all fighters 100 health. This card is immune to effects that lower its power or health.",
+			Description = "When this card is cast, lower the power of a target fighter by 500. When this card attacks, give all fighters 100 health. This card is immune to effects that lower its power or health.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken","500"},{"Summon","brickmasonToken","Ally"},{"Damage",9999,"Self"}},
 			Target = "Single",
@@ -9412,7 +9482,7 @@ local basetwo = { -- you know the drill by now.
 		["WeakenImmune"] = true,
 		["Effect"] = {
 			Name = "Thug Life",
-			Description = "When this card is summoned, lower the power of a target fighter by 500. When this card attacks, give all fighters 100 health. This card is immune to effects that lower its power or health.",
+			Description = "When this card is cast, lower the power of a target fighter by 500. When this card attacks, give all fighters 100 health. This card is immune to effects that lower its power or health.",
 			["Type"] = "OnAttack",
 			["Power"] = {{"Heal",100}},
 			Target = "All",
@@ -9432,9 +9502,9 @@ local basetwo = { -- you know the drill by now.
 		["Cost"] = {["Neutral"] = 5, ["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Thug Life",
-			Description = "This fighter can't have its stats altered by Thunder Bolt, Luck o' the Lobsters, Mass Epidemic, or Divine Favor. When this card is summoned, lock it for two additional turns.",
+			Description = "This fighter can't have its stats altered by Luck o' the Lobsters, Mass Epidemic, or Divine Favor. When this card is summoned, lock it for one additional turn.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Lock",2}},
+			["Power"] = {{"Lock",1}},
 			Target = "Self",
 		},
 		["Bio"] = "He hums in the face of apocalypse.",
@@ -9461,7 +9531,7 @@ local basetwo = { -- you know the drill by now.
 	},
 	
 	["Kinnis97"] = {
-		["Id"] = 959877037,
+		["Id"] = 2789819771,
 		["Name"] = "Kinnis97",
 		["Health"] = 400,
 		["Power"] = 400,
@@ -9481,4 +9551,4 @@ local basetwo = { -- you know the drill by now.
 	
 }
 
-return basetwo
+return twentyeleveneighteen
