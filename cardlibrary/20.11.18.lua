@@ -1,6 +1,5 @@
 local twentyeleveneighteen = {
-	
-["Gusmanak"] = {
+	["Gusmanak"] = {
 		["Id"] = 335687377,
 		["Name"] = "Gusmanak",
 		["Health"] = 1000,
@@ -924,8 +923,9 @@ local twentyeleveneighteen = {
 				["Id"] = 1476566080,
 				["Effect"] = {
 					Name = "Nerf",
-					Description = "Put two Newbees into your hand. Whenever you summon a fighter, increase the health and power of all bees by 50.",
+					Description = "Put two Newbees into your hand. Whenever you summon a bee, increase the health and power of all bees by 50.",
 					Type = "OnAllySummon",
+					Archetype = "Bee",
 					Power = {{"Heal",50,"Archetype"},{"Strengthen",50,"Archetype"}},
 					Target = "Ally",
 				},
@@ -3214,6 +3214,7 @@ local twentyeleveneighteen = {
 		["Rarity"] = "Rare",
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Lightning",
+		["Fading"] = true,
 		["Color"] = "Blue",
 		["Cost"] = {["Blue"] = 4,["Yellow"] = 4,},
 			["Effect"] = {
@@ -4888,6 +4889,7 @@ local twentyeleveneighteen = {
 		["Rarity"] = "Rare",
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Punch1",
+		["Fading"] = true,
 		["Color"] = "Red",
 		["Cost"] = {["Blue"] = 4,["Red"] = 4,},
 		["Effect"] = {
@@ -5408,8 +5410,9 @@ local twentyeleveneighteen = {
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Green",
+		["Fading"] = true,
 		["Cost"] = {["Red"] = 4,["Green"] = 4,},
-			["Effect"] = {
+		["Effect"] = {
 			Name = "Sneak Attack",
 			Description = "When this card enters play, set your green and red icons to four and lose all other icons. At the end of your turns, generate a red icon.",
 			["Type"] = "OnSummon",
@@ -8968,6 +8971,7 @@ local twentyeleveneighteen = {
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Gust",
 		["Color"] = "Yellow",
+		["Fading"] = true,
 		["Cost"] = {["Red"] = 4,["Yellow"] = 4,},
 			["Effect"] = {
 			Name = "Sneak Attack",
@@ -9147,11 +9151,11 @@ local twentyeleveneighteen = {
 			Name = "Ninja Scarf",
 			Description = "When this card dies, MSE6 and other copies of this card gain 300 power and health.",
 			["Type"] = "OnDeath",
-			["Power"] = {{"Heal","300"},{"Strengthen",300}},
+			["Power"] = {{"Heal",300},{"Strengthen",300}},
 			Target = "Archetype",
 		},
 		["Bio"] = [["Hey, kids! Today I'm at Builderman's flat, protesting the recent BC-only pla-"]],
-	},				
+	},
 	
 	["Frenemy's Bargain"] = {
 		["Id"] = 878894752,
