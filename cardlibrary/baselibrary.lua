@@ -7027,7 +7027,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Revival",
 			Description = "Summon a 500/500 fighter with six locks that can't counterattack. Whenever it loses a lock, it gains 600 health and power.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Summon","PhoenixToken"},{"Lock",6,"Archetype"}},
+			["Power"] = {{"Summon","PhoenixToken"},{"Lock",5,"Archetype"}},
 			Target = "Ally"
 		},
 		["Bio"] = "Renders wildfires meaningless.",
