@@ -256,10 +256,10 @@ local offers = {
 		SubTitle = "Wield tricks and traps with this cunning blue deck.";
 		PriceInBloxBux = 300;
 		Cards = {["Silver_Semtexagon"] = 1, ["IcyTea"] = 1,
-				["VetexGames"] = 1, ["Y05H1M4N"] = 1,
-				["KrocoStar"] = 2, ["Mike"] = 2,
-				["kickertoken"] = 3, ["ShyLightness"] = 3, ["Sylrath"] = 3, ["AsrielMemer"] = 3, ["2Hex"] = 3, ["Stud"] = 3, ["Eye Spy"] = 3, ["FuryBlocks"] = 3,
-				["Spiderboy"] = 4, ["DairingPoopHead"] = 4};
+			["VetexGames"] = 1, ["Y05H1M4N"] = 1,
+			["KrocoStar"] = 2, ["Mike"] = 2,
+			["kickertoken"] = 3, ["ShyLightness"] = 3, ["Sylrath"] = 3, ["AsrielMemer"] = 3, ["2Hex"] = 3, ["Stud"] = 3, ["Eye Spy"] = 3, ["FuryBlocks"] = 3,
+			["Spiderboy"] = 4, ["DairingPoopHead"] = 4};
 		Ranks = {"Acolyte of the Rift"};
 		SinglePurchase = true;
 		Hidden = false;
@@ -270,10 +270,10 @@ local offers = {
 		SubTitle = "Incinerate anything in your path with this destructive red deck.";
 		PriceInBloxBux = 300;
 		Cards = {["Aesura"] = 1, ["Jayson13"] = 1,
-				["Player"] = 1, ["Dignity"] = 1,
-				["WhiteScarf"] = 2,
-				["Mitpaul"] = 3, ["Oz"] = 3,
-				["Rad"] = 4, ["Anderson"] = 4, ["BenCanova1"] = 4, ["ThatGrimGuy"] = 4, ["Mag"] = 4, ["ProjectSlayer"] = 4, ["Ambamby"] = 4};
+			["Player"] = 1, ["Dignity"] = 1,
+			["WhiteScarf"] = 2,
+			["Mitpaul"] = 3, ["Oz"] = 3,
+			["Rad"] = 4, ["Anderson"] = 4, ["BenCanova1"] = 4, ["ThatGrimGuy"] = 4, ["Mag"] = 4, ["ProjectSlayer"] = 4, ["Ambamby"] = 4};
 		Ranks = {"Infernal Acolyte"};
 		SinglePurchase = true;
 		Hidden = false;
@@ -284,10 +284,10 @@ local offers = {
 		SubTitle = "Grow over your foes with this overwhelming green deck.";
 		PriceInBloxBux = 300;
 		Cards = {["Murtic"] = 1, ["Ripull"] = 1,
-				["Brick_Man"] = 1, ["KasoduS"] = 1,
-				["KingCactaur"] = 2, ["Wustard"] = 2, ["IlIll"] = 2,
-				["pa00"] = 3, ["Duckywow"] = 3, ["Inventor1116"] = 3, ["Stud"] = 3, ["Kcbeast666"] = 3, ["Oozlebachr"] = 3,
-				["Brycen27"] = 4, ["Boogerguy123"] = 4, ["Langz"] = 4};
+			["Brick_Man"] = 1, ["KasoduS"] = 1,
+			["KingCactaur"] = 2, ["Wustard"] = 2, ["IlIll"] = 2,
+			["pa00"] = 3, ["Duckywow"] = 3, ["Inventor1116"] = 3, ["Stud"] = 3, ["Kcbeast666"] = 3, ["Oozlebachr"] = 3,
+			["Brycen27"] = 4, ["Boogerguy123"] = 4, ["Langz"] = 4};
 		Ranks = {"Necromantic Acolyte"};
 		SinglePurchase = true;
 		Hidden = false;
@@ -298,10 +298,10 @@ local offers = {
 		SubTitle = "Flood the board with this speedy yellow deck.";
 		PriceInBloxBux = 300;
 		Cards = {["Lord of Auctions"] = 1, ["OstrichSized"] = 1,
-				["Widgeon"] = 1, ["Ejob"] = 1,
-				["Maelstronomer"] = 2,
-				["Valletta"] = 3, ["Plushie Mummy"] = 3, ["Stud"] = 3, ["Gobble Squad"] = 3, ["Pikachukiller101"] = 3, ["WarbearNomkins"] = 3,
-				["Guest"] = 4, ["Finland"] = 4, ["Pilgrim"] = 4, ["TeeVee"] = 4};
+			["Widgeon"] = 1, ["Ejob"] = 1,
+			["Maelstronomer"] = 2,
+			["Valletta"] = 3, ["Plushie Mummy"] = 3, ["Stud"] = 3, ["Gobble Squad"] = 3, ["Pikachukiller101"] = 3, ["WarbearNomkins"] = 3,
+			["Guest"] = 4, ["Finland"] = 4, ["Pilgrim"] = 4, ["TeeVee"] = 4};
 		Ranks = {"Fried Acolyte"};
 		SinglePurchase = true;
 		Hidden = false;
@@ -312,8 +312,8 @@ local offers = {
 		SubTitle = "Cheat large fighters into play by removing their downsides with this devious blue deck.";
 		PriceInRobux = 50;
 		Cards = {["MesouricPhantom976"] = 2,
-				["Sylrath"] = 3, ["Subata"] = 3, ["Stevenl15"] = 3, ["Mlgloga"] = 3, ["Darklord1506"] = 3, ["CinematicMind"] = 3, ["AsrielMemer"] = 3,
-				["DairingPoopHead"] = 2, ["Icerain"] = 3, ["DigitalSon"] = 3, ["HatdaCat"] = 4, ["Gato Luz"] = 4};
+			["Sylrath"] = 3, ["Subata"] = 3, ["Stevenl15"] = 3, ["Mlgloga"] = 3, ["Darklord1506"] = 3, ["CinematicMind"] = 3, ["AsrielMemer"] = 3,
+			["DairingPoopHead"] = 2, ["Icerain"] = 3, ["DigitalSon"] = 3, ["HatdaCat"] = 4, ["Gato Luz"] = 4};
 		Ranks = {"Chilled Out"};
 		SinglePurchase = true;
 		Hidden = false;
@@ -324,10 +324,10 @@ local offers = {
 		SubTitle = "Slowly grind away your opponent's resources with this attritious red deck.";
 		PriceInRobux = 50;
 		Cards = {["ClanAtlas"] = 1, ["WishNite"] = 1,
-				["Tone"] = 1, ["Doneyes"] = 1, ["Taymaster"] = 1, ["Traumatic Clown"] = 1,
-				["Divine Favor"] = 2,
-				["Ninja Elite"] = 3, ["MarissaKitty04"] = 3, ["Infernal Acolyte"] = 3, ["Fire Fighter"] = 3,
-				["ProjectSlayer"] = 4, ["Mag"] = 4, ["Corrupt Guest"] = 4, ["Ambamby"] = 4, ["Sorry"] = 2};
+			["Tone"] = 1, ["Doneyes"] = 1, ["Taymaster"] = 1, ["Traumatic Clown"] = 1,
+			["Divine Favor"] = 2,
+			["Ninja Elite"] = 3, ["MarissaKitty04"] = 3, ["Infernal Acolyte"] = 3, ["Fire Fighter"] = 3,
+			["ProjectSlayer"] = 4, ["Mag"] = 4, ["Corrupt Guest"] = 4, ["Ambamby"] = 4, ["Sorry"] = 2};
 		Ranks = {"Grinder"};
 		SinglePurchase = true;
 		Hidden = false;
@@ -338,11 +338,24 @@ local offers = {
 		SubTitle = "Decimate your opponent using bulky effectless fighters with this ordinary blue/red deck.";
 		PriceInRobux = 50;
 		Cards = {["Clockwork"] = 1,
-				["Dued1"] = 1, ["Pizzablawk"] = 1, ["Dignity"] = 1, ["Rad"] = 1,
-				["Wrath of Azure"] = 2, ["Doomed Adventurer"] = 2, ["Spiderboy"] = 2, ["Ambamby"] = 2, ["Mitpaul"] = 2,
-				["Skullsten"] = 3, ["ShyLightness"] = 3, ["DeathETM"] = 3,
-				["DeadZoneHark"] = 4, ["Mag"] = 4, ["Anderson"] = 4, ["ThatGrimGuy"] = 4,};
+			["Dued1"] = 1, ["Pizzablawk"] = 1, ["Dignity"] = 1, ["Rad"] = 1,
+			["Wrath of Azure"] = 2, ["Doomed Adventurer"] = 2, ["Spiderboy"] = 2, ["Ambamby"] = 2, ["Mitpaul"] = 2,
+			["Skullsten"] = 3, ["ShyLightness"] = 3, ["DeathETM"] = 3,
+			["DeadZoneHark"] = 4, ["Mag"] = 4, ["Anderson"] = 4, ["ThatGrimGuy"] = 4,};
 		Ranks = {"Plain"};
+		SinglePurchase = true;
+		Hidden = false;
+	};
+	
+	IKEA = {
+		Title = "EVENT DECK: Furniture Fiesta";
+		SubTitle = "Become an IKEA and assemble an army of Chairs using this fun rainbow deck.";
+		PriceInRobux = 50;
+		Cards = {["Lord Westinghouse"] = 1, ["Chair Chair, the Creator"] = 1, ["Grand Couch, the Slumbering"] = 1,
+			["Yard Sale!"] = 2, ["SpeedySeat"] = 2, ["Bloxy Tea Party"] = 2,
+			["The Gentlemaniac"] = 3, ["Stud"] = 3, ["Bread Factory"] = 1,--Chair Archetype Terrain plox
+			["Office Chair"] = 4, ["Royal Chair"] = 4, ["Modern Chair"] = 4, ["Wooden Chair"] = 4, ["Steel Chair"] = 4, ["Have a Seat!"] = 4};
+		Ranks = {"IKEA"};
 		SinglePurchase = true;
 		Hidden = false;
 	};
