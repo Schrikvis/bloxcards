@@ -5565,7 +5565,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Requirement"] = {false,4,true},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Cast this card only if your opponent controls four or more fighters. At the beginning of each player's turn, deal 150 damage to all fighters.",
+			Description = "Cast this card only if your opponent controls four or more fighters. At the start of each player's turn, deal 150 damage to all fighters.",
 			["Type"] = "Field",
 			["Power"] = "Damage",
 			Target = "All",	
@@ -5587,7 +5587,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 2,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "At the beginning of each player's turn, increase the power of all fighters by 50.",
+			Description = "At the start of each player's turn, increase the power of all fighters by 50.",
 			["Type"] = "Field",
 			["Power"] = "Strengthen",
 			Target = "All",	
@@ -5638,7 +5638,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 5,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "At the start of each player's turn, reduce the power of that player's fighters by 50.",
+			Description = "At the start of each player's turn, allied fighters lose 50 power.",
 			["Type"] = "Field",
 			["Power"] = "Weaken",
 			Target = "Ally",	
@@ -5660,7 +5660,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 0,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Enemy cards lose 100 power and allied fighters gain 100 power. This effect alternates between players at the start of each turn.",
+			Description = "At the start of each player's turn, enemy fighters lose 100 power and allied fighters gain 100 power.",
 			["Type"] = "Field",
 			["Power"] = {{"Weaken",100,"Opponent"},{"Strengthen",100,"Ally"}},
 			Target = "All",
@@ -6669,7 +6669,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Set each players' white icons to 4 at the start of each turn.",
+			Description = "At the start of each player's turn, set both players' white icons to 4.",
 			["Type"] = "Field",
 			["Power"] = "SetNeutral",
 			Target = "All",	
@@ -7739,10 +7739,10 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Terrain",
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Allied fighters gain 50 health at the start of each turn. This effect alternates between players at the start of each turn.",
+			Description = "At the start of each player's turn, all enemy fighters gain 50 health.",
 			["Type"] = "Field",
 			["Power"] = "Heal",
-			Target = "Ally",	
+			Target = "Opponent",	
 			Increase = 50,
 		},
 		["Bio"] = "Bread Factory helps deal with Bread decks. How do you work that out?",
@@ -8395,7 +8395,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "All enemy fighters gain 100 power and all allied fighters lose 100 power. This effect alternates between players at the start of each turn.",
+			Description = "At the start of each player's turn, enemy fighters gain 100 power and allied fighters lose 100 power.",
 			["Type"] = "Field",
 			["Power"] = {{"Strengthen",100,"Opponent"},{"Weaken",100,"Ally"}},
 			Target = "All",
