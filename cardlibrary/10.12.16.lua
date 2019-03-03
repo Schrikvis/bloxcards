@@ -5778,10 +5778,10 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Terrain"] = true,
 		["Effect"] = {
 			Name = "IKEA",
-			Description = "Cast only if you have 4 Chairs. At the start of each turn, all Chairs gain 50 health and power.",
+			Description = "Cast only if you have 4 Chairs. At the start of each turn, the opponent adds Have a Seat! to their hand.",
 			["Type"] = "Field",
-			["Power"] = {{"Heal",50},{"Strengthen",50}},
-			Target = "Archetype",
+			["Power"] = {{"Add","Have a Seat!"}},
+			Target = "Opponent",
 		},
 		["Bio"] = "For game brea...testing purposes.",
 	},	
