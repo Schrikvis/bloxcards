@@ -4748,7 +4748,7 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Yellow"] = 5,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "At the beginning of each player's turn, that player's opponent puts a targeting blip into their hand.",
+			Description = "At the start of each player's turn, that player's opponent puts a targeting blip into their hand.",
 			["Type"] = "Field",
 			["Power"] = {{"Add","Targeting Blip"}},
 			Target = "Opponent",
