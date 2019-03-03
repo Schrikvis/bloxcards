@@ -3492,11 +3492,11 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},		
 	
 	["Thunder Bolt"] = {
-		["Id"] = 2817086967,
+		["Id"] = 2910236370,
 		["Name"] = "Thunder Bolt",
 		["AltCards"] = {
 			["H-Thunder"] = { -- Retired token.
-				["Id"] = 2817087726,
+				["Id"] = 2910237098,
 				["Name"] = "Lightning Blast",
 				["Health"] = 0,
 				["Power"] = 0,
@@ -3515,7 +3515,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Null",
 		["Color"] = "Blue",
-		["Cost"] = {["Neutral"] = 8,},
+		["Cost"] = {["Neutral"] = 6,},
 		["Effect"] = {
 			Name = "Zappow!",
 			Description = "Deal 4000 damage to allied fighters and all archetyped fighters, then deal 400 damage to all enemy fighters. You can't run Lightning Blast in your deck.",
@@ -7336,8 +7336,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Overseer Prophet"] = {
 		["Id"] = 298793579,
 		["Name"] = "Overseer Prophet",
-		["Health"] = 800,
-		["Power"] = 800,
+		["Health"] = 900,
+		["Power"] = 900,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Thunder",
 		["Archetype"] = "Overseer",
@@ -7561,8 +7561,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Acolyte",
-			Description = "Whenever this card attacks and destroys another, put a random Acolyte into your hand.",
-			["Type"] = "OnAttackDestroy",
+			Description = "Whenever this card attacks, put a random Acolyte into your hand.",
+			["Type"] = "OnAttack",
 			["Power"] = {{"RandomAdd","Acolyte"}},
 			Target = "Ally",
 		},
@@ -9211,7 +9211,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Target Master",
-			Description = "Generate 2 Yellow icons.",
+			Description = "Generate 2 Yellow icons. A target fighter gains 50 Power.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Yellow",2,"Ally"}},
 			Target = "Single",
