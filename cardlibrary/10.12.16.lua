@@ -6882,5 +6882,23 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "",
 	},
 	
+	["Sasuke2000"] = {
+		["Id"] = 2923902914,
+		["Name"] = "Sasuke2000",
+		["Health"] = 350,
+		["Power"] = 350,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "PunchKick",
+		["Color"] = "Red",
+		["Cost"] = {["Neutral"] = 1,["Red"] = 1,},
+		["Effect"] = {
+			Name = "Hodif, but not",
+			Description = "Lose 100 life.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Cost",100}},
+			Target = "Ally",
+		},
+		["Bio"] = "Sasuke is such an ordinary card you wouldn't have been able to tell he doesn't count as a ninja without reading this.",
+	},
 }
 return tentwelvesixteen
