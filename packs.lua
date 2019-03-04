@@ -158,6 +158,7 @@ local packs = {
 		CardPackId = 842435184, --721400845,
 		Description = "Red is the colour of power, ambition, and control. Dominion packs contain cards that cost red!",
 		Cards = {
+			"Sauske2000",
 			"Lord Westinghouse",
 			"lilBismarck, Anime Avenger",
 			"Julez_X",
@@ -1066,6 +1067,7 @@ local packs = {
 		Description = "Exotic new cards from the black market! White cards and joke cards! It's all yours, as long as you have 10 wins!",
 		WinRequirement = 10;
 		Cards = {
+			"Sauske2000",
 			"Teeny Ninja", --Vaktus
 			"Ninja Kitty", --Fractality
 			"KnitJa", --MSE6
@@ -1144,7 +1146,6 @@ local packs = {
 			"Turtleuser3",
 			"Arte71",
 			"Jimmyin1",
-			"how_inconvenient",
 			-- PAST THIS POINT IS FOR WHITE CARDS AND JOKE CARDS ONLY. I'M LOOKING AT YOU, BLITZ.
 			"Shirozaru",
 			"Construction",
