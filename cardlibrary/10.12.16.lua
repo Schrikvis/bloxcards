@@ -6898,7 +6898,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Cost",100}},
 			Target = "Ally",
 		},
-		["Bio"] = "Sasuke is such a shinobi, you wouldn't have been able to tell he doesn't count as one without reading this.",
+		["Bio"] = "He just wants to get choked like his idol from some anime he watched or something.",
 	},
 }
 return tentwelvesixteen
