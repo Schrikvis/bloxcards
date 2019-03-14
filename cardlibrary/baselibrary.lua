@@ -1205,7 +1205,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Kamov"] = {
-		["Id"] = 271751666,
+		["Id"] = 2959461488,
 		["Name"] = "Kamov",
 		["Health"] = 600,
 		["Power"] = 300,
@@ -2285,7 +2285,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Dextromer"] = {
-		["Id"] = 280562630,
+		["Id"] = 2959459429,
 		["Name"] = "Dextromer",
 		["Health"] = 800,
 		["Power"] = 800,
@@ -2929,7 +2929,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["DerptasticDevil"] = {
-		["Id"] = 1375039481,
+		["Id"] = 2959451059,
 		["Name"] = "DerptasticDevil",
 		["Health"] = 1200,
 		["Power"] = 400,
@@ -4177,7 +4177,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 			
 	["Split Ego"] = {
-		["Id"] = 285154829,
+		["Id"] = 2959449521,
 		["Name"] = "Split Ego",
 		["Health"] = 0,
 		["Power"] = 0,
