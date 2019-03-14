@@ -4038,10 +4038,10 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Rarity"] = "Token",
 				["Effect"] = {
 					Name = "Test",
-					Description = "When this card is summoned, deal 50 damage up to 6 times to a target.",
+					Description = "When this card is summoned, deal 50 damage up to 6 times to all enemy fighters.",
 					["Type"] = "OnSummon",
 					["Power"] = {{"RandomAdd",{"Test Dummy","Test DummyA","Test DummyB","Test DummyC","Test DummyD","Test DummyE"},"Ally"},{"Damage",math.random(6)*50}},
-					Target = "Single",
+					Target = "Opponent",
 				},
 			},
 			
@@ -4110,9 +4110,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Test",
-			Description = "When this card is summoned, deal 50 damage to all enemy fighters 6 times. (300 damage)",
+			Description = "When this card is summoned, deal 50 damage to a target fighter 6 times. (300 damage)",
 			["Type"] = "OnSummon",
-			["Power"] = {{"RandomAdd",{"Test Dummy","Test DummyA","Test DummyB","Test DummyC","Test DummyD","Test DummyE"}},{"Damage",6*50,"Opponent"}},
+			["Power"] = {{"RandomAdd",{"Test Dummy","Test DummyA","Test DummyB","Test DummyC","Test DummyD","Test DummyE"}},{"Damage",6*50,"Single"}},
 			Target = "Ally",
 		},
 		["Bio"] = "MST_WORLDDOMINATION_DESCRIPTION",
