@@ -2647,9 +2647,9 @@ local twentyeleveneighteen = {
 		["Bio"] = "If you look like a toothy deer, make sure to hide.",
 	},		
 	
-	["Duel Axe Monster"] = {
-		["Id"] = 384009300,
-		["Name"] = "Duel Axe Monster",
+	["Duel Axe Monster"] = {--SlingshotJunkie
+		["Id"] = 2959456012,
+		["Name"] = "SlingshotJunkie",
 		["Health"] = 700,
 		["Power"] = 700,
 		["Rarity"] = "Rare",
@@ -2664,7 +2664,7 @@ local twentyeleveneighteen = {
 			["Power"] = {{"Inflict",-200}},
 			Target = "Opponent",	
 		},
-		["Bio"] = "He duels you with dual axes for dual dueling.",
+		["Bio"] = "If he wanted to beat the opponent, why is he shooting medicine to heal them?",
 	},		
 	
 	["DrTrayBlox"] = {
@@ -6857,7 +6857,7 @@ local twentyeleveneighteen = {
 	},
 
 	["One4utwo4me"] = {
-		["Id"] = 893399885,
+		["Id"] = 2959458736,
 		["Name"] = "One4utwo4me",
 		["AltCards"] = {
 			["One4utwo4me-ArtV"] = {
