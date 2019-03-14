@@ -9275,7 +9275,7 @@ local twentyeleveneighteen = {
 	},			
 	
 	["Tone"] = {
-		["Id"] = 557984530,
+		["Id"] = 2960010737,
 		["Name"] = "Tone",
 		["Health"] = 400,
 		["Power"] = 700,
