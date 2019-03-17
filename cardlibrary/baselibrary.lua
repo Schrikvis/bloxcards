@@ -5953,7 +5953,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Blockerwiz"] = {
-		["Id"] = 1939178065,
+		["Id"] = 2969037732,
 		["Name"] = "Blockerwiz",
 		["AltCards"] = {
 			["Blockerwiz-E"] = {
