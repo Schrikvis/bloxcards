@@ -2673,13 +2673,13 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Ninja",
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
-			Name = "PampersTM",
+			Name = "Lens Blip",
 			Description = "Lock all fighters for a turn.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Lock",1}},
 			Target = "All",
 		},
-		["Bio"] = "They also seem to like diapers for whatever reason.",
+		["Bio"] = "They also are extremely crafty, using their tail to trip up all around them, be it friend or foe.  One adventurous person who was trying to take a picture of it ended up getting tripped himself, so the only photo he got was of a lens flare.",
 	},
 	
 	["Mlgloga"] = {
