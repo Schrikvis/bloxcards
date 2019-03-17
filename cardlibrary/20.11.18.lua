@@ -2609,7 +2609,7 @@ local twentyeleveneighteen = {
 	},		
 	
 	["ScriptMasTime"] = {
-		["Id"] = 384008705,
+		["Id"] = 2969038217,
 		["Name"] = "ScriptMasTime",
 		["Health"] = 600,
 		["Power"] = 550,
@@ -8414,7 +8414,7 @@ local twentyeleveneighteen = {
 	},
 	
 	["Egg Eyes Batter Dragon"] = {
-		["Id"] = 959856273,
+		["Id"] = 2969038631,
 		["Name"] = "Egg Eyes Batter Dragon",
 		["Health"] = 1350,
 		["Power"] = 100,
