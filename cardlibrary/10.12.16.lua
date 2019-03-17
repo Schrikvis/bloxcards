@@ -2624,24 +2624,64 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Wesker202"] = {
 		["Id"] = 785621046,
 		["Name"] = "Wesker202",
-		["Health"] = 700,
-		["Power"] = 700,
+		["Health"] = 300,
+		["Power"] = 500,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Punchkick",
-		["Color"] = "Blue", 
-		["Cost"] = {["Neutral"] = 3, ["Blue"] = 3,},
+		["Color"] = "Blue",
+		["Fading"] = true,
+		["Cost"] = {["Neutral"] = 1, ["Blue"] = 4,},
 		["Archetype"] = "Hero",
 		["Effect"] = {
-			Name = "Blue Main",
-			Description = "Whenever you summon a fighter, Wesker202 gains 200 Health but loses 200 Power.",
-			["Type"] = "OnAllySummon",
-			["Power"] = {{"Heal",200},{"Weaken",200}},
-			Target = "Self",
+			Name = "Furnos",
+			Description = "When Wesker is first summoned, put Tail of Endeavours, which locks all fighters for a turn, into your hand. When he gains a lock, he gains 250 health.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Summon","Haunted Korblox Armor"},{"Add","Haunted Redcliff Armor"},{"Damage",9999,"Self"}},
+			Target = "Ally",
 		},
 		["Bio"] = "Ninja foxes are a somewhat aggressive race whom tend to pound on the ground to keep their anger in check, as they tend to get quite angry due to their superiority complex.  If it builds too high, they can become feral, and end up slaughtering whomever is most unfortunate enough to be in the vicinity.",
 	},
 
-
+	["Haunted Korblox Armor"] = {
+		["Id"] = 785621046,
+		["Name"] = "Wesker202",
+		["Health"] = 300,
+		["Power"] = 500,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Punchkick",
+		["Color"] = "Blue", 
+		["Cost"] = {["Neutral"] = 1, ["Blue"] = 4,},
+		["Archetype"] = "Hero",
+		["Effect"] = {
+			Name = "Degenerate Nekotare",
+			Description = "When Wesker gains a lock, he gains 250 health.",
+			["Type"] = "OnLockGain",
+			["Power"] = {{"Heal",250}},
+			Target = "Self",
+		},
+		["Bio"] = "Ninja foxes are a somewhat aggressive race whom tend to pound on the ground to keep their anger in check, as they tend to get quite angry due to their superiority complex.  If it builds too high, they can become feral, and end up slaughtering whomever is most unfortunate enough to be in the vicinity.",
+	},
+	
+	["Haunted Redcliff Armor"] = {
+		["Id"] = 2857407317,
+		["Name"] = "Tail of Endeavours",
+		["Health"] = 0,
+		["Power"] = 0,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Blue",
+		["Archetype"] = "Ninja",
+		["Cost"] = {["Neutral"] = 0,},
+		["Effect"] = {
+			Name = "PampersTM",
+			Description = "Lock all fighters for a turn.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Lock",1}},
+			Target = "All",
+		},
+		["Bio"] = "They also seem to like diapers for whatever reason.",
+	},
+	
 	["Mlgloga"] = {
 		["Id"] = 785621104,
 		["Name"] = "Mlgloga",
@@ -4253,7 +4293,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["ThatGrimGuy"] = {
-		["Id"] = 1939176081,
+		["Id"] = 2969037124,
 		["Name"] = "ThatGrimGuy",
 		["AltCards"] = {
 			["ThatGrimGuy-Alt"] = {
@@ -4273,7 +4313,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
  	},	
 	
 	["ThatGrimGuyTOKEN"] = {
-		["Id"] = 1939178065,
+		["Id"] = 2969037732,
 		["Name"] = "Blockerwiz",
 		["AltCards"] = {
 			["ThatGrimGuyTOKEN-Alt"] = {
@@ -4515,7 +4555,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["stormmaster7722"] = {
-		["Id"] = 1421958837,
+		["Id"] = 2969038003,
 		["Name"] = "stormmaster7722",
 		["Health"] = 200,
 		["Power"] = 800,
@@ -6130,7 +6170,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Vinrole"] = {
-		["Id"] = 1899489258,
+		["Id"] = 2969038404,
 		["Name"] = "Vinrole",
 		["Health"] = 600,
 		["Power"] = 350,
@@ -6772,9 +6812,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Charge"] = true,
 		["Effect"] = {
 			Name = "Spam",
-			Description = "Haste. When this card attacks, lock this fighter for an additional turn and generate two blue icons.",
+			Description = "Haste. When this card attacks, lock all allies for an additional turn and generate two blue icons.",
 			["Type"] = "OnAttack",
-			["Power"] = {{"Lock",1,"Self"},{"Blue",2}},
+			["Power"] = {{"Lock",1},{"Blue",2}},
 			Target = "Ally",
 		},
 		["Bio"] = "Honestly, some people...",
