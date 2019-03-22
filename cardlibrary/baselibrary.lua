@@ -5953,7 +5953,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Blockerwiz"] = {
-		["Id"] = 1939178065,
+		["Id"] = 2969037732,
 		["Name"] = "Blockerwiz",
 		["AltCards"] = {
 			["Blockerwiz-E"] = {
@@ -9211,7 +9211,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Target Master",
-			Description = "Generate 2 Yellow icons. Target fighter gains 50 Power.",
+			Description = "Generate 2 Yellow icons. A target fighter gains 50 Power.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Yellow",2,"Ally"},{"Strengthen",50}},
 			Target = "Single",

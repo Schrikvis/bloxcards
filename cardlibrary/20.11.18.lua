@@ -303,12 +303,32 @@ local twentyeleveneighteen = {
 		["Fading"] = true,
 		["AttackEffect"] = "Thunder",
 		["Color"] = "Red",
+		["Fading"] = true,
 		["Cost"] = {["Red"] = 4,["Neutral"] = 4},
 		["Effect"] = {
 			Name = "Terrorise",
-			Description = "Deal 200 damage to a target fighter. Destroy all enemy fighters with 100 or less health at the end of your turns.",
+			Description = "When cast, deal 200 damage to a target fighter. At the end of your turn, destroy all enemy fighters with 100 or less health.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",200,"Single"},{"Summon","MrDoombringerToken","Ally"},{"Damage",9999,"Self"}},
+			["Power"] = {{"Damage",200,"Single"},{"Summon","MrDoombringerToken","Ally"}},
+			Target = "Opponent",
+		},
+		["Bio"] = "Slamming players into banland since 1992.",
+	},
+	
+	["MrDoombringerToken"] = {
+		["Id"] = 335687497,
+		["Name"] = "MrDoombringer",
+		["Health"] = 800,
+		["Power"] = 500,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Thunder",
+		["Color"] = "Red",
+		["Cost"] = {["Red"] = 4,["Neutral"] = 4},
+		["Effect"] = {
+			Name = "Terrorise",
+			Description = "At the end of your turn, destroy all enemy fighters with 100 or less health.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Damage",100},{"Heal",100}},
 			Target = "Opponent",
 		},
 		["Bio"] = "Slamming players into banland since 1992.",
@@ -2608,7 +2628,7 @@ local twentyeleveneighteen = {
 	},		
 	
 	["ScriptMasTime"] = {
-		["Id"] = 384008705,
+		["Id"] = 2969038217,
 		["Name"] = "ScriptMasTime",
 		["Health"] = 600,
 		["Power"] = 550,
@@ -2646,7 +2666,7 @@ local twentyeleveneighteen = {
 		["Bio"] = "If you look like a toothy deer, make sure to hide.",
 	},		
 	
-	["Duel Axe Monster"] = { --SlingshotJunkie
+	["Duel Axe Monster"] = {--SlingshotJunkie
 		["Id"] = 2959456012,
 		["Name"] = "SlingshotJunkie",
 		["Health"] = 700,
@@ -4742,6 +4762,7 @@ local twentyeleveneighteen = {
 		["Token"] = true,
 		["DiscardBlock"] = true,
 		["Stealth"] = true,
+		["Archetype"] = "Target",
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Target",
@@ -5088,7 +5109,7 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Green"] = 3,},
 		["Effect"] = {
 			Name = "Render",
-			Description = "Gain a white icon. Target fighter gains 50 Health.",
+			Description = "Gain a white icon. A target fighter gains 50 Health.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Neutral",1,"Ally"},{"Heal",50}},
 			Target = "Single",
@@ -8412,7 +8433,7 @@ local twentyeleveneighteen = {
 	},
 	
 	["Egg Eyes Batter Dragon"] = {
-		["Id"] = 959856273,
+		["Id"] = 2969038631,
 		["Name"] = "Egg Eyes Batter Dragon",
 		["Health"] = 1350,
 		["Power"] = 100,
@@ -9273,7 +9294,7 @@ local twentyeleveneighteen = {
 	},			
 	
 	["Tone"] = {
-		["Id"] = 557984530,
+		["Id"] = 2960010737,
 		["Name"] = "Tone",
 		["Health"] = 400,
 		["Power"] = 700,

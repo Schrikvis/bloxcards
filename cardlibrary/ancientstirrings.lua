@@ -88,27 +88,6 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "Can you escape in time?",
 	},
 	
-	["Haunted Korblox Armor"] = {
-		["Id"] = 540076270,
-		["Name"] = "Haunted Korblox Armor",
-		["Health"] = 300,
-		["Power"] = 300,
-		["Rarity"] = "Token",
-		["Archetype"] = "Korblox",
-		["Fading"] = true,
-		["AttackEffect"] = "Dash",
-		["Color"] = "Blue", 
-		["Cost"] = {["Blue"] = 3,},
-		["Effect"] = {
-			Name = "Pyrotechnics",
-			Description = "When this card is targeted, transform this card into a Korblox Archmage, then unlock all Korblox. Fading.",
-			["Type"] = "OnTarget",
-			["Power"] = {{"Summon","Korblox Archmage"},{"Unlock",999,"Archetype"},{"Damage",9999,"Self"}},
-			Target = "Ally",
-		},
-		["Bio"] = "The Korblox would have been a great asset, had they not earlier tried to destroy all of Eisenhower's stitchers.",
-	},
-	
 	["Brothers Grotesque"] = {
 		["Id"] = 900461972,
 		["Name"] = "Brothers Grotesque",
@@ -1124,9 +1103,10 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Dash",
 		["Color"] = "Yellow", 
 		["Cost"] = {["Yellow"] = 2,},
+		["Archetype"] = "Target",
 		["Effect"] = {
 			Name = "Halloween",
-			Description = "Whenever a Targeting Blip is used, this card gains 200 Power.",
+			Description = "Whenever a Targeting Blip is cast, Smiling Golem gains 200 power.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",0}},
 			Target = "Self",
@@ -1351,27 +1331,6 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Ally",
 		},
 		["Bio"] = "Your laws, much like your bones, were made to be broken.",
-	},
-	
-	["Haunted Redcliff Armor"] = {
-		["Id"] = 574314588,
-		["Name"] = "Haunted Redcliff Armor",
-		["Health"] = 300,
-		["Power"] = 300,
-		["Rarity"] = "Token",
-		["Archetype"] = "Redcliff",
-		["Fading"] = true,
-		["AttackEffect"] = "Dash",
-		["Color"] = "Red", 
-		["Cost"] = {["Red"] = 3,},
-		["Effect"] = {
-			Name = "Pyrotechnics",
-			Description = "When this card is targeted, transform this card into a Redcliff Elite Commander, then give all Redcliff 200 health and power. Fading.",
-			["Type"] = "OnTarget",
-			["Power"] = {{"Summon","Redcliff Elite Commander"},{"Strengthen",200,"Archetype"},{"Heal",200,"Archetype"},{"Damage",9999,"Self"}},
-			Target = "Ally",
-		},
-		["Bio"] = "The soul of the commander Phyrrus resides in this armor, taken by Zanzel's might.",
 	},
 	
 	["Grim Reaper"] = {
