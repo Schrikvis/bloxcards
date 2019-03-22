@@ -6809,7 +6809,6 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 2, ["Blue"] = 1,},
-		["Charge"] = true,
 		["Effect"] = {
 			Name = "Spam",
 			Description = "When this card attacks, lock all ally fighters for an additional turn and generate two Blue icons.",
