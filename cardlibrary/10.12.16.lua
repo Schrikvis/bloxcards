@@ -784,7 +784,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	}, 
 
 	["Beyondthegong"] = {
-		["Id"] = 626451013,
+		["Id"] = 2959452895,
 		["Name"] = "Beyondthegong",
 		["Health"] = 400,
 		["Power"] = 400,
@@ -2624,24 +2624,64 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Wesker202"] = {
 		["Id"] = 785621046,
 		["Name"] = "Wesker202",
-		["Health"] = 700,
-		["Power"] = 700,
+		["Health"] = 300,
+		["Power"] = 500,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Punchkick",
-		["Color"] = "Blue", 
-		["Cost"] = {["Neutral"] = 3, ["Blue"] = 3,},
+		["Color"] = "Blue",
+		["Fading"] = true,
+		["Cost"] = {["Neutral"] = 1, ["Blue"] = 4,},
 		["Archetype"] = "Hero",
 		["Effect"] = {
-			Name = "Blue Main",
-			Description = "Whenever you summon a fighter, Wesker202 gains 200 Health but loses 200 Power.",
-			["Type"] = "OnAllySummon",
-			["Power"] = {{"Heal",200},{"Weaken",200}},
-			Target = "Self",
+			Name = "Furnos",
+			Description = "When Wesker is first summoned, put Tail of Endeavours, which locks all fighters for a turn, into your hand. When he gains a lock, he gains 250 health.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Summon","Haunted Korblox Armor"},{"Add","Haunted Redcliff Armor"},{"Damage",9999,"Self"}},
+			Target = "Ally",
 		},
 		["Bio"] = "Ninja foxes are a somewhat aggressive race whom tend to pound on the ground to keep their anger in check, as they tend to get quite angry due to their superiority complex.  If it builds too high, they can become feral, and end up slaughtering whomever is most unfortunate enough to be in the vicinity.",
 	},
 
-
+	["Haunted Korblox Armor"] = {
+		["Id"] = 785621046,
+		["Name"] = "Wesker202",
+		["Health"] = 300,
+		["Power"] = 500,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Punchkick",
+		["Color"] = "Blue", 
+		["Cost"] = {["Neutral"] = 1, ["Blue"] = 4,},
+		["Archetype"] = "Hero",
+		["Effect"] = {
+			Name = "Degenerate Nekotare",
+			Description = "When Wesker gains a lock, he gains 250 health.",
+			["Type"] = "OnLockGain",
+			["Power"] = {{"Heal",250}},
+			Target = "Self",
+		},
+		["Bio"] = "Ninja foxes are a somewhat aggressive race whom tend to pound on the ground to keep their anger in check, as they tend to get quite angry due to their superiority complex.  If it builds too high, they can become feral, and end up slaughtering whomever is most unfortunate enough to be in the vicinity.",
+	},
+	
+	["Haunted Redcliff Armor"] = {
+		["Id"] = 2857407317,
+		["Name"] = "Tail of Endeavours",
+		["Health"] = 0,
+		["Power"] = 0,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Blue",
+		["Archetype"] = "Ninja",
+		["Cost"] = {["Neutral"] = 0,},
+		["Effect"] = {
+			Name = "Lens Blip",
+			Description = "Lock all fighters for a turn.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Lock",1}},
+			Target = "All",
+		},
+		["Bio"] = "They also are extremely crafty, using their tail to trip up all around them, be it friend or foe.  One adventurous person who was trying to take a picture of it ended up getting tripped himself, so the only photo he got was of a lens flare.",
+	},
+	
 	["Mlgloga"] = {
 		["Id"] = 785621104,
 		["Name"] = "Mlgloga",
@@ -2795,7 +2835,6 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Health"] = 1000,
 		["Power"] = 0,
 		["Rarity"] = "Token",
-		["Archetype"] = "Hero",
 		["Fading"] = true,
 		["AttackEffect"] = "Punchkick",
 		["Color"] = "Blue", 
@@ -2816,7 +2855,6 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Token",
-		["Archetype"] = "Hero",
 		["Fading"] = true,
 		["AttackEffect"] = "Punchkick",
 		["Color"] = "Blue", 
@@ -4040,10 +4078,10 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Rarity"] = "Token",
 				["Effect"] = {
 					Name = "Test",
-					Description = "When this card dies in battle, the card that destroyed it loses 200 health.",
-					["Type"] = "OnDeath",
-					["Power"] = {{"RandomAdd",{"Test Dummy","Test DummyA","Test DummyB","Test DummyC","Test DummyD","Test DummyE"},"Ally"},{"Damage",200}},
-					Target = "Aggressor",
+					Description = "When this card is summoned, deal 50 damage up to 6 times to all enemy fighters.",
+					["Type"] = "OnSummon",
+					["Power"] = {{"RandomAdd",{"Test Dummy","Test DummyA","Test DummyB","Test DummyC","Test DummyD","Test DummyE"},"Ally"},{"Damage",math.random(6)*50}},
+					Target = "Opponent",
 				},
 			},
 			
@@ -4053,10 +4091,10 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Rarity"] = "Token",
 				["Effect"] = {
 					Name = "Test",
-					Description = "When this card dies in battle, the card that destroyed it loses 200 power.",
-					["Type"] = "OnDeath",
-					["Power"] = {{"RandomAdd",{"Test Dummy","Test DummyA","Test DummyB","Test DummyC","Test DummyD","Test DummyE"},"Ally"},{"Weaken",200}},
-					Target = "Aggressor",
+					Description = "When this card is summoned, randomly draw up to 5 cards.",
+					["Type"] = "OnSummon",
+					["Power"] = {{"RandomAdd",{"Test Dummy","Test DummyA","Test DummyB","Test DummyC","Test DummyD","Test DummyE"}},{"Draw",math.random(5)}},
+					Target = "Ally",
 				},
 			},
 			
@@ -4079,10 +4117,10 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Rarity"] = "Token",
 				["Effect"] = {
 					Name = "Test",
-					Description = "When this card is attacked and survives, the attacking fighter is put into your hand.",
-					["Type"] = "OnAttacked",
-					["Power"] = {{"RandomAdd",{"Test Dummy","Test DummyA","Test DummyB","Test DummyC","Test DummyD","Test DummyE"},"Ally"},{"Return",030},{"Return",030}},
-					Target = "Aggressor",
+					Description = "When this card is summoned, your opponent loses 100 life up to 6 times. (should only trigger lifeloss once tho)",
+					["Type"] = "OnSummon",
+					["Power"] = {{"RandomAdd",{"Test Dummy","Test DummyA","Test DummyB","Test DummyC","Test DummyD","Test DummyE"},"Ally"},{"Inflict",math.random(6)*100}},
+					Target = "Opponent",
 				},
 			},
 			
@@ -4112,9 +4150,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Test",
-			Description = "When this card attacks, put a target fighter from the field into your hand.",
-			["Type"] = "OnAttack",
-			["Power"] = {{"RandomAdd",{"Test Dummy","Test DummyA","Test DummyB","Test DummyC","Test DummyD","Test DummyE"}},{"Return",030,"Single"},{"Return",030,"Single"}},
+			Description = "When this card is summoned, deal 50 damage to a target fighter 6 times. (300 damage)",
+			["Type"] = "OnSummon",
+			["Power"] = {{"RandomAdd",{"Test Dummy","Test DummyA","Test DummyB","Test DummyC","Test DummyD","Test DummyE"}},{"Damage",6*50,"Single"}},
 			Target = "Ally",
 		},
 		["Bio"] = "MST_WORLDDOMINATION_DESCRIPTION",
@@ -4255,7 +4293,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["ThatGrimGuy"] = {
-		["Id"] = 1939176081,
+		["Id"] = 2969037124,
 		["Name"] = "ThatGrimGuy",
 		["AltCards"] = {
 			["ThatGrimGuy-Alt"] = {
@@ -4275,7 +4313,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
  	},	
 	
 	["ThatGrimGuyTOKEN"] = {
-		["Id"] = 1939178065,
+		["Id"] = 2969037732,
 		["Name"] = "Blockerwiz",
 		["AltCards"] = {
 			["ThatGrimGuyTOKEN-Alt"] = {
@@ -4517,7 +4555,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["stormmaster7722"] = {
-		["Id"] = 1421958837,
+		["Id"] = 2969038003,
 		["Name"] = "stormmaster7722",
 		["Health"] = 200,
 		["Power"] = 800,
@@ -5769,16 +5807,19 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Common",
-		["AttackEffect"] = "Thunder",		
-		["Color"] = "Red",
-		["Cost"] = {["Red"] = 5,["Yellow"] = 5,},
-		["Archetype"] = "Llendlar",
+		["AttackEffect"] = "Punch1",		
+		["Color"] = "Neutral",
+		["Cost"] = {["Blue"] = 1,["Red"] = 1,["Green"] = 1,["Yellow"] = 1,},
+		["Archetype"] = "Chair",
+		["Requirement"] = {"Archetype",4},
+		["Field"] = 293402627,
+		["Terrain"] = true,
 		["Effect"] = {
-			Name = "Sacrificial Destruction",
-			Description = "Destroy all enemy fighters. For each fighter destroyed during this effect, lose 500 life. If you control 8 fighters, negate the lifeloss effect. End the turn.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Summon","Tester Terror"},{"Damage",9999,"Opponent"},{"SetHealth",0,"Archetype"},{"EndTurn",030}},
-			Target = "Ally",
+			Name = "IKEA",
+			Description = "Cast only if you have 4 Chairs. At the start of each turn, the opponent adds Have a Seat! to their hand.",
+			["Type"] = "Field",
+			["Power"] = {{"Add","Have a Seat!"}},
+			Target = "Opponent",
 		},
 		["Bio"] = "For game brea...testing purposes.",
 	},	
@@ -6129,7 +6170,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Vinrole"] = {
-		["Id"] = 1899489258,
+		["Id"] = 2969038404,
 		["Name"] = "Vinrole",
 		["Health"] = 600,
 		["Power"] = 350,
@@ -6739,16 +6780,16 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 0,
 		["Rarity"] = "Token",
 		["DiscardBlock"] = true,
-		["Token"] = "True",
-		["HealImmune"] = "True",
-		["StrenghtenImmune"] = "True",
-		["WeakenImmune"] = "True",
-		["SwapImmune"] = "True",
-		["SetImmune"] = "True",
-		["Fading"] = "True",
+		["Token"] = true,
+		["HealImmune"] = true,
+		["StrenghtenImmune"] = true,
+		["WeakenImmune"] = true,
+		["SwapImmune"] = true,
+		["SetImmune"] = true,
+		["Fading"] = true,
 		["AttackEffect"] = "Slash1",
 		["Color"] = "Neutral",
-		["Cost"] = {["Neutral"] = 3,},
+		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Brick wall",
 			Description = "Immune to all non-combat stat changes. Can't generate icons, attack, or be discarded. Fading.",
@@ -6760,7 +6801,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Gasturas"] = {
-		["Id"] = 2857408476,
+		["Id"] = 2958770556,
 		["Name"] = "Blue2Shroom",
 		["Health"] = 400,
 		["Power"] = 200,
@@ -6771,9 +6812,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Charge"] = true,
 		["Effect"] = {
 			Name = "Spam",
-			Description = "Haste. When this card attacks, lock this fighter for an additional turn and generate two blue icons.",
+			Description = "Haste. When this card attacks, lock all allies for an additional turn and generate two blue icons.",
 			["Type"] = "OnAttack",
-			["Power"] = {{"Lock",1,"Self"},{"Blue",2}},
+			["Power"] = {{"Lock",1},{"Blue",2}},
 			Target = "Ally",
 		},
 		["Bio"] = "Honestly, some people...",
@@ -6881,5 +6922,23 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "",
 	},
 	
+	["Sauske2000"] = {
+		["Id"] = 2923902914,
+		["Name"] = "Sauske2000",
+		["Health"] = 350,
+		["Power"] = 350,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "PunchKick",
+		["Color"] = "Red",
+		["Cost"] = {["Neutral"] = 1,["Red"] = 1,},
+		["Effect"] = {
+			Name = "Hodif, but not",
+			Description = "Lose 100 life.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Cost",100}},
+			Target = "Ally",
+		},
+		["Bio"] = "He just wants to get choked like his idol from some anime he watched or something.",
+	},
 }
 return tentwelvesixteen

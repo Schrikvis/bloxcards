@@ -302,12 +302,32 @@ local twentyeleveneighteen = {
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Thunder",
 		["Color"] = "Red",
+		["Fading"] = true,
 		["Cost"] = {["Red"] = 4,["Neutral"] = 4},
 		["Effect"] = {
 			Name = "Terrorise",
-			Description = "Deal 200 damage to a target fighter, then destroy all enemy fighters with 100 or less health.",
+			Description = "When cast, deal 200 damage to a target fighter. At the end of your turn, destroy all enemy fighters with 100 or less health.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",200,"Single"},{"Damage",100},{"Heal",100}},
+			["Power"] = {{"Damage",200,"Single"},{"Summon","MrDoombringerToken","Ally"}},
+			Target = "Opponent",
+		},
+		["Bio"] = "Slamming players into banland since 1992.",
+	},
+	
+	["MrDoombringerToken"] = {
+		["Id"] = 335687497,
+		["Name"] = "MrDoombringer",
+		["Health"] = 800,
+		["Power"] = 500,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Thunder",
+		["Color"] = "Red",
+		["Cost"] = {["Red"] = 4,["Neutral"] = 4},
+		["Effect"] = {
+			Name = "Terrorise",
+			Description = "At the end of your turn, destroy all enemy fighters with 100 or less health.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Damage",100},{"Heal",100}},
 			Target = "Opponent",
 		},
 		["Bio"] = "Slamming players into banland since 1992.",
@@ -2589,7 +2609,7 @@ local twentyeleveneighteen = {
 	},		
 	
 	["ScriptMasTime"] = {
-		["Id"] = 384008705,
+		["Id"] = 2969038217,
 		["Name"] = "ScriptMasTime",
 		["Health"] = 600,
 		["Power"] = 550,
@@ -2627,9 +2647,9 @@ local twentyeleveneighteen = {
 		["Bio"] = "If you look like a toothy deer, make sure to hide.",
 	},		
 	
-	["Duel Axe Monster"] = {
-		["Id"] = 384009300,
-		["Name"] = "Duel Axe Monster",
+	["Duel Axe Monster"] = {--SlingshotJunkie
+		["Id"] = 2959456012,
+		["Name"] = "SlingshotJunkie",
 		["Health"] = 700,
 		["Power"] = 700,
 		["Rarity"] = "Rare",
@@ -2644,7 +2664,7 @@ local twentyeleveneighteen = {
 			["Power"] = {{"Inflict",-200}},
 			Target = "Opponent",	
 		},
-		["Bio"] = "He duels you with dual axes for dual dueling.",
+		["Bio"] = "If he wanted to beat the opponent, why is he shooting medicine to heal them?",
 	},		
 	
 	["DrTrayBlox"] = {
@@ -4723,12 +4743,13 @@ local twentyeleveneighteen = {
 		["Token"] = true,
 		["DiscardBlock"] = true,
 		["Stealth"] = true,
+		["Archetype"] = "Target",
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Target",
 			Description = "Can't be discarded. Is used to target fighters and trigger effects.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",1,"Self"},{"Damage",0}},
+			["Power"] = {{"Strengthen",200,"Archetype"},{"Damage",0}},
 			Target = "Single",
 		},
 		["Bio"] = "Cast this card, then click a fighter. You'll be amazed how good it is!",
@@ -4748,7 +4769,7 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Yellow"] = 5,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "At the beginning of each player's turn, that player's opponent puts a targeting blip into their hand.",
+			Description = "At the start of each player's turn, that player's opponent puts a targeting blip into their hand.",
 			["Type"] = "Field",
 			["Power"] = {{"Add","Targeting Blip"}},
 			Target = "Opponent",
@@ -5069,9 +5090,9 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Green"] = 3,},
 		["Effect"] = {
 			Name = "Render",
-			Description = "Gain a white icon.",
+			Description = "Gain a white icon. A target fighter gains 50 Health.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Neutral",1,"Ally"}},
+			["Power"] = {{"Neutral",1,"Ally"},{"Heal",50}},
 			Target = "Single",
 		},
 		["Bio"] = "Sponsored by the archnemesis of blender, Brice7 (TM)",
@@ -6836,7 +6857,7 @@ local twentyeleveneighteen = {
 	},
 
 	["One4utwo4me"] = {
-		["Id"] = 893399885,
+		["Id"] = 2959458736,
 		["Name"] = "One4utwo4me",
 		["AltCards"] = {
 			["One4utwo4me-ArtV"] = {
@@ -8393,7 +8414,7 @@ local twentyeleveneighteen = {
 	},
 	
 	["Egg Eyes Batter Dragon"] = {
-		["Id"] = 959856273,
+		["Id"] = 2969038631,
 		["Name"] = "Egg Eyes Batter Dragon",
 		["Health"] = 1350,
 		["Power"] = 100,
@@ -8671,18 +8692,17 @@ local twentyeleveneighteen = {
 	["Classy Bear"] = {
 		["Id"] = 1377831655,
 		["Name"] = "Classy Bear",
-		["Health"] = 600,
+		["Health"] = 650,
 		["Power"] = 0,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Slash",
-		["CounterAttackBlock"] = true,
 		["StrenghtenImmune"] = true,
 		["SetImmune"] = true,
 		["Color"] = "Green",
 		["Cost"] = {["Neutral"] = 1,["Green"] = 2,},
 		["Effect"] = {
 			Name = "Monocle Polish",
-			Description = "Can't be counterattacked, have its stats set, or have its power increased.  When this card attacks a fighter, the fighter it attacked loses 200 power.",
+			Description = "Can't have its stats set, or have its power increased.  When this card attacks a fighter, the fighter it attacked loses 200 power.",
 			["Type"] = "OnAttack",
 			["Power"] = {{"Weaken",200}},
 			Target = "Aggressor",
@@ -9255,7 +9275,7 @@ local twentyeleveneighteen = {
 	},			
 	
 	["Tone"] = {
-		["Id"] = 557984530,
+		["Id"] = 2960010737,
 		["Name"] = "Tone",
 		["Health"] = 400,
 		["Power"] = 700,
