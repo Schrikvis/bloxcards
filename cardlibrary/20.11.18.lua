@@ -301,19 +301,38 @@ local twentyeleveneighteen = {
 		["Health"] = 800,
 		["Power"] = 500,
 		["Rarity"] = "Epic",
+		["Fading"] = true,
 		["AttackEffect"] = "Thunder",
 		["Color"] = "Red",
 		["Cost"] = {["Red"] = 4,["Neutral"] = 4},
 		["Effect"] = {
 			Name = "Terrorise",
-			Description = "Deal 200 damage to a target fighter, then destroy all enemy fighters with 100 or less health.",
+			Description = "Deal 200 damage to a target fighter. Destroy all enemy fighters with 100 or less health at the end of your turns.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",200,"Single"},{"Damage",100},{"Heal",100}},
+			["Power"] = {{"Damage",200,"Single"},{"Summon","MrDoombringerToken","Ally"},{"Damage",9999,"Self"}},
 			Target = "Opponent",
 		},
 		["Bio"] = "Slamming players into banland since 1992.",
 	},
 	
+		["MrDoombringerToken"] = {
+		["Id"] = 335687497,
+		["Name"] = "MrDoombringer",
+		["Health"] = 800,
+		["Power"] = 500,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Thunder",
+		["Color"] = "Red",
+		["Cost"] = {["Red"] = 4,["Neutral"] = 4},
+		["Effect"] = {
+			Name = "Terrorise",
+			Description = "Destroy all enemy fighters with 100 or less health at the end of your turns.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Damage",100},{"Heal",100}},
+			Target = "Opponent",
+		},
+		["Bio"] = "Slamming players into banland since 1992.",
+	},
 	["Demonic Godbeast"] = {
 		["Id"] = 335986514,
 		["Name"] = "Demonic Godbeast",
@@ -2451,8 +2470,8 @@ local twentyeleveneighteen = {
 	["ClanDrone"] = {
 		["Id"] = 384007490,
 		["Name"] = "ClanDrone",
-		["Health"] = 400,
-		["Power"] = 400,
+		["Health"] = 500,
+		["Power"] = 500,
 		["Rarity"] = "Rare",
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Lightning",
@@ -2609,7 +2628,7 @@ local twentyeleveneighteen = {
 	
 	["Olafisawesome100"] = {
 		["Id"] = 2903577499,
-		["Name"] = "Toothy Deer's Gift",
+		["Name"] = "Toothy Deer's Blessing",
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Common",
@@ -2627,9 +2646,9 @@ local twentyeleveneighteen = {
 		["Bio"] = "If you look like a toothy deer, make sure to hide.",
 	},		
 	
-	["Duel Axe Monster"] = {
-		["Id"] = 384009300,
-		["Name"] = "Duel Axe Monster",
+	["Duel Axe Monster"] = { --SlingshotJunkie
+		["Id"] = 2959456012,
+		["Name"] = "SlingshotJunkie",
 		["Health"] = 700,
 		["Power"] = 700,
 		["Rarity"] = "Rare",
@@ -2639,12 +2658,12 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Red"] = 3,["Green"] = 1,},
 		["Effect"] = {
 			Name = "Suversion",
-			Description = "When this card attacks, your opponent gains 200 life.",
+			Description = "When this card attacks, your opponent gains 500 life.",
 			["Type"] = "OnAttack",
-			["Power"] = {{"Inflict",-200}},
+			["Power"] = {{"Inflict",-500}},
 			Target = "Opponent",	
 		},
-		["Bio"] = "He duels you with dual axes for dual dueling.",
+		["Bio"] = "If he wanted to beat the opponent, why is he shooting medicine to heal them?",
 	},		
 	
 	["DrTrayBlox"] = {
@@ -2943,7 +2962,7 @@ local twentyeleveneighteen = {
 			Name = "Sudden Death",
 			Description = "Summon a random fighter with an attack-related effect.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"RandomSummon", {"Mummy Peasant", "Ghost Dragon", "Lady RedNight", "Murtic", "Inventor1116", "Animallogic", "DIY: Dark Dominus"}}},
+			["Power"] = {{"RandomSummon", {"Mummy Peasant", "Ghost Dragon", "Lady RedNight", "Murtic", "Inventor1116", "animallogic", "DIY: Dark Dominus"}}},
 			Target = "Ally",
 		},
 		["Bio"] = "What can I say, he's a canadian Leprechaun.",
@@ -4727,7 +4746,7 @@ local twentyeleveneighteen = {
 			Name = "Target",
 			Description = "Can't be discarded. Is used to target fighters and trigger effects.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",1,"Self"},{"Damage",0}},
+			["Power"] = {{"Strengthen",200,"Archetype"},{"Damage",0}},
 			Target = "Single",
 		},
 		["Bio"] = "Cast this card, then click a fighter. You'll be amazed how good it is!",
@@ -4747,7 +4766,7 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Yellow"] = 5,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "At the beginning of each player's turn, that player's opponent puts a targeting blip into their hand.",
+			Description = "At the start of each player's turn, that player's opponent puts a targeting blip into their hand.",
 			["Type"] = "Field",
 			["Power"] = {{"Add","Targeting Blip"}},
 			Target = "Opponent",
@@ -5059,7 +5078,7 @@ local twentyeleveneighteen = {
 				["Bio"] = "Too much green? More like too little. He needs more green.",
 			},
 		},
-		["Health"] = 500,
+		["Health"] = 450,
 		["Power"] = 500,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Punch1",
@@ -5067,9 +5086,9 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Green"] = 3,},
 		["Effect"] = {
 			Name = "Render",
-			Description = "Gain a white icon.",
+			Description = "Gain a white icon. Target fighter gains 50 Health.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Neutral",1,"Ally"}},
+			["Power"] = {{"Neutral",1,"Ally"},{"Heal",50}},
 			Target = "Single",
 		},
 		["Bio"] = "Sponsored by the archnemesis of blender, Brice7 (TM)",
@@ -6833,7 +6852,7 @@ local twentyeleveneighteen = {
 	},
 
 	["One4utwo4me"] = {
-		["Id"] = 893399885,
+		["Id"] = 2959458736,
 		["Name"] = "One4utwo4me",
 		["AltCards"] = {
 			["One4utwo4me-ArtV"] = {
@@ -8668,18 +8687,17 @@ local twentyeleveneighteen = {
 	["Classy Bear"] = {
 		["Id"] = 1377831655,
 		["Name"] = "Classy Bear",
-		["Health"] = 600,
+		["Health"] = 650,
 		["Power"] = 0,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Slash",
-		["CounterAttackBlock"] = true,
 		["StrenghtenImmune"] = true,
 		["SetImmune"] = true,
 		["Color"] = "Green",
 		["Cost"] = {["Neutral"] = 1,["Green"] = 2,},
 		["Effect"] = {
 			Name = "Monocle Polish",
-			Description = "Can't be counterattacked, have its stats set, or have its power increased.  When this card attacks a fighter, the fighter it attacked loses 200 power.",
+			Description = "Can't have its stats set, or have its power increased.  When this card attacks a fighter, the fighter it attacked loses 200 power.",
 			["Type"] = "OnAttack",
 			["Power"] = {{"Weaken",200}},
 			Target = "Aggressor",

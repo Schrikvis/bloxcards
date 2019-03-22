@@ -1205,7 +1205,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Kamov"] = {
-		["Id"] = 271751666,
+		["Id"] = 2959461488,
 		["Name"] = "Kamov",
 		["Health"] = 600,
 		["Power"] = 300,
@@ -2285,7 +2285,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Dextromer"] = {
-		["Id"] = 280562630,
+		["Id"] = 2959459429,
 		["Name"] = "Dextromer",
 		["Health"] = 800,
 		["Power"] = 800,
@@ -2929,7 +2929,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["DerptasticDevil"] = {
-		["Id"] = 1375039481,
+		["Id"] = 2959451059,
 		["Name"] = "DerptasticDevil",
 		["Health"] = 1200,
 		["Power"] = 400,
@@ -3492,11 +3492,11 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},		
 	
 	["Thunder Bolt"] = {
-		["Id"] = 2817086967,
+		["Id"] = 2910236370,
 		["Name"] = "Thunder Bolt",
 		["AltCards"] = {
 			["H-Thunder"] = { -- Retired token.
-				["Id"] = 2817087726,
+				["Id"] = 2910237098,
 				["Name"] = "Lightning Blast",
 				["Health"] = 0,
 				["Power"] = 0,
@@ -3515,7 +3515,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Null",
 		["Color"] = "Blue",
-		["Cost"] = {["Neutral"] = 8,},
+		["Cost"] = {["Neutral"] = 6,},
 		["Effect"] = {
 				Name = "Zappow!",
 				Description = "Deal 4000 damage to allied fighters and all archetyped fighters, then deal 400 damage to all enemy fighters. You can't run Lightning Blast in your deck.",
@@ -4177,7 +4177,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 			
 	["Split Ego"] = {
-		["Id"] = 285154829,
+		["Id"] = 2959449521,
 		["Name"] = "Split Ego",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -5565,7 +5565,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Requirement"] = {false,4,true},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Cast this card only if your opponent controls four or more fighters. At the beginning of each player's turn, deal 150 damage to all fighters.",
+			Description = "Cast this card only if your opponent controls four or more fighters. At the start of each player's turn, deal 150 damage to all fighters.",
 			["Type"] = "Field",
 			["Power"] = "Damage",
 			Target = "All",	
@@ -5587,7 +5587,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 2,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "At the beginning of each player's turn, increase the power of all fighters by 50.",
+			Description = "At the start of each player's turn, increase the power of all fighters by 50.",
 			["Type"] = "Field",
 			["Power"] = "Strengthen",
 			Target = "All",	
@@ -5638,7 +5638,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 5,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "At the start of each player's turn, reduce the power of that player's fighters by 50.",
+			Description = "At the start of each player's turn, allied fighters lose 50 power.",
 			["Type"] = "Field",
 			["Power"] = "Weaken",
 			Target = "Ally",	
@@ -5660,7 +5660,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 0,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Enemy cards lose 100 power and allied fighters gain 100 power. This effect alternates between players at the start of each turn.",
+			Description = "At the start of each player's turn, enemy fighters lose 100 power and allied fighters gain 100 power.",
 			["Type"] = "Field",
 			["Power"] = {{"Weaken",100,"Opponent"},{"Strengthen",100,"Ally"}},
 			Target = "All",
@@ -6669,7 +6669,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Set each players' white icons to 4 at the start of each turn.",
+			Description = "At the start of each player's turn, set both players' white icons to 4.",
 			["Type"] = "Field",
 			["Power"] = "SetNeutral",
 			Target = "All",	
@@ -7336,8 +7336,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Overseer Prophet"] = {
 		["Id"] = 298793579,
 		["Name"] = "Overseer Prophet",
-		["Health"] = 800,
-		["Power"] = 800,
+		["Health"] = 900,
+		["Power"] = 900,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Thunder",
 		["Archetype"] = "Overseer",
@@ -7377,7 +7377,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Police Combatant"] = {
 		["Id"] = 298793620,
 		["Name"] = "Police Combatant",
-		["Health"] = 700,
+		["Health"] = 600,
 		["Power"] = 350,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Thunder",
@@ -7561,8 +7561,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Acolyte",
-			Description = "Whenever this card attacks and destroys another, put a random Acolyte into your hand.",
-			["Type"] = "OnAttackDestroy",
+			Description = "Whenever this card attacks, put a random Acolyte into your hand.",
+			["Type"] = "OnAttack",
 			["Power"] = {{"RandomAdd","Acolyte"}},
 			Target = "Ally",
 		},
@@ -7739,10 +7739,10 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Terrain",
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Allied fighters gain 50 health at the start of each turn. This effect alternates between players at the start of each turn.",
+			Description = "At the start of each player's turn, all enemy fighters gain 50 health.",
 			["Type"] = "Field",
 			["Power"] = "Heal",
-			Target = "Ally",	
+			Target = "Opponent",	
 			Increase = 50,
 		},
 		["Bio"] = "Bread Factory helps deal with Bread decks. How do you work that out?",
@@ -8396,7 +8396,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "All enemy fighters gain 100 power and all allied fighters lose 100 power. This effect alternates between players at the start of each turn.",
+			Description = "At the start of each player's turn, enemy fighters gain 100 power and allied fighters lose 100 power.",
 			["Type"] = "Field",
 			["Power"] = {{"Strengthen",100,"Opponent"},{"Weaken",100,"Ally"}},
 			Target = "All",
@@ -9205,16 +9205,16 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			},
 		},
 		["Health"] = 350,
-		["Power"] = 350,
+		["Power"] = 300,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Thunder",
 		["Color"] = "Yellow",
 		["Cost"] = {["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Target Master",
-			Description = "Generate 2 Yellow icons.",
+			Description = "Generate 2 Yellow icons. Target fighter gains 50 Power.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Yellow",2,"Ally"}},
+			["Power"] = {{"Yellow",2,"Ally"},{"Strengthen",50}},
 			Target = "Single",
 		},
 		["Bio"] = "SPOOKY PLUSHIES!",
