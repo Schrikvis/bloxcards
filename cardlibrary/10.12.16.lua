@@ -4051,7 +4051,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["vanjohnson"] = {
 		["Id"] = 1235228562,
 		["Name"] = "vanjohnson",
-		["Health"] = 1000,
+		["Health"] = 1200,
 		["Power"] = 300,
 		["Rarity"] = "Rare",
 		["Archetype"] = "Hero",		
@@ -6809,10 +6809,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 2, ["Blue"] = 1,},
-		["Charge"] = true,
 		["Effect"] = {
 			Name = "Spam",
-			Description = "Haste. When this card attacks, lock all allies for an additional turn and generate two blue icons.",
+			Description = "When this card attacks, lock all ally fighters for an additional turn and generate two Blue icons.",
 			["Type"] = "OnAttack",
 			["Power"] = {{"Lock",1},{"Blue",2}},
 			Target = "Ally",
@@ -6928,17 +6927,18 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Health"] = 350,
 		["Power"] = 350,
 		["Rarity"] = "Uncommon",
-		["AttackEffect"] = "PunchKick",
+		["AttackEffect"] = "Lightning",
 		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 1,["Red"] = 1,},
 		["Effect"] = {
-			Name = "Hodif, but not",
-			Description = "Lose 100 life.",
+			Name = "Faker Hit",
+			Description = "You lose 100 Life.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Cost",100}},
 			Target = "Ally",
 		},
 		["Bio"] = "He just wants to get choked like his idol from some anime he watched or something.",
-	},
+	},	
+
 }
 return tentwelvesixteen
