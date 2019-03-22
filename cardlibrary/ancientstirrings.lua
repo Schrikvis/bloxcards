@@ -1103,7 +1103,6 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Dash",
 		["Color"] = "Yellow", 
 		["Cost"] = {["Yellow"] = 2,},
-		["Archetype"] = "Target",
 		["Effect"] = {
 			Name = "Halloween",
 			Description = "Whenever a Targeting Blip is cast, Smiling Golem gains 200 power.",
