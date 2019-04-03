@@ -2655,7 +2655,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Degenerate Nekotare",
 			Description = "When Wesker gains a lock, he gains 250 health.",
-			["Type"] = "OnLockGain",
+			["Type"] = "OnLockIncrease",
 			["Power"] = {{"Heal",250}},
 			Target = "Self",
 		},
