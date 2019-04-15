@@ -296,6 +296,124 @@ local botcards = { -- Cards used by an AI that are not meant for human play go h
 		},
 		["Bio"] = "I wonder if Drager ever realized he could just have nerfed this himself so he wouldn't have to get an aneurysm and quit.",
 	},
+	
+	--69 82 82 48 82 32 52 48 52 32 65 73 32 78 79 84 32 70 79 85 78 68
+	
+	["nuLl"] = {
+		["Id"] = 0,
+		["Name"] = "nuLl",
+		["Health"] = 0,
+		["Power"] = 0,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "4504e5f0bfccb6e4bd7b024114abe16f9a1e02d2",
+		["Color"] = "Neutral",
+		["Cost"] = {["Neutral"] = 0,},
+		["Effect"] = {
+			Name = "beginning of the end",
+			Description = "eRr0r 4o4 EfFec7 n0T føund",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Summon","void"},{"SetLife",62245.61269466037254672185},{"Neutral",255},{"Blue",255},{"Red",255},{"Green",255},{"Yellow",255}},
+			Target = "Ally",
+		},
+		["Bio"] = "",
+	},
+	
+	["void"] = {
+		["Id"] = 00,
+		["Name"] = "void",
+		["Health"] = 0,
+		["Power"] = 0,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "4504e5f0bfccb6e4bd7b024114abe16f9a1e02d2",
+		["Color"] = "Neutral",
+		["Cost"] = {["Neutral"] = 0,},
+		["Effect"] = {
+			Name = "revert",
+			Description = "When you lose life, reality distorts.",
+			["Type"] = "OnHealthLoss",
+			["Power"] = {{"RandomSummon",{TBD}},{"SetHealth",0,"Opponent"},{"Setlife",64376.53286493784653274892}},
+			Target = "Ally",
+		},
+		["Bio"] = "",
+	},
+	
+	["reality=nil"] = {
+		["Id"] = 000,
+		["Name"] = "reality=nil",
+		["Health"] = 0,
+		["Power"] = 0,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "4504e5f0bfccb6e4bd7b024114abe16f9a1e02d2",
+		["Color"] = "Yellow",
+		["Cost"] = {["Neutral"] = 0,},
+		["Effect"] = {
+			Name = "deck=nil",
+			Description = "R∑ål1†¥ ç0Ll@π5eS øn i1I1iI1Ii1i!ItT†t†T†T†ts3lllllff. .   .  .  .. .   .  .  . ... idf\ney332√\n85ij1o\nk˙\n¨ˆ´∑´©®˜ƒ∆\n˚®,˜∆F6gny78s\nbg√JBb\ntgvßΩç√˙∆\nø∆˜ø∑\n´©ˆ†´©˙",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Draw",65535}},
+			Target = "Opponent",
+		},
+		["Bio"] = "",
+	},
+	
+	["morph"] = {
+		["Id"] = 0000,
+		["Name"] = "morph",
+		["Health"] = 1039.6738495,
+		["Power"] = 316.4264892,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "4504e5f0bfccb6e4bd7b024114abe16f9a1e02d2",
+		["Color"] = "Blue",
+		["Cost"] = {["Neutral"] = 0,},
+		["Fading"] = true,
+		["Effect"] = {
+			Name = "morph",
+			Description = "When another fighter dies, reality distorts.",
+			["Type"] = "OnAnyDeath",
+			["Power"] = {{"RandomSummon",{"morph","burst","hand-1"}},{"DeckAdd","morph"},{"Neutral",-2,"Opponent"},{"Blue",-1,"Opponent"},{"Red",-1,"Opponent"},{"Green",-1,"Opponent"},{"Yellow",-1,"Opponent"}}
+			Target = "Ally",
+		},
+		["Bio"] = "",
+	},
+	
+	["burst"] = {
+		["Id"] = 00000,
+		["Name"] = "burst",
+		["Health"] = 673.4582932406834,
+		["Power"] = 748.451684773421513468,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "4504e5f0bfccb6e4bd7b024114abe16f9a1e02d2",
+		["Color"] = "Red",
+		["Cost"] = {["Neutral"] = 0,},
+		["WeakenImmune"] = true,
+		["Effect"] = {
+			Name = "burst",
+			Description = "When this finishes attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking, attacking,",
+			["Type"] = "OnAttackEnd",
+			["Power"] = {{"Damage",163.5467859234698468926795,"Opponent"},{"Unlock",1}},
+			Target = "Self",
+		},
+		["Bio"] = "",
+	},
+	
+	["hand-1"] = {
+		["Id"] = 000000,
+		["Name"] = "hand-1",
+		["Health"] = 1206.4503250285019,
+		["Power"] = 105.10490572830401543,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "4504e5f0bfccb6e4bd7b024114abe16f9a1e02d2",
+		["Color"] = "Green",
+		["Cost"] = {["Neutral"] = 0,},
+		["Effect"] = {
+			Name = "hand-1",
+			Description = "When this card attacks, reality distorts.",
+			["Type"] = "OnAttack",
+			["Power"] = {{"RandomAdd",{"morph","burst","hand-1"},"Ally"},{"Return",030},{"Return",030}},
+			Target = "Agressor",
+		},
+		["Bio"] = "",
+	},
 }
 
 return botcards
