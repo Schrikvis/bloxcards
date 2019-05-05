@@ -775,7 +775,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 4,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "You gain 1000 life. Whenever you gain life, set your white and green icons to 3.",
+			Description = "When this card is cast, you gain 1000 life. Whenever you gain life, set your white and green icons to 3.",
 			["Type"] = "OnHealthGain",
 			["Power"] = {{"SetNeutral",3},{"SetGreen",3}},
 			Target = "Ally",
@@ -1035,7 +1035,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2, ["Yellow"] = 5, ["Blue"] = 5,},
 		["Effect"] = {
 			Name = "Hellfire",
-			Description = "When this card is cast, lock all enemy fighters for one turn. At the end of your turn, lower the power of all enemy fighters by 100, generate a yellow icon, and then deal 200 damage to your opponent.",
+			Description = "When this card is first cast, lock all enemy fighters for one turn. At the end of your turn, lower the power of all enemy fighters by 100, generate a yellow icon, and then deal 200 damage to your opponent.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Lock",1},{"Summon","Dicey Token","Ally"},{"Damage",9999,"Self"}},
 			Target = "Opponent",
@@ -1054,7 +1054,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2, ["Yellow"] = 5, ["Blue"] = 5,},
 		["Effect"] = {
 			Name = "Hellfire",
-			Description = "When this card is cast, lock all enemy fighters for one turn. At the end of your turn, lower the power of all enemy fighters by 100, generate a yellow icon, and then deal 200 damage to your opponent.",
+			Description = "When this card is first cast, lock all enemy fighters for one turn. At the end of your turn, lower the power of all enemy fighters by 100, generate a yellow icon, and then deal 200 damage to your opponent.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Yellow",1,"Ally"},{"Weaken",100,"Opponent"},{"Cost",200},{"Inflict",200,"Opponent"}},
 			Target = "Opponent",
@@ -1783,7 +1783,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Toasty",
 			Description = "Whenever this fighter is attacked and survives, you gain 500 Life.",
 			["Type"] = "OnAttacked",
-			["Power"] = {{"Cost",-400}},
+			["Power"] = {{"Cost",-500}},
 			Target = "Ally",
 		},
 		["Bio"] = "SmolToasters are sold withouth smol bread or batteries included.",
@@ -1998,7 +1998,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1, ["Green"] = 2,},
 		["Effect"] = {
 			Name = "befriending of scaly mutts",
-			Description = "Cast this card only if your opponent controls 4 or more fighters. When you do, lower the power of a target fighter by 400.",
+			Description = "Cast this card only if your opponent controls 4 or more fighters. When you do, a target fighter loses 400 power.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",400}},
 			Target = "Single",
@@ -2165,9 +2165,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Bio"] = "Burny the Satyr says: Only YOU can start forest fires! :D :D",
 				["Effect"] = {
 					Name = "befriending of scaly mutts",
-					Description = "At the end of your turns, deal 100 damage to the opponent, then summon a copy of Satyr Firedancer.",
+					Description = "At the end of your turns, deal 350 damage to the opponent, then summon a copy of Satyr Firedancer.",
 					["Type"] = "OnEnd",
-					["Power"] = {{"SetBlue",0},{"Summon","Satyr Firemaster-Sun"},{"Inflict",100,"Opponent"}},
+					["Power"] = {{"SetBlue",0},{"Summon","Satyr Firemaster-Sun"},{"Inflict",350,"Opponent"}},
 					Target = "Ally",
 				},
 			}
@@ -2225,7 +2225,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "R",
 			Description = "Randomly transform all other fighters into random fighters. This card is immune to effects that set its stats.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Summon","DeliriousTokenA","Ally"},{"SetHealth",0,"Opponent"},{"Heal",9999},{"Damage",9999,"Archetype"},{"Summon","DeliriousTokenB","Ally"},{"SetHealth",0,"Ally"},{"Heal",9999},{"Damage",9999,"Archetype"},{"SetGreen",0,"Ally"}},
+			["Power"] = {{"Summon","DeliriousTokenA","Ally"},{"SetHealth",0,"Opponent"},{"Heal",9999},{"Damage",9999,"Archetype"},{"Summon","DeliriousTokenB","Ally"},{"SetHealth",0,"Ally"},{"Heal",9999},{"Damage",9999,"Archetype"}},
 			Target = "Self",
 		},
 		["Bio"] = "Let it show you everything nature cannot do.",
@@ -2781,7 +2781,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 4,},
 		["Effect"] = {
 			Name = "Life fam",
-			Description = "Fading. When this card is cast, deal 150 damage to all enemy fighters. When targeted, reset its stats and return this card to your hand. ",
+			Description = "Fading. When this card is cast, deal 150 damage to all enemy fighters. When targeted, reset this card's stats and return this card to your hand. ",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",150,"Opponent"},{"Summon","Round2"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -2802,7 +2802,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 4,},
 		["Effect"] = {
 			Name = "Life fam",
-			Description = "Fading. When this card is cast, deal 150 damage to all enemy fighters. When targeted, reset this cards stats and return it to your hand.",
+			Description = "Fading. When this card is cast, deal 150 damage to all enemy fighters. When targeted, reset this card's stats and return it to your hand.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Add","Roundawsome"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -2984,7 +2984,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "inferior to rainbowjewelninga clearly.",
 			Description = "Haste. If Shard Master would attack, instead Summon three random crystals and put a targeting blip into your hand.",
 			["Type"] = "OnAttack",
-			["Power"] = {{"RandomSummon",{"Crystal of Inverse Decay","Crystal of Pure Divinity","Crystal of Heroic Ambition","Crystal of Reality's Fractal","Crystal of Nature's Surge","Crystal of Heaven's Pulse","Crystal of Knowledge's Thirst","Crystal of Logic's Will","Crystal of Intellect's Scheme","Crystal of Power's Exploit","Crystal of Ambition's End","Crystal of Death's Vengence"}},{"RandomSummon",{"Crystal of Inverse Decay","Crystal of Pure Divinity","Crystal of Heroic Ambition","Crystal of Reality's Fractal","Crystal of Nature's Surge","Crystal of Heaven's Pulse","Crystal of Knowledge's Thirst","Crystal of Logic's Will","Crystal of Intellect's Scheme","Crystal of Power's Exploit","Crystal of Ambition's End","Crystal of Death's Vengence"}},{"RandomSummon",{"Crystal of Inverse Decay","Crystal of Pure Divinity","Crystal of Heroic Ambition","Crystal of Reality's Fractal","Crystal of Nature's Surge","Crystal of Heaven's Pulse","Crystal of Knowledge's Thirst","Crystal of Logic's Will","Crystal of Intellect's Scheme","Crystal of Power's Exploit","Crystal of Ambition's End","Crystal of Death's Vengence"}},{"Strengthen",0,"Single"}},
+			["Power"] = {{"RandomSummon",{"Crystal of Inverse Decay","Crystal of Pure Divinity","Crystal of Heroic Ambition","Crystal of Reality's Fractal","Crystal of Nature's Surge","Crystal of Heaven's Pulse","Crystal of Knowledge's Thirst","Crystal of Logic's Will","Crystal of Intellect's Scheme","Crystal of Power's Exploit","Crystal of Ambition's End","Crystal of Death's Vengence"}},{"RandomSummon",{"Crystal of Inverse Decay","Crystal of Pure Divinity","Crystal of Heroic Ambition","Crystal of Reality's Fractal","Crystal of Nature's Surge","Crystal of Heaven's Pulse","Crystal of Knowledge's Thirst","Crystal of Logic's Will","Crystal of Intellect's Scheme","Crystal of Power's Exploit","Crystal of Ambition's End","Crystal of Death's Vengence"}},{"RandomSummon",{"Crystal of Inverse Decay","Crystal of Pure Divinity","Crystal of Heroic Ambition","Crystal of Reality's Fractal","Crystal of Nature's Surge","Crystal of Heaven's Pulse","Crystal of Knowledge's Thirst","Crystal of Logic's Will","Crystal of Intellect's Scheme","Crystal of Power's Exploit","Crystal of Ambition's End","Crystal of Death's Vengence"}},{"Add","Targeting Blip"}},
 			Target = "Ally",
 		},
 		["Bio"] = "I am the Shardian of the Galaxy...fear me.",
@@ -3479,7 +3479,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2, ["Blue"] = 2,},
 		["Effect"] = {
 			Name = "Poisonous Touch",
-			Description = "When this card is cast, swap the stats of all allied fighters.",
+			Description = "When this card is cast, swap the stats of all fighters. At the end of this turn, swap the stats of all allied fighters back.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Swap",030},{"Summon","Arte71 3",},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -3615,7 +3615,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["TokenDiscard"] = true,
 		["Effect"] = {
 			Name = "Poisonous Touch",
-			Description = "Can't be discarded. Cast Alar Actions only if you have 2 or more Alar Knights in play. Shuffle this card into your deck, then draw 2 cards.",
+			Description = "Generates no icons when discarded. Cast Alar Actions only if you have 2 or more Alar Knights in play. Shuffle this card into your deck, then draw 2 cards.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"DeckAdd","Splintered Summons"},{"Draw",2}},
 			Target = "Ally",
@@ -3657,7 +3657,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["TokenDiscard"] = true,
 		["Effect"] = {
 			Name = "Poisonous Touch",
-			Description = "Can't be discarded. Cast Alar Actions only if you have 2 or more Alar Knights in play. Shuffle this card back into your deck. All Alar Knights gain 300 health.",
+			Description = "Generates no icons when discarded. Cast Alar Actions only if you have 2 or more Alar Knights in play. Shuffle this card back into your deck. All Alar Knights gain 300 health.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"DeckAdd","Splintered Blessing"},{"Heal",300,"Archetype"}},
 			Target = "Ally",
@@ -5353,7 +5353,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "I",
-			Description = "Can't be discarded. Requires 3 Police in play to investigate. Summon three lowly thugs onto the opponent's board. End the turn.",
+			Description = "Generates no icons when discarded. Requires 3 Police in play to investigate. Summon three lowly thugs onto the opponent's board. End the turn.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Lock",1},{"Summon","LowlyC"},{"Summon","LowlyB"},{"Summon","LowlyA"},{"Unlock",1},{"EndTurn",1,"Ally"}},
 			Target = "Opponent",
@@ -5682,7 +5682,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
  			Name = "Booming Red",
 			Description = "Can't attack or generate icons.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Summon","Boom2"}},
+			["Power"] = {{"Draw",0}},
 			Target = "Ally",
  		},
  		["Bio"] = "On second thought, why not make a token with the card! Double the fun!",
@@ -6355,7 +6355,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Leitris.png",
-			Description = "When this card is cast, lower the power of a target fighter by 200.",
+			Description = "When this card is cast, a target fighter loses 200 power.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",200}},
 			Target = "Single",
@@ -6658,9 +6658,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 3,["Green"] = 3,},
 		["Effect"] = {
 			Name = "Life fam",
-			Description = "Cast only if you control a celestial and have over 11000 life. Cast a 1500/500 Celestial of Night and a 1500/500 Celestial of Day. You gain 500 life.",
+			Description = "Cast only if you control a celestial and have over 11000 life. Summon a 1500/500 Celestial of Night and a 1500/500 Celestial of Day. You gain 500 life.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"SummonWithEffect","Celestial of Night"},{"Cost",10999},{"SummonWithEffect","Celestial of Day"},{"Cost",-11499}},
+			["Power"] = {{"Summon","Celestial of Night"},{"Cost",10999},{"Summon","Celestial of Day"},{"Cost",-11499}},
 			Target = "Ally",
 		},
 		["Bio"] = "Logic ends without mystique. Mystique is never breached without logic. Take steps back and forth to find the truth.",
@@ -6833,7 +6833,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 6, ["Green"] = 6,},
 		["Effect"] = {
 			Name = "Spam",
-			Description = "Cast Shirozaru only if an opponent controls a fighter. Summon four 400/400 Spatial Souls, put Horologium into your hand and end the turn.",
+			Description = "Cast Shirozaru only if an opponent controls a fighter. When you do, summon four 400/400 Spatial Souls, put Horologium into your hand and end the turn.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Summon","Spatial Soul"},{"Summon","Spatial Soul"},{"Summon","Spatial Soul"},{"Summon","Spatial Soul"},{"Add","Horologium"},{"EndTurn"}},
 			Target = "Ally",
@@ -7005,7 +7005,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "",
 	},
 	
-	["Yellow Titan Essence"] = {
+	["Yellow Titan Esssence"] = {
 		["Id"] = 543041104,
 		["Name"] = "Yellow Titan Essence",
 		["Health"] = 0,

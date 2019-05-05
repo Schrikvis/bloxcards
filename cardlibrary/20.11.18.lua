@@ -239,7 +239,7 @@ local twentyeleveneighteen = {
 				["Bio"] = "Falling out of a boatâ€¦ WITH STYLE.",
 				["Effect"] = {
 					Name = "ðŸ¤”",
-					Description = "When an enemy fighter dies, return LeetWizard to your hand and generate a red icon.",
+					Description = "Whenever LeetWizard is cast, deal 300 damage to a target fighter and lock it for 1 turn. Whenever an enemy fighter dies, reset LeetWizard's stats, return it to your hand and generate a red icon.",
 					["Type"] = "OnEnemyDeath",
 					["Power"] = {{"Red",1},{"Add","LeetWizard-Sun"}},
 					Target = "Ally",
@@ -250,7 +250,7 @@ local twentyeleveneighteen = {
 				["Bio"] = "Treas0ner, you're dumb. Wesker, you're toxic. Dairing, resize your images. Myr, stop being weird. Blitz, stop wasting your time. Histor, be quiet. Soul, stop admin abusing. Vis, man up.",
 				["Effect"] = {
 					Name = "ðŸ¤”",
-					Description = "When an enemy fighter dies, return LeetWizard to your hand and generate a red icon.",
+					Description = "Whenever LeetWizard is cast, deal 300 damage to a target fighter and lock it for 1 turn. Whenever an enemy fighter dies, reset LeetWizard's stats, return it to your hand and generate a red icon.",
 					["Type"] = "OnEnemyDeath",
 					["Power"] = {{"Red",1},{"Add","LeetWizard Masant"}},
 					Target = "Ally",
@@ -265,7 +265,7 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 2, ["Red"] = 2},
 		["Effect"] = {
 			Name = "ðŸ¤”",
-			Description = "When an enemy fighter dies, return LeetWizard to your hand and generate a red icon.",
+			Description = "Whenever LeetWizard is cast, deal 300 damage to a target fighter and lock it for 1 turn. Whenever an enemy fighter dies, reset LeetWizard's stats, return it to your hand and generate a red icon.",
 			["Type"] = "OnEnemyDeath",
 			["Power"] = {{"Red",1},{"Add","LeetWizard"}},
 			Target = "Ally",
@@ -334,24 +334,6 @@ local twentyeleveneighteen = {
 		["Bio"] = "Slamming players into banland since 1992.",
 	},
 	
-		["MrDoombringerToken"] = {
-		["Id"] = 335687497,
-		["Name"] = "MrDoombringer",
-		["Health"] = 800,
-		["Power"] = 500,
-		["Rarity"] = "Token",
-		["AttackEffect"] = "Thunder",
-		["Color"] = "Red",
-		["Cost"] = {["Red"] = 4,["Neutral"] = 4},
-		["Effect"] = {
-			Name = "Terrorise",
-			Description = "Destroy all enemy fighters with 100 or less health at the end of your turns.",
-			["Type"] = "OnEnd",
-			["Power"] = {{"Damage",100},{"Heal",100}},
-			Target = "Opponent",
-		},
-		["Bio"] = "Slamming players into banland since 1992.",
-	},
 	["Demonic Godbeast"] = {
 		["Id"] = 335986514,
 		["Name"] = "Demonic Godbeast",
@@ -364,7 +346,7 @@ local twentyeleveneighteen = {
 			["Favored Godbeast"] = {
 				["Effect"] = {
 					Name = "Divine Ruination",
-					Description = "Can't attack or be discarded. At the end of your turn, destroy all enemy fighters and this fighter. Fading.",
+					Description = "Can't attack. Doesn't generate icons when discarded. At the end of your turn, destroy all enemy fighters and this fighter. Fading.",
 					["Type"] = "OnEnd",
 					["Power"] = {{"Damage",9999},{"Damage",9999,"Opponent"}},
 					["Target"] = "Self",
@@ -383,7 +365,7 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Neutral"] = 0},
 		["Effect"] = {
 			Name = "Revival",
-			Description = "Can't attack or be discarded. At the end of the turn, deal 9000 damage to this fighter. Fading.",
+			Description = "Can'ts attack. Doesn't generate icons when discarded. At the end of the turn, deal 9000 damage to this fighter. Fading.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Damage",9000}},
 			["Target"] = "Self",
@@ -531,8 +513,8 @@ local twentyeleveneighteen = {
 				["Bio"] = "Are they worshipping Cthulhu, or praying for good weather? Who knows!? All they can say is â€˜meepâ€™ and â€˜moop.â€™",
 			},
 		},
-		["Health"] = 700,
-		["Power"] = 700,
+		["Health"] = 600,
+		["Power"] = 600,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Thunder",
 		["Color"] = "Green",
@@ -588,7 +570,7 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Infinity Cannon",
-			Description = "Can't be discarded. Deal 200 damage to a target fighter and Put a copy of this card into your hand.",
+			Description = "Generates no icons when discarded. Deal 200 damage to a target fighter and Put a copy of this card into your hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",200},{"Add","Infinity Cannon","Ally"}},
 			Target = "Single",
@@ -961,7 +943,7 @@ local twentyeleveneighteen = {
 				["Id"] = 1476566080,
 				["Effect"] = {
 					Name = "Nerf",
-					Description = "Put two Newbees into your hand. Whenever you cast a bee, increase the health and power of all bees by 50.",
+					Description = "hen this card is cast, put two Newbees into your hand. Whenever you cast a bee, increase the health and power of all bees by 50.",
 					Type = "OnAllySummon",
 					Archetype = "Bee",
 					Power = {{"Heal",50,"Archetype"},{"Strengthen",50,"Archetype"}},
@@ -979,7 +961,7 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 2,["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Nerf",
-			Description = "Put two bees into your hand. Whenever you cast a bee, increase the health and power of all bees by 50.",
+			Description = "hen this card is cast, put two bees into your hand. Whenever you cast a bee, increase the health and power of all bees by 50.",
 			Type = "OnAllySummon",
 			Archetype = "Bee",
 			Power = {{"Heal",50,"Archetype"},{"Strengthen",50,"Archetype"}},
@@ -2288,7 +2270,7 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Neutral"] = 3,["Red"] = 6,},
 		["Effect"] = {
 			Name = "Knockdown",
-			Description = "When this card is cast or when it+ dies, deal 250 damage to all Non-Redcliff fighters.",
+			Description = "When this card is cast or when it dies, deal 250 damage to all Non-Redcliff fighters.",
 			["Type"] = "OnDeath",
 			["Power"] = {{"Damage",250}},
 			Target = "NotArchetype",
@@ -3154,7 +3136,7 @@ local twentyeleveneighteen = {
 			Name = "Overgrown",
 			Description = "At the end of your turns, all enemy fighters lose 100 health and power. Then all blue fighters gain 100 health and all green fighters gain 100 power.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Weaken",100,"Opponent"},{"Damage",100,"Opponent"},{"Heal",100,"ColorBlue"},{"Strenghten",100,"ColorGreen"}},
+			["Power"] = {{"Weaken",100,"Opponent"},{"Damage",100,"Opponent"},{"Heal",100,"ColorBlue"},{"Strengthen",100,"ColorGreen"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Owner of Trade. and has massive influence in the LMaD sub-forum. He'll keep pushing on and advertising his group until ROBLOX ends.",
@@ -3179,7 +3161,7 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 1,["Green"] = 3,},
 		["Effect"] = {
 			Name = "All is fair in love and duels.",
-			Description = "Cast only if your opponent controls a fighter. Set your opponent's white icons to 3.",
+			Description = "Cast only if your opponent controls a fighter. When you do, set your opponent's white icons to 3.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"SetNeutral",3}},
 			Target = "All",
@@ -3431,10 +3413,10 @@ local twentyeleveneighteen = {
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Green",
-		["Cost"] = {["Green"] = 6,},
+		["Cost"] = {["Neutral"] = 1, ["Green"] = 6,},
 		["Effect"] = {
 			Name = "Revival",
-			Description = "When this card is cast, set your green icons to 10000. Lose all other icons.",
+			Description = "When this card is cast, set your green icons to 6. Lose all other icons.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"SetYellow",0},{"SetGreen",6},{"SetBlue",0},{"SetRed",0},{"SetNeutral",0}},
 			Target = "Ally",
@@ -3859,7 +3841,7 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 4,},
 		["Effect"] = {
 			Name = "Demoralising Chant",
-			Description = "Cast only if you control a Korblox. A target fighter loses 500 Power.",
+			Description = "Cast only if you control a Korblox. When you do, a target fighter loses 500 Power.",
 			["Type"] = "OnSummon",
 			["Power"] = "Weaken",
 			Target = "Single",
@@ -4588,7 +4570,7 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Target",
-			Description = "7 Charges. Target a fighter, then remove a charge. Can't be discarded.",
+			Description = "7 Charges. Target a fighter, then remove a charge. Doesn't generate when discarded.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",0},{"Add","Super Blip2", "Ally"}},
 			Target = "Single",
@@ -4609,7 +4591,7 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Target",
-			Description = "6 Charges. Target a fighter, then remove a charge. Can't be discarded.",
+			Description = "6 Charges. Target a fighter, then remove a charge. Doesn't generate when discarded.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",0},{"Add","Super Blip3", "Ally"}},
 			Target = "Single",
@@ -4630,7 +4612,7 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Target",
-			Description = "5 Charges. Target a fighter, then remove a charge. Can't be discarded.",
+			Description = "5 Charges. Target a fighter, then remove a charge. Doesn't generate when discarded.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",0},{"Add","Super Blip4", "Ally"}},
 			Target = "Single",
@@ -4651,7 +4633,7 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Target",
-			Description = "4 Charges. Target a fighter, then remove a charge. Can't be discarded.",
+			Description = "4 Charges. Target a fighter, then remove a charge. Doesn't generate when discarded.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",0},{"Add","Super Blip5", "Ally"}},
 			Target = "Single",
@@ -4672,7 +4654,7 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Target",
-			Description = "3 Charges. Target a fighter, then remove a charge. Can't be discarded.",
+			Description = "3 Charges. Target a fighter, then remove a charge. Doesn't generate when discarded.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",0},{"Add","Super Blip6", "Ally"}},
 			Target = "Single",
@@ -4693,7 +4675,7 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Target",
-			Description = "2 Charges. Target a fighter, then remove a charge. Can't be discarded.",
+			Description = "2 Charges. Target a fighter, then remove a charge. Doesn't generate when discarded.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",0},{"Add","Super Blip7", "Ally"}},
 			Target = "Single",
@@ -4714,7 +4696,7 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Target",
-			Description = "1 Charge. Target a fighter, then remove a charge. Can't be discarded.",
+			Description = "1 Charge. Target a fighter, then remove a charge. Doesn't generate when discarded.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",0},{"Add","Super Blip8", "Ally"}},
 			Target = "Single",
@@ -4735,7 +4717,7 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Target",
-			Description = "0 Charges. Target a fighter. Can't be discarded.",
+			Description = "0 Charges. Target a fighter. Doesn't generate when discarded.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",1,"Self"},{"Damage",0}},
 			Target = "Single",
@@ -4779,7 +4761,7 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Target",
-			Description = "Can't be discarded. Is used to target fighters and trigger effects.",
+			Description = "Doesn't generate when discarded. Is used to target fighters and trigger effects.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Strengthen",200,"Archetype"},{"Damage",0}},
 			Target = "Single",
@@ -5104,9 +5086,9 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Red"] = 1, ["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Deal 1.000,000 damage to yourself.",
+			Description = "Deal 35,000,000 damage to yourself.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Cost",1000000}},
+			["Power"] = {{"Cost",35000000}},
 			Target = "Ally",
 		},
 		["Bio"] = "Hey, at least the name is true to itself.",
@@ -5309,7 +5291,7 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Render",
-			Description = "At the end of your turn, gain 200 life.",
+			Description = "Can't generate icons. At the end of your turn, gain 200 life.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Cost",-200}},
 			Target = "Ally",
@@ -7197,7 +7179,7 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Green"] = 2,},
 		["Effect"] = {
 			Name = "WoodReviewer",
-			Description = "Whenever your opponent casts an action or terrain spell, return it to your hand. Fading.",
+			Description = "When this card is cast, put a random overseer card into your hand. Whenever your opponent casts an action or terrain spell, return it to your hand. Fading.",
 			["Type"] = "OnEnemyCast",
 			["Power"] = {{"Add","Overseer Drake"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -7403,7 +7385,7 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Yellow"] = 3, ["Neutral"] = 5},
 		["Effect"] = {
 			Name = "He can't fix it after all",
-			Description = "Cast this only if your opponent controls at least 2 fighters. Your opponent loses all of their white icons and draws two cards.",
+			Description = "Cast this only if your opponent controls at least 2 fighters. When you do, your opponent loses all of their white icons and draws two cards.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"SetNeutral",0,"Opponent"},{"Draw",2}},			
 			Target = "Opponent",
@@ -8180,7 +8162,7 @@ local twentyeleveneighteen = {
 		["Effect"] = {
 			Name = "Booming Resd",
 			Description = "At the end of your turns, generate a green icon.",
-			["Type"] = "OnSummon",
+			["Type"] = "OnEnd",
 			["Power"] = {{"Green",1}},
 			Target = "Ally",
 		},
@@ -8504,7 +8486,7 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Neutral"] = 4, ["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "Harassing Talons",
-			Description = "Cast only if you control at least 2 non-archetyped fighters. When this card dies, draw two cards.",
+			Description = "Cast only if you control at least 2 non-archetyped rares. When this card dies, draw two cards.",
 			["Type"] = "OnDeath",
 			["Power"] = {{"Draw",2}},
 			Target = "Ally",
@@ -8875,7 +8857,7 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Red"] = 3,["Neutral"] = 3},
 		["Effect"] = {
 			Name = "Sandbox",
-			Description = "Stealth. Fading. Whenever you cast another fighter, it gains 500 power. Reset NullSenseStudio's stats. He loses all abilities",
+			Description = "Stealth. Fading. Whenever you cast another fighter, it gains 500 power. Reset NullSenseStudio's stats. He loses all abilities.",
 			["Type"] = "OnAllySummon",
 			["Power"] = {{"Summon","NullToken"},{"Strengthen",500,"Aggressor"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -9504,10 +9486,10 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Red"] = 3,["Green"] = 3,},
 		["Effect"] = {
 			Name = "Thug Life",
-			Description = "Whenever a player casts an action or terrain spell, if Fractality is still in play, deal 1500 damage to all fighters. End the turn.",
-			["Type"] = "OnCast",			
-			["Power"] = {{"Damage",1500},{"EndTurn",1}},
-			Target = "All",
+			Description = "Whenever Fractality's stats are swapped, it gains 200 power. Draw a card.",
+			["Type"] = "OnSwap",			
+			["Power"] = {{"Strengthen",200},{"Draw",1,"Self"}},
+			Target = "Ally",
 		},
 		["Bio"] = "",
 	},	
