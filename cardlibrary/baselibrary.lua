@@ -1619,7 +1619,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Noob",
 		["Cost"] = {["Neutral"] = 2,},
 		["Effect"] = {
-			Name = "Tom's Beans",
+			Name = "Bacon Hair",
 			Description = "When this card dies, gain 300 life.",
 			["Type"] = "OnDeath",
 			["Power"] = {{"Inflict",-300}},
