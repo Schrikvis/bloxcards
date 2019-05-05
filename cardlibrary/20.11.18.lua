@@ -8741,6 +8741,13 @@ local twentyeleveneighteen = {
 		["AttackEffect"] = "Slash",
 		["Color"] = "Blue",
 		["Cost"] = {["Blue"] = 1,["Green"] = 1,},
+		["Effect"] = {
+			Name = "Sea Shanties",
+			Description = "When this card is cast, lower a target fighter's power by 200 and lock it for one turn.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Weaken",200},{"Lock",1}},
+			Target = "Single",
+		},
 		["Bio"] = "Pirates didn't actually make people walk the plank, they just killed them instead.",
 	},		
 
