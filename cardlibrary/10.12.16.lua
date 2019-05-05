@@ -2010,8 +2010,8 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["AMerryCan"] = {
 		["Id"] = 714801845,
 		["Name"] = "AMerryCan",
-		["Health"] = 250,
-		["Power"] = 50,
+		["Health"] = 500,
+		["Power"] = 400,
 		["Rarity"] = "Rare",
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Punchkick",
@@ -2024,7 +2024,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Heal",100,"ColorBlue"},{"Strengthen",100,"ColorRed"},{"Heal",200},{"Strengthen",200}},
 			Target = "Archetype",
 		},
-		["Bio"] = [[AMerryCan! Eat Fresh!]],
+		["Bio"] = "You put ONE tax on tea, and then the next thing you know, the settlers in the New World start a revolution...",
 	},
 
 	["Fenfie08"] = {
