@@ -1620,9 +1620,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Tom's Beans",
-			Description = "When this card dies, gain 200 life.",
+			Description = "When this card dies, gain 300 life.",
 			["Type"] = "OnDeath",
-			["Power"] = {{"Inflict",-200}},
+			["Power"] = {{"Inflict",-300}},
 			Target = "Ally",
 		},
 		["Bio"] = "But alas, the common noob has been predated on ever since a new species of newb entered its flock. The common noob faces extinction.",
