@@ -2471,9 +2471,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2, ["Yellow"] = 3, ["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Life fam",
-			Description = "At the end of your turns, destroy all enemy fighters with no power, then give all fighters 100 power.",
+			Description = "At the end of your turns, destroy all enemy fighters with no power, give all fighters 100 power, and generate a yellow icon.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Swap",030},{"Swap",030},{"Strengthen",100,"All"}},
+			["Power"] = {{"Swap",030},{"Swap",030},{"Strengthen",100,"All"},{"Yellow",1,"Ally"}},
 			Target = "Opponent",
 		},
 		["Bio"] = [[All trials have a reward.]],
