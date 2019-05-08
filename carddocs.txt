@@ -21,6 +21,7 @@ Effect = {
 	Name
 	Description
 	Type
+	Archetype
 	Power = {
 		{Power2, Increase2, Target2}
 	}
@@ -183,7 +184,7 @@ Damages the Target cards by Increase.
 
 - Draw
 Makes the Target player (All, Opponent or an implicit Ally) draw
-Increase amount of cards from his deck. This triggers Fatique.
+Increase amount of cards from his deck. This triggers Fatigue.
 
 - Heal
 Heals the Target cards by Increase.
