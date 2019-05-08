@@ -28,10 +28,11 @@ Effect = {
 	Target1
 	Increase1
 }
+
 In the event of subeffects, game will first look for a secondary
 target or increase. Should it not be able to find such secondary
 values, it will fall back to the primary one. Should there be no
-primary one but the effect does require it, the game crashes. 
+primary one but the effect does require it, the game crashes.
 Make sure all effects get the info they need to function.
 
 For example, the following effect uses Target1 for its subeffect.
@@ -63,14 +64,13 @@ no cards left in his deck, the player receives damage.
 - Grinding
 Whenever a player needs to draw a card but cannot because his hand
 is full, the cards are removed from his deck but aren't added to his
-hand. 
+hand.
 
 ---------------------------------------------------------------
 
 Card effect Archetypes (filter)
 By default, card effects can be triggered by any card. Effects with an Archetype
 can only be triggered by cards with a matching Archetype.
-hand. 
 
 ---------------------------------------------------------------
 
