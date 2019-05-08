@@ -7,6 +7,7 @@ Effect = {
 	Name
 	Description
 	Type
+	Archetype
 	Power
 	Target
 	Increase
