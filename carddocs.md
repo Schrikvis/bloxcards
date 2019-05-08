@@ -7,7 +7,6 @@ Effect = {
 	Name
 	Description
 	Type
-	Archetype
 	Power
 	Target
 	Increase
@@ -21,7 +20,6 @@ Effect = {
 	Name
 	Description
 	Type
-	Archetype
 	Power = {
 		{Power2, Increase2, Target2}
 	}
@@ -29,10 +27,10 @@ Effect = {
 	Increase1
 }
 
-In the event of subeffects, game will first look for a secondary
-target or increase. Should it not be able to find such secondary
-values, it will fall back to the primary one. Should there be no
-primary one but the effect does require it, the game crashes.
+In the event of subeffects, game will first look for a secondary 
+target or increase. Should it not be able to find such secondary 
+values, it will fall back to the primary one. Should there be no 
+primary one but the effect does require it, the game crashes. 
 Make sure all effects get the info they need to function.
 
 For example, the following effect uses Target1 for its subeffect.
@@ -57,25 +55,19 @@ Effect = {
 
 Some terms, "glossary"
 
-- Fatique
+- Fatigue
 Whenever a player needs to draw a card but cannot because there are
 no cards left in his deck, the player receives damage.
 
 - Grinding
 Whenever a player needs to draw a card but cannot because his hand
 is full, the cards are removed from his deck but aren't added to his
-hand.
-
----------------------------------------------------------------
-
-Card effect Archetypes (filter)
-By default, card effects can be triggered by any card. Effects with an Archetype
-can only be triggered by cards with a matching Archetype.
+hand. 
 
 ---------------------------------------------------------------
 
 Card effect Types (triggers)
-Assign these to card effects by setting their Type to one of
+Assign these to card effects by setting their Type to one of 
 these strings.
 
 - OnTarget
@@ -108,6 +100,9 @@ Fires when the card attacks and kills an enemy card.
 - OnStrike
 Fires when the card attacks the enemy player.
 
+- OnSwap
+Fires when the card's stats are swapped.
+
 - OnAllySummon, OnEnemySummon, OnAnySummon
 Fires when the player or the enemy player summons a fighter.
 
@@ -128,6 +123,8 @@ card's field.
 - OnLock, OnUnlock
 Fires when a card is locked or unlocked.
 
+- OnLockIncrease, OnLockDecrease
+Fires when a card gains a lock or loses a lock.
 ---------------------------------------------------------------
 
 Effect Targets
@@ -149,16 +146,14 @@ Targets all opposing cards, or the opposing card, or the opposing
 player.
 
 - Aggressor
-Targets the opposing card when applicable. The opposing card is the other
-"participant" in the effect, i.e. it can be the card triggering the effect,
-the attacked card, the attacking card, etc.
+Targets the opposing card when applicable.
 
 - OpponentCards
 Targets all opposing cards.
 
 - Single, Target
 Targets a single card as chosen by the playing player. Target is
-preferred to Single to better communicate that the player Targets
+preferred to Single to better communicate that the player Targets 
 a card, triggering OnTarget effects.
 
 - Self
@@ -209,7 +204,7 @@ Adds the card of name Increase to the Target's deck.
 Adds a random card of rarity Increase to the Target's hand.
 RandomAdd's Increase allows for 'complex' statements.
 Shedletsky and Token cards are never selected.
-Stitch together a Color, Archetype and Rarity to specify from what
+Stitch together a Color, Archetype and Rarity to specify from what 
 pool the card should be selected.
 Providing no specifier or "All" has the effect of selecting any card.
 Consider the following examples:
@@ -251,7 +246,7 @@ Adds Increase icons of the color to the Target player.
 
 - SetColorName (ie. "SetBlue")
 	- SetNeutral
-	- SetGreen
+	- SetGreen 
 	- SetYellow
 	- SetRed
 	- SetBlue
@@ -262,24 +257,27 @@ Flips the cards in the target's hand, revealing them to the other
 player.
 
 - Cost
-Reduces the player's life by Increase. Has an implicit Ally target
+Reduces the player's life by Increase. Has an implicit Ally target 
 that cannot be changed.
 
 - SetLife
 Sets the player's life to Increase.
 
 - Inflict
-Inflicts Increase damage to All players or the opponent. Inflict
+Inflicts Increase damage to All players or the opponent. Inflict 
 cannot be used to only target the Ally player.
 
 ---------------------------------------------------------------
 
 Card Modifiers
-These aren't related to card effects. Instead, they modify card
+These aren't related to card effects. Instead, they modify card 
 behaviour in miscellanious ways.
 
 - DiscardBlock
 When set to true, the player cannot discard the card.
+
+- DiscardToken
+When set to true, the player does not generate any icons when discarding the card.
 
 - AttackBlock
 When set to true, the card cannot attack enemy cards nor the enemy
@@ -300,28 +298,15 @@ When set to true, the card can't generate icons.
 - Charge
 When set to true, the card can attack when summoned.
 
-- HealImmune
-The card is immune to effects that increase its health.
-
-- StrenghtenImmune
-The card is immune to effects that increase its power.
-
 - WeakenImmune
 The card is immune to effects that decrease its health or power.
 
 - SwapImmune
 The card is immune to effects that swap its health and power.
 
-- SetImmune
-The card is immune to effects that set its health or power.
-
 - Stealth
-When set to true, the card is not detected by OnAllySummon,
+When set to true, the card is not detected by OnAllySummon, 
 OnEnemySummon or OnAnySummon effects.
-
-- Fading
-When set to true, the card is not detected by OnAllyDeath,
-OnEnemyDeath or OnAnyDeath effects.
 
 ---------------------------------------------------------------
 
@@ -341,9 +326,9 @@ disqualified from auctions. It will be treated as a special cosmetic
 card.
 
 - AltCards
-This is a table of a card's alternate cards.
+This is a table of a card's alternate cards. 
 Alternate cards first check their own table for data, then the table
-of their Original card. This way, anything can be optionally
+of their Original card. This way, anything can be optionally 
 customized, including Effect properties.
 
 For example, the following tables form a valid alt card system:
@@ -376,7 +361,7 @@ For example, the following tables form a valid alt card system:
 In this example, CardOne is the Original card.
 CardOne-Artv is an Alternate Art card. It has its own image Id
 and Bio. CardOne Halloween is special because its effect was modified:
-it has a custom name, description and power for its effect,
+it has a custom name, description and power for its effect, 
 as well as a unique image Id and card Bio.
 
 ---------------------------------------------------------------
