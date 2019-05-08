@@ -3128,11 +3128,11 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Blue", 
-		["Cost"] = {["Neutral"] = 3,},
+		["Cost"] = {["Neutral"] = 2,},
 		["Archetype"] = "Morphic",
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "When this card is targeted, transform it into a random fighter. This card doesn't trigger effects on death or generate icons.",
+			Description = "Fading. When this card is targeted, transform it into a random fighter. This card can't generate icons.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"RandomSummon","Any"},{"Damage",9999,"Self"}},
 			Target = "Ally",
