@@ -1108,7 +1108,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Halloween",
-			Description = "Whenever a Targeting Blip is used, this card gains 200 Power.",
+			Description = "Whenever a Targeting Blip is cast, this card gains 200 Power.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",0}},
 			Target = "Self",
