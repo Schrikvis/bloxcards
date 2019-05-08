@@ -611,7 +611,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Greed Share",
-			Description = "Whenever you cast another fighter, reset Loogi's stats give that fighter 300 health and power. Loogi loses all abilities. Abilities don't trigger when Loogi enters play.",
+			Description = "Whenever you cast another fighter, reset Loogi's stats give that fighter 300 health and power. Loogi loses all abilities. Abilities don't trigger when Loogi enters play or dies.",
 			["Type"] = "OnAllySummon",
 			["Power"] = {{"Summon","LoogiTOKEN"},{"Heal",300,"Aggressor"},{"Strengthen",300,"Aggressor"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -774,7 +774,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Power"] = 250,
 		["Health"] = 150,
 		["Rarity"] = "Common",
-		["AttackEffect"] = {"Lightning","Yellow"},
+		["AttackEffect"] = {"Lighting","Yellow"},
 		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 1,},
 		["Bio"] = "Amber and Ambamby are the same person, only Amber is older. Does this mean that she's her own mother?",
@@ -2309,7 +2309,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Health"] = 800,
 		["Power"] = 500,
 		["Rarity"] = "Epic",
-		["AttackEffect"] = "Lightning",
+		["AttackEffect"] = "Lighting",
 		["Color"] = "Red",
 		["Cost"] = {["Red"] = 3,["Neutral"] = 2,},
 		["Bio"] = "Some say he's an exploiter, others claim he was an anonymous hacker, all we know is that he's back with a powerful orb.",
@@ -2445,7 +2445,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Neutral",
 		["Cost"] = {["Neutral"] = 2,},
-		["Token"] = true,
 		["Bio"] = "The lesser known apprentice of Drager, don't read his code or your eyes might melt in horror.",
 		["Effect"] = {
 			Name = "Bonanza!",
@@ -3081,7 +3080,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Blue"] = 2,},
 			["Effect"] = {
 			Name = "Purlot",
-			Description = "At the end of your turns, EpicLatiosLord gains 200 health. EpicLatiosLords can't counterattack.",
+			Description = "At the end of your turns, EpicLatiosLord gains 200 health. EpicLatiosLord can't counterattack.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Lock",2}},
 			Target = "Self",
@@ -4315,7 +4314,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Stealth"] = true,
 		["Effect"] = {
 			Name = "Nature's Gift",
-			Description = "Cast allied fighters enter play as a copy of TheNStar, without this effect. Effects don't trigger when TheNStar enters play.",
+			Description = "Casted allied fighters enter play as a copy of TheNStar, without this effect. Effects don't trigger when TheNStar enters play.",
 			["Type"] = "OnAllySummon",
 			["Power"] = {{"Summon","TheNStarrr"},{"Damage",9999,"Aggressor"}},
 			Target = "Ally",
@@ -4745,7 +4744,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 3,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "When this card is cast, summon a Zombie. Then all zomibes gain 150 health and power.",
+			Description = "When this card is cast, summon a Zombie. Then all zombies gain 150 health and power.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Summon","Zombie","Ally"},{"Strengthen",150},{"Heal",150}},
 			Target = "Archetype",
