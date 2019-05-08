@@ -2921,9 +2921,9 @@ local twentyeleveneighteen = {
 	["MajorMattias"] = {
 		["Id"] = 2110155688,
 		["Name"] = "MajorMattias",
-		["Health"] = 400,
-		["Power"] = 600,
-		["Rarity"] = "Common",
+		["Health"] = 500,
+		["Power"] = 500,
+		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Yellow",
 		["Cost"] = {["Yellow"] = 3,},
