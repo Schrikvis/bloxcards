@@ -365,7 +365,7 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Neutral"] = 0},
 		["Effect"] = {
 			Name = "Revival",
-			Description = "Can'ts attack. Doesn't generate icons when discarded. At the end of the turn, deal 9000 damage to this fighter. Fading.",
+			Description = "Can't attack. Doesn't generate icons when discarded. At the end of the turn, deal 9000 damage to this fighter. Fading.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Damage",9000}},
 			["Target"] = "Self",
