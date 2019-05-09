@@ -464,29 +464,6 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "I will take as much time as needed to avenge my love.",		
 	},
 	
-	["Haunted Overseer Armor"] = {
-		["Id"] = 574315273,
-		["Name"] = "Haunted Overseer Armor",
-		["Health"] = 300,
-		["Power"] = 300,
-		["Rarity"] = "Token",
-		["Archetype"] = "Overseer",
-		["Fading"] = true,
-		["AttackEffect"] = "Dash",
-		["Color"] = "Green", 
-		["Cost"] = {["Green"] = 3,},
-		["Effect"] = {
-			Name = "Pyrotechnics",
-			Description = "When this card is targeted, give all fighters 150 Health and Power, give all Overseers an additional 150 Health and Power, and transform this card into an Eye of Overseer. Fading.",
-			["Type"] = "OnTarget",
-			["Power"] = {{"Summon","Eye of Overseer"},{"Strengthen",150,"All"},{"Heal",150,"All"},{"Heal",150,"Archetype"},{"Strengthen",150,"Archetype"},{"Damage",9999,"Self"}},
-			Target = "Ally",
-		},
-		["Bio"] = "Zanzel spited the Overseers. Their name was a lie in itself. Only Zanzel knew everything.",
-	},
-	
-	
-	
 	["Beast Within"] = {
 		["Id"] = 540076909,
 		["Name"] = "Beast Within",
@@ -1108,7 +1085,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Halloween",
-			Description = "Whenever a Targeting Blip is used, this card gains 200 Power.",
+			Description = "Whenever a Targeting Blip is cast, this card gains 200 Power.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",0}},
 			Target = "Self",
@@ -3128,11 +3105,11 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Blue", 
-		["Cost"] = {["Neutral"] = 3,},
+		["Cost"] = {["Neutral"] = 2,},
 		["Archetype"] = "Morphic",
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "When this card is targeted, transform it into a random fighter. This card doesn't trigger effects on death or generate icons.",
+			Description = "Fading. When this card is targeted, transform it into a random fighter. This card can't generate icons.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"RandomSummon","Any"},{"Damage",9999,"Self"}},
 			Target = "Ally",
