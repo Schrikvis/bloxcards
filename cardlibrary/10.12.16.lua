@@ -2781,7 +2781,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 4,},
 		["Effect"] = {
 			Name = "Life fam",
-			Description = "Fading. When this card is cast, deal 150 damage to all enemy fighters. When targeted, reset this card's stats and return this card to your hand. ",
+			Description = "Fading. When this card is cast, deal 150 damage to all enemy fighters. When targeted, reset this card's stats and return it to your hand. ",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",150,"Opponent"},{"Summon","Round2"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -3538,7 +3538,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2, ["Blue"] = 2,},
 		["Effect"] = {
 			Name = "Poisonous Touch",
-			Description = "When this card is cast, swap the stats of all fighters. At the end of this turn, swap the stats of all allied fighters back.",
+			Description = "When this card is first cast, swap the stats of all fighters. At the end of this turn, swap the stats of all allied fighters back.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Swap",030},{"Summon","Arte71 2","Ally"},{"Damage",9999,"Self"}},
 			Target = "All",
@@ -3559,7 +3559,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2, ["Blue"] = 2,},
 		["Effect"] = {
 			Name = "Poisonous Touch",
-			Description = "When this card is cast, swap the stats of all fighters. At the end of this turn, swap the stats of all allied fighters back.",
+			Description = "When this card is first cast, swap the stats of all fighters. At the end of this turn, swap the stats of all allied fighters back.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Swap",030},{"Summon","Arte71 3",},{"Damage",9999,"Self"}},
 			Target = "Ally",
