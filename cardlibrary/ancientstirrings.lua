@@ -464,29 +464,6 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "I will take as much time as needed to avenge my love.",		
 	},
 	
-	["Haunted Overseer Armor"] = {
-		["Id"] = 574315273,
-		["Name"] = "Haunted Overseer Armor",
-		["Health"] = 300,
-		["Power"] = 300,
-		["Rarity"] = "Token",
-		["Archetype"] = "Overseer",
-		["Fading"] = true,
-		["AttackEffect"] = "Dash",
-		["Color"] = "Green", 
-		["Cost"] = {["Green"] = 3,},
-		["Effect"] = {
-			Name = "Pyrotechnics",
-			Description = "When this card is targeted, give all fighters 150 Health and Power, give all Overseers an additional 150 Health and Power, and transform this card into an Eye of Overseer. Fading.",
-			["Type"] = "OnTarget",
-			["Power"] = {{"Summon","Eye of Overseer"},{"Strengthen",150,"All"},{"Heal",150,"All"},{"Heal",150,"Archetype"},{"Strengthen",150,"Archetype"},{"Damage",9999,"Self"}},
-			Target = "Ally",
-		},
-		["Bio"] = "Zanzel spited the Overseers. Their name was a lie in itself. Only Zanzel knew everything.",
-	},
-	
-	
-	
 	["Beast Within"] = {
 		["Id"] = 540076909,
 		["Name"] = "Beast Within",
