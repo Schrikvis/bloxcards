@@ -500,7 +500,7 @@ local twentyeleveneighteen = {
 	},
 
 	["Grand Meeboid Totem"] = {
-		["Id"] = 336411268,
+		["Id"] = 3164489200,
 		["Name"] = "Grand Totem",
 		["AltCards"] = {
 			["meebtotem-ArtV"] = {
@@ -578,7 +578,7 @@ local twentyeleveneighteen = {
 	},	
 	
 	["Infinite Wishes"] = {
-		["Id"] = 447449134,
+		["Id"] = 3164491171,
 		["Name"] = "Infinite Wishes",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -1230,7 +1230,7 @@ local twentyeleveneighteen = {
 	},
 
 	["HatdaCat"] = {
-		["Id"] = 343430211,
+		["Id"] = 3164489753,
 		["Name"] = "HatdaCat",
 		["Archetype"] = "Police",
 		["Health"] = 1250,
@@ -1245,13 +1245,12 @@ local twentyeleveneighteen = {
 			["Type"] = "OnAttackEnd",
 			["Power"] = {{"Lock",1},{"Lock",3,"Self"}},
 			Target = "Opponent",
-			Increase = 1
 		},
 		["Bio"] = "The cops of the frozen north have their own culture.",
 	},
 	
 	["BlizzardCreeper"] = {
-		["Id"] = 616082779,
+		["Id"] = 3164473624,
 		["Name"] = "Blizaki",
 		AltCards = {
 			["Blizaki-ArtV"] = {
@@ -2118,7 +2117,7 @@ local twentyeleveneighteen = {
 	},	
 	
 	["legoseed"] = {
-		["Id"] = 384005579,
+		["Id"] = 3164492078,
 		["Name"] = "legoseed",
 		["AltCards"] = {
 			["LegoWraith"] = {
@@ -3315,7 +3314,7 @@ local twentyeleveneighteen = {
 	},			
 
 	["Nikilis"] = {
-		["Id"] = 411809593,
+		["Id"] = 3164496653,
 		["Name"] = "Nikilis",
 		["Health"] = 350,
 		["Power"] = 350,
@@ -3770,7 +3769,7 @@ local twentyeleveneighteen = {
 	},	
 
 	["Mrbeanbean2"] = {
-		["Id"] = 603503291,
+		["Id"] = 3164494036,
 		["Name"] = "Mrbeanbean2",
 		["Health"] = 150,
 		["Power"] = 150,
@@ -4240,7 +4239,7 @@ local twentyeleveneighteen = {
 	},	
 	
 	["xXVitalityVoidXx"] = {
-		["Id"] = 413948179,
+		["Id"] = 3164506102,
 		["Name"] = "xXVitalityVoidXx",
 		["Health"] = 450,
 		["Power"] = 450,
@@ -5230,7 +5229,7 @@ local twentyeleveneighteen = {
 	},
 	
 	["ClanAtlas"] = {
-		["Id"] = 430957985,
+		["Id"] = 3164483709,
 		["Name"] = "ClanAtlas",
 		["Health"] = 150,
 		["Power"] = 150,
@@ -5581,7 +5580,7 @@ local twentyeleveneighteen = {
 	},
 	
 	["TigerCode"] = {
-		["Id"] = 430971136,
+		["Id"] = 3164501969,
 		["Name"] = "TigerCode",
 		["Health"] = 400,
 		["Power"] = 400,
@@ -5600,7 +5599,7 @@ local twentyeleveneighteen = {
 	},
 	
 	["Western Bandit"] = {
-		["Id"] = 430960897,
+		["Id"] = 3164509177,
 		["Name"] = "Western Bandit",
 		["AltCards"] = {
 			["Western Bandit-E"] = {
@@ -5653,7 +5652,7 @@ local twentyeleveneighteen = {
 	},
 	
 	["Training Dummy"] = {
-		["Id"] = 430936560,
+		["Id"] = 3164502718,
 		["Name"] = "Training Dummy",
 		["Health"] = 600,
 		["Power"] = 0,
@@ -6095,7 +6094,7 @@ local twentyeleveneighteen = {
 	},
 	
 	["Frozen Fish"] = {
-		["Id"] = 443305020,
+		["Id"] = 3164488806,
 		["Name"] = "Frozen Fish",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -7755,7 +7754,7 @@ local twentyeleveneighteen = {
 	},
 	
 	["Body Guards"] = {
-		["Id"] = 491581638,
+		["Id"] = 3164474265,
 		["Name"] = "Body Guards",
 		["Token"] = true,
 		["Health"] = 250,
@@ -8719,8 +8718,8 @@ local twentyeleveneighteen = {
 	},				
 	
 	["Classy Bear"] = {
-		["Id"] = 1377831655,
-		["Name"] = "Classy Bear",
+		["Id"] = 3164500760,
+		["Name"] = "Terra Warrior",
 		["Health"] = 650,
 		["Power"] = 0,
 		["Rarity"] = "Uncommon",
