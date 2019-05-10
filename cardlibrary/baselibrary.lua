@@ -5976,7 +5976,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Combine Garrison 2"] = {
-		["Id"] = 294871396,
+		["Id"] = 3164484158,
 		["Name"] = "Lesser Combine Garrison",
 		["AltCards"] = {
 			["Senpai Garrison 2"] = {
@@ -6010,7 +6010,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Combine Garrison 3"] = {
-		["Id"] = 294871396,
+		["Id"] = 3164484158,
 		["Name"] = "Combine",
 		["AltCards"] = {
 			["Senpai Garrison 3"] = {
