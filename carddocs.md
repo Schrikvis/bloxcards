@@ -57,7 +57,7 @@ Effect = {
 
 Some terms, "glossary"
 
-- Fatique
+- Fatigue
 Whenever a player needs to draw a card but cannot because there are
 no cards left in his deck, the player receives damage.
 
@@ -108,6 +108,9 @@ Fires when the card attacks and kills an enemy card.
 - OnStrike
 Fires when the card attacks the enemy player.
 
+- OnSwap
+Fires when the card's stats are swapped.
+
 - OnAllySummon, OnEnemySummon, OnAnySummon
 Fires when the player or the enemy player summons a fighter.
 
@@ -128,6 +131,8 @@ card's field.
 - OnLock, OnUnlock
 Fires when a card is locked or unlocked.
 
+- OnLockIncrease, OnLockDecrease
+Fires when a card gains a lock or loses a lock.
 ---------------------------------------------------------------
 
 Effect Targets
@@ -187,7 +192,7 @@ Damages the Target cards by Increase.
 
 - Draw
 Makes the Target player (All, Opponent or an implicit Ally) draw
-Increase amount of cards from his deck. This triggers Fatique.
+Increase amount of cards from his deck. This triggers Fatigue.
 
 - Heal
 Heals the Target cards by Increase.
@@ -280,6 +285,9 @@ behaviour in miscellanious ways.
 
 - DiscardBlock
 When set to true, the player cannot discard the card.
+
+- DiscardToken
+When set to true, the player does not generate any icons when discarding the card.
 
 - AttackBlock
 When set to true, the card cannot attack enemy cards nor the enemy
