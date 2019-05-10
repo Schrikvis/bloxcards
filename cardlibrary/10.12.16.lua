@@ -1230,7 +1230,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Ultra Otherer"] = {
-		["Id"] = 1402766937,
+		["Id"] = 3164504215,
 		["Name"] = "Ultra Otherer",
 		["Health"] = 350,
 		["Power"] = 350,
@@ -1298,7 +1298,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 
 	["Ultra Severer"] = {
-		["Id"] = 675456511,
+		["Id"] = 3164504595,
 		["Name"] = "Ultra Severer",
 		["Health"] = 500,
 		["Power"] = 500,
@@ -1367,7 +1367,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 
 	["Ultra Orator"] = {
-		["Id"] = 675456679,
+		["Id"] = 3164503767,
 		["Name"] = "Ultra Orator",
 		["Health"] = 900,
 		["Power"] = 900,
@@ -1388,10 +1388,10 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Ally",
 		},
 		["Bio"] = "The intelligence of Ultras was questionable at best until reports of a species resembling a religious figure surfaced.",
-	},	
-
+	},
+	
 	["Ultra Obliterator"] = {
-		["Id"] = 675456546,
+		["Id"] = 3164503412,
 		["Name"] = "Ultra Obliterator",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -2622,7 +2622,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Wesker202"] = {
-		["Id"] = 785621046,
+		["Id"] = 3164507390,
 		["Name"] = "Wesker202",
 		["Health"] = 300,
 		["Power"] = 500,
@@ -2634,7 +2634,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Hero",
 		["Effect"] = {
 			Name = "Furnos",
-			Description = "When this card is cast, put Tail of Endeavours into your hand. When this card gains a lock, he gains 250 health.",
+			Description = "When this card is cast, put Tail of Endeavours into your hand. When Wesker gains a lock, he gains 250 health.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Summon","Haunted Korblox Armor"},{"Add","Haunted Redcliff Armor"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -2643,7 +2643,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Haunted Korblox Armor"] = {
-		["Id"] = 785621046,
+		["Id"] = 3164507390,
 		["Name"] = "Wesker202",
 		["Health"] = 300,
 		["Power"] = 500,
@@ -2654,7 +2654,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Hero",
 		["Effect"] = {
 			Name = "Degenerate Nekotare",
-			Description = "When Wesker gains a lock, he gains 250 health.",
+			Description = "When this card is cast, put Tail of Endeavours into your hand. When Wesker gains a lock, he gains 250 health.",
 			["Type"] = "OnLockIncrease",
 			["Power"] = {{"Heal",250}},
 			Target = "Self",
@@ -2663,8 +2663,8 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Haunted Redcliff Armor"] = {
-		["Id"] = 2857407317,
-		["Name"] = "Tail of Endeavours",
+		["Id"] = 3164508689,
+		["Name"] = "Eye of Rapture",
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Token",
@@ -2679,7 +2679,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Lock",1}},
 			Target = "All",
 		},
-		["Bio"] = "They also are extremely crafty, using their tail to trip up all around them, be it friend or foe.  One adventurous person who was trying to take a picture of it ended up getting tripped himself, so the only photo he got was of a lens flare.",
+		["Bio"] = "They are also sans no joke xd",
 	},
 	
 	["Mlgloga"] = {
