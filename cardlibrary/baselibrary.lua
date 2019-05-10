@@ -763,7 +763,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Ambamby"] = {
-		["Id"] = 266032038,
+		["Id"] = 3164469409,
 		["Name"] = "Ambamby",
 		["AltCards"] = {
 			["Ambamby-Sun"] = {
@@ -1012,7 +1012,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Chef"] = {
-		["Id"] = 271751037,
+		["Id"] = 3164482815,
 		["Name"] = "Chef",
 		["AltCards"] = {
 			["Chef-E"] = {
@@ -1126,7 +1126,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Developer"] = {
-		["Id"] = 1024779575,
+		["Id"] = 3164484937,
 		["Name"] = "Developer",
 		["Health"] = 350,
 		["Power"] = 550,
@@ -1467,7 +1467,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Valletta"] = {
-		["Id"] = 271752925,
+		["Id"] = 3164505076,
 		["Name"] = "Valletta",
 		["AltCards"] = {
 			["Valletta-Sun"] = {
@@ -2037,7 +2037,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Rad"] = {
-		["Id"] = 275340444,
+		["Id"] = 3164498574,
 		["Name"] = "Rad",
 		["Health"] = 700,
 		["Power"] = 900,
@@ -2494,7 +2494,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Kago"] = {
-		["Id"] = 1545393801,
+		["Id"] = 3164491666,
 		["Name"] = "Kago",
 		["Health"] = 150,
 		["Power"] = 150,
@@ -2730,7 +2730,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Bowl of Greed"] = {
-		["Id"] = 893417444,
+		["Id"] = 3164477462,
 		["Name"] = "Bowl of Greed",
 		["AltCards"] = {
 			["Bowl of GreedV2"] = {
@@ -5942,7 +5942,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Combine Garrison"] = {
-		["Id"] = 294871396,
+		["Id"] = 3164484158,
 		["Name"] = "Combine Garrison",
 		["AltCards"] = {
 			["Senpai Garrison"] = {
@@ -6307,7 +6307,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Description = "When this card is cast, put a Kitten into your hand. When you cast a Kitten, ready it.",
 			["Type"] = "OnAllySummon",
 			["Archetype"] = "Kitten",
-			["Power"] = {{"Unlock",1},
+			["Power"] = {{"Unlock",1}},
 			Target = "Aggressor",
 		},
 		["Bio"] = "His spectacles never confuse him.",
@@ -6446,7 +6446,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["The Stalker"] = {
-		["Id"] = 297139828,
+		["Id"] = 3164501477,
 		["Name"] = "The Stalker",
 		["AltCards"] = {
 			["The StalkerV2"] = {
@@ -7985,7 +7985,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["ASeal"] = {
-		["Id"] = 315996743,
+		["Id"] = 3164470651,
 		["Name"] = "ASeal",
 		["Health"] = 500,
 		["Power"] = 350,
@@ -8187,14 +8187,14 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Witch's True Brew"] = {
-		["Id"] = 315997790,
+		["Id"] = 3164509555,
 		["Name"] = "Witch's True Brew",
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Thunder",
 		["Color"] = "Green",
-		["Cost"] = {["Neutral"] = 0, ["Green"] = 4,},
+		["Cost"] = {["Green"] = 4,},
 		["Effect"] = {
 			Name = "Forced sip",
 			Description = "Lower the health and power of a target fighter by 400. You gain 400 life.",
