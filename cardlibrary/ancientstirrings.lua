@@ -843,7 +843,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Haunted Doge Head"] = {
-		["Id"] = 543041104,
+		["Id"] = 3164484587,
 		["Name"] = "Conscripter of the Titans",
 		["Health"] = 1200,
 		["Power"] = 200,
