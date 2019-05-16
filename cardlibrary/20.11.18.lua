@@ -695,19 +695,6 @@ local twentyeleveneighteen = {
 	["Myrmiredon 2"] = {
 		["Id"] = 421944617,
 		["Name"] = "Myrmiredon",
-		["AltCards"] = {
-			["MyrmiredonV2 2"] = {
-				["Id"] = 480297793,
-				["Effect"] = {
-					Name = "Dreadsteed",
-					Description = [[2 Charges. At the end of your turns, Remove a charge. If there are no charges, shuffle a copy of Myrmiredon back into your deck.]],
-					["Type"] = "OnEnd",
-					["Power"] = {{"Summon","MyrmiredonV2 3"},{"Unlock",9999,"Archetype"},{"Damage",9999,"Self"}},
-					Target = "Ally",
-				},
-				["Bio"] = "Greetings, honourable invaders. Thank you for coming so far. However, as you can see, we are poor. Do you truly believe you'll find what you want here?",
-			},
-		},
 		["Health"] = 400,
 		["Power"] = 400,
 		["Rarity"] = "Token",
@@ -3426,17 +3413,30 @@ local twentyeleveneighteen = {
 	["Isaac0333"] = {
 		["Id"] = 411842357,
 		["Name"] = "Insane Isaac",
+		["AltCards"] = {
+			["MyrmiredonV2 2"] = {
+				["Rarity"] = "Token",
+				["Effect"] = {
+					Name = "Bucket of Pets",
+					Description = "When this card is cast, put two Kittens into your hand. When a Kitten dies, put a Doge into your hand.",
+					["Type"] = "OnAnyDeath",
+					["Archetype"] = "Kitten",
+					["Power"] = {{"Add","Doge"}},
+					Target = "Ally",
+				},
+			},
+		},
 		["Health"] = 400,
 		["Power"] = 400,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Red",
-		["Cost"] = {["Neutral"] = 4,["Yellow"] = 1,["Red"] = 1,},
+		["Cost"] = {["Neutral"] = 1,["Yellow"] = 2,["Red"] = 2,},
 		["Effect"] = {
-			Name = "ASSEMBLE.",
-			Description = "When this card is cast, put four Kittens into your hand and lose 100 life.",
+			Name = "Bucket of Pets",
+			Description = "When this card is cast, put two Kittens into your hand. When a Kitten dies, put a Doge into your hand.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Cost",100},{"RandomAdd",{"Kitten","Kitten2","Kitten3","Kitten4","Kitten5","Kitten6","Kitten7","Kitten8","Kitten9"}},{"RandomAdd",{"Kitten","Kitten2","Kitten3","Kitten4","Kitten5","Kitten6","Kitten7","Kitten8","Kitten9"}},{"RandomAdd",{"Kitten","Kitten2","Kitten3","Kitten4","Kitten5","Kitten6","Kitten7","Kitten8","Kitten9"}},{"RandomAdd",{"Kitten","Kitten2","Kitten3","Kitten4","Kitten5","Kitten6","Kitten7","Kitten8","Kitten9"}}},
+			["Power"] = {{"RandomAdd",{"Kitten","Kitten2","Kitten3","Kitten4","Kitten5","Kitten6","Kitten7","Kitten8","Kitten9"}},{"RandomAdd",{"Kitten","Kitten2","Kitten3","Kitten4","Kitten5","Kitten6","Kitten7","Kitten8","Kitten9"}},{"Summon","MyrmiredonV2 2"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Knock knock, Guv! Who's there? IT'S ISAAC, GUV!!",
