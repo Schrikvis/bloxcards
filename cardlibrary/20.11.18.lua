@@ -3154,7 +3154,7 @@ local twentyeleveneighteen = {
 		["Health"] = 500,
 		["Power"] = 500,
 		["Rarity"] = "Legendary",
-		["Archetype"] = "Nigthmare",
+		["Archetype"] = "Nightmare",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Green",
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 1,["Green"] = 3,},
