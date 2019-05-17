@@ -2953,7 +2953,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 807878722,
 		["Name"] = "EvilJacobthehero2013",
 		["Health"] = 1200,
-		["Power"] = 400,
+		["Power"] = 600,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Slash",
 		["Color"] = "Blue", 
@@ -2966,7 +2966,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Draw",1}},
 			Target = "Ally",
 		},
-		["Bio"] = "As opposed to NiceJacobthevillan3102.",
+		["Bio"] = "Anyone else wonder why people put random years like 2013 in their username? That's like putting your birthday in your username.",
 	},
 	
 	["Shard Master"] = {
