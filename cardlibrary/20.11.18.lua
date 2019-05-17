@@ -8937,7 +8937,7 @@ local twentyeleveneighteen = {
 		["Health"] = 300,
 		["Power"] = 300,
 		["Token"] = true,
-		["Rarity"] = "Common",
+		["Rarity"] = "Token",
 		["AttackEffect"] = "SlashWhip",
 		["Color"] = "Yellow",
 		["Cost"] = {["Yellow"] = 2,},
