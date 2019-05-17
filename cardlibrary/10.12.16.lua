@@ -5081,7 +5081,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Red", 
 		["Archetype"] = "Rachjumper",		
-		["Cost"] = {["Neutral"] = 3, ["Red"] = 10,},
+		["Cost"] = {["Neutral"] = 3, ["Red"] = 8,},
 		["Effect"] = {
 			Name = "Unleash Hell",
 			Description = "When this card is cast, destroy all other fighters. For each fighter destroyed, the opponent loses 200 life. End the turn.",
@@ -5102,10 +5102,10 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Red", 
 		["Fading"] = true,		
 		["Archetype"] = "Rachjumper",		
-		["Cost"] = {["Neutral"] = 3, ["Red"] = 10,},
+		["Cost"] = {["Neutral"] = 3, ["Red"] = 8,},
 		["Effect"] = {
 			Name = "Unleash Hell",
-			Description = "Destroy all other fighters. For each fighter destroyed, the opponent loses 200 life. End the turn.",
+			Description = "When this card is cast, destroy all other fighters. For each fighter destroyed, the opponent loses 200 life. End the turn.",
 			["Type"] = "OnAnyDeath",
 			["Power"] = {{"Inflict",200}},
 			Target = "Opponent",
