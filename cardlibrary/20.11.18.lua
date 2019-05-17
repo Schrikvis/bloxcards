@@ -6770,14 +6770,14 @@ local twentyeleveneighteen = {
 	["InceptionTime"] = {
 		["Id"] = 477101784,
 		["Name"] = "InceptionTime",
-		["Health"] = 1300,
-		["Power"] = 300,
+		["Health"] = 1400,
+		["Power"] = 400,
 		["Rarity"] = "Legendary",
 		["Fading"] = true,
 		["WeakenImmune"] = true,
 		["AttackEffect"] = "Dash",
 		["Color"] = "Green", 
-		["Cost"] = {["Green"] = 4, ["Neutral"] = 5,},
+		["Cost"] = {["Green"] = 4, ["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Revival",
 			Description = "When this card is cast, deal 14,000 damage to yourself. If you survive, you win the game.",
@@ -6791,12 +6791,12 @@ local twentyeleveneighteen = {
 	["InceptionTime Token"] = {
 		["Id"] = 477101784,
 		["Name"] = "InceptionTime",
-		["Health"] = 1300,
-		["Power"] = 300,
+		["Health"] = 1400,
+		["Power"] = 400,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Green", 
-		["Cost"] = {["Green"] = 4, ["Neutral"] = 5,},
+		["Cost"] = {["Green"] = 4, ["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Revival",
 			Description = "Lol u ded",
