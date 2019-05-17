@@ -5778,9 +5778,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
  		["Color"] = "Yellow", 
 		["Cost"] = {["Yellow"] = 2,["Neutral"] = 1,}, 
  		["Effect"] = {
- 			Name = "e/cheer",
-			Description = "When this card dies, all enemy fighters lose 100 Power.",
-			["Type"] = "OnDeath",
+ 			Name = "/e cheer",
+			Description = "When this card is cast, all enemy fighters lose 100 Power.",
+			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",100,"Opponent"}},
 			Target = "Ally",
  		},
