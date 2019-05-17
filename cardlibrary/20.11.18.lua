@@ -7802,7 +7802,7 @@ local twentyeleveneighteen = {
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Blue", 
-		["Cost"] = {["Blue"] = 7, ["Red"] = 1,},
+		["Cost"] = {["Blue"] = 7,},
 		["Effect"] = {
 			Name = "Always wear a burkini",
 			Description = "Whenever your opponent casts a fighter, lock that fighter for two turns.",
