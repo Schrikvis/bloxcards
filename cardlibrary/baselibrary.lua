@@ -3081,8 +3081,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Effect"] = {
 			Name = "Purlot",
 			Description = "At the end of your turns, EpicLatiosLord gains 200 health. EpicLatiosLord can't counterattack.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Lock",2}},
+			["Type"] = "OnEnd",
+			["Power"] = {{"Heal",200}},
 			Target = "Self",
 		},
 		["Bio"] = "He renders snow meaningless.",
