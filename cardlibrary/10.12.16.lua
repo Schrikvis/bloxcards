@@ -339,7 +339,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 
 	["Treas0ner"] = {
-		["Id"] = 2198827969,
+		["Id"] = 3164492523,
 		["Name"] = "Treasoner",
 		["AltCards"] = {
 			["Treas0ner-L"] = {
@@ -689,7 +689,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	}, 
 
 	["Histor"] = {
-		["Id"] = 1248514766,
+		["Id"] = 3164490188,
 		["Name"] = "Histor",
 		["Health"] = 350,
 		["Power"] = 700,
@@ -926,7 +926,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["PlaceRebuilder"] = {
-		["Id"] = 670422221,
+		["Id"] = 3164497244,
 		["Name"] = "PlaceRebuilder",
 		["Health"] = 1200,
 		["Power"] = 100,
@@ -1230,7 +1230,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Ultra Otherer"] = {
-		["Id"] = 1402766937,
+		["Id"] = 3164504215,
 		["Name"] = "Ultra Otherer",
 		["Health"] = 350,
 		["Power"] = 350,
@@ -1298,7 +1298,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 
 	["Ultra Severer"] = {
-		["Id"] = 675456511,
+		["Id"] = 3164504595,
 		["Name"] = "Ultra Severer",
 		["Health"] = 500,
 		["Power"] = 500,
@@ -1367,7 +1367,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 
 	["Ultra Orator"] = {
-		["Id"] = 675456679,
+		["Id"] = 3164503767,
 		["Name"] = "Ultra Orator",
 		["Health"] = 900,
 		["Power"] = 900,
@@ -1388,10 +1388,10 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Ally",
 		},
 		["Bio"] = "The intelligence of Ultras was questionable at best until reports of a species resembling a religious figure surfaced.",
-	},	
-
+	},
+	
 	["Ultra Obliterator"] = {
-		["Id"] = 675456546,
+		["Id"] = 3164503412,
 		["Name"] = "Ultra Obliterator",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -1476,7 +1476,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 		
 	["Cindering"] = {
-		["Id"] = 689606486,
+		["Id"] = 3164483304,
 		["Name"] = "Cindering",
 		["Health"] = 600,
 		["Power"] = 600,
@@ -1497,7 +1497,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Cindering Token"] = {
-		["Id"] = 689606486,
+		["Id"] = 3164483304,
 		["Name"] = "Cindering",
 		["Health"] = 600,
 		["Power"] = 600,
@@ -2156,7 +2156,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 
 
 	["Satyr Firemaster"] = {
-		["Id"] = 714689069,
+		["Id"] = 3164499408,
 		["Name"] = "Satyr Firemaster",
 		["AltCards"] = {
 			["Satyr Firemaster-Sun"] = {
@@ -2404,7 +2404,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Walyn"] = {
-		["Id"] = 785620578,
+		["Id"] = 3164506954,
 		["Name"] = "Walyn",
 		["Health"] = 600,
 		["Power"] = 300,
@@ -2622,7 +2622,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Wesker202"] = {
-		["Id"] = 785621046,
+		["Id"] = 3164507390,
 		["Name"] = "Wesker202",
 		["Health"] = 300,
 		["Power"] = 500,
@@ -2634,7 +2634,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Hero",
 		["Effect"] = {
 			Name = "Furnos",
-			Description = "When this card is cast, put Tail of Endeavours into your hand. When this card gains a lock, he gains 250 health.",
+			Description = "When this card is cast, put Tail of Endeavours into your hand. When Wesker gains a lock, he gains 250 health.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Summon","Haunted Korblox Armor"},{"Add","Haunted Redcliff Armor"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -2643,7 +2643,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Haunted Korblox Armor"] = {
-		["Id"] = 785621046,
+		["Id"] = 3164507390,
 		["Name"] = "Wesker202",
 		["Health"] = 300,
 		["Power"] = 500,
@@ -2654,7 +2654,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Hero",
 		["Effect"] = {
 			Name = "Degenerate Nekotare",
-			Description = "When Wesker gains a lock, he gains 250 health.",
+			Description = "When this card is cast, put Tail of Endeavours into your hand. When Wesker gains a lock, he gains 250 health.",
 			["Type"] = "OnLockIncrease",
 			["Power"] = {{"Heal",250}},
 			Target = "Self",
@@ -2663,8 +2663,8 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Haunted Redcliff Armor"] = {
-		["Id"] = 2857407317,
-		["Name"] = "Tail of Endeavours",
+		["Id"] = 3164508689,
+		["Name"] = "Eye of Rapture",
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Token",
@@ -2679,7 +2679,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Lock",1}},
 			Target = "All",
 		},
-		["Bio"] = "They also are extremely crafty, using their tail to trip up all around them, be it friend or foe.  One adventurous person who was trying to take a picture of it ended up getting tripped himself, so the only photo he got was of a lens flare.",
+		["Bio"] = "They are also sans no joke xd",
 	},
 	
 	["Mlgloga"] = {
@@ -2990,6 +2990,45 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "I am the Shardian of the Galaxy...fear me.",
 	},
 	
+	["Magical Girl Histor"] = {
+		["Id"] = 1947968303,
+		["Name"] = "Magical Girl Histor",
+		["Health"] = 600,
+		["Power"] = 400,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Lighting",
+		["Color"] = "Red",
+		["Cost"] = {["Neutral"] = 2, ["Red"] = 3},
+		["Effect"] = {
+			Name = "Chaos Entrapment",
+			Description = "When this card is cast, put a Kitten into your hand. When you cast a Kitten, give it 150 health.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"RandomAdd",{"Kitten","Kitten2","Kitten3","Kitten4","Kitten5","Kitten6","Kitten7","Kitten8","Kitten9"}},{"Summon","Techno Terror"},{"Damage",9999,"Self"}},
+			Target = "Ally",
+		},
+		["Bio"] = "The worst decision he's ever made? Signing that contract with a demon.",	
+	},
+	
+	["Techno Terror"] = {
+		["Id"] = 1947968303,
+		["Name"] = "Magical Girl Histor",
+		["Health"] = 600,
+		["Power"] = 400,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Lighting",		
+		["Color"] = "Red",
+		["Cost"] = {["Neutral"] = 2, ["Red"] = 3},
+		["Effect"] = {
+			Name = "Chaos Entrapment",
+			Description = "When this card is cast, put a Kitten into your hand. When you cast a Kitten, give it 150 health.",
+			["Type"] = "OnAllySummon",
+			["Archetype"] = "Kitten",
+			["Power"] = {{"Heal",150}},
+			Target = "Aggressor",
+		},
+		["Bio"] = "The best decision she's ever made? slaughtering that demon with an army of furballs.",
+	},
+	
 	["Multicultural Limb"] = {
 		["Id"] = 543041104,
 		["Name"] = "Feline Fandango",
@@ -3243,7 +3282,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Histor, Blood Warrior"] = {
-		["Id"] = 1761517242,
+		["Id"] = 3164473958,
 		["Name"] = "Histor, Blood Warrior",
 		["AltCards"] = {
 			["Histor, Blood Warrior-Masant"] = {
@@ -3303,7 +3342,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["ProjectSlayer"] = {
-		["Id"] = 898791655,
+		["Id"] = 3164497722,
 		["Name"] = "ProjectSlayer",
 		["Health"] = 500,
 		["Power"] = 500,
@@ -3322,7 +3361,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Bigtank_s"] = {
-		["Id"] = 898791301,
+		["Id"] = 3164473249,
 		["Name"] = "Bigtank_s",
 		["Health"] = 450,
 		["Power"] = 450,
@@ -3488,7 +3527,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["how_inconvenient"] = {
-		["Id"] = 1076071154,
+		["Id"] = 3164490739,
 		["Name"] = "how_inconvenient",
 		["Health"] = 600,
 		["Power"] = 500,
@@ -3642,7 +3681,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Elioofsheep"] = {
-		["Id"] = 1151275189,
+		["Id"] = 3164487612,
 		["Name"] = "Elioofsheep",
 		["Health"] = 600,
 		["Power"] = 400,
@@ -3912,7 +3951,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Dukran the Celestial"] = {
-		["Id"] = 1174087330,
+		["Id"] = 3164485292,
 		["Name"] = "Dukran the Elysian",
 		["AltCards"] = {
 			["Dukran-T"] = {
@@ -3946,7 +3985,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Dukran2"] = {
-		["Id"] = 1174087330,
+		["Id"] = 3164485292,
 		["Name"] = "Dukran the Celestial",
 		["AltCards"] = {
 			["Dukran2-T"] = {
@@ -4040,7 +4079,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["FourXIV"] = {
-		["Id"] = 1231373982,
+		["Id"] = 3164488407,
 		["Name"] = "FourXIV",
 		["Health"] = 1000,
 		["Power"] = 400,
@@ -4060,7 +4099,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["midastheking123"] = {
-		["Id"] = 1233327678,
+		["Id"] = 3164493540,
 		["Name"] = "midastheking123",
 		["AltCards"] = {
 			["midastheking123-Alt"] = {
@@ -4131,7 +4170,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["vanjohnson"] = {
-		["Id"] = 1235228562,
+		["Id"] = 3164505638,
 		["Name"] = "vanjohnson",
 		["Health"] = 1200,
 		["Power"] = 300,
@@ -4265,7 +4304,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["ExtolYT"] = {
-		["Id"] = 1259435227,
+		["Id"] = 3164488016,
 		["Name"] = "ExtolYT",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -4284,7 +4323,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["ExtolYToken"] = {
-		["Id"] = 1259435227,
+		["Id"] = 3164488016,
 		["Name"] = "ExtolYT",
 		["Health"] = 1200,
 		["Power"] = 400,
@@ -4356,7 +4395,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["B550"] = {
-		["Id"] = 1304351037,
+		["Id"] = 3164471144,
 		["Name"] = "B550",
 		["Health"] = 550,
 		["Power"] = 550,
@@ -4656,7 +4695,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["lolbeniceok"] = {
-		["Id"] = 1421958601,
+		["Id"] = 3164492971,
 		["Name"] = "lolbeniceok",
 		["Health"] = 900,
 		["Power"] = 300,
@@ -5946,20 +5985,6 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "All",
 		},
 		["Bio"] = "For game brea...testing purposes.",
-	},	
-	
-	["Techno Terror"] = {
-		["Id"] = 1749451071,
-		["Name"] = "Techno Terror",
-		["Health"] = 250,
-		["Power"] = 250,
-		["Rarity"] = "Token",
-		["AttackEffect"] = "Thunder",		
-		["Color"] = "Yellow",
-		["Token"] = true,
-		["Counterblock"] = true,
-		["Cost"] = {["Yellow"] = 0,},
-		["Bio"] = "And with the price of my blood, annihilate all who cross my path!",
 	},
 	
 	["Mass Production"] = {
@@ -5978,11 +6003,11 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Summon","Techno Terror"},{"Summon","Techno Terror"},{"Add","Mass Production"},{"EndTurn",1}},
 			Target = "Ally",
 		},
-		["Bio"] = "...",	
+		["Bio"] = "...",
 	},
 	
 	["Call to Arms"] = {
-		["Id"] = 2080913162,
+		["Id"] = 3164477941,
 		["Name"] = "Call to Arms",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -6001,15 +6026,15 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["New Recruit"] = {
-		["Id"] = 2080910463,
+		["Id"] = 3164494560,
 		["Name"] = "New Recruit",
 		["AltCards"] = {
 			["New Recruit2"] = {
-				["Id"] =  2080911115,
+				["Id"] =  3164495008,
 				["Bio"] = "FIRE IN THE H-oh.",
 			},
 			["New Recruit3"] = {
-				["Id"] =  2080911847,
+				["Id"] =  3164495392,
 				["Bio"] = "Live to slack another day.",
 			},
 		},
@@ -6032,7 +6057,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Reinforcements"] = {
-		["Id"] = 2080912593,
+		["Id"] = 3164498998,
 		["Name"] = "Reinforcements",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -6290,7 +6315,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Snail"] = {
-		["Id"] = 1899484892,
+		["Id"] = 3164500244,
 		["Name"] = "Snail",
 		["Health"] = 300,
 		["Power"] = 200,
@@ -6332,25 +6357,6 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "All",
 		},
 		["Bio"] = "Despite common belief, axes are quite effective against nightmares.",	
-	},
-	
-	["Magical Girl Histor"] = {
-		["Id"] = 1947968303,
-		["Name"] = "Magical Girl Histor",
-		["Health"] = 600,
-		["Power"] = 600,
-		["Rarity"] = "Uncommon",
-		["AttackEffect"] = "Punch1",
-		["Color"] = "Red",
-		["Cost"] = {["Neutral"] = 3, ["Red"] = 4,},
-		["Effect"] = {
-			Name = "Chaos Entrapment",
-			Description = "When this card is cast, your opponent loses two white icons.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Neutral",-2}},
-			Target = "Opponent",
-		},
-		["Bio"] = "The worst decision he's ever made? Signing that contract with a demon.",	
 	},
 	
 	["Corrupt SoulSearch"] = {
@@ -6902,7 +6908,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Shirozaru"] = {
-		["Id"] = 2857412935,
+		["Id"] = 3164499923,
 		["Name"] = "Shirozaru",
 		["Health"] = 800,
 		["Power"] = 800,
