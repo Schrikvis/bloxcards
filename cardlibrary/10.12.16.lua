@@ -2038,13 +2038,13 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Nightmare",
 		["Cost"] = {["Neutral"] = 1, ["Blue"] = 2,},
 		["Effect"] = {
-			Name = "befriending of scaly mutts",
-			Description = "When this card is cast, put a nightmare into your opponent's hand.",
+			Name = "SPOOK",
+			Description = "When this card is cast, put a nightmare into your opponent's hand and into their deck.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Add","Nightmare"}},
+			["Power"] = {{"Add","Nightmare"},{"DeckAdd","Nightmare"}},
 			Target = "Opponent",
 		},
-		["Bio"] = [[The happiest people always have the darkest secrets.]],
+		["Bio"] = "The happiest people always have the darkest secrets.",
 	},
 
 	["BrandonOccult"] = {
