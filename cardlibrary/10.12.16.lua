@@ -3232,12 +3232,12 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3, ["Blue"] = 2,},
 		["Effect"] = {
 			Name = "Life fam",
-			Description = "When this card is attacked, give it 50 power and health.",
+			Description = "When this card is attacked and survives, the fighter that attacked it loses 200 Power.",
 			["Type"] = "OnAttacked",
-			["Power"] = {{"Heal",50},{"Strengthen",50}},
-			Target = "Self",
+			["Power"] = {{"Weaken",200}},
+			Target = "Aggressor",
 		},
-		["Bio"] = "I am a champion...maybe just a virtual champion, but still a champion!",
+		["Bio"] = "I am a champion... maybe just a virtual champion, but still a champion!",
 	},	
 	
 	["Enderlox1"] = {
