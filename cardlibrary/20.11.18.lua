@@ -231,7 +231,7 @@ local twentyeleveneighteen = {
 	},
 	
 	["LeetWizard Token"] = {
-		["Id"] = 335687451,
+		["Id"] = 2792979511,
 		["Name"] = "LeetWizard",
 		["AltCards"] = {
 			["LeetWizard Token-Sun"] = {
