@@ -1030,7 +1030,7 @@ local twentyeleveneighteen = {
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Token",
-		["Archetype"] = "Target",
+		["Archetype"] = "Nightmare",
 		["DiscardBlock"] = true,
 		["Color"] = "Neutral",
 		["Cost"] = {["Neutral"] = 3,},
