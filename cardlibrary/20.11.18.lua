@@ -9215,9 +9215,9 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Yellow"] = 2},
 		["Effect"] = {
 			Name = "Frenemy",
-			Description = "Each player puts a nightmare into their hand. 25% chance to replace the nightmare with three random epics.",
+			Description = "Each player puts either a nightmare or Frenemy's Reward into your hand. Frenemy's Reward puts 3 random epics into your hand.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"RandomAdd",{"Nightmare","Nightmare","Nightmare","Frenemy's Reward"}},{"RandomAdd",{"Nightmare","Nightmare","Nightmare","Frenemy's Reward"},"Opponent"}},
+			["Power"] = {{"RandomAdd",{"Nightmare","Frenemy's Reward"}},{"RandomAdd",{"Nightmare","Frenemy's Reward"},"Opponent"}},
 			Target = "Ally",
 		},
 		["Bio"] = "One bengbeng14 coming right up, my dear frenemy. This will cost you your soul, however.",
