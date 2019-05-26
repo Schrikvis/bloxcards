@@ -1638,13 +1638,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Null",
 		["Color"] = "Green",
 		["Cost"] = {["Green"] = 4,},
-		["Bio"] = "ORIGINAL BEANS DO NOT STEAL",
 		["Effect"] = {
-			Name = "nutrition",
+			Name = "Ammo for Beans",
 			Description = "Give a target fighter 1000 health and power, lock it for 6 turns, and then return it to its owner's hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",1000},{"Strengthen",1000},{"Lock",4},{"Return",3333}},
 			Target = "Single",
+		["Bio"] = [["Hey Smiff, I found beans!" - "Find any ammo, Tom?" - "No ammo at all, what about you, Smiff?" - "Oh, just one mag."]],
 		},
 	},
 	
