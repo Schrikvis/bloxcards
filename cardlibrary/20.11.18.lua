@@ -8588,7 +8588,7 @@ local twentyeleveneighteen = {
 		["AttackEffect"] = "Null",
 		["Color"] = "Neutral",
 		["Archetype"] = "Classic",
-		["Cost"] = {["Neutral"] = 3,["Blue"] = 1,},
+		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Power Up",
 			Description = "Give a target fighter 300 health, then lock it for 1 turn.",
@@ -8608,7 +8608,7 @@ local twentyeleveneighteen = {
 		["AttackEffect"] = "Null",
 		["Color"] = "Neutral",
 		["Archetype"] = "Classic",
-		["Cost"] = {["Neutral"] = 3,["Red"] = 1,},
+		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Power Up",
 			Description = "Deal 400 damage to a target fighter, and to both players.",
@@ -8628,7 +8628,7 @@ local twentyeleveneighteen = {
 		["AttackEffect"] = "Null",
 		["Color"] = "Neutral",
 		["Archetype"] = "Classic",
-		["Cost"] = {["Neutral"] = 3,["Green"] = 1,},
+		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Power Up",
 			Description = "Deal 100 damage to a target fighter. Return this card to your hand.",
@@ -8648,7 +8648,7 @@ local twentyeleveneighteen = {
 		["AttackEffect"] = "Null",
 		["Color"] = "Neutral",
 		["Archetype"] = "Classic",
-		["Cost"] = {["Neutral"] = 3,["Yellow"] = 1,},
+		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Power Up",
 			Description = "Deal 200 damage to a target fighter. Draw a card.",
@@ -8736,7 +8736,7 @@ local twentyeleveneighteen = {
 			["Power"] = {{"Weaken",200}},
 			Target = "Aggressor",
 		},
-		["Bio"] = "Only the top class bears can bear to listen to DJ Kangaroo.",
+		["Bio"] = "Terra warriors insists that humans were at their prime when they were still nomadic tribes. Thus, they return to their roots to stay at their species' peak.",
 	},			
 	
 	["Ship Raider"] = {
