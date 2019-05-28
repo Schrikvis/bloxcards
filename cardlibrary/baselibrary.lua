@@ -1644,8 +1644,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",1000},{"Strengthen",1000},{"Lock",4},{"Return",3333}},
 			Target = "Single",
-		["Bio"] = [["Hey Smiff, I found beans!" - "Find any ammo, Tom?" - "No ammo at all, what about you, Smiff?" - "Oh, just one mag."]],
 		},
+		["Bio"] = [["Hey Smiff, I found beans!" - "Find any ammo, Tom?" - "No ammo at all, what about you, Smiff?" - "Oh, just one mag."]],
 	},
 	
 	["BO0M"] = {
