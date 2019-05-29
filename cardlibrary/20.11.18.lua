@@ -9544,8 +9544,8 @@ local twentyeleveneighteen = {
 	["CloneTrooper1019"] = {
 		["Id"] = 557990717,
 		["Name"] = "CloneTrooper1019",
-		["Health"] = 1200,
-		["Power"] = 1200,
+		["Health"] = 1100,
+		["Power"] = 900,
 		["Rarity"] = "Legendary",
 		["Archetype"] = "Boardwipe",
 		["AttackEffect"] = "GunShot",
@@ -9553,9 +9553,9 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Neutral"] = 5, ["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Thug Life",
-			Description = "This fighter can't have its stats altered by Luck o' the Lobsters, Mass Epidemic, or Divine Favor. When this card is summoned, lock it for one additional turn.",
+			Description = "This fighter can't have its stats altered by Luck o' the Lobsters, Mass Epidemic, or Divine Favor.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Lock",1}},
+			["Power"] = {{"Lock",0}},
 			Target = "Self",
 		},
 		["Bio"] = "He hums in the face of apocalypse.",
