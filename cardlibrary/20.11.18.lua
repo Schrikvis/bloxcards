@@ -7925,7 +7925,7 @@ local twentyeleveneighteen = {
 			Name = "You may sloth me, Planet Belligerance.",
 			Description = "Whenever you cast a fighter, it enters play with 100 additional power. Generate a red icon and lose 200 life.",
 			["Type"] = "OnAllySummon",
-			["Power"] = {{"Heal",100},{"Red",1,"Ally"},{"Cost",200}},
+			["Power"] = {{"Strengthen",100},{"Red",1,"Ally"},{"Cost",200}},
 			Target = "Aggressor",
 		},
 		["Bio"] = "Cows are just plain evil.",
