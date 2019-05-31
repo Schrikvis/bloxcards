@@ -49,7 +49,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["IcyTea"] = {
-		["Id"] = 264620043,
+		["Id"] = 3238120375,
 		["Name"] = "IcyTea",
 		["AltCards"] = {
 			["IcyTea-ArtV"] = {
@@ -2172,9 +2172,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Bloated"] = {
-		["Id"] = 281023016,
+		["Id"] = 3238111155,
 		["Action"] = true,
-		["Name"] = "Bloated",
+		["Name"] = "Slateskin Potion",
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Common",
@@ -2182,7 +2182,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Blue",
 		["Archetype"] = "Lunar",
 		["Cost"] = {["Blue"] = 2,},
-		["Bio"] = "Sometimes you just pass out by eating too much food, especially pizza.",
+		["Bio"] = [["stoned" joke here]],
 		["Effect"] = {
 			Name = "Bloated",
 			Description = "A target fighter gains 1000 Health. Lock it for 2 turns.",
@@ -3021,7 +3021,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["DIY Headphones"] = {
-		["Id"] = 283993223,
+		["Id"] = 3238114129,
 		["Name"] = "DIY Headphones",
 		AltCards = {
 			["DIY Headphonesv2"] = {
@@ -3108,7 +3108,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Eye Spy"] = {
-		["Id"] = 626090225,
+		["Id"] = 3238114771,
 		["Name"] = "Eye Spy",
 		["AltCards"] = {
 			["Entangling Lights"] = {
@@ -3147,8 +3147,14 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["GalaxyFlame"] = {
-		["Id"] = 283993414,
+		["Id"] = 3238116265,
 		["Name"] = "GalaxyFlame",
+		["AltCards"] = {
+			["Myrmiredon 2"] = {
+				["Id"] = 3238115834,
+				["Bio"] = "I heat up planets like yours to melt all your ice caps and watch you all burn.",
+			},
+		},
 		["Health"] = 250,
 		["Power"] = 250,
 		["Rarity"] = "Common",
@@ -3416,7 +3422,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 		
 	["Quenty"] = {
-		["Id"] = 283995771,
+		["Id"] = 3238126759,
 		["Name"] = "Quenty",
 		["AltCards"] = {
 			["QuentyV2"] = {
@@ -3584,7 +3590,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Rukiryo"] = {
-		["Id"] = 2817089810,
+		["Id"] = 3238127997,
 		["Name"] = "Rukiryo",
 		["AltCards"] = {
 			["Rukiryo-ArtV"] = {
@@ -4131,7 +4137,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["RoboticMob"] = {
-		["Id"] = 285154424,
+		["Id"] = 3238127191,
 		["Name"] = "RoboticMob",
 		["Health"] = 250,
 		["Power"] = 250,
@@ -4448,7 +4454,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 			
 	["Birthday Suprise"] = {
-		["Id"] = 288040413,
+		["Id"] = 3238110695,
 		["Name"] = "Birthday Surprise",
 		["AltCards"] = {
 			["Fruit Cake"] = {
@@ -4841,7 +4847,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	
 	
 	["Shedletsky the Fried One"] = {		
-		["Id"] = 616082720,
+		["Id"] = 3238128796,
 		["Name"] = "Shedletsky, the Fried One",
 		["Health"] = 700,
 		["Power"] = 0,
@@ -4885,7 +4891,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Right Arm of the Fried One"] = {
-		["Id"] = 616082694,
+		["Id"] = 3238481736,
 		["Name"] = "Scintillant Limb",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -4929,7 +4935,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Right Leg of the Fried One"] = {
-		["Id"] = 616082621,
+		["Id"] = 3238482770,
 		["Name"] = "Tyrannical Limb",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -4973,7 +4979,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Left Leg of the Fried One"] = {
-		["Id"] = 616082773,
+		["Id"] = 3238482295,
 		["Name"] = "Verdant Limb",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -5017,7 +5023,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Left Arm of the Fried One"] = {
-		["Id"] = 616082464,
+		["Id"] = 3238483271,
 		["Name"] = "Multicultural Limb",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -5334,7 +5340,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Korblox Archmage"] = {
-		["Id"] = 2817090717,
+		["Id"] = 3238122629,
 		["Name"] = "Korblox Archmage",
 		["Health"] = 650,
 		["Power"] = 500,
@@ -6179,7 +6185,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Pirate"] = {
-		["Id"] = 294871572,
+		["Id"] = 3238125667,
 		["Name"] = "Pirate",
 		["AltCards"] = {
 			["Pirate-Val"] = {
@@ -6376,7 +6382,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["JackInTheBlox"] = {
-		["Id"] = 296708261,
+		["Id"] = 3238122250,
 		["Name"] = "JackInTheBlox",
 		["Health"] = 1500,
 		["Power"] = 500,
@@ -6594,7 +6600,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Titano's Cavern"] = {
-		["Id"] = 688093581,
+		["Id"] = 3168685887,
 		["Name"] = "Spooky Caverns",
 		["AltCards"] = {
 			["Spooky Caverns-Sun"] = {
@@ -6694,7 +6700,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Primal Gato"] = {
-		["Id"] = 297414543,
+		["Id"] = 3238126339,
 		["Name"] = "Primal Gato",
 		["Health"] = 600,
 		["Power"] = 0,
@@ -6741,7 +6747,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Gato Luz"] = {
-		["Id"] = 297414530,
+		["Id"] = 3238116635,
 		["Name"] = "Gato Luz",
 		["AltCards"] = {							
 			["Gato Luz-Val"] = {
@@ -6767,7 +6773,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Spikle"] = {
-		["Id"] = 297414533,
+		["Id"] = 3238129571,
 		["Name"] = "Spikle",
 		["Health"] = 1750,
 		["Power"] = 500,
@@ -7299,7 +7305,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 		
 	["PassTheToiletPaper"] = {
-		["Id"] = 298793596,
+		["Id"] = 3238123941,
 		["Name"] = "PassTheToiletPaper",
 		["Health"] = 800,
 		["Power"] = 0,
@@ -7886,7 +7892,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Builderman"] = {
-		["Id"] = 1266655937,
+		["Id"] = 3238112348,
 		["Name"] = "Builderman",
 		["Health"] = 200,
 		["Power"] = 400,
@@ -8368,7 +8374,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Alexnewtron"] = {
-		["Id"] = 497624672,
+		["Id"] = 3238108408,
 		["Name"] = "Alexnewtron",
 		["Health"] = 700,
 		["Power"] = 200,
@@ -8900,7 +8906,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Titan of the Deep Below"] = {
-		["Id"] = 328831715,
+		["Id"] = 3168687063,
 		["Name"] = "Titan of the Deep Below",
 		["AltCards"] = {
 			["Titan of the Deep Below-E"] = {
