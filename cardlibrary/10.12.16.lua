@@ -509,7 +509,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 
 	["74Riley"] = {
-		["Id"] = 596205364,
+		["Id"] = 3238108095,
 		["Name"] = "74Riley",
 		["Health"] = 600,
 		["Power"] = 500,
@@ -1935,7 +1935,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Indoorsnowball"] = {
-		["Id"] = 712738101,
+		["Id"] = 3180106541,
 		["Name"] = "Indoorsnowball",
 		["Health"] = 600,
 		["Power"] = 600,
@@ -1945,7 +1945,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 8,},
 		["Effect"] = {
 			Name = "befriending of scaly mutts",
-			Description = "When this card dies, summon two smaller versions of it. When those cards die, summon two smaller versions of those. Smaller versions can't generate icons.",
+			Description = "When this card dies, summon two smaller versions of it. When those cards die, summon two smaller versions of those.",
 			["Type"] = "OnDeath",
 			["Power"] = {{"Summon","Snowball1"},{"Summon","Snowball1"}},
 			Target = "Ally",
@@ -1954,12 +1954,11 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Snowball1"] = {
-		["Id"] = 712738263,
+		["Id"] = 3180106853,
 		["Name"] = "Indoorsnowball",
 		["Health"] = 300,
 		["Power"] = 300,
 		["Rarity"] = "Token",
-		["Token"] = true,
 		["AttackEffect"] = "Punchkick",
 		["Color"] = "Green", 
 		["Cost"] = {["Green"] = 8,},
@@ -1974,9 +1973,8 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Snowball2"] = {
-		["Id"] = 712738281,
+		["Id"] = 3180107241,
 		["Name"] = "Indoorsnowball",
-		["Token"] = true,
 		["Health"] = 150,
 		["Power"] = 150,
 		["Rarity"] = "Token",
@@ -4467,7 +4465,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Permafrost Storm"] = {
-		["Id"] = 1357088327,
+		["Id"] = 3238124859,
 		["Name"] = "Permafrost Storm",
 		["Health"] = 1000,
 		["Power"] = 100,
@@ -4486,7 +4484,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Permafrost 1"] = {
-		["Id"] = 1357088327,
+		["Id"] = 3238124859,
 		["Name"] = "Permafrost Storm",
 		["Health"] = 1000,
 		["Power"] = 100,
@@ -4505,7 +4503,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Permafrost 2"] = {
-		["Id"] = 1357088327,
+		["Id"] = 3238124859,
 		["Name"] = "Permafrost Storm",
 		["Health"] = 1000,
 		["Power"] = 100,
@@ -4524,7 +4522,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Permafrost 3"] = {
-		["Id"] = 1357088327,
+		["Id"] = 3238124859,
 		["Name"] = "Permafrost Storm",
 		["Health"] = 1000,
 		["Power"] = 100,
@@ -4543,7 +4541,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Permafrost 4"] = {
-		["Id"] = 1357088327,
+		["Id"] = 3238124859,
 		["Name"] = "Permafrost Storm",
 		["Health"] = 1000,
 		["Power"] = 100,
@@ -4562,7 +4560,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Permafrost 5"] = {
-		["Id"] = 1357088327,
+		["Id"] = 3238124859,
 		["Name"] = "Permafrost Storm",
 		["Health"] = 1000,
 		["Power"] = 100,
@@ -4581,7 +4579,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Permafrost 6"] = {
-		["Id"] = 1357088327,
+		["Id"] = 3238124859,
 		["Name"] = "Permafrost Storm",
 		["Health"] = 1000,
 		["Power"] = 100,
@@ -4600,7 +4598,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Permafrost 7"] = {
-		["Id"] = 1357088327,
+		["Id"] = 3238124859,
 		["Name"] = "Permafrost Storm",
 		["Health"] = 1000,
 		["Power"] = 100,
@@ -4619,7 +4617,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Permafrost 8"] = {
-		["Id"] = 1357088327,
+		["Id"] = 3238124859,
 		["Name"] = "Permafrost Storm",
 		["Health"] = 1000,
 		["Power"] = 100,
@@ -4638,7 +4636,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Permafrost 9"] = {
-		["Id"] = 1357088327,
+		["Id"] = 3238124859,
 		["Name"] = "Permafrost Storm",
 		["Health"] = 1000,
 		["Power"] = 100,
@@ -4657,7 +4655,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Permafrost 10"] = {
-		["Id"] = 1357237858,
+		["Id"] = 3238124400,
 		["Name"] = "Permafrost Storm",
 		["Health"] = 1000,
 		["Power"] = 100,
@@ -6383,7 +6381,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["ScareAndCrow"] = {
-		["Id"] = 2107433795,
+		["Id"] = 3238128404,
 		["Name"] = "Scare & Crow",
 		["Health"] = 500,
 		["Power"] = 500,
@@ -7029,7 +7027,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Red Titan Essence"] = {
-		["Id"] = 543041104,
+		["Id"] = 3238461219,
 		["Name"] = "Red Titan Essence",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -7050,7 +7048,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Blue Titan Essence"] = {
-		["Id"] = 543041104,
+		["Id"] = 3238111859,
 		["Name"] = "Blue Titan Essence",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -7071,7 +7069,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Green Titan Essence"] = {
-		["Id"] = 543041104,
+		["Id"] = 3238119880,
 		["Name"] = "Green Titan Essence",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -7092,7 +7090,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Yellow Titan Essence"] = {
-		["Id"] = 543041104,
+		["Id"] = 3238107328,
 		["Name"] = "Yellow Titan Essence",
 		["Health"] = 0,
 		["Power"] = 0,
