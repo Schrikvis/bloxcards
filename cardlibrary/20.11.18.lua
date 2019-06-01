@@ -345,9 +345,9 @@ local twentyeleveneighteen = {
 			["Favored Godbeast"] = {
 				["Effect"] = {
 					Name = "Divine Ruination",
-					Description = "Can't attack. Doesn't generate icons when discarded. At the end of your turn, destroy all enemy fighters and this fighter. Fading.",
+					Description = "Can't attack. Doesn't generate icons when discarded. At the end of your turn, set the health of all enemy fighters to 0, then destroy this fighter. Fading.",
 					["Type"] = "OnEnd",
-					["Power"] = {{"Damage",9999},{"Damage",9999,"Opponent"}},
+					["Power"] = {{"Damage",9999},{"SetHealth",0,"Opponent"}},
 					["Target"] = "Self",
 				},
 			},
@@ -9529,10 +9529,11 @@ local twentyeleveneighteen = {
 		["Archetype"] = "Boardwipe",
 		["AttackEffect"] = "GunShot",
 		["Color"] = "Yellow",
-		["Cost"] = {["Neutral"] = 5, ["Yellow"] = 3,},
+		["SetImmune"] = true,
+		["Cost"] = {["Neutral"] = 5, ["Yellow"] = 4,},
 		["Effect"] = {
 			Name = "Thug Life",
-			Description = "This fighter can't have its stats altered by Luck o' the Lobsters, Mass Epidemic, or Divine Favor.",
+			Description = "This fighter can't have its stats set by effects, or have his stats altered by Luck o' the Lobsters or Mass Epidemic.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Lock",0}},
 			Target = "Self",
