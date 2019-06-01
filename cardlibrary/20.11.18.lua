@@ -418,7 +418,7 @@ local twentyeleveneighteen = {
 	},
 	
 	["Grand Chicken Lord"] = {
-		["Id"] = 336411229,
+		["Id"] = 3238117015,
 		["Name"] = "Grand Chicken Lord",
 		["AltCards"] = {
 			["ChickenLord-ArtV"] = {
@@ -640,7 +640,7 @@ local twentyeleveneighteen = {
 	},	
 	
 	["Infinite Chicken"] = {
-		["Id"] = 336415537,
+		["Id"] = 3238121685,
 		["Name"] = "Infinite Chicken",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -687,26 +687,6 @@ local twentyeleveneighteen = {
 			Description = "When this card is cast, shuffle a copy of Myrmiredon back into your deck.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"DeckAdd","Myrmiredon"}},
-			Target = "Ally",
-		},
-		["Bio"] = "A leader is the greatest servant. A master is the greatest tyrant. Myrmiredon is both.",
-	},
-
-	["Myrmiredon 2"] = {
-		["Id"] = 421944617,
-		["Name"] = "Myrmiredon",
-		["Health"] = 400,
-		["Power"] = 400,
-		["Rarity"] = "Token",
-		["AttackEffect"] = "Butts",
-		["Archetype"] = "Recur",
-		["Color"] = "Green",
-		["Cost"] = {["Green"] = 5,},
-		["Effect"] = {
-			Name = "Dreadsteed",
-			Description = [[2 Charges. At the end of your turns, Remove a charge. If there are no charges, shuffle a copy of Myrmiredon back into your deck.]],
-			["Type"] = "OnEnd",
-			["Power"] = {{"Summon","Myrmiredon 3"},{"Unlock",9999,"Archetype"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = "A leader is the greatest servant. A master is the greatest tyrant. Myrmiredon is both.",
@@ -1678,7 +1658,7 @@ local twentyeleveneighteen = {
 	},		
 	
 	["SolarCrane"] = {
-		["Id"] = 2810639586,
+		["Id"] = 3238129241,
 		["Name"] = "SolarCrane",
 		["Health"] = 1500,
 		["Power"] = 400,
@@ -1868,7 +1848,7 @@ local twentyeleveneighteen = {
 	},		
 	
 	["Fat Cat"] = {
-		["Id"] = 363166204,
+		["Id"] = 3180108249,
 		["Name"] = "Fat Cat",
 		["Health"] = 800,
 		["Power"] = 200,
@@ -1955,7 +1935,7 @@ local twentyeleveneighteen = {
 	},	
 	
 	["Taymaster"] = {
-		["Id"] = 1939174087,
+		["Id"] = 3238130323,
 		["Name"] = "Taymaster",
 		["AltCards"] = {
 			["TaymasterAltArtV1"] = {
@@ -2460,7 +2440,7 @@ local twentyeleveneighteen = {
 	},
 	
 	["ClanDrone"] = {
-		["Id"] = 384007490,
+		["Id"] = 3238113306,
 		["Name"] = "ClanDrone",
 		["Health"] = 600,
 		["Power"] = 600,
@@ -2480,7 +2460,7 @@ local twentyeleveneighteen = {
 	},
 	
 	["Drone"] = {
-		["Id"] = 878896845,
+		["Id"] = 3238112596,
 		["Name"] = "Drone",
 		["Health"] = 150,
 		["Power"] = 150,
@@ -3127,7 +3107,7 @@ local twentyeleveneighteen = {
 	},			
 
 	["inechi"] = {
-		["Id"] = 411803668,
+		["Id"] = 3238121068,
 		["Name"] = "inechi",
 		["AltCards"] = {
 			["inechi-ArtV"] = {
@@ -3280,7 +3260,7 @@ local twentyeleveneighteen = {
 	},			
 
 	["One BLOX Man"] = {
-		["Id"] = 411809256,
+		["Id"] = 3238123084,
 		["Name"] = "One BLOX Man",
 		["Health"] = 1500,
 		["Power"] = 500,
@@ -3539,8 +3519,8 @@ local twentyeleveneighteen = {
 	},			
 
 	["Bearded Captain"] = {
-		["Id"] = 411844155,
-		["Name"] = "Bearded Captain",
+		["Id"] = 3238115043,
+		["Name"] = "Ezebel, Pirate Queen",
 		["Health"] = 400,
 		["Power"] = 0,
 		["Rarity"] = "Uncommon",
@@ -4111,7 +4091,7 @@ local twentyeleveneighteen = {
 	},	
 	
 	["Prestwick"] = {
-		["Id"] = 413931901,
+		["Id"] = 3238125976,
 		["Name"] = "Prestwick",
 		["Health"] = 300,
 		["Power"] = 800,
@@ -4178,7 +4158,7 @@ local twentyeleveneighteen = {
 	},	
 	
 	["Dodgeball Player Blue"] = {
-		["Id"] = 632442575,
+		["Id"] = 3238114497,
 		["Name"] = "Dodgeball Player Blue",
 		["Health"] = 500,
 		["Power"] = 200,
@@ -5005,7 +4985,7 @@ local twentyeleveneighteen = {
 	},
 	
 	["SomaticMizuSan"] = {
-		["Id"] = 430947885,
+		["Id"] = 3180107954,
 		["Name"] = "SomaticMizuSan",
 		["Health"] = 600,
 		["Power"] = 500,
@@ -5672,10 +5652,10 @@ local twentyeleveneighteen = {
 	},
 	
 	["Coordinated Attack"] = {
-		["Id"] = 1720507932,
-		["Name"] = "Coordinated Attack",
-		["Health"] = 0,
-		["Power"] = 0,
+		["Id"] = 3238125292,
+		["Name"] = "PilotLuke",
+		["Health"] = 300,
+		["Power"] = 300,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Yellow",
@@ -5683,9 +5663,9 @@ local twentyeleveneighteen = {
 		["Archetype"] = "Pilot",
 		["Effect"] = {
 			Name = "Capture",
-			Description = "Summon 3 Pilots.",
+			Description = "Haste. Summon 2 Pilots, then ready all Pilots.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Summon","Pilot"},{"Summon","Pilot"},{"Summon","Pilot"},{"Unlock",9999,"Archetype"}},
+			["Power"] = {{"Summon","Pilot"},{"Summon","Pilot"},{"Unlock",1,"Archetype"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Dear Dun_Goof: THINK THROUGH YOUR CARDS BEFORE YOU MAKE THEM. Signed: The rest of the dev team",
@@ -6241,11 +6221,11 @@ local twentyeleveneighteen = {
 	},
 	
 	["Aurichalcum"] = {
-		["Id"] = 446724872,
+		["Id"] = 3238110091,
 		["Name"] = "Aurichalcum",
 		["AltCards"] = {
 			["AurichalcumV2"] = {
-				["Id"] = 446724984,
+				["Id"] = 3238108778,
 				["Bio"] = "I'm sorry I caused the apocalypse. Have some useless currency.",
 			},
 			["Aurichalcum-ArtV"] = {
@@ -6457,7 +6437,7 @@ local twentyeleveneighteen = {
 	},
 	
 	["Gravity Inspector"] = {
-		["Id"] = 455993039,
+		["Id"] = 3238119379,
 		["Name"] = "Gravity Inspector",
 		["AltCards"] = {
 			["Gravity InspectorV2"] = {
@@ -6549,7 +6529,7 @@ local twentyeleveneighteen = {
 	},
 	
 	["Pancake Break"] = {
-		["Id"] = 469456311,
+		["Id"] = 3238123535,
 		["Name"] = "Pancake Break",
 		["AltCards"] = {
 			["Pancake Break-Val"] = {
@@ -6766,7 +6746,7 @@ local twentyeleveneighteen = {
 	},
 
 	["InceptionTime"] = {
-		["Id"] = 477101784,
+		["Id"] = 3238120727,
 		["Name"] = "InceptionTime",
 		["Health"] = 1400,
 		["Power"] = 400,
@@ -6787,7 +6767,7 @@ local twentyeleveneighteen = {
 	},
 	
 	["InceptionTime Token"] = {
-		["Id"] = 477101784,
+		["Id"] = 3238120727,
 		["Name"] = "InceptionTime",
 		["Health"] = 1400,
 		["Power"] = 400,
@@ -7094,7 +7074,7 @@ local twentyeleveneighteen = {
 	},
 
 	["WoodReviewer"] = {
-		["Id"] = 959854965,
+		["Id"] = 3238131029,
 		["Name"] = "WoodReviewer",
 		["Health"] = 600,
 		["Power"] = 600,
@@ -7440,8 +7420,8 @@ local twentyeleveneighteen = {
 	},
 
 	["Smart Planner"] = {
-		["Id"] = 491538877,
-		["Name"] = "Smart Planner",
+		["Id"] = 3238129940,
+		["Name"] = "Stonetroid Warrior",
 		["Health"] = 500,
 		["Power"] = 500,
 		["Rarity"] = "Uncommon",
@@ -7455,7 +7435,7 @@ local twentyeleveneighteen = {
 			["Power"] = {{"Weaken",100}},
 			Target = "Aggressor",
 		},
-		["Bio"] = "Line up theory ftw.",
+		["Bio"] = "",
 	},
 
 	["Friend Request Spammer"] = {
@@ -8932,7 +8912,7 @@ local twentyeleveneighteen = {
 	},		
 	
 	["Turkey"] = {
-		["Id"] = 557941497,
+		["Id"] = 3238130631,
 		["Name"] = "Turkey",
 		["Health"] = 300,
 		["Power"] = 300,
@@ -9431,7 +9411,7 @@ local twentyeleveneighteen = {
 	},				
 	
 	["BrokenBone"] = {
-		["Id"] = 611981310,
+		["Id"] = 3238111527,
 		["Name"] = "BrokenBone",
 		["Health"] = 450,
 		["Power"] = 450,

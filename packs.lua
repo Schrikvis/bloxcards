@@ -1051,7 +1051,6 @@ local packs = {
 			"Sand Eyes Yellow Dragon",
 			"Drager",
 			"Lord of Greed",
-			"Lord of Auctions",
 			"Doge",
 			"GalaxyFlame",
 			"Weaven",
@@ -1396,6 +1395,9 @@ local packs = {
 		Description = "Filled with only cards belonging to an archetype, this pack can help you finish your deck provided you have at least 10 wins.",
 		WinRequirement = 10;
 		Cards = {
+			"Multicultural Limb",--feline fandango
+			"Scintillant Limb",--fluffy findings
+			"Verdant Limb",--kitnip
 			"Grand Couch, the Slumbering",
 			"Chair Chair, the Creator",
 			"Lord Westinghouse",
@@ -1655,6 +1657,7 @@ local packs = {
 			day = {1,12,23};
 		};
 		Cards = {
+			"Myrmiredon 2",--galaxyflame
 			"NinjaV2",
 			"No anime",
 			"TheBrycen27",
