@@ -8881,7 +8881,7 @@ local twentyeleveneighteen = {
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "PunchKick",
 		["Color"] = "Yellow",
-		["Cost"] = {["Neutral"] = 3,["Yellow"] = 2},
+		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Roller Coaster",
 			Description = "When this card is cast, deal 700 damage to all other yellow fighters.",
@@ -9568,7 +9568,7 @@ local twentyeleveneighteen = {
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "CatSlash",
 		["Color"] = "Red",
-		["Cost"] = {["Neutral"] = 3, ["Red"] = 2,},
+		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Stop It, Slender!",
 			Description = "When this card is cast, deal 700 damage to all other red fighters.",
