@@ -753,7 +753,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Pyrotechnics",
 			Description = "When this card is cast, you gain 1000 life. Whenever you gain life, Kariu loses 500 health, and set your white and green icons to 3.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Cost",-1000},{"Summon","Kariu2"},{"Damage",9999,"Self"}},
+			["Power"] = {{"Summon","Kariu2"},{"Cost",-1000},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Consider me blessed.",
