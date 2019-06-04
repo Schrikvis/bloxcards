@@ -2378,7 +2378,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Evil Guest 666",
 			Description = "When this card attacks and destroys a fighter, destroy this card.",
 			["Type"] = "OnAttackDestroy",
-			["Power"] = {{"Damage",999}},
+			["Power"] = {{"Damage",9999}},
 			Target = "Self",
 		},
 		["Bio"] = "Wanna be mincemeat?",
