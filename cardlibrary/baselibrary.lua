@@ -3436,7 +3436,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "PunchKick",
 		["Color"] = "Green",
-		["Cost"] = {["Neutral"] = 3,["Green"] = 2,},
+		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Sink",
 			Description = "When this card is cast, deal 700 damage to all other green fighters.",
