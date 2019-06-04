@@ -620,7 +620,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Slash",
 		["Color"] = "Blue",
-		["Cost"] = {["Neutral"] = 3, ["Blue"] = 2,},
+		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Reincarnation",
 			Description = "When this card is cast, deal 700 damage to all other blue fighters.",
