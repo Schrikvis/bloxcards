@@ -6617,10 +6617,10 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Red",
-		["Cost"] = {["Red"] = 3,["Yellow"] = 3,},
+		["Cost"] = {["Red"] = 2, ["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Gilgamesh",
-			Description = "When you lose life, put a random roblox gear into your hand.",
+			Description = "Whenever you lose life, put a random roblox gear into your hand.",
 			["Type"] = "OnHealthLoss",
 			["Power"] = {{"RandomAdd",{"Linked Sword","Trowel","Rocket Launcher","Superball","Slingshot"}}},
 			Target = "Ally",
