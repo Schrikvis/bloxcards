@@ -9098,7 +9098,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Dreadsteed",
 			Description = "When this card is cast, put a copy of it into your hand. This card doesn't generate icons or trigger effects upon death.",
-			["Type"] = "OnDeath",
+			["Type"] = "OnSummon",
 			["Power"] = {{"Add","Overseer's Steed"}},
 			Target = "Ally",
 		},
