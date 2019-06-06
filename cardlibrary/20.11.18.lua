@@ -231,7 +231,7 @@ local twentyeleveneighteen = {
 	},
 	
 	["LeetWizard Token"] = {
-		["Id"] = 335687451,
+		["Id"] = 2792979511,
 		["Name"] = "LeetWizard",
 		["AltCards"] = {
 			["LeetWizard Token-Sun"] = {
@@ -418,7 +418,7 @@ local twentyeleveneighteen = {
 	},
 	
 	["Grand Chicken Lord"] = {
-		["Id"] = 336411229,
+		["Id"] = 3238117015,
 		["Name"] = "Grand Chicken Lord",
 		["AltCards"] = {
 			["ChickenLord-ArtV"] = {
@@ -500,7 +500,7 @@ local twentyeleveneighteen = {
 	},
 
 	["Grand Meeboid Totem"] = {
-		["Id"] = 336411268,
+		["Id"] = 3164489200,
 		["Name"] = "Grand Totem",
 		["AltCards"] = {
 			["meebtotem-ArtV"] = {
@@ -578,7 +578,7 @@ local twentyeleveneighteen = {
 	},	
 	
 	["Infinite Wishes"] = {
-		["Id"] = 447449134,
+		["Id"] = 3164491171,
 		["Name"] = "Infinite Wishes",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -640,7 +640,7 @@ local twentyeleveneighteen = {
 	},	
 	
 	["Infinite Chicken"] = {
-		["Id"] = 336415537,
+		["Id"] = 3238121685,
 		["Name"] = "Infinite Chicken",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -687,39 +687,6 @@ local twentyeleveneighteen = {
 			Description = "When this card is cast, shuffle a copy of Myrmiredon back into your deck.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"DeckAdd","Myrmiredon"}},
-			Target = "Ally",
-		},
-		["Bio"] = "A leader is the greatest servant. A master is the greatest tyrant. Myrmiredon is both.",
-	},
-
-	["Myrmiredon 2"] = {
-		["Id"] = 421944617,
-		["Name"] = "Myrmiredon",
-		["AltCards"] = {
-			["MyrmiredonV2 2"] = {
-				["Id"] = 480297793,
-				["Effect"] = {
-					Name = "Dreadsteed",
-					Description = [[2 Charges. At the end of your turns, Remove a charge. If there are no charges, shuffle a copy of Myrmiredon back into your deck.]],
-					["Type"] = "OnEnd",
-					["Power"] = {{"Summon","MyrmiredonV2 3"},{"Unlock",9999,"Archetype"},{"Damage",9999,"Self"}},
-					Target = "Ally",
-				},
-				["Bio"] = "Greetings, honourable invaders. Thank you for coming so far. However, as you can see, we are poor. Do you truly believe you'll find what you want here?",
-			},
-		},
-		["Health"] = 400,
-		["Power"] = 400,
-		["Rarity"] = "Token",
-		["AttackEffect"] = "Butts",
-		["Archetype"] = "Recur",
-		["Color"] = "Green",
-		["Cost"] = {["Green"] = 5,},
-		["Effect"] = {
-			Name = "Dreadsteed",
-			Description = [[2 Charges. At the end of your turns, Remove a charge. If there are no charges, shuffle a copy of Myrmiredon back into your deck.]],
-			["Type"] = "OnEnd",
-			["Power"] = {{"Summon","Myrmiredon 3"},{"Unlock",9999,"Archetype"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = "A leader is the greatest servant. A master is the greatest tyrant. Myrmiredon is both.",
@@ -885,12 +852,12 @@ local twentyeleveneighteen = {
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Slash",
 		["Archetype"] = "Bee",
-		["Requirement"] = {"Archetype",2},
+		["Requirement"] = {"Archetype",1,9999},
 		["Color"] = "Blue",
 		["Cost"] = {["Blue"] = 3,["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "Nerf",
-			Description = "Cast only if you control at least two bees. Put a Swarm into your hand at the end of each of your turns.",
+			Description = "Cast only if you control at least 1 bee. Put a Swarm into your hand at the end of each of your turns.",
 			Type = "OnEnd",
 			Power = {{"Add","Swarm"}},
 			Target = "Ally",
@@ -1043,7 +1010,7 @@ local twentyeleveneighteen = {
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Token",
-		["Archetype"] = "Target",
+		["Archetype"] = "NightmareCard",
 		["DiscardBlock"] = true,
 		["Color"] = "Neutral",
 		["Cost"] = {["Neutral"] = 3,},
@@ -1149,9 +1116,9 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Green"] = 1,["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Nightmare!",
-			Description = "Put a Nightmare into your opponent's hand. All non-Nightmare-related fighters lose 300 Power. All Nightmare-related fighters gain 500 Health.",
+			Description = "Put a Nightmare into your opponent's hand. All non-Nightmare-related fighters lose 300 Power. All Nightmare-related fighters gain 500 Health. Draw a card.",
 			Type = "OnSummon",
-			Power = {{"Add","Nightmare","Opponent"},{"Weaken",300,"NotArchetype"},{"Heal",500}},
+			Power = {{"Add","Nightmare","Opponent"},{"Weaken",300,"NotArchetype"},{"Heal",500},{"Draw",1,"Ally"}},
 			Target = "Archetype",
 		},
 		["Bio"] = "Gengar approved.",
@@ -1191,12 +1158,11 @@ local twentyeleveneighteen = {
 		["Power"] = 0,
 		["Rarity"] = "Uncommon",
 		["Archetype"] = "Nightmare",
-		["Requirement"] = {"Archetype",1},		
 		["Color"] = "Green",
 		["Cost"] = {["Green"] = 2},
 		["Effect"] = {
 			Name = "Nightmare!",
-			Description = "Cast only if you control a nightmare-related fighter. Shuffle 3 Nightmares into your opponent's deck. Draw a card.",
+			Description = "Shuffle 3 Nightmares into your opponent's deck. Draw a card.",
 			Type = "OnSummon",
 			Power = {{"DeckAdd","Nightmare"},{"DeckAdd","Nightmare"},{"DeckAdd","Nightmare"},{"Draw",1,"Ally"}},
 			Target = "Opponent",
@@ -1230,7 +1196,7 @@ local twentyeleveneighteen = {
 	},
 
 	["HatdaCat"] = {
-		["Id"] = 343430211,
+		["Id"] = 3164489753,
 		["Name"] = "HatdaCat",
 		["Archetype"] = "Police",
 		["Health"] = 1250,
@@ -1245,13 +1211,12 @@ local twentyeleveneighteen = {
 			["Type"] = "OnAttackEnd",
 			["Power"] = {{"Lock",1},{"Lock",3,"Self"}},
 			Target = "Opponent",
-			Increase = 1
 		},
 		["Bio"] = "The cops of the frozen north have their own culture.",
 	},
 	
 	["BlizzardCreeper"] = {
-		["Id"] = 616082779,
+		["Id"] = 3164473624,
 		["Name"] = "Blizaki",
 		AltCards = {
 			["Blizaki-ArtV"] = {
@@ -1393,18 +1358,18 @@ local twentyeleveneighteen = {
 	["Chickenduckbird"] = {
 		["Id"] = 626187155,
 		["Name"] = "ChickenDuckBird",
-		["Health"] = 800,
+		["Health"] = 1100,
 		["Power"] = 200,
 		["Rarity"] = "Rare",
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Yellow",
-		["Cost"] = {["Neutral"] = 2,["Yellow"] = 3,},
+		["Cost"] = {["Green"] = 2,["Red"] = 2,},
 		["Effect"] = {
 			Name = "Assimilate",
-			Description = "At the end of your turns, put a fried limb into your hand.",
-			["Type"] = "OnEnd",
-			["Power"] = {{"RandomAdd",{"Right Leg of the Fried One","Left Leg of the Fried One","Left Arm of the Fried One","Right Arm of the Fried One"}}},
+			Description = "Whenever you cast a fighter, deal 100 damage to all blue fighters. Generate a blue icon.",
+			["Type"] = "OnAllySummon",
+			["Power"] = {{"Damage",100,"Colorblue"},{"Blue",1}},
 			Target = "Ally",
 		},
 		["Bio"] = "The chicken genes are the alpha genes over the duck and bird genes.",
@@ -1413,18 +1378,18 @@ local twentyeleveneighteen = {
 	["ChickenduckbirdV2"] = {
 		["Id"] = 667222816,
 		["Name"] = "ChickenGooseBird",
-		["Health"] = 100,
-		["Power"] = 100,
+		["Health"] = 600,
+		["Power"] = 500,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Yellow",
-		["Cost"] = {["Neutral"] = 3,["Yellow"] = 1,["Red"] = 1,["Green"] = 1,["Blue"] = 1},
+		["Cost"] = {["Neutral"] = 1,["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Assimilate",
-			Description = "When this card dies, Put all fried limbs into your hand.",
-			["Type"] = "OnDeath",
-			["Power"] = {{"Add","Left Leg of the Fried One"},{"Add","Right Leg of the Fried One"},{"Add","Left Arm of the Fried One"},{"Add","Right Arm of the Fried One"}},
-			Target = "Ally",
+			Description = "Whenever a fighter dies, your opponent gains 50 life. Deal 50 damage to all other fighters.",
+			["Type"] = "OnAnyDeath",
+			["Power"] = {{"Inflict",-50},{"Heal",50,"Self"},{"Damage",50,"All"}},
+			Target = "Opponent",
 		},
 		["Bio"] = "But the goose genes rule all.",
 	},	
@@ -1504,7 +1469,7 @@ local twentyeleveneighteen = {
 		["Archetype"] = "Doge",
 		["Color"] = "Yellow",
 		["Cost"] = {["Yellow"] = 1,},
-		["Requirement"] = {"Archetype",1},
+		["Requirement"] = {"Archetype",1,9999},
 		["Effect"] = {
 			Name = "Infinite Doge",
 			Description = "Cast only if you control a Doge. When you do, put a random Doge into your hand.",
@@ -1693,7 +1658,7 @@ local twentyeleveneighteen = {
 	},		
 	
 	["SolarCrane"] = {
-		["Id"] = 2810639586,
+		["Id"] = 3238129241,
 		["Name"] = "SolarCrane",
 		["Health"] = 1500,
 		["Power"] = 400,
@@ -1883,20 +1848,20 @@ local twentyeleveneighteen = {
 	},		
 	
 	["Fat Cat"] = {
-		["Id"] = 363166204,
+		["Id"] = 3180108249,
 		["Name"] = "Fat Cat",
 		["Health"] = 800,
 		["Power"] = 200,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Lightning",
+		["Archetype"] = "Kitten",
 		["Color"] = "Neutral",
 		["Cost"] = {["Neutral"] = 6,},
-		["AttackBlock"] = true,
 		["Effect"] = {
 			Name = "Snorlaxing",
-			Description = "When this card tries to attack, instead give this card 200 health and put a Kitten into your hand.",
-			["Type"] = "OnAttack",
-			["Power"] = {{"Heal",200},{"RandomAdd",{"Kitten","Kitten2","Kitten3","Kitten4","Kitten5","Kitten6","Kitten7","Kitten8","Kitten9"}}},
+			Description = "At the end of your turns, give this card, then all Kittens, 200 health and put a Kitten into your hand.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Heal",200},{"Heal",200,"Archetype"},{"RandomAdd",{"Kitten","Kitten2","Kitten3","Kitten4","Kitten5","Kitten6","Kitten7","Kitten8","Kitten9"}}},
 			Target = "Self",
 		},
 		["Bio"] = "He haz regretz of his Chezburger dayz.",
@@ -1970,7 +1935,7 @@ local twentyeleveneighteen = {
 	},	
 	
 	["Taymaster"] = {
-		["Id"] = 1939174087,
+		["Id"] = 3238130323,
 		["Name"] = "Taymaster",
 		["AltCards"] = {
 			["TaymasterAltArtV1"] = {
@@ -2064,7 +2029,7 @@ local twentyeleveneighteen = {
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Epic",
-		["Requirement"] = {false,4,true},
+		["Requirement"] = {"OpponentBoard",4,9999},
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Yellow",
 		["Cost"] = {["Neutral"] = 3,["Yellow"] = 4,},
@@ -2118,7 +2083,7 @@ local twentyeleveneighteen = {
 	},	
 	
 	["legoseed"] = {
-		["Id"] = 384005579,
+		["Id"] = 3164492078,
 		["Name"] = "legoseed",
 		["AltCards"] = {
 			["LegoWraith"] = {
@@ -2475,7 +2440,7 @@ local twentyeleveneighteen = {
 	},
 	
 	["ClanDrone"] = {
-		["Id"] = 384007490,
+		["Id"] = 3238113306,
 		["Name"] = "ClanDrone",
 		["Health"] = 600,
 		["Power"] = 600,
@@ -2495,7 +2460,7 @@ local twentyeleveneighteen = {
 	},
 	
 	["Drone"] = {
-		["Id"] = 878896845,
+		["Id"] = 3238112596,
 		["Name"] = "Drone",
 		["Health"] = 150,
 		["Power"] = 150,
@@ -2525,9 +2490,9 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Neutral"] = 3, ["Yellow"] = 4,},
 		["Effect"] = {
 			Name = "Amp",
-			Description = "Whenever this fighter is targeted, gain 2 Yellow icons.",
+			Description = "Whenever this fighter is targeted, generate a Yellow icon.",
 			["Type"] = "OnTarget",
-			["Power"] = {{"Yellow",2}},
+			["Power"] = {{"Yellow",1}},
 			Target = "Ally",
 		},
 		["Bio"] = "HEY MAPLESTICK IS THAT A.... *faints from the stabs*",
@@ -2701,7 +2666,7 @@ local twentyeleveneighteen = {
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Blue",
 		["Archetype"] = "Morphic",
-		["Requirement"] = {"Archetype",1},
+		["Requirement"] = {"Archetype",1,9999},
 		["Cost"] = {["Blue"] = 3, ["Red"] = 1, ["Green"] = 1, ["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "Overgrown",
@@ -3142,7 +3107,7 @@ local twentyeleveneighteen = {
 	},			
 
 	["inechi"] = {
-		["Id"] = 411803668,
+		["Id"] = 3238121068,
 		["Name"] = "inechi",
 		["AltCards"] = {
 			["inechi-ArtV"] = {
@@ -3153,17 +3118,18 @@ local twentyeleveneighteen = {
 		},
 		["Health"] = 500,
 		["Power"] = 500,
-		["Requirement"] = {false,1,true},		
 		["Rarity"] = "Legendary",
+		["Archetype"] = "Nightmare",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Green",
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 1,["Green"] = 3,},
 		["Effect"] = {
 			Name = "All is fair in love and duels.",
-			Description = "Cast only if your opponent controls a fighter. When you do, set your opponent's white icons to 3.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"SetNeutral",3}},
-			Target = "All",
+			Description = [["Whenever a "Nightmare" is cast, this card gains 400 Health and Power. Put a Nightmare into your opponent's hand."]],
+			["Type"] = "OnCast",
+			["Archetype"] = "NightmareCard",
+			["Power"] = {{"Heal",400},{"Strengthen",400},{"Add","Nightmare","Opponent"}},
+			Target = "Self",
 		},
 		["Bio"] = "A weird, odd, and eccentric girl who has an odd obsession with squids and lovecraftian horror. She is also a huge supporter towards Developers of Roblox.",
 	},
@@ -3294,14 +3260,14 @@ local twentyeleveneighteen = {
 	},			
 
 	["One BLOX Man"] = {
-		["Id"] = 411809256,
+		["Id"] = 3238123084,
 		["Name"] = "One BLOX Man",
 		["Health"] = 1500,
 		["Power"] = 500,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Yellow",
-		["Requirement"] = {false,4,true},
+		["Requirement"] = {"OpponentBoard",4,9999},
 		["CounterAttackBlock"] = true,
 		["Cost"] = {["Neutral"] = 4,["Yellow"] = 7,},
 		["Effect"] = {
@@ -3315,7 +3281,7 @@ local twentyeleveneighteen = {
 	},			
 
 	["Nikilis"] = {
-		["Id"] = 411809593,
+		["Id"] = 3164496653,
 		["Name"] = "Nikilis",
 		["Health"] = 350,
 		["Power"] = 350,
@@ -3427,17 +3393,30 @@ local twentyeleveneighteen = {
 	["Isaac0333"] = {
 		["Id"] = 411842357,
 		["Name"] = "Insane Isaac",
+		["AltCards"] = {
+			["MyrmiredonV2 2"] = {
+				["Rarity"] = "Token",
+				["Effect"] = {
+					Name = "Bucket of Pets",
+					Description = "When this card is cast, put two Kittens into your hand. When a Kitten dies, put a Doge into your hand.",
+					["Type"] = "OnAnyDeath",
+					["Archetype"] = "Kitten",
+					["Power"] = {{"Add","Doge"}},
+					Target = "Ally",
+				},
+			},
+		},
 		["Health"] = 400,
 		["Power"] = 400,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Red",
-		["Cost"] = {["Neutral"] = 4,["Yellow"] = 1,["Red"] = 1,},
+		["Cost"] = {["Neutral"] = 1,["Yellow"] = 2,["Red"] = 2,},
 		["Effect"] = {
-			Name = "ASSEMBLE.",
-			Description = "When this card is cast, put four Kittens into your hand and lose 100 life.",
+			Name = "Bucket of Pets",
+			Description = "When this card is cast, put two Kittens into your hand. When a Kitten dies, put a Doge into your hand.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Cost",100},{"RandomAdd",{"Kitten","Kitten2","Kitten3","Kitten4","Kitten5","Kitten6","Kitten7","Kitten8","Kitten9"}},{"RandomAdd",{"Kitten","Kitten2","Kitten3","Kitten4","Kitten5","Kitten6","Kitten7","Kitten8","Kitten9"}},{"RandomAdd",{"Kitten","Kitten2","Kitten3","Kitten4","Kitten5","Kitten6","Kitten7","Kitten8","Kitten9"}},{"RandomAdd",{"Kitten","Kitten2","Kitten3","Kitten4","Kitten5","Kitten6","Kitten7","Kitten8","Kitten9"}}},
+			["Power"] = {{"RandomAdd",{"Kitten","Kitten2","Kitten3","Kitten4","Kitten5","Kitten6","Kitten7","Kitten8","Kitten9"}},{"RandomAdd",{"Kitten","Kitten2","Kitten3","Kitten4","Kitten5","Kitten6","Kitten7","Kitten8","Kitten9"}},{"Summon","MyrmiredonV2 2"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Knock knock, Guv! Who's there? IT'S ISAAC, GUV!!",
@@ -3540,8 +3519,8 @@ local twentyeleveneighteen = {
 	},			
 
 	["Bearded Captain"] = {
-		["Id"] = 411844155,
-		["Name"] = "Bearded Captain",
+		["Id"] = 3238115043,
+		["Name"] = "Ezebel, Pirate Queen",
 		["Health"] = 400,
 		["Power"] = 0,
 		["Rarity"] = "Uncommon",
@@ -3770,7 +3749,7 @@ local twentyeleveneighteen = {
 	},	
 
 	["Mrbeanbean2"] = {
-		["Id"] = 603503291,
+		["Id"] = 3164494036,
 		["Name"] = "Mrbeanbean2",
 		["Health"] = 150,
 		["Power"] = 150,
@@ -3836,7 +3815,7 @@ local twentyeleveneighteen = {
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Punch1",
 		["Archetype"] = "Korblox",
-		["Requirement"] = {"Archetype",1},
+		["Requirement"] = {"Archetype",1,9999},
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 1,["Blue"] = 4,},
 		["Effect"] = {
@@ -3908,9 +3887,9 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "SCRIPTING PARTY",
-			Description = "When this card is cast, deal 200 damage to all red fighters. All yellow fighters lose 200 Power. Swap the stats of all green fighters. Lock all blue fighters for two turns.",
+			Description = "When this card is cast, deal 200 damage to all red fighters. All blue fighters lose 200 Power. Swap the stats of all green fighters. Lock all yellow fighters for two turns.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",200,"ColorRed"},{"Weaken",200,"ColorYellow"},{"Lock",2,"ColorBlue"},{"Swap",030,"ColorGreen"}},
+			["Power"] = {{"Damage",200,"ColorRed"},{"Weaken",200,"ColorBlue"},{"Lock",2,"ColorYellow"},{"Swap",030,"ColorGreen"}},
 			Target = "All",
 			Increase = 1,
 		},
@@ -4112,7 +4091,7 @@ local twentyeleveneighteen = {
 	},	
 	
 	["Prestwick"] = {
-		["Id"] = 413931901,
+		["Id"] = 3238125976,
 		["Name"] = "Prestwick",
 		["Health"] = 300,
 		["Power"] = 800,
@@ -4179,7 +4158,7 @@ local twentyeleveneighteen = {
 	},	
 	
 	["Dodgeball Player Blue"] = {
-		["Id"] = 632442575,
+		["Id"] = 3238114497,
 		["Name"] = "Dodgeball Player Blue",
 		["Health"] = 500,
 		["Power"] = 200,
@@ -4240,7 +4219,7 @@ local twentyeleveneighteen = {
 	},	
 	
 	["xXVitalityVoidXx"] = {
-		["Id"] = 413948179,
+		["Id"] = 3164506102,
 		["Name"] = "xXVitalityVoidXx",
 		["Health"] = 450,
 		["Power"] = 450,
@@ -4380,7 +4359,7 @@ local twentyeleveneighteen = {
 		["Id"] = 415733985,
 		["Name"] = "BlueShadic90",
 		["Health"] = 400,
-		["Power"] = 300,
+		["Power"] = 400,
 		["Rarity"] = "Uncommon",
 		["Archetype"] = "Ninja",
 		["AttackEffect"] = "Lightning",
@@ -5006,7 +4985,7 @@ local twentyeleveneighteen = {
 	},
 	
 	["SomaticMizuSan"] = {
-		["Id"] = 430947885,
+		["Id"] = 3180107954,
 		["Name"] = "SomaticMizuSan",
 		["Health"] = 600,
 		["Power"] = 500,
@@ -5230,7 +5209,7 @@ local twentyeleveneighteen = {
 	},
 	
 	["ClanAtlas"] = {
-		["Id"] = 430957985,
+		["Id"] = 3164483709,
 		["Name"] = "ClanAtlas",
 		["Health"] = 150,
 		["Power"] = 150,
@@ -5439,13 +5418,13 @@ local twentyeleveneighteen = {
 		["Power"] = 1500,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Punch1",
-		["Requirement"] = {false,7,true},
+		["Requirement"] = {"OpponentBoard",7,9999},
 		["Color"] = "Yellow",
 		["Charge"] = true,
 		["Cost"] = {["Neutral"] = 5,},
 		["Effect"] = {
 			Name = "Conflux",
-			Description = "Haste. Cast only if your opponent controls at least seven fighters. When you do, Destroy all enemy fighters.",
+			Description = "Haste. Cast only if your opponent controls at least 7 fighters. When you do, Destroy all enemy fighters.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",9999}},
 			Target = "Opponent",
@@ -5581,7 +5560,7 @@ local twentyeleveneighteen = {
 	},
 	
 	["TigerCode"] = {
-		["Id"] = 430971136,
+		["Id"] = 3164501969,
 		["Name"] = "TigerCode",
 		["Health"] = 400,
 		["Power"] = 400,
@@ -5600,7 +5579,7 @@ local twentyeleveneighteen = {
 	},
 	
 	["Western Bandit"] = {
-		["Id"] = 430960897,
+		["Id"] = 3164509177,
 		["Name"] = "Western Bandit",
 		["AltCards"] = {
 			["Western Bandit-E"] = {
@@ -5653,7 +5632,7 @@ local twentyeleveneighteen = {
 	},
 	
 	["Training Dummy"] = {
-		["Id"] = 430936560,
+		["Id"] = 3164502718,
 		["Name"] = "Training Dummy",
 		["Health"] = 600,
 		["Power"] = 0,
@@ -5673,10 +5652,10 @@ local twentyeleveneighteen = {
 	},
 	
 	["Coordinated Attack"] = {
-		["Id"] = 1720507932,
-		["Name"] = "Coordinated Attack",
-		["Health"] = 0,
-		["Power"] = 0,
+		["Id"] = 3238125292,
+		["Name"] = "PilotLuke",
+		["Health"] = 300,
+		["Power"] = 300,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Yellow",
@@ -5684,9 +5663,9 @@ local twentyeleveneighteen = {
 		["Archetype"] = "Pilot",
 		["Effect"] = {
 			Name = "Capture",
-			Description = "Summon 3 Pilots.",
+			Description = "Haste. Summon 2 Pilots, then ready all Pilots.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Summon","Pilot"},{"Summon","Pilot"},{"Summon","Pilot"},{"Unlock",9999,"Archetype"}},
+			["Power"] = {{"Summon","Pilot"},{"Summon","Pilot"},{"Unlock",1,"Archetype"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Dear Dun_Goof: THINK THROUGH YOUR CARDS BEFORE YOU MAKE THEM. Signed: The rest of the dev team",
@@ -5796,12 +5775,12 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Neutral"] = 4, ["Green"] = 2,},
 		["Effect"] = {
 			Name = "Sugar and Ice",
-			Description = "If it's in Insomn, literally *everyone* is a wolf. Don't even need handlers. A target fighter gains 500 health. You gain 500 life.",
+			Description = "A target fighter gains 500 health. You gain 500 life.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Cost",-500},{"Heal",500}},
 			Target = "Single",
 		},
-		["Bio"] = "Her strikes tsundere the heavens. ... Okay I'm out that pun was horrible",
+		["Bio"] = "If it's in Insomn, literally *everyone* is a wolf. Don't even need handlers.",
 	},
 	
 	["HuntarioRBLX"] = {
@@ -6080,13 +6059,13 @@ local twentyeleveneighteen = {
 		["Power"] = 1000,
 		["Rarity"] = "Rare",
 		["Archetype"] = "Hero",
-		["Requirement"] = {"Archetype",3},
+		["Requirement"] = {"Archetype",2,9999},
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Neutral",
 		["Cost"] = {["Neutral"] = 4, ["Red"] = 1,},
 		["Effect"] = {
 			Name = "AAAAAAAAAAAAAAAAAA",
-			Description = "Cast only if you control at least 3 non-archetyped rare fighters.",
+			Description = "Cast only if you control at least 2 non-archetyped rare fighters.",
 			["Type"] = "OnEnemySummon",
 			["Power"] = {{"Draw",0}},
 			Target = "Ally",
@@ -6095,7 +6074,7 @@ local twentyeleveneighteen = {
 	},
 	
 	["Frozen Fish"] = {
-		["Id"] = 443305020,
+		["Id"] = 3164488806,
 		["Name"] = "Frozen Fish",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -6180,7 +6159,7 @@ local twentyeleveneighteen = {
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Red",
 		["Archetype"] = "FabulousMettaton123",
-		["Requirement"] = {"Archetype",1},
+		["Requirement"] = {"Archetype",1,9999},
 		["Cost"] = {["Neutral"] = 2, ["Red"] = 5,},
 		["Effect"] = {
 			Name = "Moonlight Butterfly Dance",
@@ -6208,7 +6187,7 @@ local twentyeleveneighteen = {
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Blue",
 		["Archetype"] = "FabulousBench",
-		["Requirement"] = {"Archetype",1},
+		["Requirement"] = {"Archetype",1,9999},
 		["Charge"] = true,
 		["Cost"] = {["Neutral"] = 2, ["Blue"] = 5,},
 		["Effect"] = {
@@ -6242,11 +6221,11 @@ local twentyeleveneighteen = {
 	},
 	
 	["Aurichalcum"] = {
-		["Id"] = 446724872,
+		["Id"] = 3238110091,
 		["Name"] = "Aurichalcum",
 		["AltCards"] = {
 			["AurichalcumV2"] = {
-				["Id"] = 446724984,
+				["Id"] = 3238108778,
 				["Bio"] = "I'm sorry I caused the apocalypse. Have some useless currency.",
 			},
 			["Aurichalcum-ArtV"] = {
@@ -6317,7 +6296,7 @@ local twentyeleveneighteen = {
 		["Power"] = 0,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Punch1",
-		["Requirement"] = {"Archetype",2},
+		["Requirement"] = {"Archetype",2,9999},
 		["Archetype"] = "Acolyte",
 		["Color"] = "Neutral",
 		["Cost"] = {["Neutral"] = 0,},
@@ -6458,7 +6437,7 @@ local twentyeleveneighteen = {
 	},
 	
 	["Gravity Inspector"] = {
-		["Id"] = 455993039,
+		["Id"] = 3238119379,
 		["Name"] = "Gravity Inspector",
 		["AltCards"] = {
 			["Gravity InspectorV2"] = {
@@ -6550,7 +6529,7 @@ local twentyeleveneighteen = {
 	},
 	
 	["Pancake Break"] = {
-		["Id"] = 469456311,
+		["Id"] = 3238123535,
 		["Name"] = "Pancake Break",
 		["AltCards"] = {
 			["Pancake Break-Val"] = {
@@ -6718,10 +6697,10 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Neutral"] = 1, ["Red"] = 2,},
 		["Effect"] = {
 			Name = "HURT ALL THE THINGS",
-			Description = "Whenever you cast a fighter, all Red fighters gain 50 power.",
+			Description = "Whenever you cast a fighter, all allied fighters gain 50 power.",
 			["Type"] = "OnAllySummon",
 			["Power"] = {{"Strengthen",50}},
-			Target = "ColorRed",
+			Target = "Ally",
 		},
 		["Bio"] = "Memes are fruit.",
 	},
@@ -6767,16 +6746,16 @@ local twentyeleveneighteen = {
 	},
 
 	["InceptionTime"] = {
-		["Id"] = 477101784,
+		["Id"] = 3238120727,
 		["Name"] = "InceptionTime",
-		["Health"] = 1300,
-		["Power"] = 300,
+		["Health"] = 1400,
+		["Power"] = 400,
 		["Rarity"] = "Legendary",
 		["Fading"] = true,
 		["WeakenImmune"] = true,
 		["AttackEffect"] = "Dash",
 		["Color"] = "Green", 
-		["Cost"] = {["Green"] = 4, ["Neutral"] = 5,},
+		["Cost"] = {["Green"] = 4, ["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Revival",
 			Description = "When this card is cast, deal 14,000 damage to yourself. If you survive, you win the game.",
@@ -6788,14 +6767,14 @@ local twentyeleveneighteen = {
 	},
 	
 	["InceptionTime Token"] = {
-		["Id"] = 477101784,
+		["Id"] = 3238120727,
 		["Name"] = "InceptionTime",
-		["Health"] = 1300,
-		["Power"] = 300,
+		["Health"] = 1400,
+		["Power"] = 400,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Green", 
-		["Cost"] = {["Green"] = 4, ["Neutral"] = 5,},
+		["Cost"] = {["Green"] = 4, ["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Revival",
 			Description = "Lol u ded",
@@ -7095,7 +7074,7 @@ local twentyeleveneighteen = {
 	},
 
 	["WoodReviewer"] = {
-		["Id"] = 959854965,
+		["Id"] = 3238131029,
 		["Name"] = "WoodReviewer",
 		["Health"] = 600,
 		["Power"] = 600,
@@ -7142,7 +7121,7 @@ local twentyeleveneighteen = {
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Neutral", 
-		["Cost"] = {["Neutral"] = 2,["Red"] = 2, ["Green"] = 2, ["Yellow"] = 2, ["Blue"] = 2,},
+		["Cost"] = {["Neutral"] = 5,},
 		["Effect"] = {
 			Name = "WoodReviewer",
 			Description = "Fill both players' hands with random rares.",
@@ -7389,7 +7368,7 @@ local twentyeleveneighteen = {
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Yellow", 
-		["Requirement"] = {false,2,true},
+		["Requirement"] = {"OpponentBoard",2,9999},
 		["Cost"] = {["Yellow"] = 3, ["Neutral"] = 5},
 		["Effect"] = {
 			Name = "He can't fix it after all",
@@ -7441,8 +7420,8 @@ local twentyeleveneighteen = {
 	},
 
 	["Smart Planner"] = {
-		["Id"] = 491538877,
-		["Name"] = "Smart Planner",
+		["Id"] = 3238129940,
+		["Name"] = "Stonetroid Warrior",
 		["Health"] = 500,
 		["Power"] = 500,
 		["Rarity"] = "Uncommon",
@@ -7456,14 +7435,14 @@ local twentyeleveneighteen = {
 			["Power"] = {{"Weaken",100}},
 			Target = "Aggressor",
 		},
-		["Bio"] = "Line up theory ftw.",
+		["Bio"] = "",
 	},
 
 	["Friend Request Spammer"] = {
 		["Id"] = 2084782054,
 		["Name"] = "Friend Request Spammer",
 		["Health"] = 350,
-		["Power"] = 350,
+		["Power"] = 400,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Yellow", 
@@ -7653,7 +7632,7 @@ local twentyeleveneighteen = {
 		["Power"] = 500,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "SlashDiagonal",
-		["Requirement"] = {"Archetype",1},
+		["Requirement"] = {"Archetype",1,9999},
 		["Archetype"] = "Dwarf",
 		["Color"] = "Red",
 		["Charge"] = true,
@@ -7717,7 +7696,7 @@ local twentyeleveneighteen = {
 		["Power"] = 600,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "GunShot",
-		["Requirement"] = {"Archetype",1},
+		["Requirement"] = {"Archetype",1,9999},
 		["Archetype"] = "Dwarf",
 		["Color"] = "Red",
 		["Charge"] = true,
@@ -7755,7 +7734,7 @@ local twentyeleveneighteen = {
 	},
 	
 	["Body Guards"] = {
-		["Id"] = 491581638,
+		["Id"] = 3164474265,
 		["Name"] = "Body Guards",
 		["Token"] = true,
 		["Health"] = 250,
@@ -7801,7 +7780,7 @@ local twentyeleveneighteen = {
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Blue", 
-		["Cost"] = {["Blue"] = 7, ["Red"] = 1,},
+		["Cost"] = {["Blue"] = 7,},
 		["Effect"] = {
 			Name = "Always wear a burkini",
 			Description = "Whenever your opponent casts a fighter, lock that fighter for two turns.",
@@ -7926,7 +7905,7 @@ local twentyeleveneighteen = {
 			Name = "You may sloth me, Planet Belligerance.",
 			Description = "Whenever you cast a fighter, it enters play with 100 additional power. Generate a red icon and lose 200 life.",
 			["Type"] = "OnAllySummon",
-			["Power"] = {{"Heal",100},{"Red",1,"Ally"},{"Cost",200}},
+			["Power"] = {{"Strengthen",100},{"Red",1,"Ally"},{"Cost",200}},
 			Target = "Aggressor",
 		},
 		["Bio"] = "Cows are just plain evil.",
@@ -8486,7 +8465,7 @@ local twentyeleveneighteen = {
 		["Name"] = "Haggie125",
 		["Health"] = 600,
 		["Power"] = 600,
-		["Requirement"] = {"Archetype",2},
+		["Requirement"] = {"Archetype",2,9999},
 		["Rarity"] = "Rare",
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Dash",
@@ -8589,7 +8568,7 @@ local twentyeleveneighteen = {
 		["AttackEffect"] = "Null",
 		["Color"] = "Neutral",
 		["Archetype"] = "Classic",
-		["Cost"] = {["Neutral"] = 3,["Blue"] = 1,},
+		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Power Up",
 			Description = "Give a target fighter 300 health, then lock it for 1 turn.",
@@ -8609,7 +8588,7 @@ local twentyeleveneighteen = {
 		["AttackEffect"] = "Null",
 		["Color"] = "Neutral",
 		["Archetype"] = "Classic",
-		["Cost"] = {["Neutral"] = 3,["Red"] = 1,},
+		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Power Up",
 			Description = "Deal 400 damage to a target fighter, and to both players.",
@@ -8629,7 +8608,7 @@ local twentyeleveneighteen = {
 		["AttackEffect"] = "Null",
 		["Color"] = "Neutral",
 		["Archetype"] = "Classic",
-		["Cost"] = {["Neutral"] = 3,["Green"] = 1,},
+		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Power Up",
 			Description = "Deal 100 damage to a target fighter. Return this card to your hand.",
@@ -8649,7 +8628,7 @@ local twentyeleveneighteen = {
 		["AttackEffect"] = "Null",
 		["Color"] = "Neutral",
 		["Archetype"] = "Classic",
-		["Cost"] = {["Neutral"] = 3,["Yellow"] = 1,},
+		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Power Up",
 			Description = "Deal 200 damage to a target fighter. Draw a card.",
@@ -8719,24 +8698,25 @@ local twentyeleveneighteen = {
 	},				
 	
 	["Classy Bear"] = {
-		["Id"] = 1377831655,
-		["Name"] = "Classy Bear",
+		["Id"] = 3164500760,
+		["Name"] = "Terra Warrior",
 		["Health"] = 650,
 		["Power"] = 0,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Slash",
+		["CounterAttackBlock"] = true,
 		["StrenghtenImmune"] = true,
 		["SetImmune"] = true,
 		["Color"] = "Green",
 		["Cost"] = {["Neutral"] = 1,["Green"] = 2,},
 		["Effect"] = {
 			Name = "Monocle Polish",
-			Description = "Can't have its stats set, or have its power increased. When this card attacks a fighter, the fighter it attacked loses 200 power.",
+			Description = "Can't be counterattacked, have its stats set, or have its power increased. When this card attacks a fighter, the fighter it attacked loses 200 power.",
 			["Type"] = "OnAttack",
 			["Power"] = {{"Weaken",200}},
 			Target = "Aggressor",
 		},
-		["Bio"] = "Only the top class bears can bear to listen to DJ Kangaroo.",
+		["Bio"] = "Terra warriors insist that humans were at their prime when they were still nomadic tribes. Thus, they return to their roots to stay at their species' peak.",
 	},			
 	
 	["Ship Raider"] = {
@@ -8901,7 +8881,7 @@ local twentyeleveneighteen = {
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "PunchKick",
 		["Color"] = "Yellow",
-		["Cost"] = {["Neutral"] = 3,["Yellow"] = 2},
+		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Roller Coaster",
 			Description = "When this card is cast, deal 700 damage to all other yellow fighters.",
@@ -8932,12 +8912,12 @@ local twentyeleveneighteen = {
 	},		
 	
 	["Turkey"] = {
-		["Id"] = 557941497,
+		["Id"] = 3238130631,
 		["Name"] = "Turkey",
 		["Health"] = 300,
 		["Power"] = 300,
 		["Token"] = true,
-		["Rarity"] = "Common",
+		["Rarity"] = "Token",
 		["AttackEffect"] = "SlashWhip",
 		["Color"] = "Yellow",
 		["Cost"] = {["Yellow"] = 2,},
@@ -9215,9 +9195,9 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Yellow"] = 2},
 		["Effect"] = {
 			Name = "Frenemy",
-			Description = "Each player puts a nightmare into their hand. 25% chance to replace the nightmare with three random epics.",
+			Description = "Each player puts either a nightmare or Frenemy's Reward into your hand. Frenemy's Reward puts 3 random epics into your hand.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"RandomAdd",{"Nightmare","Nightmare","Nightmare","Frenemy's Reward"}},{"RandomAdd",{"Nightmare","Nightmare","Nightmare","Frenemy's Reward"},"Opponent"}},
+			["Power"] = {{"RandomAdd",{"Nightmare","Frenemy's Reward"}},{"RandomAdd",{"Nightmare","Frenemy's Reward"},"Opponent"}},
 			Target = "Ally",
 		},
 		["Bio"] = "One bengbeng14 coming right up, my dear frenemy. This will cost you your soul, however.",
@@ -9431,7 +9411,7 @@ local twentyeleveneighteen = {
 	},				
 	
 	["BrokenBone"] = {
-		["Id"] = 611981310,
+		["Id"] = 3238111527,
 		["Name"] = "BrokenBone",
 		["Health"] = 450,
 		["Power"] = 450,
@@ -9543,8 +9523,8 @@ local twentyeleveneighteen = {
 	["CloneTrooper1019"] = {
 		["Id"] = 557990717,
 		["Name"] = "CloneTrooper1019",
-		["Health"] = 1200,
-		["Power"] = 1200,
+		["Health"] = 1100,
+		["Power"] = 900,
 		["Rarity"] = "Legendary",
 		["Archetype"] = "Boardwipe",
 		["AttackEffect"] = "GunShot",
@@ -9552,9 +9532,9 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Neutral"] = 5, ["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Thug Life",
-			Description = "This fighter can't have its stats altered by Luck o' the Lobsters, Mass Epidemic, or Divine Favor. When this card is summoned, lock it for one additional turn.",
+			Description = "This fighter can't have its stats altered by Luck o' the Lobsters, Mass Epidemic, or Divine Favor.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Lock",1}},
+			["Power"] = {{"Lock",0}},
 			Target = "Self",
 		},
 		["Bio"] = "He hums in the face of apocalypse.",
@@ -9588,7 +9568,7 @@ local twentyeleveneighteen = {
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "CatSlash",
 		["Color"] = "Red",
-		["Cost"] = {["Neutral"] = 3, ["Red"] = 2,},
+		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Stop It, Slender!",
 			Description = "When this card is cast, deal 700 damage to all other red fighters.",
