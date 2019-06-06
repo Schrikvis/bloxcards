@@ -1948,7 +1948,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 8,},
 		["Effect"] = {
 			Name = "befriending of scaly mutts",
-			Description = "When this card dies, summon two smaller versions of it. When those cards die, summon two smaller versions of those. The smallest version can't generate icons.",
+			Description = "When this card dies, summon two smaller versions of it. When those cards die, summon two smaller versions of those.",
 			["Type"] = "OnDeath",
 			["Power"] = {{"Summon","Snowball1"},{"Summon","Snowball1"}},
 			Target = "Ally",
@@ -1978,7 +1978,6 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Snowball2"] = {
 		["Id"] = 3180107241,
 		["Name"] = "Indoorsnowball",
-		["Token"] = true,
 		["Health"] = 150,
 		["Power"] = 150,
 		["Rarity"] = "Token",
