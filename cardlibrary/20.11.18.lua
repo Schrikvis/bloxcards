@@ -7881,7 +7881,7 @@ local twentyeleveneighteen = {
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Red", 
-		["Cost"] = {["Red"] = 3,},
+		["Cost"] = {["Red"] = 2,},
 		["Effect"] = {
 			Name = "Don't sloth me",
 			Description = "Whenever your opponent casts a fighter, destroy that fighter and Mohawk.",
