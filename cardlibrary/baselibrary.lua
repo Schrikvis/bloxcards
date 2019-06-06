@@ -145,7 +145,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Punch1",
 		["Archetype"] = "Meeboid",
 		["Color"] = "Green",
-		["Cost"] = {["Neutral"] = 2, ["Green"] = 1,},
+		["Cost"] = {["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Build Up",
 			Description = "Increase the Health of all Meeboids by 100, and gain 100 life at the end of each of your turns.",
@@ -2679,9 +2679,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Red"] = 2,},
 		["Effect"] = {
 			Name = "Neme-shot",
-			Description = "When this card is cast, destroy a target fighter if it has 200 or less health.",
+			Description = "When this card is cast, deal 200 damage to a target fighter.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",200},{"Heal",200}},
+			["Power"] = {{"Damage",200}},
 			Target = "Single",
 		},
 		["Bio"] = "It's like Sammeh, but not!",
