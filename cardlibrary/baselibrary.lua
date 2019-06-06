@@ -122,7 +122,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Build Up",
-			Description = "When this card is cast, all meeboids gain 350 health. You gain 350 life.",
+			Description = "When this card is cast, all Meeboids gain 350 Health. You gain 350 life.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",350},{"Cost",-350}},
 			Target = "Archetype",
@@ -131,7 +131,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Meeboid Cultist"] = {
-		["Id"] = 893422130,
+		["Id"] = 295903316,
 		["Name"] = "Meeboid Cultist",
 		["AltCards"] = {
 			["Meeboid Surfer-Sun"] = {
@@ -148,7 +148,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Build Up",
-			Description = "Increase the Health of all Meeboids by 100, and gain 100 life at the end of each of your turns.",
+			Description = "At the end of your turns, all Meeboids gain 100 Health and you gain 100 Life.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Heal",100},{"Cost",-100}},
 			Target = "Archetype",
@@ -174,7 +174,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Build Up",
-			Description = "Increase the Health of all Meeboids by 100 and your life by 50 at the end of each of your turns.",
+			Description = "At the end of your turns, all Meeboids gain 100 Health and you gain 50 Life.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Heal",100},{"Cost",-50}},
 			Target = "Archetype",
@@ -269,7 +269,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Build Up",
-			Description = "Lower the power of all Non-Meeboids by 100 at the end of each of your turns. This card can't generate icons.",
+			Description = "At the end of your turns, all non-Meeboids lose 100 Power. This card can't generate icons.",
 			["Type"] = "OnEnd",
 			["Power"] = "Weaken",
 			Target = "NotArchetype",
@@ -297,7 +297,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Build Up",
-			Description = "Unlock all fighters and gain 150 life at the end of each of your turns.",
+			Description = "At the end of your turns, unlock all fighters and gain 150 Life.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Unlock",9999},{"Cost",-150}},
 			Target = "All",
@@ -325,7 +325,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Build Up",
-			Description = "Increase the health of all Meeboids by 150 at the end of each of your turns.",
+			Description = "At the end of your turns, all Meeboids gain 150 Health.",
 			["Type"] = "OnEnd",
 			["Power"] = "Heal",
 			Target = "Archetype",
@@ -354,7 +354,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Build Up",
-			Description = "Deal 100 damage to all non-Meeboids at the end of each of your turns. This card can't generate Icons.",
+			Description = "At the end of your turns, deal 100 damage to all non-Meeboids. This card can't generate Icons.",
 			["Type"] = "OnEnd",
 			["Power"] = "Damage",
 			Target = "NotArchetype",
