@@ -6716,9 +6716,9 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Neutral"] = 4, ["Red"] = 4, ["Blue"] = 4,},
 		["Effect"] = {
 			Name = "HURT ALL THE THINGS",
-			Description = "Lower the power of all enemy fighters by 400, then swap their stats.",
+			Description = "All allied fighters drain 400 Power from all enemy fighters. Then, swap the stats of all fighters.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Weaken",400},{"Swap",030}},
+			["Power"] = {{"Weaken",400},{"Strengthen",400,"Ally"},{"Swap",030,"All"}},
 			Target = "Opponent",
 		},
 		["Bio"] = "Hatred outlives the hateful.",
