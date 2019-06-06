@@ -3436,7 +3436,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "PunchKick",
 		["Color"] = "Green",
-		["Cost"] = {["Neutral"] = 3,["Green"] = 2,},
+		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Sink",
 			Description = "When this card is cast, deal 700 damage to all other green fighters.",
@@ -9261,9 +9261,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 4,["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Plushie Amp",
-			Description = "Whenever this card is targeted, put two random yellow cards into your hand.",
+			Description = "Whenever this card is targeted, put two random yellow cards into your hand, then lose two yellow icons. This effect can cause negative icons.",
 			["Type"] = "OnTarget",
-			["Power"] = {{"RandomAdd","Yellow"},{"RandomAdd","Yellow"}},
+			["Power"] = {{"RandomAdd","Yellow"},{"RandomAdd","Yellow"},{"Yellow",-2}},
 			Target = "Ally",
 		},
 		["Bio"] = "POT O PLUSH!",

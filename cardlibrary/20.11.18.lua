@@ -3887,9 +3887,9 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "SCRIPTING PARTY",
-			Description = "When this card is cast, deal 200 damage to all red fighters. All yellow fighters lose 200 Power. Swap the stats of all green fighters. Lock all blue fighters for two turns.",
+			Description = "When this card is cast, deal 200 damage to all red fighters. All blue fighters lose 200 Power. Swap the stats of all green fighters. Lock all yellow fighters for two turns.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",200,"ColorRed"},{"Weaken",200,"ColorYellow"},{"Lock",2,"ColorBlue"},{"Swap",030,"ColorGreen"}},
+			["Power"] = {{"Damage",200,"ColorRed"},{"Weaken",200,"ColorBlue"},{"Lock",2,"ColorYellow"},{"Swap",030,"ColorGreen"}},
 			Target = "All",
 			Increase = 1,
 		},
@@ -7121,7 +7121,7 @@ local twentyeleveneighteen = {
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Neutral", 
-		["Cost"] = {["Neutral"] = 2,["Red"] = 2, ["Green"] = 2, ["Yellow"] = 2, ["Blue"] = 2,},
+		["Cost"] = {["Neutral"] = 5,},
 		["Effect"] = {
 			Name = "WoodReviewer",
 			Description = "Fill both players' hands with random rares.",
@@ -8716,7 +8716,7 @@ local twentyeleveneighteen = {
 			["Power"] = {{"Weaken",200}},
 			Target = "Aggressor",
 		},
-		["Bio"] = "Terra warriors insists that humans were at their prime when they were still nomadic tribes. Thus, they return to their roots to stay at their species' peak.",
+		["Bio"] = "Terra warriors insist that humans were at their prime when they were still nomadic tribes. Thus, they return to their roots to stay at their species' peak.",
 	},			
 	
 	["Ship Raider"] = {
@@ -8881,7 +8881,7 @@ local twentyeleveneighteen = {
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "PunchKick",
 		["Color"] = "Yellow",
-		["Cost"] = {["Neutral"] = 3,["Yellow"] = 2},
+		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Roller Coaster",
 			Description = "When this card is cast, deal 700 damage to all other yellow fighters.",
@@ -9568,7 +9568,7 @@ local twentyeleveneighteen = {
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "CatSlash",
 		["Color"] = "Red",
-		["Cost"] = {["Neutral"] = 3, ["Red"] = 2,},
+		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Stop It, Slender!",
 			Description = "When this card is cast, deal 700 damage to all other red fighters.",
