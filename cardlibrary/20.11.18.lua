@@ -8642,6 +8642,12 @@ local twentyeleveneighteen = {
 	["Baby Noob"] = {
 		["Id"] = 556057423,
 		["Name"] = "Baby Noob",
+		["AltCards"] = {
+			["Baby Noob-AntArtist"] = {
+				["Id"] =  3061340509,
+				["Bio"] = "I wonder what this noob will grow up to be!",
+			},
+		},
 		["Health"] = 100,
 		["Power"] = 100,
 		["Rarity"] = "Common",
