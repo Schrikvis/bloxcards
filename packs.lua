@@ -9,7 +9,7 @@ local packs = {
 		Description = "Curated by the best players of the game, Exine contains only good cards.",
 		Cards = {
 			-- Important Staples; don't take out of this pack.
-			"H-Thunder",--Lightning Blast
+			"H-Thunder", --Lightning Blast
 			"Thunder Bolt",
 			"Luck o The Lobsters",
 			"Mass Epidemic",
@@ -1657,6 +1657,7 @@ local packs = {
 			day = {1,12,23};
 		};
 		Cards = {
+			"Baby Noob-AntArtist",
 			"Myrmiredon 2",--galaxyflame
 			"NinjaV2",
 			"No anime",
