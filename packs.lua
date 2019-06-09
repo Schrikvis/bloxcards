@@ -158,6 +158,9 @@ local packs = {
 		CardPackId = 842435184, --721400845,
 		Description = "Red is the colour of power, ambition, and control. Dominion packs contain cards that cost red!",
 		Cards = {
+			"BenCanova1",
+			"Julez_X",
+			"Treas0ner",
 			"Boom2",
 			"Sauske2000",
 			"Lord Westinghouse",
@@ -598,6 +601,10 @@ local packs = {
 		CardPackId = 721399466,
 		Description = "Blue is the colour of logic, order, and structure. Thought packs contain cards that cost blue!",
 		Cards = {
+			"Darklord1506",
+			"DigitalSon",
+			"Mlgloga",
+			"Wesker202",
 			"Gasturas",
 			"Grand Couch, the Slumbering",
 			"Celestial of Moon",
@@ -1147,6 +1154,7 @@ local packs = {
 			"Arte71",
 			"Jimmyin1",
 			-- PAST THIS POINT IS FOR WHITE CARDS AND JOKE CARDS ONLY. I'M LOOKING AT YOU, BLITZ.
+			"Bling Noob",
 			"Shirozaru",
 			"Construction",
 			"Celestials of Chaos and Fate",
