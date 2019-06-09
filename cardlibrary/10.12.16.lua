@@ -1486,27 +1486,26 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Legendary",
 		["Fading"] = true,
 		["AttackEffect"] = "Fire",
-		["Archetype"] = "Cindering",
 		["Color"] = "Red",
 		["Cost"] = {["Red"] = 6,},
+		["Charge"] = true,
 		["Effect"] = {
-			Name = "Hellfire",
-			Description = "Haste. When this card is cast or when it dies, deal 600 damage to your opponent.",
+			Name = "Sixdering",
+			Description = "Haste. When this card is cast, deal 600 damage to your opponent.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Summon","Cindering Token"},{"Unlock",1,"Archetype"},{"Lock",1,"Self"},{"Inflict",600,"Opponent"},{"Damage",9999,"Self"}},
-			Target = "Ally",
+			["Power"] = {{"Inflict",600}},
+			Target = "Opponent",
 		},
 		["Bio"] = "He certainly isn't.",
 	},
 	
-	["Cindering Token"] = {
+	["Cindering Token"] = { -- Unused token
 		["Id"] = 3164483304,
 		["Name"] = "Cindering",
 		["Health"] = 600,
 		["Power"] = 600,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Fire",
-		["Archetype"] = "Cindering",
 		["Color"] = "Red",
 		["Cost"] = {["Red"] = 6,},
 		["Effect"] = {
