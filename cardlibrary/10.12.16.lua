@@ -3184,6 +3184,13 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["superkicker2005"] = {
 		["Id"] = 1055575844,
 		["Name"] = "superkicker2005",
+		["AltCards"] = {
+			["Lunat_C"] = {
+				["Id"] =  3294286038,
+				["AltArt"] = true,
+				["Bio"] = "You take the moon and you take the moon and you take the moon and you take the moon.",
+			},
+		},
 		["Health"] = 1000,
 		["Power"] = 200,
 		["Rarity"] = "Common",
