@@ -1655,16 +1655,14 @@ local packs = {
 	{
 		Name = "Innovative", --those meme alts or something i guess
 		Hidden = false;
-		PriceInBloxBux = 1337,
+		PriceInBloxBux = 1000,
 		PriceInRobux = 0;
-		CardsInPack = 1,
+		CardsInPack = 4,
 		CardPackId = 1532232174,
-		Description = "Appearing only on the 1st, 12th, and 23rd of a month, the Innovative pack contains incredibly rare bling. Requires 100 wins.",
-		WinRequirement = 100;
-		DateConstraint = {
-			day = {1,12,23};
-		};
+		Description = "Pack-exclusive alt-arts, from fan-art alts and commissions, to meme alts! All paid by BloxBux! Requires 10 wins.",
+		WinRequirement = 10;
 		Cards = {
+			"Lunat_C",
 			"Baby Noob-AntArtist",
 			"Pumpkin Bomb-AntArtist",
 			"Myrmiredon 2",--galaxyflame
