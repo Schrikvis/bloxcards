@@ -1666,6 +1666,7 @@ local packs = {
 		};
 		Cards = {
 			"Baby Noob-AntArtist",
+			"Pumpkin Bomb-AntArtist",
 			"Myrmiredon 2",--galaxyflame
 			"NinjaV2",
 			"No anime",
