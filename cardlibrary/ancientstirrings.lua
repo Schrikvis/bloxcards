@@ -1035,6 +1035,12 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Pumpkin Bomb"] = {
 		["Id"] = 540076891,
 		["Name"] = "Pumpkin Bomb",
+		["AltCards"] = {
+			["Pumpkin Bomb-AntArtist"] = {
+				["Id"] = 3293789854,
+				["Bio"] = "What if our lives ARE the bombs? And if it is, why is it taking so long for me to die?",
+			},
+		},
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Common",
