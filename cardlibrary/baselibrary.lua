@@ -7666,7 +7666,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Requirement"] = {"Archetype",1,9999},		
 		["Archetype"] = "Acolyte",
 		["Color"] = "Neutral",
-		["Cost"] = {["Green"] = 1,["Blue"] = 1,["Yellow"] = 1,["Red"] = 1,["Neutral"] = 2,},
+		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Build Up",
 			Description = "Cast only if you control at least one Acolyte. Summon three Draconic Acolytes, then lock all allied fighters for two turns.",
