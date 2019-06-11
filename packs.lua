@@ -1665,9 +1665,7 @@ local packs = {
 			"Lunat_C",
 			"Baby Noob-AntArtist",
 			"Pumpkin Bomb-AntArtist",
-			"Myrmiredon 2",--galaxyflame
 			"NinjaV2",
-			"No anime",
 			"CreativeName123",
 			"CandyStream",
 			"IcyBee",
@@ -1678,9 +1676,12 @@ local packs = {
 			"MrBeeBee2",
 			"Beeskateer",
 			"Mass Epbeedemic",
+			-- 6.11.19: Arts that are considered joke arts, but still good to include here. Move them to the "joke" art pack when that's added.
 			"Histor, Memecraft Slayer",
 			"WarnomBearkins",
-			-- 6.11.19: Arts that are removed from the pack due to bad quality.
+			"No anime",
+			"Myrmiredon 2",--galaxyflame
+			-- 6.11.19: Arts that are removed from the pack due to bad quality. Move them to the "joke" art pack when that's added.
 			--"SoulSearchEngine",
 			--"Noobwolfer",
 			--"jarjarbinks321",
