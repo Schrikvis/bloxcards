@@ -764,15 +764,15 @@ local twentyeleveneighteen = {
 		["Name"] = "Bee",
 		["AltCards"] = {
 			["Bee Ninja"] = {
-				["Name"] = "Bee Ninja",
-				["Id"] = 1476527372,
-				["Bio"] = "Inb4 complaints that this isn't a part of the ninja archetype.",
+				["Name"] = "Beebling",
+				["Id"] = 3293638268,
+				["Bio"] = [["WHY IS BEEBLING NOT PART OF THE MEEBOID ARCHETYPE?!"]],
 			},
 			
 			["Newbee"] = {
 				["Name"] = "Newbee",
-				["Id"] = 1476567839,
-				["Bio"] = "The bees were bound to take over at some point...",
+				["Id"] = 3293640251,
+				["Bio"] = "Come on, guys! He's just a new bee, give him a break!",
 			},
 		},
 		["Health"] = 100,
@@ -799,16 +799,16 @@ local twentyeleveneighteen = {
 		["Name"] = "Swarm",
 		["AltCards"] = {
 			["MrBeeBee2"] = {
-				["Name"] = "MrBeeBee2",
-				["Id"] = 1473837362,
+				["Name"] = "Zombee",
+				["Id"] = 3293642456,
 				["Effect"] = {
 					Name = "Nerf",
 					Description = "Haste. When this card attacks, put a random Bee card into your hand. This card can't generate icons.",
 					["Type"] = "OnAttack",
-					["Power"] = {{"RandomAdd", {"Bee Ninja", "MrBeeBee2", "IcyBee", "Beestor", "Beeskateer", "Tom's Bees", "Waspism",}}},
+					["Power"] = {{"RandomAdd", {"Newbee", "MrBeeBee2", "IcyBee", "Beestor", "Beeskateer", "Tom's Bees", "Waspism",}}},
 					Target = "Ally",
 				},
-				["Bio"] = "Uh Oh! You silly moron. You just got BEE'D!!! Add this card to your deck to totally BEE! your opponents!",
+				["Bio"] = "Don't you hate it when you're a bee, then you just suddenly DIE from colony collapse disorder?",
 			},
 		},
 		["Health"] = 100,
@@ -835,16 +835,16 @@ local twentyeleveneighteen = {
 		["Name"] = "Beehive",
 		["AltCards"] = {
 			["IcyBee"] = {
-				["Name"] = "IcyBee",
-				["Id"] = 1476569307,
+				["Name"] = "Zombee Cultist",
+				["Id"] = 3293641945,
 				["Effect"] = {
 					Name = "Nerf",
-					Description = "Cast only if you control at least two bees. Put MrBeeBee2 into your hand at the end of each of your turns.",
+					Description = "Cast only if you control at least two bees. Put a Zombee into your hand at the end of each of your turns.",
 					Type = "OnEnd",
 					Power = {{"Add","MrBeeBee2"}},
 					Target = "Ally",
 				},
-				["Bio"] = "The bee to the... bee?",
+				["Bio"] = "An alternate universe where the bees are making the humans endangered.",
 			},
 		},
 		["Health"] = 1100,
@@ -870,8 +870,8 @@ local twentyeleveneighteen = {
 		["Name"] = "Beekeeper",
 		["AltCards"] = {
 			["Beestor"] = {
-				["Name"] = "Beestor",
-				["Id"] = 1476566080,
+				["Name"] = "Beejob",
+				["Id"] = 3293639313,
 				["Effect"] = {
 					Name = "Nerf",
 					Description = "When this card is cast, put two Newbees into your hand. Whenever you cast a bee, increase the health and power of all bees by 50.",
@@ -879,7 +879,7 @@ local twentyeleveneighteen = {
 					Power = {{"Add","Newbee"},{"Add","Newbee"},{"Summon","Beestor Token"},{"Damage",9999,"Self"}},
 					Target = "Ally",
 				},
-				["Bio"] = "Hey kid...wanna buy some bees?",
+				["Bio"] = "Beejob at your service!",
 			},
 		},
 		["Health"] = 300,
@@ -905,8 +905,8 @@ local twentyeleveneighteen = {
 		["Name"] = "Beekeeper",
 		["AltCards"] = {
 			["Beestor Token"] = {
-				["Name"] = "Beestor",
-				["Id"] = 1476566080,
+				["Name"] = "Beejob",
+				["Id"] = 3293639313,
 				["Effect"] = {
 					Name = "Nerf",
 					Description = "When this card is cast, put two Newbees into your hand. Whenever you cast a bee, increase the health and power of all bees by 50.",
@@ -915,7 +915,7 @@ local twentyeleveneighteen = {
 					Power = {{"Heal",50,"Archetype"},{"Strengthen",50,"Archetype"}},
 					Target = "Ally",
 				},
-				["Bio"] = "Hey kid...wanna buy some bees?",
+				["Bio"] = "Seriously, though. I can't believe this got past the filters.",
 			},
 		},
 		["Health"] = 300,
@@ -941,11 +941,11 @@ local twentyeleveneighteen = {
 		["Name"] = "Queen Bee",
 		["AltCards"] = {
 			["Beeskateer"] = {
-				["Name"] = "Beeskateer",
-				["Id"] = 1473928363,
+				["Name"] = "Beeboid King",
+				["Id"] = 3293638672,
 				["Effect"] = {
 					Name = "Nerf",
-					Description = [[At the end of your turns, summon a Bee Ninja. All Bees gain 50 health and power.]],
+					Description = "At the end of your turns, summon a Beebling. All Bees gain 50 health and power.",
 					Type = "OnEnd",
 					Power = {{"Summon","Bee Ninja","Ally"},{"Strengthen",50},{"Heal",50}},
 					Target = "Archetype",
@@ -976,15 +976,27 @@ local twentyeleveneighteen = {
 		["AltCards"] = {
 			["Tom's Bees"] = {
 				["Name"] = "Tom's Bees",
-				["Id"] = 1473880726,
+				["Id"] = 3293641326,
 				["Effect"] = {
 					Name = "NERF BEES",
-					Description = [[Summon 3 "Bee Ninjas" and increase the health and power of all Bee-related fighters by 250.]],
+					Description = [[Summon 3 "Newbees" and increase the health and power of all Bee-related fighters by 250.]],
 					Type = "OnSummon",
-					Power = {{"Summon","Bee Ninja"},{"Summon","Bee Ninja"},{"Summon","Bee Ninja"},{"Strengthen",250,"Archetype"},{"Heal",250,"Archetype"}},
+					Power = {{"Summon","Newbee"},{"Summon","Newbee"},{"Summon","Newbee"},{"Strengthen",250,"Archetype"},{"Heal",250,"Archetype"}},
 					Target = "Ally",
 				},
 				["Bio"] = "What do you mean someone took a can of beans and shoved tons of bees in it?",
+			},
+			["Mass Epbeedemic"] = {
+				["Name"] = "Mass Epbeedemic",
+				["Id"] = 3293639801,
+				["Effect"] = {
+					Name = "NERF BEES",
+					Description = [[Summon 3 "Newbees" and increase the health and power of all Bee-related fighters by 250.]],
+					Type = "OnSummon",
+					Power = {{"Summon","Newbee"},{"Summon","Newbee"},{"Summon","Newbee"},{"Strengthen",250,"Archetype"},{"Heal",250,"Archetype"}},
+					Target = "Ally",
+				},
+				["Bio"] = [[You may ask why there are two alt arts of "True Hivemind". The reason: IcyTea getting chased by a giant bee was funny to Blitzwolfer.]],
 			},
 		},
 		["Health"] = 0,
