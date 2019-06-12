@@ -1655,19 +1655,35 @@ local packs = {
 	{
 		Name = "Innovative", --those meme alts or something i guess
 		Hidden = false;
-		PriceInBloxBux = 1000,
+		PriceInBloxBux = 420,
 		PriceInRobux = 0;
-		CardsInPack = 4,
+		CardsInPack = 1,
 		CardPackId = 1532232174,
-		Description = "Pack-exclusive alt-arts, from fan-art alts and commissions, to meme alts! All paid by BloxBux! Requires 10 wins.",
-		WinRequirement = 10;
+		Description = "Appearing only on the 1st, 12th, and 23rd of a month, the Innovative pack contains incredibly rare bling. Requires 69 wins.",
+		WinRequirement = 69;
+		DateConstraint = {
+			day = {1,12,23};
+		};
 		Cards = {
-			"Lunat_C",
-			"Baby Noob-AntArtist",
-			"Pumpkin Bomb-AntArtist",
+			"Myrmiredon 2",--galaxyflame
 			"NinjaV2",
+			"No anime",
+			"TheBrycen27",
 			"CreativeName123",
 			"CandyStream",
+			"It",
+			"SoulSearchEngine",
+			"Noobwolfer",
+			"jarjarbinks321",
+			"Leaf",
+			"Arceus",
+			"PoopHead",
+			"Yoshi",
+			"Pencil",
+			"Histor, Memecraft Slayer",
+			"Myrmiredon 3",--baby noob
+			"MyrmiredonV2 3",--mass epbeedemic
+			"MyrmiredonV2 4"--bomb pumpkin thing
 			"IcyBee",
 			"Bee Ninja",
 			"Newbee",
@@ -1675,23 +1691,7 @@ local packs = {
 			"Tom's Bees",
 			"MrBeeBee2",
 			"Beeskateer",
-			"Mass Epbeedemic",
-			-- 6.11.19: Arts that are considered joke arts, but still good to include here. Move them to the "joke" art pack when that's added.
-			"Histor, Memecraft Slayer",
 			"WarnomBearkins",
-			"No anime",
-			"Myrmiredon 2",--galaxyflame
-			-- 6.11.19: Arts that are removed from the pack due to bad quality. Move them to the "joke" art pack when that's added.
-			--"SoulSearchEngine",
-			--"Noobwolfer",
-			--"jarjarbinks321",
-			--"Leaf",
-			--"Arceus",
-			--"PoopHead",
-			--"Yoshi",
-			--"Pencil",
-			--"TheBrycen27",
-			--"It",
 		},
 	};
 	{
