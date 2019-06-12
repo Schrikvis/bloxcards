@@ -5267,7 +5267,7 @@ local twentyeleveneighteen = {
 			Description = "Whenever this fighter gains a lock, draw a card.",
 			["Type"] = "OnLockIncrease",
 			["Power"] = {{"Draw",1}},
-			Target = "Ally",
+			Target = "Self",
 		},
 		["Bio"] = "Creator of Battle of the ele- WRONG GAME WRONG BOTE DON'T KILL ME AAA - Sword Critic",
 	},
