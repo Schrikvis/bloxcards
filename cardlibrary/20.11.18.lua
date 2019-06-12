@@ -692,55 +692,9 @@ local twentyeleveneighteen = {
 		["Bio"] = "A leader is the greatest servant. A master is the greatest tyrant. Myrmiredon is both.",
 	},
 
-	["Myrmiredon 3"] = {
-		["Id"] = 421944617,
-		["Name"] = "Myrmiredon",
-		["AltCards"] = {
-			["MyrmiredonV2 3"] = {
-				["Id"] = 480297793,
-				["Effect"] = {
-					Name = "Dreadsteed",
-					Description = [[1 Charge. At the end of your turns, Remove a charge. If there are no charges, shuffle a copy of Myrmiredon back into your deck.]],
-					["Type"] = "OnEnd",
-					["Power"] = {{"Summon","MyrmiredonV2 4"},{"Unlock",9999,"Archetype"},{"Damage",9999,"Self"}},
-					Target = "Ally",
-				},
-				["Bio"] = "Greetings, honourable invaders. Thank you for coming so far. However, as you can see, we are poor. Do you truly believe you'll find what you want here?",
-			},
-		},
-		["Health"] = 400,
-		["Power"] = 400,
-		["Rarity"] = "Token",
-		["AttackEffect"] = "Butts",
-		["Archetype"] = "Recur",
-		["Color"] = "Green",
-		["Cost"] = {["Green"] = 5,},
-		["Effect"] = {
-			Name = "Dreadsteed",
-			Description = [[1 Charge. At the end of your turns, Remove a charge. If there are no charges, shuffle a copy of Myrmiredon back into your deck.]],
-			["Type"] = "OnEnd",
-			["Power"] = {{"Summon","Myrmiredon 4"},{"Unlock",9999,"Archetype"},{"Damage",9999,"Self"}},
-			Target = "Ally",
-		},
-		["Bio"] = "A leader is the greatest servant. A master is the greatest tyrant. Myrmiredon is both.",
-	},
-
 	["Myrmiredon 4"] = {
 		["Id"] = 421944617,
 		["Name"] = "Myrmiredon",
-		["AltCards"] = {
-			["MyrmiredonV2 4"] = {
-				["Id"] = 480297793,
-				["Effect"] = {
-					Name = "Dreadsteed",
-					Description = [[At the end of your turns, shuffle a copy of Myrmiredon into your deck.]],
-					["Type"] = "OnEnd",
-					["Power"] = {{"DeckAdd","Myrmiredon"}},
-					Target = "Ally",
-				},
-				["Bio"] = "Greetings, honourable invaders. Thank you for coming so far. However, as you can see, we are poor. Do you truly believe you'll find what you want here?",
-			},
-		},
 		["Health"] = 400,
 		["Power"] = 400,
 		["Rarity"] = "Token",
@@ -840,8 +794,8 @@ local twentyeleveneighteen = {
 				["Effect"] = {
 					Name = "Nerf",
 					Description = "Cast only if you control at least two bees. Put a Zombee into your hand at the end of each of your turns.",
-					Type = "OnEnd",
-					Power = {{"Add","MrBeeBee2"}},
+					["Type"] = "OnEnd",
+					["Power"] = {{"Add","MrBeeBee2"}},
 					Target = "Ally",
 				},
 				["Bio"] = "An alternate universe where the bees are making the humans endangered.",
@@ -858,8 +812,8 @@ local twentyeleveneighteen = {
 		["Effect"] = {
 			Name = "Nerf",
 			Description = "Cast only if you control at least 1 bee. Put a Swarm into your hand at the end of each of your turns.",
-			Type = "OnEnd",
-			Power = {{"Add","Swarm"}},
+			["Type"] = "OnEnd",
+			["Power"] = {{"Add","Swarm"}},
 			Target = "Ally",
 		},
 		["Bio"] = [[Beehive traps would even make Nerubians proud.]],
@@ -875,8 +829,8 @@ local twentyeleveneighteen = {
 				["Effect"] = {
 					Name = "Nerf",
 					Description = "When this card is cast, put two Newbees into your hand. Whenever you cast a bee, increase the health and power of all bees by 50.",
-					Type = "OnSummon",
-					Power = {{"Add","Newbee"},{"Add","Newbee"},{"Summon","Beestor Token"},{"Damage",9999,"Self"}},
+					["Type"] = "OnSummon",
+					["Power"] = {{"Add","Newbee"},{"Add","Newbee"},{"Summon","Beestor Token"},{"Damage",9999,"Self"}},
 					Target = "Ally",
 				},
 				["Bio"] = "Beejob at your service!",
@@ -893,8 +847,8 @@ local twentyeleveneighteen = {
 		["Effect"] = {
 			Name = "Nerf",
 			Description = "When this card is cast, put two bees into your hand. Whenever you cast a bee, increase the health and power of all bees by 50.",
-			Type = "OnSummon",
-			Power = {{"Add","Bee"},{"Add","Bee"},{"Summon","Beekeeper Token"},{"Damage",9999,"Self"}},
+			["Type"] = "OnSummon",
+			["Power"] = {{"Add","Bee"},{"Add","Bee"},{"Summon","Beekeeper Token"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Beekeepers have the hardest job in the entire beeverse. But they're one of the most important.",
@@ -910,9 +864,9 @@ local twentyeleveneighteen = {
 				["Effect"] = {
 					Name = "Nerf",
 					Description = "When this card is cast, put two Newbees into your hand. Whenever you cast a bee, increase the health and power of all bees by 50.",
-					Type = "OnAllySummon",
-					Archetype = "Bee",
-					Power = {{"Heal",50,"Archetype"},{"Strengthen",50,"Archetype"}},
+					["Type"] = "OnAllySummon",
+					["Archetype"] = "Bee",
+					["Power"] = {{"Heal",50,"Archetype"},{"Strengthen",50,"Archetype"}},
 					Target = "Ally",
 				},
 				["Bio"] = "Seriously, though. I can't believe this got past the filters.",
@@ -928,9 +882,9 @@ local twentyeleveneighteen = {
 		["Effect"] = {
 			Name = "Nerf",
 			Description = "When this card is cast, put two bees into your hand. Whenever you cast a bee, increase the health and power of all bees by 50.",
-			Type = "OnAllySummon",
-			Archetype = "Bee",
-			Power = {{"Heal",50,"Archetype"},{"Strengthen",50,"Archetype"}},
+			["Type"] = "OnAllySummon",
+			["Archetype"] = "Bee",
+			["Power"] = {{"Heal",50,"Archetype"},{"Strengthen",50,"Archetype"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Beekeepers have the hardest job in the entire beeverse. But they're one of the most important.",
@@ -946,8 +900,8 @@ local twentyeleveneighteen = {
 				["Effect"] = {
 					Name = "Nerf",
 					Description = "At the end of your turns, summon a Beebling. All Bees gain 50 health and power.",
-					Type = "OnEnd",
-					Power = {{"Summon","Bee Ninja","Ally"},{"Strengthen",50},{"Heal",50}},
+					["Type"] = "OnEnd",
+					["Power"] = {{"Summon","Bee Ninja","Ally"},{"Strengthen",50},{"Heal",50}},
 					Target = "Archetype",
 				},
 				["Bio"] = [[According to all known laws of aviation, there is no way a bee should be able to fly. Its wings are too small to get its fat little body off the ground. The bee, of course, flies anyway because bees don't care what humans think is impossible. Yellow, black. Yellow, black. Yellow, black. Yellow, black. Ooh, black and yellow! Let's shake it up a little. Barry!]],
@@ -963,8 +917,8 @@ local twentyeleveneighteen = {
 		["Effect"] = {
 			Name = "Nerf",
 			Description = [[At the end of your turns, summon a bee. All Bees gain 50 health and power.]],
-			Type = "OnEnd",
-			Power = {{"Summon","Bee","Ally"},{"Strengthen",50},{"Heal",50}},
+			["Type"] = "OnEnd",
+			["Power"] = {{"Summon","Bee","Ally"},{"Strengthen",50},{"Heal",50}},
 			Target = "Archetype",
 		},
 		["Bio"] = "She creates Bees to do the same thing she does every night. Try and take over the world!",
@@ -980,20 +934,21 @@ local twentyeleveneighteen = {
 				["Effect"] = {
 					Name = "NERF BEES",
 					Description = [[Summon 3 "Newbees" and increase the health and power of all Bee-related fighters by 250.]],
-					Type = "OnSummon",
-					Power = {{"Summon","Newbee"},{"Summon","Newbee"},{"Summon","Newbee"},{"Strengthen",250,"Archetype"},{"Heal",250,"Archetype"}},
+					["Type"] = "OnSummon",
+					["Power"] = {{"Summon","Newbee"},{"Summon","Newbee"},{"Summon","Newbee"},{"Strengthen",250,"Archetype"},{"Heal",250,"Archetype"}},
 					Target = "Ally",
 				},
 				["Bio"] = "What do you mean someone took a can of beans and shoved tons of bees in it?",
 			},
-			["Mass Epbeedemic"] = {
+			
+			["MyrmiredonV2 3"] = {
 				["Name"] = "Mass Epbeedemic",
 				["Id"] = 3293639801,
 				["Effect"] = {
 					Name = "NERF BEES",
-					Description = [[Summon 3 "Newbees" and increase the health and power of all Bee-related fighters by 250.]],
-					Type = "OnSummon",
-					Power = {{"Summon","Newbee"},{"Summon","Newbee"},{"Summon","Newbee"},{"Strengthen",250,"Archetype"},{"Heal",250,"Archetype"}},
+					Description = [[Summon 3 "Beeblings" and increase the health and power of all Bee-related fighters by 250.]],
+					["Type"] = "OnSummon",
+					["Power"] = {{"Summon","Bee Ninja"},{"Summon","Bee Ninja"},{"Summon","Bee Ninja"},{"Strengthen",250,"Archetype"},{"Heal",250,"Archetype"}},
 					Target = "Ally",
 				},
 				["Bio"] = [[You may ask why there are two alt arts of "True Hivemind". The reason: IcyTea getting chased by a giant bee was funny to Blitzwolfer.]],
@@ -8655,7 +8610,7 @@ local twentyeleveneighteen = {
 		["Id"] = 556057423,
 		["Name"] = "Baby Noob",
 		["AltCards"] = {
-			["Baby Noob-AntArtist"] = {
+			["Myrmiredon 3"] = {
 				["Id"] =  3061340509,
 				["Bio"] = "I wonder what this noob will grow up to be!",
 			},
