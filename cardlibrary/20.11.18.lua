@@ -6417,7 +6417,7 @@ local twentyeleveneighteen = {
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Lightning",
 		["Archetype"] = "Police",
-		["Color"] = "Yellow",
+		["Color"] = "Blue",
 		["Cost"] = {["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Knockdown",
