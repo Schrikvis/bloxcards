@@ -9144,7 +9144,7 @@ local twentyeleveneighteen = {
 		["AttackEffect"] = "SlashDiagonal",
 		["Color"] = "Red",
 		["Archetype"] = "MSE6",
-		["Cost"] = {["Red"] = 4,},
+		["Cost"] = {},
 		["TokenDiscard"] = true,
 		["Token"] = true,
 		["Effect"] = {
