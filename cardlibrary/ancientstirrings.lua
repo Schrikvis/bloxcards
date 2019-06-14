@@ -2231,7 +2231,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Toxic Goo"] = {
-		["Id"] = 1297919682,
+		["Id"] = 3299998769,
 		["Name"] = "Toxic Goo",
 		["Health"] = 400,
 		["Power"] =  400,
@@ -2293,7 +2293,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["DairingSpookHead"] = {
-		["Id"] = 632495216,
+		["Id"] = 3299962292,
 		["Name"] = "DairingSpookHead",
 		["Health"] = 800,
 		["Power"] = 0,
