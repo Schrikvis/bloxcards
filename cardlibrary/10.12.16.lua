@@ -1477,7 +1477,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "I'll be keeping those under locks.",
 	},	
-		
+	
 	["Cindering"] = {
 		["Id"] = 3164483304,
 		["Name"] = "Cindering",
@@ -1498,7 +1498,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "He certainly isn't.",
 	},
-
+	
 	["Cindering Token"] = {
 		["Id"] = 3164483304,
 		["Name"] = "Cindering",
@@ -1518,7 +1518,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "He certainly isn't.",
 	},
-			
+	
 	["emilvita"] = {
 		["Id"] = 695206120,
 		["Name"] = "emilvita",
@@ -4208,31 +4208,31 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 1241199448,
 		["Name"] = "Test Dummy",
 		["AltCards"] = {
-  		 	["Test DummyA"] = {
-                ["Health"] = 0,
-                ["Power"] = 0,
-                ["Rarity"] = "Token",
-                ["Effect"] = {
-                    Name = "Test",
-                    Description = "At the end of each turn, lose 200 life.",
-                    ["Type"] = "OnEnd",
-                    ["Power"] = {{"Cost",200}},
-                    Target = "Ally",
-                },
-            },
+			["Test DummyA"] = {
+				["Health"] = 200,
+				["Power"] = 200,
+				["Rarity"] = "Token",
+				["Effect"] = {
+					Name = "Test",
+					Description = "When this card is cast, deal 100 damage to a random fighter six times.",
+					["Type"] = "OnEnd",
+					["Power"] = {{"Damage",100,"Random"},{"Damage",100,"Random"},{"Damage",100,"Random"},{"Damage",100,"Random"},{"Damage",100,"Random"},{"Damage",100,"Random"}},
+					Target = "Ally",
+				},
+			},
             
-            ["Test DummyB"] = {
-                ["Health"] = 0,
-                ["Power"] = 0,
-                ["Rarity"] = "Token",
-                ["Effect"] = {
-                    Name = "Test",
-                    Description = "When this card is targeted, lose 200 life.",
-                    ["Type"] = "OnTarget",
-                    ["Power"] = {{"Cost",200}},
-                    Target = "Ally",
-                },
-            },
+			["Test DummyB"] = {
+				["Health"] = 200,
+				["Power"] = 200,
+				["Rarity"] = "Token",
+				["Effect"] = {
+					Name = "Test",
+					Description = "When this card is cast, a target fighter's power becomes negative.",
+					["Type"] = "OnSummon",
+					["Power"] = {{"MultiplyPower",-1}},
+					Target = "Single",
+				},
+			},
 			
 			["Test DummyC"] = {
 				["Health"] = 200,
@@ -4286,9 +4286,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
             Name = "Test",
-            Description = "Summon two 0/0 fighters that make you lose 200 life, one at the end of each turn and the other when targeted.",
+            Description = "øΩÂ˜√√Ç≈Ò∏ØˆÁ†®†ŒˇÓÁˆØ∏Ò",
             ["Type"] = "OnSummon",
-            ["Power"] = {{"Summon","Test DummyA"},{"Summon","Test DummyB"}},
+            ["Power"] = {{"Add","Test Dummy"},{"Add","Test DummyA"},{"Add","Test DummyB"},{"Add","Test DummyC"},{"Add","Test DummyD"},{"Add","Test DummyE"}},
             Target = "Ally",
         },
 		["Bio"] = "MST_WORLDDOMINATION_DESCRIPTION",
