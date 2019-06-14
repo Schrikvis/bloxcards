@@ -124,7 +124,7 @@ local twentyeleveneighteen = {
 	},
 	
 	["TheInnovative"] = {
-		["Id"] = 335687720,
+		["Id"] = 3307684795,
 		["Name"] = "TheInnovative",
 		["Health"] = 500,
 		["Power"] = 500,
@@ -1527,7 +1527,7 @@ local twentyeleveneighteen = {
 	},		
 	
 	["wer8888"] = {
-		["Id"] = 362315297,
+		["Id"] = 3300000753,
 		["Name"] = "wer8888",
 		["AltCards"] = {
 			["Wer8888-E"] = {
@@ -2082,7 +2082,7 @@ local twentyeleveneighteen = {
 	},	
 	
 	["StayBlue"] = {
-		["Id"] = 384005918, -- 363172190
+		["Id"] = 3299994670,
 		["Name"] = "StayBlue",
 		["Health"] = 700,
 		["Power"] = 700,
@@ -2189,7 +2189,7 @@ local twentyeleveneighteen = {
 	},	
 	
 	["ROBLOX"] = {
-		["Id"] = 1950414129,
+		["Id"] = 3299952153,
 		["Name"] = "ROBLOX",
 		["AltCards"] = {
 			["ROBLOX-C"] = {
@@ -2545,7 +2545,7 @@ local twentyeleveneighteen = {
 	},		
 	
 	["Olafisawesome100"] = {
-		["Id"] = 2903577499,
+		["Id"] = 3299995806,
 		["Name"] = "Toothy Deer's Blessing",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -2939,7 +2939,7 @@ local twentyeleveneighteen = {
 	},			
 
 	["BroRubik"] = {
-		["Id"] = 384050244,
+		["Id"] = 3299960147,
 		["Name"] = "BroRubik",
 		["Health"] = 1700,
 		["Power"] = 300,
@@ -3081,7 +3081,7 @@ local twentyeleveneighteen = {
 	},
 
 	["Lilly_S"] = {
-		["Id"] = 411804632,
+		["Id"] = 3299982446,
 		["Name"] = "Lilly_S",
 		["Health"] = 700,
 		["Power"] = 350,
@@ -3097,8 +3097,8 @@ local twentyeleveneighteen = {
 			Target = "Ally",
 		},
 		["Bio"] = "'Vortex Security respects her, please do not insult her. Yes, IcyTea learned it the hard way.'",
-	},			
-
+	},
+	
 	["MuPower"] = {
 		["Id"] = 411806474,
 		["Name"] = "MuPower",
@@ -3206,7 +3206,7 @@ local twentyeleveneighteen = {
 	},			
 
 	["One BLOX Man"] = {
-		["Id"] = 3238123084,
+		["Id"] = 3299988416,
 		["Name"] = "One BLOX Man",
 		["Health"] = 1500,
 		["Power"] = 500,
@@ -3484,7 +3484,7 @@ local twentyeleveneighteen = {
 	},			
 
 	["Lorenzo77555"] = {
-		["Id"] = 2110156256,
+		["Id"] = 3303639584,
 		["Name"] = "Lorenzo77555",
 		["Health"] = 500,
 		["Power"] = 500,
@@ -3874,7 +3874,7 @@ local twentyeleveneighteen = {
 	},	
 	
 	["Ultoris Tenebrae"] = {
-		["Id"] = 413920845,
+		["Id"] = 3300000346,
 		["Name"] = "Ultoris Tenebrae",
 		["Health"] = 1200,
 		["Power"] = 700,
@@ -3894,7 +3894,7 @@ local twentyeleveneighteen = {
 	},	
 	
 	["Ultoris NOOBrae"] = {
-		["Id"] = 1303976830,
+		["Id"] = 3299999980,
 		["Name"] = "Ultoris NOOBrae",
 		["Health"] = 350,
 		["Power"] = 100,
@@ -4302,7 +4302,7 @@ local twentyeleveneighteen = {
 	},	
 		
 	["BlueShadic90"] = {
-		["Id"] = 415733985,
+		["Id"] = 3299959656,
 		["Name"] = "BlueShadic90",
 		["Health"] = 400,
 		["Power"] = 400,
@@ -4368,7 +4368,7 @@ local twentyeleveneighteen = {
 	},	
 
 	["Imaginz00"] = {
-		["Id"] = 630782293,
+		["Id"] = 3303640189,
 		["Name"] = "Imaginz00",
 		["Health"] = 1250,
 		["Power"] = 250,
@@ -4387,7 +4387,7 @@ local twentyeleveneighteen = {
 	},
 	
 	["RukatuKDH"] = {
-		["Id"] = 415734128,
+		["Id"] = 3299993298,
 		["Name"] = "RukatuKDH",
 		["Health"] = 2000,
 		["Power"] = 2000,
@@ -4404,26 +4404,6 @@ local twentyeleveneighteen = {
 		},
 		["Bio"] = "Don't put all your eggs into one basket.",
 	},
-		
-	["RukatuKDHToken"] = {
-		["Id"] = 415734128,
-		["Name"] = "RukatuKDH",
-		["Health"] = 2000,
-		["Power"] = 2000,
-		["Rarity"] = "Token",
-		["AttackEffect"] = "Lightning",
-		["Fading"] = true,
-		["Color"] = "Blue",
-		["Cost"] = {["Neutral"] = 1,["Blue"] = 4,},
-		["Effect"] = {
-			Name = "Vampire",
-			Description = "When this card is cast, you lose 7500 life. If you survive, gain 2500 Life at the end of this turn. Fading.",
-			["Type"] = "OnEnd",
-			["Power"] = {{"Cost",-2500},{"Summon","RukatuKDH"},{"Damage",9999,"Self"}},
-			Target = "Ally",
-		},
-		["Bio"] = "Don't put all your eggs into one basket.",
-	},	
 	
 	["wi_sh"] = {
 		["Id"] = 416137060,
@@ -4725,7 +4705,7 @@ local twentyeleveneighteen = {
 	},
 	
 	["Monstrum Freezer"] = {
-		["Id"] = 427571788,
+		["Id"] = 3299978251,
 		["Name"] = "Monstrum Freezer",
 		["Health"] = 800,
 		["Power"] = 800,
@@ -4744,7 +4724,7 @@ local twentyeleveneighteen = {
 	},
 	
 	["Monstrum Minotauris"] = {
-		["Id"] = 427571825,
+		["Id"] = 3299979068,
 		["Name"] = "Monstrum Minotauris",
 		["Health"] = 1200,
 		["Power"] = 1200,
@@ -4763,7 +4743,7 @@ local twentyeleveneighteen = {
 	},
 	
 	["Monstrum Zombie King"] = {
-		["Id"] = 427571862,
+		["Id"] = 3299979680,
 		["Name"] = "Monstrum Zombie King",
 		["Health"] = 2000,
 		["Power"] = 0,
@@ -4802,7 +4782,7 @@ local twentyeleveneighteen = {
 	},
 
 	["Moon Rabbit's Rage"] = {
-		["Id"] = 429396325,
+		["Id"] = 3299986551,
 		["Name"] = "Moon Rabbit's Rage",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -6058,7 +6038,7 @@ local twentyeleveneighteen = {
 	},
 	
 	["BerskererPredator450"] = {
-		["Id"] = 444117155,
+		["Id"] = 3299958954,
 		["Name"] = "BerskererPredator450",
 		["Health"] = 400,
 		["Power"] = 600,
@@ -6236,7 +6216,7 @@ local twentyeleveneighteen = {
 	},
 	
 	["Nova"] = {
-		["Id"] = 454695731,
+		["Id"] = 3299953451,
 		["Name"] = "Nova",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -6387,8 +6367,9 @@ local twentyeleveneighteen = {
 		["Name"] = "Gravity Inspector",
 		["AltCards"] = {
 			["Gravity InspectorV2"] = {
-				["Id"] = 433133596,
-				["Bio"] = "To inspect gravity. To cause the fall.",
+				["Id"] = 3299976206,
+				["Name"] = "ɹoʇɔǝdsuı ʎʇıʌɐɹƃ",
+				["Bio"] = "˙ןןɐɟ ǝɥʇ ǝsnɐɔ oʇ ˙ʎʇıʌɐɹb ʇɔǝdsuı oʇ",
 			},
 		},
 		["Health"] = 100,
@@ -7801,7 +7782,7 @@ local twentyeleveneighteen = {
 	},
 
 	["Divine_Pengu"] = {
-		["Id"] = 2857408761,
+		["Id"] = 3299963958,
 		["Name"] = "Divine_Pengu",
 		["Health"] = 1450,
 		["Power"] = 300,
@@ -8267,7 +8248,7 @@ local twentyeleveneighteen = {
 	},
 	
 	["AII_Duck"] = {
-		["Id"] = 683432959,
+		["Id"] = 3299958255,
 		["Name"] = "AII_DUCK",
 		["Health"] = 900,
 		["Power"] = 900,
@@ -8286,7 +8267,7 @@ local twentyeleveneighteen = {
 	},
 	
 	["Camera"] = {
-		["Id"] = 528151525,
+		["Id"] = 3299957870,
 		["Name"] = "Camera",
 		["Health"] = 200,
 		["Power"] = 500,
@@ -9014,7 +8995,7 @@ local twentyeleveneighteen = {
 	},					
 	
 	["Suicide Bomber"] = {
-		["Id"] = 557999834,
+		["Id"] = 3299973543,
 		["Name"] = "Frenzied Bomber",
 		["Health"] = 300,
 		["Power"] = 500,
@@ -9034,7 +9015,7 @@ local twentyeleveneighteen = {
 	},				
 	
 	["Remote Mine"] = {
-		["Id"] = 1945349660,
+		["Id"] = 3299972985,
 		["Name"] = "Remote Mine",
 		["Health"] = 100,
 		["Power"] = 100,
@@ -9055,7 +9036,7 @@ local twentyeleveneighteen = {
 	},	
 	
 	["Retro Gangster"] = {
-		["Id"] = 557969839,
+		["Id"] = 3303635569,
 		["Name"] = "Retro Gangster",
 		["Health"] = 650,
 		["Power"] = 300,
@@ -9325,7 +9306,7 @@ local twentyeleveneighteen = {
 	},			
 	
 	["Stravant"] = {
-		["Id"] = 557984117,
+		["Id"] = 3299954739,
 		["Name"] = "Stravant",
 		["Health"] = 1000,
 		["Power"] = 700,
