@@ -691,28 +691,7 @@ local twentyeleveneighteen = {
 		},
 		["Bio"] = "A leader is the greatest servant. A master is the greatest tyrant. Myrmiredon is both.",
 	},
-
-	["Myrmiredon 4"] = {
-		["Id"] = 421944617,
-		["Name"] = "Myrmiredon",
-		["Health"] = 400,
-		["Power"] = 400,
-		["Rarity"] = "Token",
-		["AttackEffect"] = "Butts",
-		["Archetype"] = "Recur",
-		["Color"] = "Green",
-		["Cost"] = {["Green"] = 5,},
-		["Effect"] = {
-			Name = "Dreadsteed",
-			Description = [[At the end of your turns, shuffle a copy of Myrmiredon into your deck.]],
-			["Type"] = "OnEnd",
-			["Power"] = {{"DeckAdd","Myrmiredon"}},
-			Target = "Ally",
-		},
-		["Bio"] = "A leader is the greatest servant. A master is the greatest tyrant. Myrmiredon is both.",
-	},
-
-
+	
 	["Bee"] = {
 		["Id"] = 338188697,
 		["Name"] = "Bee",
