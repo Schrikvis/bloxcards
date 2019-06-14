@@ -40,7 +40,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Deep Sea Diver"] = {
-		["Id"] = 543830736,
+		["Id"] = 3299947217,
 		["Name"] = "Deep Sea Diver",
 		["Health"] = 600,
 		["Power"] = 400,
@@ -1063,20 +1063,20 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Defaultio"] = {
-		["Id"] = 677334267,
+		["Id"] = 3299963161,
 		["Name"] = "Defaultio",
-		["Health"] = 800,
-		["Power"] = 650,
+		["Health"] = 200,
+		["Power"] = 400,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "SlashDiagonal",
-		["Color"] = "Yellow",
-		["Cost"] = {["Neutral"] = 4, ["Yellow"] = 3,},
+		["Color"] = "Green",
+		["Cost"] = {["Neutral"] = 3, ["Green"] = 3,},
 		["Effect"] = {
-			Name = "Hellfire",
-			Description = "Whenever your opponent casts an action or terrain spell, allied fighters gain 300 health.",
-			["Type"] = "OnEnemyCast",
-			["Power"] = {{"Heal",300}},
-			Target = "Ally",
+			Name = "OUTRAGE!!",
+			Description = "When this card is cast, all non-green fighters lose 200 Power. All green fighters gain 200 Health.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Weaken",200,"NotColorGreen"},{"Heal",200,"ColorGreen"}},
+			Target = "All",
 		},
 		["Bio"] = "Although WoodReviewer loves his axe, it's Defaultio's taste in wood grain that keeps them from being friends...",
 	},	
@@ -1597,7 +1597,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["ChaoticCommando"] = {
-		["Id"] = 697663303,
+		["Id"] = 3299961860,
 		["Name"] = "ChaoticCommando",
 		["Health"] = 1600,
 		["Power"] = 400,
@@ -2017,7 +2017,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 
 
 	["AMerryCan"] = {
-		["Id"] = 714801845,
+		["Id"] = 3299958574,
 		["Name"] = "AMerryCan",
 		["Health"] = 500,
 		["Power"] = 400,
@@ -3000,8 +3000,8 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Magical Girl Histor"] = {
-		["Id"] = 1947968303,
-		["Name"] = "Magical Girl Histor",
+		["Id"] = 3299983675,
+		["Name"] = "Desmond_Void",
 		["Health"] = 600,
 		["Power"] = 400,
 		["Rarity"] = "Uncommon",
@@ -3015,12 +3015,12 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"RandomAdd",{"Kitten","Kitten2","Kitten3","Kitten4","Kitten5","Kitten6","Kitten7","Kitten8","Kitten9"}},{"Summon","Techno Terror"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
-		["Bio"] = "The worst decision he's ever made? Signing that contract with a demon.",	
+		["Bio"] = "Here he comes, commanding his army of kittens.",	
 	},
 	
 	["Techno Terror"] = {
-		["Id"] = 1947968303,
-		["Name"] = "Magical Girl Histor",
+		["Id"] = 3299983675,
+		["Name"] = "Desmond_Void",
 		["Health"] = 600,
 		["Power"] = 400,
 		["Rarity"] = "Token",
@@ -3035,7 +3035,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Heal",200}},
 			Target = "Aggressor",
 		},
-		["Bio"] = "The best decision she's ever made? slaughtering that demon with an army of furballs.",
+		["Bio"] = "Wait, what do you mean he hates kittens? How can anyone hate these balls of fur?",
 	},
 	
 	["Multicultural Limb"] = {
@@ -3137,7 +3137,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Bio"] = "Strolllllllllllllllllllllllllllllllllllllllling on in.",
 			},
 			["Kitten6"] = {
-				["Id"] =  1549935440,
+				["Id"] =  3299981097,
 				["Bio"] = "The sun did not shine. It was too wet to play. So we sat in the house All that cold, cold, wet day. I sat there with Sally. We sat there, we two. And I said, “How I wish We had something to do!” Too wet to go out And too cold to play ball. So we sat in the house. We did nothing at all. So all we could do was to Sit! Sit! Sit! Sit! And we did not like it. Not one little bit. And then Something went BUMP! How that bump made us jump! We looked! Then we saw him step in on the mat! We looked! And we saw him! The Cat in the Hat!",
 			},
 			["Kitten7"] = {
@@ -3149,7 +3149,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Bio"] = "It farts rainbows.",
 			},	
 			["Kitten9"] = {
-				["Id"] =  1549937120,
+				["Id"] =  3299980666,
 				["Bio"] = "There are gajillions of stories... of mischief and fun, but to keep things simple, let's start with just one... about a mom and two kids... and a house and a hat... that, oddly enough, was worn by a cat. But soon enough we will get to all that. In the valley that stretches from this hill to that hill, a city is nestled... that city is Anville. - [Kid] Hurry up! We'll miss the movie! - Any more tutti-frutti? I'll check. Thanks! It's a town that's not huge, but quite big enough... for buyers and sellers to sell and buy stuff, from shoes and shirts... and elongated ladders... to sailboats and gibble-grated berry-juice bladders. So our story begins at the corner of Main and Montroob... in the spotless real estate offiice... run by Hank Humberfloob.",
 			},			
 		},		
@@ -3635,7 +3635,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Turtleuser3"] = {
-		["Id"] = 1151276826,
+		["Id"] = 3299999241,
 		["Name"] = "Turtleuser3",
 		["Health"] = 450,
 		["Power"] = 250,
@@ -4094,8 +4094,8 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["FourXIV"] = {
-		["Id"] = 3164488407,
-		["Name"] = "FourXIV",
+		["Id"] = 3299972520,
+		["Name"] = "Quf3y",
 		["Health"] = 1000,
 		["Power"] = 400,
 		["Rarity"] = "Rare",
@@ -4105,7 +4105,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2, ["Yellow"] = 4,},
 		["Effect"] = {
 			Name = "Setstat Shenanigans",
-			Description = "When FourXIV finishes attacking, set the health of the card it attacked to 400.",
+			Description = "When Quf3y finishes attacking, set the health of the card it attacked to 400.",
 			["Type"] = "OnAttackEnd",
 			["Power"] = {{"SetHealth",400}},
 			Target = "Aggressor",
@@ -5125,9 +5125,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "me me smol boy",
 	},
-		
+	
 	["rachjumper"] = {
-		["Id"] = 1535962352,
+		["Id"] = 3299990215,
 		["Name"] = "rachjumper",
 		["Health"] = 150,
 		["Power"] = 750,
@@ -5147,7 +5147,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 			
 	["Rach Token"] = {
-		["Id"] = 1535962352,
+		["Id"] = 3299990215,
 		["Name"] = "rachjumper",
 		["Health"] = 18000,
 		["Power"] = 750,
@@ -5318,7 +5318,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["saud20"] = {
-		["Id"] = 2810638669,
+		["Id"] = 3299993726,
 		["Name"] = "saud20",
 		["Health"] = 700,
 		["Power"] = 200,
