@@ -1433,7 +1433,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Bleeding Reality",
 			Description = "Cast only if you control 7 or 8 Ultras. Whenever an allied fighter dies, shuffle an Ultra Obliterator into your deck, then draw a card.",
 			["Type"] = "OnAllyDeath",
-			["Power"] = {{"DeckAdd","Ultra Olbliterator"},{"Draw",1}},
+			["Power"] = {{"DeckAdd","Ultra Obliterator"},{"Draw",1}},
 			Target = "Ally",
 		},
 		["Bio"] = "A single glimpse of perfection taught Zanzel all she had to do in life.",
