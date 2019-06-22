@@ -598,9 +598,9 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "When this card is cast, enemy fighters lose 200 health and power. Then, non-yellow fighters gain 100 health and power. You lose all of your yellow icons. This card can't generate icons.",
+			Description = "When this card is cast, non-yellow fighters gain 100 health and power. Then, enemy fighters lose 200 health and power. You lose all of your yellow icons. This card can't generate icons.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Weaken",200},{"Damage",200},{"Strengthen",100,"NotColorYellow"},{"Heal",100,"NotColorYellow"},{"SetYellow",0,"Ally"}},
+			["Power"] = {{"Strengthen",100,"NotColorYellow"},{"Heal",100,"NotColorYellow"},{"Weaken",200},{"Damage",200},{"SetYellow",0,"Ally"}},
 			Target = "Opponent",
 		},
 		["Bio"] = "What was once a happy toy is now a reminder of the cruelty of Zanzel. You'd be a fool to put this in a Toy deck.",
