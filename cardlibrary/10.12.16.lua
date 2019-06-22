@@ -7019,9 +7019,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2, ["Green"] = 4},
 		["Effect"] = {
 			Name = "Spam",
-			Description = "Cast only if you have at least 5500 life. When you do, you gain 1000 life.",
+			Description = "Cast this fighter only if you have at least 6500 life.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Cost",5499},{"Cost",-6499}},
+			["Power"] = {{"Cost",6499},{"Cost",-6499}},
 			Target = "Ally",
 		},
 		["Bio"] = "",
