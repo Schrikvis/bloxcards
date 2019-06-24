@@ -122,7 +122,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Build Up",
-			Description = "When this card is cast, all meeboids gain 350 health. You gain 350 life.",
+			Description = "When this card is cast, all Meeboids gain 350 Health. You gain 350 life.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",350},{"Cost",-350}},
 			Target = "Archetype",
@@ -131,7 +131,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Meeboid Cultist"] = {
-		["Id"] = 893422130,
+		["Id"] = 295903316,
 		["Name"] = "Meeboid Cultist",
 		["AltCards"] = {
 			["Meeboid Surfer-Sun"] = {
@@ -145,10 +145,10 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Punch1",
 		["Archetype"] = "Meeboid",
 		["Color"] = "Green",
-		["Cost"] = {["Neutral"] = 2, ["Green"] = 1,},
+		["Cost"] = {["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Build Up",
-			Description = "Increase the Health of all Meeboids by 100, and gain 100 life at the end of each of your turns.",
+			Description = "At the end of your turns, all Meeboids gain 100 Health and you gain 100 Life.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Heal",100},{"Cost",-100}},
 			Target = "Archetype",
@@ -174,7 +174,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Build Up",
-			Description = "Increase the Health of all Meeboids by 100 and your life by 50 at the end of each of your turns.",
+			Description = "At the end of your turns, all Meeboids gain 100 Health and you gain 50 Life.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Heal",100},{"Cost",-50}},
 			Target = "Archetype",
@@ -269,7 +269,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Build Up",
-			Description = "Lower the power of all Non-Meeboids by 100 at the end of each of your turns. This card can't generate icons.",
+			Description = "At the end of your turns, all non-Meeboids lose 100 Power. This card can't generate icons.",
 			["Type"] = "OnEnd",
 			["Power"] = "Weaken",
 			Target = "NotArchetype",
@@ -297,7 +297,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Build Up",
-			Description = "Unlock all fighters and gain 150 life at the end of each of your turns.",
+			Description = "At the end of your turns, unlock all fighters and gain 150 Life.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Unlock",9999},{"Cost",-150}},
 			Target = "All",
@@ -325,7 +325,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Build Up",
-			Description = "Increase the health of all Meeboids by 150 at the end of each of your turns.",
+			Description = "At the end of your turns, all Meeboids gain 150 Health.",
 			["Type"] = "OnEnd",
 			["Power"] = "Heal",
 			Target = "Archetype",
@@ -354,7 +354,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Build Up",
-			Description = "Deal 100 damage to all non-Meeboids at the end of each of your turns. This card can't generate Icons.",
+			Description = "At the end of your turns, deal 100 damage to all non-Meeboids. This card can't generate Icons.",
 			["Type"] = "OnEnd",
 			["Power"] = "Damage",
 			Target = "NotArchetype",
@@ -737,7 +737,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Langz"] = {
-		["Id"] = 2252095899,
+		["Id"] = 3299982063,
 		["Name"] = "Langz",
 		["AltCards"] = {
 			["Langz-E"] = {
@@ -954,7 +954,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Ice"] = {
-		["Id"] = 266755842,
+		["Id"] = 3299977652,
 		["Name"] = "Ice",
 		["Health"] = 2500,
 		["Power"] = 0,
@@ -1105,7 +1105,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Darpeh"] = {
-		["Id"] = 271751226,
+		["Id"] = 3299962762,
 		["Name"] = "Darpeh",
 		["Health"] = 300,
 		["Power"] = 700,
@@ -1429,7 +1429,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["TeeVee"] = {
-		["Id"] = 271752695,
+		["Id"] = 3300006853,
 		["Name"] = "TeeVee",
 		["AltCards"] = {
 			["TeeVee-Val"] = {
@@ -1531,7 +1531,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Y05H1M4N"] = {
-		["Id"] = 273687999,
+		["Id"] = 3300003885,
 		["Name"] = "Y05H1M4N",
 		["Health"] = 700,
 		["Power"] = 500,
@@ -1651,8 +1651,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["BO0M"] = {
 		["Id"] = 1226233348,
 		["Name"] = "BO0M",
-		["Health"] = 450,
-		["Power"] = 300,
+		["Health"] = 350,
+		["Power"] = 350,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Punch2",
 		["Color"] = "Red",
@@ -1660,9 +1660,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Bio"] = "My boy, bombs are what all true warriors strive for!",
 		["Effect"] = {
 			Name = "DO0M",
-			Description = "When this card is cast, deal 500 to both players and draw a card.",
+			Description = "When this card is cast, deal 350 to both players and draw a card.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Inflict",500},{"Draw",1,"Ally"}},
+			["Power"] = {{"Inflict",350},{"Draw",1,"Ally"}},
 			Target = "All",
 		},
 	},
@@ -2316,7 +2316,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Drager"] = {
-		["Id"] = 280562744,
+		["Id"] = 3303640617,
 		["Name"] = "Drager",
 		["AltCards"] = {
 			["Drager-ArtV"] = {
@@ -2372,7 +2372,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 280562800,
 		["Name"] = "Glaecium",
 		["Health"] = 400,
-		["Power"] = 400,
+		["Power"] = 200,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Green",
@@ -2380,16 +2380,16 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 2,},
 		["Effect"] = {
 			Name = "Best of Both Worlds",
-			Description = "When this card is cast, deal 400 damage to a target fighter. That fighter gains 400 Power. You lose all of your green icons. Glaecium can't generate icons.",
+			Description = "When this card is cast, deal 300 damage to a target fighter. That fighter gains 300 Power. You lose all of your green icons. Glaecium can't generate icons.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",400},{"Strengthen",400},{"SetGreen",0,"Ally"}},
+			["Power"] = {{"Damage",300},{"Strengthen",300},{"SetGreen",0,"Ally"}},
 			Target = "Single",
 		},
 		["Bio"] = "He's a mage of science! Don't think he's that Glaciem Mage, he isn't at all!",
 	},
 	
 	["KnightDude"] = {
-		["Id"] = 280562866,
+		["Id"] = 3299981547,
 		["Name"] = "KnightDude",
 		["Health"] = 500,
 		["Power"] = 500,
@@ -2436,7 +2436,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Godlysinha"] = {
-		["Id"] = 283877222,
+		["Id"] = 3299975084,
 		["Name"] = "Godlysinha",
 		["Health"] = 200,
 		["Power"] = 200,
@@ -2532,7 +2532,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Regimen"] = {
-		["Id"] = 280563178,
+		["Id"] = 3299992935,
 		["Name"] = "Regimen",
 		["Health"] = 200,
 		["Power"] = 200,
@@ -2571,7 +2571,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Tomspick"] = {
-		["Id"] = 280563401,
+		["Id"] = 3299998386,
 		["Name"] = "Tomspick",
 		["AltCards"] = {
 			["Tomspick-C"] = {
@@ -2828,7 +2828,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Chaoszeroomega"] = {
-		["Id"] = 283992920,
+		["Id"] = 3299961162,
 		["Name"] = "Chaoszeroomega",
 		["Health"] = 1200,
 		["Power"] = 400,
@@ -3088,7 +3088,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["EXLatios"] = {
-		["Id"] = 283993326,
+		["Id"] = 3299964499,
 		["Name"] = "EXLatios",
 		["Health"] = 450,
 		["Power"] = 450,
@@ -3495,10 +3495,10 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},		
 	
 	["Thunder Bolt"] = {
-		["Id"] = 2910236370,
+		["Id"] = 3299995099,
 		["Name"] = "Thunder Bolt",
 		["AltCards"] = {
-			["H-Thunder"] = { -- Retired token.
+			["H-Thunder"] = {
 				["Id"] = 2910237098,
 				["Name"] = "Lightning Blast",
 				["Health"] = 0,
@@ -3530,26 +3530,26 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 		
 	["XiaoXiaoMan"] = {
-		["Id"] = 1939172077,
+		["Id"] = 3300001838,
 		["Name"] = "XiaoXiaoMan",
-		["Health"] = 200,
-		["Power"] = 400,
+		["Health"] = 800,
+		["Power"] = 650,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "UziShot",
-		["Color"] = "Green",
-		["Cost"] = {["Neutral"] = 3,["Green"] = 3,},
+		["Color"] = "Yellow",
+		["Cost"] = {["Neutral"] = 4,["Yellow"] = 3,},
 		["Effect"] = {
-			Name = "OUTRAGE!!",
-			Description = "When this card is cast, all non-green fighters lose 200 Power. All green fighters gain 200 Health.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Weaken",200,"NotColorGreen"},{"Heal",200,"ColorGreen"}},
-			Target = "All",
+			Name = "Hellfire",
+			Description = "Whenever your opponent casts an action or terrain spell, allied fighters gain 300 health.",
+			["Type"] = "OnEnemyCast",
+			["Power"] = {{"Heal",300}},
+			Target = "Ally",
 		},
 		["Bio"] = "Creator of Raging ROBLOX Reviewer and lover of Valve games, XiaoXiaoMan has no problem shooting you down with his M4A1.",
 	},	
 		
 	["Xlzeck"] = {
-		["Id"] = 283996224,
+		["Id"] = 3303634972,
 		["Name"] = "Xlzeck",
 		["Health"] = 700,
 		["Power"] = 0,
@@ -3945,7 +3945,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["MrMaxi23"] = {
-		["Id"] = 2810633769,
+		["Id"] = 3299987267,
 		["Name"] = "MrMaxi23",
 		["Health"] = 600,
 		["Power"] = 500,
@@ -4283,7 +4283,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},			
 			
 	["TheChakraTree"] = {
-		["Id"] = 2789817928,
+		["Id"] = 3299960632,
 		["Name"] = "TheChakraTree",
 		["AltCards"] = {
 			["TheChakraTree-E"] = {
@@ -4499,7 +4499,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},		
 	
 	["DerpDerpyness"] = {
-		["Id"] = 288040577,
+		["Id"] = 3299963629,
 		["Name"] = "DerpDerpyness",
 		["Health"] = 550,
 		["Power"] = 100,
@@ -5470,7 +5470,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Redcliff Archer"] = {
-		["Id"] = 292778394,
+		["Id"] = 3299991124,
 		["Name"] = "Redcliff Archer",
 		["Health"] = 200,
 		["Power"] = 200,
@@ -5618,7 +5618,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "Double Bleeding",
-			Description = "Whenever you cast a fighter, deal 250 damage to both players. This fighter is immune to effects that lower its life.",
+			Description = "Whenever you cast a fighter, deal 250 damage to both players. This fighter is immune to effects that lower its health.",
 			["Type"] = "OnAllySummon",
 			["Power"] = {{"Inflict",250}},
 			Target = "All",
@@ -5758,7 +5758,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 		
 	["Redcliff Enforcer"] = {
-		["Id"] = 294319195,
+		["Id"] = 3299991561,
 		["Name"] = "Redcliff Enforcer",
 		["Health"] = 400,
 		["Power"] = 150,
@@ -5778,7 +5778,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},		
 	
 	["Redcliff Mauler"] = {
-		["Id"] = 294319235,
+		["Id"] = 3299992116,
 		["Name"] = "Redcliff Mauler",
 		["Health"] = 200,
 		["Power"] = 250,
@@ -5799,7 +5799,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Redcliff Elite Commander"] = {
-		["Id"] = 292778405,
+		["Id"] = 3299990687,
 		["Name"] = "Redcliff Elite Commander",
 		["Health"] = 200,
 		["Power"] = 250,
@@ -5819,7 +5819,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Redcliff Messenger"] = {
-		["Id"] = 294319285,
+		["Id"] = 3299992527,
 		["Name"] = "Redcliff Messenger",
 		["Health"] = 200,
 		["Power"] = 200,
@@ -6045,8 +6045,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 
 	["Connoisseur"] = {
-		["Id"] = 294871406,
-		["Name"] = "Connoisseur",
+		["Id"] = 3299955724,
+		["Name"] = "Barbarian Bloxal",
 		["Health"] = 150,
 		["Power"] = 800,
 		["Rarity"] = "Rare",
@@ -6057,13 +6057,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["CounterAttackBlock"] = true,
 		["Cost"] = {["Red"] = 3,},
 		["Effect"] = {
-			Name = "THIS COOKERY IS TERRIBLE",
+			Name = "haha angry visleafs",
 			Description = "Can't counterattack or be counterattacked.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Draw",0}},
 			Target = "Ally",
 		},
-		["Bio"] = "What are you? An idiot sandwhich.",
+		["Bio"] = [["First we find their chairs, then we burn them infront of them!"]],
 	},	
 	
 	["Cyclist"] = {
@@ -6868,7 +6868,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Burning Phoenix"] = {
-		["Id"] = 298792837,
+		["Id"] = 3307683858,
 		["Name"] = "Burning Phoenix",
 		["AltCards"] = {
 			["Burning Phoenix-Val"] = {
@@ -6933,7 +6933,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Fallen Guardian"] = {
-		["Id"] = 298792943,
+		["Id"] = 3299972038,
 		["Name"] = "Fallen Guardian",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -7193,7 +7193,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Medic Kit"] = {
-		["Id"] = 298793358,
+		["Id"] = 3299984075,
 		["Name"] = "Medic Kit",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -7273,7 +7273,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Overseer General"] = {
-		["Id"] = 2786965999,
+		["Id"] = 3307684341,
 		["Name"] = "Overseer General",
 		["Health"] = 900,
 		["Power"] = 0,
@@ -7293,8 +7293,15 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Overseer Prophet"] = {
-		["Id"] = 298793579,
+		["Id"] = 3299989216,
 		["Name"] = "Overseer Prophet",
+		["AltCards"] = {
+			["RukatuKDHToken"] = {
+				["Id"] = 3299988853,
+				["Name"] = "Overseer Profit",
+				["Bio"] = "He's the reason money is not an issue for the Overseer army... probably.",
+			},
+		},
 		["Health"] = 900,
 		["Power"] = 900,
 		["Rarity"] = "Uncommon",
@@ -7436,7 +7443,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Witch"] = {
-		["Id"] = 298793978,
+		["Id"] = 3300001213,
 		["Name"] = "Witch",
 		["Health"] = 250,
 		["Power"] = 400,
@@ -7456,7 +7463,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Fried Acolyte"] = {
-		["Id"] = 300638680,
+		["Id"] = 3299974186,
 		["Name"] = "Fried Acolyte",
 		["AltCards"] = {
 			["Fried Acolyte-AltV"] = {
@@ -7483,7 +7490,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Lunar Acolyte"] = {
-		["Id"] = 300638679,
+		["Id"] = 3299983206,
 		["Name"] = "Lunar Acolyte",
 		["AltCards"] = {
 			["Lunar Acolyte-AltV"] = {
@@ -7531,7 +7538,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Infernal Acolyte"] = {
-		["Id"] = 300638688,
+		["Id"] = 3299980155,
 		["Name"] = "Infernal Acolyte",
 		["AltCards"] = {
 			["Infernal Acolyte-AltV"] = {
@@ -7558,7 +7565,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Acolyte of the Rift"] = {
-		["Id"] = 300638691,
+		["Id"] = 3299957027,
 		["Name"] = "Acolyte of the Rift",
 		["AltCards"] = {
 			["Acolyte of the Rift-AltV"] = {
@@ -7585,7 +7592,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Necromantic Acolyte"] = {
-		["Id"] = 300638699,
+		["Id"] = 3299987711,
 		["Name"] = "Necromantic Acolyte",
 		["AltCards"] = {
 			["Necromantic Acolyte-AltV"] = {
@@ -7612,7 +7619,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Glaurung"] = {
-		["Id"] = 300638779,
+		["Id"] = 3299974678,
 		["Name"] = "Glaurung",
 		["Health"] = 300,
 		["Power"] = 200,
@@ -7633,7 +7640,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Smaug"] = {
-		["Id"] = 300638781,
+		["Id"] = 3299994138,
 		["Name"] = "Smaug",
 		["Health"] = 300,
 		["Power"] = 300,
@@ -7646,7 +7653,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Aer Draco"] = {
-		["Id"] = 300638783,
+		["Id"] = 3299957463,
 		["Name"] = "Aer Draco",
 		["Health"] = 200,
 		["Power"] = 300,
@@ -7667,7 +7674,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Dragon Horde"] = {
-		["Id"] = 300638768,
+		["Id"] = 3299971633,
 		["Name"] = "Dragon Horde",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -7676,7 +7683,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Requirement"] = {"Archetype",1,9999},		
 		["Archetype"] = "Acolyte",
 		["Color"] = "Neutral",
-		["Cost"] = {["Neutral"] = 3,},
+		["Cost"] = {["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Build Up",
 			Description = "Cast only if you control at least one Acolyte. Summon three Draconic Acolytes, then lock all allied fighters for two turns.",
@@ -8364,7 +8371,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["BlueTaslem"] = {
-		["Id"] = 2857407883,
+		["Id"] = 3299959331,
 		["Name"] = "BlueTaslem",
 		["Health"] = 500,
 		["Power"] = 450,
@@ -8952,7 +8959,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Titan of the Dying Forest"] = {
-		["Id"] = 328831713,
+		["Id"] = 3299997667,
 		["Name"] = "Titan of the Dying Forest",
 		["AltCards"] = {
 			["Titan of the Dying Forest-E"] = {
@@ -9024,7 +9031,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Titan of the Holy Chamber"] = {
-		["Id"] = 328831700,
+		["Id"] = 3299975693,
 		["Name"] = "Titan of the Holy Chamber",
 		["AltCards"] = {
 			["Titan of the Holy Chamber-E"] = {

@@ -124,7 +124,7 @@ local twentyeleveneighteen = {
 	},
 	
 	["TheInnovative"] = {
-		["Id"] = 335687720,
+		["Id"] = 3307684795,
 		["Name"] = "TheInnovative",
 		["Health"] = 500,
 		["Power"] = 500,
@@ -347,8 +347,8 @@ local twentyeleveneighteen = {
 					Name = "Divine Ruination",
 					Description = "Can't attack. Doesn't generate icons when discarded. At the end of your turn, destroy all enemy fighters and this fighter. Fading.",
 					["Type"] = "OnEnd",
-					["Power"] = {{"Damage",9999},{"Damage",9999,"Opponent"}},
-					["Target"] = "Self",
+					["Power"] = {{"Damage",9999,"Self"},{"Destroy"}},
+					["Target"] = "Opponent",
 				},
 			},
 		},
@@ -691,88 +691,21 @@ local twentyeleveneighteen = {
 		},
 		["Bio"] = "A leader is the greatest servant. A master is the greatest tyrant. Myrmiredon is both.",
 	},
-
-	["Myrmiredon 3"] = {
-		["Id"] = 421944617,
-		["Name"] = "Myrmiredon",
-		["AltCards"] = {
-			["MyrmiredonV2 3"] = {
-				["Id"] = 480297793,
-				["Effect"] = {
-					Name = "Dreadsteed",
-					Description = [[1 Charge. At the end of your turns, Remove a charge. If there are no charges, shuffle a copy of Myrmiredon back into your deck.]],
-					["Type"] = "OnEnd",
-					["Power"] = {{"Summon","MyrmiredonV2 4"},{"Unlock",9999,"Archetype"},{"Damage",9999,"Self"}},
-					Target = "Ally",
-				},
-				["Bio"] = "Greetings, honourable invaders. Thank you for coming so far. However, as you can see, we are poor. Do you truly believe you'll find what you want here?",
-			},
-		},
-		["Health"] = 400,
-		["Power"] = 400,
-		["Rarity"] = "Token",
-		["AttackEffect"] = "Butts",
-		["Archetype"] = "Recur",
-		["Color"] = "Green",
-		["Cost"] = {["Green"] = 5,},
-		["Effect"] = {
-			Name = "Dreadsteed",
-			Description = [[1 Charge. At the end of your turns, Remove a charge. If there are no charges, shuffle a copy of Myrmiredon back into your deck.]],
-			["Type"] = "OnEnd",
-			["Power"] = {{"Summon","Myrmiredon 4"},{"Unlock",9999,"Archetype"},{"Damage",9999,"Self"}},
-			Target = "Ally",
-		},
-		["Bio"] = "A leader is the greatest servant. A master is the greatest tyrant. Myrmiredon is both.",
-	},
-
-	["Myrmiredon 4"] = {
-		["Id"] = 421944617,
-		["Name"] = "Myrmiredon",
-		["AltCards"] = {
-			["MyrmiredonV2 4"] = {
-				["Id"] = 480297793,
-				["Effect"] = {
-					Name = "Dreadsteed",
-					Description = [[At the end of your turns, shuffle a copy of Myrmiredon into your deck.]],
-					["Type"] = "OnEnd",
-					["Power"] = {{"DeckAdd","Myrmiredon"}},
-					Target = "Ally",
-				},
-				["Bio"] = "Greetings, honourable invaders. Thank you for coming so far. However, as you can see, we are poor. Do you truly believe you'll find what you want here?",
-			},
-		},
-		["Health"] = 400,
-		["Power"] = 400,
-		["Rarity"] = "Token",
-		["AttackEffect"] = "Butts",
-		["Archetype"] = "Recur",
-		["Color"] = "Green",
-		["Cost"] = {["Green"] = 5,},
-		["Effect"] = {
-			Name = "Dreadsteed",
-			Description = [[At the end of your turns, shuffle a copy of Myrmiredon into your deck.]],
-			["Type"] = "OnEnd",
-			["Power"] = {{"DeckAdd","Myrmiredon"}},
-			Target = "Ally",
-		},
-		["Bio"] = "A leader is the greatest servant. A master is the greatest tyrant. Myrmiredon is both.",
-	},
-
-
+	
 	["Bee"] = {
 		["Id"] = 338188697,
 		["Name"] = "Bee",
 		["AltCards"] = {
 			["Bee Ninja"] = {
-				["Name"] = "Bee Ninja",
-				["Id"] = 1476527372,
-				["Bio"] = "Inb4 complaints that this isn't a part of the ninja archetype.",
+				["Name"] = "Beebling",
+				["Id"] = 3293638268,
+				["Bio"] = [["WHY IS BEEBLING NOT PART OF THE MEEBOID ARCHETYPE?!"]],
 			},
 			
 			["Newbee"] = {
 				["Name"] = "Newbee",
-				["Id"] = 1476567839,
-				["Bio"] = "The bees were bound to take over at some point...",
+				["Id"] = 3293640251,
+				["Bio"] = "Come on, guys! He's just a new bee, give him a break!",
 			},
 		},
 		["Health"] = 100,
@@ -799,16 +732,16 @@ local twentyeleveneighteen = {
 		["Name"] = "Swarm",
 		["AltCards"] = {
 			["MrBeeBee2"] = {
-				["Name"] = "MrBeeBee2",
-				["Id"] = 1473837362,
+				["Name"] = "Zombee",
+				["Id"] = 3293642456,
 				["Effect"] = {
 					Name = "Nerf",
 					Description = "Haste. When this card attacks, put a random Bee card into your hand. This card can't generate icons.",
 					["Type"] = "OnAttack",
-					["Power"] = {{"RandomAdd", {"Bee Ninja", "MrBeeBee2", "IcyBee", "Beestor", "Beeskateer", "Tom's Bees", "Waspism",}}},
+					["Power"] = {{"RandomAdd", {"Newbee", "MrBeeBee2", "IcyBee", "Beestor", "Beeskateer", "Tom's Bees", "Waspism",}}},
 					Target = "Ally",
 				},
-				["Bio"] = "Uh Oh! You silly moron. You just got BEE'D!!! Add this card to your deck to totally BEE! your opponents!",
+				["Bio"] = "Don't you hate it when you're a bee, then you just suddenly DIE from colony collapse disorder?",
 			},
 		},
 		["Health"] = 50,
@@ -835,16 +768,16 @@ local twentyeleveneighteen = {
 		["Name"] = "Beehive",
 		["AltCards"] = {
 			["IcyBee"] = {
-				["Name"] = "IcyBee",
-				["Id"] = 1476569307,
+				["Name"] = "Zombee Cultist",
+				["Id"] = 3293641945,
 				["Effect"] = {
 					Name = "Nerf",
-					Description = "Cast only if you control at least two bees. Put MrBeeBee2 into your hand at the end of each of your turns.",
-					Type = "OnEnd",
-					Power = {{"Add","MrBeeBee2"}},
+					Description = "Cast only if you control at least two bees. Put a Zombee into your hand at the end of each of your turns.",
+					["Type"] = "OnEnd",
+					["Power"] = {{"Add","MrBeeBee2"}},
 					Target = "Ally",
 				},
-				["Bio"] = "The bee to the... bee?",
+				["Bio"] = "An alternate universe where the bees are making the humans endangered.",
 			},
 		},
 		["Health"] = 1100,
@@ -869,16 +802,16 @@ local twentyeleveneighteen = {
 		["Name"] = "Beekeeper",
 		["AltCards"] = {
 			["Beestor"] = {
-				["Name"] = "Beestor",
-				["Id"] = 1476566080,
+				["Name"] = "Beejob",
+				["Id"] = 3293639313,
 				["Effect"] = {
 					Name = "Nerf",
 					Description = "When this card is cast, put two Newbees into your hand. Whenever you cast a bee, increase the health and power of all bees by 50.",
-					Type = "OnSummon",
-					Power = {{"Add","Newbee"},{"Add","Newbee"},{"Summon","Beestor Token"},{"Damage",9999,"Self"}},
+					["Type"] = "OnSummon",
+					["Power"] = {{"Add","Newbee"},{"Add","Newbee"},{"Summon","Beestor Token"},{"Damage",9999,"Self"}},
 					Target = "Ally",
 				},
-				["Bio"] = "Hey kid...wanna buy some bees?",
+				["Bio"] = "Beejob at your service!",
 			},
 		},
 		["Health"] = 300,
@@ -892,8 +825,8 @@ local twentyeleveneighteen = {
 		["Effect"] = {
 			Name = "Nerf",
 			Description = "When this card is cast, put two bees into your hand. Whenever you cast a bee, increase the health and power of all bees by 50.",
-			Type = "OnSummon",
-			Power = {{"Add","Bee"},{"Add","Bee"},{"Summon","Beekeeper Token"},{"Damage",9999,"Self"}},
+			["Type"] = "OnSummon",
+			["Power"] = {{"Add","Bee"},{"Add","Bee"},{"Summon","Beekeeper Token"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Beekeepers have the hardest job in the entire beeverse. But they're one of the most important.",
@@ -904,17 +837,17 @@ local twentyeleveneighteen = {
 		["Name"] = "Beekeeper",
 		["AltCards"] = {
 			["Beestor Token"] = {
-				["Name"] = "Beestor",
-				["Id"] = 1476566080,
+				["Name"] = "Beejob",
+				["Id"] = 3293639313,
 				["Effect"] = {
 					Name = "Nerf",
 					Description = "When this card is cast, put two Newbees into your hand. Whenever you cast a bee, increase the health and power of all bees by 50.",
-					Type = "OnAllySummon",
-					Archetype = "Bee",
-					Power = {{"Heal",50,"Archetype"},{"Strengthen",50,"Archetype"}},
+					["Type"] = "OnAllySummon",
+					["Archetype"] = "Bee",
+					["Power"] = {{"Heal",50,"Archetype"},{"Strengthen",50,"Archetype"}},
 					Target = "Ally",
 				},
-				["Bio"] = "Hey kid...wanna buy some bees?",
+				["Bio"] = "Seriously, though. I can't believe this got past the filters.",
 			},
 		},
 		["Health"] = 300,
@@ -927,9 +860,9 @@ local twentyeleveneighteen = {
 		["Effect"] = {
 			Name = "Nerf",
 			Description = "When this card is cast, put two bees into your hand. Whenever you cast a bee, increase the health and power of all bees by 50.",
-			Type = "OnAllySummon",
-			Archetype = "Bee",
-			Power = {{"Heal",50,"Archetype"},{"Strengthen",50,"Archetype"}},
+			["Type"] = "OnAllySummon",
+			["Archetype"] = "Bee",
+			["Power"] = {{"Heal",50,"Archetype"},{"Strengthen",50,"Archetype"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Beekeepers have the hardest job in the entire beeverse. But they're one of the most important.",
@@ -940,13 +873,13 @@ local twentyeleveneighteen = {
 		["Name"] = "Queen Bee",
 		["AltCards"] = {
 			["Beeskateer"] = {
-				["Name"] = "Beeskateer",
-				["Id"] = 1473928363,
+				["Name"] = "Beeboid King",
+				["Id"] = 3293638672,
 				["Effect"] = {
 					Name = "Nerf",
-					Description = [[At the end of your turns, summon a Bee Ninja. All Bees gain 50 health and power.]],
-					Type = "OnEnd",
-					Power = {{"Summon","Bee Ninja","Ally"},{"Strengthen",50},{"Heal",50}},
+					Description = "At the end of your turns, summon a Beebling. All Bees gain 50 health and power.",
+					["Type"] = "OnEnd",
+					["Power"] = {{"Summon","Bee Ninja","Ally"},{"Strengthen",50},{"Heal",50}},
 					Target = "Archetype",
 				},
 				["Bio"] = [[According to all known laws of aviation, there is no way a bee should be able to fly. Its wings are too small to get its fat little body off the ground. The bee, of course, flies anyway because bees don't care what humans think is impossible. Yellow, black. Yellow, black. Yellow, black. Yellow, black. Ooh, black and yellow! Let's shake it up a little. Barry!]],
@@ -962,8 +895,8 @@ local twentyeleveneighteen = {
 		["Effect"] = {
 			Name = "Nerf",
 			Description = [[At the end of your turns, summon a bee. All Bees gain 50 health and power.]],
-			Type = "OnEnd",
-			Power = {{"Summon","Bee","Ally"},{"Strengthen",50},{"Heal",50}},
+			["Type"] = "OnEnd",
+			["Power"] = {{"Summon","Bee","Ally"},{"Strengthen",50},{"Heal",50}},
 			Target = "Archetype",
 		},
 		["Bio"] = "She creates Bees to do the same thing she does every night. Try and take over the world!",
@@ -975,15 +908,28 @@ local twentyeleveneighteen = {
 		["AltCards"] = {
 			["Tom's Bees"] = {
 				["Name"] = "Tom's Bees",
-				["Id"] = 1473880726,
+				["Id"] = 3293641326,
 				["Effect"] = {
 					Name = "NERF BEES",
-					Description = [[Summon 3 "Bee Ninjas" and increase the health and power of all Bee-related fighters by 250.]],
-					Type = "OnSummon",
-					Power = {{"Summon","Bee Ninja"},{"Summon","Bee Ninja"},{"Summon","Bee Ninja"},{"Strengthen",250,"Archetype"},{"Heal",250,"Archetype"}},
+					Description = [[Summon 3 "Newbees" and increase the health and power of all Bee-related fighters by 250.]],
+					["Type"] = "OnSummon",
+					["Power"] = {{"Summon","Newbee"},{"Summon","Newbee"},{"Summon","Newbee"},{"Strengthen",250,"Archetype"},{"Heal",250,"Archetype"}},
 					Target = "Ally",
 				},
 				["Bio"] = "What do you mean someone took a can of beans and shoved tons of bees in it?",
+			},
+			
+			["MyrmiredonV2 3"] = {
+				["Name"] = "Mass Epbeedemic",
+				["Id"] = 3293639801,
+				["Effect"] = {
+					Name = "NERF BEES",
+					Description = [[Summon 3 "Beeblings" and increase the health and power of all Bee-related fighters by 250.]],
+					["Type"] = "OnSummon",
+					["Power"] = {{"Summon","Bee Ninja"},{"Summon","Bee Ninja"},{"Summon","Bee Ninja"},{"Strengthen",250,"Archetype"},{"Heal",250,"Archetype"}},
+					Target = "Ally",
+				},
+				["Bio"] = [[You may ask why there are two alt arts of "True Hivemind". The reason: IcyTea getting chased by a giant bee was funny to Blitzwolfer.]],
 			},
 		},
 		["Health"] = 0,
@@ -1580,7 +1526,7 @@ local twentyeleveneighteen = {
 	},		
 	
 	["wer8888"] = {
-		["Id"] = 362315297,
+		["Id"] = 3300000753,
 		["Name"] = "wer8888",
 		["AltCards"] = {
 			["Wer8888-E"] = {
@@ -1854,11 +1800,12 @@ local twentyeleveneighteen = {
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Lightning",
 		["Archetype"] = "Kitten",
+		["Requirement"] = {"Archetype",1,9999},
 		["Color"] = "Neutral",
 		["Cost"] = {["Neutral"] = 6,},
 		["Effect"] = {
 			Name = "Snorlaxing",
-			Description = "At the end of your turns, give this card, then all Kittens, 200 health and put a Kitten into your hand.",
+			Description = "Cast only if you control a kitten. At the end of your turns, give this card, then all Kittens, 200 health and put a Kitten into your hand.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Heal",200},{"Heal",200,"Archetype"},{"RandomAdd",{"Kitten","Kitten2","Kitten3","Kitten4","Kitten5","Kitten6","Kitten7","Kitten8","Kitten9"}}},
 			Target = "Self",
@@ -2135,7 +2082,7 @@ local twentyeleveneighteen = {
 	},	
 	
 	["StayBlue"] = {
-		["Id"] = 384005918, -- 363172190
+		["Id"] = 3299994670,
 		["Name"] = "StayBlue",
 		["Health"] = 700,
 		["Power"] = 700,
@@ -2242,7 +2189,7 @@ local twentyeleveneighteen = {
 	},	
 	
 	["ROBLOX"] = {
-		["Id"] = 1950414129,
+		["Id"] = 3299952153,
 		["Name"] = "ROBLOX",
 		["AltCards"] = {
 			["ROBLOX-C"] = {
@@ -2598,7 +2545,7 @@ local twentyeleveneighteen = {
 	},		
 	
 	["Olafisawesome100"] = {
-		["Id"] = 2903577499,
+		["Id"] = 3299995806,
 		["Name"] = "Toothy Deer's Blessing",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -2666,12 +2613,12 @@ local twentyeleveneighteen = {
 		["Color"] = "Blue",
 		["Archetype"] = "Morphic",
 		["Requirement"] = {"Archetype",1,9999},
-		["Cost"] = {["Blue"] = 3, ["Red"] = 1, ["Green"] = 1, ["Yellow"] = 1,},
+		["Cost"] = {["Blue"] = 2, ["Red"] = 1, ["Green"] = 1, ["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "Overgrown",
 			Description = "Cast only if you control a Goo-related figther. Destroy a target fighter and summon a Morphic goo. Your opponent summons a random fighter.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",9999,"Single"},{"Summon","Morphic Goo"},{"RandomSummon","Any","Opponent"}},
+			["Power"] = {{"Destroy",030,"Single"},{"Summon","Morphic Goo"},{"RandomSummon","Any","Opponent"}},
 			Target = "Ally",
 		},
 		["Bio"] = "He caused destruction for the 5033rd time.",
@@ -2928,13 +2875,14 @@ local twentyeleveneighteen = {
 		["Power"] = 700,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Lightning",
+		["Token"] = true,
 		["Color"] = "Green",
 		["Cost"] = {["Green"] = 7,},
 		["Effect"] = {
 			Name = "Sudden Death",
-			Description = "When this card is cast, summon a random fighter with an attack-related effect.",
+			Description = "When this card is cast, summon a random green fighter and trigger that fighter's effect. This card can't generate icons.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"RandomSummon", {"Mummy Peasant", "Ghost Dragon", "Lady RedNight", "Murtic", "Inventor1116", "animallogic", "DIY: Dark Dominus"}}},
+			["Power"] = {{"RandomSummonWithEffect","Green"}},
 			Target = "Ally",
 		},
 		["Bio"] = "What can I say, he's a canadian Leprechaun.",
@@ -2993,7 +2941,7 @@ local twentyeleveneighteen = {
 	},			
 
 	["BroRubik"] = {
-		["Id"] = 384050244,
+		["Id"] = 3299960147,
 		["Name"] = "BroRubik",
 		["Health"] = 1700,
 		["Power"] = 300,
@@ -3135,7 +3083,7 @@ local twentyeleveneighteen = {
 	},
 
 	["Lilly_S"] = {
-		["Id"] = 411804632,
+		["Id"] = 3299982446,
 		["Name"] = "Lilly_S",
 		["Health"] = 700,
 		["Power"] = 350,
@@ -3151,8 +3099,8 @@ local twentyeleveneighteen = {
 			Target = "Ally",
 		},
 		["Bio"] = "'Vortex Security respects her, please do not insult her. Yes, IcyTea learned it the hard way.'",
-	},			
-
+	},
+	
 	["MuPower"] = {
 		["Id"] = 411806474,
 		["Name"] = "MuPower",
@@ -3260,7 +3208,7 @@ local twentyeleveneighteen = {
 	},			
 
 	["One BLOX Man"] = {
-		["Id"] = 3238123084,
+		["Id"] = 3299988416,
 		["Name"] = "One BLOX Man",
 		["Health"] = 1500,
 		["Power"] = 500,
@@ -3274,7 +3222,7 @@ local twentyeleveneighteen = {
 			Name = "Disaster",
 			Description = "Cast only if your opponent controls 4 or more fighters. When you do, destroy a target fighter. This card can't be counterattacked.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",9999}},
+			["Power"] = {{"Destroy"}},
 			Target = "Single",
 		},
 		["Bio"] = "ONE BLOX MAN!! *anime opening music*",
@@ -3538,7 +3486,7 @@ local twentyeleveneighteen = {
 	},			
 
 	["Lorenzo77555"] = {
-		["Id"] = 2110156256,
+		["Id"] = 3303639584,
 		["Name"] = "Lorenzo77555",
 		["Health"] = 500,
 		["Power"] = 500,
@@ -3928,7 +3876,7 @@ local twentyeleveneighteen = {
 	},	
 	
 	["Ultoris Tenebrae"] = {
-		["Id"] = 413920845,
+		["Id"] = 3300000346,
 		["Name"] = "Ultoris Tenebrae",
 		["Health"] = 1000,
 		["Power"] = 700,
@@ -3948,7 +3896,7 @@ local twentyeleveneighteen = {
 	},	
 	
 	["Ultoris NOOBrae"] = {
-		["Id"] = 1303976830,
+		["Id"] = 3299999980,
 		["Name"] = "Ultoris NOOBrae",
 		["Health"] = 350,
 		["Power"] = 100,
@@ -4331,7 +4279,7 @@ local twentyeleveneighteen = {
 			Name = "Totem Magic",
 			Description = "At the end of your turns, Her0z loses 800 health and all of its power. Her0z can't attack.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Damage",800},{"Weaken",9999}},
+			["Power"] = {{"Damage",800},{"SetPower",0}},
 			Target = "Self",
 		},
 		["Bio"] = "Mummy of Front Page Games in the past.",
@@ -4358,7 +4306,7 @@ local twentyeleveneighteen = {
 	},	
 		
 	["BlueShadic90"] = {
-		["Id"] = 415733985,
+		["Id"] = 3299959656,
 		["Name"] = "BlueShadic90",
 		["Health"] = 400,
 		["Power"] = 400,
@@ -4424,7 +4372,7 @@ local twentyeleveneighteen = {
 	},	
 
 	["Imaginz00"] = {
-		["Id"] = 630782293,
+		["Id"] = 3303640189,
 		["Name"] = "Imaginz00",
 		["Health"] = 1250,
 		["Power"] = 250,
@@ -4443,7 +4391,7 @@ local twentyeleveneighteen = {
 	},
 	
 	["RukatuKDH"] = {
-		["Id"] = 415734128,
+		["Id"] = 3299993298,
 		["Name"] = "RukatuKDH",
 		["Health"] = 2000,
 		["Power"] = 2000,
@@ -4460,26 +4408,6 @@ local twentyeleveneighteen = {
 		},
 		["Bio"] = "Don't put all your eggs into one basket.",
 	},
-		
-	["RukatuKDHToken"] = {
-		["Id"] = 415734128,
-		["Name"] = "RukatuKDH",
-		["Health"] = 2000,
-		["Power"] = 2000,
-		["Rarity"] = "Token",
-		["AttackEffect"] = "Lightning",
-		["Fading"] = true,
-		["Color"] = "Blue",
-		["Cost"] = {["Neutral"] = 1,["Blue"] = 4,},
-		["Effect"] = {
-			Name = "Vampire",
-			Description = "When this card is cast, you lose 7500 life. If you survive, gain 2500 Life at the end of this turn. Fading.",
-			["Type"] = "OnEnd",
-			["Power"] = {{"Cost",-2500},{"Summon","RukatuKDH"},{"Damage",9999,"Self"}},
-			Target = "Ally",
-		},
-		["Bio"] = "Don't put all your eggs into one basket.",
-	},	
 	
 	["wi_sh"] = {
 		["Id"] = 416137060,
@@ -4781,7 +4709,7 @@ local twentyeleveneighteen = {
 	},
 	
 	["Monstrum Freezer"] = {
-		["Id"] = 427571788,
+		["Id"] = 3299978251,
 		["Name"] = "Monstrum Freezer",
 		["Health"] = 800,
 		["Power"] = 800,
@@ -4800,7 +4728,7 @@ local twentyeleveneighteen = {
 	},
 	
 	["Monstrum Minotauris"] = {
-		["Id"] = 427571825,
+		["Id"] = 3299979068,
 		["Name"] = "Monstrum Minotauris",
 		["Health"] = 1200,
 		["Power"] = 1200,
@@ -4819,7 +4747,7 @@ local twentyeleveneighteen = {
 	},
 	
 	["Monstrum Zombie King"] = {
-		["Id"] = 427571862,
+		["Id"] = 3299979680,
 		["Name"] = "Monstrum Zombie King",
 		["Health"] = 2000,
 		["Power"] = 0,
@@ -4858,7 +4786,7 @@ local twentyeleveneighteen = {
 	},
 
 	["Moon Rabbit's Rage"] = {
-		["Id"] = 429396325,
+		["Id"] = 3299986551,
 		["Name"] = "Moon Rabbit's Rage",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -5137,18 +5065,19 @@ local twentyeleveneighteen = {
 				["Bio"] = "An ancient dragon warrior. The only dragon Skarra wont kill is the one that she rides.",
 			},
 		},
-		["Health"] = 850,
-		["Power"] = 850,
+		["Health"] = 700,
+		["Power"] = 350,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Punch1",
+		["Requirement"] = {"EqualBoard"},
 		["Color"] = "Red",
 		["Cost"] = {["Red"] = 6, ["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Render",
-			Description = "Whenever Skarra is targeted by a creature, deal 1000 damage to that creature.",
-			["Type"] = "OnTarget",
-			["Power"] = {{"Damage",1000,"Aggressor"}},
-			Target = "Ally",
+			Description = "Cast only if you control as many fighters as your opponent. When you do, double the power of all fighters.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"MultiplyPower",2}},
+			Target = "All",
 		},
 		["Bio"] = "If you breathe, she will fight you. If you breathe fire, she MUST fight you.",
 	},
@@ -5302,7 +5231,7 @@ local twentyeleveneighteen = {
 			Description = "Whenever this fighter gains a lock, draw a card.",
 			["Type"] = "OnLockIncrease",
 			["Power"] = {{"Draw",1}},
-			Target = "Ally",
+			Target = "Self",
 		},
 		["Bio"] = "Creator of Battle of the ele- WRONG GAME WRONG BOTE DON'T KILL ME AAA - Sword Critic",
 	},
@@ -6116,7 +6045,7 @@ local twentyeleveneighteen = {
 	},
 	
 	["BerskererPredator450"] = {
-		["Id"] = 444117155,
+		["Id"] = 3299958954,
 		["Name"] = "BerskererPredator450",
 		["Health"] = 400,
 		["Power"] = 600,
@@ -6294,7 +6223,7 @@ local twentyeleveneighteen = {
 	},
 	
 	["Nova"] = {
-		["Id"] = 454695731,
+		["Id"] = 3299953451,
 		["Name"] = "Nova",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -6445,8 +6374,9 @@ local twentyeleveneighteen = {
 		["Name"] = "Gravity Inspector",
 		["AltCards"] = {
 			["Gravity InspectorV2"] = {
-				["Id"] = 433133596,
-				["Bio"] = "To inspect gravity. To cause the fall.",
+				["Id"] = 3299976206,
+				["Name"] = "ɹoʇɔǝdsuı ʎʇıʌɐɹƃ",
+				["Bio"] = "˙ןןɐɟ ǝɥʇ ǝsnɐɔ oʇ ˙ʎʇıʌɐɹb ʇɔǝdsuı oʇ",
 			},
 		},
 		["Health"] = 100,
@@ -6720,9 +6650,9 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Neutral"] = 4, ["Red"] = 4, ["Blue"] = 4,},
 		["Effect"] = {
 			Name = "HURT ALL THE THINGS",
-			Description = "Lower the power of all enemy fighters by 400, then swap their stats.",
+			Description = "All allied fighters drain 400 Power from all enemy fighters. Then, swap the stats of all fighters.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Weaken",400},{"Swap",030}},
+			["Power"] = {{"Weaken",400},{"Strengthen",400,"Ally"},{"Swap",030,"All"}},
 			Target = "Opponent",
 		},
 		["Bio"] = "Hatred outlives the hateful.",
@@ -7860,7 +7790,7 @@ local twentyeleveneighteen = {
 	},
 
 	["Divine_Pengu"] = {
-		["Id"] = 2857408761,
+		["Id"] = 3299963958,
 		["Name"] = "Divine_Pengu",
 		["Health"] = 1450,
 		["Power"] = 300,
@@ -8143,7 +8073,7 @@ local twentyeleveneighteen = {
 	},
 	
 	["Boom2"] = {
-		["Id"] = 543041104,
+		["Id"] = 3359990620,
 		["Name"] = "Destroyer of Children",
 		["Health"] = 600,
 		["Power"] = 500,
@@ -8326,7 +8256,7 @@ local twentyeleveneighteen = {
 	},
 	
 	["AII_Duck"] = {
-		["Id"] = 683432959,
+		["Id"] = 3299958255,
 		["Name"] = "AII_DUCK",
 		["Health"] = 900,
 		["Power"] = 900,
@@ -8345,7 +8275,7 @@ local twentyeleveneighteen = {
 	},
 	
 	["Camera"] = {
-		["Id"] = 528151525,
+		["Id"] = 3299957870,
 		["Name"] = "Camera",
 		["Health"] = 200,
 		["Power"] = 500,
@@ -8647,6 +8577,12 @@ local twentyeleveneighteen = {
 	["Baby Noob"] = {
 		["Id"] = 556057423,
 		["Name"] = "Baby Noob",
+		["AltCards"] = {
+			["Myrmiredon 3"] = {
+				["Id"] =  3061340509,
+				["Bio"] = "I wonder what this noob will grow up to be!",
+			},
+		},
 		["Health"] = 100,
 		["Power"] = 100,
 		["Rarity"] = "Common",
@@ -8786,15 +8722,16 @@ local twentyeleveneighteen = {
 		["Id"] = 1479981590,
 		["Name"] = "Burning Tree",
 		["Health"] = 600,
-		["Power"] = 0,
+		["Power"] = 100,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Fire",
+		["AttackBlock"] = true,
 		["Color"] = "Red",
-		["Cost"] = {["Red"] = 1, ["Neutral"] = 2},
+		["Cost"] = {["Red"] = 1,["Neutral"] = 2},
 		["Effect"] = {
 			Name = "Firefly",
-			Description = "When this card survives an attack, put two Forestfire Butterflies into your hand.",
-			["Type"] = "OnAttacked",
+			Description = "When this card tries to attack, instead put two 100/100 Forestfire Butterflies with haste into your hand. They can't generate icons naturally or when discarded, and are destroyed at the end of your turn.",
+			["Type"] = "OnAttack",
 			["Power"] = {{"Add","Forestfire Butterflies"},{"Add","Forestfire Butterflies"}},
 			Target = "Ally",
 		},
@@ -8809,20 +8746,21 @@ local twentyeleveneighteen = {
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Fire",
 		["Token"] = true,
+		["DiscardToken"] = true,
 		["Charge"] = true,
 		["Color"] = "Red",
 		["Cost"] = {["Red"] = 0,},
 		["Effect"] = {
 			Name = "Firefly",
-			Description = "Haste. Can't generate icons. Put a copy of this card into your hand without this effect.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Add","Forestfire Butterflies2"}},
-			Target = "Ally",
+			Description = "Haste. Can't generate icons naturally or when discarded. At the end of your turn, destroy this fighter.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Destroy"}},
+			Target = "Self",
 		},
 		["Bio"] = "The buzzing noise is the sound of their wings burning, silly.",
 	},		
 
-	["Forestfire Butterflies2"] = {
+	["Forestfire Butterflies2"] = {--expired. can be used for future cards.
 		["Id"] = 1371878542,
 		["Name"] = "Forestfire Butterflies",
 		["Health"] = 100,
@@ -8830,12 +8768,13 @@ local twentyeleveneighteen = {
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Fire",
 		["Token"] = true,
+		["DiscardToken"] = true,
 		["Charge"] = true,
 		["Color"] = "Red",
 		["Cost"] = {["Red"] = 0,},
 		["Effect"] = {
 			Name = "Firefly",
-			Description = "Haste. Can't generate icons.",
+			Description = "Haste. Can't generate icons naturally or when discarded.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Cost",0}},
 			Target = "Opponent",
@@ -8929,7 +8868,7 @@ local twentyeleveneighteen = {
 		["Effect"] = {
 			Name = "Traumatic Experience",
 			Description = "This card can't generate icons.",
-			["Type"] = "OnDestroy",
+			["Type"] = "OnDeath",
 			["Power"] = {{"Draw",0}},
 			Target = "Ally",
 		},
@@ -9067,7 +9006,7 @@ local twentyeleveneighteen = {
 	},					
 	
 	["Suicide Bomber"] = {
-		["Id"] = 557999834,
+		["Id"] = 3299973543,
 		["Name"] = "Frenzied Bomber",
 		["Health"] = 300,
 		["Power"] = 500,
@@ -9087,7 +9026,7 @@ local twentyeleveneighteen = {
 	},				
 	
 	["Remote Mine"] = {
-		["Id"] = 1945349660,
+		["Id"] = 3299972985,
 		["Name"] = "Remote Mine",
 		["Health"] = 100,
 		["Power"] = 100,
@@ -9108,7 +9047,7 @@ local twentyeleveneighteen = {
 	},	
 	
 	["Retro Gangster"] = {
-		["Id"] = 557969839,
+		["Id"] = 3303635569,
 		["Name"] = "Retro Gangster",
 		["Health"] = 650,
 		["Power"] = 300,
@@ -9176,7 +9115,7 @@ local twentyeleveneighteen = {
 		["AttackEffect"] = "SlashDiagonal",
 		["Color"] = "Red",
 		["Archetype"] = "MSE6",
-		["Cost"] = {["Red"] = 4,},
+		["Cost"] = {},
 		["TokenDiscard"] = true,
 		["Token"] = true,
 		["Effect"] = {
@@ -9378,7 +9317,7 @@ local twentyeleveneighteen = {
 	},			
 	
 	["Stravant"] = {
-		["Id"] = 557984117,
+		["Id"] = 3299954739,
 		["Name"] = "Stravant",
 		["Health"] = 1000,
 		["Power"] = 700,
