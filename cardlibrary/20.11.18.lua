@@ -8073,7 +8073,7 @@ local twentyeleveneighteen = {
 	},
 	
 	["Boom2"] = {
-		["Id"] = 543041104,
+		["Id"] = 3359990620,
 		["Name"] = "Destroyer of Children",
 		["Health"] = 600,
 		["Power"] = 500,
