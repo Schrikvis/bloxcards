@@ -3145,6 +3145,18 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Undead Teddy"] = {
 		["Id"] = 666426765,
 		["Name"] = "Undead Teddy",
+		["AltCards"] = {
+			["Undead Teddy-AntArtist"] = {
+				["Id"] = 3359991451,
+				["Effect"] = {
+					Name = "TEDDY",
+					["Type"] = "OnDeath",
+					["Power"] = {{"Summon","Teddy1-AntArtist"},{"Cost",100},{"Damage",9999,"Self"}},
+					Target = "Ally",
+				},
+				["Bio"] = "Unpopular opinion: Innovative arts are better than art box arts.",
+			},
+		},
 		["Health"] = 100,
 		["Power"] = 100,
 		["Rarity"] = "Common",
@@ -3165,6 +3177,18 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Teddy1"] = {
 		["Id"] = 666426765,
 		["Name"] = "Undead Teddy",
+		["AltCards"] = {
+			["Teddy1-AntArtist"] = {
+				["Id"] = 3359991451,
+				["Effect"] = {
+					Name = "TEDDY",
+					["Type"] = "OnDeath",
+					["Power"] = {{"Summon","Teddy2-AntArtist"},{"Cost",100},{"Damage",9999,"Self"}},
+					Target = "Ally",
+				},
+				["Bio"] = "Unpopular opinion: Undead Teddy is overrated.",
+			},
+		},
 		["Health"] = 100,
 		["Power"] = 100,
 		["Rarity"] = "Token",
@@ -3184,6 +3208,18 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Teddy2"] = {
 		["Id"] = 666426765,
 		["Name"] = "Undead Teddy",
+		["AltCards"] = {
+			["Teddy2-AntArtist"] = {
+				["Id"] = 3359991451,
+				["Effect"] = {
+					Name = "TEDDY",
+					["Type"] = "OnDeath",
+					["Power"] = {{"Summon","Teddy3-AntArtist"},{"Cost",100},{"Damage",9999,"Self"}},
+					Target = "Ally",
+				},
+				["Bio"] = "Unpopular opinion: Drawn arts are better than Roblox arts done in Blender.",
+			},
+		},
 		["Health"] = 100,
 		["Power"] = 100,
 		["Rarity"] = "Token",
@@ -3203,6 +3239,12 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Teddy3"] = {
 		["Id"] = 666426765,
 		["Name"] = "Undead Teddy",
+		["AltCards"] = {
+			["Teddy3-AntArtist"] = {
+				["Id"] = 3359991451,
+				["Bio"] = "Unpopular opinion: Actual artists that can draw are obviously the best artists in Blox Cards's art department.",
+			},
+		},
 		["Health"] = 100,
 		["Power"] = 100,
 		["Rarity"] = "Token",
