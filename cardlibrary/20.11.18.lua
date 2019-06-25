@@ -5556,9 +5556,9 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Red"] = 3,},
 		["Effect"] = {
 			Name = "Capture",
-			Description = "This card is immune to effects that lower its power or health. Whenever you cast a fighter, generate a red icon and destroy all allied fighters.",
+			Description = "This card is immune to effects that lower its power or health. Whenever you cast a fighter, generate a red icon and deal 500 damage to all allied fighters.",
 			["Type"] = "OnAllySummon",
-			["Power"] = {{"Red",1},{"Damage",9999}},
+			["Power"] = {{"Red",1},{"Damage",500}},
 			Target = "Ally",
 		},
 		["Bio"] = "The redcliff took in meeboids as weapons of war. Their patience in training were well-awarded.",
