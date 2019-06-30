@@ -8219,9 +8219,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 4,},
 		["Effect"] = {
 			Name = "Forced sip",
-			Description = "A target fighter loses 200 health and power. Double that fighter's health and power.",
+			Description = "A target fighter loses 200 health and power. Double that fighter's health and power and return it to the owner's hand.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Weaken",200},{"Damage",200},{"MultiplyPower",2},{"MultiplyHealth",2}},
+			["Power"] = {{"Weaken",200},{"Damage",200},{"MultiplyPower",2},{"MultiplyHealth",2},{"Return",030}},
 			Target = "Single",
 		},
 		["Bio"] = "This will make your enemies turn to ice and will last twice! AHAHAHHAHAHA!~~.",
