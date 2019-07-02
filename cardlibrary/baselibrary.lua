@@ -8218,13 +8218,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Green",
 		["Cost"] = {["Green"] = 4,},
 		["Effect"] = {
-			Name = "Forced sip",
+			Name = "Forced Sip",
 			Description = "A target fighter loses 200 health and power. Double that fighter's health and power and return it to the owner's hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",200},{"Damage",200},{"MultiplyPower",2},{"MultiplyHealth",2},{"Return",030}},
 			Target = "Single",
 		},
-		["Bio"] = "This will make your enemies turn to ice and will last twice! AHAHAHHAHAHA!~~.",
+		["Bio"] = "To whomever drinks this potion, prepare for some trouble; only the mightiest of men will have their strength doubled!~",
 	},
 	
 	["Murtic"] = {
