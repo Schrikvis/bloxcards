@@ -4117,9 +4117,9 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Blue"] = 3,},
 		["Effect"] = {
 			Name = "A dodgeball to the legs!",
-			Description = "When this card is cast, swap a target fighter's stats. Set that fighter's lock to 1.",
+			Description = "When this card is cast, swap a target fighter's stats. Then, set that fighter's lock to 1.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Unlock",999},{"Lock",1},{"Swap",030}},
+			["Power"] = {{"Swap",030},{"Unlock",999},{"Lock",1}},
 			Target = "Single",
 			Increase = 1,
 		},
