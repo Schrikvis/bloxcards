@@ -772,7 +772,7 @@ local twentyeleveneighteen = {
 				["Id"] = 3293641945,
 				["Effect"] = {
 					Name = "Nerf",
-					Description = "Cast only if you control at least two bees. Put a Zombee into your hand at the end of each of your turns.",
+					Description = "At the end of your turns, put a Zombee into your hand.",
 					["Type"] = "OnEnd",
 					["Power"] = {{"Add","MrBeeBee2"}},
 					Target = "Ally",
@@ -789,7 +789,7 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Blue"] = 3,["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "Nerf",
-			Description = "Put a Swarm into your hand at the end of each of your turns.",
+			Description = "At the end of your turns, put a Swarm into your hand.",
 			Type = "OnEnd",
 			Power = {{"Add","Swarm"}},
 			Target = "Ally",
@@ -3073,7 +3073,7 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 1,["Green"] = 3,},
 		["Effect"] = {
 			Name = "All is fair in love and duels.",
-			Description = [["Whenever a "Nightmare" is cast, this card gains 400 Health and Power. Put a Nightmare into your opponent's hand."]],
+			Description = [[Whenever a "Nightmare" is cast, this card gains 400 Health and Power. Put a Nightmare into your opponent's hand.]],
 			["Type"] = "OnCast",
 			["Archetype"] = "NightmareCard",
 			["Power"] = {{"Heal",400},{"Strengthen",400},{"Add","Nightmare","Opponent"}},
