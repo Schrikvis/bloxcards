@@ -3221,12 +3221,11 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Blow Dart",
 			Description = "Whenever this card attacks, set the locks on a target fighter to 2.",
-			["Type"] = "OnDestroy",
+			["Type"] = "OnAttack",
 			["Power"] = {{"Unlock",9999},{"Lock",2}},
 			Target = "Single",
 		},
-	
-			["Bio"] = "Shining bright, smacking you with all her might!",
+		["Bio"] = "Shining bright, smacking you with all her might!",
 	},	
 	
 	["xiVirtual"] = {
