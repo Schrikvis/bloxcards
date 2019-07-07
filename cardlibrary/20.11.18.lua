@@ -8008,6 +8008,13 @@ local twentyeleveneighteen = {
 			["Pencil"] = {
 				["Id"] = 1761994050,
 				["Name"] = [["Pencil"Wizard]],
+				["Effect"] = {
+					Name = "P E N C I L",
+					Description = [[When this card attacks and destroys another, summon another "Pencil"Wizard.]],
+					["Type"] = "OnAttackDestroy",
+					["Power"] = {{"Summon","Pencil"}},
+					Target = "Ally",
+				},				
 				["Bio"] = "The real question is, which part of Pencil is the wand? The eraser, or the tip?",
 			},
 		},		
@@ -9375,7 +9382,7 @@ local twentyeleveneighteen = {
 	},		
 	
 	["BrokenToken"] = {
-		["Id"] = 611981310,
+		["Id"] = 3238111527,
 		["Name"] = "BrokenBone",
 		["Health"] = 450,
 		["Power"] = 450,
