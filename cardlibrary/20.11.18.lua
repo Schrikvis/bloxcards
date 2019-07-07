@@ -5601,7 +5601,7 @@ local twentyeleveneighteen = {
 			["Power"] = {{"Summon","Pilot"},{"Summon","Pilot"},{"Unlock",1,"Archetype"}},
 			Target = "Ally",
 		},
-		["Bio"] = "Dear Dun_Goof: THINK THROUGH YOUR CARDS BEFORE YOU MAKE THEM. Signed: The rest of the dev team",
+		["Bio"] = "Hello, this is your pilot speaking. I ask that all passengers buckle their seatbelt and prepare for an impending airstrike.",
 	},
 	
 	["Erik.Cassel"] = {
