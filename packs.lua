@@ -1659,8 +1659,10 @@ local packs = {
 		PriceInRobux = 0;
 		CardsInPack = 3,
 		CardPackId = 1532232174,
-		Description = "This pack contains incredibly rare bling ranging from commissioned alt arts, to pure memery. Requires 30 wins.",
+		Description = "Appearing only on weekends, this pack contains incredibly rare bling ranging from commissioned alt arts, to pure memery. Requires 30 wins.",
 		WinRequirement = 30;
+		DateConstraint = {
+			wday  = {0,6};
 		};
 		Cards = {
 			"Myrmiredon 2",--galaxyflame
