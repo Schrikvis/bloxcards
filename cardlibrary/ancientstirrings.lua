@@ -598,9 +598,9 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "When this card is cast, enemy fighters lose 200 health and power. Then, non-yellow fighters gain 100 health and power. You lose all of your yellow icons. This card can't generate icons.",
+			Description = "When this card is cast, non-yellow fighters gain 100 health and power. Then, enemy fighters lose 200 health and power. You lose all of your yellow icons. This card can't generate icons.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Weaken",200},{"Damage",200},{"Strengthen",100,"NotColorYellow"},{"Heal",100,"NotColorYellow"},{"SetYellow",0,"Ally"}},
+			["Power"] = {{"Strengthen",100,"NotColorYellow"},{"Heal",100,"NotColorYellow"},{"Weaken",200},{"Damage",200},{"SetYellow",0,"Ally"}},
 			Target = "Opponent",
 		},
 		["Bio"] = "What was once a happy toy is now a reminder of the cruelty of Zanzel. You'd be a fool to put this in a Toy deck.",
@@ -1014,7 +1014,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Pumpkin Carver"] = {
-		["Id"] = 1404821685,
+		["Id"] = 540076867,
 		["Name"] = "Pumpkin Carver",
 		["Health"] = 450,
 		["Power"] = 400,
@@ -1035,6 +1035,12 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Pumpkin Bomb"] = {
 		["Id"] = 540076891,
 		["Name"] = "Pumpkin Bomb",
+		["AltCards"] = {
+			["MyrmiredonV2 4"] = {
+				["Id"] = 3293789854,
+				["Bio"] = "What if our lives ARE the bombs? And if it is, why is it taking so long for me to die?",
+			},
+		},
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Common",
@@ -2225,7 +2231,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Toxic Goo"] = {
-		["Id"] = 1297919682,
+		["Id"] = 3299998769,
 		["Name"] = "Toxic Goo",
 		["Health"] = 400,
 		["Power"] =  400,
@@ -2287,7 +2293,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["DairingSpookHead"] = {
-		["Id"] = 632495216,
+		["Id"] = 3299962292,
 		["Name"] = "DairingSpookHead",
 		["Health"] = 800,
 		["Power"] = 0,
@@ -3139,6 +3145,18 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Undead Teddy"] = {
 		["Id"] = 666426765,
 		["Name"] = "Undead Teddy",
+		["AltCards"] = {
+			["Undead Teddy-AntArtist"] = {
+				["Id"] = 3359991451,
+				["Effect"] = {
+					Name = "TEDDY",
+					["Type"] = "OnDeath",
+					["Power"] = {{"Summon","Teddy1-AntArtist"},{"Cost",100},{"Damage",9999,"Self"}},
+					Target = "Ally",
+				},
+				["Bio"] = "Unpopular opinion: Innovative arts are better than art box arts.",
+			},
+		},
 		["Health"] = 100,
 		["Power"] = 100,
 		["Rarity"] = "Common",
@@ -3159,6 +3177,18 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Teddy1"] = {
 		["Id"] = 666426765,
 		["Name"] = "Undead Teddy",
+		["AltCards"] = {
+			["Teddy1-AntArtist"] = {
+				["Id"] = 3359991451,
+				["Effect"] = {
+					Name = "TEDDY",
+					["Type"] = "OnDeath",
+					["Power"] = {{"Summon","Teddy2-AntArtist"},{"Cost",100},{"Damage",9999,"Self"}},
+					Target = "Ally",
+				},
+				["Bio"] = "Unpopular opinion: Undead Teddy is overrated.",
+			},
+		},
 		["Health"] = 100,
 		["Power"] = 100,
 		["Rarity"] = "Token",
@@ -3178,6 +3208,18 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Teddy2"] = {
 		["Id"] = 666426765,
 		["Name"] = "Undead Teddy",
+		["AltCards"] = {
+			["Teddy2-AntArtist"] = {
+				["Id"] = 3359991451,
+				["Effect"] = {
+					Name = "TEDDY",
+					["Type"] = "OnDeath",
+					["Power"] = {{"Summon","Teddy3-AntArtist"},{"Cost",100},{"Damage",9999,"Self"}},
+					Target = "Ally",
+				},
+				["Bio"] = "Unpopular opinion: Drawn arts are better than Roblox arts done in Blender.",
+			},
+		},
 		["Health"] = 100,
 		["Power"] = 100,
 		["Rarity"] = "Token",
@@ -3197,6 +3239,12 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Teddy3"] = {
 		["Id"] = 666426765,
 		["Name"] = "Undead Teddy",
+		["AltCards"] = {
+			["Teddy3-AntArtist"] = {
+				["Id"] = 3359991451,
+				["Bio"] = "Unpopular opinion: Actual artists that can draw are obviously the best artists in Blox Cards's art department.",
+			},
+		},
 		["Health"] = 100,
 		["Power"] = 100,
 		["Rarity"] = "Token",

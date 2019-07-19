@@ -9,7 +9,7 @@ local packs = {
 		Description = "Curated by the best players of the game, Exine contains only good cards.",
 		Cards = {
 			-- Important Staples; don't take out of this pack.
-			"H-Thunder",--Lightning Blast
+			"H-Thunder", --Lightning Blast
 			"Thunder Bolt",
 			"Luck o The Lobsters",
 			"Mass Epidemic",
@@ -158,6 +158,9 @@ local packs = {
 		CardPackId = 842435184, --721400845,
 		Description = "Red is the colour of power, ambition, and control. Dominion packs contain cards that cost red!",
 		Cards = {
+			"BenCanova1",
+			"Julez_X",
+			"Treas0ner",
 			"Boom2",
 			"Sauske2000",
 			"Lord Westinghouse",
@@ -598,6 +601,10 @@ local packs = {
 		CardPackId = 721399466,
 		Description = "Blue is the colour of logic, order, and structure. Thought packs contain cards that cost blue!",
 		Cards = {
+			"Darklord1506",
+			"DigitalSon",
+			"Mlgloga",
+			"Wesker202",
 			"Gasturas",
 			"Grand Couch, the Slumbering",
 			"Celestial of Moon",
@@ -1147,6 +1154,7 @@ local packs = {
 			"Arte71",
 			"Jimmyin1",
 			-- PAST THIS POINT IS FOR WHITE CARDS AND JOKE CARDS ONLY. I'M LOOKING AT YOU, BLITZ.
+			"Bling Noob",
 			"Shirozaru",
 			"Construction",
 			"Celestials of Chaos and Fate",
@@ -1647,14 +1655,14 @@ local packs = {
 	{
 		Name = "Innovative", --those meme alts or something i guess
 		Hidden = false;
-		PriceInBloxBux = 1337,
+		PriceInBloxBux = 420,
 		PriceInRobux = 0;
-		CardsInPack = 1,
+		CardsInPack = 3,
 		CardPackId = 1532232174,
-		Description = "Appearing only on the 1st, 12th, and 23rd of a month, the Innovative pack contains incredibly rare bling. Requires 100 wins.",
-		WinRequirement = 100;
+		Description = "Appearing only on weekends, this pack contains incredibly rare bling ranging from commissioned alt arts, to pure memery. Requires 30 wins.",
+		WinRequirement = 30;
 		DateConstraint = {
-			day = {1,12,23};
+			wday  = {0,6};
 		};
 		Cards = {
 			"Myrmiredon 2",--galaxyflame
@@ -1673,14 +1681,18 @@ local packs = {
 			"Yoshi",
 			"Pencil",
 			"Histor, Memecraft Slayer",
-			--26/01/2019 : Bees have been temporarily removed. Getting Innovative packs has been a pain due to how common they are/ugly they are.
-			--"IcyBee",
-			--"Bee Ninja",
-			--"Newbee",
-			--"Beestor",
-			--"Tom's Bees",
-			--"MrBeeBee2",
-			--"Beeskateer",
+			"RukatuKDHToken",--overseer profit
+			"Myrmiredon 3",--baby noob
+			"MyrmiredonV2 3",--mass epbeedemic
+			"Myrmiredon 4",--Lunat_C
+			"MyrmiredonV2 4",--bomb pumpkin thing
+			"IcyBee",
+			"Bee Ninja",
+			"Newbee",
+			"Beestor",
+			"Tom's Bees",
+			"MrBeeBee2",
+			"Beeskateer",
 			"WarnomBearkins",
 		},
 	};
