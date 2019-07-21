@@ -778,7 +778,7 @@ local twentyeleveneighteen = {
 				["Id"] = 3293641945,
 				["Effect"] = {
 					Name = "Nerf",
-					Description = "Cast only if you control at least two bees. Put a Zombee into your hand at the end of each of your turns.",
+					Description = "At the end of your turns, put a Zombee into your hand.",
 					["Type"] = "OnEnd",
 					["Power"] = {{"Add","MrBeeBee2"}},
 					Target = "Ally",
@@ -795,7 +795,7 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Blue"] = 3,["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "Nerf",
-			Description = "Put a Swarm into your hand at the end of each of your turns.",
+			Description = "At the end of your turns, put a Swarm into your hand.",
 			Type = "OnEnd",
 			Power = {{"Add","Swarm"}},
 			Target = "Ally",
@@ -3101,7 +3101,7 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 1,["Green"] = 3,},
 		["Effect"] = {
 			Name = "All is fair in love and duels.",
-			Description = [["Whenever a "Nightmare" is cast, this card gains 400 Health and Power. Put a Nightmare into your opponent's hand."]],
+			Description = [[Whenever a "Nightmare" is cast, this card gains 400 Health and Power. Put a Nightmare into your opponent's hand.]],
 			["Type"] = "OnCast",
 			["Archetype"] = "NightmareCard",
 			["Power"] = {{"Heal",400},{"Strengthen",400},{"Add","Nightmare","Opponent"}},
@@ -3535,18 +3535,18 @@ local twentyeleveneighteen = {
 	["ROBLOXADOR!!"] = {
 		["Id"] = 411844497,
 		["Name"] = "ROBLOXADOR!!",
-		["Health"] = 1050,
-		["Power"] = 550,
+		["Health"] = 1500,
+		["Power"] = 100,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 4,["Red"] = 5,},
 		["Effect"] = {
 			Name = "POWER",
-			Description = "When this card is cast, deal 500 damage to both players. Both players draw two cards. All fighters gain 100 heath.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Inflict",500},{"Draw",2},{"Heal",100}},
-			Target = "All",
+			Description = "Whenever this card attacks, it gains 400 Power.",
+			["Type"] = "OnAttack",
+			["Power"] = {{"Strengthen",400}},
+			Target = "Self",
 		},
 		["Bio"] = "IT'S TIME TO RUMBLE.",
 	},			
@@ -4039,7 +4039,7 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 4,},
 		["Effect"] = {
 			Name = "Shatter",
-			Description = "When this card is targeted, set its stats to 750/750.",
+			Description = "When this card is targeted, reset its stats.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"SetPower",750},{"SetHealth",750}},
 			Target = "Self",
@@ -4145,9 +4145,9 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Blue"] = 3,},
 		["Effect"] = {
 			Name = "A dodgeball to the legs!",
-			Description = "When this card is cast, swap a target fighter's stats. Set that fighter's lock to 1.",
+			Description = "When this card is cast, swap a target fighter's stats. Then, set that fighter's lock to 1.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Unlock",999},{"Lock",1},{"Swap",030}},
+			["Power"] = {{"Swap",030},{"Unlock",999},{"Lock",1}},
 			Target = "Single",
 			Increase = 1,
 		},
@@ -5633,7 +5633,7 @@ local twentyeleveneighteen = {
 			["Power"] = {{"Summon","Pilot"},{"Summon","Pilot"},{"Unlock",1,"Archetype"}},
 			Target = "Ally",
 		},
-		["Bio"] = "Dear Dun_Goof: THINK THROUGH YOUR CARDS BEFORE YOU MAKE THEM. Signed: The rest of the dev team",
+		["Bio"] = "Hello, this is your pilot speaking. I ask that all passengers buckle their seatbelt and prepare for an impending airstrike.",
 	},
 	
 	["Erik.Cassel"] = {
@@ -7948,7 +7948,7 @@ local twentyeleveneighteen = {
 	["rhomlevko"] = {
 		["Id"] = 504390303,
 		["Name"] = "rhomlevko",
-		["Health"] = 500,
+		["Health"] = 700,
 		["Power"] = 200,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Dash",
@@ -8040,8 +8040,16 @@ local twentyeleveneighteen = {
 			},
 			
 			["Pencil"] = {
-				["Id"] = 3471760012,
-				["Bio"] = "Don’t mess with the card game on motorcycle gang!",
+				["Id"] = 1761994050,
+				["Name"] = [["Pencil"Wizard]],
+				["Effect"] = {
+					Name = "P E N C I L",
+					Description = [[When this card attacks and destroys another, summon another "Pencil"Wizard.]],
+					["Type"] = "OnAttackDestroy",
+					["Power"] = {{"Summon","Pencil"}},
+					Target = "Ally",
+				},				
+				["Bio"] = "The real question is, which part of Pencil is the wand? The eraser, or the tip?",
 			},
 		},		
 		["Health"] = 500,
@@ -9409,7 +9417,7 @@ local twentyeleveneighteen = {
 	},		
 	
 	["BrokenToken"] = {
-		["Id"] = 611981310,
+		["Id"] = 3238111527,
 		["Name"] = "BrokenBone",
 		["Health"] = 450,
 		["Power"] = 450,

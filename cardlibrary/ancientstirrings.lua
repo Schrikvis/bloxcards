@@ -198,18 +198,18 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Dash",
 		["Color"] = "Blue", 
 		["Cost"] = {["Blue"] = 1,},
-		["Requirement"] = {"AllyActionStorm",7,9999},
+		["Requirement"] = {"AllyActionStorm",5,999},
 		["Archetype"] = "Lunar",
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "At the end of this turn, if you've cast 7 action or terrain spells after this one, deal 1250 damage to the opponent.",
+			Description = "Cast only if you've cast 5 actions this turn. Unlock all allies, give them 200 health and draw two cards.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Summon","Gambit Reminder"},{"Summon","Gambit 1"}},
+			["Power"] = {{"Unlock",999},{"Heal",200},{"Draw",2}},
 			Target = "Ally",
 		},
 		["Bio"] = "Grapeshots ruined, Tendrils of Agony depleted. All that is left is the rush.",		
 	},
-	
+	--woo look at all these expired tokens below
 	["Gambit Reminder"] = {
 		["Id"] = 540076783,
 		["Name"] = "Reminder: Stormchaser's Gambit",
@@ -438,7 +438,7 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "Grapeshots ruined, Tendrils of Agony depleted. All that is left is the rush.",		
 	},
-	
+	--end of expired tokens
 	["Eisenhower, the Alchemist"] = {
 		["Id"] = 662115685,
 		["Name"] = "Eisenhower, the Alchemist",
@@ -492,13 +492,13 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Yellow", 
-		["Cost"] = {["Yellow"] = 6,},
+		["Cost"] = {["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "Pyrotechnics",
-			Description = "A target fighter gains 400 health and power. Your opponent gains 400 life.",
+			Description = "Your opponent draws a card. Return Bribery to your hand and end the turn.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Strengthen",400},{"Heal",400},{"Inflict",-400,"Opponent"}},
-			Target = "Single",
+			["Power"] = {{"Draw",1,"Opponent"},{"Add","Bribery"},{"Summon","Demonic Godbeast"},{"EndTurn"}},
+			Target = "Ally",
 		},
 		["Bio"] = "Eisenhower was struck a deal with Hallow, hearing his wish to resurrect his love. Hallow agreed to meet at Thursday night by his tombstone.",
 	},
