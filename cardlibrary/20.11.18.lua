@@ -282,7 +282,7 @@ local twentyeleveneighteen = {
 		["AttackEffect"] = "Thunder",
 		["Archetype"] = "Monkey",
 		["Color"] = "Green",
-		["Cost"] = {["Green"] = 2},
+		["Cost"] = {["Neutral"] = 2},
 		["Effect"] = {
 			Name = "Revival",
 			Description = "Whenever this card attacks, increase the power of all Monkeys by 200.",
@@ -306,7 +306,7 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Red"] = 4,["Neutral"] = 4},
 		["Effect"] = {
 			Name = "Terrorise",
-			Description = "When this card is cast, deal 300 damage to a target fighter. At the end of your turn, destroy all enemy fighters with 150 or less health.",
+			Description = "When this card is cast, deal 300 damage to a target fighter. At the end of your turns, check all fighters with 150 or less health.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",300,"Single"},{"Summon","MrDoombringerToken","Ally"},{"Damage",9999,"Self"}},
 			Target = "Opponent",
@@ -325,9 +325,9 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Red"] = 4,["Neutral"] = 4},
 		["Effect"] = {
 			Name = "Terrorise",
-			Description = "At the end of your turn, destroy all enemy fighters with 150 or less health.",
+			Description = "At the end of your turns, check all enemy fighters with 150 or less health.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Damage",150},{"Heal",150}},
+			["Power"] = {{"CheckHealth",150}},
 			Target = "Opponent",
 		},
 		["Bio"] = "Slamming players into banland since 1992.",
@@ -345,9 +345,9 @@ local twentyeleveneighteen = {
 			["Favored Godbeast"] = {
 				["Effect"] = {
 					Name = "Divine Ruination",
-					Description = "Can't attack. Doesn't generate icons when discarded. At the end of your turn, destroy all enemy fighters and this fighter. Fading.",
+					Description = "Can't attack. Immune to all non-lock efects. At the end of your turn, deal 10000 damage to all enemy fighters and this fighter. Fading.",
 					["Type"] = "OnEnd",
-					["Power"] = {{"Damage",9999,"Self"},{"Destroy"}},
+					["Power"] = {{"Damage",10000},{"Destroy",10000,"Self"}},
 					["Target"] = "Opponent",
 				},
 			},
@@ -360,6 +360,12 @@ local twentyeleveneighteen = {
 		["Token"] = true,
 		["Fading"] = true,
 		["TokenDiscard"] = true,
+		["WeakenImmune"] = true,
+		["DestroyImmune"] = true,
+		["SetImmune"] = true,
+		["ReturnImmune"] = true,
+		["SwapImmune"] = true,
+		["CheckImmune"] = true,
 		["Color"] = "Neutral",
 		["Cost"] = {["Neutral"] = 0},
 		["Effect"] = {
@@ -501,7 +507,7 @@ local twentyeleveneighteen = {
 
 	["Grand Meeboid Totem"] = {
 		["Id"] = 3164489200,
-		["Name"] = "Grand Totem",
+		["Name"] = "Grand Vitality Totem",
 		["AltCards"] = {
 			["meebtotem-ArtV"] = {
 				["Id"] = 661049837,
@@ -525,7 +531,7 @@ local twentyeleveneighteen = {
 			["Power"] = {{"Add","Infinite Wishes","Ally"}},
 			Target = "Archetype",
 		},
-		["Bio"] = "Meeboids follow a multitude of religions. For those not interested in destroying humanity through Titano-ism, they follow Totem-ism.",
+		["Bio"] = "A forgotten religious heirloom, still filled with potent life-energy. Once worshipped by peace-loving, dark creatures. It's not certain why these creatures stopped worshipping the Totem...",
 	},
 	
 	["Grand Pirate King"] = {
@@ -693,7 +699,7 @@ local twentyeleveneighteen = {
 	},
 	
 	["Bee"] = {
-		["Id"] = 338188697,
+		["Id"] = 3471718886,
 		["Name"] = "Bee",
 		["AltCards"] = {
 			["Bee Ninja"] = {
@@ -1143,6 +1149,13 @@ local twentyeleveneighteen = {
 	["HatdaCat"] = {
 		["Id"] = 3164489753,
 		["Name"] = "HatdaCat",
+		["AltCards"] = {							
+			["luckygamer2003"] = {
+				["Name"] = "luckygamer2003",
+				["Id"] = 3471751377,					
+				["Bio"] = "The colorful fireworks are STUNNING to watch, aren't they? This card is an alternate version of HatdaCat.",
+			},
+		},	
 		["Archetype"] = "Police",
 		["Health"] = 1250,
 		["Power"] = 250,
@@ -1235,12 +1248,12 @@ local twentyeleveneighteen = {
 	},	
 	
 	["WarbearNomkins"] = {
-		["Id"] = 358596502,
+		["Id"] = 3472453932,
 		["Name"] = "WarbearNomkins",
 		AltCards = {
 			["WarnomBearkins"] = {
-				["Id"] = 1340258846,
-				["Bio"] = "In Soviet Russia, bear ride you!",
+				["Id"] = 3472453204,
+				["Bio"] = "Milkmancing is a REAL school of magic, okay?",
 			},
 		},
 		["Health"] = 500,
@@ -1256,7 +1269,7 @@ local twentyeleveneighteen = {
 			["Power"] = {{"Heal",100}},
 			Target = "Ally",
 		},
-		["Bio"] = [[His fighting tactic is also known as "Hyper Aggressive Hibernation"]],
+		["Bio"] = [[Former Blox Cards artist, WarbearNomkins' arts will leave you saying "What the-"]],
 	},	
 	
 	["mickymack"] = {
@@ -1405,7 +1418,7 @@ local twentyeleveneighteen = {
 	},		
 	
 	["PEEPSTERS"] = {
-		["Id"] = 2810830243,
+		["Id"] = 3472387514,
 		["Name"] = "PEEPSTERS",
 		["Health"] = 150,
 		["Power"] = 150,
@@ -1496,7 +1509,7 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Blue"] = 3,["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Paranormanbiggestfan attack w/ Paranormanbiggestfan.",
-			Description = "Whenever this card attacks and destroys another, draw 2 cards.",
+			Description = "Whenever this card attacks and destroys another, draw two cards.",
 			["Type"] = "OnAttackDestroy",
 			["Power"] = "Draw",
 			Target = "Ally",
@@ -1593,6 +1606,14 @@ local twentyeleveneighteen = {
 	["Skullsten"] = {
 		["Id"] = 2857413843,
 		["Name"] = "Skullsten",
+		["AltCards"] = {
+			["SANS GAMING"] = {
+				["Id"] = 3476971083,
+				["Rarity"] =  "Token",
+				["Name"] = "TO BE WORKED",
+				["Bio"] = "Communication errors ahoy.",
+			},
+		},
 		["Health"] = 800,
 		["Power"] = 450,
 		["Rarity"] = "Uncommon",
@@ -2047,9 +2068,9 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Red"] = 8,},
 		["Effect"] = {
 			Name = "Passive Aggressive Punishment",
-			Description = "At the end of your turn, destroy all fighters with 300 or less health or power.",
+			Description = "At the end of your turns, check all fighters with 300 or less health of power.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Damage",300},{"Heal",300},{"Swap",030},{"Damage",300},{"Heal",300},{"Swap",030}},
+			["Power"] = {{"CheckHealth",300},{"CheckPower",300}},
 			Target = "All",
 		},
 		["Bio"] = "Known forumer who became a moderator, although some users are skeptical of him in general, his passive aggressive nature will haunt you.",
@@ -2058,7 +2079,7 @@ local twentyeleveneighteen = {
 	["Dr.Fave"] = {
 		["Id"] = 893397432,
 		["Name"] = "Dr.Fave",
-		["AltCards"] = {							
+		["AltCards"] = {	
 			["Dr.Fave-Val"] = {
 				["Id"] = 893398482,
 				["Name"] = "Love Doctor Fave",						
@@ -2130,12 +2151,12 @@ local twentyeleveneighteen = {
 				["Bio"] = "The floor is Meepcity.",
 			},
 		},
-		["Health"] = 900,
+		["Health"] = 1200,
 		["Power"] = 200,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Yellow",
-		["Cost"] = {["Neutral"] = 4,["Red"] = 2,["Yellow"] = 3,},
+		["Cost"] = {["Neutral"] = 4,["Red"] = 2,["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Overgrown",
 			Description = "At the end of your turns, all allied fighters gain 100 health.",
@@ -2647,6 +2668,13 @@ local twentyeleveneighteen = {
 	["tbradm"] = {
 		["Id"] = 1939172983,
 		["Name"] = "tbradm",
+		["AltCards"] = {
+			["parkerest"] = {
+				["Id"] = 3479496534,
+	            ["Name"] = "parkerest",
+				["Bio"] = "parkerest is a notable philanthropist, just ask him for some R$ and he'll be happy to give you some! Too bad all you're getting this time is pain.",
+			},
+		},
 		["Health"] = 600,
 		["Power"] = 200,
 		["Rarity"] = "Epic",
@@ -3310,10 +3338,10 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "Overgrown",
-			Description = "Haste. Whenever this card attacks, destroy all enemy fighters with 150 health or less, then deal 50 damage to all enemy fighters.",
+			Description = "Haste. Whenever this card attacks, check all fighters with 150 or less health, then deal 100 damage to all fighters.",
 			["Type"] = "OnAttack",
-			["Power"] = {{"Damage",150},{"Heal",100}},
-			Target = "Opponent",
+			["Power"] = {{"CheckHealth",150},{"Damage",100}},
+			Target = "All",
 		},
 		["Bio"] = "Bam!",
 	},			
@@ -4004,7 +4032,7 @@ local twentyeleveneighteen = {
 			},
 		},
 		["Health"] = 750,
-		["Power"] = 500,
+		["Power"] = 750,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Blue",
@@ -4041,7 +4069,7 @@ local twentyeleveneighteen = {
 	["Prestwick"] = {
 		["Id"] = 3238125976,
 		["Name"] = "Prestwick",
-		["Health"] = 300,
+		["Health"] = 500,
 		["Power"] = 800,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Lightning",
@@ -4089,11 +4117,11 @@ local twentyeleveneighteen = {
 		["Id"] = 413939784,
 		["Name"] = "Rainbowjewelninga785",
 		["Health"] = 350,
-		["Power"] = 350,
+		["Power"] = 250,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Green",
-		["Cost"] = {["Neutral"] = 2,["Green"] = 1,},
+		["Cost"] = {["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Vitality Potion",
 			Description = "When this card is cast, summon a random Crystal. Target it.",
@@ -4194,11 +4222,9 @@ local twentyeleveneighteen = {
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Green",
 		["Cost"] = {["Neutral"] = 2,["Green"] = 8,},
-		["DestroyImmune"] = true,
-		["ReturnImmune"] = true,
 		["Effect"] = {
 			Name = "Assassinate",
-			Description = "When this card is cast, destroy a target fighter. This card can't be destroyed or returnt to its owner's hand.",
+			Description = "When this card is cast, destroy a target fighter.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Destroy"}},
 			Target = "Single",
@@ -4336,13 +4362,15 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Neutral"] = 2,["Red"] = 10,},
 		["Effect"] = {
 			Name = "Double Bleeding",
-			Description = "Whenever you lose life, Deal 400 damage to all other fighters and the opponent.",
+			Description = "Whenever you lose life, give all other fighters 50 health, then halve their health. Deal 400 damage to your opponent.",
 			["Type"] = "OnHealthLoss",
-			["Power"] = {{"Heal",400,"Self"},{"Damage",400},{"Inflict",400,"Opponent"}},
+			["Power"] = {{"Heal",50},{"Damage",50,"Self"},{"MultiplyHealth",2,"Self"},{"MultiplyHealth",0.5},{"Inflict",400,"Opponent"}},
 			Target = "All",
 		},
 		["Bio"] = "Watch for his poisonous gas.",
 	},	
+	
+
 	
 	["Gravity Collapse"] = {
 		["Id"] = 415734168,
@@ -4688,8 +4716,8 @@ local twentyeleveneighteen = {
 
 	
 	["Xor's Lab"] = {
-		["Id"] = 423592797,
-		["Name"] = "Xor's Lab",
+		["Id"] = 3471767172,
+		["Name"] = "Iron Café",
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Rare",
@@ -4705,7 +4733,7 @@ local twentyeleveneighteen = {
 			["Power"] = {{"Add","Targeting Blip"}},
 			Target = "Opponent",
 		},
-		["Bio"] = "If I time travel, I might step on a butterfly. That would be sad.",
+		["Bio"] = "Crack open a cold Bloxy Cola with the boys.",
 	},
 	
 	["Monstrum Freezer"] = {
@@ -5262,7 +5290,7 @@ local twentyeleveneighteen = {
 	},
 	
 	["Luckymaxer"] = {
-		["Id"] = 603507745,
+		["Id"] = 3471752253,
 		["Name"] = "Luckymaxer",
 		["Health"] = 500,
 		["Power"] = 400,
@@ -5282,8 +5310,8 @@ local twentyeleveneighteen = {
 	},
 	
 	["Mechanical Spider"] = {
-		["Id"] = 430969370,
-		["Name"] = "Mechanical Spider",
+		["Id"] = 3471752910,
+		["Name"] = "Mechanical Spiders",
 		["Health"] = 200,
 		["Power"] = 200,
 		["Rarity"] = "Token",
@@ -5355,9 +5383,9 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Neutral"] = 5,},
 		["Effect"] = {
 			Name = "Conflux",
-			Description = "Haste. Cast only if your opponent controls at least 7 fighters. When you do, Destroy all enemy fighters.",
+			Description = "Haste. Cast only if your opponent controls at least 7 fighters. When you do, deal 4000 damage to all enemy fighters.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",9999}},
+			["Power"] = {{"Damage",4000}},
 			Target = "Opponent",
 		},
 		["Bio"] = "Creator of the original ultimate power. Here to destroy all copiers and token spammers.",
@@ -5433,12 +5461,12 @@ local twentyeleveneighteen = {
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Neutral",
 		["Archetype"] = "Noob",
-		["Cost"] = {["Yellow"] = 2,},
+		["Cost"] = {["Neutral"] = 2,},
 		["Effect"] = {
 			Name = "Foecal Incontinence",
 			Description = "Destroy all Noobs.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",9999}},
+			["Power"] = {{"Destroy",9999}},
 			Target = "Archetype",
 		},
 		["Bio"] = "There are five cards this works on, but noobs are summoned by an additional two others. Only three of the seven affected cards are good. Have fun~",
@@ -5460,12 +5488,15 @@ local twentyeleveneighteen = {
 		["Color"] = "Red",
 		["WeakenImmune"] = true,
 		["DamageImmune"] = true,
+		["SetImmune"] = true,
+		["DestroyImmune"] = true,
+		["ReturnImmune"] = true,
 		["Cost"] = {["Red"] = 5,},
 		["Effect"] = {
 			Name = "Double Life",
-			Description = "At the end of your turns, double the power of all allied fighters. You lose 1000 life. This card is immune to effects that lower its Health or Power.",
+			Description = "At the end of your turns, double the power of all allied fighters. You lose 2000 life. This card can't be returnt, destroyed, or have its stats set or lowered.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"MultiplyPower",2},{"Cost",1000}},
+			["Power"] = {{"MultiplyPower",2},{"Cost",2000}},
 			Target = "Ally",
 		},
 		["Bio"] = "Even the charismatic and unbreakable can fall to depression.",
@@ -5546,22 +5577,23 @@ local twentyeleveneighteen = {
 			},
 		},	
 		["Health"] = 700,
-		["Power"] = 600,
+		["Power"] = 700,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Punch1",
-		["Archetype"] = "Meeboid",
 		["Color"] = "Green",
 		["WeakenImmune"] = true,
 		["DamageImmune"] = true,
 		["Cost"] = {["Red"] = 3,},
+		["Requirement"] = {"AllyBoard",0,1},
+		["Stealth"] = true,
 		["Effect"] = {
-			Name = "Capture",
-			Description = "This card is immune to effects that lower its power or health. Whenever you cast a fighter, generate a red icon and destroy all allied fighters.",
+			Name = "Nature's Reconciliation",
+			Description = "Cast only if you control no fighters. Whenever you cast an allied fighter, destroy it. This doesn't trigger effects when cast and is immune to effects that lower its health or power.",
 			["Type"] = "OnAllySummon",
-			["Power"] = {{"Red",1},{"Damage",9999}},
+			["Power"] = {{"Destroy",030,"Aggressor"}},
 			Target = "Ally",
 		},
-		["Bio"] = "The redcliff took in meeboids as weapons of war. Their patience in training were well-awarded.",
+		["Bio"] = "",
 	},
 	
 	["Training Dummy"] = {
@@ -6175,9 +6207,9 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Neutral"] = 1, ["Yellow"] = 6,},
 		["Effect"] = {
 			Name = "Trout Slap",
-			Description = "When this card is cast, destroy all other fighters. Your opponent draws two cards and generates 4 white icons. End the turn.",
+			Description = "When this card is cast, deal 4000 damage to all other fighters. Your opponent draws two cards and generates 4 white icons. End the turn.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Heal",9999,"Self"},{"Damage",9999},{"Draw",2,"Opponent"},{"EndTurn",1,"Ally"},{"Neutral",4,"Opponent"}},
+			["Power"] = {{"Heal",4000,"Self"},{"Damage",4000},{"Draw",2,"Opponent"},{"EndTurn",1,"Ally"},{"Neutral",4,"Opponent"}},
 			Target = "All",
 		},
 		["Bio"] = "I'm sorry I caused the apocalypse. Have some gold.",
@@ -6923,7 +6955,7 @@ local twentyeleveneighteen = {
 			["Power"] = {{"Summon","Pleasure Maker"},{"Strengthen",150},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
-		["Bio"] = "THE ECHOES of our first great meeting, in the banquet hall of the Hofbrauhaus on February 24th, 1920, had not yet died away when we began preparations for our next meeting. Up to that time we had to consider carefully the venture of holding a small meeting every month or at most every fortnight in a city like Munich; but now it was decided that we should hold a mass meeting every week. I need not say that we anxiously asked ourselves on each occasion again and again: Will the people come and will they listen? Personally I was firmly convinced that if once they came they would remain and listen. ",
+		["Bio"] = "I hate mondays.",
 	},
 
 	["Pleasure Maker"] = {
@@ -6958,10 +6990,11 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Yellow"] = 3,},
 		["WeakenImmune"] = true,
 		["DamageImmune"] = true,
+		["DestroyImmune"] = true,
 		["Archetype"] = "Masant",
 		["Effect"] = {
 			Name = "Level Up!",
-			Description = "At the end of your turns, summon a noob, increase the power of all fighters by 200, then unlock all allied fighters. This card is immune to effects that lower its health or power. Fading.",
+			Description = "At the end of your turns, summon a noob, increase the power of all fighters by 200, then unlock all allied fighters. This card is immune to effects that lower its health or power and can't be destroyed. Fading.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Summon","Noob"},{"Strengthen",200,"All"},{"Unlock",999}},			
 			Target = "Ally",
@@ -7317,7 +7350,7 @@ local twentyeleveneighteen = {
 	},
 
 	["Luck Warrior of Pure Gold"] = {
-		["Id"] = 677333821,
+		["Id"] = 3472385462,
 		["Name"] = "Luck Warrior of Pure Gold",
 		["Health"] = 50,
 		["Power"] = 50,
@@ -7572,12 +7605,13 @@ local twentyeleveneighteen = {
 		["Color"] = "Red",
 		["Charge"] = true,
 		["CounterAttackBlock"] = true,
+		["DestroyImmune"] = true,
 		["Cost"] = {["Neutral"] = 3,["Red"] = 3,},
 		["Effect"] = {
 			Name = "Sentry Heart",
-			Description = "Haste. Can't be counterattacked. Cast only if you control a dwarf. If you do, destroy all other allied fighters.",
+			Description = " Cast only if you control a dwarf. When you do, destroy all other allied fighters. Haste. Can't be counterattacked or destroyed.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Heal",9999,"Self"},{"Damage",9999}},
+			["Power"] = {{"Destroy",9999}},
 			Target = "Ally",
 		},
 		["Bio"] = "ALPHA STATION. ACTIVATED.",
@@ -7596,9 +7630,9 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Red"] = 4,},
 		["Effect"] = {
 			Name = "Sentry Heart",
-			Description = "Haste. After this card attacks, destroy all other allied fighters.",
+			Description = "Haste. After this card attacks, deal 4000 damage to all other allied fighters.",
 			["Type"] = "OnAttackEnd",
-			["Power"] = {{"Heal",9999,"Self"},{"Damage",9999}},
+			["Power"] = {{"Heal",4000,"Self"},{"Damage",4000}},
 			Target = "Ally",
 		},
 		["Bio"] = "BETA STATION. ONLINE.",
@@ -7639,9 +7673,9 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Neutral"] = 3,["Red"] = 5,},
 		["Effect"] = {
 			Name = "Sentry Heart",
-			Description = "Haste. Can't be counterattacked. Cast only if you control a dwarf. After this card attacks, destroy all other allied fighters and increase the health of this card by 150.",
+			Description = "Cast only if you control a dwarf. After this card attacks, deal 4000 damage to all other allied fighters and increase the health of this card by 150. Haste. Can't be counterattacked.",
 			["Type"] = "OnAttackEnd",
-			["Power"] = {{"Heal",9999,"Self"},{"Damage",9999},{"Heal",150,"Self"}},
+			["Power"] = {{"Heal",4000,"Self"},{"Damage",4000},{"Heal",150,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = "GAMMA STATION. OVERCLOCKING.",
@@ -7660,9 +7694,9 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Red"] = 8,},
 		["Effect"] = {
 			Name = "Sentry Heart",
-			Description = "Haste. After this card attacks, destroy all other allied fighters and draw 2 cards.",
+			Description = "Haste. After this card attacks, deals 800 damage to all other allied fighters and draw 2 cards.",
 			["Type"] = "OnAttackEnd",
-			["Power"] = {{"Heal",9999,"Self"},{"Damage",9999},{"Draw",2}},
+			["Power"] = {{"Heal",800,"Self"},{"Damage",800},{"Draw",2}},
 			Target = "Ally",
 		},
 		["Bio"] = "MAX STATION. OVERTIME.",
@@ -7821,7 +7855,7 @@ local twentyeleveneighteen = {
 			Name = "Don't sloth me",
 			Description = "Whenever your opponent casts a fighter, destroy that fighter and Mohawk.",
 			["Type"] = "OnEnemySummon",
-			["Power"] = {{"Damage",9999},{"Damage",9999,"Self"}},
+			["Power"] = {{"Destroy",9999},{"Destroy",9999,"Self"}},
 			Target = "Aggressor",
 		},
 		["Bio"] = "I will flay the skin from your flesh and the flesh from your bones and scrape your bones dry. And even then, you will not have suffered enough. :^)",
@@ -7892,9 +7926,9 @@ local twentyeleveneighteen = {
 		["Power"] = 100,
 		["AltCards"] = {
 			["Wekov"] = {
-				["Id"] = 2244572676,
+				["Id"] = 3471772681,
 				["Name"] = "Wekov",
-				["Bio"] = "Creator of Gyro, a terrifying deck, responsible for many card nerfs. Also known as Nukoe, 0L7, Azyte, Odas, Odasity and ClothingSpammer...did we forget any other banned account?",
+				["Bio"] = "Creator of Gyro, a terrifying deck, responsible for many card nerfs. Also known as Nukoe, 0L7, Azyte, Odas, Odasity and ClothingSpammer...did we forget any other banned account? This card is an alternate art of __________",
 			},
 		},
 		["Rarity"] = "Uncommon",
@@ -7989,7 +8023,7 @@ local twentyeleveneighteen = {
 	},
 
 	["PencilWizard"] = {
-		["Id"] = 511755352,
+		["Id"] = 3471759452,
 		["Name"] = "PencilWizard",
 		["AltCards"] = {
 			["PencilWizard-Val"] = {
@@ -8006,9 +8040,8 @@ local twentyeleveneighteen = {
 			},
 			
 			["Pencil"] = {
-				["Id"] = 1761994050,
-				["Name"] = [["Pencil"Wizard]],
-				["Bio"] = "The real question is, which part of Pencil is the wand? The eraser, or the tip?",
+				["Id"] = 3471760012,
+				["Bio"] = "Don’t mess with the card game on motorcycle gang!",
 			},
 		},		
 		["Health"] = 500,
@@ -8456,7 +8489,7 @@ local twentyeleveneighteen = {
 	},
 	
 	["Games"] = {
-		["Id"] = 556058880,
+		["Id"] = 3471739821,
 		["Name"] = "Games",
 		["Health"] = 300,
 		["Power"] = 300,
@@ -8475,7 +8508,7 @@ local twentyeleveneighteen = {
 	},	
 	
 	["Linked Sword"] = {
-		["Id"] = 556059305,
+		["Id"] = 3471721036,
 		["Name"] = "Linked Sword",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -8495,7 +8528,7 @@ local twentyeleveneighteen = {
 	},		
 	
 	["Trowel"] = {
-		["Id"] = 556058515,
+		["Id"] = 3471723411,
 		["Name"] = "Trowel",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -8515,7 +8548,7 @@ local twentyeleveneighteen = {
 	},		
 	
 	["Rocket Launcher"] = {
-		["Id"] = 556059978,
+		["Id"] = 3471721627,
 		["Name"] = "Rocket Launcher",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -8535,7 +8568,7 @@ local twentyeleveneighteen = {
 	},	
 	
 	["Superball"] = {
-		["Id"] = 556059832,
+		["Id"] = 3471722657,
 		["Name"] = "Superball",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -8555,7 +8588,7 @@ local twentyeleveneighteen = {
 	},		
 	
 	["Slingshot"] = {
-		["Id"] = 556059071,
+		["Id"] = 3471722164,
 		["Name"] = "Slingshot",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -8646,7 +8679,7 @@ local twentyeleveneighteen = {
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Slash",
 		["CounterAttackBlock"] = true,
-		["StrenghtenImmune"] = true,
+		["StrengthenImmune"] = true,
 		["SetImmune"] = true,
 		["Color"] = "Green",
 		["Cost"] = {["Neutral"] = 1,["Green"] = 2,},
@@ -8727,7 +8760,7 @@ local twentyeleveneighteen = {
 		["AttackEffect"] = "Fire",
 		["AttackBlock"] = true,
 		["Color"] = "Red",
-		["Cost"] = {["Red"] = 1,["Neutral"] = 2},
+		["Cost"] = {["Neutral"] = 2, ["Red"] = 1,},
 		["Effect"] = {
 			Name = "Firefly",
 			Description = "When this card tries to attack, instead put two 100/100 Forestfire Butterflies with haste into your hand. They can't generate icons naturally or when discarded, and are destroyed at the end of your turn.",
@@ -8820,17 +8853,18 @@ local twentyeleveneighteen = {
 	["Den_S"] = {
 		["Id"] = 2817088154,
 		["Name"] = "Den_S",
-		["Health"] = 400,
-		["Power"] = 400,
+		["Health"] = 1200,
+		["Power"] = 200,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "PunchKick",
 		["Color"] = "Yellow",
 		["Cost"] = {["Neutral"] = 3,},
+		["Halfsies"] = true,
 		["Effect"] = {
 			Name = "Roller Coaster",
-			Description = "When this card is cast, deal 700 damage to all other yellow fighters.",
+			Description = "During combat, Den_S assigns damage to other fighters equal to half of that fighter's health, rounded down.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Heal",700,"Self"},{"Damage",700}},
+			["Power"] = {{"Draw",0,"Ally"}},
 			Target = "ColorYellow",
 		},
 		["Bio"] = "Creator of Theme Park Tycoon 2, but where is Theme Park Tycoon 1?",
@@ -9421,7 +9455,7 @@ local twentyeleveneighteen = {
 			["Power"] = {{"Strengthen",200},{"Draw",1,"Self"}},
 			Target = "Ally",
 		},
-		["Bio"] = "",
+		["Bio"] = "Creator of Chaos Washers. First-person mode is highly reccomended.",
 	},	
 	
 	["brickmason"] = {
@@ -9508,17 +9542,18 @@ local twentyeleveneighteen = {
 	["Kinnis97"] = {
 		["Id"] = 2789819771,
 		["Name"] = "Kinnis97",
-		["Health"] = 400,
-		["Power"] = 400,
-		["Rarity"] = "Epic",
+		["Health"] = 200,
+		["Power"] = 200,
+		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "CatSlash",
+		["DestroyImmune"] = true,
 		["Color"] = "Red",
-		["Cost"] = {["Neutral"] = 3,},
+		["Cost"] = {["Neutral"] = 3, ["Red"] = 2,},
 		["Effect"] = {
 			Name = "Stop It, Slender!",
-			Description = "When this card is cast, deal 700 damage to all other red fighters.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Heal",700,"Self"},{"Damage",700,"ColorRed"}},
+			Description = "Whenever you cast an allied fighter, destroy it and generate a red icon. This fighter can't be destroyed.",
+			["Type"] = "OnAllySummon",
+			["Power"] = {{"Destroy",030,"Aggressor"},{"Red",1}},
 			Target = "Ally",
 		},
 		["Bio"] = "Pokemon battler, tarantula collector, mountain biker.",
