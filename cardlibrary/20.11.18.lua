@@ -5401,7 +5401,7 @@ local twentyeleveneighteen = {
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Green",
 		["Fading"] = true,
-		["Cost"] = {["Red"] = 4,["Green"] = 4,},
+		["Cost"] = {["Neutral"] = 1,["Red"] = 4,["Green"] = 4,},
 		["Effect"] = {
 			Name = "Sneak Attack",
 			Description = "When this card is cast, set your green and red icons to four and lose all other icons. At the end of your turns, generate a red icon.",
@@ -8875,7 +8875,7 @@ local twentyeleveneighteen = {
 		["Name"] = "Happy Clown",
 		["Health"] = 600,
 		["Power"] = 500,
-		["Rarity"] = "Common",
+		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Yellow",
 		["Cost"] = {["Yellow"] = 2, ["Blue"] = 2,},
