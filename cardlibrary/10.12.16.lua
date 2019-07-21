@@ -560,7 +560,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Token"] = true,
 		["Effect"] = {
 			Name = "Reincarnation",
-			Description = "When this card is targeted, all allied fighters gain 100 health, then destroy all crystals.",
+			Description = "When this card is targeted, all allied fighters gain 100 health, then deal 9999 damage to all crystals.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Heal",100},{"Damage",9999,"Archetype"}},
 			Target = "Ally",
@@ -582,7 +582,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Token"] = true,
 		["Effect"] = {
 			Name = "Reincarnation",
-			Description = "When this card is targeted, gain 500 life, then destroy all crystals.",
+			Description = "When this card is targeted, gain 500 life, then deal 9999 damage to all crystals.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Cost",-500},{"Damage",9999,"Archetype"}},
 			Target = "Ally",
@@ -604,7 +604,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Token"] = true,
 		["Effect"] = {
 			Name = "Reincarnation",
-			Description = "When this card is targeted, generate a white icon, then destroy all crystals.",
+			Description = "When this card is targeted, generate a white icon, then deal 9999 damage to all crystals.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Neutral",1},{"Damage",9999,"Archetype"}},
 			Target = "Ally",
@@ -615,24 +615,25 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["SONICTHEHEDGEHOGXXX"] = {
 		["Id"] = 596217036,
 		["Name"] = "SONICTHEHEDGEHOGXX",
-		["Health"] = 400,
-		["Power"] = 400,
+		["Health"] = 200,
+		["Power"] = 0,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Slash",
 		["Color"] = "Blue",
-		["Cost"] = {["Neutral"] = 3,},
+		["Cost"] = {["Neutral"] = 1,},
+		["Requirement"] = {"AllyBoard", 0, 1},
 		["Effect"] = {
 			Name = "Reincarnation",
-			Description = "When this card is cast, deal 700 damage to all other blue fighters.",
+			Description = "Cast only if you control no fighters. When you do, put two copies of this card into your hand and end the turn.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Heal",700,"Self"},{"Damage",700,"ColorBlue"}},
+			["Power"] = {{"Add","SONICTHEHEDGEHOGXXX"},{"Add","SONICTHEHEDGEHOGXXX"},{"EndTurn",1}},
 			Target = "Ally",
 		},
 		["Bio"] = "SCREAM IN ALL CAPS! INDEED! MAXIMUM LOGIC!",
 	},
 
 	["Thesupernessiiiii"] = {
-		["Id"] = 2041399537,
+		["Id"] = 3471749764,
 		["Name"] = "Thesupernessiiiii",
 		["Health"] = 1000,
 		["Power"] = 0,
@@ -882,7 +883,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Eye of Heaven"] = {
-		["Id"] = 1402761393,
+		["Id"] = 3471763944,
 		["Name"] = "Eye of Heaven",
 		["AltCards"] = {
 			["Eye of Heaven-E"] = {
@@ -946,7 +947,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["DominiusConfabricor"] = {
-		["Id"] = 950082879,
+		["Id"] = 3471755749,
 		["Name"] = "DominiusConfabricor",
 		["AltCards"] = {
 			["DominiusConfabricor-Sun"] = {
@@ -1114,7 +1115,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Token"] = true,
 		["Effect"] = {
 			Name = "Reincarnation",
-			Description = "When this card is targeted, swap a target fighter's stats, then destroy all crystals.",
+			Description = "When this card is targeted, swap a target fighter's stats, then deal 9999 damage to all crystals.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Swap",030},{"Damage",9999,"Archetype"}},
 			Target = "Single",
@@ -1136,7 +1137,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Token"] = true,
 		["Effect"] = {
 			Name = "Ending",
-			Description = "When this card is targeted, lock a target fighter for 1 turn, then destroy all crystals.",
+			Description = "When this card is targeted, lock a target fighter for 1 turn, then deal 9999 damage to all crystals.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Lock",1,"Single"},{"Damage",9999,"Archetype"}},
 			Target = "Ally",
@@ -1158,7 +1159,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Token"] = true,
 		["Effect"] = {
 			Name = "Reincarnation",
-			Description = "When this card is targeted, enemy fighters lose 100 power, then destroy all crystals.",
+			Description = "When this card is targeted, enemy fighters lose 100 power, then deal 9999 damage to all crystals.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Weaken",100,"Opponent"},{"Damage",9999,"Archetype"}},
 			Target = "Ally",
@@ -1440,8 +1441,8 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 
 	["AII_Dragon"] = {
-		["Id"] = 679504969,
-		["Name"] = "AII_Dragon",
+		["Id"] = 3471735681,
+		["Name"] = "DregSystem",
 		["Health"] = 1100,
 		["Power"] = 300,
 		["Rarity"] = "Rare",
@@ -1450,16 +1451,16 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 6,},
 		["Effect"] = {
 			Name = "Hellfire",
-			Description = "When this fighter finishes attacking a fighter with less than 300 Power, destroy that fighter.",
+			Description = "After this fighter attacks, check what it attacked if it had less than 300 power.",
 			["Type"] = "OnAttackEnd",
-			["Power"] = {{"Swap",030},{"Damage",300},{"Heal",300},{"Swap",030}},
+			["Power"] = {{"CheckPower",300}},
 			Target = "Aggressor",
 		},	
-		["Bio"] = "100% Pure Dragon.",
+		["Bio"] = "Multiple Keter and Euclid containment breaches? I don't see an-SNAP",
 	},
 	
 	["colesans16"] = {
-		["Id"] = 679503783,
+		["Id"] = 3471727828,
 		["Name"] = "colesans16",
 		["Health"] = 300,
 		["Power"] = 300,
@@ -1599,7 +1600,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 3299961860,
 		["Name"] = "ChaoticCommando",
 		["Health"] = 1600,
-		["Power"] = 400,
+		["Power"] = 500,
 		["Rarity"] = "Rare",
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Slash",
@@ -1668,7 +1669,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Token"] = true,
 		["Effect"] = {
 			Name = "Reincarnation",
-			Description = "When this card is targeted, your opponent loses one White icon, then destroy all crystals.",
+			Description = "When this card is targeted, your opponent loses one White icon, then deal 9999 damage to all crystals.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Neutral",-1,"Opponent"},{"Damage",9999,"Archetype"}},
 			Target = "Ally",
@@ -1697,7 +1698,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Token"] = true,
 		["Effect"] = {
 			Name = "Ending",
-			Description = "When this card is targeted, deal 400 damage to the opponent, then destroy all crystals.",
+			Description = "When this card is targeted, deal 400 damage to the opponent, then deal 9999 damage to all crystals.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Inflict",400,"Opponent"},{"Damage",9999,"Archetype"}},
 			Target = "Ally",
@@ -1726,7 +1727,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Token"] = true,
 		["Effect"] = {
 			Name = "Bloodstone",
-			Description = "When this card is targeted, deal 200 damage to a target fighter, then destroy all crystals.",
+			Description = "When this card is targeted, deal 200 damage to a target fighter, then deal 9999 damage to all crystals.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Damage",200,"Single"},{"Damage",9999,"Archetype"}},
 			Target = "Ally",
@@ -1845,7 +1846,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Toasty",
 			Description = "When this card dies, destroy King Gecko.",
 			["Type"] = "OnDeath",
-			["Power"] = {{"Damage",9999}},
+			["Power"] = {{"Destroy",9999}},
 			Target = "Archetype",
 		},
 		["Bio"] = [["Garm, fetch this. Garm, do that. Garm, let me use your brain tissue. If he stops being so rude, I'm leaving."]],
@@ -1862,7 +1863,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 8,},
 		["Effect"] = {
 			Name = "Toasty",
-			Description = "Whenever a fighter is cast, half it's health.",
+			Description = "Cast fighters enter play with half their health, rounded down.",
 			["Type"] = "OnAnySummon",
 			["Power"] = {{"MultiplyHealth",.5}},
 			Target = "Aggressor",
@@ -2147,8 +2148,8 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Bandi4"] = { -- Retired token; do whatever you want
 		["Id"] = 714801837,
 		["Name"] = "BandiheartYT",
-		["Health"] = 200,
-		["Power"] = 800,
+		["Health"] = 300,
+		["Power"] = 900,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Punchkick",
 		["Color"] = "Green", 
@@ -2199,14 +2200,14 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Rare",
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Punchkick",
-		["Stealth"] = true,
+		["DamageImmune"] = true,
 		["Color"] = "Blue", 
 		["Cost"] = {["Green"] = 3, ["Blue"] = 2, ["Red"] = 3,},
 		["Effect"] = {
 			Name = "Lunar Rays",
-			Description = "Whenever you cast another fighter, destroy that fighter and deal 300 damage to a target fighter. Abilities don't trigger when this fighter enters play.",
+			Description = "Whenever you cast another fighter, deal 4000 damage to that fighter and deal 300 damage to a target fighter. Effects can't damage Great Paraselene Sage.",
 			["Type"] = "OnAllySummon",
-			["Power"] = {{"Destroy",030,"Aggressor"},{"Damage",300,"Single"}},
+			["Power"] = {{"Damage",4000,"Aggressor"},{"Damage",300,"Single"}},
 			Target = "Ally",
 		},
 		["Bio"] = [["The noble work of our order is to give free energy to all from the moon's rays. The emotional cries of our detractors are... Distracting."]],
@@ -2280,18 +2281,19 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Confusion Elemental?"] = {
 		["Id"] = 714689077,
 		["Name"] = "Confusion Elemental?",
-		["Health"] = 6050,
+		["Health"] = 4000,
 		["Power"] = 0,
 		["Rarity"] = "Rare",
 		["Archetype"] = "Marxist",
 		["AttackEffect"] = "Erasure",
+		["AssignRandom"] = true,
 		["Color"] = "Green", 
 		["Cost"] = {["Blue"] = 3, ["Green"] = 2, ["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "befriending of scaly mutts",
-			Description = "SURPRISE! Lose all of your red icons and end the turn! How will your opponent react!?",
-			["Type"] = "OnSummon",
-			["Power"] = {{"SetRed",0},{"Summon","Insult!"},{"Summon","Participate in Quiz!"},{"Summon","Clap! Clap!"},{"Summon","Shine!"},{"Add","Cast Your Vote!","Opponent"},{"EndTurn",1}},
+			Description = "During combat, this fighter assigns random damage between 50 and 1000. Whenever an enemy fighter dies, unlock this card.",
+			["Type"] = "OnEnemyDeath",
+			["Power"] = {{"Unlock",9999}},
 			Target = "Ally",
 		},
 		["Bio"] = [[]],
@@ -2427,6 +2429,13 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["iamlogic"] = {
 		["Id"] = 785620591,
 		["Name"] = "iamlogic",
+		["AltCards"] = {
+			["iamlogicPurplePsion"] = {
+				["Id"] = 3471743968,
+				["Name"] = "iamlogic, Purple Psion",
+				["Bio"] = "kek gaming clan tryouts are open. This card is an alternate art of...iamlogic. Seriously?",
+			},
+		},
 		["Health"] = 800,
 		["Power"] = 400,
 		["Rarity"] = "Uncommon",
@@ -2473,9 +2482,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2, ["Yellow"] = 3, ["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Life fam",
-			Description = "At the end of your turns, destroy all enemy fighters with no power, give all fighters 100 power, and generate a yellow icon.",
+			Description = "At the end of your turns, check all fighters with no power. All fighters gain 100 power. Generate a yellow icon.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Swap",030},{"Swap",030},{"Strengthen",100,"All"},{"Yellow",1,"Ally"}},
+			["Power"] = {{"CheckPower",0},{"Strengthen",100,"All"},{"Yellow",1,"Ally"}},
 			Target = "Opponent",
 		},
 		["Bio"] = [[All trials have a reward.]],
@@ -2484,7 +2493,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["BenCanova1"] = {
 		["Id"] = 785620731,
 		["Name"] = "BenCanova1",
-		["Health"] = 550,
+		["Health"] = 300,
 		["Power"] = 550,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Punchkick",
@@ -3051,7 +3060,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Scintillant Limb"] = {
-		["Id"] = 543041104,
+		["Id"] = 3471757491,
 		["Name"] = "Fluffy Findings",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -3066,11 +3075,11 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"DeckAdd","Kitten"},{"DeckAdd","Kitten"},{"Draw",2}},
 			Target = "Ally",	
 		},
-		["Bio"] = "",
+		["Bio"] = "Aww...Can we keep them?",
 	},
 	
 	["Verdant Limb"] = {
-		["Id"] = 543041104,
+		["Id"] = 3471746249,
 		["Name"] = "KitNip",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -3090,7 +3099,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Tyrannical Limb"] = {
-		["Id"] = 543041104,
+		["Id"] = 3471699614,
 		["Name"] = "Nine Lives",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -3110,23 +3119,23 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Kitten"] = {
-		["Id"] = 1402757748,
+		["Id"] = 3471701158,
 		["Name"] = "Kitten",
 		["AltCards"] = {
 			["Kitten2"] = {
-				["Id"] =  1402758718,
+				["Id"] =  3471698050,
 				["Bio"] = "rawr...",
 			},
 			["Kitten3"] = {
-				["Id"] =  1404827381,
+				["Id"] =  3471737099,
 				["Bio"] = "Spooky scary skelecats send hairballs down your spine.",
 			},
 			["Kitten4"] = {
-				["Id"] =  1402760304,
+				["Id"] =  3471700251,
 				["Bio"] = "Ew...what IS that thing?!",
 			},
 			["Kitten5"] = {
-				["Id"] =  1549934707,
+				["Id"] =  3471697159,
 				["Bio"] = "Strolllllllllllllllllllllllllllllllllllllllling on in.",
 			},
 			["Kitten6"] = {
@@ -3134,11 +3143,11 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Bio"] = "The sun did not shine. It was too wet to play. So we sat in the house All that cold, cold, wet day. I sat there with Sally. We sat there, we two. And I said, “How I wish We had something to do!” Too wet to go out And too cold to play ball. So we sat in the house. We did nothing at all. So all we could do was to Sit! Sit! Sit! Sit! And we did not like it. Not one little bit. And then Something went BUMP! How that bump made us jump! We looked! Then we saw him step in on the mat! We looked! And we saw him! The Cat in the Hat!",
 			},
 			["Kitten7"] = {
-				["Id"] =  1549936070,
+				["Id"] =  3471698904,
 				["Bio"] = "Meow!",
 			},
 			["Kitten8"] = {
-				["Id"] =  1549937583,
+				["Id"] =  3471736506,
 				["Bio"] = "It farts rainbows.",
 			},	
 			["Kitten9"] = {
@@ -3188,7 +3197,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "superkicker2005",
 		["AltCards"] = {
 			["Myrmiredon 4"] = {
-				["Id"] =  3294286038,
+				["Id"] =  3471754345,
 				["Name"] = "Lunat_C",
 				["Bio"] = "You take the moon and you take the moon and you take the moon and you take the moon.",
 			},
@@ -3507,8 +3516,8 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Blitzwolfer",
 		["AltCards"] = {
 			["Noobwolfer"] = {
-				["Id"] = 1761890967,
-				["Bio"] = "I'm sorry, but there's no swearing allowed on my christian blox cards server. I'm gonna have to ask you to leave.",
+				["Id"] = 3482098980,
+				["Bio"] = "I'm sorry, but there's no swearing allowed on my christian Blox Cards server. I'm gonna have to ask you to leave.",
 			},
 			["Blitzwolfer-ArtV"] = {
 				["Id"] = 2742426793,
@@ -3680,7 +3689,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Charge"] = true,
 		["Effect"] = {
 			Name = "Poisonous Touch",
-			Description = "Haste. When this card is cast, put a swarm into your hand, then destroy all Birds. This card is immune to effects that destroy it.",
+			Description = "Haste. When this card is cast, put a swarm into your hand, then destroy all Birds. This can't be destroyed.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Add","Swarm"},{"Destroy",030,"Archetype"}},
 			Target = "Ally",
@@ -4147,14 +4156,6 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Midas's Stand-Alt"] = {
 				["Id"] = 1670295040,
-				["Name"] = "マイダススタンド",
-				["Effect"] = {
-					Name = "Burning Fists of Rage",
-					Description = "Haste. Fading. Destroy this card at the end of your turn.",
-					["Type"] = "OnEnd",
-					["Power"] = {{"Damage",9999}},
-					Target = "Self",
-				},
 				["Bio"] = "くらえ！",
 			},
 		},
@@ -4170,7 +4171,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "Burning Fists of Rage",
 			Description = "Haste. Fading. Destroy this card at the end of your turn.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Damage",9999}},
+			["Power"] = {{"Destroy",9999}},
 			Target = "Self",
 		},
 		["Bio"] = "IS THAT A JOJO REFERENCE?!",
@@ -4298,14 +4299,17 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["WeakenImmune"] = true,
 		["SwapImmune"] = true,
 		["SetImmune"] = true,
-		["StrenghtenImmune"] = true,
+		["StrengthenImmune"] = true,
 		["HealImmune"] = true,
 		["DamageImmune"] = true,
+		["ReturnImmune"] = true,
+		["CheckImmune"] = true,
+		["DestroyImmune"] = true,
 		["Effect"] = {
 			Name = "Stalwart Barrier",
-			Description = "This card is immune to all stat-changing effects.",
+			Description = "Effects can't damage, weaken, heal, empower, return, destroy, check, or swap or set the stats of Silver_Semtexagon.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Heal",9999999999999999}},
+			["Power"] = {{"Draw",0}},
 			["Target"] = "Self",
 		},
 		["Bio"] = "For the player that just can't stand green.",
@@ -4725,7 +4729,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 1421958346,
 		["Name"] = "DrWeaseI",
 		["Health"] = 600,
-		["Power"] = 200,
+		["Power"] = 400,
 		["Rarity"] = "Rare",
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Slash",
@@ -4808,11 +4812,10 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
  		["Name"] = "Steel Chair",
   		["Health"] = 100,
   		["Power"] = 200,
- 		["Rarity"] = "Common",
+ 		["Rarity"] = "Token",
  		["AttackEffect"] = "Lightning",
  		["Color"] = "Red",		
   		["Cost"] = {["Neutral"] = 1,},
- 		["Archetype"] = "Chair", 
   		["Effect"] = {
   			Name = "Helping Out",
  			Description = "When this card is cast, deal 300 damage to your opponent.",
@@ -4916,13 +4919,13 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
  		["AttackEffect"] = "Lightning",
 		["Requirement"] = {"Archetype",2,9999},
  		["Color"] = "Neutral",		
-  		["Cost"] = {["Red"] = 1, ["Green"] = 1, ["Blue"] = 1, ["Yellow"] = 1,},
+  		["Cost"] = {["Green"] = 1, ["Blue"] = 1, ["Yellow"] = 1,},
  		["Archetype"] = "Chair", 
   		["Effect"] = {
   			Name = "Helping Out",
  			Description = "Cast only if you control two Chairs. Return all Chair-related fighters to their owner's hands. Generate three white icons and draw two cards.",
   			["Type"] = "OnSummon",
- 			["Power"] = {{"Return",9999,"Archetype"},{"Neutral",3},{"Draw",2}},
+ 			["Power"] = {{"Return",9999,"Archetype"},{"Neutral",3},{"Draw",3}},
   			Target = "Ally",
   		},
   		["Bio"] = "The bygone era of racechairs, ready to breed the new generation.",
@@ -4937,14 +4940,14 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
  		["AttackEffect"] = "Lightning",
 		["Requirement"] = {"Archetype",4,9999},
 		["Stealth"] = true,
- 		["Color"] = "Red",		
-  		["Cost"] = {["Neutral"] = 2, ["Red"] = 6,},
+ 		["Color"] = "Yellow",		
+  		["Cost"] = {["Neutral"] = 2, ["Yellow"] = 6,},
  		["Archetype"] = "Chair", 
   		["Effect"] = {
   			Name = "Helping Out",
  			Description = "Cast only if you control four Chairs. Whenever you cast another Chair-related fighter, destroy that fighter and a target fighter.",
   			["Type"] = "OnAllySummon",
- 			["Power"] = {{"Damage",9999,"Aggressor"},{"Destroy",030,"Single"}},
+ 			["Power"] = {{"Destroy",9999,"Aggressor"},{"Destroy",030,"Single"}},
 			["Archetype"] = "Chair",
   			Target = "Archetype",
   		},
@@ -5132,9 +5135,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3, ["Red"] = 8,},
 		["Effect"] = {
 			Name = "Unleash Hell",
-			Description = "When this card is cast, destroy all other fighters. For each fighter destroyed, the opponent loses 200 life. End the turn. This card is immune to effects that destroy it.",
+			Description = "When this card is cast, Destroy all fighters. For each fighter destroyed this way, deal 200 damage to your opponent. Then deal 4000 damage to all other allies fighters. End the turn.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Heal",9999,"Self"},{"Summon","Rach Token","Ally"},{"Destroy"},{"Damage",9999,"Ally"},{"EndTurn",1,"Ally"}},
+			["Power"] = {{"Heal",4000,"Self"},{"Summon","Rach Token","Ally"},{"Destroy"},{"Damage",4000,"Ally"},{"EndTurn",1,"Ally"}},
 			Target = "All",
 		},
 		["Bio"] = "You can run...",
@@ -5143,7 +5146,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Rach Token"] = {
 		["Id"] = 3299990215,
 		["Name"] = "rachjumper",
-		["Health"] = 5000,
+		["Health"] = 2000,
 		["Power"] = 750,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Lightning",
@@ -5153,7 +5156,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3, ["Red"] = 8,},
 		["Effect"] = {
 			Name = "Unleash Hell",
-			Description = "When this card is cast, destroy all other fighters. For each fighter destroyed, the opponent loses 200 life. End the turn. This card is immune to effects that destroy it.",
+			Description = "When this card is cast, deal 4000 damage to all other fighters. For each fighter that dies this way, the opponent loses 200 life. End the turn.",
 			["Type"] = "OnAnyDeath",
 			["Power"] = {{"Inflict",200}},
 			Target = "Opponent",
@@ -5181,8 +5184,8 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Sands of Purgatory"] = {
-		["Id"] = 1549933495,
-		["Name"] = "Sands of Purgatory",
+		["Id"] = 3472388460,
+		["Name"] = "Roblox Titanic",
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Rare",
@@ -5198,11 +5201,11 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"SummonWithEffect","PurgatoryToken"}},
 			Target = "Ally",
 		},
-		["Bio"] = "Nothing can survive here...besides ultras.",
+		["Bio"] = "You can't escape the fate of the Titanic, but you can certainly outlive it.",
 	},
 	
 	["PurgatoryToken"] = {
-		["Id"] = 1549933495,
+		["Id"] = 3472388460,
 		["Name"] = "BurnToken!",
  		["Health"] = 10000000,
  		["Power"] = 0,
@@ -5646,7 +5649,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "O",
 			Description = "Can't be counterattacked. When this card dies, Case #3 is solved. Your opponent puts Case #4 into their hand. Destroy all allied fighters.",
 			["Type"] = "OnDeath",
-			["Power"] = {{"Add","Case4"},{"Damage",9999,"Ally"}},
+			["Power"] = {{"Add","Case4"},{"Destroy",9999,"Ally"}},
 			Target = "Opponent",
 		},
 		["Bio"] = "YOU THINK YOU CAN BEAT ME? I HAVE THE POWER OF BOTH GOD AND ANIME ON MY SIDE! HAAAAAAAAAAAAAAAAAAAAAAAAAAA",
@@ -5749,8 +5752,8 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "A",
 			Description = "At the end of your turn, return the chairman and this card to your hand, and summon a copy of the chairman.",
-			["Type"] = "OnEnd",
-			["Power"] = {{"Return",030,"Archetype"},{"Summon","The Chairman"},{"Unlock",1,"Archetype"}},
+			["Type"] = "OnSummon",
+			["Power"] = {{"RandomDiscard"},{"RandomDiscard",030,"Opponent"}},
 			Target = "Ally",
 		},
 		["Bio"] = "Life was meaningless without power. The cancer was going to take everything away. He can't control Death, but now he can control Life.",
@@ -5857,7 +5860,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["lilBismarck"] = {
-		["Id"] = 1827447190,
+		["Id"] = 3472455140,
 		["Name"] = "lilBismarck",
 		["Health"] = 800,
 		["Power"] = 400,
@@ -6086,7 +6089,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Baseplate"] = {
-		["Id"] = 1868966586,
+		["Id"] = 3471718173,
 		["Name"] = "Baseplate",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -6268,7 +6271,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 2789669047,
 		["Name"] = "CopperGlow",
 		["Health"] = 500,
-		["Power"] = 300,
+		["Power"] = 500,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Thunder",
 		["Archetype"] = "Hero",
@@ -6348,7 +6351,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Unc, Uncorrupted",
 		["AltCards"] = {
 			["CreativeName123"] = {
-				["Id"] = 1942359213,
+				["Id"] = 3471770448,
 				["Bio"] = "彼は確かにある。",
 			},
 		},
@@ -6462,6 +6465,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Despacito 2"] = {
 				["Id"] = 2145900993,
 				["Name"] = "Despacito 2",
+				["Stealth"] = true,
 				["Effect"] = {
 					Name = "Initial Despacito",
 					Description = "Cancel Despacito 2. Destroy all allied fighters. Return this card to your hand.",
@@ -6478,6 +6482,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Neutral",
 		["Cost"] = {["Neutral"] = 0,},
+		["Stealth"] = true,
 		["Effect"] = {
 			Name = "Despacito. Quiero respirar tu cuello despacito. Deja que te diga cosas al oído. Para que te acuerdes si no estás conmigo.",
 			Description = "Destroy all allied fighters. Return this card to your hand.",
@@ -6521,7 +6526,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Token"] = true,
 		["Effect"] = {
 			Name = "Reincarnation",
-			Description = "When this card is targeted, gain 1 yellow icon, then destroy all crystals.",
+			Description = "When this card is targeted, gain 1 yellow icon, then deal 9999 damage to all crystals.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Yellow",1},{"Damage",9999,"Archetype"}},
 			Target = "Ally",
@@ -6543,7 +6548,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Token"] = true,
 		["Effect"] = {
 			Name = "Reincarnation",
-			Description = "When this card is targeted, summon a Noob, then destroy all crystals.",
+			Description = "When this card is targeted, summon a Noob, then deal 9999 damage to all crystals.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Summon","Noob"},{"Damage",9999,"Archetype"}},
 			Target = "Ally",
@@ -6565,7 +6570,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Token"] = true,
 		["Effect"] = {
 			Name = "Reincarnation",
-			Description = "When this card is targeted, A target fighter gains 150 power, then destroy all crystals.",
+			Description = "When this card is targeted, A target fighter gains 150 power, then deal 9999 damage to all crystals.",
 			["Type"] = "OnTarget",
 			["Power"] = {{"Strengthen",150},{"Damage",9999,"Archetype"}},
 			Target = "Single",
@@ -6948,7 +6953,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Spatial",
 		["Effect"] = {
 			Name = "Spam",
-			Description = "May be turnt into an 800/800 Primordial Crow provided that all four souls are in play.",
+			Description = "May be turnt into an 800/800 Primordial Crow provided that all four souls are in play. Spatial Soul can't generate icons.",
 			["Type"] = "OnDeath",
 			["Power"] = {{"Draw",0}},
 			Target = "Ally",
@@ -6965,11 +6970,12 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Neutral",
 		["WeakenImmune"] = true,
+		["DamageImmune"] = true,
 		["Token"] = true,
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "Spam",
-			Description = "Effects can't lower Primordial Crow's stats.",
+			Description = "Effects can't weaken or damage Primordial Crow, nor can it generate icons.",
 			["Type"] = "OnDeath",
 			["Power"] = {{"Draw",0}},
 			Target = "Ally",
@@ -7118,6 +7124,27 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Single",
 		},
 		["Bio"] = "",
+	},
+	
+	["Banland"] = {
+		["Id"] = 543041104,
+		["Name"] = "Banland",
+		["Health"] = 0,
+		["Power"] = 0,
+		["Rarity"] = "Rare",
+		["AttackEffect"] = "Punch1",
+		["Field"] = 1549933495,
+		["Archetype"] = "Terrain",
+		["Color"] = "Red",
+		["Cost"] = {["Red"] = 1, ["Green"] = 1, ["Yellow"] = 1,},
+		["Effect"] = {
+			Name = "Stud",
+			Description = "At the start of each player's turn, check all fighters that player controls with over 1000 health or power.",
+			["Type"] = "Field",
+			["Power"] = {{"CheckOverHealth",1000},{"CheckOverPower",1000}},
+			Target = "Ally",
+		},
+		["Bio"] = "Where the hackers go to die.",
 	},
 
 }

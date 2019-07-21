@@ -841,11 +841,10 @@ local packs = {
 		Description = "Yellow is the colour of chaos, emotion, and society. Revel packs contain cards that cost yellow!",
 		Cards = {
 			"H-Thunder",--Lightning Blast
-			"Xor's Lab",
+			"Xor's Lab", --Iron Café
 			"Llendlar",
 			"Coordinated Attack",
 			"__________",
-			"Wekov",
 			"ScareAndCrow",
 			"MesoSad",
 			"Unc, Uncorrupted",
@@ -1665,6 +1664,15 @@ local packs = {
 			wday  = {0,6};
 		};
 		Cards = {
+			"parkerest",
+			"CreeperKillerTrueAgent",
+			"V0IDBOX",
+			"Wekov",
+			"RobberAlt",
+			"H-ThunderAlt",
+			"luckygamer2003",
+			"iamlogicPurplePsion",
+			"unadaptably",
 			"Myrmiredon 2",--galaxyflame
 			"NinjaV2",
 			"No anime",
@@ -1675,7 +1683,7 @@ local packs = {
 			"SoulSearchEngine",
 			"Noobwolfer",
 			"jarjarbinks321",
-			"Leaf",
+			"Leaf", --orangecandyversion
 			"Arceus",
 			"PoopHead",
 			"Yoshi",
