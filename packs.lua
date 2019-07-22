@@ -1680,7 +1680,6 @@ local packs = {
 			"CreativeName123",
 			"CandyStream",
 			"It",
-			"SoulSearchEngine",
 			"Noobwolfer",
 			"jarjarbinks321",
 			"Leaf", --orangecandyversion
