@@ -291,7 +291,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2, ["Blue"] = 2,},
 		["Effect"] = {
 			Name = "Thug Life",
-			Description = "Whenever this fighter destroys another, put a DairingPoopHead into your hand and lock this fighter for an additinal two turns.",
+			Description = "Whenever this fighter destroys another, put a DairingPoopHead into your hand and lock this fighter for an additional two turns.",
 			["Type"] = "OnAttackDestroy",
 			["Power"] = {{"Add","DairingPoopHead"},{"Lock",2,"Self"}},
 			Target = "Ally",
