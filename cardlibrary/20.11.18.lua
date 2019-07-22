@@ -8967,9 +8967,9 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Yellow"] = 3,["Red"] = 1, },
 		["Effect"] = {
 			Name = "Gobble",
-			Description = "All fighters gain 600 power. Lock them for 3 turns. End the turn.",
+			Description = "All fighters gain 600 power. Lock them for 3 turns.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Strengthen",600},{"Lock",3},{"EndTurn",1,"Ally"}},
+			["Power"] = {{"Strengthen",600},{"Lock",3}},
 			Target = "All",
 		},
 		["Bio"] = "We are very thankful for this feast, now gobble up, pilgrims!",
