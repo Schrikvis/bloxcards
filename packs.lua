@@ -1674,7 +1674,6 @@ local packs = {
 			"iamlogicPurplePsion",
 			"unadaptably",
 			"Myrmiredon 2",--galaxyflame
-			"NinjaV2",
 			"No anime",
 			"TheBrycen27",
 			"CreativeName123",
