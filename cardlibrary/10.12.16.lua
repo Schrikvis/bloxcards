@@ -1451,7 +1451,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 6,},
 		["Effect"] = {
 			Name = "Hellfire",
-			Description = "After this fighter attacks, check what it attacked if it had less than 300 power.",
+			Description = "After this fighter attacks, check what it attacked if it had 300 power or less.",
 			["Type"] = "OnAttackEnd",
 			["Power"] = {{"CheckPower",300}},
 			Target = "Aggressor",
