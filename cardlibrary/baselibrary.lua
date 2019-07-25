@@ -4499,12 +4499,6 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Pillager"] = {
 		["Id"] = 285155411,
 		["Name"] = "Pillager",
-		["AltCards"] = {
-			["Pillager-AntArtist"] = {
-				["Id"] =  3515853940,
-				["Bio"] = "She pillages.",
-			},
-		},
 		["Health"] = 350,
 		["Power"] = 350,
 		["Rarity"] = "Common",
