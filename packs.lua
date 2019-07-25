@@ -63,7 +63,7 @@ local packs = {
 			"Mag",
 			"Redcliff Messenger",
 			-- Red Uncommons
-			"Pixellus",
+			"FuuTuu",
 			"Mitpaul",
 			"Dayren",
 			"Damaging26",
@@ -122,7 +122,7 @@ local packs = {
 			"Royal Chair",
 			"TeeVee",
 			"TheChakraTree",
-			"Western Bandit",
+			"emilvita",
 			"Pilgrim",
 			"Bigtank_s",
 			"Shamrock Doge",
