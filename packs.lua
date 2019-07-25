@@ -25,7 +25,7 @@ local packs = {
 			"DeadZoneHark",
 			"Jimminus",
 			"Korblox Archer",
-			"Razikai",
+			"Modern Chair",
 			"Spiderboy",
 			"wer8888",
 			"DairingPoopHead",
@@ -33,7 +33,7 @@ local packs = {
 			-- Blue Uncommons
 			"Acolyte of the Rift",
 			"Glaciem Mage",
-			"HuntarioRBLX",
+			"Sylrath",
 			"JackinatorMG",
 			"AsrielMemer",
 			"Froot Ninja",
@@ -49,13 +49,13 @@ local packs = {
 			"B0BBA",
 			"VetexGames",
 			-- Blue Legendaries
-			"Silver_Semtexagon",
-			"DrTrayBlox",
+			"IcyTea",
+			"JackInTheBlox",
 			"Megalodon the Dragon-Shark",
 			-- Red Commons
 			"Ambamby",
 			"Anderson",
-			"Cowboy",
+			"Blockerwiz",
 			"DerptasticDevil",
 			"Ignis Mage",
 			"Rad",
@@ -68,7 +68,7 @@ local packs = {
 			"Dayren",
 			"Damaging26",
 			"Infernal Acolyte",
-			"Ninja Elite",
+			"Mafia Grunt",
 			"Oz",
 			-- Red Rares
 			"Lady RedNight",
@@ -87,13 +87,13 @@ local packs = {
 			-- Green Commons
 			"Langz",
 			"Chef",
-			"Boogerguy123",
+			"Brycen27",
 			"Spikle",
 			"Keeler1",
-			"Glaecium",
+			"Cillow",
 			"Pillager",
 			"MyDadIsAGuest",
-			"Eye of Overseer",
+			"Meeboid",
 			-- Green Uncommons
 			"Necromantic Acolyte",
 			"Oozlebachr",
@@ -110,7 +110,7 @@ local packs = {
 			"Overseer General",
 			-- Green Epics
 			"Brick_Man",
-			"XiaoXiaoMan",
+			"Defaultio",
 			"KasoduS",
 			-- Green Legendaries
 			"PolyHexV2",
@@ -119,7 +119,7 @@ local packs = {
 			-- Yellow Commons
 			"Guest",
 			"Graalgamer",
-			"Finland",
+			"Royal Chair",
 			"TeeVee",
 			"TheChakraTree",
 			"Western Bandit",
@@ -127,7 +127,7 @@ local packs = {
 			"Bigtank_s",
 			"Shamrock Doge",
 			-- Yellow Uncommons
-			"Latchie",
+			"popcornhebe",
 			"animallogic",
 			"Valletta",
 			"Lyv",
@@ -135,13 +135,13 @@ local packs = {
 			"Fried Acolyte",
 			"Pikachukiller101",
 			-- Yellow Rares
-			"Qdhxx",
+			"Plushie Snowman",
 			"DIY Headphones",
 			"Card Hoarder",
 			"Uberubert",
 			"Cluck Buck",
 			-- Yellow Epics
-			"Visleaf",
+			"Mzh3000",
 			"Ejob",
 			"MinePix110",
 			-- Yellow Legendaries
@@ -400,6 +400,7 @@ local packs = {
 		CardPackId = 721399805,
 		Description = "Green is the colour of life, growth, and the primal forces. Vitality packs contain cards that cost green!",
 		Cards = {
+			"Defaultio",
 			"LordPendleton",
 			"Chair Chair, the Creator",
 			"Celestial of Sun",
@@ -546,7 +547,6 @@ local packs = {
 			"Nicolas1015",
 			"MiloCortez",
 			"StickMasterLuke",
-			"XiaoXiaoMan",
 			"Quenty",
 			"MyDadIsAGuest",
 			"IlIll",
@@ -842,6 +842,7 @@ local packs = {
 		Cards = {
 			"H-Thunder",--Lightning Blast
 			"Xor's Lab", --Iron Café
+			"XiaoXiaoMan",
 			"Llendlar",
 			"Coordinated Attack",
 			"__________",
@@ -871,7 +872,6 @@ local packs = {
 			"AII_Dragon",
 			"emilvita",
 			"DominiusConfabricor",
-			"Defaultio",
 			"Histor",
 			"Jeeeeesus",
 			"Dicey Dave",
