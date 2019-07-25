@@ -106,7 +106,7 @@ local packs = {
 			"IlIll",
 			"Wustard",
 			"Tom's Beans",
-			"KingCactaur",
+			"Lord_Gizmo",
 			"Overseer General",
 			-- Green Epics
 			"Brick_Man",
