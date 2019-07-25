@@ -21,11 +21,11 @@ local packs = {
 			"Exine", -- The kids are gonna want the card in the pack cover, y'know?
 			-- Each section has nine commons, seven uncommons, five rares, three epics and three legendaries.
 			-- Blue Commons
-			"Icerain",
+			"Developer",
 			"DeadZoneHark",
 			"Jimminus",
 			"Korblox Archer",
-			"Modern Chair",
+			"Korblox Squire",
 			"Spiderboy",
 			"wer8888",
 			"DairingPoopHead",
