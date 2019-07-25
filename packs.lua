@@ -1693,7 +1693,6 @@ local packs = {
 			"Myrmiredon 4",--Lunat_C
 			"MyrmiredonV2 4",--bomb pumpkin thing
 			"Undead Teddy-AntArtist",
-			"Pillager-AntArtist",
 			"IcyBee",
 			"Bee Ninja",
 			"Newbee",
