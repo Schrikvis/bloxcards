@@ -3451,14 +3451,14 @@ local twentyeleveneighteen = {
 	["Keeler1"] = {
 		["Id"] = 411887675,
 		["Name"] = "Keeler1",
-		["Health"] = 500,
-		["Power"] = 500,
+		["Health"] = 450,
+		["Power"] = 400,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Green",
 		["Cost"] = {["Neutral"] = 1,["Green"] = 3,},
 		["Effect"] = {
-			Name = "Silence I keel you!",
+			Name = "Silence! I keel you!",
 			Description = "When this card is cast, a target fighter loses 200 Power. Put a Targeting Blip into your hand. Targeting Blips trigger Target Effects.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",200},{"Add","Targeting Blip","Ally"}},
