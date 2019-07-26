@@ -3086,18 +3086,17 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["EpicLatiosLord"] = {
 		["Id"] = 283993304,
 		["Name"] = "EpicLatiosLord",
-		["Health"] = 300,
-		["Power"] = 500,
+		["Health"] = 400,
+		["Power"] = 400,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Slice",
 		["Color"] = "Blue",
-		["CounterBlock"] = true,
 		["Cost"] = {["Neutral"] = 2,["Blue"] = 2,},
-			["Effect"] = {
+		["Effect"] = {
 			Name = "Purlot",
-			Description = "At the end of your turns, EpicLatiosLord gains 200 health. EpicLatiosLord can't counterattack.",
+			Description = "At the end of your turns, EpicLatiosLord gains 100 health.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Heal",200}},
+			["Power"] = {{"Heal",100}},
 			Target = "Self",
 		},
 		["Bio"] = "He renders snow meaningless.",
