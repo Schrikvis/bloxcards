@@ -3181,7 +3181,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Slash",
 		["Color"] = "Blue", 
-		["Cost"] = {["Neutral"] = 3, ["Blue"] = 2,},
+		["Cost"] = {["Neutral"] = 2, ["Blue"] = 2,},
 		["Effect"] = {
 			Name = "Life fam",
 			Description = "When this card is attacked and survives, set its health to 500.",
