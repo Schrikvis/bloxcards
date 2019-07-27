@@ -2497,7 +2497,7 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Neutral"] = 8,["Red"] = 2,},
 		["Effect"] = {
 			Name = "Overgrown",
-			Description = "Increase the Power all your fighters by 100 at the end of your turn.",
+			Description = "At the end of your turns, all allied fighters gain 100 Power.",
 			["Type"] = "OnEnd",
 			["Power"] = "Strengthen",
 			Target = "Ally",
