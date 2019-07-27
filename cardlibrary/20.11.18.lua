@@ -8866,7 +8866,7 @@ local twentyeleveneighteen = {
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "PunchKick",
 		["Color"] = "Yellow",
-		["Cost"] = {["Neutral"] = 3,},
+		["Cost"] = {["Neutral"] = 3, ["Yellow"] = 2,},
 		["Halfsies"] = true,
 		["Effect"] = {
 			Name = "Roller Coaster",
@@ -9111,8 +9111,8 @@ local twentyeleveneighteen = {
 	["Noob Gunner"] = {
 		["Id"] = 557982738,
 		["Name"] = "Noob Gunner",
-		["Health"] = 600,
-		["Power"] = 200,
+		["Health"] = 650,
+		["Power"] = 300,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "PistolShot",
 		["Color"] = "Yellow",
