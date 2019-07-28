@@ -7132,11 +7132,11 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			},
 		},
 		["Health"] = 100,
-		["Power"] = 400,
+		["Power"] = 300,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Thunder",
 		["Color"] = "Yellow",
-		["Cost"] = {["Yellow"] = 1,},
+		["Cost"] = {["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Haydoscale",
 			Description = "When this card dies, you lose 200 life.",
