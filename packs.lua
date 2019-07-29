@@ -21,7 +21,7 @@ local packs = {
 			"Exine", -- The kids are gonna want the card in the pack cover, y'know?
 			-- Each section has nine commons, seven uncommons, five rares, three epics and three legendaries.
 			-- Blue Commons
-			"Developer",
+			"Razikai",
 			"DeadZoneHark",
 			"Jimminus",
 			"Korblox Archer",
@@ -49,7 +49,7 @@ local packs = {
 			"B0BBA",
 			"VetexGames",
 			-- Blue Legendaries
-			"IcyTea",
+			"Silver_Semtexagon",
 			"JackInTheBlox",
 			"Megalodon the Dragon-Shark",
 			-- Red Commons
@@ -106,7 +106,7 @@ local packs = {
 			"IlIll",
 			"Wustard",
 			"Tom's Beans",
-			"Lord_Gizmo",
+			"KingCactaur",
 			"Overseer General",
 			-- Green Epics
 			"Brick_Man",
