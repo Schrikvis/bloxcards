@@ -5175,9 +5175,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3, ["Green"] = 3,},
 		["Effect"] = {
 			Name = "Poisonous Touch",
-			Description = "Whenever this card is attacked and survives, this fighter gains 300 health and you gain 300 Life.",
+			Description = "Whenever this card is attacked and survives, this fighter gains 150 health and you gain 300 Life.",
 			["Type"] = "OnAttacked",
-			["Power"] = {{"Heal",300,"Self"},{"Cost",-300}},
+			["Power"] = {{"Heal",150,"Self"},{"Cost",-300}},
 			Target = "Ally",
 		},
 		["Bio"] = "Get up lazy bones! While you slept and took fire, we did ALL the work!",
