@@ -2,8 +2,8 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Korblox Skeleton"] = {
 		["Id"] = 1237896695,
 		["Name"] = "Korblox Skeleton",
-		["Health"] = 300,
-		["Power"] = 100,
+		["Health"] = 100,
+		["Power"] = 300,
 		["Rarity"] = "Uncommon",
 		["Fading"] = true,
 		["AttackEffect"] = "Dash",
@@ -12,8 +12,8 @@ local stirrings = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 2,},
 		["Effect"] = {
 			Name = "Haydoscale",
-			Description = "Fading. When this card is targeted, transform it into Serhat12.",
-			["Type"] = "OnTarget",
+			Description = "Fading. When this card attacks and destroys another, transform this card into Serhat12.",
+			["Type"] = "OnAttackDestroy",
 			["Power"] = {{"Summon","Serhat12"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
