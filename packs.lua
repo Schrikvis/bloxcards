@@ -14,6 +14,7 @@ local packs = {
 			"Luck o The Lobsters",
 			"Mass Epidemic",
 			"Hallows Treats",
+			"Divine Favor-L",
 			"Divine Favor",
 			"Stud",
 			"Lunar Acolyte",
@@ -21,11 +22,11 @@ local packs = {
 			"Exine", -- The kids are gonna want the card in the pack cover, y'know?
 			-- Each section has nine commons, seven uncommons, five rares, three epics and three legendaries.
 			-- Blue Commons
-			"Razikai",
+			"Korblox Squire",
 			"DeadZoneHark",
 			"Jimminus",
 			"Korblox Archer",
-			"Korblox Squire",
+			"Razikai",
 			"Spiderboy",
 			"wer8888",
 			"DairingPoopHead",
@@ -158,6 +159,14 @@ local packs = {
 		CardPackId = 842435184, --721400845,
 		Description = "Red is the colour of power, ambition, and control. Dominion packs contain cards that cost red!",
 		Cards = {
+			"Qaeo",
+			"Guardia Knight",
+			"Banland",
+			"Acolyte of the Champions",
+			"Multicultural Limb",--feline fandango
+			"Scintillant Limb",--fluffy findings
+			"Verdant Limb",--kitnip
+			"Tyrannical Limb", --nine lives
 			"BenCanova1",
 			"Julez_X",
 			"Treas0ner",
@@ -308,6 +317,7 @@ local packs = {
 			"Redcliff: Decimate!",
 			"Redcliff: Rise!",
 			"Divine Favor",
+			"Divine Favor-L",
 			"Dodgeball Player Red",
 			"Ozzypig",
 			"Papasmurf",
@@ -400,6 +410,8 @@ local packs = {
 		CardPackId = 721399805,
 		Description = "Green is the colour of life, growth, and the primal forces. Vitality packs contain cards that cost green!",
 		Cards = {
+			"Wielder of the Darkheart",
+			"Acolyte of the Tribes",
 			"Defaultio",
 			"LordPendleton",
 			"Chair Chair, the Creator",
@@ -506,6 +518,7 @@ local packs = {
 			"Titan of the Dying Forest",
 			"Mass Epidemic",
 			"Divine Favor",
+			"Divine Favor-L",
 			"Mummy Peasant",
 			"Zom-nobi",
 			"XxWonderzxX",
@@ -601,6 +614,9 @@ local packs = {
 		CardPackId = 721399466,
 		Description = "Blue is the colour of logic, order, and structure. Thought packs contain cards that cost blue!",
 		Cards = {
+			"Wielder of the Ghostwalker",
+			"Nyxian Acolyte",
+			"DairingSpookHead", --Paraselene Acolyte
 			"Darklord1506",
 			"DigitalSon",
 			"Mlgloga",
@@ -738,6 +754,7 @@ local packs = {
 			"Titan of the Deep Below",
 			"Depths of the Nether",
 			"Divine Favor",
+			"Divine Favor-L",
 			"Alexnewtron",
 			"Theawesomist19",
 			"Skeleton Armada",
@@ -840,9 +857,11 @@ local packs = {
 		CardPackId = 721400239,
 		Description = "Yellow is the colour of chaos, emotion, and society. Revel packs contain cards that cost yellow!",
 		Cards = {
+			"Wielder of the Venomshank",
+			"Fried One Cultist", --Acolyte of the Future
+			"XiaoXiaoMan",
 			"H-Thunder",--Lightning Blast
 			"Xor's Lab", --Iron Café
-			"XiaoXiaoMan",
 			"Llendlar",
 			"Coordinated Attack",
 			"__________",
@@ -984,6 +1003,7 @@ local packs = {
 			"Plushie Unicorn",
 			"Titan of the Fried One",
 			"Divine Favor",
+			"Divine Favor-L",
 			"Wrath of the Fried One",
 			"Telamon",
 			"Sophisticated Bat",
@@ -1072,6 +1092,13 @@ local packs = {
 		Description = "Exotic new cards from the black market! White cards and joke cards! It's all yours, as long as you have 10 wins!",
 		WinRequirement = 10;
 		Cards = {
+			"Wielder of the Darkheart",
+			"Qaeo",
+			"Wielder of the Ghostwalker",
+			"Acolyte of the Tribes",
+			"Acolyte of the Champions",
+			"Nyxian Acolyte",
+			"Wielder of the Venomshank",
 			"Sauske2000",
 			"Teeny Ninja", --Vaktus
 			"Ninja Kitty", --Fractality
@@ -1145,13 +1172,6 @@ local packs = {
 			"Alar Blade Chaser",
 			"Alar Blade Archer",
 			"Alar Sentinel",
-			"Alar Myrmidon",
-			"Elioofsheep",
-			"Bucket of Bees",
-			"Neutrinous",
-			"Turtleuser3",
-			"Arte71",
-			"Jimmyin1",
 			-- PAST THIS POINT IS FOR WHITE CARDS AND JOKE CARDS ONLY. I'M LOOKING AT YOU, BLITZ.
 			"Bling Noob",
 			"Shirozaru",
@@ -1233,6 +1253,7 @@ local packs = {
 			"Haunted Doge Head",--Conscripter of the Titans
 			"Recruiter of the Titans",
 			"Divine Favor",
+			"Divine Favor-L",
 			"Tweety The Twitter Bird",
 			"Heavy Rain",
 			"BlueTaslem",
@@ -1373,7 +1394,6 @@ local packs = {
 			"Frankenstein",
 			"Final Revels",
 			"Enrage",
-			"Fried One Cultist",
 			"Failed Expirement",
 			"Dredger980",
 			"Dun_Boof",
@@ -1385,7 +1405,6 @@ local packs = {
 			"Cotton Candy Lion",
 			"Creepy Toy",
 			"Corrupt Guest",
-			"DairingSpookHead",
 			"Cereal Killer",
 			"Dark Book of Spells",
 			"Little Girl",
@@ -1402,9 +1421,16 @@ local packs = {
 		Description = "Filled with only cards belonging to an archetype, this pack can help you finish your deck provided you have at least 10 wins.",
 		WinRequirement = 10;
 		Cards = {
+			"DairingSpookHead", --Paraselene Acolyte
+			"Fried One Cultist", --Acolyte of the Future
+			"Fire Fighter", --Hedonist Acolyte
+			"Acolyte of the Tribes",
+			"Acolyte of the Champions",
+			"Nyxian Acolyte",
 			"Multicultural Limb",--feline fandango
 			"Scintillant Limb",--fluffy findings
 			"Verdant Limb",--kitnip
+			"Tyrannical Limb", --nine lives
 			"Grand Couch, the Slumbering",
 			"Chair Chair, the Creator",
 			"Lord Westinghouse",
@@ -1656,14 +1682,32 @@ local packs = {
 		Hidden = false;
 		PriceInBloxBux = 420,
 		PriceInRobux = 0;
-		CardsInPack = 3,
+		CardsInPack = 4,
 		CardPackId = 1532232174,
-		Description = "Appearing only on weekends, this pack contains incredibly rare bling ranging from commissioned alt arts, to pure memery. Requires 30 wins.",
-		WinRequirement = 30;
-		DateConstraint = {
-			wday  = {0,6};
-		};
+		Description = "This pack contains incredibly rare bling ranging from commissioned alt arts, to pure memery. Requires 15 wins.",
+		WinRequirement = 15;
+		
 		Cards = {
+			"Jason Voorhees Alt Art",
+			"vuyj",
+			"Korblox Archer Drawn",
+			"HistorArt",
+			"PixelCrypth",
+			"GrandDadPixel",
+			"Paraselene Sage V2",
+			"NerfModderV2",
+			"Gravity InspectorV2",
+			"Odin-ArtV",
+			"KingCactaur-ArtV",
+			"Ninja Elite-ArtV",
+			"CowboyV2",
+			"BlazerCV2",
+			"Favette",
+			"Mass Epidemic-ArtV",
+			"Papasmurf-ArtV",
+			"Wesker202Art",
+			"Trimez",
+			"PillagerArt",
 			"parkerest",
 			"CreeperKillerTrueAgent",
 			"V0IDBOX",
