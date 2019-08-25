@@ -1,6 +1,6 @@
 local twentyeleveneighteen = {
 	["Gusmanak"] = {
-		["Id"] = 335687377,
+		["Id"] = 3611610920,
 		["Name"] = "Gusmanak",
 		["Health"] = 1000,
 		["Power"] = 500,
@@ -39,7 +39,7 @@ local twentyeleveneighteen = {
 	},
 	
 	["JJ5x5"] = {
-		["Id"] = 1226640246,
+		["Id"] = 3557089048,
 		["Name"] = "JJ5x5",
 		["AltCards"] = {
 			["JJ5x5-E"] = {
@@ -334,7 +334,7 @@ local twentyeleveneighteen = {
 	},
 	
 	["Demonic Godbeast"] = {
-		["Id"] = 335986514,
+		["Id"] = 3557003289,
 		["Name"] = "Demonic Godbeast",
 		["AltCards"] = {
 			["Enderlox's Godbeast"] = {
@@ -345,9 +345,9 @@ local twentyeleveneighteen = {
 			["Favored Godbeast"] = {
 				["Effect"] = {
 					Name = "Divine Ruination",
-					Description = "Can't attack. Immune to all non-lock efects. At the end of your turn, deal 10000 damage to all enemy fighters and this fighter. Fading.",
+					Description = "Can't attack. Immune to all non-lock effects. At the end of your turn, deal 10000 damage to all enemy fighters and this fighter. Fading.",
 					["Type"] = "OnEnd",
-					["Power"] = {{"Damage",10000},{"Destroy",10000,"Self"}},
+					["Power"] = {{"Damage",10000},{"Damage",10000,"Self"}},
 					["Target"] = "Opponent",
 				},
 			},
@@ -366,6 +366,8 @@ local twentyeleveneighteen = {
 		["ReturnImmune"] = true,
 		["SwapImmune"] = true,
 		["CheckImmune"] = true,
+		["CopyImmune"] = true,
+		["CloneImmune"] = true,
 		["Color"] = "Neutral",
 		["Cost"] = {["Neutral"] = 0},
 		["Effect"] = {
@@ -1252,7 +1254,7 @@ local twentyeleveneighteen = {
 		["Name"] = "WarbearNomkins",
 		AltCards = {
 			["WarnomBearkins"] = {
-				["Id"] = 3472453204,
+				["Id"] = 543041104,
 				["Bio"] = "Milkmancing is a REAL school of magic, okay?",
 			},
 		},
@@ -1615,7 +1617,7 @@ local twentyeleveneighteen = {
 			},
 		},
 		["Health"] = 800,
-		["Power"] = 450,
+		["Power"] = 350,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Blue",
@@ -2068,7 +2070,7 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Red"] = 8,},
 		["Effect"] = {
 			Name = "Passive Aggressive Punishment",
-			Description = "At the end of your turns, check all fighters with 300 or less health of power.",
+			Description = "At the end of your turns, check all fighters with 300 or less health or power.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"CheckHealth",300},{"CheckPower",300}},
 			Target = "All",
@@ -2143,7 +2145,7 @@ local twentyeleveneighteen = {
 	},	
 	
 	["Widgeon"] = {
-		["Id"] = 2076396764,
+		["Id"] = 3611617174,
 		["Name"] = "Widgeon",
 		["AltCards"] = {
 			["Widgeon-Sun"] = {
@@ -2310,18 +2312,18 @@ local twentyeleveneighteen = {
 	["Uncomfortably"] = {
 		["Id"] = 1683485837,
 		["Name"] = "Uncomfortably",
-		["Health"] = 600,
-		["Power"] = 700,
+		["Health"] = 1200,
+		["Power"] = 300,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Lightning",
-		["Fading"] = true,
+		["Token"] = true,
 		["Color"] = "Yellow",
-		["Cost"] = {["Neutral"] = 1,["Yellow"] = 4,["Green"] = 4,},
+		["Cost"] = {["Yellow"] = 4,["Green"] = 4,},
 		["Effect"] = {
 			Name = "Sneak Attack",
-			Description = "When this card is cast, set your green and yellow icons to four and lose all other icons. At the end of your turns, generate a green icon.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"SetYellow",4},{"SetGreen",4},{"SetBlue",0},{"SetRed",0},{"SetNeutral",0},{"Summon","Uncomfortably Token"},{"Damage",9999,"Self"}},
+			Description = "At the end of your turns, put a random yellow and green card into your hand. This card cannot generate icons naturally.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"RandomAdd","Yellow"},{"RandomAdd","Green"}},
 			Target = "Ally",
 		},
 		["Bio"] = "This is the kind of name that makes me flinch.",
@@ -2555,12 +2557,13 @@ local twentyeleveneighteen = {
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 3,["Red"] = 2,},
+		["WeakenImmune"] = true,
 		["Effect"] = {
 			Name = "Glitch",
-			Description = "Whenever you cast a fighter, reset ScriptMasTime's power.",
-			["Type"] = "OnAllySummon",
-			["Power"] = {{"SetPower",550}},
-			Target = "Self",
+			Description = "This fighter is immune to effects that lower its Power.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Draw",0}},
+			Target = "Ally",
 		},
 		["Bio"] = "ScriptMasTime is here, have some bugs and fear!~",
 	},		
@@ -2616,9 +2619,9 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 3, ["Green"] = 3,},
 		["Effect"] = {
 			Name = "Strike Diamond!",
-			Description = "Whenever this card attacks, you gain 300 Life.",
+			Description = "Whenever this card attacks, you gain 500 Life.",
 			["Type"] = "OnAttack",
-			["Power"] = {{"Cost",-300}},
+			["Power"] = {{"Cost",-500}},
 			Target = "Self",
 		},
 		["Bio"] = "DrTrayBlox, also known as Dan the Diamond Minecraft (DanTDM) on YouTube, he'll always strike diamonds even from his foes.",
@@ -2666,7 +2669,7 @@ local twentyeleveneighteen = {
 	},		
 	
 	["tbradm"] = {
-		["Id"] = 1939172983,
+		["Id"] = 3667673782,
 		["Name"] = "tbradm",
 		["AltCards"] = {
 			["parkerest"] = {
@@ -2720,24 +2723,24 @@ local twentyeleveneighteen = {
 	["Owen0202"] = {
 		["Id"] = 384010198,
 		["Name"] = "Owen0202",
-		["Health"] = 500,
-		["Power"] = 500,
+		["Health"] = 700,
+		["Power"] = 700,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "GunShot",
 		["Color"] = "Blue",
-		["Cost"] = {["Neutral"] = 4,["Green"] = 1,},
+		["Cost"] = {["Green"] = 7,["Blue"] = 7,},
 		["Effect"] = {
 			Name = "Snipe!",
-			Description = "Whenever this card's stats are swapped, double its health and half its power.",
-			["Type"] = "OnSwap",
-			["Power"] = {{"MultiplyPower",0.5},{"MultiplyHealth",2}},
-			Target = "Self",
+			Description = "When this card is cast, summon a clone of a target fighter.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"SummonCopy"}},
+			Target = "Single",
 		},
-		["Bio"] = "Target confirmed. Waiting for Korblox ambush.",
+		["Bio"] = "NOTE: This card is quite buggy. Will be fixed SOON - use with caution.",
 	},		
 	
 	["VetexGames"] = {
-		["Id"] = 384010450,
+		["Id"] = 3526509394,
 		["Name"] = "VetexGames",
 		["Health"] = 700,
 		["Power"] = 500,
@@ -2893,7 +2896,7 @@ local twentyeleveneighteen = {
 			["Power"] = {{"Red",0}},
 			Target = "Ally",
 		},
-		["Bio"] = "Too bad TIX are be gone, he'll literally have nothing of value by then.",
+		["Bio"] = "Too bad TIX is gone, he'll literally have nothing of value by then.",
 	},			
 
 	["Saprasam"] = {
@@ -2926,11 +2929,13 @@ local twentyeleveneighteen = {
 		["WeakenImmune"] = true,
 		["DamageImmune"] = true,
 		["SetImmune"] = true,
+		["CheckImmune"] = true,
+		["DestroyImmune"] = true,
 		["Color"] = "Green",
 		["Cost"] = {["Green"] = 10,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "This card is immune to cards that lower or set its health or power.",
+			Description = "This card is immune to effects that destroy, damage, weaken, set, or check its health or power.",
 			["Type"] = "OnTarget",
 			["Power"] = "None",
 			Target = "Self",	
@@ -3175,10 +3180,11 @@ local twentyeleveneighteen = {
 	},			
 
 	["Meme Thief"] = {
-		["Id"] = 2789736959,
-		["Name"] = "Meme Thief",
-		["Health"] = 700,
-		["Power"] = 600,
+		["Id"] = 3674686508,
+		["Name"] = "Wielder of the Windforce",
+		["CopyBodge"] = "Meme Thief",
+		["Health"] = 600,
+		["Power"] = 700,
 		["Rarity"] = "Rare",
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Lightning",
@@ -3192,12 +3198,13 @@ local twentyeleveneighteen = {
 			["Power"] = {{"SetYellow",4},{"SetGreen",0},{"SetBlue",4},{"SetRed",0},{"SetNeutral",0},{"Summon","MemeThiefToken"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
-		["Bio"] = "Due to the societal and economic collapse of World War 3, memes have become such a valuable commdity that smugglers will go to any length to obtain them.",
+		["Bio"] = "The four winds meet where the Windforce's metal collides with flesh.",
 	},	
 	
 	["MemeThiefToken"] = {
-		["Id"] = 2789736959,
-		["Name"] = "Meme Thief",
+		["Id"] = 3674686508,
+		["Name"] = "Wielder of the Windforce",
+		["CopyBodge"] = "MemeThiefToken",
 		["Health"] = 600,
 		["Power"] = 700,
 		["Rarity"] = "Token",
@@ -3212,7 +3219,7 @@ local twentyeleveneighteen = {
 			["Power"] = {{"Yellow",1}},
 			Target = "Ally",
 		},
-		["Bio"] = "Due to the societal and economic collapse of World War 3, memes have become such a valuable commdity that smugglers will go to any length to obtain them.",
+		["Bio"] = "The four winds meet where the Windforce's metal collides with flesh.",
 	},			
 
 	["Flufflefunz"] = {
@@ -3399,7 +3406,7 @@ local twentyeleveneighteen = {
 	},			
 
 	["Pizzablawk"] = {
-		["Id"] = 411842899,
+		["Id"] = 3526494843,
 		["Name"] = "Pizzablawk",
 		["Health"] = 650,
 		["Power"] = 650,
@@ -3458,7 +3465,7 @@ local twentyeleveneighteen = {
 		["Color"] = "Green",
 		["Cost"] = {["Neutral"] = 1,["Green"] = 3,},
 		["Effect"] = {
-			Name = "Silence! I keel you!",
+			Name = "Silence I keel you!",
 			Description = "When this card is cast, a target fighter loses 200 Power. Put a Targeting Blip into your hand. Targeting Blips trigger Target Effects.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",200},{"Add","Targeting Blip","Ally"}},
@@ -3784,7 +3791,7 @@ local twentyeleveneighteen = {
 	},			
 
 	["Korblox Shaman"] = {
-		["Id"] = 411847310,
+		["Id"] = 3557104087,
 		["Name"] = "Korblox Shaman",
 		["Health"] = 500,
 		["Power"] = 500,
@@ -3863,9 +3870,9 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "SCRIPTING PARTY",
-			Description = "When this card is cast, deal 200 damage to all red fighters. All blue fighters lose 200 Power. Swap the stats of all green fighters. Lock all yellow fighters for two turns.",
+			Description = "When this card is cast, deal 200 damage to all red fighters. All blue fighters lose 200 Power. Check all green fighters who have 200 or less Power. Lock all yellow fighters for two turns.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",200,"ColorRed"},{"Weaken",200,"ColorBlue"},{"Lock",2,"ColorYellow"},{"Swap",030,"ColorGreen"}},
+			["Power"] = {{"Damage",200,"ColorRed"},{"Weaken",200,"ColorBlue"},{"Lock",2,"ColorYellow"},{"CheckPower",200,"ColorGreen"}},
 			Target = "All",
 			Increase = 1,
 		},
@@ -4283,8 +4290,8 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Yellow"] = 2,["Green"] = 2,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "Whenever this card attacks and destroys another, both players draw three cards and end the turn.",
-			["Type"] = "OnAttackDestroy",
+			Description = "Whenever this card destroys another, both players draw three cards and end the turn.",
+			["Type"] = "OnDestroy",
 			["Power"] = {{"Draw",3},{"EndTurn",030}},
 			Target = "All",
 		},
@@ -4292,7 +4299,7 @@ local twentyeleveneighteen = {
 	},	
 	
 	["Her0z"] = {
-		["Id"] = 415731509,
+		["Id"] = 3611611539,
 		["Name"] = "Her0z",
 		["Health"] = 15000,
 		["Power"] = 0,
@@ -4300,10 +4307,11 @@ local twentyeleveneighteen = {
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Blue",
 		["AttackBlock"] = true,
+		["CopyImmune"] = true,
 		["Cost"] = {["Blue"] = 6,},
 		["Effect"] = {
 			Name = "Totem Magic",
-			Description = "At the end of your turns, Her0z loses 800 health and all of its power. Her0z can't attack.",
+			Description = "At the end of your turns, Her0z loses 800 health and all of its power. Her0z can't attack or be copied.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Damage",800},{"SetPower",0}},
 			Target = "Self",
@@ -4671,8 +4679,8 @@ local twentyeleveneighteen = {
 	},	
 	
 	["Bad Bread"] = {
-		["Id"] = 893423897,
-		["Name"] = "Bad Bread",
+		["Id"] = 3611802051,
+		["Name"] = "Space Sandwich",
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Rare",
@@ -4687,7 +4695,7 @@ local twentyeleveneighteen = {
 			["Power"] = {{"Cost",-2000},{"EndTurn",1}},
 			Target = "Ally"
 		},
-		["Bio"] = "You would rather have swords jabbed into your eyeballs than eat this bread. I know from experience.",
+		["Bio"] = "People ask me if it's morally ethical to let humans eat space aliens for lunch? Honestly, it's ethical only if they taste good.",
 	},
 	
 	["Targeting Blip"] = {
@@ -4749,7 +4757,7 @@ local twentyeleveneighteen = {
 			Name = "Stud",
 			Description = "When this card is cast, deal 200 damage to all enemy fighters and lock them for two turns.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Lock",2},{"Damage",200}},
+			["Power"] = {{"Damage",200},{"Lock",2}},
 			Target = "Opponent",
 		},
 		["Bio"] = "How exactly does a monster refrigerate other monsters?",
@@ -4786,9 +4794,9 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Green"] = 8,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "At the end of your turn, spawn a zombie, then increase the health and power of all zombies by 150.",
+			Description = "At the end of your turns, spawn a zombie, then increase the health and power of all zombies by 100.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Summon","Zombie"},{"Heal",150,"Archetype"},{"Strengthen",150,"Archetype"}},
+			["Power"] = {{"Summon","Zombie"},{"Heal",100,"Archetype"},{"Strengthen",100,"Archetype"}},
 			Target = "Ally",	
 		},
 		["Bio"] = "You know how it'd be awkward if there were two zombie kings out? Yeah...",
@@ -5113,18 +5121,18 @@ local twentyeleveneighteen = {
 	["Miked"] = {
 		["Id"] = 431007469,
 		["Name"] = "Miked",
-		["Health"] = 700,
-		["Power"] = 300,
+		["Health"] = 500,
+		["Power"] = 400,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Yellow",
 		["Cost"] = {["Yellow"] = 1, ["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Roller Coaster",
-			Description = "When this card is cast, deal 200 damage to all blue fighters.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Damage",200}},
-			Target = "ColorBlue",
+			Description = "When this card dies, deal 100 damage to all enemy fighters.",
+			["Type"] = "OnDeath",
+			["Power"] = {{"Damage",100}},
+			Target = "Opponent",
 		},
 		["Bio"] = "Made seven years ago, Miked's paintball still Puts Loleris to shame.",
 	},
@@ -5248,7 +5256,7 @@ local twentyeleveneighteen = {
 	["NearMiss TFW"] = {
 		["Id"] = 430960670,
 		["Name"] = "NearMiss TFW",
-		["Health"] = 1300,
+		["Health"] = 1000,
 		["Power"] = 400,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Punch1",
@@ -5394,34 +5402,34 @@ local twentyeleveneighteen = {
 	["APlayerOfGames"] = {
 		["Id"] = 2793219325,
 		["Name"] = "APlayerOfGames",
-		["Health"] = 600,
-		["Power"] = 700,
+		["Health"] = 1200,
+		["Power"] = 400,
 		["Rarity"] = "Rare",
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Punch1",
 		["Color"] = "Green",
-		["Fading"] = true,
-		["Cost"] = {["Neutral"] = 1,["Red"] = 4,["Green"] = 4,},
+		["Cost"] = {["Red"] = 4,["Green"] = 4,},
 		["Effect"] = {
 			Name = "Sneak Attack",
-			Description = "When this card is cast, set your green and red icons to four and lose all other icons. At the end of your turns, generate a red icon.",
+			Description = "When this card is cast, drain 400 Life from your opponent. Then, a target fighter loses 400 Health and Power.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"SetYellow",0},{"SetGreen",4},{"SetBlue",0},{"SetRed",4},{"SetNeutral",0},{"Summon","APlayerofTokens"},{"Damage",9999,"Self"}},
-			Target = "Ally",
+			["Power"] = {{"Cost",-400,"Ally"},{"Inflict",400,"Opponent"},{"Damage",400},{"Weaken",400}},
+			Target = "Single",
 		},
 		["Bio"] = "We are all this card.",
 	},
 	
 	["APlayerofTokens"] = {
 		["Id"] = 2793219325,
-		["Name"] = "APlayerofTokens",
+		["Name"] = "APlayerofGames",
+		["CopyBodge"] = "APlayerofGames",
 		["Health"] = 600,
 		["Power"] = 700,
 		["Rarity"] = "Token",
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Green",
-		["Cost"] = {["Red"] = 4,["Green"] = 4,},
+		["Cost"] = {["Neutral"] = 1,["Red"] = 4,["Green"] = 4,},
 			["Effect"] = {
 			Name = "Sneak Attack",
 			Description = "At the end of your turns, generate a red icon.",
@@ -5567,8 +5575,8 @@ local twentyeleveneighteen = {
 	},
 	
 	["Meeboid Champion"] = {
-		["Id"] = 430962609,
-		["Name"] = "Meeboid Champion",
+		["Id"] = 3557104954,
+		["Name"] = "Linkmon99",
 		["AltCards"] = {
 			["Meeboid Champion-Sun"] = {
 				["Name"] = "Meeboid Swim Champion",
@@ -5593,7 +5601,7 @@ local twentyeleveneighteen = {
 			["Power"] = {{"Destroy",030,"Aggressor"}},
 			Target = "Ally",
 		},
-		["Bio"] = "",
+		["Bio"] = "The richest ROBLOX user, second only to the official ROBLOX account. Should we take that into account?",
 	},
 	
 	["Training Dummy"] = {
@@ -5877,6 +5885,11 @@ local twentyeleveneighteen = {
 					Target = "Single",
 				},
 				["Bio"] = "The heart fuels the eye, and in return, the eye directs the heart.",
+			},
+			["vuyj"] = {
+				["Id"] = 3674695883,
+				["Name"] = "vuyj",
+				["Bio"] = "I knew it! The Egyptians were behind this all along!",
 			},
 		},
 		["Health"] = 600,
@@ -6166,7 +6179,7 @@ local twentyeleveneighteen = {
 	},
 	
 	["stereoplexus"] = {
-		["Id"] = 446589987,
+		["Id"] = 3557118261,
 		["Name"] = "stereoplexus",
 		["Health"] = 1000,
 		["Power"] = 100,
@@ -6323,13 +6336,12 @@ local twentyeleveneighteen = {
 	},	
 	
 	["Korblox Shadowmage"] = {
-		["Id"] = 433133401,
-		["Name"] = "Korblox Shadowmage",
+		["Id"] = 3667669618,
+		["Name"] = "TheGuestToBlame",
 		["Health"] = 600,
 		["Power"] = 100,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Punch1",
-		["Archetype"] = "Korblox",
 		["Color"] = "Blue",
 		["Cost"] = {["Green"] = 3,},
 		["Effect"] = {
@@ -6339,7 +6351,7 @@ local twentyeleveneighteen = {
 			["Power"] = {{"Inflict",100}},
 			Target = "Opponent",
 		},
-		["Bio"] = "The Shadowmages are a long-lost sect of the korblox army, ousted and fled for practicing forbidden nature magic.",
+		["Bio"] = "My name is Yoshikage Kira. I'm 33 years old. My house is in the northeast section of Morioh, where all the villas are, and I am not married. I work as an employee for the Kame Yu department stores, and I get home every day by 8 PM at the latest.",
 	},
 	
 	["LordFlanz"] = {
@@ -6393,10 +6405,10 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Neutral"] = 8, ["Green"] = 1,},
 		["Effect"] = {
 			Name = "Mana Siphon",
-			Description = "When this card is cast, all non-white fighters lose 200 health and power.",
+			Description = "When this card is cast, all non-white fighters lose 300 health and power.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Weaken",200,"ColorBlue"},{"Damage",200,"ColorBlue"},{"Weaken",200,"ColorGreen"},{"Damage",200,"ColorGreen"},{"Weaken",200,"ColorYellow"},{"Damage",200,"ColorYellow"},{"Weaken",200,"ColorRed"},{"Damage",200,"ColorRed"}},
-			Target = "all",
+			["Power"] = {{"Weaken",300,"ColorBlue"},{"Damage",300,"ColorBlue"},{"Weaken",300,"ColorGreen"},{"Damage",300,"ColorGreen"},{"Weaken",300,"ColorYellow"},{"Damage",300,"ColorYellow"},{"Weaken",300,"ColorRed"},{"Damage",300,"ColorRed"}},
+			Target = "All",
 		},
 		["Bio"] = "This symphony is a ray of hope! Or some cheesy speech like that.",
 	},
@@ -7884,19 +7896,19 @@ local twentyeleveneighteen = {
 		["Id"] = 1402776767,
 		["Name"] = "JavierCollin88Poppin",
 		["Health"] = 600,
-		["Power"] = 500,
+		["Power"] = 600,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Dash",
 		["Color"] = "Red", 
 		["Cost"] = {["Red"] = 2, ["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "I refuse to believe that miku is alive.",
-			Description = "At the end of your turns, generate a yellow icon.",
-			["Type"] = "OnEnd",
-			["Power"] = {{"Yellow",1}},
-			Target = "Ally",
+			Description = "Whenever you lose life, deal 200 damage to the opponent.",
+			["Type"] = "OnHealthLoss",
+			["Power"] = {{"Inflict",200}},
+			Target = "Opponent",
 		},
-		["Bio"] = "He certainly is.",
+		["Bio"] = "What's POPPIN?",
 	},
 
 
@@ -7946,7 +7958,7 @@ local twentyeleveneighteen = {
 	},
 
 	["rhomlevko"] = {
-		["Id"] = 504390303,
+		["Id"] = 3557112317,
 		["Name"] = "rhomlevko",
 		["Health"] = 700,
 		["Power"] = 200,
@@ -8031,25 +8043,25 @@ local twentyeleveneighteen = {
 				["Name"] = "Goat Mama Wizard",
 				["Effect"] = {
 					Name = "AAAAAAAAAAAAAAAAAA",
-					Description = "When this card attacks and destroys another, summon another Goat Mama.",
+					Description = "When this card attacks and destroys another, summon a copy of Goat Mama without this effect.",
 					["Type"] = "OnAttackDestroy",
-					["Power"] = {{"Summon","PencilWizard-Val"}},
+					["Power"] = {{"Summon","PencilWizard-ValToken"}},
 					Target = "Ally",
 				},				
 				["Bio"] = "Did you just call me... 'Mom'? Well... I suppose... Would that make you happy?",
 			},
 			
 			["Pencil"] = {
-				["Id"] = 1761994050,
-				["Name"] = [["Pencil"Wizard]],
+				["Id"] = 3471760012,
+				["Name"] = [[PencilWizard]],
 				["Effect"] = {
 					Name = "P E N C I L",
-					Description = [[When this card attacks and destroys another, summon another "Pencil"Wizard.]],
+					Description = [[When this card attacks and destroys another, summon a copy of PencilWizard without this effect.]],
 					["Type"] = "OnAttackDestroy",
-					["Power"] = {{"Summon","Pencil"}},
+					["Power"] = {{"Summon","PencilToken"}},
 					Target = "Ally",
 				},				
-				["Bio"] = "The real question is, which part of Pencil is the wand? The eraser, or the tip?",
+				["Bio"] = "Don’t mess with the card game on motorcycle gang!",
 			},
 		},		
 		["Health"] = 500,
@@ -8060,16 +8072,40 @@ local twentyeleveneighteen = {
 		["Cost"] = {["Neutral"] = 4, ["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "AAAAAAAAAAAAAAAAAA",
-			Description = "When this card attacks and destroys another, summon another PencilWizard.",
+			Description = "When this card attacks and destroys another, summon a copy of PencilWizard without this effect.",
 			["Type"] = "OnAttackDestroy",
-			["Power"] = {{"Summon","PencilWizard"}},
+			["Power"] = {{"Summon","PencilWizardToken"}},
 			Target = "Ally",
 		},
 		["Bio"] = "The pen is mightier than the sword.",
 	},
+	["PencilWizardToken"] = {
+		["Id"] = 3471759452,
+		["Name"] = "PencilWizard",
+		["AltCards"] = {
+			["PencilWizard-ValToken"] = {
+				["Id"] = 666372854,
+				["Name"] = "Goat Mama Wizard",
+				["Bio"] = "Did you just call me... 'Mom'? Well... I suppose... Would that make you happy?",
+			},
+			
+			["PencilToken"] = {
+				["Id"] = 3471760012,
+				["Name"] = [["Pencil"Wizard]],			
+				["Bio"] = "The real question is, which part of Pencil is the wand? The eraser, or the tip?",
+			},
+		},		
+		["Health"] = 500,
+		["Power"] = 300,
+		["Rarity"] = "Token",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Yellow", 	
+		["Cost"] = {["Neutral"] = 4, ["Yellow"] = 1,},
+		["Bio"] = "The pen is mightier than the sword.",
+	},
 
 	["iiMasant"] = {
-		["Id"] = 511797827,
+		["Id"] = 3557087764,
 		["Name"] = "iiMasant",
 		AltCards = {
 			["iiMasantv2"] = {
@@ -8114,8 +8150,8 @@ local twentyeleveneighteen = {
 	},
 	
 	["Boom2"] = {
-		["Id"] = 3359990620,
-		["Name"] = "Destroyer of Children",
+		["Id"] = 3557007841,
+		["Name"] = "Guardia Fallen",
 		["Health"] = 600,
 		["Power"] = 500,
 		["Rarity"] = "Uncommon",
@@ -8129,7 +8165,7 @@ local twentyeleveneighteen = {
 			["Power"] = {{"Green",1}},
 			Target = "Ally",
 		},
-		["Bio"] = "Name/Art PENDING.",
+		["Bio"] = "After The Fall, the remains of Guardia splintered into smaller kingdoms, exiled to the dark forests of the Western Wilds.",
 	},
 	
 	["Helperbot"] = {
@@ -8153,7 +8189,7 @@ local twentyeleveneighteen = {
 	},
 		
 	["Tricky Magician"] = {
-		["Id"] = 513689583,
+		["Id"] = 3667688501,
 		["Name"] = "Tricky Magician",
 		["Health"] = 650,
 		["Power"] = 0,
@@ -8173,8 +8209,8 @@ local twentyeleveneighteen = {
 	},
 	
 	["Cat Ears Maid"] = {
-		["Id"] = 518339412,
-		["Name"] = "Cat Ears Maid",
+		["Id"] = 3557119792,
+		["Name"] = "Yorick",
 		["Health"] = 1000,
 		["Power"] = 100,
 		["Rarity"] = "Rare",
@@ -8189,7 +8225,7 @@ local twentyeleveneighteen = {
 			["Power"] = {{"Heal",200,"Ally"},{"Damage",200,"Self"}},
 			Target = "Ally",
 		},
-		["Bio"] = "One refreshing bloxy cola coming up!.",
+		["Bio"] = "Alas, poor Yorick.",
 	},
 	
 	["Mafia Grunt"] = {
@@ -8964,7 +9000,7 @@ local twentyeleveneighteen = {
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Null",
 		["Color"] = "Yellow",
-		["Cost"] = {["Yellow"] = 3,["Red"] = 1, },
+		["Cost"] = {["Yellow"] = 3,["Red"] = 1,},
 		["Effect"] = {
 			Name = "Gobble",
 			Description = "All fighters gain 600 power. Lock them for 3 turns.",
@@ -8976,8 +9012,8 @@ local twentyeleveneighteen = {
 	},			
 	
 	["Golden Turkey"] = {
-		["Id"] = 2786965117,
-		["Name"] = "Golden Turkey",
+		["Id"] = 3667695172,
+		["Name"] = "Wielder of the Firebrand",
 		["Health"] = 600,
 		["Power"] = 700,
 		["Rarity"] = "Rare",
@@ -8993,12 +9029,12 @@ local twentyeleveneighteen = {
 			["Power"] = {{"SetYellow",4},{"SetGreen",0},{"SetBlue",0},{"SetRed",4},{"SetNeutral",0},{"Summon","Golden Turkey Token"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},	
-		["Bio"] = "This turkey will allow me to gobble up so much money!",
+		["Bio"] = "THAT'S A NICE ICE DAGGER YOU'VE GOT THERE, YOU PAJAMA-WEARIN' BASKET-FACE SLIPPER-WIELDING CLYPE-DEEP-BACHLE GETHER-UPING BLATE-MAW BLEATHERING GOMERIL JESSIE OAF-LOOKIN' SCHOONER NYAFF PLOOKIE SHAN, MILK-DRINKING SOY-FACED SHILPIT MIM-MOOTHED SNIVELING WORM-EYED HOTTEN-BLAUGH VILE-STOOCHIE CALLEY-BREEK-TATTIE!!!",
 	},		
 	
 	["Golden Turkey Token"] = {
-		["Id"] = 557965900,
-		["Name"] = "Golden Turkey",
+		["Id"] = 3667695172,
+		["Name"] = "Wielder of the Firebrand",
 		["Health"] = 600,
 		["Power"] = 700,
 		["Rarity"] = "Token",
@@ -9013,7 +9049,7 @@ local twentyeleveneighteen = {
 			["Power"] = {{"Red",1}},
 			Target = "Ally",
 		},		
-		["Bio"] = "This turkey will allow me to gobble up so much money!",
+		["Bio"] = "THAT'S A NICE ICE DAGGER YOU'VE GOT THERE, YOU PAJAMA-WEARIN' BASKET-FACE SLIPPER-WIELDING CLYPE-DEEP-BACHLE GETHER-UPING BLATE-MAW BLEATHERING GOMERIL JESSIE OAF-LOOKIN' SCHOONER NYAFF PLOOKIE SHAN, MILK-DRINKING SOY-FACED SHILPIT MIM-MOOTHED SNIVELING WORM-EYED HOTTEN-BLAUGH VILE-STOOCHIE CALLEY-BREEK-TATTIE!!!",
 	},		
 	
 	["Turkey Cannon"] = {
@@ -9228,12 +9264,14 @@ local twentyeleveneighteen = {
 	},			
 	
 	["Fire Fighter"] = {
-		["Id"] = 557974486,
-		["Name"] = "Fire Fighter",
+		["Id"] = 3557085260,
+		["Name"] = "Hedonist Acolyte",
+		["Archetype"] = "Acolyte",
 		["Health"] = 800,
 		["Power"] = 0,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Lighting",
+		["Archetype"] = "Acolyte",
 		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 4,},
 		["Effect"] = {
@@ -9243,7 +9281,7 @@ local twentyeleveneighteen = {
 			["Power"] = {{"Yellow",1}},
 			Target = "Ally",
 		},
-		["Bio"] = "That put a dampener on your plans, eh?",
+		["Bio"] = "I'M DIRTY RICH AND DIRTY HAPPY AHAHAHAH!!!!",
 	},			
 	
 	["Roblox Gift Card"] = {
