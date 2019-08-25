@@ -291,7 +291,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2, ["Blue"] = 2,},
 		["Effect"] = {
 			Name = "Thug Life",
-			Description = "Whenever this fighter destroys another, put a DairingPoopHead into your hand and lock this fighter for an additional two turns.",
+			Description = "Whenever this fighter attacks and destroys another, put a DairingPoopHead into your hand and lock this fighter for an additional two turns.",
 			["Type"] = "OnAttackDestroy",
 			["Power"] = {{"Add","DairingPoopHead"},{"Lock",2,"Self"}},
 			Target = "Ally",
@@ -692,6 +692,11 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Histor"] = {
 		["Id"] = 3164490188,
 		["Name"] = "Histor",
+		["AltCards"] = {
+			["HistorArt"] = {
+				["Id"] = 3557086080,
+			},
+		},
 		["Health"] = 350,
 		["Power"] = 700,
 		["Rarity"] = "Uncommon",
@@ -712,20 +717,14 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Javier Killer"] = {
 		["Id"] = 616082761,
 		["Name"] = "xXJavier_killer1xX",
-		["Health"] = 800,
-		["Power"] = 0,
+		["CopyBodge"] = "Javier Killer",
+		["Health"] = 250,
+		["Power"] = 650,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Slash",
 		["Color"] = "Red",
-		["Cost"] = {["Neutral"] = 4,},
-		["Effect"] = {
-			Name = "Pyrotechnics",
-			Description = "At the end of your turns, generate a green icon.",
-			["Type"] = "OnEnd",
-			["Power"] = {{"Green",1}},
-			Target = "Ally",
-		},
-		["Bio"] = "I will destroy all new houses.",
+		["Cost"] = {["Red"] = 2,},
+		["Bio"] = "I will destroy the middle class.",
 	}, 
 
 	["Kariu"] = {
@@ -908,17 +907,21 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Steam Razikai"] = {
-		["Id"] = 630010945,
+		["Id"] = 3526502886,
 		["Name"] = "Steam Razikai",
 		["Health"] = 200,
 		["Power"] = 200,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Dash",
+		["Requirement"] = {"Archetype",0,1},
+		["Archetype"] = "Gatekeeper",
+		["CopyImmune"] = true,
+		["CloneImmune"] = true,
 		["Color"] = "Blue", 
 		["Cost"] = {["Blue"] = 2, ["Yellow"] = 1,},
 		["Effect"] = {
 			Name = "Sticks and Stones and Steam",
-			Description = "Whenever your opponent casts a fighter, return Steam Razikai and that fighter to their owner's hand.",
+			Description = "Cast only if you control no Gatekeepers. Whenever your opponent casts a fighter, return Steam Razikai and that fighter to their owner's hand. This card can't be copied or cloned.",
 			["Type"] = "OnEnemySummon",
 			["Power"] = {{"Return",030},{"Return",030,"Aggressor"}},
 			Target = "Self",
@@ -973,7 +976,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["SoulSearch"] = {
-		["Id"] = 858902108,
+		["Id"] = 3557113879,
 		["Name"] = "SoulSearch",
 		["AltCards"] = {
 			["SoulSearch-Val"] = {
@@ -1013,11 +1016,11 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "GunShot",
 		["Charge"] = true,
 		["Color"] = "Blue",
-		["Cost"] = {["Neutral"] = 6, ["Blue"] = 5,},
+		["Cost"] = {["Neutral"] = 5, ["Blue"] = 5,},
 		["Effect"] = {
 			Name = "Ultimate",
-			Description = "Haste. Whenever this card attacks, a target fighter loses 300 Power.",
-			["Type"] = "OnAttack",
+			Description = "Haste. After this card attacks, a target fighter loses 300 Power.",
+			["Type"] = "OnAttackEnd",
 			["Power"] = {{"Weaken",300}},
 			Target = "Single",
 		},
@@ -1451,7 +1454,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Yellow"] = 6,},
 		["Effect"] = {
 			Name = "Hellfire",
-			Description = "After this fighter attacks, check what it attacked if it had 300 power or less.",
+			Description = "After this fighter attacks, check what it attacked if it has 300 power or less.",
 			["Type"] = "OnAttackEnd",
 			["Power"] = {{"CheckPower",300}},
 			Target = "Aggressor",
@@ -1683,7 +1686,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Crystal of Ambition's End-Sun"] = {
 				["Name"] = "Castle of Coarseness",
-				["Id"] = 897248023,
+				["Id"] = 3611632513,
 				["Bio"] = "lololololololol prequels XD",
 			}
 		},
@@ -2291,7 +2294,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Blue"] = 3, ["Green"] = 2, ["Yellow"] = 3,},
 		["Effect"] = {
 			Name = "befriending of scaly mutts",
-			Description = "During combat, this fighter assigns random damage between 50 and 1000. Whenever an enemy fighter dies, unlock this card.",
+			Description = "During combat, this fighter assigns random damage between 50 and 1000. Whenever an enemy fighter dies, unlock all allies.",
 			["Type"] = "OnEnemyDeath",
 			["Power"] = {{"Unlock",9999}},
 			Target = "Ally",
@@ -2491,7 +2494,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["BenCanova1"] = {
-		["Id"] = 785620731,
+		["Id"] = 3557004037,
 		["Name"] = "BenCanova1",
 		["Health"] = 300,
 		["Power"] = 550,
@@ -2581,7 +2584,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Kcbeast666"] = {
-		["Id"] = 785620968,
+		["Id"] = 3557089767,
 		["Name"] = "Kcbeast666",
 		["Health"] = 1000,
 		["Power"] = 550,
@@ -2593,7 +2596,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["DigitalSon"] = {
-		["Id"] = 785621013,
+		["Id"] = 3557004866,
 		["Name"] = "DigitalSon",
 		["Health"] = 500,
 		["Power"] = 500,
@@ -2635,6 +2638,18 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Wesker202"] = {
 		["Id"] = 3164507390,
 		["Name"] = "Wesker202",
+		["AltCards"] = {
+			["Wesker202Art"] = {
+				["Id"] = 3526748389,
+				["Effect"] = {
+					Name = "Furnos",
+					Description = "When this card is cast, put Tail of Endeavours into your hand. When Wesker gains a lock, he gains 250 health.",
+					["Type"] = "OnSummon",
+					["Power"] = {{"Summon","Wesker202ArtToken"},{"Add","Haunted Redcliff Armor"},{"Damage",9999,"Self"}},
+					Target = "Ally",
+				},
+			},
+		},
 		["Health"] = 300,
 		["Power"] = 500,
 		["Rarity"] = "Rare",
@@ -2656,6 +2671,11 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Haunted Korblox Armor"] = {
 		["Id"] = 3164507390,
 		["Name"] = "Wesker202",
+		["AltCards"] = {
+			["Wesker202ArtToken"] = {
+				["Id"] = 3526748389,
+			},
+		},
 		["Health"] = 300,
 		["Power"] = 500,
 		["Rarity"] = "Token",
@@ -2792,7 +2812,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 4,},
 		["Effect"] = {
 			Name = "Life fam",
-			Description = "Fading. When this card is cast, deal 150 damage to all enemy fighters. When targeted, reset this card's stats and return it to your hand. ",
+			Description = "Fading. When this card is cast, deal 150 damage to all enemy fighters. When targeted, reset this card's stats and return it to your hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",150,"Opponent"},{"Summon","Round2"},{"Damage",9999,"Self"}},
 			Target = "Ally",
@@ -2824,17 +2844,22 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Round3"] = {
 		["Id"] = 2585417810,
 		["Name"] = "Ehj236",
-		["Health"] = 0,
-		["Power"] = 0,
+		["Health"] = 200,
+		["Power"] = 200,
 		["Rarity"] = "Common",
+		["Fading"] = true,
 		["AttackEffect"] = "Punchkick",
+		["Requirement"] = {"Archetype",0,1},
+		["Archetype"] = "Gatekeeper",
+		["CopyImmune"] = true,
+		["CloneImmune"] = true,
 		["Color"] = "Blue", 
 		["Cost"] = {["Neutral"] = 2, ["Blue"] = 5,},
 		["Effect"] = {
 			Name = "Life fam",
-			Description = "Summon a 1000/0 fighter and put Good Service into your hand. Whenever you cast an action or terrain spell, that fighter gains 250 health.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Summon","Round4"},{"Add","Round5"}},
+			Description = "Cast only if you control no Gatekeepers. 3 Charges. Whenever your opponent casts a fighter, reset this fighter's stats, remove a charge, and return that fighter to its owner's hand. If this fighter has no charges, this fighter gains 200 Health and Power instead. This card can't be copied or cloned. Fading.",
+			["Type"] = "OnEnemySummon",
+			["Power"] = {{"Summon","Round4"},{"Return",030,"Aggressor"},{"Damage",9999,"Self"}},
 			Target = "Ally",
 		},
 		["Bio"] = [[I haven't seen you leave your cabin since we set sail, sir. Are you alright?]],
@@ -2843,62 +2868,73 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Round4"] = {
 		["Id"] = 2585417810,
 		["Name"] = "Ehj236",
-		["Health"] = 1000,
-		["Power"] = 0,
+		["Health"] = 200,
+		["Power"] = 200,
 		["Rarity"] = "Token",
 		["Fading"] = true,
 		["AttackEffect"] = "Punchkick",
+		["Requirement"] = {"Archetype",0,1},
+		["Archetype"] = "Gatekeeper",
+		["CopyImmune"] = true,
+		["CloneImmune"] = true,
 		["Color"] = "Blue", 
 		["Cost"] = {["Neutral"] = 2, ["Blue"] = 5,},
 		["Effect"] = {
 			Name = "Life fam",
-			Description = "Whenever you cast an action or terrain spell, this fighter gains 250 health.",
-			["Type"] = "OnAllyCast",
-			["Power"] = {{"Heal",250}},
-			Target = "Self",
+			Description = "Cast only if you control no Gatekeepers. 2 Charges. Whenever your opponent casts a fighter, reset this fighter's stats, remove a charge, and return that fighter to its owner's hand. If this fighter has no charges, this fighter gains 200 Health and Power instead. This card can't be copied or cloned. Fading.",
+			["Type"] = "OnEnemySummon",
+			["Power"] = {{"Summon","Round5"},{"Return",030,"Aggressor"},{"Damage",9999,"Self"}},
+			Target = "Ally",
 		},
 		["Bio"] = [[A butler's duty is to protect the duties of others, sir.]],
 	},
 
 	["Round5"] = {
-		["Id"] = 2585418180,
-		["Name"] = "Good Service",
-		["Health"] = 0,
-		["Power"] = 0,
+		["Id"] = 2585417810,
+		["Name"] = "Ehj236",
+		["Health"] = 200,
+		["Power"] = 200,
 		["Rarity"] = "Token",
 		["Fading"] = true,
 		["AttackEffect"] = "Punchkick",
+		["Requirement"] = {"Archetype",0,1},
+		["Archetype"] = "Gatekeeper",
+		["CopyImmune"] = true,
+		["CloneImmune"] = true,
 		["Color"] = "Blue", 
-		["Cost"] = {["Blue"] = 0,},
+		["Cost"] = {["Neutral"] = 2, ["Blue"] = 5,},
 		["Effect"] = {
 			Name = "Scrumptious!",
-			Description = "A target fighter gains 250 health. Lock it for 2 turns.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"Heal",250},{"Lock",2}},
-			Target = "Single",
+			Description = "Cast only if you control no Gatekeepers. 1 Charge. Whenever your opponent casts a fighter, reset this fighter's stats, remove a charge, and return that fighter to its owner's hand. If this fighter has no charges, this fighter gains 200 Health and Power instead. This card can't be copied or cloned. Fading.",
+			["Type"] = "OnEnemySummon",
+			["Power"] = {{"Summon","Round6"},{"Return",030,"Aggressor"},{"Damage",9999,"Self"}},
+			Target = "Ally",
 		},
 		["Bio"] = [[I hope I was of some use to you, sir.]],
 	},
 
 	["Round6"] = {
-		["Id"] = 785856699,
-		["Name"] = "Roundawsome",
-		["Health"] = 750,
+		["Id"] = 2585417810,
+		["Name"] = "Ehj236",
+		["Health"] = 200,
 		["Power"] = 200,
 		["Rarity"] = "Token",
-		["Archetype"] = "Hero",
 		["Fading"] = true,
 		["AttackEffect"] = "Punchkick",
-		["Color"] = "Green", 
-		["Cost"] = {["Green"] = 4,},
+		["Requirement"] = {"Archetype",0,1},
+		["Archetype"] = "Gatekeeper",
+		["CopyImmune"] = true,
+		["CloneImmune"] = true,
+		["Color"] = "Blue", 
+		["Cost"] = {["Neutral"] = 2, ["Blue"] = 5,},
 		["Effect"] = {
 			Name = "Life fam",
-			Description = "1 charge. When summoned, deal 150 damage to all enemy fighters. When targeted, remove a charge, reset its stats, and return this card to your hand. ",
-			["Type"] = "OnTarget",
-			["Power"] = {{"Add","Round7"},{"Damage",9999,"Self"}},
-			Target = "Ally",
+			Description = "Cast only if you control no Gatekeepers. 0 Charges. Whenever your opponent casts a fighter, this fighter gains 200 Health and Power. This card can't be copied or cloned. Fading.",
+			["Type"] = "OnEnemySummon",
+			["Power"] = {{"Heal",200},{"Strengthen",200}},
+			Target = "Self",
 		},
-		["Bio"] = [[Slash and Burn!]],
+		["Bio"] = [[I'm always at your service, sir.]],
 	},
 
 	["Round7"] = {
@@ -2981,7 +3017,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Shard Master"] = {
-		["Id"] = 1016706292,
+		["Id"] = 3526497855,
 		["Name"] = "Shard Master",
 		["Health"] = 1500,
 		["Power"] = 0,
@@ -3174,7 +3210,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Killar1234567"] = {
-		["Id"] = 857449266,
+		["Id"] = 3557090623,
 		["Name"] = "Killar1234567",
 		["Health"] = 500,
 		["Power"] = 250,
@@ -3193,7 +3229,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["superkicker2005"] = {
-		["Id"] = 1055575844,
+		["Id"] = 3557117216,
 		["Name"] = "superkicker2005",
 		["AltCards"] = {
 			["Myrmiredon 4"] = {
@@ -3219,18 +3255,18 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["kickertoken"] = {
-		["Id"] = 1812182105,
+		["Id"] = 3526510566,
 		["Name"] = "VoxTrigati",
-		["Health"] = 500,
-		["Power"] = 500,
+		["Health"] = 550,
+		["Power"] = 550,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Blue",
 		["Cost"] = {["Neutral"] = 1, ["Blue"] = 4,},	
 		["Effect"] = {
 			Name = "Blow Dart",
-			Description = "Whenever this card attacks, set the locks on a target fighter to 2.",
-			["Type"] = "OnAttack",
+			Description = "After this card attacks, set the locks on a target fighter to 2.",
+			["Type"] = "OnAttackEnd",
 			["Power"] = {{"Unlock",9999},{"Lock",2}},
 			Target = "Single",
 		},
@@ -3379,6 +3415,13 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Bigtank_s"] = {
 		["Id"] = 3164473249,
 		["Name"] = "Bigtank_s",
+		["AltCards"] = {
+			["PixelCrypth"] = {
+				["Id"] = 3611615818,
+				["Name"] = "PixelCrypth",
+				["Bio"] = "Every plant can grow but this flower keeps growing. This card is an alternate version of Bigtank_s.",
+			},
+			},
 		["Health"] = 450,
 		["Power"] = 450,
 		["Rarity"] = "Common",
@@ -3398,7 +3441,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["iSpaceDonut"] = {
 		["Id"] = 898791450,
 		["Name"] = "iSpaceDonut",
-		["Health"] = 800,
+		["Health"] = 600,
 		["Power"] = 300,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "PunchKick",
@@ -3434,7 +3477,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Fate_Sealed"] = {
-		["Id"] = 955947464,
+		["Id"] = 3557006365,
 		["Name"] = "Fate_Sealed",
 		["Health"] = 1000,
 		["Power"] = 250,
@@ -3442,7 +3485,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "KnifeStab",
 		["Color"] = "Green", 
-		["Cost"] = {["Neutral"] = 4,},
+		["Cost"] = {["Neutral"] = 4, ["Green"] = 1,},
 		["Effect"] = {
 			Name = "Life fam",
 			Description = "At the end of your turns, if this fighter has less than 250 power, set its power to 250.",
@@ -3656,7 +3699,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Neutrinous"] = {
-		["Id"] = 1151275174,
+		["Id"] = 3557108873,
 		["Name"] = "Neutrinous",
 		["Health"] = 1100,
 		["Power"] = 200,
@@ -4307,7 +4350,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["DestroyImmune"] = true,
 		["Effect"] = {
 			Name = "Stalwart Barrier",
-			Description = "Effects can't damage, weaken, heal, empower, return, destroy, check, or swap or set the stats of Silver_Semtexagon.",
+			Description = "Effects can't damage, weaken, heal, empower, return, destroy, check, swap, or set the stats of Silver_Semtexagon.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Draw",0}},
 			["Target"] = "Self",
@@ -4359,7 +4402,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Name = "It's not easy being green.",
 			Description = "When this card is cast, put two random green cards that cost only green icons into your hand.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"RandomAdd",{"Chef","Boogerguy123","Langz","Brycen27","Glaecium","CrazyCaleb77","Explosive Toad","Graboid","Little Girl","Overseer Drake","Pirate","Tankbomer","Verisimilitudal Dissonance","DerpDerpyness","Gentle Elder","Final Tree","Kariu","Liechtenauer's Sophistry","Monkey","Samksoon321","Saprasam","ThePestilentOne","Zombie Cultist","KillCactaur","Meebling Infestation","Stranglevines","Vermin's Caress","Apheliotropic Syzygy","BonesMcCormick","Byte","Deadeye","DIY Dominus","DIY: Dark Dominus","FatalWing","KingShadowCrow","Meeboid King","MiloCortez","Mummy Peasant","Overseer's Steed","Roundawsome","Titan of the Dying Forest","Forest of Paradise","Wizardguy34","Zombie Summoner","Awful Good","Tom's Beans","Bad Bread","Oddman's Gambit","Wrath of King Gecko","BandiheartYT","BroRubik","Fearmiredon","KasoduS","WaddleTom","Mass Epidemic","Haunted Mansion","Witch's True Brew","1337","Darr1432","Indoorsnowball","Myrmiredon","Left Leg of the Fried One","Ripull","ST Leader Keeler1","Zabiehunter","Priestess Zanzel, the Promised One","Summon! Meeboid Titano!"}},{"RandomAdd",{"Chef","Boogerguy123","Langz","Brycen27","Glaecium","CrazyCaleb77","Explosive Toad","Graboid","Little Girl","Overseer Drake","Pirate","Tankbomer","Verisimilitudal Dissonance","DerpDerpyness","Gentle Elder","Final Tree","Kariu","Liechtenauer's Sophistry","Monkey","Samksoon321","Saprasam","ThePestilentOne","Zombie Cultist","KillCactaur","Meebling Infestation","Stranglevines","Vermin's Caress","Apheliotropic Syzygy","BonesMcCormick","Byte","Deadeye","DIY Dominus","DIY: Dark Dominus","FatalWing","KingShadowCrow","Meeboid King","MiloCortez","Mummy Peasant","Overseer's Steed","Roundawsome","Titan of the Dying Forest","Forest of Paradise","Wizardguy34","Zombie Summoner","Awful Good","Tom's Beans","Bad Bread","Oddman's Gambit","Wrath of King Gecko","BandiheartYT","BroRubik","Fearmiredon","KasoduS","WaddleTom","Mass Epidemic","Haunted Mansion","Witch's True Brew","1337","Darr1432","Indoorsnowball","Myrmiredon","Left Leg of the Fried One","Ripull","ST Leader Keeler1","Zabiehunter","Priestess Zanzel, the Promised One","Summon! Meeboid Titano!"}}}
+			["Power"] = {{"RandomAdd",{"Chef","Boogerguy123","Langz","Brycen27","Glaecium","CrazyCaleb77","Explosive Toad","Graboid","Little Girl","Overseer Drake","Pirate","Tankbomer","Verisimilitudal Dissonance","DerpDerpyness","Gentle Elder","Final Tree","Kariu","Liechtenauer's Sophistry","Monkey","Samksoon321","Saprasam","ThePestilentOne","Zombie Cultist","KillCactaur","Meebling Infestation","Stranglevines","Vermin's Caress","Apheliotropic Syzygy","BonesMcCormick","Byte","Deadeye","DIY Dominus","DIY: Dark Dominus","FatalWing","KingShadowCrow","Meeboid King","MiloCortez","Mummy Peasant","Overseer's Steed","Roundawsome","Titan of the Dying Forest","Forest of Paradise","Wizardguy34","Zombie Summoner","Awful Good","Tom's Beans","Bad Bread","Oddman's Gambit","Wrath of King Gecko","BandiheartYT","BroRubik","Fearmiredon","KasoduS","WaddleTom","Mass Epidemic","Haunted Mansion","Witch's True Brew","1337","Darr1432","Indoorsnowball","Myrmiredon","Left Leg of the Fried One","Ripull","ST Leader Keeler1","Zabiehunter","Priestess Zanzel, the Promised One","Summon! Meeboid Titano!"}},{"RandomAdd",{"Chef","Boogerguy123","Langz","Brycen27","Glaecium","CrazyCaleb77","Explosive Toad","Graboid","Little Girl","Overseer Drake","Pirate","Tankbomer","Verisimilitudal Dissonance","DerpDerpyness","Gentle Elder","Final Tree","Kariu","Liechtenauer's Sophistry","Monkey","Samksoon321","Saprasam","ThePestilentOne","Zombie Cultist","KillCactaur","Meebling Infestation","Stranglevines","Vermin's Caress","Apheliotropic Syzygy","BonesMcCormick","Byte","Deadeye","DIY Dominus","DIY: Dark Dominus","FatalWing","KingShadowCrow","Meeboid King","MiloCortez","Mummy Peasant","Overseer's Steed","Roundawsome","Titan of the Dying Forest","Forest of Paradise","Wizardguy34","Zombie Summoner","Awful Good","Tom's Beans","Bad Bread","Oddman's Gambit","Wrath of King Gecko","BandiheartYT","BroRubik","Fearmiredon","KasoduS","WaddleTom","Mass Epidemic","Haunted Mansion","Witch's True Brew","1337","Darr1432","Indoorsnowball","Myrmiredon","Left Leg of the Fried One","Ripull","ST Leader Keeler1","Zabiehunter","Priestess Zanzel, the Promised One","Summon! Meeboid Titano!"}}},
 			["Target"] = "Ally",
 		},
 		["Bio"] = "Regardless if you call it Fairy, faery, or faerie;  it’s still going to kick your butt.",
@@ -4368,22 +4411,21 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["MesouricPhantom976"] = {
 		["Id"] = 2789830362,
 		["Name"] = "MesouricPhantom976",
-		["Health"] = 600,
-		["Power"] = 700,
+		["Health"] = 800,
+		["Power"] = 800,
 		["Rarity"] = "Rare",
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Punch2",
-		["Fading"] = true,
 		["Color"] = "Blue",
-		["Cost"] = {["Neutral"] = 1, ["Blue"] = 4,["Green"] = 4,},
+		["Cost"] = {["Blue"] = 4,["Green"] = 4,},
 		["Effect"] = {
-			Name = "Sneak Attack",
-			Description = "When this card is cast, set your blue and green icons to four and lose all other icons. At the end of your turns, generate a green icon.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"SetYellow",0},{"SetGreen",4},{"SetBlue",4},{"SetRed",0},{"SetNeutral",0},{"Summon","MesouricToken"},{"Damage",9999,"Self"}},
-			Target = "Ally",
+			Name = "Funpalooza",
+			Description = "Whenever any fighter is cast, swap the stats of all fighters.",
+			["Type"] = "OnAnySummon",
+			["Power"] = {{"Swap",030}},
+			Target = "All",
 		},
-		["Bio"] = "Considering you're gonna use this in a green/blue deck, the number probably represents the ammount of icons the player already have.",
+		["Bio"] = "Sit down. Let's talk about that iFunny watermark.",
 	},
 	
 	["MesouricToken"] = {
@@ -4932,7 +4974,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Lord Westinghouse"] = {
-		["Id"] = 2831478062,
+		["Id"] = 3526479916,
  		["Name"] = "Lord Westinghouse",
   		["Health"] = 800,
   		["Power"] = 400,
@@ -4955,7 +4997,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Chair Chair, the Creator"] = {
-		["Id"] = 2857554217,
+		["Id"] = 3526481576,
  		["Name"] = "Chair Chair, Master Manufacturer",
   		["Health"] = 2000,
   		["Power"] = 100,
@@ -4974,12 +5016,12 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Archetype"] = "Chair",
   			Target = "Ally",
   		},
-  		["Bio"] = "You have violated the laws of our people. Your life is now forfeit.",
+  		["Bio"] = "The Creator.",
 	},
 	
 	["Grand Couch, the Slumbering"] = {
-		["Id"] = 2831477576,
- 		["Name"] = "Grand Couch, the Slumbering",
+		["Id"] = 3557007245,
+ 		["Name"] = "Grand Couch",
   		["Health"] = 1500,
   		["Power"] = 500,
  		["Rarity"] = "Legendary",
@@ -4996,7 +5038,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Archetype"] = "Chair",
   			Target = "Ally",
   		},
-  		["Bio"] = "You have violated the laws of our people. Your life is now forfeit.",
+  		["Bio"] = "The Slumbering.",
 	},
 	
 
@@ -5046,7 +5088,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Creeperkiller510"] = {
-		["Id"] = 1483291247,
+		["Id"] = 3611609880,
 		["Name"] = "Creeperkiller510",
 		["Health"] = 1200,
 		["Power"] = 1200,
@@ -5135,7 +5177,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3, ["Red"] = 8,},
 		["Effect"] = {
 			Name = "Unleash Hell",
-			Description = "When this card is cast, Destroy all fighters. For each fighter destroyed this way, deal 200 damage to your opponent. Then deal 4000 damage to all other allies fighters. End the turn.",
+			Description = "When this card is cast, Destroy all fighters. For each fighter destroyed this way, deal 200 damage to your opponent. Then deal 4000 damage to all other allied fighters. End the turn.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Heal",4000,"Self"},{"Summon","Rach Token","Ally"},{"Destroy"},{"Damage",4000,"Ally"},{"EndTurn",1,"Ally"}},
 			Target = "All",
@@ -5175,9 +5217,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3, ["Green"] = 3,},
 		["Effect"] = {
 			Name = "Poisonous Touch",
-			Description = "Whenever this card is attacked and survives, this fighter gains 300 health and you gain 300 Life.",
+			Description = "Whenever this card is attacked and survives, this fighter gains 150 health and you gain 300 Life.",
 			["Type"] = "OnAttacked",
-			["Power"] = {{"Heal",300,"Self"},{"Cost",-300}},
+			["Power"] = {{"Heal",150,"Self"},{"Cost",-300}},
 			Target = "Ally",
 		},
 		["Bio"] = "Get up lazy bones! While you slept and took fire, we did ALL the work!",
@@ -5725,13 +5767,14 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["WeakenImmune"] = true,
 		["SetImmune"] = true,
 		["DamageImmune"] = true,
+		["CheckImmune"] = true,
 		["Charge"] = true,
 		["Color"] = "Blue",
 		["Archetype"] = "Crime4",
 		["Cost"] = {["Neutral"] = 0,},
 		["Effect"] = {
 			Name = "C",
-			Description = "Haste. This card is immune to effects that lower, or set its stats. When this card dies, Case #4 is solved. You get arrested and lose the game.",
+			Description = "Haste. This card is immune to effects that lower, check, or set its stats. When this card dies, Case #4 is solved. You get arrested and lose the game.",
 			["Type"] = "OnDeath",
 			["Power"] = {{"SetLife",0}},
 			Target = "Ally",
@@ -5860,7 +5903,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["lilBismarck"] = {
-		["Id"] = 3472455140,
+		["Id"] = 543041104,
 		["Name"] = "lilBismarck",
 		["Health"] = 800,
 		["Power"] = 400,
@@ -6404,7 +6447,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["DoomedAdventurer"] = {
-		["Id"] = 2107431866,
+		["Id"] = 3611802597,
 		["Name"] = "Doomed Adventurer",
 		["Health"] = 500,
 		["Power"] = 500,
@@ -6450,9 +6493,9 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1,["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Leitris.png",
-			Description = "When this card is cast, a target fighter loses 200 power.",
+			Description = "When this card is cast, a target fighter loses 300 power.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Weaken",200}},
+			["Power"] = {{"Weaken",300}},
 			Target = "Single",
 		},
 		["Bio"] = "As an avid researcher of fish disease, he passionately studies the lifestyle of the legendary fish Kanye West.",	
@@ -6483,6 +6526,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Neutral",
 		["Cost"] = {["Neutral"] = 0,},
 		["Stealth"] = true,
+		["Stormless"] = true,
 		["Effect"] = {
 			Name = "Despacito. Quiero respirar tu cuello despacito. Deja que te diga cosas al oído. Para que te acuerdes si no estás conmigo.",
 			Description = "Destroy all allied fighters. Return this card to your hand.",
@@ -6827,8 +6871,8 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["lilBismarck, Anime Avenger"] = {
-        	["Id"] = 2786556403,
-        	["Name"] = "lilBismarck, Anime Avenger",
+        ["Id"] = 2786556403,
+        ["Name"] = "lilBismarck, Anime Avenger",
 		["AltCards"] = {
 			["No anime"] = {
 				["Id"] = 2786556974,
@@ -6909,12 +6953,12 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Blue",
-		["Cost"] = {["Neutral"] = 2, ["Blue"] = 1,},
+		["Cost"] = {["Yellow"] = 1, ["Blue"] = 1,},
 		["Effect"] = {
 			Name = "Spam",
-			Description = "After this card attacks, lock all ally fighters for an additional turn and generate two Blue icons.",
-			["Type"] = "OnAttackEnd",
-			["Power"] = {{"Lock",1},{"Blue",2}},
+			Description = "When this card is returnt to your hand, draw two cards.",
+			["Type"] = "OnReturn",
+			["Power"] = {{"Draw",2}},
 			Target = "Ally",
 		},
 		["Bio"] = "Honestly, some people...",
@@ -7127,7 +7171,7 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Banland"] = {
-		["Id"] = 543041104,
+		["Id"] = 3674688481,
 		["Name"] = "Banland",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -7146,6 +7190,228 @@ local tentwelvesixteen = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		},
 		["Bio"] = "Where the hackers go to die.",
 	},
-
+	
+	["Wielder of the Venomshank"] = {
+		["Id"] = 3667697447,
+		["Name"] = "Wielder of the Venomshank",
+		["Health"] = 600,
+		["Power"] = 700,
+		["Rarity"] = "Rare",
+		["AttackEffect"] = "Lightning",
+		["Fading"] = true,
+		["Color"] = "Yellow",
+		["Cost"] = {["Neutral"] = 1,["Yellow"] = 4,["Green"] = 4,},
+		["Effect"] = {
+			Name = "Sneak Attack",
+			Description = "When this card is cast, set your green and yellow icons to four and lose all other icons. At the end of your turns, generate a green icon.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"SetYellow",4},{"SetGreen",4},{"SetBlue",0},{"SetRed",0},{"SetNeutral",0},{"Summon","Wielder of the Venomshank Token"},{"Damage",9999,"Self"}},
+			Target = "Ally",
+		},
+		["Bio"] = "Being hit by a sword generally means you're about to die. Being hit by the Venomshank means you're absolutely going to die.",
+	},	
+	
+	["Wielder of the Venomshank Token"] = {
+		["Id"] = 3667697447,
+		["Name"] = "Wielder of the Venomshank",
+		["CopyBodge"] = "Wielder of the Venomshank Token",
+		["Health"] = 600,
+		["Power"] = 700,
+		["Rarity"] = "Token",
+		["Archetype"] = "Hero",
+		["AttackEffect"] = "Lightning",
+		["Color"] = "Yellow",
+		["Cost"] = {["Neutral"] = 1,["Yellow"] = 4,["Green"] = 4,},
+		["Effect"] = {
+			Name = "Sneak Attack",
+			Description = "At the end of your turns, generate a green icon.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Green",1}},
+			Target = "Ally",
+		},
+		["Bio"] = "Being hit by a sword generally means you're about to die. Being hit by the Venomshank means you're absolutely going to die.",
+	},
+	
+	["Nyxian Acolyte"] = {
+		["Id"] = 3557110706,
+		["Name"] = "Nyxian Acolyte",
+		["Health"] = 800,
+		["Power"] = 0,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Slice",
+		["Archetype"] = "Acolyte",
+		["Color"] = "Blue",
+		["Cost"] = {["Neutral"] = 4,},
+		["Effect"] = {
+			Name = "Asdf",
+			Description = "At the end of your turns, generate a green icon.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Green",1}},
+			Target = "Ally",
+		},
+		["Bio"] = "Nightmares and Celestials share one atribute: they feast upon the mind of anyone daring enough to call upon them. That's why the main prerequisite needed to become a Nyxian Acolyte is to be an idiot.",
+	},
+	
+	["Acolyte of the Tribes"] = {
+		["Id"] = 3471703929,
+		["Name"] = "Acolyte of the Tribes",
+		["Health"] = 800,
+		["Power"] = 0,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "PunchKick",
+		["Archetype"] = "Acolyte",
+		["Color"] = "Green",
+		["Cost"] = {["Neutral"] = 4,},
+		["Effect"] = {
+			Name = "Conflux",
+			Description = "At the end of your turns, generate a yellow icon.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Yellow",1}},
+			Target = "Ally",
+		},
+		["Bio"] = "Why focus on their differences? They're all my strength!",
+	},
+	
+	["Acolyte of the Champions"] = {
+		["Id"] = 3557002536,
+		["Name"] = "Acolyte of the Champions",
+		["Health"] = 800,
+		["Power"] = 0,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Slash",
+		["Archetype"] = "Acolyte",
+		["Color"] = "Red",
+		["Cost"] = {["Neutral"] = 4,},
+		["Effect"] = {
+			Name = "Pyrotechnics",
+			Description = "At the end of your turns, generate a green icon.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Green",1}},
+			Target = "Ally",
+		},
+		["Bio"] = "My strength and life, I dedicate to them!",
+	},
+	
+	["Guardia Knight"] = {
+		["Id"] = 3674702546,
+		["Name"] = "Guardia Knight",
+		["Health"] = 600,
+		["Power"] = 500,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Dash",
+		["Color"] = "Red", 
+		["Cost"] = {["Red"] = 2, ["Yellow"] = 2,},
+		["Effect"] = {
+			Name = "I refuse to believe that miku is alive.",
+			Description = "At the end of your turns, generate a yellow icon.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Yellow",1}},
+			Target = "Ally",
+		},
+		["Bio"] = "Stop! You have violated the law! Pay the court a fine or serve your sentence! Your stolen goods are now forfeit.",
+	},
+	
+	["Wielder of the Ghostwalker"] = {
+		["Id"] = 3676689087,
+		["Name"] = "Wielder of the Ghostwalker",
+		["Health"] = 600,
+		["Power"] = 700,
+		["Rarity"] = "Rare",
+		["Archetype"] = "Hero",
+		["AttackEffect"] = "Punch2",
+		["Fading"] = true,
+		["Color"] = "Blue",
+		["Cost"] = {["Neutral"] = 1, ["Blue"] = 4,["Green"] = 4,},
+		["Effect"] = {
+			Name = "Sneak Attack",
+			Description = "When this card is cast, set your blue and green icons to four and lose all other icons. At the end of your turns, generate a green icon.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"SetYellow",0},{"SetGreen",4},{"SetBlue",4},{"SetRed",0},{"SetNeutral",0},{"Summon","Wielder of the Ghostwalker Token"},{"Damage",9999,"Self"}},
+			Target = "Ally",
+		},
+		["Bio"] = [[Wait a second, "Ghostwalker"? Pfft, you can't walk on ghosts! Ghosts don't even EXIST.]],
+	},
+	
+	["Wielder of the Ghostwalker Token"] = {
+		["Id"] = 3676689087,
+		["Name"] = "Wielder of the Ghostwalker",
+		["CopyBodge"] = "Wielder of the Ghostwalker Token",
+		["Health"] = 600,
+		["Power"] = 700,
+		["Rarity"] = "Token",
+		["Archetype"] = "Hero",
+		["AttackEffect"] = "Punch2",
+		["Color"] = "Blue",
+		["Cost"] = {["Neutral"] = 1, ["Blue"] = 4,["Green"] = 4,},
+			["Effect"] = {
+			Name = "Sneak Attack",
+			Description = "At the end of your turns, generate a green icon.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Green",1}},
+			Target = "Ally",
+		},
+		["Bio"] = [[Wait a second, "Ghostwalker"? Pfft, you can't walk on ghosts! Ghosts don't even EXIST.]],
+	},
+	
+	["Qaeo"] = {
+		["Id"] = 3688545481,
+		["Name"] = "Qaeo",
+		["Health"] = 500,
+		["Power"] = 400,
+		["Rarity"] = "Uncommon",
+		["AttackEffect"] = "Punch2",
+		["Color"] = "Red",
+		["Cost"] = {["Neutral"] = 3, ["Red"] = 3,},
+		["Effect"] = {
+			Name = "Black Magic",
+			Description = "When this card dies, set all of your opponent's icons to 3.",
+			["Type"] = "OnDeath",
+			["Power"] = {{"SetYellow",3},{"SetGreen",3},{"SetBlue",3},{"SetRed",3},{"SetNeutral",3}},
+			Target = "Opponent",
+		},
+		["Bio"] = "Okay, using black magic is cool and all, but can you at least give some other colors love? Why can't we use ORANGE magic? Do you have a problem with orange?",
+	},
+	
+	["Wielder of the Darkheart"] = {
+		["Id"] = 3711257905,
+		["Name"] = "Wielder of the Darkheart",
+		["Health"] = 600,
+		["Power"] = 700,
+		["Rarity"] = "Rare",
+		["Archetype"] = "Hero",
+		["AttackEffect"] = "Punch1",
+		["Color"] = "Green",
+		["Fading"] = true,
+		["Cost"] = {["Neutral"] = 1,["Red"] = 4,["Green"] = 4,},
+		["Effect"] = {
+			Name = "Sneak Attack",
+			Description = "When this card is cast, set your green and red icons to four and lose all other icons. At the end of your turns, generate a red icon.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"SetYellow",0},{"SetGreen",4},{"SetBlue",0},{"SetRed",4},{"SetNeutral",0},{"Summon","Wielder of the Darkheart Token"},{"Damage",9999,"Self"}},
+			Target = "Ally",
+		},
+		["Bio"] = "The most evil of the wielders, not because he kills everyone, but because he lets everyone live.",
+	},
+	
+	["Wielder of the Darkheart Token"] = {
+		["Id"] = 2793219325,
+		["Name"] = "Wielder of the Darkheart",
+		["CopyBodge"] = "Wielder of the Darkheart",
+		["Health"] = 600,
+		["Power"] = 700,
+		["Rarity"] = "Token",
+		["Archetype"] = "Hero",
+		["AttackEffect"] = "Lightning",
+		["Color"] = "Green",
+		["Cost"] = {["Neutral"] = 1,["Red"] = 4,["Green"] = 4,},
+			["Effect"] = {
+			Name = "Sneak Attack",
+			Description = "At the end of your turns, generate a red icon.",
+			["Type"] = "OnEnd",
+			["Power"] = {{"Red",1}},
+			Target = "Ally",
+		},
+		["Bio"] = "The most evil of the wielders, not because he kills everyone, but because he lets everyone live.",
+	},
 }
 return tentwelvesixteen
