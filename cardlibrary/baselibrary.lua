@@ -5,6 +5,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Froot Ninja-Sun"] = {
 				["Id"] =  897237327,
+				["CopyBodge"] = "Froot Ninja-Sun",
 				["Name"] = "Froot Smoothie Ninja",
 				["Bio"] = "Froot smoothies for sale! Made with ingredients fresh from the floor of an ancient ninja dojo!",
 			},
@@ -54,6 +55,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["IcyTea-ArtV"] = {
 				["Id"] = 411802926,
+				["CopyBodge"] = "IcyTea-ArtV",
 				["AltArt"] = true,
 				["Bio"] = "Master of arts and ice, IcyTea is an impeccable fighter capable of advanced magic and destructive power. Watch out! Part of the 'Aife' Collection! Collect them all!",
 			},
@@ -82,6 +84,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["PixelFlameV2"] = {
 				["Id"] = 1403670783,
+				["CopyBodge"] = "PixelFlame",
 				["AltArt"] = true,
 				["Bio"] = "Freedom is good. Volcanic apocalypse is bad.",
 			},
@@ -109,6 +112,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Meeboid-Sun"] = {
 				["Name"] = "Meeboid",
+				["CopyBodge"] = "Meeboid",
 				["Id"] = 2036654538,
 				["Bio"] = "Merp’s up, dudes!",
 			},
@@ -136,6 +140,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Meeboid Surfer-Sun"] = {
 				["Id"] =  2036653497,
+				["CopyBodge"] = "Meeboid Surfer-Sun",
 				["Bio"] = "Just be thankful it's not a weeboid",
 			},
 		},
@@ -162,6 +167,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Meebling-Sun"] = {
 				["Id"] = 897243957,
+				["CopyBodge"] = "Meebling-Sun",
 				["Bio"] = "Meeblings are composed of 90% raw cuteness and 10% goof. This means that your average Meeboid weighs over five hundred tons.",
 			},
 		},
@@ -188,6 +194,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Meeboid King-Sun"] = {
 				["Name"] = "Meeboid King",
+				["CopyBodge"] = "Meeboid King",
 				["Id"] = 897244133,
 				["Bio"] = "Meep and Moop went up the mewp to morp a merp of water. Meep fell down and merped his merp and Moop came meeping after.",
 				["Effect"] = {
@@ -256,6 +263,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["TitanoAgony-Sun"] = {
 				["Id"] = 897247036,
+				["CopyBodge"] = "TitanoAgony-Sun",
 				["Bio"] = "Keep this away from Ambamby!",
 			},
 		},
@@ -284,6 +292,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["TitanoDespair-Sun"] = {
 				["Id"] = 897238058,
+				["CopyBodge"] = "TitanoDespair-Sun",
 				["Bio"] = "Shut up, Immoratlity! It’s supposed to be a secret!",
 			},
 		},
@@ -312,6 +321,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["TitanoImmortality-Sun"] = {
 				["Name"] = "Kraken's Half of Immortality",
 				["Id"] = 897238183,
+				["CopyBodge"] = "TitanoImmortality-Sun",
 				["Bio"] = "Hey, Despair, do you think the players'll notice I'm just you but flipped?",
 			},
 		},
@@ -341,6 +351,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["TitanoSoul-Sun"] = {
 				["Name"] = "Kraken's Tentacle of Soul",
 				["Id"] = 897247143,
+				["CopyBodge"] = "TitanoSoul-Sun",
 				["Bio"] = "We're not in Japan, Agony. We can't get away with that!",
 			},
 		},
@@ -459,13 +470,14 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Fave"] = {
-		["Id"] = 285152362,
-		["Name"] = "Fave",
+		["Id"] = 3674709719,
+		["Name"] = "Faave",
+		["CopyBodge"] = "Fave",
 		["AltCards"] = {
 			["Favette"] = {
 				["Id"] = 532358085,
 				["Name"] = "Favette",
-				["Bio"] = "The female version of fave. She is fabulous, loves starblox, and hangs out with amber sometimes.",
+				["Bio"] = "The female version of Faave. She is fabulous, loves starblox, and hangs out with amber sometimes.",
 			},
 		},
 		["Health"] = 1500,
@@ -542,6 +554,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Dayren-E"] = {
 				["Id"] = 1567571638,
+				["CopyBodge"] = "Dayren-E",
 				["Bio"] = "A nice little jig on his drums was all he needed to amass an army of rabbits.",
 			},
 		},
@@ -576,6 +589,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Toxic-ArtV"] = {
 				["Id"] = 2110162967,
+				["CopyBodge"] = "Toxic-ArtV",
 				["AltArt"] = true,
 				["Effect"] = {
 					Name = "Yarrge",
@@ -621,6 +635,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 
 	["LoogiTOKEN"] = {
 		["Id"] = 265306270,
+		["CopyBodge"] = "Loogi",
 		["Name"] = "Loogi",
 		["Power"] = 300,
 		["Health"] = 300,
@@ -658,6 +673,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Lyv-E"] = {
 				["Id"] = 1567579083,
+				["CopyBodge"] = "Lyv-E",
 				["Bio"] = "Do cats eat eggs? That’s a good question. I love good questions. Imagine, me and this egg, sitting alone on a beach, discussing the universe…",
 			},
 		},
@@ -678,22 +694,23 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["Faultful"] = {
-		["Id"] = 3471703929,
-		["Name"] = "Acolyte of the Tribes",
-		["Power"] = 0,
-		["Health"] = 800,
+		["Id"] = 266031947,
+		["Name"] = "Faultful",
+		["Power"] = 250,
+		["Health"] = 150,
 		["Rarity"] = "Uncommon",
-		["AttackEffect"] = "Yellow",
+		["AttackEffect"] = "PunchKick",
 		["Color"] = "Green",
-		["Cost"] = {["Neutral"] = 4,},
+		["Charge"] = true,
+		["Cost"] = {["Neutral"] = 2, ["Green"] = 1,},
 		["Effect"] = {
 			Name = "Conflux",
-			Description = "At the end of your turns, generate a yellow icon.",
-			["Type"] = "OnEnd",
-			["Power"] = {{"Yellow",1}},
+			Description = "Haste. When this card strikes the opponent, drain 400 Life from your opponent.",
+			["Type"] = "OnStrike",
+			["Power"] = {{"Cost",-400},{"Inflict",400,"Opponent"}},
 			Target = "Ally",
 		},
-		["Bio"] = "Why focus on their differences? They're all my strength!",
+		["Bio"] = "Cackletta disapproves.",
 	},
 
 	["EzCheez"] = {
@@ -742,6 +759,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Langz-E"] = {
 				["Id"] = 2252097920,
+				["CopyBodge"] = "Langz-E",
 				["Bio"] = "Hey guys check out my new camera...wait this isn't a camera",
 			},
 		},
@@ -768,6 +786,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Ambamby-Sun"] = {
 				["Id"] =  897235350,
+				["CopyBodge"] = "Ambamby-Sun",
 				["Bio"] = "Ambamby doesn’t have any clothes, so she’s not allowed in the water. Walrus attacks are serious business, you know?",
 			},
 		},
@@ -789,11 +808,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 
 	["SharpTH"] = {
-		["Id"] = 266032097,
+		["Id"] = 3526500628,
 		["Name"] = "SharpTH",
 		["AltCards"] = {
 			["SharpTH-E"] = {
 				["Id"] = 1567584496,
+				["CopyBodge"] = "SharpTH-E",
 				["Bio"] = "Wow, I didn’t even notice that egg. What a decearing egg.",
 			},
 		},
@@ -879,6 +899,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["BlazerCV2"] = {
 				["Id"] = 296708433,
+				["CopyBodge"] = "BlazerCV2",
 				["Bio"] = "Demon Ninja.",
 			},
 		},
@@ -1025,16 +1046,19 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Chef-E"] = {
 				["Id"] = 1567570823,
+				["CopyBodge"] = "Chef-E",
 				["Name"] = "Egg Chef",
 				["Bio"] = "If you aren’t in the mood for lunch, breakfast is still available. Delicious Robloxian eggs, cooked to perfection, sunny side up.",
 			},
 			["Baker"] = {
 				["Id"] = 1247061539,
+				["CopyBodge"] = "Baker",
 				["Name"] = "Baker",
 				["Bio"] = "And for desert, why not try caramelized robloxian? Now with extra icing!",
 			},
 			["Chef-Val"] = {
 				["Id"] = 655011632,
+				["CopyBodge"] = "Chef-Val",
 				["Name"] = "Romantic Chef",
 				["Bio"] = "Dont like caramel? How about a romantic desert, melted, buttered robloxian parts mixed with peanut butter and white chocolate on a cookie!",
 			},
@@ -1067,27 +1091,27 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Green"] = 1,},
 		["Effect"] = {
 			Name = "Booster",
-			Description = "When this card is cast, drain 300 life from the opponent.",
+			Description = "When this card is cast, drain 350 life from the opponent.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Cost",-300},{"Inflict",300,"Opponent"}},
+			["Power"] = {{"Cost",-350},{"Inflict",350,"Opponent"}},
 			Target = "Ally",
 		},
 		["Bio"] = [[Sometimes, I like to throw ice on the ground and pretend I'm a walrus.]],
 	},
 	
 	["Cowboy"] = {
-		["Id"] = 271751150,
-		
-		
+		["Id"] = 3611609346,
 		["Name"] = "Cowboy",
 		["AltCards"] = {
 			["Mcree"] = {
 				["Id"] = 532358983,
+				["CopyBodge"] = "Mcree",
 				["Name"] = "Cowboy",
 				["Bio"] = "Bamf.",
 			},
 			["CowboyV2"] = {
 				["Id"] = 540878417,
+				["CopyBodge"] = "CowboyV2",
 				["Bio"] = "Oh boy, would ya look at the time.",
 				["Effect"] = {
 					Name = "High Noon",
@@ -1236,6 +1260,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Latchie-Sun"] = {
 				["Id"] =  897242856,
+				["CopyBodge"] = "Latchie-Sun",
 				["Bio"] = "A healthy breakfast to get you through the day consists of eggs, bacon, toast, and twenty cups of pirate juice.",
 			},
 		},
@@ -1298,6 +1323,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 
 	["NICCOToken"] = {
 		["Id"] = 271751992,
+		["CopyBodge"] = "NICCO",
 		["Name"] = "NICCO",
 		["Health"] = 1250,
 		["Power"] = 250,
@@ -1357,6 +1383,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["PixelPistol-Val"] = {
 				["Name"] = "PixelHeart",
 				["Id"] = 655016789,
+				["CopyBodge"] = "PixelPistol-Val",
 				["Bio"] = "On second thought, I'm alright with my past choices.",
 			}		
 		},
@@ -1443,6 +1470,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["TeeVee-Val"] = {
 				["Name"] = "Ms. Teevee",
 				["Id"] = 662150269,
+				["CopyBodge"] = "Ms. Teevee",
 				["Bio"] = "The only channels you will find on this teevee are romcoms.",
 			},
 		},
@@ -1480,6 +1508,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Valletta-Sun"] = {
 				["Id"] = 897247645,
+				["CopyBodge"] = "Valletta-Sun",
 				["Bio"] = "I can’t reach that darn cup. SERVANTS!",
 			}
 		},
@@ -1541,8 +1570,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Y05H1M4N"] = {
 		["Id"] = 3300003885,
 		["Name"] = "Y05H1M4N",
-		["Health"] = 700,
-		["Power"] = 500,
+		["Health"] = 750,
+		["Power"] = 550,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Punch2",
 		["Color"] = "Blue",
@@ -1610,11 +1639,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Newbie"] = {
-		["Id"] = 274145390,
+		["Id"] = 3667704129,
 		["Name"] = "Newbie",
 		["AltCards"] = {
 			["Newbie-Val"] = {
 				["Name"] = "Female Newbie",
+				["CopyBodge"] = "Newbie-Val",
 				["Id"] = 655013013,
 				["Bio"] = "Is that even a problem?",
 			},
@@ -1708,6 +1738,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["RobberAlt"] = { --bruh moment, couldn't tell Robber apart from Burglar, sorry ! --SoulSearch 15/07/2019
 				["Name"] = "Burglar",
 				["Id"] = 3471764666,
+				["CopyBodge"] = "RobberAlt",
 				["Bio"] = "AAAAAAAA I'M INTOLERANT TO GLUTEN WHY CAN'T I STOP MYSELF",
 			},
 		},
@@ -1719,7 +1750,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 1, ["Green"] = 3,},
 		["Effect"] = {
 			Name = "Bloxy Victory",
-			Description = "At the end of your turns, your opponent loses 150 life and you gain 150 life.",
+			Description = "At the end of your turns, drain 150 Life from your opponent.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Inflict",150},{"Cost",-150}},
 			Target = "Opponent",
@@ -1745,6 +1776,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Dued1-E"] = {
 				["Id"] = 1567572187,
+				["CopyBodge"] = "Dued1-E",
 				["Bio"] = "Stop bickering about pineapple on pizza. We have to face the greater evil: Eggs on pizza.",
 			},
 		},
@@ -1764,6 +1796,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["GemInNight-Sun"] = {
 				["Id"] =  1899484554,
 				["Name"] = "GemInNight",
+				["CopyBodge"] = "GemInNight-Sun",
 				["Bio"] = "Actually, I’m a Leo...",
 			},
 		},
@@ -1854,11 +1887,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Ninja"] = {
-		["Id"] = 275340372,
+		["Id"] = 3611615159,
 		["Name"] = "Ninja",
 		["AltCards"] = {
 			["NinjaV2"] = {
 				["Id"] = 2810634367,
+				["CopyBodge"] = "NinjaV2",
 				["Effect"] = {
 					Name = "Assimilate",
 					Description = "Both players perform a Fortnite dance. Ninja does not trigger any effects when summoned.",
@@ -1890,6 +1924,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Ninja Elite-ArtV"] = {
 				["Id"] = 487571425,
+				["CopyBodge"] = "Ninja Elite-ArtV",
 				["Bio"] = "Ninjas used the dilation in the eyes of a cat to figure out the current time.",
 			},
 		},
@@ -1977,6 +2012,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Teeny Ninja"] = {
 		["Id"] = 2903829151,
 		["Name"] = "Vaktus",
+		["CopyBodge"] = "Teeny Ninja",
 		["Health"] = 1200,
 		["Power"] = 600,
 		["Rarity"] = "Legendary",
@@ -2001,6 +2037,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Snowskateer-Sun"] = {
 				["Name"] = "Skateskateer",
 				["Id"] = 2036644572,
+				["CopyBodge"] = "Snowskateer-Sun",
 				["Bio"] = "In a gleeful act of self defence, Skateskateer brutally flayed the flesh of his father and used it to adorn his skateboard. He then skated across torrential peril to an ancient ninja monastery.",
 				["Effect"] = {
 					Name = "Assimilate",
@@ -2090,7 +2127,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {							
 			["RiceStorage-Val"] = {
 				["Id"] = 655011758,
-				["Name"] = "ChocolateStorage",	
+				["Name"] = "ChocolateStorage",
+				["CopyBodge"] = "RichStorage-Val",	
 				["Effect"] = {
 					Name = "Assimilate",
 					Description = "Whenever your opponent gains life, unlock ChocolateStorage and give it 100 Health and Power.",
@@ -2211,17 +2249,17 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Brunito"] = {
 		["Id"] = 280562404,
 		["Name"] = "Brunito",
-		["Health"] = 800,
-		["Power"] = 0,
+		["Health"] = 200,
+		["Power"] = 800,
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Slice",
 		["Color"] = "Blue",
-		["Cost"] = {["Neutral"] = 4,},
+		["Cost"] = {["Neutral"] = 1, ["Blue"] = 2,},
 		["Effect"] = {
 			Name = "Uptown Funk",
-			Description = "At the end of your turns, generate a green icon.",
-			["Type"] = "OnEnd",
-			["Power"] = {{"Green",1}},
+			Description = "When this card is cast, both players gain 200 Life.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"Cost",-200},{"Inflict",-200,"Opponent"}},
 			Target = "Ally",
 		},
 		["Bio"] = "He will gently poke you.",
@@ -2270,7 +2308,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "DDude",
 		["AltCards"] = {
 			["DDude-Val"] = {
-				["Name"] = "DDude",			
+				["Name"] = "DDude",
+				["CopyBodge"] = "DDude-Val",			
 				["Id"] = 655012667,
 				["Effect"] = {
 					Name = "Vampire",
@@ -2337,6 +2376,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Drager-ArtV"] = {
 				["Id"] = 411810760,
+				["CopyBodge"] = "Drager Art-V",
 				["AltArt"] = true,
 				["Bio"] = "Also known as drager980, Drager is the original scripter of Blox Cards and is secretly a wizard. Part of the 'Aife' Collection! Collect them all!",
 			},
@@ -2363,7 +2403,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["RoboSanta"] = {
 				["Id"] = 1247064782,
-				["Name"] = "Robo-Santa",
+				["Name"] = "RoboSanta",
 				["Bio"] = "In the distant year of 2019, Santa made a robotic version of himself to aid him in gift-giving. And thus began the reign of Robo-Santa the Usurper.",
 			},
 		},
@@ -2592,6 +2632,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Tomspick-C"] = {
 				["Id"] = 1247418791,
+				["CopyBodge"] = "Tomspick-C",
 				["Bio"] = "Yes, I eat turkey on Christmas. You thought it was just a Thanksgiving thing?",
 			},
 		},
@@ -2638,6 +2679,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Zolerus-E"] = {
 				["Id"] = 1567592250,
+				["CopyBodge"] = "Zolerus-E",
 				["Bio"] = "What do teapots have anything to do with Easter?",
 			},
 		},
@@ -2658,7 +2700,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["2Hex"] = {
-		["Id"] = 283992331,
+		["Id"] = 3526482399,
 		["Name"] = "2Hex",
 		["Health"] = 350,
 		["Power"] = 350,
@@ -2668,7 +2710,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Blue"] = 1,},
 		["Effect"] = {
 			Name = "Purlot",
-			Description = "When this card dies, Draw a card.",
+			Description = "When this card dies, draw a card.",
 			["Type"] = "OnDeath",
 			["Power"] = "Draw",
 			Target = "Ally",
@@ -2683,6 +2725,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["AntiSammeh-Sun"] = {
 				["Id"] = 897235725,
+				["CopyBodge"] = "AntiSammeh-Sun",
 				["Bio"] = "AntiSammeh is a guardian of the sand and nemesis of Poseidon.",
 			},
 		},
@@ -2704,7 +2747,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	
 	["Awful Good"] = {
 		["Id"] = 3471773230,
-		["Name"] = "Witches Brew",
+		["Name"] = "Witches' Brew",
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Rare",
@@ -2750,6 +2793,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Bowl of GreedV2"] = {
 				["Id"] = 893420099,
+				["CopyBodge"] = "Bowl of GreedV2",
 				["AltArt"] = true,
 				["Effect"] = {
 					Name = "MOO!",
@@ -2763,6 +2807,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Bowl of Greed-Val"] = {
 				["Id"] = 893421455,
 				["Name"] = "Bowl of Candy Grams",
+				["CopyBodge"] = "Bowl of Greed-Val",
 				["Effect"] = {
 					Name = "MOO!",
 					Description = "Draw 2 Cards. Your opponent summons the Lord of Candy.",
@@ -2796,11 +2841,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Lord of GreedV2"] = {
 				["Name"] = "Pittacium Acolythus",
+				["CopyBodge"] = "Lord of GreedV2",
 				["Id"] = 3471760610,
 				["Bio"] = "Why are you stealing something that *I* rightfully stole first?",			
 			},
 			["Lord of Greed-Val"] = {
 				["Id"] = 662115217,
+				["CopyBodge"] = "Lord of Greed-Val",
 				["Name"] = "Lord of Candy",
 				["Bio"] = "Lord of Candy is to grams as chocolate is to wrappers.",
 			},
@@ -2913,9 +2960,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 3},
 		["Effect"] = {
 			Name = "Nature's Reconciliation",
-			Description = "When this card is cast, all enemy fighters lose 450 power, then gain 100 power.",
+			Description = "When this card is cast, all enemy fighters gain 650 health and lose 350 power.",
 			["Type"] = "OnSummon",
-			["Power"] = {{"Weaken",450},{"Strengthen",100}},
+			["Power"] = {{"Heal",650},{"Weaken",350}},
 			Target = "Opponent",
 		},
 		["Bio"] = "A lizard with the job of making sure Mother Nature's voice is heard. Tough job for someone without thick skin.",
@@ -2928,6 +2975,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["DeadZoneHark-Val"] = {
 				["Name"] = "LoveZoneHark",
 				["Id"] = 655015343,
+				["CopyBodge"] = "DeadZoneHark-Val",
 				["Bio"] = "My glove touches all, and fills them with confidence.",
 			},
 		},
@@ -2955,10 +3003,11 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["DIY Azurewrath"] = {
 		["Id"] = 283993125,
 		["Name"] = "DIY Azurewrath",
-		AltCards = {
+		["AltCards"] = {
 			["DIY Azurewrathv2"] = {
 				["Id"] = 540865102,
 				["AltArt"] = true,
+				["CopyBodge"] = "DIY Azurewrathv2",
 				["Bio"] = "FEEL MY PAPER WRATH!",
 			},
 		},
@@ -2986,6 +3035,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["DIY Biggerheadv2"] = {
 				["Id"] = 540869609,
 				["AltArt"] = true,
+				["CopyBodge"] = "DIY Biggerheadv2",
 				["Bio"] = "Who needs robux for a biggerhead, ill just kill them and take it myself.",
 			},
 		},
@@ -3015,11 +3065,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["DIY DominusV2"] = {
 				["Id"] = 480385545,
 				["AltArt"] = true,
+				["CopyBodge"] = "DIY DominusV2",
 				["Bio"] = "iiMasant told me this would make me rich. I think he lied q.q",
 			},
 		},
-		["Health"] = 500,
-		["Power"] = 450,
+		["Health"] = 400,
+		["Power"] = 350,
 		["Rarity"] = "Rare",
 		["Archetype"] = "Hero",
 		["AttackEffect"] = "Punch1",
@@ -3042,6 +3093,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["DIY Headphonesv2"] = {
 				["Id"] = 540869392,
 				["AltArt"] = true,
+				["CopyBodge"] = "DIY Headphonesv2",
 				["Bio"] = "Killing you in style!",
 			},
 		},
@@ -3149,7 +3201,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["FuryBlocks"] = {
-		["Id"] = 283993388,
+		["Id"] = 3526483415,
 		["Name"] = "FuryBlocks",
 		["Health"] = 250,
 		["Power"] = 400,
@@ -3166,6 +3218,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Myrmiredon 2"] = {
 				["Id"] = 3238115834,
+				["CopyBodge"] = "Myrmiredon 2",
 				["Bio"] = "I heat up planets like yours to melt all your ice caps and watch you all burn.",
 			},
 		},
@@ -3212,6 +3265,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["IlIll-Val"] = {
 				["Id"] = 655013736,
 				["Name"] = "IlIll",
+				["CopyBodge"] = "IlIll-Val",
 				["Bio"] = "Now haunting a teddy bear on a shelf, he is sure to make your valentines day a living hell.",
 			},
 		},
@@ -3300,6 +3354,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["MahBucketV2"] = {
 				["Id"] = 481866741,
 				["AltArt"] = true,
+				["CopyBodge"] = "MahBucketV2",
 				["Bio"] = "Candy is good for the brains you know.",
 			},
 		},
@@ -3320,10 +3375,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Master Josue"] = {
 		["Id"] = 292778437,
 		["Name"] = "SnyFort",
+		["CopyBodge"] = "Master Josue",
 		["AltCards"] = {
 			["SnyFort"] = {
 				["Id"] = 496184718,
 				["AltArt"] = true,
+				["CopyBodge"] = "Snyfort",
 				["Effect"] = {{"Summon","Master Token","Ally"},{"Damage",9999,"Self"}},	
 				["Bio"] = "Why did the chicken cross the road?",
 			},
@@ -3348,6 +3405,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Master Token"] = {
 		["Id"] = 496184718,
 		["Name"] = "SnyFort",
+		["CopyBodge"] = "Master Token",
 		["Health"] = 450,
 		["Power"] = 400,
 		["Rarity"] = "Token",
@@ -3360,6 +3418,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["TokenFort"] = {
 		["Id"] = 292778437,
 		["Name"] = "SnyFort",
+		["CopyBodge"] = "TokenFort",
 		["Health"] = 450,
 		["Power"] = 400,
 		["Rarity"] = "Token",
@@ -3390,7 +3449,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 		
 	["MyDadIsAGuest"] = {
-		["Id"] = 283995656,
+		["Id"] = 3557107710,
 		["Name"] = "MyDadIsAGuest",
 		["AltCards"] = {
 			["MyDadIsASanta"] = {
@@ -3442,6 +3501,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["QuentyV2"] = {
 				["Id"] = 496076569,
 				["AltArt"] = true,
+				["CopyBodge"] = "QuentyV2",
 				["Bio"] = "Whatever floats your goat, right?",
 			},
 		},
@@ -3705,6 +3765,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["StickMasterLukeV2"] = {
 				["Id"] = 1247705401,
 				["Name"] = "MintMasterLuke",
+				["CopyBodge"] = "StickMasterLukeV2",
 				["Bio"] = "Colder than breath, deeper than sky.",
 			},
 		},
@@ -3716,9 +3777,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 5,["Neutral"] = 1,},
 		["Effect"] = {
 			Name = "Disaster",
-			Description = "Whenever Stickmasterluke attacks, he drains 150 Health from a target fighter.",
-			["Type"] = "OnAttack",
-			["Power"] = {{"Heal",150,"Self"},{"Damage",150}},
+			Description = "After Stickmasterluke attacks, he drains 200 Health from a target fighter.",
+			["Type"] = "OnAttackEnd",
+			["Power"] = {{"Heal",200,"Self"},{"Damage",200}},
 			Target = "Single",
 		},
 		["Bio"] = "Most likely accident prone worker at ROBLOX. He made it there from scripting, so can you!",
@@ -3888,6 +3949,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["JackinatorMG-C"] = {
 				["Id"] = 1247417926,
+				["CopyBodge"] = "JackinatorMG-C",
 				["Bio"] = "Hot chocolate is the true drink for any occasion! I have ditched my habit of drinking Mountain Dew and switched to 100% pure hot chocolate!",
 			},
 		},
@@ -4006,6 +4068,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["MiloCortez-Val"] = {
 				["Name"] = "MiloCortez",
 				["Id"] = 655015603,
+				["CopyBodge"] = "MiloCortez-Val",
 				["Bio"] = "Cupid did nothing wrong.",
 			},
 		},
@@ -4047,7 +4110,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Nicolas1015"] = {
-		["Id"] = 607520745,
+		["Id"] = 3557109765,
 		["Name"] = "Nicolas1015",
 		["Health"] = 700,
 		["Power"] = 700,
@@ -4076,6 +4139,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Oozlebachr-Sun"] = {
 				["Name"] = "Oozlebachr",
 				["Id"] = 897244902,
+				["CopyBodge"] = "Oozlebachr-Sun",
 				["Bio"] = "She doesn’t work here. She’s smiling ‘cause she’s stealing.",
 			},
 		},
@@ -4183,14 +4247,14 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Player"] = {
 		["Id"] = 285154246,
 		["Name"] = "Player",
-		["Health"] = 550,
+		["Health"] = 500,
 		["Power"] = 450,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "SlashDiagonal",
 		["Color"] = "Red",
 		["Cost"] = {["Red"] = 3,},
 		["Effect"] = {
-			Name = "Acolyte",
+			Name = "Power Within",
 			Description = "At the end of your turns, all allied fighters gain 50 power.",
 			["Type"] = "OnEnd",
 			["Power"] = "Strengthen",
@@ -4307,6 +4371,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Null",
 		["Token"] = true,
 		["AttackBlock"] = true,
+		["CopyImmune"] = true,
 		["Fading"] = true,
 		["Color"] = "Yellow",
 		["Cost"] = {["Yellow"] = 2,},
@@ -4347,6 +4412,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Sylrath-Val"] = {
 				["Id"] = 655018267,
 				["Name"] = "Sylrath",
+				["CopyBodge"] = "Sylrath-Val",
 				["Bio"] = "One of the best Blox Card lovers in the game!",
 			},
 			["unadaptably"] = {
@@ -4384,6 +4450,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["TheChakraTree-E"] = {
 				["Id"] = 2789693946,
+				["CopyBodge"] = "TheChakraTree-E",
 				["Bio"] = "I’ll haunt those who want this egg!",
 			},
 		},
@@ -4463,19 +4530,23 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["tintinytdj"] = {
 				["Id"] = 285155364, --285155364,
+				["CopyBodge"] = "tinytinytdj",
 				["Bio"] = "Scripter of Pixel Art Creator and an amazing GFX artist.",
 			},
 			["Visleaf-ArtV"] = {
 				["Id"] = 411803152,
+				["CopyBodge"] = "Visleaf-ArtV",
 				["AltArt"] = true,
 				["Bio"] = "Scripter of Blox Cards and an amazing GFX artist. Watch out! Part of the 'Aife' Collection! Collect them all!",
 			},
 			["Visleaf-E"] = {
 				["Id"] = 1567573586,
+				["CopyBodge"] = "Visleaf-E",
 				["Bio"] = "Easter Art Cabal Matriarch, rather than the Patriarch.",
 			},
 			["Leaf"] = {
 				["Id"] = 3471771522,
+				["CopyBodge"] = "Leaf",
 				["Bio"] = "UPDAET DA GAEM U SIL-E BUNNEH SCREEEEEEEEEEEEEEEEE",
 			},
 		},
@@ -4498,6 +4569,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Pillager"] = {
 		["Id"] = 285155411,
 		["Name"] = "Pillager",
+		["AltCards"] = {
+			["PillagerArt"] = {
+				["Id"] = 3526484247,
+				["CopyBodge"] = "PillagerArt",
+				["Bio"] = "She pillages.",
+			},
+		},
 		["Health"] = 350,
 		["Power"] = 350,
 		["Rarity"] = "Common",
@@ -4510,7 +4588,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["WhiteScarf"] = {
 		["Id"] = 285155711,
 		["Name"] = "WhiteScarf",
-		["Health"] = 800,
+		["Health"] = 700,
 		["Power"] = 400,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "SlashWhip",
@@ -4637,7 +4715,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Halo4master233"] = {
 		["Id"] = 288040699,
 		["Name"] = "Halo4master233",
-		["Health"] = 300,
+		["Health"] = 450,
 		["Power"] = 200,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Slice",
@@ -4646,8 +4724,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Conflux",
-			Description = "Haste. Whenever this fighter attacks a fighter, lock a target fighter for 1 turn.",
-			["Type"] = "OnAttack",
+			Description = "Haste. After this fighter attacks a fighter, lock a target fighter for 1 turn.",
+			["Type"] = "OnAttackEnd",
 			["Power"] = {{"Lock",1}},
 			Target = "Single",
 		},
@@ -4660,11 +4738,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["KingCactaur-ArtV"] = {
 				["Id"] = 491538951,
+				["CopyBodge"] = "KingCactaur-ArtV",
 				["Bio"] = "That'ssss some very nice value you have there; It'd be succch a shame if something happended to it...",
 			},
 			["KingCactaur-Val"] = {
-				["Name"] = "KingCactaur",
 				["Id"] = 655013880,
+				["CopyBodge"] = "KingCactaur-Val",
 				["Bio"] = "I'm the advisor of valuetown. You're the mayor.",
 			},							
 		},
@@ -4693,6 +4772,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["CreeperKillerTrueAgent"] = {
 				["Name"] = "Creeper Killer, True Agent",
 				["Id"] = 3476638157,
+				["CopyBodge"] = "CreeperKillerTrueAgent",
 				["Bio"] = "Coming straight from the latest Splatfest, he's about to turn this game into a work of art.",
 			},
 		},
@@ -4707,12 +4787,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Mitpaul"] = {
-		["Id"] = 288040884,
+		["Id"] = 3667671754,
 		["Name"] = "Mitpaul",
 		["AltCards"] = {
 			["Mitpaul-Sun"] = {
 				["Name"] = "Mitpaul",
 				["Id"] = 897244522,
+				["CopyBodge"] = "Mitpaul-Sun",
 				["Bio"] = "OH MY GOD WHY DID I BRING MY PANTS INTO THIS POOL THE WALRUS WI-",
 			},
 		},
@@ -4742,7 +4823,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Ally",
 			Increase = 2,
 		},
-		["Bio"] = "An acolyte of Shedletsky, the Fried One.",
+		["Bio"] = "A follower of Shedletsky, the Fried One.",
 	},
 	
 	["RandomRobloxTV"] = {
@@ -4777,6 +4858,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Stud-ArtV"] = {
 				["Id"] = 572793945,
 				["AltArt"] = true,
+				["CopyBodge"] = "Stud-ArtV",
 				["Bio"] = "Electrified for your bemusement.",
 			},
 		},
@@ -4841,6 +4923,11 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				},
 				["Bio"] = "Since Santa travels EVERYWHERE the night before Christmas, doesn’t he have the chance of contracting and spreading deadly diseases throughout everybody’s homes?",
 			},
+			["Trimez"] = {
+				["Name"] = "Trimez",
+				["Id"] = 3526700719,
+				["Bio"] = "Trimming your life short. This card is an alternate art of Zombie Cultist.",
+			},
 		},
 		["Health"] = 500,
 		["Power"] = 100,
@@ -4851,7 +4938,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Green"] = 3,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "When this card is cast, summon a Zombie. Then all zombies gain 150 health and power.",
+			Description = "When this card is cast, summon a Zombie. Then all Zombies gain 150 health and power.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Summon","Zombie","Ally"},{"Strengthen",150},{"Heal",150}},
 			Target = "Archetype",
@@ -4891,7 +4978,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,["Green"] = 6,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = "When this card is cast, all zombies gain 300 health.",
+			Description = "When this card is cast, all zombies gain 300 health and power.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Strengthen",300},{"Heal",300}},
 			Target = "Archetype",
@@ -4906,6 +4993,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Ejob-Val"] = {
 				["Name"] = "Dawgra",						
 				["Id"] = 655012559,
+				["CopyBodge"] = "Ejob-Val",
 				["Bio"] = "Dawgra, the red-haired weeb. She made one contribution to BLOX CARDS : A small white bust with her name on it. What could it mean...?",
 			},
 		},						
@@ -4949,7 +5037,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	
 	["Shedletsky the Fried One"] = {		
 		["Id"] = 3238128796,
-		["Name"] = "Shedletsky, the Fried One",
+		["Name"] = "Shedletsky the Fried One",
 		["Health"] = 700,
 		["Power"] = 0,
 		["Rarity"] = "Legendary",
@@ -4973,14 +5061,11 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	
 	["Shedletsky, the Fried One"] = { -- for the love of god dont put this one in packs
 		["Id"] = 291389590,
-		["Name"] = "Shedletsky the Fried One",
-		["Health"] = 99999,
-		["Power"] = 99999,
+		["Name"] = "Shedletsky, the Fried One",
+		["Health"] = 2000,
+		["Power"] = 2000,
 		["Rarity"] = "Token",
 		["AttackEffect"] = "Punch1",
-		["WeakenImmune"] = true,
-		["DamageImmune"] = true,
-		["SetImmune"] = true,
 		["Color"] = "Yellow",
 		["Cost"] = {["Green"] = 1,["Blue"] = 1,["Yellow"] = 6,["Red"] = 1,["Neutral"] = 1,},
 		["Effect"] = {
@@ -5152,6 +5237,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Shedletsky, Paragon of Unity 1"] = {
 		["Id"] = 670716793,
 		["Name"] = "Shedletsky, Paragon of Unity",
+		["CopyBodge"] = "Shedletsky, Paragon of Unity 1",
 		["Health"] = 600,
 		["Power"] = 0,
 		["Rarity"] = "Token",
@@ -5176,6 +5262,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Shedletsky 2"] = {
 		["Id"] = 670716793,
 		["Name"] = "Shedletsky, Paragon of Unity",
+		["CopyBodge"] = "Shedletsky, Paragon of Unity 1",
 		["Health"] = 600,
 		["Power"] = 0,
 		["Rarity"] = "Token",
@@ -5200,6 +5287,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Shedletsky 3"] = {
 		["Id"] = 670716793,
 		["Name"] = "Shedletsky, Paragon of Unity",
+		["CopyBodge"] = "Shedletsky, Paragon of Unity 1",
 		["Health"] = 600,
 		["Power"] = 0,
 		["Rarity"] = "Token",
@@ -5224,6 +5312,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Shedletsky 4"] = {
 		["Id"] = 670716793,
 		["Name"] = "Shedletsky, Paragon of Unity",
+		["CopyBodge"] = "Shedletsky, Paragon of Unity 1",
 		["Health"] = 600,
 		["Power"] = 0,
 		["Rarity"] = "Token",
@@ -5276,7 +5365,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Fading"] = true,
 		["Effect"] = {
 			Name = "Deceipt",
-			Description = "Deal 4000 damage to a target fighter. Your opponent summons an 800/800 byte.",
+			Description = "Deal 4000 damage to a target fighter. Your opponent summons an 800/800 Byte.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Damage",4000,"Single"},{"Summon","Byte2"}},
 			Target = "Opponent",	
@@ -5287,6 +5376,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Byte2"] = {
 		["Id"] = 292777970,
 		["Name"] = "Byte",
+		["CopyBodge"] = "Byte",
 		["Health"] = 800,
 		["Power"] = 800,
 		["Rarity"] = "Rare",
@@ -5321,7 +5411,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 633172522,
 		["Name"] = "JoeDev",
 		["Health"] = 2200,
-		["Power"] = 200,
+		["Power"] = 0,
 		["Rarity"] = "Epic",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Yellow",
@@ -5359,6 +5449,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Korblox Archer"] = {
 		["Id"] = 2810632305,
 		["Name"] = "Korblox Archer",
+		["AltCards"] = {
+			["Korblox Archer Drawn"] = {
+				["Id"] = 3611613697,
+				["CopyBodge"] = "Korblox Archer Drawn",
+				["Bio"] = "Even though hitting someone's head with an arrow while in midair is awesome, it really isn't pratical.",
+			},
+		},
 		["Health"] = 400,
 		["Power"] = 300,
 		["Rarity"] = "Common",
@@ -5425,6 +5522,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Korblox Deathknight-Val"] = {
 				["Name"] = "Korblox Deathknight",
+				["CopyBodge"] = "Korblox Deathknight-Val",
 				["Id"] = 655014098,
 			},
 		},
@@ -5448,7 +5546,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Korblox Deathkeeper"] = {
-		["Id"] = 1286602394,
+		["Id"] = 3611612075,
 		["Name"] = "Korblox Deathkeeper",
 		["Health"] = 1500,
 		["Power"] = 500,
@@ -5567,6 +5665,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Abraham Doge"] = {
 		["Id"] = 3471762064,
 		["Name"] = "President Doge",
+		["CopyBodge"] = "Abraham Doge",
 		["AltCards"] = {
 			["Santa Doge"] = {
 				["Id"] = 1247065222,
@@ -5838,6 +5937,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Hamstermon-Val"] = {
 				["Name"] = "Lovestermon",
 				["Id"] = 655014781,
+				["CopyBodge"] = "Hamstermon-Val",
 				["Bio"] = "It's time to add some love to this battlefield!",
 			},
 		},
@@ -6005,9 +6105,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Charge"] = true,
 		["Effect"] = {
 			Name = "Overgrown",
-			Description = "Haste. After this card attacks, check the fighter it attacked if it has 700 or more power.",
+			Description = "Haste. After this card attacks, check the fighter it attacked if it has 900 or more power.",
 			["Type"] = "OnAttackEnd",
-			["Power"] = {{"CheckOverPower",700,"Aggressor"}},
+			["Power"] = {{"CheckOverPower",900,"Aggressor"}},
 			Target = "Self",
 		},
 		["Bio"] = "One sword for trust. One sword for betrayal.",
@@ -6019,6 +6119,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Blockerwiz-E"] = {
 				["Id"] = 1939177541,
+				["CopyBodge"] = "Blockerwiz-E",
 				["Bio"] = "Remember kids: eating raw eggs could give you salmonella poisoning! The symptoms of salmonella include chills, dehydration, diarrhea, fatigue, fever, headaches, loss of appetite, and pain areas in the abdomen or muscles.",
 			},
 		},
@@ -6101,9 +6202,11 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Combine Garrison 2"] = {
 		["Id"] = 3164484158,
 		["Name"] = "Lesser Combine Garrison",
+		["CopyBodge"] = "Combine Garrison",
 		["AltCards"] = {
 			["Senpai Garrison 2"] = {
 				["Id"] = 655016996,
+				["CopyBodge"] = "Senpai Garrison",
 				["Name"] = "Lesser Senpai Garrison",
 				["Effect"] = {
 					Name = "Overgrown",
@@ -6135,10 +6238,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Combine Garrison 3"] = {
 		["Id"] = 3164484158,
 		["Name"] = "Combine",
+		["CopyBodge"] = "Combine Garrison",
 		["AltCards"] = {
 			["Senpai Garrison 3"] = {
 				["Id"] = 655016996,
 				["Name"] = "Yandere Garrison",
+				["CopyBodge"] = "Senpai Garrison",
 				["Bio"] = "These high school students are always ignoring Stalker-Chan.",
 			}
 		},
@@ -6155,6 +6260,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Connoisseur"] = {
 		["Id"] = 3299955724,
 		["Name"] = "Barbarian Bloxal",
+		["CopyBodge"] = "Connoisseur",
 		["Health"] = 150,
 		["Power"] = 800,
 		["Rarity"] = "Rare",
@@ -6175,8 +6281,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},	
 	
 	["Cyclist"] = {
-		["Id"] = 294871413,
-		["Name"] = "Cyclist",
+		["Id"] = 3557088396,
+		["Name"] = "JakeTheNewb",
+		["CopyBodge"] = "Cyclist",
 		["Health"] = 200,
 		["Power"] = 700,
 		["Rarity"] = "Rare",
@@ -6193,7 +6300,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			Target = "Single",
 			Increase = 300,
 		},
-		["Bio"] = "Living life on the speedway my way.",
+		["Bio"] = "Did you see that move I pulled in the game's trailer? Then check THIS one out!",
 	},	
 	
 	["GamesBloxx"] = {
@@ -6281,6 +6388,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Odin-ArtV"] = {
 				["Id"] = 497625127,
+				["CopyBodge"] = "Odin-ArtV",
 				["Bio"] = "Perhaps I like my son too much.",
 			},
 		},
@@ -6308,6 +6416,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Pirate-Val"] = {
 				["Name"] = "Pirate Cupid",
 				["Id"] = 655016531,
+				["CopyBodge"] = "Pirate-Val",
 				["Bio"] = "It's not cheating. He needed some relief.",
 			},
 		},
@@ -6335,6 +6444,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Shemale Unlimxted"] = {
 				["Id"] = 540872352,
 				["AltArt"] = true,
+				["CopyBodge"] = "Shemale Unlimxted",
 				["Bio"] = "I have many fanboys...",
 				["Effect"] = {
 					Name = "TRIGGERED",
@@ -6407,7 +6517,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Color"] = "Red",
 		["Cost"] = {["Neutral"] = 2,["Red"] = 3},
 		["Effect"] = {
-			Name = "Acolyte",
+			Name = "Kittenmancing",
 			Description = "When this card is cast, put a Kitten into your hand. When you cast a Kitten, ready it.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Summon","Haunted Overseer Armor"},{"RandomAdd",{"Kitten","Kitten2","Kitten3","Kitten4","Kitten5","Kitten6","Kitten7","Kitten8","Kitten9"}},{"Damage",9999,"Self"}},
@@ -6419,6 +6529,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Haunted Overseer Armor"] = {
 		["Id"] = 294871671,
 		["Name"] = "Zedreadr",
+		["CopyBodge"] = "Haunted Overseer Armor",
 		["Health"] = 600,
 		["Power"] = 300,
 		["Rarity"] = "Token",
@@ -6447,7 +6558,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Red"] = 3,},
 		["Effect"] = {
 			Name = "Firaja",
-			Description = "At the end of your turn, deal 100 damage to all enemy fighters.",
+			Description = "At the end of your turns, deal 100 damage to all enemy fighters.",
 			["Type"] = "OnEnd",
 			["Power"] = "Damage",
 			Target = "Opponent",
@@ -6524,6 +6635,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["NobleDragon-ArtV"] = {
 				["Id"] = 415728794,
 				["AltArt"] = true,
+				["CopyBodge"] = "NobleDragon-ArtV",
 				["Bio"] = "Known as the livestream host for ROBLOX's 'The Next Level,' Bob with his Noble Dragon is the staple to any deck affiliated with its trait. Part of the 'Aife' Collection! Collect them all!",
 			},
 		},
@@ -6549,6 +6661,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["RipullV2"] = {
 				["Id"] = 430936062,
+				["CopyBodge"] = "RipullV2",
 				["Bio"] = "This isn't the 1940s. Silly Ripull!",
 			},
 		},
@@ -6574,6 +6687,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["The StalkerV2"] = {
 				["Id"] = 459231428,
+				["CopyBodge"] = "The StalkerV2",
 				["Bio"] = "Even Sonic fears it.",
 			},
 			["The Hugger"] = {
@@ -6692,6 +6806,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["CandyStream"] = {
 				["Id"] = 1926252809,
+				["CopyBodge"] = "CandyStream",
 				["Effect"] = {
 					Name = "Please stop eating all that candy.",
 					Description = "When this card is cast, put three different candies into your hand.",
@@ -6746,12 +6861,13 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Berezaa"] = {
-		["Id"] = 297414660,
+		["Id"] = 3667676486,
 		["Name"] = "berezaa",
 		["AltCards"] = {
 			["Berezaa-ArtV"] = {
 				["Id"] = 572793879,
 				["AltArt"] = true,
+				["CopyBodge"] = "Berezaa-ArtV",
 				["Bio"] = "He mines galaxies.",
 			},
 		},
@@ -6776,10 +6892,12 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["1x1x1x1x2"] = {
 				["Id"] = 532357578,
+				["CopyBodge"] = "1x1x1x1x2",
 				["Bio"] = "Zanzel scoffed at the devil when she saw him. He was why everything in this world was stagnant and impure. The power the Alpha Brick had to sacrifice just to deal with him!",
 			},
 			["1x1x1x1v2"] = {
 				["Id"] = 540800410,
+				["CopyBodge"] = "1x1x1x1v2",
 				["Effect"] = {
 					Name = "H$X",
 					Description = "Hack the power of all fighters to 250.",
@@ -6842,6 +6960,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["AVote-Sun"] = {
 				["Id"] = 897235915,
+				["CopyBodge"] = "AVote-Sun",
 				["Bio"] = "Whatever AVfloats your AVboat.",
 			},
 		},
@@ -6870,6 +6989,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Gato Luz-Val"] = {
 				["Id"] = 655013398,
 				["Name"] = "Gato Mars",						
+				["CopyBodge"] = "Gato Luz-Val",
 				["Bio"] = "Gato Uptown, Funk Luz.",
 			},
 		},									
@@ -6912,6 +7032,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["PolyHexV2"] = {
 		["Id"] = 298297378,
 		["Name"] = "PolyHex",
+		["CopyBodge"] = "PolyHexV2",
 		["AltCards"] = {
 			["PolyHex"] = {
 				["Id"] = 298297409,
@@ -6958,6 +7079,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Bloo"] = {
 		["Id"] = 433134142,
 		["Name"] = "NinjaBluz",
+		["CopyBodge"] = "Bloo",
 		["Health"] = 600,
 		["Power"] = 300,
 		["Rarity"] = "Common",
@@ -6981,6 +7103,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Burning Phoenix-Val"] = {
 				["Name"] = "Valentine's Phoenix",
+				["CopyBodge"] = "Burning Phoenix-Val",
 				["Id"] = 655019159,
 				["Bio"] = "Rebirth of pure love!",
 			},
@@ -7002,7 +7125,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["BuzzHamtaro"] = {
-		["Id"] = 298792863,
+		["Id"] = 3557008854,
 		["Name"] = "BuzzHamtaro",
 		["Health"] = 250,
 		["Power"] = 250,
@@ -7063,7 +7186,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	
 	["FishBubble1002"] = {
 		["Id"] = 2900772898,
-		["Name"] = "FishBubble",
+		["Name"] = "FishBubble1002",
 		["Health"] = 1100,
 		["Power"] = 0,
 		["Rarity"] = "Common",
@@ -7083,6 +7206,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Frozen Phoenix"] = {
 		["Id"] = 298793000,
 		["Name"] = "Frozen Phoenix",
+		["CopyBodge"] = "PhoenixToken",
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Epic",
@@ -7092,7 +7216,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Blue"] = 6,},
 		["Effect"] = {
 			Name = "Revival",
-			Description = "Summon a 500/500 fighter with six locks that can't counterattack. Whenever it loses a lock, it gains 600 health and power.",
+			Description = "Summon a 500/500 fighter with six locks that can't counterattack. Whenever it loses a lock, it gains 500 health and power.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Summon","PhoenixToken"},{"Lock",5,"Archetype"}},
 			Target = "Ally"
@@ -7103,6 +7227,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["PhoenixToken"] = {
 		["Id"] = 298793000,
 		["Name"] = "Frozen Phoenix",
+		["CopyBodge"] = "PhoenixToken",
 		["Health"] = 500,
 		["Power"] = 500,
 		["Rarity"] = "Token",
@@ -7113,9 +7238,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Blue"] = 6,},
 		["Effect"] = {
 			Name = "Revival",
-			Description = "Can't counterattack. Whenever this card loses a lock, it gains 600 health and power.",
+			Description = "Can't counterattack. Whenever this card loses a lock, it gains 500 health and power.",
 			["Type"] = "OnLockDecrease",
-			["Power"] = {{"Heal",600},{"Strengthen",600}},
+			["Power"] = {{"Heal",500},{"Strengthen",500}},
 			Target = "Self"
 		},
 		["Bio"] = "Renders wildfires meaningless.",
@@ -7128,6 +7253,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Guest-Sun"] = {
 				["Id"] = 2036641875,
 				["Name"] = "Female Guest",
+				["CopyBodge"] = "Guest-Sun",
 				["Bio"] = "Wanna share this popsicle?",
 			},
 		},
@@ -7193,6 +7319,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["KingShadowCrowV2"] = {
 				["Id"] = 462725820,
+				["CopyBodge"] = "KingShadowCrowV2",
 				["Bio"] = "wE arE HAVing dIFfiCULTy OPPerATINg aSINgle pEN . ..",
 			},
 		},
@@ -7219,6 +7346,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Lady RedNight-Sun"] = {
 				["Id"] =  897242736,
+				["CopyBodge"] = "Lady RedNight-Sun",
 				["Bio"] = " Lady Red, White, and BlueNight. Green too, but we didn’t have the budget for Yellow.",
 			},
 		},
@@ -7289,15 +7417,15 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Rarity"] = "Uncommon",
 		["AttackEffect"] = "Thunder",
 		["Color"] = "Green",
-		["Cost"] = {["Green"] = 4,},
+		["Cost"] = {["Neutral"] = 2,["Green"] = 3,},
 		["Effect"] = {
 			Name = "Damage for Top Deck",
 			Description = "When this card is cast, drain a white icon from the opponent.",
-			["Type"] = "OnEnd",
-			["Power"] = {{"Neutral",-1},{"Neutral",1,"Ally"},
+			["Type"] = "OnSummon",
+			["Power"] = {{"Neutral",-1},{"Neutral",1,"Ally"}},
 			Target = "Opponent",
 		},
-		["Bio"] = "Meet the new rollercoaster ride from Mr. Bones!",
+		["Bio"] = "Meet the new rollercoaster ride from Mr Bones!",
 	},
 	
 	["Medic Kit"] = {
@@ -7321,8 +7449,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Mimic"] = {
-		["Id"] = 298793439,
-		["Name"] = "Mimic",
+		["Id"] = 3674694411,
+		["Name"] = "Ban Hammer",
 		["Health"] = 0,
 		["Power"] = 0,
 		["Rarity"] = "Epic",
@@ -7336,7 +7464,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Power"] = {{"Damage",2000}},
 			Target = "Single",
 		},
-		["Bio"] = "What happens when a mimic mimics itself, or a kirby eats another? This.",
+		["Bio"] = "Our content monitors have determined that your behavior at Roblox has been in violation of our Terms and Serivce.",
 	},
 	
 	["Eye of Overseer"] = {
@@ -7406,6 +7534,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["RukatuKDHToken"] = {
 				["Id"] = 3299988853,
+				["CopyBodge"] = "RukatuKDHToken",
 				["Name"] = "Overseer Profit",
 				["Bio"] = "He's the reason money is not an issue for the Overseer army... probably.",
 			},
@@ -7493,17 +7622,16 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Serhat12"] = {
 		["Id"] = 298793664,
 		["Name"] = "Serhat12",
-		["Health"] = 500,
-		["Power"] = 500,
+		["Health"] = 650,
+		["Power"] = 350,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Thunder",
 		["Color"] = "Blue",
-		["CounterBlock"] = true,		
 		["Archetype"] = "Korblox",
-		["Cost"] = {["Neutral"] = 3,["Blue"] = 3,},
+		["Cost"] = {["Neutral"] = 3, ["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Pepper Spray",
-			Description = "Can't Counterattack. When this card dies, turn it into a Korblox Skeleton.",
+			Description = "When this card dies, transform Serhat12 into a Korblox Skeleton.",
 			["Type"] = "OnDeath",
 			["Power"] = {{"Summon","Korblox Skeleton"}},
 			Target = "Ally",
@@ -7531,7 +7659,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Totem of Pixel"] = {
-		["Id"] = 298793909,
+		["Id"] = 3611616602,
 		["Name"] = "Totem of Pixel",
 		["Health"] = 1250,
 		["Power"] = 250,
@@ -7576,6 +7704,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Fried Acolyte-AltV"] = {
 				["Id"] = 2742426298,
+				["CopyBodge"] = "Fried Acolyte-AltV",
 				["AltArt"] = true,
 				["Bio"] = "Ｆｒｉｘｕｍ．",
 			},
@@ -7602,6 +7731,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Name"] = "Lunar Acolyte",
 		["AltCards"] = {
 			["Lunar Acolyte-AltV"] = {
+				["CopyBodge"] = "Lunar Acolyte-AltV",
 				["Id"] = 2742427841,
 				["AltArt"] = true,
 				["Bio"] = "Ｌｕｎａｒｉｓ．",
@@ -7625,7 +7755,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Lunar Warrior"] = {
-		["Id"] = 335289071,
+		["Id"] = 3557119217,
 		["Name"] = "Lunar Warrior",
 		["Health"] = 500,
 		["Power"] = 300,
@@ -7637,9 +7767,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 3,},
 		["Effect"] = {
 			Name = "Acolyte",
-			Description = "Whenever this card attacks, put a random Acolyte into your hand. This card can't generate icons.",
+			Description = "Whenever this card attacks, put a random monocoloured Acolyte into your hand. This card can't generate icons.",
 			["Type"] = "OnAttack",
-			["Power"] = {{"RandomAdd","Acolyte"}},
+			["Power"] = {{"RandomAdd",{"Lunar Acolyte","Acolyte of the Rift","Infernal Acolyte","Necromantic Acolyte","Fried Acolyte"}}},
 			Target = "Ally",
 		},
 		["Bio"] = "You might say he's a lunatic... with a sword.",
@@ -7651,6 +7781,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Infernal Acolyte-AltV"] = {
 				["Id"] = 1939175001,
+				["CopyBodge"] = "Infernal Acolyte-AltV",
 				["AltArt"] = true,
 				["Bio"] = "Ａｍｂｕｓｔｕｍ．",
 			},
@@ -7678,6 +7809,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Acolyte of the Rift-AltV"] = {
 				["Id"] = 1939174593,
+				["CopyBodge"] = "Acolyte of the Rift-AltV",
 				["AltArt"] = true,
 				["Bio"] = "Ａｂｙｓｓｏ．",
 			},
@@ -7705,6 +7837,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Necromantic Acolyte-AltV"] = {
 				["Id"] = 2742427326,
+				["CopyBodge"] = "Necromantic Acolyte Alt-V",
 				["AltArt"] = true,
 				["Bio"] = "Ｇｎａｓｃｏｒ．",
 			},
@@ -8140,12 +8273,14 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Arceusdonv2"] = {
 				["Id"] = 892041279,
+				["CopyBodge"] = "Arceusdonv2",
 				["AltArt"] = true,
 				["Bio"] = "o3o .eiD",
 			},
 			
 			["Arceus"] = {
 				["Id"] = 1761885921,
+				["CopyBodge"] = "Arceus",
 				["Name"] = [["Arceus"Don]],
 				["Bio"] = "He appears to pass judgement unto you. o3o",
 			},
@@ -8172,6 +8307,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Jeptem-Sun"] = {
 				["Id"] =  897238773,
+				["CopyBodge"] = "Jeptem-Sun",
 				["Bio"] = "Jeptem will save only the worthy meeboids.",
 			},
 		},
@@ -8300,17 +8436,19 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Jack-O-Bat"] = {
 		["Id"] = 3471765605,
 		["Name"] = "Soybeen",
-		["Health"] = 700,
+		["CopyBodge"] = "Jack-O-Bat",
+		["Health"] = 300,
 		["Power"] = 200,
 		["Rarity"] = "Common",
 		["AttackEffect"] = "Thunder",
 		["Color"] = "Yellow",
+		["Charge"] = true,
 		["Cost"] = {["Neutral"] = 1,["Yellow"] = 2,},
 		["Effect"] = {
 			Name = "Revival",
-			Description = "Whenever this card destroys a fighter, set all of your coloured icons to 2.",
+			Description = "Haste. Whenever this card destroys a fighter, generate one of each coloured icon.",
 			["Type"] = "OnDestroy",
-			["Power"] = {{"SetYellow",2},{"SetGreen",2},{"SetBlue",2},{"SetRed",2}},
+			["Power"] = {{"Yellow",1},{"Green",1},{"Blue",1},{"Red",1}},
 			Target = "Ally",
 		},
 		["Bio"] = "When life gives you lemons, eat them in three bites.",
@@ -8339,7 +8477,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 316000939,
 		["Name"] = "Murtic",
 		["Health"] = 1400,
-		["Power"] = 150,
+		["Power"] = 200,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Thunder",
 		["Color"] = "Green",
@@ -8376,8 +8514,8 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["HomingBeacon"] = {
 		["Id"] = 316000978,
 		["Name"] = "HomingBeacon",
-		["Health"] = 1000,
-		["Power"] = 200,
+		["Health"] = 1050,
+		["Power"] = 300,
 		["Rarity"] = "Legendary",
 		["AttackEffect"] = "Thunder",
 		["Color"] = "Yellow",
@@ -8393,8 +8531,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Hopelesssly"] = {
-		["Id"] = 785620553,
+		["Id"] = 3557087028,
 		["Name"] = "Hop Lee",
+		["CopyBodge"] = "Hopelesssly",
 		["Health"] = 600,
 		["Power"] = 100,
 		["Rarity"] = "Legendary",
@@ -8519,6 +8658,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Theawesomist19"] = {
 		["Id"] = 1209530021,
 		["Name"] = "peach_tea",
+		["CopyBodge"] = "Theawesomist19",
 		["Health"] = 400,
 		["Power"] = 500,
 		["Rarity"] = "Uncommon",
@@ -8562,6 +8702,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Weaven-Sun"] = {
 				["Id"] = 897247848,
+				["CopyBodge"] = "Weaven-Sun",
 				["Bio"] = "I just created a massive vortex. Time for a selfie.",
 			},
 		},
@@ -8622,7 +8763,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["Dodgeball Player Red"] = {
-		["Id"] = 323660159,
+		["Id"] = 3557005655,
 		["Name"] = "Dodgeball Player Red",
 		["Health"] = 250,
 		["Power"] = 400,
@@ -8668,6 +8809,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Papasmurf-ArtV"] = {
 				["Id"] = 487132041,
+				["CopyBodge"] = "Papasmurf-ArtV",
 				["Bio"] = "Papa got volcanoes on his side.",
 			},
 		},
@@ -8730,6 +8872,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	["Tweety Token"] = {
 		["Id"] = 323659744,
 		["Name"] = "Tweety The Twitter Bird",
+		["CopyBodge"] = "TweetyToken",
 		["Health"] = 1250,
 		["Power"] = 50,
 		["Rarity"] = "Token",
@@ -8773,6 +8916,9 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Id"] = 480274691,
 				["Bio"] = "Vis' anguish does not apply to Teaism alone.",
 			},
+			["Divine Favor-L"] = {
+				["Id"] = 3526479314,
+			},
 		},
 		["Health"] = 0,
 		["Power"] = 0,
@@ -8812,7 +8958,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
  	["Depths of the Nether"] = {
-		["Id"] = 1402765728,
+		["Id"] = 3611610404,
 		["Name"] = "Depths of the Nether",
 		["Health"] = 0,
 		["Power"] = 0,
@@ -8821,7 +8967,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Lunar",
 		["Color"] = "Blue",
 		["Cost"] = {["Blue"] = 5},
-		["Bio"] = "You drown in the void of water...\nYeah, roll with it.",
+		["Bio"] = "You drown in the void of water... yeah, roll with it.",
 		["Effect"] = {
 			Name = "Board Clear!",
 			Description = "Deal 300 damage to all enemy fighters and lock them for 1 turn.",
@@ -8925,6 +9071,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Titan's Stone-E"] = {
 				["Name"] = "Bunny Blob",
+				["CopyBodge"] = "Titan's Stone-E",
 				["Id"] = 1567565788,
 				["Bio"] = "Just a harmless bunny blob. Nothing more. Totally can’t summon giant titan blobs or anything. Totally not.",
 				["Effect"] = {
@@ -8962,6 +9109,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Recruiter-E"] = {
 				["Name"] = "Recruiter of the Bunny Blobs",
+				["CopyBodge"] = "Recruiter-E",
 				["Id"] = 1567582533,
 				["Bio"] = "Evewybody, pwease, get in hewe! I would be ewew gwateful if you did! uwu",
 				["Effect"] = {
@@ -8998,6 +9146,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Titan of the Infernal Abyss-E"] = {
 				["Name"] = "Bunny Blob of the Infernal Abyss",
+				["CopyBodge"] = "Tital of the Infernal Abyss-E",
 				["Id"] = 1567569380,
 				["Bio"] = "Guarding a pit of fire is pretty lame. Guarding an empty pit is even lamer.",
 				["Effect"] = {
@@ -9035,6 +9184,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Titan of the Deep Below-E"] = {
 				["Name"] = "Bunny Blob of the Deep Below",
+				["CopyBodge"] = "Titan of the Deep Below-E",
 				["Id"] = 1567566958,
 				["Bio"] = "April showers bring May flowers. April floods ruin harvests of spuds.",
 				["Effect"] = {
@@ -9072,6 +9222,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Titan of the Dying Forest-E"] = {
 				["Name"] = "Bunny Blob of the Dying Forest",
+				["CopyBodge"] = "Titan of the Dying Forest-E",
 				["Id"] = 1567567466,
 				["Bio"] = "Easter is a celebration of life and rebirth, yet so much material is wasted wrapping candy eggs. Hypocritical, really.",
 				["Effect"] = {
@@ -9109,6 +9260,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Titan of the Fried One-E"] = {
 				["Name"] = "Bunny Blob of the Fried One",
+				["CopyBodge"] = "Titan of the Fried One-E",
 				["Id"] = 1567568071,
 				["Bio"] = "Rabbits are higher on the food chain now…",
 				["Effect"] = {
@@ -9144,6 +9296,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AltCards"] = {
 			["Titan of the Holy Chamber-E"] = {
 				["Name"] = "Bunny Blob of the Holy Chamber",
+				["CopyBodge"] = "Titan of the Holy Chamber-E",
 				["Id"] = 1567568604,
 				["Bio"] = "The arrival of titan signalled the beginning of the nega-rapture: The spirits of all blobbunnies would coalesce and form the Blobgotten One.",
 				["Effect"] = {
@@ -9174,7 +9327,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 	},
 	
 	["The Forgotten One"] = {
-		["Id"] = 328831702,
+		["Id"] = 3526503973,
 		["Name"] = "The Forgotten One",
 		["AltCards"] = {
 			["The Blobgotten One"] = {
@@ -9183,7 +9336,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 				["Bio"] = "There was no reason to pray. Its arrival was already an act of the gods.",
 				["Effect"] = {
 					Name = "Stud",
-					Description = [[Cast only if you control at least 4 Bunny Blobs. At the end of your turn, deal 4000 damage to all Non-Blobs, then unlock all Blobs.]],
+					Description = [[Cast only if you control at least 4 Bunny Blobs. At the end of your turn, deal 4000 damage to all Non-Blobs, then unlock all Blobs. This card is immune to effects that lower, check, or set its stats.]],
 					["Type"] = "OnEnd",
 					["Power"] = {{"Damage",4000,"NotArchetype",},{"Unlock",999,"Archetype"}},
 					Target = "NotArchetype",
@@ -9197,10 +9350,14 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Archetype"] = "Titan",
 		["Requirement"] = {"Archetype",4,9999},
 		["Color"] = "Neutral",
+		["WeakenImmune"] = true,
+		["SetImmune"] = true,
+		["DamageImmune"] = true,
+		["CheckImmune"] = true,
 		["Cost"] = {["Neutral"] = 5,["Red"] = 5, ["Green"] = 5, ["Yellow"] = 5, ["Blue"] = 5,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = [[Cast only if you control at least 4 Titans. At the end of your turn, deal 4000 damage to all Non-Titans, then unlock all titans.]],
+			Description = "Cast only if you control at least 4 Titans. At the end of your turn, deal 4000 damage to all Non-Titans, then unlock all Titans. This card is immune to effects that lower, check, or set its stats.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Damage",4000,"NotArchetype",},{"Unlock",999,"Archetype"}},
 			Target = "NotArchetype",
@@ -9276,6 +9433,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Plushie Mummy-E"] = {
 				["Name"] = "Plushie Bunny",
 				["Id"] = 1567581644,
+				["CopyBodge"] = "Plushies Mummy-E",
 				["Bio"] = "The food chain goes something like blobunnies, then regular bunnies, then amorphous blobs of eldritch ooze that babble incoherently about your sins.",
 			},
 		},
@@ -9461,6 +9619,7 @@ local base = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 			["Grimclaw the UnholyAlt"] = {
 				["Id"] = 3345019825,
 				["AltArt"] = true,
+				["CopyBodge"] = "Grimclaw the UnholyAlt",
 				["Bio"] = "When Grimclaw takes flight to the skies, the world is engulfed in darkness. Then nevermore.",
 			},
 		},
